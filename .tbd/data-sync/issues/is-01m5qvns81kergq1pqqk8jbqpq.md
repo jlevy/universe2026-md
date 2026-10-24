@@ -3,9 +3,9 @@ type: is
 id: is-01m5qvns81kergq1pqqk8jbqpq
 title: "PR #2 Qodo 1 (https://github.com/jlevy/universe2026-md/pull/2#discussion_r4368483018): skill allowed-tools does not cover the uvx/npx fallback runners"
 kind: bug
-status: open
+status: closed
 priority: 2
-version: 3
+version: 6
 delegate: claude-code@spud10.local
 labels: []
 dependencies: []
@@ -13,8 +13,12 @@ parent_id: is-01m5qvnghe11k3vpan1j8x4504
 hold: null
 hold_until: null
 created_at: 2026-10-24T21:04:41.726Z
-updated_at: 2026-10-24T21:05:26.515Z
+updated_at: 2026-10-24T21:11:08.909Z
 started_at: 2026-10-24T21:05:01.297Z
+closed_at: 2026-10-24T21:11:08.908Z
+close_reason: "fixed in 'chore: pre-approve the softschema uvx and npx runners for Claude Code': .claude/settings.json now allows Bash(uvx softschema@latest:*) and Bash(npx -y softschema@latest:*); confirmed by the runner-rule check (fails before, passes after), tbd doctor, and a real tbd setup --auto run that keeps the block"
+resolution: null
+duplicate_of: null
 ---
 Severity: Medium (Qodo: Remediation recommended; Bug, Reliability). PR: jlevy/universe2026-md#2. Review: https://github.com/jlevy/universe2026-md/pull/2#pullrequestreview-5639977233. Comment: https://github.com/jlevy/universe2026-md/pull/2#discussion_r4368483018.
 
@@ -26,8 +30,10 @@ Both files are generated verbatim by softschema skill --install (DO NOT EDIT for
 
 ## Notes
 
-Disposition: deferred (upstream softschema). Valid: allowed-tools (SKILL.md:8) covers only Bash(softschema:*), while the runner list (SKILL.md:34-36) falls back to uvx softschema@latest or npx -y softschema@latest, and the uvx/npx --version probes are not preapproved either.
+Disposition: fixed (user decision relayed by the coordinator: pre-approve the @latest runners exactly as the skill writes them; supersedes the earlier deferral).
 
-No local fix on PR #2: both SKILL.md files are verbatim generator output (softschema skill --install --dry-run --scope project --agent portable --agent claude reports both files unchanged, softschema 0.8.0), they carry a DO NOT EDIT marker, and softschema skill has no option that sets allowed-tools. A local .claude/settings.json allow rule for uvx softschema@latest or npx -y softschema@latest would auto-approve running whichever release is newest, against the exact pin and 14-day cool-off the architecture doc plans (PR #5, arch-2026-10-24-conference-kb.md:894-895).
+Commit: chore: pre-approve the softschema uvx and npx runners for Claude Code (eefa6e2 before the restack). It adds permissions.allow to .claude/settings.json with Bash(uvx softschema@latest:*) and Bash(npx -y softschema@latest:*) and keeps the tbd hooks. The Claude Code permissions docs say the :* suffix is equivalent to a trailing space-star wildcard. The generated SKILL.md files are unchanged.
 
-Waits on: an upstream softschema change to its skill template (jlevy/softschema skills/softschema/SKILL.md:8) that makes allowed-tools and the runner list agree, either with narrow package-specific patterns for its own fallbacks or with text that says the fallbacks prompt by design, and a release with it; then re-run softschema skill --install --scope project --agent portable --agent claude here. Same finding on jlevy/paraverse#2.
+Confirmed by: a check script (scratchpad check-runner-rules.sh) that requires every SS runner prefix in .claude/skills/softschema/SKILL.md to have a matching Bash rule failed before the change (uvx and npx prefixes uncovered) and passes after. tbd doctor exits 0 (its only warning is the existing AGENTS.md policy-grant difference from origin/main). tbd setup --auto, run for real in an isolated scratch clone, keeps the permissions block. A control run shows it reorders the two SessionStart hooks with or without this change. uvx softschema@0.8.1 skill --install --dry-run reports both SKILL.md files unchanged.
+
+Caveat: Claude Code applies project allow rules only after the workspace trust dialog is accepted; the uvx --version and npx --version probes are not covered.
