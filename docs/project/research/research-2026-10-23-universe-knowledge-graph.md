@@ -143,8 +143,10 @@ catalog.
 | Sponsors | `POST /api/exhibitors` with `type=exhibitor`, `catalogDisplay=grid` | the sponsors page’s own token pair | single response | `rainfocus/exhibitors.json` (180 KB) | 54 sponsors: tier (`Exhibitor Type`), description, link, logo, industries (`Industry?`), booth |
 
 Every saved response is recorded in `raw/manifest.json` with its URL, method, retrieval
-time, byte count and SHA-256, and every knowledge base record cites the snapshot file it
-came from.
+time, byte count and SHA-256, and a knowledge base record built from a saved response
+cites that snapshot file.
+Curated facts cite the curation file instead, and a source with neither, such as an
+attendee’s own X post, is cited by its URL or record ID.
 
 Notes and gotchas:
 
@@ -379,7 +381,7 @@ those compiled schemas into `kb/_schemas/`. Contract IDs follow
 - **Every entity cites its sources.** `sources[]` holds the system (`rainfocus`,
   `githubuniverse.com`, `github`, `npm`, `pypi`, `bluesky`, `mastodon`, `website`,
   `feed`, `brightdata` or `curation`), URL, record ID, retrieval time and the `raw/`
-  snapshot path, or the curation file for curated facts.
+  snapshot path where there is one, or the curation file for curated facts.
 - **Every claim about a person carries its basis.** Affiliations, accounts, websites,
   participations and profile claims each record where they came from, so two sources
   that agree are visible as corroboration and two that disagree are both kept.

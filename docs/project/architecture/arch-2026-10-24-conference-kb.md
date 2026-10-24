@@ -104,7 +104,9 @@ to `pipeline/`.
 
 - **Snapshot:** every command that fetches records each saved response in
   `raw/manifest.json` with its URL, method, retrieval time, byte count and SHA-256, and
-  every KB record cites the snapshot file it came from.
+  a KB record built from a saved response cites that snapshot file.
+  Curated facts cite the curation file, and a source with neither is cited by its URL or
+  record ID.
 - **Politeness:** fetches are sequential and wait 1 second between requests (`--delay`
   changes it), send a User-Agent that names the project, and retry 429 and 5xx responses
   up to four attempts with exponential backoff.
@@ -152,7 +154,7 @@ provide.
 - **Every entity cites its sources.** `sources[]` holds the system (`rainfocus`,
   `githubuniverse.com`, `github`, `npm`, `pypi`, `bluesky`, `mastodon`, `website`,
   `feed`, `brightdata` or `curation`), the URL, the record ID, the retrieval time and
-  the `raw/` snapshot path, or the curation file for curated facts.
+  the `raw/` snapshot path where there is one, or the curation file for curated facts.
 - **Every claim about a person carries its basis.** Affiliations, accounts, websites,
   participations and profile claims each record where they came from, so agreement shows
   as corroboration and disagreement keeps both statements.
