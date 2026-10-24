@@ -5,14 +5,16 @@ title: Publish agent data-access skill and static Pages package
 kind: feature
 status: in_progress
 priority: 1
-version: 2
+version: 3
 delegate: codex@spud10.local
 labels: []
 dependencies: []
+child_order_hints:
+  - is-01m5r17qkjn5swj7pnm46njr7z
 hold: null
 hold_until: null
 created_at: 2026-10-24T22:33:53.669Z
-updated_at: 2026-10-24T22:35:09.824Z
+updated_at: 2026-10-24T22:41:52.753Z
 started_at: 2026-10-24T22:35:09.808Z
 ---
 User requests tbd-guided reusable skill for agents to access Universe 2026 data, plus browsable/fetchable static GitHub Pages files. Prepare minimal portable skill, machine-readable index and static site package from corrected KB, preserving exact softschema bytes and relative schema pointers. No publishing unsafe current dataset; Pages deployment after corrected source/data and reviewable package ready.
