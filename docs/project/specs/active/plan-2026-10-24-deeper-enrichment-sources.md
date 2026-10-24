@@ -114,6 +114,14 @@ A matching name or username alone never links.
 Each new link basis gets a value in `LinkBasis`. The probes found back-linked accounts
 on DEV (36 of 187 GitHub users), Keybase (27), crates.io (10) and Notist (6).
 
+The rule covers records that enrich a person.
+Speaker listings from earlier editions, including archived githubuniverse.com pages, are
+the conference’s own catalogs: their speakers merge with people through the identity
+resolution in the
+[architecture doc](../../architecture/arch-2026-10-24-conference-kb.md), as the
+2023–2025 speakers did, and the risk it records for merging by name across editions
+applies to them (Open Questions).
+
 ### Model Changes
 
 All changes are additive, so the contracts can stay at `v1` (the version bump is listed
@@ -397,6 +405,9 @@ Paid runs wait for approval.
 
 - **Pre-2023 editions:** should 2015–2022 speakers become people?
   That would add several hundred past-only speakers, each needing a bio.
+  Where an archived page lists no account, its speaker would merge with an existing
+  person by a unique name alone; should such a match need a curator’s confirmation
+  instead?
 
 - **YouTube API key:** a Google Cloud project with the YouTube Data API enabled is
   needed for Phase 2’s recordings.
