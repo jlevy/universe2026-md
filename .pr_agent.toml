@@ -30,8 +30,9 @@ git history. docs/data-policy.md sets what may be committed. Flag as action requ
    finer than a city or metro area. Text people wrote about themselves in a public
    source (an official speaker bio, a profile bio or README) is kept verbatim and is
    not a finding.
-4. Data from non-public sources (behind a login, paywall, or other access control), or
-   data about other people carried inside a scraped profile.
+4. Data from non-public sources (behind a login, paywall, or other access control),
+   data about other people carried inside a scraped profile, or scraper bookkeeping
+   that describes no one.
 5. Credentials or machine details: API keys, tokens, cookies, browser session state,
    absolute local paths, host names, or local account names.
 6. A change to the dependencies in pipeline/pyproject.toml without the corresponding
