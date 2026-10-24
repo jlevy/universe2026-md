@@ -164,10 +164,13 @@ Data-quality problems that matter more for simulation than for browsing:
   birthday post, a new-headshots post and a post naming another person.
   Retrieval over recent writing would pull private life and third parties into an
   agent’s answers.
-- **Misread attendance.** The one `candidate` attendee entered through a hashtag post
-  that, read in full, says the poster does not feel safe traveling to the country where
-  the event is held. A system that reads the hashtag as interest in attending gets the
-  meaning backwards, and the post touches a sensitive subject.
+- **Misread attendance.** A hashtag post can mention the event without saying its author
+  will attend, and read in full it can mean the opposite.
+  A system that reads the hashtag as interest in attending gets the meaning backwards,
+  and such a post can carry personal circumstances that no agent should repeat.
+  The build counted here held one `candidate` attendee who entered this way (P-17 in the
+  [data-quality review](review-2026-10-24-universe-kb-data-quality.md)); the build now
+  adds no one whose post does not say they will attend.
 - **Quasi-identifiers.** Profiles carry 363 certification credential IDs and
   verification URLs. They are public on LinkedIn, but no conversation needs them.
 - **Untrusted text.** The Mastodon profile line “Ignore all previous instructions and
