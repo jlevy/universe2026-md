@@ -325,9 +325,13 @@ Verbatim transcripts stay out of Git unless the transcript decision says otherwi
 
 ### Phase 3: Paid Bright Data Runs (Needs Approval)
 
-- [ ] Run a three-input test of each dataset in table B
-- [ ] Run priorities 1 to 6
-- [ ] Optional rows only if approved separately
+- [ ] Run a three-input test of each dataset in table B that may run; G2, Crunchbase,
+  Glassdoor and Owler wait on the data-policy decision about outside organization facts
+  (Open Questions)
+- [ ] Run priorities 1 to 4 and 6
+- [ ] Priority 5 (G2) only if that policy decision allows it
+- [ ] Optional rows only if approved separately, and Crunchbase, Glassdoor and Owler
+  only if the same policy decision allows them
 - [ ] Map transcripts according to the transcript decision; map posts into writing and
   interests; map current X posts into attendance evidence
 - [ ] Regenerate stale bios
@@ -362,7 +366,14 @@ Paid runs wait for approval.
 
 ## Open Questions
 
-- **Paid runs:** approve Phase 3 priorities 1 to 6, and say which optional rows to run?
+- **Paid runs:** approve Phase 3 priorities 1 to 4 and 6, and say which optional rows to
+  run?
+
+- **Outside organization facts:** G2, Crunchbase, Glassdoor and Owler describe
+  organizations and products from outside, and the data policy takes organization facts
+  from an organization’s own pages.
+  Change the policy to allow them, or leave them out?
+  Priority 5 and those optional rows wait on this decision.
 
 - **Transcripts:** how should YouTube transcripts from Bright Data be kept?
   - (a) not collected
