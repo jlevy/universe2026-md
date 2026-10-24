@@ -3,13 +3,17 @@ type: is
 id: is-01m5qxhs7ey0wahb7w99s2msmf
 title: Historical KB data-quality review P-1
 kind: bug
-status: open
+status: in_progress
 priority: 1
-version: 1
+version: 2
+delegate: codex@spud10.local
 labels: []
 dependencies: []
 parent_id: is-01m5qxfr4vqrasqe241q6mwftf
+hold: null
+hold_until: null
 created_at: 2026-10-24T21:37:27.789Z
-updated_at: 2026-10-24T21:37:27.789Z
+updated_at: 2026-10-24T21:38:29.577Z
+started_at: 2026-10-24T21:38:29.575Z
 ---
 Severity: Blocker. Reconcile finding P-1 in docs/project/research/review-2026-10-24-universe-kb-data-quality.md, linked from PR #5 (https://github.com/jlevy/universe2026-md/pull/5). Record exact current code/data evidence and one disposition before publishing the data import. Refer to the existing review for the issue and proposed fix; do not duplicate third-party identity or removal context here.
