@@ -1,10 +1,10 @@
 ---
 title: InnerSource Commons Foundation
 softschema:
-  contract: paraverse.conference:Organization/v1
+  contract: paraverse.conference:Organization/v2
   schema: ../_schemas/organization.schema.yaml
   envelope: organization
-  status: permissive
+  status: enforced
 organization:
   id: org:innersource-commons-foundation
   name: InnerSource Commons Foundation

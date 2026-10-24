@@ -1,10 +1,10 @@
 ---
 title: Center for Accessibility and Open Source
 softschema:
-  contract: paraverse.conference:Organization/v1
+  contract: paraverse.conference:Organization/v2
   schema: ../_schemas/organization.schema.yaml
   envelope: organization
-  status: permissive
+  status: enforced
 organization:
   id: org:center-for-accessibility-and-open-source
   name: Center for Accessibility and Open Source

@@ -83,7 +83,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: A GitHub user or organization account linked to a person or organization.
 properties:
   bio:
@@ -271,5 +271,5 @@ required:
 title: GitHubAccount
 type: object
 x-softschema:
-  contract: paraverse.conference:GitHubAccount/v1
-  schema_sha256: 06324b7d368215130f5b0e8ed912da18b96ee86ccdf6eb14c56af71b08307329
+  contract: paraverse.conference:GitHubAccount/v2
+  schema_sha256: 11f0294d850f904a270bffc9d769e43d4caf70951e6e77b0f0c623345a12383c

@@ -51,7 +51,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 properties:
   archived:
     title: Archived
@@ -186,5 +186,5 @@ required:
 title: Repository
 type: object
 x-softschema:
-  contract: paraverse.conference:Repository/v1
-  schema_sha256: 9c422a418ba4aa16085eb8aa9f59a3c82f9fb5c621f09e7a56ca8c89ec6dc90d
+  contract: paraverse.conference:Repository/v2
+  schema_sha256: b1053fa46b222c102b683dc887769f36118e97719d4cf0dcacb7764fb1265e0e

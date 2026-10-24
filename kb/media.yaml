@@ -1,8 +1,8 @@
 softschema:
-  contract: paraverse.conference:MediaIndex/v1
+  contract: paraverse.conference:MediaIndex/v2
   schema: _schemas/media.schema.yaml
   envelope: media
-  status: permissive
+  status: enforced
 media:
   event: event:github-universe-2026
   items:

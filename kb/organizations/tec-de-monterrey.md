@@ -1,10 +1,10 @@
 ---
 title: Tec de Monterrey
 softschema:
-  contract: paraverse.conference:Organization/v1
+  contract: paraverse.conference:Organization/v2
   schema: ../_schemas/organization.schema.yaml
   envelope: organization
-  status: permissive
+  status: enforced
 organization:
   id: org:tec-de-monterrey
   name: Tec de Monterrey

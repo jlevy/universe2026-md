@@ -1,10 +1,10 @@
 ---
 title: David Grizzanti
 softschema:
-  contract: paraverse.conference:Person/v1
+  contract: paraverse.conference:Person/v2
   schema: ../_schemas/person.schema.yaml
   envelope: person
-  status: permissive
+  status: enforced
 person:
   id: person:david-grizzanti
   name: David Grizzanti

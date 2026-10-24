@@ -250,7 +250,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: |-
   Anyone involved in the event: speakers, attendees, organizers, sponsor staff.
 
@@ -415,5 +415,5 @@ required:
 title: Person
 type: object
 x-softschema:
-  contract: paraverse.conference:Person/v1
-  schema_sha256: c8e4356b1062c02329079c2aba2a619a230cdcc3b521cf045fb2ccf63b58c894
+  contract: paraverse.conference:Person/v2
+  schema_sha256: 381f6efd5f1e2ff58077af4276ad12d7adf2112286d7e3a7a49e0b30858f2859

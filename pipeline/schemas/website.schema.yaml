@@ -51,7 +51,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: 'A website someone runs: a personal site, blog or project page.'
 properties:
   description:
@@ -154,5 +154,5 @@ required:
 title: Website
 type: object
 x-softschema:
-  contract: paraverse.conference:Website/v1
-  schema_sha256: 4d59e6c86e5a615e7272d9f13469644dd7191fdafd6a18aef64e1118c6d79231
+  contract: paraverse.conference:Website/v2
+  schema_sha256: f81ca3f3b6a70a51ccc5d5970117a5b9aca10bc3ece618daa47ed1aa1e189d94

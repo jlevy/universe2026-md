@@ -91,7 +91,7 @@ $defs:
     title: Term
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: One classification axis of the session catalog and its terms.
 properties:
   event:
@@ -131,5 +131,5 @@ required:
 title: Facet
 type: object
 x-softschema:
-  contract: paraverse.conference:Facet/v1
-  schema_sha256: c7151e741da94c725c834110f1af8479c9eca93eaa8f69d02642935f77eec1b1
+  contract: paraverse.conference:Facet/v2
+  schema_sha256: db8a96dabc21e86e48ca1399a27100e14a6f20d7107e97e7911a577dc3a5b0eb

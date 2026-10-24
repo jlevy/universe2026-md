@@ -1,10 +1,10 @@
 ---
 title: CMU Human-Computer Interaction Institute
 softschema:
-  contract: paraverse.conference:Organization/v1
+  contract: paraverse.conference:Organization/v2
   schema: ../_schemas/organization.schema.yaml
   envelope: organization
-  status: permissive
+  status: enforced
 organization:
   id: org:cmu-human-computer-interaction-institute
   name: CMU Human-Computer Interaction Institute

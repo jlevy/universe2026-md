@@ -51,7 +51,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: A campus, a building on it, or an outside venue used for an evening event.
 properties:
   address:
@@ -95,5 +95,5 @@ required:
 title: Venue
 type: object
 x-softschema:
-  contract: paraverse.conference:Venue/v1
-  schema_sha256: 1aa52498d984109b7f39c5c7d86d943706d2566d57347799eaa50262f5e7c5fa
+  contract: paraverse.conference:Venue/v2
+  schema_sha256: 6fe3f946343e5fa3c503da0c7beeef9fbd210d031d4e7e7be6e488a321a081aa

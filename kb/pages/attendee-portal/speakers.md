@@ -1,10 +1,10 @@
 ---
 title: Speakers
 softschema:
-  contract: paraverse.conference:Page/v1
+  contract: paraverse.conference:Page/v2
   schema: ../../_schemas/page.schema.yaml
   envelope: page
-  status: permissive
+  status: enforced
 page:
   id: page:attendee-portal/speakers
   site: attendee-portal

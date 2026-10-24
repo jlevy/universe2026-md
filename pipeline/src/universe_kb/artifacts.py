@@ -16,7 +16,9 @@ from strif import atomic_write_text
 
 from universe_kb.models import CONTRACTS
 
-STATUS = "permissive"
+# Every model is closed, so the compiled schema and the softschema status agree: a field
+# the contract does not declare fails validation.
+STATUS = "enforced"
 
 # Where each ID prefix lives, relative to the knowledge base root.
 _LAYOUT = {

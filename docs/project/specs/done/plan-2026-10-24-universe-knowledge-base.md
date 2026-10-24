@@ -157,6 +157,12 @@ Each phase was tracked as a bead under one epic.
 - The graph export fails the build on any edge to a missing entity.
 - `pytest` covers parsers against the saved snapshot, ID and identity rules, and an
   end-to-end build into a temporary directory.
+- `pipeline/tests/test_contracts.py` checks the committed kb: every model is closed,
+  every artifact names its envelope’s `v2` contract and `status: enforced`,
+  `kb/_schemas/` matches `pipeline/schemas/`, a sample needs no `softschema repair`, and
+  an undeclared field fails the stock `softschema validate`.
+- `make check` in `pipeline/` runs `universe-kb schemas --check`,
+  `universe-kb validate`, `pytest`, `ruff check` and `basedpyright`, in that order.
 - An independent reviewer subagent compares the kb against raw data after each large
   addition.
 
@@ -188,8 +194,6 @@ Tracked as beads labeled `tech-debt`, and as open work in
 - `Node.text()` joins inline text with spaces; the glossary works around the space it
   leaves before punctuation.
 - Mastodon accounts whose handle domain differs from their server need WebFinger.
-- Contracts changed in place at `v1` before any consumer existed; bump the version once
-  something depends on them.
 - A speaker who gave a company account as their GitHub handle is linked but flagged
   `unconfirmed`, not moved to the company.
 - Some people have two accounts on one platform (an old and a new LinkedIn slug).
@@ -228,6 +232,12 @@ Tracked as beads labeled `tech-debt`, and as open work in
 - 2026-10-24: The bundle that bios are written from was left as is, even though it shows
   an organization twice when one source gives a title and another does not; changing its
   format would mark about 170 sound bios stale.
+
+- 2026-10-24: Contracts are closed at the top level as well as inside, bumped from `v1`
+  to `v2`, and every artifact is `status: enforced`. The rebuilt artifacts differ only
+  in their `softschema:` blocks; payloads, Markdown bodies, graph exports and search
+  documents are unchanged.
+- 2026-10-24: `make check` in `pipeline/` is the local entry point a CI job would call.
 
 ## References
 

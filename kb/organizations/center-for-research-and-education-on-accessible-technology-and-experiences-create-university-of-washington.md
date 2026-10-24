@@ -2,10 +2,10 @@
 title: Center for Research and Education on Accessible Technology and Experiences (CREATE) / University
   of Washington
 softschema:
-  contract: paraverse.conference:Organization/v1
+  contract: paraverse.conference:Organization/v2
   schema: ../_schemas/organization.schema.yaml
   envelope: organization
-  status: permissive
+  status: enforced
 organization:
   id: org:center-for-research-and-education-on-accessible-technology-and-experiences-create-university-of-washington
   name: Center for Research and Education on Accessible Technology and Experiences (CREATE) / University

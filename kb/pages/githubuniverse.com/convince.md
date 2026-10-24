@@ -1,10 +1,10 @@
 ---
 title: GitHub Universe 2026
 softschema:
-  contract: paraverse.conference:Page/v1
+  contract: paraverse.conference:Page/v2
   schema: ../../_schemas/page.schema.yaml
   envelope: page
-  status: permissive
+  status: enforced
 page:
   id: page:githubuniverse.com/convince
   site: githubuniverse.com

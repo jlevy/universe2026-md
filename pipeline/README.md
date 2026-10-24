@@ -51,9 +51,9 @@ The code and data are licensed under the MIT License (see [LICENSE](../LICENSE))
 ## Commands
 
 Run everything from this directory.
-`make install`, `make lint`, `make test`, `make build` and `make validate` run uv with
-the project’s own `uv.toml`, so user-level uv settings cannot change `uv.lock`; to run
-uv directly, set `UV_CONFIG_FILE=uv.toml` first.
+`make install`, `make check`, `make lint`, `make test`, `make build` and `make validate`
+run uv with the project’s own `uv.toml`, so user-level uv settings cannot change
+`uv.lock`; to run uv directly, set `UV_CONFIG_FILE=uv.toml` first.
 Every command reads and writes the knowledge base at `../kb/`; `--kb` names another
 directory. Each command prints its report to stdout as JSON and its progress to stderr.
 
@@ -151,14 +151,30 @@ incremental: they skip what the snapshot already has.
 Run the tests with `uv run pytest`. Lint and type checks are `uv run ruff check` and
 `uv run basedpyright`.
 
+Run every check before pushing with `make check`. It runs, in order and offline,
+`universe-kb schemas --check`, `universe-kb validate`, `pytest`, `ruff check` and
+`basedpyright`, and stops at the first failure.
+`make validate`, `make test` and `make lint` run parts of it on their own.
+There is no CI workflow; `make check` is the entry point a CI job would call.
+The tests include `tests/test_contracts.py`, which checks the committed `../kb/`: every
+artifact names its envelope’s `v2` contract and `status: enforced`, `../kb/_schemas/`
+matches `schemas/`, a sample needs no `softschema repair`, and an artifact given an
+undeclared field fails the stock CLI.
+
 Each artifact also validates on its own with the stock CLI, since it names its contract,
 schema, envelope and status.
 Its schema pointer (`../_schemas/…`) resolves only inside the knowledge base, so run
 this one from the repository root:
 
 ```bash
-uv run --project pipeline softschema validate kb/sessions/1809k.md
+UV_CONFIG_FILE=pipeline/uv.toml uv run --project pipeline softschema validate kb/sessions/1809k.md
 ```
+
+Every contract is `paraverse.conference:<Name>/v2` and every artifact is
+`status: enforced`. The models are closed at the top level as well as inside, so a field
+a contract does not declare fails validation; add a new field to
+`src/universe_kb/models.py` before the build writes it, and bump `VERSION` there when a
+change breaks existing artifacts.
 
 ## Data Policy
 

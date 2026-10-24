@@ -51,7 +51,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: An on-site activation that is not a scheduled session.
 properties:
   action:
@@ -127,5 +127,5 @@ required:
 title: Experience
 type: object
 x-softschema:
-  contract: paraverse.conference:Experience/v1
-  schema_sha256: 844d361dfd2b8dccd5ab30ae46f816b5ac627e8a88c860ac4bc850e7f069a256
+  contract: paraverse.conference:Experience/v2
+  schema_sha256: 016b4e3c97554b502e2d990c4559010656d309a0695d96575c8eea275a738d82

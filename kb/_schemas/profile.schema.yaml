@@ -538,7 +538,7 @@ $defs:
     title: WritingItem
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: |-
   The developed profile of one person: what they work on and know, built from the
   event listing, their sessions, GitHub, Bluesky, their website and imported research.
@@ -676,5 +676,5 @@ required:
 title: Profile
 type: object
 x-softschema:
-  contract: paraverse.conference:Profile/v1
-  schema_sha256: f1a14b8a82ba9fe4d6ae28a937d19856ccc3ca32512eb139bb314fb707c66d08
+  contract: paraverse.conference:Profile/v2
+  schema_sha256: 5ed9bcdf36970e0dad82e8ec362127c6298d82d8ee5d0301c98af8b1731138e4

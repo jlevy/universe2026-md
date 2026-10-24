@@ -1,8 +1,8 @@
 softschema:
-  contract: paraverse.conference:Profile/v1
+  contract: paraverse.conference:Profile/v2
   schema: ../_schemas/profile.schema.yaml
   envelope: profile
-  status: permissive
+  status: enforced
 profile:
   id: profile:hirsch-singhal
   person: person:hirsch-singhal

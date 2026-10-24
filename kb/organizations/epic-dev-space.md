@@ -1,10 +1,10 @@
 ---
 title: Epic Dev Space
 softschema:
-  contract: paraverse.conference:Organization/v1
+  contract: paraverse.conference:Organization/v2
   schema: ../_schemas/organization.schema.yaml
   envelope: organization
-  status: permissive
+  status: enforced
 organization:
   id: org:epic-dev-space
   name: Epic Dev Space

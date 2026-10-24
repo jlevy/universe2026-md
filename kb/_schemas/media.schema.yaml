@@ -88,7 +88,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: Every image URL in the knowledge base, what it depicts and who uses it.
 properties:
   event:
@@ -112,5 +112,5 @@ required:
 title: MediaIndex
 type: object
 x-softschema:
-  contract: paraverse.conference:MediaIndex/v1
-  schema_sha256: 39ae715690cc8855269c61aec59c9235a7be5110c65582ab3287336d9c34148f
+  contract: paraverse.conference:MediaIndex/v2
+  schema_sha256: f84e456f08dc1c617eeb521464c34c25098fc9b7a137c2b3fac2c16f9ded05d2

@@ -1,10 +1,10 @@
 ---
 title: Matt Alvarez
 softschema:
-  contract: paraverse.conference:Person/v1
+  contract: paraverse.conference:Person/v2
   schema: ../_schemas/person.schema.yaml
   envelope: person
-  status: permissive
+  status: enforced
 person:
   id: person:matt-alvarez
   name: Matt Alvarez

@@ -1,10 +1,10 @@
 ---
 title: GitHub Universe 2024
 softschema:
-  contract: paraverse.conference:Event/v1
+  contract: paraverse.conference:Event/v2
   schema: ../_schemas/event.schema.yaml
   envelope: event
-  status: permissive
+  status: enforced
 event:
   id: event:github-universe-2024
   name: GitHub Universe 2024
