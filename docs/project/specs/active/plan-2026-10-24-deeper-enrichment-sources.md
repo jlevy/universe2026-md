@@ -176,7 +176,7 @@ Each run starts with a test of three inputs to check fields and cost.
 | --- | --- | --- | --- | --- |
 | 1 | YouTube videos (`gd_lk56epmy2i5g7lzu0k`), discover by URL | GitHub channel’s Universe 2023–2026 playlists; people’s talk links | Title, description, chapters, length, views, tags, **transcript** | ~600 |
 | 2 | LinkedIn posts (`gd_lyy3tktm25m4avu764`), discover by profile URL | 178 LinkedIn accounts of 2026 participants, 10 posts each | Full post text, hashtags, tagged companies, document posts | ~1,780 |
-| 3 | X posts (`gd_lwxkxvnf1cynvib9co`), discover by profile URL, 2026 window | 113 X accounts of 2026 participants, 20 posts each | Current posts and hashtags, so X posts can count as attendance evidence again | ~2,260 |
+| 3 | X posts (`gd_lwxkxvnf1cynvib9co`), discover by profile URL, 2026 window | 113 X accounts of 2026 participants, 20 posts each | Current posts and hashtags; a person’s own post saying they will attend can count as attendance evidence again | ~2,260 |
 | 4 | YouTube channels (`gd_lk538t2k2p1k3oos71`) | 16 people’s channels | About text, subscribers, top videos, podcast flag | 16 |
 | 5 | G2 product overview (`gd_l88xp4k01qnhvyqlvw`) | The 61 software entities | Categories, competitors, features, pros and cons | ~60 |
 | 6 | Threads profiles (`gd_mde7jg3ld2h3hnnf2`) | 5 linked accounts | Bio, website, followers | 5 |
@@ -333,7 +333,9 @@ Verbatim transcripts stay out of Git unless the transcript decision says otherwi
 - [ ] Optional rows only if approved separately, and Crunchbase, Glassdoor and Owler
   only if the same policy decision allows them
 - [ ] Map transcripts according to the transcript decision; map posts into writing and
-  interests; map current X posts into attendance evidence
+  interests; map a current X post into attendance evidence only when its author says in
+  it that they will attend, as the data policy requires; other posts and hashtags feed
+  writing and interests only
 - [ ] Regenerate stale bios
 
 ### Phase 4: Ask People Directly (Not Yet Designed)
