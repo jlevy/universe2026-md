@@ -62,7 +62,7 @@ jobs:
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: ${{ runner.temp }}/site
-          # The publisher rejects hidden inputs and creates only .nojekyll itself.
+          # Keep .nojekyll and contract-validated dot-prefixed KB artifacts.
           include-hidden-files: true
           retention-days: 1
 

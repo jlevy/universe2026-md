@@ -48,7 +48,13 @@ def _copy_public(source: Path, destination: Path, *, skill: bool = False) -> lis
         relative = path.relative_to(source)
         if path.is_symlink():
             raise ValueError(f"Symlinks cannot be published: {relative}")
-        if any(part.startswith(".") or "\\" in part or ":" in part for part in relative.parts):
+        # Public repositories can be named `.github`; their generated artifacts still
+        # pass the complete KB's contract validation before the site becomes visible.
+        dot_artifact = (not skill and relative.parts[0] in ENTITY_DIRS
+                        and path.suffix in {".md", ".yaml"} and path.is_file()
+                        and not any(part.startswith(".") for part in relative.parts[:-1]))
+        if (any("\\" in part or ":" in part for part in relative.parts)
+                or (any(part.startswith(".") for part in relative.parts) and not dot_artifact)):
             raise ValueError(f"Non-public path: {relative}")
         if skill:
             allowed = (relative.as_posix() == "SKILL.md" or (

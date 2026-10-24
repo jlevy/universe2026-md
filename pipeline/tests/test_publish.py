@@ -11,7 +11,7 @@ from typing import Any
 import pytest
 
 from universe_kb.artifacts import write_artifact
-from universe_kb.models import Participation, Person, Source
+from universe_kb.models import Participation, Person, Repository, Source
 from universe_kb.publish import build_site
 from universe_kb.schemas import compile_schemas
 
@@ -245,3 +245,53 @@ def test_tar_metadata_is_bounded_before_parsing_or_writing(
     assert parsed == []
     assert not destination.exists()
     assert not list(tmp_path.glob(".universe-tar-*"))
+
+
+def test_publication_preserves_a_contract_validated_dot_repository(tmp_path: Path) -> None:
+    kb = fixture_kb(tmp_path)
+    repository = Repository(
+        id="repo:example/.github", full_name="example/.github",
+        url="https://github.com/example/.github", owner_login="example",
+        stars=0, forks=0, archived=False, fork=False,
+        sources=[Source(system="github", url="https://github.com/example/.github")])
+    relative = "repositories/example/.github.yaml"
+    write_artifact(kb, kb / "_schemas", repository, envelope="repository", rel_path=relative)
+    nodes = kb / "_graph/nodes.jsonl"
+    nodes.write_text(nodes.read_text() + json.dumps({
+        "id": repository.id, "kind": "repository", "name": repository.full_name,
+        "path": relative}) + "\n")
+    original = (kb / relative).read_bytes()
+    site = tmp_path / "site"
+    manifest = build_site(kb, SKILL, site, REVISION)
+    assert (site / "kb" / relative).read_bytes() == original
+    assert manifest["totals"]["by_kind"] == {"person": 1, "repository": 1}
+    index = json.loads((site / "files.json").read_text())
+    assert {"id": repository.id, "kind": "repository", "name": repository.full_name,
+            "path": f"kb/{relative}"} in index["entities"]
+    with tarfile.open(site / manifest["archive"]["path"]) as archive:
+        content = archive.extractfile(f"kb/{relative}")
+        assert content is not None and content.read() == original
+
+    # A permitted filename cannot bypass the existing artifact contract.
+    (kb / relative).write_bytes(original.replace(b"stars: 0", b"stars: -1"))
+    with pytest.raises(ValueError, match="KB validation failed"):
+        build_site(kb, SKILL, tmp_path / "invalid", REVISION)
+    assert not (tmp_path / "invalid").exists()
+
+
+def test_publication_keeps_rejecting_hidden_credentials_directories_and_rogue_files(
+        tmp_path: Path) -> None:
+    for number, relative in enumerate([
+        "repositories/example/.env", "repositories/example/.env.yaml",
+        "repositories/example/.notes.txt", "repositories/.git/config.yaml",
+        "repositories/example/.private/record.yaml", ".github.yaml", "unknown/.github.yaml",
+    ]):
+        root = tmp_path / f"case-{number}"
+        kb = fixture_kb(root)
+        private = kb / relative
+        private.parent.mkdir(parents=True, exist_ok=True)
+        private.write_text("private: synthetic\n")
+        output = root / "site"
+        with pytest.raises(ValueError):
+            build_site(kb, SKILL, output, REVISION)
+        assert not output.exists()
