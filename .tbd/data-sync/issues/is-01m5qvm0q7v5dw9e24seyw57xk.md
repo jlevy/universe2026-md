@@ -5,7 +5,7 @@ title: "Address PR #4 review qodo-5639977183: compliance-rule gaps against the d
 kind: task
 status: in_progress
 priority: 1
-version: 6
+version: 7
 delegate: claude-code@spud10.local
 labels: []
 dependencies: []
@@ -17,7 +17,11 @@ child_order_hints:
 hold: null
 hold_until: null
 created_at: 2026-10-24T21:03:43.846Z
-updated_at: 2026-10-24T21:04:01.498Z
+updated_at: 2026-10-24T21:07:32.708Z
 started_at: 2026-10-24T21:04:01.497Z
 ---
 Address the Qodo review on jlevy/universe2026-md#4 (setup/qodo), pinned head 3b8477234998bbcc08cbf56e6230461100fb1750. Review (unmarked): https://github.com/jlevy/universe2026-md/pull/4#pullrequestreview-5639977183 ; summary comment https://github.com/jlevy/universe2026-md/pull/4#issuecomment-6389401712 . Four Medium findings, all in .pr_agent.toml compliance_user_guidelines, each a gap against docs/data-policy.md. Related work bead: u26-je5y.
+
+## Notes
+
+All four findings fixed on setup/qodo (beads u26-mdgw, u26-vuix, u26-zp6i, u26-rwhu closed). Also mirrored jlevy/paraverse#4's checklist-verification change to the shared rule 1 ('chore: verify each data-policy checklist item in the Qodo compliance rules') for cross-repo consistency. Disposition reply and thread replies prepared for the coordinator to post after the restack; close this bead once they are posted.
