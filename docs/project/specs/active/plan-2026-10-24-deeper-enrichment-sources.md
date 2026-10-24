@@ -308,7 +308,13 @@ conference who is not known to attend, for example:
 - organizers’ and sponsors’ staff, as their own organization’s public pages list them
 - community leaders
 
-There is also no way for anyone to ask to be removed.
+Removal already has a path: anyone may ask, as the data policy’s
+[Removal Requests](../../../data-policy.md#removal-requests) section says, and a
+maintainer then adds the person to the person-exclusion field in `curation/people.yaml`,
+as the architecture doc’s
+[Adding or Removing a Person](../../architecture/arch-2026-10-24-conference-kb.md#adding-or-removing-a-person)
+section says. Neither gives that field’s format, and the new list below is one more
+source it must override, so **Removal** below specifies both.
 
 Everything below follows the repository’s [data policy](../../../data-policy.md): only
 public, professional information, no attendance a person has not stated publicly, and a
@@ -348,10 +354,11 @@ As for everyone, the pipeline never adds or infers a sensitive attribute: only b
 the person wrote and published themselves, such as a profile bio, states one, and it is
 kept verbatim. Every added person gets `inclusion_basis: curated`.
 
-**Removal.** `curation/people.yaml` gains an `excluded` list, keyed by person ID or by
-account. The build drops an excluded person, their accounts, websites and profile from
-every source, including the event listing and `curation/additional-people.csv`, and the
-bio pipeline prunes their bio.
+**Removal.** The person-exclusion field is an `excluded` list in `curation/people.yaml`,
+keyed by person ID or by account.
+The build drops an excluded person, their accounts, websites and profile from every
+source, including the event listing and `curation/additional-people.csv`, and the bio
+pipeline prunes their bio.
 The person must then be absent from the kb records, search documents, graph exports, raw
 snapshots committed in Git and test fixtures, and a test checks this.
 An exclusion records only the ID and the date, never a reason.
