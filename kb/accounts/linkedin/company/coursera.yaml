@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/coursera
+  platform: linkedin
+  handle: company/coursera
+  url: https://www.linkedin.com/company/coursera
+  display_name: Coursera
+  bio: Coursera was launched in 2012 by Andrew Ng and Daphne Koller with a mission to provide universal
+    access to world-class learning. Today, it is one of the largest online learning platforms in the world,
+    with 197 million registered learners as of December 31, 2025. Coursera partners with over 375 leading
+    university and industry partners to offer a broad catalog of content and credentials, including courses,
+    Specializations, Professional Certificates, and degrees. Coursera’s platform innovations — including
+    generative AI-powered features like Coach, Role Play, and Course Builder, and role-based solutions
+    like Skills Tracks — enable instructors, partners, and companies to deliver scalable, personalized,
+    and verified learning. Institutions worldwide rely on Coursera to upskill and reskill their employees,
+    students, and citizens in high-demand fields such as GenAI, data science, technology, and business,
+    while learners globally turn to Coursera to master the skills they need to advance their careers.
+    Coursera is a Delaware public benefit corporation and a B Corp.
+  website: https://bit.ly/45dFEuV
+  followers: 2781595
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D0BAQGexnfBxeEG-g/company-logo_200_200/company-logo_200_200/0/1630530042036/coursera_logo?e=2147483647&v=beta&t=iDs3t-xE8njHxSCY5E4wfPkF9M7uhP9Gx1fFWiMB1uQ
+  owner: org:coursera
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/krishnasuhas
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/coursera
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

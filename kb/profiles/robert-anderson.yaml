@@ -1,0 +1,209 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:robert-anderson
+  person: person:robert-anderson
+  brief_bio:
+    text: Robert Anderson was a senior DevOps engineer at GitHub, with a background in configuration management
+      and build and deployment automation, when speaking at GitHub Universe 2023. Anderson led a workshop
+      on the risk of script injections in GitHub Actions workflows.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: fd7052d2d82beca8b4be3bf2fa65e527754f09c240e8d0cd9c04aad3cb640610
+    stale: false
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2750w
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2750w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2750w
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev2750w
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490863001KdMv
+      ref: session:2023/dev2750w
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490863001KdMv
+      ref: session:2023/dev2750w
+  - label: Issues
+    target: term:github-product-2023/issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490863001KdMv
+      ref: session:2023/dev2750w
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490863001KdMv
+      ref: session:2023/dev2750w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490863001KdMv
+      ref: session:2023/dev2750w
+  credentials:
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Sep 2022
+    url: https://www.credly.com/badges/cae2efce-63db-4b6a-af2a-a9f22501bfb4/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: 'Docker Mastery: The Complete Toolset From a Docker Captain'
+    issuer: Udemy
+    date: Mar 2018
+    url: https://www.udemy.com/certificate/UC-54JE054C/
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Nov 2022
+    expires: Nov 2024
+    url: https://www.credly.com/badges/e5ce0ab4-28f0-4114-b043-228253a41713/public_url
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Oct 2022
+    expires: Oct 2024
+    url: https://www.credly.com/badges/0b85e874-9325-4914-b2f3-c3f8588487c4/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Sep 2022
+    expires: Sep 2024
+    url: https://www.credly.com/badges/31caa2be-c150-45f2-bdba-09faf9ceaa77/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: AWS Certified SysOps Administrator - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2020
+    expires: Nov 2023
+    url: https://www.youracclaim.com/badges/eda120b9-1e24-49ac-a99f-28fcc20bbf5b/public_url
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Certified ScrumMaster® (CSM®)
+    issuer: Scrum Alliance
+    date: May 2021
+    expires: May 2023
+    url: https://bcert.me/svcibefsp
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: AWS Certified Developer - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Mar 2018
+    expires: Mar 2021
+    url: https://www.youracclaim.com/badges/acd5419b-c9a5-4703-a4c0-0f10a453eed6/public_url
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect - Associate
+    issuer: Amazon Web Services
+    date: Feb 2018
+    expires: Feb 2021
+    url: https://www.youracclaim.com/badges/08e9b14a-a760-4d10-af11-ed6ed6978e6e/public_url
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Shaping up with Angular.js
+    issuer: Code School
+    url: https://www.codeschool.com/courses/shaping-up-with-angular-js
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  spoken_languages:
+  - English
+  - Spanish
+  activities:
+  - kind: course
+    title: Architecting on AWS
+    evidence:
+      url: https://www.linkedin.com/in/robandpdx
+      observed_at: '2026-10-24T08:47:09Z'
+  talks:
+  - session:2023/dev2750w
+  gaps:
+  - github_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248458001wYUM
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

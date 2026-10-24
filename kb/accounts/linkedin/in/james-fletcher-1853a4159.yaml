@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/james-fletcher-1853a4159
+  platform: linkedin
+  handle: in/james-fletcher-1853a4159
+  url: https://www.linkedin.com/in/james-fletcher-1853a4159
+  display_name: James Fletcher
+  bio: Product manager, Data and security products.
+  location: Greater Oxford Area
+  followers: 369
+  connections: 363
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQHKOeM8b9z98A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1534917743674?e=2147483647&v=beta&t=xjj4MxP3A1Ii4XZZpnIaxyW-UUX5mRpxQ3d-VuH9la4
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:james-fletcher
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715337711236001Gykn
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/james-fletcher-1853a4159
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

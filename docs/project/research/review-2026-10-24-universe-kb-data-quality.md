@@ -4,7 +4,8 @@
 
 **Author:** Joshua Levy, with LLM assistance
 
-**Status:** Findings open; Blocker and High findings tracked as beads
+**Status:** Reconciled for publication: all Blocker and High findings fixed; remaining
+Medium and Low work tracked below.
 
 > In this repository the records are in `kb/`, and the pipeline (`src/universe_kb/`,
 > `raw/`, `curation/`, `synthesis/`, `schemas/` and `tests/`) is in `pipeline/`. Counts
@@ -29,8 +30,8 @@ Structural validation passes: `universe-kb validate` reports no failures and the
 crawler’s 97 tests pass.
 Severities are the reviewers’ own.
 
-**Verdict:** The 2026 schedule is sound: all 528 slots match the raw catalogs, no room
-is double-booked, and every program session has speakers.
+**Original verdict:** The 2026 schedule is sound: all 528 slots match the raw catalogs,
+no room is double-booked, and every program session has speakers.
 Identity merges hold: no account or site belongs to two people, all 86 cross-edition
 people verify against their RainFocus `userRef`, and the evidence of all 4,986 profile
 claims resolves. Sponsor listings match RainFocus for all 54 sponsors.
@@ -243,6 +244,74 @@ finding’s: `package_unlikely_release` is medium but includes Blocker O-2, and
   gazetteer is collected before those sources run.
 - Related plan: [the KB plan](../specs/done/plan-2026-10-24-universe-knowledge-base.md)
   (Technical Debt and Decision Log).
+
+## Publication Reconciliation
+
+The tables above retain the original review baseline.
+The sanitized import resolves all three Blockers and ten High findings.
+The remaining Medium and Low items stay open under their individual beads; their
+dependency is the focused follow-up named below, rather than a future date.
+The review parent is `u26-9kht`.
+
+Verification covers the full pipeline suite (144 tests), Ruff, type checking, schema
+validation, independent offline rebuilds, byte comparison, contact and exclusion scans,
+and stored-bio validation.
+Regression coverage is in `pipeline/tests/test_data_quality.py`, `test_bios.py`,
+`test_people.py`, `test_ids.py`, `test_web.py`, `test_policy.py`, `test_privacy.py` and
+`test_publication.py`. No new source acquisition was needed.
+
+| Finding | Disposition | Bead | Evidence or follow-up dependency |
+| --- | --- | --- | --- |
+| P-1 | fixed | `u26-neyr` | Scoped listing roles; unsupported title/employer pairings fail bio checks; affected derived text corrected. |
+| P-2 | fixed | `u26-fnsr` | Catalog-only X identity checks; persistent owner/link fingerprints hold after raw pruning. |
+| P-3 | fixed | `u26-fcfd` | Cross-edition identity uses catalog userRef and global names; no duplicate userRefs remain. |
+| P-4 | fixed | `u26-4yuf` | Site links corroborate attributed accounts; they cannot establish new person-account ownership. |
+| P-5 | fixed | `u26-q7w7` | Validated provider/profile paths reject credentials, placeholders, truncated LinkedIn paths and webmail sites. |
+| P-6 | fixed | `u26-ieaj` | Contact redaction and full publishable-input/output scans report zero reachable contacts. |
+| P-7 | deferred | `u26-sku3` | Broader website-kind classification and source review. |
+| P-8 | deferred | `u26-6r4j` | Additional platform and redirect classification. |
+| P-9 | fixed | `u26-1qad` | X display names use profile_name with a name fallback; profile-source tests cover the mapping. |
+| P-10 | deferred | `u26-lxm2` | Affiliation ranking and further evidence-backed organization reconciliation. |
+| P-11 | deferred | `u26-6lv3` | Expertise scoring and distinct-talk weighting. |
+| P-12 | deferred | `u26-1310` | Recognition evidence and historical-status modeling. |
+| P-13 | deferred | `u26-zhlu` | Event-listing affiliation evidence pointers. |
+| P-14 | deferred | `u26-c2a7` | An alternate-names model and source mapping. |
+| P-15 | deferred | `u26-pmo9` | LinkedIn numeric-ID reconciliation. |
+| P-16 | deferred | `u26-qk3b` | Name and URL display normalization. |
+| P-17 | fixed | `u26-2cuy` | Opaque suppression remains effective in offline rebuilds; no identifying strings remain in publishable files. |
+| G-1 | fixed | `u26-tzrj` | Campus venue aliases and level parsing remove the incorrect external-venue assignments. |
+| G-2 | fixed | `u26-ehfp` | Catalog day labels are preserved; the earlier workshop day is labeled Pre-event. |
+| G-3 | fixed | `u26-9ua5` | Sentinel capacities are unknown in slots and rooms; final output contains none of the placeholders. |
+| G-4 | deferred | `u26-y19i` | Further evidence-backed venue and room identity reconciliation. |
+| G-5 | deferred | `u26-vmh1` | Edition-specific outside-venue addresses. |
+| G-6 | deferred | `u26-i6qt` | Facet counts derived from built sessions. |
+| G-7 | deferred | `u26-x7dd` | Public-source verification of outside-venue addresses. |
+| G-8 | deferred | `u26-8bhq` | Remaining outside/virtual room parsing rules. |
+| G-9 | deferred | `u26-17f8` | Explicit program-date versus session-span semantics. |
+| G-10 | deferred | `u26-1vse` | Past-edition sponsor-host attribution. |
+| G-11 | deferred | `u26-3w9g` | Structured experience schedules and edition links. |
+| G-12 | deferred | `u26-rpsi` | Page display-title extraction. |
+| G-13 | deferred | `u26-i9c3` | Media-kind, attribution and count reconciliation. |
+| G-14 | deferred | `u26-7qu5` | Explicit repeat/watch-party relationships. |
+| G-15 | deferred | `u26-vegd` | Curated highlight display titles. |
+| G-16 | deferred | `u26-pw1e` | Consumer query guidance and query-specific checks. |
+| O-1 | fixed | `u26-34ea` | One canonical LinkedIn company page supplies organization scalars; unrelated page links are rejected. |
+| O-2 | fixed | `u26-i93b` | Sample/template metadata retains no unsupported repository or publisher attribution. |
+| O-3 | fixed | `u26-c2pi` | Ambiguous organization words do not create job-title mention edges. |
+| O-4 | fixed | `u26-9hh0` | Eighteen supported redundant records are merged; potentially distinct legal/parent entities remain separate. |
+| O-5 | fixed | `u26-q8g4` | Size is explicitly labeled LinkedIn size range; it is not presented as a verified headcount. |
+| O-6 | deferred | `u26-uuwz` | Verified GitHub organization pins for remaining sponsors. |
+| O-7 | deferred | `u26-aui8` | Additional sponsor LinkedIn source coverage. |
+| O-8 | deferred | `u26-fsrs` | Organization homepage normalization and source precedence. |
+| O-9 | deferred | `u26-0cdd` | Pinned-fork versus maintainer semantics. |
+| O-10 | deferred | `u26-yaso` | Gazetteer package repository/publisher mapping. |
+| O-11 | deferred | `u26-bria` | Additional organization-label curation. |
+| O-12 | deferred | `u26-3xez` | Go pseudo-version and remaining package-release semantics. |
+| O-13 | deferred | `u26-sszv` | Parent/subsidiary and software-vendor relationships. |
+| O-14 | deferred | `u26-daty` | Organization display-name curation. |
+| O-15 | deferred | `u26-4hks` | Organization description cleanup. |
+| O-16 | deferred | `u26-y247` | Copilot sub-product aliases. |
+| O-17 | fixed | `u26-tep1` | Company GitHub handles remain organization accounts; they do not become person-owned publishing accounts. |
 
 <!-- This document follows common-doc-guidelines.md.
 See github.com/jlevy/practical-prose and review guidelines before editing.

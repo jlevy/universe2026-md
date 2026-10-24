@@ -1,0 +1,69 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: curated-agenda-2025
+  event: event:github-universe-2025
+  label: Curated agenda
+  multi_valued: true
+  terms:
+  - id: term:curated-agenda-2025/what-s-new-from-github
+    label: What's new from GitHub?
+    source_id: 1755639187562001NofN
+    session_count: 26
+  - id: term:curated-agenda-2025/agentic-ai-model-context-protocol-mcp
+    label: Agentic AI + Model Context Protocol (MCP)
+    source_id: 1755639561076001wrH2
+    session_count: 25
+  - id: term:curated-agenda-2025/open-source
+    label: Open source
+    source_id: 1755639561076003wE8b
+    session_count: 11
+  - id: term:curated-agenda-2025/developers
+    label: Developers
+    source_id: 1755639561076004w63l
+    session_count: 22
+  - id: term:curated-agenda-2025/engineering-leaders
+    label: Engineering leaders
+    source_id: 1755639561076005wbab
+    session_count: 27
+  - id: term:curated-agenda-2025/security-professionals
+    label: Security professionals
+    source_id: 1755639561076006w3Os
+    session_count: 20
+  - id: term:curated-agenda-2025/financial-services
+    label: Financial Services
+    source_id: 1755639561076007w9W6
+    session_count: 11
+  - id: term:curated-agenda-2025/manufacturing
+    label: Manufacturing
+    source_id: 1755639561076008wLAi
+    session_count: 13
+  - id: term:curated-agenda-2025/healthcare-life-sciences
+    label: Healthcare & Life Sciences
+    source_id: 1755639561076009wozT
+    session_count: 8
+  - id: term:curated-agenda-2025/retail
+    label: Retail
+    source_id: 1755639561076010wu2g
+    session_count: 2
+  - id: term:curated-agenda-2025/recess
+    label: Recess!
+    source_id: 1756241411926001e9yw
+    session_count: 9
+  - id: term:curated-agenda-2025/ship-tell
+    label: Ship & Tell
+    source_id: 1759934581381001ZxUw
+    session_count: 9
+  - id: term:curated-agenda-2025/sponsor-evening-events
+    label: Sponsor Evening Events
+    source_id: 1756241411926002e1Dm
+    session_count: 22
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1755639187563001NgNm
+    retrieved_at: '2026-10-24T08:03:18Z'
+    snapshot: raw/editions/universe25/attributes.json

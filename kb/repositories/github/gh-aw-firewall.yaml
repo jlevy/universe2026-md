@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/gh-aw-firewall
+  full_name: github/gh-aw-firewall
+  url: https://github.com/github/gh-aw-firewall
+  description: GitHub Agentic Workflows Firewall
+  homepage: https://github.github.com/gh-aw-firewall/
+  stars: 155
+  forks: 78
+  watchers: 15
+  open_issues: 100
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: TypeScript
+  topics:
+  - agentic
+  - github
+  - workflows
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2025-10-16T22:26:49Z'
+  pushed_at: '2026-10-24T18:08:24Z'
+  owner_login: github
+  owner: gh:github
+  pinned_by:
+  - gh:lpcox
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: lpcox
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/gh-aw-firewall
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

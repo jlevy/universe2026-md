@@ -1,0 +1,678 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:pamela-fox
+  person: person:pamela-fox
+  brief_bio:
+    text: Pamela Fox is a Principal Cloud Advocate in Python at Microsoft who previously worked at Google,
+      Coursera and Khan Academy. Fox spoke at GitHub Universe 2023 and 2024 and speaks at GitHub Universe
+      2026 about building a developer knowledge base for GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: ea9cd788e363805730ebe3817d2cda445d569c4371553a11fd78c0960cdbcd49
+    stale: false
+  headline: Principal Cloud Advocate in Python at Microsoft
+  location: California
+  current_roles:
+  - Principal Cloud Advocate in Python at Microsoft
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai1212s
+    - ref: session:2024/ai1897d
+    - ref: session:2024/ai1959w
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Data Analytics
+    target: term:topic-2023/data-analytics
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Data Management
+    target: term:topic-2023/data-management
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1212s
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1897d
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1959w
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1897d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1897d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1959w
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1716w
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1716w
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1716w
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1716w
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev2769m
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Codespaces
+      ref: session:2024/ai1897d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1897d
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot CLI
+      ref: session:ldr1716w
+  - label: Microsoft Azure
+    target: software:azure
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure
+      ref: session:2023/dev2769m
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:ldr1716w
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:pamela-fox
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2023/dev2769m
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:pamelafox/python-project-template
+    - ref: repo:pamelafox/python-openai-demos
+    - ref: repo:pamelafox/presentation-skills
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:pamelafox/faded-parsons-static
+    - ref: repo:pamelafox/lscache
+    - ref: repo:pamelafox/font-previewer-extension
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:pamelafox/recursive-visualizations
+  - label: Bicep
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:pamelafox/translation-telephone
+  interests:
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+    - url: https://github.com/pamelafox/python-project-template
+      ref: repo:pamelafox/python-project-template
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.9
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715016944971001MMb0
+      ref: session:2024/ai1212s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: high
+    weight: 0.8
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+    - url: https://github.com/manekinekko/awesome-devcontainers
+      ref: repo:manekinekko/awesome-devcontainers
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: medium
+    weight: 0.78
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715016944971001MMb0
+      ref: session:2024/ai1212s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.78
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777700808239001XZyK
+      ref: session:ldr1716w
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+  - label: python
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/pamelafox/python-project-template
+      ref: repo:pamelafox/python-project-template
+    - url: https://github.com/pamelafox/recursive-visualizations
+      ref: repo:pamelafox/recursive-visualizations
+    - url: https://github.com/pallets/click
+      ref: repo:pallets/click
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    weight: 0.5
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777700808239001XZyK
+      ref: session:ldr1716w
+    - url: https://github.com/manekinekko/awesome-devcontainers
+      ref: repo:manekinekko/awesome-devcontainers
+  - label: awesome-list
+    basis: github_repositories
+    confidence: medium
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/manekinekko/awesome-devcontainers
+      ref: repo:manekinekko/awesome-devcontainers
+    - url: https://github.com/Azure/awesome-azd
+      ref: repo:azure/awesome-azd
+  - label: cli
+    basis: github_repositories
+    confidence: medium
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/pallets/click
+      ref: repo:pallets/click
+    - url: https://github.com/Azure/awesome-azd
+      ref: repo:azure/awesome-azd
+  - label: devcontainer
+    basis: github_repositories
+    confidence: medium
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/pamelafox/python-project-template
+      ref: repo:pamelafox/python-project-template
+    - url: https://github.com/manekinekko/awesome-devcontainers
+      ref: repo:manekinekko/awesome-devcontainers
+  open_source:
+  - repository: repo:pamelafox/lscache
+    relation: owner
+    stars: 1462
+    primary_language: JavaScript
+  - repository: repo:pamelafox/python-openai-demos
+    relation: owner
+    stars: 417
+    primary_language: Python
+  - repository: repo:pamelafox/python-project-template
+    relation: owner
+    stars: 153
+    primary_language: Python
+  - repository: repo:pamelafox/awesome-copilot-instructions
+    relation: owner
+    stars: 134
+  - repository: repo:pamelafox/presentation-skills
+    relation: owner
+    stars: 128
+    primary_language: Python
+  - repository: repo:pamelafox/font-previewer-extension
+    relation: owner
+    stars: 73
+    primary_language: JavaScript
+  - repository: repo:pamelafox/recursive-visualizations
+    relation: owner
+    stars: 65
+    primary_language: HTML
+  - repository: repo:pamelafox/translation-telephone
+    relation: owner
+    stars: 19
+    primary_language: Bicep
+  - repository: repo:pamelafox/faded-parsons-static
+    relation: owner
+    stars: 12
+    primary_language: JavaScript
+  - repository: repo:pallets/click
+    relation: contributor
+    stars: 17800
+    primary_language: Python
+  - repository: repo:amyjko/informatics-teaching-guide
+    relation: contributor
+    stars: 11
+    primary_language: HTML
+  - repository: repo:microsoftdocs/azure-dev-docs
+    relation: contributor
+    stars: 185
+    primary_language: Markdown
+  - repository: repo:manekinekko/awesome-devcontainers
+    relation: contributor
+    stars: 517
+    primary_language: JavaScript
+  - repository: repo:azure/awesome-azd
+    relation: contributor
+    stars: 273
+    primary_language: TypeScript
+  education:
+  - school: University of Southern California
+    school_ref: org:university-of-southern-california
+    evidence:
+      url: https://www.linkedin.com/in/pamela-s-fox
+      observed_at: '2026-10-24T08:15:26Z'
+  - school: University of Southern California
+    school_ref: org:university-of-southern-california
+    evidence:
+      url: https://www.linkedin.com/in/pamela-fox-5668b1b4
+      observed_at: '2026-10-24T08:47:16Z'
+  credentials:
+  - kind: certification
+    title: Group 2 Social and Behavioral Research Investigators
+    issuer: CITI Program
+    date: Dec 2021
+    url: https://www.citiprogram.org/verify/?w76ca44af-09e7-4485-ba83-4104a5655e16-46273037
+    evidence:
+      url: https://www.linkedin.com/in/pamela-s-fox
+      observed_at: '2026-10-24T08:15:26Z'
+  - kind: certification
+    title: Group 2 Social and Behavioral Research Investigators
+    issuer: CITI Program
+    date: Dec 2021
+    url: https://www.citiprogram.org/verify/?w76ca44af-09e7-4485-ba83-4104a5655e16-46273037
+    evidence:
+      url: https://www.linkedin.com/in/pamela-fox-5668b1b4
+      observed_at: '2026-10-24T08:47:16Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: volunteering
+    title: Chapter Founder, Curriculum Creator
+    detail: Girl Develop It · Education · Jan 2007 · - Present · 19 years 10 months · I started the first
+      GDI chapter in Australia, then started a chapter in SF when I moved here. I created all the core
+      curriculum for our chapter, which is CC-licensed and available at http://teaching-materials.org
+      · Jan 2007
+    evidence:
+      url: https://www.linkedin.com/in/pamela-s-fox
+      observed_at: '2026-10-24T08:15:26Z'
+  - kind: volunteering
+    title: Instructor
+    detail: Girls Who Code · Education · Aug 2013 · - May 2014 · 10 months · I taught the club at Lowell
+      High School in 2013-2014. Great group of girls! · Aug 2013
+    evidence:
+      url: https://www.linkedin.com/in/pamela-s-fox
+      observed_at: '2026-10-24T08:15:26Z'
+  - kind: volunteering
+    title: Classroom Co-Teacher
+    detail: TEALSK12 · Education · Jan 2018 · - Present · 8 years 10 months · I spent the semester in
+      Berkeley High School classrooms, co-teaching AP CS A and 2 Intro classes. I created a number of
+      lesson plans and projects to help them learn Java, HTML, CSS, and JavaScript. ( · Jan 2018
+    evidence:
+      url: https://www.linkedin.com/in/pamela-s-fox
+      observed_at: '2026-10-24T08:15:26Z'
+  - kind: volunteering
+    title: Teacher
+    detail: CoderDojo · Education · Jan 2013 · - Jul 2014 · 1 year 7 months · I ran multiple workshops
+      for K-12 students for the Silicon Valley chapter. · Jan 2013
+    evidence:
+      url: https://www.linkedin.com/in/pamela-s-fox
+      observed_at: '2026-10-24T08:15:26Z'
+  - kind: volunteering
+    title: Chapter Founder, Curriculum Creator
+    detail: Girl Develop It · Education · Jan 2007 · - Present · 19 years 10 months · I started the first
+      GDI chapter in Australia, then started a chapter in SF when I moved here. I created all the core
+      curriculum for our chapter, which is CC-licensed and available at http://teaching-materials.org
+      · Jan 2007
+    evidence:
+      url: https://www.linkedin.com/in/pamela-fox-5668b1b4
+      observed_at: '2026-10-24T08:47:16Z'
+  - kind: volunteering
+    title: Instructor
+    detail: Girls Who Code · Education · Aug 2013 · - May 2014 · 10 months · I taught the club at Lowell
+      High School in 2013-2014. Great group of girls! · Aug 2013
+    evidence:
+      url: https://www.linkedin.com/in/pamela-fox-5668b1b4
+      observed_at: '2026-10-24T08:47:16Z'
+  - kind: volunteering
+    title: Classroom Co-Teacher
+    detail: TEALSK12 · Education · Jan 2018 · - Present · 8 years 10 months · I spent the semester in
+      Berkeley High School classrooms, co-teaching AP CS A and 2 Intro classes. I created a number of
+      lesson plans and projects to help them learn Java, HTML, CSS, and JavaScript. ( · Jan 2018
+    evidence:
+      url: https://www.linkedin.com/in/pamela-fox-5668b1b4
+      observed_at: '2026-10-24T08:47:16Z'
+  - kind: volunteering
+    title: Teacher
+    detail: CoderDojo · Education · Jan 2013 · - Jul 2014 · 1 year 7 months · I ran multiple workshops
+      for K-12 students for the Silicon Valley chapter. · Jan 2013
+    evidence:
+      url: https://www.linkedin.com/in/pamela-fox-5668b1b4
+      observed_at: '2026-10-24T08:47:16Z'
+  recent_writing:
+  - title: |-
+      Join our 3-part Python + MCP series in December!
+
+      You'll learn how to...
+      🛠️ Build MCP servers with FastMCP
+      🤖 Connect servers to agents
+      ☁️ Deploy to the cloud
+      🔐 Add auth (API keys, OAuth2/PRM/DCR)
+
+      All free, on YouTube, with OSS code samples. Register:
+      🔗 https://t.co/pylZy5dFJR ht
+    url: https://twitter.com/10483202/status/1989424294280270083
+    published: '2025-11-14T20:04:48Z'
+    channel: x
+  - title: "Our 9-part Python + AI live series in October covered LLMs, embeddings, RAG, vision models,\
+      \ structured outputs, safety, tool-calling, agents and MCP.  \n\nGrab the recordings, slides, and\
+      \ code from:\nhttps://t.co/vCTu25Okko https://t.co/CFwXeC4dRQ"
+    url: https://twitter.com/10483202/status/1984267126560235592
+    published: '2025-10-31T14:32:03Z'
+    channel: x
+  - title: |-
+      My Python scripts are getting way cuter now that I discovered the Markdown() renderer from rich.
+      https://t.co/Ed6TRMZ8X2 https://t.co/Jr1eq0Ro6k
+    url: https://twitter.com/10483202/status/1983780458493309064
+    published: '2025-10-30T06:18:12Z'
+    channel: x
+  - title: I made a commit to pydantic-ai and now I'm watching the pre-commit thinking "dannng, I need
+      to add some fancier pre-commit hooks to my repos." Ligatures, spell check, smart quotes, oh my.
+      https://t.co/KCdtcLTv7s
+    url: https://twitter.com/10483202/status/1983052151229428132
+    published: '2025-10-28T06:04:10Z'
+    channel: x
+  - title: |-
+      We're dropping 3.9 support on our Python samples, which means we get to upgrade lots of syntax, like:
+      Optional[X] → X | None
+      Union[X, Y] → X | Y
+
+      Thanks to the "UP" option in ruff for finding everything that can be upgraded! https://t.co/3QfWsXX0RD
+    url: https://twitter.com/10483202/status/1983036296093413638
+    published: '2025-10-28T05:01:10Z'
+    channel: x
+  - title: Our Python+AI series is over, but you can still watch the videos, download the slides, and
+      try out the code. Get it all from https://t.co/qbhw0u9Lir https://t.co/WVubTM4TPj
+    url: https://twitter.com/10483202/status/1981805290120192398
+    published: '2025-10-24T19:29:35Z'
+    channel: x
+  - title: |-
+      I can finally announce our next hackathon!
+
+      🚀 AI Agents Hackathon 2025
+      A FREE 3-week virtual hackathon, Apr 8 – 30.
+      Learn from 30+ live streams across multiple languages, then build and submit your agent for a chance to win cash prizes! 💸
+
+      Join now: https://t.co/HqU5OBykfq https:
+    url: https://twitter.com/10483202/status/1901671749525413909
+    published: '2025-03-17T16:27:31Z'
+    channel: x
+  - title: "I just ported my GitHub actions workflow from `pip` to `uv pip` and OMG IT IS SO FAST. \U0001F3C3\
+      \U0001F3FD‍♀️\n\nFrom 2 min to 20 seconds for installs. \n\nDiff:\nhttps://t.co/wiZFHLRLhi"
+    url: https://twitter.com/10483202/status/1844493348142448862
+    published: '2024-10-10T21:40:57Z'
+    channel: x
+  - title: |-
+      Registration is open now for #RAGHack: a global hackathon to build RAG applications!
+
+      Plus, we'll have 25+ free live streams showing you different retrievers, models, frameworks, and flows.
+
+      Learn more and register @
+      https://t.co/dOjaSvxiM5 https://t.co/I0gxpLTwxV
+    url: https://twitter.com/10483202/status/1823084154659160552
+    published: '2024-08-12T19:48:28Z'
+    channel: x
+  - title: "Woo! I can now do full RAG with function calling &amp; hybrid search on a local PostgreSQL+pgvector\
+      \ with local ollama models (llama3.1, nomic-embed-text).  \nSoo fun!\nhttps://t.co/XraBIpfwzP https://t.co/Wcfsie1gZj"
+    url: https://twitter.com/10483202/status/1819528244322095192
+    published: '2024-08-03T00:18:33Z'
+    channel: x
+  - title: Best practices for prompting GitHub Copilot in VS Code
+    url: https://www.linkedin.com/pulse/best-practices-prompting-github-copilot-vs-code-pamela-fox
+    published: '2023-06-21T00:00:00.000Z'
+    channel: linkedin
+    summary: I've been using GitHub Copilot for the last six months in repositories large and small, old
+      and new. For me, GitHub…
+  - title: Best practices for prompting GitHub Copilot in VS Code
+    url: https://www.linkedin.com/pulse/best-practices-prompting-github-copilot-vs-code-pamela-fox
+    published: '2023-06-21T00:00:00.000Z'
+    channel: linkedin
+    summary: I've been using GitHub Copilot for the last six months in repositories large and small, old
+      and new. For me, GitHub…
+  talks:
+  - session:2023/dev2769m
+  - session:2024/ai1212s
+  - session:2024/ai1897d
+  - session:2024/ai1959w
+  - session:ldr1716w
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683842376812001m7gi
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pamelafox
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683842376812001m7gi
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683842376812001m7gi
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

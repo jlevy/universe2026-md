@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/biilmann
+  platform: x
+  handle: biilmann
+  url: https://x.com/biilmann
+  display_name: Matt Biilmann
+  bio: CEO and Co-founder of Netlify. Builder of things, coiner of terms.
+  location: San Francisco
+  website: http://www.netlify.com/
+  followers: 13737
+  following: 4202
+  posts_count: 16465
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/560874041452408833/a8obZPqr_normal.jpeg
+  banner_url: https://pbs.twimg.com/profile_banners/24203304/1422572106
+  created_at: '2009-03-13T16:48:57Z'
+  owner: person:matt-biilmann
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728675809463001IJ8N
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/biilmann
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

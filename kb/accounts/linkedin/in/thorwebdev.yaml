@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/thorwebdev
+  platform: linkedin
+  handle: in/thorwebdev
+  url: https://www.linkedin.com/in/thorwebdev
+  display_name: Thor Schaeff
+  location: New York
+  followers: 14058
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFHPiriKTWZmQ/profile-displayphoto-scale_200_200/B56aEzA7VMGgAg-/0/1791857245000?e=2147483647&v=beta&t=MpSQzc6zV7x3g6j6bo03LgdQd62WMExiW5fXLpEttIo
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEP-bL_h3F8xg/profile-displaybackgroundimage-shrink_200_800/B56aE8Ie1cG4AQ-/0/1792010219137?e=2147483647&v=beta&t=a2OyE77BmFxf5IXXuetDQ_VvpjPmW7MHy1lZURIxDyI
+  owner: person:thor-schaeff
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755624693491001yxGU
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/thorwebdev
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

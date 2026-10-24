@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mayaross
+  platform: linkedin
+  handle: in/mayaross
+  url: https://www.linkedin.com/in/mayaross
+  display_name: Maya Ross
+  bio: Product lead for GitHub's core developer experiences, leading the team responsible for…
+  location: New York
+  followers: 2653
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D03AQEnkvw0tV1Xrg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1549210905794?e=2147483647&v=beta&t=1jJlfj-HZPVnFX7-88bnio4ZVK6P7EBD5iWI2vNTi8U
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:maya-ross
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724938093853001Ezrf
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mayaross
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

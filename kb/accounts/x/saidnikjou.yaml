@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/saidnikjou
+  platform: x
+  handle: saidnikjou
+  url: https://x.com/saidnikjou
+  display_name: Said Nikjou P
+  bio: Senior Cloud Solution Architect- Microsoft
+  location: Texas, USA
+  website: https://www.linkedin.com/in/snikjou/
+  followers: 37
+  following: 73
+  posts_count: 70
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1682089781855920146/Drvj617y_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/93285896/1537844376
+  created_at: '2009-11-28T23:58:52Z'
+  owner: person:said-nikjou
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1789133692509001o2KV
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: snikjou
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/saidnikjou
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

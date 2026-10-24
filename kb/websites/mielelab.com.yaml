@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:mielelab.com
+  url: http://mielelab.com/
+  kind: personal
+  title: Home - MieleLab
+  description: Joshua Miele is a blind scientist, designer, author, and disability scholar. He writes
+    and advises on accessible design, emphasizing blindness and low vision.
+  owner: person:josh-miele
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://mielelab.com/feed/
+  - https://mielelab.com/comments/feed/
+  linked_accounts:
+  - acct:linkedin/in/jamielephd
+  sources:
+  - system: brightdata
+    url: https://x.com/berkeleyblink
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://mielelab.com/
+    record_id: http://mielelab.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:rewindio
+  login: rewindio
+  kind: organization
+  url: https://github.com/rewindio
+  name: Rewind
+  bio: Rewind - Cloud Backups
+  location: Ottawa, Ontario, Canada
+  website: https://rewind.com
+  public_repositories: 23
+  created_at: '2016-01-19T02:28:32Z'
+  top_repositories:
+  - repo:rewindio/aws-security-hub-cis-metrics
+  - repo:rewindio/terraform-rewindio-example
+  - repo:rewindio/shopify-webhook
+  linked_accounts:
+  - acct:x/rewind
+  entity: org:rewind
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: rewindio
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

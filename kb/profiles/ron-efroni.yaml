@@ -1,0 +1,202 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ron-efroni
+  person: person:ron-efroni
+  brief_bio:
+    text: The GitHub Universe 2026 listing describes Ron Efroni as CEO and Co-Founder at Flox and NixOS.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 8e1d4d8a3e155fc47f7b986ba369e299f7c640aee144775e08039d520602d655
+    stale: true
+  headline: CEO and Co-Founder at Flox
+  location: San Francisco
+  current_roles:
+  - CEO and Co-Founder at Flox
+  - NixOS Foundation
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1422h
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1422h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1422h
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1422h
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1422h
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1422h
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1422h
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1422h
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777582054604001iSWg
+      ref: session:tru1422h
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777582054604001iSWg
+      ref: session:tru1422h
+  - label: Dependabot
+    target: term:github-product/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777582054604001iSWg
+      ref: session:tru1422h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777582054604001iSWg
+      ref: session:tru1422h
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777582054604001iSWg
+      ref: session:tru1422h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777582054604001iSWg
+      ref: session:tru1422h
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777582054604001iSWg
+      ref: session:tru1422h
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777582054604001iSWg
+      ref: session:tru1422h
+  education:
+  - school: University of California, Irvine - The Paul Merage School of Business
+    evidence:
+      url: https://www.linkedin.com/in/ronefroni
+      observed_at: '2026-10-24T08:15:04Z'
+  spoken_languages:
+  - English
+  - Hebrew
+  activities:
+  - kind: course
+    title: .Net Design Patterns
+    evidence:
+      url: https://www.linkedin.com/in/ronefroni
+      observed_at: '2026-10-24T08:15:04Z'
+  - kind: course
+    title: Micro-Economics
+    evidence:
+      url: https://www.linkedin.com/in/ronefroni
+      observed_at: '2026-10-24T08:15:04Z'
+  - kind: course
+    title: Oracle DBA Advanced
+    evidence:
+      url: https://www.linkedin.com/in/ronefroni
+      observed_at: '2026-10-24T08:15:04Z'
+  - kind: course
+    title: Team Management
+    evidence:
+      url: https://www.linkedin.com/in/ronefroni
+      observed_at: '2026-10-24T08:15:04Z'
+  - kind: course
+    title: Windows Communication Foundation
+    evidence:
+      url: https://www.linkedin.com/in/ronefroni
+      observed_at: '2026-10-24T08:15:04Z'
+  talks:
+  - session:tru1422h
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686069111593001ys0A
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: refroni
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

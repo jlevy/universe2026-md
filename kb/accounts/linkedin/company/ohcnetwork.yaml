@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/ohcnetwork
+  platform: linkedin
+  handle: company/ohcnetwork
+  url: https://www.linkedin.com/company/ohcnetwork
+  display_name: Open Healthcare Network Foundation
+  bio: 'Open Healthcare Network is an open-source, community-driven initiative, founded on the belief
+    that better healthcare is a right, not a privilege. Our mission is simple yet profound: to revolutionize
+    healthcare delivery and make it accessible to all through innovation and collaboration. Led by over
+    600+ passionate contributors, we’ve built CARE, a state-of-the-art EMR system that integrates seamlessly
+    with healthcare facilities to reduce administrative burdens and improve patient care. Alongside it
+    is CARE Scribe, an AI tool designed to streamline documentation using voice technology, giving healthcare
+    providers more time to focus on their patients. Key Features &Highlights - ABDM HCX Integration -
+    Fully integrated with India''s Ayushman Bharat Digital Mission. - Real-time Monitoring - Enables tracking
+    of vitals and room conditions in adherence to ONVIF specifications for critical care environments.
+    - Medical Device Integration: Connects effortlessly with healthcare equipment using HL7 standards,
+    ensuring interoperability and efficiency. We are driven by a purpose larger than just technology.
+    Our products have already made a tangible difference - CARE was recognized as a 50th Digital Public
+    Good by the United Nations, and we’ve received support from major partners like GitHub, Microsoft,
+    and OpenAI. Join our movement. Whether you''re a developer, a healthcare professional, or simply someone
+    who believes in a better future for healthcare, you have a role to play. Together, we are shaping
+    a healthier, more equitable tomorrow. Explore our GitHub - https://github.com/ohcnetwork Join our
+    Slack Community - slack.ohc.network'
+  website: https://ohc.network/
+  followers: 3317
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGjJAd4tdaf8Q/company-logo_200_200/company-logo_200_200/0/1684903661505/ohcn_logo?e=2147483647&v=beta&t=pCe6L-fvgC2mPOhjdH5a4Yf2ZaaL2vOssiSSbIsASR0
+  owner: org:open-healthcare-network-foundation
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/bodhish
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/ohcnetwork
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

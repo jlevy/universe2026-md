@@ -1,0 +1,48 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:kristindew
+  login: kristindew
+  kind: user
+  url: https://github.com/kristindew
+  name: Kristin N. Dew
+  followers: 3
+  public_repositories: 0
+  created_at: '2015-06-10T14:55:13Z'
+  contributions_last_year:
+    total: 23
+    commits: 15
+    pull_requests: 7
+    issues: 0
+    reviews: 0
+  starred_repositories: 0
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:github/research-panel-sweepstakes
+  entity: person:kristin-n-dew
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kristindew
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

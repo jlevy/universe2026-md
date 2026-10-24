@@ -1,0 +1,154 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:andrew-lau
+  person: person:andrew-lau
+  brief_bio:
+    text: Andrew Lau is Co-Founder and CEO of Jellyfish, a software engineering intelligence platform,
+      and holds patents on hierarchical data-driven search and navigation. Lau spoke at GitHub Universe
+      2025 about showing Copilot's impact on engineering efficiency.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: d4899a5efa6753244d98d4f59beedb52f52601b25522416b4329df2623a245a8
+    stale: false
+  headline: Jellyfish
+  current_roles:
+  - Jellyfish
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1538d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1538d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1538d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/aut1538d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753202851150001iO5y
+      ref: session:2025/aut1538d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753202851150001iO5y
+      ref: session:2025/aut1538d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753202851150001iO5y
+      ref: session:2025/aut1538d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753202851150001iO5y
+      ref: session:2025/aut1538d
+  patents:
+  - title: System and method for an affinity capture, user feedback and affinity analysis
+    number: US US 9,530,160
+    date: December 27, 2016
+    evidence:
+      url: https://www.linkedin.com/in/amlau
+      observed_at: '2026-10-24T08:43:04Z'
+  - title: Scalable hierarchical data-driven navigation system and method for information retrieval
+    number: US 7,617,184
+    date: November 10, 2009
+    url: https://patents.google.com/patent/US7617184
+    evidence:
+      url: https://www.linkedin.com/in/amlau
+      observed_at: '2026-10-24T08:43:04Z'
+  - title: Integrated application for manipulating content in a hierarchical data-driven search and navigation
+      system
+    number: US 7,428,528
+    date: September 23, 2008
+    url: https://patents.google.com/patent/US7428528
+    evidence:
+      url: https://www.linkedin.com/in/amlau
+      observed_at: '2026-10-24T08:43:04Z'
+  - title: System and method for manipulating content in a hierarchical data-driven search and navigation
+      system
+    number: US 7,325,201
+    date: January 29, 2008
+    description: A data-driven, hierarchical information search and navigation system and method enable
+      search and navigation of sets of materials by certain common attributes that characterize the materials.
+      A rules engine provides for manipulation of the content displayed to the user based on the query
+      entered by the user. The rules engine includes one or more rules with a trigger and an action. The
+      action of a rule is performed only if the trigger is satisfied. A trigger may be specified in terms
+      of expressions of attribute-value pairs and is evaluated against a given query or navigation state.
+      The actions can include various techniques for content manipulation, such as supplementing content,
+      rendering content in a particular way, and sorting content in a particular way. An action may be
+      specified in terms of navigation states. The rules engine may include a script for processing the
+      rules.
+    url: https://patents.google.com/patent/US7325201
+    evidence:
+      url: https://www.linkedin.com/in/amlau
+      observed_at: '2026-10-24T08:43:04Z'
+  recent_writing:
+  - title: 'Newsflash: Your CEO Doesn’t Give a Flying Fortran About Velocity'
+    url: https://www.linkedin.com/pulse/newsflash-your-ceo-doesnt-give-flying-fortran-velocity-andrew-lau
+    published: '2020-11-10T00:00:00.000Z'
+    channel: linkedin
+    summary: (crossposted on the Jellyfish Blog) It’s time to get honest with ourselves about velocity.
+      Or is it Velocity?.
+  talks:
+  - session:2025/aut1538d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745852211148001uZbP
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

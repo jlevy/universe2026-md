@@ -1,0 +1,258 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:andy-kelly
+  person: person:andy-kelly
+  brief_bio:
+    text: Andy Kelly is vice president of research and development at Precisely, leading platform engineering,
+      SaaS foundation services and product security. Kelly speaks at GitHub Universe 2026 on what 95%
+      more pull requests taught about measuring Copilot success.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: eb1c5058d092f9d9671fd8c23192231210427edd0fc5cd5169f1aa51bc3e78fa
+    stale: false
+  headline: VP of Research and Development at Precisely
+  current_roles:
+  - VP of Research and Development at Precisely
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:ldr1863b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: Dependabot
+    target: term:github-product/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  education:
+  - school: Wigan and Leigh College
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  credentials:
+  - kind: certification
+    title: CCDA
+    issuer: Cisco Systems
+    date: Jun 2013
+    expires: Jun 2016
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: CCNA
+    issuer: Cisco
+    date: Mar 2003
+    expires: Jun 2016
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: CCNP
+    issuer: Cisco
+    date: Feb 2012
+    expires: Feb 2015
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: ITIL v3 Foundation
+    issuer: ITIL/ISEB
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: MCTS
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  activities:
+  - kind: course
+    title: CCNP - BCMSN
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: course
+    title: CCNP - ROUTE
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: course
+    title: CCNP - TSHOOT
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: course
+    title: ITIL Foundation v3
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: course
+    title: MCTS - Network Infrastructure
+    evidence:
+      url: https://www.linkedin.com/in/andydkelly
+      observed_at: '2026-10-24T08:11:32Z'
+  talks:
+  - session:ldr1863b
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1752611791015001J0sm
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: andydkelly-ig
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:sonarsource/sonarqube
+  full_name: SonarSource/sonarqube
+  url: https://github.com/SonarSource/sonarqube
+  description: Continuous Inspection
+  homepage: http://www.sonarqube.org
+  stars: 11103
+  forks: 2238
+  watchers: 338
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:12:22Z'
+  primary_language: Java
+  topics:
+  - sonarqube
+  - code-quality
+  - static-analysis
+  license: LGPL-3.0
+  archived: false
+  fork: false
+  created_at: '2011-01-05T11:05:17Z'
+  pushed_at: '2026-10-23T20:08:51Z'
+  owner_login: SonarSource
+  owner: gh:sonarsource
+  pinned_by:
+  - gh:sonarsource
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SonarSource
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SonarSource/sonarqube
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

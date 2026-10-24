@@ -1,0 +1,55 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dan-schocke
+  person: person:dan-schocke
+  brief_bio:
+    text: Daniel A. Schocke, listed as a Technical Architect and with a past affiliation at Accenture,
+      spoke at GitHub Universe 2023 about GitHub Copilot as an AI pair programmer.
+    cites:
+    - listed_role
+    - past_affiliations
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:34:19Z'
+    input_sha256: 2b94ac247243e97eaf6c01cd35e4dbe564cef32bc51af0a533b25cc4c0370afd
+    stale: false
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai2713m
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687186963790001NaGZ
+      ref: session:2023/ai2713m
+  talks:
+  - session:2023/ai2713m
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698769219562001AfgA
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

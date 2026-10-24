@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:openai/openai-python
+  full_name: openai/openai-python
+  url: https://github.com/openai/openai-python
+  description: The official Python library for the OpenAI API
+  homepage: https://pypi.org/project/openai/
+  stars: 31931
+  forks: 7888
+  watchers: 382
+  open_issues: 47
+  stats_observed_at: '2026-10-24T19:12:10Z'
+  primary_language: Python
+  topics:
+  - openai
+  - python
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2020-10-25T23:23:54Z'
+  pushed_at: '2026-10-23T23:32:30Z'
+  owner_login: openai
+  owner: gh:openai
+  pinned_by:
+  - gh:openai
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: openai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: openai/openai-python
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

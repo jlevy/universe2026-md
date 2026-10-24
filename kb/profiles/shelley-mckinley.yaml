@@ -1,0 +1,133 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:shelley-mckinley
+  person: person:shelley-mckinley
+  brief_bio:
+    text: Shelley McKinley works at Dream Games and was previously Chief Legal Officer at GitHub, leading
+      trust and safety, developer policy and legal teams. McKinley spoke at GitHub Universe 2023 and 2024
+      about getting AI tools approved and building a compliant AI strategy.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: f183f0157e07f4b2bfd4569c1bb2772035cacde3157c4e9892b24cc402fa2c56
+    stale: false
+  headline: Dream Games
+  current_roles:
+  - Dream Games
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2313m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1988m
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1988m
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686591632031001sacU
+      ref: session:2023/ai2313m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724974192258001igSN
+      ref: session:2024/ai1988m
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686591632031001sacU
+      ref: session:2023/ai2313m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724974192258001igSN
+      ref: session:2024/ai1988m
+  credentials:
+  - kind: certification
+    title: Accessibility in Action
+    issuer: Microsoft
+    date: Aug 2020
+    url: https://www.youracclaim.com/badges/554c5ce2-afbf-49f7-92e0-701001843b7c?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/shelleymckinley
+      observed_at: '2026-10-24T08:47:18Z'
+  patents:
+  - title: Content distribution and evaluation providing reviewer status
+    number: US 8,402,517
+    date: March 19, 2013
+    url: https://patents.google.com/patent/US8402517
+    evidence:
+      url: https://www.linkedin.com/in/shelleymckinley
+      observed_at: '2026-10-24T08:47:18Z'
+  recent_writing:
+  - title: Helping cities become climate resilient
+    url: https://www.linkedin.com/pulse/helping-cities-become-climate-resilient-shelley-mckinley
+    published: '2019-10-10T00:00:00.000Z'
+    channel: linkedin
+    summary: Climate change is one of the biggest issues the world is facing and efforts, or lack thereof,
+      of federal governments…
+  - title: Microsoft's CELA department wins awards from The American Lawyer!
+    url: https://www.linkedin.com/pulse/microsofts-cela-department-wins-awards-from-american-lawyer-mckinley
+    published: '2016-06-07T00:00:00.000Z'
+    channel: linkedin
+    summary: It was such an honor to represent Microsoft's corporate external and legal affairs department
+      and our Chief Legal…
+  - title: Empowering People with Technology they Trust -- Highly recommended reading from Microsoft President,
+      Brad Smith
+    url: https://www.linkedin.com/pulse/empowering-people-technology-trust-highly-reading-from-mckinley
+    published: '2015-11-13T00:00:00.000Z'
+    channel: linkedin
+    summary: Irrespective of whether you think Edward Snowden is a hero or a criminal, when he boarded
+      a plane bound for Hong Kong…
+  - title: Seeking solutions to the US-EU Safe Harbor Collapse
+    url: https://www.linkedin.com/pulse/seeking-solutions-us-eu-safe-harbor-collapse-shelley-mckinley
+    published: '2015-10-21T00:00:00.000Z'
+    channel: linkedin
+    summary: There are important issues being debated in DC, Brussels and beyond -- balancing economic
+      growth and innovation…
+  talks:
+  - session:2023/ai2313m
+  - session:2024/ai1988m
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686591837698001uXbq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686591837698001uXbq
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

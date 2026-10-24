@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/manuelsanchezrodriguez
+  platform: linkedin
+  handle: in/manuelsanchezrodriguez
+  url: https://www.linkedin.com/in/manuelsanchezrodriguez
+  display_name: Manuel Sanchez
+  bio: Global CTO of the Microsoft Alliance at NTT DATA. | Microsoft MVP Azure & AI…
+  location: London
+  followers: 5607
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQEf5rsn_FunQQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1720526293186?e=2147483647&v=beta&t=WAY5nhdSpc49y5ioaL4fZ2Vdgz718A4r7ebcZJJIHBA
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQG69y8XKfXhlg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1639666960536?e=2147483647&v=beta&t=oCv36gaISq5nOtJ7w9Tdj-ohmlT0sfAzxrRxHO0oqfk
+  owner: person:manuel-sanchez
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685605268026001bsmq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/manuelsanchezrodriguez
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

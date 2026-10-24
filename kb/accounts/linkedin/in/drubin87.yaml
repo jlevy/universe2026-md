@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/drubin87
+  platform: linkedin
+  handle: in/drubin87
+  url: https://www.linkedin.com/in/drubin87
+  display_name: David Rubin
+  bio: '"The only thing that drives me more than success is proving that the impossible is merely…'
+  location: Berlin
+  followers: 1576
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQH4Oneao3RAPw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517709171694?e=2147483647&v=beta&t=5gSnTfP_XGUmznPqbkUcf_Llyh_5B5TiP1edcbvSbTA
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:david-rubin
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692173463012001Z8YV
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/drubin87
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

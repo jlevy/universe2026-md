@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/elias-uriegas
+  platform: linkedin
+  handle: in/elias-uriegas
+  url: https://www.linkedin.com/in/elias-uriegas
+  display_name: Eli Uriegas
+  bio: I'm a self motivated developer who loves diving into new technologies and takes an active…
+  location: San Francisco
+  followers: 1497
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHj4_YBx6VGmA/profile-displaybackgroundimage-shrink_200_800/B56aD4ZnhIJMAY-/0/1790873860685?e=2147483647&v=beta&t=dnms3OjLgW5yLh4i87KO_21JW-0espSJ_FsTE5M0ayU
+  owner: person:eli-uriegas
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697580492807001qVFT
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/elias-uriegas
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

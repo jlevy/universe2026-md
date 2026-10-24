@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/timrogers
+  platform: x
+  handle: timrogers
+  url: https://x.com/timrogers
+  display_name: Tim Rogers
+  bio: Product leader and polyglot software engineer 👨‍💻 Leading Copilot coding agent at GitHub 🤖😻
+  location: London, UK
+  website: https://timrogers.co.uk/
+  followers: 1001
+  following: 515
+  posts_count: 29248
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1934909649255583746/2LG2c4eZ_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14127195/1348864022
+  created_at: '2008-03-11T20:40:21Z'
+  owner: person:tim-rogers
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697183379437001R4Y9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: timrogers
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/timrogers
+    record_id: sd_mvm4nigsgklpc8gkv
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

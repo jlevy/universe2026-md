@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:david-terol
+  person: person:david-terol
+  brief_bio:
+    text: David Terol was Head of Software Engineering Excellence at Philips, leading the company's initiative
+      to become an InnerSource-as-default company. Terol spoke at GitHub Universe 2025 in a Ship & Tell
+      session on Philips.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 47a1cac794243389e42365da172108d7950fc3d8f77d1079285e7e1a9d89feff
+    stale: false
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/1905
+  talks:
+  - session:2025/1905
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686080444859001queK
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

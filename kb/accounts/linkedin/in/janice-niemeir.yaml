@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/janice-niemeir
+  platform: linkedin
+  handle: in/janice-niemeir
+  url: https://www.linkedin.com/in/janice-niemeir
+  display_name: Janice Niemeir
+  bio: Technical writer turned product manager
+  location: Netherlands
+  followers: 504
+  connections: 497
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQG1G31j6SI4vw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648583725694?e=2147483647&v=beta&t=OQoSV5D70_kJ6TdgMjlWDkjmGUvnGo0Y2aPUVItGngA
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:janice
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699392208201001T40f
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/janice-niemeir
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

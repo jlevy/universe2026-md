@@ -1,0 +1,217 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:chandrasekar-gnanasambandam
+  person: person:chandrasekar-gnanasambandam
+  brief_bio:
+    text: Chandrasekar Gnanasambandam was a senior partner at McKinsey & Company co-leading its global
+      software and technology work and has written on developer velocity and cloud migration. Gnanasambandam
+      spoke at GitHub Universe 2024 about the AI-native product development lifecycle.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 31edaf86bc1006615df37aff177bd862722b21028623822024ed7353d0ab9e60
+    stale: false
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  publications:
+  - title: 'Cloud-migration opportunity: Business value grows, but missteps abound'
+    venue: McKinsey.com
+    date: October 1, 2021
+    description: Companies aim to embrace the cloud more fully, but many are already failing to reap the
+      sizable rewards. Outperformers have shown what it takes to overcome the costly hurdles.
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  - title: 'Developer Velocity at work: Key lessons from industry digital leaders'
+    venue: McKinsey.com
+    date: February 2, 2021
+    description: The experiences of several high-performing software development organizations in banking
+      and retail offer a road map to excellence.
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  - title: Transforming infrastructure operations for a hybrid-cloud world
+    venue: McKinsey.com
+    date: October 9, 2019
+    description: Despite the rapid growth of public-cloud adoption, internal-infrastructure teams are
+      well positioned to add unique value. But they’ll need to change their approach and evolve their
+      service.
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  - title: The product management talent dilemma
+    venue: McKinsey.com
+    date: November 28, 2018
+    description: Despite product managers’ central roles in software organizations, they are often neglected
+      from a talent-management perspective. Four levers can address this industry-wide challenge.
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  - title: 'New demand, new markets: What edge computing means for hardware companies'
+    venue: McKinsey.com
+    date: November 8, 2018
+    description: With over 100 edge use cases identified, the fast-growing need to power connected devices
+      demands a custom response from vendors.
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  - title: 'Grow fast or die slow: The role of profitability in sustainable growth'
+    venue: McKinsey & Company
+    date: October 27, 2017
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  - title: Innovation Is Much About Finding Partners as Building Products
+    venue: Harvard Business Review
+    date: Jul 2017
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  - title: A machine learning approach to venture capital
+    venue: McKinsey Quarterly
+    date: Jun 2017
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  - title: Product managers for the digital world
+    venue: McKinsey & Company
+    date: May 24, 2017
+    description: The role of the product manager is expanding due to the growing importance of data in
+      decision making, an increased customer and design focus, and the evolution of software-development
+      methodologies.
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  - title: An executive’s guide to software development
+    venue: Digital McKinsey
+    date: Feb 2017
+    evidence:
+      url: https://www.linkedin.com/in/chandra-gnanasambandam
+      observed_at: '2026-10-24T08:41:57Z'
+  recent_writing:
+  - title: 8 Essentials for Driving B2B SaaS Market Growth and Value
+    url: https://www.linkedin.com/pulse/8-essentials-driving-b2b-saas-market-growth-value-gnanasambandam
+    published: '2018-02-01T00:00:00.000Z'
+    channel: linkedin
+    summary: For SaaS companies, the Rule of 40 metric has become a popular measurement of general overall
+      company health. By…
+  talks:
+  - session:2024/ai2159m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728396479323001BIJH
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

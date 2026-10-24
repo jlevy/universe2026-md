@@ -1,0 +1,309 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jenny-hwang
+  person: person:jenny-hwang
+  brief_bio:
+    text: Jenny Hwang is Director of Product Research at GitHub, specializing in design innovation and
+      strategic foresight. Hwang spoke at GitHub Universe 2024 and speaks at GitHub Universe 2026 about
+      using GitHub Copilot for non-code workflows.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: d6e5fd3aa5492579fb1066009f34e3bc8bb6db4f4481dd2e5996d88d63c28859
+    stale: false
+  headline: Director of Product Research at GitHub
+  current_roles:
+  - Director of Product Research at GitHub
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1609l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1609l
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1609l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1609l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1609l
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1781s
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1781s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1781s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:ldr1781s
+  interests:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715364173238001Pnyc
+      ref: session:2024/ai1609l
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782496350477001BM6H
+      ref: session:ldr1781s
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715364173238001Pnyc
+      ref: session:2024/ai1609l
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782496350477001BM6H
+      ref: session:ldr1781s
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715364173238001Pnyc
+      ref: session:2024/ai1609l
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782496350477001BM6H
+      ref: session:ldr1781s
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715364173238001Pnyc
+      ref: session:2024/ai1609l
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715364173238001Pnyc
+      ref: session:2024/ai1609l
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715364173238001Pnyc
+      ref: session:2024/ai1609l
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715364173238001Pnyc
+      ref: session:2024/ai1609l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715364173238001Pnyc
+      ref: session:2024/ai1609l
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782496350477001BM6H
+      ref: session:ldr1781s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715364173238001Pnyc
+      ref: session:2024/ai1609l
+  education:
+  - school: McGill University
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  credentials:
+  - kind: honor
+    title: Breakthrough Leader Award
+    issuer: IBM
+    date: '2022-01-01T00:00:00.000Z'
+    description: The IBM Design Luminary program recognizes top talent by fostering career growth through
+      a set of curated experiences.
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  - kind: honor
+    title: 3rd Place - Association of Professional Futurists Awards
+    issuer: Association of Professional Futurists
+    date: '2019-06-01T00:00:00.000Z'
+    description: For the Strategic Foresight paper "The Future of Power in Justice"
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  - kind: honor
+    title: Bronze - New Launch
+    issuer: Strategy Awards
+    date: '2016-11-01T00:00:00.000Z'
+    description: Chevrolet's Spark launch - "The Ultimate Mobile Device"
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  - kind: certification
+    title: Digital Lab for Designers
+    issuer: Alberta College of Art + Design
+    date: Feb 2014
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  - kind: certification
+    title: Snowboard Instructor
+    issuer: Canadian Association of Snowboard Instructors (CASI)
+    date: Nov 2009
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  publications:
+  - title: Truth about Canadians
+    venue: McCann
+    date: September 20, 2016
+    description: A new study by McCann Canada in partnership with Ipsos Public Affairs on Canadians and
+      the changing Canadian landscape.
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  spoken_languages:
+  - Korean
+  - French
+  activities:
+  - kind: course
+    title: Consumer Behaviour
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  - kind: course
+    title: Human Motivation
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  - kind: course
+    title: Intro to Design Thinking
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  - kind: course
+    title: Intro to Web Development
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  - kind: course
+    title: Marketing Research
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  - kind: organization
+    title: Open Ideo Toronto Chapter
+    detail: Nov 2016 · Present
+    evidence:
+      url: https://www.linkedin.com/in/njennyhwang
+      observed_at: '2026-10-24T08:15:37Z'
+  talks:
+  - session:2024/ai1609l
+  - session:ldr1781s
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715363935252001iNZi
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jennynuri1991
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715363935252001iNZi
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

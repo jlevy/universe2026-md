@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/siminapasat
+  platform: x
+  handle: siminapasat
+  url: https://x.com/siminapasat
+  display_name: Simina Pasat
+  bio: Tech enthusiast, product manager and travel addict. ✨ Sr Director of Product, GitHub Copilot
+  location: Seattle, WA
+  followers: 518
+  following: 160
+  posts_count: 262
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/414516661111103488/QTuGZj7V_normal.png
+  banner_url: https://pbs.twimg.com/profile_banners/339537752/1378120040
+  created_at: '2011-07-21T07:59:34Z'
+  owner: person:simina-pasat
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697146983288001RJIa
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/siminapasat
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

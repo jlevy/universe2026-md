@@ -1,0 +1,65 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:jonjanego
+  login: jonjanego
+  kind: user
+  url: https://github.com/jonjanego
+  name: Jon Janego
+  company: '@github '
+  bio: "Product manager at @github, formerly at @aws and @veracode.\r\n\r\nHelping the world build more\
+    \ secure software, through the power of applied graph theory!"
+  location: Chicago, IL
+  followers: 81
+  public_repositories: 5
+  created_at: '2012-01-16T20:52:31Z'
+  contributions_last_year:
+    total: 928
+    commits: 82
+    pull_requests: 17
+    issues: 1
+    reviews: 11
+  starred_repositories: 35
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 1
+  contributed_to:
+  - repo:github/codeql
+  - repo:github/docs
+  - repo:badger/home
+  - repo:usetrmnl/plugins
+  - repo:rebolyte/wishlist-export
+  organization_logins:
+  - github
+  - dependabot
+  - advanced-security
+  pinned:
+  - repo:github/codeql
+  entity: person:jon-janego
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jonjanego
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Experience/v1
+  schema: ../_schemas/experience.schema.yaml
+  envelope: experience
+  status: permissive
+experience:
+  id: experience:after-hours-events
+  name: After hours events
+  description: After the sessions wrap, keep the conversation going at events designed to help you connect
+    with the people building what’s next.
+  category: experiment
+  schedule: Oct 28-29
+  location: Gateway Pavilion
+  venue: venue:gateway-pavilion
+  action: Learn more
+  action_url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog?tab.allsessions=1783449560443001ldrh&search.curatedagenda=1756241411926002e1Dm
+  image_url: https://static.rainfocus.com/github/universe26/static/staticfile/staticfile/Session_Image_after_hours_events_1782427155180001BMao.jpg
+  sources:
+  - system: rainfocus
+    url: https://reg.githubuniverse.com/flow/loadPage?pageUri=explore
+    retrieved_at: '2026-10-24T06:46:13Z'
+    snapshot: raw/rainfocus/pages/explore.json

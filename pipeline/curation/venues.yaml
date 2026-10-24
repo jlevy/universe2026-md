@@ -1,0 +1,73 @@
+# The Fort Mason Center campus and the buildings the catalog's room strings name.
+#
+# The catalog writes rooms as "<room> @ <place>[, <detail>]". A place matching one of
+# these aliases is a campus venue; any other place is treated as an outside venue whose
+# address is the text after "@".
+
+campus:
+  id: fort-mason-center
+  name: Fort Mason Center for Arts & Culture
+  address: 2 Marina Blvd, San Francisco, CA 94123
+
+venues:
+  festival-pavilion:
+    name: Festival Pavilion
+    kind: building
+    aliases: [Festival Pavilion]
+  gateway-pavilion:
+    name: Gateway Pavilion
+    kind: building
+    aliases: [Gateway Pavilion]
+  gateway-plaza:
+    name: Gateway Plaza
+    kind: outdoor
+    aliases: [Gateway Plaza]
+  firehouse:
+    name: Firehouse
+    kind: building
+    aliases: [Firehouse]
+  building-a:
+    name: Fort Mason Center Building A
+    kind: building
+    aliases: [Long Now Fort Mason Center Building A, Fort Mason Building A, Building A, Greens]
+  building-b:
+    name: Fort Mason Center Building B
+    kind: building
+    aliases: [Fort Mason Building B, Building B]
+  building-c:
+    name: Fort Mason Center Building C
+    kind: building
+    aliases: [Fort Mason Building C, Building C]
+  building-d:
+    name: Fort Mason Center Building D
+    kind: building
+    aliases: [Fort Mason Building D, Building D]
+  generals-residence:
+    name: General’s Residence
+    kind: building
+    aliases: [General's Residence, General’s Residence]
+  universe-plaza:
+    name: Universe Plaza
+    kind: outdoor
+    aliases: [Universe Plaza]
+  fort-mason-center:
+    name: Fort Mason Center for Arts & Culture
+    kind: campus
+    aliases: [Fort Mason, Fort Mason Center]
+
+# Areas inside a building that the catalog names in the place text.
+areas: [GitHub Central]
+
+# Earlier editions' places. Their room labels have no "@" and name the place as a
+# prefix instead ("YBCA - Demo Stage"); the prefix is removed from the room name.
+places:
+  yerba-buena-center-for-the-arts:
+    name: Yerba Buena Center for the Arts
+    kind: campus
+    address: 701 Mission St, San Francisco, CA 94103
+    prefixes: ["YBCA - "]
+  sfmoma:
+    name: San Francisco Museum of Modern Art
+    kind: building
+    address: 151 3rd St, San Francisco, CA 94103
+    prefixes: ["SFMOMA "]

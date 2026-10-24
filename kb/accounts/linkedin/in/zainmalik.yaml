@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/zainmalik
+  platform: linkedin
+  handle: in/zainmalik
+  url: https://www.linkedin.com/in/zainmalik
+  display_name: Zain M.
+  location: Austin
+  followers: 2271
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHdvEacOl0Njg/profile-displaybackgroundimage-shrink_200_800/B56ZfMDtIaHUAY-/0/1751475213166?e=2147483647&v=beta&t=7QivzpZxa9iKyQXRWmeYjw8-wryftsJHF7a-szpzVqI
+  owner: person:zain-malik
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695056265411001qBAb
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/zainmalik
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

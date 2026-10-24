@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/bytesofbree.bsky.social
+  platform: bluesky
+  handle: bytesofbree.bsky.social
+  url: https://bsky.app/profile/bytesofbree.bsky.social
+  display_name: ✨ Bree
+  bio: |
+    👩🏾‍💻 Dev Advocate & Content Creator | ⚛️ React Dev | 🎮 Part-time protector of Hyrule | ✌🏾 Opinions are my own
+    💫 bytesofbree.com/hello
+  followers: 1243
+  created_at: '2023-04-23T13:20:30Z'
+  owner: person:bree-hall
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744253167255001tmvm
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: bytesofbree.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

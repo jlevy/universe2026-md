@@ -1,0 +1,363 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:matas-rastenis
+  person: person:matas-rastenis
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes Matas Rastenis as Senior Software Engineer at Uber
+      Technologies Inc..
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 3686e4181c681047225d67d6398f308b76a6e8567ca7a2e2b8081d2631e9d9c6
+    stale: false
+  headline: Uber
+  current_roles:
+  - Uber
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1719b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1719b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1719b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1719b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1719b
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1719b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1719b
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: VSCode
+      ref: person:matas-rastenis
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715385345782001s66D
+      ref: session:2024/ai1719b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715385345782001s66D
+      ref: session:2024/ai1719b
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715385345782001s66D
+      ref: session:2024/ai1719b
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715385345782001s66D
+      ref: session:2024/ai1719b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715385345782001s66D
+      ref: session:2024/ai1719b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715385345782001s66D
+      ref: session:2024/ai1719b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715385345782001s66D
+      ref: session:2024/ai1719b
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715385345782001s66D
+      ref: session:2024/ai1719b
+  credentials:
+  - kind: honor
+    title: 29th National Lithuanian Informatics Olympiad, 3rd place
+    issuer: '-'
+    date: '2018-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: honor
+    title: Programming in C++ specialization, Honors
+    issuer: JKM
+    date: '2018-06-01T00:00:00.000Z'
+    description: Awarded for exceedingly high final exam, and sub-course scores.
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: certification
+    title: DSC Lead Certificate of Completion
+    issuer: Google Developers
+    date: Jul 2021
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: certification
+    title: Deploy to Kubernetes in Google Cloud
+    issuer: Qwiklabs
+    date: Jul 2020
+    url: https://google.qwiklabs.com/public_profiles/114578cd-9853-41b8-9c50-b80b063bcf45
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: certification
+    title: Kubernetes in Google Cloud
+    issuer: Qwiklabs
+    date: Jun 2020
+    url: https://google.qwiklabs.com/public_profiles/114578cd-9853-41b8-9c50-b80b063bcf45
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: certification
+    title: Google Cloud Essentials
+    issuer: Qwiklabs
+    date: May 2020
+    url: https://google.qwiklabs.com/public_profiles/114578cd-9853-41b8-9c50-b80b063bcf45
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  spoken_languages:
+  - English
+  - Lithuanian
+  activities:
+  - kind: project
+    title: HEFA Inventory management system
+    detail: Frictionless inventory management. Support for eBay, Shopify, Depop, Bump, Grailed, Etsy,
+      and more.Find out more at HEFA.lt · Aug 2018
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: react-hooks-uikit-express-oauth-boiler-v2
+    detail: Used React, TypeScript, and Docker to create React-Hooks-UiKit-Express-OAuth-Boiler-v2, which
+      provides a full-stack, deployment-ready Progressive Web Application scaffold, and has 112 stars
+      on GitHub. · Dec 2020
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: open-authenticator - Easy, Self-Hosted Authentication Service Provider
+    detail: A stateless, minimal, dockerized authentication service for easy auth management. Supports
+      custom strategies and a wide variety of PassportJS strategies.Features:Set up one OAuth flow, enable
+      a myriad of ways to authenticate!Demo page with multiple auth choicesEasily add supoprted PassportJS
+      methods via guided CLI tool, or define custom strategies yourself. Examples for SMS and Pushover
+      includedUpon authentication, your application receives the identifier and profile data in a standardized
+      formatRun as a standalone container or include it in your Docker compositionAutomatic TLS certificate
+      generation if running standalone (requires ports 443 and 80) · Jan 2020
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: netcore-postgres-oauth-boiler - A Boilerplate for .NET Core
+    detail: A basic .NET Core website boilerplate using PostgreSQL for storage, Adminer for db management,
+      Let's Encrypt for SSL certificates and Nginx for routing.Features:-Vanilla .NET Core Server Setup:=Razor
+      pages, upholstered with the Materialize css toolkit=Server -> client data rendering demo=Native
+      Entity Framework database interface, with PostgreSQL=Asynchronous design=Auth gated route examples-User
+      authentication via multiple OAuth providers (Google, GitHub, Reddit)-Auth method merging, linking
+      and unlinking of social auth accounts-TLS/HTTPS:=Automatic certificate generation powered by Let's
+      Encrypt=Multiple hosting modes.-A lightweight PostgreSQL management tool included - Adminer · Feb
+      2020
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: paxful-tracker - A monitoring system for the Paxful trading platform
+    detail: A tool for receiving notifications and executing actions based on custom flags from Paxful.
+      · Jan 2020
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: Frogger in X86 Assembly
+    detail: Frogger, fully implemented in x86 assembly. A project for the Computer Organization course(CSE1400)
+      at Delft University of Technology. · Aug 2019
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: Docker-Vuestorefront-Magento2 eCommerce easy-setup Composition
+    detail: Magento 2, Kibana, vue-storefront and vue-storefront-api all in one convenient package!Features:Easy-start
+      vue-storefront and vue-storefront-api initiationOptional automatic example data setupAutomatic datapump
+      integration · Jul 2019
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: gps-scramble - NPM Package for working with generation of GPS coordinates
+    detail: 'A tool for controlled randomization/spoofing of GPS coordinates.Repo: https://github.com/Scharkee/gps-scramble
+      · Aug 2019'
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: react-redux-passport-uikit-express-boiler - A React Starter for WebDev
+    detail: 'A React+Redux boilerplate using Express as backend, UIKit for frontend, MongoDB for storage
+      & Passport for auth.Features:Webpack+Babel for the client, babel-node for the serverUser authentication
+      either via email/password or via Google/Twitter. PassportJS allows for easy expansion to authentication
+      via other social platforms.Auth method merging, linking and unlinking of social auth accountsClient:
+      React, backed by UIKit components/layout/icons, Redux + Redux-saga state management, Mocked auth-gated
+      data example, redux-devtools and redux-logger automatically enabled in devmode for testing purposesServer:
+      Express, Async/await design with await-to-js error handling, MongoDB(mongoose) for storage, Auth-based
+      route guardingTLS/HTTPS: Automatic certificate generation powered by greenlock, Self hosted mode
+      (443/80 port access required) + simple mode (http only, custom port), for use with reverse proxy
+      configurations · Jun 2019'
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: React/Native/Nativebase/Go Boilerplate
+    detail: A React-Native/Redux/Native-Base/Go full stack boilerplate for building Android and IOS apps.
+      · Jun 2019
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: easy-currencies - an NPM Package to aid in working with currencies.
+    detail: 'Convert currencies with ease! Five exchange rate providers to choose from, others easily
+      implementable.Easily convert currencies using one of the five built-in API providersTwo modes of
+      operation:Easy mode - no configuration or API keys required at allCustom mode - choose one or more
+      providers, use key-gated providers.\Add custom providers (private or public)Provider fallbacks -
+      automatic switching of active providers in the case of failureRepo: https://github.com/Scharkee/easy-currencies
+      · Jun 2019'
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: vue-nuxt-passport-bulma-express-boiler - A Vue+Vuex Starter
+    detail: 'A Vue+Vuex starter with Nuxt scaffolding, Bulma styling, and Express backend. Demo available
+      at https://vuenuxt.demos.matasr.com/Features:Guided setup for config variables + API keysFlexible
+      scaffolding, provided by NuxtJSAuth via email/password or via Google/Twitter.Auth merging, linking
+      and unlinking of social auth accountsClient: Vue + Bulma, Vuex state management example, Auth-gated
+      data example, Based closely off of nuxt-community/express-template for ease of comparisonThe Backend
+      is an Express server with Lightweight local storage provided with NeDB · May 2019'
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: Slim Video Host - A platform for uploading and managing raw video
+    detail: 'A cross-platform private video hosting platform.Features:NuxtJS scaffolding (Vue + vue-router
+      + Vuex)ElementUI-based web interfaceExpress backend, with auth-gated routes, (optional) auto TLS
+      certificate generation, and a lightweight database provided by NeDB.Uncompressed video hosting,
+      resulting in fast uploads and minuscule processing times''Bufferless'' upload process - files larger
+      than available RAM can be uploadedLink-based video sharing, no public video searching and/or displayAnonymous
+      likes/dislikesAdmin tools: Space management, User stats, Content management: Cumulative video list,
+      Video deletion, User warnings/bans for inappropriate uploadsUser dashboard: Statistics, Video list
+      w/ video renaming, removal and link regeneration, Code entry dialog, used for space expansion/priviledge
+      elevation · Aug 2017'
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: SpyParty Helper
+    detail: An interactive tool to enable players to practice the intricate timings required by the Steam
+      game SpyParty, in order to become more effective players. Includes assisted triggering of events
+      and live timing illustration. · Jan 2018
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  - kind: project
+    title: Emporium - Plantation Management/Tycoon Game
+    detail: A Unity-based 3D game about organizing, developing, and maintaining a juice plantation. Includes
+      semi-multiplayer features, anticheat, and over a dozen different buildings and tree types at launch.Was
+      set to be available on Web, Android, and iOS. · Jan 2016
+    evidence:
+      url: https://www.linkedin.com/in/matasr
+      observed_at: '2026-10-24T08:47:18Z'
+  talks:
+  - session:2024/ai1719b
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696615812281001xGay
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Scharkee
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

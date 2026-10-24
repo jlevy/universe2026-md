@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:nicknisi/pi-extensions
+  full_name: nicknisi/pi-extensions
+  url: https://github.com/nicknisi/pi-extensions
+  description: Nick Nisi's pi extensions — a pnpm monorepo of independently installable pi packages (@nicknisi/pi-*).
+    TUI polish, side-channel LLM tools, Claude Code compat, and session plumbing for the pi coding agent.
+  stars: 47
+  forks: 10
+  watchers: 1
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:34Z'
+  primary_language: TypeScript
+  topics:
+  - changesets
+  - pi-coding-agent
+  - pi-extensions
+  - pi-package
+  - pnpm-monorepo
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-08-06T17:15:39Z'
+  pushed_at: '2026-10-23T20:31:16Z'
+  owner_login: nicknisi
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grinich
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: nicknisi/pi-extensions
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

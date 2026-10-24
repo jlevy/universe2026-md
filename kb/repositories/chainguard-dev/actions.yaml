@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:chainguard-dev/actions
+  full_name: chainguard-dev/actions
+  url: https://github.com/chainguard-dev/actions
+  description: A collection of reusable Github Actions workflows.
+  stars: 179
+  forks: 83
+  watchers: 2
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  primary_language: TypeScript
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2022-02-21T17:03:15Z'
+  pushed_at: '2026-10-23T01:59:42Z'
+  owner_login: chainguard-dev
+  owner: gh:chainguard-dev
+  pinned_by:
+  - gh:chainguard-dev
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: chainguard-dev
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: chainguard-dev/actions
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

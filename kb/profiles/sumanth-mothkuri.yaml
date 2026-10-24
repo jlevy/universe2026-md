@@ -1,0 +1,425 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sumanth-mothkuri
+  person: person:sumanth-mothkuri
+  brief_bio:
+    text: Sumanth Mothkuri is a Senior Platform Engineer at Equifax who builds pipelines, monitoring and
+      agentic workflows with GitHub Actions, Jenkins, Terraform and MCP integrations. Mothkuri speaks
+      at GitHub Universe 2026 on an MCP platform that closes its own loop.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: f099f18a873c26d4d645d8fd4325ed22d7246b3c568175485d8e821810eceb5c
+    stale: false
+  headline: Sr. Platform Engineer at Equifax
+  current_roles:
+  - Sr. Platform Engineer at Equifax
+  expertise:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Tech debt
+    target: term:topic/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:sumanth-mothkuri
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Jenkins
+    target: software:jenkins
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Jenkins
+      ref: person:sumanth-mothkuri
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: MCP
+      ref: person:sumanth-mothkuri
+  - label: Terraform
+    target: software:terraform
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Terraform
+      ref: person:sumanth-mothkuri
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  interests:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Tech debt
+    target: term:topic/tech-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  education:
+  - school: University of Southern California
+    school_ref: org:university-of-southern-california
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  credentials:
+  - kind: honor
+    title: Kony Spot Award
+    issuer: Shyam Prakash Velupula (Manager, SDK team)
+    date: '2019-03-01T00:00:00.000Z'
+    description: Awarded with Kony Spot award for my contributions to Windows Offline Objects.
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: certification
+    title: Python for Machine Learning and Data Science Bootcamp
+    issuer: Udemy
+    date: Mar 2018
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: certification
+    title: Google Cloud Certified Generative AI Leader
+    issuer: Google
+    date: Dec 2025
+    expires: Dec 2028
+    url: https://www.credly.com/badges/90d31958-4f37-4ee5-936d-4f6624e769ef/public_url
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: certification
+    title: Google Cloud Certified Professional Cloud DevOps Engineer
+    issuer: Google
+    date: May 2024
+    expires: May 2026
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: certification
+    title: Google India Challenge Scholarship
+    issuer: Udacity
+    date: Feb 2018
+    expires: May 2018
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  spoken_languages:
+  - English
+  - Telugu
+  - Hindi
+  activities:
+  - kind: volunteering
+    title: Mathematics Instructor
+    detail: Teach for Los Angeles · Education · Sep 2019 · - Dec 2019 · 4 months · Sep 2019
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: project
+    title: Park it Right
+    detail: Co-developed an ML agent that is adept in obstacle avoidance and seamless navigation in order
+      to navigate through moving obstacles to park at the highlighted spot in a multi-level car navigation
+      game in Unity.Done using Reinforcement Learning, TensorFlow, Unity 3D, C#, PPO - Unity ML agents,
+      Imitation Learning · Jan 2021
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: project
+    title: Stock Market Application
+    detail: '- A single page responsive Angular web application that lets users track stock in real time
+      by displaying stock prices in an SMA chart and trade them.- The website also showcases the top news
+      of the selected company with an option to share it on social media.- An auto refresh feature updates
+      the stock price every 15 sec when the market is open.- Done using Angular, Type Script, Java Script,
+      Node JS, HighCharts, Tiingo, AWS, GCP · Oct 2020'
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: project
+    title: Stock Search
+    detail: '- A static website that allows the users to search stock information such as Company data
+      and its stock data like open, close, high and low prices using Tiingo Stock API. - The website also
+      features an option to see the Intraday Area Line Stock HighChart and the top news of the selected
+      company.- Done using HTML, CSS, Java Script, HighCharts, AWS, Python, Flask · Oct 2020'
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: project
+    title: Spam Detection
+    detail: '- Classified mails into spam and ham (not spam) using Naïve Bayes Algorithm and concepts
+      of Natural Language Processing utilizing NLTK toolkit.- Done using Python, NLTK. · Mar 2020'
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: project
+    title: GeoSpatial Data Handling
+    detail: '- An application to handle spatial data that takes spatial coordinates as input to generate,
+      visualize and perform queries on spatial data with the help of Postgres, OpenLayers ( JavaScript
+      API)- Done using Python, PostgreSQL, OpenLayers, HTML, XML. · Nov 2019'
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: project
+    title: Digital Bus Ticket System
+    detail: '- Proposed idea to digitize conventional ticket purchasing system in public transports as
+      part of Purdue University EPICS program, resulting in selection of idea to develop a prototype.
+      - Led a team to develop a prototype using Android Studio, that made use of QR code to identify tickets,
+      reducing in fraudulent use of old tickets.- Done using Java, SQL, Android Studio. · Feb 2018'
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: project
+    title: File-based management system
+    detail: '- A system which has the ability to read .csv files and perform operations similar to RDBMS
+      like create, delete, join and project tables based on given conditions.- Done using C Programming.
+      · Nov 2017'
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: course
+    title: Analysis of Algorithms
+    detail: CSCI 570
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: course
+    title: Applied Machine Learning for Games
+    detail: CSCI 527
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: course
+    title: Applied Natural Language Processing
+    detail: CSCI 544
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: course
+    title: Database Systems
+    detail: CSCI 585
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: course
+    title: Information Retrieval
+    detail: CSCI 572
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: course
+    title: Machine Learning
+    detail: CSCI 567
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: course
+    title: Web Technologies
+    detail: CSCI 571
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  - kind: organization
+    title: IEEE Student branch
+    detail: Jan 2017 · Jan 2018
+    evidence:
+      url: https://www.linkedin.com/in/sumanth-mothkuri
+      observed_at: '2026-10-24T08:16:32Z'
+  talks:
+  - session:ldr1594h
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777520824902001cJ4W
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: vssumanthmothkuri
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

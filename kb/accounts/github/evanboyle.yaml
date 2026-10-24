@@ -1,0 +1,56 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:evanboyle
+  login: EvanBoyle
+  kind: user
+  url: https://github.com/EvanBoyle
+  name: Evan Boyle
+  company: '@github'
+  bio: "Building @github copilot agents\r\n\r\nPreviously @pulumi @amzn @azure"
+  location: Bainbridge Island
+  followers: 128
+  public_repositories: 34
+  created_at: '2012-10-13T18:59:42Z'
+  contributions_last_year:
+    total: 14738
+    commits: 17
+    pull_requests: 1
+    issues: 2
+    reviews: 4
+  starred_repositories: 45
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 22
+  contributed_to:
+  - repo:github/copilot-sdk
+  linked_accounts:
+  - acct:x/_evan_boyle
+  entity: person:evan-boyle
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: EvanBoyle
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

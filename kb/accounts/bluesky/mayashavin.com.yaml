@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/mayashavin.com
+  platform: bluesky
+  handle: mayashavin.com
+  url: https://bsky.app/profile/mayashavin.com
+  display_name: Maya Shavin
+  bio: "\U0001F469\U0001F3FB‍\U0001F4BB Senior SE @Microsoft Industry AI\n\U0001F4D5 O’Reilly author -\
+    \ Learning Vue\n\U0001F50D Accessibility champ\n\U0001F30E Web GDE, Cloudinary Ambassador\n\nCreator\
+    \ of colorgen.dev, OSS maintainer & tech speaker. \n\n\U0001F4CC https://mayashavin.com\n☕️ https://www.buymeacoffee.com/VTLRKH6"
+  followers: 823
+  created_at: '2023-05-15T06:34:47Z'
+  owner: person:maya-shavin
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686645252066001oKBi
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mayashavin
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: mayashavin.com
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

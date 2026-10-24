@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/sergical
+  platform: x
+  handle: sergical
+  url: https://x.com/sergical
+  display_name: Serge
+  bio: curiosity maxxing. learning and sharing learnings. Born in 🇺🇦 Raised in 🇨🇦
+  location: Toronto, Ontario
+  website: https://serg.tech/
+  followers: 3224
+  following: 1258
+  posts_count: 10639
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1911632766149484544/qyXiTsAy_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/294392319/1728670896
+  created_at: '2011-05-07T02:21:09Z'
+  owner: person:serge-dybskiy
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785876748469001ECLT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: sergical
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/sergical
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,26 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:jhutchings.net
+  url: https://www.jhutchings.net/
+  kind: personal
+  description: Product manager, sailor, cyclist, photographer, and trivia enthusiast
+  owner: person:justin-hutchings
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: brightdata
+    url: https://x.com/jhutchings0
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://www.jhutchings.net/
+    record_id: https://www.jhutchings.net/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

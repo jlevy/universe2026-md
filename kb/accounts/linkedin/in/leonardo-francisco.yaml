@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/leonardo-francisco
+  platform: linkedin
+  handle: in/leonardo-francisco
+  url: https://www.linkedin.com/in/leonardo-francisco
+  display_name: Leonardo de Oliveira Pinto Francisco
+  bio: Technology leader with extensive experience in digital transformation, specializing in…
+  location: Brazil
+  followers: 4634
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQFPC4HaxNF_wA/profile-displayphoto-scale_200_200/B4DZf042u.GkAY-/0/1752160235161?e=2147483647&v=beta&t=Ex6eOvN1-Dc4CTCtO-cNBhanXoS9a389mt_Vwh-10V8
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQG8agF90wsaxg/profile-displaybackgroundimage-shrink_200_800/B4DZf1KWGXG8Ag-/0/1752164819796?e=2147483647&v=beta&t=afMQBtWmmbidOrzs4GX23_Nn1qIrRldcy3bQpNfig_g
+  owner: person:leonardo-francisco
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725651590397001z6MP
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/leonardo-francisco
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

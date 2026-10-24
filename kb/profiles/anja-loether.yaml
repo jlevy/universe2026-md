@@ -1,0 +1,144 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:anja-loether
+  person: person:anja-loether
+  brief_bio:
+    text: 'Anja Loether is an application security professional at XBOW who moved into security from software
+      development. Loether spoke at GitHub Universe 2025 in the session CodeQL: Choose Your Own (Security)
+      Adventure.'
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 463b45bfd64bd991128418cd8578cfe853ac39dbc1de7fdcf8fdea1d199c0833
+    stale: false
+  headline: XBOW
+  current_roles:
+  - XBOW
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1349b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1349b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1349b
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CodeQL
+      ref: session:2025/sec1349b
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746187746440001WGML
+      ref: session:2025/sec1349b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746187746440001WGML
+      ref: session:2025/sec1349b
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746187746440001WGML
+      ref: session:2025/sec1349b
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746187746440001WGML
+      ref: session:2025/sec1349b
+  credentials:
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Feb 2023
+    evidence:
+      url: https://www.linkedin.com/in/anja-loether
+      observed_at: '2026-10-24T08:42:49Z'
+  recent_writing:
+  - title: I want your LOVE!
+    url: https://www.linkedin.com/pulse/i-want-your-love-anja-loether
+    published: '2019-09-19T00:00:00.000Z'
+    channel: linkedin
+    summary: '"I don''t want your money, honey, I want your love" Wendy James, 1988 Bwindi Impenetrable
+      Forrest, National Park in…'
+  - title: Save the chubby unicorn!
+    url: https://www.linkedin.com/pulse/save-chubby-unicorn-anja-loether
+    published: '2017-12-07T00:00:00.000Z'
+    channel: linkedin
+    summary: No, this is not the latest species in the Apache zoo. If you know me, it’s a fact that I
+      don’t do early mornings.
+  - title: Data management, storage and processing technologies on a single, horizontally scalable platform
+    url: https://www.linkedin.com/pulse/data-management-storage-processing-technologies-single-anja-loether
+    published: '2017-09-07T00:00:00.000Z'
+    channel: linkedin
+    summary: Mizuho Bank Adopts MapR Platform for Greater Speed and Efficiency in its Asset Liability
+      Management System
+  - title: Persist Kafka Data as JSON in NoSQL Storage
+    url: https://www.linkedin.com/pulse/persist-kafka-data-json-nosql-storage-anja-loether
+    published: '2017-02-28T00:00:00.000Z'
+    channel: linkedin
+    summary: Achieve more agility while providing a scalable and fault tolerant way to save streaming
+      data in long-term storage. How…
+  - title: Turning Data into Capital
+    url: https://www.linkedin.com/pulse/turning-data-capital-anja-lother
+    published: '2016-05-09T00:00:00.000Z'
+    channel: linkedin
+    summary: How much is mismanaged data losing your business? Oracle Big Data can help http://ora.cl/ye3
+  talks:
+  - session:2025/sec1349b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685623636452001PRrR
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

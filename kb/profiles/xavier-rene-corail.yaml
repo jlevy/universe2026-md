@@ -1,0 +1,377 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:xavier-rene-corail
+  person: person:xavier-rene-corail
+  brief_bio:
+    text: Xavier René-Corail is Senior Director of the GitHub Security Lab and previously led developer
+      advocacy at Semmle. René-Corail spoke at GitHub Universe 2023 and 2024 and speaks at GitHub Universe
+      2026 on how GitHub secures open source.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: 5af41634efa1aae623a6dc9b0e120f5fed3dc8a1ca21471b43ec6bbb4e8fd7f4
+    stale: false
+  headline: Sr. Dir, Security Research at GitHub
+  location: San Francisco
+  current_roles:
+  - Sr. Dir, Security Research at GitHub
+  expertise:
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/sec1939m
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  interests:
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    weight: 0.77
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+    - url: https://github.com/github/opensource.guide
+      ref: repo:github/opensource.guide
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.69
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: Dependabot
+    target: term:github-product/dependabot
+    basis: session_facets
+    confidence: medium
+    weight: 0.46
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.46
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.46
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: medium
+    weight: 0.46
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: medium
+    weight: 0.46
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 0.46
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: high
+    weight: 0.38
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+    - url: https://github.com/skills/secure-code-game
+      ref: repo:skills/secure-code-game
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  open_source:
+  - repository: repo:github/opensource.guide
+    relation: contributor
+    stars: 15752
+    primary_language: HTML
+  - repository: repo:github/securitylab
+    relation: contributor
+    stars: 1634
+    primary_language: C
+  - repository: repo:skills/secure-code-game
+    relation: contributor
+    stars: 2849
+    primary_language: JavaScript
+  - repository: repo:githubsecuritylab/seclab-taskflow-agent
+    relation: contributor
+    stars: 279
+    primary_language: Python
+  - repository: repo:githubsecuritylab/gh-secure
+    relation: contributor
+    stars: 681
+    primary_language: Shell
+  credentials:
+  - kind: certification
+    title: 'Program Committee Member: Open Source Summit North America 2022'
+    issuer: The Linux Foundation
+    date: May 2022
+    url: https://www.credly.com/badges/70498721-9b24-48d1-a2b7-0ffc7c646804?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/xavier-rené-corail-2428431
+      observed_at: '2026-10-24T08:15:27Z'
+  - kind: certification
+    title: Secure Software Development Fundamentals
+    issuer: The Linux Foundation
+    date: Mar 2021
+    url: https://credentials.edx.org/credentials/c9397a596f714d77b2e6d08f8689955f/
+    evidence:
+      url: https://www.linkedin.com/in/xavier-rené-corail-2428431
+      observed_at: '2026-10-24T08:15:27Z'
+  - kind: certification
+    title: SAFe Agilist
+    issuer: Scaled Agile, Inc.
+    date: Sep 2016
+    url: https://www.youracclaim.com/badges/02a5c5f0-29ba-4b88-acf1-b86408f306a8
+    evidence:
+      url: https://www.linkedin.com/in/xavier-rené-corail-2428431
+      observed_at: '2026-10-24T08:15:27Z'
+  - kind: certification
+    title: Principles of Reactive Programming
+    issuer: Coursera
+    date: Dec 2013
+    evidence:
+      url: https://www.linkedin.com/in/xavier-rené-corail-2428431
+      observed_at: '2026-10-24T08:15:27Z'
+  - kind: certification
+    title: Functional Programming Principles in Scala
+    issuer: Coursera
+    date: May 2013
+    evidence:
+      url: https://www.linkedin.com/in/xavier-rené-corail-2428431
+      observed_at: '2026-10-24T08:15:27Z'
+  - kind: certification
+    title: Certified SCRUM Master
+    issuer: Scrum Alliance
+    date: May 2011
+    evidence:
+      url: https://www.linkedin.com/in/xavier-rené-corail-2428431
+      observed_at: '2026-10-24T08:15:27Z'
+  talks:
+  - session:2023/sec2830l
+  - session:2024/sec1939m
+  - session:tru1394m
+  - session:tru2022a
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683825114408001nGm8
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: xcorail
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683825114408001nGm8
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683825114408001nGm8
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

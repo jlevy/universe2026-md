@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/ripple
+  platform: linkedin
+  handle: company/ripple
+  url: https://www.linkedin.com/company/ripple
+  display_name: Ripple
+  bio: Using proven crypto and blockchain technology honed over a decade, Ripple’s enterprise-grade solutions
+    are faster, more transparent, and more cost-effective than traditional financial services. Our customers
+    use these solutions to source crypto, facilitate instant payments, empower their treasury, engage
+    new audiences, lower capital requirements, and drive new revenue. Founded in 2012, Ripple's vision
+    is to enable a world where value moves as seamlessly as information flows today—an Internet of Value.
+    Ripple is the only enterprise blockchain company today with products in commercial use. Ripple’s global
+    payments network includes over 300 customers across 40+ countries and six continents.
+  website: https://www.ripple.com/
+  followers: 490396
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEKIG_L21BqTA/company-logo_200_200/B56ZUFnbr4GQAM-/0/1739555978246/rippleofficial_logo?e=2147483647&v=beta&t=flZB2rq1S-157tarpApJAkj0G155Zpt8RicNV_opHo4
+  owner: org:ripple
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/bcbeck
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/ripple
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

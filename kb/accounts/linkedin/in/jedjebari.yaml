@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jedjebari
+  platform: linkedin
+  handle: in/jedjebari
+  url: https://www.linkedin.com/in/jedjebari
+  display_name: Jérôme Djebari
+  bio: Within a transversal IT dev team, I try to make developers life easier from development…
+  location: Greater Toulouse Metropolitan Area
+  followers: 230
+  connections: 220
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQG-AJk6g2hngQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1586931391850?e=2147483647&v=beta&t=Nse3M5hNHIJuJmu6ShgSW9jGi9sfy-MB7A1ktlXMobY
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:jerome-djebari
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687361230731001yyB8
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jedjebari
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

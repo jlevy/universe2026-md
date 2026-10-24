@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/drguthals
+  platform: linkedin
+  handle: in/drguthals
+  url: https://www.linkedin.com/in/drguthals
+  display_name: Sarah Guthals, PhD
+  bio: I am currently a lead on the cross-functional agentic solutions team at Meta. I’ve…
+  location: United States
+  followers: 4669
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQG_L7PkewvZDw/profile-displayphoto-scale_200_200/B56ZflshYOG0AY-/0/1751905343482?e=2147483647&v=beta&t=WYjjd3X4ruOCxDDWLxaTgl3uZeMAqXwLvh4TDwf6qjM
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFFfb3aOjvozQ/profile-displaybackgroundimage-shrink_200_800/B56Zflt7JhHUAU-/0/1751905712958?e=2147483647&v=beta&t=B5Ek3K7zYagMjaMecO5cyuAkmc_c7sGgvu0QRxGjdwQ
+  owner: person:sarah-guthals
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715373487695001lVRu
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/drguthals
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,257 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:gabriel-marangoni-moita
+  person: person:gabriel-marangoni-moita
+  brief_bio:
+    text: Gabriel Marangoni Moita is the GitHub Product Owner at SAP, whose team runs SAP's two central
+      GitHub Enterprise Server deployments with more than 50,000 active users. Marangoni Moita spoke at
+      GitHub Universe 2024 about collaboration across organizations using GitHub Projects.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 649771e78b2bf7dc6628af1344bb2f7210cc2eb7e2bda63083c254a7ae6121b3
+    stale: false
+  headline: SAP
+  current_roles:
+  - SAP
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1857d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1857d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1857d
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1857d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1857d
+  technologies:
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Enterprise Server
+      ref: person:gabriel-marangoni-moita
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Projects
+      ref: session:2024/dev1857d
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715963546381001JnHs
+      ref: session:2024/dev1857d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715963546381001JnHs
+      ref: session:2024/dev1857d
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715963546381001JnHs
+      ref: session:2024/dev1857d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715963546381001JnHs
+      ref: session:2024/dev1857d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715963546381001JnHs
+      ref: session:2024/dev1857d
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715963546381001JnHs
+      ref: session:2024/dev1857d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715963546381001JnHs
+      ref: session:2024/dev1857d
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715963546381001JnHs
+      ref: session:2024/dev1857d
+  education:
+  - school: Universidade Federal do Rio Grande do Sul
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  credentials:
+  - kind: certification
+    title: Technology Skills - AI Practitioner
+    issuer: SAP
+    date: Sep 2026
+    url: https://www.credly.com/badges/db83ae06-d3a9-4692-97d0-954beffae23d/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  - kind: certification
+    title: Drive Ignite Transformation Skill - Catalyst Connector
+    issuer: SAP
+    date: Nov 2025
+    url: https://www.credly.com/badges/3a3a02f5-6742-4ed7-be74-25bfdcef4992/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  - kind: certification
+    title: Mural Champion
+    issuer: Mural
+    date: Nov 2025
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  - kind: certification
+    title: Exploring SAP’s Strategy for 2025 - Record of Achievement
+    issuer: SAP
+    date: Jan 2025
+    url: https://www.credly.com/badges/badef455-7ee3-4f27-a828-100055dcc21a/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  - kind: certification
+    title: Methodology Skills - Product Thinking Essentials
+    issuer: SAP
+    date: Sep 2024
+    url: https://www.credly.com/badges/108fee2a-80ff-4cb9-a3d7-056ae74c945f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  - kind: certification
+    title: Developer Skills 2019 - Academy for Engineering
+    issuer: SAP
+    date: Mar 2019
+    url: https://www.youracclaim.com/badges/ef107fc9-e45e-4589-a2ea-0a8637cf4228?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  - kind: certification
+    title: Certified SAFe® 6 Product Owner/Product Manager
+    issuer: Scaled Agile, Inc.
+    date: May 2023
+    expires: May 2024
+    url: https://www.credly.com/badges/1a0b7d9f-73d4-4e64-a045-c47da8f7c0f4/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  spoken_languages:
+  - Portuguese
+  - English
+  - German
+  activities:
+  - kind: course
+    title: Foundational Skills for Data Science
+    detail: February 2020 - Stanford
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  - kind: course
+    title: SAP Academy for Engineering
+    detail: First Cohort
+    evidence:
+      url: https://www.linkedin.com/in/gabriel-marangoni-moita
+      observed_at: '2026-10-24T08:44:52Z'
+  recent_writing:
+  - title: The Journey Out of the Comfort Zone
+    url: https://www.linkedin.com/pulse/journey-out-comfort-zone-gabriel-moita
+    published: '2020-05-19T00:00:00.000Z'
+    channel: linkedin
+    summary: After 6 months, the SAP Academy for Engineering has finished. One of the promises they made
+      us was that they would make…
+  - title: How the SAP Academy for Engineering taught me the power of Diversity
+    url: https://www.linkedin.com/pulse/how-sap-academy-engineering-taught-me-power-diversity-gabriel-moita
+    published: '2019-12-04T00:00:00.000Z'
+    channel: linkedin
+    summary: “Strength lies in differences, not in similarities.” – Stephen Covey The Academy for Engineering
+      brought together…
+  talks:
+  - session:2024/dev1857d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1723742843700001AMFy
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:codeql
+  name: CodeQL
+  aliases:
+  - CodeQL
+  kind: github_product
+  vendor: org:github
+  repositories:
+  - repo:github/codeql
+  mentioned_in:
+  - person:bas-van-schaik
+  - person:ben-rodes
+  - person:jeongsoo-lee
+  - person:luke-cartey
+  - person:luke-young
+  - person:mike-fairhurst
+  - person:nicolas-will
+  - person:remco-vermeulen
+  - person:shadi-samadi
+  - session:2023/sec2747w
+  - session:2023/sec2757d
+  - session:2024/sec1595b
+  - session:2024/sec1709s
+  - session:2024/sec1955w
+  - session:2025/sec1166d
+  - session:2025/sec1325s
+  - session:2025/sec1349b
+  - session:2025/sec1437d
+  - session:2025/sec1741m
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

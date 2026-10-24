@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/adamhjk
+  platform: x
+  handle: adamhjk
+  url: https://x.com/adamhjk
+  display_name: Adam Jacob
+  bio: "CEO of Swamp Club, Co-Founder of Chef. Sustainable free and open source software communities.\
+    \ Music. He/Him. \n\nhttps://t.co/fyc6yziWBv"
+  location: San Francisco, CA
+  website: http://swamp-club.com/
+  followers: 20132
+  following: 1487
+  posts_count: 49442
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/942839783402889216/H44OYbaK_normal.jpg
+  created_at: '2008-02-19T18:02:55Z'
+  owner: person:adam-jacob
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777675947876001stxC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: adamhjk
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/adamhjk
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

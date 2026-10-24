@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/microsoft-ai
+  platform: linkedin
+  handle: company/microsoft-ai
+  url: https://www.linkedin.com/company/microsoft-ai
+  display_name: Microsoft AI
+  bio: 'At MAI we’re building a new class of safer, more capable AI systems we call Humanist Superintelligence:
+    AI that is always aligned, controllable, and in service of humanity.'
+  website: https://microsoft.ai/
+  followers: 111686
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQHFvUw9m77CbA/company-logo_200_200/B56ZnovjGLIsAI-/0/1760546414603/microsoft_ai_logo?e=2147483647&v=beta&t=PHxFysL0SwLi29zxHz1DtmrxAoxf8aXuKC0EnXQo8Yg
+  owner: org:microsoft-superintelligence
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/yanan-cai-6239a4ab
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/microsoft-ai
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

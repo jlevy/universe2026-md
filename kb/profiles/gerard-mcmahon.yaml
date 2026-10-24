@@ -1,0 +1,305 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:gerard-mcmahon
+  person: person:gerard-mcmahon
+  brief_bio:
+    text: Gerard McMahon was Head of ALM Tools and Platforms at Fidelity Investments, working to improve
+      developer experience, feature velocity and quality. McMahon spoke at GitHub Universe 2023 in the
+      Day 2 keynote and about accelerating innovation without compromising customer trust.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: dfdabd5e63fa17bd50fc3e3b10a89977fc5dffabd519a41e86e4beb4f6f746fa
+    stale: false
+  expertise:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2845k
+    - ref: session:2023/sec2846m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2845k
+    - ref: session:2023/sec2846m
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2845k
+    - ref: session:2023/sec2846m
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2845k
+    - ref: session:2023/sec2846m
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2845k
+    - ref: session:2023/sec2846m
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Data Analytics
+    target: term:topic-2023/data-analytics
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Data Management
+    target: term:topic-2023/data-management
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Scrum
+    target: term:topic-2023/scrum
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  interests:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  credentials:
+  - kind: certification
+    title: cdCon 2021 Speaker
+    issuer: The Linux Foundation
+    date: Jul 2021
+    url: https://www.credly.com/badges/88733394-c1a8-43b5-b134-38953fc18f1c?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/germcmahon
+      observed_at: '2026-10-24T08:45:42Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect - Associate
+    issuer: Amazon Web Services (AWS)
+    evidence:
+      url: https://www.linkedin.com/in/germcmahon
+      observed_at: '2026-10-24T08:45:42Z'
+  talks:
+  - session:2023/dev2845k
+  - session:2023/sec2846m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692862732680001aEtW
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

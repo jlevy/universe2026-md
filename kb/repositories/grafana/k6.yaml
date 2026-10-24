@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:grafana/k6
+  full_name: grafana/k6
+  url: https://github.com/grafana/k6
+  description: A modern load testing tool, using Go and JavaScript
+  homepage: https://grafana.com/oss/k6/
+  stars: 32025
+  forks: 1696
+  watchers: 326
+  open_issues: 664
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Go
+  topics:
+  - golang
+  - load-testing
+  - load-generator
+  - javascript
+  - es6
+  - performance
+  - go
+  - hacktoberfest
+  - k6
+  license: AGPL-3.0
+  archived: false
+  fork: false
+  created_at: '2016-03-21T15:30:24Z'
+  pushed_at: '2026-10-23T13:52:21Z'
+  owner_login: grafana
+  owner: gh:grafana
+  pinned_by:
+  - gh:grafana
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana/k6
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

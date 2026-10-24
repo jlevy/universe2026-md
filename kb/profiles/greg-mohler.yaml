@@ -1,0 +1,332 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:greg-mohler
+  person: person:greg-mohler
+  brief_bio:
+    text: Greg Mohler is a Senior Service Delivery Engineer on GitHub's expert services team who helps
+      customers adopt DevSecOps at scale. Mohler led a GitHub Advanced Security certification workshop
+      at GitHub Universe 2023 and spoke at GitHub Universe 2025 about a risk-based rollout of the product.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: de99a06b9e60c067174580cd8c3d3b09806fd23609c411b7bdbd6b9d5d284ab1
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2744w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2744w
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2744w
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2744w
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2744w
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1364w
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1364w
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1364w
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1364w
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/sec2744w
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: session:2025/sec1364w
+  interests:
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490415001K6hi
+      ref: session:2023/sec2744w
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490415001K6hi
+      ref: session:2023/sec2744w
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490415001K6hi
+      ref: session:2023/sec2744w
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490415001K6hi
+      ref: session:2023/sec2744w
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: GitHub Secret Protection
+    target: term:github-product-2025/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490415001K6hi
+      ref: session:2023/sec2744w
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490415001K6hi
+      ref: session:2023/sec2744w
+  education:
+  - school: University of Delaware
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  credentials:
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Apr 2021
+    url: https://www.credly.com/badges/cdb0ac08-113f-4983-bbb9-d2759806d34b?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  - kind: certification
+    title: Certified Implementation Specialist - Vulnerability Response
+    issuer: ServiceNow
+    date: Oct 2019
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  - kind: certification
+    title: Designer Core
+    issuer: Alteryx
+    date: Nov 2018
+    url: https://s3.us-east-2.amazonaws.com/ayx.certificates/Greg_Mohler_20181105_AlterxDesignerCore.pdf
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  - kind: certification
+    title: GitHub Copilot
+    issuer: GitHub
+    date: Jan 2025
+    expires: Jan 2028
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  - kind: certification
+    title: GIAC Cloud Security Automation Certification (GCSA)
+    issuer: GIAC Certifications
+    date: Oct 2022
+    expires: Oct 2026
+    url: https://www.credly.com/badges/be7b4947-1d43-4b4f-b69d-2e84d140a41d/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Apr 2023
+    expires: Apr 2025
+    url: https://www.credly.com/badges/47c32ed8-62da-47bd-8410-b482f8373752/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Jan 2023
+    expires: Jan 2025
+    url: https://www.credly.com/badges/3cf210fc-e5dd-4ce9-8ffb-ccbef4de5def/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Apr 2022
+    expires: Apr 2024
+    url: https://www.credly.com/badges/1e9c7260-595b-4c7c-a5d1-65ce7d59abbf/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  - kind: certification
+    title: AWS Certified Security – Specialty
+    issuer: Amazon Web Services (AWS)
+    date: May 2020
+    expires: May 2023
+    url: http://aws.amazon.com/verification
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  - kind: certification
+    title: Splunk Core Certified Power User
+    issuer: Splunk
+    date: Apr 2020
+    expires: Apr 2023
+    url: https://www.youracclaim.com/badges/e5c14eca-b3d1-4571-8f44-099d8cc7c6f9/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gmohler
+      observed_at: '2026-10-24T08:44:59Z'
+  talks:
+  - session:2023/sec2744w
+  - session:2025/sec1364w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248038001wqXZ
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248038001wqXZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

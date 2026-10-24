@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/rizel-bobb-semple
+  platform: linkedin
+  handle: in/rizel-bobb-semple
+  url: https://www.linkedin.com/in/rizel-bobb-semple
+  display_name: Rizel Scarlett
+  bio: 'Rizel Scarlett is driven by a singular mission: making powerful technology feel human…'
+  location: Boston
+  followers: 10748
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQG9oACNALWGmg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1516777704231?e=2147483647&v=beta&t=lDwIlg-oNQbrfH3XZC5-u8j2a49DGsf668pptwU8Lq0
+  owner: person:rizel-scarlett
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746242817811001G0Rf
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694192487472001BR32
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/rizel-bobb-semple
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

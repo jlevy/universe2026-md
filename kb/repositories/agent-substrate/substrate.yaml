@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:agent-substrate/substrate
+  full_name: agent-substrate/substrate
+  url: https://github.com/agent-substrate/substrate
+  description: 'Agent Substrate: the core system'
+  stars: 5769
+  forks: 624
+  watchers: 30
+  open_issues: 486
+  stats_observed_at: '2026-10-24T19:09:45Z'
+  primary_language: Go
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2026-05-13T19:02:38Z'
+  pushed_at: '2026-10-24T16:41:19Z'
+  owner_login: agent-substrate
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: doniacld
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: agent-substrate/substrate
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

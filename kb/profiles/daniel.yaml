@@ -1,0 +1,83 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:daniel
+  person: person:daniel
+  brief_bio:
+    text: Daniel Kimmelmann was a Solutions Lead at Postman, helping customers design and deploy API and
+      AI agent solutions with Postman Flows. Kimmelmann spoke at GitHub Universe 2025 about building an
+      AI agent to triage GitHub Issues.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 299b9cec5ec06fe7a6ac6a7c739aa82a8ddaaa7d4f4de67178acc8c4e0d54755
+    stale: false
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1558s
+  technologies:
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Issues
+      ref: session:2025/bld1558s
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754932628376001pLzi
+      ref: session:2025/bld1558s
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754932628376001pLzi
+      ref: session:2025/bld1558s
+  - label: Projects and Issues
+    target: term:github-product-2025/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754932628376001pLzi
+      ref: session:2025/bld1558s
+  talks:
+  - session:2025/bld1558s
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696883584199001xD6T
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

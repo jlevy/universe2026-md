@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/cqueern
+  platform: linkedin
+  handle: in/cqueern
+  url: https://www.linkedin.com/in/cqueern
+  display_name: Caleb Queern
+  bio: I’m passionate about reducing risk at scale so large, important entities have more…
+  location: Austin
+  followers: 3877
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEVnV9z0aiTvg/profile-displaybackgroundimage-shrink_200_800/B56aFQ0g4tJ4AQ-/0/1792357307915?e=2147483647&v=beta&t=FPzAGUzZDuYIZuW9MYwmoLj5D3YW2ba4rRDzEAAVFdo
+  owner: person:caleb-queern
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686163701652001i7Pv
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/cqueern
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

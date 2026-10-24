@@ -1,0 +1,477 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:grant-griffiths
+  person: person:grant-griffiths
+  brief_bio:
+    text: Grant Griffiths is a Founding Engineer at NeuBird AI leading infrastructure and platform engineering,
+      was technical lead for the Portworx CSI Driver and holds a patent on access control in distributed
+      storage. Griffiths speaks at GitHub Universe 2026 on wiring NeuBird and Copilot via MCP.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: ff4c3fd06483096635edb4fae1103c4caf548e5fcb371212476e95d2de32fb33
+    stale: true
+  headline: Founding Engineer at NeuBird
+  location: San Francisco, CA
+  current_roles:
+  - Founding Engineer at NeuBird
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1774d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1774d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:ldr1774d
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1774d
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:grant-griffiths
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:ldr1774d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1774d
+  programming_languages:
+  - label: Go
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:kubernetes-csi/external-provisioner
+    - ref: repo:libopenstorage/openstorage
+    - ref: repo:ggriffiths/kubernetes
+  interests:
+  - label: storage
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/container-storage-interface/spec
+      ref: repo:container-storage-interface/spec
+    - url: https://github.com/libopenstorage/openstorage
+      ref: repo:libopenstorage/openstorage
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1780696164160001GrZU
+      ref: session:ldr1774d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1780696164160001GrZU
+      ref: session:ldr1774d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1780696164160001GrZU
+      ref: session:ldr1774d
+  - label: GitHub Enterprise Server
+    target: term:github-product/github-enterprise-server
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1780696164160001GrZU
+      ref: session:ldr1774d
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1780696164160001GrZU
+      ref: session:ldr1774d
+  - label: containers
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/container-storage-interface/spec
+      ref: repo:container-storage-interface/spec
+  - label: csi
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/container-storage-interface/spec
+      ref: repo:container-storage-interface/spec
+  - label: daemon
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/libopenstorage/openstorage
+      ref: repo:libopenstorage/openstorage
+  - label: docker-volumes
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/libopenstorage/openstorage
+      ref: repo:libopenstorage/openstorage
+  - label: driver
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/libopenstorage/openstorage
+      ref: repo:libopenstorage/openstorage
+  - label: graph-driver
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/libopenstorage/openstorage
+      ref: repo:libopenstorage/openstorage
+  open_source:
+  - repository: repo:container-storage-interface/spec
+    relation: pinned
+    stars: 1494
+    primary_language: Makefile
+  - repository: repo:libopenstorage/openstorage
+    relation: pinned
+    stars: 542
+    primary_language: Go
+  - repository: repo:kubernetes-csi/external-provisioner
+    relation: pinned
+    stars: 420
+    primary_language: Go
+  - repository: repo:ggriffiths/kubernetes
+    relation: owner
+    stars: 0
+    primary_language: Go
+  - repository: repo:monitoringartist/logicmonitor-mcp-server
+    relation: contributor
+    stars: 13
+    primary_language: TypeScript
+  - repository: repo:neubirdai/neubird-terminal
+    relation: contributor
+    stars: 3
+  credentials:
+  - kind: honor
+    title: Predix Transform Hackathon 3rd place
+    issuer: GE Digital
+    date: '2016-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Predix Discover Hackathon 2nd place
+    issuer: GE Digital
+    date: '2016-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: IEEE Computer Science Award
+    issuer: Syracuse University EECS Department
+    date: '2015-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: DiscoverE New Faces of Engineering Award
+    issuer: IEEE-USA
+    date: '2015-04-01T00:00:00.000Z'
+    description: '- Nominated by IEEE-USA along with two other students - Selected as award winner by
+      DiscoverE'
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Intel Intern of the Week (June 12th, 2014)
+    issuer: Intel Corporation
+    date: '2014-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: 2nd Place, 2013 IEEE Region 1 Student Micromouse Competition
+    issuer: IEEE Region 1
+    date: '2013-04-01T00:00:00.000Z'
+    description: • Competed against 7 teams from all across IEEE Region 1 (Northeastern USA) at MIT
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: 594th Place
+    issuer: IEEEXtreme 6.0 24-Hour Online Programming Competition
+    date: '2012-10-01T00:00:00.000Z'
+    description: • Placed 594th out of 2000 teams in a 24-Hour Programming Competition • Competed against
+      teams of both Undergraduate and Graduate students as Sophomores
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Highest Proficiency in Architecture, Engineering, and Computer Graphics
+    issuer: Hopewell Valley Central High School
+    date: '2011-06-01T00:00:00.000Z'
+    description: • Digital Logic Design, Introduction to Engineering Design, Principles of Engineering,
+      Architecture 1, Architecture 2, Architecture 3, Flash MX Design, Introduction to Computer Science
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon North America 2022'
+    issuer: The Linux Foundation
+    date: Nov 2022
+    url: https://www.credly.com/badges/777af16c-d08c-43cb-b394-0a00fd147910/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: HashiCorp Core Contributor 2022
+    issuer: HashiCorp
+    date: Feb 2022
+    url: https://www.credly.com/badges/544fe3e5-3db4-44e7-87c5-481ae2b4aff7?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon Europe 2020'
+    issuer: The Linux Foundation
+    date: Aug 2020
+    url: https://www.credly.com/badges/dfae94ae-e819-447a-86d4-0cd41809944c?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  patents:
+  - title: Controlling Public Access Of Resources In A Secure Distributed Storage System
+    number: '11531467'
+    date: December 20, 2022
+    description: A method for controlling public access of resources in a secure distributed storage system
+      using an API level model. A request to access a volume is checked for authentication. If the request
+      does not include an authentication token ID, a guest role is created and assigned to the requestor.
+      The guest role can only access public volumes or owned volumes that specifically allow public access.
+      The guest role can be updated using API management.
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  activities:
+  - kind: course
+    title: Abstract Algebra
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Abstract Mathematics
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Analysis of Algorithms
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Combinatorics
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Computability Theory
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Computer Organization & Programming Systems
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Data Structures
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Design of Operating Systems
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Linear Algebra 1
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Linear Algebra 2
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Number Theory
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Numerical Methods with Programming
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Ordinary Differential Equations
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Probability
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: 'Programming Languages: Theory & Practice'
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Real Analysis
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Software Design and Specification
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Software Implementation
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Systems Programming
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: IEEE, Syracuse University Student Branch
+    detail: IEEEXtreme 7.0 24 Hour Online Programming Competition (Fall 2013)• Fund-raised/Organized the
+      catering for the 20 competitors from Syracuse University• Placed 686th as a one-person team out
+      of 2500 registered three-person max teams worldwide after my teammates had to drop out of the competition
+      on short noticeIEEEXtreme 6.0 24 Hour Online Programming Competition (Fall 2012)• Placed top 30%
+      out of 2000 undergraduate and graduate teams worldwide.Publicity committee (Spring 2012 - Spring
+      2013)• Made fliers and publicized several events - Technology talks, professional events, etcC++
+      Essentials Workshop (Fall 2012)• Voluntarily designed, advertised, and instructed a five-session
+      course on C++Student Professional Awareness Conference (S-PAC) Committee (Spring 2012, Spring 2013)•
+      Chair of the publicity committee two years in a row• Was in charge of making fliers, certificates,
+      and publicizing the event · Jan 2012 · Present
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: IEEE, Region 1 Student Activities Committee
+    detail: • Helped plan the 2014 IEEE Region 1 Student Conference• Designed and implemented a two-part
+      webinar series related to the upcoming IEEE R1 Student Conference · Jan 2014 · Jan 2015
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: IEEE, Syracuse University Student Branch
+    detail: '• Delegated tasks to a total of 12 other officers, including Committee Chairs• Established
+      and filled 6 Committees Chair Positions via an application process. Publicity Committee, Program
+      Committee, Academic Excellence Committee, Graduate Student Committee, Recruitment Committee, Outreach
+      Committee. • Enriched the undergraduate EECS student experience at Syracuse University through social,
+      academic, and professional events such as guest speaker sessions, social events, and industry visits•
+      Acquired funding through IEEE Syracuse Section and EECS Department at Syracuse University.• Ran
+      largest IEEE Syracuse event held to date: Python Workshop with 100+ attendees• Coordinated largest
+      number of IEEEXtreme 24hr coding competition participants (12 teams participating from SU, accounting
+      for 50% of the teams from Northeastern USA). · Jan 2014 · Jan 2015'
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: IEEE, Syracuse University Student Branch
+    detail: • Created budgets for several different events for a handful of different funding sources•
+      Managed the student branch expenses and student reimbursement • Collaborated with the local IEEE
+      Syracuse Section on events • Helped plan and run competitions, social events, and technical talks
+      · Feb 2013 · Jan 2014
+    evidence:
+      url: https://www.linkedin.com/in/gwgriffiths4
+      observed_at: '2026-10-24T08:11:33Z'
+  talks:
+  - session:ldr1774d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1760972025737001NWQl
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ggriffiths
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,50 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:jf205
+  login: jf205
+  kind: user
+  url: https://github.com/jf205
+  name: James Fletcher
+  company: GitHub
+  bio: Product manager for CodeQL and code scanning @github
+  location: Oxfordshire, UK
+  followers: 29
+  public_repositories: 14
+  created_at: '2018-08-17T08:43:21Z'
+  contributions_last_year:
+    total: 10
+    commits: 8
+    pull_requests: 2
+    issues: 0
+    reviews: 0
+  starred_repositories: 1
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 1
+  contributed_to:
+  - repo:github/docs
+  - repo:dsp-testing/robertbrignull-test
+  - repo:dsp-testing/a2z-f15
+  entity: person:james-fletcher
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jf205
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

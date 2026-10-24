@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:faros-ai
+  login: faros-ai
+  kind: organization
+  url: https://github.com/faros-ai
+  name: Faros AI
+  bio: A single-pane view of all your Engineering data
+  location: United States of America
+  website: https://www.faros.ai
+  public_repositories: 20
+  created_at: '2019-09-09T21:41:15Z'
+  pinned:
+  - repo:faros-ai/faros-events-cli
+  - repo:faros-ai/faros-cicd-github-action
+  top_repositories:
+  - repo:faros-ai/airbyte-local-cli
+  linked_accounts:
+  - acct:x/faros_ai
+  entity: org:faros
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: faros-ai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

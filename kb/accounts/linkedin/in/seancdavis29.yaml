@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/seancdavis29
+  platform: linkedin
+  handle: in/seancdavis29
+  url: https://www.linkedin.com/in/seancdavis29
+  display_name: Sean C Davis
+  bio: I help developers build better websites. After a decade of working for agencies and…
+  location: Cincinnati
+  followers: 783
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQFVKt9R6u0eLA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1601998167016?e=2147483647&v=beta&t=UvsNf-Xgynb1WWQEdg_bbTv7AbK8CGYqp_YeatglZA4
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQHUCkuWNlVMCQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1626096792157?e=2147483647&v=beta&t=wVGCaFzPcZEq8-jyNpujAMt3Qz44NtadCw9Jo_HV0x8
+  owner: person:sean-c-davis
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728675658157001Ftyw
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/seancdavis29
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,255 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:eli-uriegas
+  person: person:eli-uriegas
+  brief_bio:
+    text: Eli Uriegas is an Engineering Manager at Meta working on developer infrastructure for AI, previously
+      at PyTorch and Docker, with a focus on scalable testing infrastructure and developer tooling. Uriegas
+      spoke at GitHub Universe 2023 about Meta PyTorch's migration from CircleCI to GitHub Actions.
+    cites:
+    - listed_role
+    - current_affiliations
+    - x_bio
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:39:52Z'
+    input_sha256: f1a160fb5fa17c2acc78cd4aca8d2c21365e316d878bdc056dbd371819baf05f
+    stale: false
+  headline: Meta
+  current_roles:
+  - Meta
+  expertise:
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2023/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2879s
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2879s
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2879s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2879s
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2879s
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2879s
+  technologies:
+  - label: CircleCI
+    target: software:circleci
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CircleCI
+      ref: session:2023/dev2879s
+  - label: Docker
+    target: software:docker
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Docker
+      ref: person:eli-uriegas
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev2879s
+  - label: PyTorch
+    target: software:pytorch
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: PyTorch
+      ref: person:eli-uriegas
+  interests:
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2023/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1697056576500001sKru
+      ref: session:2023/dev2879s
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1697056576500001sKru
+      ref: session:2023/dev2879s
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1697056576500001sKru
+      ref: session:2023/dev2879s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1697056576500001sKru
+      ref: session:2023/dev2879s
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1697056576500001sKru
+      ref: session:2023/dev2879s
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1697056576500001sKru
+      ref: session:2023/dev2879s
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1697056576500001sKru
+      ref: session:2023/dev2879s
+  recent_writing:
+  - title: This is one of the main things I work on and I agree. It’s not in the best state but it’s where
+      it’s at because Python packaging didn’t have a huge need to mature until very recently.
+    url: https://twitter.com/29893256/status/1851787843578007946
+    published: '2024-10-31T00:46:41Z'
+    channel: x
+  - title: |-
+      It’d be beautiful if we could track the history of legal documents (similar to what we can do with code in git).
+
+      Having proper attribution / tracking for legislation could change how accountable legislators feel for adding riders to bills.
+    url: https://twitter.com/29893256/status/1848565149856047148
+    published: '2024-10-22T03:20:51Z'
+    channel: x
+  - title: |-
+      utilizing uv run within a shebang is literally magic.
+
+      Self contained python scripts while having the ability to denote dependencies makes writing one off scripts without needing a proper dependency management setup a breeze.
+
+      https://t.co/pYin6LKGG1 https://t.co/ZEg0ksRQc0
+    url: https://twitter.com/29893256/status/1838319643347554756
+    published: '2024-09-23T20:48:51Z'
+    channel: x
+  - title: 'Excited to be at #GitHubUniverse! My talk will be live streamed at 2:25pm PST! https://t.co/eW4rQnnkKd'
+    url: https://twitter.com/29893256/status/1722340742948167740
+    published: '2023-11-08T19:50:07Z'
+    channel: x
+  - title: |-
+      I'll be speaking at #GitHubUniverse  next week! Going to be talking about PyTorch's usage of Github, through Actions and other things.
+
+      Excited to be talking about all of the great work the PyTorch Dev Infra team has done!
+
+      https://t.co/b6KcRVY9ct https://t.co/bPInhsJUac
+    url: https://twitter.com/29893256/status/1719799012122083729
+    published: '2023-11-01T19:30:11Z'
+    channel: x
+  - title: |-
+      Excited to get a chance to talk about PyTorch Developer Infrastructure at the PyTorch Conference next week!
+       https://t.co/ZsHOJntxFK
+    url: https://twitter.com/29893256/status/1712960319591752191
+    published: '2023-10-13T22:35:40Z'
+    channel: x
+  - title: '2018 was an insane year with the launch of Docker CE and EE #GitHubContributions https://t.co/YRkEmmCj8M'
+    url: https://twitter.com/29893256/status/1609765266719936513
+    published: '2023-01-02T04:15:22Z'
+    channel: x
+  - title: |-
+      Being able to work in OSS as my job for the past 5 years has been such an incredible opportunity.
+
+      I’m grateful for all of the companies and organizations that continue to promote OSS.
+    url: https://twitter.com/29893256/status/1474469434639237120
+    published: '2021-12-24T19:58:02Z'
+    channel: x
+  - title: A lot of senior engineers don't realize that their job is mostly to unblock other engineers
+    url: https://twitter.com/29893256/status/1438267560504410113
+    published: '2021-09-15T22:24:42Z'
+    channel: x
+  - title: "We should demolish dead malls and replace them with mixed use communities. \n\nHave them be\
+      \ the model for how to rebuild modern communities around dead land use."
+    url: https://twitter.com/29893256/status/1421506571612213249
+    published: '2021-07-31T16:22:31Z'
+    channel: x
+  - title: Hosting your own Minecraft Server with a Custom Map
+    url: https://terriblecode.com/blog/hosting-your-own-minecraft-server-with-a-custom-map/
+    published: '2020-04-12T18:21:26Z'
+    channel: blog
+  - title: Locking Package Versions with Apt and Yum
+    url: https://terriblecode.com/blog/locking-package-versions-with-apt-and-yum/
+    published: '2019-10-29T21:36:51Z'
+    channel: blog
+  - title: 'Feature Request: Parallel Stage Generation for Declarative Jenkins Pipelines'
+    url: https://terriblecode.com/blog/feature-request-parallel-stage-generation-for-declarative-jenkins-pipelines/
+    published: '2019-02-26T19:03:06Z'
+    channel: blog
+  - title: Extracing RPM Build Dependencies From RPM Spec Files
+    url: https://terriblecode.com/blog/extracing-rpm-build-dependencies-from-rpm-spec-files/
+    published: '2019-01-09T21:07:24Z'
+    channel: blog
+  - title: Switching to Netlify
+    url: https://terriblecode.com/blog/switching-to-netlify/
+    published: '2019-01-03T21:07:24Z'
+    channel: blog
+  talks:
+  - session:2023/dev2879s
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697580492807001qVFT
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

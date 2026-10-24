@@ -1,0 +1,174 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:paul-snider
+  person: person:paul-snider
+  brief_bio:
+    text: Paul Snider is CTO at Provation and a healthcare technology leader who held executive roles
+      at Cerner and was VP of Engineering at Netsmart, building enterprise clinical systems in regulated
+      environments. Snider speaks at GitHub Universe 2026 about agentic workflows in production.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: bd49e2651e1af666c9d549d5b5b5b89d6bc05c3377f7714840a35ba7e683f49f
+    stale: true
+  headline: CTO at Provation
+  current_roles:
+  - CTO at Provation
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:ldr1786m
+  - label: GitHub Agentic Workflows
+    target: software:github-agentic-workflows
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Agentic Workflows
+      ref: session:ldr1786m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  education:
+  - school: Missouri State University
+    evidence:
+      url: https://www.linkedin.com/in/paulsnider
+      observed_at: '2026-10-24T08:15:16Z'
+  recent_writing:
+  - title: Snider's 21 Favorite Podcasts of 2021
+    url: https://www.linkedin.com/pulse/sniders-21-favorite-podcasts-2021-paul-snider
+    published: '2021-12-31T00:00:00.000Z'
+    channel: linkedin
+    summary: Here are my favorite 21 podcasts in 2021. Enjoy! Masters of Scale - Make it epic, w/will.
+  talks:
+  - session:ldr1786m
+  - session:ldr1913a
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777569490902001Sy3s
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

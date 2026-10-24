@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/mappletons
+  platform: x
+  handle: mappletons
+  url: https://x.com/mappletons
+  display_name: Maggie Appleton
+  bio: |-
+    Staff Research Engineer at @GitHubNext. But actually a designer. Writes about design, dev, & anthropology.
+
+    Also on Bluesky 🦋 @maggieappleton.com
+  location: London, England
+  website: http://maggieappleton.com/
+  followers: 43008
+  following: 1568
+  posts_count: 5339
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1635665509512355840/-jFo36KR_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1343443016/1678808235
+  created_at: '2013-04-11T03:33:38Z'
+  owner: person:maggie-appleton
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1761577835512001JaKw
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: MaggieAppleton
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/mappletons
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

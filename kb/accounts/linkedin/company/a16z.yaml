@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/a16z
+  platform: linkedin
+  handle: company/a16z
+  url: https://www.linkedin.com/company/a16z
+  display_name: Andreessen Horowitz
+  bio: 'Founded in 2009 by Marc Andreessen and Ben Horowitz, Andreessen Horowitz (known as "a16z") is
+    a venture capital firm that backs bold entrepreneurs building the future through technology. We are
+    stage agnostic: We invest in seed to late-stage technology companies, across the consumer, enterprise,
+    bio/healthcare, crypto, fintech and games spaces. a16z is defined by respect for the entrepreneur
+    and the entrepreneurial company building process; we know what it’s like to be in the founder’s shoes.
+    The firm is led by general partners, many of whom are former founders/operators, CEOs, or CTOs of
+    successful technology companies, and who have domain expertise ranging from biology to crypto to distributed
+    systems to security to marketplaces to financial services. We aim to connect entrepreneurs, investors,
+    executives, engineers, academics, industry experts, and others in the technology ecosystem. We have
+    built a network of experts including technical and executive talent; top media and marketing resources;
+    Fortune 500/Global 2000 companies; as well as other technology decision makers, influencers, and key
+    opinion leaders. a16z uses this network as part of our commitment to help our portfolio companies
+    grow their business, so our operating teams provide entrepreneurs with access to expertise and insights
+    across the entire spectrum of company building. https://a16z.com/portfolio/ https://a16z.com/podcasts/
+    https://a16z.com/videos/ http://a16z.com/subscribe See Disclosures: https://a16z.com/disclosures/'
+  website: https://www.a16z.com/
+  followers: 777709
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQFs3wvS2NM10g/company-logo_200_200/B56ZaiHxu.GoAU-/0/1746476670161/a16z_logo?e=2147483647&v=beta&t=1FaUZsC_7nxWiUvV-PGwnjPHkYMIpZYayYPRkVBJ-Dk
+  owner: org:andreessen-horowitz
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/danigrant
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/a16z
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

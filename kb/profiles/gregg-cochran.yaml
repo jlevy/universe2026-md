@@ -1,0 +1,306 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:gregg-cochran
+  person: person:gregg-cochran
+  brief_bio:
+    text: Gregg Cochran is a Staff Program Manager at GitHub who leads the GitHub Secure Open Source Fund
+      and the GitHub Accelerator, after 11 years leading accelerators at Techstars. Cochran speaks at
+      GitHub Universe 2026 about how one open source project turned funding into security at scale.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 1145b950f56b18565be8aa15421e4df9734bbca16cecb74c05380da3ecd286b2
+    stale: false
+  headline: Staff Program Manager at GitHub
+  current_roles:
+  - Staff Program Manager at GitHub
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:tru1783b
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:dubsopenhub/havoc-hackathon
+    - ref: repo:dubsopenhub/copilot-cli-agent-pulse
+  - label: Shell
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:dubsopenhub/groundhog-day
+    - ref: repo:dubsopenhub/terminal-stampede
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:dubsopenhub/dark-factory
+  - label: CSS
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:dubsopenhub/swarm-command
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1784557963287001ooxL
+      ref: session:tru1783b
+    - url: https://github.com/DUBSOpenHub/dark-factory
+      ref: repo:dubsopenhub/dark-factory
+    - url: https://github.com/DUBSOpenHub/havoc-hackathon
+      ref: repo:dubsopenhub/havoc-hackathon
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: high
+    weight: 0.85
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1784557963287001ooxL
+      ref: session:tru1783b
+    - url: https://github.com/DUBSOpenHub/groundhog-day
+      ref: repo:dubsopenhub/groundhog-day
+    - url: https://github.com/DUBSOpenHub/terminal-stampede
+      ref: repo:dubsopenhub/terminal-stampede
+  - label: copilot-cli
+    basis: github_repositories
+    confidence: medium
+    weight: 0.62
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/DUBSOpenHub/dark-factory
+      ref: repo:dubsopenhub/dark-factory
+    - url: https://github.com/DUBSOpenHub/havoc-hackathon
+      ref: repo:dubsopenhub/havoc-hackathon
+    - url: https://github.com/DUBSOpenHub/groundhog-day
+      ref: repo:dubsopenhub/groundhog-day
+  - label: copilot-extensions
+    basis: github_repositories
+    confidence: medium
+    weight: 0.54
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/DUBSOpenHub/dark-factory
+      ref: repo:dubsopenhub/dark-factory
+    - url: https://github.com/DUBSOpenHub/havoc-hackathon
+      ref: repo:dubsopenhub/havoc-hackathon
+    - url: https://github.com/DUBSOpenHub/terminal-stampede
+      ref: repo:dubsopenhub/terminal-stampede
+  - label: multi-agent
+    basis: github_repositories
+    confidence: medium
+    weight: 0.54
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/DUBSOpenHub/dark-factory
+      ref: repo:dubsopenhub/dark-factory
+    - url: https://github.com/DUBSOpenHub/havoc-hackathon
+      ref: repo:dubsopenhub/havoc-hackathon
+    - url: https://github.com/DUBSOpenHub/terminal-stampede
+      ref: repo:dubsopenhub/terminal-stampede
+  - label: orchestration
+    basis: github_repositories
+    confidence: medium
+    weight: 0.54
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/DUBSOpenHub/dark-factory
+      ref: repo:dubsopenhub/dark-factory
+    - url: https://github.com/DUBSOpenHub/havoc-hackathon
+      ref: repo:dubsopenhub/havoc-hackathon
+    - url: https://github.com/DUBSOpenHub/terminal-stampede
+      ref: repo:dubsopenhub/terminal-stampede
+  - label: prompt-engineering
+    basis: github_repositories
+    confidence: medium
+    weight: 0.54
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/DUBSOpenHub/dark-factory
+      ref: repo:dubsopenhub/dark-factory
+    - url: https://github.com/DUBSOpenHub/havoc-hackathon
+      ref: repo:dubsopenhub/havoc-hackathon
+    - url: https://github.com/github/awesome-copilot
+      ref: repo:github/awesome-copilot
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.31
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1784557963287001ooxL
+      ref: session:tru1783b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.31
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1784557963287001ooxL
+      ref: session:tru1783b
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.31
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1784557963287001ooxL
+      ref: session:tru1783b
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.31
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1784557963287001ooxL
+      ref: session:tru1783b
+  - label: adversarial-ai
+    basis: github_repositories
+    confidence: low
+    weight: 0.21
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/DUBSOpenHub/havoc-hackathon
+      ref: repo:dubsopenhub/havoc-hackathon
+  open_source:
+  - repository: repo:dubsopenhub/dark-factory
+    relation: owner
+    stars: 27
+    primary_language: TypeScript
+  - repository: repo:dubsopenhub/havoc-hackathon
+    relation: owner
+    stars: 5
+    primary_language: Python
+  - repository: repo:dubsopenhub/groundhog-day
+    relation: owner
+    stars: 5
+    primary_language: Shell
+  - repository: repo:dubsopenhub/swarm-command
+    relation: owner
+    stars: 5
+    primary_language: CSS
+  - repository: repo:dubsopenhub/terminal-stampede
+    relation: owner
+    stars: 4
+    primary_language: Shell
+  - repository: repo:dubsopenhub/copilot-cli-agent-pulse
+    relation: owner
+    stars: 4
+    primary_language: Python
+  - repository: repo:github/awesome-copilot
+    relation: contributor
+    stars: 40374
+    primary_language: JavaScript
+  credentials:
+  - kind: honor
+    title: Formidable Award
+    issuer: '-'
+    date: '2023-10-01T00:00:00.000Z'
+    description: Awarded the Formidable Award at a company-wide meeting for exceeding all established
+      KPIs and achieving exemplary results at Foundercon 2023, a global startup event with 1,000+ attendees.
+      Led and managed a cross-functional team of 15+ individuals, ensuring the overall success of the
+      project.
+    evidence:
+      url: https://www.linkedin.com/in/greggcochran
+      observed_at: '2026-10-24T08:11:31Z'
+  - kind: honor
+    title: GiveFirst Award
+    issuer: '-'
+    date: '2013-11-01T00:00:00.000Z'
+    description: Awarded the GiveFirst Award at a company meeting in recognition of my significant contributions
+      to advancing the company.
+    evidence:
+      url: https://www.linkedin.com/in/greggcochran
+      observed_at: '2026-10-24T08:11:31Z'
+  - kind: honor
+    title: Pinnacle Award
+    issuer: '-'
+    description: Recognized as a Top 10% Sales Team Leader across all of US Bank.
+    evidence:
+      url: https://www.linkedin.com/in/greggcochran
+      observed_at: '2026-10-24T08:11:31Z'
+  talks:
+  - session:tru1783b
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724851742880001nFr3
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: DUBSOpenHub
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

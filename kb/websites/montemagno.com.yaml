@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:montemagno.com
+  url: https://montemagno.com
+  kind: personal
+  title: 'James Montemagno: Live, Love, Bike, and Code'
+  description: James Montemagno is a programmer, speaker, podcaster, writer, gamer, streamer, teacher,
+    and frequently blogs on .NET, Xamarin, C#, ASP.NET, IoT, and more.
+  owner: person:james-montemagno
+  link_basis:
+  - github_profile
+  - mastodon_verified
+  fetch_status: ok
+  http_status: 200
+  identity_links:
+  - https://mastodon.social/@jamesmontemagno
+  feeds:
+  - https://montemagno.com/rss/
+  linked_accounts:
+  - acct:bluesky/james.montemagno.com
+  - acct:linkedin/in/jamesmontemagno
+  - acct:mastodon/jamesmontemagno@mastodon.social
+  - acct:x/jamesmontemagno
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jamesmontemagno
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://montemagno.com
+    record_id: https://montemagno.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,146 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:nathan-chandler
+  person: person:nathan-chandler
+  brief_bio:
+    text: Nathan Chandler was Executive Manager of Engineering at Commonwealth Bank of Australia, leading
+      platform engineering and a DevSecOps maturity program, when speaking at GitHub Universe 2025 about
+      building and keeping secure cloud software at enterprise scale.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 0721fb170b1819c7720667e7811e31247fca9ebb613f13b9fd7814dfa519c672
+    stale: false
+  expertise:
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1801b
+  - label: Threat Modeling
+    target: term:topic-2025/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1801b
+  - label: Vulnerability Detection
+    target: term:topic-2025/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1801b
+  technologies:
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Secret Protection
+      ref: session:2025/sec1801b
+  interests:
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Threat Modeling
+    target: term:topic-2025/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Vulnerability Detection
+    target: term:topic-2025/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  credentials:
+  - kind: certification
+    title: 'Blockchain in Financial Services: Strategic Action Plan'
+    issuer: Coursera
+    date: Jul 2022
+    url: https://www.coursera.org/account/accomplishments/certificate/TBUFBW5UHM2N
+    evidence:
+      url: https://www.linkedin.com/in/nathanjc
+      observed_at: '2026-10-24T08:47:38Z'
+  - kind: certification
+    title: Blockchain Revolution in Financial Services Specialization
+    issuer: Coursera
+    date: Jul 2022
+    url: https://www.coursera.org/account/accomplishments/specialization/certificate/W2V2LPNC539B
+    evidence:
+      url: https://www.linkedin.com/in/nathanjc
+      observed_at: '2026-10-24T08:47:38Z'
+  - kind: certification
+    title: Blockchain Transformations of Financial Services
+    issuer: Coursera
+    date: Jul 2021
+    url: https://www.coursera.org/account/accomplishments/certificate/EW5AUDL552AN
+    evidence:
+      url: https://www.linkedin.com/in/nathanjc
+      observed_at: '2026-10-24T08:47:38Z'
+  - kind: certification
+    title: Blockchain, Cryptoassets, and Decentralized Finance
+    issuer: Coursera
+    date: Jul 2021
+    url: https://www.coursera.org/account/accomplishments/certificate/XL5YGXWF4AE5
+    evidence:
+      url: https://www.linkedin.com/in/nathanjc
+      observed_at: '2026-10-24T08:47:38Z'
+  - kind: certification
+    title: Introduction to Blockchain for Financial Services
+    issuer: Coursera
+    date: Jul 2021
+    url: https://www.coursera.org/account/accomplishments/certificate/N5VQCP8DQMHC
+    evidence:
+      url: https://www.linkedin.com/in/nathanjc
+      observed_at: '2026-10-24T08:47:38Z'
+  talks:
+  - session:2025/1896
+  - session:2025/sec1801b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746095453892001yuOw
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,152 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mathew-payne
+  person: person:mathew-payne
+  brief_bio:
+    text: Mathew Payne was a Principal Field Security Specialist at GitHub, helping customers build secure
+      software, and writes GeekMasher's Blog. Payne spoke at GitHub Universe 2023 about code scanning
+      in GitHub Advanced Security.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - websites
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: ce810b850c7671b008abd05bf7408d2e357c3b41b4e5d21e5c30b16a12211237
+    stale: false
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2757d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2757d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2757d
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CodeQL
+      ref: session:2023/sec2757d
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/sec2757d
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693506948216001NVpG
+      ref: session:2023/sec2757d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693506948216001NVpG
+      ref: session:2023/sec2757d
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693506948216001NVpG
+      ref: session:2023/sec2757d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693506948216001NVpG
+      ref: session:2023/sec2757d
+  recent_writing:
+  - title: Spin All The Vinyls - The Very Serious Juniper Dev Game Jam
+    url: https://geekmasher.dev/gaming/spin-all-the-vinyls/
+    published: '2026-06-27T14:00:00Z'
+    channel: blog
+  - title: 'DotMe: A Modern Dotfiles Manager Built with Rust'
+    url: https://geekmasher.dev/dev/dotme-rust-dotfiles-manager/
+    published: '2026-02-20T21:30:00Z'
+    channel: blog
+  - title: 'Let us have boundaries: Understanding Containers and Namespaces'
+    url: https://geekmasher.dev/talks/defcon44131-containers-namespaces-boundaries/
+    published: '2025-12-05T14:00:00Z'
+    channel: blog
+  - title: Konarr v0.5.0 - Major UI Overhaul and API Improvements
+    url: https://geekmasher.dev/sec/konarr/v0.5-release/
+    published: '2025-10-31T10:00:00Z'
+    channel: blog
+  - title: Objective by the Sea v8
+    url: https://geekmasher.dev/conferences/obts-v8/
+    published: '2025-10-18T10:00:00Z'
+    channel: blog
+  - title: Building a CodeQL Extractor from Scratch
+    url: https://geekmasher.dev/sast/codeql/building-a-codeql-extractor/
+    published: '2025-09-26T15:00:00Z'
+    channel: blog
+  - title: Series - Building a CodeQL Language from Scratch
+    url: https://geekmasher.dev/series/building-a-codeql-language-support-from-scratch/
+    published: '2025-09-26T12:00:00Z'
+    channel: blog
+  - title: Talk - 'Deep-dive into Containers and How to Secure Them'
+    url: https://geekmasher.dev/talks/2025-01-containers-security/
+    published: '2025-01-06T19:00:00Z'
+    channel: blog
+  - title: 'Talk - ''Konarr: A Story of Building a Software Composition Analysis Platform'' at DC44131'
+    url: https://geekmasher.dev/talks/2024-12-01--dc44131-presentation/
+    published: '2024-12-03T16:00:00Z'
+    channel: blog
+  - title: Launching Konarr
+    url: https://geekmasher.dev/sec/konarr/launching-konarr/
+    published: '2024-11-01T10:00:00Z'
+    channel: blog
+  talks:
+  - session:2023/sec2757d
+  gaps:
+  - github_account
+  - current_affiliation
+  - linkedin_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695049126843001TABY
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

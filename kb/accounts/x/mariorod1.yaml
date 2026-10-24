@@ -1,0 +1,52 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/mariorod1
+  platform: x
+  handle: mariorod1
+  url: https://x.com/mariorod1
+  display_name: Mario Rodriguez
+  bio: "\U0001F419 CPO @github \n\U0001F916 Building Copilot ✨ and Productivity features\n☁️ Previously\
+    \ at @azuredevops\n\U0001F37E Enjoying 4k weeks to the fullest"
+  location: Raleigh, NC
+  followers: 6319
+  following: 211
+  posts_count: 2190
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1783313134117376000/hWT1AJWp_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/40486207/1723047054
+  created_at: '2009-05-16T15:52:27Z'
+  owner: person:mario-rodriguez
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mariorod
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/mariorod1
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

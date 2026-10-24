@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ali-condah-jr-68945710
+  platform: linkedin
+  handle: in/ali-condah-jr-68945710
+  url: https://www.linkedin.com/in/ali-condah-jr-68945710
+  display_name: Ali Condah, Jr.
+  location: Washington DC-Baltimore Area
+  followers: 3473
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHX2_G6UfFNwQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1696345529101?e=2147483647&v=beta&t=Y4eslC86qp5BUT4nozwQFK_5m-v4GbtOlwWQZYJxOcg
+  owner: person:ali-condah
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694013058211001ABdY
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ali-condah-jr-68945710
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

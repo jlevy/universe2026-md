@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jamesmontemagno
+  platform: linkedin
+  handle: in/jamesmontemagno
+  url: https://www.linkedin.com/in/jamesmontemagno
+  owner: person:james-montemagno
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: false
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1790967222685001mCc8
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/jkcso
+  platform: x
+  handle: jkcso
+  url: https://x.com/jkcso
+  display_name: Joseph Katsioloudes
+  bio: I make AI simple with software, talks, and content that reaches millions. Now rebuilding the software
+    lifecycle at @EntireHQ. Views are my own.
+  followers: 807
+  following: 748
+  posts_count: 1220
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2072742859963310080/CzsgWiNN_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1422933069057638403/1696977300
+  created_at: '2021-08-04T14:52:03Z'
+  owner: person:joseph-katsioloudes
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683668770658001JeDc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683668770658001JeDc
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683668770658001JeDc
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/jkcso
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

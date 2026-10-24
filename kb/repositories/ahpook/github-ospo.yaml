@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:ahpook/github-ospo
+  full_name: ahpook/github-ospo
+  url: https://github.com/ahpook/github-ospo
+  description: Helping open source program offices get started
+  homepage: https://github.blog/2023-03-13-an-open-source-project-to-empower-ospos-everywhere/
+  stars: 4
+  forks: 6
+  watchers: 4
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:09:45Z'
+  license: MIT
+  archived: false
+  fork: true
+  created_at: '2023-05-19T21:37:43Z'
+  pushed_at: '2023-05-19T21:52:41Z'
+  owner_login: ahpook
+  owner: gh:ahpook
+  pinned_by:
+  - gh:ahpook
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ahpook
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ahpook/github-ospo
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

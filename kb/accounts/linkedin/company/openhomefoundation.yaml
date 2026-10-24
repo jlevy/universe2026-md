@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/openhomefoundation
+  platform: linkedin
+  handle: company/openhomefoundation
+  url: https://www.linkedin.com/company/openhomefoundation
+  display_name: Open Home Foundation
+  bio: The Open Home Foundation fights for the fundamental principles of privacy, choice, and sustainability
+    for smart homes. And for every person who lives in one. It does this by supporting the development
+    of open-source projects, and open connectivity and communication standards.
+  website: https://www.openhomefoundation.org/
+  followers: 5563
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEw9MgeNapIEw/company-logo_200_200/company-logo_200_200/0/1713476793879/openhomefoundation_logo?e=2147483647&v=beta&t=BOpFUwswfhPgkyU0x3aFblex_GxXDPsdqQbwfVQqkoU
+  owner: org:open-home-foundation
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/frenck
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/schoutsen
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/openhomefoundation
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

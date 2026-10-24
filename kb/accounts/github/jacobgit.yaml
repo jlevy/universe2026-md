@@ -1,0 +1,52 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:jacobgit
+  login: JacobGit
+  kind: user
+  url: https://github.com/JacobGit
+  name: Jacob Newman
+  location: United States
+  followers: 4
+  public_repositories: 9
+  created_at: '2013-10-23T19:34:34Z'
+  contributions_last_year:
+    total: 199
+    commits: 2
+    pull_requests: 2
+    issues: 0
+    reviews: 2
+  starred_repositories: 11
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  contributed_to:
+  - repo:amplitude/builder-skills
+  - repo:amplitude/kiro-power
+  entity: person:jacob-newman
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: JacobGit
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:jenkinsci/jenkins
+  full_name: jenkinsci/jenkins
+  url: https://github.com/jenkinsci/jenkins
+  description: Jenkins automation server
+  homepage: https://www.jenkins.io
+  stars: 26681
+  forks: 9804
+  watchers: 874
+  open_issues: 3429
+  stats_observed_at: '2026-10-24T19:10:22Z'
+  primary_language: Java
+  topics:
+  - continuous-integration
+  - continuous-delivery
+  - continuous-deployment
+  - java
+  - groovy
+  - jenkins
+  - pipelines-as-code
+  - devops
+  - cicd
+  - hacktoberfest
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2010-11-22T21:21:23Z'
+  pushed_at: '2026-10-24T03:38:59Z'
+  owner_login: jenkinsci
+  software: software:jenkins
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jenkinsci/jenkins
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jenkinsci/jenkins
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

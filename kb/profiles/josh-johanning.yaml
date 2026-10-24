@@ -1,0 +1,348 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:josh-johanning
+  person: person:josh-johanning
+  brief_bio:
+    text: Joshua Johanning is a Senior DevOps Architect on the GitHub FastTrack team, helping companies
+      adopt DevOps practices with GitHub and GitHub Actions. Johanning spoke at GitHub Universe 2024 about
+      securing code with GitHub Advanced Security.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 9a4a3fd9a18d1d67366a07d834279d53c4682279be4e7c044cfa6f20fdc72a3f
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Dependabot
+      ref: session:2024/sec1953w
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:josh-johanning
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/sec1953w
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Codespaces
+      ref: session:2024/sec1953w
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/sec1953w
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  education:
+  - school: University of Wisconsin-Madison
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  credentials:
+  - kind: honor
+    title: Salutatorian
+    issuer: Lancaster High School
+    date: '2011-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: honor
+    title: Dean's List
+    issuer: University of Wisconsin-Madison
+    description: 3 semesters
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: course
+    title: Application Lifecycle Management Using Visual Studio from Accentient
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: course
+    title: Architecting Microsoft Azure Solutions
+    detail: '20535'
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: course
+    title: Architecting Microsoft Azure Solutions
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: course
+    title: DevOps for the Agile Enterprise from Icon Consulting
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: course
+    title: Developing Microsoft Azure Solutions
+    detail: '20532'
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: course
+    title: Scrum Bootcamp
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: course
+    title: Test Case Management Using Visual Studio 2015 from Accentient
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: course
+    title: Unit Testing in Visual Studio 2015 from Accentient
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: organization
+    title: Association of Information Systems Professionals
+    detail: 'The Association of Information Systems Professionals (AISP) is a student organization at
+      the UW-Madison aimed at bridging the gap between the academic and professional worlds of information
+      systems by hosting a variety of events for students interested in a career in information technology.
+      Website: http://aisp.bus.wisc.edu/ · Sep 2011 · May 2015'
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: organization
+    title: Society of Personal Investments
+    detail: The Society of Personal Investment (SPI) covers a variety of topics that are relevant to today’s
+      college students, including the stock market, personal taxes, mortgages, retirement accounts, employee
+      benefits, credit cards, and loans. In addition, SPI covers non-financial topics such as networking,
+      leadership, and corporate culture. · Sep 2011 · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  - kind: organization
+    title: Sports Business Club
+    detail: The mission of the Sports Business Club is to educate, train and connect its members to the
+      sports industry through hands on experience, lectures and workshops. These goals are met through
+      speaker events with industry professionals, training sessions in professional practices, volunteer
+      opportunities within the community, and collaborative events managed by the club. · Sep 2011 · Sep
+      2013
+    evidence:
+      url: https://www.linkedin.com/in/joshua-johanning
+      observed_at: '2026-10-24T08:45:05Z'
+  talks:
+  - session:2024/sec1953w
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685652487779001iVSX
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

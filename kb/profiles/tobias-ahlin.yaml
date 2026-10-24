@@ -1,0 +1,203 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:tobias-ahlin
+  person: person:tobias-ahlin
+  brief_bio:
+    text: Tobias Ahlin works at Tappily and was the principal design engineer leading Copilot on GitHub.com,
+      and lists projects including SpinKit and Moving Letters. Ahlin spoke at GitHub Universe 2025 about
+      using GitHub Copilot beyond the editor.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - websites
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: fe0b10101579bb6aa56aedbc7122c94562a8f23b165c07577258985f17d0c859
+    stale: false
+  headline: Tappily
+  current_roles:
+  - Tappily
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1394d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1394d
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1394d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1394d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:tobias-ahlin
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  patents:
+  - title: Comparison Graph
+    number: US 14/581,937
+    date: December 23, 2014
+    description: Comparison graph in GitHub Desktop.
+    evidence:
+      url: https://www.linkedin.com/in/tobias-ahlin-4977b212
+      observed_at: '2026-10-24T08:50:15Z'
+  spoken_languages:
+  - English
+  - Swedish
+  activities:
+  - kind: project
+    title: TypeSource
+    detail: Google Web Font inspiration in HTML & CSS. · Nov 2015
+    evidence:
+      url: https://www.linkedin.com/in/tobias-ahlin-4977b212
+      observed_at: '2026-10-24T08:50:15Z'
+  - kind: project
+    title: SpinKit
+    detail: Loading spinners animated with CSS · Jan 2014
+    evidence:
+      url: https://www.linkedin.com/in/tobias-ahlin-4977b212
+      observed_at: '2026-10-24T08:50:15Z'
+  - kind: project
+    title: Curriculum Development for Hyper Island, Digital Data Strategist program
+    evidence:
+      url: https://www.linkedin.com/in/tobias-ahlin-4977b212
+      observed_at: '2026-10-24T08:50:15Z'
+  - kind: project
+    title: GitHub for Windows and Mac
+    evidence:
+      url: https://www.linkedin.com/in/tobias-ahlin-4977b212
+      observed_at: '2026-10-24T08:50:15Z'
+  - kind: project
+    title: GitHub Pages
+    detail: Marketing and documentation for GitHub Pages.
+    evidence:
+      url: https://www.linkedin.com/in/tobias-ahlin-4977b212
+      observed_at: '2026-10-24T08:50:15Z'
+  recent_writing:
+  - title: Responsive type scales with composable CSS utilities
+    url: https://tobiasahlin.com/blog/responsive-fluid-css-type-scales/
+    published: '2023-09-22T01:12:00Z'
+    channel: blog
+  - title: Hiding empty elements with CSS :empty and :has()
+    url: https://tobiasahlin.com/blog/hiding-an-element-if-its-empty/
+    published: '2023-03-15T01:05:00Z'
+    channel: blog
+  - title: Selecting previous siblings with CSS :has()
+    url: https://tobiasahlin.com/blog/previous-sibling-css-has/
+    published: '2023-03-09T12:05:00Z'
+    channel: blog
+  - title: A brief introduction to A/B-testing
+    url: https://tobiasahlin.com/blog/introduction-to-ab-testing/
+    published: '2020-05-20T07:50:00Z'
+    channel: blog
+  - title: Chaining styles with a JavaScript Proxy
+    url: https://tobiasahlin.com/blog/chaining-styles-with-proxy/
+    published: '2019-09-19T07:50:00Z'
+    channel: blog
+  - title: Smoother & sharper shadows with layered box-shadows
+    url: https://tobiasahlin.com/blog/layered-smooth-box-shadows/
+    published: '2019-09-19T07:50:00Z'
+    channel: blog
+  - title: Cheat sheet for moving from jQuery to vanilla JavaScript
+    url: https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/
+    published: '2019-07-21T07:50:00Z'
+    channel: blog
+  - title: Breaking to a new row with flexbox
+    url: https://tobiasahlin.com/blog/flexbox-break-to-new-row/
+    published: '2019-04-29T07:50:00Z'
+    channel: blog
+  - title: CSS masonry with flexbox, :nth-child(), and order
+    url: https://tobiasahlin.com/blog/masonry-with-css/
+    published: '2019-04-15T11:12:00Z'
+    channel: blog
+  - title: Common CSS Flexbox Layout Patterns with Example Code
+    url: https://tobiasahlin.com/blog/common-flexbox-patterns/
+    published: '2019-04-15T10:12:00Z'
+    channel: blog
+  talks:
+  - session:2025/bld1394d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694527346481001TuQg
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

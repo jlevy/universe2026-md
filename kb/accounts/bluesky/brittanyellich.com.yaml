@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/brittanyellich.com
+  platform: bluesky
+  handle: brittanyellich.com
+  url: https://bsky.app/profile/brittanyellich.com
+  display_name: Brittany Ellich
+  bio: "Software engineer @bsky.app exploring the Atmosphere with @attie.ai\n\nTopics: accessibility,\
+    \ refactoring, AI & career growth\nPodcast: @overcommitted.dev \nWebsite: brittanyellich.com \nATProto\
+    \ Site: opensocial.community\n#pdx #ai #atproto"
+  followers: 6106
+  created_at: '2024-11-19T00:01:55Z'
+  owner: person:brittany-ellich
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730135791139001Rrxc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: brittanyellich.com
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

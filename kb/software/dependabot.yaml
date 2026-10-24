@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:dependabot
+  name: Dependabot
+  aliases:
+  - Dependabot
+  kind: github_product
+  vendor: org:github
+  product_term: term:github-product/dependabot
+  repositories:
+  - repo:dependabot/dependabot-core
+  mentioned_in:
+  - person:ankit-kumar-honey
+  - person:carlin-cherry
+  - person:erin-havens
+  - person:justin-hutchings
+  - person:nish-sinha
+  - session:2023/sec2751w
+  - session:2023/sec2759d
+  - session:2024/sec1953w
+  - session:2024/sec1968d
+  - session:2025/sec1126d
+  - session:2025/sec1384d
+  - session:ldr1662d
+  - session:tru1179d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

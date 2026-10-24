@@ -1,0 +1,289 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:christine-mendoza
+  person: person:christine-mendoza
+  brief_bio:
+    text: Christine Mendoza is a PhD student at Carnegie Mellon University's Human-Computer Interaction
+      Institute who builds systems for accessibility and automation, including accessibility-first geographic
+      data standards. Mendoza spoke at GitHub Universe 2024 about open source and accessibility.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 7ede8bb2e061a6ca9914d4d8078efd04a103ea91a7c6f87ceb20e62124a65259
+    stale: false
+  headline: CMU Human-Computer Interaction Institute
+  current_roles:
+  - CMU Human-Computer Interaction Institute
+  expertise:
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  interests:
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  credentials:
+  - kind: honor
+    title: NSF Graduate Research Fellow
+    issuer: '-'
+    date: '2024-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: Charles H. Dunham Scholar
+    issuer: '-'
+    date: '2022-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: Dean's List
+    issuer: '-'
+    date: '2021-12-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: President's List
+    issuer: '-'
+    date: '2020-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: Burger King Scholar
+    issuer: Burger King McLamore Foundation
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: National Merit Finalist
+    issuer: '-'
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: Whitaker Carolina Scholar
+    issuer: UNC Chapel Hill
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: NFT.NYC 2025 Artist Showcase - Proof of Submission
+    issuer: NFT.NYC
+    date: Jan 2025
+    url: https://anotherclayjar.nft.nyc/token/firedovenftnycproofofsubmission/1
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: Graph Developer - Associate
+    issuer: Apollo GraphQL
+    date: Jun 2022
+    url: https://www.apollographql.com/tutorials/certifications/945da3ee-4198-4243-8efc-08091649f00d
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: SAS Certified Specialist - Base Programming Using SAS 9.4
+    issuer: SAS
+    date: Aug 2021
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  spoken_languages:
+  - Spanish
+  - Tagalog
+  activities:
+  - kind: project
+    title: 'Open-Source Accessibility: The Polaris Project for Accessible Campus Directions'
+    detail: '- Launched an initiative to develop a framework for universities/organizations to develop
+      campus maps that crowdsource data on accessible routes and potential obstacles utilizing MongoDB,
+      Express, Angular, and Node.js- Communicate with faculty, administrators, and students across multiple
+      departments for design input and awareness- Invited Talks: SAS Accessibility Exchange · Dec 2021'
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: project
+    title: SAS Viya for Learners Data Repository
+    detail: Documents over 100 data sets housed in SAS Viya for Learners, a free software that gives students
+      and faculty access to analytical SAS software and approximately 600 data sets. · May 2021
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: project
+    title: 'Special Education Literacy Assessment (mentors: Dr. Gary Bishop & Dr. Karen Erickson, UNC-CH)'
+    detail: '- Automate the generation of personalized class forms for the State of Iowa’s K-6 Early Literacy
+      Alternate Assessment system through the creation of a Google Workspace extension- Implemented using
+      JavaScript and Google Apps Script · Mar 2021'
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: project
+    title: Simple Proteomics Tools
+    detail: A website to automate aspects of proteomic analysis for analytical chemistry research on thimet
+      oligopeptidases using Heroku, Python Flask, Pyteomics, HTML, CSS, and JavaScript. · Nov 2021
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: project
+    title: What's In Your Fridge? (Capital One Software Engineering Summit Hackathon)
+    detail: '- Led a team in creating a web application designed to log a user’s stock of food items based
+      on image analysis of grocery receipts, provide personalized recipe recommendations, and allow for
+      tracking of grocery expenditures- Implemented initial computer vision backend using Python Tesseract
+      and Azure Cognitive Services · Jan 2021'
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: project
+    title: 'A Comparison of Natural Substances to Combat CAUTIs (mentor: Dr. Shuangying Yu, CPCC)'
+    detail: '- Utilized knowledge of bacteria and antimicrobial resistance to design and carry out an
+      independent study- Used R software to run Welch’s and White-adjusted ANOVA and negative binomial
+      regression for count data- Competitions (Awards): UNCC NCSEF Region 6 (3rd place Biological Science
+      A), NCSAS State Competition (Honorable Mention HS Biological Science - Advanced) · Dec 2019'
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Algorithms and Analysis
+    detail: COMP550
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Computer Organization
+    detail: COMP311
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Data Structures
+    detail: COMP210
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Developmental Psychology
+    detail: PSY241
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Differential Equations
+    detail: MAT285
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Digital Logic
+    detail: COMP541
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Discrete Structures (Honors)
+    detail: COMP283H
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Distributed Algorithms
+    detail: COMP735
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Models of Languages and Computation
+    detail: COMP455
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Modern Web Programming
+    detail: COMP426
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Multivariable Calculus
+    detail: MAT273
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: course
+    title: Systems Fundamentals
+    detail: COMP211
+    evidence:
+      url: https://www.linkedin.com/in/christine-i-mendoza
+      observed_at: '2026-10-24T08:41:57Z'
+  talks:
+  - session:2024/dev1734p
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724769288226001ShPT
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

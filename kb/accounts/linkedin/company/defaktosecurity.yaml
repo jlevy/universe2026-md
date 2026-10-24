@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/defaktosecurity
+  platform: linkedin
+  handle: company/defaktosecurity
+  url: https://www.linkedin.com/company/defaktosecurity
+  display_name: Defakto Security
+  bio: Defakto secures the next era of automation with the only complete Non-Human IAM platform, purpose-built
+    for end-to-end NHI lifecycle management. By eliminating static secrets and overprivileged accounts,
+    Defakto helps enterprises reduce breach risk, simplify compliance, and scale automation with confidence.
+    Trusted by Global 2000 companies, Defakto was founded by leaders in large-scale identity deployments.
+    The platform secures every automated interaction across workloads, pipelines, multi-cloud environments,
+    and AI agents. Defakto is defining the future of IAM for a world powered by automation.
+  website: https://defakto.security/
+  followers: 3723
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQH8MzCBoPnptg/company-logo_200_200/B56Z.qm7JAKMAE-/0/1785273758486/defaktosecurity_logo?e=2147483647&v=beta&t=OfvWaHXtQe7UqCGuTjhIKUKdfWjqi0eeAqE-UIfxUVM
+  owner: org:defakto-security
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/kassenqian
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/defaktosecurity
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

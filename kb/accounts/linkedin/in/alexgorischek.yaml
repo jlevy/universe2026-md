@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/alexgorischek
+  platform: linkedin
+  handle: in/alexgorischek
+  url: https://www.linkedin.com/in/alexgorischek
+  display_name: Alex Gorischek
+  location: Seattle
+  followers: 366
+  connections: 352
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQGWOMBKWCq01w/profile-displayphoto-scale_200_200/B56ZqyH6iKJkAY-/0/1763925011471?e=2147483647&v=beta&t=OIzaUtoAZTAZ_c-yrln_YDcOFlrZtVR5YSf3EvhXYuQ
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGN51pIUC868Q/profile-displaybackgroundimage-shrink_200_800/B56Zup.j.aHIAU-/0/1768083309672?e=2147483647&v=beta&t=8xzAUrKixowc9P-ZtJZK4kia8paeVJcRVqcV4K7noxI
+  owner: person:alex-gorischek
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1787354992642001uhKf
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alexgorischek
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

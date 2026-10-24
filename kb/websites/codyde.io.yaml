@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:codyde.io
+  url: https://codyde.io/
+  kind: personal
+  title: Cody De Arkland | Developer Experience
+  description: Hi, I'm Cody! Dad, husband, builder, learner. I love to learn, and love to teach. Developer
+    Experience @ Sentry.
+  owner: person:cody-de-arkland
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/codydearkland
+  - acct:x/codydearkland
+  sources:
+  - system: brightdata
+    url: https://x.com/codydearkland
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://codyde.io/
+    record_id: https://codyde.io/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,336 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:steven-ewing
+  person: person:steven-ewing
+  brief_bio:
+    text: Steven Ewing is a Staff Software Engineer at Coinbase who led its migration to GitHub Enterprise
+      Cloud and holds patents on group management of authenticated entities and consistency across clusters.
+      Ewing speaks at GitHub Universe 2026 on Coinbase's move to GitHub with data residency.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: c50819817b3d092f52a4dfc417dfe75b5b4fecc54368c07991967df55482c234
+    stale: false
+  headline: Staff Software Engineer at Coinbase
+  current_roles:
+  - Staff Software Engineer at Coinbase
+  expertise:
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1765b
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1765b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1765b
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1765b
+  - label: Migration strategies
+    target: term:topic/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1765b
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1765b
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1765b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1765b
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:ldr1765b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: person:steven-ewing
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1765b
+  interests:
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: GitHub Enterprise Server
+    target: term:github-product/github-enterprise-server
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: Migration strategies
+    target: term:topic/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778094834694001VKKT
+      ref: session:ldr1765b
+  education:
+  - school: University of Pittsburgh
+    evidence:
+      url: https://www.linkedin.com/in/steven-ewing
+      observed_at: '2026-10-24T08:15:47Z'
+  patents:
+  - title: Group management of authenticated entities
+    number: US US10178079B2
+    date: January 9, 2019
+    description: Exemplary embodiments provide various techniques for managing groups of authenticated
+      entities. In one exemplary computer-implemented method, an entity accesses a group roster that includes
+      a first group identifier identifying a first group, a first group digital certificate associated
+      with the first group, and a first entity identifier identifying the entity being a member of the
+      first group. The entity also receives a request to update the group roster. Here, the request includes
+      a second group identifier identifying a second group and a second group digital certificate associated
+      with the second group. In response to the request, the entity replaces the first group identifier
+      in the group roster with the second group identifier. Additionally, in response to the request,
+      the entity replaces the first group digital certificate with the second group digital certificate.
+      The replacements change a membership of the entity from the first group to the second group.
+    evidence:
+      url: https://www.linkedin.com/in/steven-ewing
+      observed_at: '2026-10-24T08:15:47Z'
+  - title: Eventual consistency among many clusters including entities in a master member regime
+    number: US 9,973,394
+    date: May 15, 2018
+    description: The present application provides techniques to interrelate a group of multiple entities.
+      A master entity makes configuration decisions regarding the group of entities and communicates those
+      decisions to the entities. When the master relinquishes the master role, the retiring master selects
+      a new master to accede to the master role. The retiring master releases the master role and ensures
+      that the new master becomes aware of its assignment to the master role. During the time between
+      when the retiring master abdicates and when the new master accedes, the group of entities is temporarily
+      permitted to have no master. The master changes the configuration of the group of entities in a
+      similar way. Using the techniques described herein, a new master may eventually replace the retiring
+      master, and a new configuration may eventually replace the old configuration, without the risk of
+      duplicating or dropping the master role or a configuration change.
+    url: https://patents.google.com/patent/US9973394
+    evidence:
+      url: https://www.linkedin.com/in/steven-ewing
+      observed_at: '2026-10-24T08:15:47Z'
+  - title: Group management of authenticated entities
+    number: US 9509505 B2
+    date: November 29, 2016
+    description: Exemplary embodiments provide various techniques for managing groups of authenticated
+      entities. In one exemplary computer-implemented method, an entity accesses a group roster that includes
+      a first group identifier identifying a first group, a first group digital certificate associated
+      with the first group, and a first entity identifier identifying the entity being a member of the
+      first group. The entity also receives a request to update the group roster. Here, the request includes
+      a second group identifier identifying a second group and a second group digital certificate associated
+      with the second group. In response to the request, the entity replaces the first group identifier
+      in the group roster with the second group identifier. Additionally, in response to the request,
+      the entity replaces the first group digital certificate with the second group digital certificate.
+      The replacements change a membership of the entity from the first group to the second group.
+    url: https://patents.google.com/patent/US9509505B2
+    evidence:
+      url: https://www.linkedin.com/in/steven-ewing
+      observed_at: '2026-10-24T08:15:47Z'
+  - title: Status transfer within a group of computing entities
+    number: US 9094417B2
+    date: July 28, 2015
+    description: A system and method for designating and administering authority in a trusted environment
+      is provided. In some embodiments, a determination is made that a transfer of the authority to a
+      second computing entity is warranted. The second computing entity is opportunistically contacted,
+      and during the opportunistic contact, the authority is passed from the first computing entity to
+      the second computing entity. The passing of the authority from the first computing entity to the
+      second computing entity tasks the second computing entity with updating members of the group of
+      the passing of the authority. The passing of authority may include providing an outstanding group
+      update to the second computing entity and may also include tasking the second computing entity with
+      completing the outstanding group update.
+    url: https://patents.google.com/patent/US9094417B2
+    evidence:
+      url: https://www.linkedin.com/in/steven-ewing
+      observed_at: '2026-10-24T08:15:47Z'
+  - title: Intercluster Relationship Management
+    number: US 8,898,739
+    date: November 25, 2014
+    description: This application is a continuation of U.S. application Ser. No. 12/416,699, filed on
+      Apr. 1, 2009, entitled "INTERCLUSTER RELATIONSHIP MANAGEMENT", at least some of which may be incorporated
+      herein.
+    url: https://patents.google.com/patent/US8898739
+    evidence:
+      url: https://www.linkedin.com/in/steven-ewing
+      observed_at: '2026-10-24T08:15:47Z'
+  - title: Intercluster relationship management
+    number: US 8,621,569
+    date: December 31, 2013
+    description: Data storage and management systems can be interconnected as clustered systems to distribute
+      data and operational loading. Further, independent clustered storage systems can be associated to
+      form peered clusters. As provided herein, methods and systems for creating and managing intercluster
+      relationships between independent clustered storage systems, allowing the respective independent
+      clustered storage systems to exchange data and distribute management operations between each other
+      while mitigating administrator involvement. Cluster introduction information is provided on a network
+      interface of one or more nodes in a cluster, and intercluster relationships are created between
+      peer clusters. A relationship can be created by initiating contact with a peer using a logical interface,
+      and respective peers retrieving the introduction information provided on the network interface.
+      Respective peers have a role/profile associated with the provided introduction information, which
+      is mapped to the peers, allowing pre-defined access to respective peers.
+    url: https://patents.google.com/patent/US8621569
+    evidence:
+      url: https://www.linkedin.com/in/steven-ewing
+      observed_at: '2026-10-24T08:15:47Z'
+  - title: System and method for selection of data paths in a clustered storage system
+    number: US 8,082,362
+    date: December 20, 2011
+    description: A system and method for selecting data paths among nodes of a clustered storage system
+      is provided. A data path selection module is operatively interconnected with one or more test modules
+      executing on a client computer of the clustered storage system. When invoked, the data path selection
+      module performs an auto discovery process to identify the configuration of the cluster and identifies
+      an appropriate data path to be utilized for either local/remote access to a specified data container.
+    url: https://patents.google.com/patent/US8082362
+    evidence:
+      url: https://www.linkedin.com/in/steven-ewing
+      observed_at: '2026-10-24T08:15:47Z'
+  talks:
+  - session:ldr1765b
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698793901741001Lib6
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: stewing
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

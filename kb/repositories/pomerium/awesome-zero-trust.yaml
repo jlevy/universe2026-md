@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:pomerium/awesome-zero-trust
+  full_name: pomerium/awesome-zero-trust
+  url: https://github.com/pomerium/awesome-zero-trust
+  description: 'A curated collection of awesome resources for the zero-trust security model. '
+  homepage: https://www.pomerium.com
+  stars: 776
+  forks: 87
+  watchers: 30
+  open_issues: 4
+  stats_observed_at: '2026-10-24T19:12:13Z'
+  topics:
+  - zero-trust
+  - beyondcorp
+  - identity
+  - access-management
+  - device-management
+  archived: false
+  fork: false
+  created_at: '2019-01-02T18:53:22Z'
+  pushed_at: '2022-12-09T17:36:47Z'
+  owner_login: pomerium
+  owner: gh:pomerium
+  pinned_by:
+  - gh:pomerium
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pomerium
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pomerium/awesome-zero-trust
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

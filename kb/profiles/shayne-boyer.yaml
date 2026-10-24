@@ -1,0 +1,632 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:shayne-boyer
+  person: person:shayne-boyer
+  brief_bio:
+    text: Shayne Boyer is a Principal Member of Technical Staff at Microsoft building AI-native developer
+      experiences for GitHub Copilot agentic tools. Boyer spoke at GitHub Universe 2023, 2024 and 2025
+      about building intelligent apps and agents with Azure, VS Code and GitHub Copilot.
+    cites:
+    - current_affiliations
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 7fecc273cda9831f6f4b111a5b1cacc40f0b279508d0da6e4a95d552684b0452
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/bld1543d
+    - ref: session:2025/bld1810m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/bld1543d
+    - ref: session:2025/bld1810m
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Data Analytics
+    target: term:topic-2023/data-analytics
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Data Management
+    target: term:topic-2023/data-management
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2769m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1543d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1810m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1543d
+  - label: Infrastructure as code
+    target: term:topic-2025/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1543d
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1543d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1543d
+  - label: Software Engineering
+    target: term:topic-2025/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1810m
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1543d
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:shayne-boyer
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev2769m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1543d
+  - label: JavaScript
+    target: software:javascript
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: JavaScript
+      ref: person:shayne-boyer
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:shayne-boyer
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/bld1543d
+  - label: Spec Kit
+    target: software:spec-kit
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Spec Kit
+      ref: session:2025/bld1810m
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2023/dev2769m
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303759776001smSv
+      ref: session:2025/bld1543d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303759776001smSv
+      ref: session:2025/bld1543d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303759776001smSv
+      ref: session:2025/bld1543d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303759776001smSv
+      ref: session:2025/bld1543d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303759776001smSv
+      ref: session:2025/bld1543d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303759776001smSv
+      ref: session:2025/bld1543d
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+  - label: Data Analytics
+    target: term:topic-2023/data-analytics
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694047018659001ulnK
+      ref: session:2023/dev2769m
+  education:
+  - school: University of Central Florida
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  credentials:
+  - kind: honor
+    title: Microsoft MVP - Visual Studio & Development Technologies
+    issuer: Microsoft
+    date: '2016-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: honor
+    title: Microsoft MVP - ASP.NET
+    issuer: Microsoft
+    date: '2015-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: honor
+    title: Microsoft MVP - ASP.NET
+    issuer: Microsoft
+    date: '2014-01-01T00:00:00.000Z'
+    description: The Microsoft Most Valuable Professional (MVP) Award is our way of saying thank you to
+      exceptional, independent community leaders who share their passion, technical expertise, and real-world
+      knowledge of Microsoft products with others. It is part of Microsoft’s commitment to supporting
+      and enriching technical communities. Even before the rises of the Internet and social media, people
+      have come together to willingly offer their ideas and best practices in technical communities. At…
+      Show more
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: honor
+    title: Nokia Developer Champion
+    issuer: Nokia Corporation
+    date: '2012-10-01T00:00:00.000Z'
+    description: Nokia Developer Champion, a recognition and reward program for top mobile developers
+      from around the world. Nokia Developer Champions are outstanding individuals who are selected on
+      the basis of their outstanding skills and devotion to the Nokia Developer community. Nokia Developer
+      Champions earn recognition for having outstanding expertise in certain Nokia Developer-related areas,
+      participating in various online and offline activities, and sharing and showcasing their knowledge
+      with… Show more
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: honor
+    title: Telerik Developer Expert
+    issuer: Telerik
+    date: '2012-09-01T00:00:00.000Z'
+    description: The Telerik MVP Program aims to recognize and reward the amazing people who are highly
+      successful at their own jobs and yet find the time and energy to share their extensive knowledge
+      and passion about Telerik products with fellow developers. The Telerik MVPs have been actively contributing
+      to the evolution of our organization and spreading the word about our products to the community.
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: certification
+    title: CrossFit Level 1 Trainer Certificate
+    issuer: CrossFit Education
+    date: Oct 2022
+    expires: Oct 2027
+    url: https://certificates.crossfit.com/3abd7274-c3b5-4229-abaa-7ba8b89956ab
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  publications:
+  - title: ASP.NET 5 Anywhere with OmniSharp and Yeoman
+    venue: MSDN Magazine
+    date: October 1, 2015
+    description: ASP.NET 5 no longer requires that developers work only with Visual Studio in Windows.
+      Learn how to create cross-platform Web applications with tools such as OmniSharp and Yeoman
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - title: 'TypeScript: Making .NET Developers Comfortable with JavaScript'
+    venue: MSDN Magazine
+    date: January 1, 2013
+    description: TypeScript is a powerful, typed superset of JavaScript that presents developers with
+      useful means for managing classes, modules and types. Learn how the open source TypeScript project
+      broadens the appeal of JavaScript development.
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - title: 'TypeScript: Add Productivity and Manageability to your JavaScript Apps'
+    venue: MSDN Magazine - ScriptJunkie
+    date: December 3, 2012
+    description: TypeScript is a powerful superset of JavaScript that serves as a source of structure
+      and organization for script developers. This article explores some of core concepts in TypeScript,
+      including classes, modules, interfaces and type safety.
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - title: When Making Apps, It’s the Little Things That Matter…
+    venue: DZone
+    date: November 11, 2012
+    description: Regardless of how cool or hip your application is or how it changes the way the user
+      consumes the data it provides, it won’t matter if for instance I cannot share how cool it is with
+      my friends, or if you can’t search for something in the application the way you expect it too.
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  activities:
+  - kind: project
+    title: Disney Fantasy Navigator - Android
+    detail: The Disney Fantasy on board Personal Navigator just went digital!Starting with Disney Fantasy,
+      we’ve got a brand new way to cruise. The Disney Fantasy Navigator app brings valuable Disney cruise
+      information right to your mobile device.To use Disney Fantasy Navigator, download the app, and once
+      on board, connect to the ship’s WiFi network—complimentary to app users only—and enjoy your cruise
+      in an exciting new way.With the official cruise app Disney Fantasy Navigator, you’ll know everything
+      that’s happening on the ship across your entire cruise. Explore the Disney Fantasy from bow to stern.
+      Learn about the ports you’ll be visiting and check the weather for the day. With Disney Fantasy
+      Navigator you can carry the entire cruise schedule with you and never miss a thing.Disney Fantasy
+      Navigator is only the first leg of our journey with the new Disney Cruise Line on board app. Soon
+      the app will be available for Disney Dream, Disney Magic and Disney Wonder and we will be adding
+      new features along the way.Embark on your Disney cruise with Disney Fantasy Navigator!PREPARE FOR
+      YOUR CRUISE DAY•Know what’s happening every day, from shows to shopping •Review your ports of call
+      and at-sea days•Get daily special spa and shopping offers and never miss a dealGET THE INFO YOU
+      NEED TO HELP YOU PLAN•View all on board activities across your entire voyage•Know what’s happening
+      next and where to go•Read details about activities you’re interested in•Find Disney Characters on
+      board•Save favorite activities in one convenient listNAVIGATE THE SHIP•Explore your ship deck by
+      deck, from bow to stern•Find locations of the activities you want to doDisney Fantasy Navigator
+      helps you make daily plans, navigate the ship and enjoy every cruise day to its fullest. · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: project
+    title: Disney Fantasy Navigator - iPhone
+    detail: The Disney Fantasy on board Personal Navigator just went digital!Starting with Disney Fantasy,
+      we’ve got a brand new way to cruise. The Disney Fantasy Navigator app brings valuable Disney cruise
+      information right to your mobile device. To use Disney Fantasy Navigator, download the app, and
+      once on board, connect to the ship’s WiFi network—complimentary to app users only—and enjoy your
+      cruise in an exciting new way. With the official cruise app Disney Fantasy Navigator, you’ll know
+      everything that’s happening on the ship across your entire cruise. Explore the Disney Fantasy from
+      bow to stern. Learn about the ports you’ll be visiting and check the weather for the day. With Disney
+      Fantasy Navigator you can carry the entire cruise schedule with you and never miss a thing.Disney
+      Fantasy Navigator is only the first leg of our journey with the new Disney Cruise Line on board
+      app. Soon the app will be available for Disney Dream, Disney Magic and Disney Wonder and we will
+      be adding new features along the way. Embark on your Disney cruise with Disney Fantasy Navigator!PREPARE
+      FOR YOUR CRUISE DAY•Know what’s happening every day, from shows to shopping•Review your ports of
+      call and at-sea days•Get daily special spa and shopping offers and never miss a dealGET THE INFO
+      YOU NEED TO HELP YOU PLAN•View all on board activities across your entire voyage•Know what’s happening
+      next and where to go•Read details about activities you’re interested in•Find Disney Characters on
+      board•Save favorite activities in one convenient listNAVIGATE THE SHIP•Explore your ship deck by
+      deck, from bow to stern•Find locations of the activities you want to doDisney Fantasy Navigator
+      helps you make daily plans, navigate the ship and enjoy every cruise day to its fullest. Download
+      the app to get started! · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: project
+    title: DZone
+    detail: DZone produces and publishes valuable content for our global audience of software developers
+      and architects. For 15 years, DZone has cultivated trust and earned credibility with our active
+      and engaged community by being honest, producing and sharing useful content where it will have the
+      greatest impact. This app was created for Windows 8/RT devices using HTML5/CSS3 for the UI and a
+      services back end running on Windows Azure using Node.js · Jan 2013
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: organization
+    title: Orlando Windows Phone User Group
+    detail: Social user group meeting monthly to discuss Windows Phone and Windows 8 development. Follows
+      us on Twitter @OrlandoWPUG · Apr 2012 · Present
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: organization
+    title: Orlando .NET Users Group
+    detail: '@ONETUG · Jan 2010 · Present'
+    evidence:
+      url: https://www.linkedin.com/in/shayneboyer
+      observed_at: '2026-10-24T08:46:49Z'
+  recent_writing:
+  - title: 10 Years at Microsoft
+    url: https://www.linkedin.com/pulse/10-years-microsoft-shayne-boyer-1bz2e
+    published: '2026-07-27T00:00:00.000Z'
+    channel: linkedin
+    summary: Today marks 10 years at Microsoft. When I look back, I don't think about projects, titles,
+      org charts, or milestones.
+  - title: 'The Joy and the Exhaustion: How AI Coding Tools Rewired the Developer Reward Loop'
+    url: https://www.linkedin.com/pulse/joy-exhaustion-how-ai-coding-tools-rewired-developer-reward-boyer-n6qre
+    published: '2026-03-06T00:00:00.000Z'
+    channel: linkedin
+    summary: I'm noticing something unsettling in how I'm working, and I keep hearing the same contradiction
+      from other developers:…
+  - title: Your SKILL Has a Quality Score — Do You Know What It Is?
+    url: https://www.linkedin.com/pulse/your-skill-has-quality-score-do-you-know-what-shayne-boyer-5iiie
+    published: '2026-02-17T00:00:00.000Z'
+    channel: linkedin
+    summary: Your agent picks the wrong skill. You debug for 30 minutes.
+  - title: VS Code's Container Tools Extension is a Game Changer for Container Development! 🐳
+    url: https://www.linkedin.com/pulse/vs-codes-container-tools-extension-game-changer-shayne-boyer-xnyfe
+    published: '2025-07-25T00:00:00.000Z'
+    channel: linkedin
+    summary: 'The Problem We''ve All Faced Picture this: You''re debugging an issue in production, your
+      container is running, and you…'
+  - title: '🚀 From Late-Night Pings to AI Automation: How We Built a GitHub Copilot Agent That Automates
+      Open Source Contributions'
+    url: https://www.linkedin.com/pulse/from-late-night-pings-ai-automation-how-we-built-github-shayne-boyer-oxcse
+    published: '2025-06-27T00:00:00.000Z'
+    channel: linkedin
+    summary: Ever get that late-night ping from a colleague with "hey I did this thing, what do you think..
+  - title: The Modern Coder vs. Vibe Code
+    url: https://www.linkedin.com/pulse/modern-coder-vs-vibe-code-shayne-boyer-fdx9e
+    published: '2025-04-11T00:00:00.000Z'
+    channel: linkedin
+    summary: In today’s world of AI copilots, VS Code themes that change with your mood, and endless debates
+      about tabs vs. spaces…
+  talks:
+  - session:2023/dev2769m
+  - session:2024/dev2016m
+  - session:2025/bld1543d
+  - session:2025/bld1810m
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695299596819001nMKu
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695299596819001nMKu
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695844379449001mndH
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,53 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:davidslater
+  login: davidslater
+  kind: user
+  url: https://github.com/davidslater
+  name: David Slater
+  company: GitHub, Inc.
+  followers: 43
+  public_repositories: 7
+  created_at: '2015-05-14T18:05:44Z'
+  contributions_last_year:
+    total: 476
+    commits: 215
+    pull_requests: 163
+    issues: 93
+    reviews: 5
+  starred_repositories: 1
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:githubnext/githubnext
+  - repo:github/gh-aw
+  - repo:github/gh-aw-firewall
+  - repo:github/gh-aw-threat-detection
+  - repo:github/gh-aw-harness
+  entity: person:david-slater
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: davidslater
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

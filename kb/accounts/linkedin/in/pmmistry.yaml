@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/pmmistry
+  platform: linkedin
+  handle: in/pmmistry
+  url: https://www.linkedin.com/in/pmmistry
+  display_name: Pooja Mistry
+  bio: At Postman, my role as a Developer Advocate combines a passion for community engagement…
+  location: Greater Boston
+  followers: 4550
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQG_MPm4g2wpjQ/profile-displayphoto-shrink_200_200/B4DZRgZDwTHYAY-/0/1736783970297?e=2147483647&v=beta&t=ETh8SpG3OmeefXJyVyA6P-l5pfrhfoi3QY_7QHz8hd4
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHg9CsXxKPcOg/profile-displaybackgroundimage-shrink_200_800/B4EZ6YRFl0HkAU-/0/1780671077070?e=2147483647&v=beta&t=RYe4x_lfTUZZIN2rPLurSMFnNVdd-O29idXcIZFvqEA
+  owner: person:pooja-mistry
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715310446284001ZXU9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/pmmistry
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

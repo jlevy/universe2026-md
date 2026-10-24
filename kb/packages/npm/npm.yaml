@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/npm
+  ecosystem: npm
+  name: npm
+  url: https://www.npmjs.com/package/npm
+  description: a package manager for JavaScript
+  latest_version: 12.2.1
+  license: Artistic-2.0
+  repository_url: git+https://github.com/npm/cli.git
+  software: software:npm-registry
+  sources:
+  - system: npm
+    url: https://registry.npmjs.org/
+    record_id: npm
+    retrieved_at: '2026-10-24T19:17:41Z'
+    snapshot: raw/registries/npm.json

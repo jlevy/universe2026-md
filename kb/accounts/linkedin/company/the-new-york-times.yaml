@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/the-new-york-times
+  platform: linkedin
+  handle: company/the-new-york-times
+  url: https://www.linkedin.com/company/the-new-york-times
+  display_name: The New York Times
+  bio: The New York Times is powered by the idea that independent, deeply reported journalism fuels a
+    healthy and engaged society. Our reporters, columnists, editors, engineers, designers, data analysts,
+    developers and marketers breathe life into the most important topics of our time and tell stories
+    that might otherwise go untold. Whether bringing new truths to light with our reporting, building
+    innovative products that deliver a best-in-class digital experience, or analyzing data to understand
+    how we can best serve our readers, our people power the world’s top destination for journalism. Working
+    at The Times means envisioning and developing the future of journalism. Bring your passion, perspective
+    and experience and join us as we seek the truth and help people understand the world. Check out our
+    career opportunities (nytco.com/careers) and follow our page to connect with Times employees, journalists
+    and readers.
+  website: https://www.nytco.com/careers
+  followers: 6942783
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQEp-f9Ptu2yVQ/company-logo_200_200/company-logo_200_200/0/1631319717018?e=2147483647&v=beta&t=w2DX068rzhiJAPKfaAWwzhwzqlQSYIlbXC3m4V_zJlI
+  owner: org:the-new-york-times
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/lesleycordero
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/the-new-york-times
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

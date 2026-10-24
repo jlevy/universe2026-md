@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/caterpillar-inc
+  platform: linkedin
+  handle: company/caterpillar-inc
+  url: https://www.linkedin.com/company/caterpillar-inc
+  display_name: Caterpillar Inc.
+  bio: For 100 years, we’ve been helping customers build a better, more sustainable world. Our innovative
+    products and services, backed by our global dealer network, provide exceptional value that helps customers
+    succeed. With 2024 sales and revenues of $64.8 billion, Caterpillar Inc. is the world’s leading manufacturer
+    of construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines
+    and diesel-electric locomotives. Caterpillar does business on every continent, principally operating
+    through three primary segments – Construction Industries, Resource Industries and Energy & Transportation
+    – and provides financing and related services through our Financial Products segment.
+  website: https://www.caterpillar.com/
+  followers: 2373077
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQGezvfCH-inoA/company-logo_200_200/B4EZuz4cAhKgAM-/0/1768249475691/caterpillar_inc_logo?e=2147483647&v=beta&t=WQ6rcy6sOfVisZNeWgcjn5_l_0hjLxmumAFNs6ySBt0
+  owner: org:caterpillar
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/brian-rossi-61b840b
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/caterpillar-inc
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

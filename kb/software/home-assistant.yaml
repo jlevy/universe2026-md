@@ -1,0 +1,24 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:home-assistant
+  name: Home Assistant
+  aliases:
+  - Home Assistant
+  kind: open_source
+  vendor: org:open-home-foundation
+  homepage: https://www.home-assistant.io
+  repositories:
+  - repo:home-assistant/core
+  packages:
+  - pkg:pypi/homeassistant
+  mentioned_in:
+  - person:franck-nijhof
+  - person:kyle-daigle
+  - session:bld1596h
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

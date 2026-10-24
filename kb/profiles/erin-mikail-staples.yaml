@@ -1,0 +1,522 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:erin-mikail-staples
+  person: person:erin-mikail-staples
+  brief_bio:
+    text: Erin Mikail Staples is a Staff Developer Experience Engineer at Tiger Data who leads developer
+      education and shapes the company's docs, tutorials and tooling. Staples speaks at GitHub Universe
+      2026 about AI guides as a new documentation layer.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 40fdbc24574d80a809b689a04a4a54642d305d33c6836863b265b479cda13c2c
+    stale: false
+  headline: Staff Developer Experience Engineer at Tiger Data
+  location: brooklyn, nyc
+  current_roles:
+  - Staff Developer Experience Engineer at Tiger Data
+  expertise:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1636s
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:bld1636s
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1636s
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:erinmikailstaples/startup-sim-3000
+    - ref: repo:erinmikailstaples/ghost-tools
+  - label: Jupyter Notebook
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:erinmikailstaples/nakedandafraid
+  - label: Handlebars
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:erinmikailstaples/solo-erin
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+    - url: https://github.com/erinmikailstaples/startup-sim-3000
+      ref: repo:erinmikailstaples/startup-sim-3000
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681325725001XVaj
+      ref: session:bld1636s
+  open_source:
+  - repository: repo:erinmikailstaples/awesome-pop-culture-data
+    relation: owner
+    stars: 5
+  - repository: repo:erinmikailstaples/git-bounce
+    relation: owner
+    stars: 5
+  - repository: repo:erinmikailstaples/nakedandafraid
+    relation: owner
+    stars: 3
+    primary_language: Jupyter Notebook
+  - repository: repo:erinmikailstaples/startup-sim-3000
+    relation: owner
+    stars: 2
+    primary_language: Python
+  - repository: repo:erinmikailstaples/ghost-tools
+    relation: owner
+    stars: 2
+    primary_language: Python
+  - repository: repo:erinmikailstaples/solo-erin
+    relation: owner
+    stars: 1
+    primary_language: Handlebars
+  - repository: repo:timescale/docs
+    relation: contributor
+    stars: 71
+    primary_language: JavaScript
+  - repository: repo:timescale/tiger-cli
+    relation: contributor
+    stars: 126
+    primary_language: Go
+  - repository: repo:timescale/tiger-data-docs
+    relation: contributor
+    stars: 4
+    primary_language: MDX
+  - repository: repo:timescale/pgvector-chatbot
+    relation: contributor
+    stars: 0
+  - repository: repo:timescale/cookbook-search
+    relation: contributor
+    stars: 3
+    primary_language: Python
+  education:
+  - school: New York University
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  credentials:
+  - kind: honor
+    title: 2016 Silver Addy Award Winner
+    issuer: AAF Reno
+    date: '2016-03-01T00:00:00.000Z'
+    description: Received mentions for work as an Art Director in the category of Branded Content and
+      Entertainment - Online-Interactive, for client work done for Immunize Nevada.
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: honor
+    title: 2015 Silver Addy Award Winner - District 14 Regionals
+    issuer: AAF
+    date: '2015-04-01T00:00:00.000Z'
+    description: Received a Silver Addy Award in the category of Integrated Consumer Campaigns for my
+      work on a series of advertisements featuring David's Tea. Entered in the National Addy Award competition
+      later this year sponsored by the AAF.
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: honor
+    title: 2015 All Mountain West Community Service Team
+    issuer: Mountain West Conference
+    date: '2015-03-01T00:00:00.000Z'
+    description: Received accolades for my dedication to community service as a student-athlete for the
+      University of Nevada. Never missed a single community service event in the past 2 years as a student-athlete,
+      and also maintained a high level of not only athletics, but academics as well.
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: honor
+    title: 2015 Gold Addy Award Winner - Reno
+    issuer: AAF Reno
+    date: '2015-03-01T00:00:00.000Z'
+    description: Received a Gold Addy Award in the category of Integrated Consumer Campaigns for my work
+      on a series of advertisements created for my creative advertising class. Will be competing in the
+      Regional Addy Award competition in hopes of taking the series on to the National Addy Awards sponsored
+      by the AAF.
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: honor
+    title: 2015 All Mountain West Team
+    issuer: Mountain West Conference
+    date: '2015-02-01T00:00:00.000Z'
+    description: Named to the 2014-2015 All Mountain West Team for my performance in the 200 yd Butterfly
+      at the Mountain West Conference Championships held in San Antonio Texas. Alongside a top-8 finish,
+      also moved my All Time Top 10 record time one spot higher for the University of Nevada's Swimming
+      and Diving Team.
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: honor
+    title: 2014 Best In Show - David's Tea Campaign
+    issuer: University of Nevada Creative Showcase
+    date: '2014-12-01T00:00:00.000Z'
+    description: Received "Best In Show" at a Creative Showcase as voted among local creative professionals
+      for a series of advertisements created for David's Tea. Comments about the ads included, "strong,
+      clean design" and "clever, witty copy."
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: certification
+    title: Digital Analytic Fundamentals
+    issuer: Google
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: certification
+    title: Google Analytic Platform Principles
+    issuer: Google
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: certification
+    title: Level 1 Coaching Certification
+    issuer: American Swim Coaches Association
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: certification
+    title: Level 2 Coaching Certification
+    issuer: American Swim Coaches Association
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: certification
+    title: Mobile App Analytics Fundamentals
+    issuer: Google
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: certification
+    title: Red Cross First Aid/AED
+    issuer: American Red Cross
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: certification
+    title: Red Cross Lifeguarding Certification
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: certification
+    title: Safety Training for Swim Coaches
+    issuer: American Red Cross
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  publications:
+  - title: Diving Career Improvement
+    venue: College Swimming and Diving Honors
+    date: June 4, 2013
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  activities:
+  - kind: project
+    title: The Sham Podcast
+    detail: Wait, what? Have you ever done that thing, and been entirely let down by that thing (looking
+      @ you Times Square), but enjoyed parts of it anyway? Welcome to the Sham Podcast. Because sometimes,
+      life is a total sham. Momina, Mayuri and myself created a happy hour podcast talking about those
+      things that society tells us we love, but we just can’t. Think about us like society’s Yelp review
+      — open, honest, and to be taken with a grain of salt. We’re here to laugh, cry, and unabashedly
+      love the things we love, or don’t. · Dec 2019
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: project
+    title: Erin For Tech
+    detail: An online cultural commentary newsletter focused on internet trends, digital strategy, and
+      ethics of innovation.The newsletter is launched weekly, and I continue to promote and publish it
+      on its own social media channels, and maintain a ~50%+ open rate for the newsletter. · Sep 2019
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: organization
+    title: American Advertising Federation
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: organization
+    title: American Institute of Graphic Arts
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: organization
+    title: American Marketing Association
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  - kind: organization
+    title: Public Relations Society of America
+    evidence:
+      url: https://www.linkedin.com/in/erinmikail
+      observed_at: '2026-10-24T08:13:28Z'
+  recent_writing:
+  - title: 'Building Tutorial Tinder: from idea to deployed Replit demo'
+    url: https://www.erinmikailstaples.com/building-tutorial-tinder-from-idea-to-deployed-replit-demo/
+    published: '2025-11-14T03:04:49Z'
+    channel: blog
+  - title: What building a Reactigotchi can teach you about an applications “memory”
+    url: https://www.erinmikailstaples.com/what-building-a-reactigotchi-can-teach-you-about-an-applications-memory/
+    published: '2025-11-05T22:32:23Z'
+    channel: blog
+  - title: How I learned to stop worrying and love the linter.
+    url: https://www.erinmikailstaples.com/how-i-learned-to-stop-worrying-and-love-the-linter/
+    published: '2025-11-03T15:54:59Z'
+    channel: blog
+  - title: Galileo Custom Metrics Campaign — Startup Simulator 3000
+    url: https://www.erinmikailstaples.com/galileo-custom-metrics-campaign-startup-simulator-3000/
+    published: '2025-10-31T19:36:34Z'
+    channel: blog
+  - title: MCP for EDU
+    url: https://www.erinmikailstaples.com/mcp-for-edu/
+    published: '2025-10-29T00:02:56Z'
+    channel: blog
+  - title: AI needs APIs
+    url: https://www.erinmikailstaples.com/ai-needs-apis/
+    published: '2025-08-20T15:02:34Z'
+    channel: blog
+  - title: The blog outline that beats all other blog outlines (for me).
+    url: https://www.erinmikailstaples.com/the-blog-outline-that-beats-all-other-blog-outlines/
+    published: '2024-01-04T15:53:17Z'
+    channel: blog
+  - title: Reflections on Re:Invent '23
+    url: https://www.erinmikailstaples.com/reflections-on-re-invent-23/
+    published: '2023-12-04T23:41:39Z'
+    channel: blog
+  - title: 'From Talk to Takeoff: harnessing the PyData Berlin presentation as a catalyst for our larger
+      content efforts.'
+    url: https://www.erinmikailstaples.com/from-talk-to-takeoff-harnessing-the-pydata-berlin-presentation-as-a-catalyst-for-our-larger-content-efforts/
+    published: '2023-08-07T18:45:42Z'
+    channel: blog
+  - title: Enabling User Adoption for New Generative AI Templates through Education
+    url: https://www.erinmikailstaples.com/enabling-user-adoption-for-new-generative-ai-templates-through-multi-platform-education-documentation/
+    published: '2023-08-07T17:37:33Z'
+    channel: blog
+  talks:
+  - session:bld1636s
+  gaps:
+  - x_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686678866005001uQkv
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: erinmikailstaples
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

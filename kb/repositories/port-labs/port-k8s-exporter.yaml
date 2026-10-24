@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:port-labs/port-k8s-exporter
+  full_name: port-labs/port-k8s-exporter
+  url: https://github.com/port-labs/port-k8s-exporter
+  description: Map, watch, and continuously export Kubernetes resources and their relationships into Port's
+    Context Lake.
+  stars: 30
+  forks: 15
+  watchers: 6
+  open_issues: 2
+  stats_observed_at: '2026-10-24T19:12:13Z'
+  primary_language: Go
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2022-10-12T07:51:00Z'
+  pushed_at: '2026-10-20T11:32:16Z'
+  owner_login: port-labs
+  owner: gh:port-labs
+  pinned_by:
+  - gh:port-labs
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: port-labs
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: port-labs/port-k8s-exporter
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:zhade.dev
+  url: http://zhade.dev/
+  kind: personal
+  title: Rahul Zhade
+  owner: person:rahul-zhade
+  link_basis:
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/rahul-zhade
+  sources:
+  - system: brightdata
+    url: https://x.com/rzhade
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://zhade.dev/
+    record_id: http://zhade.dev/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

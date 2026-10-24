@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/colindembovsky
+  platform: linkedin
+  handle: in/colindembovsky
+  url: https://www.linkedin.com/in/colindembovsky
+  display_name: Colin Dembovsky
+  bio: I am passionate about helping enterprises improve and transform by focusing on Developer…
+  location: Spring
+  followers: 1382
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQH-lawdDCEEBQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721758379540?e=2147483647&v=beta&t=BJJP-lXxcTgJImy1QQMqmNXQtSiJPSCYEofImNFXY7Y
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:colin-dembovsky
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685544375884001YlwX
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/colindembovsky
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

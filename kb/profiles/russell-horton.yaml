@@ -1,0 +1,279 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:russell-horton
+  person: person:russell-horton
+  headline: Imbue
+  current_roles:
+  - Imbue
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/bld1143m
+  - label: GitHub Agentic Workflows
+    target: software:github-agentic-workflows
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Agentic Workflows
+      ref: session:2025/bld1143m
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot CLI
+      ref: session:2025/bld1143m
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2025/bld1143m
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  publications:
+  - title: 'Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large
+      Text Collections'
+    venue: Digital Studies / Le Champ numérique
+    date: '2010'
+    description: The following article describes a simple technique to identify lexically-similar passages
+      in large collections of text using sequence alignment algorithms. Primarily used in the field of
+      bioinformatics to identify similar segments of DNA in genome research, sequence alignment has also
+      been employed in many other domains, from plagiarism detection to image processing. While we have
+      applied this approach to a wide variety of diverse text collections, we will focus our discussion
+      here on the identification of similar passages in the famous 18th-century Encyclopédie of Denis
+      Diderot and Jean d'Alembert.
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  patents:
+  - title: Automatic Media Summary Creation System and Methods
+    number: US NA
+    date: December 9, 2015
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - title: Word Generation and Scoring Using Sub-word Segments and Characteristic of Interest
+    number: US 13/828,600
+    date: March 15, 2013
+    description: Technique for scoring existing words or generating new words that are related to a certain
+      characteristic or connotation. For example, this technique can score words for how typical they
+      are of English orthography, or how "fast" they sound, or how much they sound like an American car
+      name, etc.
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - title: Data Mining for Free Range Definitions
+    number: US WORD 1000-1
+    date: February 3, 2011
+    description: Technique for data mining sentences that best illustrate the meaning of candidate words.
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  spoken_languages:
+  - French
+  activities:
+  - kind: volunteering
+    title: Board Member
+    detail: Wordnik Society · Education · Dec 2019 · - Present · 6 years 11 months · Dec 2019
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: project
+    title: Professional Service
+    detail: Manuscript Reviewer, "Twin Wolves" by Q MacCallum, 2026 Manuscript reviewer, Journal of American
+      Folklore, 2013Manuscript reviewer, Literary and Linguistic Computing, 2012 · Jan 2013
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: project
+    title: Named entity and concept recognition and disambiguation
+    detail: Identify important named entities and concepts in running text and resolve the n-grams to
+      the correct canonical representation (Wikipedia article), using contextual features to disambiguate
+      between candidate resolutions. Scala and MongoDB project. Similar to Google Knowledge Base / WikiLinks
+      projects. Named entity extraction and disambiguation. · Aug 2012
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: project
+    title: '"Ever since nineteen, had a perfect rhyme scheme": A corpus study of English rap rhyme'
+    detail: Used statistical modeling to infer phonetic and phonological similarity between English phonemes
+      on the basis of their ability to be substituted for one another in imperfect rhymes. Use corpus
+      of lyrics from 50,000 hip-hop songs, identifying rhyme schemes and instances of imperfect rhyme
+      to see what segments where most likely to be able to be aligned in imperfect rhymes. Results show
+      empirical basis for mapping phonetic similarity from corpus data. · Feb 2011
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: project
+    title: ARTFL DODGR
+    detail: 'Primary author of open-source online dictionary framework which incorporates multiple dictionary
+      sources. Complete framework from dictionary model, data ingestion, MySQL database backing, jQuery
+      interface elements, Blueprint CSS front end, backed by Python Pylons framework. Project won NEH
+      implementation grant.Project powers the online dictionary Dictionnaire Vivant de la Langue Française:
+      http://dvlf.uchicago.edu/ · Jan 2011'
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: project
+    title: Sequence alignment and plagiarism detection
+    detail: Developed sequence alignment algorithm based on gene sequencing techniques to find shared
+      text between documents in massive corpora. Technique can identify shared text even when substantial
+      alterations or edits have been made, and is fast even at massive scale -- can find all instances
+      of all quotations from all versions of Book of Genesis within Project Gutenberg in a couple seconds,
+      for example. Project led to several publications and presentations, open-source release. · Jan 2008
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: project
+    title: Illustrative citation identification
+    detail: Developed a set of patterns and features to identify good examples sentences that best illustrate
+      the meaning of a dictionary headword. Trained SVM model to predict sentence quality based on these
+      features. · Jan 2009
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: project
+    title: Digital South Asian Library dictionary development
+    detail: Created dozens of indexed, search digital editions of historical dictionaries in dozens of
+      Southeast Asian languages using PHP, Perl and MySQL. Fault-correcting processing of XML and pseudo-XML
+      files in some very odd formats, including ambiguous and error-ridden 7-bit character encodings.
+      · Jan 2005
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: project
+    title: Kanji Alive
+    detail: Developed back-end MySQL and PHP support for QuickTime and Flash application including audio
+      and video to teach the drawing and meaning of Japanese Kanji characters. Front-end work to integrate
+      API calls into QuickTime / Flash project. · Jan 2002
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: project
+    title: Swagger API clients
+    detail: Wrote the Python and PHP client generators for Swagger codegen project, and the associated
+      API clients.https://github.com/wordnik/swagger-codegenhttps://github.com/wordnik/wordnik-pythonhttps://github.com/wordnik/wordnik-php
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: course
+    title: Advanced Probabilistic Methods in Linguistics
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: course
+    title: Computational Corpus Linguistics
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  - kind: course
+    title: Probabilistic Methods in Linguistics
+    evidence:
+      url: https://www.linkedin.com/in/linguistics
+      observed_at: '2026-10-24T08:45:03Z'
+  talks:
+  - session:2025/bld1143m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685999927978001C8Wy
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

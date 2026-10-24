@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Experience/v1
+  schema: ../_schemas/experience.schema.yaml
+  envelope: experience
+  status: permissive
+experience:
+  id: experience:wellness-lounge
+  name: Wellness lounge
+  description: A new space to take a pause, clear your cache, and return to your Universe experience refreshed.
+  category: experiment
+  schedule: Oct 28 8am–5pm; Oct 29 8:30am–5pm
+  location: Gateway Pavilion
+  venue: venue:gateway-pavilion
+  action: Add to agenda
+  image_url: https://static.rainfocus.com/github/universe26/static/staticfile/staticfile/wellness_lounge_1785346675934001DXZr.png
+  sources:
+  - system: rainfocus
+    url: https://reg.githubuniverse.com/flow/loadPage?pageUri=explore
+    retrieved_at: '2026-10-24T06:46:13Z'
+    snapshot: raw/rainfocus/pages/explore.json

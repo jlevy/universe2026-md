@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:zizmorcore/zizmor
+  full_name: zizmorcore/zizmor
+  url: https://github.com/zizmorcore/zizmor
+  description: Static analysis for GitHub Actions (and more)
+  homepage: http://docs.zizmor.sh/
+  stars: 6770
+  forks: 274
+  watchers: 15
+  open_issues: 143
+  stats_observed_at: '2026-10-24T19:12:32Z'
+  primary_language: Rust
+  topics:
+  - github-actions
+  - security
+  - security-tools
+  - static-analysis
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2024-08-19T18:26:28Z'
+  pushed_at: '2026-10-23T05:28:48Z'
+  owner_login: zizmorcore
+  pinned_by:
+  - gh:woodruffw
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: woodruffw
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: zizmorcore/zizmor
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

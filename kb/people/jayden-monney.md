@@ -1,0 +1,63 @@
+---
+title: Jayden Monney
+softschema:
+  contract: paraverse.conference:Person/v1
+  schema: ../_schemas/person.schema.yaml
+  envelope: person
+  status: permissive
+person:
+  id: person:jayden-monney
+  name: Jayden Monney
+  given_name: Jayden
+  family_name: Monney
+  job_title: Crazy Controllers, Undercity Hackathon
+  listed_for: event:github-universe-2025
+  affiliations:
+  - organization: org:hack-club
+    title: Crazy Controllers, Undercity Hackathon
+    current: false
+    basis: event_listing
+    label: Hack Club
+  affiliation_label: Hack Club
+  photo_url: https://static.rainfocus.com/github/universe25/att/1760130524419001MGnt/attprofile/IMG_20251014_222221_604%20%281%29_1761001284234001Q5rK.jpg
+  inclusion_basis: published_by_event
+  participations:
+  - event: event:github-universe-2025
+    role: speaker
+    status: confirmed
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  github_resolution: absent
+  profile: profile:jayden-monney
+  featured: false
+  sessions:
+  - session: session:2025/1616k
+    role: speaker
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1760130524419001MGnt
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+---
+# Jayden Monney
+
+Crazy Controllers, Undercity Hackathon, Hack Club
+
+- **GitHub Universe 2025:** speaker (confirmed)
+
+## Profile
+
+- **Expertise:** Agile practices, AI (Agentic AI, Generative AI, Fine-tuned modeling, Models), Collaboration, Community, Open source, Social impact
+- **Interests:** Agile practices, AI, Collaboration, Dependabot, Discussions, Education
+
+Evidence for each item: [profile](../profiles/jayden-monney.yaml).
+
+## Affiliations
+
+- Crazy Controllers, Undercity Hackathon, [Hack Club](../organizations/hack-club.md) (past; per event listing)
+
+## Sessions
+
+- [Dream it in the morning, build it in the afternoon: Collapsing the distance from idea to impact](../sessions/2025/1616k.md) — Wed Oct 29 2025, 10:00 AM–10:45 AM PDT

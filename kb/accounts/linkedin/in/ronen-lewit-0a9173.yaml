@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ronen-lewit-0a9173
+  platform: linkedin
+  handle: in/ronen-lewit-0a9173
+  url: https://www.linkedin.com/in/ronen-lewit-0a9173
+  display_name: Ronen Lewit
+  bio: As a Technology Executive and Global Field CTO, I empower enterprises to deliver software…
+  location: San Francisco Bay Area
+  followers: 3063
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQHKsm5BLVSnQQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654099695649?e=2147483647&v=beta&t=xlt4zKBo5r-wmK_dirsY9HcXpj87Sag9XwZUV-6beFk
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQFpIS4N8TTofg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1629440933823?e=2147483647&v=beta&t=CNjv-fbV5oxdoMEe2sv_5QQnggsBqOFq1czv49eYrOY
+  owner: person:ronen-lewit
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1729704712665001qg5w
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ronen-lewit-0a9173
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

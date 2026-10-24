@@ -1,0 +1,323 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:chad-bentz
+  person: person:chad-bentz
+  brief_bio:
+    text: Chad Bentz is a Principal Field Security Specialist at GitHub with application security experience
+      in the financial services industry. Bentz spoke at GitHub Universe 2023 about using AI in GitHub
+      Advanced Security for AppSec.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: b4d263198d1ace60712855169e39e3b111d9a38e91f6c5ea8f42efb38eef85bd
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/sec2753d
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+  education:
+  - school: Kutztown University of Pennsylvania
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  credentials:
+  - kind: honor
+    title: Revenue Club FY24
+    issuer: GitHub
+    date: '2024-07-01T00:00:00.000Z'
+    description: Club is a prestigious award intended to recognize the top performers within the Revenue
+      Organization. Club24 Hubbers get to celebrate their significant contribution made to GitHub. Club24
+      qualifiers will be selected using a “Top 50 Achievers” model comprising the Top 50 Revenue Hubbers
+      that meet sales criteria and supporting MVPs from across the company. Winners were announced at
+      Revenue Kick-off (RKO) at the start of FY25 by the Revenue Leadership Team (RLT).
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: honor
+    title: People's Choice Worldwide Supporting MVPs FY2023
+    issuer: GitHub
+    date: '2023-07-01T00:00:00.000Z'
+    description: 'Category which the individual is being awarded in: Team Player Plus values that were
+      demonstrated: * Play & Coach * Success for All Why * Integral in supporting technical challenging
+      wins * GitHub Advanced Security for Azure DevOps GURU How * Consistent, positive honest cadence
+      with customers * Diligent international communicator * Reliable, eager passionate about all things
+      security * Every conversation he brings energy and customer focus *… Show more'
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: honor
+    title: KEY Contributors Spotlight for 2Q 2016
+    issuer: Lending Solutions
+    date: '2016-08-01T00:00:00.000Z'
+    description: Each and every day Lending Associates go the extra mile for both our clients and Fiserv.
+      These accomplishments are continually recognized through peer recognition. With the intent to take
+      the spirit of the Fiserv values to the next level and amplify the recognition of our Lending Associates,
+      Lending Solutions is excited to announce a quarterly KEY Contributor Spotlight. Chad was recognized
+      with a Living Proof for his KEY role in converting the entire suite of projects and solutions… Show
+      more
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: honor
+    title: President's Team Leadership Award for 1Q 2014
+    issuer: Lending Solutions
+    date: '2014-03-01T00:00:00.000Z'
+    description: In recognition of your efforts on the LoanLink Implementation Team, winner of the Lending
+      Solutions President Team Leadership Award for 1Q 2014
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: honor
+    title: Partner in Excellence - 2010 Annual Award
+    issuer: Fiserv Lending Division
+    date: '2011-02-01T00:00:00.000Z'
+    description: Partners in Excellence - Program philosophy fosters cooperation among Fiserv associates,
+      as well as clients • Communicating realistic and achievable results • Measuring performance • Recognizing
+      accomplishments • Incorporating living the Fiserv values
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: honor
+    title: President's Team Leadership Award for 2Q 2010
+    issuer: Lending Solutions
+    date: '2010-04-01T00:00:00.000Z'
+    description: In recognition of your efforts on the Fiserv Automotive Loan Origination Implementation
+      Team, winner of the Lending Solutions President Team Leadership Award for 2Q 2010
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: honor
+    title: Partner in Excellence - 2010 1Q Award
+    issuer: Lending Solutions
+    date: '2010-03-01T00:00:00.000Z'
+    description: Partners in Excellence - Program philosophy fosters cooperation among Fiserv associates,
+      as well as clients • Communicating realistic and achievable results • Measuring performance • Recognizing
+      accomplishments • Incorporating living the Fiserv values
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: honor
+    title: Partner in Excellence - 2008 3Q Award
+    issuer: Lending Solutions
+    date: '2008-10-01T00:00:00.000Z'
+    description: Partners in Excellence - Program philosophy fosters cooperation among Fiserv associates,
+      as well as clients • Communicating realistic and achievable results • Measuring performance • Recognizing
+      accomplishments • Incorporating living the Fiserv values
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: certification
+    title: Advanced in AI Security Management (AAISM)
+    issuer: ISACA
+    date: May 2026
+    url: https://www.credly.com/badges/47c74a6e-95bf-45a5-8517-65852c185fd9/public_url
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: certification
+    title: Certified Information Systems Security Professional (CISSP)
+    issuer: (ISC)²
+    date: Apr 2016
+    url: https://www.youracclaim.com/badges/0512a846-7469-4c08-baf7-e4cf68f3ba4f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: Microsoft
+    date: Nov 2025
+    expires: Nov 2027
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: certification
+    title: Certified Secure Developer
+    issuer: WhiteHat Security
+    url: https://info.whitehatsec.com/Q217-Certified-Secure-Developer-Series_WCSD-Certification.html?mkt_tok=eyJpIjoiTUdNeVltSmtOVEl4WmpaaCIsInQiOiJ1ZUtIWm9iMm81Wmc3bEZ6Rm1DTHk4cFo5YTBhRG9oR1ExSkFqajA3UDE4OGR0VEo4aE9tK2loMDFoa1I0TXZGRUtYUDdqUEhPbkFYelg1cmhRSUdcLzl
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  activities:
+  - kind: project
+    title: GitHub Advanced Security for Azure DevOps
+    detail: DRI on the go to market initiative for the GitHub Field Security team. · Nov 2022
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: project
+    title: .NET CONF 2025
+    detail: Nov 2025
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: project
+    title: Co-Author GitHub Advanced Security SIEM integration guide and Microsoft Sentinel solution
+    detail: Jul 2022
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: project
+    title: defi SOLUTIONS end-to-end solution go-live for the private label Mazda Financial Services (MFS)
+      business delivered through Toyota Motor Credit Corporation
+    detail: This solution encompasses a full suite of defi products and services that include the defi
+      XLOS originations platform, defi SERVICING, the innovative defi CONNECT SERVICING portal that connects
+      borrowers to lenders, and back-office processes – including full titles, cash management, toll violations,
+      and support for collections, recoveries, and remarketing delivered through defi’s business processes
+      operations center in Amherst, NY. · Mar 2019
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: project
+    title: Loan Servicing
+    detail: Jun 2012
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: project
+    title: LoanLink
+    detail: Feb 2014
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: project
+    title: Automotive Loan Origination System
+    detail: Aug 2008
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: project
+    title: Loan Launch Enterprise
+    detail: Aug 2007
+    evidence:
+      url: https://www.linkedin.com/in/chadbentz
+      observed_at: '2026-10-24T08:43:05Z'
+  talks:
+  - session:2023/sec2753d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047485916001syiZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

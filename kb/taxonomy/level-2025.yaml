@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: level-2025
+  event: event:github-universe-2025
+  label: Level
+  multi_valued: false
+  terms:
+  - id: term:level-2025/level-100-introductory
+    label: 'Level 100: Introductory'
+    description: Designed for those new to the topic, these sessions focus on foundational knowledge,
+      covering basic concepts, features, and benefits. No prior expertise is assumed.
+    source_id: option_1597340253500
+    session_count: 34
+  - id: term:level-2025/level-200-intermediate
+    label: 'Level 200: Intermediate'
+    description: Best suited for attendees with a working understanding of the topic. These sessions explore
+      real-world applications, technical details, and best practices.
+    source_id: option_1597340257085
+    session_count: 56
+  - id: term:level-2025/level-300-advanced
+    label: 'Level 300: Advanced'
+    description: Intended for experienced practitioners, these sessions dive deep into complex, real-world
+      challenges, advanced techniques, and expert-level insights.
+    source_id: option_1597340262463
+    session_count: 15
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681231920170001WVFG
+    retrieved_at: '2026-10-24T08:03:18Z'
+    snapshot: raw/editions/universe25/attributes.json

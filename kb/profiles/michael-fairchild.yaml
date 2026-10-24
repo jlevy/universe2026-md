@@ -1,0 +1,318 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:michael-fairchild
+  person: person:michael-fairchild
+  brief_bio:
+    text: Michael Fairchild is an accessibility engineer, now affiliated with Renaissance Learning, who
+      created the a11y-llm-eval project on the accessibility of AI-generated code and founded a11ysupport.io.
+      Fairchild speaks at GitHub Universe 2026 about accelerating accessibility with AI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 9a2ce38633da94721d6a5e0f03ad460d9ba0d9533b0dd7e17d07c896b2ea1f85
+    stale: false
+  headline: Renaissance Learning
+  location: Lincoln, NE
+  current_roles:
+  - Renaissance Learning
+  expertise:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:accessibilitysupported/a11ysupport.io
+    - ref: repo:mfairchild365/weather-app-demo
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+    - url: https://github.com/github/awesome-copilot
+      ref: repo:github/awesome-copilot
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: agent-skills
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/awesome-copilot
+      ref: repo:github/awesome-copilot
+  - label: AI
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/awesome-copilot
+      ref: repo:github/awesome-copilot
+  - label: AI agents
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/awesome-copilot
+      ref: repo:github/awesome-copilot
+  - label: custom-agents
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/awesome-copilot
+      ref: repo:github/awesome-copilot
+  - label: kagi
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/kagisearch/kite-public
+      ref: repo:kagisearch/kite-public
+  - label: pangolin
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/fosrl/docs
+      ref: repo:fosrl/docs
+  - label: prompt-engineering
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/awesome-copilot
+      ref: repo:github/awesome-copilot
+  open_source:
+  - repository: repo:accessibilitysupported/a11ysupport.io
+    relation: pinned
+    stars: 330
+    primary_language: TypeScript
+  - repository: repo:microsoft/a11y-llm-eval
+    relation: pinned
+    stars: 61
+    primary_language: Python
+  - repository: repo:mfairchild365/zero-to-a11y-expert
+    relation: owner
+    stars: 24
+  - repository: repo:microsoft/a11y-llm-eval-report
+    relation: pinned
+    stars: 2
+  - repository: repo:mfairchild365/weather-app-demo
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:kagisearch/kite-public
+    relation: contributor
+    stars: 1087
+    primary_language: Svelte
+  - repository: repo:github/awesome-copilot
+    relation: contributor
+    stars: 40374
+    primary_language: JavaScript
+  - repository: repo:fosrl/docs
+    relation: contributor
+    stars: 14
+    primary_language: MDX
+  education:
+  - school: Southeast Community College
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  credentials:
+  - kind: honor
+    title: OpenAIR - First Place Winner - Developer category
+    issuer: OpenAIR (knowbility)
+    date: '2018-05-01T00:00:00.000Z'
+    description: https://air-rallies.org/2018/05/16/seven-developer-teams-place-while-153-developers-win-during-the-openair-2018-website-accessibility-competition/
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - kind: certification
+    title: Microsoft Global Hackathon 2024 Executive Challenge Winner
+    issuer: Microsoft
+    date: Nov 2024
+    url: https://www.credly.com/badges/79b3f3fd-1c4c-491e-9f46-0dc1a01a036b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - kind: certification
+    title: Hackathon Winner 2024
+    issuer: Microsoft
+    date: Mar 2024
+    url: https://www.credly.com/badges/d8a0e07c-4cfb-4266-9221-49ac7c307ae0/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - kind: certification
+    title: Certified Professional in Accessibility Core Competency (CPACC)
+    issuer: IAAP - International Association of Accessibility Professionals
+    date: Aug 2018
+    url: https://www.accessibilityassociation.org/cpacccertification
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - kind: certification
+    title: Certified Professional in Web Accessibility (CPWA)
+    issuer: IAAP - International Association of Accessibility Professionals
+    date: Aug 2018
+    url: https://www.accessibilityassociation.org/cpwacertification
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - kind: certification
+    title: Web Accessibility Specialist (WAS)
+    issuer: IAAP - International Association of Accessibility Professionals
+    date: Aug 2018
+    url: https://www.accessibilityassociation.org/wascertification
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  publications:
+  - title: What is Accessibility Coaching and why does it matter?
+    venue: Deque blog post
+    date: April 19, 2022
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - title: Collaborative planning, the forgotten step of accessible development
+    description: This blog post introduces the concept of Accessibility Behavior Informed Development
+      (a11yBID), which extends the Behavior Driven Development (BDD) agile process to enable development
+      teams to create readable and testable acceptance criteria for accessibility.
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: project
+    title: Co-chair of the W3C ARIA-AT community group
+    detail: Nov 2018
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - kind: project
+    title: a11ysupport.io
+    detail: A site that lists assistive technology support for various technologies like HTML and ARIA
+      · Aug 2017
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - kind: project
+    title: SiteMaster (Web Auditing software)
+    detail: Web Auditing framework that can be used to create a registry of websites and scan them for
+      various quality metrics, including accessibility, broken links and HTML Accessibility. · Jan 2014
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - kind: project
+    title: UNLchat
+    detail: A visitor chat platform built for an enterprise environment that can be deployed on many distinct
+      sites for a large organization, while being centrally managed. · Jan 2013
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  - kind: project
+    title: A11y-llm-eval
+    detail: The A11y-llm-eval project aims to benchmark how well LLMs and coding agents procude accessible
+      code, as well as mesure the impact of different techniques to improve results. Learn more https://microsoft.github.io/a11y-llm-eval-report/
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairchild-15381928
+      observed_at: '2026-10-24T08:15:12Z'
+  talks:
+  - session:ldr1634p
+  gaps:
+  - x_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777682948173001RCCS
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mfairchild365
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

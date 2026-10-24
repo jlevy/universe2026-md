@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/ericwbailey.website
+  platform: bluesky
+  handle: ericwbailey.website
+  url: https://bsky.app/profile/ericwbailey.website
+  display_name: Eric Bailey
+  bio: '#accessibility / #a11y advocate, post enjoyer.'
+  followers: 9393
+  created_at: '2023-04-28T18:16:52Z'
+  owner: person:eric-bailey
+  link_basis:
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ericwbailey
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: ericwbailey.website
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

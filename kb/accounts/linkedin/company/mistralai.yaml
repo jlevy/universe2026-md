@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/mistralai
+  platform: linkedin
+  handle: company/mistralai
+  url: https://www.linkedin.com/company/mistralai
+  display_name: Mistral
+  bio: 'Frontier AI. In your hands. We believe in a future where AI is abundant and accessible. We aspire
+    to empower the world to build with—and benefit from—the most significant technology of our time. Join
+    us: mistral.ai/careers'
+  website: https://mistral.ai/
+  followers: 747924
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFnDmpKjopRdg/company-logo_200_200/B4EZ5ul_VxJ0AE-/0/1779971913332/mistralai_logo?e=2147483647&v=beta&t=Qgi5-8kJFHRsWYFl3pFqVeKIrlqKuwUR19x_7Cm-ug4
+  owner: org:mistral
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/kimadelinemiguel
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/mistralai
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sueblack
+  platform: linkedin
+  handle: in/sueblack
+  url: https://www.linkedin.com/in/sueblack
+  display_name: Professor Sue Black OBE
+  bio: Professor Sue Black OBE is a globally recognised technology leader, keynote speaker, and…
+  location: United Kingdom
+  followers: 23870
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQESa8erDS-saQ/profile-displayphoto-shrink_200_200/B4EZWGIswzGgAc-/0/1741712185081?e=2147483647&v=beta&t=IU2QBUn9MVfkCNqoIVecWhlnIL2xIUmlH8w5pwqgbps
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEpWCPbqpnSUQ/profile-displaybackgroundimage-shrink_200_800/B4EZWGIK9tG0Ag-/0/1741712046133?e=2147483647&v=beta&t=dJxzdc0DvKhdqHMk984KI_nDy-QNBNlQ2SSalBnJFWk
+  owner: person:sue-black
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1789651997091001h2xh
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sueblack
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

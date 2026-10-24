@@ -1,0 +1,24 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:systeminit.com
+  url: http://systeminit.com
+  kind: company
+  owner: org:system-initiative
+  link_basis:
+  - github_profile
+  fetch_status: error
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: adamhjk
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: http://systeminit.com
+    record_id: http://systeminit.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:samidipbasu.com
+  url: http://samidipbasu.com/
+  kind: personal
+  title: Modern Developer Ramblings | Learning from and Giving back to Developer Community
+  description: Learning from and Giving back to Developer Community
+  owner: person:sam-basu
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://samidipbasu.com/feed/
+  - https://samidipbasu.com/comments/feed/
+  linked_accounts:
+  - acct:x/samidip
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: samidip
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://samidipbasu.com/
+    record_id: http://samidipbasu.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

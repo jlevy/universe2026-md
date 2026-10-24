@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:gatevnotes.com
+  url: http://www.gatevnotes.com/
+  kind: personal
+  title: The blog of Radoslav Gatev
+  owner: person:radoslav-gatev
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://www.gatevnotes.com/rss/
+  linked_accounts:
+  - acct:x/radoslavgatev
+  sources:
+  - system: brightdata
+    url: https://x.com/RadoslavGatev
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://www.gatevnotes.com/
+    record_id: http://www.gatevnotes.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:seancdavis.com
+  url: https://www.seancdavis.com/
+  kind: personal
+  title: Hi, I'm Sean. | Sean C Davis
+  description: Hi, I'm Sean. I'm a tinkerer and a teacher. A developer. A sandwich lover. Most of the
+    time I'm only pretending to know what I'm doing.
+  owner: person:sean-c-davis
+  link_basis:
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://www.seancdavis.com/feed.xml
+  linked_accounts:
+  - acct:x/seancdavis29
+  sources:
+  - system: brightdata
+    url: https://x.com/seancdavis29
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://www.seancdavis.com/
+    record_id: https://www.seancdavis.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

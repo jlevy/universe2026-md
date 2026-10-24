@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/mfairchild365.bsky.social
+  platform: bluesky
+  handle: mfairchild365.bsky.social
+  url: https://bsky.app/profile/mfairchild365.bsky.social
+  display_name: Michael Fairchild
+  bio: |-
+    Creator of a11ysupport.io
+    Eater of donuts
+    Advocate of inclusion
+    Player of games
+    Technical Program Manager at Microsoft
+    Reader of Sci-fi
+    Father of children
+    Silly talker of things
+  followers: 90
+  created_at: '2024-11-15T14:40:13Z'
+  owner: person:michael-fairchild
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777682948173001RCCS
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: mfairchild365.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/kate_catlin
+  platform: x
+  handle: Kate_Catlin
+  url: https://x.com/Kate_Catlin
+  display_name: Kate Catlin
+  bio: AI Model Lifecycle PM for @github Copilot. Building tools for AI developers. Potluck enthusiast.
+    Laughs often. Views my own.
+  location: Boulder, CO
+  followers: 2729
+  following: 1320
+  posts_count: 4220
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1886552218859659266/GP9dPdby_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1131823837/1545025878
+  created_at: '2013-01-29T18:40:31Z'
+  owner: person:kate-catlin
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699458820981001klSw
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/Kate_Catlin
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,138 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:tiffany-kitchen
+  person: person:tiffany-kitchen
+  brief_bio:
+    text: Tiffany Kitchen is Head of Product for Novus at Pendo, after building Pendo Analytics, serving
+      as Director of Product at Anno.ai and starting as an engineer at the CIA. Kitchen speaks at GitHub
+      Universe 2026 in a sponsored session on Novus.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: 714d6ce14935d09fbae78582ecf85dc83c2eed5d27d0b3fbeade5c8535920572
+    stale: false
+  headline: Head of Product at Pendo.io
+  current_roles:
+  - Head of Product at Pendo.io
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1872d
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1872d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1872d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1872d
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1872d
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788875221767001lMZY
+      ref: session:ldr1872d
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788875221767001lMZY
+      ref: session:ldr1872d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788875221767001lMZY
+      ref: session:ldr1872d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788875221767001lMZY
+      ref: session:ldr1872d
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788875221767001lMZY
+      ref: session:ldr1872d
+  open_source:
+  - repository: repo:pendo-io/novus-plugin
+    relation: contributor
+    stars: 5
+    primary_language: JavaScript
+  credentials:
+  - kind: certification
+    title: Product Analytics Certification
+    issuer: Pendo.io
+    date: Mar 2023
+    url: https://www.credly.com/badges/4865e6e6-d579-4fda-bdcc-fcef237e9232/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/tiffany-kitchen-product-manager
+      observed_at: '2026-10-24T08:15:43Z'
+  talks:
+  - session:ldr1872d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1790351297022001fOes
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tiffanykitchen-spec
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

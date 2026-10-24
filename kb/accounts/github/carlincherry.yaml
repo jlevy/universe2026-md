@@ -1,0 +1,52 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:carlincherry
+  login: carlincherry
+  kind: user
+  url: https://github.com/carlincherry
+  name: Carlin Cherry
+  followers: 172
+  public_repositories: 7
+  created_at: '2020-02-16T20:37:47Z'
+  contributions_last_year:
+    total: 1022
+    commits: 43
+    pull_requests: 2
+    issues: 10
+    reviews: 2
+  starred_repositories: 1
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:github/docs
+  - repo:carlin-dependabot-testing/forked-demo
+  - repo:carlin-dependabot-testing/aw-octo-billing
+  - repo:carlin-dependabot-testing/aw-octo-billing-single-workflow
+  - repo:carlin-dependabot-testing/vex-auto-generator
+  organization_logins:
+  - github
+  - dependabot
+  pinned:
+  - repo:dependabot/dependabot-core
+  entity: person:carlin-cherry
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: carlincherry
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

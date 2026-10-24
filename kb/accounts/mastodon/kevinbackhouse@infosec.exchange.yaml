@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:mastodon/kevinbackhouse@infosec.exchange
+  platform: mastodon
+  handle: kevinbackhouse@infosec.exchange
+  url: https://infosec.exchange/@kevinbackhouse
+  display_name: Kev
+  followers: 161
+  following: 18
+  posts_count: 20
+  avatar_url: https://media.infosec.exchange/infosec.exchange/accounts/avatars/108/195/093/303/275/630/original/de4f2ffa89d3064c.jpg
+  created_at: '2022-04-25T00:00:00Z'
+  owner: person:kevin-backhouse
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kevinbackhouse
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: mastodon
+    url: https://infosec.exchange/@kevinbackhouse
+    record_id: kevinbackhouse@infosec.exchange
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json

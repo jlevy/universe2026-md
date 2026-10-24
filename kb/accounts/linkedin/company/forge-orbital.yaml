@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/forge-orbital
+  platform: linkedin
+  handle: company/forge-orbital
+  url: https://www.linkedin.com/company/forge-orbital
+  display_name: Forge Orbital
+  bio: AI accountability that grows into governance. Forge Orbital helps enterprise and federal teams
+    understand, improve and govern high-consequence AI work. Our Accountability Engine brings together
+    evaluation of AI outputs, advisory cost optimization and independent checks of proposed actions against
+    customer-defined rules. Start where you need it; governance is available from day one. Forge shows
+    what evidence mattered, which rule applied, what uncertainty remained and where human review is needed.
+    The resulting proof trail can be independently verified and replayed. Your systems retain execution
+    authority; your people stay in charge. Enforcement belongs in the customer's qualified, protected
+    integration boundary. Customer-hosted delivery supports on-premises and private-cloud environments.
+    Forge does not train product models on customer data or learn across customers. External AI services
+    retain their own separate data paths. Built for AI agents, financial-services model governance, insurance,
+    compliance, critical infrastructure and federal AI accountability. Forge Orbital is an NVIDIA Inception
+    Program member. The Forge solution was assessed as Awardable on the U.S. Department of Defense CDAO
+    Tradewinds Solutions Marketplace. forgeorbital.com
+  website: https://forgeorbital.com/
+  followers: 34
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQEPWezfPROUtw/company-logo_200_200/B4EaFghUlGJQAE-/0/1792620710485/forge_orbital_logo?e=2147483647&v=beta&t=e2CtuA0h4XXpIDJgixWBA2ytWMfJJOO2aUHk3jYb5b0
+  owner: org:forge-orbital
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/brittany-istenes-91b902152
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/brittany-istenes
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/forge-orbital
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

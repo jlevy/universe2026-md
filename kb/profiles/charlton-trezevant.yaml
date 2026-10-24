@@ -1,0 +1,418 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:charlton-trezevant
+  person: person:charlton-trezevant
+  brief_bio:
+    text: Charlton Trezevant works at XBOW and has written about structured secrets and YubiKey-based
+      PKI. Trezevant spoke at GitHub Universe 2023, as an application security consultant on Xpirit's
+      USA team, about scaling DevSecOps with GitHub Advanced Security.
+    cites:
+    - current_affiliations
+    - publications
+    - listed_role
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 6a4ef29fb02942ae262485342a15f73a833b2dd4df2489b665af384c85e620e2
+    stale: false
+  headline: XBOW
+  current_roles:
+  - XBOW
+  expertise:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2023/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Infrastructure as Code
+    target: term:topic-2023/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Advanced Security
+      ref: session:2023/dev2854d
+  interests:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2023/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Infrastructure as Code
+    target: term:topic-2023/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  credentials:
+  - kind: honor
+    title: First Place - Duel Factor CTF at the Florida Cyber Conference
+    issuer: '-'
+    date: '2019-01-01T00:00:00.000Z'
+    description: As a member of the UCF CTF team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: First Place - Eastern Regional Collegiate Penetration Testing Competition
+    issuer: '-'
+    date: '2019-01-01T00:00:00.000Z'
+    description: Also includes first place in 2/3 scored subcategories, as a member of the UCF CCDC team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: Second Place - National Collegiate Cyber Defense Competition (NCCDC)
+    issuer: '-'
+    date: '2019-01-01T00:00:00.000Z'
+    description: As a member of the UCF CCDC team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: First Place - Eastern Regional Collegiate Penetration Testing Competition
+    issuer: '-'
+    date: '2018-01-01T00:00:00.000Z'
+    description: As a member of the UCF CPTC team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: First Place - Southeastern Regional Collegiate Cyber Defense Competition (SECCDC)
+    issuer: '-'
+    date: '2018-01-01T00:00:00.000Z'
+    description: Also includes first place in 3/3 scored subcategories, as a member of the UCF CCDC team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: First Place - University of Buffalo’s Lockdown Competition
+    issuer: '-'
+    date: '2018-01-01T00:00:00.000Z'
+    description: As a member of UCF's team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: Second Place - National Collegiate Cyber Defense Competition (NCCDC)
+    issuer: '-'
+    date: '2018-01-01T00:00:00.000Z'
+    description: As a member of the UCF CCDC team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: Third Place - Information Security Talent Search Competition at Rochester Institute of Technology
+    issuer: '-'
+    date: '2018-01-01T00:00:00.000Z'
+    description: As a member of UCF's team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: Third Place -National Collegiate Penetration Testing Competition (CPTC)
+    issuer: '-'
+    date: '2018-01-01T00:00:00.000Z'
+    description: As a member of the UCF CPTC team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: Dean’s List - UCF Department of Engineering and Computer Science
+    issuer: '-'
+    date: '2017-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: Second Place - Symantec Higher Ed Cyber Challenge CTF
+    issuer: '-'
+    date: '2017-01-01T00:00:00.000Z'
+    description: As a member of the UCF Knightsec CTF team.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: honor
+    title: Hillsborough Department of Education Outstanding Volunteer of the Year
+    issuer: Hillsborough DoE
+    date: '2015-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: LinkedIn
+    date: May 2023
+    url: https://www.linkedin.com/learning/certificates/9d4d4de732e84671b43789293f368c62cdf48ba09716d351fdde86d77e6ea383
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Mar 2023
+    expires: Mar 2025
+    url: https://www.credly.com/badges/3b716cd9-adfc-4c20-a7c7-cbb389bc163a/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  publications:
+  - title: 'Introducing Sssecrets: Simple Structured Secrets'
+    date: February 5, 2023
+    description: Generate secrets that are easy to detect when leaked
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - title: 'Yubikeys & PKI: What Are They For?'
+    date: December 19, 2022
+    description: A deep dive into PKCS11, GPG, and Yubikeys
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - title: 'Lecture: Understanding Application Security'
+    date: August 3, 2022
+    description: I gave a talk on application security at the August Tampa Devs meeting.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - title: Why GitHub Won't Protect PHP
+    date: April 13, 2021
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - title: Getting Started with Git and Github
+    date: '2017'
+    description: This is my popular course on Git/Github and version control. Nearly three years later,
+      this course remains in high demand! I still regularly give this workshop to UCF students for KnightHacks,
+      UCF's software development club.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - title: 'Scraping for Cache, Or: It''s Not Piracy If You Left It Out In The Open'
+    venue: 2600 Magazine
+    date: April 3, 2016
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - title: 'Software Defined Radio: An Introduction'
+    description: This is an introductory presentation on Software Defined Radio (SDR), which I developed
+      for Hack@UCF.
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  activities:
+  - kind: organization
+    title: Collegiate Cyber Defense Club @ UCF (Hack@UCF)
+    detail: 2019 · 2020
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: organization
+    title: UCF Collegiate Cyber Defense Competition (CCDC) Team
+    detail: Performed competitive defensive activities with a focus on Linux at both a regional and national
+      level, for two years in a row. · 2017 · 2019
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: organization
+    title: Collegiate Cyber Defense Club @ UCF (Hack@UCF)
+    detail: 2017 · 2018
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  - kind: organization
+    title: UCF Collegiate Penetration Testing Competition (CPTC) Team
+    detail: Performed competitive offensive activities with a focus on Linux, web applications, and tooling
+      development at both a regional and national level. · 2017 · 2018
+    evidence:
+      url: https://www.linkedin.com/in/charlton-trezevant
+      observed_at: '2026-10-24T08:43:12Z'
+  talks:
+  - session:2023/dev2854d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686416672722001Ahjz
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

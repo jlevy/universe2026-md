@@ -1,0 +1,109 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:josh-miele
+  person: person:josh-miele
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes Josh Miele as Founder and Board President at Center
+      for Accessibility and Open Source.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 831192695e33ab3451c159c7ef5e5e83a291a16696aee9f2b46bde13d5026c39
+    stale: false
+  expertise:
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  interests:
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  activities:
+  - kind: project
+    title: Smartpen Audio/Tactile Graphics
+    detail: This innovative project uses inexpensive, off-the-shelf technologies to provide accessible
+      spatial information for STEM education, independent travel, and more. · Aug 2007
+    evidence:
+      url: https://www.linkedin.com/in/jamielephd
+      observed_at: '2026-10-24T08:44:36Z'
+  - kind: project
+    title: Wearabraille
+    detail: The Wearabraille uses MEM sensors to create a virtual, wireless, braille keyboard that allows
+      hands-free text entry by chording braille characters on any firm surface. · Sep 2009
+    evidence:
+      url: https://www.linkedin.com/in/jamielephd
+      observed_at: '2026-10-24T08:44:36Z'
+  recent_writing:
+  - title: Getting Started — Learning About Disability Basics
+    url: https://mielelab.com/2025/02/18/getting-started-learning-about-disability-basics/
+    published: '2025-02-19T02:02:34Z'
+    channel: blog
+  - title: Working with Wood
+    url: https://mielelab.com/2024/12/30/working-with-wood/
+    published: '2024-12-30T23:01:13Z'
+    channel: blog
+  talks:
+  - session:2024/dev1734p
+  gaps:
+  - github_account
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715388338633001DMPx
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

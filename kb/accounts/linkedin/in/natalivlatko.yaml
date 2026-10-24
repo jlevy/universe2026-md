@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/natalivlatko
+  platform: linkedin
+  handle: in/natalivlatko
+  url: https://www.linkedin.com/in/natalivlatko
+  display_name: Natali Vlatko
+  location: Berlin
+  followers: 903
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQE1Z7D-_KC8NA/profile-displayphoto-scale_200_200/B4DZ6X.RLlGUAc-/0/1780666145899?e=2147483647&v=beta&t=htrT-bdEM3Eflc8hiQOCu8GtzA5_YKc-kILuAoz6gzY
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQFxmpu9NcTJ0w/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517242674666?e=2147483647&v=beta&t=hvRCNlQ6fUbSN44t9GPqmcXsySisJZwSR6E23hlXDa4
+  owner: person:natali-vlatko
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719502929301001jPgI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719502929301001jPgI
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/natalivlatko
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

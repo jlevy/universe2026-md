@@ -1,0 +1,290 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sameen-karim
+  person: person:sameen-karim
+  brief_bio:
+    text: Sameen Karim is a Senior Product Manager at GitHub working on Stacked Pull Requests, was Head
+      of Product at Rockerbox and co-founder and CEO of Eventable, and holds a patent on trackable media
+      in digital calendars. Karim speaks at GitHub Universe 2026 on GitHub Stacked PRs in practice.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: e4b932948c62ddc0f064fb47ce8079df0d9d11db7c405b1aa5efe3a4a9307abc
+    stale: false
+  headline: Senior Product Manager at GitHub
+  location: New York, NY
+  current_roles:
+  - Senior Product Manager at GitHub
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1485d
+  technologies:
+  - label: GitHub CLI
+    target: software:github-cli
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub CLI
+      ref: session:bld1485d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1485d
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1485d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1485d
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:skarim/vobject
+  interests:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/segmentio/analytics.js-integrations
+      ref: repo:segmentio/analytics.js-integrations
+    - url: https://github.com/fliskdata/analyze-tracking
+      ref: repo:fliskdata/analyze-tracking
+    - url: https://github.com/fliskdata/swift-ast
+      ref: repo:fliskdata/swift-ast
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777610662772001qS4e
+      ref: session:bld1485d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777610662772001qS4e
+      ref: session:bld1485d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777610662772001qS4e
+      ref: session:bld1485d
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777610662772001qS4e
+      ref: session:bld1485d
+  - label: amplitude
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/fliskdata/analyze-tracking
+      ref: repo:fliskdata/analyze-tracking
+  - label: analytics
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/fliskdata/analyze-tracking
+      ref: repo:fliskdata/analyze-tracking
+  - label: analyticsjs
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/segmentio/analytics.js-integrations
+      ref: repo:segmentio/analytics.js-integrations
+  - label: ast
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/fliskdata/swift-ast
+      ref: repo:fliskdata/swift-ast
+  - label: cli
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-stack
+      ref: repo:github/gh-stack
+  - label: docs
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/docs
+      ref: repo:github/docs
+  - label: gh-extension
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-stack
+      ref: repo:github/gh-stack
+  open_source:
+  - repository: repo:github/gh-stack
+    relation: pinned
+    stars: 1718
+    primary_language: Go
+  - repository: repo:skarim/vobject
+    relation: owner
+    stars: 265
+    primary_language: Python
+  - repository: repo:segmentio/analytics.js-integrations
+    relation: pinned
+    stars: 125
+    primary_language: JavaScript
+  - repository: repo:fliskdata/analyze-tracking
+    relation: pinned
+    stars: 28
+    primary_language: JavaScript
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  - repository: repo:fliskdata/swift-ast
+    relation: contributor
+    stars: 1
+    primary_language: TypeScript
+  education:
+  - school: University of California, Berkeley
+    evidence:
+      url: https://www.linkedin.com/in/sameenkarim
+      observed_at: '2026-10-24T08:15:22Z'
+  credentials:
+  - kind: honor
+    title: Forbes 30 Under 30
+    issuer: Forbes
+    date: '2019-12-01T00:00:00.000Z'
+    description: Named on the 2020 Forbes 30 Under 30 List in Marketing & Advertising https://www.forbes.com/pictures/5dd85ce32c886a0007ecd9ae/eventable-sameen-karim-26/
+    evidence:
+      url: https://www.linkedin.com/in/sameenkarim
+      observed_at: '2026-10-24T08:15:22Z'
+  patents:
+  - title: System and Method for Embedding Trackable Media in Digital Calendars
+    number: US 62/290,374
+    evidence:
+      url: https://www.linkedin.com/in/sameenkarim
+      observed_at: '2026-10-24T08:15:22Z'
+  activities:
+  - kind: organization
+    title: Kairos Fellowship
+    detail: Oct 2013 · Dec 2015
+    evidence:
+      url: https://www.linkedin.com/in/sameenkarim
+      observed_at: '2026-10-24T08:15:22Z'
+  recent_writing:
+  - title: Defining Roles and Responsibilities
+    url: https://www.sameenkarim.com/articles/defining-roles-and-responsibilities
+    published: '2023-06-15T00:00:00Z'
+    channel: blog
+  - title: 'The Stinky Fish Exercise: Opening Up and Taking Action'
+    url: https://www.sameenkarim.com/articles/the-stinky-fish-exercise-opening-up-and-taking-action
+    published: '2023-06-13T00:00:00Z'
+    channel: blog
+  - title: 'Team Purpose: Guiding the Way'
+    url: https://www.sameenkarim.com/articles/team-purpose-guiding-the-way
+    published: '2023-06-12T00:00:00Z'
+    channel: blog
+  - title: 'Building in Public: The Future of Startups'
+    url: https://www.sameenkarim.com/articles/building-in-public-the-future-of-startups
+    published: '2023-04-10T00:00:00Z'
+    channel: blog
+  - title: 'Marketing Mix Modeling: A History and New Approach'
+    url: https://www.sameenkarim.com/articles/marketing-mix-modeling-a-history-and-approach
+    published: '2023-02-28T00:00:00Z'
+    channel: blog
+  - title: 'Twitter Advertising: DTC Companies as Revenue Boosters'
+    url: https://www.sameenkarim.com/articles/twitter-advertising-dtc-companies-as-revenue-boosters
+    published: '2022-11-07T00:00:00Z'
+    channel: blog
+  - title: Using Google Docs as a Form Processing Backend
+    url: https://www.sameenkarim.com/articles/using-google-docs-as-a-form-processing-backend
+    published: '2013-07-13T00:00:00Z'
+    channel: blog
+  - title: Approaching Sales as an Engineer
+    url: https://www.sameenkarim.com/articles/approaching-sales-as-an-engineer
+    published: '2013-02-24T00:00:00Z'
+    channel: blog
+  - title: 'The Delicate Balancing Act: College (vs?) Startup'
+    url: https://www.sameenkarim.com/articles/the-delicate-balancing-act-college-vs-startup
+    published: '2013-01-23T00:00:00Z'
+    channel: blog
+  - title: 5 Design Principles to Keep in Mind
+    url: https://www.sameenkarim.com/articles/five-design-principles-to-keep-in-mind
+    published: '2013-01-22T00:00:00Z'
+    channel: blog
+  talks:
+  - session:bld1485d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777519412373001m6WA
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: skarim
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

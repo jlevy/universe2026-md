@@ -1,0 +1,356 @@
+{
+ "element": "rf-catalog",
+ "type": "sessionV2",
+ "includeCSS": false,
+ "rfCid": "100933926",
+ "manageQuery": true,
+ "testEnv": "",
+ "layout": "layout-4",
+ "jwtCookieName": "rfjwt",
+ "showOnlyPublished": true,
+ "showSessionTypeIcon": true,
+ "onLoadMessage": "",
+ "showLoadMore": true,
+ "showCount": true,
+ "showFiles": true,
+ "showRecommendations": false,
+ "showSessionFilesOnPublicCatalog": false,
+ "fileDownloadRequiresLogin": false,
+ "size": "50",
+ "sessionConfig.hiddenAttributes": [
+  {
+   "filterID": "day"
+  },
+  {
+   "filterID": "daytime"
+  }
+ ],
+ "sessionConfig.attributeOrder": [
+  "sessiontype"
+ ],
+ "sessionConfig.scheduleAccessAttributes": [
+  ""
+ ],
+ "showGlobalEventLabelsOnTitle": false,
+ "sessionConfig.globalEventLabels": {},
+ "sessionConfig.showTimes": true,
+ "sessionConfig.showEndTime": true,
+ "sessionConfig.collapsedViewComponents": [
+  {
+   "name": "abstract",
+   "displayName": "Abstract"
+  },
+  {
+   "name": "speakers",
+   "displayName": "Speakers"
+  },
+  {
+   "uniqueId": "learnMore",
+   "displayName": "Learn more button",
+   "name": "learnMore"
+  },
+  {
+   "displayName": "Delivery Format",
+   "name": "1692799009855001C0n3"
+  },
+  {
+   "uniqueId": "times",
+   "displayName": "Scheduled times and details (list)",
+   "name": "times"
+  },
+  {
+   "displayName": "This is a popular session. Seating isn't guaranteed—arrive ~20 minutes early for the best chance of getting a seat.",
+   "name": "1782913830594001JkXh"
+  },
+  {
+   "displayName": "Session Type",
+   "name": "1712966017014001deE4"
+  }
+ ],
+ "sessionConfig.expandedViewComponents": [
+  {
+   "name": "abstract",
+   "displayName": "Abstract"
+  },
+  {
+   "name": "speakers",
+   "displayName": "Speakers"
+  },
+  {
+   "name": "times",
+   "displayName": "Scheduled times and details"
+  }
+ ],
+ "speakers.companySuffix": "",
+ "lanyonExternalRef": "External-Ref",
+ "externalLogin": false,
+ "loginRedirectUrl": "https://reg.githubuniverse.com/flow/github/universe26/attendee-registration/login",
+ "regUrl": "https://reg.githubuniverse.com/flow/github/universe26/attendee-registration/login",
+ "startDate": "2016/07/10",
+ "endDate": "2016/07/14",
+ "startHour": 7.0,
+ "endHour": 19.0,
+ "rfShowRoom": true,
+ "sessionConfig.showScheduleButton": true,
+ "allowAttendeeScheduling": true,
+ "overrideNoSchedulerAccess": false,
+ "waitlist": true,
+ "scheduleActionText.notScheduled.long": "Schedule",
+ "scheduleActionText.scheduled.long": "Schedule",
+ "scheduleActionText.scheduled.short": "Unsched",
+ "scheduleActionText.scheduled.x": "",
+ "useDefaultPrintView": true,
+ "interestStarCount": 1.0,
+ "filterConfig.hiddenFilters": [
+  {
+   "filterID": "daytime",
+   "attendeeType": ""
+  }
+ ],
+ "filterConfig.hiddenFilterValues": [
+  ""
+ ],
+ "filterConfig.filterOrder": [
+  "day",
+  "sessiontype"
+ ],
+ "filterConfig.defaults": {
+  "": {
+   "name": "",
+   "value": ""
+  }
+ },
+ "filterConfig.myFavorites": false,
+ "elasticSearchFields": [
+  "session.participants.companyName"
+ ],
+ "timeFormat.hourDisplayStyle": "default",
+ "timeFormat.dateType": "default",
+ "timeFormat.hourTimePeriodType": "default",
+ "sessionDetailsOption": "sessionDetailPage",
+ "sessionCatalogUrl": "https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog",
+ "truncateAbstract": false,
+ "sessionTitleConfig": "%title%",
+ "widgetDataFormId": "1768417829652008d0xs",
+ "dataSetFilterCode": "1783449560443001ldrh",
+ "showHasScheduleConflictIcon": true,
+ "showIsScheduledIcon": true,
+ "showIsWaitlistedIcon": true,
+ "onlyShowWebinarLinkToEnrolledAttendeesAndParticipants": false,
+ "templateId": "1628546726R8da926e7a",
+ "linkedWidgetId": "1778595031036001ei5o",
+ "id": "1778595031034001eyac",
+ "showPastSessionsInRecommendation": false,
+ "showFullSessionsInRecommendation": false,
+ "groupSessionsAs": "tabs",
+ "sortAttributeId": "DayTime",
+ "numDetailsPageSections": 1.0,
+ "smallDetailsPageSectionPlacement": "right",
+ "sessionConfig.largeSectionComponents": [
+  {
+   "displayName": "Delivery Format",
+   "name": "1692799009855001C0n3"
+  },
+  {
+   "uniqueId": "title",
+   "displayName": "Session title",
+   "name": "title"
+  },
+  {
+   "uniqueId": "speakers",
+   "layout": "list",
+   "displayName": "Speakers (list)",
+   "name": "speakers"
+  },
+  {
+   "uniqueId": "abstract",
+   "displayName": "Abstract",
+   "name": "abstract"
+  },
+  {
+   "uniqueId": "sessionFiles",
+   "displayName": "Session Files (list)",
+   "showHeader": false,
+   "name": "sessionFiles"
+  },
+  {
+   "displayName": "Session Tile Image",
+   "name": "1755011515592001TrRC"
+  },
+  {
+   "uniqueId": "embeddedWebinar",
+   "displayName": "Embedded webinar",
+   "name": "embeddedWebinar"
+  },
+  {
+   "uniqueId": "times",
+   "displayName": "Scheduled times and details (list)",
+   "name": "times"
+  },
+  {
+   "displayName": "Learn More",
+   "name": "1761078392523001WC97"
+  },
+  {
+   "displayName": "This is a popular session. Seating isn't guaranteed—arrive ~20 minutes early for the best chance of getting a seat.",
+   "name": "1782913830594001JkXh"
+  },
+  {
+   "displayName": "Session Detail Page Tile Image-Short",
+   "name": "1784210070291001kyVd"
+  }
+ ],
+ "sessionConfig.mediumSectionComponents": [
+  {
+   "name": "abstract",
+   "displayName": "Abstract"
+  },
+  {
+   "name": "speakers",
+   "uniqueId": "speakersGrid",
+   "displayName": "Speakers (grid)",
+   "layout": "grid",
+   "showHeader": "true"
+  },
+  {
+   "name": "times",
+   "displayName": "Scheduled times and details"
+  }
+ ],
+ "sessionConfig.smallSectionComponents": [
+  {
+   "name": "sponsors",
+   "uniqueId": "sponsorsTile",
+   "layout": "tile",
+   "displayName": "Sponsor profile (tile)",
+   "showHeader": "true"
+  },
+  {
+   "name": "similar",
+   "displayName": "Similar sessions"
+  }
+ ],
+ "sponsorDetailsAttributes": [
+  {
+   "attributevalueId": "logo",
+   "displayName": "Logo"
+  },
+  {
+   "attributevalueId": "name",
+   "displayName": "Name"
+  },
+  {
+   "attributevalueId": "ExhibitorType",
+   "displayName": "Exhibitor Type"
+  },
+  {
+   "attributevalueId": "description",
+   "displayName": "Description"
+  },
+  {
+   "attributevalueId": "viewBooth",
+   "displayName": "View Booth button"
+  }
+ ],
+ "exhibitorDetailsOption": "exhibitorDetailPage",
+ "tileConfig.showBanner": true,
+ "tileConfig.showSpeaker": true,
+ "tileConfig.showSessionTime": true,
+ "showInPerson": true,
+ "showVirtualInformation": true,
+ "tileConfig.showAbstract": true,
+ "tileConfig.showButton": true,
+ "showScheduleButtonIcons": true,
+ "showWebinarButton": false,
+ "filterConfig.filters": [
+  {
+   "displayName": "Session type",
+   "attributeId": "1681230546I4bcbaab8f"
+  },
+  {
+   "displayName": "Curated Agenda",
+   "attributeId": "1755639187563001NgNm"
+  },
+  {
+   "displayName": "Track",
+   "attributeId": "1695679365536001nvxy"
+  },
+  {
+   "displayName": "Delivery Format",
+   "attributeId": "1692799009855001C0n3"
+  },
+  {
+   "displayName": "GitHub Product",
+   "attributeId": "1681323318992001zJbt"
+  },
+  {
+   "displayName": "Topic",
+   "attributeId": "1681323600255001sIqt"
+  },
+  {
+   "displayName": "Level",
+   "attributeId": "1681231920170001WVFG"
+  },
+  {
+   "displayName": "Target Audience",
+   "attributeId": "1681231920169011WLfo"
+  },
+  {
+   "displayName": "Industry",
+   "attributeId": "1681231920169010WFZg"
+  }
+ ],
+ "catalogDisplay": "list",
+ "catalogDisplayDefault": "grid",
+ "allowWebinarPlaybackSpeedChange": false,
+ "webinarAvailableMinutesPrevious": 5.0,
+ "webinarAvailableMinutesPreviousHost": 10.0,
+ "replayAvailableMinutesAfter": 15.0,
+ "catalogDisplayTime": "eventTime",
+ "filterConfig": {
+  "recommendedForYou": true,
+  "seatsAvailable": true,
+  "mySessions": true
+ },
+ "showAlmostFull": true,
+ "almostFullThreshold": "70",
+ "attributeTabs": [
+  {
+   "attributevalueId": "1783449560518001lcWM",
+   "displayName": "All Sessions - All Sessions",
+   "attribute": "allsessions",
+   "value": "1783449560443001ldrh",
+   "attributeDisplayName": "All Sessions",
+   "attributeValueDisplayName": "All Sessions",
+   "sortAttributeId": "DayTime"
+  },
+  {
+   "attributevalueId": "1771015548640001nclF",
+   "displayName": "Day - Tue, Oct 27",
+   "attribute": "day",
+   "value": "20261027",
+   "attributeDisplayName": "Day",
+   "attributeValueDisplayName": "Tue, Oct 27",
+   "sortAttributeId": "DayTime"
+  },
+  {
+   "attributevalueId": "1771015566783001AmyV",
+   "displayName": "Day - Wed, Oct 28",
+   "attribute": "day",
+   "value": "20261028",
+   "attributeDisplayName": "Day",
+   "attributeValueDisplayName": "Wed, Oct 28",
+   "sortAttributeId": "DayTime"
+  },
+  {
+   "attributevalueId": "1771015582590001H4kE",
+   "displayName": "Day - Thu, Oct 29",
+   "attribute": "day",
+   "value": "20261029",
+   "attributeDisplayName": "Day",
+   "attributeValueDisplayName": "Thu, Oct 29",
+   "sortAttributeId": "DayTime"
+  }
+ ],
+ "showDeclinedMeetingsByDefault": false
+}

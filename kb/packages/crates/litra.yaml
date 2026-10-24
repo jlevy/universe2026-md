@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:crates/litra
+  ecosystem: crates
+  name: litra
+  url: https://crates.io/crates/litra
+  description: Control Logitech Litra lights from the command line, Model Context Protocol (MCP) clients
+    and Rust applications
+  latest_version: 3.3.0
+  license: MIT
+  repository_url: https://github.com/timrogers/litra-rs
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: timrogers/litra-rs
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

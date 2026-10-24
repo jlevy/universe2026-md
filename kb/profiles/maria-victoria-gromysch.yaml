@@ -1,0 +1,111 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:maria-victoria-gromysch
+  person: person:maria-victoria-gromysch
+  brief_bio:
+    text: Maria Victoria Gromysch is a Test Engineer at NVIDIA who works on hardware validation and on
+      AI agents for code review automation, failure diagnosis and manufacturing test optimization. Gromysch
+      speaks at GitHub Universe 2026 about AI agents for hardware reliability.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 93c6773055dbd5765a8e8fe329d834da9df29bf0ca74dda27707285411a9db08
+    stale: false
+  headline: Test Engineer at NVIDIA
+  current_roles:
+  - Test Engineer at NVIDIA
+  expertise:
+  - label: Automated Infrastructure Deployment
+    target: term:topic/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1644h
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1644h
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1644h
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1644h
+  interests:
+  - label: Automated Infrastructure Deployment
+    target: term:topic/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777684223809001DyaK
+      ref: session:bld1644h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777684223809001DyaK
+      ref: session:bld1644h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777684223809001DyaK
+      ref: session:bld1644h
+  - label: Projects and Issues
+    target: term:github-product/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777684223809001DyaK
+      ref: session:bld1644h
+  talks:
+  - session:bld1644h
+  gaps:
+  - x_account
+  - website
+  - linkedin_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777685195945001WmCp
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Mariaviktoria
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/kentcdodds
+  platform: x
+  handle: kentcdodds
+  url: https://x.com/kentcdodds
+  display_name: Kent C. Dodds 🐨
+  bio: |-
+    Husband, 6x Dad, Latter-day Saint, Dev, Educator
+    🐨 https://t.co/HBYOHHdSTK
+    👾 https://t.co/oUPXXU0bMW
+    📺 https://t.co/os3TLKtSJo
+    🌌 https://t.co/2Zzqk7QiI2
+  location: Highland, UT
+  website: http://kentcdodds.com/
+  followers: 332598
+  following: 473
+  posts_count: 171030
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2091962950315905025/8DdkIcGz_normal.png
+  banner_url: https://pbs.twimg.com/profile_banners/389681470/1786485010
+  created_at: '2011-10-12T20:43:38Z'
+  owner: person:kent-c-dodds
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785971794624001WhyC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kentcdodds
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/kentcdodds
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

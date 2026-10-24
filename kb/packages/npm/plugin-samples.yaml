@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/plugin-samples
+  ecosystem: npm
+  name: plugin-samples
+  url: https://www.npmjs.com/package/plugin-samples
+  description: figma 一键下载图片
+  latest_version: 1.0.0
+  license: MIT
+  repository_url: git+https://github.com/figma/plugin-samples.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: figma/plugin-samples
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

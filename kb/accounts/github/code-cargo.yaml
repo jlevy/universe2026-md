@@ -1,0 +1,85 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:code-cargo
+  login: code-cargo
+  kind: organization
+  url: https://github.com/code-cargo
+  name: CodeCargo
+  bio: CodeCargo is the AI-powered Internal Developer Portal for GitHub, purpose-built to orchestrate
+    agentic workflows across the entire software lifecycle.
+  location: United States of America
+  website: https://codecargo.com
+  public_repositories: 5
+  created_at: '2024-09-11T13:11:07Z'
+  profile_readme: |-
+    # CodeCargo
+
+    **The Control Plane for GitHub.**
+
+    CodeCargo is the AI-powered Internal Developer Portal for GitHub, purpose-built
+    to orchestrate agentic workflows across the entire software lifecycle. We help
+    enterprises tame GitHub at scale — consolidating DevOps tooling, automating
+    compliance, securing CI/CD, and giving developers self-service superpowers.
+
+    [codecargo.com](https://codecargo.com) · [Documentation](https://docs.codecargo.com)
+
+    ---
+
+    ## What we build
+
+    - **GitHub Migration** — Translate legacy pipelines from Jenkins, GitLab CI,
+      CircleCI, and others into modern GitHub Actions with AI-assisted authoring.
+    - **Workflow Guardrails** — Enforce security policies, compliance checks, and
+      org standards across every workflow, with drift detection and audit evidence.
+    - **CargoWall** — Kernel-level eBPF firewall for GitHub Actions runners.
+    - **Developer Self-Service** — Multi-repo edits with GenAI, a private Actions
+      marketplace, an agentic service catalog, and UI-callable automations.
+
+    Built for enterprise scale. GitHub native. SOC 2 Type II.
+
+    ## Open source
+
+    We ship the security primitives we rely on in the open.
+
+    - **[cargowall](https://github.com/code-cargo/cargowall)** — eBPF-based network
+      firewall for GitHub Actions runners. Kernel-level egress filtering, dynamic
+      DNS resolution, full process attribution, NDJSON audit logs. Audit and
+      enforce modes.
+    - **[cargowall-action](https://github.com/code-cargo/cargowall-action)** — The
+      official GitHub Action. Drop one step into your workflow to lock down egress
+      with hostname globs and CIDR rules:
+
+      ```yaml
+      jobs:
+        cargowall-example:
+          runs-on: ubuntu-latest
+          permissions:
+            id-token: write
+            actions: read
+            contents: read
+          steps:
+          - uses: code-cargo/cargowall-action@v1
+            with:
+              # run in audit to learn what your job egress needs
+              mode: audit
+      ```
+
+    ## Get in touch
+
+    - Website: [codecargo.com](https://codecargo.com)
+    - Docs: [docs.codecargo.com](https://docs.codecargo.com)
+    - Email: [[email removed]](mailto:[email removed])
+  top_repositories:
+  - repo:code-cargo/cargowall
+  - repo:code-cargo/cargowall-action
+  entity: org:codecargo
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: code-cargo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

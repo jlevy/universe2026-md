@@ -1,0 +1,141 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:cathy-teng
+  person: person:cathy-teng
+  brief_bio:
+    text: Cathy Teng works at Sieve and was previously a software engineer on Sentry's core product team,
+      working on features such as spike protection and the Sentry Copilot extension. Teng spoke at GitHub
+      Universe 2024 about quickly tracing and debugging issues.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 22d508303290c4ddc3e6d76f5b0a47241466a43f980be136e34710bd094c14c3
+    stale: true
+  headline: Sieve
+  current_roles:
+  - Sieve
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1869d
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1869d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1869d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1869d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:cathy-teng
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  education:
+  - school: Princeton University
+    evidence:
+      url: https://www.linkedin.com/in/cathyteng
+      observed_at: '2026-10-24T08:41:58Z'
+  publications:
+  - title: A Personalized AI Coach to Assist in Self-Directed Learning
+    venue: Proceedings of Machine Learning Research Vol 273
+    date: March 3, 2025
+    evidence:
+      url: https://www.linkedin.com/in/cathyteng
+      observed_at: '2026-10-24T08:41:58Z'
+  - title: Deploying deep learning to estimate the abundance of marine debris from video footage
+    venue: Marine Pollution Bulletin
+    date: August 22, 2022
+    evidence:
+      url: https://www.linkedin.com/in/cathyteng
+      observed_at: '2026-10-24T08:41:58Z'
+  talks:
+  - session:2024/dev1869d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694820864514001tb9h
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

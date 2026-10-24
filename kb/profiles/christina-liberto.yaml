@@ -1,0 +1,324 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:christina-liberto
+  person: person:christina-liberto
+  brief_bio:
+    text: Christina Liberto is an Associate in Cyber Threat Management at KPMG US. Liberto spoke at GitHub
+      Universe 2024 about supporting innovation through GitHub Certifications.
+    cites:
+    - listed_role
+    - current_affiliations
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 89f8c21fd2281bf8f3a206e5b6c1583159412c1539302f67ee335afa7a04f9b8
+    stale: false
+  headline: KPMG US
+  current_roles:
+  - KPMG US
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1580o
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1580o
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1580o
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1580o
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/dev1580o
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/dev1580o
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: Education
+    target: term:github-product-2024/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  credentials:
+  - kind: honor
+    title: Dean's List
+    issuer: '-'
+    date: '2020-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: honor
+    title: Dean's List
+    issuer: '-'
+    date: '2018-12-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: honor
+    title: Classic Scholars Scholarship
+    issuer: '-'
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: certification
+    title: GIAC Cloud Security Automation Certification (GCSA)
+    issuer: GIAC Certifications
+    date: Oct 2025
+    expires: Oct 2029
+    url: https://www.credly.com/badges/0855d0b3-dffb-4100-8664-37008d298f40/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: certification
+    title: GitHub Copilot
+    issuer: GitHub
+    date: Oct 2024
+    expires: Oct 2027
+    url: https://www.credly.com/badges/99762355-0610-41f6-9c07-9f162a8bea8f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: certification
+    title: GitHub Foundations
+    issuer: GitHub
+    date: Apr 2024
+    expires: Apr 2027
+    url: https://www.credly.com/badges/a8ba49bd-ed79-4b72-b05a-2436f7762deb/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Sep 2022
+    expires: Sep 2024
+    url: https://www.credly.com/badges/dbd0ea31-87eb-4e21-856f-6105d56d2b23/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  spoken_languages:
+  - Russian
+  - English
+  activities:
+  - kind: course
+    title: Computer Architecture and Organization
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Data Structures
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Discrete Mathematics
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Elementary Russian I
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Elementary Russian II
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Intermediate Russian I
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Intermediate Russian II
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Introduction to Computing and Programming
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Introduction to Scientific Computing
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Introduction to the Theory of Computing
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Introductory Statistics
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Russian Conversation and Composition II
+    detail: RUSS3002
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Russian Conversation and Conversation I
+    detail: RUSS3001
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Software Development
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Software Engineering
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Systems Programming
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Web Programming
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: organization
+    title: CodeHub UGA
+    detail: Lead the cyber security and personal projects team · Aug 2020 · Present
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: organization
+    title: Alpha Gamma Delta Sorority
+    detail: Aug 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/christina-liberto
+      observed_at: '2026-10-24T08:42:02Z'
+  talks:
+  - session:2024/dev1580o
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715358504477001YNoZ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

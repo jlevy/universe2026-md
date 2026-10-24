@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/santiagxf
+  platform: linkedin
+  handle: in/santiagxf
+  url: https://www.linkedin.com/in/santiagxf
+  display_name: Facundo Santiago
+  bio: Engineering, product, and machine learning. One of those people with opinions. 50% of my…
+  location: United States
+  followers: 2164
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQH8v0ahmNmQKQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1659413240207?e=2147483647&v=beta&t=ptny6Hye1mEXpcdCi4KOQskBqnCPu6LtvU9aYgRZ6Yk
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQGxz-VHaauHMw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1659413371150?e=2147483647&v=beta&t=kVAgjACEwHthBJVJXZ3QKsBZqZAthOU2H3BBui7YK-8
+  owner: person:facundo-santiago
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1753979516658001quoz
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/santiagxf
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

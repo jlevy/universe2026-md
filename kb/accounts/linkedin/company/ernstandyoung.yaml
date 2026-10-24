@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/ernstandyoung
+  platform: linkedin
+  handle: company/ernstandyoung
+  url: https://www.linkedin.com/company/ernstandyoung
+  display_name: EY
+  bio: 'EY is building a better working world by creating new value for clients, people, society, the
+    planet, while building trust in the capital markets. Enabled by data, AI and advanced technology,
+    EY teams help clients shape the future with confidence and develop answers for the most pressing issues
+    of today and tomorrow. EY teams in more than 150 countries work across a full spectrum of services
+    in assurance, consulting, tax, strategy and transactions, strengthened by sector experience and diverse
+    ecosystem partners. Find out more about the EY global network: http://ey.com/en_gl/legal-statement'
+  website: https://www.ey.com/
+  followers: 12110980
+  avatar_url: https://media.licdn.com/dms/image/v2/C510BAQGpRhkpxp5A9A/company-logo_200_200/company-logo_200_200/0/1630570672166/ernstandyoung_logo?e=2147483647&v=beta&t=JIcVOHSv0_Vs4OJIm_dclzACTmFL5-wIcP2BXBKKlzc
+  owner: org:ey
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/debolindhar
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/zeba-khan-2a73472b
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/ernstandyoung
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

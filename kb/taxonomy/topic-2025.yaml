@@ -1,0 +1,149 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: topic-2025
+  event: event:github-universe-2025
+  label: Topic
+  multi_valued: true
+  terms:
+  - id: term:topic-2025/accessibility
+    label: Accessibility
+    source_id: 1681323600229002s1be
+    session_count: 6
+  - id: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    source_id: 1681323600229004sefV
+    session_count: 70
+  - id: term:topic-2025/agile-practices
+    label: Agile practices
+    source_id: 1681323600229003sU8s
+    session_count: 16
+  - id: term:topic-2025/automated-infrastructure-deployment
+    label: Automated Infrastructure Deployment
+    source_id: 1681323600229005sZjO
+    session_count: 10
+  - id: term:topic-2025/cloud-native-development
+    label: Cloud-native development
+    source_id: 1681323600229006sjHK
+    session_count: 13
+  - id: term:topic-2025/code-quality-review-and-completion
+    label: Code quality, review, and completion
+    source_id: 1741255255392001hmwl
+    session_count: 31
+  - id: term:topic-2025/collaboration
+    label: Collaboration
+    source_id: 1683210494021001ei0y
+    session_count: 34
+  - id: term:topic-2025/containerized-applications
+    label: Containerized applications
+    source_id: 1681323600229008s8A8
+    session_count: 7
+  - id: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    label: Continuous Integration + Continuous Deployment (CI/CD)
+    source_id: 1681323600229007syow
+    session_count: 29
+  - id: term:topic-2025/custom-integrations-and-apis
+    label: Custom integrations and APIs
+    source_id: 1741255255392002h13u
+    session_count: 13
+  - id: term:topic-2025/data-analytics-management-privacy
+    label: Data (analytics, management, privacy)
+    source_id: 1681323600229009si7A
+    session_count: 7
+  - id: term:topic-2025/devops-and-devsecops
+    label: DevOps and DevSecOps
+    source_id: 1681323600229012sHno
+    session_count: 35
+  - id: term:topic-2025/education
+    label: Education
+    source_id: 1741879080104001zij0
+    session_count: 8
+  - id: term:topic-2025/git-and-code-management-techniques
+    label: Git and code management techniques
+    source_id: 1681323600229014saln
+    session_count: 7
+  - id: term:topic-2025/governance-and-compliance
+    label: Governance and compliance
+    source_id: 1741879080104002zCXb
+    session_count: 20
+  - id: term:topic-2025/ide-integration
+    label: IDE Integration
+    source_id: 1743449507002001L4j6
+    session_count: 15
+  - id: term:topic-2025/infrastructure-as-code
+    label: Infrastructure as code
+    source_id: 1681323600229017sVgz
+    session_count: 5
+  - id: term:topic-2025/kubernetes
+    label: Kubernetes
+    source_id: 1681323600229016sWIE
+    session_count: 4
+  - id: term:topic-2025/migration-strategies
+    label: Migration strategies
+    source_id: 1741879080104003zqlA
+    session_count: 17
+  - id: term:topic-2025/monitoring-and-observability
+    label: Monitoring and observability
+    source_id: 1681323600229019sUxg
+    session_count: 10
+  - id: term:topic-2025/open-source
+    label: Open source
+    source_id: 1681323600229020sb9v
+    session_count: 24
+  - id: term:topic-2025/pair-programming
+    label: Pair programming
+    source_id: 1681323600229021sv67
+    session_count: 11
+  - id: term:topic-2025/platform-engineering
+    label: Platform engineering
+    source_id: 1741126091810001NfTx
+    session_count: 12
+  - id: term:topic-2025/productivity
+    label: Productivity
+    source_id: 1683210494021003ekVI
+    session_count: 46
+  - id: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    source_id: 1681323600229024sxUO
+    session_count: 24
+  - id: term:topic-2025/shell-programming-bash-powershell-etc
+    label: Shell programming (Bash, PowerShell, etc.)
+    source_id: 1681323600229025s6VM
+    session_count: 1
+  - id: term:topic-2025/social-impact
+    label: Social impact
+    source_id: 1681323600229027s1NF
+    session_count: 3
+  - id: term:topic-2025/tech-debt-and-security-debt
+    label: Tech debt and security debt
+    source_id: 1711383809968002b9Di
+    session_count: 22
+  - id: term:topic-2025/testing-and-related-practices
+    label: Testing and related practices
+    source_id: 1681323600229029saQm
+    session_count: 9
+  - id: term:topic-2025/community
+    label: Community
+    source_id: 1683210494021002e3lu
+    session_count: 1
+  - id: term:topic-2025/software-engineering
+    label: Software Engineering
+    source_id: 1681323600229028syp9
+    session_count: 5
+  - id: term:topic-2025/threat-modeling
+    label: Threat Modeling
+    source_id: 1681323600229030sPc4
+    session_count: 1
+  - id: term:topic-2025/vulnerability-detection
+    label: Vulnerability Detection
+    source_id: 1681323600229031sXFJ
+    session_count: 1
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681323600255001sIqt
+    retrieved_at: '2026-10-24T08:03:18Z'
+    snapshot: raw/editions/universe25/attributes.json

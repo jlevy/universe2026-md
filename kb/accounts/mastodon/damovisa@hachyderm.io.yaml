@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:mastodon/damovisa@hachyderm.io
+  platform: mastodon
+  handle: damovisa@hachyderm.io
+  url: https://hachyderm.io/@damovisa
+  display_name: 'Damian Brady 🥑 :github_logo:'
+  bio: |-
+    Dev Advocacy Manager at [#GitHub](https://hachyderm.io/tags/GitHub).
+
+    All things DevOps, MLOps and developer process. Currently in love 🥰 with [#Codespaces](https://hachyderm.io/tags/Codespaces), [#Copilot](https://hachyderm.io/tags/Copilot), and the planning and tracking tools in GitHub!
+
+    {He/Him}
+
+    ex. Microsoft, Octopus Deploy
+  followers: 934
+  following: 227
+  posts_count: 495
+  avatar_url: https://media.hachyderm.io/accounts/avatars/109/340/817/695/494/111/original/fcdfdae6f19d9bf4.png
+  created_at: '2022-11-14T00:00:00Z'
+  owner: person:damian-brady
+  link_basis:
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Damovisa
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: mastodon
+    url: https://hachyderm.io/@damovisa
+    record_id: damovisa@hachyderm.io
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json

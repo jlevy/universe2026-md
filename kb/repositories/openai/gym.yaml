@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:openai/gym
+  full_name: openai/gym
+  url: https://github.com/openai/gym
+  description: A toolkit for developing and comparing reinforcement learning algorithms.
+  homepage: https://www.gymlibrary.dev
+  stars: 37234
+  forks: 8665
+  watchers: 47
+  open_issues: 113
+  stats_observed_at: '2026-10-24T19:12:10Z'
+  primary_language: Python
+  license: NOASSERTION
+  archived: true
+  fork: false
+  created_at: '2016-04-27T14:59:16Z'
+  pushed_at: '2026-03-26T23:13:27Z'
+  owner_login: openai
+  owner: gh:openai
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: openai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: openai/gym
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

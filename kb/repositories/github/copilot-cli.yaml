@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/copilot-cli
+  full_name: github/copilot-cli
+  url: https://github.com/github/copilot-cli
+  description: 'GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal. '
+  stars: 11294
+  forks: 1962
+  watchers: 270
+  open_issues: 2213
+  stats_observed_at: '2026-10-24T19:10:13Z'
+  primary_language: Shell
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2023-01-06T09:22:30Z'
+  pushed_at: '2026-10-24T15:28:49Z'
+  owner_login: github
+  owner: gh:github
+  pinned_by:
+  - gh:ryanhecht
+  software: software:copilot-cli
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: RyanHecht
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/copilot-cli
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/copilot-cli
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

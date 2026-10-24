@@ -1,0 +1,25 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:typescript
+  name: TypeScript
+  aliases:
+  - TypeScript
+  kind: language
+  vendor: org:microsoft
+  repositories:
+  - repo:microsoft/typescript
+  packages:
+  - pkg:npm/typescript
+  mentioned_in:
+  - person:amanda-silver
+  - person:pierce-boggan
+  - person:riley-kohler
+  - person:turgay-akbas
+  - session:bld1072s
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

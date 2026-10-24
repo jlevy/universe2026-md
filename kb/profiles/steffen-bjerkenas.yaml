@@ -1,0 +1,291 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:steffen-bjerkenas
+  person: person:steffen-bjerkenas
+  brief_bio:
+    text: The GitHub Universe 2023 listing describes Steffen Bjerkenås as Staff Service Delivery Engineer
+      at GitHub.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 97fdde2c1552aa1ba48c9a293c67f650460cd0c64f1b5a0b8d7c7980940dd2b6
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/ai2748w
+    - ref: session:2023/ai2852w
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:steffen-bjerkenas
+  - label: Microsoft Azure
+    target: software:azure
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure
+      ref: session:2023/ai2748w
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490713001KjVO
+      ref: session:2023/ai2748w
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695674530480001aeS6
+      ref: session:2023/ai2852w
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490713001KjVO
+      ref: session:2023/ai2748w
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695674530480001aeS6
+      ref: session:2023/ai2852w
+  education:
+  - school: Utrecht University
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  credentials:
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Apr 2024
+    url: https://www.credly.com/badges/65aef1ed-ef45-4e0f-8a0f-79bbaeead269
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Apr 2024
+    url: https://www.credly.com/badges/ddc22042-ae37-49c1-ac0b-4af4776a451f
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Apr 2024
+    url: https://www.credly.com/badges/934c527c-ed18-4674-945c-7b877e26516b
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: certification
+    title: IREB® Certified Professional for Requirements Engineering
+    issuer: IREB GmbH
+    date: Jul 2017
+    url: https://www.ireb.org/en/cpre/foundation/
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: certification
+    title: Professional Scrum Master (PSM) I
+    issuer: Scrum.org
+    date: May 2017
+    url: https://www.scrum.org/certification-list
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: certification
+    title: Allianz Business System Certification Level II
+    issuer: Allianz Technology
+    date: Jul 2016
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: certification
+    title: Allianz Business System Certification Level I
+    issuer: Allianz Technology
+    date: Feb 2016
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: certification
+    title: AWS Certified Developer - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Apr 2019
+    expires: Apr 2022
+    url: https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2019-04-10&ci=AWS00800489
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Mar 2019
+    expires: Mar 2022
+    url: https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2019-03-26&ci=AWS00800489
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  spoken_languages:
+  - Norwegian
+  - Engelsk
+  - Nederlandsk
+  - German
+  - French
+  activities:
+  - kind: volunteering
+    title: Board member - NITO Studentene
+    detail: NITO - Norges ingeniør- og teknologorganisasjon · Education · Sep 2005 · - Aug 2008 · 3 years
+      · Represented the Norwegian Defense University College of Engineering (FIH), discussing matters
+      that concerned students studying technology and engineering in Norway. The board consisted of representatives
+      from all major colleges and universities and gathered several times per year to discuss and decide
+      on how to best represent key interests of students. · Sep 2005
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: volunteering
+    title: Leader - Local NITO Studentene-branch (The Norwegian Defence University College of Engineering)
+    detail: NITO - Norges Ingeniør- og Teknologorganisasjon · Education · Jun 2006 · - Aug 2008 · 2 years
+      3 months · Responsible for collecting input from fellow students to bring forth to the board, in
+      addition to recruiting new members and hosting local events. · Jun 2006
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: volunteering
+    title: Class representative - BESO
+    detail: Befalets fellesorganisasjon · Education · 2006 · - Present · 20 years · Represented my class
+      in BESO, an organization for students in the Norwegian Armed Forces. BESO focuses on the rights
+      and responsibilities of military students, such as economical terms and educational frameworks.
+      · 2006
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: volunteering
+    title: Volunteer - DISRUPT.SYDNEY 2014
+    detail: The University of Sydney Business School · Science and Technology · Sep 2014 · - Present ·
+      12 years 2 months · Assisted in the planning and hosting of DISRUPT.SYDNEY 2014, a conference focused
+      on innovation within the domain of social network analysis. The conference offered 13 speakers +
+      several workshops and panels on the topic. https://disruptsydney2014.wordpress.com/ · Sep 2014
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: project
+    title: ABS@AWP
+    detail: Develop and deploy Allianz Business System to multiple business units across the world, covering
+      several lines of business e.g. travel insurance. The end product includes front-end applications,
+      system interfaces, back-end processing, and additional components needed to sell and administer
+      insurance policies. · Sep 2015
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: project
+    title: Enterprise Architecture - Jonker & Schut
+    detail: Assessment of the enterprise architecture of Jonker & Schut, a logistics company specialized
+      in dry dairy products. The end product included a consultancy report that aimed to advise the company
+      on which enterprise architecture-related changes would benefit the efficiency of current business
+      practices. · Feb 2014
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: project
+    title: Strictly for Business 2014
+    detail: Was part of the team that represented Utrecht University in a national ICT case competition.
+      Our case revolved around finding a solution for how ABN AMRO could best deal with the possibilites
+      and challenges related to Bring Your Own Cloud/Shadow IT. · Jan 2014
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: project
+    title: Knowledge sharing practices - The current situation and the road ahead
+    detail: The project addressed the topic of knowledge management in a large consultancy company in
+      the Netherlands. By conducting scientific literature research and interviews with employees, the
+      report aimed to provide a better perspective on current knowledge sharing practices within the company,
+      as well as give backed-by-research advise on how to improve these practices. · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: project
+    title: 'B.Tech. thesis project: "Queries and Presentation of Data from Multiple Databases"'
+    detail: The project included querying and presenting data from multiple databases. By combining data
+      retrieved from different databases within the same field of interest, the objective was to provide
+      better situational awareness about certain types of technical equipment employed by RNoAF/NATO.The
+      queries were written using Transact-SQL, and the outputs were post-processed in Excel in order to
+      present the results in an understandable and informative fashion to stakeholders. · Aug 2008
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: project
+    title: 'M.Sc. thesis project: "Social Networking in the Workplace: Exploring the Structural Characteristics
+      and Conversational Nature of Enterprise Social Networks"'
+    detail: This project was conducted in collaboration with the University of Sydney, Australia.The main
+      objectives of the project were to investigate the contributing factors to how online communities
+      develop over time. By applying social network analysis and content analysis I analyzed both structural
+      properties and message content to determine what role key players, group activity and message content
+      play with respect to the longitudinal dynamics of the network.The research was conducted using a
+      Yammer dataset obtained from a large consultancy company. The tools applied in the project involved
+      R, SPSS, UCINET, Excel PowerPivot, and Gephi.
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: course
+    title: Implementing and Administering Windows Essential Business Server 2008
+    detail: MS6446
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: course
+    title: Maintaining a Microsoft SQL Server 2008 Database
+    detail: MS6231
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: course
+    title: Planning and Managing Windows 7 Desktop Deployments and Environments
+    detail: MS6294
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: course
+    title: Planning, Implementing and Maintaining a Microsoft Windows Server 2003 Active Directory Infrastructure
+    detail: MS2279
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  - kind: course
+    title: Windows Server 2003
+    detail: WS2003
+    evidence:
+      url: https://www.linkedin.com/in/steffenbjerkenas
+      observed_at: '2026-10-24T08:47:02Z'
+  talks:
+  - session:2023/ai2748w
+  - session:2023/ai2852w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687529828950001duLN
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,343 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:rahul-zhade
+  person: person:rahul-zhade
+  brief_bio:
+    text: Rahul Zhade is a senior product security engineer who has worked at GitHub on the security of
+      npm, GitHub Copilot and GitHub Next projects. Zhade spoke at GitHub Universe 2025 about LLM security
+      in practice.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 946439df1c46946d5416317dc5cd3957322c5443331979894f73d79d107789cc
+    stale: false
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1095w
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:rahul-zhade
+  - label: npm
+    target: software:npm-registry
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: npm
+      ref: person:rahul-zhade
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: GitHub Codespaces
+    target: term:github-product-2025/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: GitHub Copilot Workspace
+    target: term:github-product-2025/github-copilot-workspace
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  - label: GitHub Secret Protection
+    target: term:github-product-2025/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744747216586001WQdP
+      ref: session:2025/sec1095w
+  education:
+  - school: Georgia Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  credentials:
+  - kind: honor
+    title: Faculty Honors
+    issuer: Georgia Institute of Technology
+    date: '2016-12-01T00:00:00.000Z'
+    description: Awarded to students attaining a GPA of 4.0 in the given semester
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Jun 2023
+    url: https://www.credly.com/badges/e8f3d5ca-8065-4a10-b7a4-66bd394f82c5/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: certification
+    title: PMC Level I
+    issuer: Pragmatic Institute
+    date: Jan 2023
+    url: https://www.credly.com/badges/914213ae-1055-418a-b7fc-2d27e4d0aef4/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  activities:
+  - kind: volunteering
+    title: Security Consultant
+    detail: Norwegian Refugee Council · Science and Technology · Jan 2022 · - Mar 2022 · 3 months · Performed
+      security assessment of Norwegian Security Council's software architecture and data policies • Conducted
+      Rapid Risk Assessments of NRC application and organization to identify potential breach situations
+      and signals to monitor for forward developed volunteers in conflict areas • Wrote incident response
+      playbooks for data and physical security breach events https://socialimpact.github.com/insights/Skills-Based-Volunteering-case-study-Norwegian-Refugee-Council/
+      · Jan 2022
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: volunteering
+    title: Software Consultant
+    detail: Glific · Science and Technology · Jun 2023 · - Sep 2023 · 4 months · Created a Language Model
+      (LLM) agent specializing in addressing reproductive health inquiries across various Indian languages
+      · Jun 2023
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: course
+    title: Combinatorics
+    detail: Math 3215
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: course
+    title: Data Structures and Algorithms
+    detail: CS 1332
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: course
+    title: General Psychology
+    detail: PSYC 1101
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: course
+    title: Introduction to OOP
+    detail: CS 1331
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: course
+    title: Linear Algebra
+    detail: MATH 1554
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: course
+    title: Multivariable Calculus
+    detail: MATH 2551
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: course
+    title: Probability and Statistics
+    detail: MATH 3215
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: organization
+    title: Big Data Club
+    detail: Served as the president of the Georgia Tech Big Data ClubResponsibilities include:▪ Designing
+      semester long project involving Atlanta as a smart city▪ Presenting lectures on data science concepts
+      and applications▪ Heading the Kaggle/ competitive data science team · Apr 2017 · Apr 2019
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: organization
+    title: Grey Hat Cybersecurity Club
+    detail: Aug 2016 · Apr 2018
+    evidence:
+      url: https://www.linkedin.com/in/rahul-zhade
+      observed_at: '2026-10-24T08:46:49Z'
+  talks:
+  - session:2025/sec1095w
+  gaps:
+  - github_account
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685569081902001tQ1v
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

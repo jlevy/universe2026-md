@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:hotel-zephyr-250-beach-st
+  name: Hotel Zephyr
+  label: Hotel Zephyr @ 250 Beach St
+  venue: venue:hotel-zephyr
+  source_ids:
+  - 1792686595067001zwO2
+  sessions:
+  - session:2543e
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

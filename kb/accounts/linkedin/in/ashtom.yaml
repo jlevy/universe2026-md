@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ashtom
+  platform: linkedin
+  handle: in/ashtom
+  url: https://www.linkedin.com/in/ashtom
+  display_name: Thomas Dohmke
+  bio: Fascinated by software development since his childhood in Germany, Thomas Dohmke has…
+  location: Seattle
+  followers: 118131
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQH5PFv8mz2Xsw/profile-displaybackgroundimage-shrink_200_800/B56Z2Am4l0IYAY-/0/1775979172356?e=2147483647&v=beta&t=K5_BkX0em19c_zgKPHi3fE3B9yr8e10XXJh-iEWaqPY
+  owner: person:thomas-dohmke
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692113530217001az2Z
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ashtom
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ashtom
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

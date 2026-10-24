@@ -1,0 +1,216 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ellie-bennett
+  person: person:ellie-bennett
+  brief_bio:
+    text: Ellie Bennett is a Senior Product Manager at GitHub focused on agents, currently the Copilot
+      coding agent, after earlier work on Copilot Chat. Bennett spoke at GitHub Universe 2025 about using
+      GitHub Copilot beyond the editor to transform workflows.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - linkedin_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 1f41f0190db5f190d2ea5037c425d7c059c38263ce50b299970f3d48a638893c
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1394d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1394d
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1394d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1394d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot Chat
+      ref: person:ellie-bennett
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746209596576001xiJh
+      ref: session:2025/bld1394d
+  credentials:
+  - kind: honor
+    title: Manager's Choice Award
+    issuer: IBM
+    date: '2015-12-01T00:00:00.000Z'
+    description: Awarded by managers to those who demonstrate excellence in IBM Practices and the business
+      outcomes they produce.
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  - kind: honor
+    title: Manager's Choice Award
+    issuer: IBM
+    date: '2014-12-01T00:00:00.000Z'
+    description: Awarded by managers to those who demonstrate excellence in IBM Practices and the business
+      outcomes they produce.
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  - kind: honor
+    title: Summa Cum Laude
+    issuer: '-'
+    description: Graduated with highest honors (top 5% of class)
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  - kind: certification
+    title: Product Strategy
+    issuer: Reforge
+    date: Dec 2020
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  - kind: certification
+    title: Gamification
+    issuer: Coursera
+    date: Nov 2020
+    url: http://coursera.org/verify/GFCDQ3KARJK9
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  - kind: certification
+    title: Accounting Analytics
+    issuer: Coursera
+    date: Dec 2019
+    url: https://www.coursera.org/account/accomplishments/verify/MYN4MGVXCSFZ
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  - kind: certification
+    title: Customer Analytics
+    issuer: Coursera
+    date: Dec 2019
+    url: https://www.coursera.org/account/accomplishments/verify/WBMHBXC7CJ94
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  - kind: certification
+    title: Operations Analytics
+    issuer: Coursera
+    date: Dec 2019
+    url: https://www.coursera.org/account/accomplishments/verify/D3L42PBBDCAB
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  - kind: certification
+    title: People Analytics
+    issuer: Coursera
+    date: Dec 2019
+    url: https://www.coursera.org/account/accomplishments/verify/YSRBPAJX2WUT
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  - kind: certification
+    title: Product Management
+    issuer: Pragmatic Institute (Pragmatic Marketing + TDI)
+    date: Jul 2019
+    evidence:
+      url: https://www.linkedin.com/in/ellie-bennett
+      observed_at: '2026-10-24T08:45:02Z'
+  recent_writing:
+  - title: Choosing the best Cognitive Use Cases
+    url: https://www.linkedin.com/pulse/choosing-best-cognitive-use-cases-ellie-bennett
+    published: '2017-06-29T00:00:00.000Z'
+    channel: linkedin
+    summary: Two weeks ago, I announced the launch of the Watson Accelerators program- a collection of
+      over 20 live instances of…
+  - title: 'Making Watson Real: Introducing Watson Accelerators'
+    url: https://www.linkedin.com/pulse/making-watson-real-introducing-accelerators-ellie-bennett
+    published: '2017-06-12T00:00:00.000Z'
+    channel: linkedin
+    summary: It is no secret that there is a lot of buzz about Artificial Intelligence. Just a few days
+      ago, Forbes published an…
+  talks:
+  - session:2025/bld1394d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1731006080258001wsiM
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

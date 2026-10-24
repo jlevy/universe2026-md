@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:epicweb-dev
+  login: epicweb-dev
+  kind: organization
+  url: https://github.com/epicweb-dev
+  name: Epic Dev Space
+  bio: The organization hosting all the repositories for EpicWeb.dev, EpicReact.dev, and EpicAI.pro projects
+  website: https://www.epicweb.dev
+  public_repositories: 83
+  created_at: '2022-09-06T19:19:20Z'
+  pinned:
+  - repo:epicweb-dev/epic-stack
+  - repo:epicweb-dev/web-auth
+  - repo:epicweb-dev/full-stack-foundations
+  - repo:epicweb-dev/data-modeling
+  - repo:epicweb-dev/full-stack-testing
+  - repo:epicweb-dev/web-forms
+  top_repositories:
+  - repo:epicweb-dev/react-fundamentals
+  - repo:epicweb-dev/advanced-react-patterns
+  - repo:epicweb-dev/react-hooks
+  entity: org:epic-dev-space
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: epicweb-dev
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

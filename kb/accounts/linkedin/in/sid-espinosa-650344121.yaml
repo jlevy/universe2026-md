@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sid-espinosa-650344121
+  platform: linkedin
+  handle: in/sid-espinosa-650344121
+  url: https://www.linkedin.com/in/sid-espinosa-650344121
+  display_name: Sid Espinosa
+  location: San Francisco
+  followers: 3941
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQHcBogy19kzLA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1632454444571?e=2147483647&v=beta&t=CuNMDAEeih9uoPOdFvw-1PYleKuQFV2f0vUDWoQiN7A
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHs0IegPV-BkQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1709969929008?e=2147483647&v=beta&t=cZGK0Kgj5CdPdYu6M0n9s54Qdwq_j5dR12pmUsYsBPY
+  owner: person:sid-espinosa
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693257381386001wRNa
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sid-espinosa-650344121
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

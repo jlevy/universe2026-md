@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:processing
+  login: processing
+  kind: organization
+  url: https://github.com/processing
+  name: Processing Foundation
+  bio: We create platforms to promote software literacy within the visual arts, and visual literacy within
+    technology-related fields.
+  location: Boston, New York, Los Angeles, Worldwide
+  website: https://processingfoundation.org/
+  public_repositories: 75
+  created_at: '2012-04-06T00:27:35Z'
+  pinned:
+  - repo:processing/p5.js
+  - repo:processing/processing4
+  - repo:processing/p5.js-web-editor
+  - repo:processing/processing-website
+  - repo:processing/p5.js-website
+  - repo:processing/processing-community-day
+  top_repositories:
+  - repo:processing/processing
+  - repo:processing/p5.js-sound
+  - repo:processing/processing-android
+  entity: org:processing-foundation
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: processing
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

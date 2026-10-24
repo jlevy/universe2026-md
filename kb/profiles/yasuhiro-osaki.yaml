@@ -1,0 +1,336 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:yasuhiro-osaki
+  person: person:yasuhiro-osaki
+  brief_bio:
+    text: Yasuhiro Osaki is a Software Engineer at Sony who has driven GitHub adoption across the company
+      for more than a decade, recently helping grow GitHub Copilot users from 900 to 4,000. Osaki speaks
+      at GitHub Universe 2026 on scaling organization management with Terraform.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: f34fd82892adbe1f9a526392309f172b5067e1cb5e02e6f69bb1378cc721fb22
+    stale: false
+  headline: Software Engineer at Sony
+  current_roles:
+  - Software Engineer at Sony
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1358d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1358d
+  - label: Git and code management techniques
+    target: term:topic/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1358d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1358d
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1358d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1358d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1358d
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:yasuhiro-osaki
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:yasuhiro-osaki
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: person:yasuhiro-osaki
+  - label: Terraform
+    target: software:terraform
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Terraform
+      ref: session:ldr1358d
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777547424946001LZQq
+      ref: session:ldr1358d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777547424946001LZQq
+      ref: session:ldr1358d
+  - label: Git and code management techniques
+    target: term:topic/git-and-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777547424946001LZQq
+      ref: session:ldr1358d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777547424946001LZQq
+      ref: session:ldr1358d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777547424946001LZQq
+      ref: session:ldr1358d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777547424946001LZQq
+      ref: session:ldr1358d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777547424946001LZQq
+      ref: session:ldr1358d
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777547424946001LZQq
+      ref: session:ldr1358d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777547424946001LZQq
+      ref: session:ldr1358d
+  experience:
+  - organization: Sony
+    organization_ref: org:sony
+    title: Software Engineer
+    start: Apr 2010
+    end: Present
+    current: true
+    description: |-
+      # Software Engineer
+
+      Over 10 years experience in Development of Embedded Software.
+
+      - Yocto Linux / RTOS (NuttX) / Android
+
+
+      # Integration Expert (CI/CD)
+
+      Over 10 years experience in CI/CD.
+
+      - GitHub Actions / Azure DevOps Pipelines / AWS / Terraform / Docker
+
+
+      # Administrator
+
+      Over 10 years experience in Administrator of services for developer
+
+      - GitHub.com
+
+      - GitHub Enterpeise
+
+      - Slack
+
+      - Azure
+
+      - AWS
+
+      - Datadog
+
+
+      # Public Speeches
+
+      - 2025-06-12 https://sony.connpass.com/event/356950/ GitHubを使いこなすためにソニーの開発現場が取り組んでいるプラクティス
+
+      - 2017-11-28 https://enterprisezine.jp/article/detail/10168 ソニービデオ&サウンドプロダクツにおけるAzureを用いた組み込みソフトウェア開発手法の紹介
+
+      - 2017-10-17 https://techplay.jp/event/636048 ソニービデオ＆サウンドプロダクツのソフトウェアエンジニアが語る、クラウドを活用したCI/CDのベストプラクティス
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  education:
+  - school: 東京農工大学
+    degree: 修士
+    field_of_study: 情報工学
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  - school: 東京農工大学
+    degree: 学士
+    field_of_study: 情報工学
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  credentials:
+  - kind: honor
+    title: IEEE CIG Best Student Paper
+    issuer: Computational intelligence & Games, IEEE
+    date: '2008-12-01T00:00:00.000Z'
+    description: http://www.csse.uwa.edu.au/cig08/ Awards CIG awards at least one best paper award at
+      each conference. The best paper is selected by an attendee vote (secret ballot) from among a shortlist
+      of papers. The shortlist is compiled by the program chair(s) from those papers that have received
+      the highest review scores and/or highest number of best paper award nominations. For example, the
+      shortlist could consist of the five papers with the best review scores, which are then presented
+      back-to-back… Show more
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: honor
+    title: GPW研究奨励賞
+    issuer: IPS 一般社団法人 情報処理学会
+    date: '2007-10-01T00:00:00.000Z'
+    description: 2007年ＧＰＷ研究奨励賞 http://minerva.cs.uec.ac.jp/~ta-ito/GPW07/top.htm ゲームプログラミングワークショップ（GPW)において
+      優秀な発表をした学生（もしくはそれに準ずるもの）に授与される。
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Oct 2024
+    url: https://www.credly.com/badges/f6369fca-ea11-43a0-a985-38230aae79d0/public_url
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Aug 2025
+    expires: Aug 2027
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: May 2024
+    expires: May 2027
+    url: https://www.credly.com/badges/8569b19d-57cd-435c-a3de-79c72dc3bd02/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect Associate (AWS SAA)
+    issuer: Amazon Web Services (AWS)
+    date: Jun 2022
+    expires: Jun 2025
+    url: https://www.credly.com/badges/4746da64-8d64-4055-8533-7bdedd45e1e5
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: certification
+    title: AZ-104 Microsoft Azure Administrator
+    issuer: マイクロソフト
+    date: Mar 2023
+    expires: Mar 2024
+    url: https://www.credly.com/badges/65d29b4a-3c0c-48f2-82d4-2127078ddbf5
+    evidence:
+      url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+      observed_at: '2026-10-24T08:15:40Z'
+  spoken_languages:
+  - 日本語
+  - English
+  talks:
+  - session:ldr1358d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696301111381001ifAP
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: TE-YasuhiroOsaki
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

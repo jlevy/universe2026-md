@@ -1,0 +1,231 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:cole-bemis
+  person: person:cole-bemis
+  brief_bio:
+    text: Cole Bemis works on design at Notion and was previously a Staff Research Engineer on the GitHub
+      Next team, where Bemis led the design of GitHub Copilot Workspace. Bemis spoke at GitHub Universe
+      2024 about how GitHub Next took Copilot Workspace from concept to code.
+    cites:
+    - x_bio
+    - websites
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: 693008ac1234ebf74556558285a7b50589bdcb63d14e642003faf771fc2049c7
+    stale: false
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:cole-bemis
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  recent_writing:
+  - title: |-
+      9 hours coding on a plane with no WiFi forced me to slow down and embrace the nostalgia of writing code
+
+      Still bullish on AI tools, but what a nice reminder that my brain still works without them
+    url: https://twitter.com/185964385/status/1966691807557017754
+    published: '2025-09-13T02:34:00Z'
+    channel: x
+  - title: |-
+      Thank you for all the responses ❤️ I'm adding your feedback to our internal paper cuts database.
+
+      No promises, but I'm aiming to fix a couple paper cuts each week to keep the momentum going, while also making time for bigger projects and long-term bets.
+    url: https://twitter.com/185964385/status/1952198697800040926
+    published: '2025-08-04T02:43:34Z'
+    channel: x
+  - title: |-
+      Personal update: After six incredible years at GitHub, July 1st was my last day 🥲
+
+      Thank you to everyone who made my time at GitHub special ❤️
+
+      Excited to share what’s next!
+    url: https://twitter.com/185964385/status/1940907262392021350
+    published: '2025-07-03T22:55:26Z'
+    channel: x
+  - title: To celebrate the technical preview of Copilot Workspace, I'd like to share a behind-the-scenes
+      look at its design evolution 🌱 https://t.co/nHAwIQEGP7
+    url: https://twitter.com/185964385/status/1785734454050500845
+    published: '2024-05-01T18:14:05Z'
+    channel: x
+  - title: |-
+      I'm so excited for y'all to try Copilot Workspace and let us know what you think!
+
+      We're listening to all your feedback and will continue to iterate
+    url: https://twitter.com/185964385/status/1784996100094747030
+    published: '2024-04-29T17:20:08Z'
+    channel: x
+  - title: |-
+      Implemented a query language for Lumen last night 🔍📝
+
+      Now, not only can you use GitHub-style qualifiers in any search input, you can also embed search queries inside notes—similar to Obsidian Dataview https://t.co/zzRoqqUatY
+    url: https://twitter.com/185964385/status/1639697492790116354
+    published: '2023-03-25T18:35:21Z'
+    channel: x
+  - title: |-
+      I've been pleasantly surprised by the DX and UX of PWAs on iOS. It's taken a lot of tweaking, but my notes web app is starting to feel pretty good on iOS.
+
+      🔑 The key is to set `display: "standalone"` in the web manifest: https://t.co/mUQn4B9ETW https://t.co/IQB04Q0aVx
+    url: https://twitter.com/185964385/status/1616576060061265920
+    published: '2023-01-20T23:19:01Z'
+    channel: x
+  - title: |-
+      I learned a bit about service workers this weekend and got my notes app working offline!
+
+      The dream of local-first software is alive and well ✨ https://t.co/a9Uz8fbUV8
+    url: https://twitter.com/185964385/status/1571995999236952064
+    published: '2022-09-19T22:53:47Z'
+    channel: x
+  - title: FigJam is super handy for drafting component APIs 😍 https://t.co/O5oXHKrQ2x
+    url: https://twitter.com/185964385/status/1539363791749517312
+    published: '2022-06-21T21:45:02Z'
+    channel: x
+  - title: |-
+      Implemented a tricky state persistence pattern for a canvas app I've been tinkering with. Thought I'd share the interesting bits.
+
+      Problem: I want to persist the state of the canvas in both the URL query string and localStorage 🧵 https://t.co/RNgSelsVLH
+    url: https://twitter.com/185964385/status/1462180000661053448
+    published: '2021-11-20T22:04:12Z'
+    channel: x
+  talks:
+  - session:2024/ai1164b
+  gaps:
+  - github_account
+  - linkedin_account
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694550295745001MxAR
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

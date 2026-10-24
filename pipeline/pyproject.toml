@@ -1,0 +1,43 @@
+[project]
+name = "universe-kb"
+version = "0.1.0"
+description = "Crawl GitHub Universe into a softschema knowledge base."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.11,<3",
+    "pyyaml>=6.0.2",
+    "softschema==0.8.1",
+    "strif>=3.0",
+]
+
+[project.scripts]
+universe-kb = "universe_kb.cli:main"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.40",
+    "pytest>=9.0",
+    "ruff>=0.16",
+]
+
+[build-system]
+requires = ["uv_build>=0.12,<0.13"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+# En dashes in time ranges and display strings are intentional typography.
+ignore = ["RUF001"]
+
+[tool.basedpyright]
+include = ["src", "tests"]
+typeCheckingMode = "standard"
+pythonVersion = "3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

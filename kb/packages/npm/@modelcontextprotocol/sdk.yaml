@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/@modelcontextprotocol/sdk
+  ecosystem: npm
+  name: '@modelcontextprotocol/sdk'
+  url: https://www.npmjs.com/package/@modelcontextprotocol/sdk
+  description: Model Context Protocol implementation for TypeScript
+  latest_version: 1.32.2
+  license: MIT
+  repository_url: git+https://github.com/modelcontextprotocol/typescript-sdk.git
+  software: software:model-context-protocol
+  sources:
+  - system: npm
+    url: https://registry.npmjs.org/
+    record_id: '@modelcontextprotocol/sdk'
+    retrieved_at: '2026-10-24T19:17:41Z'
+    snapshot: raw/registries/npm.json

@@ -1,0 +1,75 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:silent-disco-demos-festival-pavilion
+  name: Silent Disco Demos
+  label: Silent Disco Demos @ Festival Pavilion
+  venue: venue:festival-pavilion
+  capacity: 300
+  source_ids:
+  - 1785186485642001aq86
+  - 1756307610625001TW34
+  sessions:
+  - session:2025/aut1250d
+  - session:2025/aut1327d
+  - session:2025/aut1386d
+  - session:2025/aut1392d
+  - session:2025/aut1451d
+  - session:2025/aut1515d
+  - session:2025/aut1549d
+  - session:2025/aut1564d
+  - session:2025/aut1737d
+  - session:2025/aut1757d
+  - session:2025/aut1855d
+  - session:2025/bld1103d
+  - session:2025/bld1168d
+  - session:2025/bld1394d
+  - session:2025/bld1461d
+  - session:2025/bld1543d
+  - session:2025/bld1559d
+  - session:2025/bld1664d
+  - session:2025/bld1848d
+  - session:2025/bld1862d
+  - session:2025/bld1877d
+  - session:2025/sec1073d
+  - session:2025/sec1550d
+  - session:2025/sec1752d
+  - session:bld1353d
+  - session:bld1485d
+  - session:bld1553d
+  - session:bld1638d
+  - session:bld1784d
+  - session:bld1795d
+  - session:bld1799d
+  - session:bld1810d
+  - session:bld2008d
+  - session:bld2010d
+  - session:bld2011d
+  - session:bld2151d
+  - session:bld2450d
+  - session:ldr1185d
+  - session:ldr1358d
+  - session:ldr1434d
+  - session:ldr1662d
+  - session:ldr1774d
+  - session:ldr1785d
+  - session:ldr1797d
+  - session:tru1173d
+  - session:tru1179d
+  - session:tru1775d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

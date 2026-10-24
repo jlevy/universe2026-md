@@ -1,0 +1,125 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:elle-shwer
+  person: person:elle-shwer
+  brief_bio:
+    text: Elle Shwer is a Product Manager at Figma working on AI-powered developer tools and previously
+      worked on Copilot code review as a product manager at GitHub. Shwer spoke at GitHub Universe 2025
+      about the next evolution of Copilot code review.
+    cites:
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - linkedin_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 95ea87838a8eb3f1d1cc70580f2daba788c51bedd1ebb7a6a8bd443d565bf23c
+    stale: false
+  headline: Figma
+  current_roles:
+  - Figma
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1093d
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1093d
+  technologies:
+  - label: Copilot code review
+    target: software:copilot-code-review
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot code review
+      ref: session:2025/bld1093d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:elle-shwer
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744729128602001faog
+      ref: session:2025/bld1093d
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744729128602001faog
+      ref: session:2025/bld1093d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744729128602001faog
+      ref: session:2025/bld1093d
+  education:
+  - school: NYU Stern School of Business
+    evidence:
+      url: https://www.linkedin.com/in/shwerelle
+      observed_at: '2026-10-24T08:47:12Z'
+  credentials:
+  - kind: certification
+    title: Pragmatic Management Certified - (PMC-III)
+    issuer: Pragmatic Institute
+    date: Aug 2021
+    evidence:
+      url: https://www.linkedin.com/in/shwerelle
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: Pragmatic Management Certified - (PMC-II)
+    issuer: Pragmatic Institute (Pragmatic Marketing + TDI)
+    date: Dec 2019
+    evidence:
+      url: https://www.linkedin.com/in/shwerelle
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: Pragmatic Management Certified - (PMC-I)
+    issuer: Pragmatic Institute (Pragmatic Marketing + TDI)
+    date: Oct 2019
+    evidence:
+      url: https://www.linkedin.com/in/shwerelle
+      observed_at: '2026-10-24T08:47:12Z'
+  talks:
+  - session:2025/bld1093d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726702011879001EDo2
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

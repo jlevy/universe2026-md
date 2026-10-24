@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:mayashavin.com
+  url: https://mayashavin.com
+  kind: personal
+  title: Maya Shavin - Web developer, Speaker, Author and Illustrator
+  description: This is my personal website, where I share my knowledge and passion on web development,
+    accessibility, UX/UI and AI.
+  owner: person:maya-shavin
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://mayashavin.com/rss.xml
+  linked_accounts:
+  - acct:bluesky/mayashavin.com
+  - acct:linkedin/in/mayashavin
+  - acct:x/mayashavin
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mayashavin
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://mayashavin.com
+    record_id: https://mayashavin.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/mcp
+  ecosystem: pypi
+  name: mcp
+  url: https://pypi.org/project/mcp/
+  description: Model Context Protocol SDK
+  latest_version: 2.3.0
+  license: MIT
+  repository_url: https://github.com/modelcontextprotocol/python-sdk
+  software: software:model-context-protocol
+  sources:
+  - system: pypi
+    url: https://pypi.org/pypi/
+    record_id: mcp
+    retrieved_at: '2026-10-24T19:17:41Z'
+    snapshot: raw/registries/pypi.json

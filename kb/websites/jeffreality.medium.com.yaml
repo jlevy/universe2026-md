@@ -1,0 +1,25 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:jeffreality.medium.com
+  url: https://jeffreality.medium.com/
+  kind: blog
+  owner: person:jeffrey-berthiaume
+  link_basis:
+  - x_profile
+  fetch_status: error
+  http_status: 403
+  sources:
+  - system: brightdata
+    url: https://x.com/jeffreality
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://jeffreality.medium.com/
+    record_id: https://jeffreality.medium.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

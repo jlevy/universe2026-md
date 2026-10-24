@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/donia-chaiehloudj
+  platform: linkedin
+  handle: in/donia-chaiehloudj
+  url: https://www.linkedin.com/in/donia-chaiehloudj
+  display_name: Donia Chaiehloudj
+  bio: My interests, as a Golang software developer, are focused on cloud technologies. I am…
+  location: Greater Nice Metropolitan Area
+  followers: 7807
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQENf7Wlc6hF1g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1674555469822?e=2147483647&v=beta&t=Hs52OxQ8bxvaektTu2fX_A_yTh3xdBSMAqWXm4OX13Q
+  owner: person:donia-chaiehloudj
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1776153290962001Ywx4
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: doniacld
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/donia-chaiehloudj
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

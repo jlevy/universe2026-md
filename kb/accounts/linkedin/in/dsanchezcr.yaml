@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/dsanchezcr
+  platform: linkedin
+  handle: in/dsanchezcr
+  url: https://www.linkedin.com/in/dsanchezcr
+  display_name: David Sanchez Aguilar
+  bio: I grew up in Costa Rica with an early fascination for how things work. Studying Computer…
+  location: Orlando
+  followers: 4379
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGpuIw3PbI1rQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1720658563296?e=2147483647&v=beta&t=IoA7bbHwWL2up8aiNOACy4GSUGumin1q8PXkFHcVAdk
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQG4Hv5aKdpfew/profile-displaybackgroundimage-shrink_200_800/B4EZ72e8KcKIAQ-/0/1782251766744?e=2147483647&v=beta&t=UgLt6X2sRg_V7ihBK_TGVm63M3vEOZ5WZbIXfy7ictw
+  owner: person:david-sanchez
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715355236901001QH4v
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715355236901001QH4v
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/dsanchezcr
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

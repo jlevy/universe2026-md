@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/daphne
+  ecosystem: pypi
+  name: daphne
+  url: https://pypi.org/project/daphne/
+  description: Django ASGI (HTTP/WebSocket) server
+  latest_version: 4.2.3
+  license: BSD
+  repository_url: https://github.com/django/daphne.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: django/daphne
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

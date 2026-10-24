@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:windows
+  name: Windows
+  aliases:
+  - Windows
+  kind: platform
+  vendor: org:microsoft
+  mentioned_in:
+  - person:james-montemagno
+  - person:joe-bourne
+  - person:justin-hutchings
+  - person:todd-manion
+  - session:bld2011d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:grafana/loki
+  full_name: grafana/loki
+  url: https://github.com/grafana/loki
+  description: Like Prometheus, but for logs.
+  homepage: https://grafana.com/oss/loki
+  stars: 29053
+  forks: 4155
+  watchers: 379
+  open_issues: 640
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Go
+  topics:
+  - loki
+  - grafana
+  - prometheus
+  - logging
+  - cloudnative
+  - hacktoberfest
+  license: AGPL-3.0
+  archived: false
+  fork: false
+  created_at: '2018-04-16T09:22:48Z'
+  pushed_at: '2026-10-24T18:17:47Z'
+  owner_login: grafana
+  owner: gh:grafana
+  pinned_by:
+  - gh:grafana
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana/loki
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

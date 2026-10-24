@@ -1,0 +1,225 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alex-barnett
+  person: person:alex-barnett
+  brief_bio:
+    text: Alex Barnett leads developer relations at Vonage and previously worked at Postman, Intuit and
+      Microsoft. Barnett spoke at GitHub Universe 2024 about collaborative API creation, testing and deployment
+      with Postman.
+    cites:
+    - listed_role
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: fcbc9d36958c900c567e36c54c12edce7aa23190488434319f0f5c6595521757
+    stale: false
+  headline: Vonage
+  current_roles:
+  - Vonage
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1874d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1874d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1874d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1874d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1874d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1874d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1874d
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1874d
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720636065627001RLOr
+      ref: session:2024/dev1874d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720636065627001RLOr
+      ref: session:2024/dev1874d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720636065627001RLOr
+      ref: session:2024/dev1874d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720636065627001RLOr
+      ref: session:2024/dev1874d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720636065627001RLOr
+      ref: session:2024/dev1874d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720636065627001RLOr
+      ref: session:2024/dev1874d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720636065627001RLOr
+      ref: session:2024/dev1874d
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720636065627001RLOr
+      ref: session:2024/dev1874d
+  patents:
+  - title: OUT OF BAND DATA AUGMENTATION
+    number: US 7958489
+    date: June 7, 2011
+    description: Collections of data, such as executable code or information in a word document, are conventionally
+      modified directly. However, in some instances it is not possible or desirable to directly change
+      data. The invention is a mechanism for out-of-band augmentation that stores data separately from
+      the original data and then applies one or more augmentations to the data when it is requested. Claims
+      are directed to an interface that acquires data and a collections of augmentations and an application
+      that applies the augmentations to the data and returns the result.
+    url: https://patents.google.com/patent/US7958489
+    evidence:
+      url: https://www.linkedin.com/in/alexbarnett
+      observed_at: '2026-10-24T08:42:12Z'
+  - title: REST FOR ENTITIES
+    number: US 20080201338
+    date: August 21, 2008
+    description: The claimed subject matter provides a representational state transfer (REST) interface
+      over a data store characterized by an entity data model (EDM) architecture. Such characterization
+      can be presented by way of an Entity Framework that can transform data characterized in one manner
+      at a relational database into an EDM characterization that can further be exposed to an external
+      process or device. A REST interface over EDM stores can provide an end-to-end framework to expose
+      data, modeled in a highly-expressive fashion, to the Internet or a web-scale intranet.
+    evidence:
+      url: https://www.linkedin.com/in/alexbarnett
+      observed_at: '2026-10-24T08:42:12Z'
+  - title: LIVE ENTITIES INTERNET STORE SERVICE
+    number: US 20080201234
+    date: August 1, 2008
+    description: The claimed subject matter provides for an online, Internet-class service that can correlate
+      between an application interface utilizing a highly expressive, EDM conceptual format and a data
+      store structured in an efficient, highly scalable storage format. Such a service can include components
+      that map between an EDM schema and a data structure format. Additionally, a query reply can include
+      data presented with a payload format distinct from an EDM query format.
+    evidence:
+      url: https://www.linkedin.com/in/alexbarnett
+      observed_at: '2026-10-24T08:42:12Z'
+  activities:
+  - kind: project
+    title: Microsoft Developer Network
+    detail: Main Developer portal for Microsoft · Jun 2002
+    evidence:
+      url: https://www.linkedin.com/in/alexbarnett
+      observed_at: '2026-10-24T08:42:12Z'
+  recent_writing:
+  - title: On to my next adventure!
+    url: https://www.linkedin.com/pulse/my-next-adventure-alex-barnett
+    published: '2019-08-27T00:00:00.000Z'
+    channel: linkedin
+    summary: After 10+ amazing years at Intuit (including a 4 year stint away at RMS) it is time to move
+      on and start my next…
+  - title: 7 Tips to a Successful Landing at a Large Company
+    url: https://www.linkedin.com/pulse/7-tips-successful-landing-large-company-alex-barnett
+    published: '2017-11-29T00:00:00.000Z'
+    channel: linkedin
+    summary: A few years ago (nearly 10!), I published blog post providing some advice I shared that I
+      could have used myself a few…
+  talks:
+  - session:2024/dev1874d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721258503028001C5xs
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

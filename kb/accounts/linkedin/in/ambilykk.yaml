@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ambilykk
+  platform: linkedin
+  handle: in/ambilykk
+  url: https://www.linkedin.com/in/ambilykk
+  display_name: Ambily KK
+  bio: I help organizations move from AI experimentation to AI-native software…
+  location: Kottayam
+  followers: 2931
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFuDYdR2QetDg/profile-displaybackgroundimage-shrink_200_800/B56Z_55tENG0AQ-/0/1786604081687?e=2147483647&v=beta&t=2LtNj1LMJLL01KQy6c3P4S-YGi5nym0jcXspztySfFI
+  owner: person:ambily-kavumkal-kamalasanan
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685684024317001nH5O
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ambilykk
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/ajferrari
+  platform: x
+  handle: AJFerrari
+  url: https://x.com/AJFerrari
+  display_name: Adam Ferrari
+  bio: CTO, Board Member, Advisor. SaaS, AI-DLC, engineering analytics, big data/data warehousing/analytics
+  location: Cambridge, MA
+  followers: 488
+  following: 217
+  posts_count: 361
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/723208479062650880/tF7JgMsm_normal.jpg
+  created_at: '2009-03-06T20:20:24Z'
+  owner: person:adam-ferrari
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785529803526001UEKt
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/AJFerrari
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

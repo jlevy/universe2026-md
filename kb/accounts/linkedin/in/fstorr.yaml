@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/fstorr
+  platform: linkedin
+  handle: in/fstorr
+  url: https://www.linkedin.com/in/fstorr
+  display_name: Francis Storr
+  bio: After almost ten years of working as a user experience designer, I am now the lead…
+  location: Portland
+  followers: 660
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQGlI9ZzDDHDww/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1531262297246?e=2147483647&v=beta&t=rsCf__U3h3O6Uzk5D9CDVEMtPCoMJDBmCypoiHkZMEM
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:francis-storr
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693957624213001E9Kc
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/fstorr
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

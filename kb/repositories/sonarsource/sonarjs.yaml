@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:sonarsource/sonarjs
+  full_name: SonarSource/SonarJS
+  url: https://github.com/SonarSource/SonarJS
+  description: SonarSource Static Analyzer for JavaScript and TypeScript
+  homepage: https://community.sonarsource.com/
+  stars: 1302
+  forks: 194
+  watchers: 50
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:12:22Z'
+  primary_language: TypeScript
+  topics:
+  - sonarqube
+  - javascript
+  - static-analysis
+  - static-code-analysis
+  - static-analyzer
+  - code-quality
+  - language-team
+  - sonarcloud
+  - typescript
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2012-05-15T12:35:38Z'
+  pushed_at: '2026-10-24T18:52:31Z'
+  owner_login: SonarSource
+  owner: gh:sonarsource
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SonarSource
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SonarSource/SonarJS
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:mastodon/erinmikail@mastodon.social
+  platform: mastodon
+  handle: erinmikail@mastodon.social
+  url: https://mastodon.social/@erinmikail
+  display_name: Erin Mikail Staples
+  bio: |-
+    shenanigan creator, perpetual student ✨
+
+    💼 sr developer experience engineer @ galileo.ai
+    coproducer of Inside Jokes @ grisly pear nyc
+    🎤 NYT featured comedian
+  followers: 548
+  following: 508
+  posts_count: 407
+  avatar_url: https://files.mastodon.social/accounts/avatars/109/361/965/042/846/698/original/fb40dfc898f2f6e6.jpeg
+  created_at: '2022-11-18T00:00:00Z'
+  owner: person:erin-mikail-staples
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: erinmikailstaples
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: mastodon
+    url: https://mastodon.social/@erinmikail
+    record_id: erinmikail@mastodon.social
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json

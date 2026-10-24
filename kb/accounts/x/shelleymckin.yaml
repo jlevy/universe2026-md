@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/shelleymckin
+  platform: x
+  handle: shelleymckin
+  url: https://x.com/shelleymckin
+  display_name: Shelley McKinley
+  bio: Chief Legal Officer @GitHub, VP @Microsoft @MSFTIssues. Proud Texan & Seattleite ❤ my kid & my
+    cat, barre, wine, Europe & Macklemore. Opinions are mine.
+  location: Seattle, WA
+  website: https://www.linkedin.com/in/shelleymckinley/
+  followers: 19
+  following: 21
+  posts_count: 42
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1887710728506757121/dvGV1zKR_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/2896509767/1739965341
+  created_at: '2014-11-28T22:05:17Z'
+  owner: person:shelley-mckinley
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686591837698001uXbq
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/shelleymckin
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

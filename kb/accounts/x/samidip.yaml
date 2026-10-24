@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/samidip
+  platform: x
+  handle: samidip
+  url: https://x.com/samidip
+  display_name: Sam Basu
+  bio: Dev 🥑 for @UnoPlatform. Into X-Plat Dev & AI. 14x MSFT MVP. Speaker. Author. Streamer.  ❤️ Family,
+    Travels. 💜 Apple, Cricket, Fast EVs. Foodie. Geek. 🌎
+  location: Fairview, PA
+  website: http://samidipbasu.com/
+  followers: 3908
+  following: 1700
+  posts_count: 19409
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1891998142465265664/VcwZqoGB_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/166847612/1398270955
+  created_at: '2010-07-15T04:00:13Z'
+  owner: person:sam-basu
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1776137309458001vjsc
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: samidip
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/samidip
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/marcelv
+  platform: x
+  handle: marcelv
+  url: https://x.com/marcelv
+  display_name: Marcel de Vries
+  bio: Global MD & CTO Xebia|Xpirit | Digital Transformation | Management Consultant | Azure | DevOps
+    | GitHub | Public Speaker | Microsoft RD | Microsoft MVP
+  location: Zutphen, Netherlands
+  website: http://fluentbytes.com/
+  followers: 3263
+  following: 690
+  posts_count: 8257
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1554035030967607297/isdbOWrq_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14268108/1407510673
+  created_at: '2008-03-31T18:04:17Z'
+  owner: person:marcel-de-vries
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694194941084001w3OE
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/marcelv
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

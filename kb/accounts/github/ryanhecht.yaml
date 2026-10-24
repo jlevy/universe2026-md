@@ -1,0 +1,79 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:ryanhecht
+  login: RyanHecht
+  kind: user
+  url: https://github.com/RyanHecht
+  name: Ryan Hecht
+  company: '@GitHub'
+  bio: "Product @github ,\r\nOwner/Lead Developer @MCParks ,\r\n\r\n\r\nBrown University Class of 2020"
+  location: Orlando, FL / Long Island, NY
+  website: https://ryanhecht.com
+  followers: 160
+  public_repositories: 44
+  created_at: '2013-08-30T04:08:47Z'
+  profile_readme: |-
+    # Hi, I'm Ryan.
+
+    I'm a technically grounded product manager who loves understanding complicated systems, connecting ideas across disciplines, and helping teams turn that understanding into a practical path forward.
+
+    - Product @ [GitHub](https://github.com), working on agentic developer experiences
+    - Owner and Lead Developer of [MCParks](https://mcparks.us), a Minecraft theme park community
+    - Brown University, Class of 2020
+
+    <a href="https://ryanhecht.com" target="_blank">Website</a> · [Twitter](https://twitter.com/ryan_hecht) · [LinkedIn](https://linkedin.com/in/ryanahecht)
+  contributions_last_year:
+    total: 3508
+    commits: 200
+    pull_requests: 18
+    issues: 4
+    reviews: 1
+  starred_repositories: 37
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 7
+  contributed_to:
+  - repo:go-vikunja/vikunja
+  - repo:github/docs
+  - repo:thenathannator/plasticband-unity
+  - repo:github/copilot-cli
+  - repo:thenathannator/hidrogen
+  organization_logins:
+  - MCParks
+  pinned:
+  - repo:mcparks/showscript
+  - repo:mcparks/achievables
+  - repo:github/copilot-cli
+  linked_accounts:
+  - acct:x/minecraftparks
+  - acct:x/ryan_hecht
+  websites:
+  - site:ryanhecht.com
+  entity: person:ryan-hecht
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: RyanHecht
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

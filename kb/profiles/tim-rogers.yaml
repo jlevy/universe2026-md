@@ -1,0 +1,395 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:tim-rogers
+  person: person:tim-rogers
+  brief_bio:
+    text: Tim Rogers is a Principal Product Manager at GitHub working on Copilot agents in the cloud,
+      who previously built Copilot cloud agent and Copilot code review. Rogers spoke at GitHub Universe
+      2024 and 2025 and speaks at GitHub Universe 2026 on Copilot Automations.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: fb422c32875d26ec981d728ac5cc7ca54f51fbb3ee20676df8f1c7d8ee737517
+    stale: false
+  headline: Principal Product Manager at GitHub
+  location: London, UK
+  current_roles:
+  - Principal Product Manager at GitHub
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1898d
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1785s
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1785s
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1785s
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1785s
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2452d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2452d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2452d
+  technologies:
+  - label: Copilot code review
+    target: software:copilot-code-review
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot code review
+      ref: person:tim-rogers
+  - label: Copilot coding agent
+    target: software:copilot-coding-agent
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot coding agent
+      ref: session:2025/bld1785s
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:tim-rogers
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:timrogers/obsidian-share-as-gist
+    - ref: repo:timrogers/litra
+    - ref: repo:timrogers/raycast-logitech-litra
+    - ref: repo:timrogers/gh-migrate-project
+  - label: Rust
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:timrogers/litra-rs
+    - ref: repo:timrogers/formanator
+  - label: Ruby
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:restforce/restforce
+    - ref: repo:timrogers/rapgenius
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975927915001mscT
+      ref: session:2024/ai1898d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758764977768001MMTl
+      ref: session:2025/bld1785s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1792537561954001NSTN
+      ref: session:bld2452d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975927915001mscT
+      ref: session:2024/ai1898d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758764977768001MMTl
+      ref: session:2025/bld1785s
+  - label: homebrew
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/timrogers/litra-rs
+      ref: repo:timrogers/litra-rs
+    - url: https://github.com/Homebrew/homebrew-core
+      ref: repo:homebrew/homebrew-core
+  - label: VS Code
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/microsoft/vscode-docs
+      ref: repo:microsoft/vscode-docs
+    - url: https://github.com/microsoft/vscode
+      ref: repo:microsoft/vscode
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1792537561954001NSTN
+      ref: session:bld2452d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1792537561954001NSTN
+      ref: session:bld2452d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1792537561954001NSTN
+      ref: session:bld2452d
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758764977768001MMTl
+      ref: session:2025/bld1785s
+  - label: Discussions
+    target: term:github-product-2024/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975927915001mscT
+      ref: session:2024/ai1898d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975927915001mscT
+      ref: session:2024/ai1898d
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975927915001mscT
+      ref: session:2024/ai1898d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758764977768001MMTl
+      ref: session:2025/bld1785s
+  open_source:
+  - repository: repo:restforce/restforce
+    relation: pinned
+    stars: 822
+    primary_language: Ruby
+  - repository: repo:timrogers/litra-rs
+    relation: owner
+    stars: 164
+    primary_language: Rust
+  - repository: repo:timrogers/obsidian-share-as-gist
+    relation: owner
+    stars: 112
+    primary_language: TypeScript
+  - repository: repo:timrogers/formanator
+    relation: owner
+    stars: 102
+    primary_language: Rust
+  - repository: repo:timrogers/rapgenius
+    relation: owner
+    stars: 100
+    primary_language: Ruby
+  - repository: repo:timrogers/gh-migrate-project
+    relation: owner
+    stars: 78
+    primary_language: TypeScript
+  - repository: repo:timrogers/litra
+    relation: owner
+    stars: 65
+    primary_language: TypeScript
+  - repository: repo:timrogers/raycast-logitech-litra
+    relation: owner
+    stars: 1
+    primary_language: TypeScript
+  - repository: repo:microsoft/vscode-docs
+    relation: contributor
+    stars: 6675
+    primary_language: Markdown
+  - repository: repo:microsoft/vscode
+    relation: contributor
+    stars: 194244
+    primary_language: TypeScript
+  - repository: repo:homebrew/homebrew-core
+    relation: contributor
+    stars: 15639
+    primary_language: Ruby
+  - repository: repo:primer/react
+    relation: contributor
+    stars: 3923
+    primary_language: TypeScript
+  education:
+  - school: The London School of Economics and Political Science (LSE)
+    evidence:
+      url: https://www.linkedin.com/in/timrogers1
+      observed_at: '2026-10-24T08:15:13Z'
+  credentials:
+  - kind: honor
+    title: Most-Effective Self-Service Initiative
+    issuer: European Contact Centre and Customer Service Awards
+    date: '2017-11-01T00:00:00.000Z'
+    description: Awarded for a tool I worked on in a small team which drastically reduced GoCardless's
+      inbound customer support volumes by providing a self-service way for customers to answer their queries.
+    evidence:
+      url: https://www.linkedin.com/in/timrogers1
+      observed_at: '2026-10-24T08:15:13Z'
+  - kind: honor
+    title: Bassett Memorial Prize
+    issuer: London School of Economics and Political Science
+    date: '2016-08-01T00:00:00.000Z'
+    description: Awarded to the student achieving the highest overall marks in the BSc Government programme.
+    evidence:
+      url: https://www.linkedin.com/in/timrogers1
+      observed_at: '2026-10-24T08:15:13Z'
+  - kind: honor
+    title: Harold Laski Scholarship
+    issuer: London School of Economics and Political Science
+    date: '2015-08-01T00:00:00.000Z'
+    description: Awarded to the student receiving the highest overall mark for the first two years of
+      the BSc Government programme.
+    evidence:
+      url: https://www.linkedin.com/in/timrogers1
+      observed_at: '2026-10-24T08:15:13Z'
+  - kind: certification
+    title: Microsoft Certified Technology Specialist
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/timrogers1
+      observed_at: '2026-10-24T08:15:13Z'
+  publications:
+  - title: 'Social Norms and Selectivity: Effects of Norms of Open-Mindedness on Unbiased Content Selection
+      and Affective Polarization'
+    venue: International Communication Association
+    date: May 2018
+    description: Given the polarizing effects of exposure to like-minded political information and the
+      alleged societal benefits of exposure to diverse and dissimilar political perspectives, this study
+      examines how to promote more unbiased content selection and thereby minimize affective polarization.
+      We focus on social norms promoting open-mindedness. Using an online experiment on a systematic sample
+      of American partisans (N = 389), we demonstrate that highlighting the social norm of open-mindedness
+      can promote greater attention to balanced news about divisive political issues than highlighting
+      close-mindedness and than not offering any information about social norms. It does not, however,
+      influence counter-attitudinal exposure. Also, contrary to expectations, exposure to balanced news
+      does not lower affective polarization toward the political out-group. Results also show that highlighting
+      close-mindedness tends to encourage attention to pro-attitudinal news among Trump supporters. Theoretical
+      and practical implications for an informed citizenship in an era of abundant media choice are discussed.
+    evidence:
+      url: https://www.linkedin.com/in/timrogers1
+      observed_at: '2026-10-24T08:15:13Z'
+  - title: 'Government Responsiveness in the European Union: Evidence From Council Voting'
+    venue: Comparative Political Studies
+    date: Jan 2016
+    evidence:
+      url: https://www.linkedin.com/in/timrogers1
+      observed_at: '2026-10-24T08:15:13Z'
+  - title: Twilio Best Practices
+    venue: Packt Publishing
+    date: Dec 2014
+    description: '- Wrote “Twilio Best Practices”, a programming book designed for beginners building
+      real-time voice and SMS applications using the Twilio platform- Received 4 1/2 star reviews on average
+      on Amazon.com'
+    evidence:
+      url: https://www.linkedin.com/in/timrogers1
+      observed_at: '2026-10-24T08:15:13Z'
+  talks:
+  - session:2024/1975k
+  - session:2024/ai1898d
+  - session:2025/bld1785s
+  - session:bld2452d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697183379437001R4Y9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: timrogers
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697183379437001R4Y9
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697183379437001R4Y9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

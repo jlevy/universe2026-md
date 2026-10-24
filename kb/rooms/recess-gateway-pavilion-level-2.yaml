@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:recess-gateway-pavilion-level-2
+  name: Recess!
+  label: Recess! @ Gateway Pavilion (Level 2)
+  venue: venue:gateway-pavilion
+  location_note: Level 2
+  capacity: 190
+  source_ids:
+  - 1756841390787001AOXP
+  sessions:
+  - session:2025/1607
+  - session:2025/1608
+  - session:2025/1610
+  - session:2025/1613
+  - session:2025/1614
+  - session:2025/1615
+  - session:2025/1759
+  - session:2025/1760
+  - session:2025/1787
+  - session:2025/1904
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

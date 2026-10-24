@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/cmaiacd
+  platform: linkedin
+  handle: in/cmaiacd
+  url: https://www.linkedin.com/in/cmaiacd
+  display_name: Camila Maia
+  bio: Software engineer with over 16 years of experience, specialist in Developer Experience…
+  location: Florianópolis
+  followers: 2156
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQHA2m2nPApOHw/profile-displayphoto-scale_200_200/B4DZwu0VLFI4AY-/0/1770311998769?e=2147483647&v=beta&t=8wU2Qn4hNUDJnUC_JQV_PwhXT666LwTvYW2_a89SJM0
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQGpafMYnS6Flg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1727189189232?e=2147483647&v=beta&t=nRIQHdVZ8lLY9_e2o1gh1b_N0ngvsrhjarbWMhxXR4w
+  owner: person:camila-maia
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686647544975001PtM2
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: camilamaia
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/cmaiacd
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

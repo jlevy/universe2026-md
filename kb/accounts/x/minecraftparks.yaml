@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/minecraftparks
+  platform: x
+  handle: MinecraftParks
+  url: https://x.com/MinecraftParks
+  display_name: MCParks
+  bio: The ultimate destination for 1:1 theme parks in Minecraft! Walt Disney World, Disneyland California,
+    Universal Orlando, Busch Gardens Tampa, and more! v1.12.1+
+  location: 'IP: Main.MCParks.Us'
+  website: http://mcparks.us/
+  followers: 7699
+  following: 174
+  posts_count: 5614
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1831322295031177216/lci23R_n_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/2161580641/1728498552
+  created_at: '2013-10-28T20:45:33Z'
+  owner: person:ryan-hecht
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: RyanHecht
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/MinecraftParks
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

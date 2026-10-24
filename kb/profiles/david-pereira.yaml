@@ -1,0 +1,279 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:david-pereira
+  person: person:david-pereira
+  brief_bio:
+    text: David Pereira is an AI and digital solution architect at Siemens Energy with experience in event-driven
+      architectures and microservices on .NET and Azure, and served on the AsyncAPI Technical Steering
+      Committee. Pereira speaks at GitHub Universe 2026 on Copilot code review and custom agents.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: d9d978ebb0fe2b938c9c19be88ec70135475b75ba2c41ac84b3a92eba2642847
+    stale: false
+  headline: AI & Digital Solution Architect at Siemens Energy
+  location: Lisbon / Portugal
+  current_roles:
+  - AI & Digital Solution Architect at Siemens Energy
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1454d
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1454d
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:david-pereira
+  - label: Copilot code review
+    target: software:copilot-code-review
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot code review
+      ref: session:bld1454d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1454d
+  - label: GitHub Copilot SDK
+    target: software:copilot-sdk
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot SDK
+      ref: session:bld1454d
+  - label: Java
+    target: software:java
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Java
+      ref: person:david-pereira
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:david-pereira
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:asyncapi-archived-repos/server-api
+    - ref: repo:bolt04/client-connector
+    - ref: repo:bolt04/eddiebot
+  - label: C#
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:bolt04/grafana-observability-demo
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:bolt04/ai-code-review-demo
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:bolt04/react-ultimate-resume
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777589183350001c9fe
+      ref: session:bld1454d
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777589183350001c9fe
+      ref: session:bld1454d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777589183350001c9fe
+      ref: session:bld1454d
+  - label: asyncapi
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/asyncapi-archived-repos/server-api
+      ref: repo:asyncapi-archived-repos/server-api
+  - label: code-review
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BOLT04/ai-code-review-demo
+      ref: repo:bolt04/ai-code-review-demo
+  - label: docker
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/asyncapi-archived-repos/server-api
+      ref: repo:asyncapi-archived-repos/server-api
+  - label: evals
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BOLT04/ai-code-review-demo
+      ref: repo:bolt04/ai-code-review-demo
+  - label: get-global-node-release-workflows
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/asyncapi-archived-repos/server-api
+      ref: repo:asyncapi-archived-repos/server-api
+  - label: get-global-releaserc
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/asyncapi-archived-repos/server-api
+      ref: repo:asyncapi-archived-repos/server-api
+  - label: Node.js
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/asyncapi-archived-repos/server-api
+      ref: repo:asyncapi-archived-repos/server-api
+  - label: observability
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BOLT04/grafana-observability-demo
+      ref: repo:bolt04/grafana-observability-demo
+  - label: sms
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BOLT04/client-connector
+      ref: repo:bolt04/client-connector
+  open_source:
+  - repository: repo:asyncapi-archived-repos/server-api
+    relation: pinned
+    stars: 36
+    primary_language: TypeScript
+  - repository: repo:bolt04/client-connector
+    relation: owner
+    stars: 1
+    primary_language: TypeScript
+  - repository: repo:bolt04/eddiebot
+    relation: owner
+    stars: 1
+    primary_language: TypeScript
+  - repository: repo:bolt04/react-ultimate-resume
+    relation: owner
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:bolt04/grafana-observability-demo
+    relation: owner
+    stars: 0
+    primary_language: C#
+  - repository: repo:bolt04/ai-code-review-demo
+    relation: owner
+    stars: 0
+    primary_language: Python
+  credentials:
+  - kind: certification
+    title: Salesforce Certified B2C Commerce Developer
+    issuer: Salesforce
+    date: Nov 2021
+    url: https://trailblazer.me/id/dpereira68
+    evidence:
+      url: https://www.linkedin.com/in/jose-david-pereira
+      observed_at: '2026-10-24T08:11:43Z'
+  publications:
+  - title: Session management in Salesforce B2C Commerce Cloud
+    date: June 6, 2022
+    description: A look into how session management works in Commerce Cloud, from a real use case.
+    evidence:
+      url: https://www.linkedin.com/in/jose-david-pereira
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: An Introduction to Hypermedia APIs
+    date: February 15, 2020
+    description: The concept or term hypermedia isn't new by no means. You might not be familiar with
+      it but it actually dates back to when Roy Fielding made his dissertation about REST in 2000. In
+      this post, we'll go through the advantages and trade-offs of this REST constraint.
+    evidence:
+      url: https://www.linkedin.com/in/jose-david-pereira
+      observed_at: '2026-10-24T08:11:43Z'
+  talks:
+  - session:bld1454d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777119502048001q8hV
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: BOLT04
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/telekom
+  platform: linkedin
+  handle: company/telekom
+  url: https://www.linkedin.com/company/telekom
+  display_name: Deutsche Telekom
+  bio: 'Welcome to Deutsche Telekom. As one of the world''s most valuable brands, we design innovative
+    solutions and products in the areas of connectivity, networks, digitalization and security. #connectingyourworld
+    At Deutsche Telekom, we believe that each and every one of us has the power to move society forward.
+    That''s why we''re committed to creating a culture of collaboration and innovation that everyone can
+    participate in. We believe that diversity and inclusion are the key to creative solutions. Our employees
+    work in 34 countries worldwide. As a leading employer, we support them with offers and benefits that
+    enrich their work and private life. These include flexible working hours, hybrid and remote work,
+    learning and development opportunities, health and wellbeing, as well as attractive employee benefits.'
+  website: https://www.telekom.com/careers
+  followers: 350605
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQGbCxKgk_BVoQ/company-logo_200_200/B4EZ9K0MWtJMAE-/0/1783666624361/telekom_logo?e=2147483647&v=beta&t=blXA9XEWCfbcj4-vqMmQsIvpFQ32VX_Atk5JO1xx-2E
+  owner: org:deutsche-telekom
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/ashtom
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/telekom
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

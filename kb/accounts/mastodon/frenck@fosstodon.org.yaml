@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:mastodon/frenck@fosstodon.org
+  platform: mastodon
+  handle: frenck@fosstodon.org
+  url: https://fosstodon.org/@frenck
+  display_name: Franck Nijhof
+  bio: |-
+    A Human. Being. Him/He. Dad. Open Sourcerer. GitHub Star 🌟
+    [#HomeAssistant](https://fosstodon.org/tags/HomeAssistant) lead engineer. Passionate. Dedicated. Motto: Make a positive difference every single day. Be the change ❤
+  followers: 1866
+  following: 183
+  posts_count: 654
+  avatar_url: https://cdn.fosstodon.org/accounts/avatars/109/553/066/472/929/278/original/d08d8ef4372106b3.jpg
+  created_at: '2022-12-21T00:00:00Z'
+  owner: person:franck-nijhof
+  link_basis:
+  - github_profile
+  - website_link
+  - x_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: frenck
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: mastodon
+    url: https://fosstodon.org/@frenck
+    record_id: frenck@fosstodon.org
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json
+  - system: brightdata
+    url: https://x.com/frenck
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

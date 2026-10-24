@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kevinbackhouse
+  platform: linkedin
+  handle: in/kevinbackhouse
+  url: https://www.linkedin.com/in/kevinbackhouse
+  display_name: Kevin Backhouse
+  bio: Security researcher at GitHub Security Lab. Finding and fixing vulnerabilities in open…
+  location: United Kingdom
+  followers: 647
+  connections: 436
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQH_L2eUeS0QNQ/profile-displaybackgroundimage-shrink_200_800/B4EZWPJ0yuG0AU-/0/1741863472948?e=2147483647&v=beta&t=6I50EfUDDxT-g3UMxJWV4D1d2ZpLbI8CPCe3sk8vmIc
+  owner: person:kevin-backhouse
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685735841165001lbOJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kevinbackhouse
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kevinbackhouse
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

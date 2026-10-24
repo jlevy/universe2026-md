@@ -1,0 +1,27 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:erinhavens.com
+  url: http://erinhavens.com/
+  kind: personal
+  title: Erin L. Havens
+  description: Erin L. Havens — Product lead for GitHub secret scanning.
+  owner: person:erin-havens
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: brightdata
+    url: https://x.com/erinhavens
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: http://erinhavens.com/
+    record_id: http://erinhavens.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:kyledaigle.com
+  url: https://www.kyledaigle.com
+  kind: personal
+  title: Kyle Daigle
+  description: Technology, software, startups, travel, and leadership advice from GitHub’s COO.
+  owner: person:kyle-daigle
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://www.kyledaigle.com/rss/
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kdaigle
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://www.kyledaigle.com
+    record_id: https://www.kyledaigle.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kjaymiller
+  platform: linkedin
+  handle: in/kjaymiller
+  url: https://www.linkedin.com/in/kjaymiller
+  display_name: Jay M.
+  bio: Hi, I'm a Developer Advocate, based in Atlanta, GA. My greatest passion is serving…
+  location: Atlanta Metropolitan Area
+  followers: 2893
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQF0uBOgCIjspQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699303290891?e=2147483647&v=beta&t=QL_BARbI4fwZEVAqDROdnjr6Zgas3EyClV70ukZUrn0
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHC7G-V4__KAg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1699307855937?e=2147483647&v=beta&t=qDPFLcic7mbCAwmKLrDHsTt3hX--mvIwFyGCjlm4i2I
+  owner: person:jay-miller
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686006375805001XAc0
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kjaymiller
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/dr_black
+  platform: x
+  handle: Dr_Black
+  url: https://x.com/Dr_Black
+  display_name: Professor Sue Black OBE
+  bio: |-
+    Professor of #CompSci @Durham_Uni 💃 Women in Tech Champion
+    👭Mumx4 Nanax6 💖 AGENT @noelgay19
+  location: London, UK
+  website: https://www.skool.com/women-in-tech-power-network/about
+  followers: 57489
+  following: 34246
+  posts_count: 144333
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/616129734443954176/stGGOvpf_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/6549332/1784633907
+  created_at: '2007-06-03T22:21:31Z'
+  owner: person:sue-black
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1789651997091001h2xh
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/Dr_Black
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/fafofm
+  platform: linkedin
+  handle: company/fafofm
+  url: https://www.linkedin.com/company/fafofm
+  display_name: Fork Around and find Out
+  bio: The podcast you can listen to while you fix prod.
+  website: https://fafo.fm/
+  followers: 132
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQGVZoLpSXNxeA/company-logo_200_200/B4DZySQH_YJkAM-/0/1771980228098?e=2147483647&v=beta&t=s-E1OvOZNoldHjGVmEHez5cDBEEyxUePo7Qxz_NrYFs
+  owner: org:fork-around-and-find-out
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/autumnnash
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/fafofm
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

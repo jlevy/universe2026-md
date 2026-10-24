@@ -1,0 +1,53 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:karenjli
+  login: karenjli
+  kind: user
+  url: https://github.com/karenjli
+  name: Karen Li
+  bio: Software Developer | Educator | Pianist
+  location: USA
+  followers: 30
+  public_repositories: 3
+  created_at: '2019-02-26T01:36:45Z'
+  profile_readme: "# About Me \U0001F44B\n\nHello! Glad to see you here. \n\nI am a classical pianist\
+    \ turned elementary school teacher turned software engineer.\n\nMy stack is primarily JavaScript.\
+    \ I also have experience with cloud based infrastructure. \n\nOutside of software engineering, you\
+    \ will find me sipping oolong tea and reading history books."
+  contributions_last_year:
+    total: 818
+    commits: 9
+    pull_requests: 8
+    issues: 0
+    reviews: 12
+  starred_repositories: 2
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:npm/documentation
+  - repo:npm/api-documentation
+  pinned:
+  - repo:karenjli/karenjli
+  entity: person:karen-li
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: karenjli
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

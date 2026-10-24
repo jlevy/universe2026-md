@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/geektrainer.bsky.social
+  platform: bluesky
+  handle: geektrainer.bsky.social
+  url: https://bsky.app/profile/geektrainer.bsky.social
+  display_name: Christopher Harrison
+  bio: 'DevRel at GitHub. Geek. Marathoner. Husband. Father of one four-legged child. Opinions belong
+    to anyone other than me or my employer. '
+  followers: 526
+  created_at: '2023-06-30T13:13:37Z'
+  owner: person:christopher-harrison
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: geektrainer.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

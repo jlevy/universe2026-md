@@ -1,0 +1,176 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sanjeev-murthy
+  person: person:sanjeev-murthy
+  brief_bio:
+    text: Sanjeev Murthy is Director of Cybersecurity at Visa, leading security architecture reviews and
+      assessments for critical payment platforms and helping teams build security in early. Murthy speaks
+      at GitHub Universe 2026 on Visa's Zero-Secrets Initiative.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: 576278e74f0924278e7b8f5f3ee76afd68cb620eec05a0b5368f2fb7f0d230f7
+    stale: false
+  headline: Director, Cybersecurity at Visa
+  current_roles:
+  - Director, Cybersecurity at Visa
+  expertise:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  technologies:
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  interests:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  education:
+  - school: George Mason University - School of Business
+    evidence:
+      url: https://www.linkedin.com/in/sanjeevnmurthy
+      observed_at: '2026-10-24T08:15:35Z'
+  credentials:
+  - kind: certification
+    title: AWS Security Speciality
+    issuer: Amazon Web Services (AWS)
+    date: Dec 2019
+    evidence:
+      url: https://www.linkedin.com/in/sanjeevnmurthy
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: Certified Information Systems Security Professional (CISSP)
+    issuer: (ISC)²
+    date: Sep 2017
+    evidence:
+      url: https://www.linkedin.com/in/sanjeevnmurthy
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Oct 2024
+    expires: Oct 2027
+    url: https://www.credly.com/badges/13b406af-e55e-4062-b541-da25b6d280c4/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sanjeevnmurthy
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: Azure Security Engineer, AZ-500
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/sanjeevnmurthy
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: Certified Ethical Hacker CEH
+    issuer: EC-Council
+    url: http://www.eccouncil.org/Certification/certified-ethical-hacker
+    evidence:
+      url: https://www.linkedin.com/in/sanjeevnmurthy
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: ECSA - EC- Council Certified Security Analyst
+    issuer: EC-Council
+    url: http://www.eccouncil.org/about-ec-council-certified-security-analyst
+    evidence:
+      url: https://www.linkedin.com/in/sanjeevnmurthy
+      observed_at: '2026-10-24T08:15:35Z'
+  spoken_languages:
+  - English
+  talks:
+  - session:tru1100b
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727450452964001QGx9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: sanjeevane
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

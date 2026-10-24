@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/poojamakes
+  platform: x
+  handle: poojamakes
+  url: https://x.com/poojamakes
+  display_name: Pooja Mistry 🌸
+  bio: Making Sense of things! Content, Community , Code - Developer Advocate @getpostman 🧡, Previously
+    @IBM 🐝💙
+  location: Boston, MA
+  followers: 1141
+  following: 798
+  posts_count: 680
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1884321234965430273/1EmWt3S2_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1107745058655227904/1719935171
+  created_at: '2019-03-18T20:46:17Z'
+  owner: person:pooja-mistry
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715310446284001ZXU9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/poojamakes
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

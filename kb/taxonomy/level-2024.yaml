@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: level-2024
+  event: event:github-universe-2024
+  label: Level
+  multi_valued: false
+  terms:
+  - id: term:level-2024/level-100-introductory
+    label: 'Level 100: Introductory'
+    source_id: option_1597340253500
+    session_count: 47
+  - id: term:level-2024/level-200-intermediate
+    label: 'Level 200: Intermediate'
+    source_id: option_1597340257085
+    session_count: 50
+  - id: term:level-2024/level-300-advanced
+    label: 'Level 300: Advanced'
+    source_id: option_1597340262463
+    session_count: 8
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681231920170001WVFG
+    retrieved_at: '2026-10-24T08:03:26Z'
+    snapshot: raw/editions/universe24/attributes.json

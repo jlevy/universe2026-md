@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:tryghost/ghost
+  full_name: TryGhost/Ghost
+  url: https://github.com/TryGhost/Ghost
+  description: Independent technology for modern publishing, memberships, subscriptions and newsletters.
+  homepage: https://ghost.org
+  stars: 55599
+  forks: 12005
+  watchers: 1009
+  open_issues: 43
+  stats_observed_at: '2026-10-24T19:12:29Z'
+  primary_language: TypeScript
+  topics:
+  - journalism
+  - publishing
+  - blogging
+  - javascript
+  - web-application
+  - cms
+  - nodejs
+  - ghost
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2013-05-04T11:09:13Z'
+  pushed_at: '2026-10-24T14:36:03Z'
+  owner_login: TryGhost
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: frenck
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: TryGhost/Ghost
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/2percentsilk
+  platform: x
+  handle: 2percentsilk
+  url: https://x.com/2percentsilk
+  display_name: Allison Weins (Buchholtz-Au)
+  bio: Senior Product Manager - GitHub Copilot. Weins as in 🍷s. Dog mom to Olive the Corgi, aerialist,
+    foodie. Opinions are my own. (she/her)
+  location: Seattle, WA
+  followers: 2833
+  following: 593
+  posts_count: 1509
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1379929852686393344/tfH4ExkS_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1442650176/1446246813
+  created_at: '2013-05-20T02:31:32Z'
+  owner: person:allison-weins
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685470655193001AFQ9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685470655193001AFQ9
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/2percentsilk
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

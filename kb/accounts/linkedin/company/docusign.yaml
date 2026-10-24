@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/docusign
+  platform: linkedin
+  handle: company/docusign
+  url: https://www.linkedin.com/company/docusign
+  display_name: Docusign
+  bio: 'Docusign brings agreements to life. Over 1.8 million customers and more than a billion people
+    in over 180 countries use Docusign solutions to accelerate the process of doing business and simplify
+    people’s lives. With intelligent agreement management, Docusign unleashes business critical data that
+    is trapped inside of documents. Until now, these were disconnected from business systems of record,
+    costing businesses time, money, and opportunity. Using Docusign IAM, companies can create, commit,
+    and manage agreements with solutions created by the #1 company in e-signature and contract lifecycle
+    management (CLM).'
+  website: https://www.docusign.com/
+  followers: 614023
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQFJh4R0ibULEg/company-logo_200_200/company-logo_200_200/0/1712837162469/docusign_logo?e=2147483647&v=beta&t=u5vbhLtmJGDiBmjV8RONzoSzoIkYy0yrRQVJextQnaY
+  owner: org:docusign
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/markpete
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/docusign
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

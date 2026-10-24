@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/catharinemcnally
+  platform: linkedin
+  handle: in/catharinemcnally
+  url: https://www.linkedin.com/in/catharinemcnally
+  display_name: Catharine McNally
+  bio: I have a real passion for scale, repeatability, and reducing friction. I love taking a…
+  location: Washington DC-Baltimore Area
+  followers: 2024
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGzWsRWIxjH6Q/profile-displayphoto-scale_200_200/B4EZz5eQk2I8AY-/0/1773711985553?e=2147483647&v=beta&t=pi7LSADbMLRwGVuiG-oz1BiLuyScozFwd-lMKH8olCw
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQE5tlaa9MP__A/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1698707247591?e=2147483647&v=beta&t=rnqsBEquWMjUgaZP0qFJY-aG-Xfj4LeexFKhN1pOKgY
+  owner: person:catharine-mcnally
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698961577054001hecr
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/catharinemcnally
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

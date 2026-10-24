@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: level
+  event: event:github-universe-2026
+  label: Level
+  multi_valued: false
+  terms:
+  - id: term:level/level-100-introductory
+    label: 'Level 100: Introductory'
+    description: Designed for those new to the topic. These sessions cover foundational concepts, features,
+      and benefits — no prior expertise assumed.
+    source_id: option_1597340253500
+    session_count: 42
+  - id: term:level/level-200-intermediate
+    label: 'Level 200: Intermediate'
+    description: Best suited for attendees with a working understanding of the topic. These sessions explore
+      real-world applications, technical details, and best practices.
+    source_id: option_1597340257085
+    session_count: 79
+  - id: term:level/level-300-advanced
+    label: 'Level 300: Advanced'
+    description: Intended for experienced practitioners. These sessions dive into complex, real-world
+      challenges, advanced techniques, and expert-level insights.
+    source_id: option_1597340262463
+    session_count: 11
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681231920170001WVFG
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/attributes.json

@@ -1,0 +1,153 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: topic-2024
+  event: event:github-universe-2024
+  label: Topic
+  multi_valued: true
+  terms:
+  - id: term:topic-2024/accessibility
+    label: Accessibility
+    source_id: 1681323600229002s1be
+    session_count: 3
+  - id: term:topic-2024/agile-practices
+    label: Agile practices
+    source_id: 1681323600229003sU8s
+    session_count: 20
+  - id: term:topic-2024/ai
+    label: AI
+    source_id: 1681323600229004sefV
+    session_count: 69
+  - id: term:topic-2024/automated-infrastructure-deployment
+    label: Automated Infrastructure Deployment
+    source_id: 1681323600229005sZjO
+    session_count: 14
+  - id: term:topic-2024/cloud
+    label: Cloud
+    source_id: 1681323600229006sjHK
+    session_count: 22
+  - id: term:topic-2024/collaboration
+    label: Collaboration
+    source_id: 1683210494021001ei0y
+    session_count: 52
+  - id: term:topic-2024/community
+    label: Community
+    source_id: 1683210494021002e3lu
+    session_count: 26
+  - id: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    label: Continuous Integration + Continuous Deployment (CI/CD)
+    source_id: 1681323600229007syow
+    session_count: 31
+  - id: term:topic-2024/containerized-applications
+    label: Containerized Applications
+    source_id: 1681323600229008s8A8
+    session_count: 8
+  - id: term:topic-2024/data-analytics
+    label: Data Analytics
+    source_id: 1681323600229009si7A
+    session_count: 4
+  - id: term:topic-2024/data-management
+    label: Data Management
+    source_id: 1681323600229010smOE
+    session_count: 4
+  - id: term:topic-2024/data-resiliency
+    label: Data Resiliency
+    source_id: 1711383809968001b1UA
+    session_count: 1
+  - id: term:topic-2024/data-science
+    label: Data Science
+    source_id: 1681323600229011saGL
+    session_count: 7
+  - id: term:topic-2024/devops
+    label: DevOps
+    source_id: 1681323600229012sHno
+    session_count: 35
+  - id: term:topic-2024/devsecops
+    label: DevSecOps
+    source_id: 1681323600229013szV5
+    session_count: 34
+  - id: term:topic-2024/git-and-related-code-management-techniques
+    label: Git and related code management techniques
+    source_id: 1681323600229014saln
+    session_count: 17
+  - id: term:topic-2024/human-factors
+    label: Human Factors
+    source_id: 1681323600229015sKSL
+    session_count: 20
+  - id: term:topic-2024/kubernetes
+    label: Kubernetes
+    source_id: 1681323600229016sWIE
+    session_count: 4
+  - id: term:topic-2024/infrastructure-as-code
+    label: Infrastructure as Code
+    source_id: 1681323600229017sVgz
+    session_count: 7
+  - id: term:topic-2024/machine-learning
+    label: Machine Learning
+    source_id: 1681323600229018s1zF
+    session_count: 9
+  - id: term:topic-2024/monitoring-and-observability
+    label: Monitoring and Observability
+    source_id: 1681323600229019sUxg
+    session_count: 8
+  - id: term:topic-2024/open-source
+    label: Open Source
+    source_id: 1681323600229020sb9v
+    session_count: 20
+  - id: term:topic-2024/pair-programming
+    label: Pair Programming
+    source_id: 1681323600229021sv67
+    session_count: 6
+  - id: term:topic-2024/productivity
+    label: Productivity
+    source_id: 1683210494021003ekVI
+    session_count: 58
+  - id: term:topic-2024/scrum
+    label: Scrum
+    source_id: 1681323600229023swEg
+    session_count: 1
+  - id: term:topic-2024/security
+    label: Security
+    source_id: 1681323600229024sxUO
+    session_count: 37
+  - id: term:topic-2024/shell-programming-bash-powershell-etc
+    label: Shell Programming (Bash, PowerShell, etc.)
+    source_id: 1681323600229025s6VM
+    session_count: 3
+  - id: term:topic-2024/supply-chain-security
+    label: Supply Chain Security
+    source_id: 1681323600229026sFMG
+    session_count: 19
+  - id: term:topic-2024/social-impact
+    label: Social Impact
+    source_id: 1681323600229027s1NF
+    session_count: 5
+  - id: term:topic-2024/software-engineering
+    label: Software Engineering
+    source_id: 1681323600229028syp9
+    session_count: 54
+  - id: term:topic-2024/tech-debt
+    label: Tech Debt
+    source_id: 1711383809968002b9Di
+    session_count: 11
+  - id: term:topic-2024/testing-and-related-practices
+    label: Testing and related practices
+    source_id: 1681323600229029saQm
+    session_count: 13
+  - id: term:topic-2024/threat-modeling
+    label: Threat Modeling
+    source_id: 1681323600229030sPc4
+    session_count: 5
+  - id: term:topic-2024/vulnerability-detection
+    label: Vulnerability Detection
+    source_id: 1681323600229031sXFJ
+    session_count: 21
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681323600255001sIqt
+    retrieved_at: '2026-10-24T08:03:26Z'
+    snapshot: raw/editions/universe24/attributes.json

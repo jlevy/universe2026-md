@@ -1,0 +1,57 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:jake-figma
+  login: jake-figma
+  kind: user
+  url: https://github.com/jake-figma
+  name: Jake
+  company: '@figma'
+  bio: 'Work account. Personal: @ja-k-e'
+  location: Chicago, USA
+  website: https://www.jake.fun
+  followers: 143
+  public_repositories: 23
+  created_at: '2022-01-05T23:27:33Z'
+  contributions_last_year:
+    total: 9
+    commits: 2
+    pull_requests: 5
+    issues: 0
+    reviews: 1
+  starred_repositories: 3
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 4
+  contributed_to:
+  - repo:figma/sds
+  - repo:figma/mcp-server-guide
+  pinned:
+  - repo:figma/sds
+  - repo:figma/code-snippet-editor-plugin
+  - repo:figma/plugin-samples
+  - repo:jake-figma/component-inspector
+  - repo:jake-figma/variables-import-export
+  - repo:jake-figma/figma-plugin-css-color-mix
+  top_repositories:
+  - repo:jake-figma/code-connect-demo
+  websites:
+  - site:jake.fun
+  entity: person:jake-albaugh
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jake-figma
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

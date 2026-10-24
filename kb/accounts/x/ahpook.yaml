@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/ahpook
+  platform: x
+  handle: ahpook
+  url: https://x.com/ahpook
+  display_name: eric sorenson
+  bio: "Pretty much a read-only account now due to this platform being a dumpster fire. \n\nhttps://t.co/yU9hlC68Ng"
+  location: Portland, Oregon
+  website: https://bsky.app/profile/ahpook.bsky.social
+  followers: 1374
+  following: 565
+  posts_count: 13439
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1587310387258851330/Z6IpQbt7_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/4782601/1572641040
+  created_at: '2007-04-15T18:01:09Z'
+  owner: person:eric-sorenson
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694567634692001MFJO
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694567634692001MFJO
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/ahpook
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

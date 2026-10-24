@@ -1,0 +1,320 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:cameron-hamilton
+  person: person:cameron-hamilton
+  brief_bio:
+    text: Cameron Hamilton is an AI engineer, researcher and founder of Alliance AI who created HALIE,
+      a proactive AI assistant, and the open source machine learning library Endgame. Hamilton speaks
+      at GitHub Universe 2026 about building an AI that takes initiative.
+    cites:
+    - event_bio
+    - current_affiliations
+    - open_source
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 24a57ba26bce0663eadd06d9c4efb07a07fe1f80f8bd5e585e3de2990401e469
+    stale: false
+  headline: Creator at Alliance AI
+  current_roles:
+  - Creator at Alliance AI
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1919m
+    - ref: session:bld2020a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1919m
+    - ref: session:bld2020a
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1919m
+    - ref: session:bld2020a
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:allianceai/endgame
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790284506862001SPzs
+      ref: session:bld1919m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124909231001G39y
+      ref: session:bld2020a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790284506862001SPzs
+      ref: session:bld1919m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124909231001G39y
+      ref: session:bld2020a
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790284506862001SPzs
+      ref: session:bld1919m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124909231001G39y
+      ref: session:bld2020a
+  - label: automl
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/allianceai/endgame
+      ref: repo:allianceai/endgame
+  - label: calibration
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/allianceai/endgame
+      ref: repo:allianceai/endgame
+  - label: conformal-prediction
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/allianceai/endgame
+      ref: repo:allianceai/endgame
+  - label: deep-learning
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/allianceai/endgame
+      ref: repo:allianceai/endgame
+  - label: ensemble-methods
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/allianceai/endgame
+      ref: repo:allianceai/endgame
+  - label: interpretable-ml
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/allianceai/endgame
+      ref: repo:allianceai/endgame
+  - label: Machine learning
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/allianceai/endgame
+      ref: repo:allianceai/endgame
+  - label: mcp
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/allianceai/endgame
+      ref: repo:allianceai/endgame
+  - label: scikit-learn
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/allianceai/endgame
+      ref: repo:allianceai/endgame
+  open_source:
+  - repository: repo:allianceai/endgame
+    relation: owner
+    stars: 15
+    primary_language: Python
+  - repository: repo:mjff-researchcommunity/pie
+    relation: contributor
+    stars: 7
+    primary_language: Python
+  - repository: repo:mjff-researchcommunity/pie-workbench
+    relation: contributor
+    stars: 2
+    primary_language: TypeScript
+  publications:
+  - title: Neural Network-POMDP-based Traffic Sign Classification under Weather Conditions
+    venue: 29th Canadian Conference on Artificial Intelligence
+    date: June 3, 2016
+    description: Despite their initial success in operating autonomously, self-driving cars are still
+      unable to navigate under severe weather conditions. In the proposed system, a multi-layer perceptron
+      (MLP) performs initial traffic sign classification. The classification is input as an observation
+      into a partially observable Markov decision process (POMDP) in order to determine whether taking
+      another picture of the sign, or accepting the classification determined by the MLP is the more optimal
+      action. The synergistic combination of the MLP with the POMDP was shown to have a greater functionality
+      than the sum of the MLP and POMDP operating in isolation. The results demonstrate the MLP-POMDP
+      system is capable of training faster and more accurately classifying traffic sign images obscured
+      by fog than a MLP. With further development of this model, one of the greatest shortcomings of autonomous
+      driving may be overcome by accurately classifying signs despite obstruction by weather.
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  - title: Hourly Solar Radiation Forecasting Through Model Averaged Neural Networks and Alternating Model
+      Trees
+    venue: 29th International Conference on Industrial Engineering & Other Applications of Applied Intelligent
+      Systems (IEA/AIE 2016)
+    date: March 15, 2016
+    description: The objective of the current study was to develop a solar radiation forecasting model
+      capable of determining the specific times during a given day that solar panels could be relied upon
+      to produce energy in sufficient quantities to meet the demand of the energy provider, Southern Company.
+      Model averaged neural networks (MANN) and alternating model trees (AMT) were constructed to forecast
+      solar radiation an hour into the future, given 2003-2012 solar radiation data from the Griffin,
+      GA weather station for training and 2013 data for testing. Generalized linear models (GLM), random
+      forests, and multilayer perceptron (MLP) were developed, in order to assess the relative performance
+      improvement attained by the MANN and AMT models. In addition, a literature review of the most prominent
+      hourly solar radiation models was performed and normalized root mean square error was calculated
+      for each, for comparison with the MANN and AMT models. The results demonstrate that MANN and AMT
+      models outperform or parallel the highest performing forecasting models within the literature. MANN
+      and AMT are thus promising time series forecasting models that may be further improved by combining
+      these models into an ensemble.
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  - title: Eye State Prediction from EEG Data Using Boosted Rotational Forests
+    venue: International Conference on Machine Learning and Applications
+    date: '2015'
+    description: 'With the advent of brain-computer interfacing (BCI) technology, the need for fast and
+      accurate classification and prediction of brain activity from electrode recording data is becoming
+      more critical. The classifier systems developed in the current study improve upon the previous state-of-the-art
+      developed by Rösler & Suendermann’s (2013) for detecting whether an individual’s eyes are open or
+      closed based on EEG recordings. It was hypothesized that a system could be constructed with comparatively
+      accurate classifications to Rösler & Suendermann’s K*-based system, but with enough speed to be
+      utilized within a BCI by constructing ensembles from eager learners (e.g. decision trees). To meet
+      these requirements, three ensemble learners were developed: a rotational forest that implements
+      random forests as its base classifiers (RRF), a rotational forest that implements J48 trees as its
+      base classifiers and is boosted by adaptive boosting (ada(RJ48F)), and an ensemble of the RRF model
+      with Rösler & Suendermann’s K* model (RRF+K*). The RRF and ada(RJ48F) models were shown to have
+      a classification speed faster than the K* model by a factor of seventeen and thirteen respectively,
+      though the RRF model was significantly less accurate and the ada(RJ48F) model had an accuracy comparable
+      to K*. The results of this study indicate that instance-based learners like the K* algorithm are
+      likely to be too slow to be used within a BCI device, while the ada(RJ48F) model performed accurate
+      classifications well within the time constraints of real-time classification and control.'
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  - title: On the Possibility of Robots Having Emotions
+    venue: ScholarWorks @ Georgia State University
+    date: May 8, 2014
+    description: I argue against the commonly held intuition that robots and virtual agents will never
+      have emotions by contending robots can have emotions in a sense that is functionally similar to
+      humans, even if the robots' emotions are not exactly equivalent to those of humans. To establish
+      a foundation for assessing the robots' emotional capacities, I first define what emotions are by
+      characterizing the components of emotion consistent across emotion theories. Second, I dissect the
+      affective-cognitive architecture of MIT's Kismet and Leonardo, two robots explicitly designed to
+      express emotions and to interact with humans, in order to explore whether they have emotions. I
+      argue that, although Kismet and Leonardo lack the subjective feelings component of emotion, they
+      are capable of having emotions.
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: course
+    title: Computational Neuroscience
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  - kind: course
+    title: Computer Vision
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  - kind: course
+    title: Decision Making Under Uncertainty
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  - kind: course
+    title: Machine Learning
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  - kind: course
+    title: Mining Massive Datasets
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  - kind: course
+    title: Neurobiology
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  - kind: course
+    title: Symbolic Programming
+    evidence:
+      url: https://www.linkedin.com/in/cameron-r-hamilton
+      observed_at: '2026-10-24T08:13:24Z'
+  recent_writing:
+  - title: I am overwhelmed with all the love and support shown by people all over the world! Thank you
+      to everyone watching, the crew who made this happen, and of course, my fellow cast mates. I never
+      imagined people would be… https://t.co/2nzLircPy7
+    url: https://twitter.com/1226943244447178752/status/1232320885962477568
+    published: '2020-02-25T15:06:09Z'
+    channel: x
+  talks:
+  - session:bld1919m
+  - session:bld2020a
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1790175710875001qLXM
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: allianceai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

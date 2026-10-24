@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jason-cook-4486b61
+  platform: linkedin
+  handle: in/jason-cook-4486b61
+  url: https://www.linkedin.com/in/jason-cook-4486b61
+  display_name: Jason Cook
+  bio: Results-oriented technical leader and enterprise architect with a strong track record of…
+  location: Denver
+  followers: 1599
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQG0-zzPuX2xbw/profile-displayphoto-shrink_200_200/B56ZUAGqFBHsAY-/0/1739463500388?e=2147483647&v=beta&t=OTHyeNPJl0NzG-m_bY4nUDyAbqses3zYan5GMyxOhtA
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEkhzKDMOv55A/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1704299674912?e=2147483647&v=beta&t=zh_DaYm3-EvHazdXhyyhrJDXOwPtSdQckaDrEWLFeAU
+  owner: person:jason-cook
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1753304271871001iNmv
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jason-cook-4486b61
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

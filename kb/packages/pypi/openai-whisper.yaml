@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/openai-whisper
+  ecosystem: pypi
+  name: openai-whisper
+  url: https://pypi.org/project/openai-whisper/
+  description: Robust Speech Recognition via Large-Scale Weak Supervision
+  latest_version: '20250625'
+  license: MIT
+  repository_url: https://github.com/openai/whisper
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: openai/whisper
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

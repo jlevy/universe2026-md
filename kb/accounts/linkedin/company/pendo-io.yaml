@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/pendo-io
+  platform: linkedin
+  handle: company/pendo-io
+  url: https://www.linkedin.com/company/pendo-io
+  display_name: Pendo.io
+  bio: The only official Pendo LinkedIn account. Pendo’s mission is to elevate the world’s experience
+    with software. Pendo’s product experience platform allows companies to make product intelligence actionable
+    with speed and scale, giving rise to a new generation of companies that put product at the center
+    of everything. Pendo customers include the world’s leading companies, including Verizon, Morgan Stanley,
+    LabCorp, OpenTable, Okta, Salesforce, and Zendesk. Through Mind the Product and customer communities,
+    sponsored events and podcast, Pendo aims to support the success of product and digital leaders everywhere.
+    Pendo is headquartered in Raleigh, North Carolina and has offices around the world.
+  website: https://www.pendo.io/
+  followers: 131711
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQHZUeMJJFvQaw/company-logo_200_200/B4EZUZbmVwG0AI-/0/1739888420582/pendo_io_logo?e=2147483647&v=beta&t=IRBgsYuj1_kWv1LUAv_CN_t94ERDU7kYn7bG76ZBSwQ
+  owner: org:pendo-io
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/tiffany-kitchen-product-manager
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/pendo-io
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

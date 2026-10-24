@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/andrew-rice-7871311
+  platform: linkedin
+  handle: in/andrew-rice-7871311
+  url: https://www.linkedin.com/in/andrew-rice-7871311
+  display_name: Andrew Rice
+  bio: I enjoy developing novel ideas and seeing them used by lots of people. I am comfortable…
+  location: Greater Cambridge Area
+  followers: 833
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D03AQGGDnXMPXczZw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516283550979?e=2147483647&v=beta&t=Tu1IvilctaRaDhFCaLCpgonB-dsfgyh7nxK_n1dcJVI
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:andrew-rice
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694113933286001M2wZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/andrew-rice-7871311
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

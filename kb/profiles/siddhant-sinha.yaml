@@ -1,0 +1,287 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:siddhant-sinha
+  person: person:siddhant-sinha
+  brief_bio:
+    text: Siddhant Sinha is a Lead Member of Technical Staff at TestMu AI who builds the harness beneath
+      test automation and maintains Kane-CLI and Evidence-CLI. Sinha speaks at GitHub Universe 2026 in
+      a sponsored session on a self-validating agentic loop with GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: bd93bb653bbf9dc836bf1d511a0c51f989e3acdc2a221a694df68fbb488908ea
+    stale: false
+  headline: Lead Member, Technical Staff at TestMu AI
+  location: Noida
+  current_roles:
+  - Lead Member, Technical Staff at TestMu AI
+  expertise:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1798d
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1798d
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1798d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1798d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:tru1798d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:tru1798d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:tru1798d
+  programming_languages:
+  - label: Go
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:sid573/golang-basics
+    - ref: repo:sid573/btp-wireless_sensor_networks
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:sid573/facebook_app
+    - ref: repo:sid573/video_streaming
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:sid573/technothlon-dat-a-vengers
+  - label: Jupyter Notebook
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:sid573/hindi_sentiment_analysis
+  interests:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785537652517001G7D5
+      ref: session:tru1798d
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785537652517001G7D5
+      ref: session:tru1798d
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785537652517001G7D5
+      ref: session:tru1798d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785537652517001G7D5
+      ref: session:tru1798d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785537652517001G7D5
+      ref: session:tru1798d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785537652517001G7D5
+      ref: session:tru1798d
+  - label: django
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/sid573/Technothlon-Dat-A-vengers
+      ref: repo:sid573/technothlon-dat-a-vengers
+  - label: expressjs
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/sid573/Facebook_App
+      ref: repo:sid573/facebook_app
+  - label: fastai
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/sid573/Hindi_Sentiment_Analysis
+      ref: repo:sid573/hindi_sentiment_analysis
+  - label: flask
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/sid573/Video_Streaming
+      ref: repo:sid573/video_streaming
+  - label: golang
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/sid573/golang-basics
+      ref: repo:sid573/golang-basics
+  - label: mongodb
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/sid573/Facebook_App
+      ref: repo:sid573/facebook_app
+  open_source:
+  - repository: repo:sid573/hindi_sentiment_analysis
+    relation: owner
+    stars: 9
+    primary_language: Jupyter Notebook
+  - repository: repo:sid573/technothlon-dat-a-vengers
+    relation: owner
+    stars: 2
+    primary_language: Python
+  - repository: repo:sid573/facebook_app
+    relation: owner
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:sid573/golang-basics
+    relation: owner
+    stars: 0
+    primary_language: Go
+  - repository: repo:sid573/video_streaming
+    relation: owner
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:sid573/btp-wireless_sensor_networks
+    relation: owner
+    stars: 0
+    primary_language: Go
+  activities:
+  - kind: project
+    title: Techniche
+    detail: Technical festival website IITG · Oct 2018
+    evidence:
+      url: https://www.linkedin.com/in/sid573
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: course
+    title: Computer Organization and Architecture
+    evidence:
+      url: https://www.linkedin.com/in/sid573
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: course
+    title: Data Communication
+    evidence:
+      url: https://www.linkedin.com/in/sid573
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: course
+    title: Data Structures
+    evidence:
+      url: https://www.linkedin.com/in/sid573
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: course
+    title: Database
+    evidence:
+      url: https://www.linkedin.com/in/sid573
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: course
+    title: Networks
+    evidence:
+      url: https://www.linkedin.com/in/sid573
+      observed_at: '2026-10-24T08:15:40Z'
+  - kind: course
+    title: Operation System
+    evidence:
+      url: https://www.linkedin.com/in/sid573
+      observed_at: '2026-10-24T08:15:40Z'
+  talks:
+  - session:tru1798d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785537838761001nM4u
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: sid573
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mayankbhola
+  platform: linkedin
+  handle: in/mayankbhola
+  url: https://www.linkedin.com/in/mayankbhola
+  display_name: Mayank Bhola
+  bio: I am a full stack software developer based in New Delhi. I have a splendid experience in…
+  location: Delhi
+  followers: 3761
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFF-lu_SWWamg/profile-displaybackgroundimage-shrink_200_800/B56Zuy3KD6G4AU-/0/1768232364042?e=2147483647&v=beta&t=8VVqYgCJHvd1NdW-LT1EVvllzf7XlIyxso3Ad61tZZY
+  owner: person:mayank-bhola
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1757348415664001TMrC
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mayankbhola
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

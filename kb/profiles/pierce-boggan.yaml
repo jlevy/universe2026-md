@@ -1,0 +1,601 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:pierce-boggan
+  person: person:pierce-boggan
+  brief_bio:
+    text: Pierce Boggan leads product for the new GitHub Copilot app at GitHub, after leading product
+      management for Visual Studio Code and joining Microsoft through its 2016 acquisition of Xamarin.
+      Boggan spoke in the GitHub Universe 2025 opening keynote and speaks at GitHub Universe 2026.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: 10e35dba65453a2b7f29c2a05279c4b18a0ff6dd7f753efee2e883afa4369fd4
+    stale: false
+  headline: Product - GitHub Copilot at GitHub
+  location: Park City, UT
+  current_roles:
+  - Product - GitHub Copilot at GitHub
+  - Microsoft
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Infrastructure as code
+    target: term:topic-2025/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Kubernetes
+    target: term:topic-2025/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:pierce-boggan
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:pierce-boggan
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:pierce-boggan
+  - label: TypeScript
+    target: software:typescript
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: TypeScript
+      ref: person:pierce-boggan
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Visual Studio Code
+      ref: person:pierce-boggan
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:pierceboggan/coloring-book
+    - ref: repo:pierceboggan/headshot-generator
+    - ref: repo:pierceboggan/letmepromptthatforyou
+    - ref: repo:pierceboggan/prompt-lsp
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:pierceboggan/nano-banana-mcp
+    - ref: repo:pierceboggan/peon-ping-vscode
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:pierceboggan/vscode-contributor-website
+  - label: C#
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:pierceboggan/smarter-apps
+  - label: Swift
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:pierceboggan/dropped
+  interests:
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: high
+    weight: 0.83
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    weight: 0.68
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+    - url: https://github.com/github/awesome-copilot
+      ref: repo:github/awesome-copilot
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.66
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    weight: 0.51
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    weight: 0.51
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 0.51
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    weight: 0.51
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: high
+    weight: 0.43
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+    - url: https://github.com/github/awesome-copilot
+      ref: repo:github/awesome-copilot
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.26
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.26
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 0.26
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  open_source:
+  - repository: repo:pierceboggan/smarter-apps
+    relation: owner
+    stars: 58
+    primary_language: C#
+  - repository: repo:pierceboggan/coloring-book
+    relation: owner
+    stars: 28
+    primary_language: TypeScript
+  - repository: repo:pierceboggan/dropped
+    relation: owner
+    stars: 25
+    primary_language: Swift
+  - repository: repo:pierceboggan/peon-ping-vscode
+    relation: owner
+    stars: 21
+    primary_language: JavaScript
+  - repository: repo:pierceboggan/nano-banana-mcp
+    relation: owner
+    stars: 17
+    primary_language: JavaScript
+  - repository: repo:pierceboggan/vscode-contributor-website
+    relation: owner
+    stars: 15
+    primary_language: HTML
+  - repository: repo:pierceboggan/prompt-lsp
+    relation: owner
+    stars: 2
+    primary_language: TypeScript
+  - repository: repo:pierceboggan/headshot-generator
+    relation: owner
+    stars: 1
+    primary_language: TypeScript
+  - repository: repo:pierceboggan/letmepromptthatforyou
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:microsoft/vscode-docs
+    relation: contributor
+    stars: 6675
+    primary_language: Markdown
+  - repository: repo:microsoft/vscode
+    relation: contributor
+    stars: 194244
+    primary_language: TypeScript
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  - repository: repo:microsoft/vscode-copilot-chat
+    relation: contributor
+    stars: 9957
+    primary_language: TypeScript
+  - repository: repo:github/awesome-copilot
+    relation: contributor
+    stars: 40374
+    primary_language: JavaScript
+  education:
+  - school: University of Utah
+    evidence:
+      url: https://www.linkedin.com/in/pierceboggan
+      observed_at: '2026-10-24T08:15:43Z'
+  activities:
+  - kind: organization
+    title: Boston Mobile C# Developers
+    detail: Sep 2015 · Present
+    evidence:
+      url: https://www.linkedin.com/in/pierceboggan
+      observed_at: '2026-10-24T08:15:43Z'
+  - kind: organization
+    title: Association of Computing Machinery
+    evidence:
+      url: https://www.linkedin.com/in/pierceboggan
+      observed_at: '2026-10-24T08:15:43Z'
+  - kind: organization
+    title: IEEE
+    evidence:
+      url: https://www.linkedin.com/in/pierceboggan
+      observed_at: '2026-10-24T08:15:43Z'
+  recent_writing:
+  - title: Happy coding, GitHub Universe! https://t.co/PtiDTdrbnh
+    url: https://twitter.com/33045631/status/1983679760745267366
+    published: '2025-10-29T23:38:04Z'
+    channel: x
+  - title: |-
+      our team has been hard at work to improve the code search experience within GitHub Copilot to give you faster, more accurate code results!
+
+      we wrote this blog to share more about our Copilot-Embedding model, and specifically details on the training techniques
+
+      if you like posts h
+    url: https://twitter.com/33045631/status/1970950784251724007
+    published: '2025-09-24T20:37:40Z'
+    channel: x
+  - title: |-
+      GitHub Copilot has crossed 20 million users!
+
+      it's been a huge year as we evolved VS Code to be the open source AI editor:
+
+      - agents: local and remote
+      - tools: built-in tools for all parts of the editor, like Jupyter notebooks
+      -mcp: the only editor to support the full MCP spec
+      -
+    url: https://twitter.com/33045631/status/1950687866272821478
+    published: '2025-07-30T22:40:04Z'
+    channel: x
+  - title: now that the Copilot Chat extension is open source, you can see exactly what is sent to the
+      model with our new log viewer :)
+    url: https://twitter.com/33045631/status/1939837229498839053
+    published: '2025-07-01T00:03:30Z'
+    channel: x
+  - title: |-
+      Join us in building the future of AI-assisted developer tools with VS Code:
+      https://t.co/YVG4nsSKrW
+
+      DMs are open for any questions you may have!
+    url: https://twitter.com/33045631/status/1938678040500036074
+    published: '2025-06-27T19:17:18Z'
+    channel: x
+  - title: VS Code supports the full Model Context Protocol spec! 🚀
+    url: https://twitter.com/33045631/status/1931053178226958769
+    published: '2025-06-06T18:18:49Z'
+    channel: x
+  - title: |-
+      VS Code stable 1.99 is out, and with some big improvements:
+
+      - Agent mode available in stable (chat.agent.enabled setting)
+      - Model Context Protocol support
+      - Unified chat view with ask, edit, and agent modes
+      - Next edit suggestions general availability
+      - Bring your own key
+    url: https://twitter.com/33045631/status/1908216505747333184
+    published: '2025-04-04T17:54:02Z'
+    channel: x
+  - title: |-
+      I've always wanted my apps to look beautiful 'by default' without requiring me to be a design expert.
+
+      Last week, we released the Microsoft Teams UI Library to help you build beautiful Teams-native UIs by default without requiring a design team:
+      https://t.co/qpZ27ygYlL
+    url: https://twitter.com/33045631/status/1354880992981512194
+    published: '2021-01-28T19:56:15Z'
+    channel: x
+  - title: "After eight years working on Xamarin, it's time to try something new! I'll be working on Microsoft\
+      \ 365, Microsoft Teams, and the Power Platform. \n\nThanks to all the Xamarin colleagues, community,\
+      \ and customers that made the last eight years so awesome! ❤️"
+    url: https://twitter.com/33045631/status/1265685652206575617
+    published: '2020-05-27T16:45:49Z'
+    channel: x
+  - title: |-
+      👀MAUI single project experience👀
+
+      ✅Deploy to multiple platforms from a single project
+      ✅Shared resources across platforms, including fonts and images (even more xplat!)
+      ✅Flexibility to access native APIs from single project
+
+      This is a crazy productive experience, y'all.
+    url: https://twitter.com/33045631/status/1262821831825690624
+    published: '2020-05-19T19:06:01Z'
+    channel: x
+  talks:
+  - session:2025/1617k
+  - session:bld1978m
+  - session:bld2152a
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1789140562894001l2AC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pierceboggan
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745868661376001iKtu
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

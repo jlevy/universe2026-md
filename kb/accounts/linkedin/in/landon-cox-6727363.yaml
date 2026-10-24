@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/landon-cox-6727363
+  platform: linkedin
+  handle: in/landon-cox-6727363
+  url: https://www.linkedin.com/in/landon-cox-6727363
+  display_name: Landon Cox
+  bio: I work on Github Agentic Workflows (https://github.com/github/gh-aw). In my…
+  location: Redmond
+  followers: 683
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQF_oydGEUPj3A/profile-displayphoto-scale_200_200/B56Zw_IprwHYAY-/0/1770585761860?e=2147483647&v=beta&t=Pik56ZWD_OCmoya7chM0FBq0D1yxbzX8jgj3rw70vdc
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:landon-cox
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777673854269001pz9T
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/landon-cox-6727363
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

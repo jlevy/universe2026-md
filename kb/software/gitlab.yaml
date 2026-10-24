@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:gitlab
+  name: GitLab
+  aliases:
+  - GitLab
+  kind: commercial
+  mentioned_in:
+  - person:bhanu-prakash-vandana
+  - person:david-o-regan
+  - person:grzegorz-bak
+  - session:2023/dev2743w
+  - session:2024/dev1867b
+  - session:2025/1948
+  - session:2025/aut1376m
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

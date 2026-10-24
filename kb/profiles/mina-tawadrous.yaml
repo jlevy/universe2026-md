@@ -1,0 +1,339 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mina-tawadrous
+  person: person:mina-tawadrous
+  brief_bio:
+    text: Mina Tawadrous is Associate Director of Product Management at SiriusXM, leading product for
+      platform engineering, and earlier built games and published research on stereoscopic 3D video games.
+      Tawadrous speaks at GitHub Universe 2026 about prioritization as code with assumptions scored by
+      AI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: f0fd20485825f5d2c3d8e298b27de7dc7608466f0a5b817a04bb02c10192ff84
+    stale: false
+  headline: Associate Director, Product Management at SiriusXM
+  current_roles:
+  - Associate Director, Product Management at SiriusXM
+  expertise:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: GitHub Discussions
+    target: software:github-discussions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1341h
+  - label: Markdown
+    target: software:markdown
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Markdown
+      ref: session:ldr1341h
+  interests:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: Dependabot
+    target: term:github-product/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: Discussions
+    target: term:github-product/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: GitHub Enterprise Server
+    target: term:github-product/github-enterprise-server
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777516784245001f6zP
+      ref: session:ldr1341h
+  open_source:
+  - repository: repo:peonping/registry
+    relation: contributor
+    stars: 16
+    primary_language: Python
+  education:
+  - school: University of Ontario Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/mina-tawadrous
+      observed_at: '2026-10-24T08:15:16Z'
+  credentials:
+  - kind: certification
+    title: 500 Mentorship Minutes
+    issuer: adplist.org
+    date: Oct 2023
+    url: https://adplist.org/certifications/143304
+    evidence:
+      url: https://www.linkedin.com/in/mina-tawadrous
+      observed_at: '2026-10-24T08:15:16Z'
+  - kind: certification
+    title: 100 Mentorship Minutes
+    issuer: adplist.org
+    date: Mar 2023
+    url: https://adplist.org/certifications/91326
+    evidence:
+      url: https://www.linkedin.com/in/mina-tawadrous
+      observed_at: '2026-10-24T08:15:16Z'
+  publications:
+  - title: Stereoscopic 3D video games and their effects on engagement
+    venue: IS&amp;T/SPIE Electronic Imaging
+    date: February 9, 2012
+    description: With television manufacturers developing low-cost stereoscopic 3D displays, a large number
+      of consumers will undoubtedly have access to 3D-capable televisions at home. The availability of
+      3D technology places the onus on content creators to develop interesting and engaging content. While
+      the technology of stereoscopic displays and content generation are well understood, there are many
+      questions yet to be answered surrounding its effects on the viewer. Effects of stereoscopic display
+      on passive viewers for film are known, however video games are fundamentally different since the
+      viewer/player is actively (rather than passively) engaged in the content. Questions of how stereoscopic
+      viewing affects interaction mechanics have previously been studied in the context of player performance
+      but very few have attempted to quantify the player experience to determine whether stereoscopic
+      3D has a positive or negative influence on their overall engagement. In this paper we present a
+      preliminary study of the effects stereoscopic 3D have on player engagement in video games. Participants
+      played a video game in two conditions, traditional 2D and stereoscopic 3D and their engagement was
+      quantified using a previously validated self-reporting tool. The results suggest that S3D has a
+      positive effect on immersion, presence, flow, and absorption.
+    evidence:
+      url: https://www.linkedin.com/in/mina-tawadrous
+      observed_at: '2026-10-24T08:15:16Z'
+  - title: 'Interactive floating windows: a new technique for stereoscopic video games'
+    venue: IS&amp;T/SPIE Electronic Imaging
+    date: February 6, 2012
+    description: The film industry has a long history of creating compelling experiences in stereoscopic
+      3D. Recently, the video game as an artistic medium has matured into an effective way to tell engaging
+      and immersive stories. Given the current push to bring stereoscopic 3D technology into the consumer
+      market there is considerable interest to develop stereoscopic 3D video games. Game developers have
+      largely ignored the need to design their games specifically for stereoscopic 3D and have thus relied
+      on automatic conversion and driver technology. Game developers need to evaluate solutions used in
+      other media, such as film, to correct perceptual problems such as window violations, and modify
+      or create new solutions to work within an interactive framework. In this paper we extend the dynamic
+      floating window technique into the interactive domain enabling the player to position a virtual
+      window in space. Interactively changing the position, size, and the 3D rotation of the virtual window,
+      objects can be made to 'break the mask' dramatically enhancing the stereoscopic effect. By demonstrating
+      that solutions from the film industry can be extended into the interactive space, it is our hope
+      that this initiates further discussion in the game development community to strengthen their story-telling
+      mechanisms in stereoscopic 3D games.
+    evidence:
+      url: https://www.linkedin.com/in/mina-tawadrous
+      observed_at: '2026-10-24T08:15:16Z'
+  recent_writing:
+  - title: Do you love tech and working with kids? This job's for you!
+    url: https://www.linkedin.com/pulse/do-you-love-tech-working-kids-jobs-mina-tawadrous
+    published: '2016-07-22T00:00:00.000Z'
+    channel: linkedin
+    summary: Hatch Canada is Hiring! Please have a look at the posting below and share for anyone interested
+      in joining our coding…
+  - title: 'Job Opening: Love tech and working with kids? Apply now!'
+    url: https://www.linkedin.com/pulse/job-opening-love-tech-kids-apply-now-mina-tawadrous
+    published: '2015-09-17T00:00:00.000Z'
+    channel: linkedin
+    summary: Hatch Canada is a Greater Toronto Area after school program that teaches kids how to program
+      via project based…
+  talks:
+  - session:ldr1341h
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699482521920001jIKT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mtmac17
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

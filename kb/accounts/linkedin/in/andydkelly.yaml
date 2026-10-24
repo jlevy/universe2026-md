@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/andydkelly
+  platform: linkedin
+  handle: in/andydkelly
+  url: https://www.linkedin.com/in/andydkelly
+  display_name: Andy Kelly
+  bio: Senior Software Executive with a number of diverse roles centred on DevOps, Platform…
+  location: Manchester Area
+  followers: 1075
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGwfNxWIo6NUw/profile-displayphoto-scale_200_200/B4EaEg7ufSLAAc-/0/1791553892222?e=2147483647&v=beta&t=ipTnwBEAxPUMeDw9M4lFGeU7wFZEhsokD1MPHzZCBig
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:andy-kelly
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1752611791015001J0sm
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/andydkelly
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

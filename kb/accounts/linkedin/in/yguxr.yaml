@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/yguxr
+  platform: linkedin
+  handle: in/yguxr
+  url: https://www.linkedin.com/in/yguxr
+  display_name: Ya G.
+  location: Greater Seattle Area
+  followers: 1453
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQFDYeBnMOr8Yg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1658446896489?e=2147483647&v=beta&t=uaEiRvQzTTBnhwTW6uaHlE5KdTyD8UtAHPqLOaZrc0c
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQELcMVaYyGjYw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1658446756563?e=2147483647&v=beta&t=VsJOueGSQFwvhB54l5unN-WsJk3W-EKkCku216ZywSQ
+  owner: person:ya-gao
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696365804588001fLFL
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/yguxr
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

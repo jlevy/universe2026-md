@@ -1,0 +1,235 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:eric-bickle
+  person: person:eric-bickle
+  brief_bio:
+    text: Eric Bickle is a Senior Principal Application Security Engineer at Asurion who mentors developers
+      toward secure solutions. Bickle spoke at GitHub Universe 2024 about efficiently deploying and customizing
+      security tooling at enterprise scale.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: f041a4d2e51b7da5620ead41c2be59d047066faa64b89e49b6e4f5b8080ad311
+    stale: false
+  headline: Asurion
+  current_roles:
+  - Asurion
+  expertise:
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1595b
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1595b
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CodeQL
+      ref: session:2024/sec1595b
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/sec1595b
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/sec1595b
+  interests:
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715360127550001lOUA
+      ref: session:2024/sec1595b
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715360127550001lOUA
+      ref: session:2024/sec1595b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715360127550001lOUA
+      ref: session:2024/sec1595b
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715360127550001lOUA
+      ref: session:2024/sec1595b
+  credentials:
+  - kind: honor
+    title: District Scholarship Award, Technology
+    issuer: School District No. 34 (Abbotsford)
+    date: '1998-09-01T00:00:00.000Z'
+    description: Awarded a technology scholarship from the Abbotsford School District for a project and
+      presentation on database software designed to store network configurations.
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: honor
+    title: 2nd Place, Internet Web Design - Canadian National Skills Competition
+    issuer: Skills Canada
+    date: '1998-04-01T00:00:00.000Z'
+    description: Awarded the silver medal in Internet Web Design at the 2008 Skills Canada National Competition.
+      The event is Canada's largest trade and technology competition for young students and apprentices
+      in Canada, with over 500 people competing.
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: honor
+    title: 1st Place, Internet Web Design - Upper Fraser Valley Regional Skills Competition
+    issuer: School District No. 34 (Abbotsford)
+    date: '1998-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: honor
+    title: 3rd Place, Internet Web Design - Provincial BC Skills Competition
+    issuer: Skills Canada BC
+    date: '1998-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: honor
+    title: 1st Place, National Java Programming Competition
+    issuer: Skills Canada
+    date: '1997-05-01T00:00:00.000Z'
+    description: Awarded first place in a national Java programming competition for high school students
+      across Canada. Developed a browser-based applet and test cases using Java 1.
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: Microsoft Certified Systems Engineer (MCSE) - Windows Server 2003
+    issuer: Microsoft
+    date: Mar 2008
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: Microsoft Certified Systems Engineer (MCSE) - Windows 2000
+    issuer: Microsoft
+    date: Sep 2006
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: IBM Certified Advanced Application Developer - Lotus Notes and Domino 6 / 6.5
+    issuer: IBM
+    date: Jul 2006
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: CompTIA Network+
+    issuer: CompTIA
+    date: Apr 2005
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: IBM Certified System Administrator - Lotus Notes and Domino 6 / 6.5
+    issuer: IBM
+    date: Feb 2005
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: CompTIA A+
+    issuer: CompTIA
+    date: Sep 2000
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: Microsoft Certified Systems Engineer (MCSE) - Windows NT 4.0
+    issuer: Microsoft
+    date: Jul 2000
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: GIAC Security Leadership (GSLC)
+    issuer: GIAC Certifications
+    date: Mar 2018
+    expires: Mar 2030
+    url: https://www.youracclaim.com/badges/22cdb057-c1a9-4bfc-bc99-a7adc3121c88/public_url
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: GIAC Web Application Penetration Tester (GWAPT)
+    issuer: GIAC Certifications
+    date: Nov 2016
+    expires: Nov 2028
+    url: https://www.youracclaim.com/badges/f7c31e27-34de-4c99-9657-3c42fc94f8d3/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: GIAC Secure Software Programmer-Java (GSSP-JAVA)
+    issuer: GIAC Certifications
+    date: Jul 2017
+    expires: Jul 2021
+    url: https://www.youracclaim.com/profile/badges/b17f7b66-82ef-4a50-94d4-d37bfc0c42c6
+    evidence:
+      url: https://www.linkedin.com/in/ebickle
+      observed_at: '2026-10-24T08:42:46Z'
+  spoken_languages:
+  - English
+  talks:
+  - session:2024/sec1595b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715359135588001Za61
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,53 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/openai
+  platform: linkedin
+  handle: company/openai
+  url: https://www.linkedin.com/company/openai
+  display_name: OpenAI
+  bio: OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial
+    intelligence benefits all of humanity. AI is an extremely powerful tool that must be created with
+    safety and human needs at its core. OpenAI is dedicated to putting that alignment of interests first
+    — ahead of profit. To achieve our mission, we must encompass and value the many different perspectives,
+    voices, and experiences that form the full spectrum of humanity. Our investment in diversity, equity,
+    and inclusion is ongoing, executed through a wide range of initiatives, and championed and supported
+    by leadership. At OpenAI, we believe artificial intelligence has the potential to help people solve
+    immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the
+    future of technology.
+  website: https://openai.com/
+  followers: 12027251
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQHpzXbqSyR74A/company-logo_200_200/B56ZT8EYB8HsAI-/0/1739395793272/openai_logo?e=2147483647&v=beta&t=KqQyuosYiiBMx7W0kz3PILrchXDcy1wsCN8EjnQdUJc
+  owner: org:openai
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/rohannvarma
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/adam-berelowitz
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mvkaran
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ttaylorr
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/openai
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:devcycle.com
+  url: http://devcycle.com/
+  kind: personal
+  title: DevCycle | The First OpenFeature-Native Feature Flag Platform
+  description: DevCycle is the first and only OpenFeature-native feature flag management platform. Built
+    by OpenFeature governance board members. Deploy faster, reduce risk, and avoid vendor lock-in with
+    the best OpenFeature provider.
+  owner: person:andrew-norris
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: brightdata
+    url: https://x.com/andrewnorris
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://devcycle.com/
+    record_id: http://devcycle.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

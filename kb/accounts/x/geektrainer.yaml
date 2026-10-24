@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/geektrainer
+  platform: x
+  handle: GeekTrainer
+  url: https://x.com/GeekTrainer
+  display_name: Christopher Harrison
+  bio: Dormant account. See pinned tweet for other social media locations.
+  location: Seattle, WA
+  website: https://www.geektrainer.dev/
+  followers: 9106
+  following: 1031
+  posts_count: 17574
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1387387589330538497/wvAtt6oM_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/21051364/1574795773
+  created_at: '2009-02-17T01:18:18Z'
+  owner: person:christopher-harrison
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/GeekTrainer
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/felickz
+  platform: x
+  handle: felickz
+  url: https://x.com/felickz
+  display_name: Chad
+  bio: Thoughts and opinions are my own, not those of my employer.
+  location: Philadelphia, PA
+  website: http://x.com/felickz
+  followers: 95
+  following: 292
+  posts_count: 2110
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/447718582630510592/nxsyP_RV_normal.jpeg
+  banner_url: https://pbs.twimg.com/profile_banners/45269733/1454606269
+  created_at: '2009-06-07T02:52:13Z'
+  owner: person:chad-bentz
+  link_basis:
+  - event_listing
+  - x_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047485916001syiZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/felickz
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

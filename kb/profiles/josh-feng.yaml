@@ -1,0 +1,205 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:josh-feng
+  person: person:josh-feng
+  brief_bio:
+    text: Josh Feng is a Senior Service Delivery Engineer at GitHub whose areas include DevOps, CI/CD
+      and GitHub Copilot. Feng spoke at GitHub Universe 2023 in a workshop on how GitHub Copilot improves
+      development practices.
+    cites:
+    - listed_role
+    - current_affiliations
+    - expertise
+    - technologies
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 03ae84e3afc00c9edd0319a8a8b1d76a8a93ff30229b411e2faa19dc578f98ca
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai2746w
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  education:
+  - school: RMIT University
+    evidence:
+      url: https://www.linkedin.com/in/joshfeng0508
+      observed_at: '2026-10-24T08:44:23Z'
+  credentials:
+  - kind: certification
+    title: SAFe ScrumXP - SP
+    issuer: Scaled Agile, Inc.
+    date: Mar 2015
+    evidence:
+      url: https://www.linkedin.com/in/joshfeng0508
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: certification
+    title: ITIL Foundation Certification
+    issuer: ITIL Certified
+    date: Jan 2015
+    evidence:
+      url: https://www.linkedin.com/in/joshfeng0508
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: certification
+    title: 'GitHub Certified: Agentic AI Developer'
+    issuer: Microsoft
+    date: Jul 2026
+    expires: Jul 2027
+    evidence:
+      url: https://www.linkedin.com/in/joshfeng0508
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: certification
+    title: GitHub Foundations
+    issuer: GitHub
+    date: Feb 2024
+    expires: Feb 2027
+    url: https://www.credly.com/badges/f4585949-a9e8-47ac-8ef3-02c56fda9339/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/joshfeng0508
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Oct 2022
+    expires: Oct 2024
+    url: https://www.credly.com/badges/ae66490c-4600-4750-bfab-1cf928eed0c3/linked_in?t=rjh05p
+    evidence:
+      url: https://www.linkedin.com/in/joshfeng0508
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Sep 2022
+    expires: Sep 2024
+    url: https://www.credly.com/badges/36fd3da6-3eae-4b04-b614-7f7e32b40e20/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/joshfeng0508
+      observed_at: '2026-10-24T08:44:23Z'
+  spoken_languages:
+  - English
+  - Chinese
+  - Japanese
+  activities:
+  - kind: course
+    title: Cisco Networking Academy - CCNA
+    evidence:
+      url: https://www.linkedin.com/in/joshfeng0508
+      observed_at: '2026-10-24T08:44:23Z'
+  talks:
+  - session:2023/ai2746w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248170001wlts
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

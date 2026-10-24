@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:youtube/c/francesvcoronel
+  platform: youtube
+  handle: c/francesvcoronel
+  url: https://www.youtube.com/c/francesvcoronel
+  owner: person:frances-coronel
+  link_basis:
+  - github_profile
+  - website_link
+  details_fetched: false
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: FrancesCoronel
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

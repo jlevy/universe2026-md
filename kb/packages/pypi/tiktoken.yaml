@@ -1,0 +1,19 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/tiktoken
+  ecosystem: pypi
+  name: tiktoken
+  url: https://pypi.org/project/tiktoken/
+  description: tiktoken is a fast BPE tokeniser for use with OpenAI's models
+  latest_version: 0.14.0
+  repository_url: https://github.com/openai/tiktoken
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: openai/tiktoken
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

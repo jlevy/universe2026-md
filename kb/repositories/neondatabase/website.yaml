@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:neondatabase/website
+  full_name: neondatabase/website
+  url: https://github.com/neondatabase/website
+  description: Official docs and website for Neon.
+  homepage: https://neon.com
+  stars: 332
+  forks: 331
+  watchers: 10
+  open_issues: 27
+  stats_observed_at: '2026-10-24T19:10:34Z'
+  primary_language: JavaScript
+  topics:
+  - docs
+  - website
+  archived: false
+  fork: false
+  created_at: '2021-03-28T20:53:23Z'
+  pushed_at: '2026-10-24T18:29:02Z'
+  owner_login: neondatabase
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: andrelandgraf
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: neondatabase/website
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

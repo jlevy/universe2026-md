@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/qianqianye
+  platform: linkedin
+  handle: in/qianqianye
+  url: https://www.linkedin.com/in/qianqianye
+  display_name: Qianqian Ye
+  bio: Qianqian is a designer, creative technologist, and educator with over a decade of…
+  location: Los Angeles
+  followers: 1836
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQFHaN5tm_B8pQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1598654644719?e=2147483647&v=beta&t=ciLXvYo_j9B3g6yvevI5gCkNzEfS5JEuB1vrsBESsq8
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEwj7cET0N1wA/profile-displaybackgroundimage-shrink_200_800/B4EZvcTxS0KgAU-/0/1768927729563?e=2147483647&v=beta&t=cow_ecZ1_SHgoGS5n6kv4lsSYV_810X8ELKS9iHm9N0
+  owner: person:qianqian-ye
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1775673106371001R3KP
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Qianqianye
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/qianqianye
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

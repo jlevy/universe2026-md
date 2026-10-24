@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/badge-roll
+  ecosystem: npm
+  name: badge-roll
+  url: https://www.npmjs.com/package/badge-roll
+  description: Configurable README Badge Automator
+  latest_version: 0.1.0
+  license: MIT
+  repository_url: git+https://github.com/agorischek/badge-roll.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: agorischek/badge-roll
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:nodejs
+  name: Node.js
+  aliases:
+  - Node.js
+  kind: open_source
+  homepage: https://nodejs.org
+  repositories:
+  - repo:nodejs/node
+  mentioned_in:
+  - person:ben-michel
+  - person:jerome-djebari
+  - person:tomiwa-ibiwoye
+  - session:bld1124b
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

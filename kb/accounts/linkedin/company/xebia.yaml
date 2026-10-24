@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/xebia
+  platform: linkedin
+  handle: company/xebia
+  url: https://www.linkedin.com/company/xebia
+  display_name: Xebia
+  bio: Xebia is a global, award-winning, AI-first consulting, software engineering, and training company.
+    We shape tomorrow with AI today—helping organizations turn AI strategy into production-ready solutions
+    that drive real transformation, faster. Xebia operates as a single global team, designed for speed,
+    scale, and impact, bringing together deep human expertise and the power of AI in everything we deliver.
+    Our flexible delivery model combines client-facing teams in the US and Europe with nearshore capacity
+    across Poland and Latin America, as well as a large-scale offshore hub in India working as a single,
+    integrated network. The result is a sophisticated hybrid model that combines local expertise with
+    global reach. For our clients, this means faster time-to-value, easier access to highly specialized
+    digital and AI talent, and the flexibility to scale solutions at the speed of business. With round-the-clock
+    delivery, built-in scalability, cultural alignment, and a strong focus on attracting and retaining
+    the best global talent, we help global organizations build, scale, and innovate with confidence. Xebia
+    | Shaping Tomorrow with AI Today
+  website: https://xebia.com/
+  followers: 644118
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEGhfHCBLW8KA/company-logo_200_200/company-logo_200_200/0/1719836676623/xebia_logo?e=2147483647&v=beta&t=u62UoDNou9xtsKleNiGTj4Er1tO-GuzvpFLkyA5dhc4
+  owner: org:xebia
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/randy-pagels
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/renevanosnabrugge
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/xebia
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

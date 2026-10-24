@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/renevanosnabrugge
+  platform: linkedin
+  handle: in/renevanosnabrugge
+  url: https://www.linkedin.com/in/renevanosnabrugge
+  display_name: Rene Van Osnabrugge
+  bio: For most of my career I've worked where technology, leadership and organisational change…
+  location: Hendrik-Ido-Ambacht
+  followers: 2523
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGbX2oMWESsLw/profile-displayphoto-scale_200_200/B4EZ8XnMa5HoAg-/0/1782807581981?e=2147483647&v=beta&t=HE3RlKeG_jo0695p13ytoLjOpUwMYuejGpnSMqiAvj0
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQEIkcWv7ma9_g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1521570279012?e=2147483647&v=beta&t=Uu4MXtuIxohM4BtGwLmYmaOMxiHb_YnKbBGW-7E_y4E
+  owner: person:rene-van-osnabrugge
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695744022643001fV2n
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/renevanosnabrugge
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,238 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:facundo-santiago
+  person: person:facundo-santiago
+  brief_bio:
+    text: Facundo Santiago is a Principal Product Manager in Azure AI at Microsoft, working on the multi-agent
+      capabilities of Azure AI Foundry. Santiago spoke at GitHub Universe 2025 about building multi-agent
+      workflows with GitHub and agent framework.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 41f3e460be4ec209e6c7f67a3b4345274d323d8c3e335147d7efacd333ebde33
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:facundo-santiago
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/bld1551b
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  education:
+  - school: Universidad Nacional del Sur
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  credentials:
+  - kind: honor
+    title: Imagine Cup 2018 - Best use of AI solution - USA
+    issuer: Microsoft
+    date: '2018-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: honor
+    title: Wells Fargo Campus Analytics Challenge - Winner solution
+    issuer: '-'
+    date: '2017-11-01T00:00:00.000Z'
+    description: Data Analytics challenge organized by Well Fargo - "What can you do better with us?"
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: honor
+    title: Fulbright Fellowship
+    issuer: '-'
+    date: '2016-06-01T00:00:00.000Z'
+    description: Fellowship in Science and Technology
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: Product Academy Fundamentals
+    issuer: McKinsey & Company
+    date: Dec 2022
+    url: https://www.credly.com/badges/9216f179-a394-48fb-b710-cd033e8a4e16/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: Fundamentals of Accelerated Computing with CUDA Python
+    issuer: NVIDIA
+    date: Jun 2022
+    url: https://courses.nvidia.com/certificates/4f7bc4c00a1745c1bbac6b422ae29b83/
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Data Engineer Associate'
+    issuer: Microsoft
+    date: Dec 2021
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure AI Engineer Associate'
+    issuer: Microsoft
+    date: Sep 2021
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Data Scientist Associate Active'
+    issuer: Microsoft
+    date: Mar 2021
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'Microsoft Specialist: Architecting Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: Mar 2016
+    evidence:
+      url: https://www.linkedin.com/in/santiagxf
+      observed_at: '2026-10-24T08:47:08Z'
+  spoken_languages:
+  - Español
+  - Ingles
+  - Francés
+  talks:
+  - session:2025/bld1551b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1753979516658001quoz
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

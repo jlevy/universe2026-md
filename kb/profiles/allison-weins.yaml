@@ -1,0 +1,270 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:allison-weins
+  person: person:allison-weins
+  brief_bio:
+    text: Allison Weins is a Staff Product Manager for GitHub Copilot at GitHub, working on the Copilot
+      admin experience, including seat management and purchasing options. Weins spoke at GitHub Universe
+      2023, including the opening keynote, and in 2024 about whether AI is changing how code is written.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 7307722ae0d7f5a2e4a76952c81462cee30dfaf18f388de4e531f45dfb59e498
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/ai1273d
+    - ref: session:2023/ai2849k
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai1273d
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai1273d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2024l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2024l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2024l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2024l
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2024l
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Codespaces
+      ref: person:allison-weins
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:allison-weins
+  - label: Visual Studio
+    target: software:visual-studio
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Visual Studio
+      ref: person:allison-weins
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2024/ai2024l
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685470013244001dW1j
+      ref: session:2023/ai1273d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695657268465001jL1D
+      ref: session:2023/ai2849k
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685470013244001dW1j
+      ref: session:2023/ai1273d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685470013244001dW1j
+      ref: session:2023/ai1273d
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685470013244001dW1j
+      ref: session:2023/ai1273d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+  education:
+  - school: Harvard College
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  activities:
+  - kind: course
+    title: Algorithms and Data Structures
+    detail: CS124
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  - kind: course
+    title: Design of Usable Interactive Systems
+    detail: CS179
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  - kind: course
+    title: Functional Programming and Abstraction
+    detail: CS51
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  - kind: course
+    title: Introduction to Computational Theory
+    detail: CS121
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  - kind: course
+    title: Introduction to Computer Science
+    detail: CS50
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  - kind: course
+    title: Introduction to Machine Learning
+    detail: CS181
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  - kind: course
+    title: Introduction to Probability
+    detail: Stat110
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  - kind: course
+    title: Systems Programming and Machine Organization
+    detail: CS61
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  - kind: organization
+    title: Women in Computer Science
+    detail: Jan 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/allison-weins
+      observed_at: '2026-10-24T08:42:57Z'
+  talks:
+  - session:2023/ai1273d
+  - session:2023/ai2849k
+  - session:2024/ai2024l
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685470655193001AFQ9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685470655193001AFQ9
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

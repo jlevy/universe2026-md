@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:datadog
+  login: DataDog
+  kind: organization
+  url: https://github.com/DataDog
+  name: Datadog, Inc.
+  location: New York
+  website: https://datadoghq.com
+  public_repositories: 589
+  created_at: '2010-08-15T19:56:37Z'
+  pinned:
+  - repo:datadog/datadog-agent
+  - repo:datadog/integrations-core
+  - repo:datadog/documentation
+  - repo:datadog/dd-trace-java
+  - repo:datadog/datadogpy
+  - repo:datadog/stratus-red-team
+  top_repositories:
+  - repo:datadog/go-profiler-notes
+  - repo:datadog/glommio
+  - repo:datadog/dd-agent
+  linked_accounts:
+  - acct:x/datadoghq
+  entity: org:datadog
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: DataDog
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

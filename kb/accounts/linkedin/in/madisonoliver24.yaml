@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/madisonoliver24
+  platform: linkedin
+  handle: in/madisonoliver24
+  url: https://www.linkedin.com/in/madisonoliver24
+  display_name: Madison Oliver Ficorilli
+  bio: Hi friends! I am a Penn State and Carnegie Mellon graduate managing the advisory database…
+  location: Pittsburgh
+  followers: 2509
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQHKl6SsoXSQvw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714238404734?e=2147483647&v=beta&t=ClNqq6h9fwcu_-ShUb4ZdcHPwrp06c65HXRXMbZ6t9U
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFnsFPfPkvTiw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1698774138863?e=2147483647&v=beta&t=hmW-AUbdTphbe2pfvnwLNJ_M6ZYaKDwDOlHtQe2HWxg
+  owner: person:madison-ficorilli
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695046483479001f8za
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/madisonoliver24
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

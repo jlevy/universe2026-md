@@ -1,0 +1,298 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:pooja-mistry
+  person: person:pooja-mistry
+  headline: Postman
+  current_roles:
+  - Postman
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1875s
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1875s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1875s
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1875s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1875s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1875s
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1875s
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1558s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1875s
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Issues
+      ref: session:2025/bld1558s
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720637699601001S6Ot
+      ref: session:2024/ai1875s
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754932628376001pLzi
+      ref: session:2025/bld1558s
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720637699601001S6Ot
+      ref: session:2024/ai1875s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720637699601001S6Ot
+      ref: session:2024/ai1875s
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720637699601001S6Ot
+      ref: session:2024/ai1875s
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754932628376001pLzi
+      ref: session:2025/bld1558s
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720637699601001S6Ot
+      ref: session:2024/ai1875s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720637699601001S6Ot
+      ref: session:2024/ai1875s
+  - label: Projects and Issues
+    target: term:github-product-2025/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754932628376001pLzi
+      ref: session:2025/bld1558s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720637699601001S6Ot
+      ref: session:2024/ai1875s
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1720637699601001S6Ot
+      ref: session:2024/ai1875s
+  education:
+  - school: The George Washington University
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  credentials:
+  - kind: honor
+    title: Winner of the Derrill C Rohlfs Award in Biomedical & Electrical Engineering for best Senior
+      Design
+    issuer: '-'
+    description: 'Cold Atmospheric Plasma Jet: Best Senior Design Project in Biomedical and Electrical
+      Engineering 2015'
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: certification
+    title: 30 days of Postman - for developers
+    issuer: Badgr (now part of Instructure)
+    date: Apr 2022
+    url: https://api.badgr.io/public/assertions/P9KcnUn6RlasIDOSpu6HPA
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: certification
+    title: Postman API Adoption
+    issuer: Badgr (now part of Instructure)
+    date: Apr 2022
+    url: https://api.badgr.io/public/assertions/p4A_5yj0Qz-hrRH4cZ_FzQ
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: certification
+    title: Postman API Tester
+    issuer: Badgr (now part of Instructure)
+    date: Apr 2022
+    url: https://api.badgr.io/public/assertions/WcZTfY6XRy61LPHyvF90tA
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: certification
+    title: Postman Student Expert
+    issuer: Badgr (now part of Instructure)
+    date: Mar 2022
+    url: https://api.badgr.io/public/assertions/ssWAYt6MRm-Okjbhtfz7-w
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: certification
+    title: Product Managment
+    issuer: General Assembly
+    date: Dec 2018
+    url: https://s3.amazonaws.com/ga-signatory/production/pdf/COC_Pooja_Mistry_2ccd1d554d.pdf
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: certification
+    title: Full Stack Developement
+    issuer: Udemy
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  activities:
+  - kind: organization
+    title: Toastmasters
+    detail: Member of Mill City Toastmaster Club to enhance public speaking, communication and leadership
+      skills · May 2016 · Present
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: organization
+    title: Google Developers Group
+    detail: Jan 2016 · Present
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: organization
+    title: Society of Women Engineers
+    detail: Planned group’s travel to two SWE national conferences held in Houston, Texas and Baltimore
+      MD. Organized fundraising events for the club. Advocated for growth of organization by introducing
+      new members. · Sep 2012 · Present
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: organization
+    title: Girl Develop It
+    detail: Participated in various workshops for Frontend Web Development and User Experience Design
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: organization
+    title: IBM Mass CoLab Team
+    detail: Involved with planning professional events for IBMers across the Mass Labs. Events include
+      professional development workshops and mentoring
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  - kind: organization
+    title: Lowell Makes
+    detail: Instructor at Lowell Makes maker space. Involved with teaching Arduino, Intro to Electronics
+      and Soldering to the community
+    evidence:
+      url: https://www.linkedin.com/in/pmmistry
+      observed_at: '2026-10-24T08:47:14Z'
+  talks:
+  - session:2024/ai1875s
+  - session:2025/bld1558s
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715310446284001ZXU9
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715310446284001ZXU9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,371 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alexander-lichter
+  person: person:alexander-lichter
+  brief_bio:
+    text: Alexander Lichter is a systems engineer at VoidZero, now part of Cloudflare, a member of the
+      Nuxt team and a creator of tech-focused video content. Lichter speaks at GitHub Universe 2026 on
+      one CLI to replace an entire JavaScript toolchain.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 97f43f5eb1f164ecde3873f3762aaef4f8487cbb5c924a52812018910644f15c
+    stale: false
+  headline: Systems Engineer at VoidZero
+  location: Amsterdam, The Netherlands
+  current_roles:
+  - Systems Engineer at VoidZero
+  - Cloudflare
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1124b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1124b
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1124b
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1124b
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1124b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1124b
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1124b
+  - label: JavaScript
+    target: software:javascript
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: JavaScript
+      ref: session:bld1124b
+  - label: Node.js
+    target: software:nodejs
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Node.js
+      ref: session:bld1124b
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1124b
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:nuxt/nuxt
+    - ref: repo:nitrojs/nitro
+    - ref: repo:vitejs/vite
+    - ref: repo:thealexlichter/nuxt3-sentry-recipe
+    - ref: repo:thealexlichter/h3-basic-auth
+  - label: Vue
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:thealexlichter/lichter.io
+  interests:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/rolldown/rolldown
+      ref: repo:rolldown/rolldown
+    - url: https://github.com/SBoudrias/Inquirer.js
+      ref: repo:sboudrias/inquirer.js
+    - url: https://github.com/react/react
+      ref: repo:react/react
+  - label: Node.js
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nuxt/nuxt
+      ref: repo:nuxt/nuxt
+    - url: https://github.com/SBoudrias/Inquirer.js
+      ref: repo:sboudrias/inquirer.js
+  - label: nuxt
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nuxt/nuxt
+      ref: repo:nuxt/nuxt
+    - url: https://github.com/TheAlexLichter/lichter.io
+      ref: repo:thealexlichter/lichter.io
+    - url: https://github.com/TheAlexLichter/nuxt3-sentry-recipe
+      ref: repo:thealexlichter/nuxt3-sentry-recipe
+  - label: frontend
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/vitejs/vite
+      ref: repo:vitejs/vite
+    - url: https://github.com/react/react
+      ref: repo:react/react
+  - label: nitro
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/TheAlexLichter/nuxt3-sentry-recipe
+      ref: repo:thealexlichter/nuxt3-sentry-recipe
+    - url: https://github.com/TheAlexLichter/h3-basic-auth
+      ref: repo:thealexlichter/h3-basic-auth
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/rolldown/rolldown
+      ref: repo:rolldown/rolldown
+    - url: https://github.com/SBoudrias/Inquirer.js
+      ref: repo:sboudrias/inquirer.js
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776349155958001oTwn
+      ref: session:bld1124b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776349155958001oTwn
+      ref: session:bld1124b
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776349155958001oTwn
+      ref: session:bld1124b
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776349155958001oTwn
+      ref: session:bld1124b
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776349155958001oTwn
+      ref: session:bld1124b
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776349155958001oTwn
+      ref: session:bld1124b
+  open_source:
+  - repository: repo:vitejs/vite
+    relation: pinned
+    stars: 83507
+    primary_language: TypeScript
+  - repository: repo:nuxt/nuxt
+    relation: pinned
+    stars: 60986
+    primary_language: TypeScript
+  - repository: repo:rolldown/rolldown
+    relation: pinned
+    stars: 13980
+    primary_language: Rust
+  - repository: repo:nitrojs/nitro
+    relation: pinned
+    stars: 11303
+    primary_language: TypeScript
+  - repository: repo:voidzero-dev/vite-plus
+    relation: pinned
+    stars: 6470
+    primary_language: Rust
+  - repository: repo:thealexlichter/lichter.io
+    relation: owner
+    stars: 207
+    primary_language: Vue
+  - repository: repo:thealexlichter/nuxt3-sentry-recipe
+    relation: owner
+    stars: 58
+    primary_language: TypeScript
+  - repository: repo:thealexlichter/h3-basic-auth
+    relation: owner
+    stars: 23
+    primary_language: TypeScript
+  - repository: repo:github-linguist/linguist
+    relation: contributor
+    stars: 13747
+    primary_language: Ruby
+  - repository: repo:benjamn/recast
+    relation: contributor
+    stars: 5255
+    primary_language: TypeScript
+  - repository: repo:sboudrias/inquirer.js
+    relation: contributor
+    stars: 21636
+    primary_language: TypeScript
+  - repository: repo:react/react
+    relation: contributor
+    stars: 251747
+    primary_language: JavaScript
+  - repository: repo:dotnet/aspnetcore
+    relation: contributor
+    stars: 38487
+    primary_language: C#
+  education:
+  - school: Technische Universität Dresden
+    evidence:
+      url: https://www.linkedin.com/in/alexanderlichter
+      observed_at: '2026-10-24T08:11:46Z'
+  spoken_languages:
+  - Deutsch
+  - Englisch
+  recent_writing:
+  - title: Finally, we got PHP in JavaScript!
+    url: https://twitter.com/702480823967154176/status/1975856657692307898
+    published: '2025-10-08T09:31:51Z'
+    channel: x
+  - title: |-
+      State of JS 2025
+
+      Christmas is only 3 months away, which means it is also time to take the State of JavaScript survey (again).
+      The more devs participate, the clearer the big picture will be in the end 🙌
+
+      https://t.co/00oJXsJgCv
+
+      Plus, you learn about features, libs, and
+    url: https://twitter.com/702480823967154176/status/1972689744703136077
+    published: '2025-09-29T15:47:40Z'
+    channel: x
+  - title: The actual secret to becoming a 10x dev 👀 https://t.co/kRybvecRyt
+    url: https://twitter.com/702480823967154176/status/1959189815171092612
+    published: '2025-08-23T09:43:46Z'
+    channel: x
+  - title: "tsup is not actively maintained anymore \U0001F440\n\nWith more than 9 million NPM downloads\
+      \ per month and over 10000 GitHub stars, tsup is undeniably a popular choice for bundling your application.\
+      \ Unfortunately, it is not under active maintenance anymore.\nThat doesn't mean tsup is broken "
+    url: https://twitter.com/702480823967154176/status/1956248974203007334
+    published: '2025-08-15T06:57:55Z'
+    channel: x
+  - title: |-
+      Vue 3.6 Alpha
+
+      During Vue Conf CN, the first alpha for the next Vue minor dropped - including ports from alien-signals and the long-awaited Vapor Mode 👀
+
+      Of course, I made a video about it and took a look at the new changes.
+
+      Link below! https://t.co/z3tvznkidy
+    url: https://twitter.com/702480823967154176/status/1946199388931432679
+    published: '2025-07-18T13:24:27Z'
+    channel: x
+  - title: |-
+      🔥 It's time for another Nuxt tip!
+
+      Some modules (like nuxt-purgecss or nuxt-bundle-buddy) should only be used in prod *or* dev, not both.
+      Though most of the modules have a way to toggle themselves, you still have to include them in your direct dependencies.
+
+      Not anymore! 🎉 https:
+    url: https://twitter.com/702480823967154176/status/1085179308606349314
+    published: '2019-01-15T14:18:03Z'
+    channel: x
+  - title: 'If you are using #laravel as #api ''only'', you might want to return JSON on every request,
+      even on errors/exceptions. The easiest way to do so is using this middleware globally. https://t.co/8zik4SbpKs'
+    url: https://twitter.com/702480823967154176/status/969879256271597568
+    published: '2018-03-03T10:16:48Z'
+    channel: x
+  - title: 'Increase your #Laravel performance by some easy tweaks. In this example just two lines of
+      code changed and performance increased by ~500% 👏🏻 https://t.co/jUiTPxP8pX'
+    url: https://twitter.com/702480823967154176/status/904496581562556416
+    published: '2017-09-04T00:09:24Z'
+    channel: x
+  talks:
+  - session:bld1124b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745004107585001M3SH
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: TheAlexLichter
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

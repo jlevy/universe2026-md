@@ -1,0 +1,164 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:parker-johnston
+  person: person:parker-johnston
+  brief_bio:
+    text: Parker Johnston is Agentic Field CTO at Insight and leads its work on an agentic, AI-driven
+      software development lifecycle. Johnston speaks at GitHub Universe 2026 about governing agentic
+      workflows in GitHub.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 7d55ad3639f72c981e6dc1ffdb37f47a5b12d5916fd49859e2a486ee87ea7a55
+    stale: false
+  headline: Agentic Field CTO at Insight
+  current_roles:
+  - Agentic Field CTO at Insight
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1799d
+  technologies:
+  - label: GitHub Agentic Workflows
+    target: software:github-agentic-workflows
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Agentic Workflows
+      ref: session:bld1799d
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785547276823001RuIA
+      ref: session:bld1799d
+  - label: ai-gateway
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  - label: anthropic
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  - label: azure-openai
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  - label: bedrock
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  - label: gateway
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  - label: langchain
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  - label: llmops
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  - label: LLMs
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  - label: openai
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  - label: openai-proxy
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/BerriAI/litellm
+      ref: repo:berriai/litellm
+  open_source:
+  - repository: repo:berriai/litellm
+    relation: contributor
+    stars: 61968
+    primary_language: Python
+  talks:
+  - session:bld1799d
+  gaps:
+  - linkedin_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746145404906001CkyS
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: parkjohnston
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

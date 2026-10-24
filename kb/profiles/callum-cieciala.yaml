@@ -1,0 +1,206 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:callum-cieciala
+  person: person:callum-cieciala
+  brief_bio:
+    text: Callum Cieciala is VP of Developer Experience at Galaxy, building the internal platform more
+      than 300 engineers use to ship code and overseeing GitHub across more than 15 organizations and
+      1,200 repositories. Cieciala speaks at GitHub Universe 2026 on scaling Copilot through internal
+      tooling.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 220fb0a592ea8763371fd491fd020ecf753ace7c99f3248658688ac4b810bc73
+    stale: false
+  headline: VP, Developer Experience at Galaxy
+  current_roles:
+  - VP, Developer Experience at Galaxy
+  expertise:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1387h
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1387h
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1387h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1387h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1387h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1387h
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:ldr1387h
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1387h
+  - label: Jira
+    target: software:jira
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Jira
+      ref: person:callum-cieciala
+  interests:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564797850001QoD8
+      ref: session:ldr1387h
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564797850001QoD8
+      ref: session:ldr1387h
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564797850001QoD8
+      ref: session:ldr1387h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564797850001QoD8
+      ref: session:ldr1387h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564797850001QoD8
+      ref: session:ldr1387h
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564797850001QoD8
+      ref: session:ldr1387h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564797850001QoD8
+      ref: session:ldr1387h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564797850001QoD8
+      ref: session:ldr1387h
+  open_source:
+  - repository: repo:galaxydigitalpublic/aave-v3-core-emode-leverage-report
+    relation: contributor
+    stars: 1
+  education:
+  - school: Northumbria University
+    evidence:
+      url: https://www.linkedin.com/in/callumcieciala
+      observed_at: '2026-10-24T08:11:29Z'
+  credentials:
+  - kind: certification
+    title: CEH
+    issuer: EC-Council
+    date: Feb 2015
+    evidence:
+      url: https://www.linkedin.com/in/callumcieciala
+      observed_at: '2026-10-24T08:11:29Z'
+  - kind: certification
+    title: CCNA 1
+    issuer: Cisco
+    date: Jan 2012
+    evidence:
+      url: https://www.linkedin.com/in/callumcieciala
+      observed_at: '2026-10-24T08:11:29Z'
+  talks:
+  - session:ldr1387h
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777561131408001fYWn
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: CallumCiecialaGalaxy
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

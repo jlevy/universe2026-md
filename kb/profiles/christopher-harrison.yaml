@@ -1,0 +1,443 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:christopher-harrison
+  person: person:christopher-harrison
+  brief_bio:
+    text: Christopher Harrison is a Senior Developer Advocate at GitHub who helps organizations improve
+      developer experience after two decades of training developers. Harrison spoke at GitHub Universe
+      2023, 2024 and 2025 and speaks at GitHub Universe 2026 about treating AI context as infrastructure.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: a246d7b3855c0fe4a911651e45aeb7643220599d121831e9087393d742b8e90e
+    stale: false
+  headline: Senior Developer Advocate at GitHub
+  location: Leaning over a keyboard
+  current_roles:
+  - Senior Developer Advocate at GitHub
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/ai1273d
+    - ref: session:2023/ai2780s
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/ai1273d
+    - ref: session:2023/ai2780s
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai1607d
+    - ref: session:2024/ai1970d
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai1273d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2780s
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1970d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1970d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1970d
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2024/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1970d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1970d
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1970d
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1970d
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1502w
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1502w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1502w
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1502w
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1502w
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1502w
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1768b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1768b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1768b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai1273d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Model Context Protocol
+      ref: session:2025/bld1502w
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2024/ai1970d
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:geektrainer/introduction-programming-python
+    - ref: repo:geektrainer/python-getting-started
+    - ref: repo:geektrainer/flask
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:geektrainer/botframework-v4-handoff
+  - label: Svelte
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:geektrainer/loved-mutt
+  - label: C#
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:geektrainer/help-desk-bot-lab
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:staticwebdev/mongoose-starter
+    - ref: repo:geektrainer/aswa-student-starter-kit
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685470013244001dW1j
+      ref: session:2023/ai1273d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694638932098001CYpy
+      ref: session:2023/ai2780s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715363833334001QmzL
+      ref: session:2024/ai1607d
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.68
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685470013244001dW1j
+      ref: session:2023/ai1273d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694638932098001CYpy
+      ref: session:2023/ai2780s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715363833334001QmzL
+      ref: session:2024/ai1607d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.53
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694638932098001CYpy
+      ref: session:2023/ai2780s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724788551684001l9FW
+      ref: session:2024/ai1970d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1748356436167001cgyU
+      ref: session:2025/bld1502w
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    weight: 0.41
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1748356436167001cgyU
+      ref: session:2025/bld1502w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778275240014001huB4
+      ref: session:ldr1768b
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    weight: 0.41
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685470013244001dW1j
+      ref: session:2023/ai1273d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694638932098001CYpy
+      ref: session:2023/ai2780s
+  - label: GitHub Advanced Security
+    basis: github_repositories
+    confidence: medium
+    weight: 0.27
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github-samples/pets-workshop
+      ref: repo:github-samples/pets-workshop
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.2
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778275240014001huB4
+      ref: session:ldr1768b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.2
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1778275240014001huB4
+      ref: session:ldr1768b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.2
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1748356436167001cgyU
+      ref: session:2025/bld1502w
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: low
+    weight: 0.2
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724788551684001l9FW
+      ref: session:2024/ai1970d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.2
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724788551684001l9FW
+      ref: session:2024/ai1970d
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.2
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685470013244001dW1j
+      ref: session:2023/ai1273d
+  open_source:
+  - repository: repo:geektrainer/introduction-programming-python
+    relation: owner
+    stars: 893
+    primary_language: Python
+  - repository: repo:geektrainer/flask
+    relation: owner
+    stars: 60
+    primary_language: Python
+  - repository: repo:geektrainer/help-desk-bot-lab
+    relation: owner
+    stars: 26
+    primary_language: C#
+  - repository: repo:geektrainer/aswa-student-starter-kit
+    relation: owner
+    stars: 24
+    primary_language: JavaScript
+  - repository: repo:geektrainer/botframework-v4-handoff
+    relation: owner
+    stars: 11
+    primary_language: TypeScript
+  - repository: repo:geektrainer/python-getting-started
+    relation: owner
+    stars: 11
+    primary_language: Python
+  - repository: repo:staticwebdev/mongoose-starter
+    relation: pinned
+    stars: 10
+    primary_language: JavaScript
+  - repository: repo:geektrainer/loved-mutt
+    relation: owner
+    stars: 6
+    primary_language: Svelte
+  - repository: repo:github-samples/pets-workshop
+    relation: contributor
+    stars: 81
+    primary_language: Python
+  - repository: repo:microsoft/mastering-github-copilot-for-paired-programming
+    relation: contributor
+    stars: 8165
+    primary_language: Python
+  - repository: repo:octobooth/machine-setup
+    relation: contributor
+    stars: 1
+    primary_language: PowerShell
+  - repository: repo:microsoft/markitdown
+    relation: contributor
+    stars: 191953
+    primary_language: Python
+  - repository: repo:abhiz123/todoist-mcp-server
+    relation: contributor
+    stars: 391
+    primary_language: JavaScript
+  spoken_languages:
+  - English
+  - C#
+  activities:
+  - kind: project
+    title: IT Grand Prix
+    detail: The IT Grand Prix was a cross-country contest that pitted 4 teams of Microsoft Certified Trainers
+      against each other through technology challenges that benefitted non-profit organizations. You can
+      view daily updates and information on YouTube.com. · Jun 2010
+    evidence:
+      url: https://www.linkedin.com/in/geektrainer
+      observed_at: '2026-10-24T08:11:34Z'
+  talks:
+  - session:2023/ai1273d
+  - session:2023/ai2780s
+  - session:2024/ai1607d
+  - session:2024/ai1970d
+  - session:2025/bld1502w
+  - session:ldr1768b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: GeekTrainer
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,111 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:yanan-cai
+  person: person:yanan-cai
+  brief_bio:
+    text: Yanan Cai is a Principal Product Manager at Microsoft working on coding models for Microsoft
+      AI, and speaks at GitHub Universe 2026 on how Microsoft AI builds coding models optimized for GitHub
+      Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - github_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: eb39e499bd3a7e4826070e8a637159abe8868a31e751de609a74113adbfea643
+    stale: false
+  headline: Principal Product Manager at Microsoft
+  location: Seattle, WA
+  current_roles:
+  - Principal Product Manager at Microsoft
+  - Microsoft SuperIntelligence
+  expertise:
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1979d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:ldr1979d
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696767574001IH4W
+      ref: session:ldr1979d
+    - url: https://github.com/microsoft/MAI-Code
+      ref: repo:microsoft/mai-code
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696767574001IH4W
+      ref: session:ldr1979d
+  - label: agentic-coding
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/microsoft/MAI-Code
+      ref: repo:microsoft/mai-code
+  - label: LLMs
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/microsoft/MAI-Code
+      ref: repo:microsoft/mai-code
+  open_source:
+  - repository: repo:microsoft/mai-code
+    relation: contributor
+    stars: 81
+  education:
+  - school: Beijing University of Posts and Telecommunications
+    evidence:
+      url: https://www.linkedin.com/in/yanan-cai-6239a4ab
+      observed_at: '2026-10-24T08:15:31Z'
+  talks:
+  - session:ldr1979d
+  gaps:
+  - x_account
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791561115557001TFez
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: yanancai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

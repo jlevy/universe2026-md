@@ -1,0 +1,51 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/xcorail
+  platform: x
+  handle: XCorail
+  url: https://x.com/XCorail
+  display_name: Xavier René-Corail
+  bio: I don't believe in perfection, I believe in continuous improvement. Building dev-sec bridges @GHSecurityLab
+    @GitHub (ex @Semmle). All views are my own.
+  location: Palo Alto, CA
+  followers: 602
+  following: 404
+  posts_count: 1286
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/2899561771/391c6dea9b2aa0630c280b5557d0ccab_normal.jpeg
+  created_at: '2012-04-18T08:47:13Z'
+  owner: person:xavier-rene-corail
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683825114408001nGm8
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683825114408001nGm8
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683825114408001nGm8
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: xcorail
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/XCorail
+    record_id: sd_mvm4nigsgklpc8gkv
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

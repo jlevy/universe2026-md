@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/rileykohler
+  platform: linkedin
+  handle: in/rileykohler
+  url: https://www.linkedin.com/in/rileykohler
+  display_name: Riley Kohler
+  location: Richmond
+  followers: 405
+  connections: 407
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQEwNuoNevuPwQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517600618564?e=2147483647&v=beta&t=2FmvEaZzTx1iSUjeGrHQuv5MLvRofYTKjGziiUftguQ
+  owner: person:riley-kohler
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1723568668466001DHAU
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/rileykohler
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

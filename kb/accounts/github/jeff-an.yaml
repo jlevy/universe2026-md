@@ -1,0 +1,62 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:jeff-an
+  login: jeff-an
+  kind: user
+  url: https://github.com/jeff-an
+  name: Jeff An
+  company: '@momentic-ai '
+  bio: ' Engineering @ Retool, Ex-Tech Lead @ Robinhood, University of Waterloo Computer Science Graduate,
+    International Chemistry Olympiad Medallist'
+  location: San Francisco
+  website: https://jeffan.ca
+  followers: 33
+  public_repositories: 13
+  created_at: '2016-12-28T06:22:47Z'
+  contributions_last_year:
+    total: 2111
+    commits: 7
+    pull_requests: 2
+    issues: 0
+    reviews: 1
+  starred_repositories: 18
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  contributed_to:
+  - repo:archiverjs/node-compress-commons
+  - repo:momentic-ai/examples
+  pinned:
+  - repo:jeff-an/docker-os161
+  - repo:splunk/docker-splunk
+  - repo:jeff-an/ideamap
+  - repo:splunk/splunk-ansible
+  top_repositories:
+  - repo:jeff-an/seefoodar
+  websites:
+  - site:jeffan.ca
+  entity: person:jeff-an
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jeff-an
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

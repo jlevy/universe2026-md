@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:discussions-lounge-firehouse
+  name: Discussions Lounge
+  label: Discussions Lounge @ Firehouse
+  venue: venue:firehouse
+  capacity: 75
+  source_ids:
+  - 1724078214354001IWLu
+  sessions:
+  - session:2024/ai1347l
+  - session:2024/ai1609l
+  - session:2024/ai2024l
+  - session:2024/ai2036l
+  - session:2024/ai2245l
+  - session:2024/dev1459l
+  - session:2024/dev1570l
+  - session:2024/dev1656l
+  - session:2024/dev1844l
+  - session:2024/dev2153l
+  - session:2024/sec1880l
+  - session:2024/sec1889l
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

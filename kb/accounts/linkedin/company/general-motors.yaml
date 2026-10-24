@@ -1,0 +1,58 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/general-motors
+  platform: linkedin
+  handle: company/general-motors
+  url: https://www.linkedin.com/company/general-motors
+  display_name: General Motors
+  bio: General Motors’ vision is to create a world with Zero Crashes, Zero Emissions and Zero Congestion,
+    and we have committed ourselves to leading the way toward this future. Today, we are in the midst
+    of a transportation revolution, and we have the ambition, the talent and the technology to realize
+    the safer, better and more sustainable world we want. As an open, inclusive company, we’re also creating
+    an environment where everyone feels welcomed and valued for who they are. One team, where all ideas
+    are considered and heard, where everyone can contribute to their fullest potential, with a culture
+    based in respect, integrity, accountability and equality. Our team brings wide-ranging perspectives
+    and experiences to solving the complex transportation challenges of today and tomorrow. For information
+    on the GM Privacy Statement, please visit http://www.gm.com/privacy-statement.html
+  website: https://www.gm.com/
+  followers: 3676528
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQEfAZWzerj03w/company-logo_200_200/B4EZdkPGXYGcAI-/0/1749733370529/general_motors_logo?e=2147483647&v=beta&t=dDatsMr-Ij9QYc4Zf3sRs4Lw3ZrbsdBbqypq8cprxXI
+  owner: org:general-motors
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/ericwbailey
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alexis-abril
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mario-parisi-750123134
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/matthew-p-masarik
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/michael-hanley-b6508913
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/general-motors
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:mintlify/starter
+  full_name: mintlify/starter
+  url: https://github.com/mintlify/starter
+  description: The starter kit for your mintlify project
+  homepage: https://starter.mintlify.com
+  stars: 1939
+  forks: 534
+  watchers: 12
+  open_issues: 13
+  stats_observed_at: '2026-10-24T19:10:31Z'
+  primary_language: MDX
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2022-12-22T03:50:30Z'
+  pushed_at: '2026-10-18T03:30:52Z'
+  owner_login: mintlify
+  owner: gh:mintlify
+  pinned_by:
+  - gh:mintlify
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mintlify
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mintlify/starter
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

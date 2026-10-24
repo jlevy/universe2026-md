@@ -1,0 +1,286 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kat-cosgrove
+  person: person:kat-cosgrove
+  headline: VillageSQL
+  current_roles:
+  - VillageSQL
+  expertise:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Docker
+      ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:kat-cosgrove
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Education
+    target: term:github-product-2024/education
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  education:
+  - school: Code Fellows
+    school_ref: org:code-fellows
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  credentials:
+  - kind: certification
+    title: 'Program Committee Member: KubeCon + CloudNativeCon Europe 2024'
+    issuer: The Linux Foundation
+    date: Feb 2024
+    url: https://www.credly.com/badges/bf9539b0-fd43-4c4c-a91d-d4083cf71874/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon North America 2023'
+    issuer: The Linux Foundation
+    date: Nov 2023
+    url: https://www.credly.com/badges/40a92411-ebac-4e7d-89d4-6c0fe4c732c6/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  - kind: certification
+    title: 'Track Chair: KubeCon + CloudNativeCon North America 2023'
+    issuer: The Linux Foundation
+    date: Sep 2023
+    url: https://www.credly.com/badges/82e90912-9bf7-4cf5-8d62-301b1df3cb47/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  - kind: certification
+    title: 'Program Committee Member: KubeCon + CloudNativeCon Europe 2023'
+    issuer: The Linux Foundation
+    date: Feb 2023
+    url: https://www.credly.com/badges/b01356ba-8113-4f6a-ba9e-afbc88c965af/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  - kind: certification
+    title: 'LFC101: Inclusive Speaker Orientation'
+    issuer: The Linux Foundation
+    date: Sep 2022
+    url: https://www.credly.com/badges/840bfda3-2ee0-469a-9726-06b7492aaba0/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  - kind: certification
+    title: 'Program Committee Member: KubeCon + CloudNativeCon Europe 2022'
+    issuer: The Linux Foundation
+    date: Mar 2022
+    url: https://www.credly.com/badges/3d5c8d07-536f-4421-a6f7-0b1ec33b23d8/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  - kind: certification
+    title: 'Program Committee Member: KubeCon + CloudNativeCon North America 2021'
+    issuer: The Linux Foundation
+    date: Aug 2021
+    url: https://www.credly.com/badges/b1bc91ef-ebdb-44c0-ad10-307d412ed6f2/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  - kind: certification
+    title: cdCon 2021 Speaker
+    issuer: The Linux Foundation
+    date: Jul 2021
+    url: https://www.credly.com/badges/4b89a09c-f3b0-47cf-818d-dfcbbe78ec17/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon Europe 2021'
+    issuer: The Linux Foundation
+    date: May 2021
+    url: https://www.credly.com/badges/afe2621e-1a4d-479c-b8c8-2fe72742656f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  - kind: certification
+    title: 'Track Chair: KubeCon + CloudNativeCon Europe 2021'
+    issuer: The Linux Foundation
+    date: May 2021
+    url: https://www.credly.com/badges/97fb836c-18d1-4734-9b44-bedb35720f0a/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/katcosgrove
+      observed_at: '2026-10-24T08:44:22Z'
+  spoken_languages:
+  - English
+  talks:
+  - session:2024/sec1871m
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1718838662057001nwYW
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

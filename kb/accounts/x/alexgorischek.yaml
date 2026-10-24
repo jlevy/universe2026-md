@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/alexgorischek
+  platform: x
+  handle: AlexGorischek
+  url: https://x.com/AlexGorischek
+  display_name: Alex Gorischek
+  bio: Dev tools incubation at GitHub Next
+  location: Seattle, WA
+  website: http://alexgorischek.com/
+  followers: 90
+  following: 366
+  posts_count: 158
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/2010075484084924416/nbJHfcVi_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/3577021334/1768083467
+  created_at: '2015-09-16T00:32:05Z'
+  owner: person:alex-gorischek
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1787354992642001uhKf
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/AlexGorischek
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

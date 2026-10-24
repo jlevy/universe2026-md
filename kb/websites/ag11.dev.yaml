@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:ag11.dev
+  url: https://ag11.dev
+  kind: personal
+  title: Andrea Griffiths | ag11.dev
+  description: Connect with Andrea Griffiths - Developer Advocate, Speaker, Newsletter Author
+  owner: person:andrea-griffiths
+  link_basis:
+  - github_profile
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:x/acolombiadev
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: AndreaGriffiths11
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://ag11.dev
+    record_id: https://ag11.dev
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

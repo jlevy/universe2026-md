@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jeffdkeyes
+  platform: linkedin
+  handle: in/jeffdkeyes
+  url: https://www.linkedin.com/in/jeffdkeyes
+  display_name: Jeff Keyes
+  bio: I lead product marketing for technical software that engineering and product leaders buy:…
+  location: Greater Seattle Area
+  followers: 5951
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHlMZVo2c1vXQ/profile-displayphoto-scale_200_200/B56aDvmpBlK0Ag-/0/1790726280876?e=2147483647&v=beta&t=Em93drIxPPQLff82UAISlEbl1V7tZc9KYJnhdv8Xzfk
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHZvAr497jHeQ/profile-displaybackgroundimage-shrink_200_800/B56Z.LKzrRKAAQ-/0/1784746294299?e=2147483647&v=beta&t=I4SqGP2v95N15p3A6eLFkU2vbuUQKang5dHeVqajqlg
+  owner: person:jeff-keyes
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1757022531745001neyh
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeffdkeyes
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

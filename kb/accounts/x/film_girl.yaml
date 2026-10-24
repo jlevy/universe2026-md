@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/film_girl
+  platform: x
+  handle: film_girl
+  url: https://x.com/film_girl
+  display_name: Christina Warren
+  bio: 'DevRel @GitHub Past: @GoogleDeepMind, hosts: @macbreakweekly Journalist turned developer. @film_girl@mastodon.social.
+    Loves media, tech and OSS. opinions = own'
+  location: SEA via NYC
+  website: http://christina.substack.com/
+  followers: 98777
+  following: 13892
+  posts_count: 163334
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1812573605877764097/HuPNMdOy_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/9866582/1398181728
+  created_at: '2007-11-01T22:45:37Z'
+  owner: person:christina-warren
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687877165916001nAud
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/film_girl
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

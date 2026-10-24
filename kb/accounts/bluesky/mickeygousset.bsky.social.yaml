@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/mickeygousset.bsky.social
+  platform: bluesky
+  handle: mickeygousset.bsky.social
+  url: https://bsky.app/profile/mickeygousset.bsky.social
+  display_name: Mickey Gousset
+  bio: 'Staff DevOps Architect with GitHub | ex. Microsoft | Youtube: http://youtube.com/mickeygousset
+    | http://mickeygousset.com | Tupelo, MS, do you know what it is famous for?'
+  followers: 322
+  created_at: '2023-05-27T21:44:15Z'
+  owner: person:mickey-gousset
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715290358277001IuU9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: mickeygousset.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/romain-le-disez-870968137
+  platform: linkedin
+  handle: in/romain-le-disez-870968137
+  url: https://www.linkedin.com/in/romain-le-disez-870968137
+  display_name: Romain Le Disez
+  location: Rians
+  followers: 1430
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEUbv2UZliW6A/profile-displaybackgroundimage-shrink_200_800/B4EZuNO9CzJwAU-/0/1767601073320?e=2147483647&v=beta&t=UWqu5JGphE4L-qTXl-vXBdqpFOmmzVi3IHbQIQB7gf4
+  owner: person:romain-le-disez
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1761646539079001OXpS
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/romain-le-disez-870968137
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

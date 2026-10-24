@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:sam-morrow.com/blog
+  url: https://www.sam-morrow.com/blog
+  kind: blog
+  title: Blog | Sam Morrow
+  description: Thoughts and insights on software engineering, technology, and continuous learning.
+  owner: person:sam-morrow
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://sam-morrow.com/rss.xml
+  sources:
+  - system: brightdata
+    url: https://x.com/SamMorrowDrums
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://sam-morrow.com/blog
+    record_id: https://www.sam-morrow.com/blog
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:relay.fm/conduit
+  url: https://www.relay.fm/conduit
+  kind: personal
+  title: Conduit - Relay
+  description: Conduit is providing the connection between what we should be doing and what ultimately
+    gets done. Our hosts celebrate that they &quot;Can&quot; do it and explore the unique ways others
+    do it as well.
+  owner: person:jay-miller
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  identity_links:
+  - https://bsky.app/profile/relay.fm
+  - https://relayfm.social/@relay
+  feeds:
+  - http://relay.fm/master/feed
+  sources:
+  - system: brightdata
+    url: https://x.com/kjaymiller
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://relay.fm/conduit
+    record_id: https://www.relay.fm/conduit
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

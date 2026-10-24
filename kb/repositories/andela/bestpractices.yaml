@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:andela/bestpractices
+  full_name: andela/bestpractices
+  url: https://github.com/andela/bestpractices
+  stars: 286
+  forks: 243
+  watchers: 171
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:09:48Z'
+  archived: false
+  fork: false
+  created_at: '2014-11-19T13:49:09Z'
+  pushed_at: '2016-03-14T13:07:28Z'
+  owner_login: andela
+  owner: gh:andela
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: andela
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: andela/bestpractices
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

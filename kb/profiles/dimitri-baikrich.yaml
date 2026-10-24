@@ -1,0 +1,347 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dimitri-baikrich
+  person: person:dimitri-baikrich
+  brief_bio:
+    text: Dimitri Baikrich is CTO of PALO IT and leads R&D on Gen-e2, an enterprise AI product development
+      lifecycle framework powered by GitHub Copilot. Baikrich spoke at GitHub Universe 2025 about how
+      enterprises built faster, smarter and safer with enterprise-grade AI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: b8f933809d920395b3ef993c170c9eeeaaba8cc45323771fe58926fabe13e776
+    stale: false
+  headline: PALO IT
+  current_roles:
+  - PALO IT
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Infrastructure as code
+    target: term:topic-2025/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1757d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:dimitri-baikrich
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/aut1757d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VSCode
+      ref: session:2025/aut1757d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: GitHub Spark
+    target: term:github-product-2025/github-spark
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758536587547001iOUq
+      ref: session:2025/aut1757d
+  spoken_languages:
+  - English
+  - French
+  - Dutch
+  activities:
+  - kind: project
+    title: 'Palo IT Lab: GreenIT: Carbon Analytics'
+    detail: From measuring the power consumption of our laptops to deploying a building management system
+      solution, Carbon Analytics is the start of PALO IT's journey towards being a greener company.We've
+      developed a powerful tool to retrieve detailed and anonymized power consumption data on laptops
+      fleets. Detailed, so we can retrieve information like most power-hungry application, or screen usage
+      and provide tips to reduce consumption, and anonymized to prevent this tool from being used to track
+      employees. · Apr 2021
+    evidence:
+      url: https://www.linkedin.com/in/dbaikrich
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: project
+    title: 'Palo IT Lab: Community E-Commerce'
+    detail: Community e-commerce is a positive impact project that aims to redefine how individuals and
+      businesses alike buy and sell products or services online, by using distributed web for this.The
+      communities can function in isolation or in tandem with other trusted communities, and the trust
+      layer is provided by self-sovereign identity. · Jan 2021
+    evidence:
+      url: https://www.linkedin.com/in/dbaikrich
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: project
+    title: Self-Sovereign Identity
+    detail: Self-Sovereign Identity or SSI provides lifetime, portable identity for any person, organization
+      or thing that does not depend on any authority and can never be taken away. Individuals with Self-Sovereign
+      Identity (SSI) can keep their electronic identity private while sharing it securely with other people
+      and organizations that require it, via Verifiable Credentials protocol. For instance, it allows
+      a person to prove that he owns a driving license, or that he's old enough to drive, without exposing
+      any information related to the proof to the third party. This is known as zero-knowledge proof.
+      And because the network relies on signed credentials by the emitting entities, every credential
+      on that system can be trusted, leading to simplify procedures (KYC, bank loans, credit checks, background
+      checks, etc.) and greater privacy for end-users. We have decided to work on the Sovrin network.
+      Our work in the lab is to simplify the user experience by changing the way credentials are requested,
+      developing apps (mobile and desktop) for the end-users, and streamlining the legal and technological
+      connections for organizations willing to participate in Sovrin. We've also developed a new protocol
+      that provides a way to establish communication in a decentralized way. That protocol can be found
+      under https://github.com/hyperledger/aries-rfcs/pull/402. Our work on the OSMA open-source project
+      in the lab was presented in a conference called MyData in Finland in September 2019. A demo was
+      created using the app on SSI to present the interoperability, connecting our app with IIWbook developed
+      by the Govt of British Columbia. Having participated and organized conferences on the subject of
+      privacy and digital identity, our work on SSI has been presented in highly publicized events, including
+      Identity Week Asia and Singtel Innovfest. · Jun 2019
+    evidence:
+      url: https://www.linkedin.com/in/dbaikrich
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: project
+    title: 'Palo-IT Lab: Secure Cloud OS'
+    detail: Secure Cloud OS is a DaaS (Desktop as a Service) prototype for the elderly and non-tech savvy.The
+      main idea was to build an easy to use OS that would always be kept up-to-date, adequately monitored,
+      would reside in the cloud, and would use no password whatsoever, to reduce the risk of phishing.We
+      used biometric authentication, with Microsoft's WinBio framework, automatic provisioning for the
+      DaaS, PPK to authenticate the connection with the DaaS, a driver to transform the local camera and
+      microphone to IP camera to be used on the remote desktop.The OS itself customized by running a Java
+      app on top of Ubuntu, remove icons, using labelled action buttons, and handle all authentication
+      without user involvement.All actions were logged to an ElasticSearch cluster, to be analyzed to
+      find any unusual usage pattern. · Apr 2019
+    evidence:
+      url: https://www.linkedin.com/in/dbaikrich
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: project
+    title: MTEP - Murex Test Environment Plateform
+    detail: The project aims at improving the management of the DBS Murex UAT (User Acceptance Test) environments,
+      specifically to shorten the recycling cycles of UAT environments and releasing them as soon as possible
+      in the available pool. The stress was also put on building the system to allow the end user to take
+      ownership of actions that were previously performed by technical teams. Finally, the system transforms
+      the role of the environment manager from a very technical one to a more business oriented one. ·
+      May 2012
+    evidence:
+      url: https://www.linkedin.com/in/dbaikrich
+      observed_at: '2026-10-24T08:43:04Z'
+  recent_writing:
+  - title: How to approach Marketing on Mastodon?
+    url: https://www.linkedin.com/pulse/how-approach-marketing-mastodon-dimitri-baikrich
+    published: '2023-04-15T00:00:00.000Z'
+    channel: linkedin
+    summary: 'You might have heard about it in many places over the past few months.: Mastodon and its
+      distributed ecosystem this the…'
+  talks:
+  - session:2025/aut1757d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1758007143289001p6Sm
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

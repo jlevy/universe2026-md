@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/testmu-ai
+  platform: linkedin
+  handle: company/testmu-ai
+  url: https://www.linkedin.com/company/testmu-ai
+  display_name: TestMu AI
+  bio: 'TestMu AI (Formerly LambdaTest) is a Full Stack Agentic AI Quality Engineering platform that empowers
+    teams to test intelligently and ship faster. TestMu AI provides an end-to-end Agentic testing platform
+    to plan, author, execute, and analyze tests for web, mobile, and enterprise applications at scale,
+    on real browsers, real devices, and custom real-world environments. It includes: - KaneAI: An AI-native
+    testing agent that plans, authors, and evolves end-to-end tests in plain English across web and mobile.
+    - Kane CLI: A terminal-native command-line testing agent that verifies what you or coding agents built
+    against requirements in a real browser. - Agent Testing: Test chatbots, voice assistants, video agents,
+    image analyzer agents, and phone caller agents for hallucinations, bias, and toxicity. - Agent Assurance:
+    Agentic testing for autonomous AI agents. It reads the agent''s code, generates scenarios, and verifies
+    actions through API and database checks. - Real Device Cloud: Manual and automated testing across
+    10,000+ real Android and iOS devices. - HyperExecute: An AI-native test orchestration platform that
+    runs tests up to 70% faster than traditional cloud grids. - Automation Cloud: Run Selenium, Playwright,
+    Cypress, and Appium tests in parallel on 3,000+ browser-OS combinations and real devices. - SmartUI:
+    AI-native visual regression testing that captures and compares screenshots across browsers, devices,
+    and resolutions, flagging real changes, not noise. - Accessibility Testing: Identify and resolve WCAG
+    and ADA issues across websites, web apps, and mobile apps. - Browser Cloud: Browser infrastructure
+    for AI agents: real Chrome sessions on demand for Claude, Cursor, and Gemini. - Test Management: AI-native
+    test management for manual and automated tests with two-way Jira sync. Use 120+ integrations like
+    Jira, GitHub, and Slack to accelerate testing across the entire software development lifecycle. Visit
+    our home page: www.testmuai.com'
+  website: https://testmuai.com/
+  followers: 76536
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQFuOprA8pT1VA/company-logo_200_200/B56Zux7yMUH0AI-/0/1768216798883/testmu_ai_logo?e=2147483647&v=beta&t=FvvqUD9Ha7hyIE1keJRR--Z1IZ_AFYYZsS9zfgUBeZ4
+  owner: org:testmu-ai
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/shvn
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mayankbhola
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/testmu-ai
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

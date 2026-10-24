@@ -1,0 +1,254 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ella-ordona
+  person: person:ella-ordona
+  brief_bio:
+    text: Ella Ordona was a Senior Software Engineer on Nordstrom's Developer Tools team, working on CI/CD
+      pipelines, developer portals and cloud infrastructure. Ordona spoke at GitHub Universe 2025 about
+      Nordstrom's standardized pipeline and migration with agentic AI.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 917bec1168da5394189eddf3a0c4f556a11286536e6f86061927fb74a35a9b0f
+    stale: false
+  expertise:
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/1948
+    - ref: session:2025/aut1376m
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1376m
+  - label: GitLab
+    target: software:gitlab
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitLab
+      ref: session:2025/1948
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1761069440854001Wqq0
+      ref: session:2025/1948
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1761069440854001Wqq0
+      ref: session:2025/1948
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  education:
+  - school: Western Washington University
+    evidence:
+      url: https://www.linkedin.com/in/ella-ordona-12890155
+      observed_at: '2026-10-24T08:44:25Z'
+  credentials:
+  - kind: honor
+    title: Outstanding Poster - Scholars Week Undergraduate Scholars Showcase Poster Competition
+    issuer: Western Washington University
+    date: '2016-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/ella-ordona-12890155
+      observed_at: '2026-10-24T08:44:25Z'
+  - kind: honor
+    title: Scholar - Grace Hopper Celebration of Women in Computing
+    issuer: National Science Foundation
+    date: '2015-10-01T00:00:00.000Z'
+    description: Scholarship recipient to attend Grace Hopper Celebration of Women in Computing 2015
+    evidence:
+      url: https://www.linkedin.com/in/ella-ordona-12890155
+      observed_at: '2026-10-24T08:44:25Z'
+  - kind: honor
+    title: J. Ruth Kelsey Merit Scholarship
+    issuer: College of Fine and Performing Arts, Western Washington University
+    date: '2015-09-01T00:00:00.000Z'
+    description: The J. Ruth Kelsey Merit Scholarship was established to encourage and reward junior-level
+      students of outstanding talent, ability and motivation.
+    evidence:
+      url: https://www.linkedin.com/in/ella-ordona-12890155
+      observed_at: '2026-10-24T08:44:25Z'
+  - kind: honor
+    title: Trunkey Alumni Association Leader Scholarship
+    issuer: Western Washington University Alumni Association
+    date: '2015-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/ella-ordona-12890155
+      observed_at: '2026-10-24T08:44:25Z'
+  - kind: honor
+    title: Research and Creativities Grant
+    issuer: Western Washington University
+    date: '2015-05-01T00:00:00.000Z'
+    description: Awarded a grant for creating work based off shared experiences of the 1.5-generation.
+    evidence:
+      url: https://www.linkedin.com/in/ella-ordona-12890155
+      observed_at: '2026-10-24T08:44:25Z'
+  activities:
+  - kind: volunteering
+    title: Event Coordinator
+    detail: Association for Women in Computing · Education · Sep 2014 · - Sep 2017 · 3 years 1 month ·
+      Sep 2014
+    evidence:
+      url: https://www.linkedin.com/in/ella-ordona-12890155
+      observed_at: '2026-10-24T08:44:25Z'
+  talks:
+  - session:2025/1948
+  - session:2025/aut1376m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1756982674227001DmNI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

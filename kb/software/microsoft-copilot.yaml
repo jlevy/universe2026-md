@@ -1,0 +1,18 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:microsoft-copilot
+  name: Microsoft Copilot
+  aliases:
+  - Microsoft Copilot
+  - Microsoft 365 Copilot
+  kind: commercial
+  vendor: org:microsoft
+  mentioned_in:
+  - person:said-nikjou
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

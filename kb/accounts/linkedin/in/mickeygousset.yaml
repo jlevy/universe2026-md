@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mickeygousset
+  platform: linkedin
+  handle: in/mickeygousset
+  url: https://www.linkedin.com/in/mickeygousset
+  display_name: Mickey Gousset
+  location: Tupelo
+  followers: 3872
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQHJFrmV66w3eg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1662506227054?e=2147483647&v=beta&t=lid7wIP6M8Vk7GGP5bjvVUyBwkGcyYw9IBMAEbWo0cM
+  owner: person:mickey-gousset
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715290358277001IuU9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715290358277001IuU9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mickeygousset
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

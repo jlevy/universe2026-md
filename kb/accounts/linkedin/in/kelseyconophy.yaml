@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kelseyconophy
+  platform: linkedin
+  handle: in/kelseyconophy
+  url: https://www.linkedin.com/in/kelseyconophy
+  display_name: Kelsey Conophy
+  bio: I build AI products and build teams that build AI products. AI leader with 14+…
+  location: Gallatin Gateway
+  followers: 3548
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQG2Ub_SXrfALg/profile-displayphoto-scale_200_200/B56ZpQMK_SIYAY-/0/1762281959830?e=2147483647&v=beta&t=4NX10IRts2FCdnxIpB2G2xEvCpgraGe0mEzy_ztIzDw
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQEVSFWyNX9OHA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1651779349064?e=2147483647&v=beta&t=Bml-ICq7izKjHm2PzQGnpt3rCRRukhTudYC67HetyJw
+  owner: person:kelsey-conophy
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726700779965001SJZI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kelseyconophy
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

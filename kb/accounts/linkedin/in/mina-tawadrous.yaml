@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mina-tawadrous
+  platform: linkedin
+  handle: in/mina-tawadrous
+  url: https://www.linkedin.com/in/mina-tawadrous
+  display_name: Mina Tawadrous
+  bio: I’m a product leader who thrives at the intersection of deep tech and people. Over…
+  location: Toronto
+  followers: 2876
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQF0V1862KI7XQ/profile-displayphoto-scale_200_200/B4EZ2ywiz0IgAY-/0/1776820566070?e=2147483647&v=beta&t=8FUgkE4Pahp-bH3DVAB0xHMuF8eS09Bqd5XW516hKKU
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHRaEPmcr1hhw/profile-displaybackgroundimage-shrink_200_800/B56ZpflebfJ4AU-/0/1762540251553?e=2147483647&v=beta&t=5hDsOx1UR0_yx3340zmdNa1bD9n1GXkd0xxaFj-qgFg
+  owner: person:mina-tawadrous
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699482521920001jIKT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mina-tawadrous
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

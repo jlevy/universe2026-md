@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/dupuis
+  platform: x
+  handle: dupuis
+  url: https://x.com/dupuis
+  display_name: dupuis vincent
+  followers: 6
+  following: 0
+  posts_count: 0
+  verified: false
+  avatar_url: https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+  created_at: '2012-05-01T12:42:11Z'
+  owner: person:christian-dupuis
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695661503086001or0r
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/dupuis
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

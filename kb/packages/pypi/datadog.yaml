@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/datadog
+  ecosystem: pypi
+  name: datadog
+  url: https://pypi.org/project/datadog/
+  description: The Datadog Python library
+  latest_version: 0.55.0
+  license: BSD-3-Clause
+  repository_url: https://github.com/DataDog/datadogpy
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: DataDog/datadogpy
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

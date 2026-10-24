@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/cloudflare
+  platform: linkedin
+  handle: company/cloudflare
+  url: https://www.linkedin.com/company/cloudflare
+  display_name: Cloudflare
+  bio: 'Cloudflare, Inc. (NYSE: NET) is the leading connectivity cloud company. It empowers organizations
+    to make their employees, applications and networks faster and more secure everywhere, while reducing
+    complexity and cost. Cloudflare’s connectivity cloud delivers the most full-featured, unified platform
+    of cloud-native products and developer tools, so any organization can gain the control they need to
+    work, develop, and accelerate their business. Powered by one of the world’s largest and most interconnected
+    networks, Cloudflare blocks billions of threats online for its customers every day. It is trusted
+    by millions of organizations – from the largest brands to entrepreneurs and small businesses to nonprofits,
+    humanitarian groups, and governments across the globe.'
+  website: https://www.cloudflare.com/
+  followers: 1196824
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQHvs-Py6F5AaA/company-logo_200_200/B4DaE8EAzGGYAI-/0/1792009047462/cloudflare_logo?e=2147483647&v=beta&t=DACc14yejSqQ_YBHzsmVht5cWFbsn2McUN6wiBoRtcc
+  owner: org:cloudflare
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/alexanderlichter
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/hutchingsjustin
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/cloudflare
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,49 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:yanancai
+  login: yanancai
+  kind: user
+  url: https://github.com/yanancai
+  name: Yanan Cai
+  bio: PM@Microsoft AI, coding models
+  location: Seattle, WA
+  followers: 32
+  public_repositories: 1
+  created_at: '2016-11-18T11:18:07Z'
+  contributions_last_year:
+    total: 727
+    commits: 6
+    pull_requests: 2
+    issues: 2
+    reviews: 0
+  starred_repositories: 16
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:microsoft/mai-code
+  entity: person:yanan-cai
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: yanancai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

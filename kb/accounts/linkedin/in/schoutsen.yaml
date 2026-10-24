@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/schoutsen
+  platform: linkedin
+  handle: in/schoutsen
+  url: https://www.linkedin.com/in/schoutsen
+  display_name: Paulus Schoutsen
+  bio: A leader who is excellent in product development and community building. Founder of Home…
+  location: Brooklyn
+  followers: 6067
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQHq0AKiGKehmQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516315170700?e=2147483647&v=beta&t=UjdSQFQZrwRSYATTEvlUeOFI7O6CUagbGW8s8T-YxqY
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEJQb5YLh0hVA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1695214232494?e=2147483647&v=beta&t=RfYzFXxoaCtCH4x4cG-5b1Hu_nmUpuipmWVo-WoqCWo
+  owner: person:paulus-schoutsen
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725987351342001wbIY
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/schoutsen
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

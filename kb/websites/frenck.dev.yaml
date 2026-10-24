@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:frenck.dev
+  url: https://frenck.dev
+  kind: personal
+  title: 'Frenck (Franck Nijhof): Leading the future of connected smart homes, open source, and practical
+    AI'
+  description: Personal writing from Franck Nijhof, Home Assistant Lead, GitHub Star, and open sourcerer,
+    about smart homes, open source, GitHub, practical AI, and building things that survive real life.
+  owner: person:franck-nijhof
+  link_basis:
+  - github_profile
+  - mastodon_verified
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://frenck.dev/rss/
+  linked_accounts:
+  - acct:bluesky/frenck.social
+  - acct:linkedin/in/frenck
+  - acct:mastodon/frenck@fosstodon.org
+  - acct:x/frenck
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: frenck
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://frenck.dev
+    record_id: https://frenck.dev
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

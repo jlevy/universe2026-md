@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/joshfeng0508
+  platform: linkedin
+  handle: in/joshfeng0508
+  url: https://www.linkedin.com/in/joshfeng0508
+  display_name: Josh Feng
+  location: Melbourne
+  followers: 666
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D03AQF1E38YUbBFXw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516970830679?e=2147483647&v=beta&t=GKPiYbH8X8Hfif8LWhzPZsXNf9-xpbxv2WpW9RayAtk
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:josh-feng
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248170001wlts
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/joshfeng0508
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

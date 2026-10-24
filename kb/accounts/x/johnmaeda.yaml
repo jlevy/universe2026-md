@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/johnmaeda
+  platform: x
+  handle: johnmaeda
+  url: https://x.com/johnmaeda
+  display_name: John Maeda
+  bio: VP Eng, Microsoft CoreAI / How To Speak Machine (2025) https://t.co/tlzThtcVKS or  (2019) https://t.co/eb6gj2wf1b
+  location: Redmond, WA
+  website: https://maedastudio.com/
+  followers: 357137
+  following: 1725
+  posts_count: 24922
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/839937736018501632/0aXmic50_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/15414807/1546043987
+  created_at: '2008-07-13T13:51:22Z'
+  owner: person:john-maeda
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1781817220425001qu6F
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: johnmaeda
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/johnmaeda
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

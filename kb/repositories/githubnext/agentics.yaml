@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:githubnext/agentics
+  full_name: githubnext/agentics
+  url: https://github.com/githubnext/agentics
+  description: A sample pack of GitHub Agentic Workflows!
+  homepage: https://github.com/github/gh-aw
+  stars: 997
+  forks: 149
+  watchers: 20
+  open_issues: 19
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Makefile
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2025-07-24T22:36:32Z'
+  pushed_at: '2026-10-24T17:43:12Z'
+  owner_login: githubnext
+  owner: gh:githubnext
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: githubnext
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: githubnext/agentics
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,48 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:vfm2
+  login: vfm2
+  kind: user
+  url: https://github.com/vfm2
+  name: Vanessa Minik
+  company: GitHub
+  location: Denver, CO
+  followers: 7
+  public_repositories: 2
+  created_at: '2021-02-04T02:39:09Z'
+  contributions_last_year:
+    total: 79
+    commits: 39
+    pull_requests: 20
+    issues: 13
+    reviews: 5
+  starred_repositories: 1
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:ps-copilot-sandbox/copilot-administration-security
+  - repo:ps-copilot-sandbox/copilot-intermediate-gallery-repo
+  - repo:githubschool/copilot-non-developers-training
+  - repo:githubschool/github-copilot-201-workshop
+  - repo:copilot-co/copilot-intermediate-gallery-repo
+  entity: person:vanessa-minik
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: vfm2
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

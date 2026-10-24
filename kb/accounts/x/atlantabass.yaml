@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/atlantabass
+  platform: x
+  handle: atlantabass
+  url: https://x.com/atlantabass
+  display_name: Ken Muse
+  bio: 'DevOps Architect with #GitHub. A 4x #AzureMVP & ALM | #DevOps Ranger. #Bass player, #musician,
+    composer, actor, artist, world traveler. He/him.'
+  location: Atlanta, GA
+  website: http://www.kenmuse.com/
+  followers: 1588
+  following: 755
+  posts_count: 1550
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1520869276512657408/bByY_bNI_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/262932890/1399091094
+  created_at: '2011-03-09T01:43:32Z'
+  owner: person:ken-muse
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686431611703001EqqI
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686431611703001EqqI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686431611703001EqqI
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kenmuse
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/atlantabass
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

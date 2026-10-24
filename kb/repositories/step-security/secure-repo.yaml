@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:step-security/secure-repo
+  full_name: step-security/secure-repo
+  url: https://github.com/step-security/secure-repo
+  description: Orchestrate GitHub Actions Security
+  homepage: https://app.stepsecurity.io
+  stars: 335
+  forks: 54
+  watchers: 5
+  open_issues: 71
+  stats_observed_at: '2026-10-24T19:12:25Z'
+  primary_language: Go
+  topics:
+  - security
+  - github-actions
+  - workflow
+  - actions
+  - github
+  - golang
+  - supply-chain-security
+  - security-tools
+  license: AGPL-3.0
+  archived: false
+  fork: false
+  created_at: '2021-10-12T01:31:29Z'
+  pushed_at: '2026-09-10T15:14:52Z'
+  owner_login: step-security
+  owner: gh:step-security
+  pinned_by:
+  - gh:step-security
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: step-security
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: step-security/secure-repo
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:momentic-ai
+  login: momentic-ai
+  kind: organization
+  url: https://github.com/momentic-ai
+  name: Momentic
+  bio: The modern standard for software testing
+  website: https://momentic.ai
+  public_repositories: 12
+  created_at: '2023-07-10T22:53:34Z'
+  pinned:
+  - repo:momentic-ai/qa
+  - repo:momentic-ai/wizard
+  - repo:momentic-ai/cli
+  - repo:momentic-ai/mobile-cli
+  - repo:momentic-ai/skills
+  - repo:momentic-ai/examples
+  linked_accounts:
+  - acct:x/momenticai
+  entity: org:momentic
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: momentic-ai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

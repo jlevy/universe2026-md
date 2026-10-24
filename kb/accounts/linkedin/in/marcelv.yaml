@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/marcelv
+  platform: linkedin
+  handle: in/marcelv
+  url: https://www.linkedin.com/in/marcelv
+  display_name: Marcel de Vries
+  bio: ABOUT I’m Marcel de Vries, co-founder, Global MD and CTO of Xebia Microsoft Services…
+  location: Apeldoorn
+  followers: 4057
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQG0Aa1Ojg3HfA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1570545559778?e=2147483647&v=beta&t=_8UwtMU4y5vsyT5vgS1VuTZsom1V_Uou1rHNoL55Ib4
+  owner: person:marcel-de-vries
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694194941084001w3OE
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/marcelv
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

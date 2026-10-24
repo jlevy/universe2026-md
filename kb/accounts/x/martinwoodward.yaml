@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/martinwoodward
+  platform: x
+  handle: martinwoodward
+  url: https://x.com/martinwoodward
+  display_name: Martin Woodward
+  bio: VP of DevRel for @GitHub. Previously Executive Director @dotnetfdn and original creator of the
+    @Microsoft org on @GitHub (he/him)
+  location: Northern Ireland
+  website: https://martin.social/
+  followers: 20168
+  following: 1244
+  posts_count: 16921
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1572537842911379460/Qo5Jfoa6_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14252897/1661990387
+  created_at: '2008-03-29T19:43:42Z'
+  owner: person:martin-woodward
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465756038001t5oT
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: martinwoodward
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/martinwoodward
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

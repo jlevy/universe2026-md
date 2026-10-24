@@ -1,0 +1,344 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:april-gittens
+  person: person:april-gittens
+  brief_bio:
+    text: April Gittens is Principal Cloud Advocate for AI at Microsoft, helping AI engineers build and
+      deploy with tools like Visual Studio Code, and has written two books on Python programming. Gittens
+      spoke at GitHub Universe 2025 about building AI agents with VS Code and about developer roles in
+      an AI-driven world.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: fb186d8153e40ba7f0c9fa8d7b56bac9a8e54513a02a92c5cdb616d2a77bac30
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/bld1446l
+    - ref: session:2025/bld1542s
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1446l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1542s
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1542s
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1542s
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1542s
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1542s
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1446l
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1542s
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1542s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1542s
+  - label: Microsoft Azure
+    target: software:azure
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure
+      ref: session:2025/bld1542s
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/bld1542s
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:april-gittens
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Visual Studio Code
+      ref: person:april-gittens
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746235522526001UmDt
+      ref: session:2025/bld1446l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303162496001lnky
+      ref: session:2025/bld1542s
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746235522526001UmDt
+      ref: session:2025/bld1446l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303162496001lnky
+      ref: session:2025/bld1542s
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746235522526001UmDt
+      ref: session:2025/bld1446l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303162496001lnky
+      ref: session:2025/bld1542s
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746235522526001UmDt
+      ref: session:2025/bld1446l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303162496001lnky
+      ref: session:2025/bld1542s
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303162496001lnky
+      ref: session:2025/bld1542s
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303162496001lnky
+      ref: session:2025/bld1542s
+  - label: GitHub Codespaces
+    target: term:github-product-2025/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746235522526001UmDt
+      ref: session:2025/bld1446l
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303162496001lnky
+      ref: session:2025/bld1542s
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303162496001lnky
+      ref: session:2025/bld1542s
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746235522526001UmDt
+      ref: session:2025/bld1446l
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753303162496001lnky
+      ref: session:2025/bld1542s
+  education:
+  - school: Savannah College of Art and Design
+    evidence:
+      url: https://www.linkedin.com/in/aprilgittens
+      observed_at: '2026-10-24T08:43:17Z'
+  publications:
+  - title: 'Bite-Size Python: An Introduction to Python Programming'
+    venue: Wiley
+    evidence:
+      url: https://www.linkedin.com/in/aprilgittens
+      observed_at: '2026-10-24T08:43:17Z'
+  - title: Visual Studio Code for Python Programmers
+    venue: Wiley
+    evidence:
+      url: https://www.linkedin.com/in/aprilgittens
+      observed_at: '2026-10-24T08:43:17Z'
+  recent_writing:
+  - title: The moment I stopped thinking of GitHub Copilot CLI as a code assistant, my content creation
+      workflow never looked the same.
+    url: https://www.linkedin.com/pulse/moment-i-stopped-thinking-github-copilot-cli-code-my-content-gittens-0topc
+    published: '2026-04-20T00:00:00.000Z'
+    channel: linkedin
+    summary: It was the Saturday before a feature launch. I had spent the prior day pulling together a
+      demo video for a…
+  - title: The Quiet Crisis of AI-Era Creatives
+    url: https://www.linkedin.com/pulse/quiet-crisis-ai-era-creatives-april-gittens-ecyce
+    published: '2025-07-14T00:00:00.000Z'
+    channel: linkedin
+    summary: Some people will flat out tell you that they’re not creative. Creativity has always been
+      thought to be a trait…
+  - title: When Work Gets Easier, Do You Work Less—or Just Do More?
+    url: https://www.linkedin.com/pulse/when-work-gets-easier-do-you-lessor-just-more-april-gittens-keb8c
+    published: '2025-06-30T00:00:00.000Z'
+    channel: linkedin
+    summary: I’m in my workflow optimization era. Generative AI has helped me optimize my tasks to the
+      point where 90% of my…
+  - title: June 2, 2025
+    url: https://www.linkedin.com/pulse/june-2-2025-april-speight-psqic
+    published: '2025-06-02T00:00:00.000Z'
+    channel: linkedin
+    summary: The Poll is In…Sorta Last Friday, I ran a poll inquiring which AI topic you all are most
+      curious to learn more about…
+  - title: May 27, 2025
+    url: https://www.linkedin.com/pulse/may-27-2025-april-speight-yj18c
+    published: '2025-05-27T00:00:00.000Z'
+    channel: linkedin
+    summary: Last week in AI…am I right? 🥹 The latest news in AI innovation was plentiful last week. While
+      I was primarily tuned…
+  - title: May 12, 2025
+    url: https://www.linkedin.com/pulse/may-12-2025-april-speight-rpctc
+    published: '2025-05-12T00:00:00.000Z'
+    channel: linkedin
+    summary: Hey Friends! Microsoft Build is right around the corner (literally, next week)! I got the
+      opportunity to go to Build…
+  - title: May 5, 2025
+    url: https://www.linkedin.com/pulse/may-5-2025-april-speight-femjc
+    published: '2025-05-05T00:00:00.000Z'
+    channel: linkedin
+    summary: Let’s make a little commotion for the fact that this newsletter is now going 3-weeks strong!
+      🎉 I wanted to get as…
+  - title: 'Give AI a Try: Q&A Coach'
+    url: https://www.linkedin.com/pulse/give-ai-try-qa-coach-april-speight-xrtoc
+    published: '2025-05-01T00:00:00.000Z'
+    channel: linkedin
+    summary: If you’ve ever wished you could practice the Q&A portion of your presentation before the
+      actual big day, you’re going…
+  - title: April 28, 2025
+    url: https://www.linkedin.com/pulse/april-28-2025-april-speight-5dfsf
+    published: '2025-04-28T00:00:00.000Z'
+    channel: linkedin
+    summary: I spent last week with an impromptu trip to Bellevue to film some content with a few familiar
+      developer relations…
+  - title: 'Give AI a Try: ChatGPT Projects'
+    url: https://www.linkedin.com/pulse/give-ai-try-chatgpt-projects-april-speight-sduqc
+    published: '2025-04-23T00:00:00.000Z'
+    channel: linkedin
+    summary: Ever wish that ChatGPT retained the context of your uploaded files or conversations? Well,
+      it can with the Projects…
+  talks:
+  - session:2025/bld1446l
+  - session:2025/bld1542s
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746234835774001D9A0
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

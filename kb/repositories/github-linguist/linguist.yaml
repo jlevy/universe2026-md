@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github-linguist/linguist
+  full_name: github-linguist/linguist
+  url: https://github.com/github-linguist/linguist
+  description: Language Savant. If your repository's language is being reported incorrectly, send us a
+    pull request!
+  stars: 13747
+  forks: 5509
+  watchers: 604
+  open_issues: 173
+  stats_observed_at: '2026-10-24T19:10:13Z'
+  primary_language: Ruby
+  topics:
+  - syntax-highlighting
+  - language-grammars
+  - language-statistics
+  - linguistic
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2011-05-09T22:53:13Z'
+  pushed_at: '2026-10-24T11:57:51Z'
+  owner_login: github-linguist
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: TheAlexLichter
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github-linguist/linguist
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

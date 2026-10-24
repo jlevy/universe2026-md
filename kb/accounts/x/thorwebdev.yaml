@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/thorwebdev
+  platform: x
+  handle: thorwebdev
+  url: https://x.com/thorwebdev
+  display_name: Thor 雷神 ⚡️
+  bio: DX at @GoogleDeepMind | @GitHub ⭐️ | @HackerHouseTW | Formerly @elevenlabsio, @Supabase, @Stripe,
+    @Google, @SAP • my views
+  location: NYC, New York, US
+  website: https://thorweb.dev/
+  followers: 12967
+  following: 5867
+  posts_count: 15876
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2109827618597994496/tJWn6NBC_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/2908098340/1792009553
+  created_at: '2014-12-06T17:51:49Z'
+  owner: person:thor-schaeff
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755624693491001yxGU
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/thorwebdev
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

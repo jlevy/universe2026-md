@@ -1,0 +1,291 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:hrushikesh-pokala
+  person: person:hrushikesh-pokala
+  brief_bio:
+    text: Hrushikesh Pokala is a senior software engineer and lead at Equifax with 12 years in software
+      development and expertise in deep learning and neural networks. Pokala speaks at GitHub Universe
+      2026 about an MCP platform that closes its own loop.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: c6752fc7681c1781430744a82cd3d50f4faf47c8a01a85980ad37e3b1e38c7e8
+    stale: false
+  headline: Sr Software Engineer - Lead at Equifax
+  current_roles:
+  - Sr Software Engineer - Lead at Equifax
+  expertise:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Tech debt
+    target: term:topic/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:ldr1594h
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1594h
+  interests:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Tech debt
+    target: term:topic/tech-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777669819272001fFcc
+      ref: session:ldr1594h
+  education:
+  - school: San Jose State University
+    evidence:
+      url: https://www.linkedin.com/in/hrushiph
+      observed_at: '2026-10-24T08:11:41Z'
+  activities:
+  - kind: project
+    title: Wildfire Detection and Progession
+    detail: Detection and Profession of wildfire using the deep learning techniques. Targeting the Californian
+      Wildfires for the spread prediction with time using the satellite images. · Jan 2022
+    evidence:
+      url: https://www.linkedin.com/in/hrushiph
+      observed_at: '2026-10-24T08:11:41Z'
+  - kind: project
+    title: Sentimental Analysis on stock market prediction
+    detail: GCP, Apache Beam, Pipeline, Python, PUBSUB, GCP functions, storage, Natural language API,
+      Data Proc, Big Query, Data studio, Machine Learning- Stock market data has been analyzed using python
+      libraries.- Cleaning and data preparation for the cloud architecture.- Processing and sentimental
+      analysis on the stock market data using machine learning algorithms. · Aug 2021
+    evidence:
+      url: https://www.linkedin.com/in/hrushiph
+      observed_at: '2026-10-24T08:11:41Z'
+  - kind: project
+    title: Trade Analysis – Pre & Post COVID 19
+    detail: Kaggle, Tableau, Tableau Prep, GISARC- Various analytics of the pandemic effect on the trade
+      of India has been developed.- Data refining by python and analytics dashboard development using
+      the tableau. · Aug 2021
+    evidence:
+      url: https://www.linkedin.com/in/hrushiph
+      observed_at: '2026-10-24T08:11:41Z'
+  - kind: project
+    title: IMDB Movie Data Analytics
+    detail: SQL, NOSQL, HTML, CSS, jQuery, Flask, Python, AWS, S3, Redshift, Beanstalk, GIT- Analyzed
+      the historical data of the IMDB and created an architecture for the database for a maintaining high
+      volume of data.- Using python and its libraries, data analytics on the movies and its correlations
+      have been developed.- Using the amazon cloud, S3, Redshift, Multiregional, Beanstalk configurations,
+      a cloud architecture has been developed. · Jan 2021
+    evidence:
+      url: https://www.linkedin.com/in/hrushiph
+      observed_at: '2026-10-24T08:11:41Z'
+  - kind: project
+    title: Amazon Database Architecture - DB Systems
+    detail: SQL, NOSQL, HTML, CSS, jQuery, Flask, Python, AWS, S3, Redshift, Beanstalk, GIT- Developed
+      a systematic architecture for Amazon Data Listing. POC for the learnings of DB systems. · Jan 2021
+    evidence:
+      url: https://www.linkedin.com/in/hrushiph
+      observed_at: '2026-10-24T08:11:41Z'
+  talks:
+  - session:ldr1594h
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1775674233306001Tk03
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: hrushiph
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

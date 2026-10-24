@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jonjanego
+  platform: linkedin
+  handle: in/jonjanego
+  url: https://www.linkedin.com/in/jonjanego
+  display_name: Jon Janego
+  location: Chicago
+  followers: 1553
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQED1EN9lSbIGA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1516252161788?e=2147483647&v=beta&t=RaQlQvFM4TqXOTQeldy5GWdHJaVqYpcOanZ2BNOoMu4
+  owner: person:jon-janego
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715288718733001EQzg
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jonjanego
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

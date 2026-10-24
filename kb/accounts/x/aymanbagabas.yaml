@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/aymanbagabas
+  platform: x
+  handle: aymanbagabas
+  url: https://x.com/aymanbagabas
+  display_name: Ayman Bagabas
+  bio: |-
+    Engineer @Microsoft @GitHub building @GitHubCopilot
+    Previously @charmcli @resal_me
+  location: Brooklyn, NY
+  website: https://aymanbagabas.com/
+  followers: 356
+  following: 212
+  posts_count: 128
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2105797409091522560/6WU3JiZW_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/243839699/1754918340
+  created_at: '2011-01-27T22:52:45Z'
+  owner: person:ayman-bagabas
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1786655592532001E5CV
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: aymanbagabas
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/aymanbagabas
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

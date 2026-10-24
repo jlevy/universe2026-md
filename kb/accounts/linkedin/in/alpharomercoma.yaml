@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/alpharomercoma
+  platform: linkedin
+  handle: in/alpharomercoma
+  url: https://www.linkedin.com/in/alpharomercoma
+  display_name: Alpha Romer Coma
+  bio: My goal is to advance accelerated computing for machine learning, from Datacenter GPUs…
+  location: San Francisco Bay Area
+  followers: 4715
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQExAQu3tngf0w/profile-displayphoto-scale_200_200/B56aAhWdrVHoAg-/0/1787265933435?e=2147483647&v=beta&t=2yas11eJO-kho3cCUsNWvWX_J5sCxDBL2qYvrF1CeFA
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQG52il-4BmT_Q/profile-displaybackgroundimage-shrink_200_800/B56Z1CuPJIJ8AU-/0/1774940913742?e=2147483647&v=beta&t=JpnMj-BmCqYPFs4yL2DeXhTERtAZFI7rdYDsclu0VM0
+  owner: person:alpha-romer-coma
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744218970649001rp28
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alpharomercoma
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

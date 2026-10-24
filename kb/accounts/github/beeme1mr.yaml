@@ -1,0 +1,64 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:beeme1mr
+  login: beeme1mr
+  kind: user
+  url: https://github.com/beeme1mr
+  name: Michael Beemer
+  company: '@dynatrace'
+  followers: 58
+  public_repositories: 19
+  created_at: '2011-03-22T03:08:55Z'
+  contributions_last_year:
+    total: 3847
+    commits: 268
+    pull_requests: 59
+    issues: 4
+    reviews: 411
+  starred_repositories: 321
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  - 2011
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 2
+  contributed_to:
+  - repo:open-feature/spec
+  - repo:open-feature/community
+  - repo:open-feature/playground
+  - repo:open-feature/java-sdk
+  - repo:open-feature/go-sdk
+  organization_logins:
+  - open-feature
+  pinned:
+  - repo:open-feature/openfeature.dev
+  - repo:open-feature/js-sdk
+  - repo:open-feature/flagd
+  - repo:open-feature/open-feature-operator
+  entity: person:michael-beemer
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: beeme1mr
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

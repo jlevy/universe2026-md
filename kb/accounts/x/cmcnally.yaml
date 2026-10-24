@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/cmcnally
+  platform: x
+  handle: cmcnally
+  url: https://x.com/cmcnally
+  display_name: Catharine McNally
+  bio: Accessibility @GitHub. deaf with bilateral cochlear implants. Love golf, agility training with
+    my rescue dog, and cooking.
+  location: Washington DC Metro Area
+  followers: 1171
+  following: 1095
+  posts_count: 3614
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1587803709324644352/Y062SLeA_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/20530059/1667396879
+  created_at: '2009-02-10T17:53:55Z'
+  owner: person:catharine-mcnally
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698961577054001hecr
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/cmcnally
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

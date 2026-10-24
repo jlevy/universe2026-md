@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:processing/processing-community-day
+  full_name: processing/processing-community-day
+  url: https://github.com/processing/processing-community-day
+  description: A global map of Processing Community Day events. Find your local node or start one!
+  homepage: https://day.processing.org
+  stars: 6
+  forks: 7
+  watchers: 0
+  open_issues: 3
+  stats_observed_at: '2026-10-24T19:12:17Z'
+  primary_language: Vue
+  topics:
+  - community
+  - events
+  - leaflet
+  - map
+  - pcd
+  - processing
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-03-03T20:21:21Z'
+  pushed_at: '2026-10-24T09:40:01Z'
+  owner_login: processing
+  owner: gh:processing
+  pinned_by:
+  - gh:processing
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: processing
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: processing/processing-community-day
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

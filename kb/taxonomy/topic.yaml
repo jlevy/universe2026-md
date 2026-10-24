@@ -1,0 +1,133 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: topic
+  event: event:github-universe-2026
+  label: Topic
+  multi_valued: true
+  terms:
+  - id: term:topic/accessibility
+    label: Accessibility
+    source_id: 1681323600229002s1be
+    session_count: 6
+  - id: term:topic/ai-agents
+    label: 'AI: Agents'
+    source_id: 1772633903116001lzil
+    session_count: 72
+  - id: term:topic/ai-mcp-and-other-integrations
+    label: 'AI: MCP and other integrations'
+    source_id: 1772633903116002lHaV
+    session_count: 37
+  - id: term:topic/ai-models
+    label: 'AI: Models'
+    source_id: 1772633903116003l2Ze
+    session_count: 32
+  - id: term:topic/agile-practices
+    label: Agile practices
+    source_id: 1681323600229003sU8s
+    session_count: 9
+  - id: term:topic/automated-infrastructure-deployment
+    label: Automated Infrastructure Deployment
+    source_id: 1681323600229005sZjO
+    session_count: 7
+  - id: term:topic/cloud-native-development
+    label: Cloud-native development
+    source_id: 1681323600229006sjHK
+    session_count: 5
+  - id: term:topic/code-quality-review-and-completion
+    label: Code quality, review, and completion
+    source_id: 1741255255392001hmwl
+    session_count: 22
+  - id: term:topic/collaboration
+    label: Collaboration
+    source_id: 1683210494021001ei0y
+    session_count: 21
+  - id: term:topic/community-and-social-impact
+    label: Community and social impact
+    source_id: 1681323600229027s1NF
+    session_count: 10
+  - id: term:topic/continuous-integration-continuous-deployment-ci-cd
+    label: Continuous Integration + Continuous Deployment (CI/CD)
+    source_id: 1681323600229007syow
+    session_count: 28
+  - id: term:topic/containerized-applications
+    label: Containerized applications
+    source_id: 1681323600229008s8A8
+    session_count: 2
+  - id: term:topic/custom-integrations-and-apis
+    label: Custom integrations and APIs
+    source_id: 1741255255392002h13u
+    session_count: 8
+  - id: term:topic/data-analytics-management-privacy
+    label: Data (analytics, management, privacy)
+    source_id: 1681323600229009si7A
+    session_count: 7
+  - id: term:topic/developer-experience-dx
+    label: Developer experience (DX)
+    source_id: 1774356503867001Cuid
+    session_count: 44
+  - id: term:topic/devops-and-devsecops
+    label: DevOps and DevSecOps
+    source_id: 1681323600229012sHno
+    session_count: 23
+  - id: term:topic/education
+    label: Education
+    source_id: 1741879080104001zij0
+    session_count: 8
+  - id: term:topic/git-and-code-management-techniques
+    label: Git and code management techniques
+    source_id: 1681323600229014saln
+    session_count: 4
+  - id: term:topic/governance-and-compliance
+    label: Governance and compliance
+    source_id: 1741879080104002zCXb
+    session_count: 28
+  - id: term:topic/infrastructure-as-code
+    label: Infrastructure as code
+    source_id: 1681323600229017sVgz
+    session_count: 7
+  - id: term:topic/kubernetes
+    label: Kubernetes
+    source_id: 1681323600229016sWIE
+    session_count: 2
+  - id: term:topic/migration-strategies
+    label: Migration strategies
+    source_id: 1741879080104003zqlA
+    session_count: 6
+  - id: term:topic/monitoring-and-observability
+    label: Monitoring and observability
+    source_id: 1681323600229019sUxg
+    session_count: 18
+  - id: term:topic/open-source
+    label: Open source
+    source_id: 1681323600229020sb9v
+    session_count: 26
+  - id: term:topic/platform-engineering
+    label: Platform engineering
+    source_id: 1741126091810001NfTx
+    session_count: 27
+  - id: term:topic/productivity
+    label: Productivity
+    source_id: 1683210494021003ekVI
+    session_count: 36
+  - id: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    source_id: 1681323600229024sxUO
+    session_count: 29
+  - id: term:topic/tech-debt
+    label: Tech debt
+    source_id: 1711383809968002b9Di
+    session_count: 6
+  - id: term:topic/testing-and-related-practices
+    label: Testing and related practices
+    source_id: 1681323600229029saQm
+    session_count: 7
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681323600255001sIqt
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/attributes.json

@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/chrisleon
+  platform: x
+  handle: chrisleon
+  url: https://x.com/chrisleon
+  display_name: Chris Leon
+  bio: Funky fresh.
+  location: Kansas City
+  website: https://www.youtube.com/playlist?list=PL88SfAx5eWw9xuXIzWjJ5GNDSQKcVcDmJ
+  followers: 60
+  following: 245
+  posts_count: 520
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/514418005040586752/s-EkanLn_normal.jpeg
+  banner_url: https://pbs.twimg.com/profile_banners/18676898/1447882160
+  created_at: '2009-01-06T14:36:45Z'
+  owner: person:chris-leon
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719956922383001IM7F
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/chrisleon
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

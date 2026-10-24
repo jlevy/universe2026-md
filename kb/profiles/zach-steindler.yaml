@@ -1,0 +1,322 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:zach-steindler
+  person: person:zach-steindler
+  brief_bio:
+    text: Zach Steindler is a Principal Engineer at GitHub working on securing software development and
+      the chair of the OpenSSF Technical Advisory Council. Steindler spoke at GitHub Universe 2025 and
+      speaks at GitHub Universe 2026 on the GitHub Actions firewall.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: db68a25f00907cedc846d7e3e346239656606e1034173e5dc89a051bc7a7c05b
+    stale: false
+  headline: Principal Engineer at GitHub
+  current_roles:
+  - Principal Engineer at GitHub
+  expertise:
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1073d
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1073d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1073d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1073d
+  - label: Kubernetes
+    target: term:topic-2025/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1073d
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1073d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1173d
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1173d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/sec1073d
+  - label: PyPI
+    target: software:pypi
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: PyPI
+      ref: person:zach-steindler
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:steiza/tinyfeedback
+    - ref: repo:steiza/simplepypi
+    - ref: repo:steiza/docstore
+  - label: PostScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:steiza/postscript_fractals
+  - label: OpenSCAD
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:steiza/open_source_furniture
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:steiza/bbtxl
+  - label: Go
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:steiza/gh-dependabot
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744311125177001b4jS
+      ref: session:2025/sec1073d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776954516891001V7aB
+      ref: session:tru1173d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744311125177001b4jS
+      ref: session:2025/sec1073d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776954516891001V7aB
+      ref: session:tru1173d
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744311125177001b4jS
+      ref: session:2025/sec1073d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776954516891001V7aB
+      ref: session:tru1173d
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744311125177001b4jS
+      ref: session:2025/sec1073d
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744311125177001b4jS
+      ref: session:2025/sec1073d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744311125177001b4jS
+      ref: session:2025/sec1073d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744311125177001b4jS
+      ref: session:2025/sec1073d
+  - label: Kubernetes
+    target: term:topic-2025/kubernetes
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744311125177001b4jS
+      ref: session:2025/sec1073d
+  - label: cli
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cli/cli
+      ref: repo:cli/cli
+  - label: gh-extension
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/steiza/gh-dependabot
+      ref: repo:steiza/gh-dependabot
+  - label: git
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cli/cli
+      ref: repo:cli/cli
+  - label: github-api-v4
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cli/cli
+      ref: repo:cli/cli
+  open_source:
+  - repository: repo:steiza/tinyfeedback
+    relation: owner
+    stars: 96
+    primary_language: Python
+  - repository: repo:steiza/simplepypi
+    relation: owner
+    stars: 66
+    primary_language: Python
+  - repository: repo:steiza/postscript_fractals
+    relation: owner
+    stars: 34
+    primary_language: PostScript
+  - repository: repo:steiza/open_source_furniture
+    relation: owner
+    stars: 15
+    primary_language: OpenSCAD
+  - repository: repo:steiza/gh-dependabot
+    relation: owner
+    stars: 12
+    primary_language: Go
+  - repository: repo:steiza/docstore
+    relation: owner
+    stars: 9
+    primary_language: Python
+  - repository: repo:steiza/bbtxl
+    relation: owner
+    stars: 5
+    primary_language: HTML
+  - repository: repo:actions/runner
+    relation: contributor
+    stars: 6354
+    primary_language: C#
+  - repository: repo:cli/cli
+    relation: contributor
+    stars: 46729
+    primary_language: Go
+  - repository: repo:ossf/tac
+    relation: contributor
+    stars: 153
+  - repository: repo:sigstore/cosign
+    relation: contributor
+    stars: 6381
+    primary_language: Go
+  - repository: repo:sigstore/community
+    relation: contributor
+    stars: 45
+  education:
+  - school: University of Michigan
+    evidence:
+      url: https://www.linkedin.com/in/steiza
+      observed_at: '2026-10-24T08:15:09Z'
+  activities:
+  - kind: organization
+    title: OpenSSF
+    detail: Technical Advisory Council (TAC) member and current chair; co-lead of Securing Software Repositories
+      Working Group · Jan 2021 · Present
+    evidence:
+      url: https://www.linkedin.com/in/steiza
+      observed_at: '2026-10-24T08:15:09Z'
+  talks:
+  - session:2025/sec1073d
+  - session:tru1173d
+  gaps:
+  - x_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698956387483001A8Kv
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: steiza
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698956387483001A8Kv
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

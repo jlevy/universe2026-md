@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/capital-one
+  platform: linkedin
+  handle: company/capital-one
+  url: https://www.linkedin.com/company/capital-one
+  display_name: Capital One
+  bio: At Capital One, we're making things better for our customers and associates through innovation
+    and collaboration. We were founded on the belief that everyone deserves financial freedom—and are
+    dedicated to a world where all have equal opportunity to prosper. Banking is in our DNA, but we are
+    so much more than a bank. We always think about what’s next—and how we can bring our customers the
+    tools needed to improve their financial lives. Your ideas, experiences and skills will help make banking
+    better. You’ll be part of a supportive culture while earning amazing benefits. That’s life at Capital
+    One. Capital One is an equal opportunity employer (EOE, including disability/vet) committed to non-discrimination
+    in compliance with applicable federal, state, and local laws. View our Social Media Community Guidelines
+    https://www.capitalone.com/digital/social-media/
+  website: https://www.capitalone.com/
+  followers: 1248311
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQF0OgQyRZ9yAA/company-logo_200_200/company-logo_200_200/0/1635782718446/capital_one_logo?e=2147483647&v=beta&t=EdvNN6BepIhdQnc9udE-QlqxASeRgfZxEr0ZYI4s6cQ
+  owner: org:capital-one
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/amaltson
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/rileykohler
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/capital-one
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

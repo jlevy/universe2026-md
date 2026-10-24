@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:oregand.github.io
+  url: https://oregand.github.io/
+  kind: personal
+  title: David O'Regan | Staff Engineering Manager, Copilot @ GitHub | David O'Regan
+  description: David O’Regan — Staff Engineering Manager, Copilot @ GitHub. Based in Seattle, Washington.
+    Notes on AI engineering, leadership, and developer tooling.
+  owner: person:david-o-regan
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://oregand.github.io/feed.xml
+  linked_accounts:
+  - acct:linkedin/in/oregand7
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Oregand
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://oregand.github.io/
+    record_id: https://oregand.github.io/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

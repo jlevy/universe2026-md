@@ -1,0 +1,387 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:rene-van-osnabrugge
+  person: person:rene-van-osnabrugge
+  brief_bio:
+    text: René van Osnabrugge is CTO of Xebia and works on application lifecycle management and DevOps,
+      helping organizations improve how they develop software. Van Osnabrugge spoke at GitHub Universe
+      2023 about engineering culture and about scaling DevSecOps with GitHub Advanced Security.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 53d3bbb03273627a3bd4b25189b2266e2e9da0eac0c4279c27fe224ae6bb88f8
+    stale: false
+  headline: Xebia
+  current_roles:
+  - Xebia
+  expertise:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2771l
+    - ref: session:2023/dev2854d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2771l
+    - ref: session:2023/dev2854d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2771l
+    - ref: session:2023/dev2854d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2771l
+    - ref: session:2023/dev2854d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2771l
+    - ref: session:2023/dev2854d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2771l
+    - ref: session:2023/dev2854d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev2771l
+    - ref: session:2023/dev2854d
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2023/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Infrastructure as Code
+    target: term:topic-2023/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Advanced Security
+      ref: session:2023/dev2854d
+  interests:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Supply Chain Security
+    target: term:github-product-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  credentials:
+  - kind: certification
+    title: AZ-400 Designing and Implementing Microsoft DevOps Solutions
+    issuer: Microsoft
+    date: Dec 2021
+    url: https://www.credly.com/badges/68cca3e4-963e-4a09-9178-d5c19b6c365d?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  - kind: certification
+    title: Scaled Professional Scrum
+    issuer: Scrum.org
+    date: Dec 2016
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  - kind: certification
+    title: 2023 Microsoft Most Valuable Professional (MVP)
+    issuer: Microsoft
+    date: Jul 2023
+    expires: Jul 2024
+    url: https://www.credly.com/badges/8ae1829c-5729-4a02-927f-b252b805799b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  - kind: certification
+    title: 'Microsoft 365 Certified: Security Administrator Associate'
+    issuer: Microsoft
+    date: Sep 2022
+    expires: Sep 2023
+    url: https://www.credly.com/badges/237a4203-ebfb-4a4e-abbe-b784bcd144ce/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Security Engineer Associate'
+    issuer: Microsoft
+    date: Sep 2022
+    expires: Sep 2023
+    url: https://www.credly.com/badges/c0db799f-c71f-479c-8f67-632d8550080f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  - kind: certification
+    title: 'Microsoft Certified: Identity and Access Administrator Associate'
+    issuer: Microsoft
+    date: Sep 2022
+    expires: Sep 2023
+    url: https://www.credly.com/badges/9a3e010a-9fc7-49b0-a08c-1259971231a8/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  - kind: certification
+    title: 70-498 Delivering Continuous Value with Visual Studio 2012 Application Lifecycle Management
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  - kind: certification
+    title: 70-512 Visual Studio Team Foundation Server 2010, Administration
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  - kind: certification
+    title: Professional Scrum Master (PSM I)
+    issuer: Scrum.org
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  - kind: certification
+    title: Visual Studio ALM MVP Award 2012-2022
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  spoken_languages:
+  - English
+  - Dutch
+  activities:
+  - kind: project
+    title: Global DevOps Bootcamp 2017 - Initiator and Main organizer
+    detail: I am one of the initiators and main organizers of the Global DevOps Bootcamp. The Global DevOps
+      Bootcamp takes place once a year on venues all over the world. The more people joining in, the better
+      it gets! The Global DevOps Bootcamp is a free one-day event hosted by local passionate DevOps communities
+      around the globe and centrally organized by Xpirit & Solidify and sponsored by Microsoft. This event
+      is all about DevOps on the Microsoft Stack. It shows the latest DevOps trends and insights in modern
+      technologies. It is an amazing combination between getting your hands dirty and sharing experience
+      and knowledge in VSTS, Azure, DevOps with other community members. · Jun 2017
+    evidence:
+      url: https://www.linkedin.com/in/renevanosnabrugge
+      observed_at: '2026-10-24T08:47:01Z'
+  recent_writing:
+  - title: Secure or Compliant? That is the question!
+    url: https://www.linkedin.com/pulse/secure-compliant-question-rene-van-osnabrugge
+    published: '2018-03-20T00:00:00.000Z'
+    channel: linkedin
+    summary: Originally posted at https://roadtoalm.com/2018/01/31/secure-or-compliant-that-is-the-question
+      Compliance means…
+  talks:
+  - session:2023/dev2771l
+  - session:2023/dev2854d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695744022643001fV2n
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

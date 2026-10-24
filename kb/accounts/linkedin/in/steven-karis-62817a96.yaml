@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/steven-karis-62817a96
+  platform: linkedin
+  handle: in/steven-karis-62817a96
+  url: https://www.linkedin.com/in/steven-karis-62817a96
+  display_name: Steven Karis
+  location: Redwood City
+  followers: 1563
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQHZot3t_lv91Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1599068376805?e=2147483647&v=beta&t=2U3imADNXAyyltIPwM1AAxtpPAGauQPC-Wc1ue__h3Y
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:steven-karis
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785986741141001w6Pw
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/steven-karis-62817a96
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

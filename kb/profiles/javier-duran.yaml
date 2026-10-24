@@ -1,0 +1,111 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:javier-duran
+  person: person:javier-duran
+  brief_bio:
+    text: Javier Durán is Senior Manager AI at itti, helping set how cloud, security and AI-orchestrated
+      delivery scale across its group, with more than 16 years in software strategy and information security.
+      Durán speaks at GitHub Universe 2026 about how itti shipped a banking product with agents.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: 7218050354553a4360bfae18cc204f801c09e8c7b62002b3134022183ee979e8
+    stale: true
+  headline: Senior Manager AI at itti
+  current_roles:
+  - Senior Manager AI at itti
+  - Grupo Nex
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1789b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1789b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1789b
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785266292155001nU90
+      ref: session:ldr1789b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785266292155001nU90
+      ref: session:ldr1789b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785266292155001nU90
+      ref: session:ldr1789b
+  education:
+  - school: Westfield Business School
+    evidence:
+      url: https://www.linkedin.com/in/javiermduran
+      observed_at: '2026-10-24T08:11:33Z'
+  recent_writing:
+  - title: 'No soy un robot: ciberseguridad en la era de la inteligencia artificial'
+    url: https://es.linkedin.com/pulse/soy-un-robot-ciberseguridad-en-la-era-de-inteligencia-dur%C3%A1n-v%C3%A1squez
+    published: '2021-02-13T00:00:00.000Z'
+    channel: linkedin
+    summary: “No soy un robot”, es la ya típica indicación que venimos haciendo en muchos sitios de Internet
+      para demostrar nuestra…
+  - title: Un liderazgo digital para la Cuarta Revolución Industrial
+    url: https://es.linkedin.com/pulse/un-liderazgo-digital-para-la-cuarta-revoluci%C3%B3n-dur%C3%A1n-v%C3%A1squez
+    published: '2021-01-30T00:00:00.000Z'
+    channel: linkedin
+    summary: Los empresarios siempre estamos expuestos a nuevos retos, en especial cuando implementamos
+      tecnologías digitales en…
+  talks:
+  - session:ldr1789b
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785270083959001XanW
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: javiermduran
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

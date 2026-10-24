@@ -1,0 +1,80 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:demos-donuts-gateway-pavilion-level-2
+  name: Demos & Donuts
+  label: Demos & Donuts @ Gateway Pavilion, Level 2
+  venue: venue:gateway-pavilion
+  location_note: Level 2
+  capacity: 150
+  source_ids:
+  - 1785186813056001aOCr
+  - 1756307619332001W9Uv
+  sessions:
+  - session:2025/aut1192d
+  - session:2025/aut1423d
+  - session:2025/aut1537d
+  - session:2025/aut1538d
+  - session:2025/aut1561d
+  - session:2025/aut1763d
+  - session:2025/bld1093d
+  - session:2025/bld1146d
+  - session:2025/bld1150d
+  - session:2025/bld1359d
+  - session:2025/bld1539d
+  - session:2025/bld1540d
+  - session:2025/bld1545d
+  - session:2025/bld1554d
+  - session:2025/bld1563d
+  - session:2025/bld1627d
+  - session:2025/bld1629d
+  - session:2025/bld1722d
+  - session:2025/bld1863d
+  - session:2025/bld1872d
+  - session:2025/sec1126d
+  - session:2025/sec1166d
+  - session:2025/sec1379d
+  - session:2025/sec1384d
+  - session:2025/sec1437d
+  - session:2025/sec1479d
+  - session:2025/sec1555d
+  - session:bld1241d
+  - session:bld1312d
+  - session:bld1454d
+  - session:bld1491d
+  - session:bld1581d
+  - session:bld1825d
+  - session:bld1864d
+  - session:bld2119d
+  - session:bld2191d
+  - session:bld2452d
+  - session:ldr1281d
+  - session:ldr1551d
+  - session:ldr1725d
+  - session:ldr1800d
+  - session:ldr1801d
+  - session:ldr1872d
+  - session:ldr1979d
+  - session:tru1148d
+  - session:tru1452d
+  - session:tru1488d
+  - session:tru1792d
+  - session:tru1798d
+  - session:tru1815d
+  - session:tru2230d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

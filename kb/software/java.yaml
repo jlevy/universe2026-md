@@ -1,0 +1,28 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:java
+  name: Java
+  aliases:
+  - Java
+  kind: language
+  mentioned_in:
+  - person:autumn-nash
+  - person:baruch-sadogursky
+  - person:david-pereira
+  - person:eddie-aftandilian
+  - person:erik-englund
+  - person:jim-richer
+  - person:joe-harrington
+  - person:martin-woodward
+  - person:reynald-adolphe
+  - person:thomas-bissell
+  - session:2025/aut1317b
+  - session:2025/bld1545d
+  - session:ldr1725d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/galaxyhq
+  platform: linkedin
+  handle: company/galaxyhq
+  url: https://www.linkedin.com/company/galaxyhq
+  display_name: Galaxy
+  bio: 'Galaxy is a digital assets and AI infrastructure company, building and investing across the two
+    forces reshaping the economy: finance moving onchain, and the compute that powers AI. Our digital
+    assets platform offers institutional access to trading, advisory, asset management, staking, self-custody,
+    and tokenization technology. Alongside this, we develop and operate data center infrastructure that
+    powers AI and high-performance computing, working to meet the growing demand for scalable energy and
+    compute in the U.S. Galaxy is headquartered in New York City, with offices across North America, Europe,
+    the Middle East and Asia. Additional information about Galaxy''s businesses and products is available
+    on www.galaxy.com Disclaimer: hubs.li/Q022Cvpy0'
+  website: https://galaxy.com/
+  followers: 74225
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQGsqBA6VQ8SEQ/company-logo_200_200/B4EZkq31T8IwAI-/0/1757360904179/galaxyhq_logo?e=2147483647&v=beta&t=CBl7Xpii40SnW2YuUnUsccD_VI1DVH8K4JCBCpdOwSM
+  owner: org:galaxy
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/callumcieciala
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/galaxyhq
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

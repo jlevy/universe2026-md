@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/alejandrocarderera
+  platform: linkedin
+  handle: in/alejandrocarderera
+  url: https://www.linkedin.com/in/alejandrocarderera
+  display_name: Alejandro Carderera de Diego
+  location: United States
+  followers: 1094
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQH5Y7YOuq5Ysg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1700178617449?e=2147483647&v=beta&t=wa_nAFe7EWWPAAozvVDaRPKW1epHRW4BJI0JpplHuRU
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQEIySNAB4Osyg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517562016179?e=2147483647&v=beta&t=N_8r8Tdc2ESUBuksW4hT5YMmMpzMl99IOa4793SRXQU
+  owner: person:alejandro-carderera
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730130715640001vsRb
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alejandrocarderera
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:pytorch
+  name: PyTorch
+  aliases:
+  - PyTorch
+  kind: open_source
+  homepage: https://pytorch.org
+  repositories:
+  - repo:pytorch/pytorch
+  packages:
+  - pkg:pypi/torch
+  mentioned_in:
+  - person:alpha-romer-coma
+  - person:eli-uriegas
+  - session:2023/dev2879s
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

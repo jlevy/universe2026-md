@@ -1,0 +1,270 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:toby-padilla
+  person: person:toby-padilla
+  brief_bio:
+    text: The GitHub Universe 2025 listing describes Toby Padilla as Principal Product Manager at GitHub.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: e398c5c934d9f49ee59befb4bca425144ce2398f069e80beda307094b5bf9afa
+    stale: false
+  headline: Entire
+  location: New Mexico
+  current_roles:
+  - Entire
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1168d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1168d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1168d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/bld1168d
+  - label: GitHub MCP Server
+    target: software:github-mcp-server
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub MCP Server
+      ref: session:2025/bld1168d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/bld1168d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2025/bld1168d
+  programming_languages:
+  - label: Go
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:github/github-mcp-server
+    - ref: repo:modelcontextprotocol/registry
+    - ref: repo:charmbracelet/glow
+    - ref: repo:charmbracelet/wish
+    - ref: repo:toby/det
+    - ref: repo:toby/onair
+  - label: Rust
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:toby/serde-bencode
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:toby/flashback
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:toby/playgrub
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745619400904001YKhB
+      ref: session:2025/bld1168d
+    - url: https://github.com/entireio/cli
+      ref: repo:entireio/cli
+  - label: mcp
+    basis: github_repositories
+    confidence: medium
+    weight: 0.8
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/github-mcp-server
+      ref: repo:github/github-mcp-server
+    - url: https://github.com/modelcontextprotocol/registry
+      ref: repo:modelcontextprotocol/registry
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745619400904001YKhB
+      ref: session:2025/bld1168d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745619400904001YKhB
+      ref: session:2025/bld1168d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745619400904001YKhB
+      ref: session:2025/bld1168d
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745619400904001YKhB
+      ref: session:2025/bld1168d
+  - label: AI agents
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/entireio/cli
+      ref: repo:entireio/cli
+  - label: airport
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/toby/onair
+      ref: repo:toby/onair
+  - label: bencode
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/toby/serde-bencode
+      ref: repo:toby/serde-bencode
+  - label: bittorrent
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/toby/det
+      ref: repo:toby/det
+  - label: bittorrent-client
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/toby/det
+      ref: repo:toby/det
+  - label: bittorrent-dht
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/toby/det
+      ref: repo:toby/det
+  open_source:
+  - repository: repo:github/github-mcp-server
+    relation: pinned
+    stars: 33923
+    primary_language: Go
+  - repository: repo:charmbracelet/glow
+    relation: pinned
+    stars: 27785
+    primary_language: Go
+  - repository: repo:modelcontextprotocol/registry
+    relation: pinned
+    stars: 7405
+    primary_language: Go
+  - repository: repo:charmbracelet/wish
+    relation: pinned
+    stars: 5571
+    primary_language: Go
+  - repository: repo:toby/serde-bencode
+    relation: owner
+    stars: 78
+    primary_language: Rust
+  - repository: repo:toby/det
+    relation: owner
+    stars: 24
+    primary_language: Go
+  - repository: repo:toby/onair
+    relation: owner
+    stars: 20
+    primary_language: Go
+  - repository: repo:toby/playgrub
+    relation: owner
+    stars: 20
+    primary_language: JavaScript
+  - repository: repo:toby/flashback
+    relation: owner
+    stars: 7
+    primary_language: HTML
+  - repository: repo:entireio/cli
+    relation: contributor
+    stars: 5214
+    primary_language: Go
+  talks:
+  - session:2025/bld1168d
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746202783936001gB8q
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: toby
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

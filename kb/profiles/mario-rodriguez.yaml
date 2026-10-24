@@ -1,0 +1,479 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mario-rodriguez
+  person: person:mario-rodriguez
+  brief_bio:
+    text: Mario Rodriguez is Chief Product Officer at GitHub, leading its product organization and AI
+      strategy after leading the GitHub Copilot product line. Rodriguez spoke at GitHub Universe 2023
+      through 2025 and speaks at GitHub Universe 2026 about humans setting direction while agents close
+      the loop.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 194d98c54ea32fb2dfdac2c65fee30b8516ff8d73fc224e600cb23cb23cdcbdf
+    stale: false
+  headline: Chief Product Officer at GitHub
+  location: Raleigh
+  current_roles:
+  - Chief Product Officer at GitHub
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2727m
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2727m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2727m
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2727m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2727m
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2727m
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2727m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:mario-rodriguez
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1908m
+    - ref: session:bld2046a
+  programming_languages:
+  - label: Shell
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:mariorod/dotfiles
+  interests:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687871147576001wSrQ
+      ref: session:2023/dev2727m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724899629781001RO6m
+      ref: session:2024/dev1982m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687871147576001wSrQ
+      ref: session:2023/dev2727m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724899629781001RO6m
+      ref: session:2024/dev1982m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687871147576001wSrQ
+      ref: session:2023/dev2727m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791381794501001B57W
+      ref: session:bld2046a
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687871147576001wSrQ
+      ref: session:2023/dev2727m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724899629781001RO6m
+      ref: session:2024/dev1982m
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791381794501001B57W
+      ref: session:bld2046a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791381794501001B57W
+      ref: session:bld2046a
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791381794501001B57W
+      ref: session:bld2046a
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791381794501001B57W
+      ref: session:bld2046a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791381794501001B57W
+      ref: session:bld2046a
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791381794501001B57W
+      ref: session:bld2046a
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791381794501001B57W
+      ref: session:bld2046a
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790183556514001KFvX
+      ref: session:bld1908m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791381794501001B57W
+      ref: session:bld2046a
+  open_source:
+  - repository: repo:mariorod/dotfiles
+    relation: owner
+    stars: 23
+    primary_language: Shell
+  - repository: repo:mariorod/mariorod
+    relation: owner
+    stars: 12
+  - repository: repo:octodemo/tailspin-toys
+    relation: contributor
+    stars: 0
+    primary_language: Python
+  patents:
+  - title: Data Feature Tracking Through Hierarchical Node Sets
+    number: US 8307010
+    date: April 1, 2010
+    url: https://patents.google.com/patent/US8307010
+    evidence:
+      url: https://www.linkedin.com/in/mariorodriguez3
+      observed_at: '2026-10-24T08:15:27Z'
+  spoken_languages:
+  - Spanish
+  recent_writing:
+  - title: |-
+      Our 11th Universe is officially in the books and the most important ship is the one that's always sailing.
+
+      You, the developer.
+
+      Every launch this week was about freeing your focus for the parts of coding that bring you the most joy. We build the tools, you accelerate the https:/
+    url: https://twitter.com/40486207/status/1983966815534407725
+    published: '2025-10-30T18:38:43Z'
+    channel: x
+  - title: |-
+      We created this page to make it easy to catch up and see everything we announced at Universe- check it out.
+
+      https://t.co/aQ5xoGRLRd
+    url: https://twitter.com/40486207/status/1983531054624608314
+    published: '2025-10-29T13:47:10Z'
+    channel: x
+  - title: At HQ and ready for Universe rehearsals. Let’s build. https://t.co/9EssxlFuT1
+    url: https://twitter.com/40486207/status/1981872701649359021
+    published: '2025-10-24T23:57:28Z'
+    channel: x
+  - title: |-
+      A new model dawns
+      And even our changelog speaks
+      In perfect meter.
+
+      Haiku 4.5 is in the GitHub CLI now! You know what to do.
+
+      https://t.co/BmPoJcEud6
+    url: https://twitter.com/40486207/status/1979283376696693104
+    published: '2025-10-17T20:28:24Z'
+    channel: x
+  - title: "Time to go fast \U0001F3CE️ We just gave GitHub Copilot a nitro boost. Anthropic’s Claude\
+      \ Haiku 4.5 is here, focusing entirely on speed and responsiveness. \n\nLet's build."
+    url: https://twitter.com/40486207/status/1978647694370546052
+    published: '2025-10-16T02:22:26Z'
+    channel: x
+  - title: 🏎️ We are building the Copilot CLI in the open. Updating it several times a day and then wrapping
+      it up in a weekly changelog. Many of these came from y'all ... keep the feedback coming.
+    url: https://twitter.com/40486207/status/1974165166230286446
+    published: '2025-10-03T17:30:28Z'
+    channel: x
+  - title: |-
+      Stop what you’re doing. It’s here. Claude Sonnet 4.5—Anthropic’s most advanced, most capable model yet—is live on GitHub.
+
+      Get ready for next-level performance in multi-step reasoning and understanding complex codebases. Now go build something impossible.
+    url: https://twitter.com/40486207/status/1972713593884803373
+    published: '2025-09-29T17:22:26Z'
+    channel: x
+  - title: Our Coding Agent won’t live in just one app. It goes where you code. Editors, IDEs, Web, Mobile,
+      even your TV if that’s where you need it 😜.
+    url: https://twitter.com/40486207/status/1970978677400952898
+    published: '2025-09-24T22:28:30Z'
+    channel: x
+  - title: |-
+      New model alert: OpenAI's GPT-5-Codex just hit public preview in GitHub Copilot. Optimized for agentic coding, we're rolling it out across all of our plans.
+
+      Just grab VS Code v1.104.1+ and pick it from the model selector. More models = more choice = better code. Happy coding!
+    url: https://twitter.com/40486207/status/1970578080759427402
+    published: '2025-09-23T19:56:40Z'
+    channel: x
+  - title: 🪩We trained a new embedding model to support our code search scenarios. We have been rolling
+      it out to users, and the results are 💪🏻. We’ll publish a blog this week with more details. https://t.co/YdQkd3yqcj
+    url: https://twitter.com/40486207/status/1970473110391660700
+    published: '2025-09-23T12:59:33Z'
+    channel: x
+  talks:
+  - session:2023/dev2727m
+  - session:2024/dev1982m
+  - session:2025/aut1850m
+  - session:bld1908m
+  - session:bld2046a
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mariorod
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

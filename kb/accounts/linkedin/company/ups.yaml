@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/ups
+  platform: linkedin
+  handle: company/ups
+  url: https://www.linkedin.com/company/ups
+  display_name: UPS
+  bio: 'Operating in more than 200 countries and territories, we’re committed to moving our world forward
+    by delivering what matters. Beginning as a small messenger service, UPS was started by two enterprising
+    teenagers and a $100 loan. Now, we’re almost 500,000 UPSers strong, with operations around the globe.
+    As a transportation and logistics leader, we are proud to offer innovative solutions to our customers—both
+    big and small. We also support the communities we serve. Just take a look at The UPS Foundation’s
+    social impact report! Headquartered in Atlanta, we can be found on the web at ups.com and about.ups.com.
+    Job seekers can visit upsjobs.com to learn more. Our active social media channels include Facebook,
+    Instagram, Twitter, YouTube, and TikTok. Facebook: www.facebook.com/ups Instagram: www.instagram.com/ups/
+    Twitter: www.twitter.com/ups TikTok: UPS YouTube: www.youtube.com/ups Website https://about.ups.com/
+    The UPS Foundation’s social impact report: https://about.ups.com/us/en/social-impact/reporting/the-ups-foundations-social-impact-report.html
+    Career Site upsjobs.com'
+  website: https://about.ups.com/
+  followers: 2348021
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D0BAQFX6tdg3bkrBQ/company-logo_200_200/company-logo_200_200/0/1630543904509/ups_logo?e=2147483647&v=beta&t=bLIUa0WEii6RtFsQCkt-qyYyUkrLk_3k2JfezEaCCto
+  owner: org:ups
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jaredhatfield
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/ups
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

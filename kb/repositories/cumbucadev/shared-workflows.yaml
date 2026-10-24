@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:cumbucadev/shared-workflows
+  full_name: cumbucadev/shared-workflows
+  url: https://github.com/cumbucadev/shared-workflows
+  description: Centralized and reusable GitHub Actions workflows designed to simplify and standardize
+    the maintenance of open source projects.
+  stars: 12
+  forks: 1
+  watchers: 1
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:00Z'
+  topics:
+  - cumbucadev
+  - hacktoberfest
+  license: GPL-3.0
+  archived: false
+  fork: false
+  created_at: '2025-08-07T18:45:46Z'
+  pushed_at: '2026-09-25T00:51:49Z'
+  owner_login: cumbucadev
+  owner: gh:cumbucadev
+  pinned_by:
+  - gh:cumbucadev
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cumbucadev
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cumbucadev/shared-workflows
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

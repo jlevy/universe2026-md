@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:figma-hq-760-market-st
+  name: Figma HQ
+  label: Figma HQ @ 760 Market St
+  venue: venue:figma-hq
+  source_ids:
+  - 1791440319756001SXqa
+  sessions:
+  - session:2068
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

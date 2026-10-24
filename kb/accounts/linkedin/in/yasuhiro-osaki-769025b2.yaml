@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/yasuhiro-osaki-769025b2
+  platform: linkedin
+  handle: in/yasuhiro-osaki-769025b2
+  url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+  display_name: Yasuhiro Osaki
+  headline: Software Engineer - Sony 2010年 - 現在
+  bio: '# Public Speeches - 2025-11-26 https://gh.io/25recapm13 - 2025-06-12 https://sony.connpass.com/event/356950/
+    - 2017-11-28 https://enterprisezine.jp/article/detail/10168 - 2017-10-17 https://techplay.jp/event/636048
+    # Software Engineer Over 10 years experience in Development of Embedded Software. - Yocto Linux /
+    RTOS (NuttX) / Android # Integration Expert (CI/CD) Over 10 years experience in CI/CD. - GitHub Actions
+    / Azure DevOps Pipelines / AWS / Jenkins / Docker # Administrator Over 10 years experience in Administrator
+    of services for developers - GitHub Enterprize Cloud - Slack - Azure - AWS - Datadog'
+  location: Tokyo
+  followers: 116
+  connections: 100
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQG6n1uAd6z6Cg/profile-displaybackgroundimage-shrink_200_800/B56ZdIAE.GH8AU-/0/1749259670260?e=2147483647&v=beta&t=IbA2VzPmET5poIVgL_OrICOrNWpXrsY1kYCrvxZAvoc
+  owner: person:yasuhiro-osaki
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696301111381001ifAP
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

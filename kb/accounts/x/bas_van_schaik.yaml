@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/bas_van_schaik
+  platform: x
+  handle: bas_van_schaik
+  url: https://x.com/bas_van_schaik
+  display_name: Bas van Schaik @sjvs@mastodon.social
+  bio: 'Product Geek @GitHub for all code security analysis (including #CodeQL). Views are my own. Previously:
+    product @Semmle for #SemmleQL, https://t.co/G487jih1eH @LGTM.'
+  location: Oxford, England
+  website: http://securitylab.github.com/tools/codeql
+  followers: 493
+  following: 544
+  posts_count: 1249
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/860174434359017473/JWeSQ9UM_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/272479462/1666959478
+  created_at: '2011-03-26T16:03:53Z'
+  owner: person:bas-van-schaik
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725034277113001K3SG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/bas_van_schaik
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

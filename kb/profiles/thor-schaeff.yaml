@@ -1,0 +1,216 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:thor-schaeff
+  person: person:thor-schaeff
+  brief_bio:
+    text: The GitHub Universe 2025 listing describes Thor Schaeff as Developer Relations at ElevenLabs.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: e1377638f167d0e1316ec7003d1c4bffc5e12e585eb19c45e729df44ca065cf7
+    stale: false
+  headline: Google DeepMind
+  current_roles:
+  - Google DeepMind
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1737d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1737d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1737d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/aut1737d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758105855041001NJDs
+      ref: session:2025/aut1737d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758105855041001NJDs
+      ref: session:2025/aut1737d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758105855041001NJDs
+      ref: session:2025/aut1737d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758105855041001NJDs
+      ref: session:2025/aut1737d
+  education:
+  - school: Trinity College Dublin
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  spoken_languages:
+  - English
+  - German
+  - French
+  - 中文
+  activities:
+  - kind: volunteering
+    title: Teamer
+    detail: Junge Presse Deutschland · Education · Nov 2011 · - Nov 2012 · 1 year 1 month · (Annual) Teamer
+      for the Youth Media Days, various locations (Stuttgart, Hamburg) · Nov 2011
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: project
+    title: DoveJob (build.gov.sg)
+    detail: DoveJob is a conversational chatbot that is leveraging modern AI technology to help senior
+      citizens create their resume and find suitable employment.Built as part of the Open Government Products
+      "Build for Good" hackathon, we're now partnering with better.sg to launch this service to the public.
+      · Jun 2023
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: project
+    title: Chromecast HTML5 Web Component
+    detail: Created a custom web element as part of Google's Polymer project to enable developers easy
+      access to the Chromecast sender API. · Sep 2014
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: project
+    title: Thematic Big Data Map of NYC Taxi locations
+    detail: 'This map shows the distribution of all taxi drop-off locations in 2013 (~170 million) within
+      NYC. By clicking on an area of the map, you can see: the distribution of drop-off locations, the
+      average fare, average tip percentage and average number of passengers of trips that started in that
+      area. · Nov 2014'
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: project
+    title: Multi-angle video player
+    detail: Created the prototype of a completely on HTML5 standards based multi-angle-video player that
+      is now used in production on www.fanfootage.com · Mar 2014
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: project
+    title: Realtime Big Data Visualization
+    detail: 'Realtime Data Visualization Webservice in collaboration with the social music discovery service
+      Soundwave (http://soundwave.com/).Technologies in use:Server-side: MongoDB, Node.js, JavaScript,
+      JSON Webservice Client-side: AJAX, jQuery, JavaScript, Highcharts, HTML5, CSS3 · Sep 2013'
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: project
+    title: SAP InnoJam
+    detail: Winning project of the 2014 SAP Innovation Jam at the SAP AppHaus. Big data visualization
+      web-application caltulating average travel duration on PT using Dublinked GTFS and SAP's in memory
+      database HANA. · Feb 2014
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: project
+    title: Studio Music Production
+    detail: Managed the music production life-cycle including management of studio crew during recording
+      sessions, mixing and supervising the mixing process, arranging a mastering workshop with an external
+      professional, and creating a successful marketing and crowd-funding campaign. · Feb 2013
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: project
+    title: Waking Wind - real-time wind data from anywhere to everywhere!
+    detail: 'Waking Wind is the webservice for all wind-sportsmen. Our custom weather stations provide
+      you with real-time data from your favourite location. You can either use the website or the mobile
+      app to never loose track of the current conditions and the statistics. Another nice feature is the
+      intelligent alarm. Depending on your settings it will notify you at precisely the right time, so
+      you never miss the perfect wind.Technologies used:Responsive Website: HTML5, CSS3, JavaScript, jQuery,
+      AJAX Hybrid Mobile App: HTML5, CSS3, JavaScript, jQMobile, AJAX, Phonegap Server-side: PHP, SQL,
+      MySQL · Mar 2013'
+    evidence:
+      url: https://www.linkedin.com/in/thorwebdev
+      observed_at: '2026-10-24T08:49:55Z'
+  recent_writing:
+  - title: |-
+      I put ElevenLabs Conversational AI on a Raspberry Pi to build my very own multilingual, MCP-connected Alexa clone!
+
+      Here is how it works 🧵👇 https://t.co/qrdkaARPyw
+    url: https://twitter.com/2908098340/status/1941061724762976502
+    published: '2025-07-04T09:09:13Z'
+    channel: x
+  - title: |-
+      Series C announcement won’t stop me from shipping! 🚀
+
+      But yah, series c is pretty cool also 🥳 https://t.co/PkxWtX93ao
+    url: https://twitter.com/2908098340/status/1838965972251947101
+    published: '2024-09-25T15:37:08Z'
+    channel: x
+  - title: |-
+      Three years of being supa based 🥳
+
+      Want to work on #OSS that helps millions of developers build cool stuff and be supa based too? 🚀
+
+      👉 https://t.co/U9kMFtaevK https://t.co/GLwlA2QQlD
+    url: https://twitter.com/2908098340/status/1834260685754433702
+    published: '2024-09-12T16:00:01Z'
+    channel: x
+  - title: |-
+      This has been an immensely rewarding project to work on, I’ve learned a ton 🙌
+
+      Would love for you to try it out and provide feedback on the repo! 🙂
+    url: https://twitter.com/2908098340/status/1391904451569405952
+    published: '2021-05-10T23:54:16Z'
+    channel: x
+  talks:
+  - session:2025/aut1737d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755624693491001yxGU
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/datadoghq
+  platform: x
+  handle: datadoghq
+  url: https://x.com/datadoghq
+  owner: org:datadog
+  link_basis:
+  - github_profile
+  details_fetched: false
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: DataDog
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/modernatx
+  platform: linkedin
+  handle: company/modernatx
+  url: https://www.linkedin.com/company/modernatx
+  display_name: Moderna
+  bio: Moderna is a pioneer and leader in the field of mRNA medicine. Through the advancement of its technology
+    platform, Moderna is reimagining how medicines are made to transform how we treat and prevent diseases.
+    Since its founding, Moderna's mRNA platform has enabled the development of vaccines and therapeutics
+    across infectious diseases, cancer, rare diseases and more. With a global team and a unique culture,
+    driven by the company's values and mindsets, Moderna's mission is to deliver the greatest possible
+    impact to people through mRNA medicines. For more information about Moderna, please visit modernatx.com
+    and connect with us on X, Facebook, Instagram, YouTube and LinkedIn. This Moderna page is not the
+    appropriate place to report adverse events (side-effects) for any products. If you are or someone
+    you know is experiencing a side effect, please reach out to your healthcare professional. Moderna
+    is continuously monitoring the safety of its products. We encourage you to report any side effects
+    directly to us at 1‑866‑MODERNA (1‑866‑663‑3762). Please be cautious of fraudulent recruitment offers
+    claiming to be from Moderna. Recruitment scams of this sort may originate from fake websites, social
+    media accounts, or unsolicited communications and may ask you for personal information or request
+    you pay them or someone else. Moderna will never ask you for payment, banking information, or anything
+    of this sort at any stage of the recruitment process. If you are unsure about a communication, do
+    not provide personal information and report the activity to [email removed]. You may also report suspected
+    fraud to the FBI’s Internet Crime Complaint Center (IC3).
+  website: https://www.modernatx.com/?tc=soc_7y8qkt&cc=1004
+  followers: 813266
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFFaSO_6rI95Q/company-logo_200_200/company-logo_200_200/0/1720031346518/modernatx_logo?e=2147483647&v=beta&t=6GgTGaCRHCboPVUlPIZLSMMck85cEKeuFGxgy06vc6U
+  owner: org:moderna
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/markus-howard-engineer
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/modernatx
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

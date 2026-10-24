@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/joe-bourne
+  platform: linkedin
+  handle: in/joe-bourne
+  url: https://www.linkedin.com/in/joe-bourne
+  display_name: Joe Bourne
+  bio: I’m a product leader with 15+ years of experience building and scaling software…
+  location: Apex
+  followers: 1351
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQE608ceNYs0kw/profile-displayphoto-scale_200_200/B4EZ3LBJeHIwAY-/0/1777227574681?e=2147483647&v=beta&t=qmQNRI8WQhn9rqv-bv0Jtb5jayoQ9e78eGs3XkK7evc
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQE-R1I7PVfkoA/profile-displaybackgroundimage-shrink_200_800/B4EaCI7swPG8AQ-/0/1789003746613?e=2147483647&v=beta&t=oIYDkECmwDbJs-nzrSKY8RdwBDcW7so8RRDaW3pCpkk
+  owner: person:joe-bourne
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1722969669268001PWrR
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/joe-bourne
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

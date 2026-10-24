@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: delivery-format-2023
+  event: event:github-universe-2023
+  label: Delivery format
+  multi_valued: true
+  terms:
+  - id: term:delivery-format-2023/in-person
+    label: In-person
+    source_id: 1692799009854001CDl2
+    session_count: 81
+  - id: term:delivery-format-2023/recorded
+    label: Recorded
+    source_id: 1692799009854002CBbz
+    session_count: 22
+  - id: term:delivery-format-2023/livestream
+    label: Livestream
+    source_id: 1692799009854003CF33
+    session_count: 20
+  - id: term:delivery-format-2023/on-demand
+    label: On-demand
+    source_id: 1692799009854004CQlx
+    session_count: 41
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1692799009855001C0n3
+    retrieved_at: '2026-10-24T08:03:33Z'
+    snapshot: raw/editions/universe23/attributes.json

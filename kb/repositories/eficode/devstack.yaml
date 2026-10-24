@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:eficode/devstack
+  full_name: eficode/devStack
+  url: https://github.com/eficode/devStack
+  description: A series of scripts for setting up common developer application suites
+  stars: 2
+  forks: 2
+  watchers: 5
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:06Z'
+  primary_language: Groovy
+  archived: false
+  fork: false
+  created_at: '2022-07-13T08:10:09Z'
+  pushed_at: '2024-06-05T13:53:57Z'
+  owner_login: eficode
+  owner: gh:eficode
+  pinned_by:
+  - gh:eficode
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: eficode
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: eficode/devStack
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

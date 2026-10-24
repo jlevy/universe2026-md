@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/okta-inc
+  platform: linkedin
+  handle: company/okta-inc-
+  url: https://www.linkedin.com/company/okta-inc-
+  display_name: Okta
+  bio: Okta, Inc. is The World’s Identity Company™. We secure identity, so everyone is free to safely
+    use any technology. Our customer and workforce solutions empower businesses and developers to use
+    the power of Identity to drive security, efficiencies, and success — all while protecting their users,
+    employees, and partners. Learn why the world’s leading brands trust Okta.
+  website: https://www.okta.com/
+  followers: 736507
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQEU2zmNRniylg/company-logo_200_200/B4EZ_SBqb8JEAE-/0/1785935079432/okta_inc__logo?e=2147483647&v=beta&t=a_QWBlRy2t6tHvz-XihLGWJexWLoaJLaR6ihILEv9dw
+  owner: org:okta
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/bendang
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/harleyvanselow
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/okta-inc-
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

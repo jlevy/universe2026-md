@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/alzahrra-almajid
+  platform: linkedin
+  handle: in/alzahrra-almajid
+  url: https://www.linkedin.com/in/alzahrra-almajid
+  display_name: Alzahrra Almajid
+  bio: Full-stack software engineer with 5+ years of experience delivering high-performance…
+  location: Chicago
+  followers: 798
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQGz0vhQYpWe3w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1661098038520?e=2147483647&v=beta&t=mk_QTUKGTzaCDkCdUtCaTP4E_Wq4IZTx3hazabe8Ymc
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQHd10ens61m_A/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1629308188383?e=2147483647&v=beta&t=i2uyLdHg5Jh2Whfjg809Kvuck4V0ZthExMTpkwy-XkU
+  owner: person:alzahrra-almajid
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746206369670001q9iy
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alzahrra-almajid
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

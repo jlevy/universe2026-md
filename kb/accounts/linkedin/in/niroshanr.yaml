@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/niroshanr
+  platform: linkedin
+  handle: in/niroshanr
+  url: https://www.linkedin.com/in/niroshanr
+  display_name: Niroshan Rajadurai
+  bio: Most CROs haven't opened a terminal in years. I came up the other way. I'm…
+  location: London Area
+  followers: 6616
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGW6xbZVGyOhw/profile-displayphoto-scale_200_200/B4EZ9BfJEyHoAg-/0/1783510111656?e=2147483647&v=beta&t=-HpYc8u7xJBiClKlPJUrjFfNx2EdIl9eR_dxKuzsGA0
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQGgMdlPKMEJXg/profile-displaybackgroundimage-shrink_200_800/B4EZwEFpT2JQAY-/0/1769595115414?e=2147483647&v=beta&t=xbPWExjh1UXptbku-S-qBLaHk1nr_34IWdhLldh503s
+  owner: person:niroshan-rajadurai
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686054177983001wGBv
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686054177983001wGBv
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/niroshanr
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

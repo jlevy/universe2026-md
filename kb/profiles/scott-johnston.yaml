@@ -1,0 +1,126 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:scott-johnston
+  person: person:scott-johnston
+  brief_bio:
+    text: Scott Johnston is affiliated with Fly.io and previously led Docker as CEO, having joined it
+      as its first product manager in 2014 and later served as COO and CPO. Johnston spoke at GitHub Universe
+      2023 about putting AI and ML app development into every engineer's hands.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 5edda95af1e7f63b09bb59a83d9983ff3e74bd960d46e2d46ec8a20cefa3d116
+    stale: true
+  headline: Fly.io
+  current_roles:
+  - Fly.io
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2850s
+  - label: Machine Learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2850s
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Docker
+      ref: person:scott-johnston
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695661317595001OrA7
+      ref: session:2023/dev2850s
+  - label: Machine learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695661317595001OrA7
+      ref: session:2023/dev2850s
+  publications:
+  - title: 'Parallel Processing in Japan: National and Corporate Trends'
+    venue: IEEE Computational Science & Engineering
+    date: Apr 1995
+    evidence:
+      url: https://www.linkedin.com/in/scottcjohnston
+      observed_at: '2026-10-24T08:46:50Z'
+  patents:
+  - title: System and method for generating target bids for advertisement group keywords
+    number: US 11/477,194
+    date: January 10, 2008
+    description: The present invention is directed towards systems and methods for generating bids for
+      one or more keywords and advertisement groups.
+    url: https://patents.google.com/patent/US11477194
+    evidence:
+      url: https://www.linkedin.com/in/scottcjohnston
+      observed_at: '2026-10-24T08:46:50Z'
+  activities:
+  - kind: volunteering
+    title: Advisory Board Member
+    detail: Network for Teaching Entrepreneurship (NFTE) · Education · 2010 · - Present · 16 years · Through
+      entrepreneurship education NFTE helps young people from low-income communities build skills and
+      unlock their entrepreneurial creativity. · 2010
+    evidence:
+      url: https://www.linkedin.com/in/scottcjohnston
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: volunteering
+    title: Advisory Board Member
+    detail: Spark Program · Education · 2010 · - 2012 · 2 years · Spark's mission is to provide life-changing
+      apprenticeships to youth in underserved communities across the United States. · 2010
+    evidence:
+      url: https://www.linkedin.com/in/scottcjohnston
+      observed_at: '2026-10-24T08:46:50Z'
+  recent_writing:
+  - title: 10 Years Since Kubernetes Launched at DockerCon
+    url: https://www.linkedin.com/pulse/10-years-since-kubernetes-launched-dockercon-scott-johnston-noksc
+    published: '2024-06-10T00:00:00.000Z'
+    channel: linkedin
+    summary: It is not often you can reflect back and pinpoint a moment where an entire industry changed,
+      less often to pinpoint…
+  - title: '11 Years of Docker: Shaping the Next Decade of Development'
+    url: https://www.linkedin.com/pulse/11-years-docker-shaping-next-decade-development-scott-johnston-ihjoc
+    published: '2024-03-21T00:00:00.000Z'
+    channel: linkedin
+    summary: Eleven years ago, Solomon Hykes walked onto the stage at PyCon 2013 and revealed Docker to
+      the world for the first…
+  talks:
+  - session:2023/dev2850s
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693515002212001B8X9
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/alexander-androncik-4bab33349
+  platform: linkedin
+  handle: in/alexander-androncik-4bab33349
+  url: https://www.linkedin.com/in/alexander-androncik-4bab33349
+  display_name: Alexander Androncik
+  bio: I’m passionate about helping engineers, teams, and organizations transform the way they…
+  location: Markham
+  followers: 981
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQHUrfjGiPiMaQ/profile-displayphoto-shrink_200_200/B4EZTiqPvKHMAc-/0/1738969513498?e=2147483647&v=beta&t=MYVdFgEq8uVR55hVoQgdMx3_vvvW1RqcOwTEkdr7-T4
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:alexander-androncik
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698155176352001xFka
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alexander-androncik-4bab33349
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

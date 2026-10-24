@@ -1,0 +1,346 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:rizel-scarlett
+  person: person:rizel-scarlett
+  brief_bio:
+    text: Rizel Scarlett is Head of Developer Relations at Entire, focused on AI coding agents and MCP,
+      and previously led open source developer relations at Block. Scarlett spoke at GitHub Universe 2023
+      about intentional prompts and at GitHub Universe 2025 about vibe coding responsibly with MCP.
+    cites:
+    - current_affiliations
+    - x_bio
+    - websites
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:39:52Z'
+    input_sha256: 1dec9dd62845b4154ad5c7752e067d760502170586fc18e8b887d631e8af92d4
+    stale: false
+  headline: Entire
+  current_roles:
+  - Entire
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2575d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2575d
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2575d
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2575d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2575d
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1461d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1461d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1461d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai2575d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Model Context Protocol
+      ref: session:2025/bld1461d
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686690798675001hXfs
+      ref: session:2023/ai2575d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746242083687001idxO
+      ref: session:2025/bld1461d
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686690798675001hXfs
+      ref: session:2023/ai2575d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746242083687001idxO
+      ref: session:2025/bld1461d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686690798675001hXfs
+      ref: session:2023/ai2575d
+  - label: GitHub Codespaces
+    target: term:github-product-2023/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686690798675001hXfs
+      ref: session:2023/ai2575d
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686690798675001hXfs
+      ref: session:2023/ai2575d
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686690798675001hXfs
+      ref: session:2023/ai2575d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746242083687001idxO
+      ref: session:2025/bld1461d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686690798675001hXfs
+      ref: session:2023/ai2575d
+  education:
+  - school: Boston University
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  credentials:
+  - kind: honor
+    title: BostonInno’s 25 Under 25
+    issuer: '-'
+    date: '2018-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: honor
+    title: Silver Scholars Foundation
+    issuer: Bunker Hill Community College
+    date: '2015-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: honor
+    title: Member
+    issuer: National Honors Society
+    date: '2011-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: honor
+    title: Caring Heart Award
+    issuer: Seventh-Day Adventist North American Division
+    date: '2010-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: certification
+    title: Level Up From Software Engineer to AI Engineer
+    issuer: Maven
+    date: Jan 2025
+    url: https://maven.com/certificate/teniiJZL
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: certification
+    title: Full Stack Web Development
+    issuer: Resilient Coders
+    date: Apr 2018
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: certification
+    title: Certified Phlebotomy Technician
+    issuer: American Society Of Phlebotomy Technicians
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: certification
+    title: Developing BI/EDW Applications with MS SQL Server
+    issuer: Colaberry School Of Data Analytics
+    url: http://app.colaberry.com/certificate/view/5001-2016-27108-91508119
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  spoken_languages:
+  - English
+  - Exact Signed English
+  activities:
+  - kind: volunteering
+    title: Chairman of the Computer Science Program Advisory Board
+    detail: Madison Park High School · Education · Sep 2019 · - Present · 7 years 2 months · Sep 2019
+    evidence:
+      url: https://www.linkedin.com/in/rizel-bobb-semple
+      observed_at: '2026-10-24T08:47:15Z'
+  recent_writing:
+  - title: Building a Baby Registry with My Voice
+    url: https://www.linkedin.com/pulse/building-baby-registry-my-voice-rizel-scarlett-f9h6c
+    published: '2026-10-08T00:00:00.000Z'
+    channel: linkedin
+    summary: Take a moment to travel back to the best years ever, the late '90s and early 2000s, with
+      me. Picture us sitting…
+  - title: 'Welcome to Glass Town: Building a Software Factory With a Paper Trail'
+    url: https://www.linkedin.com/pulse/welcome-glass-town-building-software-factory-paper-trail-scarlett-bas4c
+    published: '2026-09-30T00:00:00.000Z'
+    channel: linkedin
+    summary: If you’re on Twitter, it feels like everyone is building a software factory. I’d wager that
+      some of it is token porn…
+  - title: Jev Might Save Your Relationship 😉
+    url: https://www.linkedin.com/pulse/jev-might-save-your-relationship-rizel-scarlett-cbx2c
+    published: '2026-09-18T00:00:00.000Z'
+    channel: linkedin
+    summary: In one of my past newsletters, I wrote about how LLMs were an old trick. There's new foundational
+      models that are…
+  - title: 'How to Lead DevRel in the AI Boom: Stop Playing It Safe'
+    url: https://www.linkedin.com/pulse/how-lead-devrel-ai-boom-stop-playing-safe-rizel-scarlett-lnppc
+    published: '2026-09-16T00:00:00.000Z'
+    channel: linkedin
+    summary: 'I’m awake typing this at 5 AM on a Sunday morning, plagued by two issues: the modern operating
+      model for Developer…'
+  - title: How to Improve Playwright Test Coverage Using Agent Context
+    url: https://www.linkedin.com/pulse/how-improve-playwright-test-coverage-using-agent-context-scarlett-q4tyc
+    published: '2026-08-18T00:00:00.000Z'
+    channel: linkedin
+    summary: I don’t know how to play an instrument, so obviously I built one as an app. Literally, everyone
+      in my family can sign…
+  - title: How I Put My Agent in CI to Automate Release Notes
+    url: https://www.linkedin.com/pulse/how-i-put-my-agent-ci-automate-release-notes-rizel-scarlett-pgrwc
+    published: '2026-08-02T00:00:00.000Z'
+    channel: linkedin
+    summary: When I joined Entire, I noticed my boss spending a chunk of time every week writing detailed
+      release notes, called…
+  - title: Why Is Everyone Trying to Rebuild Git Hosting?
+    url: https://www.linkedin.com/pulse/why-everyone-trying-rebuild-github-rizel-scarlett-wx0ic
+    published: '2026-07-15T00:00:00.000Z'
+    channel: linkedin
+    summary: These past few weeks at Entire have been so exciting. We just launched our git hosting platform,
+      and the reaction from…
+  - title: Human Attention is a Scarce Resource
+    url: https://www.linkedin.com/pulse/human-attention-scarce-resource-rizel-scarlett-wjhqc
+    published: '2026-06-22T00:00:00.000Z'
+    channel: linkedin
+    summary: I recently chatted with a Distinguished Engineer about how he uses agents in his engineering
+      workflow and how he builds…
+  - title: How I Added Goose as an External Agent to Entire
+    url: https://www.linkedin.com/pulse/how-i-added-goose-external-agent-entire-rizel-scarlett-2gpue
+    published: '2026-06-11T00:00:00.000Z'
+    channel: linkedin
+    summary: I just opened a PR to add support for goose to Entire . Goose is an open source coding agent
+      under the Agentic AI…
+  - title: GitHub Universe Day 2 ❤️ https://t.co/oxFkmrvnia
+    url: https://twitter.com/779043676228059136/status/1983661533021581312
+    published: '2025-10-29T22:25:38Z'
+    channel: x
+  - title: "*whispers* I got a new title..I'm a Tech Lead for Open Source DevRel at Block. \n\nReflecting\
+      \ on my career so far..I'm so grateful that people gave me the chance from my first software engineering\
+      \ role to my first dev advocate role. \n\nLet's see what I learn next."
+    url: https://twitter.com/779043676228059136/status/1905808268699541763
+    published: '2025-03-29T02:24:34Z'
+    channel: x
+  - title: Guys i hosted my first meetup and it was litt. I always knew that if i hosted an event, it
+      would be fun https://t.co/Y5yx5BUvo4
+    url: https://twitter.com/779043676228059136/status/1902280917898400137
+    published: '2025-03-19T08:48:08Z'
+    channel: x
+  - title: "Lmaooo hate the way people use the phrase DEI. DEI is not a person. It’s an organizational\
+      \ framework. \n\nJust say what you mean with your chest."
+    url: https://twitter.com/779043676228059136/status/1814646382457729296
+    published: '2024-07-20T12:59:46Z'
+    channel: x
+  - title: hey yall, my friend is a stress and burnout consultant and phd grad. She's doing a study on
+      stress and burnout for software engineers, dev advocates, and product managers. if anyone is interested
+      in participating in the study, reach out to me!
+    url: https://twitter.com/779043676228059136/status/1812899818542395501
+    published: '2024-07-15T17:19:33Z'
+    channel: x
+  talks:
+  - session:2023/ai2575d
+  - session:2025/bld1461d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746242817811001G0Rf
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694192487472001BR32
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

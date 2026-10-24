@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jovanadjune
+  platform: linkedin
+  handle: in/jovanadjune
+  url: https://www.linkedin.com/in/jovanadjune
+  display_name: Jovana Dunisijevic
+  location: Greater Sydney Area
+  followers: 4686
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGJTp-qHhzJ9w/profile-displayphoto-scale_200_200/B4EaDHKKNfHAAc-/0/1790047726117?e=2147483647&v=beta&t=qHSEcWm4G9lrSUCvE2uIkbtH3jPcCuHOMZcV7tjSIB8
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQEstoqQdDWN1g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517499519595?e=2147483647&v=beta&t=v8pTD74TAI98MLpGcjknSz--Vhpl0OwcsbhXelgfcy8
+  owner: person:jovana-dunisijevic
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1754690714293001KJWp
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jovanadjune
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/lukecartey
+  platform: linkedin
+  handle: in/lukecartey
+  url: https://www.linkedin.com/in/lukecartey
+  display_name: Luke Cartey
+  location: Greater Oxford Area
+  followers: 505
+  connections: 465
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQHu2a4HyPSOtw/profile-displayphoto-scale_200_200/B4EZ0_30_3GkAY-/0/1774893096493?e=2147483647&v=beta&t=MsTXT2D_3ZE7-OxQDQRGAf7uJI2WXg8lFGgSjSvgEkQ
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:luke-cartey
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248307001w5Ow
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248307001w5Ow
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/lukecartey
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

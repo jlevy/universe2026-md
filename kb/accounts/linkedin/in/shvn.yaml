@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/shvn
+  platform: linkedin
+  handle: in/shvn
+  url: https://www.linkedin.com/in/shvn
+  display_name: Shravan Mahajan
+  location: Noida
+  followers: 917
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQF_HfbQ7NX7Yg/profile-displayphoto-scale_200_200/B56Z54jnzWGkAc-/0/1780139067783?e=2147483647&v=beta&t=-okM7FSu4KxHSaqMqdUEFsGfeg8lw2ok2h1Zr0c5UCo
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEDALmwa0fW_A/profile-displaybackgroundimage-shrink_200_800/B56Zu2btLkHMAU-/0/1768292276116?e=2147483647&v=beta&t=rIJ8x3GRAYhYR0GWWzBF4n1HyRTziLbIt-37jL6mhiw
+  owner: person:shravan-mahajan
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785516458765001PqZV
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/shvn
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

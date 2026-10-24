@@ -1,0 +1,417 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:april-yoho
+  person: person:april-yoho
+  brief_bio:
+    text: April Yoho is a senior developer advocate and DevOps practice lead at GitHub who helps customers
+      move from legacy technology to serverless and container-based development, and a HashiCorp Ambassador.
+      Yoho spoke at GitHub Universe 2023 and 2025 and speaks at GitHub Universe 2026.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - x_bio
+    - participation
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 088bbb3ec296ea1204e1d57a2fddf87b8ca37d79e507e0cc8cc2b967be8692ab
+    stale: false
+  headline: Senior Developer Advocate at GitHub
+  location: UK
+  current_roles:
+  - Senior Developer Advocate at GitHub
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2843g
+  - label: Machine Learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2843g
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2843g
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2843g
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1515d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1515d
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1515d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Migration strategies
+    target: term:topic/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1515d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai2843g
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  programming_languages:
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:scubaninja/azuredevops-demo
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:scubaninja/attestations-demo-py
+  - label: HCL
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:scubaninja/ch9demo-terraform-modules
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695617733730001axco
+      ref: session:2023/ai2843g
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+    - url: https://github.com/github-samples/pets-workshop
+      ref: repo:github-samples/pets-workshop
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.78
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695617733730001axco
+      ref: session:2023/ai2843g
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1752249440428001NSge
+      ref: session:2025/aut1515d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: high
+    weight: 0.5
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1752249440428001NSge
+      ref: session:2025/aut1515d
+    - url: https://github.com/github-samples/pets-workshop
+      ref: repo:github-samples/pets-workshop
+  - label: GitHub Advanced Security
+    basis: github_repositories
+    confidence: medium
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github-samples/pets-workshop
+      ref: repo:github-samples/pets-workshop
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695617733730001axco
+      ref: session:2023/ai2843g
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1752249440428001NSge
+      ref: session:2025/aut1515d
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Machine learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695617733730001axco
+      ref: session:2023/ai2843g
+  open_source:
+  - repository: repo:scubaninja/azuredevops-demo
+    relation: owner
+    stars: 37
+    primary_language: HTML
+  - repository: repo:scubaninja/attestations-demo-py
+    relation: owner
+    stars: 28
+    primary_language: Python
+  - repository: repo:scubaninja/ch9demo-terraform-modules
+    relation: owner
+    stars: 11
+    primary_language: HCL
+  - repository: repo:github-samples/pets-workshop
+    relation: contributor
+    stars: 81
+    primary_language: Python
+  - repository: repo:microsoft/mastering-github-copilot-for-paired-programming
+    relation: contributor
+    stars: 8165
+    primary_language: Python
+  - repository: repo:octodemo/vulnerable-node
+    relation: contributor
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:devrellabs/pets-workshop
+    relation: contributor
+    stars: 4
+    primary_language: Python
+  - repository: repo:smoonlee/propresentor-webshare
+    relation: contributor
+    stars: 1
+    primary_language: JavaScript
+  recent_writing:
+  - title: "Landed in Seattle and ready for Microsoft Build this week! \n\n#MSBuild https://t.co/BKYznXV5bG"
+    url: https://twitter.com/1202365879/status/1792395009154764922
+    published: '2024-05-20T03:20:45Z'
+    channel: x
+  - title: |-
+      The swag machine is back at the #github book here at KubeCon day 2
+
+      Come by and say hello! https://t.co/z9a2uSVvsR
+    url: https://twitter.com/1202365879/status/1770733849728729131
+    published: '2024-03-21T08:47:03Z'
+    channel: x
+  - title: "Just show up. \n\nConsistency is key. Don't strive for perfection, strive to just show up.\
+      \ Your efforts will get realized over time.\n\nWhether it's #triathlon or writing code. Just show\
+      \ up. https://t.co/fzLqKfQWyC"
+    url: https://twitter.com/1202365879/status/1726589047303508426
+    published: '2023-11-20T13:11:22Z'
+    channel: x
+  - title: |-
+      New swag from #githubuniverse made its first appearance today on my Livestream 😀
+
+      #github https://t.co/iWeSUsjhvG
+    url: https://twitter.com/1202365879/status/1724845776851828827
+    published: '2023-11-15T17:44:13Z'
+    channel: x
+  - title: "We've kicked off #Githubuniverse! \n\nIt's like inception of my face at GitHub Central. https://t.co/5KuqqBgcVE"
+    url: https://twitter.com/1202365879/status/1722286499712975350
+    published: '2023-11-08T16:14:34Z'
+    channel: x
+  - title: "Why am I an advocate? \n\nSomeone today told me that they learned Azure DevOps and DevOps\
+      \ practices from me and it's helped build up their tech career. \n\nThis is why I keep  doing this,\
+      \ helping others.\n\nGosh, it's a little dusty in here..."
+    url: https://twitter.com/1202365879/status/1675863896316420097
+    published: '2023-07-03T13:47:43Z'
+    channel: x
+  - title: |-
+      GitHub Advanced Security for Azure DevOps is here!!!!!
+
+       https://t.co/AStESxXfHB
+    url: https://twitter.com/1202365879/status/1661417076148273156
+    published: '2023-05-24T17:01:13Z'
+    channel: x
+  - title: "It's been a week of playing with #AI \n\nI think I need this hair in real life https://t.co/SWAFgNqIU9"
+    url: https://twitter.com/1202365879/status/1629117141176688640
+    published: '2023-02-24T13:52:48Z'
+    channel: x
+  - title: |-
+      Looking at #IaC and not sure which tool to use? I wrote a blog comparing all the tools:
+
+      https://t.co/Ds98fyUcYu
+    url: https://twitter.com/1202365879/status/1502244286720405508
+    published: '2022-03-11T11:25:22Z'
+    channel: x
+  - title: Ten years ago sitting in a data center with my colleague, at 3am. 'Outages are fun'....said
+      no one ever https://t.co/7COYDmLime
+    url: https://twitter.com/1202365879/status/1480806604404572164
+    published: '2022-01-11T07:39:41Z'
+    channel: x
+  - title: PowerShell 2.0 - Where it All Began
+    url: https://www.aprilyoho.dev/blog/powershell-2-0-where-it-all-began/
+    published: '2021-11-04T11:21:17Z'
+    channel: blog
+  - title: Moving from a Senior Software Engineer to a Cloud Developer Advocate
+    url: https://www.aprilyoho.dev/blog/moving-from-a-senior-software-engineer-to-a-cloud-developer-advocate/
+    published: '2021-09-04T08:58:44Z'
+    channel: blog
+  - title: Securing Azure Logic Apps
+    url: https://www.aprilyoho.dev/blog/securing-logic-apps/
+    published: '2021-05-06T13:54:47Z'
+    channel: blog
+  - title: 'Deploying a LogicApp with Terraform (Bonus: in an AzDO pipeline)'
+    url: https://www.aprilyoho.dev/blog/deploying-a-logicapp-with-terraform/
+    published: '2021-04-12T14:41:25Z'
+    channel: blog
+  - title: GitHub CLI is released!
+    url: https://www.aprilyoho.dev/blog/github-cli/
+    published: '2020-09-25T11:23:45Z'
+    channel: blog
+  talks:
+  - session:2023/ai2843g
+  - session:2025/aut1515d
+  - session:ldr1874s
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685619186942001eQLJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: scubaninja
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685619186942001eQLJ
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685619186942001eQLJ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

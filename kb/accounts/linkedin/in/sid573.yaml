@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sid573
+  platform: linkedin
+  handle: in/sid573
+  url: https://www.linkedin.com/in/sid573
+  display_name: Siddhant Sinha
+  location: Patna
+  followers: 1001
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFEKlDSkG-tsQ/profile-displaybackgroundimage-shrink_200_800/B56Z8SxYlGG8AQ-/0/1782726363787?e=2147483647&v=beta&t=NZKI4oyb1Z-tr84GRrHY3MT-M1cYwhBP1SeFZBL3n1c
+  owner: person:siddhant-sinha
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785537838761001nM4u
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sid573
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

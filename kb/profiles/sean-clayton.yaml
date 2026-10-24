@@ -1,0 +1,278 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sean-clayton
+  person: person:sean-clayton
+  brief_bio:
+    text: Sean Clayton is a Senior Principal Security Engineer at Modus Create who has led GitHub Advanced
+      Security enablements and is an organizer of BSidesCT. Clayton spoke at GitHub Universe 2025 about
+      scanning monorepos at scale with CodeQL.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 81727d850587529e0f5894529e1557ccd9aee982058e860840418a4f8561c5ed
+    stale: false
+  headline: Modus Create
+  current_roles:
+  - Modus Create
+  expertise:
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1166d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1166d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1166d
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1166d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1166d
+  - label: Shell programming (Bash, PowerShell, etc.)
+    target: term:topic-2025/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1166d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1166d
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CodeQL
+      ref: session:2025/sec1166d
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:sean-clayton
+  interests:
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: Shell programming (Bash, PowerShell, etc.)
+    target: term:topic-2025/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745610149105001lyRg
+      ref: session:2025/sec1166d
+  education:
+  - school: Southern Connecticut State University
+    evidence:
+      url: https://www.linkedin.com/in/sean-p-clayton
+      observed_at: '2026-10-24T08:48:08Z'
+  credentials:
+  - kind: certification
+    title: Cyber Attack Countermeasures
+    issuer: New York University
+    date: Feb 2025
+    url: https://www.coursera.org/account/accomplishments/verify/9LQZAHYC3S0X
+    evidence:
+      url: https://www.linkedin.com/in/sean-p-clayton
+      observed_at: '2026-10-24T08:48:08Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Mar 2024
+    evidence:
+      url: https://www.linkedin.com/in/sean-p-clayton
+      observed_at: '2026-10-24T08:48:08Z'
+  - kind: certification
+    title: GitHub Copilot
+    issuer: GitHub
+    date: Jan 2024
+    evidence:
+      url: https://www.linkedin.com/in/sean-p-clayton
+      observed_at: '2026-10-24T08:48:08Z'
+  - kind: certification
+    title: Google Cybersecurity Professional Certificate
+    issuer: Coursera
+    date: Jan 2024
+    evidence:
+      url: https://www.linkedin.com/in/sean-p-clayton
+      observed_at: '2026-10-24T08:48:08Z'
+  - kind: certification
+    title: Certified Information Security Manager (CISM)
+    issuer: ISACA
+    date: Mar 2026
+    expires: Jan 2030
+    url: https://www.credly.com/badges/95bb6366-2378-42b1-82d1-bb9cb756600e/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sean-p-clayton
+      observed_at: '2026-10-24T08:48:08Z'
+  - kind: certification
+    title: GitHub Advanced Security Partner Delivery Credential
+    issuer: GitHub
+    date: Jan 2026
+    expires: Jan 2029
+    url: https://www.credly.com/badges/d2066b68-3691-4e5f-8fc3-260b2d28af7d/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sean-p-clayton
+      observed_at: '2026-10-24T08:48:08Z'
+  - kind: certification
+    title: GitHub Migrations Partner Delivery Credential
+    issuer: GitHub
+    date: Jan 2026
+    expires: Jan 2029
+    url: https://www.credly.com/badges/ed735659-f748-4f57-a6fb-9d8708fcb97f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sean-p-clayton
+      observed_at: '2026-10-24T08:48:08Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Nov 2023
+    expires: Nov 2026
+    url: https://www.credly.com/badges/d91cd36a-92bd-4166-abaf-5abc3cb563ef/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sean-p-clayton
+      observed_at: '2026-10-24T08:48:08Z'
+  talks:
+  - session:2025/sec1166d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745607555078001ydvC
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

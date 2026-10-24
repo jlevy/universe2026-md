@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ignaciapons
+  platform: linkedin
+  handle: in/ignaciapons
+  url: https://www.linkedin.com/in/ignaciapons
+  display_name: Pillippa Perez Pons
+  bio: 🌟 I’m Pilly, a Software Engineer, community builder, and eternal learner, blending over…
+  location: San Francisco Bay Area
+  followers: 3311
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGSsPGX37aJRg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1697479549222?e=2147483647&v=beta&t=NyRtNnBchWAvwaYtET7-9w64RH_kvtIijr2t-4C5NH4
+  owner: person:pillippa-perez-pons
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692808110574001B3pK
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ignaciapons
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

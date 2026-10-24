@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/quiana-c-berry-b727a7143
+  platform: linkedin
+  handle: in/quiana-c-berry-b727a7143
+  url: https://www.linkedin.com/in/quiana-c-berry-b727a7143
+  display_name: Quiana C. Berry
+  bio: Hola, I’m Quiana — The Afrolatina Adventurer© 🌍👋🏽 ​I am a Product &amp; Systems…
+  location: New York
+  followers: 14533
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQF6qpW6eGU_8g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723086350588?e=2147483647&v=beta&t=XaIEGQkmRDU4ID9Ikgzc40CbwHLiAvYzvknbyEoGJnQ
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQHENWiiEN9cpw/profile-displaybackgroundimage-shrink_200_800/B4DZ0NsVvmIYAY-/0/1774051221547?e=2147483647&v=beta&t=BzIcWwliimI40AyQTiVYwdEu9jgS6Oh9M8c1FrB5W0c
+  owner: person:quiana-berry
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686708598215001xK6h
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/quiana-c-berry-b727a7143
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

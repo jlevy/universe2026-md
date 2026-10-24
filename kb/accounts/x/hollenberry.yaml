@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/hollenberry
+  platform: x
+  handle: hollenberry
+  url: https://x.com/hollenberry
+  display_name: Eric Hollenberry
+  followers: 74
+  following: 0
+  posts_count: 52
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/895346349247315968/YPAR7wth_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/4119824052/1502302202
+  created_at: '2015-11-04T03:52:20Z'
+  owner: person:eric-hollenberry
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: hollenberry
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/hollenberry
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/cloud-native-computing-foundation
+  platform: linkedin
+  handle: company/cloud-native-computing-foundation
+  url: https://www.linkedin.com/company/cloud-native-computing-foundation
+  display_name: Cloud Native Computing Foundation (CNCF)
+  bio: Cloud native computing uses an open source software stack to deploy applications as microservices,
+    packaging each part into its own container, and dynamically orchestrating those containers to optimize
+    resource utilization. The Cloud Native Computing Foundation (CNCF) hosts critical components of those
+    software stacks including Kubernetes and Prometheus; brings together the industry’s top developers,
+    end users, and vendors; and serves as a neutral home for collaboration. CNCF is part of The Linux
+    Foundation.
+  website: https://cncf.io/
+  followers: 181499
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQH5MvALB7nkQQ/company-logo_200_200/company-logo_200_200/0/1720630871456/cloud_native_computing_foundation_logo?e=2147483647&v=beta&t=JL3ceWz2e9h1x6FWXRedhpTz6HIJVKeqXHCRggZWkTM
+  owner: org:cncf
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jorge-castro2112
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/iancoldwater
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/cloud-native-computing-foundation
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

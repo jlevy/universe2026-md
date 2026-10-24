@@ -1,0 +1,555 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:maya-shavin
+  person: person:maya-shavin
+  brief_bio:
+    text: Maya Shavin is a Staff Software Engineer at Salesforce who leads frontend and full-stack work,
+      the author of Learning Vue and a Google Developer Expert. Shavin speaks at GitHub Universe 2026
+      about accelerating accessibility with AI and automation.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 270dfe0ac78c1e10467b68d6a537055b23d09a761636ef505fb2fd05509b2a99
+    stale: false
+  headline: Staff Software Engineer at Salesforce
+  location: Israel
+  current_roles:
+  - Staff Software Engineer at Salesforce
+  expertise:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  programming_languages:
+  - label: Vue
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:mayashavin/palette-generator
+    - ref: repo:mayashavin/learning-vue-app
+    - ref: repo:mayashavin/vurian-wizard
+    - ref: repo:mayashavin/portfolio-new
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:mayashavin/cloudinary-api
+    - ref: repo:mayashavin/cocover
+    - ref: repo:mayashavin/ktavi
+    - ref: repo:mayashavin/agent-skills
+  recognitions:
+  - label: Google Developer Expert
+    basis: bluesky_profile
+    confidence: medium
+    evidence:
+    - quote: |-
+        👩🏻‍💻 Senior SE @Microsoft Industry AI
+        📕 O’Reilly author - Learning Vue
+        🔍 Accessibility champ
+        🌎 Web GDE, Cloudinary Ambassador
+
+        Creator of colorgen.
+  interests:
+  - label: Vue
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/mayashavin/vurian-wizard
+      ref: repo:mayashavin/vurian-wizard
+    - url: https://github.com/mayashavin/learning-vue-app
+      ref: repo:mayashavin/learning-vue-app
+    - url: https://github.com/mayashavin/portfolio-new
+      ref: repo:mayashavin/portfolio-new
+  - label: cloudinary
+    basis: github_repositories
+    confidence: medium
+    weight: 0.72
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/mayashavin/cloudinary-api
+      ref: repo:mayashavin/cloudinary-api
+    - url: https://github.com/mayashavin/portfolio-new
+      ref: repo:mayashavin/portfolio-new
+    - url: https://github.com/mayashavin/cocover
+      ref: repo:mayashavin/cocover
+  - label: AI
+    basis: github_repositories
+    confidence: medium
+    weight: 0.56
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/mayashavin/cocover
+      ref: repo:mayashavin/cocover
+    - url: https://github.com/mayashavin/ktavi
+      ref: repo:mayashavin/ktavi
+  - label: cover-image
+    basis: github_repositories
+    confidence: medium
+    weight: 0.56
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/mayashavin/cocover
+      ref: repo:mayashavin/cocover
+    - url: https://github.com/mayashavin/ktavi
+      ref: repo:mayashavin/ktavi
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.42
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.42
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.42
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.42
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: agent-skills
+    basis: github_repositories
+    confidence: low
+    weight: 0.28
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/mayashavin/agent-skills
+      ref: repo:mayashavin/agent-skills
+  - label: AI agents
+    basis: github_repositories
+    confidence: low
+    weight: 0.28
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/mayashavin/agent-skills
+      ref: repo:mayashavin/agent-skills
+  - label: ai-skills
+    basis: github_repositories
+    confidence: low
+    weight: 0.28
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/mayashavin/agent-skills
+      ref: repo:mayashavin/agent-skills
+  - label: blog
+    basis: github_repositories
+    confidence: low
+    weight: 0.28
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/mayashavin/ktavi
+      ref: repo:mayashavin/ktavi
+  open_source:
+  - repository: repo:mayashavin/palette-generator
+    relation: owner
+    stars: 98
+    primary_language: Vue
+  - repository: repo:mayashavin/vurian-wizard
+    relation: owner
+    stars: 82
+    primary_language: Vue
+  - repository: repo:mayashavin/cloudinary-api
+    relation: owner
+    stars: 52
+    primary_language: TypeScript
+  - repository: repo:mayashavin/learning-vue-app
+    relation: owner
+    stars: 43
+    primary_language: Vue
+  - repository: repo:mayashavin/portfolio-new
+    relation: owner
+    stars: 35
+    primary_language: Vue
+  - repository: repo:mayashavin/cocover
+    relation: owner
+    stars: 7
+    primary_language: TypeScript
+  - repository: repo:mayashavin/ktavi
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:mayashavin/agent-skills
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:vue-js-israel/vue-israel-website-v2
+    relation: contributor
+    stars: 0
+    primary_language: Vue
+  education:
+  - school: Bar-Ilan University
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  credentials:
+  - kind: certification
+    title: Salesforce Certified Scrum Lead
+    issuer: Salesforce
+    date: Sep 2025
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: certification
+    title: Microsoft Global Hackathon 2024
+    issuer: Microsoft
+    date: Aug 2024
+    url: https://www.credly.com/badges/f5943cbd-1bb8-4106-acda-5893f36dea79/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: certification
+    title: Accessibility in Action
+    issuer: Microsoft
+    date: Nov 2022
+    url: https://www.credly.com/badges/140733a9-3668-4f2a-9027-782e855cacba/public_url
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: certification
+    title: MVC 5 ASP.NET Web Application Development
+    issuer: The Academic College of Tel Aviv Yaffo
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  spoken_languages:
+  - Hebrew
+  - Vietnamese
+  - English
+  - Chinese
+  activities:
+  - kind: volunteering
+    title: Member
+    detail: Google Developer Experts · Science and Technology · Mar 2021 · - Present · 5 years 8 months
+      · The Google Developer Experts program is a global network of highly experienced technology experts,
+      influencers, and thought leaders who have expertise in Google technologies, are active leaders in
+      the space, natural mentors, and contribute to the wider developer and startup ecosystem · Mar 2021
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: project
+    title: CoCover AI - GitHub Copilot Extension
+    detail: Your AI Assistant that helps to enhance your markdown content with generated professional
+      cover images and SEO-optimized titles, saving your valuable time and improving your content's quality.Leverage
+      GPT-4o and Dall-E 3 to generate cover images based on your markdown content's title and description.
+      You can then upload the generated cover image to Cloudinary and insert the image URL to your markdown
+      file. · Oct 2024
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: project
+    title: English Draught Game for Windows
+    detail: '1. Implementation of English checkers game allowing user to play against other user, or against
+      computer. Difficulty level offered: easy, medium and hard.2. Knowledge used: Artificial Intelligence
+      implementation on Computer Player (MiniMax Algorithm with alpha-beta pruning and Decision Trees
+      for Game Playing), C# .NET Technology.3. Application is developed as application for Windows. ·
+      Apr 2013'
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: project
+    title: Hunger Game
+    detail: '1. Mutli-players game inspired by PACMAN including collecting of food and weapons. The game
+      allows players to gain points by attacking other players by arrows.2. Knowledge used: Artificial
+      Intelligence implementation on Computer Player (A* Search Algorithm using Manhattan Distance Heuristic),
+      C++ Language and OOP Design Pattern. · Oct 2012'
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: project
+    title: RESTO - Social network for entertainment places mobile web application
+    detail: '1. Web application acting as social networks using Google Maps API and Google Places API
+      to allow user to find all the local restaurants registered based on user’s current location. 2.
+      Users are allowed to register new account, check in, leave feedback, add restaurants to their favorites
+      list. 3. Technology used: HTML 5, CSS 3, JQUERY, JSON, AJAX, JAVASCRIPT, SQL Local Database.4. Inspired
+      by Foursquare structure and functionalities. · Jul 2012'
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: project
+    title: HOMATIC
+    detail: '1. Homatic is home automation system project built in order to provide user interface and
+      framework to develop his own smart home and to control his home devices regardless distance. It
+      is designed as one solution including hardware and software (front-end web application) allowing
+      user to access easily via his mobile devices (laptop, tablet, smart phone, etc..) and manage his
+      home light system, fire alarm, etc... All home devices will be connected to a home server acted
+      as gateway to communicate and receive commands from user via internet connection (Wifi).2. Technology
+      used: C# ASP.NET MVC 5, C/C++, TCP/IP, HTML 5, CSS 3, JQUERY, Jquery Mobile, Javascript, Ajax, Microsoft
+      SQL Database, Microsoft Entity Framework, Azure.3. Hardwares (Modules for home devices + Home server)
+      is programmed in C/C++, Andruino. SDK is provided for developers who are interested in modifying
+      / creating his own module to connect to home server.4. User will receive push notifications, email
+      and sms if there is any critical change happened in his home system (for example: fire is detected)5.
+      To be developed: learning algorithm for system to suggest user to schedule devices actions based
+      on user''s behavior / control history. · Nov 2013'
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: project
+    title: Color palette generator
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: project
+    title: Colorgen.dev
+    detail: Detect and generate predominant colors of a given image.Generate related palette for each
+      color according to TailwindCSS style.Copy & paste the palette code to use in TailwindCSS
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Advanced C Programming
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Algebra Linear
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Algorithms
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Artificial Intelligence
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Assembly Language
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: C# & .Net Developer
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Computability
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Computability
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Computer Graphics with OpenGL
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Data Structures
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Database
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Design Patterns
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Introduction to Computer Networks
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Java Development
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Machine Learning
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Mobile Web Application Development
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Number Theory
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: OOP with C++
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Operation Systems
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: Project Management
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  - kind: course
+    title: XNA Developing
+    evidence:
+      url: https://www.linkedin.com/in/mayashavin
+      observed_at: '2026-10-24T08:15:21Z'
+  recent_writing:
+  - title: Why GitHub Actions Became the Heart of My Publishing Pipeline
+    url: https://mayashavin.com/articles/choosing-the-right-orchestrator-for-my-publishing-pipeline
+    published: '2026-08-06T00:00:00Z'
+    channel: blog
+  - title: Building My Publishing Pipeline With AI
+    url: https://mayashavin.com/articles/building-publishing-pipeline-with-ai
+    published: '2026-07-23T00:00:00Z'
+    channel: blog
+  - title: How To Create An Artistic And Personal Intro Video With ChatGPT And Nano Banana
+    url: https://mayashavin.com/articles/how-to-create-an-artistic-personal-intro-video-chatgpt-gemini
+    published: '2026-06-11T07:00:00Z'
+    channel: blog
+  - title: What would I do without AI?
+    url: https://mayashavin.com/articles/what-will-i-do-without-ai
+    published: '2026-01-27T07:48:27Z'
+    channel: blog
+  - title: Making a custom input counter component accessible
+    url: https://mayashavin.com/articles/custom-counter-input-accessible-overlap
+    published: '2025-04-16T06:01:16Z'
+    channel: blog
+  - title: Managing Multi-Step Forms in Vue with XState
+    url: https://mayashavin.com/articles/manage-multi-step-forms-vue-xstate
+    published: '2025-02-12T08:45:25Z'
+    channel: blog
+  - title: My Top 5 VSCode Extensions to Supercharge Your Markdown Writing
+    url: https://mayashavin.com/articles/vscode-extensions-markdown-writing
+    published: '2025-01-29T07:01:16Z'
+    channel: blog
+  - title: 'Mastering Flexible Layouts: CSS Flexbox VS Grid for Responsive Design'
+    url: https://mayashavin.com/articles/auto-fit-layout-css-flex-vs-grid
+    published: '2025-01-21T22:10:58Z'
+    channel: blog
+  - title: Resolving Auto-Scroll issues for overflow container in a Nuxt app
+    url: https://mayashavin.com/articles/scroll-to-overflow-nuxt
+    published: '2025-01-15T08:40:29Z'
+    channel: blog
+  - title: 'Building Social Media Automation: LinkedIn Sharing with Serverless Function'
+    url: https://mayashavin.com/articles/share-onbehalf-linkedin
+    published: '2025-01-08T21:19:16Z'
+    channel: blog
+  - title: "My book has a colorful cover \U0001F973\U0001F973 I’m so so happy \U0001F601 \n\nEarly Release\
+      \ \U0001F449 https://t.co/MMqSYkPCyt https://t.co/hJS4IP9v8l"
+    url: https://twitter.com/50981316/status/1707269231094497594
+    published: '2023-09-28T05:41:18Z'
+    channel: x
+  - title: Can you guess what framework I am using? 😉 https://t.co/P3QIzQC7jU
+    url: https://twitter.com/50981316/status/1651882844434702338
+    published: '2023-04-28T09:35:35Z'
+    channel: x
+  - title: |-
+      Say hi to Vurianjs Wizard component - a Vue 3 component built on state machines 🙂
+
+      Repo: https://t.co/3IBsI1rnCA
+
+      Doc: https://t.co/os8eT9fNz0
+
+      Currently there is only Wizard and it’s still a WIP ☺️ but hopefully there will be more and a better documentation
+    url: https://twitter.com/50981316/status/1489515036393545729
+    published: '2022-02-04T08:23:53Z'
+    channel: x
+  - title: "\U0001F4A1[TIP] Declare an inherited type without certain fields in TypeScript? Omit is exactly\
+      \ for that \U0001F447. \n\n✨You can re-declare a field’s type using Omit also ;). https://t.co/AX9flQCXnA"
+    url: https://twitter.com/50981316/status/1483425188918153217
+    published: '2022-01-18T13:05:00Z'
+    channel: x
+  - title: "\U0001F4A1[Tip] In TypeScript you can use “keyof typeof” to declare a type that only accepts\
+      \ names of an object’s properties as value, without knowing or declaring the type of that object\
+      \ in advance \U0001F447. \n\n✨ Useful in making sure key in yourObj[key] will not be undefined ;)\
+      \ . https://t.co/u"
+    url: https://twitter.com/50981316/status/1483340884037021696
+    published: '2022-01-18T07:30:00Z'
+    channel: x
+  talks:
+  - session:ldr1634p
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686645252066001oKBi
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mayashavin
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

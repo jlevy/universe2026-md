@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kristenwomack
+  platform: linkedin
+  handle: in/kristenwomack
+  url: https://www.linkedin.com/in/kristenwomack
+  display_name: Kristen Womack
+  location: Vancouver
+  followers: 4212
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGZeyUel8j1bQ/profile-displayphoto-scale_200_200/B4DZlS7XEjHYAg-/0/1758032917196?e=2147483647&v=beta&t=8n-Eu9C4UrmY2jghpCHs4367cr-PXmvQAQZwPECHfEs
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQG_SWF6lc8oLw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1516232109057?e=2147483647&v=beta&t=yUJVGtPxWfEH0e5w5fItCUNnS5q3ySpn1v1-oqI6eMs
+  owner: person:kristen-womack
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725480642396001WlHp
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kristenwomack
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

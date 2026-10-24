@@ -1,0 +1,259 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:anand-kulkarni
+  person: person:anand-kulkarni
+  brief_bio:
+    text: Anand Kulkarni is CEO and founder of CoreStory, which uses AI models and agentic workflows to
+      document legacy code, and has published research on crowd-powered work systems. Kulkarni spoke at
+      GitHub Universe 2025 about spec-driven development with CoreStory and GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 7b5297a1f60cd0f65109774014e6286ce6a5271ddf355076cd17acffa5d5fed4
+    stale: false
+  headline: CoreStory
+  current_roles:
+  - CoreStory
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1872d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1872d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1872d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760055683905001V0bj
+      ref: session:2025/bld1872d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760055683905001V0bj
+      ref: session:2025/bld1872d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760055683905001V0bj
+      ref: session:2025/bld1872d
+  education:
+  - school: Y Combinator
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  credentials:
+  - kind: honor
+    title: Forbes 30 Under 30 – Social Entrepreneurship
+    issuer: Forbes
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - kind: honor
+    title: 'NSF Graduate Fellow – Mathematics: Operations Research'
+    issuer: National Science Foundation
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - kind: honor
+    title: Outstanding Graduate Student Instructor
+    issuer: University of California, Berkeley
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  publications:
+  - title: Subcontracting Microwork
+    venue: CHI 2017
+    date: '2017'
+    description: 'Mainstream crowdwork platforms treat microtasks as indivisible units; however, in this
+      article, we propose that there is value in re-examining this assumption. We argue that crowdwork
+      platforms can improve their value proposition for all stakeholders by supporting subcontracting
+      within microtasks. After describing the value proposition of subcontracting, we then define three
+      models for microtask subcontracting: real-time assistance, task management, and task improvement,
+      and reflect on potential use cases and implementation considerations associated with each. Finally,
+      we describe the outcome of two tasks on Mechanical Turk meant to simulate aspects of subcontracting.
+      We reflect on the implications of these findings for the design of future crowd work platforms that
+      effectively harness the potential of subcontracting workflows.'
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - title: 'Wish: Amplifying Creative Ability with Expert Crowds'
+    venue: AAAI Human Computation
+    date: Sep 2014
+    description: We present Wish, a system that uses expert members of an online crowd to amplify a user’s
+      ability to carry out complex creative tasks. When presented with an incomplete or rough draft of
+      creative content (for example, writing, programming, or art), Wish finds and recruits an expert
+      to suggest a possible realization of the user’s vision. Wish contributes a new approach to crowdsourcing
+      complex work. Rather than combining pools of unskilled workers to producing complex output, Wish
+      uses the crowd to identify and recruit a pool of experts, then assigns a single high-quality expert
+      to carry out the task. This approach retains the benefits of using a crowd — scalability, speed,
+      correctness, and responsiveness — while simplifying the process of crowdsourcing complex work. We
+      demonstrate Wish in the context of three prototype tools. Draft enables users to consult a crowd
+      of authors for suggestions on writing. Hack lets developers convert pseudocode into working code
+      by pulling results on demand from a crowd of programmers. Sketch lets individuals convert rough
+      sketches into fully-refined art by consulting artists. We illustrate how novice creators can use
+      Wish to amplify their ability, how expert designers can use Wish to explore design spaces and improve
+      the speed of creation, and how new users can use Wish to gain feedback from experts.
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - title: 'Chorus: A Crowd-Powered Conversational Assistant'
+    venue: UIST
+    date: '2013'
+    description: Despite decades of research attempting to establish conversationalinteraction between
+      humans and computers, the capabilitiesof automated conversational systems are still limited.In this
+      paper, we introduce Chorus, a crowd-powered conversationalassistant. When using Chorus, end users
+      conversecontinuously with what appears to be a single conversationalpartner. Behind the scenes,
+      Chorus leverages multiple crowdworkers to propose and vote on responses. A shared memoryspace helps
+      the dynamic crowd workforce maintain consistency,and a game-theoretic incentive mechanism helps
+      to balancetheir efforts between proposing and voting. Studies with12 end users and 100 crowd workers
+      demonstrate that Choruscan provide accurate, topical responses, answering nearly93% of user queries
+      appropriately, and staying on-topic inover 95% of responses. We also observed that Chorus has advantagesover
+      pairing an end user with a single crowd workerand end users completing their own tasks in terms
+      of speed,quality, and breadth of assistance. Chorus demonstrates anew future in which conversational
+      assistants are made usablein the real world by combining human and machine intelligence,and may
+      enable a useful new way of interactingwith the crowds powering other systems.
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - title: 'MobileWorks: Designing for Quality in a Managed Crowdsourcing Architecture'
+    venue: IEEE Computer Society
+    date: June 26, 2012
+    description: Online labor marketplaces offer the potential to automate tasks too difficult for computers,
+      but don't always provide accurate results. MobileWorks is a crowd platform that departs from the
+      marketplace model to provide robust, high-accuracy results using three new techniques. A dynamic
+      work-routing system identifies expertise in the crowd and ensures that posted work completes within
+      a bounded time with fair wages. A peer-management system helps prevent wrong answers. Last, social
+      interaction techniques let best workers manage and teach other crowd members. This process allows
+      the crowd to collaboratively learn how to solve new tasks.
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - title: Collaboratively Crowdsourcing Workflows with Turkomatic
+    venue: CSCW
+    date: Jun 2012
+    description: Preparing complex jobs for crowdsourcing marketplaces requires careful attention to workflow
+      design, the process of decomposing jobs into multiple tasks, which are solved by multiple workers.
+      Can the crowd help design such workflows? This paper presents Turkomatic, a tool that recruits crowd
+      workers to aid requesters in planning and solving complex jobs. While workers decompose and solve
+      tasks, requesters can view the status of worker-designed workflows in real time; intervene to change
+      tasks and solutions; and request new solutions to subtasks from the crowd. These features lower
+      the threshold for crowd employers to request complex work. During two evaluations, we found that
+      allowing the crowd to plan without requester supervision is partially successful, but that requester
+      intervention during workflow planning and execution improves quality substantially. We argue that
+      Turkomatic's collaborative approach can be more successful than the conventional workflow design
+      process and discuss implications for the design of collaborative crowd planning systems.
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - title: Shepherding the Crowd Yields Better Work
+    venue: CSCW
+    date: '2012'
+    description: Micro-task platforms provide massively parallel, ondemand labor. However, it can be difficult
+      to reliably achieve high-quality work because online workers may behave irresponsibly, misunderstand
+      the task, or lack necessary skills. This paper investigates whether timely, taskspecific feedback
+      helps crowd workers learn, persevere, and produce better results. We investigate this question through
+      Shepherd, a feedback system for crowdsourced work. In a between-subjects study with three conditions,
+      crowd workers wrote consumer reviews for six products they own. Self-assessment alone yielded better
+      overall work than no feedback and helped workers improve over time. External assessment also yielded
+      these benefits. Participants who received external assessment also revised their work more. We discuss
+      interaction and infrastructure approaches for integrating real-time assessment into online work.
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - title: Actuator Networks for Navigating an Unmonitored Mobile Robot
+    venue: IEEE Automation Science & Engineering
+    date: Aug 2008
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - title: Two Tools for Tollbooth Optimization
+    venue: UMAP Journal 26.3 Fall 2005 Edition
+    date: '2005'
+    description: Tollbooth plazas on freeways have the potential to disrupt the flow of traffic by slowing
+      traffic in order to collect tolls in each lane. Freeway designers offset this problem by including
+      extra lanes for toll collection, but this causes additional disruption as many lanes of traffic
+      attempt to merge back together near the plaza exit. We seek to determine the optimal number of additional
+      lanes to include in order to maximize the transit rate of vehicles hrough the system. We utilize
+      two totally different approaches, one macroscopic, and one discrete, in modeling traffic throughthe
+      toll plaza. In our first approach, we derive a number of theoretical results about flows through
+      a sequence of bottlenecks and demonstrate that maximum flow will occur when theflow rate through
+      all bottlenecks is equal. We then apply these results to the toll plaza system in order to determine
+      the optimal number of toll lanes. At high densities, our model predictsthe optimal result to exhibit
+      a roughly linear relationship with the number of toll lanes.
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  patents:
+  - title: Architecture for maintaining quality, speed, and usability during online outsourcing
+    number: US 61,641,573
+    date: May 16, 2012
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  activities:
+  - kind: volunteering
+    title: Chief Mentor
+    detail: European Innovation Academy · Education · 2013 · - Present · 13 years · Annual European accelerator
+      teaching entrepreneurship to teams of executives and graduate students. Lecturer and mentor. · 2013
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  - kind: volunteering
+    title: Industry Chair
+    detail: AAAI HCOMP · Science and Technology · 2016 · - Present · 10 years · 2016
+    evidence:
+      url: https://www.linkedin.com/in/anandpkulkarni
+      observed_at: '2026-10-24T08:43:21Z'
+  talks:
+  - session:2025/bld1872d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1758151401549001kjMw
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

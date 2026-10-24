@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/jaredhatfield
+  platform: x
+  handle: JaredHatfield
+  url: https://x.com/JaredHatfield
+  display_name: Jared Hatfield
+  location: Louisville Kentucky
+  website: https://medium.com/@jaredhatfield
+  followers: 115
+  following: 185
+  posts_count: 2131
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/2085515923436208128/5fdUZmbT_normal.jpg
+  created_at: '2008-02-10T22:31:59Z'
+  owner: person:jared-hatfield
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777390555511001JrY5
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/JaredHatfield
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

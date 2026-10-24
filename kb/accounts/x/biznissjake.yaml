@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/biznissjake
+  platform: x
+  handle: biznissjake
+  url: https://x.com/biznissjake
+  display_name: business jake
+  bio: new account. jake...but wearing a tie. dev advocate @figma and a big ol' fan of the web. opinions
+    are mine. he/they
+  followers: 314
+  following: 78
+  posts_count: 56
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1837178975296110593/Kd1ckGkF_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1837178677412466688/1727112156
+  created_at: '2024-09-20T17:15:44Z'
+  owner: person:jake-albaugh
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721921357878001AGv8
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/biznissjake
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

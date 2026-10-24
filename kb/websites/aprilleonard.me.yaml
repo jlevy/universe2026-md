@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:aprilleonard.me
+  url: https://aprilleonard.me
+  kind: personal
+  title: April Leonard - Blog home
+  description: April Leonard, Engineering Leader
+  owner: person:april-leonard
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://www.aprilleonard.me/rss.xml
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: aprilla
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://www.aprilleonard.me/
+    record_id: https://aprilleonard.me
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

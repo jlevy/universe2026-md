@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/gitignore
+  full_name: github/gitignore
+  url: https://github.com/github/gitignore
+  description: A collection of useful .gitignore templates
+  stars: 176043
+  forks: 82078
+  watchers: 3365
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  topics:
+  - gitignore
+  - git
+  license: CC0-1.0
+  archived: false
+  fork: false
+  created_at: '2010-11-08T20:17:14Z'
+  pushed_at: '2026-10-02T20:59:38Z'
+  owner_login: github
+  owner: gh:github
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/gitignore
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

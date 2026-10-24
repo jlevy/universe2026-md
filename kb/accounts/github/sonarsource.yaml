@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:sonarsource
+  login: SonarSource
+  kind: organization
+  url: https://github.com/SonarSource
+  name: Sonar
+  bio: The home of integrated code quality and code security
+  location: Switzerland
+  website: https://www.sonarsource.com
+  public_repositories: 206
+  created_at: '2011-01-03T20:41:22Z'
+  pinned:
+  - repo:sonarsource/sonarqube
+  top_repositories:
+  - repo:sonarsource/docker-sonarqube
+  - repo:sonarsource/sonarjs
+  - repo:sonarsource/sonar-java
+  linked_accounts:
+  - acct:x/sonarsource
+  entity: org:sonar
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SonarSource
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

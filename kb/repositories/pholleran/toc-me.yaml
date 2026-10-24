@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:pholleran/toc-me
+  full_name: pholleran/toc-me
+  url: https://github.com/pholleran/toc-me
+  description: A GitHub App built with Probot that runs markdown-toc
+  homepage: https://github.com/apps/toc-me
+  stars: 16
+  forks: 2
+  watchers: 3
+  open_issues: 4
+  stats_observed_at: '2026-10-24T19:12:13Z'
+  primary_language: JavaScript
+  topics:
+  - probot-app
+  - probot
+  license: ISC
+  archived: false
+  fork: false
+  created_at: '2018-06-26T15:02:26Z'
+  pushed_at: '2019-08-15T17:42:11Z'
+  owner_login: pholleran
+  owner: gh:pholleran
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pholleran
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pholleran/toc-me
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/cisco
+  platform: linkedin
+  handle: company/cisco
+  url: https://www.linkedin.com/company/cisco
+  display_name: Cisco
+  bio: Cisco is the worldwide technology leader that is revolutionizing the way organizations connect
+    and protect in the AI era. For more than 40 years, Cisco has securely connected the world. With its
+    industry leading AI-powered solutions and services, Cisco enables its customers, partners and communities
+    to unlock innovation, enhance productivity and strengthen digital resilience. With purpose at its
+    core, Cisco remains committed to creating a more connected and inclusive future for all.
+  website: https://www.cisco.com/
+  followers: 7883841
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQFYnR_Zrm87Dg/company-logo_200_200/B56ZnMyVr4HUAI-/0/1760077372453/cisco_logo?e=2147483647&v=beta&t=wMRlDk1RRcz8v2MnLi-WNQ-07NQIVXIdK096CqgMa14
+  owner: org:cisco
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/priyapahwa
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/natalivlatko
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/cisco
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

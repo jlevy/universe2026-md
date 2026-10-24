@@ -1,0 +1,277 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ruth-ikegah
+  person: person:ruth-ikegah
+  brief_bio:
+    text: Ruth Ikegah is an open source community and program lead, a GitHub Star and the lead of All
+      In Africa, focused on bringing beginners into open source. Ikegah spoke at GitHub Universe 2024
+      about skilling the next generation of developers through open source.
+    cites:
+    - listed_role
+    - event_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 57c1e7677ab0a3aafd478ca613a10a6ea4a73a20f731dc2b3e17ac812d64b57e
+    stale: false
+  expertise:
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1844l
+  recognitions:
+  - label: GitHub Star
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Ruth is an open source program manager, community manager, GitHub Star, technical writer,
+        and lead of All In Africa.
+  interests:
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: Discussions
+    target: term:github-product-2024/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: Education
+    target: term:github-product-2024/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715564726257001Azx9
+      ref: session:2024/dev1844l
+  recent_writing:
+  - title: "It took months for me to finally complete this article because I have been so busy! Whew!\
+      \ \n\nIn June, I attended and moderated a panel at the United Nations Open Source Week and I wrote\
+      \ all about it here. It’s a long read but it shares my reflections and some insights. \n\nRead http"
+    url: https://twitter.com/1058744590658887680/status/1972584807897895240
+    published: '2025-09-29T08:50:41Z'
+    channel: x
+  - title: I’m a GitHub Star again for the 5th year 🥂 https://t.co/iLAk2EtL8x
+    url: https://twitter.com/1058744590658887680/status/1887424980503461959
+    published: '2025-02-06T08:55:56Z'
+    channel: x
+  - title: I registered an LLC early this year to officially offer open source services as a business
+      and it just clocked to me that I’m in the process of getting my first client 🥹.  A big one at that🍾
+    url: https://twitter.com/1058744590658887680/status/1829209777999884428
+    published: '2024-08-29T17:29:30Z'
+    channel: x
+  - title: "““Seest thou a man diligent in his business? He shall stand before kings”. \n\nToday I spoke\
+      \ at the UN \U0001F1FA\U0001F1F3 \U0001F979. I’m so grateful for this opportunity to speak in this\
+      \ room filled with both decision makers in the private, public, government sector that interface\
+      \ with open source https:/"
+    url: https://twitter.com/1058744590658887680/status/1811210166819315875
+    published: '2024-07-11T01:25:29Z'
+    channel: x
+  - title: I got an invite to attend an open source event hosted by the UN on July 9th at their headquarters
+      in Newyork, and a speaker invite from UNICEF for their youth spotlight side event is supposed to
+      follow this. Because the invite came in late, I can’t even get a date for a US visa
+    url: https://twitter.com/1058744590658887680/status/1801859330473361900
+    published: '2024-06-15T06:08:35Z'
+    channel: x
+  - title: "If you’ve ever wanted to learn about open source in a structured curriculum with guidance,\
+      \ mentoring and opportunities; this program is for you. \n\nI’m ecstatic about this program and\
+      \ I was privileged to design it. And over the course of this program I will be working with amazing"
+    url: https://twitter.com/1058744590658887680/status/1711643938900046218
+    published: '2023-10-10T07:24:50Z'
+    channel: x
+  - title: I spent Children’s day inspiring some secondary school students on becoming Tech Makers at
+      MTN/Google Children’s day event! https://t.co/n5GyEgUrma
+    url: https://twitter.com/1058744590658887680/status/1530211005082509312
+    published: '2022-05-27T15:35:08Z'
+    channel: x
+  - title: 2 years and counting in tech 🎉🎉. Glad I made this decision.
+    url: https://twitter.com/1058744590658887680/status/1502931596357292036
+    published: '2022-03-13T08:56:30Z'
+    channel: x
+  - title: 'Gave my first in person talk on “Writing enticing Cover letters” at #DevFestLagos2021 https://t.co/x41wg1BcL7'
+    url: https://twitter.com/1058744590658887680/status/1466693327638740998
+    published: '2021-12-03T08:58:33Z'
+    channel: x
+  - title: 'Honestly it’s so nice to see that my #opensource contributions are being recognized 🤩 https://t.co/zUw7MoZSR0'
+    url: https://twitter.com/1058744590658887680/status/1379682434292273158
+    published: '2021-04-07T06:28:20Z'
+    channel: x
+  talks:
+  - session:2024/dev1844l
+  gaps:
+  - github_account
+  - linkedin_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686172007980001yfQO
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

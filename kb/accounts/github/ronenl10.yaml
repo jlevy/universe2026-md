@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:ronenl10
+  login: ronenl10
+  kind: user
+  url: https://github.com/ronenl10
+  name: Ronen Lewit
+  company: JFrog
+  followers: 1
+  public_repositories: 1
+  created_at: '2016-10-05T06:12:10Z'
+  contributions_last_year:
+    total: 0
+    commits: 0
+    pull_requests: 0
+    issues: 0
+    reviews: 0
+  starred_repositories: 1
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  entity: person:ronen-lewit
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ronenl10
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

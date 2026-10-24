@@ -1,0 +1,50 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/codeql
+  full_name: github/codeql
+  url: https://github.com/github/codeql
+  description: 'CodeQL: the libraries and queries that power security researchers around the world, as
+    well as code scanning in GitHub Advanced Security'
+  homepage: https://codeql.github.com
+  stars: 10244
+  forks: 2135
+  watchers: 297
+  open_issues: 1005
+  stats_observed_at: '2026-10-24T19:10:13Z'
+  primary_language: CodeQL
+  topics:
+  - semmle-ql
+  - codeql
+  - github-advanced-security
+  - github-security-lab
+  - works-with-codespaces
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2018-07-31T16:35:51Z'
+  pushed_at: '2026-10-23T15:39:15Z'
+  owner_login: github
+  owner: gh:github
+  pinned_by:
+  - gh:jonjanego
+  software: software:codeql
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jonjanego
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/codeql
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/codeql
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

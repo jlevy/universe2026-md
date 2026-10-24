@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/eficode
+  platform: linkedin
+  handle: company/eficode
+  url: https://www.linkedin.com/company/eficode
+  display_name: Eficode
+  bio: 'We are the leading DevOps company in Europe, driving the Agile, DevOps, and AI movement and building
+    the future of software development. Our skills and practices enable our clients to focus on their
+    growth and customers. We also offer our clients our Eficode ROOT DevOps platform: A managed service
+    with over 40 preferred tools, including Atlassian, Jenkins, and Kubernetes, along with application
+    management and Atlassian services. Our areas of expertise include: 👉 DevOps 👉 AI and GenAI 👉 Agile
+    👉 Platform engineering 👉 Test automation 👉 UX/UI research 👉 Software development 👉 And more… Since
+    2021, we''ve joined forces with: Riada: A market leader, consultor, and managed services provider
+    for Atlassian software in Sweden. Beecom: A full-service provider for all Atlassian products in the
+    DACH region. Contribyte: An independent software and production team of experts in Finland. Clearvision:
+    An Atlassian Platinum Solution Partner and provider of Git and open-source tooling in the UK and USA.
+    Avoset: An Atlassian Platinum Solution Partner with expertise in Atlassian Cloud, based in Finland.
+    Jodocus: An Atlassian Platinum Solution Partner specializing in optimizing business processes with
+    Atlassian software. Solidify: A leading GitHub and Microsoft consultancy in Scandinavia, and a Microsoft
+    partner in DevOps, cloud, and application development.'
+  website: https://www.eficode.com/
+  followers: 20766
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQHsRTtBSfDK2g/company-logo_200_200/B4EZfLJVY8HwAI-/0/1751459912623/eficode_logo?e=2147483647&v=beta&t=MrXfYCbTmC6HafezKrIk-eObWhSDk9lqa2QxiJJvyCU
+  owner: org:eficode
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/housa
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/eficode
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

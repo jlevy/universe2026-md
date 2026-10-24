@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/aprilyoho
+  platform: linkedin
+  handle: in/aprilyoho
+  url: https://www.linkedin.com/in/aprilyoho
+  display_name: April Yoho
+  location: United Kingdom
+  followers: 10372
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGsKuuDNot4yg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1708685949857?e=2147483647&v=beta&t=Rp8ZEd6biCfJiB_DdZDyaY2CfbZT1I_dbu9rodsv4CY
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHINMJCAS5YOQ/profile-displaybackgroundimage-shrink_200_800/B4EZbi6VYuHkAU-/0/1747563665674?e=2147483647&v=beta&t=b2ut2-fGB81sz-RNLnYgXLj_gl8FaOEGfdQOC_-I8-s
+  owner: person:april-yoho
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685619186942001eQLJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/aprilyoho
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

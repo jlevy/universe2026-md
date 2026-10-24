@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/daveburnison
+  platform: linkedin
+  handle: in/daveburnison
+  url: https://www.linkedin.com/in/daveburnison
+  display_name: Dave Burnison
+  bio: I work as Sr. Technical Advocate for GitHub. I engage with both business and technical…
+  location: United States
+  followers: 1935
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHfo0lbs4g9_Q/profile-displayphoto-scale_200_200/B56ZmxXoGSI8AY-/0/1759617385493?e=2147483647&v=beta&t=YFfdN4kXMcEJ_e8wLQYrTwRv-r6nFyzQDgvy6x6Lpps
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGNj-p9WtUYeg/profile-displaybackgroundimage-shrink_200_800/B56Z6UVMoBIQAQ-/0/1780605045542?e=2147483647&v=beta&t=9BCLu-ZdKv2Vb8Z9HCpcrpeokyXuc0zIO4tKHy0Uknw
+  owner: person:dave-burnison
+  link_basis:
+  - event_listing
+  - x_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686018511816001za3o
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/DaveBurnison
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/daveburnison
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

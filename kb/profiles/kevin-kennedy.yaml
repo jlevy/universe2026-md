@@ -1,0 +1,291 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kevin-kennedy
+  person: person:kevin-kennedy
+  brief_bio:
+    text: Kevin Kennedy is a Principal Software Engineer at Micron Technology who builds shared libraries
+      and platforms that improve developer productivity. Kennedy speaks at GitHub Universe 2026 about
+      how Forge powers the rest of the software development lifecycle.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 9a73341820cab6955cff1b4984d5cae488d1200f7409da543f6fb60d54a52244
+    stale: true
+  headline: Principal Software Engineer at Micron Technology
+  location: Idaho
+  current_roles:
+  - Principal Software Engineer at Micron Technology
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1869h
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1869h
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:ldr1869h
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1869h
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:protonyx/labtronyx
+    - ref: repo:protonyx/ptx-rpc
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:protonyx/spyglass
+  - label: C#
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:protonyx/game-manager
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788382688217001qJSV
+      ref: session:ldr1869h
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788382688217001qJSV
+      ref: session:ldr1869h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788382688217001qJSV
+      ref: session:ldr1869h
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788382688217001qJSV
+      ref: session:ldr1869h
+  open_source:
+  - repository: repo:protonyx/labtronyx
+    relation: owner
+    stars: 5
+    primary_language: Python
+  - repository: repo:protonyx/spyglass
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:protonyx/game-manager
+    relation: owner
+    stars: 0
+    primary_language: C#
+  - repository: repo:protonyx/ptx-rpc
+    relation: owner
+    stars: 0
+    primary_language: Python
+  education:
+  - school: Utah State University
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  credentials:
+  - kind: honor
+    title: Engineering Undergraduate Research Scholar
+    issuer: Utah State University College of Engineering
+    date: '2013-12-01T00:00:00.000Z'
+    description: The College of Engineering Undergraduate Research Program (EURP) is designed to involve
+      outstanding undergraduate students in research projects and encourage these students to consider
+      graduate school. My Research will focus on developing a test automation control network to interface
+      test equipment with various communication standards on a TCP/IP network.
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Feb 2020
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: certification
+    title: 'CKA: Certified Kubernetes Administrator'
+    issuer: The Linux Foundation
+    date: Oct 2025
+    expires: Oct 2027
+    url: https://www.credly.com/badges/573c957e-6cb5-4dfa-ba7d-a3c26fb0bd3a
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: Microsoft
+    date: Oct 2025
+    expires: Oct 2027
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: certification
+    title: 'CKAD: Certified Kubernetes Application Developer'
+    issuer: The Linux Foundation
+    date: Mar 2025
+    expires: Mar 2027
+    url: https://www.credly.com/badges/c78ba76a-9fa8-4a10-a295-38af5e20b537/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Administrator Associate'
+    issuer: Microsoft
+    date: May 2025
+    expires: May 2026
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Developer Associate'
+    issuer: Microsoft
+    date: Feb 2020
+    expires: Feb 2026
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Developer Associate'
+    issuer: Microsoft
+    date: Feb 2020
+    expires: Feb 2022
+    url: https://www.youracclaim.com/badges/81a7eff5-3450-46c7-8650-190743e2f660/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  activities:
+  - kind: project
+    title: Student Professional Awareness Conference (SPAC-IEEE)
+    detail: 'Organized a 5 hour professional conference with engineers from around the United States.
+      We had an engineer, and CEO of 3 different companies, Mike Andrews, from Arizona speak first, and
+      then had 2 workshops (How to teach yourself Matlab, Negotiation Job Offers) going simultaneously,
+      then again 2 workshops (Consulting How to''s: Do-s and Don''t-s, Finding Internships).Afterwards
+      we had a panel of 5 experienced engineers Jonathan Chew, from Disney, Christine Hailey, Dean of
+      Engineering at Utah State University, Mike Andrews from earlier, Peijung Tsai from L3 Communications,
+      and Kelly Wigington from VPI Engineering. They each spoke of their experiences and how they got
+      to where they are now.Lastly, motivational speaker Jonathan Chew and current employee at Disney
+      presented on becoming the best you.Overall we had 175 registrants, where our Dean of Electrical
+      Engineering called it "The most attended engineering conference I have ever seen since working at
+      this school." · Mar 2014'
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: course
+    title: Computer Architecture
+    detail: ECE 5720
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: course
+    title: Control Systems
+    detail: ECE 5310
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: course
+    title: Data Structures and Algorithms
+    detail: CS 2420
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: course
+    title: Digital Signal Processing
+    detail: ECE 5630
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: course
+    title: Introduction to Power Electronics
+    detail: ECE 5930
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: course
+    title: Microcontroller Hardware and Software
+    detail: ECE 3710
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: course
+    title: Real-Time Systems
+    detail: ECE 5780
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: organization
+    title: IEEE
+    detail: Jun 2013 · Jun 2016
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  - kind: organization
+    title: IEEE USU Student Branch
+    detail: Jun 2013 · May 2015
+    evidence:
+      url: https://www.linkedin.com/in/kkennedyusu
+      observed_at: '2026-10-24T08:15:11Z'
+  talks:
+  - session:ldr1869h
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755807083980001uGqs
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: protonyx
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

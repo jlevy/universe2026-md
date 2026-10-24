@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/the-linux-foundation
+  platform: linkedin
+  handle: company/the-linux-foundation
+  url: https://www.linkedin.com/company/the-linux-foundation
+  display_name: The Linux Foundation
+  bio: The Linux Foundation is the organization of choice for the world's top developers and companies
+    to build ecosystems that accelerate open technology development and commercial adoption. Together
+    with the worldwide open source community, it is solving the hardest technology problems by creating
+    the largest shared technology investment in history. Founded in 2000, The Linux Foundation today provides
+    tools, training and events to scale any open source project, which together deliver an economic impact
+    not achievable by any one company. More information can be found at www.linuxfoundation.org.
+  website: https://www.linuxfoundation.org/
+  followers: 424287
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQEXYSSWEvEL9g/company-logo_200_200/company-logo_200_200/0/1657565842240/the_linux_foundation_logo?e=2147483647&v=beta&t=CtnEykXCeApo9R5zMGeOHnv0Rv59epifathIC7jaUj0
+  owner: org:the-linux-foundation
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/david-a-wheeler-27798688
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/dr-david-a-wheeler
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/the-linux-foundation
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

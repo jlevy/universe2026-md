@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/estebanfgarcia
+  platform: x
+  handle: estebanfgarcia
+  url: https://x.com/estebanfgarcia
+  display_name: Esteban Garcia
+  bio: Tech Entrepreneur living in the cloud. MSFT Regional Director & DevOps MVP. Beating cancer. UCF
+    Knight. 🇪🇨
+  location: Winter Park, FL
+  website: http://repotocloud.com/
+  followers: 3774
+  following: 1280
+  posts_count: 9550
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1933252299595378688/649LVUdy_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14381189/1639678827
+  created_at: '2008-04-14T04:27:18Z'
+  owner: person:esteban-garcia
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693254795218001VLYf
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/estebanfgarcia
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

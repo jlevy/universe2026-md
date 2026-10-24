@@ -1,0 +1,588 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:bryant-jimin-son
+  person: person:bryant-jimin-son
+  brief_bio:
+    text: Bryant Son was a Senior Cloud Solutions Architect at GitHub, supporting customers with GitHub
+      products after a decade in cloud, automation and DevOps, when speaking at GitHub Universe 2024 about
+      building an app with GitHub Copilot in 40 minutes.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: ed0d31ebd40712debc4a3acd7667ba11f302eb785dfcd6fcc5e9f166b70dfe64
+    stale: false
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1374s
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:bryant-jimin-son
+  - label: Linux
+    target: software:linux
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Linux
+      ref: person:bryant-jimin-son
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  credentials:
+  - kind: honor
+    title: Red Hat Service Top Gun Q3 2019 - North America Central Region
+    issuer: Red Hat
+    date: '2020-01-01T00:00:00.000Z'
+    description: Selected as the Top Gun at the Central Region.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Red Hat Reward - Anticipate Need
+    issuer: Red Hat
+    date: '2019-12-01T00:00:00.000Z'
+    description: for working hand in hand with customers, and making sure everything goes smooth as possible!
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Citi Gratitude Citi Applause Award (Develops Our People) - CI/CD Migration for CAS Development
+    issuer: Greg Marshall
+    date: '2017-05-01T00:00:00.000Z'
+    description: '"Excellent job on pushing through the CI/CD migration to all the teams. Really good
+      informative slides and wikis + held regular sessions with team to make this happen"'
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Citi's eRave Praise Award - DevOps Continuous Integration & Continuous Delivery
+    issuer: Citi
+    date: '2016-10-01T00:00:00.000Z'
+    description: For inventing DevOps team and Continuous Integration / Continuous Delivery framework
+      and leading the team as the project manager and tech lead
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Participant in AT&T Shape Hackathon
+    issuer: AT&T
+    date: '2016-07-01T00:00:00.000Z'
+    description: 'Participated in AT&T Shape Hackathon at San Francisco, California. Team Chimera IOT:
+      Designed a smart home device built inside a Direct TV can monitor what is going on around the house,
+      interact with family, monitor the status of the family, and operate everything through the voice
+      commands'
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Citi's eRave Praise Award - Docker Container as a Service
+    issuer: Citi
+    date: '2016-05-01T00:00:00.000Z'
+    description: For successful delivery of Container as a Service (CaaS) project
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Crave Innovation Award at Citi Regent Office
+    issuer: Citi Regent Office
+    date: '2015-10-01T00:00:00.000Z'
+    description: Won the best prize in a local contest to create the video to showcase the collaboration
+      across cross functional teams
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Creativity & Innovation + Incorporation of Themes
+    issuer: Citi Tampa Tech Expo
+    date: '2015-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Participant in AT&T Hackathon (Social App & IOT)
+    issuer: AT&T
+    date: '2015-03-01T00:00:00.000Z'
+    description: Facebook Group Messenger (FGM)
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: 1st Place in Dallas AT&T Hackathon (Connected Car) in Telerik Category
+    issuer: AT&T
+    date: '2014-08-01T00:00:00.000Z'
+    description: 'JYAYCA: Just Yet Another Car App'
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Best Use of AT&T API in AT&T Hackathon (Machine-to-Machine)
+    issuer: AT&T
+    date: '2013-09-01T00:00:00.000Z'
+    description: Team Juvo
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: 4th Place, National Instruments Technology Challenge
+    issuer: National Instruments Technology
+    date: '2008-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: 2nd Place, National Instruments Technology Challenge
+    issuer: National Instruments Technology
+    date: '2007-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Quarterfinalist, Idea2Product
+    issuer: University of Texas at Austin
+    date: '2007-01-01T00:00:00.000Z'
+    description: Multipurpose Noise Cancellation Device
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: honor
+    title: Award, Korean Studies Essay Contest for Asian Studies Spring Festival
+    issuer: College of Liberal Art, University of Texas at Austin
+    date: '2006-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: Consulting Approach to Problem Solving
+    issuer: Udemy
+    date: May 2018
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: Leading People
+    issuer: Harvard Business Review
+    date: May 2018
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: Software Architecture for the Enterprise Architect
+    issuer: Udemy
+    date: May 2018
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: Introduction to C# - EdX Audit
+    issuer: Microsoft
+    date: Sep 2017
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: Wireshark Certification
+    issuer: Udemy
+    date: Apr 2016
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: edX Honor Code Certificate for Introduction to Cloud Computing
+    issuer: edX
+    date: Jul 2015
+    url: https://s3.amazonaws.com/verify.edx.org/downloads/7d6d0c59911543849604312dbb5ad2f5/Certificate.pdf
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: Seven Habits of Highly Effective People
+    issuer: American Airlines Flagship University
+    date: May 2013
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: Ansible for the Absolute Beginner
+    issuer: Udemy
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: real-time-web-with-node-js
+    issuer: Code School
+    url: https://www.codeschool.com/courses/real-time-web-with-node-js
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: certification
+    title: shaping-up-with-angular-js
+    issuer: Code School
+    url: https://www.codeschool.com/courses/shaping-up-with-angular-js
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  publications:
+  - title: 6 open source web browser alternatives
+    venue: Opensource.com
+    date: July 3, 2019
+    description: Chrome and Firefox are on the list, but you'll find some other interesting options, too.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - title: A beginner's guide to Linux permissions
+    venue: Opensource.com
+    date: June 18, 2019
+    description: Linux security permissions designate who can do what with a file or directory.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - title: Set up a static network connection in Linux
+    venue: Opensource.com
+    date: May 21, 2019
+    description: Learn the tools and commands to check for network connections and add a static network
+      connection in CentOS.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - title: The state of open source in South Korea
+    venue: Opensource.com
+    date: May 7, 2019
+    description: South Korean companies are making important open source contributions in mobility, artificial
+      intelligence, web technologies, and many other areas.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - title: Introduction to generative adversarial network
+    venue: Opensource.com
+    date: April 29, 2019
+    description: GAN has been called the "most interesting idea in the last 10 years of machine learning."
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - title: A beginner's guide to building DevOps pipelines with open source tools
+    venue: Opensource.com
+    date: April 8, 2019
+    description: If you're new to DevOps, check out this five-step process for building your first pipeline.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - title: 9 open source tools for building a fault-tolerant system
+    venue: Opensource.com
+    date: March 29, 2019
+    description: Maximize uptime and minimize problems with these open source tools.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - title: 'Getting started with Vim: The basics'
+    venue: Opensource.com
+    date: March 25, 2019
+    description: Learn to use Vim enough to get by at work or for a new project.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - title: 'Getting started with Minikube: Kubernetes on your laptop'
+    venue: Opensource.com
+    date: October 11, 2018
+    description: A step-by-step guide for running Minikube.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - title: How to install a device driver on Linux
+    venue: OpenSource.com
+    description: Learn how Linux drivers work and how to use them.
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  spoken_languages:
+  - Korean
+  - Spanish
+  - Chinese
+  - Japanese
+  activities:
+  - kind: volunteering
+    title: 5th Grader Citi Volunteer
+    detail: Junior Achievement of Dallas, Inc. · Education · May 2015 · - Present · 11 years 6 months
+      · May 8th, 2015 Volunteered for Junior Achievement (JA), a non-profit organization founded in 1919
+      that brings the real world to kindergarten to 12th grader students through hands-on-curriculum delivered
+      by a trained classroom volunteers and where Citi is one of the sponsors. Led the 5th graders classroom
+      period to educate them about the entrepreneurship and the skills needed to be prepared for the job
+      markets · May 2015
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: volunteering
+    title: On Campus Recruiter for ADEPT Program
+    detail: American Airlines · Science and Technology · Sep 2013 · - Present · 13 years 2 months · Volunteered
+      to recruit the talented IT candidates for American Airlines by attending the University of Texas
+      at Austin Natural Science Career Fair at Austin, Texas in September 16th, 2013. We received about
+      98 hard copies of resumes from UT students in one day event. · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: volunteering
+    title: Fund Raiser for AA.com
+    detail: Big Brothers and Big Sisters · Education · Feb 2012 · - Jun 2012 · 5 months · Feb 2012
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: volunteering
+    title: Kindergarten Teacher
+    detail: Junior Achievement of Dallas, Inc. · Education · Apr 2017 · - Present · 9 years 7 months ·
+      April 28th Volunteered to teach the local kindergarten students about the money management and the
+      finance decision for an entire day through Citi sponsored Junior Achievement of Dallas · Apr 2017
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: project
+    title: One One Steel (일일 철재) Website
+    detail: Built an website for my close relative in 3 hours. Deployed to Firebase. · Nov 2017
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: project
+    title: Citi Crave Innovation Contest
+    detail: Won the Crave Innovation prize held at Irving, Texas by forming a team to create a promotional
+      video for Citi Cloud platform by collaborating with cross functional teams and leading them · Oct
+      2015
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: project
+    title: Flappy Bird Revived on Scratch
+    detail: Recreated a Scratch version of the popular Flappy Bird application just for fun · Mar 2014
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: project
+    title: Juvo M2M Project from AT&T 2013 Dallas Hackathon
+    detail: Our team Juvo won the Best Use of AT&T APIs in AT&T 2013 Dallas Hackathon. We implemented
+      a Machine-to-Machine (M2M) device using Arduino, Windows Phone, and .NET cloud server where the
+      Arduino device can notify the customers in the cloud server database through Twilio PHP API and
+      AT&T SMS API and give them the automated message whenever someone get in the accident. Windows Phone
+      is used to update the record in the database. · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: project
+    title: UT Austin ADEPT Recruiting Project
+    detail: Improved the recruiting process and set up a new high standard by revolutionizing the existing
+      American Airlines' IT (ADEPT) recruiting program. Our primary focus was to hire the best, young,
+      and talented students straight out of the colleges for American Airlines's IT departments, and we
+      accomplished these by bringing new fresh ideas and creating marketing strategy and materials to
+      attract the best talents from the University of Texas at Austin and influencing the American Airlines
+      ADEPT recruiters for other schools. · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: project
+    title: ADEPT Webpage Refresh
+    detail: 'Completely redesigned the American Airlines''s ADEPT website that will be officially used
+      as the face to recruit the future IT candidates from different universities.Website: www.aa.com/adept
+      · Jun 2013'
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: project
+    title: Perplexity Hackathon - DevPost
+    detail: Participated in Perplexity Hackathon through DevPostCreated a karaoke app - Entryhttps://devpost.com/software/smarter-karaoke-machine-using-perplexity?ref_content=my-projects-tab&ref_feature=my_projectsGitHub
+      repository:https://github.com/bryantson/perplexity-karaoke · Jun 2025
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: project
+    title: T-Mobile 2021 5G Hackathon
+    detail: Participated in a virtual T-Mobile hackathon. Created a web application that streams to multiple
+      live streaming channels with a click of a button. · May 2021
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: course
+    title: Automata Theory
+    detail: CS341
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: course
+    title: Computer Organizations & Architectures
+    detail: CS429
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: course
+    title: Database Management
+    detail: MIS325
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: course
+    title: Discrete Mathematics
+    detail: CS311
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: course
+    title: Information Retrieval and Web Search
+    detail: CS371R
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: course
+    title: Introduction to Computer Security
+    detail: CS361
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: course
+    title: Introduction to Wireless Network
+    detail: CS356R
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: course
+    title: Neural Network
+    detail: CS342
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: course
+    title: Operating System
+    detail: CS372
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  - kind: organization
+    title: Korea American Information Technology Association (KAITA)
+    detail: Jul 2017 · Present
+    evidence:
+      url: https://www.linkedin.com/in/bryantson
+      observed_at: '2026-10-24T08:43:02Z'
+  talks:
+  - session:2024/ai1374s
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685653289360001m4vK
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

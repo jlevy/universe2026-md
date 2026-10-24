@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/invillia
+  platform: linkedin
+  handle: company/invillia
+  url: https://www.linkedin.com/company/invillia
+  display_name: AI/R Invillia
+  bio: We are AI/R.
+  followers: 135415
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQHquDE5kLqdtg/company-logo_200_200/B4DZ2b0kc4HwAI-/0/1776435742980/invillia_logo?e=2147483647&v=beta&t=Q03qBfh9ehlCO8TcU7vj-c4_uYB-JwJUZvsh2NJiaD8
+  owner: org:invillia
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/leonardo-francisco
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/invillia
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

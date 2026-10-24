@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:grafana/mimir
+  full_name: grafana/mimir
+  url: https://github.com/grafana/mimir
+  description: Grafana Mimir provides horizontally scalable, highly available, multi-tenant, long-term
+    storage for Prometheus.
+  homepage: https://grafana.com/oss/mimir/
+  stars: 5261
+  forks: 856
+  watchers: 153
+  open_issues: 677
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Go
+  topics:
+  - prometheus
+  - metrics
+  - tsdb
+  - opentelemetry
+  - otlp
+  - observability
+  license: AGPL-3.0
+  archived: false
+  fork: false
+  created_at: '2021-07-13T14:34:08Z'
+  pushed_at: '2026-10-24T19:07:23Z'
+  owner_login: grafana
+  owner: gh:grafana
+  pinned_by:
+  - gh:grafana
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana/mimir
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,277 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:chris-leon
+  person: person:chris-leon
+  brief_bio:
+    text: Chris Leon works at SpaceXAI and has more than 20 years of experience as an engineer, engineering
+      manager and solutions engineer. Leon spoke at GitHub Universe 2024, while at LaunchDarkly, about
+      AI-powered feature management in the IDE with LaunchDarkly and GitHub.
+    cites:
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 6787e34fffcfdd415d47e73686c5b0d6e364d94b1d834bbf0bdbb3395d7be371
+    stale: false
+  headline: SpaceXAI
+  current_roles:
+  - SpaceXAI
+  expertise:
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  - label: Data Management
+    target: term:topic-2024/data-management
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1873d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2024/dev1873d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/dev1873d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2024/dev1873d
+  interests:
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: Data Management
+    target: term:topic-2024/data-management
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719956590908001lsqm
+      ref: session:2024/dev1873d
+  education:
+  - school: Fort Hays State University
+    evidence:
+      url: https://www.linkedin.com/in/christopherleon
+      observed_at: '2026-10-24T08:43:22Z'
+  credentials:
+  - kind: certification
+    title: Certified Scrum Product Owner
+    issuer: Scrum Alliance
+    date: Oct 2007
+    evidence:
+      url: https://www.linkedin.com/in/christopherleon
+      observed_at: '2026-10-24T08:43:22Z'
+  - kind: certification
+    title: Certified ScrumMaster
+    issuer: Scrum Alliance
+    date: Mar 2007
+    evidence:
+      url: https://www.linkedin.com/in/christopherleon
+      observed_at: '2026-10-24T08:43:22Z'
+  - kind: certification
+    title: MCSD.NET
+    issuer: Microsoft
+    date: Mar 2005
+    evidence:
+      url: https://www.linkedin.com/in/christopherleon
+      observed_at: '2026-10-24T08:43:22Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: volunteering
+    title: Instructor
+    detail: WeCode KC · Education · Mar 2022 · - Present · 4 years 8 months · Mar 2022
+    evidence:
+      url: https://www.linkedin.com/in/christopherleon
+      observed_at: '2026-10-24T08:43:22Z'
+  talks:
+  - session:2024/dev1873d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719956922383001IM7F
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

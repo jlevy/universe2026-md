@@ -1,0 +1,415 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:martin-woodward
+  person: person:martin-woodward
+  brief_bio:
+    text: Martin Woodward is VP of Developer Relations at GitHub, former Executive Director of the .NET
+      Foundation, original creator of the Microsoft organization on GitHub and an author of books on Team
+      Foundation Server. Woodward spoke at GitHub Universe 2023 and 2025 and speaks in the 2026 Closing
+      Keynote.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - github_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 3a56006bcf21fb2916c7633394aede58b1bd28cddf217a0e27aab339e63a29d7
+    stale: false
+  headline: VP, Developer Relations at GitHub
+  location: Randalstown
+  current_roles:
+  - VP, Developer Relations at GitHub
+  expertise:
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2781s
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Community
+    target: term:topic-2025/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Social impact
+    target: term:topic-2025/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Software Engineering
+    target: term:topic-2025/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:martin-woodward
+  - label: Java
+    target: software:java
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Java
+      ref: person:martin-woodward
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:martinwoodward/pumpkinpi
+    - ref: repo:martinwoodward/dasdeployer
+    - ref: repo:martinwoodward/pyfluff
+  - label: Astro
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:martinwoodward/martinwoodward.github.io
+  interests:
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2023/extensibility-ecosystem
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694697629854001bYxE
+      ref: session:2023/dev2781s
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694697629854001bYxE
+      ref: session:2023/dev2781s
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Discussions
+    target: term:github-product-2025/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Education
+    target: term:github-product-2025/education
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Enterprise/Admin
+    target: term:github-product-2025/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  open_source:
+  - repository: repo:martinwoodward/octolamp
+    relation: owner
+    stars: 822
+  - repository: repo:martinwoodward/smart-xmas
+    relation: owner
+    stars: 213
+  - repository: repo:martinwoodward/octoprints
+    relation: owner
+    stars: 166
+  - repository: repo:martinwoodward/pyfluff
+    relation: owner
+    stars: 121
+    primary_language: Python
+  - repository: repo:martinwoodward/dasdeployer
+    relation: owner
+    stars: 97
+    primary_language: Python
+  - repository: repo:martinwoodward/pumpkinpi
+    relation: owner
+    stars: 81
+    primary_language: Python
+  - repository: repo:martinwoodward/martinwoodward.github.io
+    relation: owner
+    stars: 5
+    primary_language: Astro
+  - repository: repo:hacs/default
+    relation: contributor
+    stars: 638
+    primary_language: Python
+  - repository: repo:github/maintainermonth
+    relation: contributor
+    stars: 243
+    primary_language: JavaScript
+  - repository: repo:badger/home
+    relation: contributor
+    stars: 493
+    primary_language: Python
+  - repository: repo:badger/badger.github.io
+    relation: contributor
+    stars: 12
+    primary_language: Python
+  - repository: repo:badger/badgerware
+    relation: contributor
+    stars: 2
+  education:
+  - school: Durham University
+    school_ref: org:durham-university
+    evidence:
+      url: https://www.linkedin.com/in/martinwoodward
+      observed_at: '2026-10-24T08:15:31Z'
+  publications:
+  - title: Professional Application Lifecycle Management with Visual Studio 2013
+    venue: Wiley
+    date: April 7, 2014
+    evidence:
+      url: https://www.linkedin.com/in/martinwoodward
+      observed_at: '2026-10-24T08:15:31Z'
+  - title: Professional Team Foundation Server 2013
+    venue: Wiley
+    date: May 19, 2013
+    evidence:
+      url: https://www.linkedin.com/in/martinwoodward
+      observed_at: '2026-10-24T08:15:31Z'
+  - title: Professional Team Foundation Server 2012
+    venue: Wiley
+    date: Jan 2013
+    evidence:
+      url: https://www.linkedin.com/in/martinwoodward
+      observed_at: '2026-10-24T08:15:31Z'
+  - title: Professional Application Lifecycle Management with Visual Studio 2012
+    venue: Wiley
+    date: Sep 2012
+    evidence:
+      url: https://www.linkedin.com/in/martinwoodward
+      observed_at: '2026-10-24T08:15:31Z'
+  - title: Professional Team Foundation Server 2010
+    venue: Wiley
+    date: Mar 2011
+    evidence:
+      url: https://www.linkedin.com/in/martinwoodward
+      observed_at: '2026-10-24T08:15:31Z'
+  - title: Professional Application Lifecycle Management with Visual Studio 2010
+    venue: Wiley
+    date: Apr 2010
+    evidence:
+      url: https://www.linkedin.com/in/martinwoodward
+      observed_at: '2026-10-24T08:15:31Z'
+  activities:
+  - kind: volunteering
+    title: Chair of Governors
+    detail: Maine Integrated Primary School · Education · Oct 2012 · - Nov 2021 · 9 years 2 months · Chair
+      of the Board, Foundation Governor, Company Director at Maine Integrated Primary School which is
+      a Grant Maintained Primary School in the integrated education sector of Northern Ireland. · Oct
+      2012
+    evidence:
+      url: https://www.linkedin.com/in/martinwoodward
+      observed_at: '2026-10-24T08:15:31Z'
+  - kind: volunteering
+    title: Chair of the Board of Directors
+    detail: OpenUK · Science and Technology · Apr 2023 · - Present · 3 years 7 months · Long time supporter
+      and now a Board member for OpenUK, the non-profit organisation advocating on behalf of open source
+      software development in the UK. · Apr 2023
+    evidence:
+      url: https://www.linkedin.com/in/martinwoodward
+      observed_at: '2026-10-24T08:15:31Z'
+  recent_writing:
+  - title: Using GitHub Actions for open source?  Your free build servers just got a 2x bump in CPU’s
+      and memory and a 10x jump in local SSD storage. No config changes needed. https://t.co/RIqEmE9D9L
+    url: https://twitter.com/14252897/status/1747927465652101395
+    published: '2024-01-18T10:22:37Z'
+    channel: x
+  - title: Hey - exciting news! Want to come work with me? GitHub are hiring a Senior Director, Developer
+      Advocacy based in the US https://t.co/f0VRT7A18z
+    url: https://twitter.com/14252897/status/1659286400955555840
+    published: '2023-05-18T19:54:40Z'
+    channel: x
+  - title: |-
+      I’m hiring! GitHub is looking for a Senior Docs Manager to help one of our three core teams of technical writers thrive in our friendly and well established crossfunctional org.
+
+      https://t.co/iMiSluA32j
+    url: https://twitter.com/14252897/status/1591237155854114817
+    published: '2022-11-12T01:11:16Z'
+    channel: x
+  - title: There is a monthly VP's meeting in GitHub that I was invited to for the first time since becoming
+      a VP.  Didn't want to be late so joined 3 mins early and now the first one there.  I'm giving off
+      terribly uncool new boy vibes aren't I...
+    url: https://twitter.com/14252897/status/1567166452490174466
+    published: '2022-09-06T15:02:53Z'
+    channel: x
+  - title: Happy to say that I'm now Vice President of Developer Relations at GitHub. https://t.co/Cb2TTfxnYx
+    url: https://twitter.com/14252897/status/1565397827857293312
+    published: '2022-09-01T17:55:00Z'
+    channel: x
+  - title: Hey folks, quick personal update.  I'm no longer Senior Director of Developer Relations at
+      GitHub 🧵
+    url: https://twitter.com/14252897/status/1565397817413230593
+    published: '2022-09-01T17:54:58Z'
+    channel: x
+  - title: What's your favorite GitHub Action that not enough people know about?
+    url: https://twitter.com/14252897/status/1536650478724988929
+    published: '2022-06-14T10:03:18Z'
+    channel: x
+  - title: It’s been 4 years now since Microsoft announced the acquisition of GitHub. Time flies when
+      you spend it with good friends
+    url: https://twitter.com/14252897/status/1533753873982160896
+    published: '2022-06-06T10:13:13Z'
+    channel: x
+  - title: 'Managers of Dev Advocates: Be sure not to cheap out on hardware. Sure running demos, streaming
+      and recording videos is nice and all but they need the biggest machine money can buy to keep their
+      Slack, Discord, Teams, Signal, Telegram and a million browser tabs open all day.'
+    url: https://twitter.com/14252897/status/1519480264245841922
+    published: '2022-04-28T00:55:00Z'
+    channel: x
+  - title: Open source peoples are the nicest peoples.
+    url: https://twitter.com/14252897/status/1519411224655675396
+    published: '2022-04-27T20:20:39Z'
+    channel: x
+  talks:
+  - session:1878k
+  - session:2023/dev2781s
+  - session:2025/1616k
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465756038001t5oT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: martinwoodward
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465756038001t5oT
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465756038001t5oT
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

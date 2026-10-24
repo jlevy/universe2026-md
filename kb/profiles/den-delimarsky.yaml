@@ -1,0 +1,136 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:den-delimarsky
+  person: person:den-delimarsky
+  brief_bio:
+    text: Den Delimarsky is a lead maintainer of the Model Context Protocol and was a Principal Product
+      Engineer at Microsoft building developer tools and AI-powered experiences. Delimarsky spoke at GitHub
+      Universe 2025 about spec-driven development with AI and data protection strategies for MCP.
+    cites:
+    - bluesky_bio
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:39:52Z'
+    input_sha256: 3b7c06a33e8c25453417a9389744ef0ffdc45d8c282927759ff0f926056aa0cc
+    stale: false
+  headline: Lead Maintainer of Model Context Protocol
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/bld1863d
+    - ref: session:2025/sec1488b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1488b
+  technologies:
+  - label: Claude
+    target: software:claude
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Claude
+      ref: session:2025/bld1863d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1863d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/sec1488b
+  - label: Spec Kit
+    target: software:spec-kit
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Spec Kit
+      ref: session:2025/bld1863d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759973483927001xGXw
+      ref: session:2025/bld1863d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746423836890001UL5w
+      ref: session:2025/sec1488b
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746423836890001UL5w
+      ref: session:2025/sec1488b
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759973483927001xGXw
+      ref: session:2025/bld1863d
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746423836890001UL5w
+      ref: session:2025/sec1488b
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746423836890001UL5w
+      ref: session:2025/sec1488b
+  talks:
+  - session:2025/bld1863d
+  - session:2025/sec1488b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  - linkedin_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746423095306001ruuo
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

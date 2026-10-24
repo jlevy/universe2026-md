@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:kaushganguly
+  login: kaushganguly
+  kind: user
+  url: https://github.com/kaushganguly
+  name: Kaush Ganguly
+  company: Microsoft
+  bio: Sr Cloud Solution Architect at Microsoft - AI Apps & GitHub
+  followers: 7
+  public_repositories: 20
+  created_at: '2013-03-08T22:44:21Z'
+  contributions_last_year:
+    total: 563
+    commits: 3
+    pull_requests: 1
+    issues: 3
+    reviews: 0
+  starred_repositories: 5
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  contributed_to:
+  - repo:azure-samples/dotnet-migration-copilot-samples
+  pinned:
+  - repo:kaushganguly/azure-docs
+  entity: person:kaush-ganguly
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kaushganguly
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,166 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:allie-laabs
+  person: person:allie-laabs
+  brief_bio:
+    text: Allie Laabs leads developer relations at TypeSafe AI for the Jev model, building demos and shaping
+      documentation, after a career spanning software engineering, community management and product management.
+      Laabs speaks at GitHub Universe 2026 on shipping Jev.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 1f42fd553ecadaa3434d0b3c453b4f92553cc758884a2ca72c5c4011ad73fc78
+    stale: false
+  headline: Developer Relations at TypeSafe AI
+  location: Novato, CA
+  current_roles:
+  - Developer Relations at TypeSafe AI
+  expertise:
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2119d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2119d
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Docker
+      ref: session:bld2119d
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:overloadut/igc2csv
+    - ref: repo:overloadut/home-assistant
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:overloadut/alexa-plex
+  interests:
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791588566041001d75T
+      ref: session:bld2119d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791588566041001d75T
+      ref: session:bld2119d
+  open_source:
+  - repository: repo:overloadut/alexa-plex
+    relation: owner
+    stars: 151
+    primary_language: JavaScript
+  - repository: repo:overloadut/igc2csv
+    relation: owner
+    stars: 19
+    primary_language: Python
+  - repository: repo:overloadut/home-assistant
+    relation: owner
+    stars: 6
+    primary_language: Python
+  - repository: repo:typesafe-ai/skills
+    relation: contributor
+    stars: 2778
+  - repository: repo:typesafe-ai/typesafe-sdk-python
+    relation: contributor
+    stars: 302
+    primary_language: Python
+  - repository: repo:typesafe-ai/typesafe-sdk-js
+    relation: contributor
+    stars: 283
+    primary_language: TypeScript
+  - repository: repo:typesafe-ai/n8n-nodes-typesafe-ai
+    relation: contributor
+    stars: 12
+    primary_language: TypeScript
+  activities:
+  - kind: volunteering
+    title: Software Developer
+    detail: Open Source · Science and Technology · Jan 2014 · - Present · 12 years 10 months · Regular
+      contributor to open source projects, as well as personal projects released as open source. Contributes
+      bug fixes, performance improvements, and new feature development. Performs PR reviews, issue investigation,
+      and architectural discussions to aid the distributed development of projects. Provides ongoing coaching
+      to new contributors to large-scale projects on how to contribute effectively. · Jan 2014
+    evidence:
+      url: https://www.linkedin.com/in/allielaabs
+      observed_at: '2026-10-24T08:11:37Z'
+  - kind: project
+    title: Nightmare Show
+    detail: Co-producer and Emcee of a recurring theatrical production in San Francisco. · Mar 2024
+    evidence:
+      url: https://www.linkedin.com/in/allielaabs
+      observed_at: '2026-10-24T08:11:37Z'
+  - kind: project
+    title: Thursday Knights
+    detail: Founded and operated the world's first (really!) livestreamed Dungeons & Dragons campaign,
+      as a weekly show on Twitch. Created and maintained a social media plan to promote the show. Established
+      relationships with individual D&D-related communities to promote the show and grow a dedicated international
+      fan-base. Worked with Twitch.tv to get weekly front-page placement, as well as social media promotion
+      and newsletter mentions. Podcast has over 200,000 total downloads, and the Twitch channel has received
+      over 1,800,000 views. · Jan 2010
+    evidence:
+      url: https://www.linkedin.com/in/allielaabs
+      observed_at: '2026-10-24T08:11:37Z'
+  - kind: project
+    title: CivStats.com
+    detail: Designed and developed a web application enabling players of Sid Meier’s Civilization 4 to
+      track progress of Persistent Turn Based Service (Pitboss) matches. Service averages 3000 unique
+      monthly users with zero maintenance required for 4 years · Feb 2006
+    evidence:
+      url: https://www.linkedin.com/in/allielaabs
+      observed_at: '2026-10-24T08:11:37Z'
+  - kind: project
+    title: CTF4
+    detail: Developed the widely popular modification "CTF4" for Unreal Tournament; managed large team
+      of QA testers, artists and map designers for 4 months of development with the use of a bug tracking
+      system for organization · Jun 2004
+    evidence:
+      url: https://www.linkedin.com/in/allielaabs
+      observed_at: '2026-10-24T08:11:37Z'
+  talks:
+  - session:bld2119d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791508119101001tyPC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: OverloadUT
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

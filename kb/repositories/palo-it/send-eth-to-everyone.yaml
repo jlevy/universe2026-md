@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:palo-it/send-eth-to-everyone
+  full_name: Palo-IT/send-eth-to-everyone
+  url: https://github.com/Palo-IT/send-eth-to-everyone
+  description: This program takes a list of ethereum addresses in .xlsx format and sends them .01 ether
+  stars: 2
+  forks: 0
+  watchers: 2
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:12:10Z'
+  primary_language: JavaScript
+  archived: false
+  fork: false
+  created_at: '2018-12-13T10:11:01Z'
+  pushed_at: '2018-12-13T10:14:57Z'
+  owner_login: Palo-IT
+  owner: gh:palo-it
+  pinned_by:
+  - gh:palo-it
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Palo-IT
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Palo-IT/send-eth-to-everyone
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

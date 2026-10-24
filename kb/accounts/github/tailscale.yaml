@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:tailscale
+  login: tailscale
+  kind: organization
+  url: https://github.com/tailscale
+  name: Tailscale
+  bio: Tailscale is a WireGuard-based app that makes secure, private networks easy for teams of any scale.
+  location: Canada
+  website: https://tailscale.com
+  public_repositories: 85
+  created_at: '2019-03-26T00:25:42Z'
+  pinned:
+  - repo:tailscale/tailscale
+  top_repositories:
+  - repo:tailscale/tailcat
+  - repo:tailscale/tailscale-android
+  - repo:tailscale/golink
+  linked_accounts:
+  - acct:x/tailscale
+  entity: org:tailscale
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tailscale
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

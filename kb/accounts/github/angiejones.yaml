@@ -1,0 +1,74 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:angiejones
+  login: angiejones
+  kind: user
+  url: https://github.com/angiejones
+  name: Angie Jones
+  company: Block
+  bio: developer advocate, certified java programmer, web developer, speaker, teacher, cool chick
+  location: New Orleans, LA
+  website: http://angiejones.tech
+  followers: 2681
+  public_repositories: 29
+  created_at: '2015-11-23T01:17:01Z'
+  contributions_last_year:
+    total: 3703
+    commits: 384
+    pull_requests: 101
+    issues: 27
+    reviews: 178
+  starred_repositories: 178
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  github_star: true
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  contributed_to:
+  - repo:aaif-goose/goose
+  - repo:agentsmd/agents.md
+  - repo:agentclientprotocol/registry
+  - repo:csima/sessionize-cli
+  - repo:block/agent-skills
+  organization_logins:
+  - TestAutomationU
+  - GitHub-Stars
+  pinned:
+  - repo:aaif-goose/goose
+  - repo:angiejones/mcp-selenium
+  - repo:angiejones/java-programming
+  - repo:angiejones/selenium-webdriver-java-course
+  - repo:angiejones/automation-framework
+  top_repositories:
+  - repo:angiejones/restassured-with-cucumber-demo
+  linked_accounts:
+  - acct:bluesky/angiejones.tech
+  - acct:linkedin/in/angiejones
+  - acct:x/techgirl1908
+  - acct:youtube/@techgirl1908
+  websites:
+  - site:angiejones.tech
+  entity: person:angie-jones
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: angiejones
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

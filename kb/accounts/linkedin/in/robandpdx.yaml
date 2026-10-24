@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/robandpdx
+  platform: linkedin
+  handle: in/robandpdx
+  url: https://www.linkedin.com/in/robandpdx
+  display_name: Robert Anderson
+  location: Beaverton
+  followers: 1332
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQEZV-b-wSkwww/profile-displayphoto-scale_200_200/B4EZhW7DmtGoAY-/0/1753804979205?e=2147483647&v=beta&t=RMgUyx83SXJsP3OmQcRAuaS46er-aFmNQ8QBJyKhhvo
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQFBeSOkZ3s5ZA/profile-displaybackgroundimage-shrink_200_800/B4EZhXlsdPGcAU-/0/1753816158178?e=2147483647&v=beta&t=bCgXWlc72MfPODKKyQIkPHs4fOwPPn4-MZlQSwqY2Wo
+  owner: person:robert-anderson
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248458001wYUM
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/robandpdx
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

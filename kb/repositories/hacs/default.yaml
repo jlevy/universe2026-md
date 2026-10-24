@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:hacs/default
+  full_name: hacs/default
+  url: https://github.com/hacs/default
+  description: The home of the default HACS repositories.
+  stars: 638
+  forks: 4583
+  watchers: 26
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:19Z'
+  primary_language: Python
+  topics:
+  - hacktoberfest
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2019-10-20T16:23:04Z'
+  pushed_at: '2026-10-24T19:05:45Z'
+  owner_login: hacs
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: martinwoodward
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: hacs/default
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

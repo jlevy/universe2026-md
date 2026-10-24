@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/allielaabs
+  platform: linkedin
+  handle: in/allielaabs
+  url: https://www.linkedin.com/in/allielaabs
+  display_name: Allie Laabs
+  bio: I'm a Product Manager and technologist with 25 years building platforms, tools, and…
+  location: Novato
+  followers: 735
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQE6hF0bj1YU2w/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1648059704299?e=2147483647&v=beta&t=OQQlX2Vw-hT7d10xRu4TV8NGB6f7Zh6LSsbbrd4J0P8
+  owner: person:allie-laabs
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791508119101001tyPC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/allielaabs
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

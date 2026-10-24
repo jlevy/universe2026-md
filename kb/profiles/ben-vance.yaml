@@ -1,0 +1,151 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ben-vance
+  person: person:ben-vance
+  brief_bio:
+    text: Ben Vance is a Senior Support Engineer at GitHub focused on account security and authentication,
+      and has worked at GitHub since 2015. Vance spoke at GitHub Universe 2023 about how GitHub enforced
+      2FA for millions of users.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 15a125d91f6ae35cc078bbc13c4df76e57392458183aa97f60b476d9a128e434
+    stale: true
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2111p
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2111p
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2111p
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2111p
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  education:
+  - school: Middle Tennessee State University
+    evidence:
+      url: https://www.linkedin.com/in/vanceben
+      observed_at: '2026-10-24T08:50:08Z'
+  credentials:
+  - kind: certification
+    title: Foundations of Cybersecurity
+    issuer: Google
+    date: Dec 2023
+    url: https://www.coursera.org/account/accomplishments/records/J5F6KWJF9Z2B
+    evidence:
+      url: https://www.linkedin.com/in/vanceben
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: Certified ScrumMaster
+    issuer: Scrum Alliance
+    date: May 2014
+    expires: May 2016
+    url: http://www.scrumalliance.org/community/profile/bvance
+    evidence:
+      url: https://www.linkedin.com/in/vanceben
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: Teacher - Business Educaiton (7-12)
+    issuer: Tennessee Department of Educaiton
+    date: May 2008
+    expires: Aug 2013
+    evidence:
+      url: https://www.linkedin.com/in/vanceben
+      observed_at: '2026-10-24T08:50:08Z'
+  activities:
+  - kind: organization
+    title: Scrum Alliance
+    detail: May 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/vanceben
+      observed_at: '2026-10-24T08:50:08Z'
+  talks:
+  - session:2023/sec2111p
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695654923733001CBCn
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

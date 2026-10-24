@@ -1,0 +1,49 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:visrani
+  login: visrani
+  kind: user
+  url: https://github.com/visrani
+  name: Vicky Israni
+  company: GitHub
+  followers: 8
+  public_repositories: 12
+  created_at: '2019-07-21T02:01:56Z'
+  contributions_last_year:
+    total: 59
+    commits: 38
+    pull_requests: 4
+    issues: 12
+    reviews: 3
+  starred_repositories: 0
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 6
+  contributed_to:
+  - repo:visrani-sandbox-org/ghas-java-demo
+  - repo:customer-workshops/copilot-workshop-lt-team
+  - repo:agentic-gh-connect-day/agentic-workflows-workshop
+  - repo:visrani-sandbox-org/user-level-budgets
+  - repo:visrani-sandbox-org/tech-after-dark-bangkok
+  entity: person:vicky-israni
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: visrani
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:microsoft
+  login: microsoft
+  kind: organization
+  url: https://github.com/microsoft
+  name: Microsoft
+  bio: Open source projects and samples from Microsoft
+  location: Redmond, WA
+  website: https://opensource.microsoft.com
+  public_repositories: 8209
+  created_at: '2013-12-10T19:06:48Z'
+  profile_readme: "![Open Source at Microsoft](https://github.com/microsoft/.github/blob/main/images/open-at-microsoft.png)\
+    \ \n\n## Get Involved\n\nRight now, open communities are building amazing software together, and there\
+    \ are excellent \"good first issue\" opportunities, if you're looking to get involved.\n\n* [Explore\
+    \ featured projects](https://opensource.microsoft.com/projects/)\n* [Explore open source jobs at Microsoft](https://careers.microsoft.com/us/en/search-results?keywords=open%20source)\n\
+    * [Apply for Azure credits for open source projects](https://opensource.microsoft.com/azure-credits)\n\
+    * Use [repository issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)\n\
+    and not [[email removed]](mailto:[email removed]) to ask questions specific to an individual Microsoft\n\
+    repository.\n\nVisit [opensource.microsoft.com](https://opensource.microsoft.com) to learn more!\n\
+    \n----\n\nMicrosoft projects adopt the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\
+    \ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)."
+  pinned:
+  - repo:microsoft/vscode
+  - repo:microsoft/typescript
+  - repo:microsoft/powertoys
+  - repo:microsoft/terminal
+  - repo:microsoft/semantic-kernel
+  top_repositories:
+  - repo:microsoft/markitdown
+  - repo:microsoft/generative-ai-for-beginners
+  linked_accounts:
+  - acct:x/openatmicrosoft
+  entity: org:microsoft
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: microsoft
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

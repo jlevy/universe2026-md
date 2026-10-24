@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/tailscale
+  platform: linkedin
+  handle: company/tailscale
+  url: https://www.linkedin.com/company/tailscale
+  display_name: Tailscale
+  bio: For teams who want secure, private networks without weeks of setup and configuration, Tailscale
+    makes it easy. Unlike existing corporate VPNs, Tailscale has no upfront cost, minimal latency, and
+    works with their existing services.
+  website: https://tailscale.com/
+  followers: 46277
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGSR2NKvFAW6Q/company-logo_200_200/company-logo_200_200/0/1691025075497/tailscale_logo?e=2147483647&v=beta&t=r3M4p2p-tLaQY2lHTnY_W6F0UiF9sZH21chZJKcNF5Q
+  owner: org:tailscale
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/kartik-ram-bharath
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/tailscale
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

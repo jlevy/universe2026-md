@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/joedevon
+  platform: x
+  handle: joedevon
+  url: https://x.com/joedevon
+  display_name: Joe Devon
+  bio: |-
+    #GAAD (Global Accessibility Awareness Day)
+    200M+ social media reach
+
+    AIMAC, an AI benchmark for A11y
+
+    @A11yGenAI my podcast
+    @a11yaudits
+  location: Henderson, NV
+  website: https://aimac.ai/
+  followers: 6454
+  following: 6112
+  posts_count: 43134
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1842232541266456577/5adeKohf_normal.jpg
+  created_at: '2009-02-24T06:07:37Z'
+  owner: person:joe-devon
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696274152002001L7BQ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/joedevon
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

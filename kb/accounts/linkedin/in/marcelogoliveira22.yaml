@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/marcelogoliveira22
+  platform: linkedin
+  handle: in/marcelogoliveira22
+  url: https://www.linkedin.com/in/marcelogoliveira22
+  display_name: Marcelo Oliveira
+  location: San Carlos
+  followers: 3875
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQEnsMO1tN80TA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1727477966604?e=2147483647&v=beta&t=xTR1nx9chzWEuNFR9S9BWPfFGdpK-DikxnP5T4_-6Ig
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHFsER3bunzhw/profile-displaybackgroundimage-shrink_200_800/B56Zb545E2GsAU-/0/1747949163185?e=2147483647&v=beta&t=6xkjrj03kZUbCfle9jA3ZDeKMH2nLGueADJVtwpl4tM
+  owner: person:marcelo-oliveira
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755028021819001S7pc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/marcelogoliveira22
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

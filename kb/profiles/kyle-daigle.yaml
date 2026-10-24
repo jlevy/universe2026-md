@@ -1,0 +1,492 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kyle-daigle
+  person: person:kyle-daigle
+  brief_bio:
+    text: Kyle Daigle is Chief Operating Officer of GitHub, which Daigle joined as a developer in 2013,
+      shipping code for webhooks, the API and GitHub Actions before leading the Semmle and npm acquisitions.
+      Daigle spoke at GitHub Universe 2023, 2024 and 2025, including the 2025 opening keynote.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - github_readme
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 3ba310510f80f9140dc2d970f738676946efdb7936c296e3236a17739d1e0e53
+    stale: false
+  headline: GitHub
+  location: Connecticut
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2834m
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2834m
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2834m
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2834m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2834m
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2834m
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Infrastructure as code
+    target: term:topic-2025/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Kubernetes
+    target: term:topic-2025/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1617k
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:kyle-daigle
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/dev2834m
+  - label: Home Assistant
+    target: software:home-assistant
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Home Assistant
+      ref: person:kyle-daigle
+  - label: npm
+    target: software:npm-registry
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: npm
+      ref: person:kyle-daigle
+  programming_languages:
+  - label: Ruby
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:kdaigle/hookable
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695302154369001vlw2
+      ref: session:2023/dev2834m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695302154369001vlw2
+      ref: session:2023/dev2834m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695302154369001vlw2
+      ref: session:2023/dev2834m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695302154369001vlw2
+      ref: session:2023/dev2834m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695302154369001vlw2
+      ref: session:2023/dev2834m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756898827184001uqBY
+      ref: session:2025/1617k
+  open_source:
+  - repository: repo:kdaigle/hookable
+    relation: owner
+    stars: 22
+    primary_language: Ruby
+  recent_writing:
+  - title: Pressure didn't kill the craft. It brought us back to it.
+    url: https://www.linkedin.com/pulse/pressure-didnt-kill-craft-brought-us-back-kyle-daigle-ir4ge
+    published: '2026-06-30T00:00:00.000Z'
+    channel: linkedin
+    summary: At the heart of every technological shift in the last 50 years lies the developer. Someone
+      who saw it before anyone…
+  - title: AI won’t take your job. But your intern might.
+    url: https://www.linkedin.com/pulse/ai-wont-take-your-job-intern-might-kyle-daigle-eoqhc
+    published: '2026-01-20T00:00:00.000Z'
+    channel: linkedin
+    summary: Vibe coding was Collins Dictionary’s 2025 word of the year. “An emerging software development
+      that turns natural…
+  - title: How to prioritize in the AI era
+    url: https://www.kyledaigle.com/how-to-prioritize-in-the-ai-era/
+    published: '2026-01-12T04:18:34Z'
+    channel: blog
+  - title: Universe 2025 is in the books. More developers, demos, and Furbys than I can count. Thanks
+      for joining us this year and writing this story with us time after time again. Same time next year?
+      😉 https://t.co/0PYqdL3CPm
+    url: https://twitter.com/4958621/status/1983949667802214678
+    published: '2025-10-30T17:30:35Z'
+    channel: x
+  - title: My 12 year journey in software collaboration
+    url: https://www.kyledaigle.com/my-12-year-journey-in-software-collaboration/
+    published: '2025-10-27T04:30:41Z'
+    channel: blog
+  - title: |-
+      Sonnet 4.5 is already cooking and a noticeable improvement in our testing. Excited to see how y'all use it today as it rolls out!
+
+      Try it out across all paid Copilot plans. 🤖⚡
+    url: https://twitter.com/4958621/status/1972717205742567573
+    published: '2025-09-29T17:36:47Z'
+    channel: x
+  - title: The GitHub Copilot extension is getting open sourced, with an MIT license, and we can keep
+      building useful, powerful AI together and learn from each other. Feels good man.
+    url: https://twitter.com/4958621/status/1924500610080260380
+    published: '2025-05-19T16:21:15Z'
+    channel: x
+  - title: 'You''re one of us: Unleashing the passion, joy, and love of coding to the world'
+    url: https://www.linkedin.com/pulse/youre-one-us-unleashing-passion-joy-love-coding-world-kyle-daigle-gh0ye
+    published: '2024-10-30T00:00:00.000Z'
+    channel: linkedin
+    summary: Below are my prepared opening and closing remarks for GitHub Universe 2024. Thanks for joining!
+      HELLO Universe! Welcome…
+  - title: How to have the best cell phone data when travelling the globe
+    url: https://www.kyledaigle.com/how-to-have-the-best-cell-phone-data-internationally/
+    published: '2024-04-06T15:00:00Z'
+    channel: blog
+  - title: |-
+      Just wrapped up the final rehearsal for my session at #GitHubUniverse! One. More. Sleep. 😄
+
+      Register and join me in person or online for a deep dive into how we’re folding AI across our own workstreams here at GitHub.
+
+      https://t.co/9RVSsEJVvG https://t.co/jugWiJgZ33
+    url: https://twitter.com/4958621/status/1722021857384427810
+    published: '2023-11-07T22:42:59Z'
+    channel: x
+  - title: Every year at GitHub Universe, folks come in and go "yeah, I thought they were going to". Then,
+      we drop the mic and show something bigger. This year we had to ordered a few extra mics. 🪐 Nov 8th
+      and 9th at https://t.co/yQiMWE5UPf
+    url: https://twitter.com/4958621/status/1720456409035559389
+    published: '2023-11-03T15:02:27Z'
+    channel: x
+  - title: 'When I started with Ruby on Rails nearly 20 years ago, I never would have imagined this “convention
+      over configuration” framework would unlock the career I have. Focusing on the problems you need
+      to solve and less on the tools continues to be a winning play. #RailsWorld'
+    url: https://twitter.com/4958621/status/1710263740657201510
+    published: '2023-10-06T12:00:25Z'
+    channel: x
+  - title: Planning a personal retreat
+    url: https://www.kyledaigle.com/its-time-for-your-think-week/
+    published: '2023-09-04T13:44:35Z'
+    channel: blog
+  - title: |-
+      Ten years ago, I joined GitHub to build tools for builders. Since then, I’ve built products, landed acquisitions, and met thousands of you who are building your life’s work with GitHub. Today, I step into the role of COO at GitHub and I’m ready to dig in.
+
+      https://t.co/MWW6P4OZ70
+    url: https://twitter.com/4958621/status/1650865848087719941
+    published: '2023-04-25T14:14:24Z'
+    channel: x
+  - title: From infusing GPT-4 into the pull request, to voice and chat and so much more – GitHub Copilot
+      X represents our ambition to evolve the pair programmer into a readily available AI assistant throughout
+      the entire dev experience on GitHub. https://t.co/HpsAGNkuco
+    url: https://twitter.com/4958621/status/1638543606871891968
+    published: '2023-03-22T14:10:13Z'
+    channel: x
+  talks:
+  - session:2023/dev2834m
+  - session:2024/1951k
+  - session:2025/1617k
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686223662274001trIu
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686223662274001trIu
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686223662274001trIu
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kdaigle
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

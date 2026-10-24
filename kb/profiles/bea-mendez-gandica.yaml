@@ -1,0 +1,250 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:bea-mendez-gandica
+  person: person:bea-mendez-gandica
+  brief_bio:
+    text: Bea Mendez Gandica is founder and CEO of Nuevo Foundation, a nonprofit that has reached more
+      than 23,000 students in 86 countries through free coding workshops, and has more than a decade of
+      experience at Microsoft. Mendez Gandica speaks at GitHub Universe 2026 about Copilot CLI skills
+      and hooks.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - past_affiliations
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: 6182e095bdeeeb5c1252aa19548ee51bb5abe24f4159e9c7b52086825a576c2c
+    stale: false
+  headline: CEO/Founder at Nuevo Foundation
+  current_roles:
+  - CEO/Founder at Nuevo Foundation
+  expertise:
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1487s
+    - ref: session:bld1489h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1487s
+    - ref: session:bld1489h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1487s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1487s
+    - ref: session:bld1489h
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot CLI
+      ref: session:bld1487s
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:bea-mendez-gandica
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1487s
+  programming_languages:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:beagandica/beagandica.com
+  interests:
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777614539199001PlmK
+      ref: session:bld1489h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777614539199001PlmK
+      ref: session:bld1489h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777614539199001PlmK
+      ref: session:bld1489h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+  - label: beginner
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/NuevoFoundation/workshops
+      ref: repo:nuevofoundation/workshops
+  - label: beginners-lab
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/NuevoFoundation/workshops
+      ref: repo:nuevofoundation/workshops
+  - label: hugo
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/NuevoFoundation/workshops
+      ref: repo:nuevofoundation/workshops
+  - label: nonprofit
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/NuevoFoundation/workshops
+      ref: repo:nuevofoundation/workshops
+  open_source:
+  - repository: repo:beagandica/beagandica.com
+    relation: owner
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:nuevofoundation/workshops
+    relation: contributor
+    stars: 28
+    primary_language: JavaScript
+  - repository: repo:nuevofoundation/workshopsautotranslation
+    relation: contributor
+    stars: 1
+    primary_language: C#
+  - repository: repo:nuevofoundation/outreach
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  recent_writing:
+  - title: 'A PM''s AI playbook: how I automated my way out of repetitive work'
+    url: https://www.linkedin.com/pulse/pms-ai-playbook-how-i-automated-my-way-out-repetitive-mendez-gandica-ot6vc
+    published: '2026-04-28T00:00:00.000Z'
+    channel: linkedin
+    summary: I haven't manually formatted a daily report in months. A recurring report that used to take
+      45 minutes now takes 5.
+  - title: 🎉Celebrating 10 Incredible Years at Microsoft! 🚀
+    url: https://www.linkedin.com/pulse/celebrating-10-incredible-years-microsoft-beatris-a-mendez-gandica-ldpef
+    published: '2024-02-06T00:00:00.000Z'
+    channel: linkedin
+    summary: Today marks a decade of growth, learning, and unforgettable moments at Microsoft as a Program
+      Manager. From the day I…
+  - title: Marie Claire Magazine - March 2020 edition
+    url: https://www.linkedin.com/pulse/marie-claire-magazine-march-2020-edition-beatris-a-mendez-gandica
+    published: '2020-02-26T00:00:00.000Z'
+    channel: linkedin
+    summary: Hi, :) I am thrilled to share with you that I am being featured in Marie Claire magazine
+      for the March 2020 edition…
+  - title: My AAAS Annual Meeting Experience as an IF/THEN Ambassador
+    url: https://www.linkedin.com/pulse/my-aaas-annual-meeting-experience-ifthen-ambassador-mendez-gandica
+    published: '2020-02-18T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Hi! This past weekend, I attended the #AAASmtg for the first time with fellow #AAAS #IFTHEN
+      ambassadors from across the…'
+  - title: My Forbes 30 under 30 Europe Experience
+    url: https://www.linkedin.com/pulse/my-forbes-30-under-europe-experience-beatris-a-mendez-gandica
+    published: '2019-12-19T00:00:00.000Z'
+    channel: linkedin
+    summary: Sharing with all of you a recent experience that I had attending the Forbes under 30 Europe
+      Summit! So how did this…
+  - title: '''Outstanding Recent Alumni''​ Award from University of Wisconsin - Eau Claire'
+    url: https://www.linkedin.com/pulse/outstanding-recent-alumni-award-from-university-eau-mendez-gandica
+    published: '2019-06-25T00:00:00.000Z'
+    channel: linkedin
+    summary: Hi, I wanted to share with you the alumni award that I received last month (May 24th-25th)
+      in Wisconsin. It was a great…
+  - title: My journey, passion, and desire to empower others!
+    url: https://www.linkedin.com/pulse/my-journey-passion-desire-empower-others-beatris-a-mendez-gandica
+    published: '2018-10-17T00:00:00.000Z'
+    channel: linkedin
+    summary: Since this is my first post on LinkedIn, I will cover a bit about my background and lessons
+      learned. My name is Beatris…
+  talks:
+  - session:bld1487s
+  - session:bld1489h
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777613357747001v3F9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: beagandica
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

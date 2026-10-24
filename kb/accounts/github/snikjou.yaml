@@ -1,0 +1,61 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:snikjou
+  login: snikjou
+  kind: user
+  url: https://github.com/snikjou
+  name: Said Nikjou
+  company: Microsoft
+  bio: Senior Cloud Solution Architect at Microsoft | Azure Open AI| Azure AI Services| Azure Machine
+    Learning| LLMOps |Azure Infrastructure
+  location: US
+  followers: 10
+  public_repositories: 20
+  created_at: '2018-10-18T22:23:50Z'
+  contributions_last_year:
+    total: 90
+    commits: 49
+    pull_requests: 1
+    issues: 0
+    reviews: 1
+  starred_repositories: 1
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  contributed_to:
+  - repo:microsoft/cosmosdb-update
+  pinned:
+  - repo:snikjou/ai-102-aiengineer
+  - repo:snikjou/azure-pdf-form-processing-automation-solution-accelerator
+  - repo:snikjou/azure-search-openai-demo
+  - repo:snikjou/azureopenai
+  - repo:snikjou/chatbot-history
+  top_repositories:
+  - repo:snikjou/d365fodevfoundations
+  linked_accounts:
+  - acct:linkedin/in/snikjou
+  - acct:x/saidnikjou
+  - acct:youtube/@snikjou
+  entity: person:said-nikjou
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: snikjou
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

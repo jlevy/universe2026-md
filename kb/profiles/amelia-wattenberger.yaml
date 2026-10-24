@@ -1,0 +1,106 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:amelia-wattenberger
+  person: person:amelia-wattenberger
+  brief_bio:
+    text: Amelia Wattenberger works on design, AI, web development, data visualization and tools for thought,
+      and was previously a Principal Research Engineer in R&D at GitHub Next. Wattenberger spoke at GitHub
+      Universe 2024 in the session Building 1 billion developers.
+    cites:
+    - x_bio
+    - listed_role
+    - past_affiliations
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: c5c2caec8c8e0be246c947646785d761f9129e8f1360161fef2f241d5dd47693
+    stale: false
+  recent_writing:
+  - title: soo the Perplexity API is good and cheap?! https://t.co/YYpyy4JifN
+    url: https://twitter.com/1098849494/status/1866162607532757051
+    published: '2024-12-09T16:46:51Z'
+    channel: x
+  - title: |-
+      🐟 some musings on how we might use LLMs
+      🐠 to interact with text at multiple levels of abstraction
+      🐡 inspired by the fish-eye lens https://t.co/z0OBGfL5SE
+    url: https://twitter.com/1098849494/status/1863977304126603309
+    published: '2024-12-03T16:03:14Z'
+    channel: x
+  - title: is it possible to have too much fun making a blog post? 🤔 https://t.co/Qelevu1tDY
+    url: https://twitter.com/1098849494/status/1862931000285905211
+    published: '2024-11-30T18:45:36Z'
+    channel: x
+  - title: |-
+      ✨ how might we combine our familiar, deterministic interfaces with the new, fluid capabilities of LLMs?
+
+      Some musings that have been rattling around my brain for a while. Taking inspiration from how nature transitions between hard &amp; soft materials. https://t.co/Sn4F5ZONti
+    url: https://twitter.com/1098849494/status/1841127681078829410
+    published: '2024-10-01T14:47:00Z'
+    channel: x
+  - title: |-
+      starting something I've been wanting to do for a loong time.. email the way I want email to work!
+
+      to come: I have lots of ideas for using LLMs that aren't just write-email-for-me https://t.co/9EUSsMDSir
+    url: https://twitter.com/1098849494/status/1828448132902088713
+    published: '2024-08-27T15:03:00Z'
+    channel: x
+  - title: "\U0001F631 I just realized I never shared the svg tool I spent so much time on!\n\nI wanted\
+      \ to create a playground to help learn and discover how to write SVG code, which can be so funky!\
+      \ \n\nRemember when we learned physics in the sandbox? Yeah, like that. https://t.co/3tJYzRdn6w"
+    url: https://twitter.com/1098849494/status/1816124176543146039
+    published: '2024-07-24T14:52:00Z'
+    channel: x
+  - title: "Infinite canvases! we love them! \U0001F929\n\nbut can we make them even better? Here's a\
+      \ little exploration of how we might make them easier to use by \n\U0001F343 adding physical forces,\
+      \ or\n\U0001F331 exporting the data into other formats. https://t.co/AzZ8Y7nbhR"
+    url: https://twitter.com/1098849494/status/1729162916404899853
+    published: '2023-11-27T15:39:00Z'
+    channel: x
+  - title: "some weekend progress on my AI writing buddy tool \n\n✨ controls describing the piece to help\
+      \ guide suggestions\n✨ filterable suggestion types\n✨ a more expansive-feeling style\n✨ and most\
+      \ excitingly! I made a cute lil logo for a new ChatGPT-suggested app name https://t.co/8DqSgSV6MW"
+    url: https://twitter.com/1098849494/status/1645434961825255425
+    published: '2023-04-10T14:34:00Z'
+    channel: x
+  - title: |-
+      it's been an absolute joy spinning up Copilot for Docs this past month, to explore the question:
+
+      "What would it feel like to have an expert on hand?"
+
+      https://t.co/bAnlQCZm2d https://t.co/SsG2qmH9bT
+    url: https://twitter.com/1098849494/status/1638589449419513857
+    published: '2023-03-22T17:12:22Z'
+    channel: x
+  - title: |-
+      🙋‍♀️me: I really need to finish up this article
+
+      💁‍♀️also me:
+
+      right, but what if each example was visible behind a realistic-looking window
+
+      ...and those windows live ✨ behind the content ✨
+
+      ...and the descriptions for those windows show up in sticky notes... https://t.co/DWW9mo
+    url: https://twitter.com/1098849494/status/1638184436268167169
+    published: '2023-03-21T14:23:00Z'
+    channel: x
+  talks:
+  - session:2024/1951k
+  gaps:
+  - github_account
+  - linkedin_account
+  - current_affiliation
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727444458905001Ujdj
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

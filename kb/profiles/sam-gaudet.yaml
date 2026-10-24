@@ -1,0 +1,205 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sam-gaudet
+  person: person:sam-gaudet
+  brief_bio:
+    text: Sam Gaudet is a senior software engineer on the Wayfair Platforms team, working on automation
+      and documentation. Gaudet spoke at GitHub Universe 2024 about complex migrations and failing forward
+      past resistance to change.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 82c513c464547381421c51fd920bb7a645e16e35a6c28214be7f7a2d883e7beb
+    stale: false
+  headline: Wayfair
+  current_roles:
+  - Wayfair
+  expertise:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2024/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  technologies:
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: session:2024/dev1349b
+  interests:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2024/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  education:
+  - school: Babson College
+    evidence:
+      url: https://www.linkedin.com/in/sgaudet1
+      observed_at: '2026-10-24T08:47:27Z'
+  spoken_languages:
+  - English
+  - French
+  activities:
+  - kind: organization
+    title: Delta Sigma Pi
+    detail: Delta Sigma Pi is a professional fraternity organized to foster the study of business in universities;
+      to encourage scholarship, social activity and the association of students for their mutual advancement
+      by research and practice; to promote closer affiliation between the commercial world and students
+      of commerce, and to further a higher standard of commercial ethics and culture and the civic and
+      commercial welfare of the community. · Nov 2015 · Present
+    evidence:
+      url: https://www.linkedin.com/in/sgaudet1
+      observed_at: '2026-10-24T08:47:27Z'
+  - kind: organization
+    title: Student Government Association
+    detail: Sep 2014 · Feb 2017
+    evidence:
+      url: https://www.linkedin.com/in/sgaudet1
+      observed_at: '2026-10-24T08:47:27Z'
+  talks:
+  - session:2024/dev1349b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726180372449001hFL5
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

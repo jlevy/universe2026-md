@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/jcmankoff
+  platform: x
+  handle: jcmankoff
+  url: https://x.com/jcmankoff
+  owner: person:jennifer-mankoff
+  link_basis:
+  - event_listing
+  details_fetched: false
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696310819090001xh6i
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

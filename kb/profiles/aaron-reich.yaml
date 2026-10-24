@@ -1,0 +1,298 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:aaron-reich
+  person: person:aaron-reich
+  brief_bio:
+    text: Aaron Reich is Chief Technology Officer at Avanade, leading research and development, AI products
+      and the company's internal AI transformation. Reich spoke at GitHub Universe 2025 and speaks at
+      GitHub Universe 2026 on building without breaking trust.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 85354ac609494a9056f3203779bca90286f5c82545153fa37d54ad9ec71d7e0e
+    stale: false
+  headline: Chief Technology Officer at Avanade
+  current_roles:
+  - Chief Technology Officer at Avanade
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1916m
+  - label: Cloud-native development
+    target: term:topic/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1916m
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1916m
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1916m
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1916m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1916m
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1916m
+  interests:
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790281570032001L9fB
+      ref: session:bld1916m
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790281570032001L9fB
+      ref: session:bld1916m
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790281570032001L9fB
+      ref: session:bld1916m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790281570032001L9fB
+      ref: session:bld1916m
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790281570032001L9fB
+      ref: session:bld1916m
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790281570032001L9fB
+      ref: session:bld1916m
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790281570032001L9fB
+      ref: session:bld1916m
+  recent_writing:
+  - title: Decoding Microsoft Build 2026 for Business Leaders
+    url: https://www.linkedin.com/pulse/decoding-microsoft-build-2026-business-leaders-aaron-reich-1surc
+    published: '2026-06-03T00:00:00.000Z'
+    channel: linkedin
+    summary: Microsoft Build 2026 felt a little off at first glance getting right into product announcements
+      on infrastructure…
+  - title: 'Sovereign AI: Power, Protection, and Purpose in the AI Era'
+    url: https://www.linkedin.com/pulse/sovereign-ai-power-protection-purpose-era-aaron-reich-7wqbc
+    published: '2025-12-02T00:00:00.000Z'
+    channel: linkedin
+    summary: As AI adoption accelerates across industries, I consistently see our clients doing what is
+      right by ensuring they have…
+  - title: 'Microsoft Ignite 2025: Key Takeaways'
+    url: https://www.linkedin.com/pulse/microsoft-ignite-2025-key-takeaways-aaron-reich-bbm4c
+    published: '2025-11-26T00:00:00.000Z'
+    channel: linkedin
+    summary: Microsoft Ignite 2025 shared lots of product updates and an articulation of Microsoft's direction,
+      but I think it's too…
+  - title: What to Pay Attention to from Microsoft Build 2025
+    url: https://www.linkedin.com/pulse/what-pay-attention-from-microsoft-build-2025-aaron-reich-lehnc
+    published: '2025-05-30T00:00:00.000Z'
+    channel: linkedin
+    summary: Microsoft Build is the company’s annual developer conference, and Avanade was a featured
+      partner. This was my fourth…
+  - title: Accenture's Tech Vision 2025 and Microsoft, a complementary vision
+    url: https://www.linkedin.com/pulse/accentures-tech-vision-2025-microsoft-complimentary-aaron-reich-njwcc
+    published: '2025-01-08T00:00:00.000Z'
+    channel: linkedin
+    summary: At the Consumer Electronics Show earlier this week, Karthik Narain shared Accenture's 2025
+      Technology Vision (link to…
+  - title: 'Bridging the AI gaps: 3 Insights from Microsoft Ignite 2024'
+    url: https://www.linkedin.com/pulse/bridging-ai-gaps-3-insights-from-microsoft-ignite-2024-aaron-reich-suz9c
+    published: '2024-11-26T00:00:00.000Z'
+    channel: linkedin
+    summary: There was no shortage of announcements coming out of Microsoft Ignite. For the past several
+      months, our clients are…
+  - title: 'The big news from Microsoft Build: 3 things you need to know'
+    url: https://www.linkedin.com/pulse/big-news-from-microsoft-build-3-things-you-need-know-aaron-reich-wg7zc
+    published: '2024-05-30T00:00:00.000Z'
+    channel: linkedin
+    summary: Last week was Microsoft’s annual Build conference which energizes and enables the IT and
+      developer community. Avanade…
+  - title: 2024 Technology Predictions
+    url: https://www.linkedin.com/pulse/2024-technology-predictions-aaron-reich-hlndc
+    published: '2024-01-23T00:00:00.000Z'
+    channel: linkedin
+    summary: We are working on Avanade’s broader trend report which I’m happy to say is way more than
+      AI. In that spirit, I want to…
+  - title: Accenture's Tech Vision 2024 Applied to the Microsoft Ecosystem
+    url: https://www.linkedin.com/pulse/accentures-tech-vision-2024-applied-microsoft-ecosystem-aaron-reich-xlrmc
+    published: '2024-01-09T00:00:00.000Z'
+    channel: linkedin
+    summary: Accenture launched their 2024 Technology Vision calling for reinvention as we have more human-like
+      technology at our…
+  - title: What I wish Apple announced
+    url: https://www.linkedin.com/pulse/what-i-wish-apple-announced-aaron-reich
+    published: '2019-04-18T00:00:00.000Z'
+    channel: linkedin
+    summary: Apple held their TV+ event at the end of March and there has been lots of coverage on the
+      new services that Apple will…
+  talks:
+  - session:2025/bld1566m
+  - session:bld1916m
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728947931718001NQRK
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: asreic
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728947931718001NQRK
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

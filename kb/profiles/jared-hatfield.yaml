@@ -1,0 +1,182 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jared-hatfield
+  person: person:jared-hatfield
+  brief_bio:
+    text: Jared Hatfield is a Principal Application Architect at UPS who drives AI adoption across engineering
+      teams and leads the adoption of tools such as GitHub Copilot. Hatfield speaks at GitHub Universe
+      2026 about building AI fluency at UPS.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 70b0d66d231ab09019db31fb38fa9d9e0babd0cd74f45fdfcb5cbf9956f60da7
+    stale: false
+  headline: Principal Application Architect at UPS
+  current_roles:
+  - Principal Application Architect at UPS
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1778b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1778b
+  - label: Migration strategies
+    target: term:topic/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1778b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:jared-hatfield
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782223817329001J5Je
+      ref: session:ldr1778b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782223817329001J5Je
+      ref: session:ldr1778b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782223817329001J5Je
+      ref: session:ldr1778b
+  - label: Migration strategies
+    target: term:topic/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782223817329001J5Je
+      ref: session:ldr1778b
+  education:
+  - school: University of Louisville
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  credentials:
+  - kind: certification
+    title: Professional Cloud Developer Certification
+    issuer: Google
+    date: Jun 2025
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: Certified Software Development Associate
+    issuer: IEEE
+    date: Dec 2012
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: Professional Cloud Architect Certification
+    issuer: Google
+    date: Dec 2024
+    expires: Dec 2026
+    url: https://www.credly.com/badges/03e8e8d6-dfa1-46d8-9e83-4cb03b22cc94/public_url
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect – Professional Level
+    issuer: Amazon Web Services (AWS)
+    date: Oct 2015
+    expires: Nov 2020
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect – Associate Level
+    issuer: Amazon Web Services (AWS)
+    date: Jul 2013
+    expires: Nov 2020
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: AWS Certified DevOps Engineer - Professional
+    issuer: Amazon Web Services (AWS)
+    date: Oct 2016
+    expires: Oct 2019
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: AWS Certified Developer - Associate Level
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2014
+    expires: Oct 2019
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: volunteering
+    title: Mentor
+    detail: Code Louisville · Education · Jul 2015 · - Sep 2015 · 3 months · Mentored for front-end web
+      development · Jul 2015
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Mentor
+    detail: Code Kentucky · Education · May 2022 · - Jul 2022 · 3 months · Mentored Introduction to C#
+      class. · May 2022
+    evidence:
+      url: https://www.linkedin.com/in/jaredhatfield
+      observed_at: '2026-10-24T08:11:33Z'
+  talks:
+  - session:ldr1778b
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777390555511001JrY5
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

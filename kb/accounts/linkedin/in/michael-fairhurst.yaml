@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/michael-fairhurst
+  platform: linkedin
+  handle: in/michael-fairhurst
+  url: https://www.linkedin.com/in/michael-fairhurst
+  display_name: Michael Fairhurst
+  bio: I have 8 years of software engineering experience, with an expertise in how programming…
+  location: Portland
+  followers: 168
+  connections: 159
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQHt3whYIggj-A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1656438653341?e=2147483647&v=beta&t=iSdItzRXq7I1MuOFVAx_P1fi4QEMyP46Z7VsLRkfvmM
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQFa6ckUwsi3_w/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1659727155338?e=2147483647&v=beta&t=qrTNXSXPC13VgwhchwwqLzIltxMb4FRxAmvaaY42TKQ
+  owner: person:mike-fairhurst
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746061528034001J2K4
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/michael-fairhurst
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

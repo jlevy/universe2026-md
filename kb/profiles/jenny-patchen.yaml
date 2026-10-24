@@ -1,0 +1,306 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jenny-patchen
+  person: person:jenny-patchen
+  brief_bio:
+    text: Jenny Patchen is Senior Director of Shared Platforms & Services at Levi Strauss & Co., leading
+      developer velocity, quality engineering, release management and observability teams. Patchen speaks
+      at GitHub Universe 2026 about how Levi Strauss reimagined development on GitHub.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: f0961ff65d5ebe3e622395ff2ec18fe2f73a2dc7c718f23c6fee9a097adb1b9a
+    stale: false
+  headline: Sr. Director, Shared Platforms & Services at Levi Strauss & Co.
+  current_roles:
+  - Sr. Director, Shared Platforms & Services at Levi Strauss & Co.
+  expertise:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:ldr1516m
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  - label: Jira
+    target: software:jira
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Jira
+      ref: session:ldr1516m
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:ldr1516m
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1516m
+    - ref: session:ldr2023a
+  interests:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  - label: Projects and Issues
+    target: term:github-product/projects-and-issues
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777643866054001BE2E
+      ref: session:ldr1516m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127369059001nBkQ
+      ref: session:ldr2023a
+  education:
+  - school: The University of Edinburgh
+    evidence:
+      url: https://www.linkedin.com/in/jennypatchen
+      observed_at: '2026-10-24T08:11:49Z'
+  spoken_languages:
+  - English
+  - French
+  talks:
+  - session:ldr1516m
+  - session:ldr2023a
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755022358247001ShqW
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

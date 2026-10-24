@@ -1,0 +1,68 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:davelosert
+  login: davelosert
+  kind: user
+  url: https://github.com/davelosert
+  name: David Losert
+  company: GitHub
+  bio: 'Strategic Technical Architect @github  '
+  location: Saarbrücken
+  followers: 86
+  public_repositories: 60
+  created_at: '2013-04-29T07:31:03Z'
+  contributions_last_year:
+    total: 2416
+    commits: 148
+    pull_requests: 44
+    issues: 5
+    reviews: 10
+  starred_repositories: 227
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 13
+  contributed_to:
+  - repo:github/docs
+  organization_logins:
+  - chaijs
+  - jscraftcamp
+  pinned:
+  - repo:davelosert/vitest-coverage-report-action
+  - repo:davelosert/semantic-release-github-actions-tags
+  - repo:davelosert/yco
+  - repo:davelosert/dave-kit
+  - repo:davelosert/clean-code-kata
+  - repo:davelosert/di-with-redux
+  top_repositories:
+  - repo:davelosert/daves-youtube-demo-action
+  linked_accounts:
+  - acct:bluesky/davelosert.bsky.social
+  - acct:linkedin/in/david-losert
+  entity: person:david-losert
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: davelosert
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

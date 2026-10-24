@@ -1,0 +1,146 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dave-benedic
+  person: person:dave-benedic
+  brief_bio:
+    text: Dave Benedic is senior manager of agentic platforms at Insight, with experience across development
+      and operations since 2004 and a focus on DevOps and cloud transformation. Benedic speaks at GitHub
+      Universe 2026 on governing agentic workflows in GitHub.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 36e64e0adc6f9e32a294622e6a58bcc1e89c8477e29a08ce9fbaa3395c99ad06
+    stale: false
+  headline: Sr. Manager - Agentic Platforms at Insight
+  location: Columbus, OH
+  current_roles:
+  - Sr. Manager - Agentic Platforms at Insight
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1799d
+  technologies:
+  - label: GitHub Agentic Workflows
+    target: software:github-agentic-workflows
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Agentic Workflows
+      ref: session:bld1799d
+  programming_languages:
+  - label: Dockerfile
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:dbenedic-insight/any-cloud-accelerators
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785547276823001RuIA
+      ref: session:bld1799d
+  open_source:
+  - repository: repo:dbenedic-insight/any-cloud-accelerators
+    relation: owner
+    stars: 2
+    primary_language: Dockerfile
+  - repository: repo:daveyb/ansible
+    relation: contributor
+    stars: 1
+    primary_language: Jinja
+  - repository: repo:daveyb/winget-configure
+    relation: contributor
+    stars: 2
+    primary_language: PowerShell
+  education:
+  - school: Northern Kentucky University
+    evidence:
+      url: https://www.linkedin.com/in/david-benedic-bb21358b
+      observed_at: '2026-10-24T08:11:32Z'
+  credentials:
+  - kind: certification
+    title: 'MCPS: Microsoft Certified Professional'
+    issuer: Microsoft
+    date: Nov 2014
+    url: http://www.microsoft.com/learning/en-us/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/david-benedic-bb21358b
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: 'HashiCorp Certified: Terraform Associate (003)'
+    issuer: HashiCorp
+    date: Dec 2024
+    expires: Dec 2026
+    url: https://www.credly.com/badges/ae31570a-8930-4b7e-824d-60defcdf5c89/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/david-benedic-bb21358b
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: 'HashiCorp Certified: Vault Associate (002)'
+    issuer: HashiCorp
+    date: Dec 2024
+    expires: Dec 2026
+    url: https://www.credly.com/badges/cba6626f-c5c2-4cae-a356-179b65b4915f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/david-benedic-bb21358b
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: 'HashiCorp Certified: Vault Associate (002)'
+    issuer: HashiCorp
+    date: Feb 2022
+    expires: Feb 2024
+    url: https://www.credly.com/badges/d74d300d-1682-4087-91e3-6ff7a4432993/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/david-benedic-bb21358b
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: Google Cloud Certified Professional Cloud Architect
+    issuer: Google
+    date: Jan 2020
+    expires: Jan 2022
+    url: https://www.credential.net/12573361-d499-4a2b-afc1-6f00e2e3923d
+    evidence:
+      url: https://www.linkedin.com/in/david-benedic-bb21358b
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: 'HashiCorp Certified: Terraform Associate'
+    issuer: HashiCorp
+    date: Oct 2019
+    expires: Oct 2021
+    url: https://www.youracclaim.com/badges/27bc6f89-32d2-4eca-99fa-3d797613918d/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/david-benedic-bb21358b
+      observed_at: '2026-10-24T08:11:32Z'
+  talks:
+  - session:bld1799d
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777580256403001HBaF
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dbenedic-insight
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

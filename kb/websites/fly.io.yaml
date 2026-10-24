@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:fly.io
+  url: http://fly.io/
+  kind: company
+  title: Fly.io | Deploy apps and agents on fast, hardware-isolated VMs
+  description: Deploy apps, agents, and databases on fast, hardware-isolated VMs. Pay only for the seconds
+    they run. Sign up free.
+  owner: org:fly-io
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  identity_links:
+  - https://hachyderm.io/@flydotio
+  sources:
+  - system: brightdata
+    url: https://x.com/scottcjohnston
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://fly.io/
+    record_id: http://fly.io/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/scottcjohnston
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/flydotio
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

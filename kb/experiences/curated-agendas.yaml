@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Experience/v1
+  schema: ../_schemas/experience.schema.yaml
+  envelope: experience
+  status: permissive
+experience:
+  id: experience:curated-agendas
+  name: Curated agendas
+  description: With more than 100 sessions at Universe, it's easy to miss the ones that matter most to
+    you. These curated agendas group sessions by topic, speaker, role, and industry so you can build your
+    schedule faster.
+  schedule: Oct 28-29
+  action: Learn more
+  action_url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/curatedagendas
+  image_url: https://static.rainfocus.com/github/universe26/static/staticfile/staticfile/carousel-cur-agenda_1791564229844001idLh.jpg
+  sources:
+  - system: rainfocus
+    url: https://reg.githubuniverse.com/flow/loadPage?pageUri=sessioncatalog
+    retrieved_at: '2026-10-24T06:46:10Z'
+    snapshot: raw/rainfocus/pages/sessioncatalog.json

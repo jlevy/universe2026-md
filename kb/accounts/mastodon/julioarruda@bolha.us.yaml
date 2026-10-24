@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:mastodon/julioarruda@bolha.us
+  platform: mastodon
+  handle: julioarruda@bolha.us
+  url: https://bolha.us/@julioarruda
+  display_name: Julio Arruda
+  bio: "Primeiro GitHub Star do Brasil\LMicrosoft MVP\LYouTuber \LSenior DevOps Architect at GFT"
+  followers: 44
+  following: 66
+  posts_count: 53
+  avatar_url: https://cache.bolha.us/accounts/avatars/109/451/021/916/446/637/original/8e06ad772d94b098.png
+  created_at: '2022-12-03T00:00:00Z'
+  owner: person:julio-arruda
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: julioarruda
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: mastodon
+    url: https://bolha.us/@julioarruda
+    record_id: julioarruda@bolha.us
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json

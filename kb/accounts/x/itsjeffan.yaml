@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/itsjeffan
+  platform: x
+  handle: itsjeffan
+  url: https://x.com/itsjeffan
+  display_name: Jeff An
+  bio: building the future of software testing @momenticai. formerly eng @retool, @robinhood, @google.
+  location: San Francisco, CA
+  website: http://jeff-an.com/
+  followers: 535
+  following: 200
+  posts_count: 197
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1718060508312670208/jm2gAJB__normal.jpg
+  created_at: '2023-10-28T00:19:17Z'
+  owner: person:jeff-an
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1787616064220001mxn7
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/itsjeffan
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

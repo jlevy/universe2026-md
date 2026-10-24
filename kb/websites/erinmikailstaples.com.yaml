@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:erinmikailstaples.com
+  url: http://erinmikailstaples.com
+  kind: personal
+  title: erin mikail staples.
+  description: Erin is a developer advocate, community human, tech educator, and stand-up comedian. Subscribe
+    for tutorials in your inbox.
+  owner: person:erin-mikail-staples
+  link_basis:
+  - github_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://www.erinmikailstaples.com/rss/
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: erinmikailstaples
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://www.erinmikailstaples.com/
+    record_id: http://erinmikailstaples.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

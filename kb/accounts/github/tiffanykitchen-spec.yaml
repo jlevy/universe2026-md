@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:tiffanykitchen-spec
+  login: tiffanykitchen-spec
+  kind: user
+  url: https://github.com/tiffanykitchen-spec
+  followers: 1
+  public_repositories: 0
+  created_at: '2025-09-12T13:35:37Z'
+  contributions_last_year:
+    total: 18
+    commits: 16
+    pull_requests: 2
+    issues: 0
+    reviews: 0
+  starred_repositories: 0
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  contributed_to:
+  - repo:pendo-io/novus-plugin
+  entity: person:tiffany-kitchen
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tiffanykitchen-spec
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

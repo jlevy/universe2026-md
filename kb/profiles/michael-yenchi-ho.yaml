@@ -1,0 +1,337 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:michael-yenchi-ho
+  person: person:michael-yenchi-ho
+  brief_bio:
+    text: Michael YenChi Ho is affiliated with Crusoe and was previously a senior product manager on Microsoft's
+      Azure Core AI team, leading strategy for AI-assisted application modernization tooling. Ho spoke
+      at GitHub Universe 2025 about modernizing Java and .NET applications with GitHub Copilot.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: c804a4e9bbfcfd52d63b1e90f9ca64e5dcc8503232f14f070611859a3cc71476
+    stale: false
+  headline: Crusoe
+  current_roles:
+  - Crusoe
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1545d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1545d
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1545d
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: .NET
+      ref: session:2025/bld1545d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:michael-yenchi-ho
+  - label: Java
+    target: software:java
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Java
+      ref: session:2025/bld1545d
+  - label: Linux
+    target: software:linux
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Linux
+      ref: person:michael-yenchi-ho
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:michael-yenchi-ho
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304621067001xLcc
+      ref: session:2025/bld1545d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304621067001xLcc
+      ref: session:2025/bld1545d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304621067001xLcc
+      ref: session:2025/bld1545d
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304621067001xLcc
+      ref: session:2025/bld1545d
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304621067001xLcc
+      ref: session:2025/bld1545d
+  education:
+  - school: Northwestern University - Kellogg School of Management
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  credentials:
+  - kind: honor
+    title: Outstanding Student Yen-Chi Ho - For the Academic Achievement in 2011-2012
+    issuer: Principle Hwung-Hweng Hwung
+    date: '2012-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: honor
+    title: 2nd place on Creative Composition and Lyrics competition
+    issuer: SONY BMG
+    date: '2011-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: honor
+    title: Outstanding Student Yen-Chi Ho - For the Academic Achievement in 2010-2011
+    issuer: Principle Hwung-Hweng Hwung
+    date: '2011-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: honor
+    title: Outstanding Student Yen-Chi Ho - For the Academic Achievement in 2009-2010
+    issuer: Michael M. C. Lai.
+    date: '2010-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: honor
+    title: Best Photograph Award of The Ridge News Paper.
+    issuer: Sage Ridge School
+    date: '2007-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: honor
+    title: Honor Roll Year of 2007.
+    issuer: Sage Ridge School
+    date: '2007-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: honor
+    title: Most Improvement Award on US History.
+    issuer: Sage Ridge School
+    date: '2007-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: honor
+    title: Rotary Youth Ambassador Scholarship, 2007.
+    issuer: Rotary International District 3480
+    date: '2007-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: honor
+    title: Rotary Youth Exchange Student Scholarship, 2007.
+    issuer: Rotary International District 5190
+    date: '2007-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: certification
+    title: Microsoft Global Hackathon 2021
+    issuer: Microsoft
+    date: Oct 2021
+    url: https://www.credly.com/badges/12a74b1b-2205-4574-925e-37dbb22dd437?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: certification
+    title: Microsoft-INSEAD Value Negotiation
+    issuer: INSEAD
+    date: Apr 2018
+    url: https://www.credly.com/badges/8d2fc44b-498a-4767-a6ea-051e4662ac06?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: certification
+    title: 'Modern Marketing: Content, Automation and Analytics to Drive Growth'
+    issuer: Kellogg School of Management - Microsoft
+    date: Jun 2017
+    url: https://www.youracclaim.com/badges/93f5e27c-d600-4ab5-b1ea-302156058eab/public_url
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: certification
+    title: Microsoft Learning Honor Code Certificate for Azure Fundamentals
+    issuer: Microsoft
+    date: Jan 2017
+    url: https://openedx.microsoft.com/certificates/be3c0f1e7c644bfb888e21d6d612e534
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: certification
+    title: GEPT High-Intermediate Level
+    issuer: ITTC
+    date: Jan 2008
+    url: https://www.gept.org.tw/
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: certification
+    title: TOEIC 970
+    issuer: Educational Testing Service (ETS)
+    date: Jan 2008
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  spoken_languages:
+  - Traditional Chinese
+  - Simplified Chinese
+  - English
+  - Japanese
+  - Taiwanese
+  - Hokkien
+  activities:
+  - kind: volunteering
+    title: IT Support Team
+    detail: TEDxTaipei · Science and Technology · Dec 2011 · - Present · 14 years 11 months · - In-Event
+      IT coordinator - Mac Machine Maintenance - In-Event Keynote Reviser - Interpreter (English and Chinese)
+      - Post Event evaluation · Dec 2011
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: project
+    title: Royal Hotel Dong Yin Website Development
+    detail: '- Built fully functional website- Hotel Photo shots- Written Marketing Article and Hotel
+      Information Article- Managed website traffic- Managed Facebook Ads and Google Adwords · Aug 2014'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: project
+    title: Taiwan Japan University visiting program
+    detail: '- Visited and Share experiences on Semi-Conductor research and IT technology with Kyushu
+      University and Fukuoka University in Kyushu- Visited Japanese Scholars and share our research results
+      of NCKU to the Japanese Corporations and Professors. · Feb 2013'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: project
+    title: Smart Seed Union Website Development
+    detail: '- Developed a fully functional site with Drupal on a self-built and tuned server running
+      SUSE Linux.- Used CSS3 customization for the visual and PHP for the backend server side service.
+      · 2011'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: project
+    title: Dian Shin Design Refreshment Workshop
+    detail: Hosted 20 Designers from all over the world and co-designed 50 gifts integrated with Taiwanese
+      culture.Mainly Co-Designed with designers from Norway, Sweden and Germany. · Jun 2013
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: project
+    title: London Design Festival
+    detail: Mind the Gap looks at the challenges facing modern urban transportation hubs and the design
+      strategies used to respond to them. This collaborative project between two groups of design students
+      – RCA Design Products' Platform 17 and the National Cheng Kung University in Tainan, Taiwan – focused
+      on London’s Marylebone and Tainan train stations. From way-finding to ticket machines, food stalls
+      to health and safety installations, design has the potential to target areas of specific public
+      need, this exhibition documents the students' research and resulting design proposals. · Mar 2013
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: project
+    title: Digital Archive of Art Center
+    detail: '- Built up an Art Media archive for NCKU Art Center for further study and research.- Maintained
+      a digital map for the Art Center to locate all the in-school art piece- Designed the system architecture
+      for the art piece search system · Jan 2011'
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: project
+    title: CRM for Leads Management
+    detail: Developed a leads capturing and management system with report capability with PHP CodeIgniter
+      and SQL Azure on Windows Azure and Linux. · Jul 2012
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  - kind: organization
+    title: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/yenchiho
+      observed_at: '2026-10-24T08:49:53Z'
+  talks:
+  - session:2025/bld1545d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1754939088087001ffU3
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:aprilyoho.dev
+  url: https://aprilyoho.dev
+  kind: personal
+  title: DevOps, Delivered.
+  description: Practical writing, talks, and lessons on DevOps, GitHub, automation, and modern software
+    delivery from April Yoho.
+  owner: person:april-yoho
+  link_basis:
+  - github_profile
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://www.aprilyoho.dev/rss.xml
+  linked_accounts:
+  - acct:linkedin/in/aprilyoho
+  - acct:x/theaprilyoho
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: scubaninja
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://www.aprilyoho.dev/
+    record_id: https://aprilyoho.dev
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

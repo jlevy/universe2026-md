@@ -1,0 +1,28 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../../../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:skool.com/women-in-tech-power-network/about
+  url: https://www.skool.com/women-in-tech-power-network/about
+  kind: personal
+  title: Women in Tech Power Network 🚀
+  description: For ambitious women in tech who know they’re capable of more and want the network, support
+    and opportunities to make it happen 💃🏽
+  owner: person:sue-black
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: brightdata
+    url: https://x.com/Dr_Black
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://www.skool.com/women-in-tech-power-network/about
+    record_id: https://www.skool.com/women-in-tech-power-network/about
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

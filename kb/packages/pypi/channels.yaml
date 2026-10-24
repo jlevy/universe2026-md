@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/channels
+  ecosystem: pypi
+  name: channels
+  url: https://pypi.org/project/channels/
+  description: Brings async, event-driven capabilities to Django.
+  latest_version: 4.3.2
+  license: BSD
+  repository_url: http://github.com/django/channels
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: django/channels
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/aprilschuff
+  platform: linkedin
+  handle: in/aprilschuff
+  url: https://www.linkedin.com/in/aprilschuff
+  display_name: April Leonard
+  location: Portland
+  followers: 2109
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQHQbGOFJF0Qkg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1601352239537?e=2147483647&v=beta&t=0EhmAx_UeIe0yYUxRNEkU5y2FGd6pxd9hfh6fE1fjjg
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQFBr13D5lCMNA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1654966734436?e=2147483647&v=beta&t=SAxbg9Cw5uSGVRQ2LqLP7iVJjkJYpcJODjsyJ5PO56w
+  owner: person:april-leonard
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699473035093001TDcX
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/aprilschuff
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

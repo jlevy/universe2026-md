@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/gose1
+  platform: x
+  handle: gose1
+  url: https://x.com/gose1
+  display_name: Greg Ose
+  bio: 'product security @ GitHub, mastodon: @gregose@infosec.exchange'
+  location: Chicago
+  website: http://nullmethod.com/
+  followers: 880
+  following: 1001
+  posts_count: 397
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/734846625210896384/3_glC2s3_normal.jpg
+  created_at: '2008-10-31T14:30:16Z'
+  owner: person:greg-ose
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695149064229001EKN1
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695149064229001EKN1
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: gregose
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/gose1
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

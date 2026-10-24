@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jpschroeder
+  platform: linkedin
+  handle: in/jpschroeder
+  url: https://www.linkedin.com/in/jpschroeder
+  display_name: Justin Schroeder
+  bio: Partner of Braid LLC and a full stack engineer with an expertise in strategy, a passion…
+  location: Charlottesville
+  followers: 962
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQHJE153G72vHQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654697981538?e=2147483647&v=beta&t=l-9iw2nDgUXH-5Pv0pDyLvGmQYNr44y-aNjlnKXCl8w
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHrVtSsahJ4QA/profile-displaybackgroundimage-shrink_200_800/B4EZ8TZvWCHwAQ-/0/1782736942798?e=2147483647&v=beta&t=msXSzT7zqpr_y48yU9sbBfmdBo6jtle7XYCZSZjE-6E
+  owner: person:justin-schroeder
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686600495977001H5JG
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jpschroeder
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

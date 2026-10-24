@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/krystalfolkes
+  platform: linkedin
+  handle: in/krystalfolkes
+  url: https://www.linkedin.com/in/krystalfolkes
+  display_name: Krystal Folkes Brown
+  location: Dallas-Fort Worth Metroplex
+  followers: 6214
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFQi-deaG1ypQ/profile-displaybackgroundimage-shrink_200_800/B56ZnPNd46HQAY-/0/1760118038600?e=2147483647&v=beta&t=I1DXG8uC0eGqqtaf2mtBOIJCJ9TPP0BJYkrioRJ_DUU
+  owner: person:krystal-folkes-brown
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724940479166001cDn7
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/krystalfolkes
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

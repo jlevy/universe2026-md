@@ -1,0 +1,306 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:james-williams
+  person: person:james-williams
+  brief_bio:
+    text: James Williams was a Director at KPMG, combining Agile principles, DevOps and automation to
+      build collaborative engineering cultures. Williams spoke at GitHub Universe 2023 about innovating
+      faster by standardizing delivery and automating governance.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 1fc605fb12b350027c2aa2bf718db893f40740b097301b5c629e172027eb3bf4
+    stale: false
+  expertise:
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Monitoring and Observability
+    target: term:topic-2023/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  interests:
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Monitoring and Observability
+    target: term:topic-2023/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Supply Chain Security
+    target: term:github-product-2023/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  credentials:
+  - kind: certification
+    title: 'DevOps Foundations: Infrastructure as Code'
+    issuer: LinkedIn
+    date: Jul 2022
+    url: https://www.linkedin.com/learning/certificates/36a21da151ec0def4ed6ebbbdb493a7e4cc97496e321a61c46ee72cb93f15781
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: May 2021
+    url: https://www.credly.com/badges/d24e3ab9-26d7-4d9e-a800-960037fa9d8d?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - kind: certification
+    title: Creating a High Performance Culture
+    issuer: LinkedIn
+    date: May 2020
+    url: https://www.linkedin.com/learning/certificates/106c0483e6c61f4552e1819c3b34092a51476837f9c5a86a2b1cae779f7f7d3e
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - kind: certification
+    title: 'DevOps Foundations: Site Reliability Engineering'
+    issuer: LinkedIn
+    date: May 2020
+    url: https://www.linkedin.com/learning/certificates/46d8cc59cb84b1037e0e473061c4a40f4daa2548aa0ad056fb9f9b427c969c4b
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - kind: certification
+    title: Executive Decision-Making
+    issuer: LinkedIn
+    date: Apr 2020
+    url: https://www.linkedin.com/learning/certificates/78b34e24cebcc6ba8aead48c7483d55e7b4fa1b298b20dce226913cf83148141
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - kind: certification
+    title: Azure DevOps
+    issuer: Microsoft
+    date: Jan 2020
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - kind: certification
+    title: DevOps Leader
+    issuer: DevOps Institution
+    date: Oct 2019
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - kind: certification
+    title: DevOps Foundations
+    issuer: DevOps Institution
+    date: Aug 2019
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - kind: certification
+    title: ITIL Foundations
+    date: Feb 2016
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - kind: certification
+    title: SAFe Agilist Certification
+    issuer: Scaled Agile, Inc.
+    date: Dec 2019
+    expires: Dec 2020
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  publications:
+  - title: 5 Keys to Effective DevSecOps
+    date: August 19, 2021
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - title: Culture of Agile
+    date: November 13, 2020
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - title: 'The Road to Modern Delivery: Low code development, market speed, and the Future of IT'
+    venue: KPMG
+    date: August 21, 2020
+    description: We hear a lot of CIO interest in adopting market speed operating models, coupled with
+      questions about next steps to get there. For those seeking to rapidly modernize their IT estate
+      to support digital transformation, while at the same time remaining cost competitive, the challenges
+      are real. Enter low code application methodology, an accelerator that offers CIOs an alternative
+      option, as they consider ways to replatform hundreds or even thousands of custom or legacy applications
+      to be digitally native.
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - title: The Hybrid Cloud Survival Kit
+    venue: KPMG
+    date: Dec 2017
+    description: IT organizations can vastly improve hybrid cloud performance even before they must invest
+      in the full transformation of their technology operations to support multiple cloud delivery models.Discover
+      how to establish a near-term strategy for managing hybrid cloud delivery that allows organizations
+      to better realize the benefits of hybrid cloud today while helping IT remain relevant through the
+      technology and marketplace changes to come.
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  - title: Journey to the Cloud
+    venue: KPMG
+    date: Feb 2017
+    evidence:
+      url: https://www.linkedin.com/in/james-williams-0352b5
+      observed_at: '2026-10-24T08:45:51Z'
+  talks:
+  - session:2023/dev2760g
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685975916762001kqTd
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

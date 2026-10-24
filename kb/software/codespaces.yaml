@@ -1,0 +1,27 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:codespaces
+  name: GitHub Codespaces
+  aliases:
+  - GitHub Codespaces
+  - Codespaces
+  kind: github_product
+  vendor: org:github
+  product_term: term:github-product/codespaces
+  mentioned_in:
+  - person:allison-weins
+  - person:savannah-ostrowski
+  - session:2023/dev2701d
+  - session:2023/dev2749w
+  - session:2024/ai1872d
+  - session:2024/ai1897d
+  - session:2024/sec1953w
+  - session:2025/bld1112s
+  - session:2025/bld1728l
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

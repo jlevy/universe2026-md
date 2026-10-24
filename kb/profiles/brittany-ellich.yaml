@@ -1,0 +1,206 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:brittany-ellich
+  person: person:brittany-ellich
+  brief_bio:
+    text: Brittany Ellich is a software engineer at Bluesky working on developer productivity, AI-assisted
+      development and accessibility, and co-hosts the Overcommitted podcast. Ellich spoke at GitHub Universe
+      2025, while an engineer at GitHub, about tackling tech debt with Copilot coding agent.
+    cites:
+    - current_affiliations
+    - websites
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:39:52Z'
+    input_sha256: 0411c6ebbee48aeb2578b6a4d638eebe988c4f302b559d979387567468b1c312
+    stale: false
+  headline: Bluesky Social
+  current_roles:
+  - Bluesky Social
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1103d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1103d
+  technologies:
+  - label: Copilot coding agent
+    target: software:copilot-coding-agent
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot coding agent
+      ref: session:2025/bld1103d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744825433881001EHmD
+      ref: session:2025/bld1103d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744825433881001EHmD
+      ref: session:2025/bld1103d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744825433881001EHmD
+      ref: session:2025/bld1103d
+  education:
+  - school: Georgia Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  credentials:
+  - kind: certification
+    title: AWS Certified DevOps Engineer
+    issuer: Amazon Web Services (AWS)
+    date: Jun 2020
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  - kind: certification
+    title: Amazon Web Services Developer - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Sep 2019
+    expires: Sep 2022
+    url: http://aws.amazon.com/verification
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  activities:
+  - kind: project
+    title: TimeTidy2
+    detail: Created a desktop calendar application for tracking customers and appointments along with
+      setting reminders for upcoming appointments. · Feb 2018
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  - kind: project
+    title: Inventory Management System
+    detail: Desktop inventory tracking system to maintain inventory and pricing information of parts and
+      products, including which parts are used in which products. · Jan 2018
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  - kind: project
+    title: Student Success Android Application
+    detail: Created mobile application for students to track terms, courses, and assessments through school.
+      · May 2018
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  - kind: project
+    title: GigHub
+    detail: Web application designed for music talents and fans to organize concerts and follow specific
+      artists. · Apr 2018
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  - kind: organization
+    title: Women Who Code Portland
+    detail: Nov 2019 · Present
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  - kind: organization
+    title: Toastmasters International
+    detail: Oct 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  - kind: organization
+    title: Girl Develop It Boise
+    detail: Jan 2018 · Feb 2019
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  - kind: organization
+    title: Treasure Valley Code and Tech
+    detail: Meetup group of fellow individuals in the Treasure Valley area with an interest in technology.
+      · Jan 2018 · Feb 2019
+    evidence:
+      url: https://www.linkedin.com/in/brittanyellich
+      observed_at: '2026-10-24T08:41:55Z'
+  recent_writing:
+  - title: Atproto Is the Context Window You Own
+    url: https://brittanyellich.com/atproto-is-the-context-window-you-own-e3bg48c
+    published: '2026-08-21T22:33:11Z'
+    channel: blog
+  - title: AI as a Tool for the Mental Load
+    url: https://brittanyellich.com/a/3mrpzcvrhke23-ai-as-a-tool-for-the-mental-load
+    published: '2026-07-30T20:02:05Z'
+    channel: blog
+  - title: '108 PRs in eight days: Accidentally discovering loop engineering'
+    url: https://brittanyellich.com/a/3mrjj34puva23-108-prs-in-eight-days-accidentally-discovering-loop-engineering
+    published: '2026-07-26T04:11:03Z'
+    channel: blog
+  - title: On Atproto and Atmospheric Groups
+    url: https://brittanyellich.com/on-atproto-and-atmospheric-groups-jqdept6
+    published: '2026-07-10T20:21:07Z'
+    channel: blog
+  - title: 'The Balanced Engineer • Issue #45'
+    url: https://brittanyellich.com/a/3mtshoscpb423-the-balanced-engineer-issue-45
+    published: '2026-05-01T13:00:00Z'
+    channel: blog
+  - title: Why I'm betting on ATProto (and why you should, too)
+    url: https://brittanyellich.com/atproto
+    published: '2026-03-30T19:20:12Z'
+    channel: blog
+  - title: Why I'm betting on ATProto (and why you should, too)
+    url: https://brittanyellich.com/a/3mjpdo4ylyy23-why-im-betting-on-atproto-and-why-you-should-too
+    published: '2026-03-30T11:20:00Z'
+    channel: blog
+  - title: Embrace the uncertainty
+    url: https://brittanyellich.com/embrace-the-uncertainty
+    published: '2026-03-05T05:09:00Z'
+    channel: blog
+  - title: 'The Balanced Engineer • Issue #44'
+    url: https://brittanyellich.com/a/3mtshos26ic23-the-balanced-engineer-issue-44
+    published: '2026-03-01T14:00:00Z'
+    channel: blog
+  - title: 'Start where you are: A practical guide to building with AI'
+    url: https://brittanyellich.com/start-where-you-are
+    published: '2026-02-27T05:55:00Z'
+    channel: blog
+  talks:
+  - session:2025/bld1103d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730135791139001Rrxc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

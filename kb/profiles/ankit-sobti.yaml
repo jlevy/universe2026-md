@@ -1,0 +1,160 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ankit-sobti
+  person: person:ankit-sobti
+  brief_bio:
+    text: Ankit Sobti is Co-Founder and CTO of Postman, which builds tools for creating, testing and deploying
+      APIs, and writes about agents and APIs. Sobti spoke at GitHub Universe 2023 about the future state
+      of APIs.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recent_writing
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 22f0144ec661f1a10f93d4ba5b9066877169a6e1d52383979f02e4cd4243c544
+    stale: false
+  headline: Postman
+  current_roles:
+  - Postman
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2784s
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2784s
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2784s
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2784s
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694819271085001rTHZ
+      ref: session:2023/dev2784s
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694819271085001rTHZ
+      ref: session:2023/dev2784s
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694819271085001rTHZ
+      ref: session:2023/dev2784s
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694819271085001rTHZ
+      ref: session:2023/dev2784s
+  education:
+  - school: Indian School of Business
+    evidence:
+      url: https://www.linkedin.com/in/ankit-sobti
+      observed_at: '2026-10-24T08:42:48Z'
+  credentials:
+  - kind: honor
+    title: Fortune 40 under 40
+    issuer: Fortune Magazine
+    date: '2018-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/ankit-sobti
+      observed_at: '2026-10-24T08:42:48Z'
+  - kind: honor
+    title: Forbes 30 under 30
+    issuer: Forbes Magazine
+    date: '2016-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/ankit-sobti
+      observed_at: '2026-10-24T08:42:48Z'
+  patents:
+  - title: METHOD AND SYSTEM FOR IMPROVING RELEVANCE OF WEB CONTENT
+    number: US 20130006977
+    date: January 3, 2013
+    evidence:
+      url: https://www.linkedin.com/in/ankit-sobti
+      observed_at: '2026-10-24T08:42:48Z'
+  spoken_languages:
+  - English
+  - Hindi
+  - French
+  recent_writing:
+  - title: 'The Agentic OS: Rethinking Access for Agents'
+    url: https://www.linkedin.com/pulse/agentic-os-rethinking-access-agents-ankit-sobti-nnsde
+    published: '2026-09-21T00:00:00.000Z'
+    channel: linkedin
+    summary: Recently, I wrote about building an agentic OS that rewires our Enterprise GTM machinery,
+      all the way from prospecting…
+  - title: 'The Agentic OS: a first-principles approach to building agents that get things done'
+    url: https://www.linkedin.com/pulse/agentic-os-first-principles-approach-building-agents-get-ankit-sobti-83gjc
+    published: '2026-08-06T00:00:00.000Z'
+    channel: linkedin
+    summary: AI agents are remarkable. They've given us the ability to reason over complex, multi-dimensional
+      knowledge and…
+  - title: Quality That Compounds
+    url: https://www.linkedin.com/pulse/quality-compounds-ankit-sobti-hceyc
+    published: '2026-05-30T00:00:00.000Z'
+    channel: linkedin
+    summary: The Quality Engineering function's mandate has changed more in the past 5 years than in the
+      15 before it. What used to…
+  - title: Musings on Forward Deployed Engineering, Agents, and APIs
+    url: https://www.linkedin.com/pulse/musings-forward-deployed-engineering-agents-apis-ankit-sobti-irfqc
+    published: '2026-05-15T00:00:00.000Z'
+    channel: linkedin
+    summary: Introduction The discourse around forward-deployed engineering has gotten loud over the last
+      few weeks. The role has…
+  talks:
+  - session:2023/dev2784s
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692237752108001HZ7y
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/katie-peters-b769663a
+  platform: linkedin
+  handle: in/katie-peters-b769663a
+  url: https://www.linkedin.com/in/katie-peters-b769663a
+  display_name: Katie Peters
+  location: Burnaby
+  followers: 151
+  connections: 132
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQFdP28ys2fRlQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1655175761945?e=2147483647&v=beta&t=yzn-0OPAiYew_YWPwj-cBIwX9d6_if0tBTyu8iK7YlI
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:katie-peters
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693320524885001sLOU
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/katie-peters-b769663a
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

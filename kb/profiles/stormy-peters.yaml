@@ -1,0 +1,378 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:stormy-peters
+  person: person:stormy-peters
+  brief_bio:
+    text: Stormy Peters works at Amazon Web Services and was previously VP, Communities at GitHub, leading
+      programs for developers and open source communities. Peters spoke in the Day 2 keynote at GitHub
+      Universe 2023 on the productivity platform for all developers.
+    cites:
+    - current_affiliations
+    - past_affiliations
+    - listed_role
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 7b8399d527b05db35fd2b980d033110b169990debabed36e3bd8b4b17a67c870
+    stale: false
+  headline: Amazon Web Services
+  current_roles:
+  - Amazon Web Services
+  expertise:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Data Analytics
+    target: term:topic-2023/data-analytics
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Data Management
+    target: term:topic-2023/data-management
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Scrum
+    target: term:topic-2023/scrum
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2845k
+  technologies:
+  - label: Linux
+    target: software:linux
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Linux
+      ref: person:stormy-peters
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Data Analytics
+    target: term:topic-2023/data-analytics
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Data Management
+    target: term:topic-2023/data-management
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Discussions
+    target: term:github-product-2023/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  - label: Education
+    target: term:github-product-2023/education
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695647314558001COUH
+      ref: session:2023/dev2845k
+  spoken_languages:
+  - Spanish
+  activities:
+  - kind: volunteering
+    title: Founder and Director
+    detail: Kids on Computers · Education · 2008 · - 2022 · 14 years · Founded and led a nonprofit that
+      provided technology to kids with no other access to technology in Mexico, Nepal, Uganda, Morocco,
+      and Argentina. · 2008
+    evidence:
+      url: https://www.linkedin.com/in/stormy
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: volunteering
+    title: Mozilla Open Source Support (MOSS) Selection Committee
+    detail: Mozilla · Science and Technology · 2015 · - 2020 · 5 years · Mozilla Open Source Support (MOSS)
+      is Mozilla’s program for supporting the Open Source and Free Software movement, with a yearly budget
+      of around $3 million. Mozilla was born out of and remains a part of this movement, and we prosper
+      because of its technology and activism. And we know that open source software remains a key part
+      of the Internet and is essential for the online life of choice, innovation and opportunity we seek
+      to build. The Mozilla Open Source Support program recognizes… Show more Mozilla Open Source Support
+      (MOSS) is Mozilla’s program for supporting the Open Source and Free Software movement, with a yearly
+      budget of around $3 million. Mozilla was born out of and remains a part of this movement, and we
+      prosper because of its technology and activism. And we know that open source software remains a
+      key part of the Internet and is essential for the online life of choice, innovation and opportunity
+      we seek to build. The Mozilla Open Source Support program recognizes and celebrates open source
+      projects that contribute to our work and the health of the Internet. It encompasses “giving back”
+      to projects that Mozilla already relies on (“Foundational Technology”), “giving forward” to projects
+      whose goals are in alignment with ours (“Mission Partners”), and improving the security of the open
+      source ecosystem (“Secure Open Source”). Show less · 2015
+    evidence:
+      url: https://www.linkedin.com/in/stormy
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: volunteering
+    title: Director, Rice Engineering Alumni Board
+    detail: Rice University · Education · 2020 · - 2023 · 3 years · 2020
+    evidence:
+      url: https://www.linkedin.com/in/stormy
+      observed_at: '2026-10-24T08:46:50Z'
+  recent_writing:
+  - title: Is AI Killing Open Source Software?
+    url: https://stormyscorner.com/blog/is-ai-killing-open-source-software/
+    published: '2026-04-12T15:06:52Z'
+    channel: blog
+  - title: Is AI Killing Open Source Software? A reading list
+    url: https://www.linkedin.com/pulse/ai-killing-open-source-software-reading-list-stormy-peters-mebfc
+    published: '2026-03-01T00:00:00.000Z'
+    channel: linkedin
+    summary: I have been working on a talk called "Is AI Killing Open Source Software?" Here are some
+      of my sources. Not in any…
+  - title: How to Own Your One-on-Ones and Boost Your Career
+    url: https://stormyscorner.com/blog/how-to-own-your-one-on-ones-and-boost-your-career/
+    published: '2025-05-28T19:20:58Z'
+    channel: blog
+  - title: Is AI Killing Online Collaboration? The Decline of Stack Overflow, Wikipedia, and What It Means
+      for Open Source
+    url: https://stormyscorner.com/blog/is-ai-killing-online-collaboration-the-decline-of-stack-overflow-wikipedia-and-what-it-means-for-open-source/
+    published: '2025-05-22T14:23:04Z'
+    channel: blog
+  - title: Successful Open Source Software Leaders Are Great Communicators
+    url: https://stormyscorner.com/blog/successful-open-source-software-leaders-are-great-communicators/
+    published: '2025-05-22T01:41:16Z'
+    channel: blog
+  - title: Why AI Is Actually Helping New Coders!
+    url: https://stormyscorner.com/blog/why-ai-is-actually-helping-new-coders/
+    published: '2025-05-15T23:57:00Z'
+    channel: blog
+  - title: What is Open Source AI? Why It Matters and Where We're Headed
+    url: https://stormyscorner.com/blog/what-is-open-source-ai-why-it-matters-and-where-were-headed/
+    published: '2025-05-15T16:10:00Z'
+    channel: blog
+  - title: In order to grow your volunteer community, you must work in the open
+    url: https://stormyscorner.com/blog/in-order-to-grow-your-volunteer-community-you-must-work-in-the-open/
+    published: '2025-05-14T21:38:02Z'
+    channel: blog
+  - title: AI is Killing Open Source Software
+    url: https://stormyscorner.com/blog/ai-is-killing-open-source-software/
+    published: '2025-05-14T15:40:56Z'
+    channel: blog
+  - title: How will AI coding assistants change our relationship with open source software?
+    url: https://www.linkedin.com/pulse/how-ai-coding-assistants-change-our-relationship-open-stormy-peters-hga2c
+    published: '2025-03-21T00:00:00.000Z'
+    channel: linkedin
+    summary: Originally posted on Stormy's Corner. I’m curious how AI coding assistants will change open
+      source software development.
+  - title: Will AI coding assistants change open source software?
+    url: https://stormyscorner.com/blog/will-ai-coding-assistants-change-open-source-software/
+    published: '2025-03-19T14:10:46Z'
+    channel: blog
+  - title: 'OSPOs for Good: The United Nations encourages open source software'
+    url: https://stormyscorner.com/blog/ospos-for-good-the-united-nations-encourages-open-source-software/
+    published: '2025-03-13T03:08:12Z'
+    channel: blog
+  - title: 'My favorite part of conferences: the community'
+    url: https://www.linkedin.com/pulse/my-favorite-part-conferences-community-stormy-peters
+    published: '2016-05-13T00:00:00.000Z'
+    channel: linkedin
+    summary: 'My favorite part of conferences is the community. The "hallway track": all the people you
+      run into between sessions, on…'
+  talks:
+  - session:2023/dev2845k
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465757703001tz6K
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

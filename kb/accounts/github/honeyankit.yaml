@@ -1,0 +1,55 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:honeyankit
+  login: honeyankit
+  kind: user
+  url: https://github.com/honeyankit
+  name: Ankit Kumar Honey
+  location: Seattle
+  followers: 55
+  public_repositories: 7
+  created_at: '2013-09-20T10:20:10Z'
+  contributions_last_year:
+    total: 1082
+    commits: 28
+    pull_requests: 2
+    issues: 0
+    reviews: 105
+  starred_repositories: 1
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 2
+  contributed_to:
+  - repo:dependabot/dependabot-core
+  - repo:github/dependabot-action
+  - repo:dependabot/proxy
+  linked_accounts:
+  - acct:linkedin/in/ankit-kumar-honey
+  entity: person:ankit-kumar-honey
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: honeyankit
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

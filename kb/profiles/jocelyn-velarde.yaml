@@ -1,0 +1,520 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jocelyn-velarde
+  person: person:jocelyn-velarde
+  brief_bio:
+    text: Jocelyn Velarde is a robotics and digital systems engineering student at Tecnológico de Monterrey
+      and a GitHub Campus Expert who builds autonomous robots and researches brain-computer interfaces.
+      Velarde speaks in the Closing Keynote at GitHub Universe 2026.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: a8a2f2263598bfd3f7e6c94fd553cc6a4c4a7e7a8fa228f1da2d4bf34d05d0c6
+    stale: false
+  headline: GitHub Campus Expert at Tec de Monterrey
+  location: Mexico
+  current_roles:
+  - GitHub Campus Expert at Tec de Monterrey
+  - University of California, Davis
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:jocelynvelarde/hack-harvard-2024
+    - ref: repo:jocelynvelarde/shell-hacks-2024
+    - ref: repo:jocelynvelarde/talent-land-slop-as-a-service
+    - ref: repo:jocelynvelarde/valentines-tech
+  - label: Jupyter Notebook
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jocelynvelarde/ometeotl-2024
+  - label: C
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jocelynvelarde/stm_test_repo
+  recognitions:
+  - label: GitHub Campus Expert
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Jocelyn Velarde is a Robotics and Digital Systems Engineering student at Tecnológico de Monterrey
+        and a GitHub Campus Expert for robotics community RoBorregos.
+  interests:
+  - label: computer-vision
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/Hack-Harvard-2024
+      ref: repo:jocelynvelarde/hack-harvard-2024
+    - url: https://github.com/JocelynVelarde/Ometeotl-2024
+      ref: repo:jocelynvelarde/ometeotl-2024
+    - url: https://github.com/JocelynVelarde/Shell-Hacks-2024
+      ref: repo:jocelynvelarde/shell-hacks-2024
+  - label: python
+    basis: github_repositories
+    confidence: medium
+    weight: 0.86
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/Hack-Harvard-2024
+      ref: repo:jocelynvelarde/hack-harvard-2024
+    - url: https://github.com/JocelynVelarde/Talent-Land-Slop-as-a-Service
+      ref: repo:jocelynvelarde/talent-land-slop-as-a-service
+    - url: https://github.com/HugoCL/mlh-sidekick
+      ref: repo:hugocl/mlh-sidekick
+  - label: streamlit
+    basis: github_repositories
+    confidence: medium
+    weight: 0.86
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/Hack-Harvard-2024
+      ref: repo:jocelynvelarde/hack-harvard-2024
+    - url: https://github.com/JocelynVelarde/valentines-tech
+      ref: repo:jocelynvelarde/valentines-tech
+    - url: https://github.com/JocelynVelarde/Ometeotl-2024
+      ref: repo:jocelynvelarde/ometeotl-2024
+  - label: Machine learning
+    basis: github_repositories
+    confidence: medium
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/Hack-Harvard-2024
+      ref: repo:jocelynvelarde/hack-harvard-2024
+    - url: https://github.com/JocelynVelarde/Ometeotl-2024
+      ref: repo:jocelynvelarde/ometeotl-2024
+  - label: stm32
+    basis: github_repositories
+    confidence: medium
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/Talent-Land-Slop-as-a-Service
+      ref: repo:jocelynvelarde/talent-land-slop-as-a-service
+    - url: https://github.com/JocelynVelarde/stm_test_repo
+      ref: repo:jocelynvelarde/stm_test_repo
+  - label: arduino
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/Talent-Land-Slop-as-a-Service
+      ref: repo:jocelynvelarde/talent-land-slop-as-a-service
+  - label: arduino-app-lab
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/Talent-Land-Slop-as-a-Service
+      ref: repo:jocelynvelarde/talent-land-slop-as-a-service
+  - label: bert-embeddings
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/valentines-tech
+      ref: repo:jocelynvelarde/valentines-tech
+  - label: ble
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/stm_test_repo
+      ref: repo:jocelynvelarde/stm_test_repo
+  - label: can
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/stm_test_repo
+      ref: repo:jocelynvelarde/stm_test_repo
+  - label: cosine-similarity
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/valentines-tech
+      ref: repo:jocelynvelarde/valentines-tech
+  - label: cpp
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/JocelynVelarde/Talent-Land-Slop-as-a-Service
+      ref: repo:jocelynvelarde/talent-land-slop-as-a-service
+  open_source:
+  - repository: repo:jocelynvelarde/hack-harvard-2024
+    relation: owner
+    stars: 20
+    primary_language: Python
+  - repository: repo:jocelynvelarde/valentines-tech
+    relation: owner
+    stars: 10
+    primary_language: Python
+  - repository: repo:roborregos/robocup-soccer-open-2024
+    relation: pinned
+    stars: 8
+    primary_language: C++
+  - repository: repo:jocelynvelarde/talent-land-slop-as-a-service
+    relation: owner
+    stars: 7
+    primary_language: Python
+  - repository: repo:jocelynvelarde/ometeotl-2024
+    relation: owner
+    stars: 2
+    primary_language: Jupyter Notebook
+  - repository: repo:jocelynvelarde/shell-hacks-2024
+    relation: owner
+    stars: 2
+    primary_language: Python
+  - repository: repo:jocelynvelarde/stm_test_repo
+    relation: owner
+    stars: 0
+    primary_language: C
+  - repository: repo:roborregos/home2
+    relation: contributor
+    stars: 27
+    primary_language: C++
+  - repository: repo:danie-hinojosa/embea_equipo3
+    relation: contributor
+    stars: 1
+    primary_language: C++
+  - repository: repo:hugocl/mlh-sidekick
+    relation: contributor
+    stars: 1
+    primary_language: Python
+  - repository: repo:jldominguezm/dreamteam-t3001b
+    relation: contributor
+    stars: 1
+    primary_language: HTML
+  - repository: repo:jldominguezm/motorpwm_ros
+    relation: contributor
+    stars: 0
+    primary_language: C++
+  education:
+  - school: Tecnológico de Monterrey
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  credentials:
+  - kind: honor
+    title: Acreditación Internacional a Túnez
+    issuer: ExpoCiencias Sonora 2023
+    date: '2023-11-01T00:00:00.000Z'
+    description: Se obtuvo una acreditación para presentar mi proyecto de investigación en el International
+      Festival of Engineering Science and Technology en Túnez
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Acreditación Nacional ExpoCiencias 2023
+    issuer: Gobierno de Nuevo León
+    date: '2023-10-01T00:00:00.000Z'
+    description: Se obtuvo el Primer Lugar en la categoría de proyectos de investigación, mas una acreditación
+      para el nacional de ExpoCiencias Sonora 2023.
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Global Finalist 1st Place in NASA Space Apps Challenge
+    issuer: NASA
+    date: '2023-10-01T00:00:00.000Z'
+    description: El proyecto paso al Top 40, de entre 5,800 proyectos. Se desarrolló una aplicación móvil
+      que otorga recomendaciones sobre la calidad del aire, lluvia y sequía en la ubicación seleccionada.
+      Se utilizan redes neuronales y algoritmos de machine learning, así como IA generativa.
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Premio al Talento STEM
+    issuer: Movimiento STEM
+    date: '2023-05-01T00:00:00.000Z'
+    description: En alianza con el Ecosistema STEM, Global Edtech Impact Alliance y Varkey Foundation
+      premiamos a la o el mejor estudiante de media superior en Ciencias, Tecnología, Ingeniería y Matemáticas
+      de México. Top 10
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Gracious Professionalism Award
+    issuer: FIRST Robotics
+    date: '2023-03-01T00:00:00.000Z'
+    description: Celebrates outstanding demonstration of FIRST Core Values such as continuous Gracious
+      Professionalism and working together both on and off the playing field. Gracious professionals learn
+      and compete like crazy, but treat one another with respect and kindness in the process. They avoid
+      treating anyone like losers. No chest thumping tough talk, but no sticky-sweet platitudes either.
+      Knowledge, competition, and empathy are comfortably blended.
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Industrial Design Award
+    issuer: FIRST Robotics
+    date: '2023-03-01T00:00:00.000Z'
+    description: Celebrates the team that demonstrates industrial design principles, striking a balance
+      between form, function, and aesthetics.
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Regional FRC MTY Finalist
+    issuer: FIRST Robotics
+    date: '2023-03-01T00:00:00.000Z'
+    description: Celebrates the Alliance that makes it to the final match of the robotics competition.
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Regional FRC Puebla Winner
+    issuer: FIRST Robotics
+    date: '2023-03-01T00:00:00.000Z'
+    description: Celebra a la alianza ganadora del regional, este premio otorga pase al mundial en Houston.
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Honorific Mention for best project in Ambiental Solutions
+    issuer: PrepApps 2022 Tecnológico de Monterrey
+    date: '2022-11-01T00:00:00.000Z'
+    description: Nos clasificamos como el mejor equipo a nivel nacional que desarrollo un proyecto para
+      tratar una problemática ambiental. Participamos con nuestra regadera inteligente del Hackathon Caterpillar
+      y le realizamos unas pequeñas mejoras. El PrepApps es una división del INC Mty para alumnos de preparatoria
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Global Finalist 1st Place in NASA Space Apps Challenge
+    issuer: NASA
+    date: '2022-10-01T00:00:00.000Z'
+    description: Pasamos a la clasificatoria global para competir con equipos del todo el mundo. Desarrollamos
+      una aplicación multiplataforma, que a través de un algoritmo de predicción, otorga recomendaciones
+      al usuario sobre la calidad del aire en su zona y el estado de lluvias.
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Top 10 HACKMty Finalist
+    issuer: Banorte & HackMty
+    date: '2022-09-01T00:00:00.000Z'
+    description: Estuvimos dentro de las 10 mejores soluciones de software de aproximadamente 150 equipos.
+      Desarrollamos un perfil de usuario para la empresa de Banorte, es una aplicación móvil multiplataforma
+      que permite enviar transacciones a múltiples contactos, visualizar tus presupuestos, tus gastos
+      y los depósitos que te han hecho; todo en tiempo real.
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Hackatón Caterpillar
+    issuer: Caterpillar
+    date: '2022-07-01T00:00:00.000Z'
+    description: Nuestro equipo desarrollo una regadera inteligente para resolver la problemática del
+      agua en Nuevo León. El prototipo obtuvo el primer lugar en la primera edición del hackathon.
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Dean´s List Award Semifinalist
+    issuer: FIRST Robotics Competition
+    date: '2022-02-01T00:00:00.000Z'
+    description: En un esfuerzo por reconocer el liderazgo y la dedicación de los estudiantes de preparatoria
+      más destacados de FIRST. Los cuales son excelentes ejemplos de líderes estudiantiles que han llevado
+      a sus equipos y comunidades a una mayor conciencia de FIRST y su misión. Estos estudiantes también
+      han logrado experiencia y logros técnicos personales. La intención de FIRST es que estas personas
+      continúen, después de la adjudicación, como grandes líderes, ex alumnos y defensores de FIRST. Es
+      un premio… Show more
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: 'Premio al Talento STEM: National Student Prize México Finalista Nacional 2022'
+    issuer: Movimiento STEM+
+    date: Aug 2023
+    url: https://www.acreditta.com/credential/e25b589d-d0bb-4376-a2a0-225b3f38f7de?resource_type=badge&resource=e25b589d-d0bb-4376-a2a0-225b3f38f7de
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: STEMist Hacks 2.0 Certificate
+    issuer: STEMist Education
+    date: Aug 2023
+    url: https://certopus.com/c/9e061ba180314bf89bb28daa84796022
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: Generative AI Fundamentals
+    issuer: Google Cloud Skills Boost
+    date: Jun 2023
+    url: https://www.cloudskillsboost.google/public_profiles/29b03fc9-7e5a-4160-8bc9-12e43f583b29/badges/3861736
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: Introduction to Generative AI
+    issuer: Google Cloud Skills Boost
+    date: Jun 2023
+    url: https://www.cloudskillsboost.google/public_profiles/29b03fc9-7e5a-4160-8bc9-12e43f583b29/badges/3859437
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: Introduction to Image Generation
+    issuer: Google Cloud Skills Boost
+    date: Jun 2023
+    url: https://www.cloudskillsboost.google/public_profiles/29b03fc9-7e5a-4160-8bc9-12e43f583b29/badges/3861504
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: Introduction to Large Language Models
+    issuer: Google Cloud Skills Boost
+    date: Jun 2023
+    url: https://www.cloudskillsboost.google/public_profiles/29b03fc9-7e5a-4160-8bc9-12e43f583b29/badges/3860008
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: Introduction to Responsible AI
+    issuer: Google Cloud Skills Boost
+    date: Jun 2023
+    url: https://www.cloudskillsboost.google/public_profiles/29b03fc9-7e5a-4160-8bc9-12e43f583b29/badges/3861158
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: Diploma de Preparatoria Internacional
+    issuer: Tecnológico de Monterrey
+    date: May 2023
+    url: https://certificados.tec.mx/certificate/614efcff264254958d34ab2385c992a7
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: Certificado Blockchain INCmty
+    issuer: INCmty
+    date: Nov 2022
+    url: https://certificates.tantan.solutions/blockchain/cbed56e0-3144-4224-b589-fbd8034a4e10
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: certification
+    title: English Proficiency Certificate
+    issuer: Duolingo English Test
+    date: Oct 2022
+    url: https://www.linkedin.com/certs.duolingo.com/99e3ce4b2ca85cc8bb2d0a96daa035a8
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  spoken_languages:
+  - Spanish
+  - English
+  - German
+  activities:
+  - kind: volunteering
+    title: FIRST Robotics Mentor
+    detail: VOLTEC Robotics 6647 · Education · Jun 2021 · - Aug 2022 · 1 year 3 months · Estoy impartiendo
+      clases gratis de robótica para niños y niñas de 6to grado. El propósito de las clases es darles
+      las herramientas necesarias para que puedan tener un futuro lleno de posibilidades. · Jun 2021
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: volunteering
+    title: Field Resetter
+    detail: FIRST · Science and Technology · Feb 2024 · - Present · 2 years 9 months · Feb 2024
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: volunteering
+    title: Spare Part Manager
+    detail: FIRST · Education · Apr 2025 · - Present · 1 year 7 months · Apr 2025
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: project
+    title: Smart Shower
+    detail: 'Una regadera inteligente que controla el flujo del agua dependiendo de la temperatura deseada
+      por el usuario y su presencia al momento de bañarse. No solo ahorra 80 litros de agua en cada baño,
+      también reutiliza esa agua en otros usos dentro del baño como el lavabo y el sanitario. Contamos
+      con el diseño adaptado para casas que quieran cambiarse a nuestro sistema, y el sistema nuevo para
+      casas en construcción que quieran incluir nuestro proyecto. Ambos diseños totalmente originales,
+      construidos, programados y prototipados por nosotras. Hemos ganado distintos reconocimientos: -1er
+      Lugar Hackathon Caterpillar 2022 a nivel zona norte -Mención Honorifica en categoría Medio Ambiente
+      en el PrepApps del INC Mty 2022 a nivel nacional -Reconocimiento a proyecto de impacto tecnológico
+      en el evento Orgullo Prepa Tec 2022 a nivel zona -Invitadas especiales en el programa Bar Emprende
+      de Genaro Mejía · Jun 2022'
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: project
+    title: 3D printed prosthetic hand controlled with imaginary movement
+    detail: Estoy realizando una investigación en interfaces computador cerebro. El experimento consiste
+      en controlar una prótesis impresa en 3D que se maneje a través del movimiento imaginado del usuario.
+      Las señales son filtradas y entrenadas a través de un algoritmo de machine learning. Se utiliza
+      la tecnología de Arduino, OpenVibe y Python · Apr 2022
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: course
+    title: Advanced Computer Science
+    detail: PBI
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: course
+    title: Physics
+    detail: PBI
+    evidence:
+      url: https://www.linkedin.com/in/jocelynvelarde
+      observed_at: '2026-10-24T08:11:35Z'
+  talks:
+  - session:1878k
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1790615092640001VIr5
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: JocelynVelarde
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/erinhavens
+  platform: x
+  handle: erinhavens
+  url: https://x.com/erinhavens
+  display_name: Erin Havens
+  bio: product @GitHub
+  website: http://erinhavens.com/
+  followers: 567
+  following: 253
+  posts_count: 312
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2059836365098135552/r_JoKOTU_normal.jpg
+  created_at: '2010-02-16T04:12:49Z'
+  owner: person:erin-havens
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695060072936001Zz7u
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695060072936001Zz7u
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/erinhavens
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

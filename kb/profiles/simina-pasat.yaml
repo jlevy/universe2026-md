@@ -1,0 +1,188 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:simina-pasat
+  person: person:simina-pasat
+  brief_bio:
+    text: Simina Pasat is a Senior Director of Product Management who has led part of the GitHub Copilot
+      product team at GitHub, including Copilot Enterprise, and has published on human-machine interaction
+      in individual mobility. Pasat spoke at GitHub Universe 2024 about GitHub Copilot and AI in software
+      development.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 4bbf5d3531d21ef0bd1c0c083eff877d96a0874b4018ce30a238c7a4305a017e
+    stale: true
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1904m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1904m
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1904m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1904m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1904m
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:simina-pasat
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723837466186001swDc
+      ref: session:2024/ai1904m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723837466186001swDc
+      ref: session:2024/ai1904m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723837466186001swDc
+      ref: session:2024/ai1904m
+  - label: Machine learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723837466186001swDc
+      ref: session:2024/ai1904m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723837466186001swDc
+      ref: session:2024/ai1904m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723837466186001swDc
+      ref: session:2024/ai1904m
+  education:
+  - school: Technische Universität München / Technical University of Munich
+    evidence:
+      url: https://www.linkedin.com/in/simina-pasat-5707a633
+      observed_at: '2026-10-24T08:47:25Z'
+  publications:
+  - title: Human-Machine-Interaction in Individual Mobility
+    venue: Center for Digital Technology & Management
+    date: '2013'
+    evidence:
+      url: https://www.linkedin.com/in/simina-pasat-5707a633
+      observed_at: '2026-10-24T08:47:25Z'
+  spoken_languages:
+  - Romanian
+  - English
+  - German
+  - French
+  activities:
+  - kind: project
+    title: CarBeats - Autoscout24 Hackathon
+    detail: 2nd prize on Connected Cars Hackathon from AutoScout24 (http://hackathon.autoscout24.de/).
+      We had 48h to develop our prototype and pitch our idea. Our solution is Carbeats - a music player
+      combining a driver's music preferences with his driving style. During the hackathon I worked on
+      the iOS app and integrated it with various APIs. · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/simina-pasat-5707a633
+      observed_at: '2026-10-24T08:47:25Z'
+  - kind: project
+    title: Online Marketing Strategy Development for Clevis Research GmbH
+    detail: 'The 3-month consulting project was conducted for Clevis Research, a medium-sized market research
+      and consulting company. The main goal of the project was to develop a holistic online marketing
+      strategy that will help Clevis Research to increase the number and quality of customer leads generated
+      through online channels.The project encompassed the following main deliverables:- Analysis of various
+      online marketing tools and industry best practices for online client acquisition - Customer segmentation-
+      Analysis of existing online marketing activities at Clevis Research- Detailed elaboration of an
+      SEM-focused online marketing strategy, including: mock-up for landing pages that incorporate best
+      practices; detailed recommendations for the setup of corresponding Google Adwords campaigns; appr.
+      18,000 proposed keywords to kickoff online marketing efforts- Development of a keyword and ad groups
+      generation tool- Strategy implementation plan with detailed cost estimation and business case calculation
+      · Apr 2014'
+    evidence:
+      url: https://www.linkedin.com/in/simina-pasat-5707a633
+      observed_at: '2026-10-24T08:47:25Z'
+  - kind: project
+    title: Android quiz game for Ravensburger
+    detail: We've developed a multiplayer quiz game in the context of an Android practical course in collaboration
+      with Ravensburger.My responsibility was the game logic, database implementation and graphic design.
+      · Apr 2012
+    evidence:
+      url: https://www.linkedin.com/in/simina-pasat-5707a633
+      observed_at: '2026-10-24T08:47:25Z'
+  talks:
+  - session:2024/ai1904m
+  gaps:
+  - github_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697146983288001RJIa
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

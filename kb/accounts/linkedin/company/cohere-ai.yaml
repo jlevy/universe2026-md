@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/cohere-ai
+  platform: linkedin
+  handle: company/cohere-ai
+  url: https://www.linkedin.com/company/cohere-ai
+  display_name: Cohere
+  bio: 'Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation models
+    and end-to-end AI products designed to solve real-world business problems. We partner closely with
+    companies to deliver seamless integration, full customization, and easy-to-use solutions for their
+    workforce and customers. Our all-in-one platform offers enterprises the highest levels of data security,
+    privacy and optionality to deploy across all major cloud providers, private cloud environments, or
+    on-premises. HQ: [address removed], 2nd Floor, Toronto, ON M5T 1X3'
+  website: https://cohere.com/
+  followers: 297736
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQFzalLAtaow6A/company-logo_200_200/B4DZ7wZ3joH0AI-/0/1782149773884/cohere_ai_logo?e=2147483647&v=beta&t=y5ehwyk4Yo4Qb4lwB-WjtGOCdRXSSCs5ixZhNp1Knqw
+  owner: org:cohere
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/mitchnaylor
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/cohere-ai
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

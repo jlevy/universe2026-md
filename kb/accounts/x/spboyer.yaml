@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/spboyer
+  platform: x
+  handle: spboyer
+  url: https://x.com/spboyer
+  display_name: Shayne Boyer
+  bio: Principal, Member of Technical Staff at @Microsoft | @GitHub. Building AI-native developer experiences
+    across GitHub Copilot Agentic Tools. Husband, father.
+  location: Florida, USA
+  website: http://www.tattoocoder.com/
+  followers: 6948
+  following: 1302
+  posts_count: 16276
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1929645866287030272/ILlFdwCU_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/230247976/1532610820
+  created_at: '2010-12-24T18:58:15Z'
+  owner: person:shayne-boyer
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695299596819001nMKu
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695299596819001nMKu
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/spboyer
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

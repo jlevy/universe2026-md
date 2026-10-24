@@ -1,0 +1,49 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:step-security/harden-runner
+  full_name: step-security/harden-runner
+  url: https://github.com/step-security/harden-runner
+  description: Harden-Runner is a CI/CD security agent that works like an EDR for GitHub Actions runners.
+    It monitors network egress, file integrity, and process activity on those runners, detecting threats
+    in real-time.
+  homepage: https://www.stepsecurity.io
+  stars: 1289
+  forks: 120
+  watchers: 13
+  open_issues: 21
+  stats_observed_at: '2026-10-24T19:12:25Z'
+  primary_language: TypeScript
+  topics:
+  - github-actions
+  - actions
+  - supply-chain-security
+  - hardening
+  - security-hardening
+  - runners
+  - egress-filtering
+  - network-security
+  - runtime-security
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2021-10-28T16:58:46Z'
+  pushed_at: '2026-10-19T17:00:14Z'
+  owner_login: step-security
+  owner: gh:step-security
+  pinned_by:
+  - gh:step-security
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: step-security
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: step-security/harden-runner
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

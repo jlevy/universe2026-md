@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/allstacks
+  platform: linkedin
+  handle: company/allstacks
+  url: https://www.linkedin.com/company/allstacks
+  display_name: Allstacks
+  bio: Allstacks Product Studio helps product and engineering teams decide what's worth building, prove
+    it's ready before handoff, and measure it against the business objective. Product Studio gives your
+    team one shared, grounded workspace instead of everyone working from their own AI setup. Reviewers
+    focused on different concerns pressure-test each idea and requirement before it reaches engineering.
+    Readiness checks catch gaps early. Every decision draws on your connected data from Jira, Azure DevOps,
+    Confluence, and GitHub, and the reasoning behind it is captured so the team can see why a call was
+    made. Because Product Studio runs on the Allstacks platform, planning stays tied to delivery reality.
+    Agents working in the same context track real activity, surface risk, measure the impact of your AI
+    tools, and show whether what shipped moved the business. Better inputs for your engineers and your
+    coding agents. Less rework. A clear line from idea to outcome.
+  website: https://www.allstacks.com/
+  followers: 3365
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQHwRguoKY0eXQ/company-logo_200_200/B4EZ.APzwRJMAE-/0/1784563055869/allstacks_logo?e=2147483647&v=beta&t=2eSC78tGP5U7h40DCv1HqeVzE4diIgiJUeEwCYKrjOQ
+  owner: org:allstacks
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeffdkeyes
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/allstacks
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

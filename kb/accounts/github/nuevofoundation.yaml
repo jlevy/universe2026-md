@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:nuevofoundation
+  login: NuevoFoundation
+  kind: organization
+  url: https://github.com/NuevoFoundation
+  name: Nuevo Foundation
+  bio: We inspire kids to be curious, confident, and courageous by discovering the world of STEM.
+  website: nuevofoundation.org
+  public_repositories: 9
+  created_at: '2018-06-30T07:56:58Z'
+  pinned:
+  - repo:nuevofoundation/workshops
+  - repo:nuevofoundation/nuevofoundation-web
+  - repo:nuevofoundation/github-pages
+  - repo:nuevofoundation/python_curriculum
+  linked_accounts:
+  - acct:x/nuevofoundation
+  entity: org:nuevo-foundation
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: NuevoFoundation
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

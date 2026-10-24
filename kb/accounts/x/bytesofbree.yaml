@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/bytesofbree
+  platform: x
+  handle: bytesofbree
+  url: https://x.com/bytesofbree
+  display_name: Bree
+  bio: |-
+    👩🏾‍💻creating cute code
+    🎬building dev content @sanity_io
+     ✌🏾opinions are my own
+  location: Atlanta, GA-ish
+  website: http://bytesofbree.com/hello
+  followers: 1927
+  following: 839
+  posts_count: 2896
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1991984271041363968/c6tTItk4_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1270029232563990531/1639328861
+  created_at: '2020-06-08T16:26:00Z'
+  owner: person:bree-hall
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744253167255001tmvm
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/bytesofbree
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

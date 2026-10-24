@@ -1,0 +1,263 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:leo-balter
+  person: person:leo-balter
+  brief_bio:
+    text: Leo Balter is a Senior Product Manager at GitHub for npm who has written about securing npm
+      without breaking the web. Balter speaks at GitHub Universe 2026 about what happens behind the scenes
+      when you run npm install.
+    cites:
+    - listed_role
+    - current_affiliations
+    - github_bio
+    - recent_writing
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: d324db445b8bf9ddce0fe02ab719514e2ddd2aeaeb4122eec28f13c7a6d26789
+    stale: false
+  headline: Senior Product Manager at GitHub
+  location: Bay Area, CA
+  current_roles:
+  - Senior Product Manager at GitHub
+  expertise:
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1476b
+  technologies:
+  - label: npm
+    target: software:npm-registry
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: npm
+      ref: session:tru1476b
+  programming_languages:
+  - label: HTML
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:leobalter/ecma262
+    - ref: repo:leobalter/ecma402
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:tc39/test262
+    - ref: repo:qunitjs/qunit
+    - ref: repo:leobalter/shadowrealms-polyfill
+    - ref: repo:leobalter/dexterjs
+  - label: Vim Script
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:leobalter/.dotfiles
+  - label: Bikeshed
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:leobalter/cross-root-aria-delegation
+  interests:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/qunitjs/qunit
+      ref: repo:qunitjs/qunit
+    - url: https://github.com/tc39/test262
+      ref: repo:tc39/test262
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777602763278001LSdB
+      ref: session:tru1476b
+  - label: Supply Chain Security
+    target: term:github-product/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777602763278001LSdB
+      ref: session:tru1476b
+  - label: Accessibility
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/leobalter/cross-root-aria-delegation
+      ref: repo:leobalter/cross-root-aria-delegation
+  - label: npm-cli
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/npm/documentation
+      ref: repo:npm/documentation
+  - label: qunit
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/qunitjs/qunit
+      ref: repo:qunitjs/qunit
+  - label: tc39
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/tc39/test262
+      ref: repo:tc39/test262
+  - label: testing
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/qunitjs/qunit
+      ref: repo:qunitjs/qunit
+  - label: tests
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/tc39/test262
+      ref: repo:tc39/test262
+  - label: web-components
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/leobalter/cross-root-aria-delegation
+      ref: repo:leobalter/cross-root-aria-delegation
+  - label: webcomponents
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/leobalter/cross-root-aria-delegation
+      ref: repo:leobalter/cross-root-aria-delegation
+  open_source:
+  - repository: repo:qunitjs/qunit
+    relation: pinned
+    stars: 4037
+    primary_language: JavaScript
+  - repository: repo:tc39/test262
+    relation: pinned
+    stars: 2834
+    primary_language: JavaScript
+  - repository: repo:leobalter/shadowrealms-polyfill
+    relation: owner
+    stars: 61
+    primary_language: JavaScript
+  - repository: repo:leobalter/dexterjs
+    relation: owner
+    stars: 56
+    primary_language: JavaScript
+  - repository: repo:leobalter/cross-root-aria-delegation
+    relation: owner
+    stars: 32
+    primary_language: Bikeshed
+  - repository: repo:tc39/code-of-conduct
+    relation: pinned
+    stars: 29
+    primary_language: SCSS
+  - repository: repo:leobalter/.dotfiles
+    relation: owner
+    stars: 12
+    primary_language: Vim Script
+  - repository: repo:leobalter/ecma262
+    relation: owner
+    stars: 1
+    primary_language: HTML
+  - repository: repo:leobalter/ecma402
+    relation: owner
+    stars: 1
+    primary_language: HTML
+  - repository: repo:npm/documentation
+    relation: contributor
+    stars: 723
+    primary_language: MDX
+  education:
+  - school: Universidade Cândido Mendes
+    evidence:
+      url: https://www.linkedin.com/in/leobalter
+      observed_at: '2026-10-24T08:15:42Z'
+  credentials:
+  - kind: honor
+    title: Ecma Recognition Awards
+    issuer: Ecma International
+    date: '2020-06-01T00:00:00.000Z'
+    description: The Ecma recognition award recognizes individuals for their dedication and support of
+      Ecma. https://www.ecma-international.org/news/last-results-of-the-119th-general-assembly-held-as-a-virtual-meeting-on-june-16-2020/
+    evidence:
+      url: https://www.linkedin.com/in/leobalter
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: certification
+    title: edX Honor Code Certificate for Tackling the Challenges of Big Data (July 7, 2015 - August 18,
+      2015)
+    issuer: edX
+    url: https://s3.amazonaws.com/verify.edx.org/downloads/8ddc6045cc294764909f201f8c77c176/Certificate.pdf
+    evidence:
+      url: https://www.linkedin.com/in/leobalter
+      observed_at: '2026-10-24T08:15:42Z'
+  spoken_languages:
+  - English
+  - Portuguese
+  - Spanish
+  recent_writing:
+  - title: Securing npm without breaking the web
+    url: https://www.linkedin.com/pulse/securing-npm-without-breaking-web-leo-balter-hu5kc
+    published: '2026-08-28T00:00:00.000Z'
+    channel: linkedin
+    summary: A year of self-propagating supply-chain attacks at the world's largest package registry —
+      and why the fix was the easy…
+  talks:
+  - session:tru1476b
+  gaps:
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692886929706001yQKB
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: leobalter
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

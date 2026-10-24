@@ -1,0 +1,315 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:tobias-schimmer
+  person: person:tobias-schimmer
+  brief_bio:
+    text: Tobias Schimmer is global head of developer experience at SAP, where Schimmer has worked since
+      2009 and helped establish the SAP Innovation Center in Newport Beach. Schimmer spoke at GitHub Universe
+      2024 about how GitHub Copilot is helping SAP reimagine the developer experience.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 539c4321f23b1ad662df5d405060614b93526dc30585603e3bdaa5df18aedb65
+    stale: false
+  headline: SAP
+  current_roles:
+  - SAP
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1864m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1864m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1864m
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1864m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1864m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1864m
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1864m
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1864m
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1864m
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1716772047563001o29F
+      ref: session:2024/ai1864m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1716772047563001o29F
+      ref: session:2024/ai1864m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1716772047563001o29F
+      ref: session:2024/ai1864m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1716772047563001o29F
+      ref: session:2024/ai1864m
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1716772047563001o29F
+      ref: session:2024/ai1864m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1716772047563001o29F
+      ref: session:2024/ai1864m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1716772047563001o29F
+      ref: session:2024/ai1864m
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1716772047563001o29F
+      ref: session:2024/ai1864m
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1716772047563001o29F
+      ref: session:2024/ai1864m
+  education:
+  - school: University of Mannheim
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  credentials:
+  - kind: honor
+    title: SAP Trainer-of-the-Year Award 2014
+    issuer: SAP Products & Innovation
+    date: '2015-02-01T00:00:00.000Z'
+    description: Training and coaching in the fields of business model innovation, desing thinking and
+      visualization
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: honor
+    title: SAP Trainer-of-the-Year Award
+    issuer: SAP AG
+    date: '2012-12-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: certification
+    title: Bikablo Certified Visualization Trainer
+    issuer: bikablo akademie
+    date: Nov 2013
+    url: http://www.kommunikationslotsen.de/welcome-to-kommunikationslotsen/
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: certification
+    title: Professional Scrum Product Owner
+    issuer: Scrum.org
+    date: Mar 2013
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: certification
+    title: Business Model Master
+    issuer: Strategyzer
+    date: Apr 2012
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: certification
+    title: Design Thinking Coach
+    issuer: Hasso Plattner Institute
+    date: Feb 2012
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: certification
+    title: Professional Scrum Master
+    issuer: Scrum.org
+    date: Jan 2011
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: certification
+    title: Continuous Improvement Expert
+    issuer: SAP
+    date: Jan 2010
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: certification
+    title: Awards and Recognition 2024 - SAP Next-Gen 4 ALL Ambassador
+    issuer: SAP
+    date: Dec 2024
+    expires: Dec 2025
+    url: https://www.credly.com/badges/f742b614-0b35-47b0-a076-f18915385e62/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  publications:
+  - title: Google Scholar List of Publications
+    venue: Various
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - title: List of publications
+    venue: University of Mannheim/SAP
+    description: 'Please find an up-to-date list of publications i.e. monographs, journal papers, book
+      chapters, etc. on my academic homepage at University of Mannheim: http://wifo1.bwl.uni-mannheim.de/hildenbrand.html'
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  spoken_languages:
+  - German
+  - English
+  - Spanish
+  - French
+  - Latin
+  activities:
+  - kind: project
+    title: Sail Better (SAP Sailing Program)
+    detail: 'Challenge: "how might we help professional sailors and their coaches to perform better as
+      a team?" · May 2011'
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: course
+    title: PhD course on Social Network Analysis
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: course
+    title: Social Network Analysis (Linton Freeman)
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: organization
+    title: Verein Karlsruher der Software-Ingenieure (VKSI)
+    detail: 2012 · Present
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  - kind: organization
+    title: 'baden-württemberg: connected (bwcon)'
+    detail: Jul 2004 · Present
+    evidence:
+      url: https://www.linkedin.com/in/tobiashildenbrand
+      observed_at: '2026-10-24T08:49:50Z'
+  recent_writing:
+  - title: Business Quote of the Day
+    url: https://www.linkedin.com/pulse/business-quote-day-tobias-hildenbrand
+    published: '2016-06-19T00:00:00.000Z'
+    channel: linkedin
+    summary: '"The best time to repair the roof is when the sun is shining" - Brad D. Smith, CEO of Intuit'
+  talks:
+  - session:2024/ai1864m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695057875860001oQBj
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

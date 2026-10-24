@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: audience-2025
+  event: event:github-universe-2025
+  label: Target audience
+  multi_valued: true
+  terms:
+  - id: term:audience-2025/educators-students
+    label: Educators & Students
+    source_id: 1681918092630001dpsq
+    session_count: 38
+  - id: term:audience-2025/enterprise-developer
+    label: Enterprise - Developer
+    source_id: 1681330787197001OKo3
+    session_count: 113
+  - id: term:audience-2025/enterprise-engineering-leadership
+    label: Enterprise - Engineering Leadership
+    source_id: 1597340093683001lbEf
+    session_count: 108
+  - id: term:audience-2025/open-source-developer-or-maintainer
+    label: Open Source Developer or Maintainer
+    source_id: 1681330787197002OzQH
+    session_count: 83
+  - id: term:audience-2025/security-leadership
+    label: Security Leadership
+    source_id: 1681835169910001UZDx
+    session_count: 53
+  - id: term:audience-2025/security-professional
+    label: Security Professional
+    source_id: 1681330787197003OsyE
+    session_count: 54
+  - id: term:audience-2025/startups
+    label: Startups
+    source_id: 1681330787197004OIk3
+    session_count: 57
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681231920169011WLfo
+    retrieved_at: '2026-10-24T08:03:18Z'
+    snapshot: raw/editions/universe25/attributes.json

@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:timrogers.co.uk
+  url: https://timrogers.co.uk
+  kind: personal
+  title: Tim Rogers
+  description: Tim Rogers is a product manager and software engineer based in London, UK. He founded and
+    sold Reward Flight Finder and helped build GoCardless and Duffel.
+  owner: person:tim-rogers
+  link_basis:
+  - github_profile
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: timrogers
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://timrogers.co.uk
+    record_id: https://timrogers.co.uk
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

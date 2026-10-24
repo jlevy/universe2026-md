@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/krconophy
+  platform: x
+  handle: krconophy
+  url: https://x.com/krconophy
+  display_name: Kelsey Conophy
+  bio: Bits bobs and big ideas
+  location: Bozeman, MT
+  website: http://www.kelseyconophy.com/
+  followers: 427
+  following: 557
+  posts_count: 2184
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1651978712483770372/umbW1QnU_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/188054802/1682698068
+  created_at: '2010-09-07T20:35:51Z'
+  owner: person:kelsey-conophy
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726700779965001SJZI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/krconophy
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

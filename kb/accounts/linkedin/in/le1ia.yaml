@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/le1ia
+  platform: linkedin
+  handle: in/le1ia
+  url: https://www.linkedin.com/in/le1ia
+  display_name: Lelia Hui
+  bio: Engineer &amp; Architect with over a decade of experience driving innovation across…
+  location: Greater Boston
+  followers: 1234
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQElKtt3bGBSgg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726634938447?e=2147483647&v=beta&t=F-RVpFsZsIAKsn5WMnMvofXvr4fKSvxRVFCnsGjmd74
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQG11lsxqGVy-g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1726635852464?e=2147483647&v=beta&t=AJbzqbB3hofRZTf6hvYRu9DzZ1sJi3qmG4QHepx5Se4
+  owner: person:lelia-bray-musso
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715397777683001cANH
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/le1ia
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

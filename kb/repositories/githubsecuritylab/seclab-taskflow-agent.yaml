@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:githubsecuritylab/seclab-taskflow-agent
+  full_name: GitHubSecurityLab/seclab-taskflow-agent
+  url: https://github.com/GitHubSecurityLab/seclab-taskflow-agent
+  description: GitHub Security Lab Taskflow Agent
+  stars: 279
+  forks: 38
+  watchers: 4
+  open_issues: 15
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Python
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2025-09-08T19:27:09Z'
+  pushed_at: '2026-10-16T20:34:32Z'
+  owner_login: GitHubSecurityLab
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: anticomputer
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: GitHubSecurityLab/seclab-taskflow-agent
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

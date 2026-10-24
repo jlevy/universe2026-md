@@ -1,0 +1,536 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:krystal-folkes-brown
+  person: person:krystal-folkes-brown
+  brief_bio:
+    text: Krystal Folkes Brown is a Senior Developer Productivity Specialist on Microsoft's Azure Global
+      Black Belt team and Technology Officer of NSBE Professionals. Folkes Brown spoke at GitHub Universe
+      2024 about pairing GitHub and Azure.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: deada2b99822a630262bf2427c3113b191fbb32f07e00de7234998873f403dd8
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Data Analytics
+    target: term:topic-2024/data-analytics
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Data Management
+    target: term:topic-2024/data-management
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Scrum
+    target: term:topic-2024/scrum
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2024/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure
+      ref: session:2024/dev1570l
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: Data Analytics
+    target: term:topic-2024/data-analytics
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: Data Management
+    target: term:topic-2024/data-management
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+  credentials:
+  - kind: honor
+    title: Leadership Scholarship
+    issuer: University of Central Florida
+    date: '2014-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: honor
+    title: The President's Volunteer Service Award
+    issuer: National & Community Service
+    date: '2014-04-01T00:00:00.000Z'
+    description: Gold - 311 Hours Completed
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: honor
+    title: Bright Future's Scholarship
+    issuer: University of Central Florida
+    date: '2010-08-01T00:00:00.000Z'
+    description: Renewable Scholarship.
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: Adaptive Project Leadership
+    issuer: LinkedIn
+    date: Jun 2019
+    url: https://www.linkedin.com/learning/certificates/153286c0b3c40eef41e5c15c906b71cebd545da04069946d9362565b7e666597
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: Become an Inclusive Leader
+    issuer: LinkedIn
+    date: May 2019
+    url: https://www.linkedin.com/learning/certificates/8523774a5881fabbda4ce7f4a34081f606594c7954d915aaa48b1ebb2cefc3aa
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: Diversity, Inclusion, and Belonging
+    issuer: LinkedIn
+    date: May 2019
+    url: http://www.linkedin.com/learning/diversity-inclusion-and-belonging
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: John Maeda on Design, Business, and Inclusion
+    issuer: LinkedIn
+    date: May 2019
+    url: https://www.linkedin.com/learning/certificates/c34d6a0ff3eaffb4551a6fb64e74a0629c6ec5df00737def6aec4d3c0473a292
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: Azure App Service OSS
+    issuer: Microsoft
+    date: Apr 2019
+    url: https://www.youracclaim.com/badges/41956d86-f95a-4386-a752-d1b557ee3ece/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: Developing Your Team Members
+    issuer: LinkedIn
+    date: Apr 2019
+    url: https://www.linkedin.com/learning/certificates/76cf6d58c30845813f10c5fd098f85bbd25d26341914f8cd6992f17c92c7eab4
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: Inclusive Leadership
+    issuer: LinkedIn
+    date: Apr 2019
+    url: https://www.linkedin.com/learning/certificates/2ad6802a8649128fe2b9f6ca890f4d7edb03c726ef650f3bd0f37f9b2ea29332
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: Ken Blanchard on Servant Leadership
+    issuer: LinkedIn
+    date: Apr 2019
+    url: https://www.linkedin.com/learning/certificates/69c6adf2780ed778b794ee10ca82b9e3ce200843191933f14bad4de8462b1867
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: Leadership Strategies for Women
+    issuer: LinkedIn
+    date: Apr 2019
+    url: https://www.linkedin.com/learning/certificates/4bfc7f07ed89fe5fcbec3498eb1173774e24079ad2032401320b0a8b424a65fc
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: certification
+    title: Kepner Tregoe Practitioner
+    issuer: Microsoft
+    date: Jul 2018
+    url: https://www.youracclaim.com/badges/f11c020c-1790-4288-b1e4-d576f8db0390/linked_i
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  activities:
+  - kind: volunteering
+    title: STEM Cluster
+    detail: YMCA of Central Florida · Education · 2010 · - Aug 2014 · 4 years · 2010
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: volunteering
+    title: '#include Mentor'
+    detail: She++ · Science and Technology · Feb 2015 · - May 2015 · 4 months · Online Mentoring Program
+      - http://www.sheplusplus.org/ · Feb 2015
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: project
+    title: NSBE Fall Regional Conference - 2016 | Atlanta, GA
+    detail: Problem:All throughout school, students of all ages struggle on test and continuously fail.
+      With these failures teachers can only assess the situation after their students have already finished.
+      They do not have the chance to see if the problem is fulled based on anxiety, confusion, stress,
+      or just pure lack of knowledge.Solution:So to bridge the gap we have Test Feed. This resources will
+      give teachers a chance to use real time facial recognition, and document trackers on their students
+      test. Test Feed will give teachers the ability to accurately pinpoint the problem, getting them
+      closer to an overall solution · Nov 2016
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: project
+    title: Major League Hacking - 2016 Finale MLH PRIME
+    detail: 'Toasties (Toasti.com)Project: http://devpost.com/software/toastiesAttended and worked with
+      teams to build a technical product within 24 hours.Toasties helps you ace that next class presentation
+      or speech. We analyze and find your fillers and keywords. So when that next presentation comes up,
+      you won’t stumble and stutter your way through it.AWARDS: TOP 10 HACKS · Aug 2016'
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: project
+    title: Major League Hacking -Spring 2016 US Hackathons
+    detail: Attended and participated in numerous hackathons and worked with teams to build a technical
+      product within 24 -36 hours.KnightHacks - VRMotherboard · Jan 2016
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: project
+    title: Major League Hacking - Fall 2015 Europe Hackathons
+    detail: Attended and participated in numerous hackathons and worked with teams to build a technical
+      product within 24 -36 hours.Local Hack Day, Kings College, UK | Don't be a touristJacobs Hack, Jacobs
+      University ,Bremen, Germany | VidimailAG Hack, Poland Jucntion , Finland | Hairitage · Sep 2015
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: project
+    title: Major League Hacking - Spring 2015 US Hackathons
+    detail: Attended and participated in numerous hackathons and worked with teams to build a technical
+      product within 24 -36 hours.WEcode, Harvard University, MAPearl Hacks, UNC - Chapel Hill, NCCarlHack,
+      Carleton College, MNMadHacks, University of Wisconsin-Madison, WIHack the Planet, MLH, CA · Jan
+      2015
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: project
+    title: Cyber Security Competition - NSBE Convention 2015
+    detail: Participated in Sponsored Cyber Security Competition presenting research on Biometrics for
+      employers.
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: organization
+    title: Women In Electrical Engineering and Computer Science
+    detail: Aug 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  - kind: organization
+    title: Fashion Society
+    detail: Late Knights's Fashion Show - 2nd Place
+    evidence:
+      url: https://www.linkedin.com/in/krystalfolkes
+      observed_at: '2026-10-24T08:45:31Z'
+  talks:
+  - session:2024/dev1570l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724940479166001cDn7
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

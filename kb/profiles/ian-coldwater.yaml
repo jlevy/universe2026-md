@@ -1,0 +1,238 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ian-coldwater
+  person: person:ian-coldwater
+  brief_bio:
+    text: 'Ian Coldwater is a Senior Principal Security Architect, co-chair of Kubernetes SIG Security
+      and a researcher on hacking and hardening Kubernetes, containers and cloud-native infrastructure.
+      Coldwater spoke at GitHub Universe 2024 in the session Dungeons and deployments: The clusters of
+      chaos.'
+    cites:
+    - listed_role
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: fafff6997e4ca9ecf1cf81f39a3481fb4eae37ad9048ab2e28c2bac2b4aca269
+    stale: false
+  headline: CNCF
+  current_roles:
+  - CNCF
+  expertise:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Docker
+      ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:ian-coldwater
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Education
+    target: term:github-product-2024/education
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  credentials:
+  - kind: honor
+    title: DEF CON Acid Burn Award
+    issuer: '-'
+    date: '2021-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/iancoldwater
+      observed_at: '2026-10-24T08:45:26Z'
+  - kind: honor
+    title: CNCF Top Ambassador Award 2020
+    issuer: Cloud Native Computing Foundation
+    date: '2020-11-01T00:00:00.000Z'
+    description: This award is presented to a champion advocate for the cloud native space. This individual
+      helps spread awareness of cloud native, CNCF, and its hosted projects. The CNCF Ambassador leverages
+      various platforms, driving interest and excitement around projects. https://www.cncf.io/announcements/2020/11/20/cloud-native-computing-foundation-announces-2020-community-awards-winners/
+    evidence:
+      url: https://www.linkedin.com/in/iancoldwater
+      observed_at: '2026-10-24T08:45:26Z'
+  - kind: certification
+    title: OSCP
+    issuer: Offensive Security
+    date: Jul 2019
+    evidence:
+      url: https://www.linkedin.com/in/iancoldwater
+      observed_at: '2026-10-24T08:45:26Z'
+  talks:
+  - session:2024/sec1871m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719502753356001fi7b
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

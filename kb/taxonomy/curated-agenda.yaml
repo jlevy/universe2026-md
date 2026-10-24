@@ -1,0 +1,77 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: curated-agenda
+  event: event:github-universe-2026
+  label: Curated agenda
+  multi_valued: true
+  terms:
+  - id: term:curated-agenda/customers
+    label: Customers
+    source_id: 1787602664401001iWyI
+    session_count: 22
+  - id: term:curated-agenda/customize-github-copilot
+    label: Customize GitHub Copilot
+    source_id: 1790773278100001cIYc
+    session_count: 22
+  - id: term:curated-agenda/developers
+    label: Developers
+    source_id: 1755639561076004w63l
+    session_count: 21
+  - id: term:curated-agenda/engineering-leaders
+    label: Engineering leaders
+    source_id: 1755639561076005wbab
+    session_count: 21
+  - id: term:curated-agenda/financial-services
+    label: Financial services
+    source_id: 1755639561076007w9W6
+    session_count: 11
+  - id: term:curated-agenda/github
+    label: GitHub
+    source_id: 1755639187562001NofN
+    session_count: 49
+  - id: term:curated-agenda/healthcare-life-sciences
+    label: Healthcare & life sciences
+    source_id: 1755639561076009wozT
+    session_count: 8
+  - id: term:curated-agenda/manufacturing-and-consumer-products
+    label: Manufacturing and consumer products
+    source_id: 1755639561076008wLAi
+    session_count: 15
+  - id: term:curated-agenda/open-source
+    label: Open source
+    source_id: 1755639561076003wE8b
+    session_count: 21
+  - id: term:curated-agenda/partners
+    label: Partners
+    source_id: 1790773278100005cLdd
+    session_count: 28
+  - id: term:curated-agenda/platform-engineers
+    label: Platform engineers
+    source_id: 1790773278100004cDIo
+    session_count: 20
+  - id: term:curated-agenda/secure-as-you-code
+    label: Secure as you code
+    source_id: 1790773278100003cVt8
+    session_count: 19
+  - id: term:curated-agenda/ship-with-agents
+    label: Ship with agents
+    source_id: 1790773278100002cOla
+    session_count: 23
+  - id: term:curated-agenda/software-and-saas
+    label: Software and SaaS
+    source_id: 1790773278100006cUTC
+    session_count: 13
+  - id: term:curated-agenda/sponsor-evening-events
+    label: Sponsor Evening Events
+    source_id: 1756241411926002e1Dm
+    session_count: 17
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1755639187563001NgNm
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/attributes.json

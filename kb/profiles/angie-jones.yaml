@@ -1,0 +1,978 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:angie-jones
+  person: person:angie-jones
+  brief_bio:
+    text: The GitHub Universe 2026 listing describes Angie Jones as VP at Agentic AI Foundation.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: e930922a8978ecd5dd5d46dfb79ea08dd782ec15ab486c708ceccc16302f91ef
+    stale: false
+  headline: VP at Agentic AI Foundation
+  location: New Orleans, LA
+  current_roles:
+  - VP at Agentic AI Foundation
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  programming_languages:
+  - label: Java
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:angiejones/java-programming
+    - ref: repo:angiejones/selenium-webdriver-java-course
+    - ref: repo:angiejones/automation-framework
+    - ref: repo:angiejones/restassured-with-cucumber-demo
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:angiejones/mcp-selenium
+  recognitions:
+  - label: GitHub Star
+    basis: github_profile
+    confidence: high
+    evidence:
+    - url: https://github.com/angiejones
+      ref: gh:angiejones
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+    - url: https://github.com/aaif-goose/goose
+      ref: repo:aaif-goose/goose
+    - url: https://github.com/agentclientprotocol/registry
+      ref: repo:agentclientprotocol/registry
+  - label: acp
+    basis: github_repositories
+    confidence: medium
+    weight: 0.57
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/aaif-goose/goose
+      ref: repo:aaif-goose/goose
+    - url: https://github.com/agentclientprotocol/registry
+      ref: repo:agentclientprotocol/registry
+  - label: AI
+    basis: github_repositories
+    confidence: medium
+    weight: 0.57
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/aaif-goose/goose
+      ref: repo:aaif-goose/goose
+    - url: https://github.com/agentclientprotocol/registry
+      ref: repo:agentclientprotocol/registry
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: agentclientprotocol
+    basis: github_repositories
+    confidence: low
+    weight: 0.29
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/agentclientprotocol/registry
+      ref: repo:agentclientprotocol/registry
+  - label: mcp
+    basis: github_repositories
+    confidence: low
+    weight: 0.29
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/aaif-goose/goose
+      ref: repo:aaif-goose/goose
+  - label: registry
+    basis: github_repositories
+    confidence: low
+    weight: 0.29
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/agentclientprotocol/registry
+      ref: repo:agentclientprotocol/registry
+  open_source:
+  - repository: repo:aaif-goose/goose
+    relation: pinned
+    stars: 55640
+    primary_language: Rust
+  - repository: repo:angiejones/mcp-selenium
+    relation: owner
+    stars: 428
+    primary_language: JavaScript
+  - repository: repo:angiejones/java-programming
+    relation: owner
+    stars: 111
+    primary_language: Java
+  - repository: repo:angiejones/automation-framework
+    relation: owner
+    stars: 92
+    primary_language: Java
+  - repository: repo:angiejones/restassured-with-cucumber-demo
+    relation: owner
+    stars: 81
+    primary_language: Java
+  - repository: repo:angiejones/selenium-webdriver-java-course
+    relation: owner
+    stars: 69
+    primary_language: Java
+  - repository: repo:agentsmd/agents.md
+    relation: contributor
+    stars: 25086
+    primary_language: TypeScript
+  - repository: repo:agentclientprotocol/registry
+    relation: contributor
+    stars: 433
+  - repository: repo:csima/sessionize-cli
+    relation: contributor
+    stars: 5
+    primary_language: JavaScript
+  - repository: repo:block/agent-skills
+    relation: contributor
+    stars: 25
+    primary_language: Python
+  credentials:
+  - kind: honor
+    title: Alumni Rising Star
+    issuer: Computer Science Department of NCSU
+    date: '2020-11-01T00:00:00.000Z'
+    description: The CSC Alumni ‘Rising Star’ Award (previously known as the CSC Outstanding Young Alumni
+      Award) was established in 2017, as part of the department’s 50th Year Celebrations, to celebrate
+      and recognize the exemplary contributions our outstanding graduates have made to their profession,
+      their community, and the world at large. In particular, the ‘Rising Star’ Award recognizes alumni
+      within 10 years of graduation, an honor reserved to recognize alumni for early stage career accomplishments.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Most Influential Agile Testing Professional Person
+    issuer: Agile Testing Days
+    date: '2020-11-01T00:00:00.000Z'
+    description: The Agile Testing Days MIATPP Award highlights not only the outstanding achievements,
+      true inspiration and dedication within and for the agile testing community but also recognizes people
+      who inspire, motivate and encourage others to challenge themselves to become better.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: GitHub Star
+    issuer: Github
+    date: '2020-10-01T00:00:00.000Z'
+    description: GitHub Stars are GitHub’s most influential developers who are invited to help shape the
+      future of GitHub.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Java Champion
+    issuer: Oracle
+    date: '2020-06-01T00:00:00.000Z'
+    description: Java Champions are professionals who make significant contributions to the Java ecosystem
+      through technical discussions and/or community-building activities. They demonstrate leadership,
+      influence and independence as well as technical excellence.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Leak K. Frazier Award
+    issuer: Alpha Kappa Alpha
+    date: '2017-04-01T00:00:00.000Z'
+    description: The Leah Kay Frazier Award is an annual award given to a graduate sorority member who
+      has given extensively of her time and talents in the realm of “Service with a Global Perspective”.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: PACESetter Award for Career Achievement
+    issuer: BDPA
+    date: '2016-08-01T00:00:00.000Z'
+    description: Experienced professionals who have achieved significant career accomplishments and/or
+      made contributions throughout their career to their company or industry.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Master Inventor
+    issuer: IBM
+    date: '2009-03-01T00:00:00.000Z'
+    description: Master Inventors are employees who have mastered the patent process, mentored broadly,
+      added value to IBM’s intellectual property portfolio, and demonstrated sustained leadership.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Bravo Award for Outstanding Achievement
+    issuer: IBM
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Difference Maker Award
+    issuer: IBM
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Extreme Achiever
+    issuer: IBM
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Honoree
+    issuer: Who's Who in Black Raleigh-Durham
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Inventor of Merit
+    issuer: Women Inventors Community
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: President's Volunteer Service Award
+    issuer: Conflict Resolution Center of Montgomery County
+    description: The President’s Volunteer Service Award recognizes United States citizens and lawfully
+      admitted, permanent residents of the United States who have achieved the required number of hours
+      of service over a 12-month time period or cumulative hours over the course of a lifetime.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Soror of the Year
+    issuer: Alpha Zeta Omega Chapter of Alpha Kappa Alpha Sorority, Inc
+    description: For outstanding service to the Sorority's program
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: TechConnect People’s Choice Award
+    issuer: IBM
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Top 30 Under 30
+    issuer: Ebony Magazine
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: honor
+    title: Triangle Diversity Award
+    issuer: RTP Black Diversity Network Group
+    description: For Exceptional Leadership in Diversity
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: certification
+    title: Learn WebMCP in 10 Minutes
+    issuer: LinkedIn
+    date: Sep 2026
+    url: https://www.linkedin.com/learning/certificates/7c658e05b984c59e1b8df2bfff081834a4f54d51c65699a8af772a6c3925668f
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: certification
+    title: Sun Certified Java Programmer
+    issuer: Sun Microsystems
+    date: Jul 2002
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  publications:
+  - title: Agentic AI and Code Reviews
+    venue: IT Revolution
+    date: September 29, 2026
+    description: 'Code review was already a bottleneck before AI. Now agents generate more change than
+      any team of senior engineers can read, and the old rule that every change gets a human review has
+      stopped being sustainable. At the same time, nobody wants subtly wrong or needlessly complex code
+      merged without supervision. This paper answers the question technology leaders keep asking: how
+      do we keep up without giving up the judgment that made review worth doing?Drawing on empirical research
+      into what code review actually delivers, the authors propose a pattern language for agentic code
+      review: a layered verification strategy that pushes objective checks into deterministic tooling,
+      tiers human involvement to risk, and leaves a durable, inspectable record of every agentic decision.
+      The patterns are a toolbox, not a maturity ladder, meant to be adopted incrementally as confidence
+      in automated verification grows.'
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: 97 Things Every Java Programmer Should Know
+    venue: O'Reilly
+    date: May 18, 2020
+    description: Authored the chapter "Using Object-Oriented Principles in Test Code"
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: 'DevOps: Implementing Cultural Change [Testing in CI chapter]'
+    venue: DZone
+    date: January 14, 2019
+    description: There’s no shortage of developers and enterprises of all sizes who are interested in
+      the increased speed, collaboration, and iteration that DevOps promises. And with our research showing
+      that more than half of organizations have an officially designated DevOps team, the prevalence of
+      DevOps is only going to grow. In this Guide, you’ll learn about cultural shifts within DevOps, how
+      to achieve resilient software delivery with CI/CD, the rise of DevXOps, and more.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: 'The Digital Quality Handbook: Guide for Achieving Continuous Quality in a DevOps Reality,
+      Chapter 18'
+    venue: Infinity P
+    date: April 28, 2017
+    description: As mobile and web technologies continue to expand and basically drives large organizational
+      business in virtually every vertical or industry, it is critical to understand how to take existing
+      release practices for mobile and web apps to the next level, including software development life
+      cycle (SDLC), tools, quality, etc. This book tackles those and provide working best practices to
+      overcome them. Each chapter in this book addresses a key challenge and provides practical examples
+      and real life “recipes” to overcome the difficulties and eventually help other organizations who
+      might be facing the same difficulties.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  patents:
+  - title: Link of mobile devices to facilitate mobile commerce transactions
+    number: US10217101B2
+    date: February 26, 2019
+    description: A method for linking mobile devices to facilitate a mobile commerce transaction
+    url: https://patents.google.com/patent/US10217101B2
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Multi-modal transcript unification in a collaborative environment
+    number: US US9760865B2
+    date: September 12, 2017
+    description: A method for generating a unified chat transcript for a multi-modal conversation in an
+      instant messaging session by establishing concurrent voice messaging and text messaging sessions
+      between two conversants, receiving both voice messages and text messages between two conversants
+      through the voice messaging and instant messaging sessions, and logging the voice messages and text
+      messages in a single transcript of conversation between the two conversants.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Instant conversation in a thread of an online discussion forum
+    number: US US9716677B2
+    date: July 25, 2017
+    description: A method for instant conversations in a thread within a discussion forum where a temporal
+      proximity of postings between two or more users is measured. In response to determining a close
+      temporal proximity, an instant messaging session can be launched between the two or more users and
+      entries in the instant messaging session can be inserted as responses to the thread in the discussion
+      form.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Synchronization of questions and answers in a collaborative messaging environment
+    number: US US9686087B2
+    date: June 20, 2017
+    description: A method of synchronizing questions and answers in an instant messaging session between
+      first and second participants, identifying questions and answers in the instant messaging text,
+      matching each of the answers to a corresponding one of the questions, and displaying the matched
+      questions and answers supplementally to the displaying of the chat transcript, ensuring that a participant
+      does not overlook a question where response on their part is required.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Location/event based dictionaries to facilitate communication in a virtual world location
+    number: US US9678940B2
+    date: June 13, 2017
+    description: A method for communication facilitation in a location within the virtual world can include
+      identifying jargon in a message exchanged in a location in a virtual world, looking up a glossary
+      entry for the jargon in a dictionary of jargon for the location in the virtual world, and rendering
+      the glossary entry in connection with the jargon in the message.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Instant messaging transcript sharing for added participants to an instant messaging session
+    number: US US9350687B2
+    date: May 24, 2016
+    description: A method for instant messaging transcript sharing for added participants to an instant
+      messaging session can be provided. The method can include establishing an instant messaging session
+      as between a set of initial parties, aggregating postings from the initial parties into a transcript,
+      adding a new party to the instant messaging session, and sharing at least a portion of the transcript
+      in a transcript view for the new party. Optionally, an ability of the new party to log shared portions
+      of the transcript can be limited or prohibited.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Instant conversation in a thread of an online discussion forum
+    number: US 9,177,284
+    date: November 3, 2015
+    description: Embodiments of the present invention address deficiencies of the art in respect to discussion
+      forum management and provide a method, system and computer program product for instant conversations
+      in a thread within a discussion forum. In an embodiment of the invention, a method for instant conversations
+      in a thread within a discussion forum can be provided. The method can include providing a discussion
+      forum and initiating a thread in the discussion forum and measuring a temporal proximity of postings
+      between two or more users in the thread. In response to determining a close temporal proximity,
+      an instant messaging session can be launched between the two or more users and entries in the instant
+      messaging session can be inserted as responses to the thread in the discussion forum.
+    url: https://patents.google.com/patent/US9177284
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: System and method for attending a recorded event in a metaverse application
+    number: US 9,165,426
+    date: October 20, 2015
+    description: A metaverse system and method for allowing a user to attend a recorded past event in
+      a metaverse application. The metaverse system includes a client computer, a metaverse server, and
+      a time travel engine. The client computer interfaces with the metaverse application. The metaverse
+      server records an event environment of a past event in a metaverse application. The time travel
+      engine serves, in response to a request from a user, a playback of the recorded event environment
+      to the client computer to allow the user to attend and to observe the recorded event environment.
+    url: https://patents.google.com/patent/US9165426
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Selecting a Language Encoding of a Static Communication in a Virtual Universe
+    number: US 9,110,890
+    date: August 18, 2015
+    description: A static communication can be presented efficiently in different languages to facilitate
+      propagation of the static communication across language boundaries. A static communication object
+      that represents a static communication can be loaded with different language encodings of the static
+      communication. When a trigger occurs (e.g., an avatar accesses the static communication object),
+      a language encoding of the static communication that can be understood by the avatar is presented
+      to the avatar. As the static communication propagates throughout the virtual universe, additional
+      language encodings can be added to the static communication object.
+    url: https://patents.google.com/patent/US9110890
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: System and method for group control in a metaverse application
+    number: US 8990707
+    date: March 24, 2015
+    description: A metaverse system and method for allowing a user to control a group of avatars in a
+      metaverse application. The metaverse system includes a client computer, a metaverse server, and
+      a group link engine. The metaverse server hosts a metaverse application over a network. The client
+      computer interfaces with the metaverse application. The group link engine opens a group link connection.
+      A linked group associated with the group link connection includes at least two linked users. At
+      least one user is designated as a leader of the linked group. The group link engine includes a group
+      link controller to allow the leader to control an action of an avatar of at least one other user.
+    url: https://patents.google.com/patent/US8990707
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Activity triggered photography in metaverse applications
+    number: US 8893047
+    date: November 18, 2014
+    description: 'A system, method and program product for collecting image data from within a metaverse.
+      A system is provided that includes: a graphical user interface (GUI) for allowing a user to install
+      and administer a camera within the metaverse; a system for collecting image data from the camera
+      based on an occurrence of a triggering event associated with the camera; and a system for storing
+      or delivering the image data for the user.'
+    url: https://patents.google.com/patent/US8893047
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: System and method for real-time scheduling
+    number: US 8756514
+    date: June 17, 2014
+    description: A system and method for dynamically scheduling a meeting time in association with an
+      instant messaging client. The system includes a chat server, a grid scheduling server, a local instant
+      messaging client, a remote instant messaging client, and a grid scheduling client. The instant messaging
+      client facilitates a chat session in conjunction with the chat server. The grid scheduling server
+      generates a representation of scheduling information from a scheduling matrix including a list of
+      times arranged transversely to a list of participants to the meeting. The grid scheduling client
+      in conjunction with the grid scheduling server hosts a grid scheduling session in real-time on the
+      local and remote instant messaging clients and schedules the meeting time according to real-time
+      input from participants on the local and remote instant messaging clients.
+    url: https://patents.google.com/patent/US8756514
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Planning a Route for a Convoy of Automobiles
+    number: US US8649962 B2
+    date: February 11, 2014
+    description: 'Planning a route for a convoy of automobiles, including: identifying a plurality of
+      automobiles included in a convoy; planning, for the convoy by a route planning module, a route from
+      an origin to a destination in dependence upon current automobile traffic between the origin and
+      the destination, automobile characteristics of the convoy, and aggregate user preferences of convoy
+      automobile users; and providing for display, by the route planning module to a route display module
+      of each automobile in the convoy, the convoy''s route.'
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: System, Method, and Apparatus for Inline Comments Within Electronic Communication
+    number: US 8661351
+    date: January 25, 2014
+    description: A communication apparatus which facilitates inline comments includes a client processing
+      unit and an electronic memory device. The client processing unit receives an electronic communication
+      and generates a reply communication for response to the electronic communication in an inline comment
+      mode. The reply communication includes a copy of original content from the electronic communication.
+      The electronic memory device is coupled to the client processing unit. The electronic memory device
+      stores a plurality of inline comment rules. The inline comment rules facilitate adjoining comment
+      content to the copy of original content within the reply communication according to user commands.
+      The comment content is uniquely identified from standard response content according to the inline
+      comment rules in effect during the inline comment mode.
+    url: https://patents.google.com/patent/US8661351
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Sending related information to indirect email recipients
+    number: US 8589493
+    date: November 19, 2013
+    description: Managing the sending of electronic mail (email) messages and responding to requests from
+      indirect recipients for related information. An email message is originated with a first recipient
+      and a recipient request prompt, which comprises a unique recipient request identifier (ID) linking
+      it to the originator's email address. An empty recipient request list is generated, likewise linked
+      to the recipient request ID. The message is then sent to a first recipient, who in turn forwards
+      it to a second recipient. The recipient response prompt is displayed to the second recipient, who
+      uses it to generate a recipient request for related information. The recipient request ID of the
+      originated message and the second recipient's email address are appended to the recipient request,
+      which is then sent to the message originator. The recipient request is received by the email system
+      and parsed. The second recipient's email address is then appended to the recipient request list
+      corresponding to the parsed recipient request ID.
+    url: https://patents.google.com/patent/US8589493
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Identifying a software developer based on debugging information
+    number: US 8589880
+    date: November 19, 2013
+    description: A solution for identifying a software developer based on debugging information includes
+      an identification module configured to identify a developer of a line of source code, a determination
+      module configured to determine a developer contact tag for the developer, an encoding module configured
+      to encode the developer contact tag, a tagging module configured to automatically tag the line of
+      source code with the developer contact tag associated with the developer. The solution also includes
+      a debug module configured to provide debug information, a decoding module configured to decrypt
+      the developer contact tag, and a presentation module configured to present the debug stack trace
+      in human readable form.
+    url: https://patents.google.com/patent/US8589880
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Providing location based information in a virtual environment
+    number: US US8468178
+    date: June 18, 2013
+    description: A method, information processing system, and virtual environment, to provide location
+      information to users in the virtual environment. A first user is determined to be communicating
+      with a second user in a virtual environment. One of the first user and the second user is determined
+      to have entered a character set substantially matching a keyword in a database entry. Location information
+      associated with the keyword is identified. The location information indicates a location within
+      the virtual environment. The location information is linked to the character set. The character
+      set is visually changed to indicate to the first user and the second user that location information
+      has been linked to the character set.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Dynamic meeting agenda generation based on presenter availability
+    number: US 8321796
+    date: November 27, 2012
+    description: Embodiments of the present invention address deficiencies of the art in respect to C&S
+      e-meeting scheduling and provide a method, system and computer program product for dynamic agenda
+      updating in a C&S system. In an embodiment of the invention, a method for dynamic agenda updating
+      based upon presenter participation in an e-meeting can be provided. The method can include creating
+      a new e-meeting in a collaborative computing environment for attendees and presenters selected from
+      amongst the attendees. The method also can include generating an invite with an agenda for the new
+      e-meeting including a time block and time slots for presentations by different ones of the presenters.
+      Finally, the method can include dynamically changing a view to the agenda for viewing ones of the
+      attendees to reflect changes in the time slots resulting from replies to the invite received by
+      individual ones of the presenters.
+    url: https://patents.google.com/patent/US8321796
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Utilizing mood sensors in an electronic messaging environment
+    number: US US8239774
+    date: August 7, 2012
+    description: A method, system and computer-usable medium are disclosed for determining the behavioral
+      mood of an electronic messaging system user. User input is provided through one or more input receptors
+      of an electronic device. The user input is collected by the mood identification system. The collected
+      input is processed to generate behavioral biometrics, which are in turn correlated to predetermined
+      behavioral moods, each of which has a corresponding behavioral mood indicator. The behavioral mood
+      of the recipient user is indicated by applying text attributes to the user's identifier (ID) or
+      by displaying an icon proximate to the user's ID.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Multidimensional web page ruler
+    number: US 8,015,485
+    date: September 6, 2011
+    description: A method, system and computer-usable medium are disclosed for managing the spatial coordinates
+      and visual attributes of objects within a user interface (UI). A Web UI ruler is executed within
+      a UI comprising a plurality of objects. A first object and second object are selected. The Web UI
+      Ruler then collects the spatial coordinate and visual attribute values for the first and second
+      object and their relationship values are determined. The spatial coordinate and visual attribute
+      values for the first and second objects, along with their corresponding relationship values, are
+      modified and the modifications are applied to the target objects. The values are then stored in
+      the Web UI ruler. These values can then be subsequently applied to one or more target objects. Alternatively,
+      the stored values are exported as a cascading style sheet (CSS) class, which can then likewise be
+      subsequently applied to one or more target objects.
+    url: https://patents.google.com/patent/US8015485
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Method to continue instant messaging exchange when exiting a virtual world
+    number: US US7970840
+    date: June 28, 2011
+    description: 'A method, system and computer program product for associating a virtual instant messaging
+      client, of an avatar, with a standard instant messaging account. When a communication transcript
+      is completed in a virtual instant messaging session, the communication transcript is stored. Wherein
+      the stored communication transcript is an archived virtual world (VW) communication transcript.
+      The archived VW communication transcript is associated with one or more instant messaging clients.
+      A request is received to continue communication, with one or more avatars, when a virtual instant
+      messaging session is completed. When the request is received a graphical user interface (GUI) is
+      automatically displayed. One or more of the following selections are enabled: communicate via the
+      instant messaging session or do not communicate via the instant messaging session.'
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Method to invite users to a virtual world using instant messaging
+    number: US7970837B2
+    date: June 28, 2011
+    description: There are times when a virtual world session is better suited for the needs at hand than
+      an IMS session. Sometimes, this realization occurs during an IMS session. However, shifting from
+      an IMS session to a virtual world session can prove to be challenging. This invention addresses
+      this need.
+    url: https://patents.google.com/patent/US7970837B2
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Method to invite users to a virtual world using instant messaging
+    number: US US7970837
+    date: June 28, 2011
+    description: A method, system and computer-usable medium are disclosed for initiating a session in
+      a virtual world. An instant messaging system (IMS) comprises a registry of IMS user identifiers
+      cross-referenced to their corresponding virtual world user identifiers. A first IMS user implements
+      a virtual world invitation module as a result of an IMS session to invite a second IMS user to participate
+      in a virtual world session. The first IMS user selects the IMS user identifier of the second IMS
+      user, followed by selection of a target virtual world and a virtual world identifier. Once completed,
+      the invitation is sent the IMS user identifier of the second IMS user, who receives the invitation
+      and signifies their acceptance or declination. If accepted, the cross-referenced virtual world user
+      identifiers of the first and second IMS users are used to log them into the agreed-upon virtual
+      world venue and initiate a virtual world session.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: METHOD AND SYSTEM FOR DISCOVERING DEPENDENCIES IN PROJECT PLANS OF DISTRIBUTED SYSTEM
+    number: US US7949610
+    date: May 24, 2011
+    description: A method and system for discovering dependencies in project plans of a distributed system.
+      Project plans are located by a project plan path. A project plan contains dependency information
+      of a task to be performed, a resource necessary to perform the task, and a prerequisite task to
+      perform the task. The method generates a master project plan containing all dependency information
+      in all project plans in the distributed system, which dictates an order of tasks or task-resource
+      maps in all project plans pursuant to the dependency information in project plans. The method utilizes
+      project plan files in diverse formats in generating the master project plan for the distributed
+      system.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Management of recorded data for online simulations
+    number: US US7885924
+    date: February 8, 2011
+    description: Embodiments of the present invention address deficiencies of the art in respect to online
+      simulations. In one embodiment of the invention, a method for managing recorded data for an online
+      simulation can be provided. The method can include determining that a first experience of a user
+      of the online simulation shall be recorded. The method can further include generating a recording
+      of the first experience and associating metadata with the recording. The method can further include
+      reading metadata of a second experience of the user of the online simulation and determining that
+      the metadata of the second experience matches the metadata of the first experience. The method can
+      further include notifying the user that the recording is associated with the second experience.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Method and System for Managing Instant Messaging Interruptions
+    number: US 8090777
+    date: January 3, 2011
+    description: A method for managing instant messaging interruptions may include comparing at least
+      one term in an instant message to a plurality of terms in a no-response-required (NRR) library.
+      The method may also include representing the instant message as an instant message agent character
+      (IMAC) in response to a match between at least one term in the instant message and at least one
+      of the plurality of terms in the NRR library.
+    url: https://patents.google.com/patent/US8090777
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: PROGRAM PRODUCTS FOR DYNAMICALLY ANNOTATING WEB PAGES PASSED VIA A MESSAGING APPLICATION
+    number: US US7827253
+    date: November 2, 2010
+    description: A method, system, and computer program product for dynamically annotating Web pages passed
+      via a messaging application is provided. The method includes transmitting a Web page and a graphical
+      user interface (GUI) to a requester of the Web page. The GUI directs the requester to provide annotations
+      to at least a portion of the Web page content, which annotations are translated to instructions
+      interpretable by a Web browser. The instructions are bundled with a uniform resource locator (URL)
+      of the Web page at a computer processing device of the requester. The method also includes receiving
+      a request for the Web page from a second requester who received the instructions bundled with the
+      URL of the Web page within a message transmitted by the requester. The method further includes directing
+      a Web browser of the second requester to apply the instructions as the Web page is being rendered.
+      Application of the instructions causes the Web browser to render the Web page along with the annotations.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: EMAIL MANAGEMENT FOR HIDDEN RECIPIENTS
+    number: US US7805491
+    date: September 28, 2010
+    description: Embodiments of the present invention address deficiencies of the art in respect to e-mail
+      message reply handling and provide a method, system and computer program product for hidden recipient
+      management in e-mail replies. In an embodiment of the invention, a hidden recipients e-mail reply
+      management method can be provided. The method can include composing an e-mail message in a message
+      thread by a composer, identifying and displaying hidden recipients previously blind carbon copied
+      on a progenitor e-mail message for the message thread by the composer, and routing the composed
+      e-mail message to selected ones of the hidden recipients.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - title: Confidentiality Management of E-mail Users in Redistributed E-mail Messages
+    number: US US20090049142A1
+    description: A method for managing e-mail user confidentiality including transmitting an e-mail message
+      for delivery to multiple e-mail users and corresponding e-mail addresses, identifying a privacy
+      preference for a particular one of the e-mail users; and, concealing a display within the e-mail
+      message of an e-mail address associated with the particular one of the e-mail users responsive to
+      the privacy preference.
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  activities:
+  - kind: volunteering
+    title: Technology Committee, South Central Region
+    detail: Alpha Kappa Alpha Sorority, Incorporated · Science and Technology · Sep 2025 · - Present ·
+      1 year 2 months · Lead R&D, exploring new and innovative ways to use technology in a global organization
+      of 365,000 members to improve operational efficiencies. · Sep 2025
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: volunteering
+    title: Workshop Instructor
+    detail: TechGirlz · Science and Technology · Sep 2015 · - May 2017 · 1 year 9 months · Plan and teach
+      technology workshop for middle-school girls. Topics include game application development, basic
+      programming concepts, animation, circuits, security, etc. · Sep 2015
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: volunteering
+    title: SMART Camp Lead
+    detail: Alpha Zeta Omega Chapter of Alpha Kappa Alpha Sorority, Inc. · Science and Technology · Jan
+      2015 · - Dec 2016 · 2 years · Led a STEM team-based camp for Durham high school students. Taught
+      students programming concepts using Hour of Code and mentored them as they work in groups to create
+      their own game. · Jan 2015
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: volunteering
+    title: Java Workshop Instructor
+    detail: BDPA · Science and Technology · Apr 2016 · - Apr 2016 · 1 month · Taught high school students
+      object-oriented programming concepts using Java · Apr 2016
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: volunteering
+    title: Mobile App Mentor
+    detail: Hi-Tech Teens, Wade Edwards Foundation and Learning Lab · Science and Technology · Apr 2015
+      · - Jun 2015 · 3 months · Mentored a group of Hi-Tech teens in a 6-week Mobile App development session
+      where they used MIT App Inventor to create their own apps. · Apr 2015
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: volunteering
+    title: Technology Chairman, Alpha Zeta Omega Chapter
+    detail: Alpha Kappa Alpha Sorority, Incorporated · Science and Technology · Jan 2014 · - Dec 2015
+      · 2 years · Developed new modern, responsive website. Developed password-protected Member Portal
+      for internal chapter operations. Managed website and social networking pages. Created all graphic
+      designs for promotional flyers and advertisements. · Jan 2014
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  - kind: organization
+    title: Alpha Kappa Alpha Sorority, Incorporated
+    evidence:
+      url: https://www.linkedin.com/in/angiejones
+      observed_at: '2026-10-24T08:11:44Z'
+  recent_writing:
+  - title: It's Time to Rethink Everything
+    url: https://www.linkedin.com/pulse/its-time-rethink-everything-angie-jones-lwn6c
+    published: '2026-08-18T00:00:00.000Z'
+    channel: linkedin
+    summary: I've spent the last few years going very deep on agentic engineering and transforming an
+      entire Engineering org to…
+  - title: Rules, Reasoning, and Better Security Scans
+    url: https://www.linkedin.com/pulse/rules-reasoning-better-security-scans-angie-jones-lblgc
+    published: '2026-07-20T00:00:00.000Z'
+    channel: linkedin
+    summary: The more I work with AI, the more I realize that it's wise to sprinkle in some determinism
+      where you can. I realized…
+  - title: Test Pyramid for AI Agents
+    url: https://angiejones.tech/test-pyramid-for-ai-agents/
+    published: '2026-07-05T22:24:54Z'
+    channel: blog
+  - title: Karpathy’s LLM Wiki as Agent Memory
+    url: https://angiejones.tech/karpathys-llm-wiki-as-agent-memory/
+    published: '2026-06-22T21:29:25Z'
+    channel: blog
+  - title: Agent Memory
+    url: https://angiejones.tech/agent-memory/
+    published: '2026-05-28T18:08:28Z'
+    channel: blog
+  - title: Agent Memory
+    url: https://www.linkedin.com/pulse/agent-memory-angie-jones-odrjc
+    published: '2026-05-26T00:00:00.000Z'
+    channel: linkedin
+    summary: I'm fascinated by the concept of agent memory. LLMs are stateless by design, meaning they
+      have no memory or awareness…
+  - title: 3 Design Principles for Creating Agent Skills
+    url: https://angiejones.tech/3-design-principles-for-creating-agent-skills/
+    published: '2026-03-07T20:35:01Z'
+    channel: blog
+  - title: An AI Agent Got Rejected from Open Source and Called Out the Maintainer for Gatekeeping
+    url: https://www.linkedin.com/pulse/ai-agent-got-rejected-from-open-source-called-out-maintainer-jones-4hgpf
+    published: '2026-02-13T00:00:00.000Z'
+    channel: linkedin
+    summary: An OpenClaw AI agent submitted a legit performance fix to an open source project. A maintainer
+      rejected it because it…
+  - title: Stop Closing the Door. Fix the House.
+    url: https://angiejones.tech/stop-closing-the-door-fix-the-house/
+    published: '2026-02-07T18:42:02Z'
+    channel: blog
+  - title: Building an Agentic Engineering Org
+    url: https://angiejones.tech/tools-arent-enough-scaling-ai-adoption-for-engineering-teams/
+    published: '2026-02-06T17:55:11Z'
+    channel: blog
+  - title: How 7 AI Agents Worked Together to Build an App in One Hour
+    url: https://angiejones.tech/how-7-ai-agents-worked-together-to-build-an-app-in-one-hour/
+    published: '2026-01-18T04:41:18Z'
+    channel: blog
+  - title: 'Agents, Subagents, and Multi Agents: What They Are and When to Use Them'
+    url: https://angiejones.tech/agents-subagents-and-multi-agents-what-they-are-and-when-to-use-them/
+    published: '2026-01-18T03:44:32Z'
+    channel: blog
+  - title: Did Skills Kill MCP?
+    url: https://angiejones.tech/did-skills-kill-mcp/
+    published: '2025-12-28T23:21:59Z'
+    channel: blog
+  - title: MCPs for Developers Who Think They Don’t Need MCPs
+    url: https://angiejones.tech/mcps-for-developers-who-think-they-dont-need-mcps/
+    published: '2025-12-14T03:32:35Z'
+    channel: blog
+  - title: The Party, the Wallflowers, and the Hype
+    url: https://www.linkedin.com/pulse/party-wallflowers-hype-angie-jones-v7fge
+    published: '2025-06-23T00:00:00.000Z'
+    channel: linkedin
+    summary: I'm noticing an interesting trend in AI adoption with software engineers. The early and late
+      career engineers are…
+  talks:
+  - session:bld1779p
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692917321245001vYxt
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: angiejones
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

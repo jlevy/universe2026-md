@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/david-losert
+  platform: linkedin
+  handle: in/david-losert
+  url: https://www.linkedin.com/in/david-losert
+  display_name: David Losert
+  location: Quierschied
+  followers: 809
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQFkXy8r_mExJQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1592639636437?e=2147483647&v=beta&t=nVfNFtXul6zRxqNPntvoSUrNqyqS8-01_galY-DEqLI
+  owner: person:david-losert
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699341568745001BE39
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: davelosert
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/david-losert
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

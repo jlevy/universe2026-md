@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:amy-lewis
+  person: person:amy-lewis
+  brief_bio:
+    text: Amy Lewis was Director of Enterprise Marketing at GitHub and took part in three studio interviews
+      at GitHub Universe 2024, with Dani Grant, Adam Walden and Nick Liffen, on topics including Copilot
+      Autofix.
+    cites:
+    - listed_role
+    - past_affiliations
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: c5d7babda667d519de48c53e167edeed7ae03aa70385b336067dc116b04dde15
+    stale: false
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/sec2234o
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/sec2234o
+  talks:
+  - session:2024/dev2236o
+  - session:2024/dev2238o
+  - session:2024/sec2234o
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683656552490001u7kE
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

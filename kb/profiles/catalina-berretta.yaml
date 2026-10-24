@@ -1,0 +1,169 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:catalina-berretta
+  person: person:catalina-berretta
+  brief_bio:
+    text: Catalina Berretta is a Product Designer II at GitHub who has worked since 2021 on how application
+      security features are presented and managed. Berretta spoke at GitHub Universe 2024 about deploying
+      GitHub Advanced Security in an organization.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 69dc0cc4f6f84155a3313685d59876d2fbe5f891de67bcd4bb02f34159bc584e
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1989d
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1989d
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/sec1989d
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725021132147001BcBm
+      ref: session:2024/sec1989d
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725021132147001BcBm
+      ref: session:2024/sec1989d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725021132147001BcBm
+      ref: session:2024/sec1989d
+  education:
+  - school: Northeastern University
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  spoken_languages:
+  - English
+  - Spanish
+  - Portuguese
+  activities:
+  - kind: course
+    title: Calculus 2 for Science and Engineering
+    detail: MATH 1342
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: course
+    title: Database Design
+    detail: CS 3200
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: course
+    title: Design Process Context and Systems
+    detail: ARTG 1250
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: course
+    title: Discrete Structures
+    detail: CS 1800
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: course
+    title: Fundamentals of Computer Science I
+    detail: CS 2500
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: course
+    title: Fundamentals of Computer Science II
+    detail: CS 2510
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: course
+    title: Logic and Computation
+    detail: CS 2800
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: course
+    title: Object-Orientated Design
+    detail: CS 3500
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: course
+    title: Typography 1
+    detail: ARTG 2250
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: course
+    title: Web Development
+    detail: CS 4550
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: organization
+    title: NU Sci
+    detail: NU Sci is the entirely student-run Northeastern University science magazine. It produces two
+      issues per semester. As a designer, I typically worked on five to seven articles per semester, using
+      Adobe InDesign. The Marketing Team is in charge of social media and distribution events. As a member
+      of the team, I ran the Instagram account, posted articles to the Facebook account and collaborated
+      with other members on distribution events. · Sep 2016 · Dec 2017
+    evidence:
+      url: https://www.linkedin.com/in/catalina-berretta
+      observed_at: '2026-10-24T08:42:20Z'
+  talks:
+  - session:2024/sec1989d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724850526220001ZTIC
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,52 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:katiesavage
+  login: katiesavage
+  kind: user
+  url: https://github.com/katiesavage
+  name: Katie Savage
+  bio: TPM at Microsoft 🤗
+  followers: 108
+  public_repositories: 9
+  created_at: '2016-07-25T20:01:11Z'
+  contributions_last_year:
+    total: 213
+    commits: 60
+    pull_requests: 20
+    issues: 5
+    reviews: 5
+  starred_repositories: 0
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:microsoft/vscode-docs
+  - repo:github-samples/copilot-workshops
+  - repo:github/github-copilot-dev-days
+  - repo:github/dev-days
+  - repo:github/copilot-sdk-workshop
+  entity: person:katie-savage
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: katiesavage
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/coinbase
+  platform: linkedin
+  handle: company/coinbase
+  url: https://www.linkedin.com/company/coinbase
+  display_name: Coinbase
+  bio: 'Coinbase (NASDAQ: COIN) is on a mission to increase economic freedom in the world. The most trusted
+    crypto platform, Coinbase stores more digital assets than any other company and is building the everything
+    exchange — one place to access crypto, equities, derivatives, prediction markets, and more. Coinbase
+    serves consumers through its suite of financial apps, institutions through Coinbase Prime, and developers
+    through the Coinbase Developer Platform. Every experience runs on Coinbase''s full-stack platform
+    powering the future of finance: secure custody, deep exchange liquidity, stablecoin infrastructure,
+    and global settlement rails — all built on a decade-plus foundation of security and compliance.'
+  website: https://www.coinbase.com/
+  followers: 1508577
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQHQJxIt9C0pHA/company-logo_200_200/B4EZ755_FYJIAE-/0/1782309188193/coinbase_logo?e=2147483647&v=beta&t=78GWOoY-2Fddi5FTLZ4NY_SYVOJdteeVX4FdkKi30gM
+  owner: org:coinbase
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/steven-ewing
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/coinbase
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

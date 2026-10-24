@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/cassidoo
+  platform: x
+  handle: cassidoo
+  url: https://x.com/cassidoo
+  display_name: Cassidy
+  bio: |-
+    Making memes, dreams, & software!
+    Sr. Director of Dev Experience at @github.
+    Married to @ijoosong, mom of 2 nerdy babies.
+    She/Her ✝️ Subscribe to my newsletter!
+  location: Chicago, IL
+  website: http://cassidoo.co/newsletter
+  followers: 184614
+  following: 735
+  posts_count: 39291
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2083035129157500929/l84D9Nhz_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/400286802/1624902615
+  created_at: '2011-10-28T19:54:25Z'
+  owner: person:cassidy-williams
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725036381202001ffsN
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cassidoo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/cassidoo
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

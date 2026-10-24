@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:tailscale/tailcat
+  full_name: tailscale/tailcat
+  url: https://github.com/tailscale/tailcat
+  description: like netcat, but over Tailscale's data plane, without Tailscale's control plane
+  homepage: https://tailscale.com/tailcat
+  stars: 8464
+  forks: 383
+  watchers: 26
+  open_issues: 19
+  stats_observed_at: '2026-10-24T19:12:25Z'
+  primary_language: Go
+  license: BSD-3-Clause
+  archived: false
+  fork: false
+  created_at: '2024-10-29T17:21:12Z'
+  pushed_at: '2026-10-07T20:18:07Z'
+  owner_login: tailscale
+  owner: gh:tailscale
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tailscale
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tailscale/tailcat
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

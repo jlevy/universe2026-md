@@ -1,0 +1,368 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:marcel-de-vries
+  person: person:marcel-de-vries
+  brief_bio:
+    text: Marcel de Vries is co-founder, Global MD and CTO of Xebia | Xpirit, working with organizations
+      to ship software to production securely and often, and is a Microsoft MVP and Microsoft Regional
+      Director. De Vries spoke at GitHub Universe 2023 about building engineering culture.
+    cites:
+    - listed_role
+    - past_affiliations
+    - x_bio
+    - event_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 0f99b988f43cf04bb57818951595592dfc76284579cb2ff6f04eadca9b823aef
+    stale: false
+  expertise:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Marcel has been awarded by Microsoft the Microsoft MVP award for more than 17 consecutive
+        years and has also been a Microsoft Regional Director since 2008.
+  - label: Microsoft Regional Director
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Marcel has been awarded by Microsoft the Microsoft MVP award for more than 17 consecutive
+        years and has also been a Microsoft Regional Director since 2008.
+  interests:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: GitHub Codespaces
+    target: term:github-product-2023/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: Issues
+    target: term:github-product-2023/issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  credentials:
+  - kind: honor
+    title: Microsoft Regional Director
+    issuer: Microsoft
+    date: '2009-01-01T00:00:00.000Z'
+    description: The Microsoft Regional Director (RD) program is a community of independent developers,
+      architects, trainers, and other professionals who form a vital link between Microsoft and the developer
+      community. These technical experts provide insight and informed perspectives about Microsoft software
+      development tools and technologies. Regional Directors are not Microsoft employees, nor are they
+      monetarily-compensated by Microsoft.[1] They are recognized by Microsoft for their technical expertise[2]…
+      Show more
+    evidence:
+      url: https://www.linkedin.com/in/marcelv
+      observed_at: '2026-10-24T08:46:55Z'
+  - kind: honor
+    title: Microsoft MVP Developer TEchnologies
+    issuer: Microsoft
+    date: '2006-01-01T00:00:00.000Z'
+    description: The Microsoft Most Valuable Professional (MVP) is the highest award given by Microsoft
+      to those it considers "the best and brightest from technology communities around the world" who
+      "actively share their technical expertise with the community and with Microsoft". An MVP is awarded
+      for contributions over the previous year.
+    evidence:
+      url: https://www.linkedin.com/in/marcelv
+      observed_at: '2026-10-24T08:46:55Z'
+  publications:
+  - title: Developing iPhone, Android and Windows Phone 7 applications with C#
+    venue: Microsoft TechDays 2012
+    date: February 17, 2012
+    description: Presentation about our multi platform mobile development strategy using C#. The presentation
+      is in Dutch.
+    evidence:
+      url: https://www.linkedin.com/in/marcelv
+      observed_at: '2026-10-24T08:46:55Z'
+  - title: Regular column in .NET Magazine
+    venue: Microsoft / Array publications
+    date: January 1, 2012
+    description: regular column where I discuss with my fellow RD the current state of technology and
+      help setting the scene for new upcomming innovations
+    evidence:
+      url: https://www.linkedin.com/in/marcelv
+      observed_at: '2026-10-24T08:46:55Z'
+  - title: Building a Visual Studio Team Explorer Extension
+    venue: 1105 Media
+    date: December 1, 2009
+    description: There’s no magic behind how the TFS Power Tools were integrated with Team Explorer, and
+      we’ll show you how to expose your own custom features inside the Team Explorer window.
+    evidence:
+      url: https://www.linkedin.com/in/marcelv
+      observed_at: '2026-10-24T08:46:55Z'
+  - title: Measuring Success with Software Factories
+    venue: Microsoft
+    date: October 1, 2006
+    description: Building today's software can be an inefficient one-off or project-at-a-time development
+      process. Learn how to gather the metrics necessary to "industrialize" software development for predictability
+      in addition to better productivity and quality
+    evidence:
+      url: https://www.linkedin.com/in/marcelv
+      observed_at: '2026-10-24T08:46:55Z'
+  spoken_languages:
+  - Dutch
+  - English
+  activities:
+  - kind: project
+    title: Professional Portal Pilot Workflow Wigo4It
+    detail: 'For a professional portal pilot we designed and put together a software architecture for
+      Human Workflow which is tightly coupled to existing automated processes in BizTalk. The human workflow
+      (Microsoft Windows Workflow Foundation) allows the end user to support the automated process by
+      further classifying the next steps to be taken when the Business Rule Engine (Microsoft BRE on BizTalk)
+      fires rules that could not be further automated.The user classification(s) that gets harvested during
+      workflow result in a higher quality data sets before it''s being sent to various back-office applications
+      (silo''s). These include, but are not limited to: improved reporting, logging and business intelligence.This
+      is the first Pilot for Wigo4it that is launched in the Professional Portal Program. · Sep 2015'
+    evidence:
+      url: https://www.linkedin.com/in/marcelv
+      observed_at: '2026-10-24T08:46:55Z'
+  - kind: project
+    title: Principal Architect business unit Enterprise mobile
+    detail: Info support set up a new business unit to facilitate enterprise mobile projects. I am the
+      principal architect in this unit · Apr 2013
+    evidence:
+      url: https://www.linkedin.com/in/marcelv
+      observed_at: '2026-10-24T08:46:55Z'
+  recent_writing:
+  - title: AI is changing our work. Understanding it deeply is becoming part of the job
+    url: https://www.linkedin.com/pulse/ai-changing-our-work-understanding-deeply-becoming-part-de-vries-yye6e
+    published: '2026-09-17T00:00:00.000Z'
+    channel: linkedin
+    summary: As a CTO, I see our work changing. AI is influencing how we write software, explore ideas,
+      investigate problems, and…
+  - title: The hidden maintenance cost, bitrot!
+    url: https://fluentbytes.com/?p=9224
+    published: '2022-05-16T13:54:08Z'
+    channel: blog
+  - title: Troubleshooting Appium Tests with a logfile
+    url: https://fluentbytes.com/?p=9215
+    published: '2022-04-17T13:45:01Z'
+    channel: blog
+  - title: Walking with RD’s
+    url: https://fluentbytes.com/?p=9209
+    published: '2022-02-27T07:04:00Z'
+    channel: blog
+  - title: Configure your ASP.NET Core application to use HTTPS that runs as a container in a Kubernetes
+      cluster
+    url: https://fluentbytes.com/?p=9170
+    published: '2021-11-19T19:32:00Z'
+    channel: blog
+  - title: 'How to Fix: Login failed for SA when running MS SQL Server on Linux in a Docker container'
+    url: https://fluentbytes.com/?p=9163
+    published: '2021-10-05T20:06:00Z'
+    channel: blog
+  - title: Slides and Demos, Techorama Belgium 2019
+    url: https://fluentbytes.com/?p=9152
+    published: '2019-05-24T10:25:26Z'
+    channel: blog
+  - title: How to solve sporadic crash in Xamarin App with async and await
+    url: https://fluentbytes.com/?p=9144
+    published: '2019-04-08T21:00:09Z'
+    channel: blog
+  - title: Override classic ASP.NET web.config Configuration Settings When Using (Docker) Containers
+    url: https://fluentbytes.com/?p=9112
+    published: '2018-03-12T23:34:59Z'
+    channel: blog
+  - title: 'Just released: Introduction to Docker on Windows with Visual Studio 2017'
+    url: https://fluentbytes.com/?p=9024
+    published: '2017-08-13T22:53:48Z'
+    channel: blog
+  - title: 'My Session Slides from Techorama: “Architecting systems for continuous delivery”'
+    url: https://fluentbytes.com/?p=8934
+    published: '2017-05-31T13:32:20Z'
+    channel: blog
+  talks:
+  - session:2023/dev2771l
+  gaps:
+  - github_account
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694194941084001w3OE
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

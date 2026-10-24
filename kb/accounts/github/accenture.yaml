@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:accenture
+  login: Accenture
+  kind: organization
+  url: https://github.com/Accenture
+  name: Accenture
+  bio: Accenture Github site
+  website: https://accenture.github.io
+  public_repositories: 175
+  created_at: '2015-01-08T19:35:06Z'
+  pinned:
+  - repo:accenture/reactive-interaction-gateway
+  - repo:accenture/ampligraph
+  - repo:accenture/air
+  top_repositories:
+  - repo:accenture/spartacus
+  - repo:accenture/adop-docker-compose
+  - repo:accenture/vulfi
+  entity: org:accenture
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Accenture
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

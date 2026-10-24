@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/acolombiadev
+  platform: linkedin
+  handle: in/acolombiadev
+  url: https://www.linkedin.com/in/acolombiadev
+  display_name: Andrea Griffiths
+  bio: Career technologist and community connector working at the intersection of AI, open…
+  location: Bradenton
+  followers: 7998
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQHzFaTg83hg9w/profile-displayphoto-scale_200_200/B4EaDOZYmwIsAc-/0/1790169159099?e=2147483647&v=beta&t=-CZaIzY4Z8FwfVwwaWtZJjXH09bAZChlrD-1XXSD34k
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQG9mcECQ06YmQ/profile-displaybackgroundimage-shrink_200_800/B4EaD0V5NeLAAU-/0/1790805776056?e=2147483647&v=beta&t=8Ii1qv3SgK3C1Z5j-44wqClR4P6Wtjzq-O3Q5WfWqvk
+  owner: person:andrea-griffiths
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685584659600001bgLK
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/acolombiadev
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

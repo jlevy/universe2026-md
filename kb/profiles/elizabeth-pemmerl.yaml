@@ -1,0 +1,84 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:elizabeth-pemmerl
+  person: person:elizabeth-pemmerl
+  brief_bio:
+    text: Elizabeth Pemmerl was GitHub's Chief Revenue Officer, responsible for go-to-market and customer
+      experience, including sales, customer success and support. Pemmerl spoke at GitHub Universe 2024
+      about crafting a compliant and high-impact AI strategy.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 28b54753911bac5ef981c3dca7471d3c3609d7d5fb264f1e296931deb3a1453f
+    stale: false
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1988m
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1988m
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724974192258001igSN
+      ref: session:2024/ai1988m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724974192258001igSN
+      ref: session:2024/ai1988m
+  education:
+  - school: Bates College
+    evidence:
+      url: https://www.linkedin.com/in/elizabeth-pemmerl-9172485
+      observed_at: '2026-10-24T08:45:35Z'
+  activities:
+  - kind: organization
+    title: Bates College
+    detail: Jun 2005 · Present
+    evidence:
+      url: https://www.linkedin.com/in/elizabeth-pemmerl-9172485
+      observed_at: '2026-10-24T08:45:35Z'
+  talks:
+  - session:2024/ai1988m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695061532838001K0Oj
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:docker
+  name: Docker
+  aliases:
+  - Docker
+  kind: platform
+  homepage: https://www.docker.com
+  mentioned_in:
+  - person:baruch-sadogursky
+  - person:christian-dupuis
+  - person:derek-mcgowan
+  - person:eli-uriegas
+  - person:erik-englund
+  - person:justin-cormack
+  - person:richard-bullington-mcguire
+  - person:scott-johnston
+  - session:2023/dev2850s
+  - session:2023/dev2885d
+  - session:2024/ai2035d
+  - session:2024/ai2102e
+  - session:2024/sec1871m
+  - session:bld2119d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

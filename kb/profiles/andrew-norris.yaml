@@ -1,0 +1,251 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:andrew-norris
+  person: person:andrew-norris
+  brief_bio:
+    text: Andrew Norris works in product at Dynatrace and co-founded DevCycle, a feature flag platform
+      that grew out of Taplytics, which Norris founded in 2011. Norris speaks at GitHub Universe 2026
+      in a sponsored session on how observability gives agents context to write fixes.
+    cites:
+    - current_affiliations
+    - x_bio
+    - linkedin_bio
+    - past_affiliations
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: f0a25c5f290bf079bd17ac6b2a520331ab585f689ebd056cb0fc476f59fe7696
+    stale: false
+  headline: Bluebox Product Management at Dynatrace
+  location: San Francisco, CA
+  current_roles:
+  - Bluebox Product Management at Dynatrace
+  expertise:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: OpenTelemetry
+    target: software:opentelemetry
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: OpenTelemetry
+      ref: session:tru2239b
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  interests:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  education:
+  - school: Y Combinator
+    evidence:
+      url: https://www.linkedin.com/in/andrewsnorris
+      observed_at: '2026-10-24T08:11:42Z'
+  publications:
+  - title: Syrp Inc. Blog
+    date: September 1, 2011
+    description: Our company blog where we discuss our products and our thoughts and opinions of the industry.
+    evidence:
+      url: https://www.linkedin.com/in/andrewsnorris
+      observed_at: '2026-10-24T08:11:42Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: volunteering
+    title: Chairman of Home & School Executive Council
+    detail: Northlea Elementary & Middle School · Education · Sep 2025 · - Present · 1 year 2 months ·
+      Sep 2025
+    evidence:
+      url: https://www.linkedin.com/in/andrewsnorris
+      observed_at: '2026-10-24T08:11:42Z'
+  talks:
+  - session:tru2239b
+  gaps:
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791921239556001f2QR
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: andrewnorris
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

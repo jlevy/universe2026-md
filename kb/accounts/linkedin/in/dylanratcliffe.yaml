@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/dylanratcliffe
+  platform: linkedin
+  handle: in/dylanratcliffe
+  url: https://www.linkedin.com/in/dylanratcliffe
+  display_name: Dylan Ratcliffe
+  bio: I'm Dylan Ratcliffe, the founder of Overmind, an impact analysis tool that empowers…
+  location: San Francisco
+  followers: 4535
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQGNHXoSwCQLjQ/profile-displayphoto-scale_200_200/B56Z6KoDqnG8Ac-/0/1780442219368?e=2147483647&v=beta&t=U-sAXlibmEJ6crXWhocjUE1dlSvxRc0E02TAHbso9vI
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQF-HgyzoKLjZQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1719355691204?e=2147483647&v=beta&t=ovvEKgW0aAcK6vKWLwbLZOI9gsvTU8JReuCL8l4nTxM
+  owner: person:dylan-ratcliffe
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755624535596001ehoJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/dylanratcliffe
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

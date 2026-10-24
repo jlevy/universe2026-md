@@ -1,0 +1,26 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:linux
+  name: Linux
+  aliases:
+  - Linux
+  kind: open_source
+  repositories:
+  - repo:torvalds/linux
+  mentioned_in:
+  - person:ayman-bagabas
+  - person:bryant-jimin-son
+  - person:christina-warren
+  - person:donia-chaiehloudj
+  - person:matthew-casperson
+  - person:michael-yenchi-ho
+  - person:stormy-peters
+  - session:2025/bld1877d
+  - session:bld1784d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

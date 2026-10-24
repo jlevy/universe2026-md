@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kwstubbs
+  platform: linkedin
+  handle: in/kwstubbs
+  url: https://www.linkedin.com/in/kwstubbs
+  display_name: Kevin Stubbings
+  bio: Security Researcher at Github.
+  location: Los Angeles Metropolitan Area
+  followers: 60
+  connections: 54
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQGpBnsQ6P4L4Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726468320944?e=2147483647&v=beta&t=jZuPS6RU3jrukvlMnTvxQH02Ywii0kx4LSfvcoi0310
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:kevin-stubbings
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699462504875001X6nI
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kwstubbs
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

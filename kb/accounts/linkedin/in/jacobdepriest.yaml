@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jacobdepriest
+  platform: linkedin
+  handle: in/jacobdepriest
+  url: https://www.linkedin.com/in/jacobdepriest
+  display_name: Jacob DePriest
+  location: Washington DC-Baltimore Area
+  followers: 2652
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQH2urn8kY7wRA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690472381075?e=2147483647&v=beta&t=hF2WlUjxsYirgvyHpPgVV8KFz39oCv8Gr4w6jteOJyc
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHO5jOAaBlyaQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1728945020559?e=2147483647&v=beta&t=CP1yBgxcL2o4Y8ScQS_5XQRrcjpu4jOCQzK4k19NVX4
+  owner: person:jacob-depriest
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755691001tSTi
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jacobdepriest
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

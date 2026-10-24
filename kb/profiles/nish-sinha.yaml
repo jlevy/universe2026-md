@@ -1,0 +1,401 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:nish-sinha
+  person: person:nish-sinha
+  brief_bio:
+    text: Nish Sinha is a software engineer at GitHub who has spent five years on the Dependabot team,
+      working on the systems beneath its dependency updates. Sinha speaks at GitHub Universe 2026 about
+      custom review instructions for Copilot code review.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: eb7efec6dbeada89deaacccbb5f2beb7f52761a2edde3183697360e63c31d118
+    stale: false
+  headline: Software Engineer III at GitHub
+  location: Atlanta, GA
+  current_roles:
+  - Software Engineer III at GitHub
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1662d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1662d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1662d
+  technologies:
+  - label: Copilot code review
+    target: software:copilot-code-review
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot code review
+      ref: session:ldr1662d
+  - label: Dependabot
+    target: software:dependabot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Dependabot
+      ref: person:nish-sinha
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:ldr1662d
+  programming_languages:
+  - label: Jupyter Notebook
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:nishnha/title-ix-call-for-comments-analysis
+  - label: Kotlin
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:nishnha/guitartuner
+  interests:
+  - label: python
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dependabot/dependabot-core
+      ref: repo:dependabot/dependabot-core
+    - url: https://github.com/Nishnha/Title-IX-Call-for-Comments-Analysis
+      ref: repo:nishnha/title-ix-call-for-comments-analysis
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777688857786001ZKKR
+      ref: session:ldr1662d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777688857786001ZKKR
+      ref: session:ldr1662d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777688857786001ZKKR
+      ref: session:ldr1662d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777688857786001ZKKR
+      ref: session:ldr1662d
+  - label: .NET
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dependabot/dependabot-core
+      ref: repo:dependabot/dependabot-core
+  - label: analysis
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/Nishnha/Title-IX-Call-for-Comments-Analysis
+      ref: repo:nishnha/title-ix-call-for-comments-analysis
+  - label: docs
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/docs
+      ref: repo:github/docs
+  - label: elixir
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dependabot/dependabot-core
+      ref: repo:dependabot/dependabot-core
+  - label: elm
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dependabot/dependabot-core
+      ref: repo:dependabot/dependabot-core
+  - label: go
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dependabot/dependabot-core
+      ref: repo:dependabot/dependabot-core
+  - label: ipython-notebook
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/Nishnha/Title-IX-Call-for-Comments-Analysis
+      ref: repo:nishnha/title-ix-call-for-comments-analysis
+  open_source:
+  - repository: repo:dependabot/dependabot-core
+    relation: pinned
+    stars: 5810
+    primary_language: Ruby
+  - repository: repo:nishnha/guitartuner
+    relation: owner
+    stars: 4
+    primary_language: Kotlin
+  - repository: repo:nishnha/title-ix-call-for-comments-analysis
+    relation: owner
+    stars: 1
+    primary_language: Jupyter Notebook
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  - repository: repo:dsp-testing/dependabot-all-updates-test
+    relation: contributor
+    stars: 1
+    primary_language: HCL
+  - repository: repo:github/dependabot-action
+    relation: contributor
+    stars: 143
+    primary_language: TypeScript
+  - repository: repo:dependabot/smoke-tests
+    relation: contributor
+    stars: 78
+    primary_language: Shell
+  education:
+  - school: Georgia State University
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  credentials:
+  - kind: honor
+    title: First Place SRC - MobiCom 2019
+    issuer: ACM
+    date: '2019-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: honor
+    title: Oral Presentation First Place (Sustainability) - Georgia State Undergraduate Research Conference
+    issuer: Georgia State University
+    date: '2019-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: honor
+    title: Poster Presentation Second Place - Georgia State Undergraduate Research Conference
+    issuer: Georgia State University
+    date: '2017-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  publications:
+  - title: Uni-Modal Sensing using Embedded Weight Sensors for Fully-Autonomous Store Checkout
+    venue: CPS-IoT Week 2020
+    date: March 18, 2020
+    description: Cashierless automated store checkout is becoming more common and can save time for consumers
+      and reduce costs for stores. Previous state-of-the-art for cashierless systems use RFID tagging
+      on items and require human intervention to count inventory, disqualifying them as fully-automated
+      systems. While previous work by Ruiz, et al. has demonstrated over 90% accuracy in a multi-modal
+      sensing approach through combined weight sensing and object classification techniques, there is
+      still a gap in accuracy before fully autonomous store checkout is possible. This research proposes
+      a uni-modal approach using only weight sensing techniques, foregoing the use of object classification.
+      We also make the same 4 assumptions on customer behavior as Ruiz, et al.’s approach, reducing the
+      problem to systematically determining which items are removed by customers through the weight sensory
+      data of each shelf.
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - title: In-situ Water-Quality Monitoring System through Ultraviolet Sensing using off-the-shelf Cameras
+    venue: MobiCom '19
+    date: October 21, 2019
+    description: Contaminants can leach into drinking water in transport from water-treatment facilities
+      or treated water storage to consumer taps. In this work, we design a low-cost mobile system that
+      can use off-the-shelf web-cameras as an ultraviolet (UV) spectrometer. We posit to analyze and categorize
+      impurities present in water by using fundamental image processing and computer vision techniques.
+      In this poster paper, we qualitatively and quantitatively analyze the ultraviolet absorption and
+      scattering through images captured of an UV light source (at 385nm wavelength) transmitted through
+      de-ionized water containing varying contaminants and at different concentrations. We particularly
+      explore the tests for lead, arsenic, table salt, charcoal, and coconut oil, and run a pilot-study
+      on ground-truth analysis of tap water from five counties around Atlanta, Georgia, USA.
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - title: 'Oral: A Mobile and Low-Cost Spectrophotometry-Based Water-Quality Monitoring System Using
+      Off-the-Shelf Cameras'
+    venue: Georgia State University
+    date: Apr 2019
+    description: By designing affordable and portable spectrophotometry equipment, Nishant is revolutionizing
+      the way that water quality can be tested. Incorporating light sensing and computing enables users
+      to test impurities in water, specifically Lead, Arsenic, and Oil in water, opening the doors to
+      a new era of water quality awareness and optimization.
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - title: 'Poster: Smart Signalling for Bicycles using User Riding Behavior'
+    venue: Georgia State University
+    date: Apr 2017
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  spoken_languages:
+  - English
+  - Hindi
+  - Latin
+  - Korean
+  - Japanese
+  activities:
+  - kind: volunteering
+    title: Chair of External Affairs, Executive Board
+    detail: PantherHackers · Education · Jan 2017 · - Apr 2017 · 4 months · As the chair of external affairs
+      I worked with affiliates of PantherHackers and communicated with potential partners of the organization.
+      As part of the executive board I directed organization events at a high-level and developed frameworks
+      for the organization to follow as it expanded. While serving on the executive board PantherHackers
+      went from 2 to 12 affiliate organizations and from >100 to over 400 members. · Jan 2017
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: volunteering
+    title: President of SolveForX
+    detail: PantherHackers · Education · Sep 2017 · - Present · 9 years 2 months · SolveForX is an interest
+      group within PantherHackers specializing in coding interview questions and algorithms Interest groups
+      are student-led, project-based, collaborative workshops that focus on specific topics. These workshops
+      are semester-long, so students meet weekly and learn on their own pace outside of the classroom.
+      · Sep 2017
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: volunteering
+    title: President
+    detail: Computer Science Club at Georgia State University · Science and Technology · Aug 2019 · -
+      Aug 2020 · 1 year 1 month · Aug 2019
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: organization
+    title: Computer Science Club
+    detail: Aug 2019 · Present
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: organization
+    title: 1913 Society
+    detail: The 1913 Society – a student ambassador program established by the Office of the President
+      – provides an opportunity for outstanding undergraduate students to serve as official hosts and
+      goodwill ambassadors for the university. The goal of the program is to advance Georgia State’s goals
+      and mission through service to the Office of the President. Student ambassadors represent the university
+      and the president with the highest level of integrity and professionalism. · Apr 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: organization
+    title: Peer Research Ambassadors
+    detail: Jan 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: organization
+    title: Panthers in the Valley
+    detail: Panthers in the Valley exposes students to Silicon Valley’s unique entrepreneurial and innovative
+      culture; allowing participants to compete for internships and full-time jobs in Silicon Valley while
+      at the same time providing area employers access to top talent from one of the most diverse student
+      bodies in the United States. · Oct 2017 · Present
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: organization
+    title: Honors Ambassadors
+    detail: Apr 2017 · Present
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: organization
+    title: Honors College Tech Fee Committee
+    detail: Feb 2017 · Present
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: organization
+    title: PantherHackers
+    detail: Sep 2016 · Present
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  - kind: organization
+    title: ACM
+    detail: Aug 2016 · May 2017
+    evidence:
+      url: https://www.linkedin.com/in/nishnha
+      observed_at: '2026-10-24T08:15:32Z'
+  talks:
+  - session:ldr1662d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692200542764001GAQj
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Nishnha
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

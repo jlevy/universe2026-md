@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/theboredeng
+  platform: x
+  handle: TheBoredEng
+  url: https://x.com/TheBoredEng
+  display_name: Luke Young
+  bio: I find bugs and exploit them. Sometimes for money, mainly for free T-Shirts.
+  location: San Francisco, CA
+  website: https://bored.engineer/
+  followers: 2172
+  following: 444
+  posts_count: 335
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1400546387486408705/oAnQcFkB_normal.jpg
+  created_at: '2010-05-15T01:22:05Z'
+  owner: person:luke-young
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777655944022001vjDf
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/TheBoredEng
+    record_id: sd_mvm4nigsgklpc8gkv
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,294 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:qianqian-ye
+  person: person:qianqian-ye
+  brief_bio:
+    text: Qianqian Ye is Director of Creative Technology at the Processing Foundation and an Adjunct Associate
+      Professor at the University of Southern California, and previously led p5.js. Ye speaks at GitHub
+      Universe 2026 about sketching with code in the age of AI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:34:19Z'
+    input_sha256: c9cb70de9294deb7aace727dc8a240fbbf705e851b37b94a6bcbb065c2ca381f
+    stale: false
+  headline: Director of Creative Technology and Adjunct Associate Professor at Processing Foundation
+  location: Los Angeles
+  current_roles:
+  - Director of Creative Technology and Adjunct Associate Professor at Processing Foundation
+  - University of Southern California
+  expertise:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: p5.js
+    target: software:p5js
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: p5.js
+      ref: person:qianqian-ye
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  programming_languages:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:processing/p5.js
+    - ref: repo:qianqianye/everyday
+    - ref: repo:qianqianye/chinese-homophone-search
+    - ref: repo:qianqianye/2015-people-killed-by-police
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:qianqianye/algorithmic-censorship-resistance-toolkit
+  interests:
+  - label: education
+    target: term:topic/education
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+    - url: https://github.com/processing/p5.js
+      ref: repo:processing/p5.js
+    - url: https://github.com/processing/p5.js-website
+      ref: repo:processing/p5.js-website
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: high
+    weight: 0.71
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+    - url: https://github.com/processing/p5.js-website
+      ref: repo:processing/p5.js-website
+  - label: art
+    basis: github_repositories
+    confidence: medium
+    weight: 0.57
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/processing/p5.js
+      ref: repo:processing/p5.js
+    - url: https://github.com/processing/p5.js-website
+      ref: repo:processing/p5.js-website
+  - label: creative-coding
+    basis: github_repositories
+    confidence: medium
+    weight: 0.57
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/processing/p5.js
+      ref: repo:processing/p5.js
+    - url: https://github.com/processing/p5.js-website
+      ref: repo:processing/p5.js-website
+  - label: p5js
+    basis: github_repositories
+    confidence: medium
+    weight: 0.57
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/processing/p5.js
+      ref: repo:processing/p5.js
+    - url: https://github.com/processing/p5.js-website
+      ref: repo:processing/p5.js-website
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  open_source:
+  - repository: repo:processing/p5.js
+    relation: pinned
+    stars: 24166
+    primary_language: JavaScript
+  - repository: repo:processing/p5.js-website
+    relation: pinned
+    stars: 97
+    primary_language: MDX
+  - repository: repo:qianqianye/everyday
+    relation: owner
+    stars: 37
+    primary_language: JavaScript
+  - repository: repo:qianqianye/algorithmic-censorship-resistance-toolkit
+    relation: owner
+    stars: 4
+    primary_language: HTML
+  - repository: repo:qianqianye/chinese-homophone-search
+    relation: owner
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:qianqianye/2015-people-killed-by-police
+    relation: owner
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:harveymoon/p5_ring
+    relation: contributor
+    stars: 11
+    primary_language: C++
+  education:
+  - school: Cornell University
+    evidence:
+      url: https://www.linkedin.com/in/qianqianye
+      observed_at: '2026-10-24T08:15:29Z'
+  credentials:
+  - kind: honor
+    title: Mozilla Creative Media Award - 2019
+    issuer: Mozilla Foundation
+    evidence:
+      url: https://www.linkedin.com/in/qianqianye
+      observed_at: '2026-10-24T08:15:29Z'
+  spoken_languages:
+  - English
+  - Mandarin
+  talks:
+  - session:bld1616m
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1775673106371001R3KP
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Qianqianye
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/litra
+  ecosystem: npm
+  name: litra
+  url: https://www.npmjs.com/package/litra
+  description: A driver for controlling Logitech Litra devices connected via USB, including the Logitech
+    Litra Glow and Logitech Litra Beam, from a CLI or your JavaScript code
+  latest_version: 4.5.1
+  license: MIT
+  repository_url: git+https://github.com/timrogers/litra.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: timrogers/litra
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

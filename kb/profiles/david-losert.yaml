@@ -1,0 +1,265 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:david-losert
+  person: person:david-losert
+  brief_bio:
+    text: David Losert is a strategic technical architect at GitHub who helps customers define technology
+      strategies with GitHub as an agent-native DevSecOps platform, with more than 12 years in development,
+      DevOps and consulting. Losert speaks at GitHub Universe 2026 in a Copilot lab for enterprise admins.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: fd25ba53b478c9381c3076046b5d2968004e3227734d3475b180b3931fb98166
+    stale: false
+  headline: Strategic Technical Architect, International at GitHub
+  location: Saarbrücken
+  current_roles:
+  - Strategic Technical Architect, International at GitHub
+  expertise:
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Migration strategies
+    target: term:topic/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:ldr1874s
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1874s
+  programming_languages:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:davelosert/semantic-release-github-actions-tags
+    - ref: repo:davelosert/yco
+    - ref: repo:davelosert/clean-code-kata
+    - ref: repo:davelosert/daves-youtube-demo-action
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:davelosert/vitest-coverage-report-action
+    - ref: repo:davelosert/dave-kit
+    - ref: repo:davelosert/di-with-redux
+  interests:
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Migration strategies
+    target: term:topic/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1788880889921001wVyZ
+      ref: session:ldr1874s
+  - label: docs
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/docs
+      ref: repo:github/docs
+  - label: works-with-codespaces
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/docs
+      ref: repo:github/docs
+  open_source:
+  - repository: repo:davelosert/vitest-coverage-report-action
+    relation: owner
+    stars: 281
+    primary_language: TypeScript
+  - repository: repo:davelosert/clean-code-kata
+    relation: owner
+    stars: 16
+    primary_language: JavaScript
+  - repository: repo:davelosert/yco
+    relation: owner
+    stars: 12
+    primary_language: JavaScript
+  - repository: repo:davelosert/daves-youtube-demo-action
+    relation: owner
+    stars: 12
+    primary_language: JavaScript
+  - repository: repo:davelosert/di-with-redux
+    relation: owner
+    stars: 4
+    primary_language: TypeScript
+  - repository: repo:davelosert/semantic-release-github-actions-tags
+    relation: owner
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:davelosert/dave-kit
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  education:
+  - school: Offenburg University of Applied Sciences
+    evidence:
+      url: https://www.linkedin.com/in/david-losert
+      observed_at: '2026-10-24T08:11:39Z'
+  spoken_languages:
+  - Englisch
+  talks:
+  - session:ldr1874s
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699341568745001BE39
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: davelosert
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

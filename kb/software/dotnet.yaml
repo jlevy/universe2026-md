@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:dotnet
+  name: .NET
+  aliases:
+  - .NET
+  kind: platform
+  vendor: org:microsoft
+  repositories:
+  - repo:dotnet/runtime
+  mentioned_in:
+  - person:amanda-silver
+  - person:bob-walker
+  - person:david-pereira
+  - person:james-montemagno
+  - person:martin-woodward
+  - person:peli-de-halleux
+  - person:pierce-boggan
+  - person:reynald-adolphe
+  - person:shayne-boyer
+  - person:thomas-bissell
+  - session:2025/bld1545d
+  - session:ldr1725d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

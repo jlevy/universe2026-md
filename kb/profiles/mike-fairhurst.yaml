@@ -1,0 +1,193 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mike-fairhurst
+  person: person:mike-fairhurst
+  brief_bio:
+    text: Mike Fairhurst is a Senior CodeQL Analysis Engineer at GitHub who has written CodeQL implementations
+      of MISRA coding standards rules and created Wake, a programming language with testability guarantees.
+      Fairhurst spoke at GitHub Universe 2025 about C/C++ code quality and security with CodeQL.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 86b0c91fbd732a578d021ce5017ea1c5d3d792a939862540b59ae4c89dc0c384
+    stale: true
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1437d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1437d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1437d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1437d
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: CodeQL
+      ref: person:mike-fairhurst
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Code Security
+      ref: session:2025/sec1437d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/sec1437d
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746229758467001GU3G
+      ref: session:2025/sec1437d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746229758467001GU3G
+      ref: session:2025/sec1437d
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746229758467001GU3G
+      ref: session:2025/sec1437d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746229758467001GU3G
+      ref: session:2025/sec1437d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746229758467001GU3G
+      ref: session:2025/sec1437d
+  credentials:
+  - kind: certification
+    title: 'Duolingo Spanish Fluency: Advanced (Estimated)'
+    issuer: Duolingo
+    date: Oct 2015
+    url: https://www.duolingo.com/lofacki
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairhurst
+      observed_at: '2026-10-24T08:47:25Z'
+  publications:
+  - title: Inverse Pointer Unboxing
+    venue: Technical Disclosure Commons
+    date: May 22, 2017
+    description: Virtual machines (VM) for dynamic programming languages store a combination of 64-bit
+      data types in each 64-bit register. A motivation to store multiple variables in a single register
+      is speed, since access to variables within a register is much faster than access to variables stored
+      within RAM. Current approaches of storing multiple 64-bit values in a single 64-bit register result
+      in undesirable effects such as higher register pressure, increased garbage collection burden, excessive
+      boxing/unboxing steps, etc. Most current approaches cannot distinguish a sufficient number of values
+      in 64 bits, as much is hidden behind 64-bit pointers to RAM. This in turn affects performance of
+      the VM. This disclosure makes use of the floating-point specification to store variables of type
+      double, integer, boolean, etc. in non-canonical pointer space, alongside the pointers themselves.
+      In this manner, more variables are packed in a single register, thereby improving performance of
+      virtual machines.
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairhurst
+      observed_at: '2026-10-24T08:47:25Z'
+  - title: Wake Programming Language Beta Kickoff Presentation
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairhurst
+      observed_at: '2026-10-24T08:47:25Z'
+  spoken_languages:
+  - English
+  - Spanish
+  activities:
+  - kind: project
+    title: Vaiven JIT VM
+    detail: A Just In Time Compiling VM and reference implementation for the dynamic language Vaiven using
+      ASMJIT as an assembler. Multiphase compilation with type information collection and SSA optimization,
+      wrapped in an interpreting REPL. · Jan 2017
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairhurst
+      observed_at: '2026-10-24T08:47:25Z'
+  - kind: project
+    title: Angular Dart Static Analysis
+    detail: Plugin to the dart language analysis service which provides type errors, autocompletion, and
+      navigation data to editors such as IntelliJ, eclipse, and vim for angular dart projects · Aug 2016
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairhurst
+      observed_at: '2026-10-24T08:47:25Z'
+  - kind: project
+    title: the Wake Programming Language
+    detail: A modern programming language focused on testability, expressivenes, and typesafety. · May
+      2013
+    evidence:
+      url: https://www.linkedin.com/in/michael-fairhurst
+      observed_at: '2026-10-24T08:47:25Z'
+  talks:
+  - session:2025/sec1437d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746061528034001J2K4
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

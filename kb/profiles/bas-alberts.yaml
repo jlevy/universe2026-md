@@ -1,0 +1,248 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:bas-alberts
+  person: person:bas-alberts
+  brief_bio:
+    text: Bas Alberts is a principal security researcher at GitHub's Security Lab with close to three
+      decades in vulnerability research, and has taught exploit development courses at venues including
+      Black Hat. Alberts speaks at GitHub Universe 2026 on how GitHub secures open source.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 822edd0170b712ed7f5f47070979021f2471f90299853d1fbff7910b6a2e3bc6
+    stale: false
+  headline: Principal Security Reseracher at GitHub
+  current_roles:
+  - Principal Security Reseracher at GitHub
+  expertise:
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1394m
+    - ref: session:tru2022a
+  programming_languages:
+  - label: Emacs Lisp
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:anticomputer/gh-notify
+    - ref: repo:anticomputer/emacs-codeql
+    - ref: repo:anticomputer/age.el
+    - ref: repo:anticomputer/passage.el
+    - ref: repo:anticomputer/with-wireguard.el
+    - ref: repo:anticomputer/chrome.el
+    - ref: repo:anticomputer/ovpn-mode
+    - ref: repo:anticomputer/emacs-capstone
+  interests:
+  - label: Dependabot
+    target: term:github-product/dependabot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: Supply Chain Security
+    target: term:github-product/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777568815487001TP8m
+      ref: session:tru1394m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791127142205001GfcV
+      ref: session:tru2022a
+  - label: agentic
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-aw-firewall
+      ref: repo:github/gh-aw-firewall
+  - label: workflows
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-aw-firewall
+      ref: repo:github/gh-aw-firewall
+  open_source:
+  - repository: repo:anticomputer/age.el
+    relation: owner
+    stars: 100
+    primary_language: Emacs Lisp
+  - repository: repo:anticomputer/gh-notify
+    relation: owner
+    stars: 80
+    primary_language: Emacs Lisp
+  - repository: repo:anticomputer/chrome.el
+    relation: owner
+    stars: 42
+    primary_language: Emacs Lisp
+  - repository: repo:anticomputer/ovpn-mode
+    relation: owner
+    stars: 28
+    primary_language: Emacs Lisp
+  - repository: repo:anticomputer/emacs-capstone
+    relation: owner
+    stars: 24
+    primary_language: Emacs Lisp
+  - repository: repo:anticomputer/passage.el
+    relation: owner
+    stars: 22
+    primary_language: Emacs Lisp
+  - repository: repo:anticomputer/emacs-codeql
+    relation: owner
+    stars: 21
+    primary_language: Emacs Lisp
+  - repository: repo:anticomputer/with-wireguard.el
+    relation: owner
+    stars: 7
+    primary_language: Emacs Lisp
+  - repository: repo:githubsecuritylab/seclab-taskflow-agent
+    relation: contributor
+    stars: 279
+    primary_language: Python
+  - repository: repo:github/gh-aw-firewall
+    relation: contributor
+    stars: 155
+    primary_language: TypeScript
+  - repository: repo:githubsecuritylab/seclab-taskflows
+    relation: contributor
+    stars: 88
+    primary_language: Python
+  talks:
+  - session:tru1394m
+  - session:tru2022a
+  gaps:
+  - linkedin_account
+  - x_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745936367087001EQAS
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: anticomputer
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

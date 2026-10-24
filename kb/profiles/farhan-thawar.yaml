@@ -1,0 +1,158 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:farhan-thawar
+  person: person:farhan-thawar
+  brief_bio:
+    text: Farhan Thawar is VP and Head of Engineering at Shopify, which acquired Helpful.com, where Thawar
+      was co-founder and CTO. Thawar spoke at GitHub Universe 2023 about how Shopify made GitHub Copilot
+      core to its culture.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: ed126bde9c69e2f4d1c8da52efab38d1b9e6c6681815c07a83e79ade7822bcce
+    stale: false
+  headline: Shopify
+  current_roles:
+  - Shopify
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2857m
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2857m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2857m
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai2857m
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696016249677001G4GQ
+      ref: session:2023/ai2857m
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696016249677001G4GQ
+      ref: session:2023/ai2857m
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696016249677001G4GQ
+      ref: session:2023/ai2857m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696016249677001G4GQ
+      ref: session:2023/ai2857m
+  education:
+  - school: University of Toronto - Rotman School of Management
+    evidence:
+      url: https://www.linkedin.com/in/fnthawar
+      observed_at: '2026-10-24T08:45:26Z'
+  recent_writing:
+  - title: |-
+      I meet a lot of CEOs who are taking over an existing engineering team and are trying to answer a seemingly simple question
+
+      "How do I measure the effectiveness of my engineering team?"
+
+      My answer: WEEKLY DEMOS
+
+      There are lots of activity metrics that can be useful to track, but
+    url: https://twitter.com/14354471/status/1943330909630902421
+    published: '2025-07-10T15:26:08Z'
+    channel: x
+  - title: |-
+      Never thought I’d be RTing this, but it seems like this guy wants to build shit and power entrepreneurs and small businesses in 🇨🇦
+
+      Watch the last minute or so for a reasonable plan
+
+      Open to hearing from others
+    url: https://twitter.com/14354471/status/1803056444129878126
+    published: '2024-06-18T13:25:30Z'
+    channel: x
+  - title: |-
+      Nbd, just doing a full product roadmap review in VR — 12 hours over 2 days
+
+      I assume folks are doing experiments like this to learn:
+      * what works
+      * what doesn’t work
+      * when to get together IRL
+      * when a 2D or 3D telepresence meetup is more effective
+
+      Right? https://t.co/2KYrYbr7xw
+    url: https://twitter.com/14354471/status/1692529226082144618
+    published: '2023-08-18T13:29:47Z'
+    channel: x
+  - title: "I thought \U0001F1E8\U0001F1E6 angels were supposed to be slow \U0001F607 \n\nPitch / interviews\
+      \ are a poor proxy for performance\n\nYou don’t need more info / due diligence: \n* when you’ve\
+      \ known the impressive founder for over a decade \n* when your goal is to learn\n* when you are\
+      \ building a portfolio\n\n\U0001F680\U0001F680 http"
+    url: https://twitter.com/14354471/status/1363128459975938048
+    published: '2021-02-20T14:08:45Z'
+    channel: x
+  - title: |-
+      "The fact that Shopify is written in Ruby helped a lot to overtake Java in June 2020 as the third-most used language on the web..No other hosting company has added more websites in 2020." 👏🏽
+
+      https://t.co/qMIOBBGrzn
+    url: https://twitter.com/14354471/status/1350561056318435329
+    published: '2021-01-16T21:50:22Z'
+    channel: x
+  talks:
+  - session:2023/ai2857m
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695228836236001cSkd
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

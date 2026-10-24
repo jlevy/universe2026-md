@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:angiejones.tech
+  url: http://angiejones.tech
+  kind: personal
+  title: Angie Jones
+  description: Discover tutorials, courses, podcasts, and more on software development and test automation
+    from Angie Jones.
+  owner: person:angie-jones
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://angiejones.tech/feed/
+  - https://angiejones.tech/comments/feed/
+  linked_accounts:
+  - acct:linkedin/in/angiejones
+  - acct:x/techgirl1908
+  - acct:youtube/@techgirl1908
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: angiejones
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://angiejones.tech/
+    record_id: http://angiejones.tech
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

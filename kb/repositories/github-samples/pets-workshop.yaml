@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github-samples/pets-workshop
+  full_name: github-samples/pets-workshop
+  url: https://github.com/github-samples/pets-workshop
+  description: Workshop and getting started content for organizations using GitHub
+  stars: 81
+  forks: 177
+  watchers: 2
+  open_issues: 29
+  stats_observed_at: '2026-10-24T19:10:13Z'
+  primary_language: Python
+  topics:
+  - template
+  - workshop
+  - ghas
+  - github
+  - github-actions
+  - github-advanced-security
+  - github-codespaces
+  - github-copilot
+  - learn-github
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2023-02-02T18:55:38Z'
+  pushed_at: '2026-09-14T18:38:51Z'
+  owner_login: github-samples
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: scubaninja
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github-samples/pets-workshop
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

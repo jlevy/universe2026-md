@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/griffithsgrant
+  platform: x
+  handle: griffithsgrant
+  url: https://x.com/griffithsgrant
+  display_name: Grant Griffiths
+  bio: |-
+    👨🏻‍💻 Software Engineer working on @kubernetesio SIG Storage
+    🖥️ Gopher, distributed systems & kubernetes dev
+    🏔️ Climbing
+    🏴󠁧󠁢󠁷󠁬󠁳󠁿🇮🇪
+  location: San Francisco, CA
+  website: http://github.com/ggriffiths
+  followers: 86
+  following: 372
+  posts_count: 44
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1612579668926009344/BvTOq-6n_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/2215357409/1600984061
+  created_at: '2013-12-09T08:01:51Z'
+  owner: person:grant-griffiths
+  link_basis:
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ggriffiths
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/griffithsgrant
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

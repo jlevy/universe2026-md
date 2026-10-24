@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:systeminit
+  login: systeminit
+  kind: organization
+  url: https://github.com/systeminit
+  name: System Initiative
+  bio: System Initiative
+  location: United States of America
+  website: https://systeminit.com
+  public_repositories: 23
+  created_at: '2019-06-07T19:06:03Z'
+  pinned:
+  - repo:systeminit/embrace-ai-presentation
+  top_repositories:
+  - repo:systeminit/si
+  linked_accounts:
+  - acct:x/thesysteminit
+  websites:
+  - site:systeminit.com
+  entity: org:system-initiative
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: systeminit
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

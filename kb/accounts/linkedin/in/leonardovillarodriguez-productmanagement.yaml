@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/leonardovillarodriguez-productmanagement
+  platform: linkedin
+  handle: in/leonardovillarodriguez-productmanagement
+  url: https://www.linkedin.com/in/leonardovillarodriguez-productmanagement
+  display_name: Leonardo Villa Rodriguez
+  bio: Product Manager con más de 5 años de experiencia en el desarrollo de plataformas…
+  location: Medellín
+  followers: 1368
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQEFu8w17DY9Fw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1547176758387?e=2147483647&v=beta&t=Q-KxEcdjaA46uvTZ1Xq57K0jBAzwda1P2rsvf5Ff1Uk
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQFZTkqtLMvFMg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1673909470304?e=2147483647&v=beta&t=Uk2Zd_CDRBnIFuVbxvNNmF1Icxoy8D7yoFkRu3mKeUc
+  owner: person:leonardo-esteban-villa
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1783696982691001Zpoc
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/leonardovillarodriguez-productmanagement
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

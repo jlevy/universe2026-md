@@ -1,0 +1,28 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:geekmasher.dev
+  url: https://geekmasher.dev/
+  kind: personal
+  title: GeekMasher's Blog
+  owner: person:mathew-payne
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://geekmasher.dev/index.xml
+  sources:
+  - system: brightdata
+    url: https://x.com/GeekMasher
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://geekmasher.dev/
+    record_id: https://geekmasher.dev/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

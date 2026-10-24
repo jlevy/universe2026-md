@@ -1,0 +1,423 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:manuel-sanchez
+  person: person:manuel-sanchez
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes Manuel Sanchez as Director – Azure App Modernisation
+      | Microsoft MVP Azure & AI Platform at NTT DATA.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic source reconciliation
+    written_at: '2026-10-24T22:02:20+00:00'
+    input_sha256: b4014f90d65beb19dea5c5dd577becd28736c3e343b3e401335433dcd6ab5360
+    stale: false
+  headline: NTT DATA
+  current_roles:
+  - NTT DATA
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:manuel-sanchez
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Manuel is a director of Azure App Modernisation at NTT DATA | Microsoft MVP Azure & AI Platform.
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  credentials:
+  - kind: honor
+    title: Microsoft MVP Azure
+    issuer: Microsoft
+    date: '2020-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: honor
+    title: Microsoft MVP Azure
+    issuer: Microsoft
+    date: '2019-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: honor
+    title: Microsoft Student Partner
+    issuer: Microsoft
+    date: '2014-06-01T00:00:00.000Z'
+    description: Member of the worldwide educational program from Microsoft to sponsor students majoring
+      in disciplines related to technology.
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: Microsoft Global Hackathon 2021
+    issuer: Microsoft
+    date: Oct 2021
+    url: https://www.credly.com/badges/bc5b271d-9d66-4672-a96d-e245e75d2d79?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure AI Fundamentals'
+    issuer: Microsoft
+    date: Sep 2021
+    url: https://www.credly.com/badges/03f6f3fb-361d-4d84-9a31-05eec39df158?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Data Fundamentals'
+    issuer: Microsoft
+    date: Sep 2021
+    url: https://www.credly.com/badges/282f1066-2e94-4c8c-80d5-a7b73cc08485?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'OpenHack: DevOps Coach'
+    issuer: Microsoft OpenHack
+    date: Jun 2021
+    url: https://www.credly.com/badges/3c04a4b8-0431-4a80-9e9a-2db669f1bd71?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Mar 2021
+    url: https://www.youracclaim.com/badges/69f2701b-47d4-4ad2-906a-8a4f1199af37?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'OpenHack: Containers'
+    issuer: Microsoft OpenHack
+    date: Jan 2021
+    url: https://www.youracclaim.com/badges/3e8f52d4-f693-4a1a-885e-b16a3a1bb469?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'CCNA Discovery: Working at a Small-to-Medium Business or ISP'
+    issuer: Cisco Networking Academy
+    date: Oct 2011
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'CNNA Exploration: Network Fundamentals'
+    issuer: Cisco Networking Academy
+    date: Jul 2011
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'CCNA Discovery: Networking for Home and Small Businesses'
+    issuer: Cisco Networking Academy
+    date: Feb 2011
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: Xamarin Diplomado
+    issuer: Microsoft Latinoamerica
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  spoken_languages:
+  - Español
+  - Inglés
+  activities:
+  - kind: course
+    title: Grado en Ingenieríaa Infórmatica
+    detail: '4'
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: Netcoreconf
+    detail: Netcoreconf is a community that organizes events at the world dedicated exclusively to the
+      development and consulting that seeks to discover and publicize the new cutting-edge technologies
+      and create strategic links that generate joint synergies between professionals in the sector, companies
+      and institutions. An event where you can learn, share and do networking. Attending various Conferences
+      and Workshops. We will talk about web developments, Mobile applications, Cloud, AI, IoT, Big Data
+      and much more. · Nov 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: Netcoreconf
+    detail: Netcoreconf is a community that organizes events at the world dedicated exclusively to the
+      development and consulting that seeks to discover and publicize the new cutting-edge technologies
+      and create strategic links that generate joint synergies between professionals in the sector, companies
+      and institutions. An event where you can learn, share and do networking. Attending various Conferences
+      and Workshops. We will talk about web developments, Mobile applications, Cloud, AI, IoT, Big Data
+      and much more. · Nov 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: Betabeers
+    detail: Organización de eventos en la sede local de Málaga. · Sep 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: Club .NET UNED
+    detail: Grupo de estudiantes apasionados por las nuevas tecnologías en especial las desarrolladas
+      con tecnologías Microsoft que comparten su interés organizando charlas y eventos con el resto de
+      la comunidad universitaria. · Jun 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: RITSI
+    detail: Mar 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: Mozilla Hispano
+    detail: ¡ · Apr 2013 · Present
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: RITSI
+    detail: Reunión de Estudiantes de Ingenierías Técnicas y Superiores en Informática. · Mar 2013 · Present
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: RITSI
+    detail: Aug 2013 · Mar 2014
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: Junta Directiva Itera
+    detail: Mar 2013 · Oct 2013
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: IAESTE IFML
+    detail: Feb 2013 · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: Junta Directiva Consejo de Estudiantes
+    detail: Nov 2012 · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/manuelsanchezrodriguez
+      observed_at: '2026-10-24T08:47:10Z'
+  recent_writing:
+  - title: The truth on AI Agents Frameworks
+    url: https://www.linkedin.com/pulse/truth-ai-agents-frameworks-manuel-sanchez-ac8lf
+    published: '2025-03-21T00:00:00.000Z'
+    channel: linkedin
+    summary: In the growing ecosystem of generative AI, several frameworks have emerged to create intelligent
+      agents capable of…
+  talks:
+  - session:2024/ai1574d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685605268026001bsmq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

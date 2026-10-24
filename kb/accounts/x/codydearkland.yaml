@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/codydearkland
+  platform: x
+  handle: codydearkland
+  url: https://x.com/codydearkland
+  display_name: Cody De Arkland
+  bio: GM, Agent Experience @Railway. Builder of things. BBQs A LOT. Father to 2 amazing girls. All-around
+    good guy; trying his best to figure out how to be better.
+  location: Roseville, CA
+  website: https://codyde.io/
+  followers: 4249
+  following: 1336
+  posts_count: 10768
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2102107121739501568/BUjo_7zq_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/187678001/1650945954
+  created_at: '2010-09-06T21:47:36Z'
+  owner: person:cody-de-arkland
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1754369693807001d8ua
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/codydearkland
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

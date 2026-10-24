@@ -1,0 +1,73 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:leobalter
+  login: leobalter
+  kind: user
+  url: https://github.com/leobalter
+  name: Leo Balter
+  bio: "he/him. en-US, pt-BR. \r\nProduct Manager: npm\r\n\r\n\r\n"
+  location: Bay Area, CA
+  followers: 1316
+  public_repositories: 87
+  created_at: '2010-06-09T19:52:40Z'
+  contributions_last_year:
+    total: 294
+    commits: 25
+    pull_requests: 2
+    issues: 2
+    reviews: 4
+  starred_repositories: 371
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  - 2011
+  - 2010
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 90
+  contributed_to:
+  - repo:npm/documentation
+  organization_logins:
+  - jquery
+  - gruntjs
+  - tc39
+  - babel
+  - qunitjs
+  - EcmaTC53
+  pinned:
+  - repo:tc39/test262
+  - repo:qunitjs/qunit
+  - repo:tc39/code-of-conduct
+  - repo:leobalter/.dotfiles
+  - repo:leobalter/ecma262
+  - repo:leobalter/ecma402
+  top_repositories:
+  - repo:leobalter/shadowrealms-polyfill
+  - repo:leobalter/dexterjs
+  - repo:leobalter/cross-root-aria-delegation
+  entity: person:leo-balter
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: leobalter
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

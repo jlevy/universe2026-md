@@ -1,0 +1,364 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:matteo-bianchi
+  person: person:matteo-bianchi
+  brief_bio:
+    text: Matteo Bianchi is a Solutions Engineer at GitHub, a CNCF Ambassador and a member of the Kubernetes
+      Release Team since v1.31. Bianchi spoke at GitHub Universe 2025 about improving developer experience
+      with GitHub Actions and GitHub Advanced Security.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: d2d2110c1312dc0849c5047e74bc3c70487ba8972e3fce3f564363a91049bb92
+    stale: true
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1237b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1237b
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1237b
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/bld1237b
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2025/bld1237b
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/bld1237b
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:matteo-bianchi
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746001909670001MkNf
+      ref: session:2025/bld1237b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746001909670001MkNf
+      ref: session:2025/bld1237b
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746001909670001MkNf
+      ref: session:2025/bld1237b
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746001909670001MkNf
+      ref: session:2025/bld1237b
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746001909670001MkNf
+      ref: session:2025/bld1237b
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746001909670001MkNf
+      ref: session:2025/bld1237b
+  credentials:
+  - kind: certification
+    title: 'LFC102: Inclusive Open Source Community Orientation'
+    issuer: The Linux Foundation
+    date: Apr 2024
+    url: https://www.credly.com/badges/95be01d8-5106-4250-ae4d-1cd507930b3a/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: OpenTofu Day Europe 2024 Program Committee Member Badge
+    issuer: The Linux Foundation
+    date: Jan 2024
+    url: https://www.credly.com/badges/0ab0b4ed-7ca1-4bab-8643-8ad4d06efe70/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: 'Program Committee Member: Kubernetes Community Days 2023'
+    issuer: The Linux Foundation
+    date: Dec 2023
+    url: https://www.credly.com/badges/c9bc9d4e-02bb-4bcd-85a3-00f63981688a/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: Red Hat Certified Specialist in Ansible Automation
+    issuer: Red Hat
+    date: Oct 2022
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: Red Hat Certified System Administrator (RHCSA)
+    issuer: Red Hat
+    date: Oct 2022
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Jan 2022
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: Terraform Associate
+    issuer: HashiCorp
+    date: Jul 2021
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: Kubernetes Application Developer (CKAD)
+    issuer: Cloud Native Computing Foundation (CNCF)
+    date: Jun 2020
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: Kubernetes Administrator (CKA)
+    issuer: Cloud Native Computing Foundation (CNCF)
+    date: Apr 2020
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: 'LFC131: Green Software for Practitioners'
+    issuer: The Linux Foundation
+    date: Mar 2024
+    expires: Apr 2026
+    url: https://www.credly.com/badges/b47affee-5d21-4d9c-bb22-849a9a330edb/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  publications:
+  - title: 'Kubernetes 1.32: Penelope'
+    venue: Kubernetes
+    date: December 11, 2024
+    description: Kubernetes v1.32 official release blog
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - title: Kubernetes v1.32 Sneak Peek
+    venue: Kubernetes
+    date: November 8, 2024
+    description: Kubernetes v1.32 sneak peek
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - title: 'Kubernetes v1.31, Elli: an insider view!'
+    venue: Cloud Native Computing Foundation (CNCF)
+    date: August 29, 2024
+    description: Kubernetes has had a community-driven release lifecycle since forever now and I took
+      part of it as Comms Shadow for v1.31, here’s how it went and what I have learnt in the process.
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - title: Kubernetes v1.31 Release blog
+    venue: Kubernetes
+    date: August 13, 2024
+    description: 'Announcing the release of Kubernetes v1.31: Elli!'
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - title: Kubernetes Removals and Major Changes In v1.31
+    venue: Kubernetes
+    date: July 19, 2024
+    description: As Kubernetes develops and matures, features may be deprecated, removed, or replaced
+      with better ones for the project's overall health. This article outlines some planned changes for
+      the Kubernetes v1.31 release that the release team feels you should be aware of for the continued
+      maintenance of your Kubernetes environment. The information listed below is based on the current
+      status of the v1.31 release. It may change before the actual release date.
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - title: 'From attendees to organizers: a community story'
+    venue: Cloud Native Computing Foundation (CNCF)
+    date: February 1, 2024
+    description: A blog I co-authored, about community contribution, open-source and cloud native, posted
+      on the CNCF blog.
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - title: Arbeit scrum nervt
+    venue: Golem Media GmbH (golem.de)
+    date: January 15, 2024
+    description: A German-translated version of my "Scrum sucks" blog post, by the web magazine golem.de
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - title: Scrum sucks.
+    venue: Medium
+    date: October 18, 2023
+    description: Viral post where I explain what the scrum methodology entails, my industry experience
+      with it, a deep dive into the flaws of its implementation and some hints to overcome them.Translated
+      in German and published on the web magazine golem.de (https://glm.io/180930)
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - title: 2023 DevOps is terrible.
+    venue: Medium
+    date: September 21, 2023
+    description: A viral post from my blog about the 2023 status of DevOps and Platform Engineering, mentioned
+      and praised by multiple IT professionals.Reached over 40k views in the first month of publication,
+      with a 70% read ratio, but most importantly it allowed me to connect with lots of professionals
+      and companies.Published on HeavyBit, HackerNews and daily.dev
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - title: I don’t like ChatGPT.
+    venue: Medium
+    date: December 23, 2022
+    description: A critical analysis on ChatGPT and LLMs in the early days of the hype curve, after 30
+      days from the launch of OpenAI's star product.
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  spoken_languages:
+  - English
+  - Spanish
+  - Italian
+  - French
+  activities:
+  - kind: volunteering
+    title: Guest Lecturer
+    detail: Università degli Studi di Torino · Education · Computer Science course - Intro to Cloud Native
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: volunteering
+    title: Kubernetes Contributor (former Release Team Member)
+    detail: Cloud Native Computing Foundation (CNCF) · Science and Technology · May 2024 · - Oct 2026
+      · 2 years 6 months · Awarded by SIG Release at KC Atlanta 2025 - https://www.kubernetes.dev/community/awards/2025/#release
+      Branch Manager from v1.34 onwards - https://github.com/kubernetes/k8s.io/commit/1dcfcb1b37c90c38ca63ed27267fa64f13b888a9
+      Branch Manager Kubernetes v1.34 - https://github.com/kubernetes/sig-release/blob/master/releases/release-1.34/release-team.md
+      Lead Shadow / Branch Manager Shadow Kubernetes v1.33 -… Show more Awarded by SIG Release at KC Atlanta
+      2025 - https://www.kubernetes.dev/community/awards/2025/#release Branch Manager from v1.34 onwards
+      - https://github.com/kubernetes/k8s.io/commit/1dcfcb1b37c90c38ca63ed27267fa64f13b888a9 Branch Manager
+      Kubernetes v1.34 - https://github.com/kubernetes/sig-release/blob/master/releases/release-1.34/release-team.md
+      Lead Shadow / Branch Manager Shadow Kubernetes v1.33 - https://github.com/kubernetes/sig-release/blob/master/releases/release-1.33/release-team.md
+      Comms Lead Kubernetes v1.32 - https://github.com/kubernetes/sig-release/blob/master/releases/release-1.32/release-team.md
+      Comms shadow Kubernetes v1.31 - https://github.com/kubernetes/sig-release/blob/master/releases/release-1.31/release-team.md
+      Show less · May 2024
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: volunteering
+    title: Ambassador
+    detail: Cloud Native Computing Foundation (CNCF) · Science and Technology · Oct 2023 · - Present ·
+      3 years 1 month · CNCF Ambassador October 2023 - October 2027 · Oct 2023
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: volunteering
+    title: Event Organizer
+    detail: Kubernetes Community Days Netherlands · Science and Technology · Sep 2023 · - Mar 2025 · 1
+      year 7 months · Part of the organization team of the KCD in the Netherlands, a CNCF-supported event
+      aiming to spread awareness about Cloud Native technologies and bring together IT professionals.
+      I hosted the event as MC and helped out with the overall organization of KCD Utrecht 2023, KCD Utrecht
+      2024 and part of KCD Utrecht 2025. · Sep 2023
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: project
+    title: Community Builder & Host @ Freelance Italia
+    detail: Streamer | Content Creator | Community ManagerHosted live "just chatting" podcasts on Twitch.tv
+      where freelance professionals and companies were interviewed in a fun way every two weeks at 6:30
+      PM.FreelanceZoo is a LinkedIn/Telegram group, which I managed with the two founders, made of 1000+
+      freelancers with the aim of creating synergies, delegating, adding extra capacity and matching freelancers
+      skills with potential clients.We got no revenue or fees from freelancers or clients, it was planned
+      to become a sustainable business model (where companies should have paid a fee) but it was never
+      implemented. · Jan 2022
+    evidence:
+      url: https://www.linkedin.com/in/mbianchidev
+      observed_at: '2026-10-24T08:46:50Z'
+  talks:
+  - session:2025/bld1237b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730036340817001tZwF
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

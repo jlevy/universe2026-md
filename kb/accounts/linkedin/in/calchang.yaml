@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/calchang
+  platform: linkedin
+  handle: in/calchang
+  url: https://www.linkedin.com/in/calchang
+  display_name: Calvin Chang
+  bio: I drive growth for and launch both hardware and software products. What has helped me…
+  location: San Francisco Bay Area
+  followers: 2004
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGaJUfD-NfsBw/profile-displaybackgroundimage-shrink_200_800/B56ZiAPojiHMAg-/0/1754498239029?e=2147483647&v=beta&t=QgqjxjBy78PmCHMo17mtmXb138cEXiTaO5pRuCTU-ho
+  owner: person:calvin-chang
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684167539132001wxYR
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/calchang
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

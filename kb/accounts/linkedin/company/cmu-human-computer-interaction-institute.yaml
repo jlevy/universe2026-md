@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/cmu-human-computer-interaction-institute
+  platform: linkedin
+  handle: company/cmu-human-computer-interaction-institute
+  url: https://www.linkedin.com/company/cmu-human-computer-interaction-institute
+  display_name: CMU Human-Computer Interaction Institute
+  bio: The Carnegie Mellon University Human-Computer Interaction Institute (HCII) is a hub for innovation,
+    education, and research. We combine design, computer sciences, social sciences, and learning sciences
+    to understand, improve, and create technology in all aspects of life. The HCII is part of the Kenneth
+    C. Griffin School of Computer Science at Carnegie Mellon University.
+  website: https://hcii.cmu.edu/
+  followers: 12136
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D0BAQFOHNX3l6qgqA/company-logo_200_200/company-logo_200_200/0/1631336373486?e=2147483647&v=beta&t=bzW3eUsibp7xT3Wn342cIiE4THn2oFuSXTDAWX3l07o
+  owner: org:cmu-human-computer-interaction-institute
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/christine-i-mendoza
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/cmu-human-computer-interaction-institute
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/liberty-mutual-insurance
+  platform: linkedin
+  handle: company/liberty-mutual-insurance
+  url: https://www.linkedin.com/company/liberty-mutual-insurance
+  display_name: Liberty Mutual Insurance
+  bio: 'At Liberty Mutual, we believe progress happens when people feel secure. For more than 110 years
+    we have helped people and businesses embrace today and confidently pursue tomorrow by providing protection
+    for the unexpected and delivering it with care. A Fortune 100 company with more than 40,000 employees
+    in 28 countries and economies, we are the ninth largest global property and casualty insurer and generate
+    more than $50 billion in annual consolidated revenue. We operate through three strategic business
+    units: US Retail Markets, providing auto, home, renters and other personal and small commercial lines
+    property and casualty insurance to individuals and small businesses countrywide; Global Risk Solutions,
+    delivering a full range of comprehensive commercial and specialty insurance, reinsurance and surety
+    solutions to mid-size and large businesses worldwide; and Liberty Mutual Investments, deploying more
+    than $100 billion of long-term capital globally across its integrated platform to drive economic growth,
+    power innovation and secure Liberty Mutual’s promises. For more information, visit www.libertymutualinsurance.com.'
+  website: https://www.libertymutualgroup.com/
+  followers: 561647
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQFQ4BDi2WFLoA/company-logo_200_200/company-logo_200_200/0/1630623768743/liberty_mutual_insurance_logo?e=2147483647&v=beta&t=CrO00cTvrcQMR_JrneSa3zV8vgw2FVcn_uuf2R0IjQk
+  owner: org:liberty-mutual-insurance
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/matthew-chieco
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/liberty-mutual-insurance
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

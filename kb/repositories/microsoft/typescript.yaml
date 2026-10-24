@@ -1,0 +1,48 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:microsoft/typescript
+  full_name: microsoft/TypeScript
+  url: https://github.com/microsoft/TypeScript
+  description: TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+  homepage: https://www.typescriptlang.org
+  stars: 111590
+  forks: 16577
+  watchers: 2209
+  open_issues: 4924
+  stats_observed_at: '2026-10-24T19:10:31Z'
+  primary_language: Go
+  topics:
+  - typescript
+  - javascript
+  - language
+  - typechecker
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2014-06-17T15:28:39Z'
+  pushed_at: '2026-10-24T16:37:24Z'
+  owner_login: microsoft
+  owner: gh:microsoft
+  pinned_by:
+  - gh:microsoft
+  software: software:typescript
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: microsoft
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: microsoft/TypeScript
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: microsoft/TypeScript
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

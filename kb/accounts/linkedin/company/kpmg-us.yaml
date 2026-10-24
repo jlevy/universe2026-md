@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/kpmg-us
+  platform: linkedin
+  handle: company/kpmg-us
+  url: https://www.linkedin.com/company/kpmg-us
+  display_name: KPMG US
+  bio: KPMG is one of the world’s leading professional services firms and the fastest growing Big Four
+    accounting firm in the United States. With 90+ offices and more than 36,000 employees and partners
+    throughout the US, we’re leading the industry in new and exciting ways. Our size and strength make
+    us much more agile and responsive to changing trends.
+  website: https://www.kpmg.com/US
+  followers: 2365708
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFujenQWGHyUw/company-logo_200_200/B4EZx3zZGkIsAM-/0/1771536487156/kpmg_us_logo?e=2147483647&v=beta&t=SV2KfI4oi-E6mFTAFE5A67Ji0oaeAg7Ty3KeXJ0Kw5s
+  owner: org:kpmg-us
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/christina-liberto
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/cqueern
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jackie-mak
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/kpmg-us
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

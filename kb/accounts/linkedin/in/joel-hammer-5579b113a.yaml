@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/joel-hammer-5579b113a
+  platform: linkedin
+  handle: in/joel-hammer-5579b113a
+  url: https://www.linkedin.com/in/joel-hammer-5579b113a
+  display_name: Joel Hammer
+  location: Pittsburgh
+  followers: 118
+  connections: 115
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQFjtsE5VtbJNw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1686065093664?e=2147483647&v=beta&t=alAh5Rng1OrGhz6nZbIbruQIv3sUY0ei14L8A-a5KnU
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:joel-hammer
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685544961936001fNSA
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/joel-hammer-5579b113a
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

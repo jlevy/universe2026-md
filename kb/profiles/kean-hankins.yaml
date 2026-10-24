@@ -1,0 +1,211 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kean-hankins
+  person: person:kean-hankins
+  brief_bio:
+    text: Kean Hankins was a DevSecOps Strategist in application security at GitHub, focused on software
+      supply chain security and on AI's impact on DevSecOps, when speaking at GitHub Universe 2023 about
+      the transparency and accuracy of vulnerability information.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 9f63269a604ca4b0253f915e2123c6f0abf4e7bf44e29b1239e36957a2765f3b
+    stale: false
+  expertise:
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+  credentials:
+  - kind: certification
+    title: 'Generative AI: The Evolution of Thoughtful Online Search'
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/01b7fbd856d0718e5b363ccb2216941f36137268377bf13ce4137cb09628f195
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  - kind: certification
+    title: 'Generative AI: The Evolution of Thoughtful Online Search'
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/19920645258a1a0255f6ea6bbb8589076ba2dbed25370bd7e3df86cefb6e7dbb
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  - kind: certification
+    title: Introduction to Artificial Intelligence
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/576648feb4be452583187d4a0fe50f58760ade3b477de84647171ca5e3ce93c8
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  - kind: certification
+    title: Introduction to Artificial Intelligence
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/ed156036a5b1aae8ccd02fbb7ae35fbaf1a99652f0fa330c6c635057642e9f74
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  - kind: certification
+    title: Microsoft 365 Copilot First Look
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/3ed7acf8751e1cb1d815bf8a8f30f097d90d78b94f7c5e074a2d2752d71d5908
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  - kind: certification
+    title: Microsoft 365 Copilot First Look
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/3cc5eb8653fdb11b94c9f07dc66210ba2b1923e013a045bbc58a402b5b5c05a7
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  - kind: certification
+    title: Streamlining Your Work with Microsoft Bing Chat
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/090c76c95572ae40a3ebfb96e976e79b11874035344c31992c2fefa0e67bbc46
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  - kind: certification
+    title: Streamlining Your Work with Microsoft Bing Chat
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/e09248a8d645ccf881a9acaed24d6fda64e0255123c5cd65f96adaeaf0d203b0
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  - kind: certification
+    title: What Is Generative AI?
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/b1b34a426b0e4d1f7a3dd1f5edd1b51a1d51bd9f0834e60a8f0168c633b9c952
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  - kind: certification
+    title: What Is Generative AI?
+    issuer: LinkedIn
+    date: Oct 2023
+    url: https://www.linkedin.com/learning/certificates/d521dbc171b6515ecb6c83e60aea8d3c0287f48be9bf47ef2a3b008e2d2d1db9
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  spoken_languages:
+  - German
+  activities:
+  - kind: volunteering
+    title: Assistant Scout Master, Eagles Scout Mentor, EBOR
+    detail: Boy Scouts of America · Education · Sep 2009 · - Present · 17 years 2 months · Sep 2009
+    evidence:
+      url: https://www.linkedin.com/in/keanhankins
+      observed_at: '2026-10-24T08:45:22Z'
+  recent_writing:
+  - title: Study shows employers shifting more medical costs to workers (AP, Tom Murphy)
+    url: https://www.linkedin.com/pulse/study-shows-employers-shifting-more-medical-costs-workers-hankins
+    published: '2015-09-22T00:00:00.000Z'
+    channel: linkedin
+    summary: I talk to employers all the time who claim they are holding costs flat for medical but when
+      pressed they concede that…
+  - title: With the ACA seemingly at a point of no repeal, benefits managers must now place their focus
+      on finding the right technology to manage the process.
+    url: https://www.linkedin.com/pulse/aca-seemingly-point-repeal-benefits-managers-must-now-kean-hankins
+    published: '2015-09-18T00:00:00.000Z'
+    channel: linkedin
+    summary: A good article from Talent Management on the challenges Compensation and Benefits managers
+      face and the cost of…
+  - title: It's a top 3 business expense that rises 5-7% per year.
+    url: https://www.linkedin.com/pulse/its-top-3-business-expense-rises-5-7-per-year-kean-hankins
+    published: '2015-05-14T00:00:00.000Z'
+    channel: linkedin
+    summary: The cost of the status quo is staggering. It's time to take control of enterprise healthcare.
+  talks:
+  - session:2023/sec2830l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695667031770001XatY
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

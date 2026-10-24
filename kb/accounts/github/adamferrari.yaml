@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:adamferrari
+  login: AdamFerrari
+  kind: user
+  url: https://github.com/AdamFerrari
+  followers: 2
+  public_repositories: 12
+  created_at: '2013-10-11T17:46:14Z'
+  contributions_last_year:
+    total: 3
+    commits: 0
+    pull_requests: 0
+    issues: 0
+    reviews: 0
+  starred_repositories: 4
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  entity: person:adam-ferrari
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: AdamFerrari
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

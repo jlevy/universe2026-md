@@ -1,0 +1,205 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alex-gorischek
+  person: person:alex-gorischek
+  brief_bio:
+    text: Alex Gorischek is a senior research engineer at GitHub working on dev tools incubation at GitHub
+      Next. Gorischek speaks at GitHub Universe 2026 in the Inside the Lab with GitHub Next session.
+    cites:
+    - listed_role
+    - current_affiliations
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 0092d962a1332f9c54e3237f9c387e5c98a6f4182c892bb87b1f1b73d5634ab6
+    stale: false
+  headline: Senior Research Engineer at GitHub
+  location: Seattle, WA
+  current_roles:
+  - Senior Research Engineer at GitHub
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:agorischek/verify-repo
+    - ref: repo:agorischek/e-n-v
+    - ref: repo:agorischek/check-1-2
+    - ref: repo:agorischek/badge-roll
+    - ref: repo:agorischek/semantic-expect
+    - ref: repo:agorischek/fill-in-the-blank
+  interests:
+  - label: cli
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dollarlint/dollarlint
+      ref: repo:dollarlint/dollarlint
+    - url: https://github.com/quitepicky/considered
+      ref: repo:quitepicky/considered
+  - label: go
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dollarlint/dollarlint
+      ref: repo:dollarlint/dollarlint
+    - url: https://github.com/quitepicky/considered
+      ref: repo:quitepicky/considered
+  - label: json-schema
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dollarlint/dollarlint
+      ref: repo:dollarlint/dollarlint
+  - label: jsonc
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dollarlint/dollarlint
+      ref: repo:dollarlint/dollarlint
+  - label: LLMs
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/agorischek/fill-in-the-blank
+      ref: repo:agorischek/fill-in-the-blank
+  - label: prompting
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/agorischek/fill-in-the-blank
+      ref: repo:agorischek/fill-in-the-blank
+  - label: repository-policy
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/quitepicky/considered
+      ref: repo:quitepicky/considered
+  - label: static-analysis
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/quitepicky/considered
+      ref: repo:quitepicky/considered
+  - label: toml
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dollarlint/dollarlint
+      ref: repo:dollarlint/dollarlint
+  - label: validation
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dollarlint/dollarlint
+      ref: repo:dollarlint/dollarlint
+  - label: yaml
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dollarlint/dollarlint
+      ref: repo:dollarlint/dollarlint
+  open_source:
+  - repository: repo:agorischek/semantic-expect
+    relation: owner
+    stars: 5
+    primary_language: TypeScript
+  - repository: repo:agorischek/fill-in-the-blank
+    relation: owner
+    stars: 4
+    primary_language: TypeScript
+  - repository: repo:agorischek/verify-repo
+    relation: owner
+    stars: 1
+    primary_language: TypeScript
+  - repository: repo:agorischek/badge-roll
+    relation: owner
+    stars: 1
+    primary_language: TypeScript
+  - repository: repo:agorischek/e-n-v
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:agorischek/check-1-2
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:microsoft/winget-pkgs
+    relation: contributor
+    stars: 11235
+  - repository: repo:dollarlint/dollarlint
+    relation: contributor
+    stars: 0
+    primary_language: Go
+  - repository: repo:dollarlint/homebrew-tap
+    relation: contributor
+    stars: 0
+    primary_language: Ruby
+  - repository: repo:quitepicky/considered
+    relation: contributor
+    stars: 0
+    primary_language: Go
+  - repository: repo:quitepicky/site
+    relation: contributor
+    stars: 0
+    primary_language: CSS
+  education:
+  - school: Rice University
+    evidence:
+      url: https://www.linkedin.com/in/alexgorischek
+      observed_at: '2026-10-24T08:11:38Z'
+  talks:
+  - session:2154b
+  gaps:
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1787354992642001uhKf
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: agorischek
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,25 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:arruda.io
+  url: https://arruda.io
+  kind: personal
+  owner: person:julio-arruda
+  link_basis:
+  - mastodon_verified
+  fetch_status: error
+  http_status: 403
+  sources:
+  - system: mastodon
+    url: https://bolha.us/@julioarruda
+    record_id: julioarruda@bolha.us
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json
+  - system: website
+    url: https://arruda.io
+    record_id: https://arruda.io
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

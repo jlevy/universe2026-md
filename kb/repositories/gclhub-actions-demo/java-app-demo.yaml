@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:gclhub-actions-demo/java-app-demo
+  full_name: gclhub-actions-demo/java-app-demo
+  url: https://github.com/gclhub-actions-demo/java-app-demo
+  stars: 0
+  forks: 0
+  watchers: 0
+  open_issues: 62
+  stats_observed_at: '2026-10-24T19:10:13Z'
+  primary_language: Java
+  archived: false
+  fork: false
+  created_at: '2025-12-06T02:09:40Z'
+  pushed_at: '2025-12-17T22:07:07Z'
+  owner_login: gclhub-actions-demo
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: gclhub
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: gclhub-actions-demo/java-app-demo
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

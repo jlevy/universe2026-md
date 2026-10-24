@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/cooper-nederhood-b2a70072
+  platform: linkedin
+  handle: in/cooper-nederhood-b2a70072
+  url: https://www.linkedin.com/in/cooper-nederhood-b2a70072
+  display_name: Cooper Nederhood
+  location: New York
+  followers: 596
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQGq6c36O2U_ow/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1559577582635?e=2147483647&v=beta&t=oMxnJpxVtb77UCpYKB4Gfbvy5kun_DFAGivAYA85x3I
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:cooper-nederhood
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699462878211001nWCv
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699462878211001nWCv
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/cooper-nederhood-b2a70072
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

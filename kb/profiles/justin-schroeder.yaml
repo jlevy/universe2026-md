@@ -1,0 +1,296 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:justin-schroeder
+  person: person:justin-schroeder
+  brief_bio:
+    text: The GitHub Universe 2023 listing describes Justin Schroeder as Founder at FormKit.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: c17459a32185aa240515520ff3241ecb3a1c0e07d82011f482d0e861c215eeb5
+    stale: false
+  headline: Standard Agents
+  current_roles:
+  - Standard Agents
+  expertise:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2349l
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2349l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2349l
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2349l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2349l
+  - label: Social Impact
+    target: term:topic-2023/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2349l
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2349l
+  interests:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  - label: Discussions
+    target: term:github-product-2023/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  - label: Issues
+    target: term:github-product-2023/issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  - label: Projects
+    target: term:github-product-2023/projects
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  - label: Social Impact
+    target: term:topic-2023/social-impact
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  - label: Sponsors
+    target: term:github-product-2023/sponsors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686603379111001a5d3
+      ref: session:2023/dev2349l
+  education:
+  - school: LeTourneau University
+    evidence:
+      url: https://www.linkedin.com/in/jpschroeder
+      observed_at: '2026-10-24T08:44:46Z'
+  credentials:
+  - kind: certification
+    title: Commercial Multi Engine & Instrument Pilot
+    issuer: Federal Aviation Administration
+    evidence:
+      url: https://www.linkedin.com/in/jpschroeder
+      observed_at: '2026-10-24T08:44:46Z'
+  spoken_languages:
+  - English
+  - Italian
+  activities:
+  - kind: project
+    title: WebEdition
+    detail: Lead developer for WebEdition, an online publishing platform. The best way to craft and deliver
+      digital issues of your magazine. · 2016
+    evidence:
+      url: https://www.linkedin.com/in/jpschroeder
+      observed_at: '2026-10-24T08:44:46Z'
+  - kind: project
+    title: University of Virginia – School of Arts & Sciences
+    detail: The College and Graduate School of Arts & Sciences is the largest of the University’s schools
+      and serves as the intellectual core of Thomas Jefferson’s original vision for the Academical Village.
+      The College represents the model for a 21st-century liberal arts education that values cross-disciplinary
+      scholarship and equips its students with a nimbleness of mind, a depth of historic understanding
+      and an ability to philosophically investigate issues in a variety of fields. · 2015
+    evidence:
+      url: https://www.linkedin.com/in/jpschroeder
+      observed_at: '2026-10-24T08:44:46Z'
+  recent_writing:
+  - title: You don't care enough about the harness.
+    url: https://www.linkedin.com/pulse/you-dont-care-enough-harness-justin-schroeder-p1vee
+    published: '2026-08-10T00:00:00.000Z'
+    channel: linkedin
+    summary: Models are the key enabling technology of the AI revolution, but the agents they power are
+      deeply misunderstood. Every…
+  - title: The future of AI engineering is TypeScript, not Python.
+    url: https://twitter.com/12008842/status/1984307191805780162
+    published: '2025-10-31T17:11:15Z'
+    channel: x
+  - title: |-
+      What framework is...
+
+      - Mature as React
+      - Faster than Solid
+      - Easier than Svelte
+      - Less captured than all of them?
+
+      It's Vue folks. It always has been.
+    url: https://twitter.com/12008842/status/1978434430441058605
+    published: '2025-10-15T12:15:00Z'
+    channel: x
+  - title: |-
+      I am so happy to see python slowly falling out of favor in the AI Engineering world.
+
+      JS/TS is inevitable.
+    url: https://twitter.com/12008842/status/1968774162232512979
+    published: '2025-09-18T20:28:32Z'
+    channel: x
+  - title: |-
+      AI has done something no human ever could.
+
+      It got developers to pay for software.
+    url: https://twitter.com/12008842/status/1961110219640934876
+    published: '2025-08-28T16:54:46Z'
+    channel: x
+  - title: |-
+      📣 Announcing: jsonreader
+
+      A JSON parser for streaming data. Use JSON data immediately as it arrives — not when the stream is complete.
+
+      🪄 This is magic for processing AI tool calls.
+
+      https://t.co/Z2iXI67vvr
+    url: https://twitter.com/12008842/status/1900597645686481012
+    published: '2025-03-14T17:19:24Z'
+    channel: x
+  - title: |-
+      Many folks asking why I’m leaving Arc. Here’s my reasons:
+
+      1. Data breach
+      2. Company is turning their attention away to some AI based browser thing (https://t.co/ATwjvJTzuc).
+      3. I’ve realized I just dont like their tab interface. Normal "boring" tabs are just better imo.
+      4. Bugs
+    url: https://twitter.com/12008842/status/1854540756884529290
+    published: '2024-11-07T15:05:46Z'
+    channel: x
+  - title: I hear this argument a lot — but if the dev’s you hire are only capable of writing React (or
+      Vue/Svelte for that matter) then you have talent evaluation problems not framework problems.
+    url: https://twitter.com/12008842/status/1806354053279965298
+    published: '2024-06-27T15:49:01Z'
+    channel: x
+  - title: |-
+      Proposal: Browsers should start shipping built in Tailwind support — enabled via meta tag.
+
+      I’m not a big Tailwind fan, even though I have adopted it. I preferred the cascade — but thats OK. I have adopted lots of tools and practices over the years that weren’t my personal
+    url: https://twitter.com/12008842/status/1803878383069327524
+    published: '2024-06-20T19:51:35Z'
+    channel: x
+  - title: |-
+      Apparently my tweet made Vue Reddit melt 👀.
+
+      So here’s my reasoning for why I think dropping the Options API from Vue core would be beneficial:
+
+      3 main reasons:
+
+      1. Multiple ways of doing the same thing fractures community projects and makes it increasingly hard for the https://t
+    url: https://twitter.com/12008842/status/1798009086853697839
+    published: '2024-06-04T15:09:06Z'
+    channel: x
+  - title: |-
+      Need drag and drop in React, Vue or TS/JS apps?
+
+      Try our recently released, easier, smaller, data-first drag-and-drop library: https://t.co/oOBlPZuoFL
+    url: https://twitter.com/12008842/status/1794000298085945586
+    published: '2024-05-24T13:39:36Z'
+    channel: x
+  talks:
+  - session:2023/dev2349l
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686600495977001H5JG
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

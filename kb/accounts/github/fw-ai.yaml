@@ -1,0 +1,27 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:fw-ai
+  login: fw-ai
+  kind: organization
+  url: https://github.com/fw-ai
+  name: Fireworks.ai
+  location: United States of America
+  website: fireworks.ai
+  public_repositories: 13
+  created_at: '2022-09-28T05:21:22Z'
+  profile_readme: '# [Fireworks.ai](https://fireworks.ai)'
+  top_repositories:
+  - repo:fw-ai/cookbook
+  - repo:fw-ai/benchmark
+  - repo:fw-ai/nexus-cli
+  entity: org:fireworks-ai
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: fw-ai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

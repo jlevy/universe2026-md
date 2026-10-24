@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/daniel-redman
+  platform: linkedin
+  handle: in/daniel-redman
+  url: https://www.linkedin.com/in/daniel-redman
+  display_name: Daniel Redman
+  bio: The GitHub DevOps FastTrack is working with Microsoft's/GitHub's top customers to help…
+  location: Pittsburgh
+  followers: 282
+  connections: 259
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQH-f_HXiI3icg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1589576944956?e=2147483647&v=beta&t=4WRjTfSxz7DjdI3QTDovG6y8UduopqerLZ9Uc4gt8ww
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQFBMtnS_EGFMw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1589576861829?e=2147483647&v=beta&t=lM4bys7xbuziLcGI-kRN6KVcc5g4_L-H3e3GxvYGICI
+  owner: person:daniel-redman
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1754650663964001Z1p1
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/daniel-redman
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

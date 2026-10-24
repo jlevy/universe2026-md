@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/andrewboyagi
+  platform: linkedin
+  handle: in/andrewboyagi
+  url: https://www.linkedin.com/in/andrewboyagi
+  display_name: Andrew Boyagi
+  headline: Customer CTO @ Atlassian
+  bio: Customer CTO at Atlassian, partnering with CIOs and business leaders to improve how work flows
+    across organisations to drive large-scale transformation. My journey started with engineering and
+    technology teams, helping them modernise delivery, strengthen culture, and enhance developer experience.
+    Over time, that work has expanded into shaping how entire organisations collaborate and execute, connecting
+    technology, leadership, and culture to drive better outcomes. With more than two decades of experience
+    leading technology and transformation teams, including at the Commonwealth Bank of Australia, I’ve
+    learned that lasting performance is built on strong leadership, empowered teams, and a shared sense
+    of purpose, all amplified by world-class technology. My MBA strengthened that perspective, giving
+    me a deeper understanding of how technology leadership drives business performance and organisational
+    outcomes. Today, I advise global organisations on improving the critical flows required to enable
+    high-performing organisations in the AI era. Outside of work, I’m a husband and father of two awesome
+    little humans. I like to dismantle and reassemble Harley-Davidson motorbikes — and even ride them
+    from time to time.
+  location: Greater Sydney Area
+  followers: 13200
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQF54G1tC7kCtg/profile-displayphoto-shrink_200_200/B4EZcpsCUSHcAc-/0/1748751100993?e=2147483647&v=beta&t=jbaqyyaYrlm-ZjsKVMbMJZGLh2FyFaEUlzqixxiY47c
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHftrjjBUlWvg/profile-displaybackgroundimage-shrink_200_800/B4EZ9L8NGUHAAQ-/0/1783685502440?e=2147483647&v=beta&t=PYkEn10B_TUrTpf_isn7k_pbAFbAP6bDvWR1uxfnpNI
+  owner: person:andrew-boyagi
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727892456628001LzUV
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/andrewboyagi
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

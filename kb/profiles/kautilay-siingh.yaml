@@ -1,0 +1,280 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kautilay-siingh
+  person: person:kautilay-siingh
+  brief_bio:
+    text: Kautilay Siingh is a Security Architect at Visa focused on payment security, working with engineering
+      teams to build secure-by-design systems. Siingh speaks at GitHub Universe 2026 about Visa's Zero-Secrets
+      Initiative against hardcoded secrets.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 821e4543135e3bd9d27cf5565e66ca21f54c4fd2d8e634bfcc836f7f24d7ae72
+    stale: false
+  headline: Security Architect at Visa
+  current_roles:
+  - Security Architect at Visa
+  expertise:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  technologies:
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1100b
+  interests:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776118973412001agMC
+      ref: session:tru1100b
+  education:
+  - school: The University of Texas at Dallas
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  credentials:
+  - kind: certification
+    title: Developing Secure Software
+    issuer: LinkedIn
+    date: Jan 2020
+    url: https://www.linkedin.com/learning/certificates/77f20402fe89816c64e5e7b31c4672e8710c2cfef96a8393716e826be9337208
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: certification
+    title: Graduate Certificate in Information Assurance
+    issuer: The University of Texas at Dallas
+    date: May 2018
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: certification
+    title: Introduction to Databases and SQL Querying
+    issuer: Udemy
+    url: https://www.udemy.com/certificate/UC-0MAB6LWR/
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  publications:
+  - title: Implementation of Conceptual Smart Bicycle through Internet of Things
+    venue: International Journal of Modern Trends in Engineering and Research
+    date: March 31, 2016
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  activities:
+  - kind: project
+    title: Miniature Google File System
+    detail: Designed and developed a distributed File System and a set of clients Accessing files (Files
+      are made into logical chunks and distributed among different servers with replicas of each file
+      chunk on random server).Created a Master Server that would maintain the metadata of each server,
+      coordinate with the client requests using multithreading and would periodically check server status
+      using heartbeats.Implemented safe writes on each replicated copy by using two phase commit protocol.Established
+      recovery mechanisms in case of server failures. · Mar 2018
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: project
+    title: Security Analysis of IoT Device (spy device and wearables)
+    detail: •Analyzed the captured data packets which revealed clear text passwords, open ports that permits
+      malicious user to take control of device, block the device owner and snoop on the live feed of the
+      device.•Discovered the security failure in the internal web server allowing unauthorized access
+      and an open terminal which lets extracting the password of the device. · Mar 2017
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: project
+    title: Simple InterPlanetary File System (IPFS)
+    detail: •Designed and developed an application for content-addressable peer-to-peer hypermedia sharing
+      (i.e. allowing users to share data from their local storage onto the p2pweb, an interconnection
+      of distributed systems). •Used an existing protocol, HTTP, to serve shared content to the clients
+      when requested. · Oct 2017
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: project
+    title: Blockchain
+    detail: Implemented using Ethereum , JavaScript, Bootstrap, Java Servlets, Ethereum-wallet.•Developed
+      a website used to authorize and redirect the user based upon the security clearance.•Added the encryption
+      and decryption of the link to the buggy code (stored on Dropbox).•Developed and deployed contracts
+      for voting by taking into consideration the minimum quorum, majority margin and voting period limit.•Used
+      the Biba integrity model to decide on the security clearance of the users to avoid unauthorized
+      data modification. · Jan 2017
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: project
+    title: Secure Internet Instant Messaging Application
+    detail: •Designed and developed an application allowing secure transfer of messages between two clients
+      using AES-256, shared session key and TCP/IP.•Developed the server to act as key distribution center
+      and allow multiple connections (using multi-threading concept).•Securely distributed the session
+      keys to the respective users by encrypting the keys with the hashed password of the user.•Achieved
+      integrity (using Checksums), confidentiality and authenticity (verify user credentials in DB) of
+      the messages. · Oct 2016
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: project
+    title: Smart Bicyle
+    detail: Implemented using C, Java, Android Studio, Eclipse and Arduino IDEAndroid:•Built an Android
+      application to provide navigation along with controlling of the hardware used. •Succeeded in notifying
+      the user about every turn using a 16x2 LCD screen mounted on the bicycle and the built app.•Incorporated
+      the feature of locating and tracking the bicycle on every ping to the hardware installed on the
+      bicycle.Hardware Implementation (Programmed in C):•Programmed the hardware (SIM908, Arduino) to
+      reply via SMS with the bicycle location to every authenticated ping.•Took a step forward in reducing
+      bicycle accidents by providing automatic lighting for the bicycle, based upon the light intensity
+      on the photoresistor. · Oct 2015
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: project
+    title: SIC Assembler
+    detail: Implemented using C, MySQL for a simple instruction computer. · Nov 2014
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: project
+    title: Desktop Application for Harbor Management
+    detail: Implemented using Visual Basic, MySQL and Microsoft Visual Studio.1. An application that allows
+      the enterprise to keep track of various harbor details like ships, the employees, the cargo being
+      transported etc...2. Provides hierarchical access control · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: course
+    title: Advanced Computer Networks
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: course
+    title: Advanced Operating Systems
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: course
+    title: Analysis and Design of Algorithms
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: course
+    title: Data Structures
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: course
+    title: Data and Application Security
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: course
+    title: Database Design
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: course
+    title: Information Security
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: course
+    title: Network Security
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  - kind: course
+    title: Software Project Planning and Management
+    evidence:
+      url: https://www.linkedin.com/in/kautilaysiingh
+      observed_at: '2026-10-24T08:11:45Z'
+  talks:
+  - session:tru1100b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1776119328122001oS8S
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

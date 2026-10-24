@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:steiza/gh-dependabot
+  full_name: steiza/gh-dependabot
+  url: https://github.com/steiza/gh-dependabot
+  description: gh CLI extension for interacting with Dependabot
+  stars: 12
+  forks: 0
+  watchers: 1
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:12:25Z'
+  primary_language: Go
+  topics:
+  - gh-extension
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2023-01-28T15:05:30Z'
+  pushed_at: '2025-08-25T19:29:25Z'
+  owner_login: steiza
+  owner: gh:steiza
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: steiza
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: steiza/gh-dependabot
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

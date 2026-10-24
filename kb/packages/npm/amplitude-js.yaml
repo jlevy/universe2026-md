@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/amplitude-js
+  ecosystem: npm
+  name: amplitude-js
+  url: https://www.npmjs.com/package/amplitude-js
+  description: Javascript library for Amplitude Analytics
+  latest_version: 8.21.10
+  license: MIT
+  repository_url: git+https://github.com/amplitude/amplitude-javascript.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: amplitude/Amplitude-JavaScript
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

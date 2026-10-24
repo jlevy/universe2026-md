@@ -1,0 +1,94 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jz-zhang
+  person: person:jz-zhang
+  brief_bio:
+    text: The GitHub Universe 2023 listing describes JZ Zhang as Chief Operating Officer at Charmbracelet,
+      Inc..
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 870a1c42f922a6933c4666356899a3323c2d47672bd033d9f89b9fc3bfd007bc
+    stale: true
+  headline: Butter
+  current_roles:
+  - Butter
+  expertise:
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2761l
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2761l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2761l
+  interests:
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693944202524001VMdB
+      ref: session:2023/dev2761l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693944202524001VMdB
+      ref: session:2023/dev2761l
+  - label: Projects
+    target: term:github-product-2023/projects
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693944202524001VMdB
+      ref: session:2023/dev2761l
+  recent_writing:
+  - title: What a time to build.
+    url: https://jzmusings.com/2022/02/02/joiningcharm/
+    published: '2022-02-02T17:55:00Z'
+    channel: blog
+  - title: Leading 3 VC deals in 3 months. Sharing 3 insights.
+    url: https://jzmusings.com/2021/08/10/leadingvcdeals/
+    published: '2021-08-10T16:31:00Z'
+    channel: blog
+  - title: Hi, I’m JZ.
+    url: https://jzmusings.com/2021/08/02/moreaboutjz/
+    published: '2021-08-02T16:38:00Z'
+    channel: blog
+  talks:
+  - session:2023/dev2761l
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692480466006001rOIW
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

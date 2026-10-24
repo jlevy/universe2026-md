@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/cassidoo
+  platform: linkedin
+  handle: in/cassidoo
+  url: https://www.linkedin.com/in/cassidoo
+  display_name: Cassidy Williams
+  bio: Hi there! I'm Cassidy Williams, and I am a software engineer, dev advocate, startup…
+  location: Chicago
+  followers: 23332
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQFeiupWZPHt6g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1639670130934?e=2147483647&v=beta&t=ZAtEdG3ykVaaJ0g-Wuv9frF5JorewXnvFLZuAv36LoM
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHOy-b0Do3foA/profile-displaybackgroundimage-shrink_200_800/B56aEXa.AmIIAQ-/0/1791394308564?e=2147483647&v=beta&t=VN8LezQZpjn8Vkt0m5Uv1cShGEBhw5UmOpPP5JnS0J8
+  owner: person:cassidy-williams
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725036381202001ffsN
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cassidoo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/cassidoo
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

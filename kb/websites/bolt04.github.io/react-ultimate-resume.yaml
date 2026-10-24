@@ -1,0 +1,27 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:bolt04.github.io/react-ultimate-resume
+  url: https://bolt04.github.io/react-ultimate-resume/
+  kind: personal
+  title: Developer Profile - Development
+  description: Web site created using create-react-app
+  owner: person:david-pereira
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: BOLT04
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://bolt04.github.io/react-ultimate-resume/
+    record_id: https://bolt04.github.io/react-ultimate-resume/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

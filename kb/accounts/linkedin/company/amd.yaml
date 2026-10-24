@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/amd
+  platform: linkedin
+  handle: company/amd
+  url: https://www.linkedin.com/company/amd
+  display_name: AMD
+  bio: We care deeply about transforming lives with AMD technology to enrich our industry, our communities,
+    and the world. Our mission is to build great products that accelerate next-generation computing experiences
+    – the building blocks for the data center, artificial intelligence, PCs, gaming and embedded. Underpinning
+    our mission is the AMD culture. We push the limits of innovation to solve the world’s most important
+    challenges. We strive for execution excellence while being direct, humble, collaborative, and inclusive
+    of diverse perspectives. AMD together we advance_
+  website: https://www.amd.com/
+  followers: 2662437
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQFCdxxVA_xhqQ/company-logo_200_200/B56ZnuIjafHUAM-/0/1760636844195/amd_logo?e=2147483647&v=beta&t=oM29UWcjmkCmT-aq0bZ_DEd-eqpPMQ-WR_FxQr-qHuM
+  owner: org:amd
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/alexander-androncik-4bab33349
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/amd
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

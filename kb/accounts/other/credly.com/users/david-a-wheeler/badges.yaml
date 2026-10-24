@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:other/credly.com/users/david-a-wheeler/badges
+  platform: other
+  handle: credly.com/users/david-a-wheeler/badges
+  url: https://www.credly.com/users/david-a-wheeler/badges
+  owner: person:david-a-wheeler
+  link_basis:
+  - github_profile
+  details_fetched: false
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: david-a-wheeler
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

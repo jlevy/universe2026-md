@@ -1,0 +1,93 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:chris-tankersley
+  person: person:chris-tankersley
+  brief_bio:
+    text: Chris Tankersley is a Staff Developer Relations Engineer at Vonage and leads its Server SDK
+      Initiative. Tankersley spoke at GitHub Universe 2024 about combining GitHub with Vonage Communication
+      APIs.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 1446230eba93ea414e737175213fa57beacf885fa2bee2f926632e031e90d067
+    stale: false
+  headline: Vonage
+  current_roles:
+  - Vonage
+  expertise:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1997d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1997d
+  interests:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725440463850001QXJV
+      ref: session:2024/ai1997d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725440463850001QXJV
+      ref: session:2024/ai1997d
+  - label: Sponsors
+    target: term:github-product-2024/sponsors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725440463850001QXJV
+      ref: session:2024/ai1997d
+  education:
+  - school: Northwest State Community College
+    evidence:
+      url: https://www.linkedin.com/in/christankersley
+      observed_at: '2026-10-24T08:41:55Z'
+  credentials:
+  - kind: certification
+    title: Zend Certified Engineer for PHP 5.3
+    issuer: Zend Technologies
+    date: Nov 2010
+    evidence:
+      url: https://www.linkedin.com/in/christankersley
+      observed_at: '2026-10-24T08:41:55Z'
+  talks:
+  - session:2024/ai1997d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727981690669001kmD8
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

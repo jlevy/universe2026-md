@@ -1,0 +1,164 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:laura-kassovic
+  person: person:laura-kassovic
+  brief_bio:
+    text: The GitHub Universe 2025 listing describes Laura Kassovic as Technical Documentation Lead at
+      Gradle.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 2b5fc49aef00c9a23702c5a4c1ebf446e274d77a2d7b05fd80dadab30825c625
+    stale: false
+  headline: Develocity
+  current_roles:
+  - Develocity
+  expertise:
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1384d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1384d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1384d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1384d
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Dependabot
+      ref: session:2025/sec1384d
+  interests:
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: GitHub Codespaces
+    target: term:github-product-2025/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  credentials:
+  - kind: honor
+    title: 'SBIR Phase I: Cloud Based Artificial Intelligence for Trend Analysis Using Sensor Data'
+    issuer: NSF
+    date: '2016-06-01T00:00:00.000Z'
+    description: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1622256
+    evidence:
+      url: https://www.linkedin.com/in/laurakassovic
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: honor
+    title: AMD Design Award
+    issuer: AMD
+    date: '2009-05-01T00:00:00.000Z'
+    description: https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=389.0&show=true&type=undergrad
+    evidence:
+      url: https://www.linkedin.com/in/laurakassovic
+      observed_at: '2026-10-24T08:44:23Z'
+  talks:
+  - session:2025/sec1384d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746206581862001Q6yH
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

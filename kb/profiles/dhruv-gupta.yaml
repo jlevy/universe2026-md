@@ -1,0 +1,224 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dhruv-gupta
+  person: person:dhruv-gupta
+  brief_bio:
+    text: Dhruv Gupta was a Senior Service Delivery Engineer at GitHub, helping large enterprises modernize
+      their software development lifecycle with GitHub Copilot and GitHub Actions. Gupta led a workshop
+      at GitHub Universe 2023 on how GitHub Copilot improves development practices.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 8ccab1d37145fbcaa78722f70586557b031ae2aaaae3465f0c042f54b759eac2
+    stale: false
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2746w
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:dhruv-gupta
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:dhruv-gupta
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490570001KD3b
+      ref: session:2023/ai2746w
+  credentials:
+  - kind: certification
+    title: 'Google Cloud Essential Cloud Infrastructure: Foundation'
+    issuer: Coursera Course Certificates
+    date: Oct 2017
+    url: https://www.coursera.org/account/accomplishments/certificate/SXQNAYBT5CGE
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  - kind: certification
+    title: Basic Chef Fluency Certification
+    issuer: Chef Software
+    date: Sep 2017
+    url: https://training.chef.io/award/certification/32eee302-f7e9-3e91-8bca-0c061b3eb06d
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  - kind: certification
+    title: 'Google Cloud Platform Fundamentals: Core Infrastructure'
+    issuer: Coursera Course Certificates
+    date: Jun 2017
+    url: https://www.coursera.org/account/accomplishments/verify/EP8JD5UPU8FM
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  - kind: certification
+    title: 'Exam 533: Implementing Microsoft Azure Infrastructure Solutions'
+    issuer: Microsoft
+    date: May 2017
+    url: https://www.youracclaim.com/badges/2a8a7681-3732-4498-a52f-9c31ef64507c
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  - kind: certification
+    title: 'Exam 534: Architecting Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: May 2017
+    url: https://www.youracclaim.com/badges/c84c1eec-5004-4d80-8a77-ee9897b77def
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  - kind: certification
+    title: 'MCSA: Cloud Platform - Certified 2017'
+    issuer: Microsoft
+    date: May 2017
+    url: https://www.youracclaim.com/badges/6fee8be6-b1d5-4c8a-b159-9995e28defa1
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  - kind: certification
+    title: AWS Certified SysOps Administrator - Associate
+    issuer: Amazon Web Services
+    date: Sep 2017
+    expires: Sep 2020
+    url: https://www.certmetrics.com/amazon/public/badge.aspx?i=3&t=c&d=2017-09-15&ci=AWS00273444
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  - kind: certification
+    title: CompTIA Security+ ce
+    issuer: CompTIA
+    date: Apr 2017
+    expires: Apr 2020
+    url: https://www.certmetrics.com/comptia/public/verification.aspx?code=YBQ8TD7VV8KPFTGJ
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  - kind: certification
+    title: AWS Certified Developer - Associate
+    issuer: Amazon Web Services
+    url: https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2016-10-03&ci=AWS00183165
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect - Associate
+    issuer: Amazon Web Services
+    url: https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2016-07-25&ci=AWS00183165
+    evidence:
+      url: https://www.linkedin.com/in/dhruvgupta1212
+      observed_at: '2026-10-24T08:42:44Z'
+  talks:
+  - session:2023/ai2746w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248120001wBw1
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

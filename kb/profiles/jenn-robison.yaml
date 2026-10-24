@@ -1,0 +1,172 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jenn-robison
+  person: person:jenn-robison
+  brief_bio:
+    text: Jenn Robison was a Principal Software Engineer at Imagine Pediatrics and an advocate of pair
+      programming, test-driven development and continuous integration. Robison spoke at GitHub Universe
+      2024 about mobile development from code to app store.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (main session)
+    written_at: '2026-10-24T09:21:06Z'
+    input_sha256: 9cb8de7fc19928bf2929d3ca913060477715a9ed022a507ae26c8621118e9614
+    stale: false
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1221d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1221d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1221d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1221d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1221d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2024/dev1221d
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715020671347001S6Bv
+      ref: session:2024/dev1221d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715020671347001S6Bv
+      ref: session:2024/dev1221d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715020671347001S6Bv
+      ref: session:2024/dev1221d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715020671347001S6Bv
+      ref: session:2024/dev1221d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715020671347001S6Bv
+      ref: session:2024/dev1221d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715020671347001S6Bv
+      ref: session:2024/dev1221d
+  activities:
+  - kind: volunteering
+    title: Leader
+    detail: Girls Who Code · Education · Oct 2019 · - Jun 2023 · 3 years 9 months · Working with the local
+      public library, meet weekly with 3-5th grade girls. Utilizing the Girls Who Code lesson plans and
+      content, teach students about computer programming and basic coding skills. In this role I delivered
+      content, mentored students, and helped them think creatively about how they can use the skills they
+      have learned to go beyond the lesson plans. For these students living in a more rural area without
+      big tech, this is of vital importance to showcase a career path that… Show more Working with the
+      local public library, meet weekly with 3-5th grade girls. Utilizing the Girls Who Code lesson plans
+      and content, teach students about computer programming and basic coding skills. In this role I delivered
+      content, mentored students, and helped them think creatively about how they can use the skills they
+      have learned to go beyond the lesson plans. For these students living in a more rural area without
+      big tech, this is of vital importance to showcase a career path that is open to them, while sharing
+      my own experiences in tech and what is possible. Show less · Oct 2019
+    evidence:
+      url: https://www.linkedin.com/in/jennifer-robison
+      observed_at: '2026-10-24T08:45:20Z'
+  - kind: project
+    title: Mobile Release Actions
+    detail: A project with GitHub Actions that support automation of tagging, versioning, and building
+      mobile applications with EAS.This project was started by a fellow developer while I was working
+      at EchoBind and became a part of our workflow. When attempting to use it over the past year or so,
+      I needed to make changes that allowed us to resolve iOS errors in the project file. I have an open
+      PR to merge this into the original repo, but it appears to be abandoned. · Jun 2024
+    evidence:
+      url: https://www.linkedin.com/in/jennifer-robison
+      observed_at: '2026-10-24T08:45:20Z'
+  - kind: project
+    title: MedPlum React Native Example
+    detail: When my team began working with MedPlum I discovered that their example only supported react
+      native web. With that I decided to fork their repo and work through the errors to get a working
+      example application.This was a jumping off point for their team to continue to further the example
+      they shared! · Mar 2023
+    evidence:
+      url: https://www.linkedin.com/in/jennifer-robison
+      observed_at: '2026-10-24T08:45:20Z'
+  talks:
+  - session:2024/dev1221d
+  gaps:
+  - github_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715014843402001hZ52
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

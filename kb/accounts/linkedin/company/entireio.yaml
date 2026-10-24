@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/entireio
+  platform: linkedin
+  handle: company/entireio
+  url: https://www.linkedin.com/company/entireio
+  display_name: Entire
+  bio: We are building the world's next developer platform where agents and humans can collaborate, learn,
+    and ship together. A platform that will be open, scalable, and independent for every developer, no
+    matter which agent or model you use.
+  website: https://entire.com/
+  followers: 13427
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQG3TYtfL6EQnA/company-logo_200_200/B56ZxEh405HoAI-/0/1770676260471/entireio_logo?e=2147483647&v=beta&t=LZDynXkLi2-iPWZ24ZNj_IYwERMRRGyY5wU7TmXpU7Y
+  owner: org:entire
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/rizel-bobb-semple
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/tobypadilla
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/entireio
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

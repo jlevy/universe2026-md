@@ -1,0 +1,88 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:marcelo-oliveira
+  person: person:marcelo-oliveira
+  brief_bio:
+    text: Marcelo Oliveira is VP of Product Management at GitHub, leading product management for GitHub's
+      code quality and security team. Oliveira spoke at GitHub Universe 2025 about scaling code quality
+      in the age of AI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 360522cb27a63badd531e0293107bfcd11aa9818083217c43d606b75b4993d68
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1619m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1619m
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756908422258001qRJf
+      ref: session:2025/sec1619m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756908422258001qRJf
+      ref: session:2025/sec1619m
+  education:
+  - school: University of California, Berkeley - Walter A. Haas School of Business
+    evidence:
+      url: https://www.linkedin.com/in/marcelogoliveira22
+      observed_at: '2026-10-24T08:47:43Z'
+  spoken_languages:
+  - Portuguese
+  - English
+  - Spanish
+  recent_writing:
+  - title: How secure is your business?
+    url: https://www.linkedin.com/pulse/how-secure-your-business-marcelo-oliveira
+    published: '2017-01-14T00:00:00.000Z'
+    channel: linkedin
+    summary: It seems like a simple question, but it can be challenging to answer. The good news is this
+      week Symantec has…
+  talks:
+  - session:2025/sec1619m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755028021819001S7pc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

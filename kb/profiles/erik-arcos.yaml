@@ -1,0 +1,422 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:erik-arcos
+  person: person:erik-arcos
+  brief_bio:
+    text: Erik Arcos is a Software Project Lead at Mercado Libre, responsible for SCM management and integrations
+      with the company's internal platform. Arcos spoke at GitHub Universe 2023 about Mercado Libre's
+      DevEx-based code management culture.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 83c2236b5e00787faae321fc503e219e789009a952cb7788b784ebe7266a6409
+    stale: false
+  headline: Mercado Libre
+  current_roles:
+  - Mercado Libre
+  expertise:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Containerized Applications
+    target: term:topic-2023/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Monitoring and Observability
+    target: term:topic-2023/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2569g
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: Containerized Applications
+    target: term:topic-2023/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2023/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686689671810001puWB
+      ref: session:2023/dev2569g
+  education:
+  - school: Universidad de Los Andes
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  credentials:
+  - kind: honor
+    title: 1st Place
+    issuer: Premio Especial al Mejor Desarrollo Móvil Celular Comcel
+    date: '2009-10-01T00:00:00.000Z'
+    description: '1st Place: “Premio Especial al Mejor Desarrollo Móvil Celular Comcel” Unique Category,
+      Colombia en Línea 2009.'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: honor
+    title: Winner of the “Francisco José de Caldas” medal
+    issuer: '-'
+    date: '2009-03-01T00:00:00.000Z'
+    description: Winner of the “Francisco José de Caldas” medal of University of Cauca, for outstanding
+      career performance.
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: honor
+    title: 1st Place
+    issuer: ': “4ta Maratón de Programación de Dispositivos Móviles e Inalámbricos Comcel-Nokia”. Sponsored
+      by "Centro de Investigación de las Telecomunicaciones CINTEL", COMCEL Mobile Operator and NOKIA'
+    date: '2008-10-01T00:00:00.000Z'
+    description: '1st Place: “4ta Maratón de Programación de Dispositivos Móviles e Inalámbricos Comcel-Nokia”.
+      Sponsored by "Centro de Investigación de las Telecomunicaciones CINTEL", COMCEL Mobile Operator
+      and NOKIA – 2008.'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: honor
+    title: 2nd Place
+    issuer: “Premio Especial al Mejor Desarrollo Móvil Celular Comcel” Unique Category
+    date: '2008-10-01T00:00:00.000Z'
+    description: '2nd Place: “Premio Especial al Mejor Desarrollo Móvil Celular Comcel” Unique Category,
+      Colombia en Línea 2008.'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: honor
+    title: Honored Student “Universitarios Destacados 2005”
+    issuer: '-'
+    date: '2007-01-01T00:00:00.000Z'
+    description: Honored Student “Universitarios Destacados 2005” on academics and research. University
+      of Cauca. 2007.
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: honor
+    title: Winner of the Andrés Bello award at departmental-level, in the Mathematics Section
+    issuer: ICFES
+    date: '2002-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: honor
+    title: Winner of the Andrés Bello award at departmental-level, in the Philosophy Section
+    issuer: ICFES
+    date: '2002-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: honor
+    title: Winner of the Andrés Bello award at departmental-level, in the Physics Section
+    issuer: ICFES
+    date: '2002-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: honor
+    title: Winner of the Andrés Bello award at national-level, Physics section
+    issuer: ICFES
+    date: '2002-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: certification
+    title: Certified ScrumMaster
+    issuer: Scrum Alliance
+    date: Feb 2014
+    expires: Feb 2016
+    url: http://www.scrumalliance.org/community/profile/earcos
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: certification
+    title: Oracle Certified Professional, Java SE 6 Programmer
+    issuer: Oracle
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: certification
+    title: Professional ID
+    issuer: ACIEM
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  spoken_languages:
+  - Spanish
+  - English
+  activities:
+  - kind: project
+    title: Bizagi JEE
+    detail: Member of the team in charge of the development and maintenance of the Java version of Bizagi
+      · Sep 2012
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: project
+    title: ICBS - Grupo Aval
+    detail: Implementation of back office modules for the banking system of Grupo Aval · Sep 2011
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: project
+    title: BCH
+    detail: 'Development of the web banking system for the Chilean banks: BCH and BCI · May 2011'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: project
+    title: Banco Mercatil
+    detail: Feb 2011
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: project
+    title: SSM-PDA
+    detail: 'Web application capable of the administration of various surveys that are executed in an
+      on-line and off-line way using mobile devices.Client: Secretaría de Salud de Medellín. · Oct 2010'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: project
+    title: Logística
+    detail: 'Web application that allows the management, administration and tracing of the delivery routes
+      of the company.Client: Colfrigos. · Jul 2010'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: project
+    title: Predictor
+    detail: 'Web application capable of executing a set of surveys trough a web browser and generate various
+      complex reports with the collected information.Client: Atleta Ergo · Mar 2010'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: project
+    title: SIRET Cartera
+    detail: 'Web application for the control of a section of the company client accounts.Client: Sodimac
+      – Corona – Homecenter. · Dec 2009'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: project
+    title: Nokia and BlackBerry Trust Applications
+    detail: Training for Developing Trust applications on Nokia and BlackBerry · 2010
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  - kind: project
+    title: Migration of GBM forms
+    detail: 'Migration of a set of Oracle Forms to a Java Web enabled ApplicationClient: Contraloría de
+      Panamá · Jun 2009'
+    evidence:
+      url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+      observed_at: '2026-10-24T08:45:38Z'
+  talks:
+  - session:2023/dev2569g
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693805468532001GRpa
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

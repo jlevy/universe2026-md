@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/allietheicon
+  platform: x
+  handle: AllieTheIcon
+  url: https://x.com/AllieTheIcon
+  display_name: Allie the Icon
+  bio: |-
+    Doing iconic shit
+    DevRel at @TypesafeAI
+    Queer as fuck
+  followers: 1625
+  following: 59
+  posts_count: 264
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2102564142884528128/1XCuubge_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1929990996324167685/1789778774
+  created_at: '2025-06-03T19:58:13Z'
+  owner: person:allie-laabs
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791508119101001tyPC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/AllieTheIcon
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

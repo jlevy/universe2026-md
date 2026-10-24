@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/readme
+  platform: linkedin
+  handle: company/readme
+  url: https://www.linkedin.com/company/readme
+  display_name: ReadMe
+  bio: 'At ReadMe, we help teams build beautiful, interactive documentation. We give you the tools to
+    create guides that actually teach, changelogs that turn updates into engagement opportunities, and
+    community hubs where users support each other. Everything your customers need, all in one place. We
+    give product and developer-focused teams everything they need to create documentation experiences
+    that users want to engage with. Write docs in a simple editor or sync directly from your IDE, whatever
+    works for your team. Built-in tools catch errors, suggest improvements, and let you branch and review
+    docs the same way you handle code. Interactive components and AI search help customers find answers
+    and learn your product faster. If you’re an API creator, ReadMe turns your OpenAPI specs into an interactive
+    API explorer where developers can test endpoints without leaving your docs. Surface API keys for instant
+    testing and track usage so you know when to reach out. ReadMe helps AI agents discover and integrate
+    with your API through MCP and LLMs.txt, so they can actually find and use your product. ReadMe scales
+    with enterprise teams. As you grow, we handle the security requirements, compliance needs, and quality
+    controls that come with it. Teams like NVIDIA, Gusto, Walmart, Roku, and Samsara use ReadMe to create
+    documentation that drives product adoption. Read our docs: https://docs.readme.com Check out our blog:
+    https://readme.com/blog'
+  website: https://www.readme.com/
+  followers: 4637
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQHvcvQXvYW-pw/company-logo_200_200/B4EZ4I7TCgHUAE-/0/1778266223073/readme_logo?e=2147483647&v=beta&t=953Y1RH7ZTG9c99IKjf0Ere49wTCXZr5Jk7GUAHTjhI
+  owner: org:readme
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/anandkumarpatel
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/readme
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

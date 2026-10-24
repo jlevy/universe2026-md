@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Experience/v1
+  schema: ../_schemas/experience.schema.yaml
+  envelope: experience
+  status: permissive
+experience:
+  id: experience:expert-center
+  name: Expert center
+  description: Got technical questions? Our specialized experts in AI, Actions, security, and scaled adoption
+    are here to help you get the most out of GitHub — no matter your use case or team size.
+  category: learn
+  schedule: Oct 28-29
+  location: Gateway Pavilion
+  venue: venue:gateway-pavilion
+  action: Book an appointment
+  action_url: https://reg.githubuniverse.com/flow/github/universe26/expertcenter/
+  image_url: https://static.rainfocus.com/github/universe26/static/staticfile/staticfile/Session_Image_expert_center_1782426186299001jxE0.jpg
+  sources:
+  - system: rainfocus
+    url: https://reg.githubuniverse.com/flow/loadPage?pageUri=explore
+    retrieved_at: '2026-10-24T06:46:13Z'
+    snapshot: raw/rainfocus/pages/explore.json

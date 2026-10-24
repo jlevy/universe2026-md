@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/spencetaylor
+  platform: linkedin
+  handle: in/spencetaylor
+  url: https://www.linkedin.com/in/spencetaylor
+  display_name: Spencer Taylor
+  bio: I’ve worked in fine dining kitchens, served in the military, and helped build New Relic’s…
+  location: Los Angeles
+  followers: 1396
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQEFKrf4zoHDcA/profile-displayphoto-scale_200_200/B56ZrxCqu2K8Ac-/0/1764980603286?e=2147483647&v=beta&t=2YDzECFBsHr729QtTECaqGv8GYIPA16Xj_HI8LjANrk
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEdp3lwQbw9bA/profile-displaybackgroundimage-shrink_200_800/B56ZrxAhtyLIAU-/0/1764980041114?e=2147483647&v=beta&t=fVjhAfsK3N-r_WJBWmxHwMewlP38zEDsU9AcFeE4B9g
+  owner: person:spencer-taylor
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785347286471001yqPp
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/spencetaylor
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

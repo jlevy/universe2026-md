@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/andrewsnorris
+  platform: linkedin
+  handle: in/andrewsnorris
+  url: https://www.linkedin.com/in/andrewsnorris
+  display_name: Andrew Norris
+  bio: I'm a Technology Entrepreneur who founded Taplytics in 2011 (which become DevCycle in…
+  location: Toronto
+  followers: 3283
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQGp8NweBaT4VQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1634601111334?e=2147483647&v=beta&t=1laRMUAkziIXTADfAxzDlQOj2Jdahr-WXUA1cVQvKvE
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQECM04TEjljNQ/profile-displaybackgroundimage-shrink_200_800/B4EZvPA9DHHEAU-/0/1768704692691?e=2147483647&v=beta&t=iqQJBcLaHckaz3nl94RU6mlYJFltugMB5T5TthQ2MJE
+  owner: person:andrew-norris
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791921239556001f2QR
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/andrewsnorris
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

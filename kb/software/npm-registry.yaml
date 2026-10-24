@@ -1,0 +1,26 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:npm-registry
+  name: npm
+  aliases:
+  - npm
+  kind: platform
+  vendor: org:github
+  repositories:
+  - repo:npm/cli
+  packages:
+  - pkg:npm/npm
+  mentioned_in:
+  - person:brian-dehamer
+  - person:karen-li
+  - person:kyle-daigle
+  - person:rahul-zhade
+  - session:2071
+  - session:tru1476b
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

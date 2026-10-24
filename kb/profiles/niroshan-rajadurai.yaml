@@ -1,0 +1,273 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:niroshan-rajadurai
+  person: person:niroshan-rajadurai
+  brief_bio:
+    text: Niroshan Rajadurai is affiliated with XBOW and was previously VP of GTM Strategy at GitHub for
+      AI, DevSecOps and application security. Rajadurai spoke at GitHub Universe 2023 about GitHub Advanced
+      Security in the age of AI and at GitHub Universe 2024 about Copilot Autofix.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: d376435f14eab4ed59a58120b4c1c079e7bc452bfb207d75fcba3098aeb003c3
+    stale: false
+  headline: XBOW
+  current_roles:
+  - XBOW
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec1499g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec1499g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec1499g
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec1499g
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/sec1499g
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/sec1175b
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  education:
+  - school: University of Melbourne
+    evidence:
+      url: https://www.linkedin.com/in/niroshanr
+      observed_at: '2026-10-24T08:47:28Z'
+  credentials:
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Jul 2022
+    url: https://www.credly.com/badges/bdc4116e-7069-4134-94da-bb765d3f95e7?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/niroshanr
+      observed_at: '2026-10-24T08:47:28Z'
+  recent_writing:
+  - title: The patching race is over
+    url: https://www.linkedin.com/pulse/patching-race-over-niroshan-rajadurai-3oxje
+    published: '2026-05-21T00:00:00.000Z'
+    channel: linkedin
+    summary: A customer told me last month they were tightening their critical patching SLA from 30 days
+      to 14. Their team is proud…
+  - title: The Model Is Not the Product. The Harness Is.
+    url: https://www.linkedin.com/pulse/model-product-harness-niroshan-rajadurai-jyuce
+    published: '2026-05-07T00:00:00.000Z'
+    channel: linkedin
+    summary: Frontier models are going to keep getting better. And they’re going to keep getting better
+      faster than most security…
+  - title: What Opus 4.7 Taught Us About Building Real AI Powered Security
+    url: https://www.linkedin.com/pulse/what-opus-47-taught-us-building-real-ai-powered-niroshan-rajadurai-jhpke
+    published: '2026-04-30T00:00:00.000Z'
+    channel: linkedin
+    summary: 'When Opus 4.7 landed, I watched our standard evaluation come in and started forming the
+      same conclusion: not as good as…'
+  - title: Discovery is getting cheaper by the quarter. Proof is getting more valuable by the day.
+    url: https://www.linkedin.com/pulse/discovery-getting-cheaper-quarter-proof-more-valuable-rajadurai-b1vce
+    published: '2026-04-23T00:00:00.000Z'
+    channel: linkedin
+    summary: 'For the past decade, the security industry has been organized around a single assumption:
+      the hard part is finding…'
+  - title: The annual pentest is dead. It just doesn’t know it yet.
+    url: https://www.linkedin.com/pulse/annual-pentest-dead-just-doesnt-know-yet-niroshan-rajadurai-xhgte
+    published: '2026-04-16T00:00:00.000Z'
+    channel: linkedin
+    summary: For decades, security testing has operated on an episodic model. You schedule a pentest once
+      or twice a year.
+  - title: What Breaks When You Run 5,000 Agents at Once
+    url: https://www.linkedin.com/pulse/what-breaks-when-you-run-5000-agents-once-niroshan-rajadurai-scrbe
+    published: '2026-04-09T00:00:00.000Z'
+    channel: linkedin
+    summary: A version of this piece went out a few weeks ago, but it didn’t land in your inbox the way
+      it should have. Imagine…
+  - title: The Boring Things That Win Enterprise Deals
+    url: https://www.linkedin.com/pulse/boring-things-win-enterprise-deals-niroshan-rajadurai-iplde
+    published: '2026-03-26T00:00:00.000Z'
+    channel: linkedin
+    summary: In every enterprise security deal I’ve worked, the question that kills the conversation isn’t
+      about capabilities. It’s…
+  - title: What Breaks When You Run 5,000 Agents at Once
+    url: https://www.linkedin.com/pulse/what-breaks-when-you-run-5000-agents-once-niroshan-rajadurai-iqsbe
+    published: '2026-03-19T00:00:00.000Z'
+    channel: linkedin
+    summary: Imagine running 5,000 pentesting agents against your production environment simultaneously.
+      Now imagine what happens…
+  - title: Everyone’s Betting on the Model. They’re Wrong.
+    url: https://www.linkedin.com/pulse/everyones-betting-model-theyre-wrong-niroshan-rajadurai-pj0ve
+    published: '2026-03-12T00:00:00.000Z'
+    channel: linkedin
+    summary: The most seductive lie in autonomous pentesting is that the model is the product. I hear
+      it everywhere.
+  - title: The Pattern I Keep Seeing
+    url: https://www.linkedin.com/pulse/pattern-i-keep-seeing-niroshan-rajadurai-wllze
+    published: '2026-03-05T00:00:00.000Z'
+    channel: linkedin
+    summary: Seven and a half years ago, I joined a small security startup called Semmle , inspired by
+      Oege de Moor , because I…
+  talks:
+  - session:2023/sec1499g
+  - session:2024/sec1175b
+  gaps:
+  - github_account
+  - website
+  - x_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686054177983001wGBv
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686054177983001wGBv
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

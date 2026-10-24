@@ -1,0 +1,207 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:justin-cormack
+  person: person:justin-cormack
+  brief_bio:
+    text: Justin Cormack is affiliated with OpenUK and was most recently CTO at Docker, with a focus on
+      supply chain security and cloud native software delivery, and has written about running Docker in
+      production. Cormack spoke at GitHub Universe 2024 about clearing common roadblocks in AI development
+      workflows.
+    cites:
+    - current_affiliations
+    - linkedin_bio
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: f92f04f5a0c0dc58a9ef3f5355642f84dd1a61d980c810777f4a00d2c16d45dc
+    stale: false
+  headline: OpenUK
+  current_roles:
+  - OpenUK
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2036l
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2036l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2036l
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2036l
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2036l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2036l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2036l
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Docker
+      ref: person:justin-cormack
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726872514181001kvA0
+      ref: session:2024/ai2036l
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726872514181001kvA0
+      ref: session:2024/ai2036l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726872514181001kvA0
+      ref: session:2024/ai2036l
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726872514181001kvA0
+      ref: session:2024/ai2036l
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726872514181001kvA0
+      ref: session:2024/ai2036l
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726872514181001kvA0
+      ref: session:2024/ai2036l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726872514181001kvA0
+      ref: session:2024/ai2036l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726872514181001kvA0
+      ref: session:2024/ai2036l
+  education:
+  - school: Imperial College London
+    evidence:
+      url: https://www.linkedin.com/in/justincormack
+      observed_at: '2026-10-24T08:44:43Z'
+  publications:
+  - title: 'Docker in Production: Lessons from the Trenches'
+    venue: Bleeding Edge Press
+    description: Docker is the new sliced bread of infrastructure. Few emerging technologies compare to
+      how fast it swept the DevOps and infrastructure scenes. In less than two years, Google, Amazon,
+      Microsoft, IBM, and nearly every cloud provider announced support for running Docker containers.
+      Readers with intermediate to advanced DevOps and ops backgrounds will likely gain the most from
+      this book. Previous experience with both the basics of running servers in production as well as
+      the basics of creating and managing containers is highly recommended. Many books and blog posts
+      already cover individual topics related to installing and running Docker, but few resources exist
+      to weave together the myriad and sometimes forehead-to-wall-thumping concerns of running Docker
+      in production.
+    evidence:
+      url: https://www.linkedin.com/in/justincormack
+      observed_at: '2026-10-24T08:44:43Z'
+  activities:
+  - kind: volunteering
+    title: Committer
+    detail: NetBSD · Science and Technology · Feb 2014 · - Present · 12 years 9 months · NetBSD committer,
+      speaker and organizer of community events. · Feb 2014
+    evidence:
+      url: https://www.linkedin.com/in/justincormack
+      observed_at: '2026-10-24T08:44:43Z'
+  recent_writing:
+  - title: Speaking at Papers We Love London on 28 Feb
+    url: https://www.linkedin.com/pulse/speaking-papers-we-love-london-28-feb-justin-cormack
+    published: '2019-02-15T00:00:00.000Z'
+    channel: linkedin
+    summary: I will be speaking about "ACLs Don't" on 28 Feb, it is a great paper and I will show how
+      it is still relevant to recent…
+  talks:
+  - session:2024/ai2036l
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715395148686001JeCd
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

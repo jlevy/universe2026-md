@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/dcuthbert
+  platform: x
+  handle: dcuthbert
+  url: https://x.com/dcuthbert
+  display_name: Daniel Cuthbert
+  bio: Documentary photographer, old creaky hacker. Co-author of @OWASP ASVS standard. Blackhat/Brucon
+    Review Board & Co_chair UK Gov Cyber Security Advisory Board
+  location: Airport lounges.
+  website: https://dcuthbert.exposure.co/
+  followers: 33758
+  following: 1964
+  posts_count: 17728
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1850520772814516224/cwdgqZWV_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14461330/1724262395
+  created_at: '2008-04-21T12:51:06Z'
+  owner: person:daniel-cuthbert
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746150262007001cJ5v
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/dcuthbert
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

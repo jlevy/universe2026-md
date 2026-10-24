@@ -1,0 +1,341 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jackie-mak
+  person: person:jackie-mak
+  brief_bio:
+    text: Jackie Mak is a Consulting Director in KPMG US's Cyber Threat Management practice who has written
+      about code signing in GitHub and governance with GitHub Actions. Mak spoke at GitHub Universe 2024
+      about supercharging innovation through GitHub Certifications.
+    cites:
+    - listed_role
+    - current_affiliations
+    - linkedin_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 4baccfb34d30903f4ac41965e69265370e58fe169564ddc0a0f73ae9cc87ae75
+    stale: false
+  headline: KPMG US
+  current_roles:
+  - KPMG US
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1580o
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1580o
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1580o
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1580o
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/dev1580o
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/dev1580o
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: Education
+    target: term:github-product-2024/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715357486644001k0ph
+      ref: session:2024/dev1580o
+  credentials:
+  - kind: certification
+    title: Certified Implementation Specialist - Vulnerability Response
+    issuer: ServiceNow
+    date: Jul 2022
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: certification
+    title: Certified Implementation Specialist - Security Incident Response
+    issuer: ServiceNow
+    date: Jun 2022
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Data Fundamentals'
+    issuer: Microsoft
+    date: Jan 2022
+    url: https://www.credly.com/badges/5910fa14-d7e5-4898-a0cb-56ba301a9d93?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure AI Fundamentals'
+    issuer: Microsoft
+    date: Sep 2021
+    url: https://www.credly.com/badges/8ea285dd-acf5-483f-9f7c-63f24f9c46d1?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: certification
+    title: 'Microsoft Certified: Security, Compliance, and Identity Fundamentals'
+    issuer: Microsoft
+    date: Sep 2021
+    url: https://www.credly.com/badges/0a42f0fe-fe6c-491e-a4e5-00baa0fe45a6?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: certification
+    title: 'Microsoft 365 Certified: Fundamentals'
+    issuer: Microsoft
+    date: Aug 2021
+    url: https://www.credly.com/badges/7a9b0c89-7633-4180-a7b7-cafb8f939bc8?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Aug 2021
+    url: https://www.credly.com/badges/44787907-ea89-43bb-889a-1e9d92b0c645?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Apr 2022
+    expires: Apr 2024
+    url: https://www.credly.com/badges/9ab02983-c268-4c22-b9cb-26f422661d48/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: certification
+    title: Systems Security Certified Practitioner (SSCP)
+    issuer: (ISC)²
+    date: Nov 2019
+    expires: Nov 2023
+    url: https://www.youracclaim.com/badges/9f4eb6a8-a981-410f-b413-91a2f84bfa4a/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    date: May 2020
+    expires: May 2023
+    url: https://www.youracclaim.com/badges/a2ae9950-d010-413f-b292-097016463341/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  publications:
+  - title: Defending Against API Abuse
+    venue: KPMG Insights
+    date: December 31, 2024
+    description: Application Programming Interfaces (APIs) are critical for enabling various web applications
+      to communicate and share data seamlessly, but they have also become significant targets for cyber-attacks.
+      Understanding API abuse and recognizing its threat is crucial for businesses.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - title: Unlocking the Power of GitHub Actions for Streamlined Governance
+    venue: KPMG Insights
+    date: September 20, 2024
+    description: Dive deep into how organizations today can leverage GitHub Actions to bolster security
+      within their source code management.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - title: Code Signing in GitHub
+    venue: KPMG Insights
+    date: August 2, 2024
+    description: The software that powers enterprises' innovations, products, and services today has established
+      itself as one of the top assets for businesses, increasing the importance of taking appropriate
+      measures to secure and govern source code repositories. With the growing adoption of AI-powered
+      source code management platforms like GitHub, it's essential to review the code repository security
+      features to reduce the likelihood and impact of these crown jewels being compromised.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - title: How Automakers Can Inspire Trust in their Software
+    venue: KPMG Insights
+    date: July 29, 2024
+    description: In an era of connected vehicles, automakers must prioritize cybersecurity. By becoming
+      CVE Numbering Authorities (CNAs), they can manage vulnerability disclosures, collaborate with the
+      cybersecurity community, comply with regulations, and gain a competitive edge.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - title: Security Monitoring in GitHub
+    venue: KPMG Insights
+    date: June 20, 2024
+    description: Over the years, SCM platforms have increasingly become of interest to malicious actors
+      who seek to exploit vulnerabilities and gain unauthorized access to a company's intellectual property
+      or sensitive information. When a breach occurs, SCM logs can be an essential tool for determining
+      the scope of the attack, assessing the damage, and tracing the source of the intrusion back to its
+      origin.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - title: Elevating Your AppSec Program with Metrics
+    venue: KPMG Insights
+    date: November 30, 2023
+    description: AppSec metrics should be top of mind for organizations looking to secure their Software
+      Development Lifecycle (SDLC). Metrics play a pivotal role in evaluating, improving, and maintaining
+      an organization's security posture, demonstrating compliance, driving informed decisions, and fostering
+      a culture of security awareness. Organizations can proactively safeguard their applications from
+      cyber threats by assessing and monitoring key security indicators and embracing metrics as an essential
+      part of their AppSec programs.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - title: Remediating Vulnerabilities at the Source
+    venue: KPMG Insights
+    date: November 30, 2023
+    description: Today’s organizations struggle to keep their vulnerability management programs above
+      the consistent waves of new threats. Alert prioritization and remediation are areas where companies
+      search for creative solutions to get ahead of the never-ending game of vulnerability whack-a-mole.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - title: The False Positive Conundrum
+    venue: KPMG Insights
+    date: November 30, 2023
+    description: In today's rapidly evolving digital landscape, false positive alerts have emerged as
+      a persistent challenge that organizations and security teams grapple with in their application security
+      journey. These erroneous warnings not only disrupt the workflow of security professionals but also,
+      more critically, divert their attention and resources away from genuine threats. However, by implementing
+      these strategies, security teams can focus on genuine threats and respond effectively.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - title: Bringing Auditors to a DevOps World
+    venue: Reality Check
+    date: October 7, 2022
+    description: Explore the characteristics that make up Automated Governance in DevOps, as well as the
+      short-term and long-term activities to consider to begin your journey toward Automated Governance.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  - title: Adopting Automated Governance
+    venue: Reality Check
+    date: September 30, 2022
+    description: Understanding how to adopt and implement an Automated Governance framework may be vital
+      for organizations that wish to have a trustworthy, repeatable approach to build, protect, and deliver
+      their products and services.
+    evidence:
+      url: https://www.linkedin.com/in/jackie-mak
+      observed_at: '2026-10-24T08:45:24Z'
+  talks:
+  - session:2024/dev1580o
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698862787144001McYO
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

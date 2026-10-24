@@ -1,0 +1,290 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:divya-mahajan
+  person: person:divya-mahajan
+  brief_bio:
+    text: Divya Mahajan is a Software Development Engineer at Amazon Alexa who builds agentic AI and LLM
+      systems, including LLM evaluation pipelines, and has written on a staged method for building agentic
+      systems. Mahajan speaks at GitHub Universe 2026 about AI agents for root-cause analysis.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: cbdecdd133cbda05458b134a120813aae08ca37ddf0aeed6db0d35afebbd5051
+    stale: true
+  headline: Software Development Engineer at Amazon
+  location: Bay Area, California
+  current_roles:
+  - Software Development Engineer at Amazon
+  expertise:
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: Grafana
+    target: software:grafana
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Grafana
+      ref: session:bld1657h
+  programming_languages:
+  - label: Jupyter Notebook
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:dm-divyamahajan/hotel-clustering-and-search-engine-for-hotel-listings-and-reviews-dataset
+    - ref: repo:dm-divyamahajan/network-intrusion-detection-kitsune-network-attack-dataset
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:portfolio-calculator/movie-personality-test
+    - ref: repo:dm-divyamahajan/task-manager
+    - ref: repo:dm-divyamahajan/food-truck-finder
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:dm-divyamahajan/urlshortening-distributed-system
+  interests:
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: aws-ec2
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dm-divyamahajan/Task-Manager
+      ref: repo:dm-divyamahajan/task-manager
+  - label: cache
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dm-divyamahajan/URLshortening-distributed-system
+      ref: repo:dm-divyamahajan/urlshortening-distributed-system
+  - label: containerization
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dm-divyamahajan/URLshortening-distributed-system
+      ref: repo:dm-divyamahajan/urlshortening-distributed-system
+  - label: distributed-system
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dm-divyamahajan/URLshortening-distributed-system
+      ref: repo:dm-divyamahajan/urlshortening-distributed-system
+  - label: django-framework
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dm-divyamahajan/Task-Manager
+      ref: repo:dm-divyamahajan/task-manager
+  - label: docker
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dm-divyamahajan/URLshortening-distributed-system
+      ref: repo:dm-divyamahajan/urlshortening-distributed-system
+  open_source:
+  - repository: repo:dm-divyamahajan/network-intrusion-detection-kitsune-network-attack-dataset
+    relation: owner
+    stars: 8
+    primary_language: Jupyter Notebook
+  - repository: repo:dm-divyamahajan/urlshortening-distributed-system
+    relation: owner
+    stars: 4
+    primary_language: Python
+  - repository: repo:dm-divyamahajan/task-manager
+    relation: owner
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:portfolio-calculator/movie-personality-test
+    relation: pinned
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:dm-divyamahajan/hotel-clustering-and-search-engine-for-hotel-listings-and-reviews-dataset
+    relation: owner
+    stars: 0
+    primary_language: Jupyter Notebook
+  - repository: repo:dm-divyamahajan/food-truck-finder
+    relation: owner
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:soul-bits/upbeat-livemusiccoach
+    relation: contributor
+    stars: 2
+    primary_language: TypeScript
+  - repository: repo:soul-bits/soulbits
+    relation: contributor
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:soul-bits/adulting
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:soul-bits/my-ai-twin-chatbot
+    relation: contributor
+    stars: 0
+    primary_language: Jupyter Notebook
+  - repository: repo:soul-bits/opentelemetry-demo
+    relation: contributor
+    stars: 0
+    primary_language: TypeScript
+  publications:
+  - title: 'AADF: Agentic Application Delivery Framework — A Staged Methodology for Building Durable AI
+      Agentic Systems'
+    venue: Zenodo
+    date: March 23, 2026
+    description: 'Most teams building agentic AI are solving the wrong problem — adding complexity before
+      validating necessity.This preprint introduces the 𝗔𝗴𝗲𝗻𝘁𝗶𝗰 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗗𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸 (𝗔𝗔𝗗𝗙)
+      — a 9-stage, 3-phase methodology for designing, building, and hardening agentic systems that are
+      𝘀𝘁𝗮𝗰𝗸-𝗶𝗻𝗱𝗲𝗽𝗲𝗻𝗱𝗲𝗻𝘁 and 𝗳𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸-𝗮𝗴𝗻𝗼𝘀𝘁𝗶𝗰.━━━━━━━━━━━━━━━━━━━━━━━𝟯 𝗖𝗼𝗿𝗲 𝗖𝗼𝗻𝘁𝗿𝗶𝗯𝘂𝘁𝗶𝗼𝗻𝘀━━━━━━━━━━━━━━━━━━━━━━━𝟭.
+      𝗧𝗵𝗲 𝗜𝗻𝗳𝗹𝗲𝗰𝘁𝗶𝗼𝗻 𝗣𝗼𝗶𝗻𝘁 𝗦𝘁𝗮𝗶𝗿𝗰𝗮𝘀𝗲Start at the lowest viable complexity — Raw LLM → Tool Use → Agency
+      → RAG → Memory → Multi-Agent → Orchestration → Swarm — and climb only when evaluation proves you
+      must. Complexity is debt. Take it on only when failure demands it.𝟮. 𝗠𝗶𝗻𝗶𝗺𝗮𝗹 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸
+      (𝗠𝗘𝗙)Structure your datasets, metrics, and enforcement alerts 𝗯𝗲𝗳𝗼𝗿𝗲 writing a line of code.𝟯. 𝗖𝗼𝗻𝘁𝗿𝗼𝗹𝗹𝗲𝗱
+      𝗗𝗲𝗴𝗿𝗮𝗱𝗮𝘁𝗶𝗼𝗻 𝗟𝗮𝗱𝗱𝗲𝗿When systems fail, they should land gracefully: Full Operation → Cheaper Model
+      → Cached Results → Human Handoff → Graceful Error.━━━━━━━━━━━━━━━━━━━━━━━That’s the framework working
+      as designed.The paper also introduces the 𝗖𝗵𝘂𝗿𝗻 𝗠𝗮𝗽 and a four-layer swappability architecture that
+      keeps business logic stable while isolating volatile framework dependencies at the bottom.𝗜𝗳 𝘆𝗼𝘂’𝗿𝗲
+      𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗮𝗴𝗲𝗻𝘁𝗶𝗰 𝘀𝘆𝘀𝘁𝗲𝗺𝘀 𝗮𝗻𝗱 𝘄𝗮𝗻𝘁 𝘁𝗵𝗲𝗺 𝘁𝗼 𝘀𝘂𝗿𝘃𝗶𝘃𝗲 𝗽𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 — this framework is for you.𝗔𝗔𝗗𝗙 #𝗔𝗜𝗔𝗴𝗲𝗻𝘁𝘀
+      #𝗟𝗟𝗠𝗢𝗽𝘀 #𝗔𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹𝗜𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲 #𝗠𝗟𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 #𝗔𝗜𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴​​​​​​​​​​​​​​​​'
+    evidence:
+      url: https://www.linkedin.com/in/dm-divyamahajan
+      observed_at: '2026-10-24T08:11:42Z'
+  talks:
+  - session:bld1657h
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777674945059001EoUx
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dm-divyamahajan
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

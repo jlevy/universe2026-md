@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:super-linter/super-linter
+  full_name: super-linter/super-linter
+  url: https://github.com/super-linter/super-linter
+  description: Combination of multiple linters to run as a GitHub Action or standalone
+  homepage: https://github.com/super-linter/super-linter
+  stars: 10637
+  forks: 1080
+  watchers: 293
+  open_issues: 30
+  stats_observed_at: '2026-10-24T19:12:25Z'
+  primary_language: Shell
+  topics:
+  - linter
+  - actions
+  - ci
+  - quality-check
+  - code-quality
+  - code-quality-analyzer
+  - super-linter
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2019-10-21T13:56:50Z'
+  pushed_at: '2026-10-23T13:33:38Z'
+  owner_login: super-linter
+  pinned_by:
+  - gh:zkoppert
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: zkoppert
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: super-linter/super-linter
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

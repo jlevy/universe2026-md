@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Experience/v1
+  schema: ../_schemas/experience.schema.yaml
+  envelope: experience
+  status: permissive
+experience:
+  id: experience:discussions-lounge
+  name: Discussions lounge
+  description: Powered by Braindate, the Discussions Lounge is a space where you can curate conversations
+    (or drive small group discussions) with like-minded people on the topics that spark your curiosity.
+  category: connect
+  schedule: Oct 28-29
+  location: Building D
+  venue: venue:building-d
+  action: Browse topics
+  action_url: https://githubuniverse2026.braindate.com/
+  image_url: https://static.rainfocus.com/github/universe26/static/staticfile/staticfile/explore-bd_1791470444412001DMJ1.jpg
+  sources:
+  - system: rainfocus
+    url: https://reg.githubuniverse.com/flow/loadPage?pageUri=explore
+    retrieved_at: '2026-10-24T06:46:13Z'
+    snapshot: raw/rainfocus/pages/explore.json

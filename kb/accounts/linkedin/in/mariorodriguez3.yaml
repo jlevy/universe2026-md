@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mariorodriguez3
+  platform: linkedin
+  handle: in/mariorodriguez3
+  url: https://www.linkedin.com/in/mariorodriguez3
+  display_name: Mario Rodriguez
+  location: Raleigh
+  followers: 8199
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQFGi4zVVpGUOA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714009862938?e=2147483647&v=beta&t=UkgR9xRImr_cKyZZRbul5AD2LTY9gwyRAMuTXDJ302c
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQE2rkJurXMqrA/profile-displaybackgroundimage-shrink_200_800/B4EZnJNuNpIwAU-/0/1760017443069?e=2147483647&v=beta&t=8RgAOBxhuxTPbQ5xUEKyDPBDK-ouxfouY96oIaNrAz8
+  owner: person:mario-rodriguez
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755984001tNu7
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mariorod
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mariorodriguez3
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

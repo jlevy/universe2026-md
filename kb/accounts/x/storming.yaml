@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/storming
+  platform: x
+  handle: storming
+  url: https://x.com/storming
+  display_name: Stormy
+  bio: VP of Communities at GitHub! Life time student. Passionate about open source software.
+  location: Colorado
+  website: http://stormyscorner.com/
+  followers: 5566
+  following: 1013
+  posts_count: 10839
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/414512186631802880/YaacGVyA_normal.jpeg
+  created_at: '2007-09-05T19:00:58Z'
+  owner: person:stormy-peters
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465757703001tz6K
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/storming
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

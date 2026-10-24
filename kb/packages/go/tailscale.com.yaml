@@ -1,0 +1,18 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:go/tailscale.com
+  ecosystem: go
+  name: tailscale.com
+  url: https://pkg.go.dev/tailscale.com
+  latest_version: v1.104.2
+  repository_url: https://github.com/tailscale/tailscale
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: tailscale/tailscale
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:ship-tell-firehouse
+  name: Ship & Tell
+  label: Ship & Tell @ Firehouse
+  venue: venue:firehouse
+  capacity: 80
+  source_ids:
+  - 1785186800257001aSuf
+  sessions:
+  - session:bld1332h
+  - session:bld1398h
+  - session:bld1402h
+  - session:bld1460h
+  - session:bld1489h
+  - session:bld1596h
+  - session:bld1644h
+  - session:bld1657h
+  - session:bld1819h
+  - session:ldr1032h
+  - session:ldr1161h
+  - session:ldr1341h
+  - session:ldr1387h
+  - session:ldr1594h
+  - session:ldr1869h
+  - session:tru1322h
+  - session:tru1324h
+  - session:tru1405h
+  - session:tru1422h
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

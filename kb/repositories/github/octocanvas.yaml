@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/octocanvas
+  full_name: github/octocanvas
+  url: https://github.com/github/octocanvas
+  description: A web app that creates GitHub-themed collectibles from GitHub profiles
+  homepage: https://octocanvas.io/
+  stars: 56
+  forks: 16
+  watchers: 1
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: TypeScript
+  topics:
+  - contribution-graph
+  - developer
+  - github
+  - wallpaper
+  - copilot
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2025-10-21T23:15:39Z'
+  pushed_at: '2026-10-22T01:23:01Z'
+  owner_login: github
+  owner: gh:github
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Damovisa
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/octocanvas
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

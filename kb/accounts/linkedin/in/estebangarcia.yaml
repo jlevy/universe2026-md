@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/estebangarcia
+  platform: linkedin
+  handle: in/estebangarcia
+  url: https://www.linkedin.com/in/estebangarcia
+  display_name: Esteban Garcia
+  bio: Scaling teams, technology, and impact with AI by driving innovation through Agentic…
+  location: Winter Park
+  followers: 5870
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQFl3grr6Pe1DQ/profile-displayphoto-scale_200_200/B4EZoCl8JLJ0AY-/0/1760980091934?e=2147483647&v=beta&t=y7LzGtMbihf8LmOXbfR7ighJrFoPhMKGz-Eq9PwwTbE
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQGkVmHtoJjmsQ/profile-displaybackgroundimage-shrink_200_800/B4EZoC5HmdJgAU-/0/1760985119799?e=2147483647&v=beta&t=pkdeCjSt4sy6Jfy4VllM1j_CVLzar71tfc730SnXT1A
+  owner: person:esteban-garcia
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693254795218001VLYf
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/estebangarcia
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

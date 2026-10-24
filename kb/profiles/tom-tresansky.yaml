@@ -1,0 +1,182 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:tom-tresansky
+  person: person:tom-tresansky
+  brief_bio:
+    text: The GitHub Universe 2025 listing describes Tom Tresansky as Senior Software Developer at Gradle.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 06e4ab73753037d4a7120b1f3883d58e2a874ccde08bfe49550b1af99c7c0424
+    stale: false
+  headline: Develocity
+  current_roles:
+  - Develocity
+  expertise:
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1384d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1384d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1384d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1384d
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Dependabot
+      ref: session:2025/sec1384d
+  interests:
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: GitHub Codespaces
+    target: term:github-product-2025/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205426999001ZPHq
+      ref: session:2025/sec1384d
+  education:
+  - school: University at Albany, SUNY
+    evidence:
+      url: https://www.linkedin.com/in/tom-t-373ba0b
+      observed_at: '2026-10-24T08:49:49Z'
+  activities:
+  - kind: project
+    title: Java Microbenchmark Harness Presentation
+    detail: 'JMH is a Java harness for building, running, and analysing nano/micro/milli/macro benchmarks
+      written in Java and other languages targetting the JVM.https://openjdk.java.net/projects/code-tools/jmh/This
+      is a presentation I gave on using JMH to developers at the NYS Unified Court System Division of
+      Technology in 2016.Slides: https://github.com/tresat/JMH-Presentation/blob/master/doc/slides.pdf
+      · Feb 2016'
+    evidence:
+      url: https://www.linkedin.com/in/tom-t-373ba0b
+      observed_at: '2026-10-24T08:49:49Z'
+  - kind: project
+    title: Project Lombok Presentation
+    detail: Project Lombok is a java library that automatically plugs into your editor and build tools,
+      spicing up your java.https://projectlombok.org/This is a presentation I gave on Project Lombok to
+      the Capital Region Java Developer's Network in 2013. · Mar 2013
+    evidence:
+      url: https://www.linkedin.com/in/tom-t-373ba0b
+      observed_at: '2026-10-24T08:49:49Z'
+  - kind: project
+    title: Mockito Presentation and Demos
+    detail: Mockito is a library which assists the writing of unit tests in Java by enabling the quick
+      and painless construction of test doubles. It is rapidly growing in popularity because it helps
+      you write beautiful tests using a clean and simple API, and eliminates test dependencies on any
+      other classes other than that directly under test. This talk will introduce listeners to writing
+      readable and informative tests using Mockito's tools through a series of simple demos of the library's
+      capabilities.https://site.mockito.org/(Presentation given to Capital District Java Developer's Network,
+      March, 2010). · Jan 2012
+    evidence:
+      url: https://www.linkedin.com/in/tom-t-373ba0b
+      observed_at: '2026-10-24T08:49:49Z'
+  talks:
+  - session:2025/sec1384d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755275525743001AnKa
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

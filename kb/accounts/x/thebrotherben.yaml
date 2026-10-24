@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/thebrotherben
+  platform: x
+  handle: TheBrotherBen
+  url: https://x.com/TheBrotherBen
+  display_name: Ben Vance
+  bio: I write email[email removed] and make BBQ. SaaS support veteran. Please advice.
+  location: Tennessee, USA
+  followers: 329
+  following: 520
+  posts_count: 3213
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/818469185001062400/lH_ZVqvu_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/36380033/1598973596
+  created_at: '2009-04-29T15:10:45Z'
+  owner: person:ben-vance
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695654923733001CBCn
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/TheBrotherBen
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

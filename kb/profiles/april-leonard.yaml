@@ -1,0 +1,268 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:april-leonard
+  person: person:april-leonard
+  brief_bio:
+    text: April Leonard is VP of Engineering at GitHub, leading the teams behind the platform, infrastructure
+      and product experiences of GitHub Copilot. Leonard speaks at GitHub Universe 2026 in the opening
+      keynote and on what's next for AI-assisted development.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: a56bad3ae344333cbd6742d1c94b5d73ef6688cabf544b30b873b85f7a61f758
+    stale: false
+  headline: VP, Engineering at GitHub
+  location: Portland, OR
+  current_roles:
+  - VP, Engineering at GitHub
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  technologies:
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+    - ref: session:bld2019a
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:april-leonard
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+    - ref: session:bld2019a
+  programming_languages:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:aprilla/breaking-the-glass-ceiling
+    - ref: repo:aprilla/simple-server
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:aprilla/vscode-github-issue-notebooks
+    - ref: repo:aprilla/xterm.js
+  - label: Ruby
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:aprilla/simple-rails-server
+  - label: CSS
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:aprilla/spring-petclinic
+  interests:
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: Supply Chain Security
+    target: term:github-product/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  open_source:
+  - repository: repo:aprilla/breaking-the-glass-ceiling
+    relation: owner
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:aprilla/simple-rails-server
+    relation: owner
+    stars: 0
+    primary_language: Ruby
+  - repository: repo:aprilla/simple-server
+    relation: owner
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:aprilla/spring-petclinic
+    relation: owner
+    stars: 0
+    primary_language: CSS
+  - repository: repo:aprilla/vscode-github-issue-notebooks
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:aprilla/xterm.js
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  credentials:
+  - kind: honor
+    title: Achieve Award
+    issuer: NWEA
+    evidence:
+      url: https://www.linkedin.com/in/aprilschuff
+      observed_at: '2026-10-24T08:11:41Z'
+  - kind: honor
+    title: New Relic Spot award - Five time recipient
+    issuer: New Relic
+    description: Five time recipient for performing above and beyond expectations.
+    evidence:
+      url: https://www.linkedin.com/in/aprilschuff
+      observed_at: '2026-10-24T08:11:41Z'
+  - kind: certification
+    title: Certified ScrumMaster – ScrumAlliance
+    date: Jun 2011
+    evidence:
+      url: https://www.linkedin.com/in/aprilschuff
+      observed_at: '2026-10-24T08:11:41Z'
+  - kind: certification
+    title: Sun Certified Java Programmer SE 6
+    date: Feb 2011
+    evidence:
+      url: https://www.linkedin.com/in/aprilschuff
+      observed_at: '2026-10-24T08:11:41Z'
+  activities:
+  - kind: volunteering
+    title: Podcast Team Lead
+    detail: PDX Women in Tech (PDXWIT) · Science and Technology · Jul 2019 · - Aug 2021 · 2 years 2 months
+      · We interview people to dig below the surface of their achievements and challenges. Showcasing
+      the story behind the story. We believe that focusing on the person and humanizing their lived experiences
+      will help us shape the future of tech. Lead the team that identifies listener needs and interviewees,
+      interviews, produces, and publishes the PDXWIT podcast. · Jul 2019
+    evidence:
+      url: https://www.linkedin.com/in/aprilschuff
+      observed_at: '2026-10-24T08:11:41Z'
+  recent_writing:
+  - title: Communication Keys for Engineering Leaders
+    url: https://www.aprilleonard.me/management-keys/
+    published: '2020-09-25T00:00:00Z'
+    channel: blog
+  talks:
+  - session:1809k
+  - session:bld1134m
+  - session:bld2019a
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699473035093001TDcX
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: aprilla
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

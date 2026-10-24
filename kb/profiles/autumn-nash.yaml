@@ -1,0 +1,210 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:autumn-nash
+  person: person:autumn-nash
+  brief_bio:
+    text: Autumn Nash works on Linux, open source, security and infrastructure, is affiliated with Fork
+      Around and Find Out, and previously worked on Amazon Corretto and OpenJDK at Amazon Web Services.
+      Nash spoke at GitHub Universe 2024 about empowering women in data for an inclusive AI future.
+    cites:
+    - linkedin_bio
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: 33eda797ba1aabb6522f07577b27ba5f38633186a799e0083056a3fe33485c04
+    stale: true
+  headline: Fork Around and find Out
+  current_roles:
+  - Fork Around and find Out
+  expertise:
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1347l
+  technologies:
+  - label: Amazon Web Services
+    target: software:aws
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Amazon Web Services
+      ref: person:autumn-nash
+  - label: Java
+    target: software:java
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Java
+      ref: person:autumn-nash
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:autumn-nash
+  interests:
+  - label: Discussions
+    target: term:github-product-2024/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715188002984001W2JU
+      ref: session:2024/ai1347l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715188002984001W2JU
+      ref: session:2024/ai1347l
+  education:
+  - school: University of Maryland University College
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  credentials:
+  - kind: honor
+    title: Presidential Grant winner at UMUG
+    issuer: '-'
+    date: '2022-07-01T00:00:00.000Z'
+    description: I won the Presidential Grant a total of 3 years.
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: AWS SheBuilds Summit - How can the cloud and managed databases help women get into technology
+    issuer: AWS SheBuilds
+    date: '2021-11-01T00:00:00.000Z'
+    description: https://www.twitch.tv/aws/video/1209574032
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: Presentation How Apache Cassandra™ Skills Help Women on a Path to Reentry | Apache Cassandra
+      World Party 2021
+    issuer: Apache Cassandra
+    date: '2021-04-01T00:00:00.000Z'
+    description: https://www.youtube.com/watch?v=lNOqh-3ObNM
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: Googler GraceHopper Scholarship Award Winner
+    issuer: Google
+    date: '2020-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: honor
+    title: Presidential Grant winner
+    issuer: '-'
+    date: '2020-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: 'AWS Partner: Accreditation (Technical)'
+    issuer: Amazon Web Services (AWS)
+    date: Sep 2021
+    url: https://www.credly.com/badges/45855b0c-bda6-4572-be71-e6500d6b5c6f?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: 'AWS Partner: Cloud Economics Accreditation'
+    issuer: Amazon Web Services (AWS)
+    date: Sep 2021
+    url: https://www.credly.com/badges/44fb2f8b-7eee-42b8-8860-afb1ecbfc5c3?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: AWS Academy Graduate - AWS Academy Cloud Architecting
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2020
+    url: https://www.youracclaim.com/badges/58549829-3c09-4212-bc8f-4399578f7b9d?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect – Associate
+    issuer: Amazon Web Services (AWS)
+    date: Dec 2020
+    expires: Dec 2023
+    url: https://www.youracclaim.com/badges/704dc0ee-6282-41ce-bf9d-e34818df1ee4?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: CompTIA Linux+ ce Certification
+    issuer: CompTIA
+    date: Nov 2020
+    expires: Nov 2023
+    url: https://www.youracclaim.com/badges/0f667e3b-83e2-41d7-892d-e69c607283d6?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    date: Oct 2020
+    expires: Oct 2023
+    url: https://www.youracclaim.com/badges/b626c6fc-410c-4701-afa1-9a4ea56968b9?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  activities:
+  - kind: organization
+    title: Association for Computing Machinery
+    detail: Jul 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: organization
+    title: Society of Women Engineers
+    detail: May 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: organization
+    title: MilSpouse Coders
+    detail: Apr 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: organization
+    title: Computing Club
+    detail: Feb 2017 · Present
+    evidence:
+      url: https://www.linkedin.com/in/autumnnash
+      observed_at: '2026-10-24T08:41:57Z'
+  talks:
+  - session:2024/ai1347l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715187716251001TV3i
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

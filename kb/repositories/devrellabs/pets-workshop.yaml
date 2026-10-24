@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:devrellabs/pets-workshop
+  full_name: devrellabs/pets-workshop
+  url: https://github.com/devrellabs/pets-workshop
+  description: 'Getting started content for organizations using GitHub. '
+  stars: 4
+  forks: 3
+  watchers: 0
+  open_issues: 3
+  stats_observed_at: '2026-10-24T19:10:03Z'
+  primary_language: Python
+  license: MIT
+  archived: true
+  fork: true
+  created_at: '2025-10-21T16:22:48Z'
+  pushed_at: '2026-04-21T16:31:26Z'
+  owner_login: devrellabs
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: scubaninja
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: devrellabs/pets-workshop
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

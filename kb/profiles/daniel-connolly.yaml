@@ -1,0 +1,55 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:daniel-connolly
+  person: person:daniel-connolly
+  brief_bio:
+    text: Daniel Connolly worked at GitHub with large financial services customers on their digital and
+      AI transformations and helped stand up GitHub's FSI vertical. Connolly spoke at GitHub Universe
+      2025 about a GitHub Copilot rollout strategy built around developer experience.
+    cites:
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 940e053149dd8b3f1bcffec47e8f3032217c124799ec67f3e3de06c6e8dafc00
+    stale: false
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/aut1912f
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760648738532001EEtw
+      ref: session:2025/aut1912f
+  talks:
+  - session:2025/aut1912f
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686681811420001qaJ5
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

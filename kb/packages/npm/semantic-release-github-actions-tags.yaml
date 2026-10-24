@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/semantic-release-github-actions-tags
+  ecosystem: npm
+  name: semantic-release-github-actions-tags
+  url: https://www.npmjs.com/package/semantic-release-github-actions-tags
+  description: Semantic Release Plugin to update all version Tags for a GitHub Action during a release
+  latest_version: 2.0.2
+  license: MIT
+  repository_url: git+https://github.com/davelosert/semantic-release-github-actions-tags.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: davelosert/semantic-release-github-actions-tags
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

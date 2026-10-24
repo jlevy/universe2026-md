@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/typescript
+  ecosystem: npm
+  name: typescript
+  url: https://www.npmjs.com/package/typescript
+  description: TypeScript is a language for application scale JavaScript development
+  latest_version: 7.0.2
+  license: Apache-2.0
+  repository_url: git+https://github.com/microsoft/TypeScript.git
+  software: software:typescript
+  sources:
+  - system: npm
+    url: https://registry.npmjs.org/
+    record_id: typescript
+    retrieved_at: '2026-10-24T19:17:41Z'
+    snapshot: raw/registries/npm.json

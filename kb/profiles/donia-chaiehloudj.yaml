@@ -1,0 +1,481 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:donia-chaiehloudj
+  person: person:donia-chaiehloudj
+  brief_bio:
+    text: Donia Chaiehloudj is a senior software engineer at Isovalent who contributes to the Cilium project
+      across Kubernetes, Linux networking and eBPF, and co-authored Learn Go with Pocket-Sized Projects.
+      Chaiehloudj speaks at GitHub Universe 2026 on what AI-written code does in production.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: e712c21f4978cc1abc48754814f3963dd42fba6793cfb52b9d411c3d1914e755
+    stale: false
+  headline: Senior Software Engineer at Isovalent
+  current_roles:
+  - Senior Software Engineer at Isovalent
+  expertise:
+  - label: Cloud-native development
+    target: term:topic/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1324h
+  - label: Kubernetes
+    target: term:topic/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1324h
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1324h
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1324h
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1324h
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1324h
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:tru1324h
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:donia-chaiehloudj
+  - label: Linux
+    target: software:linux
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Linux
+      ref: person:donia-chaiehloudj
+  programming_languages:
+  - label: Go
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:doniacld/tinygo-discovery
+    - ref: repo:doniacld/tiny-hen
+    - ref: repo:doniacld/go-generics-workshop
+    - ref: repo:doniacld/ebpf-4-gophers
+  interests:
+  - label: Kubernetes
+    target: term:topic/kubernetes
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489666868001IyxA
+      ref: session:tru1324h
+    - url: https://github.com/cilium/cilium
+      ref: repo:cilium/cilium
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489666868001IyxA
+      ref: session:tru1324h
+    - url: https://github.com/cilium/cilium
+      ref: repo:cilium/cilium
+  - label: bpf
+    basis: github_repositories
+    confidence: medium
+    weight: 0.8
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cilium/cilium
+      ref: repo:cilium/cilium
+    - url: https://github.com/ebpf-io/ebpf.io-website
+      ref: repo:ebpf-io/ebpf.io-website
+  - label: Cloud-native development
+    target: term:topic/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489666868001IyxA
+      ref: session:tru1324h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489666868001IyxA
+      ref: session:tru1324h
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489666868001IyxA
+      ref: session:tru1324h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489666868001IyxA
+      ref: session:tru1324h
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489666868001IyxA
+      ref: session:tru1324h
+  - label: cni
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cilium/cilium
+      ref: repo:cilium/cilium
+  - label: containers
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cilium/cilium
+      ref: repo:cilium/cilium
+  - label: ebpf
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ebpf-io/ebpf.io-website
+      ref: repo:ebpf-io/ebpf.io-website
+  - label: kernel
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cilium/cilium
+      ref: repo:cilium/cilium
+  open_source:
+  - repository: repo:doniacld/tiny-hen
+    relation: owner
+    stars: 19
+    primary_language: Go
+  - repository: repo:doniacld/ebpf-4-gophers
+    relation: owner
+    stars: 11
+    primary_language: Go
+  - repository: repo:doniacld/tinygo-discovery
+    relation: owner
+    stars: 10
+    primary_language: Go
+  - repository: repo:doniacld/talks
+    relation: owner
+    stars: 2
+  - repository: repo:doniacld/go-generics-workshop
+    relation: owner
+    stars: 2
+    primary_language: Go
+  - repository: repo:cilium/cilium
+    relation: contributor
+    stars: 25709
+    primary_language: Go
+  - repository: repo:ebpf-io/ebpf.io-website
+    relation: contributor
+    stars: 137
+    primary_language: HTML
+  - repository: repo:cilium/cilium.io
+    relation: contributor
+    stars: 73
+    primary_language: JavaScript
+  - repository: repo:cloudnative-provence/2026-kcd
+    relation: contributor
+    stars: 2
+  - repository: repo:agent-substrate/substrate
+    relation: contributor
+    stars: 5769
+    primary_language: Go
+  education:
+  - school: University of Otago
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  credentials:
+  - kind: certification
+    title: 'Speaker: Cloud Native University NA 2025'
+    issuer: The Linux Foundation
+    date: Nov 2025
+    url: https://www.credly.com/badges/2e4dfd4f-d60f-42d1-b6ce-d8da4aeb1c4c/public_url
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: certification
+    title: 'Program Committee Member: CiliumCon NA 2025'
+    issuer: The Linux Foundation
+    date: Aug 2025
+    url: https://www.credly.com/badges/99147195-d044-4c5d-bf29-edf62e6bc4e0/public_url
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: certification
+    title: 'Speaker: CiliumCon EU 2025'
+    issuer: The Linux Foundation
+    date: Apr 2025
+    url: https://www.credly.com/badges/2b5e0f18-be86-48dd-95f8-a7103d292490/public_url
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  spoken_languages:
+  - English
+  - German
+  - French
+  activities:
+  - kind: volunteering
+    title: Podcast Producer, Tech Referent
+    detail: 'WHAT06 - Women Hackers Action Tank · Science and Technology · Dec 2021 · - Present · 4 years
+      11 months · Running and organising events to elevate women in tech. - Helped to raise funds and
+      sponsors to run the Trophies Women In Tech South 2022 - Moderated the stage for the Hackathon "Hack
+      for Inclusion" in 2023, helped with the automation of tasks (emails, notifications) - Podcast Producer:
+      https://www.youtube.com/watch?v=HCzDf9BlOms&list=PLm0sc9fbNh5R8wS3VGqbbmmldXvWR-DJ7 https://what06.fr/
+      · Dec 2021'
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: volunteering
+    title: Kiosk KubeCon Activities Coordinator
+    detail: 'Merge Forward (CNCF) · Science and Technology · Sep 2025 · - Present · 1 year 2 months ·
+      Organising the kiosk for KubeCon onsite activities: * KubeCon NA 2025, Atlanta, US * KubeCon EU
+      2026, Amsterdam, Netherlands · Sep 2025'
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: volunteering
+    title: Lead Organizer
+    detail: GDG Sophia-Antipolis · Science and Technology · Mar 2022 · - Present · 4 years 8 months ·
+      I am leading and running tech events for the community in South France. I recruited 3 team members
+      volunteering also for the chapter. - Running remote or in-person tech talks once a month - Moderating
+      stage and panel - Running one bigger conference evening per year https://gdg.community.dev/gdg-sophia-antipolis/
+      · Mar 2022
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: volunteering
+    title: Mentor
+    detail: Article 1 · Science and Technology · Nov 2021 · - Nov 2022 · 1 year 1 month · Helping youth
+      to find their career path and improve their methodologies. · Nov 2021
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: volunteering
+    title: Godmother
+    detail: Elles bougent · Science and Technology · Sep 2014 · - Nov 2021 · 7 years 3 months · I promote
+      tech jobs among student girls in highschool. · Sep 2014
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Analog Electronics
+    detail: HELQ35I3
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Automatics (Feedback control, Logical system)
+    detail: HGSI36I5
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Common Core Programme (Economics, Mathematics, English, Communication)
+    detail: HSHS35I1
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Common Core Programme (English, Communication, Management, Mathematics)
+    detail: HSHS36I1
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Computer System Architecture, Bus & Interface
+    detail: HIFI473I
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Computer Vision and Graphics
+    detail: COSC450
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Computing for bioinformatics
+    detail: COSC348
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Data processing (Algorithms and Programming)
+    detail: HINF36I4
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Digital electronics, Physics, Conversion and processing of electrical energy
+    detail: HELQ36I3
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Economics & Social Sciences
+    detail: HSHS47I1
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Electronics & Sensors
+    detail: HELQ47I2
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Electronics (Electronics design, RF, Electromagnetic field)
+    detail: HELQ48I1
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Engineering Science (Physics, Complex analysis)
+    detail: HPHY35I2
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Industrial Data Processing (microcontrollers and Assembler)
+    detail: HIF35I4
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Information Technology (Object Oriented programming C++, UNIX)
+    detail: HINF48I2
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Neural Model Language
+    detail: COSC421
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Project Management (Embedded systems, Sport, Computing project)
+    detail: HOPR36I2
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Signal Automatics (Digital control, State representation)
+    detail: HSPI47I4
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Signal automatics (Digital signal processing, Numerical analysis)
+    detail: HSPI48I3
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: course
+    title: Statistics, Data Processing
+    detail: HMAT47I5
+    evidence:
+      url: https://www.linkedin.com/in/donia-chaiehloudj
+      observed_at: '2026-10-24T08:11:46Z'
+  recent_writing:
+  - title: ✈️🤢 KubeCon NA didn’t go exactly as planned… but yet a lot of fun!
+    url: https://www.linkedin.com/pulse/kubecon-na-didnt-go-exactly-planned-yet-lot-fun-donia-chaiehloudj-caqqe
+    published: '2025-11-20T00:00:00.000Z'
+    channel: linkedin
+    summary: 'People always say you should prepare for chaos before a conference: slides, demos, jet lag,
+      meeting everyone. What I…'
+  - title: My First Time at Riviera Dev 🌴2025 (as attendee and speaker)
+    url: https://www.linkedin.com/pulse/my-first-time-riviera-dev-2025-attendee-speaker-donia-chaiehloudj-cwn0e
+    published: '2025-07-11T00:00:00.000Z'
+    channel: linkedin
+    summary: A few days have passed since Riviera DEV 🌴 , and I’m still feeling that special mix of inspiration
+      and serenity that…
+  talks:
+  - session:tru1324h
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1776153290962001Ywx4
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: doniacld
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,309 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:eric-bailey
+  person: person:eric-bailey
+  brief_bio:
+    text: The GitHub Universe 2026 listing describes Eric Bailey as Accessibility advocate at Independent.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: dfc0f36cc25d95b390e5e857bf66e040b0f850f62432ae7a759e18a80ecdb836
+    stale: false
+  headline: General Motors
+  location: Boston, MA
+  current_roles:
+  - General Motors
+  expertise:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  programming_languages:
+  - label: HTML
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:ericwbailey/a11y-syntax-highlighting
+    - ref: repo:ericwbailey/ericwbailey.website
+  - label: Handlebars
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:ericwbailey/accessible-html-content-patterns
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:ericwbailey/what-cant-i-press
+  - label: Nunjucks
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:ericwbailey/a11y-webring.club
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:ericwbailey/millennials-to-snake-people
+  interests:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+    - url: https://github.com/ericwbailey/a11y-syntax-highlighting
+      ref: repo:ericwbailey/a11y-syntax-highlighting
+    - url: https://github.com/ericwbailey/empathy-prompts
+      ref: repo:ericwbailey/empathy-prompts
+  - label: eleventy
+    basis: github_repositories
+    confidence: medium
+    weight: 0.42
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ericwbailey/a11y-webring.club
+      ref: repo:ericwbailey/a11y-webring.club
+    - url: https://github.com/ericwbailey/ericwbailey.website
+      ref: repo:ericwbailey/ericwbailey.website
+    - url: https://github.com/a11yproject/a11yproject.com
+      ref: repo:a11yproject/a11yproject.com
+  - label: inclusive-design
+    basis: github_repositories
+    confidence: medium
+    weight: 0.42
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ericwbailey/empathy-prompts
+      ref: repo:ericwbailey/empathy-prompts
+    - url: https://github.com/a11yproject/a11yproject.com
+      ref: repo:a11yproject/a11yproject.com
+    - url: https://github.com/github/annotation-toolkit
+      ref: repo:github/annotation-toolkit
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ericwbailey/millennials-to-snake-people
+      ref: repo:ericwbailey/millennials-to-snake-people
+    - url: https://github.com/ericwbailey/ericwbailey.website
+      ref: repo:ericwbailey/ericwbailey.website
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.25
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.25
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.25
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: alfred
+    basis: github_repositories
+    confidence: low
+    weight: 0.16
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ericwbailey/alfred-wcag-workflow
+      ref: repo:ericwbailey/alfred-wcag-workflow
+  - label: alfred-workflow
+    basis: github_repositories
+    confidence: low
+    weight: 0.16
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ericwbailey/alfred-wcag-workflow
+      ref: repo:ericwbailey/alfred-wcag-workflow
+  - label: android-accessibility
+    basis: github_repositories
+    confidence: low
+    weight: 0.16
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/annotation-toolkit
+      ref: repo:github/annotation-toolkit
+  - label: annotation-toolkit
+    basis: github_repositories
+    confidence: low
+    weight: 0.16
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/annotation-toolkit
+      ref: repo:github/annotation-toolkit
+  - label: annotations
+    basis: github_repositories
+    confidence: low
+    weight: 0.16
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/annotation-toolkit
+      ref: repo:github/annotation-toolkit
+  open_source:
+  - repository: repo:ericwbailey/a11y-syntax-highlighting
+    relation: owner
+    stars: 220
+    primary_language: HTML
+  - repository: repo:ericwbailey/millennials-to-snake-people
+    relation: owner
+    stars: 197
+    primary_language: JavaScript
+  - repository: repo:ericwbailey/empathy-prompts
+    relation: owner
+    stars: 197
+    primary_language: CSS
+  - repository: repo:ericwbailey/accessible-html-content-patterns
+    relation: owner
+    stars: 194
+    primary_language: Handlebars
+  - repository: repo:ericwbailey/a11y-webring.club
+    relation: owner
+    stars: 75
+    primary_language: Nunjucks
+  - repository: repo:ericwbailey/what-cant-i-press
+    relation: owner
+    stars: 71
+    primary_language: TypeScript
+  - repository: repo:ericwbailey/ericwbailey.website
+    relation: owner
+    stars: 66
+    primary_language: HTML
+  - repository: repo:ericwbailey/alfred-wcag-workflow
+    relation: owner
+    stars: 22
+  - repository: repo:a11yproject/a11yproject.com
+    relation: contributor
+    stars: 3901
+    primary_language: Nunjucks
+  - repository: repo:primer/octicons
+    relation: contributor
+    stars: 8773
+    primary_language: TypeScript
+  - repository: repo:github/annotation-toolkit
+    relation: contributor
+    stars: 326
+  - repository: repo:open-source-accessibility/accessibility-toolkit
+    relation: contributor
+    stars: 7
+  education:
+  - school: Montserrat College of Art
+    evidence:
+      url: https://www.linkedin.com/in/ericwbailey
+      observed_at: '2026-10-24T08:11:39Z'
+  recent_writing:
+  - title: '[SC 2.4.4] Locked, loaded, and ready to go'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-locked-loaded-and-ready-to-go/
+    published: '2026-10-22T15:31:09Z'
+    channel: blog
+  - title: '[SC 2.4.4] Two muffins'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-two-muffins/
+    published: '2026-10-15T01:42:18Z'
+    channel: blog
+  - title: '[SC 2.4.4] Tragically, time is linear'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-tragically-time-is-linear/
+    published: '2026-10-08T01:01:36Z'
+    channel: blog
+  - title: '[SC 2.4.4] A mushroom playing a synth'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-a-mushroom-playing-a-synth/
+    published: '2026-10-01T00:49:05Z'
+    channel: blog
+  - title: '[SC 2.4.4] My shift starts in 10 minutes'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-my-shift-starts-in-10-minutes/
+    published: '2026-09-24T00:51:10Z'
+    channel: blog
+  - title: '[SC 2.4.4] I fully realize that this is Thursday evening'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-i-fully-realize-that-this-is-thursday/
+    published: '2026-09-18T01:11:30Z'
+    channel: blog
+  - title: '[SC 2.4.4] Letting go of something'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-letting-go-of-something/
+    published: '2026-09-10T00:14:51Z'
+    channel: blog
+  - title: '[SC 2.4.4] It sure is an experience!'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-it-sure-is-an-experience/
+    published: '2026-09-03T15:09:23Z'
+    channel: blog
+  - title: '[SC 2.4.4] The whole process makes you appreciate things'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-the-whole-process-makes-you-appreciate/
+    published: '2026-08-27T17:50:43Z'
+    channel: blog
+  - title: '[SC 2.4.4] It ain''t easy, I tell you what'
+    url: https://buttondown.com/ericwbailey/archive/sc-244-it-aint-easy-i-tell-you-what/
+    published: '2026-08-20T01:10:38Z'
+    channel: blog
+  talks:
+  - session:ldr1634p
+  gaps:
+  - x_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1723487023886001ahix
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ericwbailey
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

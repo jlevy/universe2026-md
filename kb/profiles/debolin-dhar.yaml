@@ -1,0 +1,174 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:debolin-dhar
+  person: person:debolin-dhar
+  brief_bio:
+    text: Debolin Dhar is a Developer Productivity Architect at EY who has worked on initiatives to automate
+      repetitive developer tasks. Dhar spoke at GitHub Universe 2024 in a session where EY professionals
+      shared how to prove the value of GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: ebca7fd64d511b694500c5ee421279991c9fa0e18c48129120670f9d16eac9fd
+    stale: false
+  headline: EY
+  current_roles:
+  - EY
+  expertise:
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1654b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1654b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1654b
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372801503001dbBp
+      ref: session:2024/ai1654b
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372801503001dbBp
+      ref: session:2024/ai1654b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372801503001dbBp
+      ref: session:2024/ai1654b
+  education:
+  - school: Imps College Of Engineering and Technology
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  credentials:
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Jan 2024
+    url: https://www.credly.com/badges/5a8e7268-4dcc-408a-8cdd-2901ea0dcf31/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  - kind: certification
+    title: AZ-304 Microsoft Azure Architect Design
+    issuer: Microsoft
+    date: Jun 2021
+    url: https://www.credly.com/badges/6d656a0d-a833-44d8-941b-6f177df117ad/public_url
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  - kind: certification
+    title: AZ-400 Designing and Implementing Microsoft DevOps Solutions
+    issuer: Microsoft
+    date: Jun 2021
+    url: https://www.credly.com/badges/25cb10bf-9e52-4aa8-8593-8bd2503d3fd4?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Solutions Architect Expert'
+    issuer: Microsoft
+    date: Jun 2021
+    url: https://www.credly.com/badges/f67374d4-2c07-4da5-bc28-5555fac3f4e1?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  - kind: certification
+    title: EY Cloud - Learning (2021)
+    issuer: EY
+    date: Apr 2021
+    url: https://www.credly.com/badges/9a1d8731-da70-4521-8906-3be534d00684?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  - kind: certification
+    title: EY Digital - Learning
+    issuer: EY
+    date: Apr 2021
+    url: https://www.credly.com/badges/a07a0abe-c0ca-4ccf-9bbe-dd2a757a8287?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  - kind: certification
+    title: AZ-303 Microsoft Azure Architect Technologies
+    issuer: Microsoft
+    date: Feb 2021
+    url: https://www.youracclaim.com/badges/6108018c-bead-4dd2-82a7-f2f3ea78fe23?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  - kind: certification
+    title: ITIL Foundation Level
+    issuer: AXELOS Global Best Practice
+    date: Sep 2018
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  - kind: certification
+    title: LOMA 280
+    issuer: LOMA
+    date: Jan 2014
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  - kind: certification
+    title: Azure Fundamentals AZ-900
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/debolindhar
+      observed_at: '2026-10-24T08:41:59Z'
+  spoken_languages:
+  - English
+  talks:
+  - session:2024/ai1654b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1723623310530001WE80
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

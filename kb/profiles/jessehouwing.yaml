@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jessehouwing
+  person: person:jessehouwing
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  - bio
+  - photo
+  sources:
+  - system: mastodon
+    url: https://mastodon.social/api/v1/timelines/tag/GitHubUniverse
+    record_id: https://hachyderm.io/@jessehouwing/117450953035342148
+    retrieved_at: '2026-10-24T08:26:29Z'
+    snapshot: raw/mastodon/hashtags.json

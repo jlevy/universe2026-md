@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/yjayaraman
+  platform: linkedin
+  handle: in/yjayaraman
+  url: https://www.linkedin.com/in/yjayaraman
+  display_name: Yadhav Jayaraman
+  location: Greater Boston
+  followers: 667
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQECq-wxVUIPNw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517736503652?e=2147483647&v=beta&t=EhhTVHMV1dVTORkd-Nywk0dYDCgrmMtcM6zDTIbOZf0
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:yadhav-jayaraman
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691522429456001L3kZ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691522429456001L3kZ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691522429456001L3kZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/yjayaraman
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

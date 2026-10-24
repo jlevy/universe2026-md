@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:timescale
+  login: timescale
+  kind: organization
+  url: https://github.com/timescale
+  name: Tiger Data
+  website: https://www.tigerdata.com
+  public_repositories: 136
+  created_at: '2014-10-01T15:06:29Z'
+  pinned:
+  - repo:timescale/timescaledb
+  - repo:timescale/tiger-cli
+  - repo:timescale/pgvectorscale
+  - repo:timescale/pg_textsearch
+  - repo:timescale/pg-aiguide
+  - repo:timescale/tigerfs
+  top_repositories:
+  - repo:timescale/pgai
+  linked_accounts:
+  - acct:x/timescaledb
+  entity: org:tiger-data
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: timescale
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

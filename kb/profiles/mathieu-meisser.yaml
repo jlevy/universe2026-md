@@ -1,0 +1,218 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mathieu-meisser
+  person: person:mathieu-meisser
+  brief_bio:
+    text: Mathieu Meisser is a senior software product and partnership manager at Logitech who recently
+      worked on the MX Creative Console plugin ecosystem and has published on voice interfaces for tour-guide
+      robots. Meisser spoke at GitHub Universe 2025 about using physical tools with Copilot and VS Code.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 1ee342f3215e23d742b07a3279d9989191270a4e34218e4b54044e74df45932b
+    stale: false
+  headline: Logitech
+  current_roles:
+  - Logitech
+  expertise:
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1539d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1539d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1539d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/bld1539d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2025/bld1539d
+  interests:
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753280706083001Cmc3
+      ref: session:2025/bld1539d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753280706083001Cmc3
+      ref: session:2025/bld1539d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753280706083001Cmc3
+      ref: session:2025/bld1539d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753280706083001Cmc3
+      ref: session:2025/bld1539d
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753280706083001Cmc3
+      ref: session:2025/bld1539d
+  education:
+  - school: Ecole polytechnique fédérale de Lausanne
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  credentials:
+  - kind: honor
+    title: Hilti mechatronic award
+    issuer: Hilti SA
+    date: '2001-04-01T00:00:00.000Z'
+    description: The "Hilti Mécatronique" prize rewards a Master Project or scientific publication which
+      is outstanding by its creativity, innovation or originality in the field of mechatronics (sensors,
+      actuators, control or movement) where the practical application is emphasised.
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  - kind: honor
+    title: Portescap award
+    issuer: Portescap (Danaher group)
+    date: '2001-04-01T00:00:00.000Z'
+    description: The Portescap prize rewards the best Master Project in the field of mechanical and electrical
+      applications to small power systems
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  - kind: honor
+    title: High School
+    issuer: Liceo Diocesano
+    date: '1994-06-01T00:00:00.000Z'
+    description: 'Won the yearly first price for best score (92/100) for the year of graduation (Federal
+      Maturity): "Premio Corecco".'
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  - kind: certification
+    title: 'Section ProfAI: AI Proficiency'
+    issuer: Section
+    date: May 2025
+    url: https://www.credly.com/badges/fbbb2a78-e68e-4df2-b46f-77b8781dee02/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  publications:
+  - title: Multi-robot human-interation and visitor flow management
+    venue: ICRA, 2388-2393, 2003
+    date: '2003'
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  - title: On developing a voice-enabled interface for interactive tour-guide robots
+    venue: Advanced Robotics, 17(7):599-616
+    date: '2003'
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  - title: 'Robox at Expo.02: A large-scale installation of personal robots'
+    venue: Robotics and Autonomous Systems, 42(3-4):203-222,
+    date: '2003'
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  spoken_languages:
+  - English
+  - Italian
+  - French
+  - German
+  activities:
+  - kind: organization
+    title: Bluetooth SIG member
+    detail: 2012 · Present
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  - kind: organization
+    title: Prorobotica
+    detail: Organisation that want to foster the development of robotics amongst young engineers and entrepreneurs,
+      allowing a network of people active in this field to interact a couple of times every year. · 2002
+      · Present
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  - kind: organization
+    title: STOICA
+    detail: Founded the association that gather the swiss ticinesi students in lausanne. · 1995 · 2000
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  - kind: organization
+    title: Colonia Comunità famigliare
+    detail: Participated in organizing and running a 2weeks camp for children, with a mix of normal and
+      handicapped children during the summer. · 1993 · 1999
+    evidence:
+      url: https://www.linkedin.com/in/mmeisser
+      observed_at: '2026-10-24T08:46:59Z'
+  talks:
+  - session:2025/bld1539d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728059056701001y1qR
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

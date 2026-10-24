@@ -1,0 +1,313 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:cuno-reijman
+  person: person:cuno-reijman
+  brief_bio:
+    text: Cuno Reijman is a Customer Success Architect at GitHub who works with customers to optimize
+      their use of the platform. Reijman spoke at GitHub Universe 2024 about getting started with GitHub
+      Advanced Security for enterprise code security.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: e002b6977848ca265741928fd5a39719f6a6a5b2c26082bb8cfe0b4691289494
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1895w
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/sec1895w
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722779439408001R3tU
+      ref: session:2024/sec1895w
+  education:
+  - school: Hogeschool van Utrecht
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  credentials:
+  - kind: certification
+    title: 'Microsoft Certified: Azure Security Engineer Associate'
+    issuer: Microsoft
+    date: Jun 2021
+    expires: Jun 2023
+    url: https://www.credly.com/badges/c2661b86-d4b3-466b-9ef1-a35fd638e124?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Data Engineer Associate'
+    issuer: Microsoft
+    date: Oct 2020
+    expires: Oct 2022
+    url: https://www.youracclaim.com/badges/3402ceaf-a9fd-4c74-8f8e-4df2bd4189a5?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: 'Microsoft Certified: DevOps Engineer Expert'
+    issuer: Microsoft
+    date: Aug 2019
+    expires: Aug 2022
+    url: https://www.youracclaim.com/badges/6cfaa3d1-0eef-4959-89b9-8bd188df0352?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: Certified ScrumMaster
+    issuer: Scrum Alliance
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: 'MCPD: Silverlight Developer 4'
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: 'MCPD: Web Developer 4'
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: 'MCPD: Windows Azure Developer'
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: 'MCPD: Windows Phone Developer'
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: 'MCSD: Web Applications'
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: PRINCE2 Foundation
+    issuer: Expecto
+    evidence:
+      url: https://www.linkedin.com/in/cunoreijman
+      observed_at: '2026-10-24T08:43:04Z'
+  spoken_languages:
+  - Nederlands
+  - Engels
+  - Duits
+  talks:
+  - session:2024/sec1895w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696835037621001Z1av
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,513 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:thomas-dohmke
+  person: person:thomas-dohmke
+  brief_bio:
+    text: Thomas Dohmke is building a new developer platform at Entire, is a former CEO of GitHub, co-founded
+      HockeyApp, and holds patents on avoiding or mitigating vehicle collisions. Dohmke gave the opening
+      keynote at GitHub Universe 2023 and 2024.
+    cites:
+    - github_bio
+    - x_bio
+    - past_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: c23b4d19219b17348eb93adabb1e5b1ae60872d5aa2af333d6d8df14f6dd9961
+    stale: false
+  headline: Deutsche Telekom
+  location: Earth
+  current_roles:
+  - Deutsche Telekom
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2849k
+  programming_languages:
+  - label: Swift
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:ashtom/hadge
+    - ref: repo:ashtom/hkimport
+  - label: Java
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:ashtom/breakapp
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695657268465001jL1D
+      ref: session:2023/ai2849k
+    - url: https://github.com/entireio/cli
+      ref: repo:entireio/cli
+  - label: about-me
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ashtom/ashtom
+      ref: repo:ashtom/ashtom
+  - label: AI agents
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/entireio/cli
+      ref: repo:entireio/cli
+  - label: claude
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/entireio/cli
+      ref: repo:entireio/cli
+  - label: developer-platform
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/entireio/cli
+      ref: repo:entireio/cli
+  - label: gemini
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/entireio/cli
+      ref: repo:entireio/cli
+  - label: health
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ashtom/hadge
+      ref: repo:ashtom/hadge
+  - label: healthkit
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ashtom/hkimport
+      ref: repo:ashtom/hkimport
+  - label: ios
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ashtom/hkimport
+      ref: repo:ashtom/hkimport
+  - label: ios-app
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ashtom/hadge
+      ref: repo:ashtom/hadge
+  - label: pinned-gist
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ashtom/hadge
+      ref: repo:ashtom/hadge
+  - label: simulator
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ashtom/hkimport
+      ref: repo:ashtom/hkimport
+  open_source:
+  - repository: repo:entireio/cli
+    relation: pinned
+    stars: 5214
+    primary_language: Go
+  - repository: repo:ashtom/hadge
+    relation: owner
+    stars: 193
+    primary_language: Swift
+  - repository: repo:entireio/entire-graph
+    relation: pinned
+    stars: 61
+    primary_language: C
+  - repository: repo:ashtom/hkimport
+    relation: owner
+    stars: 55
+    primary_language: Swift
+  - repository: repo:entireio/external-agents
+    relation: pinned
+    stars: 45
+    primary_language: Go
+  - repository: repo:ashtom/ashtom
+    relation: owner
+    stars: 36
+  - repository: repo:ashtom/breakapp
+    relation: owner
+    stars: 33
+    primary_language: Java
+  - repository: repo:entirehq/.github
+    relation: contributor
+    stars: 8
+  - repository: repo:entireio/cli-checkpoints
+    relation: contributor
+    stars: 3
+  - repository: repo:entireio/scoop-bucket
+    relation: contributor
+    stars: 2
+  education:
+  - school: University of Glasgow
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  publications:
+  - title: Driving Development with Active Monitoring of Apps and Services
+    venue: MSDN Magazine
+    date: February 1, 2017
+    description: In the final installment of his Mobile DevOps series, Kraig Brockschmidt, along with
+      Thomas Dohmke and Alan Cameron Wills, delves into the tools and practices that enable monitoring
+      of apps and services, and also explores Application Insights and HockeyApp.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Mobile DevOps - Exploring Visual Studio Mobile Center
+    venue: MSDN Magazine
+    date: December 1, 2016
+    description: Microsoft is taking Mobile DevOps to the next level with Visual Studio Mobile Center.
+      Connect your repository, then build, test, deliver and monitor your apps all from a single dashboard
+      and connect it with your Azure backend.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: 'Test-driven development of embedded control systems: application in an automotive collision
+      prevention system'
+    venue: University of Glasgow
+    date: June 26, 2008
+    description: With test-driven development (TDD) new code is not written until an automated test has
+      failed, and duplications of functions, tests, or simply code fragments are always removed. TDD can
+      lead to a better design and a higher quality of the developed system, but to date it has mainly
+      been applied to the development of traditional software systems such as payroll applications. The
+      thesis describes the novel application of TDD to the development of embedded control systems using
+      an automotive safety system for preventing collisions as an example.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Test-Driven Development of a PID Controller
+    venue: IEEE
+    date: May 1, 2007
+    description: With test-driven development, developers don't write new code until an automated test
+      has failed, and duplicate functions, tests, or code fragments are always removed. TDD can lead to
+      better-designed, higher-quality systems. slUnit combines the features of the xUnit testing frameworks
+      and the Simulink graphical programming language to apply TDD to control-system design. Development
+      of a controller for a simplified vehicle system illustrates this approach.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  patents:
+  - title: Method and Apparatus for Avoiding or Mitigating Vehicle Collisions
+    number: US US20090037055 A1
+    description: In a method and apparatus for collision avoidance or collision mitigation for a vehicle,
+      an existing driving space between the vehicle and a potential collision object is detected. A first
+      warning function and/or an information function is activated when a first threshold value is reached.
+      A system intervention with autonomous partial braking combined with at least one further safety
+      measure is activated when a second threshold value is reached.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Method and vehicle assistance system for preventing collisions or reducing the severity of
+      a vehicle collision
+    number: DE WO2006053652 A1
+    description: 'The invention relates to a method for preventing collisions or reducing the severity
+      of a vehicle collision with the following steps: detecting the velocity and direction of motion
+      of the vehicle; detecting the position of objects in the surroundings of the vehicle; detecting
+      the speed and the direction of motion of the objects relative to the vehicle; precalculating the
+      future position of the objects relative to the vehicle; evaluating the present and future positions
+      of the objects relative to the vehicle; outputting a warning to the driver and/or carrying out an
+      automatic steering and/or braking intervention by means of a vehicle assistance system according
+      to the evaluation in the event it has been determined according to the evaluation that a collision
+      with the object is unavoidable without intervention by the system. The invention also relates to
+      a vehicle assistance system for preventing collisions or reducing the severity of a vehicle collision.'
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Method for asynchronous communication by means of an internet platform, and internet platform
+    number: US US8457284 B2
+    description: The invention relates to a method for asynchronous communication by means of an internet
+      platform (2), wherein registered users of the internet platform (2) can receive mail by means of
+      the internet platform (2), wherein the mail is transmitted for at least part of the postal path
+      thereof in electronic form by means of the internet and the internet platform (2), and further relates
+      to an internet platform (2). In order to provide the users (N) expanded communication capabilities
+      and a greater level of comfort, according to the invention, one of a plurality of presettable transmission
+      paths is preset by the users (N) on the internet platform (2), said paths including the transmission
+      of the mail as a letter, as a fax, and as electronic mail, and the transmission of the mail to the
+      users (N) is performed or initiated by the internet platform (2) according to each preset transmission
+      path.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Method for avoiding a collision or for reducing the consequences of a collision and device
+      for carrying out said method
+    number: DE WO2006053655 A1
+    description: The invention relates to a method for avoiding a collision or for reducing the consequences
+      of a collision during a journey, over the course of which a motor vehicle (10) approaches an obstacle
+      (20), in particular a preceding vehicle. According to said method, at least the relative speed (vrel)
+      of the motor vehicle (10) is determined in relation to the obstacle (20), the time period that remains
+      until the latest commencement of evasive action to avoid a collision is determined as the evasive
+      time period (TTA) and action is taken to avoid the collision or reduce the consequences of a collision
+      in accordance with the determined evasive time period (TTA). Said evasive time period (TTA) is calculated
+      as the time period that is required to reduce the distance (s) between the motor vehicle (10) and
+      the obstacle (20) at the current relative speed (vrel) to a limit distance (sA) that can be predefined
+      in accordance with the relative speed (vrel) and the speed (vego) of the motor vehicle (10).
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Method for determining and adapting a steering handle angle wheel turning angle characteristic
+      curve
+    number: DE WO2005085042 A1
+    description: The invention relates to methods for determining and adapting a (28) steering handle
+      angle-wheel turning angle characteristic curve consisting in determining the actual wheel turning
+      angle(β) or a quantity (RO) defining said turning angle, in detecting an actual steering handle
+      angle and in correcting existing characteristic curve (28) by co-ordinating the actual wheel turning
+      angle (β) of the quantity (RO) defining said turning angle with the actual steering handle angle
+      or the characteristic curve (28). Steering handle angle wheel turning angle is produced on the basis
+      of several coordinations thereof. The thus produced or adjusted characteristic curve takes into
+      account the co-ordination modifications during a motor vehicle service life.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Method for determining relative speed between two vehicles, involves receiving distance signal
+      from distance sensor, where rear end of vehicle is provided at distance sensor transverse to travel
+      direction of another vehicle
+    number: DE DE102009002383 A1
+    description: 'The method involves receiving a distance signal from a distance sensor (16). A rear
+      end of a vehicle (14) is provided at distance sensor transverse to a travel direction (12) of another
+      vehicle (10). The distance signal represents a distance of the former vehicle from the distance
+      sensor. Another distance signal is obtained from another distance sensor (18). Another distance
+      signal represents a distance of the former vehicle from another distance sensor. Independent claims
+      are also included for the following: (1) a control device for the execution of the method; and (2)
+      a computer program product with a program code.'
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Method for identifying critical collision situations from the rear
+    number: DE WO2006040032 A1
+    description: The invention concerns a method for avoiding collision between a vehicle (1) and an object,
+      in particular a vehicle (3) preceding the vehicle (1), or for reducing the consequences of the collision,
+      which consists in detecting at least one quantity describing the movements of objects in the surroundings
+      located downstream of the vehicle (1), in particular in the downstream traffic, and in triggering
+      a driver alarm triggered when a predetermined alert condition is fulfilled. An assessment of the
+      situation is performed at least based on the quantity/quantities detected, describing the movements
+      of objects in the surroundings located downstream of the vehicle. A braking time (TTB) is determined
+      relative to the situation assessment time, the driver having to brake completely at that particular
+      time to avoid a collision from the rear, a driver alarm being triggered when the interval between
+      the situation assessment time and the complete braking time, that is, the value of the braking time
+      (TTB) determined relative to the situation assessment time, is lower than a first threshold. Thus
+      traffic safety is enhanced.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Method for operating a braking assistance system in a vehicle
+    number: DE WO2006053667 A1
+    description: The invention relates to a method for operating a braking assistance system in a vehicle,
+      enabling braking to be assisted when emergency braking occurs. According to the invention, a threshold
+      (10) for a braking intervention by the brake assister is determined at least from the brake torque
+      (11) and brake torque gradient (12) characteristics in order to decide between emergency braking
+      and normal braking.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Method for operating a collision avoidance system of a vehicle and associated collision avoidance
+      system
+    number: DE WO2006053654 A1
+    description: The invention relates to a method for operating a collision avoidance system of a vehicle,
+      said system comprising means for detecting the existing gap between the vehicle and a potential
+      collision partner, in addition to means for defining the time of a system intervention to avoid
+      a collision. According to the invention, if defined threshold values of the system intervention
+      are not met, said values having been defined using the means, for a first time (12), at which a
+      collision (20) can be avoided by evasive action and for a second time (13), at which a braking manoeuvre
+      must be initiated, a partial deceleration (10) is introduced for an actual system intervention.
+      The invention also relates to a collision avoidance system of a vehicle.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  - title: Method for operating a collision avoidance system or collision sequence reducing system of
+      a vehicle, and collision avoidance system or collision sequence reducing system
+    number: DE WO2006072342 A1
+    description: The invention relates to a method for operating a collision avoidance system of a collision
+      sequence reducing system of a vehicle (10). An available driving area which is between the vehicle
+      (10) and a potential collision object (11, 20) is detected and a first warning signal and/or information
+      function is activated when a first threshold value (12) is reached. According to the invention,
+      system intervention with autonomous partial braking combined with at least one additional safety
+      measure is actuated when a second threshold value (13) is reached. The invention also relates to
+      a collision avoidance system or collision sequence reducing system for a vehicle.
+    evidence:
+      url: https://www.linkedin.com/in/ashtom
+      observed_at: '2026-10-24T08:43:05Z'
+  spoken_languages:
+  - German
+  - English
+  recent_writing:
+  - title: 'The Agentic Assembly Line: My Keynote at WeAreDevelopers World Congress 2026 in Berlin'
+    url: https://www.linkedin.com/pulse/agentic-assembly-line-my-keynote-wearedevelopers-world-thomas-dohmke-evaue
+    published: '2026-07-20T00:00:00.000Z'
+    channel: linkedin
+    summary: My first keynote here was back in 2022, four years ago, and I was trying to convince everybody
+      here that AI is going to…
+  - title: |-
+      After nearly four years as CEO, I’m leaving GitHub to become a startup founder again.
+
+      With more than 1B repos and forks, 150M+ developers, and Copilot continuing to lead the most thriving market in AI with 20M users and counting, GitHub has never been stronger than it is today.
+    url: https://twitter.com/14237533/status/1954920157853172064
+    published: '2025-08-11T14:57:40Z'
+    channel: x
+  - title: |-
+      🖐️ GPT-5 + new VS Code drop 🤓 Another day, another set of launches for GitHub Copilot: Welcome to a new era of intelligence.
+
+      In our evals, we found that OpenAI’s GPT-5 excels and improves on o3's advanced reasoning capabilities, enabling developers to tackle more complex
+    url: https://twitter.com/14237533/status/1953502354189303859
+    published: '2025-08-07T17:03:50Z'
+    channel: x
+  - title: |-
+      The evidence is clear: Either you embrace AI, or get out of this career.
+
+      Our latest field study with 22 developers who are integrating AI deeply into their workflows reveals a striking trend: those who persist beyond early skepticism emerge with dramatically higher ambition,
+    url: https://twitter.com/14237533/status/1952409910236291109
+    published: '2025-08-04T16:42:51Z'
+    channel: x
+  - title: "GitHub Copilot has crossed 20 million users – up more than 5 million from last quarter. We’re\
+      \ also seeing explosive AI growth on GitHub, with AI projects more than doubling over the past year.\n\
+      \nAnd it’s all because of grit. It’s no secret the market Copilot introduced has heated "
+    url: https://twitter.com/14237533/status/1950673593559306714
+    published: '2025-07-30T21:43:21Z'
+    channel: x
+  - title: |-
+      Every idea starts with a Spark✨
+
+      First shown at Universe 2024, GitHub Spark takes you from idea to deployment in minutes. And it’s available today for all Copilot Pro+ users 👀 https://t.co/koPDEE0pcd
+    url: https://twitter.com/14237533/status/1948054772835402175
+    published: '2025-07-23T16:17:05Z'
+    channel: x
+  - title: Agents for the Sake of Happiness
+    url: https://www.linkedin.com/pulse/agents-sake-happiness-thomas-dohmke-6jixe
+    published: '2025-07-11T00:00:00.000Z'
+    channel: linkedin
+    summary: The following is a readout of my prepared remarks delivered at WeAreDevelopers World Congress
+      2025. Hello! I’m Thomas…
+  - title: |-
+      🌹roses are red
+      🪻violets are blue
+      🤝welcome to VS Code
+      🚀version 1.102
+
+      A few of my favorite highlights:
+    url: https://twitter.com/14237533/status/1943379084899201116
+    published: '2025-07-10T18:37:34Z'
+    channel: x
+  - title: |-
+      We promised, we delivered. The GitHub Copilot Chat client for VS Code is now open source under the MIT license. This means, you can:
+
+      🔍 Explore the code on GitHub
+       🛠️ Open PRs, file issues &amp; contribute
+       💬 See what prompts/context we send to LLMs
+       🤖 Use Copilot agent mode to
+    url: https://twitter.com/14237533/status/1939724483448717369
+    published: '2025-06-30T16:35:29Z'
+    channel: x
+  - title: |-
+      Big news for the vibecoders:
+
+      There’s a new version of GitHub Copilot live in VS Code 1.101 today, with updates to bring you more MCP support, smarter chat tools, and better source control. Here’s the rundown. 🧵
+    url: https://twitter.com/14237533/status/1933208752380838108
+    published: '2025-06-12T17:04:18Z'
+    channel: x
+  - title: |-
+      Claude Sonnet 4 is here. Now avail in all Copilot plans. And it’s the new base model for the GitHub Copilot coding agent 😎
+
+      https://t.co/PnJyeT1IOu
+    url: https://twitter.com/14237533/status/1925597395192357337
+    published: '2025-05-22T16:59:29Z'
+    channel: x
+  - title: we will always need human developers
+    url: https://twitter.com/14237533/status/1924973815488254343
+    published: '2025-05-20T23:41:36Z'
+    channel: x
+  - title: 'World Leader Forum 2024: Cracking the Code of AI Transformation'
+    url: https://www.linkedin.com/pulse/world-leader-forum-2024-cracking-code-ai-thomas-dohmke-qhr0e
+    published: '2024-09-05T00:00:00.000Z'
+    channel: linkedin
+    summary: The following are prepared remarks delivered at the Economic Times World Leader Forum 2024,
+      New Delhi. Friends…
+  - title: 'SFF2023: From Productivity Paradox to Productivity Polarity'
+    url: https://www.linkedin.com/pulse/sff2023-from-productivity-paradox-polarity-thomas-dohmke-whbyc
+    published: '2023-11-16T00:00:00.000Z'
+    channel: linkedin
+    summary: Below is a readout of my prepared remarks from Singapore Fintech Festival 2023 Hello. Thank
+      you so much for having me…
+  - title: 'Copilot X: Realizing the 10x Developer'
+    url: https://www.linkedin.com/pulse/copilot-x-realizing-10x-developer-thomas-dohmke
+    published: '2023-05-03T00:00:00.000Z'
+    channel: linkedin
+    summary: Below is a readout of my prepared remarks from Web Summit Rio 2023. Hello, Rio! I’m Thomas,
+      and I’m a developer.
+  talks:
+  - session:2023/ai2849k
+  - session:2024/1975k
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692113530217001az2Z
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692113530217001az2Z
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ashtom
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

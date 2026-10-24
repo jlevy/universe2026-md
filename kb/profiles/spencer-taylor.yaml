@@ -1,0 +1,101 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:spencer-taylor
+  person: person:spencer-taylor
+  brief_bio:
+    text: Spencer Taylor is a Principal Developer Relations Engineer at New Relic and a founding engineer
+      on its Logs team who creates interactive content on observability. Taylor speaks at GitHub Universe
+      2026 in a sponsored session on shifting left in an agentic world.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: c1bdfaff3b084fb8a1f7a3dcc9ee0a58c216be23490a3ddb3a10c798ce28211f
+    stale: false
+  headline: Principal Developer Relations Engineer at New Relic
+  location: Los Angeles
+  current_roles:
+  - Principal Developer Relations Engineer at New Relic
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1792d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1792d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1792d
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785346960888001Jg2j
+      ref: session:tru1792d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785346960888001Jg2j
+      ref: session:tru1792d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785346960888001Jg2j
+      ref: session:tru1792d
+  education:
+  - school: Holberton School
+    evidence:
+      url: https://www.linkedin.com/in/spencetaylor
+      observed_at: '2026-10-24T08:15:40Z'
+  spoken_languages:
+  - English
+  talks:
+  - session:tru1792d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785347286471001yqPp
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: set808
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

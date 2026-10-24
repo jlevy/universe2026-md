@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/helenhousandi
+  platform: linkedin
+  handle: in/helenhousandi
+  url: https://www.linkedin.com/in/helenhousandi
+  display_name: Helen Hou-Sandi
+  bio: I am the Engineering Manager for Accessibility Engineering at GitHub and a lead developer…
+  location: New York
+  followers: 1515
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D03AQGQWLhNkNIV0w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1644895392911?e=2147483647&v=beta&t=K33b_iBer8r07RHG9n3nBd2TqYGXjeh6IRhK4dY3b4o
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQHp044jBO0UJA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1620685264000?e=2147483647&v=beta&t=8ZAHh2rgeLrK9xBXl59BzUh4MdvBISi2HeOvID-I250
+  owner: person:helen-hou-sandi
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686680018345001jTjq
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/helenhousandi
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,544 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jovana-dunisijevic
+  person: person:jovana-dunisijevic
+  brief_bio:
+    text: Jovana Dunisijevic is a Senior Technical Evangelist at Atlassian whose engineering work included
+      optimizing Jira for large enterprise migrations and improving cloud infrastructure reliability.
+      Dunisijevic spoke at GitHub Universe 2025 about Atlassian's Rovo Dev agent.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 161df01f486f6c9128cb1f68759e503263cbace7347b711e57feb0634dff730a
+    stale: false
+  headline: Atlassian
+  current_roles:
+  - Atlassian
+  expertise:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1564d
+    - ref: session:2025/aut1565s
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1564d
+    - ref: session:2025/aut1565s
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1564d
+    - ref: session:2025/aut1565s
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1564d
+    - ref: session:2025/aut1565s
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1564d
+    - ref: session:2025/aut1565s
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1565s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/aut1564d
+  - label: Jira
+    target: software:jira
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Jira
+      ref: person:jovana-dunisijevic
+  interests:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898310689001y8bQ
+      ref: session:2025/aut1564d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898556749001S9Qr
+      ref: session:2025/aut1565s
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898310689001y8bQ
+      ref: session:2025/aut1564d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898556749001S9Qr
+      ref: session:2025/aut1565s
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898310689001y8bQ
+      ref: session:2025/aut1564d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898556749001S9Qr
+      ref: session:2025/aut1565s
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898310689001y8bQ
+      ref: session:2025/aut1564d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898556749001S9Qr
+      ref: session:2025/aut1565s
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898310689001y8bQ
+      ref: session:2025/aut1564d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898556749001S9Qr
+      ref: session:2025/aut1565s
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755898556749001S9Qr
+      ref: session:2025/aut1565s
+  education:
+  - school: University of Belgrade
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  credentials:
+  - kind: honor
+    title: Software Engineer of the year 2022 Finalist
+    issuer: Women In Digital
+    date: '2022-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: honor
+    title: Literary Contest Charles Dickens - "Tale of two cities"
+    issuer: British Council
+    date: '2012-03-01T00:00:00.000Z'
+    description: 3rd Place
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: certification
+    title: Associate Architecting & SyS Ops on AWS with AWS Jams
+    issuer: Amazon Web Services (AWS)
+    date: Aug 2022
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: certification
+    title: Product Management Elevate
+    issuer: Academy Xi
+    date: May 2022
+    url: https://www.credly.com/badges/455c8eae-40aa-4b28-8dc3-bf1472e7b333?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: certification
+    title: Problem Solving (Basic)
+    issuer: HackerRank
+    date: Sep 2020
+    url: https://www.hackerrank.com/certificates/123e65b5bc75
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: certification
+    title: Machine Learning Stanford University
+    issuer: Coursera Course Certificates
+    date: Nov 2018
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: certification
+    title: Elements of AI
+    issuer: University of Helsinki
+    date: Sep 2018
+    url: https://certificates.mooc.fi/validate/hr5mizdk4hk
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: certification
+    title: PTE Academic
+    issuer: Pearson
+    date: Oct 2019
+    expires: Oct 2021
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: certification
+    title: TOEFL English Proficiency
+    issuer: The TOEFL® test
+    date: Jul 2017
+    expires: Jul 2019
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  spoken_languages:
+  - English
+  - Spanish
+  - French
+  - Chinese
+  - Serbian
+  activities:
+  - kind: volunteering
+    title: Member
+    detail: Australian Computer Society (ACS) · Science and Technology · Mar 2020 · - Present · 6 years
+      8 months · Mar 2020
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: volunteering
+    title: Member
+    detail: IEEE · Science and Technology · Jan 2018 · - Present · 8 years 10 months · Jan 2018
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: volunteering
+    title: Member
+    detail: IEEE Computer Society · Science and Technology · Jan 2018 · - Present · 8 years 10 months
+      · Jan 2018
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: volunteering
+    title: Organizational team assistant
+    detail: HeapSpace · Science and Technology · Sep 2016 · - Present · 10 years 2 months · Voxxed Days
+      Belgrade 2016 · Sep 2016
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: Compiler for MicroJava
+    detail: Realization of the compiler for MicroJava. Enables the translation of syntactically and semantically
+      correct microprocess programs into micro-entities bytecode executed on a Virtual Machine. · Aug
+      2017
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: Programming Internet Applications
+    detail: Website for a flight center. Developed using Java Server Faces, Ajax, Primefaces, Hibernate
+      and MySQL based database. · Aug 2017
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: Software DB Tools Project
+    detail: Design of the database for the given system description and requirements, along with triggers,
+      procedures and functions written in SQL (SQL Server Management Studio), and the supporting Java
+      application to demonstrate the work of the system, using JDBC for connection and querying. · Jun
+      2017
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: X.509 Certificate
+    detail: Implementation of the X.509 certificate functionalities for the given GUI interface. · May
+      2017
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: Djune Auction House
+    detail: A fully functional real-time auction site. Authorized to create, edit, delete and start auctions
+      is the admin.Users can bid and have overview of the auctions they've won and orders of tokens they've
+      made, which is supported by Centili's stage version, for school project purposes only.Developed
+      using C#, MVC and ASP .NET technology. · Jan 2017
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: Operating System Kernel
+    detail: Developed in Borland C++ 3.1; a small school kernel that demonstrates concurrent multi-threading
+      and main system functionalities that consist of context switching, event handling, semaphores and
+      system calls. · Jun 2016
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: Restooking
+    detail: An online reservation system that provides reservations for restaurants and cafes at all time.
+      Team project, group of four. Implemented in PHP, CodeIgniter MVC framework. · May 2016
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: Tweeny Tours
+    detail: A Travel Agency website. Used HTML, CSS for styling and Javascript for reservation and other
+      functionalities within a selected jQuery template. · May 2016
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: System for Purchasing a Component
+    detail: Implementation of a functional informational system for purchasing company components Developed
+      in JPA and JPQL. · Feb 2016
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: project
+    title: Algorithms and Data Structures
+    detail: Multiple smaller projects written in Pascal, C and C++ as part of Algorithms and Data Structures
+      course to demonstrate implementation of various complex algorithms. That includes 'A Knight's Tour',
+      along with Tree expansion, Sequential search and Binary search tree, B++ trees, Graph implementations
+      and Hash Mapping. · Mar 2014
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Algorithms and Data Structures
+    detail: 1, 2
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Based Electronics
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Computer Architecture
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Computer Base Technics
+    detail: 1, 2
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Computer Networks
+    detail: 1, 2
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Computer Security
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Computer Systems Performance
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Concurrent and Distributed Programming
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Database Software Tools
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Databases
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: English
+    detail: 1, 2
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Informational Systems
+    detail: 1, 2
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Infrastructure for Electronic Business
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Intelligent Systems
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Internet Applications Programming
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Introduction to Management
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Managing Software Projects
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Mathematics
+    detail: 1, 2
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Microproccessor Systems
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Neural Networks
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Object Oriented Programming
+    detail: 1, 2
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Operating Systems
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Physics
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Practical Use of Computers
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Practicum in Computer Base Technics
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Practicum in Programming
+    detail: 1, 2
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Principles of Modern Telecommunications
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Principles of Software Engineering
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Program Interpreters
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Programming
+    detail: 1, 2
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Sociology
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Software Planning
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Statistics and Probability
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Testing Software
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: course
+    title: Web Design
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  - kind: organization
+    title: Student Organization Elektron
+    detail: Former member of Executive Committee · Sep 2013 · Present
+    evidence:
+      url: https://www.linkedin.com/in/jovanadjune
+      observed_at: '2026-10-24T08:44:50Z'
+  talks:
+  - session:2025/aut1564d
+  - session:2025/aut1565s
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1754690714293001KJWp
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

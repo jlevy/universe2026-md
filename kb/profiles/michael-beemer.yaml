@@ -1,0 +1,285 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:michael-beemer
+  person: person:michael-beemer
+  brief_bio:
+    text: Michael Beemer is a Principal Product Manager at Dynatrace with expertise in AI agents, MCP
+      integrations and developer experience. Beemer speaks at GitHub Universe 2026 about how observability
+      gives agents the context to write fixes.
+    cites:
+    - listed_role
+    - current_affiliations
+    - expertise
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 0760b55c1a9144472c3c77988ee8d1dadad380047fe6212eb370d5c82739b912
+    stale: false
+  headline: Principle Product Manager at Dynatrace
+  current_roles:
+  - Principle Product Manager at Dynatrace
+  expertise:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  - label: OpenTelemetry
+    target: software:opentelemetry
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: OpenTelemetry
+      ref: session:tru2239b
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru2239b
+  interests:
+  - label: openfeature
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/open-feature/flagd
+      ref: repo:open-feature/flagd
+    - url: https://github.com/open-feature/js-sdk
+      ref: repo:open-feature/js-sdk
+    - url: https://github.com/open-feature/openfeature.dev
+      ref: repo:open-feature/openfeature.dev
+  - label: sdk
+    basis: github_repositories
+    confidence: medium
+    weight: 0.65
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/open-feature/js-sdk
+      ref: repo:open-feature/js-sdk
+    - url: https://github.com/open-feature/java-sdk
+      ref: repo:open-feature/java-sdk
+    - url: https://github.com/open-feature/go-sdk
+      ref: repo:open-feature/go-sdk
+  - label: go
+    basis: github_repositories
+    confidence: medium
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/open-feature/flagd
+      ref: repo:open-feature/flagd
+    - url: https://github.com/open-feature/go-sdk
+      ref: repo:open-feature/go-sdk
+  - label: golang
+    basis: github_repositories
+    confidence: medium
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/open-feature/flagd
+      ref: repo:open-feature/flagd
+    - url: https://github.com/open-feature/go-sdk
+      ref: repo:open-feature/go-sdk
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791997913806001I6qs
+      ref: session:tru2239b
+  open_source:
+  - repository: repo:open-feature/flagd
+    relation: pinned
+    stars: 1014
+    primary_language: Go
+  - repository: repo:open-feature/open-feature-operator
+    relation: pinned
+    stars: 315
+    primary_language: Go
+  - repository: repo:open-feature/js-sdk
+    relation: pinned
+    stars: 286
+    primary_language: TypeScript
+  - repository: repo:open-feature/openfeature.dev
+    relation: pinned
+    stars: 67
+    primary_language: TypeScript
+  - repository: repo:open-feature/spec
+    relation: contributor
+    stars: 1279
+    primary_language: Gherkin
+  - repository: repo:open-feature/community
+    relation: contributor
+    stars: 104
+    primary_language: JavaScript
+  - repository: repo:open-feature/playground
+    relation: contributor
+    stars: 77
+    primary_language: TypeScript
+  - repository: repo:open-feature/java-sdk
+    relation: contributor
+    stars: 129
+    primary_language: Java
+  - repository: repo:open-feature/go-sdk
+    relation: contributor
+    stars: 253
+    primary_language: Go
+  talks:
+  - session:tru2239b
+  gaps:
+  - linkedin_account
+  - x_account
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1792785179320001iUwm
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: beeme1mr
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

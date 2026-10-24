@@ -1,0 +1,119 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:janani-chandiran
+  person: person:janani-chandiran
+  brief_bio:
+    text: Janani Chandiran is a Senior Manager of Product Management at PayPal who leads developer-focused
+      AI tools, including PayPal's VS Code extension and AI Assistant. Chandiran spoke at GitHub Universe
+      2025 about migrating legacy PayPal integrations with AI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 713f6ab4eee7588b25e4cd95947aa1c8c12097dc9c3451bc63626c53de7edd2a
+    stale: false
+  headline: PayPal
+  current_roles:
+  - PayPal
+  expertise:
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1723s
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1723s
+  technologies:
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: VS Code
+      ref: person:janani-chandiran
+  interests:
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757704074858001FpvE
+      ref: session:2025/bld1723s
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757704074858001FpvE
+      ref: session:2025/bld1723s
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757704074858001FpvE
+      ref: session:2025/bld1723s
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757704074858001FpvE
+      ref: session:2025/bld1723s
+  education:
+  - school: University of Pennsylvania
+    evidence:
+      url: https://www.linkedin.com/in/janani-chandiran-594b2515
+      observed_at: '2026-10-24T08:44:48Z'
+  credentials:
+  - kind: certification
+    title: Certified Information Systems Security Professional
+    issuer: (ISC)²
+    date: Mar 2016
+    expires: Mar 2022
+    evidence:
+      url: https://www.linkedin.com/in/janani-chandiran-594b2515
+      observed_at: '2026-10-24T08:44:48Z'
+  spoken_languages:
+  - English
+  - Hindi
+  - Tamil
+  - Telugu
+  talks:
+  - session:2025/bld1723s
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1757704350891001ak7p
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

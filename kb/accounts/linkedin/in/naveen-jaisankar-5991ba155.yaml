@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/naveen-jaisankar-5991ba155
+  platform: linkedin
+  handle: in/naveen-jaisankar-5991ba155
+  url: https://www.linkedin.com/in/naveen-jaisankar-5991ba155
+  display_name: Naveen Jaisankar
+  bio: I’m a product-minded engineering leader with 14 years transforming enterprise software…
+  location: Hong Kong
+  followers: 797
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQEO-gvaywLweA/profile-displayphoto-scale_200_200/B56Zud0QvIJgAY-/0/1767879282401?e=2147483647&v=beta&t=r4GBv5H70CBrxhOMtcx9Ez2JQlcOuR1-Rt1PR0sX3Rg
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFOXZ4_mSF0mA/profile-displaybackgroundimage-shrink_200_800/B56ZumKT8NHgAU-/0/1768019292690?e=2147483647&v=beta&t=iz-wSFBkiVc90sBCSZHKs2f2q_ciHgp6-ktsGyiGrC0
+  owner: person:naveen-jaisankar
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1751984303079001ufXD
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/naveen-jaisankar-5991ba155
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/homeassistant
+  ecosystem: pypi
+  name: homeassistant
+  url: https://pypi.org/project/homeassistant/
+  description: Open-source home automation platform running on Python 3.
+  latest_version: 2026.10.3
+  license: Apache-2.0
+  repository_url: https://github.com/home-assistant/core
+  software: software:home-assistant
+  sources:
+  - system: pypi
+    url: https://pypi.org/pypi/
+    record_id: homeassistant
+    retrieved_at: '2026-10-24T19:17:41Z'
+    snapshot: raw/registries/pypi.json

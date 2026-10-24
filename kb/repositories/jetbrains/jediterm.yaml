@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:jetbrains/jediterm
+  full_name: JetBrains/jediterm
+  url: https://github.com/JetBrains/jediterm
+  description: Pure Java Terminal Emulator. Works with SSH and PTY.
+  stars: 866
+  forks: 196
+  watchers: 57
+  open_issues: 43
+  stats_observed_at: '2026-10-24T19:10:22Z'
+  primary_language: Java
+  license: LGPL-3.0
+  archived: false
+  fork: false
+  created_at: '2013-01-10T16:46:27Z'
+  pushed_at: '2026-09-08T09:01:06Z'
+  owner_login: JetBrains
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: aymanbagabas
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: JetBrains/jediterm
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

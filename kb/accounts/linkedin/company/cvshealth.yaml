@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/cvshealth
+  platform: linkedin
+  handle: company/cvshealth
+  url: https://www.linkedin.com/company/cvshealth
+  display_name: CVS Health
+  bio: CVS Health is the leading health solutions company, delivering care like no one else can. We reach
+    more people and improve the health of communities across America through our local presence, digital
+    channels and over 300,000 dedicated colleagues. Wherever and whenever people need us, we help them
+    with their health – whether that’s managing chronic diseases, staying compliant with their medications
+    or accessing affordable health and wellness services in the most convenient ways. We help people navigate
+    the health care system – and their personal health care – by simplifying health care one person, one
+    family and one community at a time. Follow @CVSHealth on social media.
+  website: https://cvshealth.com/
+  followers: 1281044
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E0BAQEhOw_KVli-CQ/company-logo_200_200/company-logo_200_200/0/1669901807779/cvs_health_logo?e=2147483647&v=beta&t=OvUt5ATJw6Y5uPx_IHROAgzSoQHhRNRuf8mqg40OvXc
+  owner: org:cvs-health
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/mitch-enderle-3831508
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/irene-modeste
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jamesbeyers
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/cvshealth
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

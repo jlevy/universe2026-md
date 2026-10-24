@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: track-2023
+  event: event:github-universe-2023
+  label: Track
+  multi_valued: true
+  terms:
+  - id: term:track-2023/ai
+    label: AI
+    source_id: option_1695679351609
+    session_count: 38
+  - id: term:track-2023/developer-experience
+    label: Developer Experience
+    source_id: option_1695679359865
+    session_count: 49
+  - id: term:track-2023/security
+    label: Security
+    source_id: option_1695679362283
+    session_count: 30
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1695679365536001nvxy
+    retrieved_at: '2026-10-24T08:03:33Z'
+    snapshot: raw/editions/universe23/attributes.json

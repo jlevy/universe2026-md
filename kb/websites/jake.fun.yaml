@@ -1,0 +1,27 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:jake.fun
+  url: https://www.jake.fun
+  kind: personal
+  title: jake.fun
+  description: jake’s things
+  owner: person:jake-albaugh
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jake-figma
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://jake.fun/
+    record_id: https://www.jake.fun
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

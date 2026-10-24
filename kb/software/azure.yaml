@@ -1,0 +1,66 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:azure
+  name: Microsoft Azure
+  aliases:
+  - Azure
+  - Microsoft Azure
+  kind: platform
+  vendor: org:microsoft
+  mentioned_in:
+  - person:amanda-silver
+  - person:ambily-kavumkal-kamalasanan
+  - person:bea-mendez-gandica
+  - person:burke-holland
+  - person:christian-oestreich
+  - person:david-pereira
+  - person:eric-bouguen
+  - person:erik-englund
+  - person:esteban-garcia
+  - person:facundo-santiago
+  - person:hirsch-singhal
+  - person:jean-francois-gueyffier
+  - person:jerome-djebari
+  - person:justin-hutchings
+  - person:kaush-ganguly
+  - person:ken-muse
+  - person:kristen-womack
+  - person:landon-cox
+  - person:mandy-whaley
+  - person:manuel-sanchez
+  - person:michael-yenchi-ho
+  - person:pierce-boggan
+  - person:radoslav-gatev
+  - person:randy-pagels
+  - person:rob-bos
+  - person:romain-le-disez
+  - person:said-nikjou
+  - person:samuvel-tamilselvan-devasagayam
+  - person:savannah-ostrowski
+  - person:sergio-sisternes
+  - person:shayne-boyer
+  - person:simona-toader
+  - person:suzanne-daniels
+  - person:todd-manion
+  - person:william-salazar
+  - person:zeba-khan
+  - session:2023/ai2748w
+  - session:2023/ai2852w
+  - session:2023/dev1972g
+  - session:2023/dev2716g
+  - session:2023/dev2769m
+  - session:2024/ai1897d
+  - session:2024/dev1570l
+  - session:2024/dev2016m
+  - session:2025/aut1213b
+  - session:2025/bld1542s
+  - session:2025/bld1810m
+  - session:bld2008d
+  - session:ldr1725d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

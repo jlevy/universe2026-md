@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/bryantson
+  platform: linkedin
+  handle: in/bryantson
+  url: https://www.linkedin.com/in/bryantson
+  display_name: Bryant Son
+  bio: Cloud infrastructure consultant and solutions architect with 15+ years of experience…
+  location: Irving
+  followers: 3493
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQED-DzUWsW7og/profile-displayphoto-scale_200_200/B56ZyK5jszIcAc-/0/1771856872787?e=2147483647&v=beta&t=g7XNodnd2q_a536x3l24un14XCWyTQcXYFzZCNkHWeA
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHbBLRbz5r-JQ/profile-displaybackgroundimage-shrink_200_800/B56Zfwu6MNHcAk-/0/1752090520730?e=2147483647&v=beta&t=zgjhoQW48nGwt0lDzu5R3HmUYY2M5tYjqZ496jlFGTE
+  owner: person:bryant-jimin-son
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685653289360001m4vK
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/bryantson
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

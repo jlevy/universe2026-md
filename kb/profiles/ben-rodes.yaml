@@ -1,0 +1,392 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ben-rodes
+  person: person:ben-rodes
+  brief_bio:
+    text: Ben Rodes is a Principal Security Engineer at Microsoft who applies CodeQL static analysis to
+      Microsoft products and has published research on securing and verifying binary programs. Rodes spoke
+      at GitHub Universe 2025 about securing cryptography at scale with CodeQL and GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 8ac4301f94faacb4bb57c3e45b8b7b4957dec49a5e68a1febcff88c29cdcd5ee
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1325s
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1325s
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1325s
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1325s
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: CodeQL
+      ref: person:ben-rodes
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/sec1325s
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Enterprise Server
+    target: term:github-product-2025/github-enterprise-server
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  education:
+  - school: University of Virginia
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  credentials:
+  - kind: honor
+    title: DSR Rockstar Award
+    issuer: Microsoft
+    date: '2023-11-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: honor
+    title: Distinguished Student Award
+    issuer: JMU Computer Science Department
+    date: '2009-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: honor
+    title: Peter Denning Award
+    issuer: JMU Computer Science Department
+    date: '2009-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: honor
+    title: Curt Scholarship
+    issuer: '-'
+    date: '2008-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: honor
+    title: Curt Scholarship
+    issuer: '-'
+    date: '2007-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  publications:
+  - title: A Proof Infrastructure for Binary Programs
+    venue: NASA Formal Methods
+    date: Jun 2016
+    description: Establishing properties of binary programs by proof is a de- sirable goal when the properties
+      of interest are crucial, such as those that arise in safety- and security-critical applications.
+      Practical development of proofs for binary programs requires a substantial infrastructure to disassemble
+      the program, define the machine semantics, and actually undertake the required proofs. At the center
+      of these infrastructure requirements is the need to document semantics in a formal language. In
+      this paper we present a work-in-progress proof infrastructure for binary programs based on AdaCore’s
+      integrated development and verification environment, SPARKPro. We illustrate the infrastructure
+      with proof of a security property.
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - title: A System for the Security Protection of Embedded Binary Programs
+    venue: DSN Industry Track
+    date: Jun 2016
+    description: Software for which development artifacts are missing is increasingly common and difficult
+      to avoid, including in embedded systems. The lack of development artifacts leaves doubt about whether
+      the software possesses critical security properties and makes enhancement of the software extremely
+      difficult. Embedded systems often have strict resource restrictions/constraints making the application
+      of security enhancements especially difficult. In this paper, we present details of a system that
+      is being developed to provide significant protection against security exploits of embedded systems.
+      The system operates on binary programs. No source code or other development artifacts are required,
+      and the typical size and time constraints of embedded systems are accounted for in the analysis
+      and processing of subject binary programs. Formal verification of security properties is used to
+      eliminate unnecessary security transformations, and transformations are applied by a highly efficient
+      static binary rewriter.
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - title: A Case Study of Security Case Development
+    venue: Safety-Critical Systems Symposium (SSS) 2015
+    date: Feb 2015
+    description: Security concerns that arise in safety-critical domains, such as air-traffic control
+      and energy system management, might be analyzed using rigorous security cases. Such analysis has
+      been explored minimally. We present a case study of the application of rigorous security arguments
+      to a novel approach to thwarting command-injection attacks based on transformation of the binary
+      form of a program (no source code). The case study illustrates an approach to security argument
+      structure, the construction process for the argument, and organizes and reveals the defensive capabilities
+      of the technique and its limitations thereby demonstrating the power of security argument.
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - title: Security Protection of Binary Programs
+    venue: IET System Safety and Cyber Security Conference
+    date: '2015'
+    description: The use of Software of Unknown Provenance (SOUP) in the development of modern information
+      systems has become widespread and is difficult to avoid. Unfortunately, important properties of
+      the software, such as critical security properties, cannot be assured with SOUP making the use of
+      SOUP problematic. In this paper we summarize Kevlar, a comprehensive approach to enhancing the security
+      of SOUP. Kevlar operates with access only to the binary program, i.e., no source code or other development
+      documentation is required, and the current implementation supports Intel X86 software running on
+      Ubuntu platforms.
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - title: A Security Metric Based on Security Arguments.
+    venue: Workshop on Emerging Trends in Software Metrics (WETSoM)
+    date: Jun 2014
+    description: Software security metrics that facilitate decision making at the enterprise design and
+      operations levels are a topic of active research and debate. These metrics are desirable to support
+      deployment decisions, upgrade decisions, and so on; however, no single metric or set of metrics
+      is known to provide universally effective and appropriate measurements. Instead, engineers must
+      choose, for each software system, what to measure, how and how much to measure, and must be able
+      to justify the rationale for how these measurements are mapped to stakeholder security goals. An
+      assurance argument for security (i.e., a security argument) provides comprehensive documentation
+      of all evidence and rationales for justifying belief in a security claim about a software system.
+      In this work, we motivate the need for security arguments to facilitate meaningful and comprehensive
+      security metrics, and present a novel framework for assessing security arguments to generate and
+      interpret security metrics.
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - title: A Framework for Creating Binary Rewriting Tools.
+    venue: European Dependable Computing Conference (EDCC)
+    date: May 2014
+    description: The design of many binary-level rewriting and instrumentation systems is based on specifying
+      and implementing an application-programmer interface (API) to provide the necessary functionality
+      for implementing various instrumentation tools. Users implement instrumentation tools by writing
+      code that uses the functionality provided by the implementation of the API. This paper describes
+      a novel approach for realizing powerful binary-level instrumentation systems that is based on a
+      simple, low-level language, called SPRI. SPRI is a simple language for specifying edits to apply
+      to a binary.Its simplicity makes SPRI an ideal target language for binary analysis and instrumentation
+      tools.A SPRI specification can then be applied to a binary statically or dynamically to insert the
+      desired instrumentation. To demonstrate the advantages, flexibility, and power of this approach,
+      the paper presents an exemplar instrumentation system that uses a software dynamic translator to
+      apply SPRI-specified edits to a binary, along with several case studies of how the system has been
+      used.
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - title: Speculative Software Modification and Its Use in Securing SOUP.
+    venue: European Dependable Computing Conference (EDCC)
+    date: May 2014
+    description: We present an engineering process model for generating software modifications that is
+      designed to be used when either most or all development artifacts about the software, including
+      the source code, are unavailable. This kind of software, commonly called Software Of Unknown Provenance
+      (SOUP), raises many doubts about the existence and adequacy of desired dependability properties,
+      for example security. These doubts motivate some users to apply modifications to enhance dependability
+      properties of the software; however, without necessary development artifacts, modifications are
+      made in a state of uncertainty and risk. We investigate enhancing dependability through software
+      modification in the presence of these risks as an engineering problem and introduce an engineering
+      process for generating software modifications called Speculative Software Modification (SSM). We
+      present the motivation and guiding principles of SSM, and a case study of SSM applied to protect
+      software against buffer overflow attacks when only the binary is available.
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - title: Reasoning About Software Security Enhancements Using Security Cases
+    venue: 1st Workshop on Argument for Assurance and Agreement
+    date: '2013'
+    description: Increased skepticism about the presence of crucial software security properties has motivated
+      the development of various software security enhancement techniques. These techniques provide general
+      utility but lack a structure for reasoning and assessment, or even a systematic methodology for
+      application. Users also lack an understanding of what security claims can be made about the modified
+      software in their operating context. We present an assurance argument structure designed to support
+      analysis of software security enhancements. The technique provides a comprehensive view of the claims
+      that can be made about the modified software system together with justification and structured reasoning
+      about chosen modifications and configurations. We illustrate the argument construction and some
+      of the benefits that the argument provides by applying our approach to an existing software modification
+      method.
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - title: Defense Against Stack-Based Attacks Using Speculative Stack Layout Transformation
+    venue: Runtime Verification (RV)
+    date: Oct 2012
+    description: This paper describes a novel technique to defend binaries against intra-frame stack-based
+      attacks, including overflows into local variables, when source code is unavailable. The technique
+      infers a specification of a function's stack layout, i.e., variable locations and boundaries, and
+      then seeks to apply a combination of transformations, including variable reordering, random-sized
+      padding between variables, and placement of canaries. To overcome the imprecision of static binary
+      analysis, yet be as aggressive as possible in the transformations applied to the stack layout, the
+      technique is speculative. A stack frame is aggressively transformed based on static analysis, and
+      the validity of inferred stack layout is assessed through regression testing. If a transformation
+      changes a program's semantics because of imprecision in the inference of the stack layout, a less
+      aggressive layout is inferred until the transformed program passes the supplied regression tests.
+      We present an overview of the technique and preliminary results of its feasibility and security
+      effectiveness.
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  - title: 'Stack Layout Transformation: Towards Diversity for Securing Binary Programs'
+    venue: International Conference of Software Engineering (ICSE) Doctoral Symposium
+    date: May 2012
+    description: 'Despite protracted efforts by both researchers and practitioners, security vulnerabilities
+      remain in modern software. Artificial diversity is an effective defense against many types of attack,
+      and one form, address-space randomization, has been widely applied. Present artificial diversity
+      implementations are either coarse-grained or require source code. Because of the widespread use
+      of software of unknown provenance, e.g., libraries, where no source code is provided or available,
+      building diversity into the source code is not always possible. I investigate an approach to stack
+      layout transformation that operates on x86 binary programs, which would allow users to obfuscate
+      vulnerabilities and increase their confidence in the software’s dependability. The proposed approach
+      is speculative: the stack frame layout for a function is inferred from the binary and assessed by
+      executing the transformed program. Upon assessment failure, the inferred layout is refined in hopes
+      to better reflect the actual function layout.'
+    evidence:
+      url: https://www.linkedin.com/in/benjaminrodes
+      observed_at: '2026-10-24T08:42:31Z'
+  talks:
+  - session:2025/sec1325s
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715188636692001YQuX
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

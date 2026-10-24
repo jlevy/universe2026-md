@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/andela
+  platform: linkedin
+  handle: company/andela
+  url: https://www.linkedin.com/company/andela
+  display_name: Andela
+  bio: 'Andela was created with one thing in mind: Brilliance is evenly distributed, but opportunity isn’t.
+    Our platform bridges that gap. We specialize in helping our highly-skilled, global technology talent
+    community in emerging markets, connect with hundreds of leading companies like InVision, Cloudflare,
+    and ViacomCBS who leverage Andela to scale their technology teams quickly and cost-effectively. Our
+    talent spans six continents and Andela is backed by investors including Generation Investment Management,
+    SoftBank, Chan Zuckerberg Initiative, Spark Capital, and Google Ventures.'
+  website: https://andela.com/?utm_medium=social&utm_source=linkedin&utm_campaign=client-global-peony
+  followers: 523045
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQF4stmbN8pBjg/company-logo_200_200/B4EZc7N7F4HgAI-/0/1749045195669/andela_logo?e=2147483647&v=beta&t=YXY4b-yGKtsDzBQDA3DlfqUTRC6s6AvXCCjClOguJuw
+  owner: org:andela
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/cory-hymel
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/andela
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

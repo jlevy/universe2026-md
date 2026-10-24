@@ -1,0 +1,28 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:kassenq.com
+  url: http://kassenq.com/
+  kind: personal
+  title: Notion
+  description: Made in Notion, the connected workspace where AI agents and teams organize docs, projects
+    and knowledge together.
+  owner: person:kassen-qian
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: brightdata
+    url: https://x.com/kassenq
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://kassen.notion.site/Kassen-Qian-fe1dc83e34484528bd90fdbf422d3fc5
+    record_id: http://kassenq.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:pomerium/mcp-app-demo
+  full_name: pomerium/mcp-app-demo
+  url: https://github.com/pomerium/mcp-app-demo
+  description: Demo application showcasing how to build and secure MCP servers and clients with Pomerium
+    using contextual access policies.
+  stars: 51
+  forks: 7
+  watchers: 2
+  open_issues: 9
+  stats_observed_at: '2026-10-24T19:12:13Z'
+  primary_language: TypeScript
+  topics:
+  - agentic-ai
+  - mcp
+  - zerotrust
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2025-05-22T20:50:21Z'
+  pushed_at: '2026-08-06T17:05:29Z'
+  owner_login: pomerium
+  owner: gh:pomerium
+  pinned_by:
+  - gh:pomerium
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pomerium
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pomerium/mcp-app-demo
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

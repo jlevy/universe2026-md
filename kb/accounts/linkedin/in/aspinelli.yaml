@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/aspinelli
+  platform: linkedin
+  handle: in/aspinelli
+  url: https://www.linkedin.com/in/aspinelli
+  display_name: Alex Spinelli
+  bio: AI and Machine Learning expert and innovator. I have helped invent, build, deliver, and…
+  location: Greater Seattle Area
+  followers: 6774
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQFoIcuKuPKGcA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1638466832285?e=2147483647&v=beta&t=7PCkeXWJTs9_UNDBZhsS7_SbDEKIiyf3tghT517rNLc
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGk7r9GhAMWeA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1726767812616?e=2147483647&v=beta&t=6XFnTFeZOdn1mXnvzU6X4z4luFREJA-ZWt80c443JaA
+  owner: person:alex-spinelli
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724268834180001IsW3
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/aspinelli
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

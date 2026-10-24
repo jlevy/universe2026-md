@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/confluent
+  platform: linkedin
+  handle: company/confluent
+  url: https://www.linkedin.com/company/confluent
+  display_name: Confluent, an IBM Company
+  bio: Confluent is pioneering a fundamentally new category of data infrastructure focused on data in
+    motion. Our cloud-native offering is the foundational platform for data in motion --- designed to
+    be the intelligent connective tissue enabling real-time data, from multiple sources, to constantly
+    stream across the organization. With Confluent, our customers can meet the new business imperative
+    of delivering rich, digital customer experiences and real-time business operations. Our mission is
+    to help every organization harness data in motion so they can compete and thrive in the modern world.
+  website: https://confluent.io/
+  followers: 710906
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQH5-OYbTze-EA/company-logo_200_200/B4EZbt9pRdHkAM-/0/1747749082914/confluent_logo?e=2147483647&v=beta&t=evqOTe_BbZvVLzej0B5Wd15zciGMH0l_5JDPeaJVpww
+  owner: org:confluent
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/bored-engineer
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/confluent
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

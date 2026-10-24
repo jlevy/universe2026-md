@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: delivery-format
+  event: event:github-universe-2026
+  label: Delivery format
+  multi_valued: true
+  terms:
+  - id: term:delivery-format/in-person
+    label: In-person
+    description: Join us live at Universe for the full interactive experience with speakers and fellow
+      attendees.
+    source_id: 1692799009854001CDl2
+    session_count: 135
+  - id: term:delivery-format/recorded
+    label: Recorded
+    description: Catch this session on-demand after the event — perfect for revisiting key insights or
+      sharing with your team.
+    source_id: 1692799009854002CBbz
+    session_count: 55
+  - id: term:delivery-format/livestream
+    label: Livestream
+    description: Watch live from anywhere, then access the recording later. Get the real-time experience
+      remotely.
+    source_id: 1692799009854003CF33
+    session_count: 2
+  - id: term:delivery-format/ai-summary
+    label: AI summary
+    description: Get instant key takeaways with an AI-generated summary available shortly after the session
+      ends.
+    source_id: 1755631164570001xhtJ
+    session_count: 110
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1692799009855001C0n3
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/attributes.json

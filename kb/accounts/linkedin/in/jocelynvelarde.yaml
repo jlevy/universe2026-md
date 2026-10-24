@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jocelynvelarde
+  platform: linkedin
+  handle: in/jocelynvelarde
+  url: https://www.linkedin.com/in/jocelynvelarde
+  display_name: Jocelyn Anahid Velarde Barrón
+  bio: Hello! I'm a third year student in Robotics and Digital Systems Engineering. I'm…
+  location: Monterrey
+  followers: 2889
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQEmk9O1LUNplQ/profile-displayphoto-scale_200_200/B56ZnAu2E7HUAY-/0/1759875130207?e=2147483647&v=beta&t=CcNXzLI7ZNTH--XFjeIL8U3723J08Ru-7xoUbIt2xDE
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQG2h84r4kxqYg/profile-displaybackgroundimage-shrink_200_800/B56Zi5c9FfHQAU-/0/1755458033080?e=2147483647&v=beta&t=mqSfYW1_HXs8fh-At7m3bflb7M_UuSaDsbuwS-GbnHs
+  owner: person:jocelyn-velarde
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1790615092640001VIr5
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: JocelynVelarde
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jocelynvelarde
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

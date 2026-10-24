@@ -1,0 +1,254 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:james-m-beyers
+  person: person:james-m-beyers
+  brief_bio:
+    text: Jim Beyers is VP of Developer Experience at CVS Health, where Beyers leads platform engineering
+      and enterprise AI enablement. Beyers spoke at GitHub Universe 2025 about CVS Health's move from
+      legacy tools to a new developer experience.
+    cites:
+    - listed_role
+    - current_affiliations
+    - linkedin_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 10fc674e0a742342c4d025a4080e25a9d400eb40f2f67b50eb6451f26f1d9ffd
+    stale: false
+  headline: CVS Health
+  current_roles:
+  - CVS Health
+  expertise:
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/1859
+    - ref: session:2025/aut1624m
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1624m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1624m
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1624m
+  interests:
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759933810927001TpXB
+      ref: session:2025/1859
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757015503833001KN8a
+      ref: session:2025/aut1624m
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757015503833001KN8a
+      ref: session:2025/aut1624m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757015503833001KN8a
+      ref: session:2025/aut1624m
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757015503833001KN8a
+      ref: session:2025/aut1624m
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757015503833001KN8a
+      ref: session:2025/aut1624m
+  education:
+  - school: University of Saint Thomas - School of Business
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  credentials:
+  - kind: honor
+    title: Honesty and Integrity Award
+    issuer: Perficient Minneapolis Office
+    date: '2013-12-01T00:00:00.000Z'
+    description: 'Award description : Honesty and Integrity – Be forthright and ethical in all interactions
+      with clients and colleagues, demonstrated consistently through our behavior in every situation,
+      every day.'
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: certification
+    title: 'Speaker: Open Source Summit North America 2025'
+    issuer: The Linux Foundation
+    date: Jul 2025
+    url: https://www.credly.com/badges/c3f654e8-5cae-4a59-9b34-de5c5938b420/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  publications:
+  - title: Apache Camel in Criminal Justice
+    venue: CamelOne 2013 Conference
+    date: Jun 2013
+    description: Talk I gave at the Camel Conference.
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  activities:
+  - kind: project
+    title: HCPD GitHub
+    detail: HCPD GitHub. Created and managed by me to track code, issues, and manage projects. · Jan 2012
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: project
+    title: My Github
+    detail: This is a link to projects I've created or participate on using GitHub · Oct 2011
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: project
+    title: Enterprise Service Bus Implementation
+    detail: Evaluated and selected an ESB for agency. Selected Apache ServiceMix and implemented various
+      integrations using SOA principles. · Jul 2011
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: project
+    title: Move to a continuous integration development lifecycle
+    detail: Commissioned a continuous integration build server and encouraged team to utilize CI development
+      practices. Went with Hudson (now using Jenkins) developed regression tests and modularized the build
+      process. · Jun 2009
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Advanced Computer Security
+    detail: SEIS 721
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Computer Security
+    detail: SEIS 720
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Financial Accounting
+    detail: ACCT 601
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Financial Management
+    detail: FINC 600
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Fundamentals Of Successful Supervision
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Innovation and Corporate Entrepreneurship
+    detail: ENTR 707
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Managerial Accounting
+    detail: ACCT 605
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Performance Management Certificate Program
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Software Analysis and Design
+    detail: SEIS 635
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Strategic Information Systems
+    detail: SEIS 705
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: course
+    title: Topics:Enterprise Architecture & Development
+    detail: SEIS 785
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  - kind: organization
+    title: InfraGard
+    detail: InfraGard is an information sharing and analysis effort serving the interests and combining
+      the knowledge base of a wide range of members. At its most basic level, InfraGard is a partnership
+      between the Federal Bureau of Investigation and the private sector. InfraGard is an association
+      of businesses, academic institutions, state and local law enforcement agencies, and other participants
+      dedicated to sharing information and intelligence to prevent hostile acts against the United States.
+      InfraGard Chapters are geographically linked with FBI Field Office territories. · Aug 2011 · Present
+    evidence:
+      url: https://www.linkedin.com/in/jamesbeyers
+      observed_at: '2026-10-24T08:44:23Z'
+  talks:
+  - session:2025/1859
+  - session:2025/aut1624m
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694808547220001GkHs
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

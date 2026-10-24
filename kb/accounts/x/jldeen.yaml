@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/jldeen
+  platform: x
+  handle: jldeen
+  url: https://x.com/jldeen
+  display_name: Jessica Deen
+  bio: Staff DA @github / @microsoft | Former @aws | CrossFit, Containers, DevOps, OSS, @linux, tattoos
+    | Tweets are my own
+  location: Mountain View, CA
+  website: https://jessicadeen.com/
+  followers: 10674
+  following: 789
+  posts_count: 5306
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1701831745661005824/1P0XUUAo_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/23549334/1557249169
+  created_at: '2009-03-10T03:12:57Z'
+  owner: person:jessica-deen
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715369702586001DP36
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/jldeen
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/hutchingsjustin
+  platform: linkedin
+  handle: in/hutchingsjustin
+  url: https://www.linkedin.com/in/hutchingsjustin
+  display_name: Justin Hutchings
+  bio: Seasoned product leader with 18 years building world-class experiences for developers…
+  location: Issaquah
+  followers: 4900
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQGIYxKOTPcB6A/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1560736847634?e=2147483647&v=beta&t=58tC_TRd8LYUQpVU-i3c489M3vsN-EzCgvGOQICAuvs
+  owner: person:justin-hutchings
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694702977974001Fqz9
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/hutchingsjustin
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

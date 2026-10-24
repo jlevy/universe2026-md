@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/jdjebari
+  platform: x
+  handle: JDjebari
+  url: https://x.com/JDjebari
+  display_name: Jerome Djebari
+  bio: Software engineer at Air France-KLM
+  followers: 9
+  following: 34
+  posts_count: 7
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1773381722740019200/_ue-uxfx_normal.jpg
+  created_at: '2018-09-22T09:39:43Z'
+  owner: person:jerome-djebari
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687361230731001yyB8
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/JDjebari
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/shelleymckinley
+  platform: linkedin
+  handle: in/shelleymckinley
+  url: https://www.linkedin.com/in/shelleymckinley
+  display_name: Shelley McKinley
+  bio: I have two decades of professional experience in the private sector, having worked…
+  location: London
+  followers: 4208
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFNKKWeKkP8Fw/profile-displaybackgroundimage-shrink_200_800/B56Z0F8IspHIAU-/0/1773921144398?e=2147483647&v=beta&t=p6SO7WwOwCtys_VLwKPXCzRCW2FmqTDUk6lelfuPz4c
+  owner: person:shelley-mckinley
+  link_basis:
+  - event_listing
+  - x_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686591837698001uXbq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686591837698001uXbq
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/shelleymckin
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/shelleymckinley
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

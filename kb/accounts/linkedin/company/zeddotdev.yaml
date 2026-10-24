@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/zeddotdev
+  platform: linkedin
+  handle: company/zeddotdev
+  url: https://www.linkedin.com/company/zeddotdev
+  display_name: Zed Industries
+  bio: We’re Zed Industries, a small and passionate team with a vision for building the world’s best text
+    editor—for you, and for your team. Zed isn’t our first editor. It’s the culmination of more than a
+    decade of experience building tools for developers. We created the hackable text editor, Atom, and
+    the pioneering software platform that launched an entirely new generation of desktop apps, Electron.
+    We also built Tree-sitter, an advanced syntax parsing framework used by the most popular editors in
+    the world. Building tools that matter is in our DNA. Now, we’re building something new again with
+    that same drive and a new vision. We believe the best software is handcrafted, with unparalleled attention
+    to detail. We believe software development is better when it’s a shared experience. We believe there’s
+    a better way to write software—and this is just the start of the adventure.
+  website: https://zed.dev/
+  followers: 7471
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQEQ1Fjc8YgDnw/company-logo_200_200/company-logo_200_200/0/1678909671714/zeddotdev_logo?e=2147483647&v=beta&t=v-LC04GdgMvkirdYLPyBuHjakWZhzDBeqrIPmF73wEU
+  owner: org:zed-industries
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/swannysec
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/zeddotdev
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

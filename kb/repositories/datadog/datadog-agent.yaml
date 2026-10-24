@@ -1,0 +1,48 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:datadog/datadog-agent
+  full_name: DataDog/datadog-agent
+  url: https://github.com/DataDog/datadog-agent
+  description: Main repository for Datadog Agent
+  homepage: https://docs.datadoghq.com/
+  stars: 3771
+  forks: 1517
+  watchers: 522
+  open_issues: 77
+  stats_observed_at: '2026-10-24T19:10:00Z'
+  primary_language: Go
+  topics:
+  - monitoring
+  - go
+  - datadog
+  - apm-agent
+  - apm-instrumentation
+  - distributed-tracing
+  - logging
+  - metrics
+  - observability
+  - open-telemetry
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2016-01-19T17:40:41Z'
+  pushed_at: '2026-10-24T15:17:15Z'
+  owner_login: DataDog
+  owner: gh:datadog
+  pinned_by:
+  - gh:datadog
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: DataDog
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: DataDog/datadog-agent
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

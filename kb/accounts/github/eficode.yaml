@@ -1,0 +1,60 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:eficode
+  login: eficode
+  kind: organization
+  url: https://github.com/eficode
+  name: Eficode
+  location: Finland
+  website: eficode.com
+  public_repositories: 81
+  created_at: '2010-12-17T09:00:34Z'
+  profile_readme: "# \U0001F44B Hello from Eficode\n\n<img width=\"1200\" height=\"480\" alt=\"GitHub\
+    \ page cover image woman-1200x480-d1daee0\" src=\"https://github.com/user-attachments/assets/c049878a-be0e-4eaa-8662-cedd00ed5cbe\"\
+    \ />\n\n\n## Building the future of software development\n\nWe're Eficode, a team of 600+ DevOps and\
+    \ AI specialists working across 10 countries to help organizations implement AI in software development\
+    \ and build effective SDLC tooling. We can help you get the most out of GitHub Enterprise with expert\
+    \ consulting, managed services, training, and license management.\n\nWhether you’re consolidating\
+    \ your toolchain, bringing AI into your workflows with GitHub Copilot, or scaling secure software\
+    \ delivery—we’ve got your back.\n\n## Why work with us?\n\n- \U0001F3C6 **GitHub Channel Partner of\
+    \ the Year**  \n  Two years running, for EMEA in 2024 and Security Services in 2025.\n\n- \U0001F469\
+    ‍\U0001F4BB **5 Microsoft MVPs on our team**  \n  Yep, five of them. All ready to share their deep\
+    \ expertise.\n\n- \U0001F393 **300+ GitHub certifications**  \n  Across 120 certified individuals\
+    \ and counting.\n\n- \U0001F504 **Both Microsoft and GitHub partner**\n  We were the first-ever GitHub\
+    \ partner, and know GitHub and Azure DevOps inside out.\n\n## How do we actually help with GitHub\n\
+    \n### ☁️ Migrate and consolidate to GitHub Enterprise Cloud  \nWe help you move from ADO, Bitbucket,\
+    \ GitLab, or on-prem GitHub to GitHub Enterprise Cloud—safely and at speed.\n- Reduce cost and complexity\
+    \ by consolidating tools\n- Shift security and compliance left by design\n- From repo migrations to\
+    \ full enterprise setups\n- Future-proofed to GitHub and Microsoft’s roadmap\n\n### \U0001F916 Adopt\
+    \ Copilot and build an AI-driven SDLC  \nCopilot unlocks AI—but we make it stick. We help you adopt\
+    \ AI-driven software development with the right guardrails, governance, and training\n- Secure rollout\
+    \ and enablement across teams\n- ROI dashboards and KPI tracking  \n- Scalable foundations for AI-powered\
+    \ development \n\n### \U0001F510 Built-in security with GHAS  \nWe integrate GitHub Advanced Security\
+    \ into your workflows for a secure-by-default setup:\n- CodeQL, secret scanning, and Dependabot, all\
+    \ tuned to your needs  \n- Policies, dashboards, and compliance baked in.\n\n### \U0001F393 GitHub\
+    \ training & certifications  \nWe run training and certification programs for GitHub Actions, Advanced\
+    \ Security, Admin, and more, so your teams grow as fast as your tech.\n\n## \U0001F4EB Get in touch\n\
+    \nWant to talk GitHub, Copilot, or how we can help you move faster with confidence?  \nVisit [eficode.com](https://efcd.co/49W4WA7).\n\
+    \nOr check out [our latest insights on GitHub.](https://efcd.co/4qOpz6W)"
+  pinned:
+  - repo:eficode/wait-for
+  - repo:eficode/pipeline-the-game
+  - repo:eficode/javafxlibrary
+  - repo:eficode/devstack
+  - repo:eficode/robotframework-oxygen
+  - repo:eficode/robotframework-imagehorizonlibrary
+  top_repositories:
+  - repo:eficode/docker-selenium-example
+  linked_accounts:
+  - acct:x/eficode
+  entity: org:eficode
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: eficode
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

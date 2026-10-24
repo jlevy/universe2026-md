@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/patrickaknight
+  platform: linkedin
+  handle: in/patrickaknight
+  url: https://www.linkedin.com/in/patrickaknight
+  display_name: Patrick K.
+  location: Austin
+  followers: 1806
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQH4Rp7qEew_2g/profile-displaybackgroundimage-shrink_200_800/B56Z132ME5IcAU-/0/1775832187603?e=2147483647&v=beta&t=vJcA7XJqVxbSqA6wPZIJUZwDihBA1KtSi-hvANnU8Kw
+  owner: person:patrick-knight
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1690427017867001FJ1u
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1690427017867001FJ1u
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1690427017867001FJ1u
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/patrickaknight
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

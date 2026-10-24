@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/nvidia
+  platform: linkedin
+  handle: company/nvidia
+  url: https://www.linkedin.com/company/nvidia
+  display_name: NVIDIA
+  bio: 'Since its founding in 1993, NVIDIA (NASDAQ: NVDA) has been a pioneer in accelerated computing.
+    The company’s invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined computer
+    graphics, ignited the era of modern AI and is fueling the creation of the metaverse. NVIDIA is now
+    a full-stack computing company with data-center-scale offerings that are reshaping industry.'
+  website: https://www.nvidia.com/
+  followers: 6873717
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGV36q2EowSyw/company-logo_200_200/company-logo_200_200/0/1724881581208/nvidia_logo?e=2147483647&v=beta&t=yF-4C3SrvMQ8g1dxIpI7QXtbsm9QoSrnc27dnGnD1Ls
+  owner: org:nvidia
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/achocka
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/nvidia
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

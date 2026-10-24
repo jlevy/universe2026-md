@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/angelajiang
+  platform: linkedin
+  handle: in/angelajiang
+  url: https://www.linkedin.com/in/angelajiang
+  display_name: Angela Jiang
+  location: United States
+  followers: 23224
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQGxY6jMWcnqBA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715056330743?e=2147483647&v=beta&t=RaGj--71dFhcQG75dD-n5yntCw3wPNy3X2IVjRPnw-g
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:angela-jiang
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1792015053474001kVda
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/angelajiang
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

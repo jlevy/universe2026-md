@@ -1,0 +1,398 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:camila-maia
+  person: person:camila-maia
+  brief_bio:
+    text: Camila Maia is co-founder of Cumbuca Dev, a community that makes open source more accessible
+      to underrepresented groups in Brazil, and a software engineer with more than 16 years in developer
+      experience and backend work. Maia speaks at GitHub Universe 2026 on turning funding into security.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 51d9ef1b8dd08a0774bc068c74a63ec362dc8db0d786be40d338fc3d58e818a6
+    stale: false
+  headline: Co-founder at Cumbuca Dev
+  current_roles:
+  - Co-founder at Cumbuca Dev
+  - Latitude.sh
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1783b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:tru1783b
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:camila-maia
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:scanapi/scanapi
+    - ref: repo:brazilian-utils/python
+    - ref: repo:camilamaia/factory-boy-best-practices
+  - label: Java
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:camilamaia/jornada-big-tech
+  interests:
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1784557963287001ooxL
+      ref: session:tru1783b
+    - url: https://github.com/cumbucadev/gitcaos
+      ref: repo:cumbucadev/gitcaos
+    - url: https://github.com/cumbucadev/PRimeiro-fork
+      ref: repo:cumbucadev/primeiro-fork
+  - label: cumbucadev
+    basis: github_repositories
+    confidence: medium
+    weight: 0.81
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cumbucadev/gitcaos
+      ref: repo:cumbucadev/gitcaos
+    - url: https://github.com/cumbucadev/git-e-github-para-humanos
+      ref: repo:cumbucadev/git-e-github-para-humanos
+    - url: https://github.com/cumbucadev/PRimeiro-fork
+      ref: repo:cumbucadev/primeiro-fork
+  - label: git
+    basis: github_repositories
+    confidence: medium
+    weight: 0.63
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cumbucadev/gitcaos
+      ref: repo:cumbucadev/gitcaos
+    - url: https://github.com/cumbucadev/git-e-github-para-humanos
+      ref: repo:cumbucadev/git-e-github-para-humanos
+    - url: https://github.com/cumbucadev/PRimeiro-fork
+      ref: repo:cumbucadev/primeiro-fork
+  - label: python
+    basis: github_repositories
+    confidence: medium
+    weight: 0.63
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/brazilian-utils/python
+      ref: repo:brazilian-utils/python
+    - url: https://github.com/camilamaia/factory-boy-best-practices
+      ref: repo:camilamaia/factory-boy-best-practices
+    - url: https://github.com/vinta/awesome-python
+      ref: repo:vinta/awesome-python
+  - label: scanapi
+    basis: github_repositories
+    confidence: medium
+    weight: 0.63
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/scanapi/scanapi
+      ref: repo:scanapi/scanapi
+    - url: https://github.com/scanapi/demo-api
+      ref: repo:scanapi/demo-api
+    - url: https://github.com/scanapi/examples
+      ref: repo:scanapi/examples
+  - label: api
+    basis: github_repositories
+    confidence: medium
+    weight: 0.49
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/scanapi/scanapi
+      ref: repo:scanapi/scanapi
+    - url: https://github.com/scanapi/demo-api
+      ref: repo:scanapi/demo-api
+  - label: django
+    basis: github_repositories
+    confidence: medium
+    weight: 0.49
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/camilamaia/factory-boy-best-practices
+      ref: repo:camilamaia/factory-boy-best-practices
+    - url: https://github.com/scanapi/demo-api
+      ref: repo:scanapi/demo-api
+  - label: educacional
+    basis: github_repositories
+    confidence: medium
+    weight: 0.49
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cumbucadev/gitcaos
+      ref: repo:cumbucadev/gitcaos
+    - url: https://github.com/cumbucadev/PRimeiro-fork
+      ref: repo:cumbucadev/primeiro-fork
+  - label: ensino
+    basis: github_repositories
+    confidence: medium
+    weight: 0.49
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cumbucadev/gitcaos
+      ref: repo:cumbucadev/gitcaos
+    - url: https://github.com/cumbucadev/PRimeiro-fork
+      ref: repo:cumbucadev/primeiro-fork
+  - label: learning
+    basis: github_repositories
+    confidence: medium
+    weight: 0.49
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cumbucadev/gitcaos
+      ref: repo:cumbucadev/gitcaos
+    - url: https://github.com/cumbucadev/PRimeiro-fork
+      ref: repo:cumbucadev/primeiro-fork
+  - label: pratica
+    basis: github_repositories
+    confidence: medium
+    weight: 0.49
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cumbucadev/gitcaos
+      ref: repo:cumbucadev/gitcaos
+    - url: https://github.com/cumbucadev/PRimeiro-fork
+      ref: repo:cumbucadev/primeiro-fork
+  - label: python3
+    basis: github_repositories
+    confidence: medium
+    weight: 0.49
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/scanapi/scanapi
+      ref: repo:scanapi/scanapi
+    - url: https://github.com/camilamaia/factory-boy-best-practices
+      ref: repo:camilamaia/factory-boy-best-practices
+  open_source:
+  - repository: repo:scanapi/scanapi
+    relation: pinned
+    stars: 1584
+    primary_language: Python
+  - repository: repo:brazilian-utils/python
+    relation: pinned
+    stars: 527
+    primary_language: Python
+  - repository: repo:camilamaia/jornada-big-tech
+    relation: owner
+    stars: 132
+    primary_language: Java
+  - repository: repo:cumbucadev/gitcaos
+    relation: pinned
+    stars: 94
+  - repository: repo:cumbucadev/git-e-github-para-humanos
+    relation: pinned
+    stars: 62
+  - repository: repo:camilamaia/factory-boy-best-practices
+    relation: owner
+    stars: 49
+    primary_language: Python
+  - repository: repo:cumbucadev/primeiro-fork
+    relation: pinned
+    stars: 5
+  - repository: repo:vinta/awesome-python
+    relation: contributor
+    stars: 329965
+    primary_language: Python
+  - repository: repo:xriley/orbit-theme
+    relation: contributor
+    stars: 821
+    primary_language: JavaScript
+  - repository: repo:scanapi/demo-api
+    relation: contributor
+    stars: 4
+    primary_language: Python
+  - repository: repo:scanapi/examples
+    relation: contributor
+    stars: 29
+    primary_language: HTML
+  education:
+  - school: Universidade Federal de Santa Catarina
+    evidence:
+      url: https://www.linkedin.com/in/cmaiacd
+      observed_at: '2026-10-24T08:12:16Z'
+  credentials:
+  - kind: certification
+    title: GitHub Actions
+    issuer: Microsoft
+    date: Feb 2026
+    expires: Feb 2028
+    evidence:
+      url: https://www.linkedin.com/in/cmaiacd
+      observed_at: '2026-10-24T08:12:16Z'
+  - kind: certification
+    title: GitHub Foundations
+    issuer: Microsoft
+    date: Oct 2025
+    expires: Oct 2027
+    evidence:
+      url: https://www.linkedin.com/in/cmaiacd
+      observed_at: '2026-10-24T08:12:16Z'
+  publications:
+  - title: Adaptações em um HSM para homologação na ICP-Brasil
+    date: '2012'
+    description: A confiabilidade de uma ICP depende da segurança de suas chaves privadas. O HSM é um
+      dispositivo que gerencia e protege chaves criptográficas, próprio para guardar as chaves privadas
+      de uma ICP. HSMs também são utilizados em ICPs brasileiras. Para que um HSM possa guardar chaves
+      privadas da ICP-Brasil, o dispositivo deve ser homologado pela ICP-Brasil. Este artigo descreve
+      um conjunto de adaptações necessárias para que um HSM possa ser homologado na ICP-Brasil.
+    evidence:
+      url: https://www.linkedin.com/in/cmaiacd
+      observed_at: '2026-10-24T08:12:16Z'
+  spoken_languages:
+  - Portuguese
+  - English
+  - German
+  - Espanhol
+  recent_writing:
+  - title: |-
+      Nossa, mto maneiro, um monte de gente chegando para contribuir. Tá bonito demais de ver! 🥹🥹
+
+      E aí, já deu estrelinha no repo?
+
+      Entra lá agora rapidão e dá essa força em forma de astro p nós 🌟
+
+      https://t.co/isC4cppZ9U
+
+      #python #opensource #brutils #PythonBrasil #Hacktoberfest
+    url: https://twitter.com/888403115292143617/status/1709495845341528398
+    published: '2023-10-04T09:09:05Z'
+    channel: x
+  - title: "O brutils-python foi todo preparado para receber contribuições de iniciantes do mundo da programação\
+      \ e/ou do open source! \n\nChega junto!!!"
+    url: https://twitter.com/888403115292143617/status/1709175036345511969
+    published: '2023-10-03T11:54:18Z'
+    channel: x
+  - title: |-
+      Fim do Maio do ano passado, eu tava feliz de vida pq meu perfil do GitHub Sponsors tinha sido aprovado. O primeiro no Brasil.
+
+      A partir de hj, qq pessoa desenvolvedora brasileira pode também, assim como eu já venho fazendo, obter apoio financeiro para seus projetos open source!
+    url: https://twitter.com/888403115292143617/status/1532128490874601472
+    published: '2022-06-01T22:34:32Z'
+    channel: x
+  - title: "O primeiro a gente nunca esquece \U0001F929 \n\n#rubyonrails #OpenSource https://t.co/249eQp0qd4"
+    url: https://twitter.com/888403115292143617/status/1440678955632119817
+    published: '2021-09-22T14:06:44Z'
+    channel: x
+  - title: |-
+      Release 2.6.0 feita na hora no #DevOpsExtreme
+
+      Confere aí o nova mudança no report, ficou bonitão 🎨
+
+      #ScanAPI
+    url: https://twitter.com/888403115292143617/status/1426203898851864579
+    published: '2021-08-13T15:28:01Z'
+    channel: x
+  - title: |-
+      Se liga, galera, daqui pouquíssimos minutos vou tá lá no #DevOpsExtreme falando sobre CI e automação de deploys em bibliotecas Python
+
+      https://t.co/AYJYdyRKKR
+
+      Quer saber como colocar os unit tests e lint na pipeline? Automatizar deploys para o TestPyPI e PyPI? Vem junto!
+
+      #VAIII
+    url: https://twitter.com/888403115292143617/status/1426184135081709569
+    published: '2021-08-13T14:09:29Z'
+    channel: x
+  - title: Ahhhh, não tem com fingir naturalidade com a Python Brasil me dando RT e divulgando a ScanAPI.  Aiii
+      meu coração 😍
+    url: https://twitter.com/888403115292143617/status/1418389482408226816
+    published: '2021-07-23T01:56:19Z'
+    channel: x
+  - title: |-
+      Pessoal, tô relatando todas as minhas atividades diárias da #JornadaBigTech lá no repo. Crei um arquivo .md específico para isso:
+
+      https://t.co/r7qDxg8Z9Q
+
+      E sexta-feira vem vídeo novo contando como foi essa primeira semana 📹
+    url: https://twitter.com/888403115292143617/status/1413196868797046785
+    published: '2021-07-08T18:02:44Z'
+    channel: x
+  - title: "O quê vocês tão usando de IDE para programar em Java? \n\nEu programei em Java só na faculdade\
+      \ e lá usava Eclipse/Netbeans. Velhos tempos…\n\nAtualmente tenho usado VSCode para as outras linguagens"
+    url: https://twitter.com/888403115292143617/status/1412160030808449031
+    published: '2021-07-05T21:22:42Z'
+    channel: x
+  - title: "Criei um repo para colocar todo o meu material de estudo da Jornada Big Tech. \n\nPara quem\
+      \ tiver interesse:\n\nhttps://t.co/FIfGltD4Up"
+    url: https://twitter.com/888403115292143617/status/1412121680374284298
+    published: '2021-07-05T18:50:19Z'
+    channel: x
+  talks:
+  - session:tru1783b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686647544975001PtM2
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: camilamaia
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

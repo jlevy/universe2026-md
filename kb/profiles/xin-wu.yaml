@@ -1,0 +1,150 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:xin-wu
+  person: person:xin-wu
+  brief_bio:
+    text: Xin Wu is a Principal Software Engineer at GitHub who leads the database teams behind GitHub.com
+      and was previously tech lead for the database teams at Booking.com. Wu speaks at GitHub Universe
+      2026 on a production health report built from one skill and one CLI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: cb14c2945874f3285b26e456b8f0e7bd9078d0eb8525022410c60f1e70309838
+    stale: false
+  headline: Principal Software Engineer at GitHub
+  location: Hawaii
+  current_roles:
+  - Principal Software Engineer at GitHub
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1353d
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1353d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1353d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1353d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1353d
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot CLI
+      ref: session:bld1353d
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777538621525001c00K
+      ref: session:bld1353d
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777538621525001c00K
+      ref: session:bld1353d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777538621525001c00K
+      ref: session:bld1353d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777538621525001c00K
+      ref: session:bld1353d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777538621525001c00K
+      ref: session:bld1353d
+  credentials:
+  - kind: certification
+    title: Oracle Certified Professional, MySQL 5.6 Database Administrator
+    issuer: Oracle
+    date: Dec 2013
+    url: http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-883
+    evidence:
+      url: https://www.linkedin.com/in/xinwu1
+      observed_at: '2026-10-24T08:15:10Z'
+  - kind: certification
+    title: MySQL 5.0, 5.1 and 5.5 Certified Associate
+    issuer: Oracle
+    date: Sep 2013
+    url: http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=458&get_params=p_track_id:MYSQL5
+    evidence:
+      url: https://www.linkedin.com/in/xinwu1
+      observed_at: '2026-10-24T08:15:10Z'
+  talks:
+  - session:bld1353d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699470377884001rNlh
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: xinwu5
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

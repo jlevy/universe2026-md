@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/juniper-square
+  platform: linkedin
+  handle: company/juniper-square
+  url: https://www.linkedin.com/company/juniper-square
+  display_name: Juniper Square
+  bio: Juniper Square is trusted as the fund operations partner to more than 2,000 private markets GPs
+    worldwide, connecting market-leading technology, data, and fund administration services to help GPs
+    fundraise efficiently, streamline operations, and improve the investor experience. Our unified platform
+    centralizes data and connects LPs and GPs across every workflow—including fundraising, investor onboarding,
+    compliance, treasury, reporting, and more. Today, more than 40,000 funds, 700,000 LP accounts, and
+    $1 trillion in LP capital are managed through Juniper Square.
+  website: https://junipersquare.com/
+  followers: 91321
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQEH4VPP5SGLsQ/company-logo_200_200/company-logo_200_200/0/1655144766160/juniper_square_logo?e=2147483647&v=beta&t=gnHUkqRPyG3mQg8awQGB_BDAZMTXHQLJPRMkNQd_rGg
+  owner: org:juniper-square
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/seanj
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/juniper-square
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

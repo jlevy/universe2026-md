@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/anthropicresearch
+  platform: linkedin
+  handle: company/anthropicresearch
+  url: https://www.linkedin.com/company/anthropicresearch
+  display_name: Anthropic
+  bio: We're an AI research company that builds reliable, interpretable, and steerable AI systems. Our
+    first product is Claude, an AI assistant for tasks at any scale. Our research interests span multiple
+    areas including natural language, human feedback, scaling laws, reinforcement learning, code generation,
+    and interpretability.
+  website: https://www.anthropic.com/
+  followers: 5315113
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFMhKgeR7EYAg/company-logo_200_200/company-logo_200_200/0/1719256413073/anthropicresearch_logo?e=2147483647&v=beta&t=cmrBQ-Norz8fecFdOgU9UhbYOUI0faNbFew_EmrcekM
+  owner: org:anthropic
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/angelajiang
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/anthropicresearch
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

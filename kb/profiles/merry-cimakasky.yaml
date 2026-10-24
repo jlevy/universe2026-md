@@ -1,0 +1,72 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:merry-cimakasky
+  person: person:merry-cimakasky
+  brief_bio:
+    text: Merry Cimakasky was a security engineer and a student in Georgia Tech's Online Master of Computer
+      Science program when speaking at GitHub Universe 2024 about shaping an inclusive AI future by empowering
+      women in data.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: bb602675c0d8d6bbc3779185f3fbf3b6a297e3c6d0bbe980bf8e6b05445776cf
+    stale: false
+  expertise:
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1347l
+  technologies:
+  - label: Amazon Web Services
+    target: software:aws
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: AWS
+      ref: session:2024/ai1347l
+  interests:
+  - label: Discussions
+    target: term:github-product-2024/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715188002984001W2JU
+      ref: session:2024/ai1347l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715188002984001W2JU
+      ref: session:2024/ai1347l
+  talks:
+  - session:2024/ai1347l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724346375013001HqM1
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

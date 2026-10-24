@@ -1,0 +1,178 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:annamalai-chockalingam
+  person: person:annamalai-chockalingam
+  brief_bio:
+    text: Annamalai Chockalingam is a senior product manager for local AI developers at NVIDIA, working
+      to make generative AI accessible to developers, and speaks at GitHub Universe 2026 on building and
+      running AI locally with NVIDIA.
+    cites:
+    - listed_role
+    - current_affiliations
+    - linkedin_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 4f285cb461ea34cd1de9687e05bf72baa8f4b5387768b5ea68d38a587e382b4f
+    stale: false
+  headline: Sr. Product Manager, Local AI Developers at NVIDIA
+  current_roles:
+  - Sr. Product Manager, Local AI Developers at NVIDIA
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2450d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2450d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2450d
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2450d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld2450d
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1792531730349001XSWt
+      ref: session:bld2450d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1792531730349001XSWt
+      ref: session:bld2450d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1792531730349001XSWt
+      ref: session:bld2450d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1792531730349001XSWt
+      ref: session:bld2450d
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1792531730349001XSWt
+      ref: session:bld2450d
+  open_source:
+  - repository: repo:nvidia/local-ai-inference-recipes
+    relation: contributor
+    stars: 16
+  credentials:
+  - kind: certification
+    title: 'Applying Analytics and Artificial Intelligence (B2B Case: Hagane Steel Manufacturing)'
+    issuer: Kellogg Executive Education
+    date: Feb 2020
+    evidence:
+      url: https://www.linkedin.com/in/achocka
+      observed_at: '2026-10-24T08:11:30Z'
+  - kind: certification
+    title: Leading with Analytics and Artificial Intelligence
+    issuer: Kellogg Executive Education
+    date: Aug 2019
+    evidence:
+      url: https://www.linkedin.com/in/achocka
+      observed_at: '2026-10-24T08:11:30Z'
+  - kind: certification
+    title: Engineer In Training
+    issuer: The Association of Professional Engineers and Geoscientists of Alberta (APEGA)
+    date: May 2019
+    evidence:
+      url: https://www.linkedin.com/in/achocka
+      observed_at: '2026-10-24T08:11:30Z'
+  activities:
+  - kind: project
+    title: Product Strategy Advisor - Skillshare
+    detail: 'Strategized to introduce new product offerings with C-suite leaders, in order to grow top-line
+      revenue by conducting 20+ user interviews to derive data-driven insights and recommendations for
+      a Series E creative ed-tech startup (Skillshare). Advisors: Albert Wenger (Union Square Ventures)
+      and Prof. Arun Sundararajan · Jan 2022'
+    evidence:
+      url: https://www.linkedin.com/in/achocka
+      observed_at: '2026-10-24T08:11:30Z'
+  - kind: project
+    title: Strategic Foresight Consultant - Hollister Incorporated
+    detail: 'Envisioned future of single-use plastics in healthcare and identified business opportunities
+      & risks for C-Suite of a medical products manufacturer.Advisors: Prof. Amy Webb · Jan 2022'
+    evidence:
+      url: https://www.linkedin.com/in/achocka
+      observed_at: '2026-10-24T08:11:30Z'
+  - kind: project
+    title: Product Manager - Vehicle Immobilization Device
+    detail: Spearheaded end-to-end strategy, product management, design and development involving hardware
+      and software aspects of an IoT add-on OBDII device to prevent hazards and aid authorities with insurance
+      claims, winning various engineering and product awards, including a cash prize of $10,000 · Sep
+      2018
+    evidence:
+      url: https://www.linkedin.com/in/achocka
+      observed_at: '2026-10-24T08:11:30Z'
+  talks:
+  - session:bld2450d
+  gaps:
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1792185660142001bW4V
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: achocka
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/igwejk
+  platform: linkedin
+  handle: in/igwejk
+  url: https://www.linkedin.com/in/igwejk
+  display_name: Igwe Kalu
+  bio: Solution Architect and DevSecOps advisor helping enterprise engineering organisations…
+  location: Rhein-Neckar Metropolitan Region
+  followers: 1699
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQHIwz4GmkqTog/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1702232021581?e=2147483647&v=beta&t=UtsmCpcoimIWmZgWR5NL1gyXujJ4c15tz9YhIMX6Q3k
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHExpjLNmv0mQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1696244750169?e=2147483647&v=beta&t=VnRrb8S0MUemF0ya9Y55erDoxy9gTy8vdh_zF-KjbJ0
+  owner: person:igwe-kalu
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686147878235001yeH8
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686147878235001yeH8
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/igwejk
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

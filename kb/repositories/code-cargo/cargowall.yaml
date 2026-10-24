@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:code-cargo/cargowall
+  full_name: code-cargo/cargowall
+  url: https://github.com/code-cargo/cargowall
+  description: eBPF Firewall for GitHub Actions
+  stars: 52
+  forks: 3
+  watchers: 1
+  open_issues: 15
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  primary_language: Go
+  topics:
+  - ebpf
+  - firewall
+  - github-actions
+  - security
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2026-03-04T15:43:27Z'
+  pushed_at: '2026-10-19T18:00:41Z'
+  owner_login: code-cargo
+  owner: gh:code-cargo
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: code-cargo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: code-cargo/cargowall
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

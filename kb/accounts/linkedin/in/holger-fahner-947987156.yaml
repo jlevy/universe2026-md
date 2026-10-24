@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/holger-fahner-947987156
+  platform: linkedin
+  handle: in/holger-fahner-947987156
+  url: https://www.linkedin.com/in/holger-fahner-947987156
+  display_name: Holger Fahner
+  location: Stuttgart
+  followers: 1065
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQGOTzc_eUnRvA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1538584168345?e=2147483647&v=beta&t=Hr3kktUW5Ix4gCY-cNpDUlxbNb65X5ltDQRl7ouNbPo
+  owner: person:holger-fahner
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694613662237001PeKw
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/holger-fahner-947987156
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

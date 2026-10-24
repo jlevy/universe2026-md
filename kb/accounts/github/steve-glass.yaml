@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:steve-glass
+  login: Steve-Glass
+  kind: user
+  url: https://github.com/Steve-Glass
+  company: GitHub
+  location: Maryland
+  followers: 30
+  public_repositories: 5
+  created_at: '2021-05-27T01:58:18Z'
+  contributions_last_year:
+    total: 113
+    commits: 85
+    pull_requests: 11
+    issues: 4
+    reviews: 8
+  starred_repositories: 4
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:github/docs
+  - repo:actions/scaleset
+  - repo:github/gh-actions-lock
+  - repo:github-early-access/actions-native-egress-firewall
+  entity: person:steve-glass
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Steve-Glass
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/williammanning
+  platform: linkedin
+  handle: in/williammanning
+  url: https://www.linkedin.com/in/williammanning
+  display_name: William Manning
+  bio: Currently as part of Docker, I work directly with customers navigating Docker's AI-native…
+  location: San Jose
+  followers: 4539
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFxfzWhdIPeSQ/profile-displaybackgroundimage-shrink_200_800/B56Z4SmGT1JIAU-/0/1778428440346?e=2147483647&v=beta&t=1my3-BlkBYPN7nt57OsSn4u8FkrAw7TrhezqKD8duxc
+  owner: person:bill-manning
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727817115116001oCh1
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/williammanning
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

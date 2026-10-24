@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:git-lfs/git-lfs
+  full_name: git-lfs/git-lfs
+  url: https://github.com/git-lfs/git-lfs
+  description: Git extension for versioning large files
+  homepage: https://git-lfs.com
+  stars: 14558
+  forks: 2275
+  watchers: 469
+  open_issues: 451
+  stats_observed_at: '2026-10-24T19:10:13Z'
+  primary_language: Go
+  topics:
+  - go
+  - git-lfs
+  - git
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2013-09-22T22:03:28Z'
+  pushed_at: '2026-10-23T18:50:59Z'
+  owner_login: git-lfs
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: aymanbagabas
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: git-lfs/git-lfs
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

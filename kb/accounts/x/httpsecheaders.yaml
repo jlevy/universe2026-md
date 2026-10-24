@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/httpsecheaders
+  platform: x
+  handle: httpsecheaders
+  url: https://x.com/httpsecheaders
+  display_name: Caleb Queern
+  bio: '@KPMG_US | Co-author of Investments Unlimited | @losVerdesATX | BJJ black belt. Views expressed
+    are my own.'
+  location: Austin, TX
+  followers: 657
+  following: 938
+  posts_count: 2715
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1774886273942945792/quDUjoKA_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1258044463/1658941441
+  created_at: '2013-03-10T21:51:50Z'
+  owner: person:caleb-queern
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686163701652001i7Pv
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/httpsecheaders
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ellie-bennett
+  platform: linkedin
+  handle: in/ellie-bennett
+  url: https://www.linkedin.com/in/ellie-bennett
+  display_name: Ellie Bennett
+  bio: I’m a product manager at GitHub focused on agents, currently the Copilot coding agent. I…
+  location: Greater Philadelphia
+  followers: 2033
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQFVCDl2P9qNKA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699288728968?e=2147483647&v=beta&t=aYFBm0DrND7VMLMELNjfGud3IhmPZA3hul3I7gn2nZE
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:ellie-bennett
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1731006080258001wsiM
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ellie-bennett
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

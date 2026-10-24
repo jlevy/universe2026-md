@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:overmindtech
+  login: overmindtech
+  kind: organization
+  url: https://github.com/overmindtech
+  name: Overmind
+  bio: Simulate Terraform changes before deploy
+  location: United Kingdom
+  website: https://overmind.tech/
+  public_repositories: 30
+  created_at: '2021-11-01T10:38:28Z'
+  pinned:
+  - repo:overmindtech/aws-source
+  - repo:overmindtech/source-template
+  top_repositories:
+  - repo:overmindtech/cli
+  - repo:overmindtech/buildkit-cache-dance
+  entity: org:overmind
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: overmindtech
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

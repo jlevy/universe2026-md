@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/grzegorz-bak
+  platform: linkedin
+  handle: in/grzegorz-bak
+  url: https://www.linkedin.com/in/grzegorz-bak
+  display_name: Grzegorz Bąk
+  location: Gorzów Wielkopolski Metropolitan Area
+  followers: 1170
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQGDoMY0RbVfHA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517472493350?e=2147483647&v=beta&t=qco-V1g7tzvbTs-BveBO142Ty_Cg-bPpLIkolziwbAo
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:grzegorz-bak
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745934547604001nj2y
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/grzegorz-bak
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

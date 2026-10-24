@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:dependabot/dependabot-core
+  full_name: dependabot/dependabot-core
+  url: https://github.com/dependabot/dependabot-core
+  description: 🤖 Dependabot's core logic for creating update PRs.
+  homepage: https://docs.github.com/en/code-security/dependabot
+  stars: 5810
+  forks: 1570
+  watchers: 117
+  open_issues: 1232
+  stats_observed_at: '2026-10-24T19:10:00Z'
+  primary_language: Ruby
+  topics:
+  - elixir
+  - ruby
+  - php
+  - python
+  - javascript
+  - java
+  - rust
+  - dotnet
+  - go
+  - elm
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2017-06-02T12:23:31Z'
+  pushed_at: '2026-10-24T19:06:21Z'
+  owner_login: dependabot
+  pinned_by:
+  - gh:nishnha
+  - gh:carlincherry
+  software: software:dependabot
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Nishnha
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dependabot/dependabot-core
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dependabot/dependabot-core
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

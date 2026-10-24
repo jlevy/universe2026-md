@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:rust
+  name: Rust
+  aliases:
+  - Rust
+  kind: language
+  homepage: https://www.rust-lang.org
+  repositories:
+  - repo:rust-lang/rust
+  mentioned_in:
+  - person:chris-griffing
+  - person:idan-gazit
+  - session:2025/bld1147b
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

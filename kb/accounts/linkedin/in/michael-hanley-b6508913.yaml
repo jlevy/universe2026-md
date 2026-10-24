@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/michael-hanley-b6508913
+  platform: linkedin
+  handle: in/michael-hanley-b6508913
+  url: https://www.linkedin.com/in/michael-hanley-b6508913
+  display_name: Michael Hanley
+  bio: Mike Hanley is Vice President and Chief Information Security Officer at General Motors…
+  location: Ann Arbor
+  followers: 10813
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHrSrJwTTwHiQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709495619411?e=2147483647&v=beta&t=2t_yPaAdcABDe4aOFpWluJnNKaf5Afhmrbjh9Nwd6zE
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHDuvy615-waQ/profile-displaybackgroundimage-shrink_200_800/B56aEeTHu9KYAQ-/0/1791509691649?e=2147483647&v=beta&t=4vod_q8RVzwKn0AfcwggLlxO8m2UWOhC75McZ_EZung
+  owner: person:mike-hanley
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694709053021001I5M1
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694709053021001I5M1
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/michael-hanley-b6508913
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

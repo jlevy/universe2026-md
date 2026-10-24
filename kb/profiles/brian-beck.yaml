@@ -1,0 +1,322 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:brian-beck
+  person: person:brian-beck
+  brief_bio:
+    text: Brian Beck works at Ripple and led engineering for PayPal's Developer Experience organization
+      when speaking at GitHub Universe 2023 about transforming developer experience with GitHub Codespaces.
+    cites:
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: c2ea3b2f4483a5944b89307faafe0746d7e9718aa44f688d1d7a1f665f0feed5
+    stale: false
+  headline: Ripple
+  current_roles:
+  - Ripple
+  expertise:
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2701d
+  - label: Containerized Applications
+    target: term:topic-2023/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2701d
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2701d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2701d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2701d
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Codespaces
+      ref: session:2023/dev2701d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2023/dev2701d
+  interests:
+  - label: Containerized Applications
+    target: term:topic-2023/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686728218283001orf6
+      ref: session:2023/dev2701d
+  - label: GitHub Codespaces
+    target: term:github-product-2023/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686728218283001orf6
+      ref: session:2023/dev2701d
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686728218283001orf6
+      ref: session:2023/dev2701d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686728218283001orf6
+      ref: session:2023/dev2701d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686728218283001orf6
+      ref: session:2023/dev2701d
+  credentials:
+  - kind: honor
+    title: Emerging Leader Program at PayPal (ELP)
+    issuer: PayPal
+    date: '2012-10-01T00:00:00.000Z'
+    description: 'The Emerging Leader Program at PayPal (ELP) is a leadership acceleration program for
+      middle managers who meet eBay''s high performance expectations. The program is custom-designed to
+      accelerate the development of four key leadership skills: Personal Leadership, Developing Talent,
+      Collaborating Across Boundaries and Executing Strategic Vision.'
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: honor
+    title: 1st Place North America - Fall 2012 PayPal LabRats Global Innovation Contest
+    issuer: PayPal
+    date: '2012-09-01T00:00:00.000Z'
+    description: I led a team which won first place in North America for PayPal's semi-annual innovation
+      contest for a potential application in the B2C space.
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: Kubernetes Cluster Lifecycle Management in Platform Engineering
+    issuer: Platform Engineering
+    date: Sep 2025
+    url: https://www.virtualbadge.io/certificate-validator?credential=c134ee9a-cfce-48f2-8edc-43ec2d56a190
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: Observability for Platform Engineering
+    issuer: Platform Engineering
+    date: Sep 2025
+    url: https://www.virtualbadge.io/certificate-validator?credential=3e6c3acf-0adf-43c2-8fb5-95b8a54ea62c
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: 5-Day Gen AI Intensive Course with Google
+    issuer: Kaggle
+    date: Apr 2025
+    url: https://www.kaggle.com/certification/badges/brbeck/96
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: Leadership & Innovation
+    issuer: MIT Professional Education
+    date: Nov 2024
+    url: https://www.credential.net/4d2de57a-1c98-4d3b-8d6e-aa7c81d05257
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: Professional Certificate Program in Strategic Technology Roadmapping and Innovation
+    issuer: MIT Professional Education
+    date: Nov 2024
+    url: https://www.credential.net/98e2d3c3-e106-4de8-8890-013b38a4146d
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: 'Digital Platforms: Designing Two-Sided Markets from APIs to Feature Roadmaps'
+    issuer: MIT Professional Education
+    date: Oct 2024
+    url: https://www.credential.net/37fbc0aa-ae7d-45ba-a2c1-1f0eb939e0b1
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: 'Management of Technology: Strategy & Portfolio Analysis'
+    issuer: MIT Professional Education
+    date: Jul 2024
+    url: https://www.credential.net/27906e92-f31e-4b8d-b96d-1b0287c3d0f3
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: 'Management of Technology: Roadmapping & Development'
+    issuer: MIT Professional Education
+    date: May 2024
+    url: https://www.credential.net/57e8f23a-218c-40e3-b632-f1d85eb103b1
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: 'Machine Learning: From Data to Decisions'
+    issuer: MIT Professional Education
+    date: Feb 2020
+    url: https://www.credential.net/88eb3cf7-c244-477a-9881-5fec067da60b
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: certification
+    title: Platform Engineering Certified Practitioner
+    issuer: Platform Engineering
+    date: Oct 2025
+    expires: Oct 2026
+    url: https://www.virtualbadge.io/certificate-validator?credential=8879d906-6ef0-4cbe-865e-23e638aaf12a
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  spoken_languages:
+  - English
+  - German
+  activities:
+  - kind: project
+    title: PayPal iTunes Integration
+    detail: I led the technical engagement between PayPal and Apple to launch a new integration of PayPal
+      product on iTunes. The product is available on mobile, desktop, and web and available in NA, EMEA,
+      and AU. · 2016
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: project
+    title: PayPal Windows Mobile Consumer Application
+    detail: 'Software development manager for the v4 release of the PayPal Mobile consumer application
+      for Windows Phone. We took over the project from the existing dev team and launched enhanced check-in,
+      payment code and order ahead. In addition, the team updated the UI to support native Windows phone
+      look and feel and new PayPal branding.Technology:Languages / Libraries : C#Build / Process : Visual
+      StudioMobile : Windows Mobile · Jul 2014'
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: project
+    title: Canterbury
+    detail: Created a customer experience for a hotel chain that provides beacon, chat, and survey functionality
+      from an iOS app, and supporting Nginx front-end/Tomcat backend systems. · Jun 2014
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: project
+    title: PayPal - Vivo Onboarding Portal
+    detail: 'The PayPal-Vivo Onboarding Portal allows Brazilian consumers to sign-up for a PayPal account
+      and/or link that account to their Vivo carrier account to facilitate topping up their carrier plan
+      via PayPal on their mobile device (feature or smart phone).I was the software development manager
+      and lead architect for the project. I worked closely with the Brazilian business unit to design
+      the solution and then lead the development effort (dev, qa, release management, system administration,
+      deployment) and provide post launch support and maintenance.This project required our team to work
+      with external technology partners in Sweden, China, Brazil, Canada, and India. During our final
+      launch, I created a launch plan to coordinate with teams in 7 cities across 6 countries.Technology:Languages
+      / Libraries : Java, Spring, jQuery, ESAPISystems : Apache, Tomcat, Ubuntu, MySQLBuild / Process
+      : Jenkins, Github, Eclipse, Maven, JiraAPIs : PayPal (Adaptive Payments, Adaptive Accounts, Identity),
+      Vivo (SMS, Top-Up, Service Registration) · Sep 2012'
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: project
+    title: PayPal Mobile Reload Portal
+    detail: 'The PayPal Mobile Reload portal allows consumers to purchase minutes for prepaid mobile plans
+      via PayPal in 50+ recipient countries around the world. The site has a responsive UI that supports
+      mobile, tablet, and web formats.I was the software development manager, working closely with the
+      French business unit to design the solution, lead the development effort (dev, qa, release management,
+      system administration, deployment) and provide post launch support. I also managed the vendor relationship
+      and timeline for the UX design and delivery.Technology:Languages / Libraries : Java, Spring, jQuery,
+      ESAPISystems : NGinx, Tomcat, Ubuntu, MySQLBuild / Process : Jenkins, Github, Eclipse, Maven, JiraAPIs
+      : PayPal (Payments, Identity), TransferTo (SMS, Mobile Top-Up, Price List) · Mar 2013'
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: project
+    title: PayPal Notification Portal
+    detail: 'The PayPal notification portal allows PayPal merchants and developers to sign up for outage
+      and maintenance information for products which span PayPal’s product portfolio. The site supports
+      merchants globally, is localized to support 13 languages and provides strict SLAs on email communication
+      to subscribers.In addition, the solution comprises an internal customer service portal which provides
+      incident templates across all PayPal products (for simple localization), incident tracking, audit
+      trail functionality, and an exposed API to manage this information. I was the software development
+      manager who lead development, quality assurance and architectural design for the first phase of
+      development and project rollout. I worked closely with the product organization and internal stakeholders
+      to help define the solution and managed external vendor selection and timelines for UX design and
+      assets.Technology:Languages / Libraries : Java, Spring, jQuery, ESAPISystems : NGinx, Tomcat, Ubuntu,
+      MySQLBuild / Process : Jenkins, Github, Eclipse, Maven, JiraAPIs : PayPal (Identity), Google (Identity),
+      Yahoo (Identity), Facebook (Identity) · Aug 2012'
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  - kind: project
+    title: PayPal Enterprise Portal
+    detail: 'The PayPal Enterprise Portal is a multi-tenant SaaS solution which enables merchants to manage
+      all of their accounts via a single interface. The portal provides dual controls using an Attribute
+      Based Access Control permission engine, full auditing of user actions, custom reporting, and PayPal
+      account management facilities. I was a lead developer and architect for the initial launch of the
+      application. For phase 2-4, I had the role of development manager.Technology :Language / Libraries:
+      Java, JQuery, JSF, ESAPISystem: Apache, Tomcat, OracleBuild / Process : Jenkins, Github, Eclipse,
+      Maven, JiraAPIs : PayPal (Adaptive Payments, Adaptive Accounts, Identity, Merchant API, SFTP Dropbox)
+      · Apr 2010'
+    evidence:
+      url: https://www.linkedin.com/in/bcbeck
+      observed_at: '2026-10-24T08:42:47Z'
+  talks:
+  - session:2023/dev2701d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686727054530001ysan
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

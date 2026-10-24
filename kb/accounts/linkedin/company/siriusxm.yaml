@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/siriusxm
+  platform: linkedin
+  handle: company/siriusxm
+  url: https://www.linkedin.com/company/siriusxm
+  display_name: SiriusXM
+  bio: SiriusXM and its brands (Pandora, SiriusXM Media, AdsWizz, Simplecast, and SiriusXM Connect) are
+    leading a new era of audio entertainment and services by delivering the most compelling subscription
+    and ad-supported audio entertainment experience for listeners -- in the car, at home, and anywhere
+    on the go with connected devices. Our vision is to shape the future of audio where everyone can be
+    effortlessly connected to the voices, stories and music they love wherever they are. This is the place
+    where a diverse group of emerging talent and legends alike come to share authentic and purposeful
+    songs, stories, sounds and insights through some of the best programming and technology in the world.
+    Our critically-acclaimed, industry-leading audio entertainment encompasses music, sports, comedy,
+    news, talk, live events, and podcasting. No matter their individual role, each of our employees plays
+    a vital part in bringing SiriusXM’s vision to life every day.
+  website: https://www.siriusxm.com/
+  followers: 177802
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGZYZJBUsuzbg/company-logo_200_200/company-logo_200_200/0/1700146850253/siriusxm_logo?e=2147483647&v=beta&t=XcrumS5fjBqGBR73PEtk1z-aPUUnJkI6zC2B1TmW0qk
+  owner: org:siriusxm
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/mina-tawadrous
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/siriusxm
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

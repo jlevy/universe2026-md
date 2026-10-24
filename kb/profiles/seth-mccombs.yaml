@@ -1,0 +1,268 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:seth-mccombs
+  person: person:seth-mccombs
+  brief_bio:
+    text: 'Seth McCombs was a senior infrastructure engineer at AcuityMD, working on containers, deployment
+      pipelines and developer experience, and has served on Kubernetes release teams. McCombs spoke at
+      GitHub Universe 2024 in the session Dungeons and deployments: The clusters of chaos.'
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 376549ecfe9403782010a6787ac869f61f5aaac1e8e8a6e017a6ba6b105ee56d
+    stale: false
+  expertise:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Docker
+      ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:seth-mccombs
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Education
+    target: term:github-product-2024/education
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  education:
+  - school: Monroe Community College
+    evidence:
+      url: https://www.linkedin.com/in/sethmccombs
+      observed_at: '2026-10-24T08:47:43Z'
+  credentials:
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon Europe 2024'
+    issuer: The Linux Foundation
+    date: Apr 2024
+    url: https://www.credly.com/badges/b2502ddd-bf7c-429a-8602-68b93f0d81d8/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sethmccombs
+      observed_at: '2026-10-24T08:47:43Z'
+  - kind: certification
+    title: GitOps Fundamentals
+    issuer: Codefresh
+    date: Mar 2024
+    url: https://www.credly.com/badges/8ae77eca-c05d-49f7-8f7e-2948254ce15c/public_url
+    evidence:
+      url: https://www.linkedin.com/in/sethmccombs
+      observed_at: '2026-10-24T08:47:43Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon North America 2023'
+    issuer: The Linux Foundation
+    date: Nov 2023
+    url: https://www.credly.com/badges/425bce6e-3bc4-4cd1-a1fe-fa757dd15a9e/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sethmccombs
+      observed_at: '2026-10-24T08:47:43Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon Europe 2021'
+    issuer: The Linux Foundation
+    date: Jan 2021
+    url: https://www.credly.com/badges/a326c39d-127f-4677-97fe-63f7c49dd1de/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sethmccombs
+      observed_at: '2026-10-24T08:47:43Z'
+  - kind: certification
+    title: AWS Solutions Architect Associate
+    issuer: Amazon Web Services
+    date: Apr 2018
+    expires: Apr 2020
+    url: http://aws.amazon.com/verification
+    evidence:
+      url: https://www.linkedin.com/in/sethmccombs
+      observed_at: '2026-10-24T08:47:43Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: project
+    title: Kubernetes – An Enterprise Guide - Technical Reviewer
+    detail: Served as one of the technical reviewers for the 3rd edition of "Kubernetes – An Enterprise
+      Guide" by Marc Boorshtein and Scott Surovich · Jun 2024
+    evidence:
+      url: https://www.linkedin.com/in/sethmccombs
+      observed_at: '2026-10-24T08:47:43Z'
+  talks:
+  - session:2024/sec1871m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719503300795001JE8m
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jackie-mak
+  platform: linkedin
+  handle: in/jackie-mak
+  url: https://www.linkedin.com/in/jackie-mak
+  display_name: Jackie Mak
+  bio: As a Director in KPMG's Cyber Threat Management practice, my core mission is to help…
+  location: San Francisco
+  followers: 2904
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQEl8ba8F_q5xw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1652112881248?e=2147483647&v=beta&t=1xATwSR316TJ6nrtXFMlIcIvXRqtEanMEUk3_e8oOGs
+  owner: person:jackie-mak
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698862787144001McYO
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jackie-mak
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

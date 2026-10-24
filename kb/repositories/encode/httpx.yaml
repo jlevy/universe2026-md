@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:encode/httpx
+  full_name: encode/httpx
+  url: https://github.com/encode/httpx
+  description: A next generation HTTP client for Python. 🦋
+  homepage: https://www.python-httpx.org/
+  stars: 15737
+  forks: 3826
+  watchers: 150
+  open_issues: 64
+  stats_observed_at: '2026-10-24T19:10:06Z'
+  primary_language: Python
+  topics:
+  - python
+  - http
+  - trio
+  - asyncio
+  license: BSD-3-Clause
+  archived: false
+  fork: false
+  created_at: '2019-04-04T12:27:00Z'
+  pushed_at: '2026-10-02T12:53:43Z'
+  owner_login: encode
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SamMorrowDrums
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: encode/httpx
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,70 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ben-michel
+  person: person:ben-michel
+  brief_bio:
+    text: Ben Michel was a developer advocate on Datadog's community team, working on real user monitoring
+      and synthetic testing, when speaking at GitHub Universe 2023 about whether complete end-to-end observability
+      is possible.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 4b43bb67dfdeffefe71ebcc9fc31dca30a8392d58c5e7a40a0df4762cab44074
+    stale: false
+  expertise:
+  - label: Monitoring and Observability
+    target: term:topic-2023/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2894l
+  technologies:
+  - label: JavaScript
+    target: software:javascript
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: JavaScript
+      ref: person:ben-michel
+  - label: Node.js
+    target: software:nodejs
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Node.js
+      ref: person:ben-michel
+  interests:
+  - label: Monitoring and Observability
+    target: term:topic-2023/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698694158945001IqKe
+      ref: session:2023/dev2894l
+  talks:
+  - session:2023/dev2894l
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697575302521001BxX4
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

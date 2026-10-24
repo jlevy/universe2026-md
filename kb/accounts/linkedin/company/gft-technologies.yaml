@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/gft-technologies
+  platform: linkedin
+  handle: company/gft-technologies
+  url: https://www.linkedin.com/company/gft-technologies
+  display_name: GFT Technologies
+  bio: 'GFT Technologies is an AI-centric global digital transformation company. We design advanced data
+    and AI transformation solutions, modernize technology architectures and develop next-generation core
+    systems for industry leaders in Banking, Insurance, Manufacturing and Robotics. Partnering closely
+    with our clients, we push boundaries to unlock their full potential. With deep industry expertise,
+    cutting-edge technology, and a strong partner ecosystem, GFT delivers responsible AI-centric solutions
+    that combine engineering excellence, high-performance delivery and cost efficiency. Our team of 12,000+
+    technology experts operate in 20+ countries worldwide offering career opportunities at the forefront
+    of software innovation. Let’s Go Beyond_ Legal Disclaimer: https://www.gft.com/int/en/legal-disclaimer'
+  website: https://www.gft.com/
+  followers: 458005
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFS8Oq_RoTX9Q/company-logo_200_200/B4EZmE9ECUIUAI-/0/1758872224292/gft_technologies_logo?e=2147483647&v=beta&t=XHz9xOeVolKGF_sFH5SYsWYtFjyGFo2XCljyP0-ai_I
+  owner: org:gft-technologies
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/julioarrudac
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/gft-technologies
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

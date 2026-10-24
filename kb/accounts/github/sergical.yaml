@@ -1,0 +1,74 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:sergical
+  login: sergical
+  kind: user
+  url: https://github.com/sergical
+  name: Sergiy Dybskiy
+  company: '@getsentry '
+  bio: "Git commits, drippy fits and linked lists.\r\nDeveloper Experience Engineer @ Sentry"
+  location: Toronto, Ontario
+  website: https://serg.tech
+  followers: 76
+  public_repositories: 98
+  created_at: '2013-03-04T03:48:20Z'
+  contributions_last_year:
+    total: 5613
+    commits: 1508
+    pull_requests: 582
+    issues: 304
+    reviews: 266
+  starred_repositories: 120
+  has_sponsors_listing: true
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 11
+  contributed_to:
+  - repo:getsentry/sentry
+  - repo:getsentry/sentry-javascript
+  - repo:getsentry/platformicons
+  - repo:getsentry/sentry-docs
+  - repo:getsentry/sentry-wizard
+  organization_logins:
+  - getsentry
+  pinned:
+  - repo:sergical/skill-studio
+  - repo:sergical/claude-plugins
+  - repo:sergical/skills
+  - repo:getsentry/plausible-mcp
+  top_repositories:
+  - repo:sergical/gatsby-starter-lightbox
+  - repo:sergical/ai-chatbot-aws
+  - repo:sergical/dougscore
+  linked_accounts:
+  - acct:bluesky/serg.tech
+  - acct:x/sergical
+  websites:
+  - site:serg.tech
+  entity: person:serge-dybskiy
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: sergical
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

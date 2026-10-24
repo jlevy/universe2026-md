@@ -1,0 +1,16 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:hugging-face
+  name: Hugging Face
+  aliases:
+  - Hugging Face
+  kind: platform
+  mentioned_in:
+  - session:bld1241d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

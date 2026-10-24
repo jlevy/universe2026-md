@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/alfredodeza
+  platform: linkedin
+  handle: in/alfredodeza
+  url: https://www.linkedin.com/in/alfredodeza
+  display_name: Alfredo Deza
+  bio: I help motivated professionals and career switchers master cloud and AI technologies…
+  location: Spain
+  followers: 22675
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFNL6J8Z3Wj9w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699969916367?e=2147483647&v=beta&t=p4BJq2pDym0CJvqlFOlbsm83eIbq1f5i9VRF5DMWatU
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHUHRL61AifCw/profile-displaybackgroundimage-shrink_200_800/B4EZmVuRMzKcAU-/0/1759153559226?e=2147483647&v=beta&t=AsOPnjYqljWq9UT5aymIPKVj_pUjdrkinhRfLSzw3s8
+  owner: person:alfredo-deza
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724374520364001O30F
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alfredodeza
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

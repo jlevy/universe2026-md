@@ -1,0 +1,61 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:model-context-protocol
+  name: Model Context Protocol
+  aliases:
+  - Model Context Protocol
+  - MCP
+  kind: protocol
+  homepage: https://modelcontextprotocol.io
+  repositories:
+  - repo:modelcontextprotocol/modelcontextprotocol
+  packages:
+  - pkg:npm/@modelcontextprotocol/sdk
+  - pkg:pypi/mcp
+  mentioned_in:
+  - person:madelyn-tarr
+  - person:sam-morrow
+  - person:sumanth-mothkuri
+  - person:tommaso-moro
+  - person:yunika-liu
+  - session:2025/1783
+  - session:2025/aut1250d
+  - session:2025/aut1392d
+  - session:2025/aut1757d
+  - session:2025/bld1168d
+  - session:2025/bld1461d
+  - session:2025/bld1502w
+  - session:2025/bld1540d
+  - session:2025/bld1542s
+  - session:2025/bld1543d
+  - session:2025/bld1551b
+  - session:2025/bld1554d
+  - session:2025/bld1877d
+  - session:2025/sec1488b
+  - session:2025/sec1550d
+  - session:2068
+  - session:bld1236s
+  - session:bld1332h
+  - session:bld1460h
+  - session:bld1463b
+  - session:bld1636s
+  - session:bld1638d
+  - session:bld1784d
+  - session:bld2008d
+  - session:bld2191d
+  - session:ldr1185d
+  - session:ldr1516m
+  - session:ldr1594h
+  - session:ldr1716w
+  - session:ldr1768b
+  - session:ldr1774d
+  - session:ldr1800d
+  - session:tru1322h
+  - session:tru1338w
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

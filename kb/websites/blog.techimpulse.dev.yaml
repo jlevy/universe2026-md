@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:blog.techimpulse.dev
+  url: https://blog.techimpulse.dev
+  kind: blog
+  title: Christophe Crémon
+  description: The foundation matters more than the model. Field notes on Agentic AI and GenAI platform
+    engineering — by a Forward Deployed Engineer.
+  owner: person:christophe-cremon
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:bluesky/techimpulse.bsky.social
+  - acct:linkedin/in/christophecremon
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: chriscrcodes
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://blog.techimpulse.dev
+    record_id: https://blog.techimpulse.dev
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

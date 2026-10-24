@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:crates/kbs2
+  ecosystem: crates
+  name: kbs2
+  url: https://crates.io/crates/kbs2
+  description: A secret manager backed by age
+  latest_version: 0.7.3
+  license: MIT
+  repository_url: https://github.com/woodruffw/kbs2
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: woodruffw/kbs2
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

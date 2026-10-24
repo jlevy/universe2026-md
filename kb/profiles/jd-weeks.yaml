@@ -1,0 +1,114 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jd-weeks
+  person: person:jd-weeks
+  brief_bio:
+    text: JD Weeks is a Senior Staff Engineer at WEX with experience in platform engineering, development
+      operations and infrastructure automation. Weeks spoke at GitHub Universe 2025 about migrating a
+      large enterprise to Enterprise Managed Users (EMU).
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: c33f87d7c12b4b89ca3d3a5f428ca5ad67d11d6337ead081f3359ebe153970cc
+    stale: false
+  headline: WEX
+  current_roles:
+  - WEX
+  expertise:
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1213b
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1213b
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure
+      ref: session:2025/aut1213b
+  interests:
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745934308437001w4qk
+      ref: session:2025/aut1213b
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745934308437001w4qk
+      ref: session:2025/aut1213b
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745934308437001w4qk
+      ref: session:2025/aut1213b
+  education:
+  - school: Clemson University
+    evidence:
+      url: https://www.linkedin.com/in/josephdaneweeks
+      observed_at: '2026-10-24T08:45:36Z'
+  credentials:
+  - kind: certification
+    title: 'Hashicorp Certified: Terraform Associate'
+    issuer: HashiCorp
+    date: Dec 2021
+    expires: Dec 2023
+    url: https://www.credly.com/badges/8b82feeb-517b-432c-857f-59e238e46d46/public_url
+    evidence:
+      url: https://www.linkedin.com/in/josephdaneweeks
+      observed_at: '2026-10-24T08:45:36Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Developer Associate'
+    issuer: Microsoft
+    date: Jul 2021
+    expires: Jul 2022
+    url: https://www.credly.com/badges/030fb080-9c33-45dc-8a6f-edaed687241c?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/josephdaneweeks
+      observed_at: '2026-10-24T08:45:36Z'
+  talks:
+  - session:2025/aut1213b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745934773142001qdLI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

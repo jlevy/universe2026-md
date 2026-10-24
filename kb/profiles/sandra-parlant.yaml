@@ -1,0 +1,234 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sandra-parlant
+  person: person:sandra-parlant
+  brief_bio:
+    text: Sandra Parlant is a Services Delivery Engineer at GitHub with a background as a solutions architect
+      in pre-sales, cloud, DevOps and consulting. Parlant led a workshop at GitHub Universe 2023 on migrating
+      CI/CD pipelines with GitHub Actions Importer.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 4e31e5b48fcaeb950f70eb1e6d781690f6cebd16dcc567392af076cff54017e0
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2743w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2743w
+  technologies:
+  - label: Azure DevOps
+    target: software:azure-devops
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure DevOps
+      ref: session:2023/dev2743w
+  - label: CircleCI
+    target: software:circleci
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CircleCI
+      ref: session:2023/dev2743w
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev2743w
+  - label: GitLab
+    target: software:gitlab
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitLab
+      ref: session:2023/dev2743w
+  - label: Jenkins
+    target: software:jenkins
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Jenkins
+      ref: session:2023/dev2743w
+  interests:
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490322001KnPe
+      ref: session:2023/dev2743w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490322001KnPe
+      ref: session:2023/dev2743w
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490322001KnPe
+      ref: session:2023/dev2743w
+  - label: GitHub Codespaces
+    target: term:github-product-2023/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490322001KnPe
+      ref: session:2023/dev2743w
+  education:
+  - school: Université de Bretagne Occidentale
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  credentials:
+  - kind: certification
+    title: Connected Manager
+    issuer: Harvard Business Publishing Corporate Learning
+    date: Sep 2021
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  - kind: certification
+    title: Architecte L1
+    issuer: Capgemini
+    date: May 2021
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  - kind: certification
+    title: IAF Niveau 1
+    issuer: Capgemini
+    date: Nov 2020
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  - kind: certification
+    title: AZ900
+    issuer: Microsoft
+    date: Nov 2019
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  - kind: certification
+    title: Scrum Master
+    issuer: Scrum Alliance
+    date: Aug 2016
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Apr 2024
+    expires: Apr 2027
+    url: https://www.credly.com/badges/52d914a1-ef45-427a-afde-798a71f06683/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Dec 2023
+    expires: Dec 2026
+    url: https://www.credly.com/badges/ab7c090f-275e-4a3e-9714-ea1e24633330/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  - kind: certification
+    title: GitHub Foundations
+    issuer: GitHub
+    date: Nov 2023
+    expires: Nov 2026
+    url: https://www.credly.com/badges/938e0f0b-5703-4ed0-b082-3a301ca51132/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Jun 2023
+    expires: Jun 2026
+    url: https://www.credly.com/badges/8f1317af-087c-47ee-aa7f-87470d0674e2/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  - kind: certification
+    title: Professional Cloud Architect
+    issuer: Google Cloud
+    date: Mar 2022
+    expires: Mar 2024
+    url: https://www.credential.net/224f043e-598d-472b-ad30-c8fdc1ff89a9
+    evidence:
+      url: https://www.linkedin.com/in/sandra-parlant-141a90a9
+      observed_at: '2026-10-24T08:47:05Z'
+  recent_writing:
+  - title: Automatisation de la gestion des secrets Kubernetes
+    url: https://fr.linkedin.com/pulse/automatisation-de-la-gestion-des-secrets-kubernetes-avec-parlant
+    published: '2022-07-04T00:00:00.000Z'
+    channel: linkedin
+    summary: Co-écrit avec Tony Jarriault Contexte La gestion des secrets dans un environnement Kubernetes
+      est toujours sujet à…
+  - title: Features flag
+    url: https://fr.linkedin.com/pulse/features-flag-sandra-parlant
+    published: '2022-03-31T00:00:00.000Z'
+    channel: linkedin
+    summary: Tony Jarriault, Sandra Parlant Contexte Le Feature flag ou Feature Toggle, permet d'activer/désactiver
+      des portions de…
+  - title: GitOps en mode pull, l’expérience FluxCD sur Kubernetes - "De toute façon, c’est git qui a
+      raison"​
+    url: https://www.linkedin.com/pulse/gitops-en-mode-pull-lexp%C3%A9rience-fluxcd-sur-kubernetes-sandra-parlant
+    published: '2021-09-22T00:00:00.000Z'
+    channel: linkedin
+    summary: Sylvain Machard, Sandra Parlant Habituellement lorsque l’on parle de GitOps sur Kubernetes,
+      il est fait référence à un…
+  talks:
+  - session:2023/dev2743w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184410120001u22g
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

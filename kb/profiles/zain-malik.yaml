@@ -1,0 +1,230 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:zain-malik
+  person: person:zain-malik
+  brief_bio:
+    text: The GitHub Universe 2023 listing describes Zain Malik as Senior Product Marketing Manager at
+      GitHub.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 24b464fff4a11f59a0af43a475b021dea0c9239a82ab63583617012c17573972
+    stale: false
+  headline: Cyera
+  current_roles:
+  - Cyera
+  expertise:
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/sec2758d
+    - ref: session:2023/sec2759d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/sec2758d
+    - ref: session:2023/sec2759d
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2758d
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2759d
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2759d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2759d
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Dependabot
+      ref: session:2023/sec2759d
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:zain-malik
+  interests:
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507289603001Deie
+      ref: session:2023/sec2758d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507627643001sEwl
+      ref: session:2023/sec2759d
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507289603001Deie
+      ref: session:2023/sec2758d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507627643001sEwl
+      ref: session:2023/sec2759d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507289603001Deie
+      ref: session:2023/sec2758d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507627643001sEwl
+      ref: session:2023/sec2759d
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507627643001sEwl
+      ref: session:2023/sec2759d
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507289603001Deie
+      ref: session:2023/sec2758d
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507627643001sEwl
+      ref: session:2023/sec2759d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693507627643001sEwl
+      ref: session:2023/sec2759d
+  credentials:
+  - kind: certification
+    title: VSP - SDS - Software-Defined Storage 2015
+    issuer: VMware
+    date: Oct 2015
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  - kind: certification
+    title: HP Advanced Sales Certified - Client Virtualization [2015]
+    issuer: Hewlett-Packard
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  - kind: certification
+    title: HP Advanced Sales Certified - Cloud, Converged Systems and Services [2014]
+    issuer: Hewlett-Packard
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  - kind: certification
+    title: HP Advanced Sales Certified - Enterprise Server Solutions and Services [2014]
+    issuer: Hewlett-Packard
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  - kind: certification
+    title: HP Advanced Sales Certified - Enterprise Storage Solutions and Services [2014]
+    issuer: Hewlett-Packard
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  - kind: certification
+    title: HP Sales Certified - Converged Infrastructure Solutions [2014]
+    issuer: Hewlett-Packard
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  - kind: certification
+    title: HP Sales Certified - Fortify Security Solutions [2014]
+    issuer: Hewlett-Packard
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  - kind: certification
+    title: HP Sales Certified - Introduction to Selling Servers, Storage, Networking and Services [2014]
+    issuer: Hewlett-Packard
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  - kind: certification
+    title: HP Sales Certified - Networking Solutions and Services [2014]
+    issuer: Hewlett-Packard
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  - kind: certification
+    title: HP Sales Certified - Storage Solutions and Services [2014]
+    issuer: Hewlett-Packard
+    evidence:
+      url: https://www.linkedin.com/in/zainmalik
+      observed_at: '2026-10-24T08:49:59Z'
+  spoken_languages:
+  - Spanish
+  - Urdu
+  talks:
+  - session:2023/sec2758d
+  - session:2023/sec2759d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695056265411001qBAb
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,194 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:melissa-miller
+  person: person:melissa-miller
+  brief_bio:
+    text: Melissa Miller is Head of Product Marketing, AI at Atlassian, leading product marketing for
+      Atlassian Intelligence and Atlassian Rovo. Miller spoke at GitHub Universe 2024 about using AI to
+      keep product requirements within easy reach.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 98b61cf1707d32bc729d7917a5aa7d37638d620967eb3eb305971cadc758e7bf
+    stale: false
+  headline: Atlassian
+  current_roles:
+  - Atlassian
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1405d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1405d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1405d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1405d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1405d
+  - label: Jira
+    target: software:jira
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Jira
+      ref: session:2024/ai1405d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VSCode
+      ref: session:2024/ai1405d
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715259681724001L8EK
+      ref: session:2024/ai1405d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715259681724001L8EK
+      ref: session:2024/ai1405d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715259681724001L8EK
+      ref: session:2024/ai1405d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715259681724001L8EK
+      ref: session:2024/ai1405d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715259681724001L8EK
+      ref: session:2024/ai1405d
+  credentials:
+  - kind: certification
+    title: Google Analytics
+    issuer: Google
+    date: Jan 2016
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  - kind: certification
+    title: Preventing Workplace Harassment
+    issuer: Emtrain
+    url: https://www.linkedin.com/www.emtrain.com
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: course
+    title: Differential Equations
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  - kind: course
+    title: Industrial Organization
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  - kind: course
+    title: International Economics
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  - kind: course
+    title: Linear Algebra
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  - kind: course
+    title: Micro & Macro Economic Theory
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  - kind: course
+    title: Money, Finance, & Economic Crisis
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  - kind: course
+    title: Quantitative Economics 1 & 2
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  - kind: course
+    title: Statistics
+    evidence:
+      url: https://www.linkedin.com/in/melissanmiller
+      observed_at: '2026-10-24T08:46:51Z'
+  talks:
+  - session:2024/ai1405d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727892537048001izAK
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

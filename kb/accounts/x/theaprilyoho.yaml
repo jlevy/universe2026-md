@@ -1,0 +1,49 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/theaprilyoho
+  platform: x
+  handle: TheAprilYoho
+  url: https://x.com/TheAprilYoho
+  display_name: April Yoho
+  bio: 'Senior Developer Advocate and DevOps Practice Lead @GitHub. Lover of Azure. Hashicorp Ambassador.
+    #TeamZoot. Ironman. Scuba Diver. Skier'
+  location: United Kingdom
+  website: http://aprilyoho.dev/
+  followers: 6038
+  following: 1091
+  posts_count: 6750
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1769457127343448064/qJPgKZej_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1202365879/1746303460
+  created_at: '2013-02-20T22:49:25Z'
+  owner: person:april-yoho
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685619186942001eQLJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685619186942001eQLJ
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: scubaninja
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/TheAprilYoho
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

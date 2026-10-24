@@ -1,0 +1,436 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:james-montemagno
+  person: person:james-montemagno
+  brief_bio:
+    text: James Montemagno is a Principal Technical PM Lead at Microsoft who leads developer community
+      work around VS Code, GitHub Copilot and .NET, and has been a .NET developer since 2005. Montemagno
+      speaks at GitHub Universe 2026 about collaborating with GitHub Copilot and Work IQ.
+    cites:
+    - listed_role
+    - current_affiliations
+    - x_bio
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: fc6061f12a78d62c5aa48a5e8ead5347740e16ef7eb6e804658ba0a62618929e
+    stale: false
+  headline: Principal Technical PM Lead at Microsoft
+  location: Pacific Northwest
+  current_roles:
+  - Principal Technical PM Lead at Microsoft
+  expertise:
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2010d
+    - ref: session:bld2152a
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:james-montemagno
+  - label: Android
+    target: software:android
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Android
+      ref: person:james-montemagno
+  - label: C#
+    target: software:csharp
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: C#
+      ref: person:james-montemagno
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1978m
+  - label: iOS
+    target: software:ios
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: iOS
+      ref: person:james-montemagno
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:bld1978m
+  - label: Windows
+    target: software:windows
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Windows
+      ref: person:james-montemagno
+  programming_languages:
+  - label: C#
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:dotnet-presentations/dotnet-maui-workshop
+    - ref: repo:jamesmontemagno/feedbackflow
+    - ref: repo:jamesmontemagno/tiny-clips
+    - ref: repo:jamesmontemagno/inappbillingplugin
+    - ref: repo:jamesmontemagno/mvvm-helpers
+  - label: C++
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jamesmontemagno/mycadence-arduino
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jamesmontemagno/blazor-scorekeeper
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jamesmontemagno/mcp-badge-creator
+  interests:
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+    - url: https://github.com/jamesmontemagno/mcp-badge-creator
+      ref: repo:jamesmontemagno/mcp-badge-creator
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    weight: 0.69
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790896065470001Pf2f
+      ref: session:bld2010d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.69
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790896065470001Pf2f
+      ref: session:bld2010d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    weight: 0.54
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    weight: 0.54
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 0.54
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.54
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: .NET
+    basis: github_repositories
+    confidence: medium
+    weight: 0.46
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dotnet-presentations/dotnet-maui-workshop
+      ref: repo:dotnet-presentations/dotnet-maui-workshop
+    - url: https://github.com/jamesmontemagno/blazor-scorekeeper
+      ref: repo:jamesmontemagno/blazor-scorekeeper
+    - url: https://github.com/dotnet/core
+      ref: repo:dotnet/core
+  - label: csharp
+    basis: github_repositories
+    confidence: medium
+    weight: 0.36
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/jamesmontemagno/tiny-clips
+      ref: repo:jamesmontemagno/tiny-clips
+    - url: https://github.com/jamesmontemagno/blazor-scorekeeper
+      ref: repo:jamesmontemagno/blazor-scorekeeper
+  - label: android
+    basis: github_repositories
+    confidence: low
+    weight: 0.18
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/jamesmontemagno/Xamarin.Plugins
+      ref: repo:jamesmontemagno/xamarin.plugins
+  - label: arduino
+    basis: github_repositories
+    confidence: low
+    weight: 0.18
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/jamesmontemagno/mycadence-arduino
+      ref: repo:jamesmontemagno/mycadence-arduino
+  - label: blazor
+    basis: github_repositories
+    confidence: low
+    weight: 0.18
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/jamesmontemagno/blazor-scorekeeper
+      ref: repo:jamesmontemagno/blazor-scorekeeper
+  open_source:
+  - repository: repo:dotnet-presentations/dotnet-maui-workshop
+    relation: pinned
+    stars: 2033
+    primary_language: C#
+  - repository: repo:jamesmontemagno/xamarin.plugins
+    relation: owner
+    stars: 1280
+  - repository: repo:jamesmontemagno/inappbillingplugin
+    relation: owner
+    stars: 726
+    primary_language: C#
+  - repository: repo:jamesmontemagno/mvvm-helpers
+    relation: owner
+    stars: 720
+    primary_language: C#
+  - repository: repo:jamesmontemagno/tiny-clips
+    relation: owner
+    stars: 124
+    primary_language: C#
+  - repository: repo:jamesmontemagno/feedbackflow
+    relation: owner
+    stars: 88
+    primary_language: C#
+  - repository: repo:jamesmontemagno/mycadence-arduino
+    relation: owner
+    stars: 45
+    primary_language: C++
+  - repository: repo:jamesmontemagno/mcp-badge-creator
+    relation: owner
+    stars: 20
+    primary_language: TypeScript
+  - repository: repo:jamesmontemagno/blazor-scorekeeper
+    relation: owner
+    stars: 9
+    primary_language: HTML
+  - repository: repo:praeclarum/sqlite-net
+    relation: contributor
+    stars: 4455
+    primary_language: C#
+  - repository: repo:dotnet/core
+    relation: contributor
+    stars: 22051
+    primary_language: PowerShell
+  - repository: repo:microsoft/vscode-docs
+    relation: contributor
+    stars: 6675
+    primary_language: Markdown
+  - repository: repo:microsoft/vscode
+    relation: contributor
+    stars: 194244
+    primary_language: TypeScript
+  - repository: repo:dotnet-presentations/dotnet-presentations.github.io
+    relation: contributor
+    stars: 113
+    primary_language: CSS
+  recent_writing:
+  - title: Rebuilding 13 Years of Blog Posts as a Static Site with GitHub Copilot CLI
+    url: https://montemagno.com/rebuilding-my-blog-as-a-static-site-with-github-copilot-cli/
+    published: '2026-10-16T16:00:00Z'
+    channel: blog
+  - title: 'Introducing PDF Diff: Compare PDFs Privately in Your Browser'
+    url: https://montemagno.com/introducing-pdf-diff-compare-pdfs-privately-in-your-browser/
+    published: '2025-12-31T15:35:55Z'
+    channel: blog
+  - title: 'Introducing Oh My Posh Visual Configurator: Finally, a Drag-and-Drop Terminal Theme Builder!
+      ✨'
+    url: https://montemagno.com/introducing-oh-my-posh-visual-configurator-finally-a-drag-and-drop-terminal-theme-builder/
+    published: '2025-12-29T19:43:35Z'
+    channel: blog
+  - title: Building a Complete FIRE Calculator App with GitHub Copilot in One Chat Session
+    url: https://montemagno.com/building-a-complete-fire-calculator-app-with-github-copilot-in-one-chat-session/
+    published: '2025-12-24T16:13:01Z'
+    channel: blog
+  - title: "\U0001F680.NET 10 is here!\n\n✅ LTS release\n⚡ Faster: JIT, NativeAOT, AVX10.2\n\U0001F510\
+      \ Post-quantum crypto + AES KeyWrap\n\U0001F6E0 File-based apps (run main.cs directly!)\n\U0001F916\
+      \ AI Agent Framework + MCP \n\U0001F310 Blazor upgrades, OpenAPI\n\U0001F4BB C# 14: field-backed\
+      \ properties\n\nhttps://t.co/4RmOhhsnci\n\n#dotnetconf"
+    url: https://twitter.com/19249356/status/1988270368252129616
+    published: '2025-11-11T15:39:30Z'
+    channel: x
+  - title: Building Better Apps with GitHub Copilot Custom Agents
+    url: https://montemagno.com/building-better-apps-with-github-copilot-custom-agents/
+    published: '2025-11-02T17:36:04Z'
+    channel: blog
+  - title: 5 Ways I Use Background Coding Agents Every Day
+    url: https://montemagno.com/5-ways-i-use-background-coding-agents-every-day/
+    published: '2025-10-01T17:46:09Z'
+    channel: blog
+  - title: Announcing Hotkey Typer — type long prompts with a hotkey
+    url: https://montemagno.com/announcing-hotkey-typer/
+    published: '2025-09-26T22:57:22Z'
+    channel: blog
+  - title: "#GitHubCopilot CLI is GO! I have been using it the last few weeks and loving it! \n\nCheck\
+      \ it out: https://t.co/JjLFJSSeDG\n\n#github #githubcopilotcli https://t.co/fs0mghPMvf"
+    url: https://twitter.com/19249356/status/1971310082202976673
+    published: '2025-09-25T20:25:23Z'
+    channel: x
+  - title: "#VisualStudio2026 is coming and the first release of Insiders is here TODAY for you to try!\
+      \ \n\nGet it! https://t.co/r7u1akqJ2u\n\n✨ AI Integrated Development\n\U0001F3CE️ Blazing Fast Performance\n\
+      \U0001F60D Modern Look &amp; Feel https://t.co/yxlAs2ZVll"
+    url: https://twitter.com/19249356/status/1965460618728939766
+    published: '2025-09-09T17:01:42Z'
+    channel: x
+  - title: |-
+      Grok Code Fast 1 inside VS Code... is fast
+
+      #vscode #grokcode #grokcodefast1 #githubcopilot https://t.co/LlilOSxpEM
+    url: https://twitter.com/19249356/status/1960494752924885075
+    published: '2025-08-27T00:09:07Z'
+    channel: x
+  - title: 'VS Code is adding new AI features every day to help you write code faster and better than
+      ever. Here are a few favorites that I have that you should go try out right now. #vscode #githubcopilot
+      https://t.co/408Uf3cL2k'
+    url: https://twitter.com/19249356/status/1952006839396368709
+    published: '2025-08-03T14:01:11Z'
+    channel: x
+  - title: 'Introducing Bingo-o-matic: Your Ultimate Bingo Management App'
+    url: https://montemagno.com/introducing-bingo-o-matic-your-ultimate-bingo-management-app/
+    published: '2025-05-26T19:58:22Z'
+    channel: blog
+  - title: "I have been playing around with the new C# MCP SDK allowing you to easily create servers and\
+      \ clients in minutes. \n\nIt is fantastic!\n\nhttps://t.co/3xaCuZ6nU0\n\n#mcp #mcpserver #csharp\
+      \ #dotnet"
+    url: https://twitter.com/19249356/status/1906520837899030858
+    published: '2025-03-31T01:36:03Z'
+    channel: x
+  - title: |-
+      GitHub Copilot Agent mode is 🤯 amazing! If you haven't tried it yet you have to check it out. I built an entire #dotnetmaui application from scratch in 20 minutes: Database, Multi-page, MVVM, and more! Check it out:
+
+      https://t.co/crt1WeJ98o
+
+      #vscode #dotnet #githubcopilot
+    url: https://twitter.com/19249356/status/1892582196659068989
+    published: '2025-02-20T14:28:52Z'
+    channel: x
+  talks:
+  - session:bld1978m
+  - session:bld2010d
+  - session:bld2152a
+  gaps:
+  - linkedin_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1790967222685001mCc8
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jamesmontemagno
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

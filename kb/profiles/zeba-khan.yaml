@@ -1,0 +1,214 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:zeba-khan
+  person: person:zeba-khan
+  brief_bio:
+    text: Zeba Khan is a developer productivity leader at EY who works on DevOps and cloud solutions on
+      Azure and AWS and has written on agile performance testing and keyword-driven test design. Khan
+      spoke at GitHub Universe 2024 alongside EY colleagues about proving the value of GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: b716f2e181763a07b0d29367e97f07dc2c2a212b5b30197164e0a52a8b2eb947
+    stale: false
+  headline: EY
+  current_roles:
+  - EY
+  expertise:
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1654b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1654b
+  technologies:
+  - label: Amazon Web Services
+    target: software:aws
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: AWS
+      ref: person:zeba-khan
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1654b
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:zeba-khan
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372801503001dbBp
+      ref: session:2024/ai1654b
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372801503001dbBp
+      ref: session:2024/ai1654b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372801503001dbBp
+      ref: session:2024/ai1654b
+  education:
+  - school: Massachusetts Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  credentials:
+  - kind: certification
+    title: FinOps Certified Practitioner
+    issuer: FinOps Foundation
+    date: Jan 2023
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  - kind: certification
+    title: EY Sustainable Finance Program
+    issuer: INSEAD Executive Education
+    date: Dec 2022
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Jun 2019
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  - kind: certification
+    title: AWS Solutions Architect - Associate
+    issuer: Amazon Web Services
+    date: Jan 2017
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  - kind: certification
+    title: Certified Scrum Product Owner
+    issuer: Scrum Alliance
+    date: Dec 2015
+    url: https://www.scrumalliance.org/certifications/practitioners/cspo-certification
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  - kind: certification
+    title: Accredited Integration Specialist - HP PC v9
+    issuer: HP Certified Professional Program
+    date: Jun 2010
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  - kind: certification
+    title: GitHub Copilot
+    issuer: GitHub
+    date: Jun 2025
+    expires: Jun 2028
+    url: https://www.credly.com/badges/86ca412a-c6ba-464d-9b46-8de691374466/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  - kind: certification
+    title: Certified SAFe® 4 Agilist
+    issuer: Scaled Agile, Inc.
+    date: Jul 2019
+    expires: Jul 2020
+    url: https://www.youracclaim.com/badges/d3c41cde-165e-4e7e-980a-7126716b6af7/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  - kind: certification
+    title: Certified Software Quality Analyst
+    issuer: QAI Global Institute
+    date: May 2013
+    expires: May 2016
+    url: http://www.softwarecertifications.org/qai_csqa.htm
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  publications:
+  - title: Agile performance testing lifecycle
+    venue: Cutter IT, Agile Product & Project Management Executive Update vol. 14( No. 15)
+    date: December 10, 2013
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  - title: RBT Framework Coupled with a Keyword-Driven Test Design Approach
+    venue: Cutter IT Journal
+    date: November 7, 2013
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  activities:
+  - kind: volunteering
+    title: Volunteer
+    detail: Chicago Cares · Education · May 2017 · - Present · 9 years 6 months · May 2017
+    evidence:
+      url: https://www.linkedin.com/in/zeba-khan-2a73472b
+      observed_at: '2026-10-24T08:49:48Z'
+  recent_writing:
+  - title: Embracing the Transformative Power of Motherhood in the Workplace
+    url: https://www.linkedin.com/pulse/embracing-transformative-power-motherhood-workplace-zeba-khan-doskc
+    published: '2024-07-26T00:00:00.000Z'
+    channel: linkedin
+    summary: Motherhood is an extraordinary journey, filled with both immense challenges and profound
+      rewards. It's a privilege that…
+  - title: The Importance of Unit Economics in Technology Strategy
+    url: https://www.linkedin.com/pulse/importance-unit-economics-technology-strategy-zeba-khan-i4qmc
+    published: '2024-07-11T00:00:00.000Z'
+    channel: linkedin
+    summary: 'In today''s rapidly advancing technological landscape, businesses face a dual challenge:
+      staying ahead of the innovation…'
+  talks:
+  - session:2024/ai1654b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715373240621001IAws
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

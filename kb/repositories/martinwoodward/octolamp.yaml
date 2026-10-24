@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:martinwoodward/octolamp
+  full_name: martinwoodward/octolamp
+  url: https://github.com/martinwoodward/octolamp
+  description: A 3D printed, GitHub infused, smart light
+  stars: 822
+  forks: 52
+  watchers: 12
+  open_issues: 5
+  stats_observed_at: '2026-10-24T19:10:28Z'
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2023-01-13T18:48:33Z'
+  pushed_at: '2025-11-01T11:02:53Z'
+  owner_login: martinwoodward
+  owner: gh:martinwoodward
+  pinned_by:
+  - gh:martinwoodward
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: martinwoodward
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: martinwoodward/octolamp
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

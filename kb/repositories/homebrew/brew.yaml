@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:homebrew/brew
+  full_name: Homebrew/brew
+  url: https://github.com/Homebrew/brew
+  description: 🍺 The Package Manager for Everywhere
+  homepage: https://brew.sh
+  stars: 50095
+  forks: 11397
+  watchers: 740
+  open_issues: 2
+  stats_observed_at: '2026-10-24T19:10:19Z'
+  primary_language: Ruby
+  topics:
+  - homebrew
+  - ruby
+  - macos
+  - package-manager
+  - brew
+  license: BSD-2-Clause
+  archived: false
+  fork: false
+  created_at: '2016-03-06T05:08:38Z'
+  pushed_at: '2026-10-24T18:23:58Z'
+  owner_login: Homebrew
+  software: software:homebrew
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Homebrew/brew
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Homebrew/brew
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

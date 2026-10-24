@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/twilio-inc
+  platform: linkedin
+  handle: company/twilio-inc-
+  url: https://www.linkedin.com/company/twilio-inc-
+  display_name: Twilio
+  bio: Today's leading companies trust Twilio's Customer Engagement Platform (CEP) to build direct, personalized
+    relationships with their customers everywhere in the world. Twilio enables companies to use communications
+    and data to add intelligence and security to every step of the customer journey, from sales to marketing
+    to growth, customer service and many more engagement use cases in a flexible, programmatic way. Across
+    180 countries, millions of developers and hundreds of thousands of businesses use Twilio to create
+    magical experiences for their customers.
+  website: https://www.twilio.com/en-us?utm_source=linkedin&utm_medium=social&utm_term=corpcomms&utm_campaign=button&utm_content=button
+  followers: 536640
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEmISp-ciExQw/company-logo_200_200/B56ZYyhH7TGoAM-/0/1744604267044/twilio_inc__logo?e=2147483647&v=beta&t=SDaGt4k_P2X2TJoXvK9NiOb788rpbVRthBM_XuFbsUg
+  owner: org:twilio
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/ritikasingh24
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/twilio-inc-
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

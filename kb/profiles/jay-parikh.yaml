@@ -1,0 +1,68 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jay-parikh
+  person: person:jay-parikh
+  brief_bio:
+    text: Jay Parikh is Executive Vice President of CoreAI at Microsoft, which Parikh joined in October
+      2024 after serving as Global Head of Engineering and Infrastructure at Facebook from 2009 to 2021.
+      Parikh speaks in the Opening Keynote at GitHub Universe 2026.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: e4939848efecd55cbcdbbee984b51ca7d6ab29ca52db771a38b9e15c98addb63
+    stale: false
+  headline: Executive Vice President, CoreAI at Microsoft
+  current_roles:
+  - Executive Vice President, CoreAI at Microsoft
+  programming_languages:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jayparikh/agentviz
+  interests:
+  - label: agent-skills
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/microsoft/GitHub-Copilot-for-Azure
+      ref: repo:microsoft/github-copilot-for-azure
+  open_source:
+  - repository: repo:jayparikh/agentviz
+    relation: owner
+    stars: 96
+    primary_language: JavaScript
+  - repository: repo:microsoft/github-copilot-for-azure
+    relation: contributor
+    stars: 259
+    primary_language: TypeScript
+  talks:
+  - session:1809k
+  gaps:
+  - linkedin_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1761163871884001lpsQ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jayparikh
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

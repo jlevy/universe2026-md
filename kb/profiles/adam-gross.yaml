@@ -1,0 +1,279 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:adam-gross
+  person: person:adam-gross
+  brief_bio:
+    text: Adam Gross is a Senior Staff Engineer at Omnissa who works on C++ and Python systems and developer
+      productivity, and holds patents on remoted applications and virtual desktop sessions. Gross spoke
+      at GitHub Universe 2024 about building an engineering stack with GitHub in six months.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: aa75b16120cdb50bc7060724b8f6733c9a24a4c32c0bc2f7ea83aa40994db075
+    stale: false
+  headline: Omnissa
+  current_roles:
+  - Omnissa
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1867b
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1867b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1867b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1867b
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1867b
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1867b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1867b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1867b
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1867b
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GHAS
+      ref: session:2024/dev1867b
+  - label: GitLab
+    target: software:gitlab
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitLab
+      ref: session:2024/dev1867b
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:adam-gross
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1717424513668001OVJ5
+      ref: session:2024/dev1867b
+  education:
+  - school: University of Michigan
+    evidence:
+      url: https://www.linkedin.com/in/grossag
+      observed_at: '2026-10-24T08:44:36Z'
+  patents:
+  - title: Optimizing window move actions for remoted applications
+    number: US 10,082,941
+    date: September 25, 2018
+    url: https://patents.google.com/patent/US10082941
+    evidence:
+      url: https://www.linkedin.com/in/grossag
+      observed_at: '2026-10-24T08:44:36Z'
+  - title: Pushing a virtual desktop session from an authenticated device using image scanning
+    number: US 9,374,365
+    date: June 21, 2016
+    url: https://patents.google.com/patent/US9374365
+    evidence:
+      url: https://www.linkedin.com/in/grossag
+      observed_at: '2026-10-24T08:44:36Z'
+  - title: Decrypting an encrypted virtual machine using asymmetric key encryption
+    number: US 8,966,581
+    date: February 24, 2015
+    url: https://patents.google.com/patent/US8966581
+    evidence:
+      url: https://www.linkedin.com/in/grossag
+      observed_at: '2026-10-24T08:44:36Z'
+  - title: Single sign on for a remote user session
+    number: US 8,955,072
+    date: February 10, 2015
+    description: Abstract:A user accesses a remote session, the connection to which is managed by a connection
+      broker, according to a single sign-on (SSO) process. The SSO process includes the user entering
+      his or her credentials and being authenticated to the connection broker. In addition to user authentication,
+      the SSO process includes connection broker authentication to confirm that the connection broker
+      is trustworthy. When the connection broker is authenticated, the user credentials are transmitted
+      to the connection broker in a secure manner and the connection broker forwards them onto a machine
+      hosting the remote session so that the user can be logged into the remote session without entering
+      his or her credentials again.
+    url: https://patents.google.com/patent/US8955072
+    evidence:
+      url: https://www.linkedin.com/in/grossag
+      observed_at: '2026-10-24T08:44:36Z'
+  talks:
+  - session:2024/dev1867b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1717173032936001C1VZ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

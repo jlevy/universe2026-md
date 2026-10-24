@@ -1,0 +1,708 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alpha-romer-coma
+  person: person:alpha-romer-coma
+  brief_bio:
+    text: Alpha Romer Coma is a Senior Data Engineer at ViableView and an independent machine learning
+      engineer focused on multimodal AI and accelerated computing, and a GitHub Campus Expert. Coma speaks
+      at GitHub Universe 2026 comparing open-weight coding models with Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: dc810a23e121e49ea8c69e4391caa4f6d3f32517d1a97b8ef2c8d7f67efe1494
+    stale: false
+  headline: Senior Data Engineer at ViableView
+  current_roles:
+  - Senior Data Engineer at ViableView
+  - Experimental Machines
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1241d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1241d
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1241d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1241d
+  technologies:
+  - label: Amazon Web Services
+    target: software:aws
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: AWS
+      ref: person:alpha-romer-coma
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:bld1241d
+  - label: Hugging Face
+    target: software:hugging-face
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Hugging Face
+      ref: session:bld1241d
+  - label: PyTorch
+    target: software:pytorch
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: PyTorch
+      ref: person:alpha-romer-coma
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1241d
+  recognitions:
+  - label: GitHub Campus Expert
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: hine Learning Engineer, an AWS Certified Machine Learning Engineer Associate, a GitHub Campus
+        Expert, and an AWS Community Builder in AI Engineering. Through more than 25 technical
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777208642747001yQNz
+      ref: session:bld1241d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777208642747001yQNz
+      ref: session:bld1241d
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777208642747001yQNz
+      ref: session:bld1241d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777208642747001yQNz
+      ref: session:bld1241d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777208642747001yQNz
+      ref: session:bld1241d
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777208642747001yQNz
+      ref: session:bld1241d
+  - label: git
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/alpharomercoma/git-github-workshop-base
+      ref: repo:alpharomercoma/git-github-workshop-base
+  - label: indeed
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/alpharomercoma/ts-jobspy
+      ref: repo:alpharomercoma/ts-jobspy
+  - label: JavaScript
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/alpharomercoma/ts-jobspy
+      ref: repo:alpharomercoma/ts-jobspy
+  - label: linkedin
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/alpharomercoma/ts-jobspy
+      ref: repo:alpharomercoma/ts-jobspy
+  - label: npm
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/alpharomercoma/ts-jobspy
+      ref: repo:alpharomercoma/ts-jobspy
+  - label: npm-package
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/alpharomercoma/ts-jobspy
+      ref: repo:alpharomercoma/ts-jobspy
+  open_source:
+  - repository: repo:campus-experts/preview-template
+    relation: contributor
+    stars: 5
+  - repository: repo:alpharomercoma/ts-jobspy
+    relation: contributor
+    stars: 17
+    primary_language: TypeScript
+  - repository: repo:alpharomercoma/git-github-workshop-base
+    relation: contributor
+    stars: 6
+  education:
+  - school: FEU Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  credentials:
+  - kind: honor
+    title: PyTorch Conference Europe 2026 Speaker
+    issuer: The Linux Foundation
+    date: '2026-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: AWS All Builder's Welcome 2025 Grantee
+    issuer: Amazon Web Services (AWS)
+    date: '2025-12-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: National AI Prompt Design Challenge 2025 Champions
+    issuer: Straits Interactive
+    date: '2025-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Top 1% of 500K+ WakaTime Developers 2024
+    issuer: Wakatime
+    date: '2025-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: 'Codetober: Web Development Champions'
+    issuer: FEU Tech Alliance of Information Technology Students
+    date: '2024-11-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Philippine Junior Data Science Challenge Finalist & Global Co Special Awards Winner
+    issuer: UP Data Science Society
+    date: '2024-11-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Galactic Problem Solver
+    issuer: National Aeronautics and Space Administration
+    date: '2024-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Algolympics 2024 Finalist
+    issuer: Association for Computing Machinery - UP Diliman Student Chapter
+    date: '2024-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Top 1% of 500K+ WakaTime Developers 2023
+    issuer: WakaTime
+    date: '2024-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Space Apps 2023 Global Nominee and Galactic Problem Solver
+    issuer: National Aeronautics and Space Administration (NASA)
+    date: '2023-11-01T00:00:00.000Z'
+    description: '- Global Nominee of 587 out of 8718 teams - https://www.spaceappschallenge.org/2023/find-a-team/feu-tech-acm'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: President's Scholar with High Honors
+    issuer: FEU Institute of Technology
+    date: '2022-08-01T00:00:00.000Z'
+    description: The President's scholarship is awarded to those who have showed exemplary academic performance
+      and therefore supported by the university for the entire academic year. I was awarded the said scholarship
+      on August 20, 2022 at the FEU Tech Campus along with my two close friends and many others.
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: Certified AppSec Practitioner (CAP)
+    issuer: The SecOps Group
+    date: Sep 2024
+    url: https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXepzzmpUvYLTqrJCvs5VZUJOju0pTDXavm+UfU7Z8/bk02dkkRkJd4T9LLKt5EODzocvhZFzehPN4q663HEQvps=
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: Github Actions
+    issuer: GitHub
+    date: Aug 2024
+    url: https://www.credly.com/badges/49a69c52-5186-4fac-a101-9531d5f41cd0/public_url
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Aug 2024
+    url: https://www.credly.com/badges/d11f87a6-bfcb-4f21-922c-a00c23a0ea0b/public_url
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Aug 2024
+    url: https://www.credly.com/badges/ba18ce6a-4190-4680-905b-61149b9ac675/public_url
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: 'Cisco CCNA: Introduction to Networks'
+    issuer: Cisco Networking Academy
+    date: Jul 2024
+    url: https://www.credly.com/badges/c3e411bd-2f7b-445d-bb20-ce4e191667b0/public_url
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: Information Technology Specialist in Python
+    issuer: Certiport - A Pearson VUE Business
+    date: Jul 2024
+    url: https://www.credly.com/badges/d2cba34f-80c8-44a2-ae3a-019407612b90
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: Oracle Cloud Infrastructure 2024 Generative AI Professional
+    issuer: Oracle
+    date: Jul 2024
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: CS50's Introduction to Computer Science Verified Certificate
+    issuer: edX
+    date: Jan 2024
+    url: https://courses.edx.org/certificates/bb4919bf719f468c833b6e7555c3f337
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: 'CS50x: Introduction to the intellectual enterprises of computer science and the art of programming'
+    issuer: Harvard University
+    date: Dec 2023
+    url: https://cs50.harvard.edu/certificates/70f8307b-9c42-4fb9-a931-14d5e835a834
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: GitHub Foundations
+    issuer: GitHub
+    date: Jan 2024
+    expires: Jan 2027
+    url: https://www.credly.com/badges/59e40eef-9a77-43fd-8aa1-de64bd1b5a37/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  publications:
+  - title: Augmenting Multimodal Deep Learning with Attention Mechanisms to Recognize “Sludge” Videos
+      From Short-Form Content
+    venue: FEU Institute of Technology
+    date: May 24, 2025
+    description: • Garnered $376,000 of compute in support by the Google TPU Research Cloud and the YouTube
+      Research Program• Architected a 95% accurate novel Vision-Language Model for internet brain rot
+      videos• Tested by 10 machine learning experts, 20 content creators, and 20 content moderators in
+      the Philippines• Curated a 6,000-row specialized multimodal dataset with 200+ monthly downloads
+      on Kaggle
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  spoken_languages:
+  - English
+  - Tagalog
+  - Japanese
+  - Chinese
+  activities:
+  - kind: volunteering
+    title: PyTorch Foundation Ambassador
+    detail: PyTorch · Science and Technology · Oct 2026 · - Present · 1 month · Oct 2026
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: GitHub Campus Expert
+    detail: 'GitHub · Education · May 2025 · - Oct 2026 · 1 year 6 months · • GCE Portfolio: https://githubcampus.expert/fit-alpha-coma
+      • Speakership Portfolio: https://www.appsheet.com/start/571f4238-a52d-4f25-925c-6fc4e114e940 · May
+      2025'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: GitHub Campus Expert Trainee
+    detail: GitHub · Education · Nov 2024 · - May 2025 · 7 months · • Selected as 1 of 39 (2.6%) from
+      1,484 applicants for the Aug 2024 Campus Expert cohort · Nov 2024
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Ambassador
+    detail: Agentic AI Foundation · Science and Technology · Jun 2026 · - Present · 5 months · Jun 2026
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Tavily Campus Ambassador
+    detail: Tavily · Science and Technology · Jul 2025 · - Oct 2025 · 4 months · Jul 2025
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Mentor
+    detail: NASA International Space Apps Challenge · Science and Technology · Sep 2025 · - Oct 2025 ·
+      2 months · Sep 2025
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Author
+    detail: freeCodeCamp · Education · Apr 2025 · - Present · 1 year 7 months · Apr 2025
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Volunteer
+    detail: Google Developer Groups Cloud Manila · Science and Technology · Jul 2024 · - Present · 2 years
+      4 months · • Assisted in organizing the 400+ attendee Google I/O Extended x Build with AI event
+      at Ateneo de Manila University • Served as speaker relations for 9 in-person event speakers • Aided
+      as participant relations to 100+ attendees in Google Cloud Devfest 2024 at Bayanihan Center, Pasig
+      · Jul 2024
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Volunteer
+    detail: AI Pilipinas · Education · Aug 2025 · - Present · 1 year 3 months · Aug 2025
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Volunteer
+    detail: AWS Security User Group Philippines · Science and Technology · Sep 2024 · - Aug 2025 · 1 year
+      · • Assisted in generating over 100+ high-quality leads in AWS Community Day Philippines 2024 •
+      Accommodated 60 attendees at the Starting Your Cloud Career event for students/newcomers at the
+      AWS Office in the Philippines • Introduced 40+ students and professionals in the "Starting your
+      Cloud Career" seminar in sponsorship with GitLab · Sep 2024
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Project ACMX Head
+    detail: FEU Tech Association for Computing Machinery Student Chapter · Education · Nov 2023 · - Aug
+      2024 · 10 months · The FEU Tech ACM's technological initiative involves the development of an innovative
+      cross-platform application that serves as the central platform for the organization's digital activities.
+      The main objective of this initiative is to revolutionize engagement and interaction among FEU Tech
+      ACM members, officers, and computer science students through the development of a dynamic, feature-rich,
+      cross-platform application. This application will serve as the organization's central platform…
+      Show more The FEU Tech ACM's technological initiative involves the development of an innovative
+      cross-platform application that serves as the central platform for the organization's digital activities.
+      The main objective of this initiative is to revolutionize engagement and interaction among FEU Tech
+      ACM members, officers, and computer science students through the development of a dynamic, feature-rich,
+      cross-platform application. This application will serve as the organization's central platform for
+      its digital endeavors for years to come. Show less · Nov 2023
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Initiative Head
+    detail: FEU Tech Association for Computing Machinery Student Chapter · Education · Feb 2024 · - Jul
+      2025 · 1 year 6 months · • Founded the multi-year 100+ member ACM Beyond Campus Initiative to propel
+      the community to become globally competitive • Secured a $26,000 Deal with Google Cloud Provider
+      for upskilling of 100 members for 7 months • Saved over $2000 on official GitHub Certification Exams
+      for organization upskilling across 30+ members in 5 days • Redeemed over $1200 on Oracle's Generative
+      AI Professional Certification for 5 members • Coordinated 70 members to receive official limited
+      edition NASA… Show more • Founded the multi-year 100+ member ACM Beyond Campus Initiative to propel
+      the community to become globally competitive • Secured a $26,000 Deal with Google Cloud Provider
+      for upskilling of 100 members for 7 months • Saved over $2000 on official GitHub Certification Exams
+      for organization upskilling across 30+ members in 5 days • Redeemed over $1200 on Oracle's Generative
+      AI Professional Certification for 5 members • Coordinated 70 members to receive official limited
+      edition NASA certificates by completing the Open Science curriculum Show less · Feb 2024
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Webmaster
+    detail: FEU Tech ACM Student Chapter · Science and Technology · Aug 2023 · - Aug 2024 · 1 year 1 month
+      · • Migrated Laravel Codebase to modern NextJS deployed in a serverless cloud, running $0 per month
+      • Led a 10-man team of the organization's software development team • Guided a team of 18 software
+      developers for the web exposition of their thesis projects • Boosted LinkedIn engagements by 904%
+      by effective administration and market research · Aug 2023
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Director for Academics
+    detail: FEU Tech ACM Student Chapter · Education · Dec 2022 · - Aug 2023 · 9 months · • Directed the
+      academics committee of 6 junior officers for organizational events and duties • Organized 2 intercollegiate
+      programming competitions attended by over 50 participants across the Philippines • Hosted 2 study
+      sessions attended by over 100 computer science students • Served as external head for ITCF 4.0,
+      contacting female founders, executives, and developers from major brands · Dec 2022
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Junior Academics Officer
+    detail: FEU Tech ACM Student Chapter · Education · Sep 2022 · - Dec 2022 · 4 months · • Assisted in
+      organizing academic events • Contributed academic problem-sets · Sep 2022
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: volunteering
+    title: Lead Front End Developer
+    detail: Google Developer Student Clubs FEU Institute of Technology · Science and Technology · Feb
+      2023 · - Aug 2023 · 7 months · • Managed a team of 5 software developers within the GDSC Technology
+      Department • Coordinated with 25 core team members across departments to organize workshops • Co-organized
+      in-person study jam sessions attended by over 100 students · Feb 2023
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: 'OpenWeights: Edge Inference'
+    detail: Releasing early September · Aug 2026
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Sludge Qwen
+    detail: '- A MiniGPT-4-style vision-language model specialized for TikTok "sludge" content detection
+      with grounded, factually-accurate explanations.- Vision tower: Salesforce/blip2-opt-2.7b ViT-G/14-224
+      (frozen)- Q-Former: Salesforce/blip2-opt-2.7b 32 pretrained query tokens (frozen)- Linear projector:
+      768 → 2560 (trained)- LLM: Qwen/Qwen3-4B with r=16 LoRA merged in (trained)https://huggingface.co/alpharomercoma/vqwen-qformer-tiktok
+      · May 2025'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: 'TS-JobSpy: Indeed & LinkedIn Job Scraper'
+    detail: • Open-source TypeScript package on npm• Scrapes ~7200 jobs per minute with 100% success rate
+      across 60+ countries in any industry• https://www.npmjs.com/package/ts-jobspy · Aug 2025
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Para Po!
+    detail: Para Po! is an award-winning project recognized as a finalist and recipient of the GlobalCo
+      Special Award at the Philippine Junior Data Science Challenge in November 2024. The event, hosted
+      by the UP Data Science Society as its flagship initiative, took place at DICT Quezon City.The “Para
+      Po!” project is a public transport route optimizer and navigator featuring an incentivized program
+      to encourage carbon footprint reduction. · Oct 2024
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Kape ni Rab
+    detail: 'Kape ni Rab! was the champion website developed in just two days during the Codetober: Web
+      Development Competition hosted by the FEU Tech Alliance of Information Technology Students in October
+      2024. · Oct 2024'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Project NATURE for NASA '24
+    detail: Project NATURE is an interactive web-based storytelling platform developed by the Skibidi
+      Team. This project focuses on making complex climate change information more accessible and engaging.
+      It serves as an interactive, web-based "story collection" that informs how certain parts of the
+      world continuously contribute to climate change through short and easily digestible stories.The
+      platform aims to educate anyone willing to learn about factors that significantly contribute to
+      climate change by simplifying the data available on the U.S. Greenhouse Gas Center website and other
+      sources. Project NATURE presents climate change information in an interactive and narrative-driven
+      format, allowing users to explore various localized stories related to climate change contributions
+      worldwide.By condensing complex information into easily understandable stories, environmental education
+      can be more accessible and engaging for a broader audience - thus, potentially increasing public
+      awareness of environmental issues and encourages personal responsibility towards reducing carbon
+      footprints. · Oct 2024
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: FEU Tech ACMX
+    detail: • Automates 24,000+ undertaking PDF generations, saving 550 estimated hours total per year•
+      Scripts 96,000+ professor evaluations, saving an estimated total of 2,373 hours per year• Serves
+      4,000+ students and professors at FEU Institute of Technology• Released on 5 major platforms - Web,
+      Google Play Store, Microsoft Store, Xiaomi GetApps, & Huawei App Gallery · Sep 2023
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: FireGuard for NASA '23
+    detail: FIREGUARD is a data-driven, community-based global fire management system. It is a modern
+      cross-platform application that seeks to assist in the issue of local, residential, and non-residential
+      fires globally by data-driven community-based means and serves as a platform for public safety education.
+      · Oct 2023
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: '[Deprecated] Markdown Studio'
+    detail: • The modern cross-platform note-taking & blogging application built on bleeding-edge technologies•
+      200+ users on Google Play Store and Microsoft Store · Sep 2022
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: C++ Console Minesweeper
+    detail: The final project for our Computer Programming 1 course. The greatest feature of the console
+      minesweeper is not the UI, UX, or anything user-facing really but its algorithmic complexity that
+      performs tasks extremely efficiently. · Nov 2022
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: 'MyERL: Encrypted URL Microservice'
+    detail: '"The URL shortener that has your privacy''s back" - Built using the most modern and scalable
+      technologies, MyERL Microservice provides fast and secure URL encryption and shortening services
+      and introduces the concept of ERLs (Encrypted Resource Locator). It offers a minimal yet responsive
+      and elegant interface for the simple yet critical task of securely encrypting. · Aug 2022'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: '[Deprecated] MyMNHS | School Platform'
+    detail: MyMNHS is the output project of my applied research titled "Development of an Integrated School
+      Platform exclusively for Meycauayan Senior High School" back when I was in high school. It is a
+      full-stack platform dedicated to the initial expansion of our school to the web to be used by my
+      fellow students. · May 2022
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: 'AceRouter: AI Chat Route Optimizer'
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: YouTube Research Program
+    detail: Feb 2025 · Present
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: Analytics & Artificial Intelligence Association of the Philippines
+    detail: Dec 2024 · Present
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: GCP TPU Research Cloud
+    detail: Feb 2024 · Present
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: IEEE Computer Society
+    detail: Sep 2023 · Present
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: 'IEEE: Institute of Electrical and Electronics Engineers'
+    detail: Sep 2023 · Present
+    evidence:
+      url: https://www.linkedin.com/in/alpharomercoma
+      observed_at: '2026-10-24T08:11:33Z'
+  talks:
+  - session:bld1241d
+  gaps:
+  - x_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744218970649001rp28
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: fit-alpha-coma
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

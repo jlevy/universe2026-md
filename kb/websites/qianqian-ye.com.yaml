@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:qianqian-ye.com
+  url: https://qianqian-ye.com
+  kind: personal
+  title: Qianqian Ye - Artist, Designer & Creative Technologist
+  description: Qianqian Ye is a Chinese artist, designer and creative technologist based in Los Angeles.
+    Work in AI, p5.js, creative coding, VR/AR, and emerging technologies.
+  owner: person:qianqian-ye
+  link_basis:
+  - github_profile
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/qianqianye
+  - acct:x/4444ian
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Qianqianye
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://qianqian-ye.com
+    record_id: https://qianqian-ye.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

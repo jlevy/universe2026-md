@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: track
+  event: event:github-universe-2026
+  label: Track
+  multi_valued: true
+  terms:
+  - id: term:track/build-software-not-code
+    label: Build software, not code
+    source_id: 1744296020413001c1rC
+    session_count: 99
+  - id: term:track/lead-through-what-s-next
+    label: Lead through what's next
+    source_id: 1744296020413003cJPw
+    session_count: 52
+  - id: term:track/trust-every-commit
+    label: Trust every commit
+    source_id: 1744296020413002cCWr
+    session_count: 37
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1695679365536001nvxy
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/attributes.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/erik-arcos-b6a0a717
+  platform: linkedin
+  handle: in/erik-arcos-b6a0a717
+  url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+  display_name: Erik Arcos
+  location: Bogota
+  followers: 611
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQEab7v19Ubh6g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1695342080788?e=2147483647&v=beta&t=tb5rrbEODKYWpQd32fQT65nX_QsqkfRb65jXXriLkew
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQEUxYQp0FchQQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1627568690990?e=2147483647&v=beta&t=GmmYK0TejKA_XBXdhY5VBDY2ddSy4Hlk63801fK1Lck
+  owner: person:erik-arcos
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693805468532001GRpa
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

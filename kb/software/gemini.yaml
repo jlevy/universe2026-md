@@ -1,0 +1,17 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:gemini
+  name: Gemini
+  aliases:
+  - Gemini
+  kind: commercial
+  vendor: org:google
+  mentioned_in:
+  - session:ldr1434d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/hollenberry
+  platform: linkedin
+  handle: in/hollenberry
+  url: https://www.linkedin.com/in/hollenberry
+  display_name: Eric Hollenberry
+  bio: I like to keep it fun, effective, and simple.
+  location: Seattle
+  followers: 1110
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQH0MSljFCCkQg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1651008006076?e=2147483647&v=beta&t=9OjVWgyPupFiS6N-rm6slvxz1a4ma9ESfAyH_tVUVCA
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQFJT1PjmezOTA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1607981033203?e=2147483647&v=beta&t=ZyjQR9O80WhAkMBudox4rhkliWCBk-Ea0AZJwgWK-pI
+  owner: person:eric-hollenberry
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699462765566001lKc9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/hollenberry
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

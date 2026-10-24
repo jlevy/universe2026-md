@@ -1,0 +1,202 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:rikki-singh
+  person: person:rikki-singh
+  brief_bio:
+    text: Rikki Singh is VP of Product and Engineering for Emerging Technology and Innovation at Twilio
+      and previously led software product management work at McKinsey & Company. Singh spoke at GitHub
+      Universe 2024 about an AI-native product development lifecycle.
+    cites:
+    - current_affiliations
+    - linkedin_bio
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 8c6113af6e83f6440fae0e1fd6891e1bde8932c853889e511667d94e910003d3
+    stale: false
+  headline: Twilio
+  current_roles:
+  - Twilio
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2159m
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728396298071001UGYN
+      ref: session:2024/ai2159m
+  credentials:
+  - kind: honor
+    title: Chancellor's Gold Medal for Academic Excellence
+    issuer: Birla Institute of Technology & Science Pilani
+    date: '2012-01-01T00:00:00.000Z'
+    description: Stood first in the graduating batch of 2012 (600 students) with a cumulative GPA of 10.00
+    evidence:
+      url: https://www.linkedin.com/in/ritikasingh24
+      observed_at: '2026-10-24T08:48:00Z'
+  - kind: honor
+    title: Director’s Medal for All-Round Achievement
+    issuer: Birla Institute of Technology & Science Pilani
+    date: '2012-01-01T00:00:00.000Z'
+    description: Best all-round performance in the graduating batch of 2012.
+    evidence:
+      url: https://www.linkedin.com/in/ritikasingh24
+      observed_at: '2026-10-24T08:48:00Z'
+  - kind: honor
+    title: Dubai International Academic City (DIAC) Excellence Award
+    issuer: Dubai International Academic City (DIAC)
+    date: '2012-01-01T00:00:00.000Z'
+    description: Excellence during Undergraduate education in Dubai, U.A.E.
+    evidence:
+      url: https://www.linkedin.com/in/ritikasingh24
+      observed_at: '2026-10-24T08:48:00Z'
+  - kind: honor
+    title: Academic Excellence Plaque
+    issuer: St. Helena's High School
+    date: '2006-01-01T00:00:00.000Z'
+    description: Stood first in a class of 350 for ten consecutive years; board topper.
+    evidence:
+      url: https://www.linkedin.com/in/ritikasingh24
+      observed_at: '2026-10-24T08:48:00Z'
+  - kind: certification
+    title: Introduction to Operations Management
+    issuer: Coursera Course Certificates
+    date: May 2015
+    url: https://www.coursera.org/account/accomplishments/verify/TVBLNATSNJ
+    evidence:
+      url: https://www.linkedin.com/in/ritikasingh24
+      observed_at: '2026-10-24T08:48:00Z'
+  - kind: certification
+    title: Honored Listee
+    issuer: Marquis Who's Who
+    date: Oct 2024
+    expires: Dec 2029
+    url: https://badges.marquiswhoswho.com/Badge/honoredlistee/63ffb2db2e3f4fa192e616ef57337ae71b97eaea2b8e48afac2fa46c472ebacc
+    evidence:
+      url: https://www.linkedin.com/in/ritikasingh24
+      observed_at: '2026-10-24T08:48:00Z'
+  spoken_languages:
+  - English
+  - Hindi
+  activities:
+  - kind: volunteering
+    title: (Elected) Lead
+    detail: 'Outreach, MACH Committee at Microsoft · Education · Jul 2012 · - Jun 2014 · 2 years · Social-a-Thon:
+      I founded this to teach "Spoken English" to 80 girls (8-14 years) at a nonprofit school every weekend.
+      I worked on the logistics, formed a team to prepare the content and got volunteers to teach. Educate:
+      I initiated this to teach Computers to students in rural India. I coordinated with eVidyaloka, a
+      nonprofit, that sets up computers in villages; formed a team of employees to create the content
+      and deliver classes over Skype. · Jul 2012'
+    evidence:
+      url: https://www.linkedin.com/in/ritikasingh24
+      observed_at: '2026-10-24T08:48:00Z'
+  talks:
+  - session:2024/ai2159m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727306243901001cc6Z
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

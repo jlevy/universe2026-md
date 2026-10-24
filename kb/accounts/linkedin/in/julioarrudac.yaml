@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/julioarrudac
+  platform: linkedin
+  handle: in/julioarrudac
+  url: https://www.linkedin.com/in/julioarrudac
+  display_name: Julio Arruda
+  bio: I build the organizational and technical foundations that make Generative AI real inside…
+  location: São José dos Campos
+  followers: 7307
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQFDhZti7kaCiA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1701881867909?e=2147483647&v=beta&t=KfuWgiJrIlkbIOkRIwH0cmJJ6sws040Tl9-wRD-fFTc
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQHjPhkj9Whzog/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1644178259762?e=2147483647&v=beta&t=NSzxsZOyoK9nbGo5K1I8z3maAS1gI8gMxj00p0rFbIk
+  owner: person:julio-arruda
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683652303283001DEOr
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/julioarrudac
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

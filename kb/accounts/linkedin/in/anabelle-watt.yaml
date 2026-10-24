@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/anabelle-watt
+  platform: linkedin
+  handle: in/anabelle-watt
+  url: https://www.linkedin.com/in/anabelle-watt
+  display_name: Anabelle Watt
+  bio: I build the tools and programs that help engineering teams actually use AI well, not just…
+  location: Seattle
+  followers: 387
+  connections: 335
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHQP3Pj3-xxFw/profile-displaybackgroundimage-shrink_200_800/B56aBDrXoyJ4AU-/0/1787841837949?e=2147483647&v=beta&t=1_ijFQNVFinkAwDG08cv4aS2sx9_F1ThnlGCqlAMVsw
+  owner: person:anabelle-watt
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1756982740886001Wzin
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/anabelle-watt
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

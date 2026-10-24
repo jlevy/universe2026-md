@@ -1,0 +1,28 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:palo-it
+  login: Palo-IT
+  kind: organization
+  url: https://github.com/Palo-IT
+  name: PALO IT France
+  bio: Created in 2009, PALO IT is a consulting firm and innovative software development company.
+  location: Paris
+  website: http://palo-it.com
+  public_repositories: 30
+  created_at: '2013-03-07T18:40:04Z'
+  pinned:
+  - repo:palo-it/mamie
+  - repo:palo-it/voice-it
+  - repo:palo-it/examples
+  - repo:palo-it/send-eth-to-everyone
+  entity: org:palo-it
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Palo-IT
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

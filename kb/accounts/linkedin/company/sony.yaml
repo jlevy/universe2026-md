@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/sony
+  platform: linkedin
+  handle: company/sony
+  url: https://www.linkedin.com/company/sony
+  display_name: Sony
+  bio: 'Sony Group Corporation is a creative entertainment company with a solid foundation of technology.
+    Across its business segments - Game & Network Services; Music; Pictures; Entertainment, Technology
+    & Services; and Imaging & Sensing Solutions - Sony''s purpose is to fill the world with emotion through
+    the power of creativity and technology. For more information, visit: https://www.sony.com/en/SonyInfo/CorporateInfo/'
+  website: https://www.sony.com/en/
+  followers: 1396047
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQFeD2stV0OSRQ/company-logo_200_200/company-logo_200_200/0/1630629120915/sony_logo?e=2147483647&v=beta&t=Z5VSEHZJufLPXwFoii1JQx1N4WJLq9iE313s6RvTMFs
+  owner: org:sony
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/yasuhiro-osaki-769025b2
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/sony
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

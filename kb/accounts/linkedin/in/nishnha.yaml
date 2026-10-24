@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/nishnha
+  platform: linkedin
+  handle: in/nishnha
+  url: https://www.linkedin.com/in/nishnha
+  display_name: Nish Sinha
+  location: Alpharetta
+  followers: 1098
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQE7l7HqXCzE6w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1527629187592?e=2147483647&v=beta&t=p5To6odvpm_A0gk3Pq3P6-WklHhBjr2m9HyV8H_Sxtg
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQESn2W60CbwNw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1593103713003?e=2147483647&v=beta&t=8x7KtNtYmCPcHjSRcQH96OqdST99U_AlnfjFo4Z5-9o
+  owner: person:nish-sinha
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692200542764001GAQj
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/nishnha
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

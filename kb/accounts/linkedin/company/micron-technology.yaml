@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/micron-technology
+  platform: linkedin
+  handle: company/micron-technology
+  url: https://www.linkedin.com/company/micron-technology
+  display_name: Micron Technology
+  bio: 'Micron is an industry leader in innovative memory and storage solutions transforming how the world
+    uses information to enrich life for all. With a relentless focus on our customers, technology leadership,
+    and manufacturing and operational excellence, Micron delivers a rich portfolio of high-performance
+    DRAM, NAND and NOR memory and storage products through our Micron® and Crucial® brands. Every day,
+    the innovations that our people create fuel the data economy, enabling advances in artificial intelligence
+    (AI) and compute-intensive applications that unleash opportunities — from the data center to the intelligent
+    edge and across the client and mobile user experience. To learn more about Micron Technology, Inc.
+    (Nasdaq: MU), visit micron.com.'
+  website: https://www.micron.com/
+  followers: 1072607
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGfQ4M3evQz-g/company-logo_200_200/company-logo_200_200/0/1728389136980?e=2147483647&v=beta&t=WgOVoK_kTARPiiR342Dgpb6e9FI9dDHDrYFHxs_tHAk
+  owner: org:micron-technology
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/joshua-mcintosh-812aa311
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kkennedyusu
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/micron-technology
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

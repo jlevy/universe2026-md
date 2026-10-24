@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:code.arthurnn.com
+  url: http://code.arthurnn.com
+  kind: personal
+  title: Code @ arthurnn
+  description: arthurnn's Blog
+  owner: person:arthur-neves
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://code.arthurnn.com/rss.xml
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: arthurnn
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://code.arthurnn.com/
+    record_id: http://code.arthurnn.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

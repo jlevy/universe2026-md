@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/gsk
+  platform: linkedin
+  handle: company/gsk
+  url: https://www.linkedin.com/company/gsk
+  display_name: GSK
+  bio: 'We are uniting science, technology and talent to get ahead of disease together. Our community
+    guidelines: https://gsk.to/socialmedia'
+  website: https://www.gsk.com/
+  followers: 4935340
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E0BAQE52m4AbEhxCw/company-logo_200_200/company-logo_200_200/0/1663675238924/glaxosmithkline_logo?e=2147483647&v=beta&t=U6s_4U2rLU5ssRzdxazTyXejzJZ5kEMWMZBqeZFQKbU
+  owner: org:gsk
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/eleanor-sparling-761374231
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/gsk
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

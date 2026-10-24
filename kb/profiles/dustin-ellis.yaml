@@ -1,0 +1,258 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dustin-ellis
+  person: person:dustin-ellis
+  brief_bio:
+    text: Dustin Ellis is a Senior Cloud Solutions Architect on Microsoft's Emerging Technologies Team,
+      focused on developer productivity and AI with GitHub Copilot, GitHub Enterprise and GitHub Actions.
+      Ellis spoke at GitHub Universe 2025 about customizing GitHub Copilot for a workflow.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 26864bab7cca4153fce4f19965808c057ce0ed8a0f00dbb191faba5846885274
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1193w
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1193w
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1193w
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:dustin-ellis
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:dustin-ellis
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  education:
+  - school: Texas A&M University-Commerce
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  credentials:
+  - kind: certification
+    title: VMware Certified Advanced Professional - Cloud Management and Automation Deploy 2021
+    issuer: VMware
+    date: Mar 2021
+    url: https://www.youracclaim.com/badges/f44048c7-78ab-4456-b653-92a57fea80b0?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: certification
+    title: VMware Certified Professional - Cloud Management and Automation 2021
+    issuer: VMware
+    date: Feb 2021
+    url: https://www.youracclaim.com/badges/0bc6d3e6-aca0-44fa-bdde-aef3e57e9572?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: certification
+    title: VMware Certified Advanced Professional - Cloud Management and Automation Deployment 2020
+    issuer: VMware
+    date: Dec 2020
+    url: https://www.youracclaim.com/badges/ea7e940d-70be-4636-9cc1-8fc84a13d108?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: certification
+    title: VMware Certified Implementation Expert - Cloud Management & Automation 2020
+    issuer: VMware
+    date: Dec 2020
+    url: https://www.youracclaim.com/badges/0e6459cd-fafb-43df-bf01-ac8b8952450f?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: certification
+    title: VMware Certified Advanced Professional 7 - Cloud Management and Automation Design
+    issuer: VMware
+    date: Jun 2020
+    url: https://www.youracclaim.com/badges/cac74251-65f0-47e5-8a06-8e2f820e4c5b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: certification
+    title: VMware Certified Professional 7 - Cloud Management and Automation
+    issuer: VMware
+    date: Jun 2020
+    url: https://www.youracclaim.com/badges/612b7445-261e-470d-82e0-1d44c564c176/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: certification
+    title: ITIL v3F ITSM
+    date: Jun 2015
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: certification
+    title: VMware Certified Professional 6 – Cloud Management and Automation (VCP6-CMA)
+    issuer: VMware
+    date: Nov 2015
+    expires: Nov 2019
+    url: http://vmware.com/go/verifycert
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: certification
+    title: VMware Certified Professional 7 - Cloud Management and Automation (VCP7-CMA)
+    issuer: VMware
+    date: Aug 2017
+    expires: Aug 2019
+    url: http://vmware.com/go/verifycert
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: certification
+    title: VMware Certified Professional 6 - Cloud (VCP6-Cloud)
+    issuer: VMware
+    date: Nov 2015
+    expires: Aug 2019
+    url: http://vmware.com/go/verifycert
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: course
+    title: C# Programming
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: course
+    title: C++ Programming
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: course
+    title: Engineering and Technology Project Management
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: course
+    title: Human Resource Management
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: course
+    title: Java Programming
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: course
+    title: Oracle SQL
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: course
+    title: Organizational Change and Diversity
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: course
+    title: Quality Management
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  - kind: course
+    title: Unix OS
+    evidence:
+      url: https://www.linkedin.com/in/dustinellis
+      observed_at: '2026-10-24T08:43:03Z'
+  talks:
+  - session:2025/bld1193w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1758824983578001DM9J
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

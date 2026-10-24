@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Experience/v1
+  schema: ../_schemas/experience.schema.yaml
+  envelope: experience
+  status: permissive
+experience:
+  id: experience:level-up-lounge
+  name: Level up lounge
+  description: Pave the way for your next career move at Universe. Gain 1:1 advice from a career coach
+    and build the practical skills you need through tutorials and certifications.
+  category: connect
+  schedule: Oct 28-29
+  location: Gateway Pavilion
+  venue: venue:gateway-pavilion
+  action: Book an appointment
+  action_url: https://reg.githubuniverse.com/flow/github/universe26/leveluplounge/page/home
+  image_url: https://static.rainfocus.com/github/universe26/static/staticfile/staticfile/Session_Image_Career_corner_1782426776084001oCJ4.png
+  sources:
+  - system: rainfocus
+    url: https://reg.githubuniverse.com/flow/loadPage?pageUri=explore
+    retrieved_at: '2026-10-24T06:46:13Z'
+    snapshot: raw/rainfocus/pages/explore.json

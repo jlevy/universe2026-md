@@ -1,0 +1,203 @@
+# Hand-curated organization facts the sources cannot supply.
+#
+# - `aliases` merge spellings that legal-suffix stripping does not catch.
+# - `split` turns one listed company string into several affiliations, primary first.
+# - `none` lists company strings that do not name an organization.
+# - `github` pins an organization's GitHub account when automatic matching would be
+#   ambiguous or wrong.
+# - `website` replaces a sponsor link that points somewhere else (Accenture's points at
+#   Avanade).
+# - `related` links parent, subsidiary and partner organizations.
+# - `session_hosts` names the sponsor of a sponsor session whose speakers work elsewhere,
+#   keyed by session code.
+#
+# Keys are organization slugs (the part after `org:`).
+
+organizer: github
+
+ambiguous_mentions: [Principal, Sonar]
+
+none:
+  - ""
+  - Independent
+  # Programs and communities people list as their GitHub "company"; not employers.
+  - Microsoft MVP
+  - GitHub Campus Experts
+  - Home Assistant Community Apps
+  # LinkedIn "current company" values that are statuses or personal brands.
+  - Open to Work
+  - Until
+  - Afro Adventurer™
+
+split:
+  "Accenture and Avanade":
+    - Accenture
+    - Avanade
+  "CREATE / University of Washington":
+    - CREATE
+    - University of Washington
+  "Processing Foundation, University of Southern California":
+    - Processing Foundation
+    - University of Southern California
+  "Flox and NixOS":
+    - Flox
+    - NixOS Foundation
+
+session_hosts:
+  BLD1916M: [accenture]
+  LDR1872D: [novus]
+
+organizations:
+  accenture:
+    name: Accenture
+    website: https://www.accenture.com
+    github: Accenture
+    related: [avanade]
+  avanade:
+    name: Avanade
+    website: https://www.avanade.com
+    related: [accenture, microsoft]
+  1password:
+    name: 1Password
+    github: 1Password
+  modus-create:
+    name: Modus Create
+    github: ModusCreateOrg
+  eficode:
+    name: Eficode
+    github: eficode
+  palo-it:
+    name: PALO IT
+    github: Palo-IT
+  visa:
+    name: Visa
+    aliases: [VISA]
+  moderne:
+    name: Moderne
+    aliases: [Moderne.io]
+  marks-and-spencer:
+    name: Marks and Spencer
+    aliases: [Marks & Spencer, M&S]
+  amazon-web-services:
+    name: Amazon Web Services
+    aliases: [Amazon Web Services (AWS)]
+  gaad-foundation:
+    name: GAAD Foundation
+    aliases: [GAAD (Global Accessibility Awareness Day) Foundation]
+  resolve-ai:
+    name: Resolve AI
+    aliases: [ResolveAI]
+  tiger-data:
+    name: Tiger Data
+    aliases: [Tiger Data (creators of TimescaleDB)]
+  cncf:
+    name: CNCF
+    aliases: [Cloud Native Computing Foundation, Cloud Native Computing Foundation (CNCF), CNCF (Cloud Native Computing Foundation), CNCF - Cloud Native Computing Foundation]
+    website: https://www.cncf.io
+    github: cncf
+  github:
+    name: GitHub
+    website: https://github.com
+    github: github
+    aliases: [GitHub - Copilot]
+  github-next:
+    name: GitHub Next
+    related: [github]
+  testmu-ai:
+    name: TestMu AI
+    aliases: [LambdaTest, Lambdatest]
+  microsoft:
+    name: Microsoft
+    website: https://www.microsoft.com
+    github: microsoft
+  port:
+    name: Port
+    aliases: [Port.io]
+  neubird:
+    name: NeuBird
+    aliases: [NeuBird AI]
+  ibm:
+    name: IBM
+    website: https://www.ibm.com
+    linkedin: ibm
+    aliases: [IBM Consulting]
+  google:
+    name: Google
+    aliases: [Google Cloud]
+  itti:
+    name: itti
+    aliases: ["itti (Grupo Vázquez)"]
+  isovalent:
+    name: Isovalent
+    aliases: [Isovalent part of Cisco]
+  voidzero:
+    name: VoidZero
+    aliases: [VoidZero (Cloudflare)]
+  provation:
+    name: Provation
+    aliases: [Provation / Fortive]
+  gitprotect-io:
+    name: GitProtect.io
+    aliases: [GitProtect]
+  amd:
+    name: AMD
+    aliases: [Advanced Micro Devices, Advanced Micro Devices (AMD)]
+  the-linux-foundation:
+    name: The Linux Foundation
+    aliases: [Linux Foundation]
+  open-home-foundation:
+    name: Open Home Foundation
+    aliases: [Home Assistant]
+    github: OpenHomeFoundation
+  nixos:
+    name: NixOS
+    github: NixOS
+  processing-foundation:
+    name: Processing Foundation
+    github: processing
+  django-software-foundation:
+    name: Django Software Foundation
+    github: django
+  bloomberg-lp:
+    name: Bloomberg LP
+    aliases: [Bloomberg]
+  cathay-pacific:
+    name: Cathay Pacific
+    aliases: [Cathay Pacific Airlines, Cathay Pacific airways]
+  commonwealth-bank:
+    name: Commonwealth Bank
+    aliases: [Commonwealth Bank of Australia]
+  deutsche-borse:
+    name: Deutsche Börse
+    aliases: [Deutsche Börse Group]
+  entire:
+    name: Entire
+    aliases: [Entire HQ]
+    github: entirehq
+  kpmg-us:
+    name: KPMG US
+    aliases: [KPMG]
+  liberty-mutual-insurance:
+    name: Liberty Mutual Insurance
+    aliases: [Liberty Mutual]
+  open-healthcare-network-foundation:
+    name: Open Healthcare Network Foundation
+    aliases: [Open Healthcare Network]
+  otto:
+    name: OTTO
+    aliases: [Otto GmbH & Co KG, "Otto GmbH &Co. KGaA"]
+  pendo-io:
+    name: Pendo.io
+    aliases: [Pendo]
+  principal-financial-group:
+    name: Principal Financial Group
+    aliases: [Principal]
+  uber:
+    name: Uber
+    aliases: [Uber Technologies]
+  villagesql:
+    name: VillageSQL
+    aliases: [villagesql.com]
+  xebia:
+    name: Xebia
+    aliases: [Xebia USA, "Xebia|Xpirit"]

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:anjuansimmons.com
+  url: http://www.anjuansimmons.com/
+  kind: personal
+  title: Anjuan Simmons
+  description: I'm a Technology Translator. Welcome to my site.
+  owner: person:anjuan-simmons
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://AnjuanSimmons.com/feed.xml
+  linked_accounts:
+  - acct:x/anjuan
+  sources:
+  - system: brightdata
+    url: https://x.com/anjuan
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://anjuansimmons.com/
+    record_id: http://www.anjuansimmons.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

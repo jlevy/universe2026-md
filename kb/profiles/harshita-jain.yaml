@@ -1,0 +1,307 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:harshita-jain
+  person: person:harshita-jain
+  brief_bio:
+    text: Harshita Jain is a Forward Deployed Engineer at Smallest AI working on real-time voice AI and
+      was previously a game developer at Mobile Premier League. Jain spoke at GitHub Universe 2025 about
+      building games with GitHub Copilot.
+    cites:
+    - linkedin_bio
+    - x_bio
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: 6bb6723987741704eaf5001ad8aea2a4a181056a7a1691f7bb70b523754d43a5
+    stale: false
+  headline: smallest.ai
+  current_roles:
+  - smallest.ai
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1382s
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1382s
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1382s
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1382s
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1382s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1382s
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205086688001yjVO
+      ref: session:2025/bld1382s
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205086688001yjVO
+      ref: session:2025/bld1382s
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205086688001yjVO
+      ref: session:2025/bld1382s
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205086688001yjVO
+      ref: session:2025/bld1382s
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205086688001yjVO
+      ref: session:2025/bld1382s
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205086688001yjVO
+      ref: session:2025/bld1382s
+  education:
+  - school: National Institute of Technology Hamirpur
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  credentials:
+  - kind: honor
+    title: Speaker
+    issuer: DevRelCon Yokohama
+    date: '2023-03-01T00:00:00.000Z'
+    description: Youngest speaker amongst the 36 selected people globally to speak about the DevRel and
+      community ecosystem at DevRelCon Yokohama, Japan.
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: honor
+    title: Spark Worlds Hackathon by Meta
+    issuer: Meta
+    date: '2022-07-01T00:00:00.000Z'
+    description: Secured a World Rank of 307 at Spark Worlds Hackathon (a hackathon leveraging the power
+      of Meta's flagship software - Spark AR to create immersive world AR experiences).
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: honor
+    title: Harvard WECode 2022 Scholar
+    issuer: Harvard University
+    date: '2022-02-01T00:00:00.000Z'
+    description: Harvard WECode (Women Engineers Code) is a global community of technical leaders aiming
+      to foster a network among engineers, and promote more female representation in the technical industry.
+      WECode culminates in the world’s largest student-run women in tech conferences, held for high school
+      and undergraduates students.
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: honor
+    title: Top 20 at TechXR by IIT Roorkee
+    issuer: iHUB DivyaSampark @ IIT Roorkee in association with TechXR Innovations Private Limited
+    date: '2022-02-01T00:00:00.000Z'
+    description: Bagged the 20th position out of 3500+ registrations at the National AR-VR Hackathon organized
+      by iHUB DivyaSampark @ IIT Roorkee in association with TechXR Innovations Private Limited for creating
+      a 3D navigation game based on the theme of Halloween.
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: honor
+    title: SJVN Silver Jubilee Merit Scholarship
+    issuer: SJVN
+    date: '2021-12-01T00:00:00.000Z'
+    description: SJVN Silver Jubilee Merit Scholarship Scheme implemented through HIMCON is awarded to
+      students who have passed the 12th examination from the states of Himachal Pradesh, Uttarakhand,
+      Bihar, Arunachal Pradesh, and Maharashtra and secured a rank in the merit list. State Merit Rank
+      - 3 State Merit Rank (Non-Medical) - 1
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: honor
+    title: 7th rank at Frosthack
+    issuer: IIT Mandi
+    date: '2021-05-01T00:00:00.000Z'
+    description: Frosthack was an open hackathon organized by IIT Mandi with the goal of solving societal
+      problems. I was a part of Team ARes which created an AR-based app 'Hriday' centred on the theme
+      of mental health awareness.
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: honor
+    title: National Semi-finalist and State Winner (2018, 2019)
+    issuer: CCCC National Cryptic Crossword Contest
+    description: CCCC Cryptic Crossword Contest is an inter-school pan-India event based on analytical
+      reasoning, English vocabulary, general awareness and speed. It is first conducted at the state level
+      and the state level winners then compete at the national level for the title.
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  activities:
+  - kind: volunteering
+    title: Mentee
+    detail: Ubisoft · Science and Technology · Oct 2024 · - Mar 2025 · 6 months · Participated in Ubisoft’s
+      Global Mentoring Program and thereby developed and brought a personal project to life · Oct 2024
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: volunteering
+    title: GitHub Campus Expert
+    detail: GitHub · Education · Oct 2021 · - Sep 2025 · 4 years · Campus Experts are student leaders
+      that strive to build diverse and inclusive spaces to learn skills, share their experiences, and
+      build projects together. They can be found across the globe leading in-person and online conferences,
+      meetups, and hackathons, and maintaining open source projects. • Organized GitHub Field Day India,
+      the largest unconference for technical student community leaders. • Organized Electrothon 5.0 and
+      Electrothon 4.0 - MLH-powered global hackathons that received… Show more Campus Experts are student
+      leaders that strive to build diverse and inclusive spaces to learn skills, share their experiences,
+      and build projects together. They can be found across the globe leading in-person and online conferences,
+      meetups, and hackathons, and maintaining open source projects. • Organized GitHub Field Day India,
+      the largest unconference for technical student community leaders. • Organized Electrothon 5.0 and
+      Electrothon 4.0 - MLH-powered global hackathons that received 2000+ registrations. • Delivered a
+      keynote at MLH Hackcon India about the Art of Work Delegation in Hackathons. Show less · Oct 2021
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: volunteering
+    title: Coordinator
+    detail: SPEC_NITH · Science and Technology · Dec 2020 · - May 2024 · 3 years 6 months · Dec 2020
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: volunteering
+    title: Organizer
+    detail: GitHub Field Day India · Science and Technology · May 2022 · - Jun 2022 · 2 months · May 2022
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: volunteering
+    title: Co-coordinator at Web Portal Team
+    detail: National Institute of Technology Hamirpur · Education · Aug 2021 · - May 2024 · 2 years 10
+      months · Aug 2021
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: volunteering
+    title: Member
+    detail: Reboot · Science and Technology · Jul 2022 · - Present · 4 years 4 months · - Reboot is a
+      publication and community reimagining techno-optimism for a better collective future. - Reboot releases
+      weekly newsletters that analyze technology in the context of the institutions and ideologies it
+      shapes and is shaped by. - It hosts monthly live Q&As with authors of the best new books on technology
+      and society. - It runs an annual student fellowship, in-person meetups, book clubs that redefine
+      what "success in tech" means altogether. · Jul 2022
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: volunteering
+    title: Mentee
+    detail: Lean In @NIT Hamirpur · Science and Technology · Aug 2021 · - May 2024 · 2 years 10 months
+      · Lean In @NIT Hamirpur is a community circle working towards building a reliant community of women
+      with interests in technology and leadership. · Aug 2021
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: volunteering
+    title: Mentee
+    detail: Codess.Cafe · Education · Sep 2021 · - May 2024 · 2 years 9 months · Sep 2021
+    evidence:
+      url: https://www.linkedin.com/in/harshitajain16
+      observed_at: '2026-10-24T08:44:48Z'
+  recent_writing:
+  - title: 'Nolan: Building a Distracted Product Marketing Genius'
+    url: https://harshmello.substack.com/p/nolan-building-a-distracted-genius
+    published: '2026-08-30T00:50:06Z'
+    channel: blog
+  - title: The Strange Afterlife of an Old Career
+    url: https://harshmello.substack.com/p/the-strange-afterlife-of-an-old-career
+    published: '2026-07-07T10:47:53Z'
+    channel: blog
+  - title: The Myth of the Visible Self
+    url: https://harshmello.substack.com/p/the-myth-of-the-visible-self
+    published: '2026-05-20T06:27:15Z'
+    channel: blog
+  - title: Building Belonging Where You Don’t Belong
+    url: https://harshmello.substack.com/p/building-belonging-where-you-dont
+    published: '2026-03-10T00:05:32Z'
+    channel: blog
+  - title: ​​On Losing Whimsy at Work
+    url: https://harshmello.substack.com/p/on-losing-whimsy-at-work
+    published: '2025-12-04T15:04:20Z'
+    channel: blog
+  - title: Coming soon
+    url: https://harshmello.substack.com/p/coming-soon
+    published: '2025-09-15T09:27:13Z'
+    channel: blog
+  talks:
+  - session:2025/bld1382s
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746199369288001rypM
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,24 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:leanphoenix.nl
+  url: http://www.leanphoenix.nl/
+  kind: personal
+  owner: person:jeffrey-opdam
+  link_basis:
+  - x_profile
+  fetch_status: error
+  sources:
+  - system: brightdata
+    url: https://x.com/leanphoenix
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: http://www.leanphoenix.nl/
+    record_id: http://www.leanphoenix.nl/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

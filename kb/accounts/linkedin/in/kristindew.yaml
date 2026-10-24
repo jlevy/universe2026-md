@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kristindew
+  platform: linkedin
+  handle: in/kristindew
+  url: https://www.linkedin.com/in/kristindew
+  display_name: Kristin Dew, PhD
+  location: Greater Seattle Area
+  followers: 1147
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGkC8p83vFFRg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1719006785224?e=2147483647&v=beta&t=YjfIQM4sX6al7xarFh6g3j6iKd34kIkgplZzN0qvw1M
+  owner: person:kristin-n-dew
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777664743572001SUjr
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kristindew
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

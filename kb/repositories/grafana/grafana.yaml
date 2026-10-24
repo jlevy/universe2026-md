@@ -1,0 +1,56 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:grafana/grafana
+  full_name: grafana/grafana
+  url: https://github.com/grafana/grafana
+  description: 'The open and composable observability and data visualization platform. Visualize metrics,
+    logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and
+    many more. '
+  homepage: https://grafana.com
+  stars: 77477
+  forks: 14849
+  watchers: 1289
+  open_issues: 2651
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: TypeScript
+  topics:
+  - grafana
+  - monitoring
+  - analytics
+  - metrics
+  - influxdb
+  - prometheus
+  - elasticsearch
+  - alerting
+  - data-visualization
+  - go
+  license: AGPL-3.0
+  archived: false
+  fork: false
+  created_at: '2013-12-11T15:59:56Z'
+  pushed_at: '2026-10-24T18:19:42Z'
+  owner_login: grafana
+  owner: gh:grafana
+  pinned_by:
+  - gh:grafana
+  software: software:grafana
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana/grafana
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana/grafana
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/service-pro-field-service
+  platform: linkedin
+  handle: company/service-pro-field-service
+  url: https://www.linkedin.com/company/service-pro-field-service
+  display_name: Service Pro
+  bio: Service Pro invoices every job faster, on the systems you already run. It clears the data bottlenecks
+    across your people and systems. Job data often stalls, goes missing, or comes back wrong on its way
+    to an invoice. Service Pro closes those gaps automatically, learning how your business invoices and
+    moving complete, correct data through the first time. Every invoice is traceable back to the job,
+    so cash you've already earned reaches you sooner.
+  website: https://www.msidata.com/
+  followers: 3770
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQHqf_hl6K7vwQ/company-logo_200_200/B4EaDKENjIHAAI-/0/1790096497119/service_pro_field_service_logo?e=2147483647&v=beta&t=Nh1onmRI4OqV74l1GlJcZlHrkz9tZkP_Q-icL-AqStg
+  owner: org:service-pro-by-msi-data
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/brookr
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/service-pro-field-service
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

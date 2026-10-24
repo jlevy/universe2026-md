@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:janiceilene/hello-world
+  full_name: janiceilene/hello-world
+  url: https://github.com/janiceilene/hello-world
+  stars: 11
+  forks: 1
+  watchers: 1
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:22Z'
+  archived: false
+  fork: false
+  created_at: '2016-08-11T05:44:51Z'
+  pushed_at: '2016-08-11T05:53:21Z'
+  owner_login: janiceilene
+  owner: gh:janiceilene
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: janiceilene
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: janiceilene/hello-world
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

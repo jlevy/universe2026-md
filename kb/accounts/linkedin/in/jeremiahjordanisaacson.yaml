@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jeremiahjordanisaacson
+  platform: linkedin
+  handle: in/jeremiahjordanisaacson
+  url: https://www.linkedin.com/in/jeremiahjordanisaacson
+  display_name: Jeremiah I.
+  location: Greater Seattle Area
+  followers: 1736
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQEIXpr4J5JBzA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1519481541654?e=2147483647&v=beta&t=luWfxXU-5ieAe1EeQZmG4p4jpuvMzijzsLEkmMJ6tn0
+  owner: person:jeremiah-isaacson
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697650998115001DwEv
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeremiahjordanisaacson
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

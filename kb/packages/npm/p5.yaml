@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/p5
+  ecosystem: npm
+  name: p5
+  url: https://www.npmjs.com/package/p5
+  description: '[![npm version](https://badge.fury.io/js/p5.svg)](https://www.npmjs.com/package/p5)'
+  latest_version: 2.3.4
+  license: LGPL-2.1
+  repository_url: git+https://github.com/processing/p5.js.git
+  software: software:p5js
+  sources:
+  - system: npm
+    url: https://registry.npmjs.org/
+    record_id: p5
+    retrieved_at: '2026-10-24T19:17:41Z'
+    snapshot: raw/registries/npm.json

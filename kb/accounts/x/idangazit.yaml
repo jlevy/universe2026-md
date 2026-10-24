@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/idangazit
+  platform: x
+  handle: idangazit
+  url: https://x.com/idangazit
+  display_name: Idan Gazit
+  bio: 🇮🇱 I am not okay with bigotry. "I don't hate Jews, I just hate Israel" is bigotry. Find me on mastodon
+    or bsky
+  website: https://babka.social/@idan
+  followers: 4193
+  following: 2162
+  posts_count: 25532
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1772659909202743296/T_T446T3_normal.jpg
+  created_at: '2007-06-17T13:30:45Z'
+  owner: person:idan-gazit
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694120273763001Iy5q
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: idan
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/idangazit
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

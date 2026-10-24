@@ -1,0 +1,16 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:cursor
+  name: Cursor
+  aliases:
+  - Cursor
+  kind: commercial
+  mentioned_in:
+  - person:michael-grinich
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

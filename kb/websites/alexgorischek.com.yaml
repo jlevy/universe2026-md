@@ -1,0 +1,26 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:alexgorischek.com
+  url: https://www.alexgorischek.com
+  kind: personal
+  owner: person:alex-gorischek
+  link_basis:
+  - github_profile
+  - x_profile
+  - linkedin_profile
+  fetch_status: error
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: agorischek
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://www.alexgorischek.com
+    record_id: https://www.alexgorischek.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ericwbailey
+  platform: linkedin
+  handle: in/ericwbailey
+  url: https://www.linkedin.com/in/ericwbailey
+  display_name: Eric Bailey
+  bio: I’m a digital accessibility advocate, designer, writer, developer, and speaker.
+  location: Somerville
+  followers: 2899
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQFLOh0sbhSY9Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517689068365?e=2147483647&v=beta&t=OnIrqtHKBfSm5KLTlE50R_vMLMy8ZyMlv6S2-tgCEQA
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQHjVc8a3LExnA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517689069057?e=2147483647&v=beta&t=4YGeDF3LD2t9M1yftAczzVIphD93exUJhSl6xAQYtQo
+  owner: person:eric-bailey
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1723487023886001ahix
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ericwbailey
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ericwbailey
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,72 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:geektrainer
+  login: GeekTrainer
+  kind: user
+  url: https://github.com/GeekTrainer
+  name: Christopher Harrison
+  company: GitHub
+  bio: Enterprise Advocate at GitHub. Python. TypeScript. Web geek. Marathoner. Husband. Father to four-legged
+    child.
+  location: Leaning over a keyboard
+  followers: 2660
+  public_repositories: 138
+  created_at: '2013-12-05T00:30:38Z'
+  contributions_last_year:
+    total: 1305
+    commits: 950
+    pull_requests: 185
+    issues: 61
+    reviews: 54
+  starred_repositories: 3
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 9
+  contributed_to:
+  - repo:github-samples/pets-workshop
+  - repo:microsoft/mastering-github-copilot-for-paired-programming
+  - repo:octobooth/machine-setup
+  - repo:microsoft/markitdown
+  - repo:abhiz123/todoist-mcp-server
+  organization_logins:
+  - microsoft
+  pinned:
+  - repo:geektrainer/introduction-programming-python
+  - repo:geektrainer/botframework-v4-handoff
+  - repo:geektrainer/loved-mutt
+  - repo:geektrainer/python-getting-started
+  - repo:staticwebdev/mongoose-starter
+  top_repositories:
+  - repo:geektrainer/flask
+  - repo:geektrainer/help-desk-bot-lab
+  - repo:geektrainer/aswa-student-starter-kit
+  linked_accounts:
+  - acct:linkedin/in/geektrainer
+  entity: person:christopher-harrison
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: GeekTrainer
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

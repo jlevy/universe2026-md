@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/benjaminrodes
+  platform: linkedin
+  handle: in/benjaminrodes
+  url: https://www.linkedin.com/in/benjaminrodes
+  display_name: Benjamin Rodes
+  bio: Primary CodeQL engineer for all C/C++ Microsoft products and services, security incident…
+  location: Greater Charlottesville Area
+  followers: 842
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQFWaBu-y348Gg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517283854311?e=2147483647&v=beta&t=0o9ZR0qsULtHTRZf3ZGWV6mhAiNV2IhxXYX7s1-LIYA
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:ben-rodes
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715188636692001YQuX
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/benjaminrodes
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

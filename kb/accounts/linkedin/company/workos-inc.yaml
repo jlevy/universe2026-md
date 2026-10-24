@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/workos-inc
+  platform: linkedin
+  handle: company/workos-inc
+  url: https://www.linkedin.com/company/workos-inc
+  display_name: WorkOS
+  bio: WorkOS is an API platform that simplifies implementing crucial enterprise features like User Management,
+    Single Sign-On (SSO), Directory Sync (SCIM), Audit Logs, and more. With WorkOS, SaaS products can
+    become enterprise-ready in minutes, instead of months, instantly unlocking multi-million dollar enterprise
+    deals. With a unified platform, modern APIs, and developer-first design, WorkOS is an intuitive solution
+    for adding enterprise-grade functionality to your app. Go up-market and multi-product faster by enabling
+    your engineers to focus on building core product differentiation instead of table stakes, enterprise
+    features.
+  website: https://workos.com/
+  followers: 17960
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQGQKT8eL_E0UQ/company-logo_200_200/B4EZUG07b0H0AM-/0/1739576293453/workos_inc_logo?e=2147483647&v=beta&t=gMPtjX5u9Zhm9o-ig_yNvBAd_BAOH16mGlJY6jh2cvQ
+  owner: org:workos
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/grinich
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/workos-inc
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

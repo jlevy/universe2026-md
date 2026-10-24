@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/southwest-airlines
+  platform: linkedin
+  handle: company/southwest-airlines
+  url: https://www.linkedin.com/company/southwest-airlines
+  display_name: Southwest Airlines
+  bio: At Southwest®, everything we do—from our smiling People to our policies—is designed to let you
+    go with Heart. No matter what comes up in your travels, we’ve got your back. Because while any airline
+    can fly you, only Southwest lets you go with Heart. Application fees don’t fly. The only way to apply
+    for a job at Southwest Airlines is through careers.southwestair.com. We'll never ask for any payment
+    for your application or training.* *Destination 225° is a Southwest Airlines program. Applying is
+    free; however, candidates advancing through the selection process are responsible for all costs incurred.
+  website: https://www.southwest.com/
+  followers: 891155
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E0BAQECww4NCmUHMQ/company-logo_200_200/company-logo_200_200/0/1630651441244/southwest_airlines_logo?e=2147483647&v=beta&t=4NPAte5YSR-zM9H6FAtmlxMMbaXkmZplRqR8RFu9IVQ
+  owner: org:southwest-airlines
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeffreality
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/southwest-airlines
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

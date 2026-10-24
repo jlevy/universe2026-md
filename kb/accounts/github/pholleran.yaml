@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:pholleran
+  login: pholleran
+  kind: user
+  url: https://github.com/pholleran
+  name: Philip Holleran
+  company: GitHub
+  location: Minnesota, USA
+  followers: 50
+  public_repositories: 5
+  created_at: '2013-03-29T16:46:43Z'
+  contributions_last_year:
+    total: 464
+    commits: 27
+    pull_requests: 5
+    issues: 4
+    reviews: 0
+  starred_repositories: 16
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  top_repositories:
+  - repo:pholleran/toc-me
+  - repo:pholleran/get-consensus
+  - repo:pholleran/agoadmintools
+  entity: person:philip-holleran
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pholleran
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

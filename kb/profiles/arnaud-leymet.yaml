@@ -1,0 +1,175 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:arnaud-leymet
+  person: person:arnaud-leymet
+  brief_bio:
+    text: Arnaud Leymet is a principal engineer at Bouygues Telecom who also runs the ventures Codename,
+      Warehouse and Enia, with work including generative AI assistants and unified API gateways. Leymet
+      spoke at GitHub Universe 2025 about accelerating open source accessibility with GitHub Copilot.
+    cites:
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: 8a135b24493f871f820c65e003abb52083cb371e637e56720c4b9f18ee76a24a
+    stale: false
+  headline: Bouygues Telecom
+  current_roles:
+  - Bouygues Telecom
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1147b
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1147b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1147b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1147b
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1147b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1147b
+  - label: Rust
+    target: software:rust
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Rust
+      ref: session:2025/bld1147b
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745440331248001mFfE
+      ref: session:2025/bld1147b
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745440331248001mFfE
+      ref: session:2025/bld1147b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745440331248001mFfE
+      ref: session:2025/bld1147b
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745440331248001mFfE
+      ref: session:2025/bld1147b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745440331248001mFfE
+      ref: session:2025/bld1147b
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745440331248001mFfE
+      ref: session:2025/bld1147b
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745440331248001mFfE
+      ref: session:2025/bld1147b
+  credentials:
+  - kind: honor
+    title: Shortlisted as a key innovative proptech startup
+    issuer: RENT 2017
+    date: '2017-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/arnley
+      observed_at: '2026-10-24T08:42:45Z'
+  - kind: honor
+    title: Winner of the best chatbot tech for reva.ai @ Microsoft
+    issuer: Microsoft
+    date: '2017-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/arnley
+      observed_at: '2026-10-24T08:42:45Z'
+  - kind: certification
+    title: MIT Application Designer Certification
+    issuer: Massachusetts Institute of Technology
+    date: Dec 2010
+    url: https://news.mit.edu/2007/accenture
+    evidence:
+      url: https://www.linkedin.com/in/arnley
+      observed_at: '2026-10-24T08:42:45Z'
+  talks:
+  - session:2025/bld1147b
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745428464928001uT9r
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:block/agent-skills
+  full_name: block/agent-skills
+  url: https://github.com/block/agent-skills
+  description: A marketplace for agent skills
+  stars: 25
+  forks: 50
+  watchers: 1
+  open_issues: 2
+  stats_observed_at: '2026-10-24T19:09:54Z'
+  primary_language: Python
+  license: Apache-2.0
+  archived: true
+  fork: false
+  created_at: '2026-01-27T18:54:54Z'
+  pushed_at: '2026-06-26T15:48:44Z'
+  owner_login: block
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: angiejones
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: block/agent-skills
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

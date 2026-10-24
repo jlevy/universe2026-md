@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/brittanyellich
+  platform: linkedin
+  handle: in/brittanyellich
+  url: https://www.linkedin.com/in/brittanyellich
+  display_name: Brittany Ellich
+  bio: I help developers navigate both the technical and human sides of software engineering —…
+  location: Portland
+  followers: 2158
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHV5BVHeXfv5w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730153846895?e=2147483647&v=beta&t=EPIwB3r2JkgutoeGIF3sICkE9OPl590_AEbXBCXJCyY
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQE3V_nGl1hOhg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1526352055047?e=2147483647&v=beta&t=7WouqFWhlwfkZBhzb1xg-RESmtdEJjvy6dk0gFZg5Zs
+  owner: person:brittany-ellich
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730135791139001Rrxc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/brittanyellich
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

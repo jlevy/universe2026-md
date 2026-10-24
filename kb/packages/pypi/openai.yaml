@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/openai
+  ecosystem: pypi
+  name: openai
+  url: https://pypi.org/project/openai/
+  description: The official Python library for the openai API
+  latest_version: 3.37.0
+  license: Apache-2.0
+  repository_url: https://github.com/openai/openai-python
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: openai/openai-python
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

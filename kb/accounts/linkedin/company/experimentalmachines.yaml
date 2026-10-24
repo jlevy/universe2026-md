@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/experimentalmachines
+  platform: linkedin
+  handle: company/experimentalmachines
+  url: https://www.linkedin.com/company/experimentalmachines
+  display_name: Experimental Machines
+  bio: Experimental Machines | 18 followers on LinkedIn. Test what others assume.
+  website: https://experimentalmachines.org/
+  followers: 18
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQHpA2OMthHxjA/company-logo_200_200/B56aErd_TYJQAE-/0/1791730644435/experimentalmachines_logo?e=2147483647&v=beta&t=nKKa2biM77gJZDp1ArmeMOlHMx7S2H2RdnNpxMxXb60
+  owner: org:experimental-machines
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/alpharomercoma
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/experimentalmachines
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

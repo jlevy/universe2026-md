@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/priyapahwa19
+  platform: x
+  handle: PriyaPahwa19
+  url: https://x.com/PriyaPahwa19
+  display_name: Priya Pahwa
+  bio: Software Engineer
+  location: India
+  website: https://priyapahwa.com/
+  followers: 261
+  following: 119
+  posts_count: 244
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1962924221224591360/l-q8Icpi_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1482678225029701632/1665907034
+  created_at: '2022-01-16T11:37:30Z'
+  owner: person:priya-pahwa
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686592131164001FkZ3
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: priyapahwa
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/PriyaPahwa19
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:git/git
+  full_name: git/git
+  url: https://github.com/git/git
+  description: Git Source Code Mirror - This is a publish-only repository but pull requests can be turned
+    into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow
+    Documentation/SubmittingPatches procedure for any of your improvements.
+  stars: 63982
+  forks: 28585
+  watchers: 2501
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:13Z'
+  primary_language: C
+  topics:
+  - c
+  - shell
+  - hacktoberfest
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2008-07-23T14:21:26Z'
+  pushed_at: '2026-10-23T23:15:29Z'
+  owner_login: git
+  software: software:git
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: git/git
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: git/git
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

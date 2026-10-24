@@ -1,0 +1,19 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:circleci
+  name: CircleCI
+  aliases:
+  - CircleCI
+  kind: commercial
+  mentioned_in:
+  - person:ben-dang
+  - person:priya-pahwa
+  - session:2023/dev2743w
+  - session:2023/dev2879s
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

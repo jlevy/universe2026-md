@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ryanahecht
+  platform: linkedin
+  handle: in/ryanahecht
+  url: https://www.linkedin.com/in/ryanahecht
+  display_name: Ryan Hecht
+  bio: Product Manager and Technical Leader with a passion for empowering others and combining…
+  location: Orlando
+  followers: 846
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGNhAviV8Snew/profile-displayphoto-scale_200_200/B4EZe.J3CnHgAY-/0/1751241946400?e=2147483647&v=beta&t=5vTKBhe2o7-aRrVpez-DEOc5-u9ZPIBGGME-COafu3c
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQFkBErZQ5CX1A/profile-displaybackgroundimage-shrink_200_800/B4EZmb8P1UIIAU-/0/1759257886403?e=2147483647&v=beta&t=zrFL1QJ4Pfh80ZUTaYNkatG77A4j57ITyILvPNRI264
+  owner: person:ryan-hecht
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699547169825001krXG
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ryanahecht
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:neubirdai
+  login: neubirdai
+  kind: organization
+  url: https://github.com/neubirdai
+  name: NeuBird AI
+  bio: Your Production Ops Agent
+  location: United States of America
+  website: neubird.ai
+  public_repositories: 8
+  created_at: '2023-04-28T05:12:34Z'
+  entity: org:neubird
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: neubirdai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

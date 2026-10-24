@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:getsentry
+  login: getsentry
+  kind: organization
+  url: https://github.com/getsentry
+  name: Sentry
+  bio: Real-time crash reporting for your web apps, mobile apps, and games.
+  location: United States of America
+  website: https://sentry.io
+  public_repositories: 629
+  created_at: '2012-02-01T06:56:22Z'
+  profile_readme: '![github-getsentry](https://github.com/user-attachments/assets/068d49dd-cc29-456e-b61f-611b85f60f6d)'
+  pinned:
+  - repo:getsentry/sentry
+  - repo:getsentry/sentry-javascript
+  - repo:getsentry/sentry-python
+  - repo:getsentry/sentry-php
+  - repo:getsentry/self-hosted
+  - repo:getsentry/responses
+  top_repositories:
+  - repo:getsentry/mobilebuildmcp
+  linked_accounts:
+  - acct:x/sentry
+  entity: org:sentry
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: getsentry
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

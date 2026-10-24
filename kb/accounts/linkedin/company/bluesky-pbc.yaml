@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/bluesky-pbc
+  platform: linkedin
+  handle: company/bluesky-pbc
+  url: https://www.linkedin.com/company/bluesky-pbc
+  display_name: Bluesky Social
+  bio: Welcome to the Social Internet. Bluesky is social media as it should be. Find your community among
+    millions of users, unleash your creativity, and have some fun again. We're building a new foundation
+    for social networking which gives creators independence from platforms, developers the freedom to
+    build, and users a choice in their experience.
+  website: https://bsky.social/about
+  followers: 39295
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQG-HiBnTJU87Q/company-logo_200_200/company-logo_200_200/0/1706722023254/bluesky_pbllc_logo?e=2147483647&v=beta&t=huOiNoA0GQgv5vItoQrY-92pAWAvoJjkO_IxI_zi4LY
+  owner: org:bluesky-social
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/brittanyellich
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/bluesky-pbc
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

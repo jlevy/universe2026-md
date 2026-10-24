@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/omnissa
+  platform: linkedin
+  handle: company/omnissa
+  url: https://www.linkedin.com/company/omnissa
+  display_name: Omnissa
+  bio: Omnissa® secures the agentic endpoint, where people and AI agents work side by side. Our platform
+    gives agents a safe place to run, remediates problems at machine speed, and governs agent actions
+    before they have impact. With Omnissa, organizations can say yes to enterprise AI, safely, and people
+    can use it to do their best work.
+  website: https://www.omnissa.com/
+  followers: 140784
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQF96zYm6_LfxQ/company-logo_200_200/company-logo_200_200/0/1719854751707/endusercomputing_logo?e=2147483647&v=beta&t=cYxhVqQwVq0IzwmcImElpeKMPuFbz7nFgB9cDSQka2w
+  owner: org:omnissa
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/bhanuprakash0024
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/grossag
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/omnissa
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

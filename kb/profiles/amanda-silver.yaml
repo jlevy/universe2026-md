@@ -1,0 +1,546 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:amanda-silver
+  person: person:amanda-silver
+  brief_bio:
+    text: Amanda Silver is a Corporate Vice President at Microsoft working on M365 Core and Work IQ, according
+      to an X profile, and holds patents on compiler componentization and client/server partitioning.
+      Silver spoke at GitHub Universe 2024 and 2025 about building apps and agents with VS Code and Copilot.
+    cites:
+    - x_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: a489709de79a46cf6c447b9c21454259a2fed24111d1295761d371210deadc22
+    stale: false
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1810m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1810m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1810m
+  - label: Software Engineering
+    target: term:topic-2025/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1810m
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:amanda-silver
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1810m
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:amanda-silver
+  - label: Spec Kit
+    target: software:spec-kit
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Spec Kit
+      ref: session:2025/bld1810m
+  - label: TypeScript
+    target: software:typescript
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: TypeScript
+      ref: person:amanda-silver
+  - label: Visual Studio
+    target: software:visual-studio
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Visual Studio
+      ref: person:amanda-silver
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: VS Code
+      ref: person:amanda-silver
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759234736313001IaUs
+      ref: session:2025/bld1810m
+  patents:
+  - title: Automated client/server operation partitioning
+    number: US US9712646B2
+    date: July 18, 2017
+    description: An operation (such as a relational query) may be processed on a processing engine (such
+      as a relational database server) on behalf of a client. A conventional processing involves the delivery
+      of the operation to the processing engine, which executes the entire operation to completion and
+      returns a result data set. It may be more efficient to allocate part of the operation to be performed
+      on the client, but a developer may be unable or unavailable to rewrite the operation in a distributed
+      manner. Instead, the operation may be automatically partitioned into a pre-engine client portion,
+      a processing engine portion, and a client portion, and the instructions of each portion may be automatically
+      allocated respectively to the client, the server, and the client. The partitioning may be adjusted
+      to conserve computing resources, such as bandwidth and storage, and the instructions may be reordered
+      to improve the processing of the operation.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Thread-agile execution of dynamic programming language programs
+    number: US US9529608B2
+    date: December 27, 2016
+    description: Methods, systems, and products are provided for thread-agile dynamic programming language
+      (‘DPL’) program execution. Thread-agile DPL program execution may be carried out by receiving, in
+      a message queue, a message for an instance of a DPL program and determining whether the host application
+      has a stored state object for the instance of the DPL program identified by the message. If the
+      host application has a stored state object for the DPL program, thread-agile DPL program execution
+      may also carried out by retrieving the state object; preparing a thread available from a thread
+      pool for execution of the instance of the DPL program in dependence upon the state object and an
+      execution context for the instance of the DPL program; providing, to an execution engine for executing
+      the DPL program, the state object and the prepared thread; and passing the message to the execution
+      engine.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Componentization of compiler functionality
+    number: US US9170787B2
+    date: October 27, 2015
+    description: Compiler functionality is componentized to enable use across different contexts. Conventionally
+      tightly coupled functionality is decoupled and an interface afforded to facilitate interaction with
+      compiler components/subcomponents in various scenarios. In one instance, compiler components can
+      be employed across compile time and runtime. Compile time functionality can be employed at runtime
+      and runtime functionality utilized at compile time thereby blurring the line between time dimensions.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Dynamic token resolution during compilation
+    number: US US9052913B2
+    date: June 9, 2015
+    description: A method includes, during compilation of a portion of source code at a compiler, initiating
+      token resolution with respect to a token included in the portion of source code. A static context
+      and a dynamic context of the compiler are queried to identify one or more lookup results of the
+      token. A particular lookup result is selected to resolve the token based on one or more semantic
+      rules of the compiler. The particular lookup result is selected independently of whether the particular
+      lookup result is sourced from the static context or from the dynamic context. The method includes
+      resolving the token based on the selected particular lookup result.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Embedding expressions in xml literals
+    number: US US8533693B2
+    date: September 10, 2013
+    description: An architecture that that extends conventional computer programming languages that compile
+      into an instance of an extensible markup language (XML) document object model (DOM) to provide support
+      for XML literals in the underlying programming language. This architecture facilitates a convenient
+      short cut by replacing the complex explicit construction required by conventional systems to create
+      an instance of a DOM with a concise XML literal for which conventional compilers can translate into
+      the appropriate code. The architecture allows these XML literals to be embedded with expressions,
+      statement blocks or namespaces to further enrich the power and versatility. In accordance therewith,
+      context information describing the position and data types that an XML DOM can accept can be provided
+      to the programmer via, for example, an integrated development environment. Additionally, the architecture
+      supports escaping XML identifiers, a reification mechanism, and a conversion mechanism to convert
+      between collections and singletons.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Compiler in a managed application context
+    number: US US8479178B2
+    date: July 2, 2013
+    description: A batch compiler is employed to enable compilation of code provided at runtime. A managed
+      application receives code during execution and invokes the compiler to transform the code to enable
+      it to execute within the context of the receiving application. Among other things, employment of
+      a batch compiler preserves investments made to such compilers while also opening up new scenarios
+      in application scripting and/or hosting that are otherwise unavailable.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Type inference and type-directed late binding
+    number: US US8473971B2
+    date: June 25, 2013
+    description: Systems and methods that enhance and balance a late binding and an early binding in a
+      programming language, via supplying an option component to opt-in (or opt-out) late binding, and
+      wherein a late binding is triggered based on a static type for the variable (e.g., object or a type/string.)
+      Additionally, the variable is enabled to have different static types at different regions (e.g.,
+      a program fragment) of the programming language.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Late bound programmatic assistance
+    number: US US8321836B2
+    date: November 27, 2012
+    description: Programmatic assistance is provided for dynamic typing within an integrated development
+      environment (IDE). Types associated with late bound constructs can be inferred from static information
+      and/or determined from design time execution. Assistance can then be provided as a function of a
+      precise and/or speculative type. Furthermore, dynamic type assistance can be employed in conjunction
+      with static type assistance to facilitate development of a program that supports both late and early
+      binding, for example.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Explicit delimitation of semantic scope
+    number: US US8171453B2
+    date: May 1, 2012
+    description: Systems and methods are provided with respect to computer programming. Program behavior
+      can be tuned to provide a seamless mixture of semantic behavior across a single program language
+      syntax. Semantic behavior can be explicitly specified at arbitrary levels of syntactic granularity
+      (e.g. expressions, members, types, compilation units . . . ), wherein semantic scope is commensurate
+      with the specified level of granularity.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Type extensions
+    number: US US8032859B2
+    date: October 11, 2011
+    description: A system for extending data types in software comprises an extension unit that modifies
+      an arbitrary preexisting base data type, the preexisting base data type having at least one member.
+      The system also includes a supplemental member that is included with the extension unit and that
+      provides additional functionality to the preexisting base type. Methods for using the system are
+      also provided.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Type inference for object-oriented languages
+    number: US US7873592B2
+    date: January 18, 2011
+    description: Systems and methods facilitate type inference in a computer-programming environment.
+      Type inference can be applied to generic method or function invocation in object-oriented languages
+      to determine a type argument list left implicit by a programmer. One or more type arguments can
+      be identified as a parameter type to which all other types in a set of associated parameter types
+      can be converted.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Anonymous Types
+    number: US US7788651B2
+    date: August 31, 2010
+    description: A computer-implemented system for representing data comprises a position indicator that
+      indicates a position of a datum within a group, a name indicator that optionally names the datum,
+      and a value of the datum. A type to be assigned to the datum is derived from at least one of a name
+      of the datum and the position of the datum within the group. Methods of using the system are also
+      provided.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Data interfaces
+    number: US US7779397B2
+    date: August 17, 2010
+    description: A computer-implemented system for accessing data stored in a computer-readable format
+      comprises a data source indicator that identifies least one datum of a data source to be typed.
+      The system also includes a type definition component that defines a strongly typed view of the at
+      least one datum. Methods of using the system are also provided.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Efficient execution of aggregation queries
+    number: US US7769755B2
+    date: August 3, 2010
+    description: A query language system is provided that includes a query component that specifies operations
+      for one or more items in a data set. An aggregator component identifies one or more keys associated
+      with the data set, the keys are supplied to one or more aggregators that perform direct computations
+      from the keys in order to determine at least one aggregated value for the data set.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Query Comprehensions
+    number: US US7730079B2
+    date: June 1, 2010
+    description: The subject disclosure pertains to interaction with one or more collections of data.
+      Queries and domains are presented as separate entities. A number of compositional operators are
+      provided to manipulate a generic collection of data at a low level. Query comprehensions can specify
+      interactions with one or more collections at a higher or more intuitive level. The query comprehensions
+      can be translated or mapped to operators that can be employed to interact with one or more data
+      collections and return results where applicable.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Readers and scanner design pattern
+    number: US US7624374B2
+    date: November 24, 2009
+    description: An object-oriented interface for providing access to stored data comprises a data enumeration
+      module that provides an object-oriented view to at least one stored first datum that is not an object
+      created by the interface. The interface also includes a scanning module that cooperates with the
+      data enumeration module to change the view from the stored first datum to another datum. Methods
+      for using the interface are also provided.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Resolving operators with user defined operands
+    number: US US7620944B2
+    date: November 17, 2009
+    description: Techniques are disclosed to support the resolution of an operator which has been called
+      with inconsistent typing and at least one operand of a user-defined type. In order to allow the
+      compilation of such an operation, first all possible widening conversions for each operand are examined
+      to determine if any widening conversions of any operands would result in types over which the operator
+      is defined. If not, both the narrowing and the widening conversions of each operand are considered,
+      to determine if any conversions of either or both operands would result in types for which the operator
+      is defined. If only widening conversions are used, the most encompassed possible result type is
+      selected as the target type. If a narrowing conversion is used, the most encompassing possible result
+      type is selected as the target type. In order to use the target type, each operand is converted
+      to the target type. The operation is then performed using the converted operands.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: System and method for creating, managing and using code segments
+    number: US US7526753B2
+    date: April 28, 2009
+    description: A code segment and elements of information (e.g., meta information) associated with the
+      code segment are encoded in an XML file. One or more encoded code segments are saved within a library
+      of encoded code segments. An encoded code segment may be selected and inserted into a source code
+      file. When the encoded code is inserted into the source code, associated elements required by the
+      code segment are automatically included and the portions of the code segments that may require modification
+      are identified. The code segments are managed and organized so that sharing of code segments is
+      facilitated.
+    evidence:
+      url: https://www.linkedin.com/in/amandaksilver
+      observed_at: '2026-10-24T08:42:21Z'
+  recent_writing:
+  - title: Let's build with Work IQ!
+    url: https://www.linkedin.com/pulse/lets-build-work-iq-amanda-k-silver-pcubc
+    published: '2026-06-24T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Last week we marked two important milestones in the evolution of AI-powered work: the GA
+      of Copilot Cowork and the Work…'
+  - title: Same mission, new chapter
+    url: https://www.linkedin.com/pulse/same-mission-new-chapter-amanda-k-silver-nsgfc
+    published: '2026-05-22T00:00:00.000Z'
+    channel: linkedin
+    summary: The bug I caught as an undergraduate teaching assistant has become a career mission that
+      motivates me every day:…
+  - title: Visual Studio 2026 is now Generally Available!
+    url: https://www.linkedin.com/pulse/visual-studio-2026-now-generally-available-amanda-k-silver-dlfgc
+    published: '2025-11-11T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Here’s a look at what’s in it for devs: Performance: Load massive solutions in seconds,
+      with UI hangs cut by more than…'
+  - title: |-
+      When I started at Microsoft, I told myself I’d check in every 2 years to make sure I was still learning, having fun, and making impact.
+
+      24 years in, my job changed dramatically every 2 years—but one thing hasn’t: I love working on behalf of developers.
+      👇
+      🔗
+    url: https://twitter.com/217129165/status/1978249458522747078
+    published: '2025-10-14T23:59:59Z'
+    channel: x
+  - title: The future always starts with developers!
+    url: https://www.linkedin.com/pulse/future-always-starts-developers-amanda-k-silver-hpyic
+    published: '2025-10-14T00:00:00.000Z'
+    channel: linkedin
+    summary: So far I've had an amazing run - it's been 24 years <gasp!/> working on developer tools &
+      platforms and I'm still…
+  - title: "\U0001F418\U0001F4BB PostgreSQL just got a glow-up in VS Code! Now you can query, design,\
+      \ and manage your DBs without leaving your favorite editor. It’s like giving your SQL superpowers\
+      \ a cozy new home. \n\nCheck it out \U0001F449 https://t.co/Hcq7xVLjSi  \n\n#PostgreSQL #VSCode\
+      \ #DevTools"
+    url: https://twitter.com/217129165/status/1925971917875425661
+    published: '2025-05-23T17:47:42Z'
+    channel: x
+  - title: |-
+      More big news: We're going to open source the GitHub Copilot extension then refactor it into VS Code core.
+
+      AI-powered tools are core to how we write code. Working in the open leads to better products and stronger ecosystems. We want #VSCode to be the best open source AI editor
+    url: https://twitter.com/217129165/status/1924506911933964513
+    published: '2025-05-19T16:46:18Z'
+    channel: x
+  - title: '🚀 Exciting news! To make it easier to build amazing agentic applications with C#, #Microsoft
+      is teaming up with #Anthropic to create an official C# SDK for the Model Context Protocol (#MCP).
+      Learn more at https://t.co/vYl4PYBKj5'
+    url: https://twitter.com/217129165/status/1907659737430380862
+    published: '2025-04-03T05:01:38Z'
+    channel: x
+  - title: "Big news! We're porting TypeScript to native code resulting in a 10x speed boost! \n\nNo more\
+      \ getting coffee while your code compiles."
+    url: https://twitter.com/217129165/status/1899478112225869973
+    published: '2025-03-11T15:10:47Z'
+    channel: x
+  - title: 'Big news! GitHub Copilot FREE coming to all editors! With access to GPT-4o and Claude Sonnet
+      3.5  models, up to 2K code completions and 50 chat request per month. No trial. No subscription.
+      No credit card. All you need is a #GitHub account. Let’s build! https://t.co/ieTkKDGHrn'
+    url: https://twitter.com/217129165/status/1869449108098019704
+    published: '2024-12-18T18:26:14Z'
+    channel: x
+  - title: 'Building together: development platforms for all'
+    url: https://www.linkedin.com/pulse/building-together-development-platforms-all-amanda-k-silver-qbbpe
+    published: '2024-03-11T00:00:00.000Z'
+    channel: linkedin
+    summary: Last week at Microsoft’s Ability Summit, I had the opportunity to talk about the importance
+      of inclusive software…
+  - title: 'It''s ready! #MicrosoftDevBox GAs today! Over 10K MSFT devs use DevBox as project-specific,
+      ready-to-code, workstations. Excited to see more devs power up with cloud-based DevBoxes for optimized
+      DevEx so they can focus on code that only they can write. https://t.co/D7pEQ6aWWi http'
+    url: https://twitter.com/217129165/status/1678451321840746502
+    published: '2023-07-10T17:09:13Z'
+    channel: x
+  - title: Cloud-hosted developer workstations brings developer joy
+    url: https://www.linkedin.com/pulse/cloud-hosted-developer-workstations-brings-joy-amanda-k-silver
+    published: '2023-05-24T00:00:00.000Z'
+    channel: linkedin
+    summary: Dev happiness is on the rise as the Microsoft cloud and our AI-powered developer tools remove
+      toil and advance the dev…
+  - title: "Ready-to-code, secure, cloud-based dev workstations for geographically distributed teams.\
+      \ \n\nIntroducing Microsoft Dev Box #MSBuild \n\nhttps://t.co/4C4nJKk6Ko https://t.co/fcOLb0BaI4"
+    url: https://twitter.com/217129165/status/1529150894880616448
+    published: '2022-05-24T17:22:38Z'
+    channel: x
+  talks:
+  - session:2024/dev2016m
+  - session:2025/bld1810m
+  gaps:
+  - github_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726152634983001K4ni
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726152634983001K4ni
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

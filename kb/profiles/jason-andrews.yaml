@@ -1,0 +1,283 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jason-andrews
+  person: person:jason-andrews
+  brief_bio:
+    text: Jason Andrews is a Distinguished Engineer and solutions director at Arm who has written hundreds
+      of articles about Arm technology and a book on debugging Arm-based designs. Andrews spoke at GitHub
+      Universe 2024 about ML model deployment on Arm-based GitHub runners and cloud-to-edge development.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: c4d79306acb3832a7b54dd18d12a368eebe191e08104abe2526be7f79c2adc42
+    stale: false
+  headline: Arm
+  current_roles:
+  - Arm
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/dev1879s
+    - ref: session:2024/dev1936m
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/dev1879s
+    - ref: session:2024/dev1936m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1879s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  technologies:
+  - label: Amazon Web Services
+    target: software:aws
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: AWS
+      ref: person:jason-andrews
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2024/dev1879s
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/dev1936m
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721639001148001Dkhy
+      ref: session:2024/dev1879s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721639001148001Dkhy
+      ref: session:2024/dev1879s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Machine learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721639001148001Dkhy
+      ref: session:2024/dev1879s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721639001148001Dkhy
+      ref: session:2024/dev1879s
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  education:
+  - school: University of Minnesota
+    evidence:
+      url: https://www.linkedin.com/in/jason-andrews-7b05a8
+      observed_at: '2026-10-24T08:44:26Z'
+  credentials:
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2020
+    expires: Nov 2026
+    url: https://www.credly.com/badges/e07e8b1d-c537-4edb-81b0-3c75750cee67/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-andrews-7b05a8
+      observed_at: '2026-10-24T08:44:26Z'
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2020
+    expires: Nov 2023
+    url: https://www.youracclaim.com/badges/ab35c48c-2e8e-47b0-a7b9-82a23d8d2663?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-andrews-7b05a8
+      observed_at: '2026-10-24T08:44:26Z'
+  publications:
+  - title: Hardware, Software, and System Debug for ARM-Based Designs
+    venue: ARM TechCon; Santa Clara; CA, USA
+    date: Oct 2013
+    evidence:
+      url: https://www.linkedin.com/in/jason-andrews-7b05a8
+      observed_at: '2026-10-24T08:44:26Z'
+  patents:
+  - title: Method and system for generating verification information and tests for software
+    number: US US8402438 B1
+    date: March 19, 2013
+    evidence:
+      url: https://www.linkedin.com/in/jason-andrews-7b05a8
+      observed_at: '2026-10-24T08:44:26Z'
+  recent_writing:
+  - title: 'Arm Learning Paths: Software developer how-to content'
+    url: https://www.linkedin.com/pulse/arm-learning-paths-software-developer-how-to-content-jason-andrews
+    published: '2023-06-22T00:00:00.000Z'
+    channel: linkedin
+    summary: I’m excited to share my latest project, Arm Learning Paths. Learning Paths provide long-form,
+      written how-to content…
+  - title: What's on my desk?
+    url: https://www.linkedin.com/pulse/whats-my-desk-jason-andrews
+    published: '2020-08-04T00:00:00.000Z'
+    channel: linkedin
+    summary: The computing transition to the Arm architecture marches to a steady beat, but the pace feels
+      like it’s accelerating in…
+  - title: Non-root (unprivileged) EDA Containers with LXC
+    url: https://www.linkedin.com/pulse/non-root-unprivileged-eda-containers-lxc-jason-andrews
+    published: '2015-04-27T00:00:00.000Z'
+    channel: linkedin
+    summary: This week Ubuntu 15.04 was released! EDA environments are not feasible to run everything
+      as root or using sudo as most…
+  - title: Welcome to EDA Containers
+    url: https://www.linkedin.com/pulse/welcome-eda-containers-jason-andrews
+    published: '2015-03-17T00:00:00.000Z'
+    channel: linkedin
+    summary: Electronic Design Automation runs on Linux. In my career I have worked on a few products
+      that ran on both Linux and…
+  - title: DAC Designer Track 2015
+    url: https://www.linkedin.com/pulse/dac-designer-track-2015-jason-andrews
+    published: '2015-01-16T00:00:00.000Z'
+    channel: linkedin
+    summary: It's time to submit abstracts for the Designer Track of DAC 2015. The conference will take
+      place June 7-11 in San…
+  talks:
+  - session:2024/dev1879s
+  - session:2024/dev1936m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715309062969001QxCP
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,59 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:xcorail
+  login: xcorail
+  kind: user
+  url: https://github.com/xcorail
+  name: Xavier RENE-CORAIL
+  company: '@github '
+  bio: 3-legged race organizer -  Building bridges between Dev and Sec
+  location: San Francisco
+  followers: 186
+  public_repositories: 13
+  created_at: '2014-04-24T13:14:09Z'
+  contributions_last_year:
+    total: 741
+    commits: 51
+    pull_requests: 12
+    issues: 0
+    reviews: 9
+  starred_repositories: 2
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 2
+  contributed_to:
+  - repo:github/opensource.guide
+  - repo:github/securitylab
+  - repo:skills/secure-code-game
+  - repo:githubsecuritylab/seclab-taskflow-agent
+  - repo:githubsecuritylab/gh-secure
+  linked_accounts:
+  - acct:bluesky/xcorail.bsky.social
+  - acct:x/xcorail
+  entity: person:xavier-rene-corail
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: xcorail
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

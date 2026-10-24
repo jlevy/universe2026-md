@@ -1,0 +1,380 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:serge-dybskiy
+  person: person:serge-dybskiy
+  brief_bio:
+    text: Serge Dybskiy is a Developer Experience Engineer at Sentry who uses workshops, videos and blog
+      posts to make developer tools easier to understand and adopt. Dybskiy speaks at GitHub Universe
+      2026 in a sponsored session on tracing and debugging GitHub Actions agents.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: 33b363cf32177266635bc725022b1540083a118b6b44304aaf8da87597c4457c
+    stale: false
+  headline: Developer Experience Engineer at Sentry
+  location: Toronto, Ontario
+  current_roles:
+  - Developer Experience Engineer at Sentry
+  expertise:
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1800d
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1800d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1800d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1800d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:ldr1800d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:ldr1800d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:ldr1800d
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:sergical/skills
+    - ref: repo:getsentry/plausible-mcp
+    - ref: repo:sergical/ai-chatbot-aws
+  - label: Rust
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:sergical/skill-studio
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:sergical/claude-plugins
+  - label: CSS
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:sergical/gatsby-starter-lightbox
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:sergical/dougscore
+  interests:
+  - label: sentry
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/getsentry/sentry
+      ref: repo:getsentry/sentry
+    - url: https://github.com/getsentry/sentry-javascript
+      ref: repo:getsentry/sentry-javascript
+    - url: https://github.com/getsentry/sentry-wizard
+      ref: repo:getsentry/sentry-wizard
+  - label: tag-production
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/getsentry/platformicons
+      ref: repo:getsentry/platformicons
+    - url: https://github.com/getsentry/sentry-docs
+      ref: repo:getsentry/sentry-docs
+    - url: https://github.com/getsentry/sentry-wizard
+      ref: repo:getsentry/sentry-wizard
+  - label: crash-reporting
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/getsentry/sentry
+      ref: repo:getsentry/sentry
+    - url: https://github.com/getsentry/sentry-javascript
+      ref: repo:getsentry/sentry-javascript
+  - label: error-monitoring
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/getsentry/sentry
+      ref: repo:getsentry/sentry
+    - url: https://github.com/getsentry/sentry-javascript
+      ref: repo:getsentry/sentry-javascript
+  - label: team-web-frontend
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/getsentry/sentry-docs
+      ref: repo:getsentry/sentry-docs
+    - url: https://github.com/getsentry/sentry-wizard
+      ref: repo:getsentry/sentry-wizard
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785875552342001RmAv
+      ref: session:ldr1800d
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785875552342001RmAv
+      ref: session:ldr1800d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785875552342001RmAv
+      ref: session:ldr1800d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785875552342001RmAv
+      ref: session:ldr1800d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785875552342001RmAv
+      ref: session:ldr1800d
+  - label: cordova
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/getsentry/sentry-wizard
+      ref: repo:getsentry/sentry-wizard
+  - label: crash-reports
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/getsentry/sentry
+      ref: repo:getsentry/sentry
+  open_source:
+  - repository: repo:getsentry/plausible-mcp
+    relation: pinned
+    stars: 48
+    primary_language: TypeScript
+  - repository: repo:sergical/gatsby-starter-lightbox
+    relation: owner
+    stars: 18
+    primary_language: CSS
+  - repository: repo:sergical/ai-chatbot-aws
+    relation: owner
+    stars: 11
+    primary_language: TypeScript
+  - repository: repo:sergical/dougscore
+    relation: owner
+    stars: 11
+    primary_language: JavaScript
+  - repository: repo:sergical/skill-studio
+    relation: owner
+    stars: 2
+    primary_language: Rust
+  - repository: repo:sergical/claude-plugins
+    relation: owner
+    stars: 0
+    primary_language: Python
+  - repository: repo:sergical/skills
+    relation: owner
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:getsentry/sentry
+    relation: contributor
+    stars: 45638
+    primary_language: Python
+  - repository: repo:getsentry/sentry-javascript
+    relation: contributor
+    stars: 8767
+    primary_language: TypeScript
+  - repository: repo:getsentry/platformicons
+    relation: contributor
+    stars: 43
+    primary_language: TypeScript
+  - repository: repo:getsentry/sentry-docs
+    relation: contributor
+    stars: 448
+    primary_language: MDX
+  - repository: repo:getsentry/sentry-wizard
+    relation: contributor
+    stars: 295
+    primary_language: TypeScript
+  education:
+  - school: North Toronto Collegiate Institute
+    evidence:
+      url: https://www.linkedin.com/in/sergical
+      observed_at: '2026-10-24T08:15:16Z'
+  credentials:
+  - kind: certification
+    title: Google Analytics
+    issuer: Google
+    date: Nov 2014
+    expires: May 2016
+    evidence:
+      url: https://www.linkedin.com/in/sergical
+      observed_at: '2026-10-24T08:15:16Z'
+  spoken_languages:
+  - Russian
+  - English
+  activities:
+  - kind: course
+    title: Artificial Intelligence
+    evidence:
+      url: https://www.linkedin.com/in/sergical
+      observed_at: '2026-10-24T08:15:16Z'
+  - kind: organization
+    title: Google Partners
+    detail: Dec 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/sergical
+      observed_at: '2026-10-24T08:15:16Z'
+  recent_writing:
+  - title: no better place to read Principles of building AI Agents https://t.co/LB78MKJkwH
+    url: https://twitter.com/294392319/status/1964401038103847397
+    published: '2025-09-06T18:51:18Z'
+    channel: x
+  - title: 'i am speechless. idk what to say. apart from: build what you would want to use. take your
+      time and do it well. don’t stop iterating. dont stop being curious. dont stop learning. don’t stop
+      sharing your progress. keep going. keep building. people will notice, and even if they'
+    url: https://twitter.com/294392319/status/1949171604350800316
+    published: '2025-07-26T18:14:58Z'
+    channel: x
+  - title: |-
+      exciting announcement next week, taking some time to reset and recharge
+
+      more building and yapping to come, hope everyone is having fun and doing well ❤️
+    url: https://twitter.com/294392319/status/1944773161079148828
+    published: '2025-07-14T14:57:08Z'
+    channel: x
+  - title: |-
+      yeah, we turned a committee room into a hackathon
+      thank you everyone that came and demo’d amazing projects
+    url: https://twitter.com/294392319/status/1936218943363944834
+    published: '2025-06-21T00:25:43Z'
+    channel: x
+  - title: |-
+      sightseeing ❌
+      hackathon in a comittee room at city hall ✅
+
+      PROGRAM: Toronto will be kicking off in 2 hours, see you all soon! https://t.co/xmeJPTNwoE
+    url: https://twitter.com/294392319/status/1936107538929664429
+    published: '2025-06-20T17:03:03Z'
+    channel: x
+  - title: Toronto Tech Week is around the corner, we wanted to make something to help people discover
+      events their friends are going to and match that against events they are going to so we made VentiCal
+      https://t.co/H2yrunYTNE
+    url: https://twitter.com/294392319/status/1932498782786081013
+    published: '2025-06-10T18:03:08Z'
+    channel: x
+  - title: an llm could never https://t.co/6AgyRMSI3g
+    url: https://twitter.com/294392319/status/1924845301942075623
+    published: '2025-05-20T15:10:56Z'
+    channel: x
+  - title: vibe coders shipping their mvps https://t.co/Gjaueudwre
+    url: https://twitter.com/294392319/status/1921332317244522881
+    published: '2025-05-10T22:31:35Z'
+    channel: x
+  - title: |-
+      Alright y'all, first (of many) video of 2025
+
+      TLDR: How to deploy a NextJS AI Chatbot to AWS using SST
+
+      I was recently approved for AWS Credits via AWS Activate so I wanted to see what the experience of modern web development will be like on AWS (Last time I used it was using htt
+    url: https://twitter.com/294392319/status/1876291656124641369
+    published: '2025-01-06T15:36:05Z'
+    channel: x
+  - title: The bos killed it! who else is at web unleashed? https://t.co/c4sVQEQQel
+    url: https://twitter.com/294392319/status/1844412056709284025
+    published: '2024-10-10T16:17:56Z'
+    channel: x
+  talks:
+  - session:ldr1800d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785876748469001ECLT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: sergical
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

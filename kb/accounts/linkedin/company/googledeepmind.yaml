@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/googledeepmind
+  platform: linkedin
+  handle: company/googledeepmind
+  url: https://www.linkedin.com/company/googledeepmind
+  owner: org:google-deepmind
+  link_basis:
+  - linkedin_profile
+  details_fetched: false
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/thorwebdev
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

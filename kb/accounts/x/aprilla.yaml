@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/aprilla
+  platform: x
+  handle: aprilla
+  url: https://x.com/aprilla
+  display_name: '@aprilla'
+  bio: '🚀 Engineering Leader • ✨ Mom • 🎸Plugged in • 🎒🌲Unplugged :: she/her'
+  location: Portland, OR
+  website: http://aprilleonard.me/
+  followers: 316
+  following: 199
+  posts_count: 1061
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1312901929161302017/E9uhCY-M_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14987216/1591246540
+  created_at: '2008-06-03T00:38:26Z'
+  owner: person:april-leonard
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699473035093001TDcX
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: aprilla
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/aprilla
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

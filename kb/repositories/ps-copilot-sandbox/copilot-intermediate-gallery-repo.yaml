@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:ps-copilot-sandbox/copilot-intermediate-gallery-repo
+  full_name: ps-copilot-sandbox/copilot-intermediate-gallery-repo
+  url: https://github.com/ps-copilot-sandbox/copilot-intermediate-gallery-repo
+  description: This repo is to demonstrate Copilot features from the GitHub Copilot Intermediate training.
+  stars: 10
+  forks: 197
+  watchers: 1
+  open_issues: 22
+  stats_observed_at: '2026-10-24T19:12:17Z'
+  primary_language: TypeScript
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2025-08-04T18:05:48Z'
+  pushed_at: '2026-07-31T17:40:39Z'
+  owner_login: ps-copilot-sandbox
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: vfm2
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ps-copilot-sandbox/copilot-intermediate-gallery-repo
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

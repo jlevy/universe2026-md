@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:mona-actions/gh-repo-stats
+  full_name: mona-actions/gh-repo-stats
+  url: https://github.com/mona-actions/gh-repo-stats
+  description: GH CLI extension to pull statistics on repository metadata used in GitHub migrations
+  stars: 450
+  forks: 288
+  watchers: 74
+  open_issues: 30
+  stats_observed_at: '2026-10-24T19:10:34Z'
+  primary_language: Shell
+  topics:
+  - gh-extension
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2022-04-21T20:02:36Z'
+  pushed_at: '2026-07-31T16:24:37Z'
+  owner_login: mona-actions
+  pinned_by:
+  - gh:abelberhane
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: abelberhane
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mona-actions/gh-repo-stats
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

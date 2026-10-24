@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/francescoronel
+  platform: linkedin
+  handle: in/francescoronel
+  url: https://www.linkedin.com/in/francescoronel
+  display_name: Frances Coronel
+  bio: Hi, I’m Frances Coronel — a Senior Software Engineer at Slack, speaker, mentor, and proud…
+  location: San Francisco Bay Area
+  followers: 16358
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQE-vNJQNBvA7Q/profile-displayphoto-scale_200_200/B56aE6dXg4HkAc-/0/1791982139688?e=2147483647&v=beta&t=r637cVTGromBJsX76zPsVxXyLSWT1fp2CA95bL_-REE
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFDWIE2cdu_Yg/profile-displaybackgroundimage-shrink_200_800/B56ZwwoDU1HQAU-/0/1770342332243?e=2147483647&v=beta&t=AFSOOLVOdbXAKIOBSkz1q0FElYuokR9t3BhaOX9KTKk
+  owner: person:frances-coronel
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1718209686405001HTMY
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: FrancesCoronel
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/francescoronel
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

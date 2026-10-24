@@ -1,0 +1,273 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:anabelle-watt
+  person: person:anabelle-watt
+  brief_bio:
+    text: 'Anabelle Watt is a software engineer at Nordstrom who builds AI-powered systems to streamline
+      development workflows. Watt spoke at GitHub Universe 2025 about Nordstrom''s standardized pipeline
+      and migration with agentic AI, and in the Ship & Tell: Nordstrom session.'
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 96b113670c510ad025635205122086e1bf3c623506297a7da31cf45992842bd8
+    stale: false
+  headline: Nordstrom
+  current_roles:
+  - Nordstrom
+  expertise:
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/1948
+    - ref: session:2025/aut1376m
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1376m
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1376m
+  - label: GitLab
+    target: software:gitlab
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitLab
+      ref: session:2025/1948
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1761069440854001Wqq0
+      ref: session:2025/1948
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1761069440854001Wqq0
+      ref: session:2025/1948
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746202605226001qvYl
+      ref: session:2025/aut1376m
+  education:
+  - school: The University of Edinburgh
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  credentials:
+  - kind: honor
+    title: Mouseters in Leadership
+    issuer: The Walt Disney Company
+    date: '2023-07-01T00:00:00.000Z'
+    description: Participated in a series of classes in leadership hosted by Disney and earned this award.
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: honor
+    title: Honors College Graduate
+    issuer: '-'
+    description: Graduated from the Honors College at Washington State University
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  activities:
+  - kind: project
+    title: MSc Dissertation
+    detail: This project aims to enhance the project allocation process by integrating social choice theory
+      to better align student and supervisor preferences with available projects. Addressing inefficiencies
+      and fairness, the study will evaluate various preference elicitation methods and advanced algorithms
+      through experiments using both real and synthetic datasets. Outcomes are expected to not only benefit
+      academic settings but also extend to other sectors like healthcare and corporate environments, potentially
+      transforming how entities approach and implement matching systems. This interdisciplinary approach
+      promises to significantly advance the understanding and application of project allocation, ensuring
+      more efficient and fair results. · Apr 2024
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Advanced Databases
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Applied Cloud Programming
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Intro to Data Mining
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Machine Learning Practical
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Secure Programming
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Security Engineering
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: course
+    title: Software Engineering Principles
+    evidence:
+      url: https://www.linkedin.com/in/anabelle-watt
+      observed_at: '2026-10-24T08:42:02Z'
+  talks:
+  - session:2025/1948
+  - session:2025/aut1376m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1756982740886001Wzin
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,340 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:justin-hutchings
+  person: person:justin-hutchings
+  brief_bio:
+    text: The GitHub Universe 2023 listing describes Justin Hutchings as Senior Director of Product Management
+      at GitHub.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: f2ede2e0a05a2390edb26825e739d357876705f8a2746ec0d46dcc3b2f2ab7c7
+    stale: false
+  headline: Cloudflare
+  current_roles:
+  - Cloudflare
+  expertise:
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2862g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2862g
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2862g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2862g
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Dependabot
+      ref: person:justin-hutchings
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:justin-hutchings
+  - label: Windows
+    target: software:windows
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Windows
+      ref: person:justin-hutchings
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696349684498001ExAS
+      ref: session:2023/sec2862g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696349684498001ExAS
+      ref: session:2023/sec2862g
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696349684498001ExAS
+      ref: session:2023/sec2862g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696349684498001ExAS
+      ref: session:2023/sec2862g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696349684498001ExAS
+      ref: session:2023/sec2862g
+  education:
+  - school: Rose-Hulman Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  publications:
+  - title: Best Practices Guide For Developing Printer Drivers
+    venue: Microsoft
+    date: Jul 2012
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Developing v4 Print Drivers
+    venue: MSDN
+    date: Jun 2012
+    description: Provides a comprehensive summary of how to construct v4 print drivers for Windows 8.
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  patents:
+  - title: Device-described natural language control
+    number: US US10229678B2
+    date: March 12, 2019
+    description: A remote device has an associated natural language description that includes a record
+      of commands supported by the remote device. This record of commands includes command names, the
+      command functions to which those names correspond, and natural language strings that are the natural
+      language words or phrases that correspond to the command. A computing device includes a device control
+      module that obtains the natural language description for the remote device and provides the natural
+      language strings to a natural language assistant on the computing device. The natural language assistant
+      monitors the natural language inputs to the computing device, and notifies the device control module
+      when a natural language input matches one of the natural language strings. The device control module
+      uses the natural language description to determine the command name that corresponds to the matching
+      natural language string, and communicates the command name to the remote device.
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Graphics primitive and color channels
+    number: US 9659387
+    date: May 23, 2017
+    description: Graphics primitive and color channel techniques are described. In one or more implementations,
+      image data is processed by a computing device to form a plurality of pixels and corresponding one
+      or more color channels usable to define a color for a respective said pixel. A graphics primitive
+      type is identified by the computing device associated with one or more of the pixels in the processed
+      image data. The graphics primitive type is assigned by the computing device to the one or more pixels
+      using at least one color channel.
+    url: https://patents.google.com/patent/US9659387
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Synchronizing device association data among computing devices
+    number: US 9311109
+    date: April 12, 2016
+    description: Device association data for peripheral devices, which is data used to connect to the
+      peripheral devices, is maintained and synchronized across multiple computing devices associated
+      with a user account on a service. When a new peripheral device is associated with a computing device,
+      device association data for the new peripheral device is added to the computing device. The device
+      association data for the new peripheral device is also sent to the service, which provides the device
+      association to the other computing devices from which the user logs into his or her account, and
+      those other computing devices in turn automatically associate themselves with the peripheral device.
+      Device use data describing how a user desires to use the peripheral device on one computing device,
+      as well as changes to the device association data on one computing device, can similarly be synchronized
+      across the multiple computing devices.
+    url: https://patents.google.com/patent/US9311109
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Synchronizing Device Association Data Among Computing Devices
+    number: US 20140359170
+    date: June 23, 2013
+    description: Device association data for peripheral devices, which is data used to connect to the
+      peripheral devices, is maintained and synchronized across multiple computing devices associated
+      with a user account on a service. When a new peripheral device is associated with a computing device,
+      device association data for the new peripheral device is added to the computing device. The device
+      association data for the new peripheral device is also sent to the service, which provides the device
+      association to the other computing devices from which the user logs into his or her account, and
+      those other computing devices in turn automatically associate themselves with the peripheral device.
+      Device use data describing how a user desires to use the peripheral device on one computing device,
+      as well as changes to the device association data on one computing device, can similarly be synchronized
+      across the multiple computing devices.
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Bidi Extension for Connected Devices
+    number: US 20130067120
+    date: March 13, 2013
+    description: Bidirectional (bidi) extension techniques for USB and/or other similar busses/connections
+      are described in which an interface is provided to enable bidirectional communication with connected
+      devices. The interface may be implemented as an operating system component to handle bidi communication
+      for devices from multiple different independent hardware vendors (IHVs). Device drivers for different
+      devices can be configured to include extension files in accordance with an established schema for
+      bidi communication. The extension files describe supported bidi attributes, capabilities of the
+      device, and how to make calls into the device. The interface operates to detect the extension files
+      and set-up a corresponding device for bidi communication. Applications then interact through the
+      interface to access, retrieve, and set configuration and status data for connected devices. The
+      use of extension files enable creation of architecture independent devices drivers that can be used
+      across different platforms with substantially no changes.
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Platform Neutral Device Protocols
+    number: US 20130346654
+    date: June 22, 2012
+    description: Platform neutral device protocol techniques are described in which functionality to customize
+      device interactions through communication busses is made accessible through platform independent
+      script-based infrastructure. Functionality provided by an operating system to manipulate standard
+      protocols of a communication bus used to interact with a connected device is exposed as script-based
+      objects. Script-based protocol definition files associated with connected device may be employed
+      to customize device protocols for the communications using the functionality exposed through the
+      script-based objects. A computing device may acquire a protocol definition file for a particular
+      device in various ways and host the protocol definition file via a suitable run-time platform. Requests
+      for interaction with the particular device may then be handled using the custom protocols defined
+      by the hosted protocol definition file.
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Printing using a Platform-Independent Driver
+    number: US 20120307288
+    date: May 31, 2011
+    description: In one or more embodiments, a print server can publish, to client devices, capabilities
+      and configurations of one or more print devices utilizing a device-independent "personality." Client
+      devices can then use an associated device-independent print driver to select print job settings
+      and record print job content for a particular print job, in a device-independent format, that is
+      then to be sent to the print server. The print server can then process the device-independent format
+      that describes the print job, and convert the print job into a print device-specific format that
+      can be consumed by a particular specific print device. In at least some embodiments, the client
+      device can cause a print job to be printed on a print device, via a print server, without downloading,
+      utilizing or otherwise accessing a print driver that is specific to the print device.
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Multi-layered printer driver model
+    number: US 20120147416
+    date: December 14, 2010
+    description: Embodiments of the invention provide a layered printer driver model in which, at the
+      "bottom layer," a rendering component provides rendering functionality to format information constituting
+      a print job initiated according to a page description language that a printer device is designed
+      to process, and one or more other components that provide configuration and/or user experience functionality
+      may "sit atop" the bottom layer. Any or all of these higher-level components may support not just
+      a single printer device, but a class of printer devices defined by one or more shared characteristics.
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Multisource, adaptive printer configuration
+    number: US 20120147414
+    date: December 13, 2010
+    description: Some embodiments of the invention provide techniques whereby a printer driver may be
+      modified and supplemented over time. For example, a framework may be provided which enables a printer
+      driver's functionality to be supplemented over time to include new and/or enhanced features, such
+      as features relating to the manner in which the capabilities of a printer are configured, print
+      settings are manipulated, information is presented to users, print-related system events are handled,
+      etc. In some embodiments, one or more components (which may be included in a print subsystem provided
+      by an operating system of a computing device, in a printer driver, and/or some other system element)
+      may be configured to automatically seek and acquire configuration data from any of various sources,
+      including the printer device, one or more online sources, and/or other sources.
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - title: Printer driver and application decoupling using event centric registration model
+    number: US 20120147415
+    date: December 13, 2010
+    description: Some embodiments of the invention provide a printer user interface (UI) component configured
+      to handle presentation of information to a user during printing operations. The printer UI component
+      may de-couple the rendering and configuration functionality provided by a printer driver from the
+      presentation of information to end users, thereby reducing the risk that applications may crash
+      or hang due to printer driver malfunction. In some embodiments, a registry of events upon which
+      information should be presented to the user is established, and the printer UI component may be
+      registered for some or all of these events, so that when the specified events occur the printer
+      UI component may be invoked to cause information to be presented to the user.
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: project
+    title: Eve Pulse
+    detail: Eve Online monitoring app for Windows 8. Uses clean visuals in the Windows style to showcase
+      the player's achievements in the game. · 2012
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - kind: project
+    title: NewsSkimmer
+    detail: A full-featured Google Reader client for Windows 8 users. · 2012
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - kind: project
+    title: Windows 10
+    detail: '2013'
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - kind: project
+    title: Windows 8.1
+    detail: '2012'
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - kind: project
+    title: Windows 8
+    detail: '2009'
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  - kind: project
+    title: Windows 7
+    detail: '2007'
+    evidence:
+      url: https://www.linkedin.com/in/hutchingsjustin
+      observed_at: '2026-10-24T08:44:35Z'
+  talks:
+  - session:2023/sec2862g
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694702977974001Fqz9
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

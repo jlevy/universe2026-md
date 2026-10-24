@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:srt32/universe-concierge
+  full_name: srt32/universe-concierge
+  url: https://github.com/srt32/universe-concierge
+  description: A GitHub Copilot plugin and custom agent for planning GitHub Universe
+  stars: 0
+  forks: 1
+  watchers: 0
+  open_issues: 1
+  stats_observed_at: '2026-10-24T19:12:25Z'
+  primary_language: JavaScript
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-09-14T17:33:56Z'
+  pushed_at: '2026-10-14T10:54:10Z'
+  owner_login: srt32
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Oregand
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: srt32/universe-concierge
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

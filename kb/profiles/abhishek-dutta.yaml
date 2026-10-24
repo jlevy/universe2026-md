@@ -1,0 +1,243 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:abhishek-dutta
+  person: person:abhishek-dutta
+  brief_bio:
+    text: Abhishek Dutta works at Harness and, when speaking at GitHub Universe 2023, focused on GitHub
+      Advanced Security adoption and DevSecOps with enterprise customers in APAC. Dutta led a 2023 workshop
+      on AI strategies for advanced security.
+    cites:
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 9b09eef0d73bb59fc1fb15ca2e6930cbfd8fb666cfea0c3616ab0a4b23f8ab3e
+    stale: false
+  headline: Harness
+  current_roles:
+  - Harness
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2751w
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2751w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2751w
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2751w
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2751w
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Dependabot
+      ref: session:2023/sec2751w
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:abhishek-dutta
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/sec2751w
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490941001KIMu
+      ref: session:2023/sec2751w
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490941001KIMu
+      ref: session:2023/sec2751w
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490941001KIMu
+      ref: session:2023/sec2751w
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490941001KIMu
+      ref: session:2023/sec2751w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490941001KIMu
+      ref: session:2023/sec2751w
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490941001KIMu
+      ref: session:2023/sec2751w
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490941001KIMu
+      ref: session:2023/sec2751w
+  education:
+  - school: Institute of Product Leadership
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  credentials:
+  - kind: certification
+    title: Building Secure Container Images in CI/CD
+    issuer: DevSecOps Academy
+    date: Jul 2020
+    url: https://certificates.devsecops-academy.com/certificate_of_Abhishek_Dutta_d53af1f8-225d-4ef6-818f-8f6a1a8140d7.png
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  - kind: certification
+    title: Getting Started With Docker
+    issuer: Pluralsight
+    date: Apr 2020
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  - kind: certification
+    title: Metrics for Product Managers
+    issuer: LinkedIn
+    date: Jun 2019
+    url: https://www.linkedin.com/learning/certificates/8d1fd35f72299af3ac6110dd3d826b692503eb5a05714ad2ce0cacd3268b56f5
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  - kind: certification
+    title: CAST Highlight
+    issuer: CAST
+    date: Jan 2019
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  - kind: certification
+    title: IBM Blockchain Essentials
+    issuer: IBM
+    date: Aug 2017
+    url: https://www.youracclaim.com/badges/56168ba0-aa55-4b18-9179-1939c8d1bfd3
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  - kind: certification
+    title: Certified Scrum Master
+    issuer: Scrum Alliance
+    date: Sep 2016
+    url: https://www.scrumalliance.org/community/profile/adutta33
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  - kind: certification
+    title: Manipal-ProLearn-Participate-Certificates
+    issuer: Manipal ProLearn
+    date: Oct 2015
+    url: https://www.credential.net/10346030
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  - kind: certification
+    title: Checkmarx Certified Engineer (CxCE)
+    issuer: Checkmarx
+    date: Jul 2020
+    expires: Jan 2022
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  - kind: certification
+    title: the-sequel-to-sql
+    issuer: Code School
+    url: https://www.codeschool.com/courses/the-sequel-to-sql
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  - kind: certification
+    title: try-sql
+    issuer: Code School
+    url: https://www.codeschool.com/courses/try-sql
+    evidence:
+      url: https://www.linkedin.com/in/abhishek-dutta07
+      observed_at: '2026-10-24T08:42:53Z'
+  talks:
+  - session:2023/sec2751w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248499001w86J
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

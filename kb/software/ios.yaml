@@ -1,0 +1,19 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:ios
+  name: iOS
+  aliases:
+  - iOS
+  kind: platform
+  mentioned_in:
+  - person:andrew-hoog
+  - person:hesham-salman
+  - person:james-montemagno
+  - person:jeffrey-berthiaume
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

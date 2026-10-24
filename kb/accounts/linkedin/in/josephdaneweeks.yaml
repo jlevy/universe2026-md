@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/josephdaneweeks
+  platform: linkedin
+  handle: in/josephdaneweeks
+  url: https://www.linkedin.com/in/josephdaneweeks
+  display_name: JD Weeks
+  location: Spartanburg
+  followers: 569
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQFxq6SslLbiag/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730468898337?e=2147483647&v=beta&t=phNJRD1HU88TP20-zKsFxsX7PFtGUeUB7yjDnJ0mhF0
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:jd-weeks
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745934773142001qdLI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/josephdaneweeks
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

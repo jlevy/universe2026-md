@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/beagandica
+  platform: linkedin
+  handle: in/beagandica
+  url: https://www.linkedin.com/in/beagandica
+  display_name: Beatris A. Mendez Gandica
+  location: Seattle
+  followers: 16262
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHE0obJpnz-9Q/profile-displaybackgroundimage-shrink_200_800/B56Z30Jc4UKMAY-/0/1777917611865?e=2147483647&v=beta&t=3Qv_0oLjNYoydGjMuBSgvWR4hCWM7j5LU3Jt4CtmnZo
+  owner: person:bea-mendez-gandica
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777613357747001v3F9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: beagandica
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/beagandica
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

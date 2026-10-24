@@ -1,0 +1,613 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ken-muse
+  person: person:ken-muse
+  brief_bio:
+    text: Ken Muse is a Staff DevOps Architect on GitHub's ODST team, a four-time Microsoft Azure MVP
+      (retired) and a Microsoft Certified Trainer. Muse spoke at GitHub Universe 2023 and 2025 and speaks
+      at GitHub Universe 2026 about configuring GitHub Copilot to own the work.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 96985e1e42acd53084ef72a79e8b2546bef13b2be780dd9e6aa598c9bfd2cc62
+    stale: false
+  headline: Staff DevOps Architect | ODST | FDE at GitHub
+  location: Avondale Estates, GA
+  current_roles:
+  - Staff DevOps Architect | ODST | FDE at GitHub
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1327d
+    - ref: session:2025/aut1622w
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1327d
+    - ref: session:2025/aut1622w
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1327d
+    - ref: session:2025/aut1622w
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1327d
+    - ref: session:2025/aut1622w
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1072s
+    - ref: session:bld1640w
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1622w
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1327d
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1072s
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1072s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1072s
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev2749w
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/dev2749w
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Codespaces
+      ref: session:2023/dev2749w
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/dev2749w
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1640w
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1072s
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Microsoft Azure
+      ref: person:ken-muse
+  - label: TypeScript
+    target: software:typescript
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: TypeScript
+      ref: session:bld1072s
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:bld1640w
+  interests:
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490786001KwUh
+      ref: session:2023/dev2749w
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746152368884001c3wt
+      ref: session:2025/aut1327d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746152368884001c3wt
+      ref: session:2025/aut1327d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490786001KwUh
+      ref: session:2023/dev2749w
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746152368884001c3wt
+      ref: session:2025/aut1327d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490786001KwUh
+      ref: session:2023/dev2749w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777682063458001zHx2
+      ref: session:bld1640w
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746152368884001c3wt
+      ref: session:2025/aut1327d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746152368884001c3wt
+      ref: session:2025/aut1327d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777682063458001zHx2
+      ref: session:bld1640w
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746152368884001c3wt
+      ref: session:2025/aut1327d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: GitHub Codespaces
+    target: term:github-product-2023/codespaces
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490786001KwUh
+      ref: session:2023/dev2749w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746152368884001c3wt
+      ref: session:2025/aut1327d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777682063458001zHx2
+      ref: session:bld1640w
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746152368884001c3wt
+      ref: session:2025/aut1327d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  open_source:
+  - repository: repo:kenmuse-org/.github
+    relation: contributor
+    stars: 0
+  education:
+  - school: Georgia Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  credentials:
+  - kind: honor
+    title: Microsoft Azure MVP
+    issuer: Microsoft MVP Award Program
+    date: '2020-07-01T00:00:00.000Z'
+    description: Recognized with the MVP award for my outstanding contributions to the technical community
+      in Azure.
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: honor
+    title: Microsoft Azure MVP
+    issuer: Microsoft MVP Award Program
+    date: '2019-07-01T00:00:00.000Z'
+    description: Recognized with the MVP award for my outstanding contributions to the technical community
+      in Azure.
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: honor
+    title: Microsoft Azure MVP
+    issuer: Microsoft MVP Award Program
+    date: '2018-03-01T00:00:00.000Z'
+    description: Recognized with the 2018 Microsoft MVP award for my outstanding contributions to the
+      technical community in Azure.
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: honor
+    title: Microsoft ALM | DevOps Rangers
+    issuer: Microsoft
+    date: '2017-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: honor
+    title: Senior Grade Member (IEEE)
+    issuer: Institute of Electrical and Electronics Engineers (IEEE)
+    date: '2013-01-01T00:00:00.000Z'
+    description: Distinction given to scientists, engineers, and technical executives that have been in
+      professional practice for at least ten years and who have demonstrated significant performance during
+      at least five of those years through publication, substantial engineering achievement, or contribution
+      to the welfare of the engineering profession. Only about 7% of all members qualify.
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: honor
+    title: Eagle Scout
+    issuer: '-'
+    description: The highest rank attainable in the Boy Scouts of America program, it is an honor that
+      takes years of service and demonstrated leadership skills in order to achieve. At the time of the
+      award, only about 2% of all participants earned this distinction.
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: honor
+    title: Order of the Arrow
+    issuer: '-'
+    description: Service organization within the Boy Scout program for those that demonstrate the highest
+      ideals of the program, founded to develop leaders of character, spirit, and ability.
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: 'Exam 532: Developing Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: Jun 2018
+    url: https://www.credly.com/badges/965f7065-9e07-4cce-b8c2-f7493bbea2a3?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: 'MCSA: Cloud Platform'
+    issuer: Microsoft
+    date: Jun 2018
+    url: https://www.credly.com/badges/a688ec3e-4e95-42bb-9af1-ca3816ad0170?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: 'Exam 535: Architecting Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: May 2018
+    url: https://www.credly.com/badges/e6659579-5682-49c0-8cc1-9378e45bc825?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: Global Challenger / Insight Selling
+    issuer: Microsoft
+    date: Mar 2018
+    url: https://www.youracclaim.com/badges/3af5612a-0451-4dde-8207-1c0b65b82b2c/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: Microsoft Insight Selling
+    issuer: Microsoft
+    date: Mar 2018
+    url: https://www.youracclaim.com/badges/3af5612a-0451-4dde-8207-1c0b65b82b2c/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: 'Exam 498: Delivering Continuous Value with Visual Studio Application Lifecycle Management'
+    issuer: Microsoft
+    date: May 2017
+    url: https://www.credly.com/badges/6c04c01d-fef0-4d28-9266-affb3a126505?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: 'Exam 496: Administering Visual Studio Team Foundation Server'
+    issuer: Microsoft
+    date: Apr 2017
+    url: https://www.credly.com/badges/f68f0eb6-270c-422c-b315-781ed78bcc41?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: Microsoft Certified Professional
+    issuer: Microsoft
+    date: Apr 2017
+    url: https://www.credly.com/users/ken-muse/?http://www.mycertprofile.com/Profile/5866397637
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: Change Management Specialist (CMS)
+    issuer: Management and Strategy Institute (IASSC Accredited)
+    date: Feb 2015
+    url: http://www.msicertified.org/?fdtq=mus020115
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: certification
+    title: Six Sigma Lean Professional (SSLP)
+    issuer: Management and Strategy Institute (IASSC Accredited)
+    date: Feb 2015
+    url: http://www.msicertified.org/?fdtq=mus020115
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  publications:
+  - title: 'Real World Windows Azure: Optimizing PHP Applications for the Cloud'
+    venue: Microsoft Developer Network (MSDN)
+    date: May 14, 2012
+    description: In-depth analysis of how to optimize PHP applications to run on Windows Azure, Microsoft's
+      cloud platform. The article focuses on experiences and discoveries while manually integrating and
+      optimizing the PHP-based Joomla! and Open Web Analytics (OWA) platforms to run in the cloud.
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  patents:
+  - title: System and method for gathering and utilizing building energy information
+    number: US 12/847,837
+    date: July 30, 2010
+    description: A system and method for gathering and utilizing building energy information. A central
+      management server communicates through a wide area network to one or more client devices. The central
+      management server maintains a set of measured or calculated audit data for a plurality of buildings
+      and facilities, with icons and text representing auditing and analysis tasks that may be performed
+      in the process of auditing the structures and related energy-consuming equipment and shell characteristics.
+    url: https://patents.google.com/patent/US12847837
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  spoken_languages:
+  - Portuguese (Brazil)
+  activities:
+  - kind: organization
+    title: Microsoft ALM | DevOprs Rangers
+    detail: Oct 2017 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: organization
+    title: LightFair Exhibitor Advisory Committee
+    detail: Aug 2016 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: organization
+    title: Microsoft Azure Advisors
+    detail: The Azure Advisors Group is a consortium of engineering teams, architects, developers and
+      Microsoft Azure teams that collaborate on ideas and discuss upcoming Azure features. As part of
+      this group, members connect to share feedback, information and ideas on the development of the Azure
+      platform and evaluate the future direction of the platform. · Nov 2013 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: organization
+    title: ASHRAE
+    detail: Global society advancing human well-being through sustainable technology for the built environment.
+      Members worldwide focus on building systems, energy efficiency, indoor air quality, refrigeration
+      and sustainability. · 2013 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: organization
+    title: Association for Computing Machinery (ACM)
+    detail: International scientific and educational organization dedicated to advancing the arts, sciences,
+      and applications of information technology. · Jun 2009 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: organization
+    title: IEEE
+    detail: The world's largest association of technical professionals, its objectives are the educational
+      and technical advancement of electrical and electronic engineering, telecommunications, computer
+      engineering and allied disciplines. · Jun 2009 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: organization
+    title: MENSA
+    detail: World's largest and oldest high-IQ society, open to people who score at the 98th percentile
+      or higher on a standardized, supervised IQ or other approved intelligence test. · 2009 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  - kind: organization
+    title: National Eagle Scout Association (NESA)
+    detail: The National Eagle Scout Association (NESA) is a fellowship of men who have achieved the Eagle
+      Scout rank and who desire to use their efforts and influence toward forming the kind of young men
+      America needs for leadership.
+    evidence:
+      url: https://www.linkedin.com/in/kmuse
+      observed_at: '2026-10-24T08:16:39Z'
+  recent_writing:
+  - title: Removing the Noise for Better Prompts
+    url: https://www.kenmuse.com/blog/removing-the-noise-for-better-prompts/
+    published: '2026-09-20T04:00:00Z'
+    channel: blog
+  - title: Let Copilot Explain Itself With Chronicle and Troubleshoot
+    url: https://www.kenmuse.com/blog/let-copilot-explain-itself-with-chronicle-and-troubleshoot/
+    published: '2026-09-12T04:00:00Z'
+    channel: blog
+  - title: Sharing with Copilot using Agent Plugins
+    url: https://www.kenmuse.com/blog/sharing-with-copilot-using-agent-plugins/
+    published: '2026-09-05T04:00:00Z'
+    channel: blog
+  - title: Your MCP Data Is Not Guaranteed
+    url: https://www.kenmuse.com/blog/your-mcp-data-is-not-guaranteed/
+    published: '2026-08-28T04:00:00Z'
+    channel: blog
+  - title: Meet the Built-In Agents in GitHub Copilot CLI
+    url: https://www.kenmuse.com/blog/discovering-built-agents-in-github-copilot-cli/
+    published: '2026-08-21T04:00:00Z'
+    channel: blog
+  - title: Make Agent Skill Scripts Load Efficiently in GitHub Copilot
+    url: https://www.kenmuse.com/blog/make-agent-skill-scripts-load-efficiently-github-copilot/
+    published: '2026-08-08T04:00:00Z'
+    channel: blog
+  - title: 'The Million-Token Context Myth: Bigger Isn''t Better'
+    url: https://www.kenmuse.com/blog/million-token-context-myth-bigger-isn-t-better/
+    published: '2026-07-31T04:00:00Z'
+    channel: blog
+  - title: 'When an AI Agent Escapes: Securing Your Dev Environment'
+    url: https://www.kenmuse.com/blog/when-ai-agent-escapes-securing-dev-environment/
+    published: '2026-07-24T04:00:00Z'
+    channel: blog
+  - title: Why Reusing AI Instructions Costs You More Tokens
+    url: https://www.kenmuse.com/blog/why-reusing-ai-instructions-costs-you-more-tokens/
+    published: '2026-07-16T04:00:00Z'
+    channel: blog
+  - title: Why AI Agents Are Bad at Scoring and How to Fix It
+    url: https://www.kenmuse.com/blog/why-ai-agents-are-bad-at-scoring-and-how-to-fix-it/
+    published: '2026-07-09T04:00:00Z'
+    channel: blog
+  talks:
+  - session:2023/dev2749w
+  - session:2025/aut1327d
+  - session:2025/aut1622w
+  - session:bld1072s
+  - session:bld1640w
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686431611703001EqqI
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kenmuse
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686431611703001EqqI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686431611703001EqqI
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,218 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kevin-stubbings
+  person: person:kevin-stubbings
+  brief_bio:
+    text: Kevin Stubbings is a Security Researcher in the GitHub Security Lab who builds and breaks AI-driven
+      security tools that protect the open source ecosystem. Stubbings speaks at GitHub Universe 2026
+      about handling AI-generated vulnerability reports.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: da985327ce70013bddf82f4b1c367729d2ebcc81020521e4d1b84a6b3f0f6c68
+    stale: false
+  headline: Security Researcher at GitHub
+  location: badbeef
+  current_roles:
+  - Security Researcher at GitHub
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  technologies:
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  interests:
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+    - url: https://github.com/radareorg/radare2
+      ref: repo:radareorg/radare2
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+  - label: autoevaluation
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/uptrain-ai/uptrain
+      ref: repo:uptrain-ai/uptrain
+  - label: binary-analysis
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/radareorg/radare2
+      ref: repo:radareorg/radare2
+  - label: codeql
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/codeql
+      ref: repo:github/codeql
+  - label: command-line-image-tool
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ImageMagick/ImageMagick
+      ref: repo:imagemagick/imagemagick
+  - label: commandline
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/radareorg/radare2
+      ref: repo:radareorg/radare2
+  - label: digital-image-editing
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ImageMagick/ImageMagick
+      ref: repo:imagemagick/imagemagick
+  - label: disassembler
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/radareorg/radare2
+      ref: repo:radareorg/radare2
+  open_source:
+  - repository: repo:radareorg/radare2
+    relation: contributor
+    stars: 25140
+    primary_language: C
+  - repository: repo:imagemagick/imagemagick
+    relation: contributor
+    stars: 17724
+    primary_language: C
+  - repository: repo:net-snmp/net-snmp
+    relation: contributor
+    stars: 497
+    primary_language: C
+  - repository: repo:github/codeql
+    relation: contributor
+    stars: 10244
+    primary_language: CodeQL
+  - repository: repo:uptrain-ai/uptrain
+    relation: contributor
+    stars: 2367
+    primary_language: Python
+  education:
+  - school: University of California San Diego
+    evidence:
+      url: https://www.linkedin.com/in/kwstubbs
+      observed_at: '2026-10-24T08:15:22Z'
+  talks:
+  - session:tru1623s
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699462504875001X6nI
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Kwstubbs
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

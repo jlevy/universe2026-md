@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:mastodon/cassidoo@notacult.social
+  platform: mastodon
+  handle: cassidoo@notacult.social
+  url: https://notacult.social/@cassidoo
+  display_name: cassidoo
+  followers: 2858
+  following: 164
+  posts_count: 772
+  avatar_url: https://media.notacult.social/accounts/avatars/109/287/036/419/978/933/original/47c089211f7e4482.png
+  created_at: '2022-11-04T00:00:00Z'
+  owner: person:cassidy-williams
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cassidoo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: mastodon
+    url: https://notacult.social/@cassidoo
+    record_id: cassidoo@notacult.social
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json
