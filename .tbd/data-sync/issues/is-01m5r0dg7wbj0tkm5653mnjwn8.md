@@ -5,7 +5,7 @@ title: Address new dataset PR8/PR9 Qodo findings before publication
 kind: task
 status: in_progress
 priority: 1
-version: 17
+version: 19
 delegate: codex@spud10.local
 labels: []
 dependencies: []
@@ -25,9 +25,11 @@ child_order_hints:
   - is-01m5r2asd058cy6v54xyaxq0gs
   - is-01m5r2at069z4acw5kvwvqrz2a
   - is-01m5r2atd2dtn4ckk30fhwpwb5
+  - is-01m5r2nsgxtyaq5j3ns0cp06v2
+  - is-01m5r2nsywt1fz66rstjfpn9c4
 hold: null
 hold_until: null
 created_at: 2026-10-24T22:27:33.232Z
-updated_at: 2026-10-24T23:01:02.496Z
+updated_at: 2026-10-24T23:07:02.489Z
 started_at: 2026-10-24T22:28:25.754Z
 ---
