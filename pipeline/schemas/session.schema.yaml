@@ -218,7 +218,7 @@ $defs:
     title: TimeSlot
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: 'One catalog entry: a talk, demo, workshop, keynote, social or special event.'
 properties:
   abstract:
@@ -315,5 +315,5 @@ required:
 title: Session
 type: object
 x-softschema:
-  contract: paraverse.conference:Session/v1
-  schema_sha256: c30181cc21a2bf099c4dadf315b2b77e8ea7a6fbd75d94b63be3495f4ae5b5ae
+  contract: paraverse.conference:Session/v2
+  schema_sha256: 178fe1455979fcabb850cda015abd99c1983f83da8f6018237134dd016783adb

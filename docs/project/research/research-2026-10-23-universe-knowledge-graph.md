@@ -363,7 +363,7 @@ and retries 429 and 5xx responses up to four attempts with exponential backoff.
 The contracts live in `src/universe_kb/models.py` as Pydantic models.
 `universe-kb schemas` compiles each to JSON Schema in `schemas/`, and the build copies
 those compiled schemas into `kb/_schemas/`. Contract IDs follow
-`paraverse.conference:<Name>/v1`; every artifact is `status: permissive`.
+`paraverse.conference:<Name>/v2`; every artifact is `status: enforced`.
 
 #### Design Rules
 
@@ -385,11 +385,11 @@ those compiled schemas into `kb/_schemas/`. Contract IDs follow
 - **Every claim about a person carries its basis.** Affiliations, accounts, websites,
   participations and profile claims each record where they came from, so two sources
   that agree are visible as corroboration and two that disagree are both kept.
-- **Open at the top, closed inside.** Top-level entities allow extra fields
-  (`extra="allow"`), so enrichment can add fields before the contract catches up.
-  Nested shapes forbid them (`extra="forbid"`), so a typo in a known structure fails.
-  In softschema terms this is `permissive`: known fields validate, and the bound model
-  decides whether extensions are allowed.
+- **Closed throughout.** Top-level entities and nested shapes both forbid extra fields
+  (`extra="forbid"`), so the compiled schemas set `additionalProperties: false` and a
+  typo or an undeclared field fails both validation layers.
+  A new field goes into the model before the build writes it.
+  Every artifact is `status: enforced`, which makes the bound schema authoritative.
 - **Empty values are omitted.** The writer prunes `null` and empty collections, so a
   file shows only what is known.
 
@@ -499,10 +499,10 @@ Each artifact is self-describing through a `softschema:` block:
 
 ```yaml
 softschema:
-  contract: paraverse.conference:Session/v1
+  contract: paraverse.conference:Session/v2
   schema: ../_schemas/session.schema.yaml
   envelope: session
-  status: permissive
+  status: enforced
 ```
 
 The `schema` pointer is relative to the artifact and resolves to the copy in
@@ -1159,10 +1159,10 @@ description quoted in [Past Editions](#past-editions-universe-kb-crawl-editions)
 
 ```yaml
 softschema:
-  contract: paraverse.conference:Session/v1
+  contract: paraverse.conference:Session/v2
   schema: ../_schemas/session.schema.yaml
   envelope: session
-  status: permissive
+  status: enforced
 session:
   id: session:bld1134m
   event: event:github-universe-2026
@@ -1722,10 +1722,11 @@ As of 2026-10-24 this ranks GitHub Copilot (243 subjects), GitHub Actions (74) a
 GitHub Advanced Security (52) highest, across all four editions.
 
 Validate one artifact with the softschema CLI and no flags, because the artifact names
-its own contract, schema and envelope:
+its own contract, schema and envelope.
+Run this from the repository root:
 
 ```bash
-uv run softschema validate sessions/bld1134m.md   # from kb/ or any ancestor directory
+UV_CONFIG_FILE=pipeline/uv.toml uv run --project pipeline softschema validate kb/sessions/1809k.md
 ```
 
 The CLI runs the structural (JSON Schema) layer and reports the semantic layer as
@@ -1734,7 +1735,9 @@ softschema refuses schema pointers that escape the working directory, so run it 
 `kb/` or above, not from inside `kb/sessions/`.
 
 Load and validate in Python with both layers, binding the Pydantic model from
-`universe_kb.models` (run with `uv run python` from `pipeline/`):
+`universe_kb.models` (run with
+`UV_CONFIG_FILE=pipeline/uv.toml uv run --project pipeline python` from the repository
+root, so schema pointers resolve within the working directory):
 
 ```python
 from pathlib import Path
@@ -1743,7 +1746,7 @@ from universe_kb.models import CONTRACTS
 
 spec = CONTRACTS["person"]
 contract = softschema.Contract(id=spec.contract_id, model=spec.model, envelope_key="person",
-                               status=softschema.SchemaStatus.permissive)
+                               status=softschema.SchemaStatus.enforced)
 result = softschema.validate_artifact(Path("kb/people/burke-holland.md"), contract=contract)
 assert result.ok and result.semantic.ok
 
@@ -1953,6 +1956,10 @@ Yerba Buena for 2023 and Fort Mason Center for 2024 and 2025.
   LinkedIn, X and Mastodon profile sources, bio bundles and the bio rules, past-edition
   merging, page content, fetch failures, and an end-to-end build that must produce a
   valid, connected knowledge base.
+- `pipeline/tests/test_contracts.py` checks the committed `kb/`: every artifact names
+  the `v2` contract for its envelope and `status: enforced`, `kb/_schemas/` matches
+  `pipeline/schemas/`, a sample needs no `softschema repair`, and an artifact given an
+  undeclared field fails the stock `softschema validate`.
 
 #### `universe-kb validate`
 
@@ -1961,14 +1968,17 @@ artifact from its own `softschema:` block (contract ID, envelope, status; profil
 the file extension), attaches the matching Pydantic model, and runs
 `softschema.validate_artifact`. That checks two layers: **structural**, against the JSON
 Schema the artifact’s pointer names, and **semantic**, against the Pydantic model, which
-adds the ID patterns, enums and closed nested shapes as Python sees them.
+adds the ID patterns, enums and closed shapes as Python sees them.
+Both layers reject a field the contract does not declare, at the top level or nested.
 `universe-kb schemas --check` compiles the models without writing and exits 1 if any
 file in `schemas/` has drifted.
+`make check` in `pipeline/` runs both, then `pytest`, `ruff check` and `basedpyright`,
+in that order; it is the entry point a CI job would call.
 
-Result as of 2026-10-24: 5,304 artifacts, 5,304 valid, 0 invalid (about 30 seconds).
-By contract: Repository 1,217, SocialAccount 1,159, Person 591, Profile 591, Session
-520, Organization 335, GitHubAccount 249, Website 241, Package 131, Room 85, Venue 64,
-Software 61, Facet 34, Experience 11, Page 9, Event 4, Faq 1, MediaIndex 1.
+Result as of 2026-10-24, with the `v2` contracts: 4,977 artifacts, 4,977 valid, 0
+invalid. By contract: Repository 1,155, SocialAccount 1,052, Person 577, Profile 577,
+Session 520, Organization 310, GitHubAccount 237, Website 151, Package 134, Room 85,
+Venue 58, Software 61, Facet 34, Experience 11, Page 9, Event 4, Faq 1, MediaIndex 1.
 
 #### Known Limitations and Data-Quality Caveats
 
@@ -2275,8 +2285,8 @@ graph database).
 
 ## Next Steps
 
-- [ ] Add CI for this directory: `universe-kb schemas --check`, `universe-kb validate`,
-  `pytest`, `ruff` and `basedpyright`.
+- [ ] Add CI that runs `make check` in `pipeline/` (`universe-kb schemas --check`,
+  `universe-kb validate`, `pytest`, `ruff check` and `basedpyright`).
 - [ ] Schedule re-crawls and re-enrichment (daily until the event, then weekly) and diff
   each run: `raw/manifest.json` hashes show which sources changed, and a short report
   should list added, removed and changed sessions, speakers, rooms, sponsors, accounts
@@ -2311,9 +2321,8 @@ graph database).
   edition they belong to.
 - [ ] Improve sponsor matching with a public-suffix list and curate the 9 sponsors that
   still have no GitHub account.
-- [ ] Move contracts toward `enforced` once two or three crawls show which fields are
-  always present: make them required, close top-level shapes, and record the change in
-  the contract version.
+- [x] Close top-level contracts as well as nested shapes, bump them to `v2`, and stamp
+  every artifact `status: enforced`.
 - [x] Load `_graph/` into FalkorDB (done in Paraverse; see
   [the FalkorDB spike spec](https://github.com/jlevy/paraverse/blob/main/docs/project/specs/done/plan-2026-10-24-conference-kb-in-falkordb.md)):
   nodes, labels and relationships from the export, loaded into a staging graph and

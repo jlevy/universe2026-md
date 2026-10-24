@@ -158,10 +158,10 @@ provide.
 - **Every claim about a person carries its basis.** Affiliations, accounts, websites,
   participations and profile claims each record where they came from, so agreement shows
   as corroboration and disagreement keeps both statements.
-- **Open at the top, closed inside.** Top-level entities allow extra fields, so
-  enrichment can add a field before the contract catches up.
-  Nested shapes forbid extra fields, so a typo in a known structure fails.
-  In softschema terms every artifact is `permissive`.
+- **Closed at every modeled level.** Top-level entities and nested shapes forbid extra
+  fields, so an unknown field or a typo fails validation.
+  Enrichment adds fields through an explicit contract revision.
+  Every artifact declares softschema status `enforced`.
 - **Empty values are omitted.** The writer prunes `null` and empty collections, so a
   file shows only what is known.
 
@@ -169,8 +169,8 @@ provide.
 
 The contracts are Pydantic models in `src/universe_kb/models.py`. `universe-kb schemas`
 compiles each one to JSON Schema in `schemas/`, and the build copies the compiled
-schemas into `kb/_schemas/`. Contract IDs follow `paraverse.conference:<Name>/v1`, for
-example `paraverse.conference:Profile/v1`.
+schemas into `kb/_schemas/`. Contract IDs follow `paraverse.conference:<Name>/v2`, for
+example `paraverse.conference:Profile/v2`.
 
 | Contract | Profile | Path in the KB | Purpose and key fields |
 | --- | --- | --- | --- |
@@ -267,10 +267,10 @@ Each artifact describes itself:
 
 ```yaml
 softschema:
-  contract: paraverse.conference:Session/v1
+  contract: paraverse.conference:Session/v2
   schema: ../_schemas/session.schema.yaml
   envelope: session
-  status: permissive
+  status: enforced
 ```
 
 The `schema` pointer resolves to the copy in `kb/_schemas/`, so `kb/` validates wherever
@@ -945,8 +945,7 @@ The open work for the KB is in
 new sources are in
 [plan-2026-10-24-deeper-enrichment-sources.md](../specs/active/plan-2026-10-24-deeper-enrichment-sources.md).
 
-- When should the contracts move from `permissive` toward `enforced`, and under what
-  version?
+- Which additions require another contract version after the enforced v2 baseline?
 - Which modules move into a shared package when a second conference arrives?
 
 ## References

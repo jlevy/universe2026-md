@@ -1,10 +1,10 @@
 ---
 title: Uno Platform
 softschema:
-  contract: paraverse.conference:Organization/v1
+  contract: paraverse.conference:Organization/v2
   schema: ../_schemas/organization.schema.yaml
   envelope: organization
-  status: permissive
+  status: enforced
 organization:
   id: org:uno-platform
   name: Uno Platform

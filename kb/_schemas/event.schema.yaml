@@ -251,7 +251,7 @@ $defs:
     title: TourStop
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: One edition of a conference, with its days, ways to attend and tour stops.
 properties:
   attendance_modes:
@@ -360,5 +360,5 @@ required:
 title: Event
 type: object
 x-softschema:
-  contract: paraverse.conference:Event/v1
-  schema_sha256: 3a61d7c8017a682bfdc88cbbcfdbc4aaf7534b9695d0d7447053a9a9ecf340a9
+  contract: paraverse.conference:Event/v2
+  schema_sha256: f62b079e46b479614f5245ed901bb37e0a0906d9deaf920ef00a5ef7757597e0

@@ -51,7 +51,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: A published package, linked to its source repository when the registry agrees.
 properties:
   description:
@@ -134,5 +134,5 @@ required:
 title: Package
 type: object
 x-softschema:
-  contract: paraverse.conference:Package/v1
-  schema_sha256: db05440c9dc3c1cd57fed440a6a466ed8c1f789d591176eaa778918773746d37
+  contract: paraverse.conference:Package/v2
+  schema_sha256: 5aa01d11b64491fc8cba768e39628ed2d6f8b67494bafa20641d9c1e22d473f1

@@ -52,7 +52,7 @@ explains what the sources expose and how they are connected.
 
 Each record is a [softschema](https://github.com/jlevy/softschema) artifact: Markdown
 with YAML frontmatter, or plain YAML. Each one declares the contract it follows, such as
-`paraverse.conference:Person/v1`, and points to the JSON Schema for that contract, so a
+`paraverse.conference:Person/v2`, and points to the JSON Schema for that contract, so a
 record validates wherever it is copied.
 
 Alongside the records, `kb/` has three derived directories:

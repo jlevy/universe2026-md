@@ -65,7 +65,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 properties:
   entries:
     items:
@@ -88,5 +88,5 @@ required:
 title: Faq
 type: object
 x-softschema:
-  contract: paraverse.conference:Faq/v1
-  schema_sha256: 0219b043ff0f84aa6489428883720849c67aa3796e30804e2e12eaac49cd77eb
+  contract: paraverse.conference:Faq/v2
+  schema_sha256: d5d316edc476e5c25ea004f37a6230412fc56124be0839ad5d70f1f582e46e50

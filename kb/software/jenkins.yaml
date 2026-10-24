@@ -1,8 +1,8 @@
 softschema:
-  contract: paraverse.conference:Software/v1
+  contract: paraverse.conference:Software/v2
   schema: ../_schemas/software.schema.yaml
   envelope: software
-  status: permissive
+  status: enforced
 software:
   id: software:jenkins
   name: Jenkins

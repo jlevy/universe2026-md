@@ -185,7 +185,7 @@ $defs:
     title: Sponsorship
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: A company, foundation, university or community group connected to the event.
 properties:
   accounts:
@@ -354,5 +354,5 @@ required:
 title: Organization
 type: object
 x-softschema:
-  contract: paraverse.conference:Organization/v1
-  schema_sha256: 2a8cd10f0881771e3d1a2cda3c6d06ed05610dc7cfc53dcf8b4afa092a043651
+  contract: paraverse.conference:Organization/v2
+  schema_sha256: 65f0f9eaa539e4b27fd3782c6e328da25a55c707b070d15bda89ba7e31fbd453

@@ -11,8 +11,11 @@ has one owner, and the whole graph can be rebuilt from the files alone. Lists na
 `sessions`, `people` or `mentioned_in` are backlinks that the build derives from the
 forward references, so they can never disagree with them.
 
-Top-level entities allow extra fields (`status: permissive`) because enrichment is still
-growing; nested shapes are closed so a typo in a known structure fails validation.
+Every model is closed, top-level entities and nested shapes alike (`extra="forbid"`), and
+every artifact is `status: enforced`: a field the contract does not declare fails
+validation, so a typo or an unreviewed addition cannot slip into the knowledge base. A new
+field goes into the model first, and a change that breaks existing artifacts bumps
+`VERSION`.
 """
 
 from __future__ import annotations
@@ -23,7 +26,7 @@ from typing import Annotated, Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 NAMESPACE = "paraverse.conference"
-VERSION = "v1"
+VERSION = "v2"
 
 
 def _ref(*prefixes: str) -> str:
@@ -100,8 +103,10 @@ class Closed(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
 
-class Entity(BaseModel):
-    model_config = ConfigDict(extra="allow")
+# A top-level contract: one artifact's payload. It is closed like the shapes it nests. (A
+# comment, not a docstring, so subclasses without their own do not inherit a description.)
+class Entity(Closed):
+    pass
 
 
 class Source(Closed):

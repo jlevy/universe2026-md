@@ -51,7 +51,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: A product, project, language or protocol that the program talks about.
 properties:
   aliases:
@@ -129,5 +129,5 @@ required:
 title: Software
 type: object
 x-softschema:
-  contract: paraverse.conference:Software/v1
-  schema_sha256: 649e98352ca113125de92e6ecd752f3405be3b665cd6bde07950238d3466db64
+  contract: paraverse.conference:Software/v2
+  schema_sha256: 7370d8601ec6553c7a3ed0ba2bd71338e81a69ccf367f8fc61aaa817dc1b5978

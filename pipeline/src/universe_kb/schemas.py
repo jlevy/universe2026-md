@@ -47,6 +47,13 @@ def _contract_for(path: Path) -> tuple[softschema.Contract, Any]:
     return contract, document
 
 
+def artifact_paths(kb_dir: Path) -> list[Path]:
+    """Every softschema artifact in `kb_dir`, sorted: not the README, graph or schemas."""
+    return sorted(p for p in kb_dir.rglob("*")
+                  if p.suffix in {".md", ".yaml"} and p.name != "README.md"
+                  and "_graph" not in p.parts and "_schemas" not in p.parts)
+
+
 def validate_kb(kb_dir: Path) -> dict[str, Any]:
     """
     Validate every artifact through its own `softschema:` block, the same path a consumer
@@ -54,9 +61,7 @@ def validate_kb(kb_dir: Path) -> dict[str, Any]:
     `<kb>/_schemas/`; softschema rejects pointers that escape the working directory, so
     this runs from the knowledge base's parent directory.
     """
-    artifacts = sorted(p for p in kb_dir.rglob("*")
-                       if p.suffix in {".md", ".yaml"} and p.name != "README.md"
-                       and "_graph" not in p.parts and "_schemas" not in p.parts)
+    artifacts = artifact_paths(kb_dir)
     previous = Path.cwd()
     os.chdir(kb_dir.parent)
     try:

@@ -1,8 +1,8 @@
 softschema:
-  contract: paraverse.conference:GitHubAccount/v1
+  contract: paraverse.conference:GitHubAccount/v2
   schema: ../../_schemas/github-account.schema.yaml
   envelope: github_account
-  status: permissive
+  status: enforced
 github_account:
   id: gh:infisical
   login: Infisical

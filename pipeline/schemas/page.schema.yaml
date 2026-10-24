@@ -134,7 +134,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: |-
   The free text of one official web page, in reading order, so a new site can reuse the
   organizer's own copy (hero text, section intros, templates) without scraping again.
@@ -182,5 +182,5 @@ required:
 title: Page
 type: object
 x-softschema:
-  contract: paraverse.conference:Page/v1
-  schema_sha256: 7ebad50a10e48ab394afd8e6a33435b2cfb8246cc4e4d3fa578e6030453b376b
+  contract: paraverse.conference:Page/v2
+  schema_sha256: e464363e9dcd80218eaa89025277915f24f30a5cee7ef855c1ffb497491af044

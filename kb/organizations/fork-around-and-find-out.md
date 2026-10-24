@@ -1,10 +1,10 @@
 ---
 title: Fork Around and find Out
 softschema:
-  contract: paraverse.conference:Organization/v1
+  contract: paraverse.conference:Organization/v2
   schema: ../_schemas/organization.schema.yaml
   envelope: organization
-  status: permissive
+  status: enforced
 organization:
   id: org:fork-around-and-find-out
   name: Fork Around and find Out

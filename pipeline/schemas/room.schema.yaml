@@ -51,7 +51,7 @@ $defs:
     title: Source
     type: object
 $schema: https://json-schema.org/draft/2020-12/schema
-additionalProperties: true
+additionalProperties: false
 description: A schedulable space as the catalog names it.
 properties:
   capacity:
@@ -111,5 +111,5 @@ required:
 title: Room
 type: object
 x-softschema:
-  contract: paraverse.conference:Room/v1
-  schema_sha256: 16fcd8c845259c782a11547aff5dca7cbbc4d025715562f6438d934310d8a85b
+  contract: paraverse.conference:Room/v2
+  schema_sha256: ccf02c397b3a03530979fe2366bd5a934371407bf07e283a68fce654f8a9f46c
