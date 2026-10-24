@@ -56,6 +56,9 @@ Two research docs written for this plan hold the details:
   for approval.
 - Feed richer, cited persona cards to the briefing and simulation experiments in the
   avatar research brief.
+- Let us add **people beyond the event listing**: anyone with a public, professional
+  connection to the conference, whether or not they attend, kept in one easy-to-edit
+  list, with a short, repeatable process to add more and a way for anyone to be removed.
 
 ## Non-Goals
 
@@ -288,6 +291,101 @@ A rebuild from a fresh clone cannot re-derive those fields without the cache, wh
 architecture doc requires the KB to rebuild offline from committed inputs; how the build
 reconciles the two is open (Open Questions).
 
+### Adding People Beyond the Event
+
+Today a person enters the kb in one of three ways:
+- from an event listing (speakers)
+- from public posts saying they will attend
+- from `curation/people.yaml`
+
+Every curated entry must name a role at the event, and `Person.participations` requires
+at least one.
+There is no place for someone with a public, professional connection to the
+conference who is not known to attend, for example:
+- maintainers of projects the program features
+- authors of work a session builds on
+- people who publicly work with a speaker, such as co-authors and co-maintainers
+- organizers’ and sponsors’ staff, as their own organization’s public pages list them
+- community leaders
+
+There is also no way for anyone to ask to be removed.
+
+Everything below follows the repository’s [data policy](../../../data-policy.md): only
+public, professional information, no attendance a person has not stated publicly, and a
+removal path that works.
+
+**The list.** `curation/additional-people.csv` holds one row per person, so it opens in
+any spreadsheet and is easy to paste into.
+The file is committed to a public repository, so every cell must be public and
+professional.
+
+| Column | Required | Meaning |
+| --- | --- | --- |
+| `name` | yes | As the person writes it |
+| `reason` | yes | Why they belong in the kb, in one line, stated as a public professional fact that `source_url` supports; no private context, opinion or sensitive attribute |
+| `relation` | yes | One of `maintainer`, `author`, `colleague`, `organizer_staff`, `sponsor_staff`, `community` |
+| `target` | no | What the relation is to: a kb ID (`software:…`, `org:…`, `session:…`, `repo:…`, `person:…`) or a URL |
+| `source_url` | yes | A public page that shows the association, such as a repository’s maintainer list, a paper, or an organization’s team page |
+| `github`, `linkedin`, `x`, `bluesky`, `mastodon`, `website` | at least one | The person’s own professional GitHub, LinkedIn, X, Bluesky and Mastodon accounts and their own professional site, used for identity matching and enrichment |
+| `organization`, `title` | no | Their current role, if public |
+| `attendance_source` | no | A public post in which the person says they are attending; nothing else counts |
+| `added_by`, `added_on` | yes | The GitHub handle of whoever added the row, and the date |
+
+No column holds contact details, and `people-check` rejects a row with an email address
+or phone number in any cell.
+
+**The model.** A person can have `associations` instead of, or as well as,
+participations. An association has a relation, a target, the reason, its source and who
+added it. A person needs at least one of the two.
+Attendance stays a participation: only a row with an `attendance_source` becomes a 2026
+attendee participation, through the same rule as other public attendance posts.
+Everyone else is associated but not attending.
+The kb records, search documents, graph and bios never label them as attendees, and in
+the graph an association is its own edge type, never a participation.
+Their bios say how they relate to the conference, cite `source_url`, and never say or
+suggest that they attend.
+As for everyone, the pipeline never adds or infers a sensitive attribute: only bio text
+the person wrote and published themselves, such as a profile bio, states one, and it is
+kept verbatim. Every added person gets `inclusion_basis: curated`.
+
+**Removal.** `curation/people.yaml` gains an `excluded` list, keyed by person ID or by
+account. The build drops an excluded person, their accounts, websites and profile from
+every source, including the event listing and `curation/additional-people.csv`, and the
+bio pipeline prunes their bio.
+The person must then be absent from the kb records, search documents, graph exports, raw
+snapshots committed in Git and test fixtures, and a test checks this.
+An exclusion records only the ID and the date, never a reason.
+Requests arrive as the data policy describes: an issue, or privately through a
+maintainer. A removal is committed promptly, and rewriting earlier history is decided
+case by case.
+
+**The process.** To add someone:
+1. **Add a row,** either by editing the CSV or with `universe-kb add-person --name …
+   --reason … --relation … --source-url … --github …`, which validates and appends.
+   `universe-kb add-people FILE.csv` merges a whole list.
+2. **Check the list:** `universe-kb people-check`.
+   - It fails a row that is missing its name, reason, relation, source or an account.
+   - It fails a row with contact details in any cell.
+   - It reports rows that already match a kb person, by account or by name with an
+     account in common.
+   - It reports rows that match an exclusion.
+3. **Enrich:** `universe-kb enrich` and `universe-kb enrich-social`. They are free and
+   pick up new accounts from the kb on their own.
+   LinkedIn and X details for the new rows come from the paid run, `universe-kb
+   enrich-paid --datasets linkedin_profiles,x_profiles`, which needs approval.
+   That command is incremental, so only new URLs are fetched.
+   The mapping keeps only the profile owner’s own data and strips other people’s data,
+   such as “people also viewed” lists and other people’s posts.
+4. **Bios and checks:**
+   - Run `universe-kb build`.
+   - Write bios: `bio-bundles`, a writer, then `bios-merge`.
+   - Run `universe-kb validate` and `pytest`.
+   - Commit, with the data policy’s review checklist in the pull request.
+
+**Identity.** The usual rules apply: accounts first; a name only with an account in
+common. A row that matches an existing person adds its association to that person and
+does not create a duplicate.
+
 ## Implementation Plan
 
 ### Phase 1: Use What We Already Have (Free, No New Fetching)
@@ -309,6 +407,27 @@ reconciles the two is open (Open Questions).
 - [x] Redact emails and phone numbers from free text in every committed folder, and test
   that none remain
 - [x] Regenerate stale bios (127 rewritten, `synthesis/bios/round-8`)
+
+### People Intake (Independent of the Other Phases)
+
+- [ ] `Association` model and `Person.associations`; a person needs a participation or
+  an association
+- [ ] `curation/additional-people.csv` with the columns above, plus a header comment row
+  explaining them
+- [ ] `universe-kb add-person`, `add-people` and `people-check`
+- [ ] The build reads the CSV:
+  - it merges matching rows into existing people
+  - it creates the rest
+  - only rows with an `attendance_source` become attendee participations
+- [ ] An `excluded` list honored across every source and output, with bio pruning
+- [ ] README section “Adding and removing people”, written as the four-step process and
+  the removal steps above
+- [ ] Tests:
+  - validation errors, including a missing `source_url` and contact details in a cell
+  - merging into an existing person
+  - an associated person never appearing as an attendee in records, search documents,
+    graph or bios
+  - an excluded person being absent everywhere
 
 ### Phase 2: Free Public Sources
 
@@ -424,6 +543,15 @@ Paid runs wait for approval.
 
 - **Avatars:** the consent decisions in the avatar brief come before any feature that
   uses the richer profiles.
+
+- **Added people:**
+  - Should their LinkedIn and X details be collected by default with the paid run, or
+    only on request?
+  - Is the relation list above the right one?
+  - Who may add rows: any contributor through a reviewed pull request, or maintainers
+    only?
+  - Should the `excluded` list store a hash of each ID or account instead, so that it
+    does not republish the names it removes?
 
 ## References
 
