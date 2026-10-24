@@ -1,4 +1,10 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(uvx softschema@latest:*)",
+      "Bash(npx -y softschema@latest:*)"
+    ]
+  },
   "hooks": {
     "SessionStart": [
       {
