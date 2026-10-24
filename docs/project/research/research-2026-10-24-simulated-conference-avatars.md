@@ -637,6 +637,8 @@ Contract additions, as design only:
 on their public role and wrong for simulation: publishing someone as a speaker is
 consent to list their talk, not to speak for them.
 Simulation should check `simulation_consent` alone.
+Whether a hidden simulation used only for scoring may run without that consent is an
+open decision (see Next Steps); until it is made, it may not.
 
 ### Consent, Ethics and Risk
 
@@ -945,9 +947,11 @@ opt-in feature.
 
 It answers whether model-written briefings, and a hidden simulated exchange in
 particular, find better reasons for two people to meet than plain graph overlap does.
-It is safe with current data because it covers only the 183 confirmed 2026 speakers in
-their published role, shows only cited third-person facts, uses no X or LinkedIn posts,
-shows nothing to anyone outside the project team, and sends nothing to anyone.
+The graph and card arms are safe with current data because they cover only the 183
+confirmed 2026 speakers in their published role, show only cited third-person facts, use
+no X or LinkedIn posts, show nothing to anyone outside the project team, and send
+nothing to anyone. The hidden-simulation arm simulates people, so it waits on consent
+(step 4).
 
 1. **Bundles.** Extend `bio-bundles` to write card bundles for the 183 speakers:
    sessions tagged by who wrote them, topic terms, technologies, repositories,
@@ -966,6 +970,11 @@ shows nothing to anyone outside the project team, and sends nothing to anyone.
    few turns about where the two people’s work overlaps; the model then writes the same
    briefing from what that surfaced.
    The exchange is logged for the team and never shown as dialogue.
+   Being a published speaker is not consent to be simulated, so arm (c) runs only for
+   pairs in which both speakers opted in through `simulation_consent`, or for every pair
+   once the project owner decides that hidden simulation used only for scoring counts as
+   Cited (see Next Steps).
+   Until then the experiment compares (a) and (b) alone.
 5. **Evaluation.** Automatic citation checks on every briefing, and entailment checks on
    a sample. Two team members rate 60 pairs blind to arm, stratified by coverage tier,
    for specificity, accuracy and usefulness to someone deciding whether to meet.
@@ -1008,8 +1017,10 @@ Decisions for the user:
   (recommended: no, and never the candidate attendee).
 - [ ] Whether past-only speakers appear in 2026 features (recommended: only as cited
   facts about past talks, never as attending).
-- [ ] Whether hidden simulation used only for scoring counts as Cited (recommended: yes,
-  if only cited reasons are shown and the logs stay internal).
+- [ ] Whether hidden simulation used only for scoring counts as Cited, so that it may
+  run for published speakers who have not opted in (recommended: yes, if only cited
+  reasons are shown and the logs stay internal; until this is decided, it runs only
+  between people who opted in).
 - [ ] Which inferences are banned outright (recommended: job seeking, health, religion,
   politics, sexuality, immigration or travel status, personal safety, and motives).
 - [ ] The minimum archetype size, and whether objections remove people from aggregates
