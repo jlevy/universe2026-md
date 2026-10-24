@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import gzip
 import hashlib
 import json
 import re
@@ -44,43 +45,52 @@ def _open_https(url: str) -> Any:
 
 
 def extract_archive(archive_path: Path, destination: Path) -> int:
-    """Preflight all tar members; write regular KB files without restoring metadata."""
-    with tarfile.open(archive_path, "r:gz") as archive:
-        members = []
-        names: dict[str, bool] = {}
-        total = 0
-        for member in archive:
-            path = PurePosixPath(member.name)
-            if (path.is_absolute() or not path.parts or path.parts[0] != "kb"
-                    or any(p in {".", ".."} or "\\" in p or ":" in p for p in path.parts)
-                    or member.name.rstrip("/") != path.as_posix()
-                    or not (member.isfile() or member.isdir())
-                    or (path.as_posix() == "kb" and not member.isdir())
-                    or path.as_posix() in names or member.size < 0):
-                raise ValueError(f"Unsafe archive member: {member.name}")
-            names[path.as_posix()] = member.isdir()
-            members.append(member)
-            total += member.size
-            if len(members) > MAX_MEMBERS or total > MAX_EXPANDED_BYTES:
-                raise ValueError("Archive exceeds the extraction limits")
-        if not members or not any(member.isfile() for member in members):
-            raise ValueError("Archive contains no KB files")
-        for member in members:
-            for parent in PurePosixPath(member.name).parents:
-                if parent.as_posix() in names and not names[parent.as_posix()]:
-                    raise ValueError(f"Archive file is also a parent: {parent}")
-        for member in members:
-            target = destination / member.name
-            if member.isdir():
-                target.mkdir(parents=True, exist_ok=True)
-            else:
-                target.parent.mkdir(parents=True, exist_ok=True)
-                content = archive.extractfile(member)
-                if content is None:
-                    raise ValueError(f"Missing archive content: {member.name}")
-                with content, target.open("xb") as stream:
-                    shutil.copyfileobj(content, stream)
-        return sum(member.isfile() for member in members)
+    """Bound decompression before parsing tar metadata, then preflight every member."""
+    with tempfile.TemporaryDirectory(prefix=".universe-tar-", dir=archive_path.parent) as work:
+        expanded_path = Path(work) / "dataset.tar"
+        expanded = 0
+        with gzip.open(archive_path, "rb") as compressed, expanded_path.open("xb") as stream:
+            while chunk := compressed.read(min(CHUNK_BYTES, MAX_EXPANDED_BYTES - expanded + 1)):
+                expanded += len(chunk)
+                if expanded > MAX_EXPANDED_BYTES:
+                    raise ValueError("Archive exceeds the decompressed tar size limit")
+                stream.write(chunk)
+        with tarfile.open(expanded_path, "r:") as archive:
+            members = []
+            names: dict[str, bool] = {}
+            total = 0
+            for member in archive:
+                path = PurePosixPath(member.name)
+                if (path.is_absolute() or not path.parts or path.parts[0] != "kb"
+                        or any(p in {".", ".."} or "\\" in p or ":" in p for p in path.parts)
+                        or member.name.rstrip("/") != path.as_posix()
+                        or not (member.isfile() or member.isdir())
+                        or (path.as_posix() == "kb" and not member.isdir())
+                        or path.as_posix() in names or member.size < 0):
+                    raise ValueError(f"Unsafe archive member: {member.name}")
+                names[path.as_posix()] = member.isdir()
+                members.append(member)
+                total += member.size
+                if len(members) > MAX_MEMBERS or total > MAX_EXPANDED_BYTES:
+                    raise ValueError("Archive exceeds the extraction limits")
+            if not members or not any(member.isfile() for member in members):
+                raise ValueError("Archive contains no KB files")
+            for member in members:
+                for parent in PurePosixPath(member.name).parents:
+                    if parent.as_posix() in names and not names[parent.as_posix()]:
+                        raise ValueError(f"Archive file is also a parent: {parent}")
+            for member in members:
+                target = destination / member.name
+                if member.isdir():
+                    target.mkdir(parents=True, exist_ok=True)
+                else:
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    content = archive.extractfile(member)
+                    if content is None:
+                        raise ValueError(f"Missing archive content: {member.name}")
+                    with content, target.open("xb") as stream:
+                        shutil.copyfileobj(content, stream)
+            return sum(member.isfile() for member in members)
 
 
 def download_dataset(manifest_url: str, destination: Path, *, revision: str | None = None,

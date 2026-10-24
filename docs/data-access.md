@@ -1,5 +1,6 @@
-# Access the GitHub Universe Data
+# Access the GitHub Universe 2026 Data
 
+The dataset covers GitHub Universe 2026 and the 2023–2025 editions.
 The portable [agent skill](../.agents/skills/universe2026-data/SKILL.md) downloads the
 public knowledge base as one verified archive and explains how to query its local
 records, graph and search exports.

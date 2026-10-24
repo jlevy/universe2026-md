@@ -178,8 +178,8 @@ def build_site(kb_dir: Path, skill_dir: Path, output_dir: Path, revision: str) -
         site.joinpath("index.html").write_text(
             '<!doctype html><html lang="en"><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1">'
-            '<title>GitHub Universe Knowledge Base</title><body>'
-            '<h1>GitHub Universe Knowledge Base</h1>'
+            '<title>GitHub Universe 2026 Knowledge Base</title><body>'
+            '<h1>GitHub Universe 2026 Knowledge Base</h1>'
             f'<p>Revision <code>{revision}</code>; '
             f'{len(nodes)} entities in {len(copied)} files.</p>'
             '<p><a href="kb/README.md">Knowledge base</a> · '

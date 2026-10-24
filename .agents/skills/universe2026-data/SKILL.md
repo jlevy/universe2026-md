@@ -5,8 +5,9 @@ description: >-
   conference sessions, speakers, organizations, venues, professional profiles,
   software, repositories, or their cited relationships in this dataset.
 ---
-# GitHub Universe Data
+# GitHub Universe 2026 Data
 
+Use this GitHub Universe 2026 dataset for the current program and its 2023–2025 history.
 Use the local knowledge base when it is already available.
 Otherwise use the bundled [download script](scripts/download.py) to fetch one verified
 package from the public GitHub Pages dataset manifest.

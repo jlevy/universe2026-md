@@ -219,3 +219,29 @@ def test_downloader_rejects_invalid_manifest_fields_before_archive_fetch(
                                     revision=REVISION)
         assert len(requested) == 1
         assert not destination.exists()
+
+
+def test_tar_metadata_is_bounded_before_parsing_or_writing(
+        tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    script = downloader()
+    archive = tmp_path / "oversized-metadata.tar.gz"
+    with tarfile.open(archive, "w:gz", format=tarfile.PAX_FORMAT,
+                      pax_headers={"comment": "x" * (2 * 1024 * 1024)}) as packed:
+        entry = tarfile.TarInfo("kb/README.md")
+        entry.size = 2
+        packed.addfile(entry, io.BytesIO(b"ok"))
+    monkeypatch.setattr(script, "MAX_EXPANDED_BYTES", 1024)
+    parsed = []
+    original_open = script.tarfile.open
+
+    def parse_tar(*args: Any, **kwargs: Any) -> Any:
+        parsed.append(args[0])
+        return original_open(*args, **kwargs)
+
+    monkeypatch.setattr(script.tarfile, "open", parse_tar)
+    destination = tmp_path / "extracted"
+    with pytest.raises(ValueError, match="decompressed tar"):
+        script.extract_archive(archive, destination)
+    assert parsed == []
+    assert not destination.exists()
+    assert not list(tmp_path.glob(".universe-tar-*"))
