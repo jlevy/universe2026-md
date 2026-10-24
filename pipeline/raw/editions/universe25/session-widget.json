@@ -1,0 +1,353 @@
+{
+ "element": "rf-catalog",
+ "type": "sessionV2",
+ "includeCSS": false,
+ "rfCid": "100933926",
+ "manageQuery": true,
+ "testEnv": "",
+ "layout": "layout-4",
+ "jwtCookieName": "rfjwt",
+ "showOnlyPublished": true,
+ "showSessionTypeIcon": true,
+ "onLoadMessage": "",
+ "showLoadMore": true,
+ "showCount": true,
+ "showFiles": true,
+ "showRecommendations": false,
+ "showSessionFilesOnPublicCatalog": false,
+ "fileDownloadRequiresLogin": false,
+ "size": "50",
+ "sessionConfig.hiddenAttributes": [
+  {
+   "filterID": "day"
+  },
+  {
+   "filterID": "daytime"
+  }
+ ],
+ "sessionConfig.attributeOrder": [
+  "sessiontype"
+ ],
+ "sessionConfig.scheduleAccessAttributes": [],
+ "showGlobalEventLabelsOnTitle": false,
+ "sessionConfig.globalEventLabels": {},
+ "sessionConfig.showTimes": true,
+ "sessionConfig.showEndTime": true,
+ "sessionConfig.collapsedViewComponents": [
+  {
+   "name": "abstract",
+   "displayName": "Abstract"
+  },
+  {
+   "name": "speakers",
+   "displayName": "Speakers"
+  },
+  {
+   "uniqueId": "learnMore",
+   "displayName": "Learn more button",
+   "name": "learnMore"
+  },
+  {
+   "displayName": "Track",
+   "name": "1695679365536001nvxy"
+  },
+  {
+   "displayName": "Delivery Format",
+   "name": "1692799009855001C0n3"
+  }
+ ],
+ "sessionConfig.expandedViewComponents": [
+  {
+   "name": "abstract",
+   "displayName": "Abstract"
+  },
+  {
+   "name": "speakers",
+   "displayName": "Speakers"
+  },
+  {
+   "name": "times",
+   "displayName": "Scheduled times and details"
+  }
+ ],
+ "speakers.companySuffix": "",
+ "lanyonExternalRef": "External-Ref",
+ "externalLogin": false,
+ "loginRedirectUrl": "https://reg.githubuniverse.com/flow/github/universe25/attendee-registration/login",
+ "regUrl": "https://reg.githubuniverse.com/flow/github/universe25/attendee-registration/login",
+ "startDate": "2016/07/10",
+ "endDate": "2016/07/14",
+ "startHour": 7.0,
+ "endHour": 19.0,
+ "rfShowRoom": false,
+ "sessionConfig.showScheduleButton": false,
+ "allowAttendeeScheduling": true,
+ "overrideNoSchedulerAccess": false,
+ "waitlist": true,
+ "scheduleActionText.notScheduled.long": "Schedule",
+ "scheduleActionText.scheduled.long": "Schedule",
+ "scheduleActionText.scheduled.short": "Unsched",
+ "scheduleActionText.scheduled.x": "",
+ "useDefaultPrintView": true,
+ "interestStarCount": 1.0,
+ "filterConfig.hiddenFilters": [
+  {
+   "filterID": "daytime",
+   "attendeeType": ""
+  }
+ ],
+ "filterConfig.hiddenFilterValues": [
+  ""
+ ],
+ "filterConfig.filterOrder": [
+  "day",
+  "sessiontype"
+ ],
+ "filterConfig.defaults": {
+  "": {
+   "name": "",
+   "value": ""
+  }
+ },
+ "filterConfig.myFavorites": false,
+ "elasticSearchFields": [
+  "session.participants.companyName"
+ ],
+ "timeFormat.hourDisplayStyle": "default",
+ "timeFormat.dateType": "default",
+ "timeFormat.hourTimePeriodType": "default",
+ "sessionDetailsOption": "sessionDetailPage",
+ "sessionCatalogUrl": "https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog",
+ "truncateAbstract": false,
+ "sessionTitleConfig": "%title%",
+ "widgetDataFormId": "1739391581248008xetM",
+ "dataSetFilterCode": "",
+ "showHasScheduleConflictIcon": true,
+ "showIsScheduledIcon": true,
+ "showIsWaitlistedIcon": true,
+ "onlyShowWebinarLinkToEnrolledAttendeesAndParticipants": false,
+ "templateId": "1628546726R8da926e7a",
+ "linkedWidgetId": "1750769491423004jLsP",
+ "id": "1750769491423001jYxp",
+ "dateFormat.javascript": "MMM D",
+ "hourFormat.javascript": "h:mm a",
+ "showPastSessionsInRecommendation": false,
+ "showFullSessionsInRecommendation": false,
+ "groupSessionsAs": "singleList",
+ "sortAttributeId": "DayTime",
+ "numDetailsPageSections": 1.0,
+ "smallDetailsPageSectionPlacement": "right",
+ "sessionConfig.largeSectionComponents": [
+  {
+   "displayName": "Delivery Format",
+   "name": "1692799009855001C0n3"
+  },
+  {
+   "uniqueId": "title",
+   "displayName": "Session title",
+   "name": "title"
+  },
+  {
+   "uniqueId": "speakers",
+   "layout": "list",
+   "displayName": "Speakers (list)",
+   "name": "speakers"
+  },
+  {
+   "displayName": "Key Takeaway 1",
+   "name": "1681321021821002KqJi"
+  },
+  {
+   "displayName": "Key Takeaway 2",
+   "name": "1681321068357002s2k1"
+  },
+  {
+   "displayName": "Key Takeaway 3",
+   "name": "1681321148121002Bjcv"
+  },
+  {
+   "uniqueId": "abstract",
+   "displayName": "Abstract",
+   "name": "abstract"
+  },
+  {
+   "uniqueId": "sessionFiles",
+   "displayName": "Session Files (list)",
+   "showHeader": "true",
+   "name": "sessionFiles"
+  },
+  {
+   "displayName": "Session Tile Image",
+   "name": "1755011515592001TrRC"
+  },
+  {
+   "uniqueId": "similar",
+   "displayName": "Similar sessions",
+   "name": "similar"
+  },
+  {
+   "uniqueId": "embeddedWebinar",
+   "displayName": "Embedded webinar",
+   "name": "embeddedWebinar"
+  }
+ ],
+ "sessionConfig.mediumSectionComponents": [
+  {
+   "name": "abstract",
+   "displayName": "Abstract"
+  },
+  {
+   "name": "speakers",
+   "uniqueId": "speakersGrid",
+   "displayName": "Speakers (grid)",
+   "layout": "grid",
+   "showHeader": "true"
+  },
+  {
+   "name": "times",
+   "displayName": "Scheduled times and details"
+  }
+ ],
+ "sessionConfig.smallSectionComponents": [
+  {
+   "name": "sponsors",
+   "uniqueId": "sponsorsTile",
+   "layout": "tile",
+   "displayName": "Sponsor profile (tile)",
+   "showHeader": "true"
+  },
+  {
+   "name": "similar",
+   "displayName": "Similar sessions"
+  }
+ ],
+ "sponsorDetailsAttributes": [
+  {
+   "attributevalueId": "logo",
+   "displayName": "Logo"
+  },
+  {
+   "attributevalueId": "name",
+   "displayName": "Name"
+  },
+  {
+   "attributevalueId": "ExhibitorType",
+   "displayName": "Exhibitor Type"
+  },
+  {
+   "attributevalueId": "description",
+   "displayName": "Description"
+  },
+  {
+   "attributevalueId": "viewBooth",
+   "displayName": "View Booth button"
+  }
+ ],
+ "exhibitorDetailsOption": "exhibitorDetailPage",
+ "tileConfig.showBanner": true,
+ "tileConfig.showSpeaker": true,
+ "tileConfig.showSessionTime": true,
+ "showInPerson": true,
+ "showVirtualInformation": true,
+ "tileConfig.showAbstract": true,
+ "tileConfig.showButton": true,
+ "showScheduleButtonIcons": true,
+ "showWebinarButton": false,
+ "filterConfig.filters": [
+  {
+   "displayName": "Curated Agenda Name",
+   "attributeId": "1755639187563001NgNm"
+  },
+  {
+   "displayName": "Delivery Format",
+   "attributeId": "1692799009855001C0n3"
+  },
+  {
+   "displayName": "Session Track",
+   "attributeId": "1681231920172001WQjQ"
+  },
+  {
+   "displayName": "Session Type",
+   "attributeId": "1681230546I4bcbaab8f"
+  },
+  {
+   "displayName": "GitHub Product",
+   "attributeId": "1681323318992001zJbt"
+  },
+  {
+   "displayName": "Topic",
+   "attributeId": "1681323600255001sIqt"
+  },
+  {
+   "displayName": "Level",
+   "attributeId": "1681231920170001WVFG"
+  },
+  {
+   "displayName": "Who is your audience for this session?",
+   "attributeId": "1681231920169011WLfo"
+  },
+  {
+   "displayName": "Industry?",
+   "attributeId": "1681231920169010WFZg"
+  }
+ ],
+ "catalogDisplay": "list",
+ "catalogDisplayDefault": "list",
+ "allowWebinarPlaybackSpeedChange": false,
+ "webinarAvailableMinutesPrevious": 5.0,
+ "webinarAvailableMinutesPreviousHost": 10.0,
+ "replayAvailableMinutesAfter": 15.0,
+ "catalogDisplayTime": "eventTime",
+ "filterConfig": {
+  "recommendedForYou": true
+ },
+ "tileConfig": {
+  "showRecommendedBanner": true
+ },
+ "sessionTileImages": [
+  {
+   "attributeValueId": "1681230546Fa089e2342",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-keynote_1755469701276001kn2t.png"
+  },
+  {
+   "attributeValueId": "1741622103128",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-secure_1755469701377001koM9.png"
+  },
+  {
+   "attributeValueId": "1743691962449",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-secure_1755469701377001koM9.png"
+  },
+  {
+   "attributeValueId": "1741622108925",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-build_1755469701190001kB52.png"
+  },
+  {
+   "attributeValueId": "1743691961346",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-build_1755469701190001kB52.png"
+  },
+  {
+   "attributeValueId": "1741622115296",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-automate_1755469701072001kLF4.png"
+  },
+  {
+   "attributeValueId": "1743691965884",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-automate_1755469701072001kLF4.png"
+  },
+  {
+   "attributeValueId": "1756132180746001T2vD",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-keynote_1755469701276001kn2t.png"
+  },
+  {
+   "attributeValueId": "1741367968346004vuIm",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-keynote_1755469701276001kn2t.png"
+  },
+  {
+   "attributeValueId": "1752592843470001scI6",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-keynote_1755469701276001kn2t.png"
+  },
+  {
+   "attributeValueId": "1752592843471001s3cK",
+   "imageUrl": "https://static.rainfocus.com/github/universe25/static/staticfile/staticfile/session-keynote_1755469701276001kn2t.png"
+  }
+ ]
+}

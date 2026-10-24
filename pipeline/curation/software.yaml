@@ -1,0 +1,396 @@
+# Software gazetteer: products, projects, languages and protocols that session
+# abstracts and speaker bios mention by name.
+#
+# Matching is case-sensitive, whole-word and longest-first across these aliases and all
+# organization names, so "GitHub Copilot CLI" wins over "GitHub Copilot" and "The Linux
+# Foundation" is an organization, not a mention of Linux. Names that are also ordinary
+# words or sentence starters ("Go", "Spark", "Processing", "Projects") are left out on
+# purpose. Companies whose product shares their name (Sentry, Figma, Postman) are
+# matched as organizations instead.
+#
+# `repositories` and `packages` are claims; `universe-kb enrich` checks each one against
+# GitHub, npm and PyPI, and the build keeps only those that resolve.
+
+software:
+  # GitHub products. `product_term` links to the catalog's "GitHub product" facet.
+  - id: github-copilot
+    name: GitHub Copilot
+    kind: github_product
+    vendor: github
+    product_term: GitHub Copilot
+    homepage: https://github.com/features/copilot
+    aliases: [GitHub Copilot, Copilot, Copilot Chat]
+  - id: copilot-cli
+    name: GitHub Copilot CLI
+    kind: github_product
+    vendor: github
+    aliases: [GitHub Copilot CLI, Copilot CLI]
+    repositories: [github/copilot-cli]
+    packages: ["npm:@github/copilot"]
+  - id: copilot-sdk
+    name: GitHub Copilot SDK
+    kind: github_product
+    vendor: github
+    aliases: [GitHub Copilot SDK, Copilot SDK]
+    repositories: [github/copilot-sdk]
+  - id: copilot-coding-agent
+    name: Copilot coding agent
+    kind: github_product
+    vendor: github
+    aliases: [Copilot coding agent, GitHub Copilot coding agent]
+  - id: github-actions
+    name: GitHub Actions
+    kind: github_product
+    vendor: github
+    product_term: Actions
+    homepage: https://github.com/features/actions
+    aliases: [GitHub Actions]
+    repositories: [actions/runner, actions/toolkit]
+  - id: dependabot
+    name: Dependabot
+    kind: github_product
+    vendor: github
+    product_term: Dependabot
+    aliases: [Dependabot]
+    repositories: [dependabot/dependabot-core]
+  - id: codeql
+    name: CodeQL
+    kind: github_product
+    vendor: github
+    aliases: [CodeQL]
+    repositories: [github/codeql]
+  - id: github-advanced-security
+    name: GitHub Advanced Security
+    kind: github_product
+    vendor: github
+    aliases: [GitHub Advanced Security, Advanced Security, GHAS]
+  - id: github-code-security
+    name: GitHub Code Security
+    kind: github_product
+    vendor: github
+    product_term: GitHub Code Security
+    aliases: [GitHub Code Security]
+  - id: github-secret-protection
+    name: GitHub Secret Protection
+    kind: github_product
+    vendor: github
+    product_term: GitHub Secret Protection
+    aliases: [GitHub Secret Protection, Secret Protection]
+  - id: github-agentic-workflows
+    name: GitHub Agentic Workflows
+    kind: github_product
+    vendor: github
+    aliases: [GitHub Agentic Workflows, Agentic Workflows, gh-aw]
+    repositories: [github/gh-aw]
+  - id: github-mcp-server
+    name: GitHub MCP Server
+    kind: github_product
+    vendor: github
+    aliases: [GitHub MCP Server, GitHub MCP server, GitHub MCP]
+    repositories: [github/github-mcp-server]
+  - id: spec-kit
+    name: Spec Kit
+    kind: github_product
+    vendor: github
+    aliases: [Spec Kit, spec-kit]
+    repositories: [github/spec-kit]
+  - id: codespaces
+    name: GitHub Codespaces
+    kind: github_product
+    vendor: github
+    product_term: Codespaces
+    aliases: [GitHub Codespaces, Codespaces]
+  - id: github-enterprise-cloud
+    name: GitHub Enterprise Cloud
+    kind: github_product
+    vendor: github
+    product_term: GitHub Enterprise Cloud
+    aliases: [GitHub Enterprise Cloud]
+  - id: github-enterprise-server
+    name: GitHub Enterprise Server
+    kind: github_product
+    vendor: github
+    product_term: GitHub Enterprise Server
+    aliases: [GitHub Enterprise Server]
+  - id: github-issues-projects
+    name: GitHub Issues and Projects
+    kind: github_product
+    vendor: github
+    product_term: Projects and Issues
+    aliases: [GitHub Issues, GitHub Projects]
+  - id: github-discussions
+    name: GitHub Discussions
+    kind: github_product
+    vendor: github
+    product_term: Discussions
+    aliases: [GitHub Discussions]
+  - id: github-marketplace
+    name: GitHub Marketplace
+    kind: github_product
+    vendor: github
+    product_term: Marketplace
+    aliases: [GitHub Marketplace]
+  - id: github-cli
+    name: GitHub CLI
+    kind: github_product
+    vendor: github
+    aliases: [GitHub CLI]
+    repositories: [cli/cli]
+  - id: copilot-code-review
+    name: Copilot code review
+    kind: github_product
+    vendor: github
+    aliases: [Copilot code review, GitHub Copilot code review]
+  - id: npm-registry
+    name: npm
+    kind: platform
+    vendor: github
+    aliases: [npm]
+    repositories: [npm/cli]
+    packages: ["npm:npm"]
+
+  # Microsoft products and platforms.
+  - id: vs-code
+    name: Visual Studio Code
+    kind: open_source
+    vendor: microsoft
+    product_term: VS Code
+    aliases: [VS Code, Visual Studio Code, VSCode]
+    repositories: [microsoft/vscode]
+  - id: visual-studio
+    name: Visual Studio
+    kind: commercial
+    vendor: microsoft
+    aliases: [Visual Studio]
+  - id: azure
+    name: Microsoft Azure
+    kind: platform
+    vendor: microsoft
+    aliases: [Azure, Microsoft Azure]
+  - id: azure-devops
+    name: Azure DevOps
+    kind: commercial
+    vendor: microsoft
+    aliases: [Azure DevOps]
+  - id: dotnet
+    name: .NET
+    kind: platform
+    vendor: microsoft
+    aliases: [.NET]
+    repositories: [dotnet/runtime]
+  - id: microsoft-copilot
+    name: Microsoft Copilot
+    kind: commercial
+    vendor: microsoft
+    aliases: [Microsoft Copilot, Microsoft 365 Copilot]
+  - id: windows
+    name: Windows
+    kind: platform
+    vendor: microsoft
+    aliases: [Windows]
+
+  # Protocols, languages and open source projects.
+  - id: model-context-protocol
+    name: Model Context Protocol
+    kind: protocol
+    homepage: https://modelcontextprotocol.io
+    aliases: [Model Context Protocol, MCP]
+    repositories: [modelcontextprotocol/modelcontextprotocol]
+    packages: ["npm:@modelcontextprotocol/sdk", "pypi:mcp"]
+  - id: git
+    name: Git
+    kind: open_source
+    homepage: https://git-scm.com
+    aliases: [Git]
+    repositories: [git/git]
+  - id: python
+    name: Python
+    kind: language
+    homepage: https://www.python.org
+    aliases: [Python]
+    repositories: [python/cpython]
+  - id: typescript
+    name: TypeScript
+    kind: language
+    vendor: microsoft
+    aliases: [TypeScript]
+    repositories: [microsoft/TypeScript]
+    packages: ["npm:typescript"]
+  - id: javascript
+    name: JavaScript
+    kind: language
+    aliases: [JavaScript]
+  - id: java
+    name: Java
+    kind: language
+    aliases: [Java]
+  - id: rust
+    name: Rust
+    kind: language
+    homepage: https://www.rust-lang.org
+    aliases: [Rust]
+    repositories: [rust-lang/rust]
+  - id: csharp
+    name: C#
+    kind: language
+    vendor: microsoft
+    aliases: ["C#"]
+  - id: nodejs
+    name: Node.js
+    kind: open_source
+    homepage: https://nodejs.org
+    aliases: [Node.js]
+    repositories: [nodejs/node]
+  - id: markdown
+    name: Markdown
+    kind: language
+    aliases: [Markdown]
+  - id: kubernetes
+    name: Kubernetes
+    kind: open_source
+    homepage: https://kubernetes.io
+    aliases: [Kubernetes, K8s]
+    repositories: [kubernetes/kubernetes]
+  - id: docker
+    name: Docker
+    kind: platform
+    homepage: https://www.docker.com
+    aliases: [Docker]
+  - id: terraform
+    name: Terraform
+    kind: open_source
+    homepage: https://www.terraform.io
+    aliases: [Terraform]
+    repositories: [hashicorp/terraform]
+  - id: opentelemetry
+    name: OpenTelemetry
+    kind: open_source
+    homepage: https://opentelemetry.io
+    aliases: [OpenTelemetry]
+    repositories: [open-telemetry/opentelemetry-specification]
+  - id: jenkins
+    name: Jenkins
+    kind: open_source
+    homepage: https://www.jenkins.io
+    aliases: [Jenkins]
+    repositories: [jenkinsci/jenkins]
+  - id: home-assistant
+    name: Home Assistant
+    kind: open_source
+    vendor: open-home-foundation
+    homepage: https://www.home-assistant.io
+    aliases: [Home Assistant]
+    repositories: [home-assistant/core]
+    packages: ["pypi:homeassistant"]
+  - id: p5js
+    name: p5.js
+    kind: open_source
+    vendor: processing-foundation
+    homepage: https://p5js.org
+    aliases: [p5.js]
+    repositories: [processing/p5.js]
+    packages: ["npm:p5"]
+  - id: pytorch
+    name: PyTorch
+    kind: open_source
+    homepage: https://pytorch.org
+    aliases: [PyTorch]
+    repositories: [pytorch/pytorch]
+    packages: ["pypi:torch"]
+  - id: homebrew
+    name: Homebrew
+    kind: open_source
+    homepage: https://brew.sh
+    aliases: [Homebrew]
+    repositories: [Homebrew/brew]
+  - id: linux
+    name: Linux
+    kind: open_source
+    aliases: [Linux]
+    repositories: [torvalds/linux]
+  - id: grafana
+    name: Grafana
+    kind: open_source
+    vendor: grafana-labs
+    aliases: [Grafana]
+    repositories: [grafana/grafana]
+  - id: argo-cd
+    name: Argo CD
+    kind: open_source
+    aliases: [Argo CD, ArgoCD]
+    repositories: [argoproj/argo-cd]
+  - id: kargo
+    name: Kargo
+    kind: open_source
+    vendor: akuity
+    aliases: [Kargo]
+    repositories: [akuity/kargo]
+  - id: pypi
+    name: PyPI
+    kind: platform
+    homepage: https://pypi.org
+    aliases: [PyPI]
+    repositories: [pypi/warehouse]
+
+  # Commercial products and platforms from companies that are not otherwise in the
+  # knowledge base, or whose product name differs from the company name.
+  - id: jira
+    name: Jira
+    kind: commercial
+    vendor: atlassian
+    aliases: [Jira]
+  - id: aws
+    name: Amazon Web Services
+    kind: platform
+    vendor: amazon
+    aliases: [AWS, Amazon Web Services]
+  - id: gitlab
+    name: GitLab
+    kind: commercial
+    aliases: [GitLab]
+  - id: circleci
+    name: CircleCI
+    kind: commercial
+    aliases: [CircleCI]
+  - id: claude
+    name: Claude
+    kind: commercial
+    vendor: anthropic
+    aliases: [Claude]
+  - id: gemini
+    name: Gemini
+    kind: commercial
+    vendor: google
+    aliases: [Gemini]
+  - id: cursor
+    name: Cursor
+    kind: commercial
+    aliases: [Cursor]
+  - id: hugging-face
+    name: Hugging Face
+    kind: platform
+    aliases: [Hugging Face]
+  - id: android
+    name: Android
+    kind: platform
+    vendor: google
+    aliases: [Android]
+  - id: ios
+    name: iOS
+    kind: platform
+    aliases: [iOS]
+
+# Organizations that the program mentions but that no speaker, sponsor or host
+# connects to the event. They join the knowledge base only when a mention is found.
+mentioned_organizations:
+  openssf:
+    name: OpenSSF
+    aliases: [OpenSSF, Open Source Security Foundation]
+    website: https://openssf.org
+    github: ossf
+
+# Phrases that contain a known name but do not mention it.
+ignore_phrases: [Salesforce Park, Salesforce Tower]
+
+# Organization names that are also ordinary words; never matched as mentions.
+ambiguous_org_names: [Port, Arm, Insight, Precisely, Galaxy, Rewind, Independent, Signal]

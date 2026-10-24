@@ -1,0 +1,117 @@
+# People to add to the knowledge base by hand: attendees, organizers, sponsor staff, or
+# anyone else involved who is not in the official catalog.
+#
+# The build merges each entry with an existing person when any account matches (GitHub,
+# X, LinkedIn, Bluesky or website), or when the name matches and the entry claims a
+# speaking role. Otherwise it creates a new person.
+#
+# Every entry must cite a public source that states the person's part, such as their own
+# post saying they will attend. The build refuses an entry without one: nobody is listed
+# on inference, and a like, a follow or someone else's post is not enough.
+#
+# Fields:
+#   name:              required
+#   role:              attendee | speaker | organizer | sponsor_representative | host |
+#                      volunteer
+#   status:            confirmed (the organizer published it) | self_reported (the person
+#                      said so publicly); required
+#   inclusion_basis:   public_self_report | curated
+#                      (published_by_event is reserved for the official catalog)
+#   evidence:          list of {url, quote, observed_at}; at least one public URL
+#   affiliation:       {organization, title}
+#   accounts:          {github, x, linkedin, bluesky, website}, as handles or URLs
+#   bio, photo_url:    optional public text and image
+#
+# Example (not active):
+#
+#   - name: Ada Example
+#     role: attendee
+#     status: self_reported
+#     inclusion_basis: public_self_report
+#     evidence:
+#       - url: https://x.com/adaexample/status/123
+#         quote: "See you at GitHub Universe!"
+#         observed_at: "2026-10-20"
+#     affiliation: {organization: Example Corp, title: Staff Engineer}
+#     accounts: {github: adaexample, x: adaexample, website: https://ada.example.com}
+
+# Listed names to replace, keyed exactly as the catalog lists them. The build already
+# reorders "Last, First" names and drops directory codes; use this for what no rule can
+# tell, and say why.
+names:
+  # The 2024 catalog's spelling; the 2025 catalog lists the same GitHub International
+  # Developer Relations Director as "Karan M V".
+  MV Karan: Karan M V
+  # The 2024 listing gives only the GitHub handle; the global profile's family name is
+  # Teixeira and the event bio's given name is Guilherme.
+  gateixeira: Guilherme Teixeira
+
+# Links a source made that are wrong. The build drops them, and everything learned
+# through them (an X profile's website, a homepage's feeds).
+rejected_links:
+  # The 2024 catalog lists "oedevon", a camping retailer; 2023 lists "joedevon".
+  - person: joe-devon
+    link: acct:x/oedevon
+  # The GitHub profile's website now serves another person's portfolio.
+  - person: rohan-varma
+    link: site:rohan.rocks
+  # The domain linked from LinkedIn now serves an online gaming spam page.
+  - person: oren-melamed
+    link: site:promptboost.dev
+  # Product and employer pages linked from X or LinkedIn, not personal websites.
+  - person: greg-larkin
+    link: site:puppet.com
+  - person: josh-scriven
+    link: site:neudesic.com
+  # The owner's own profiles describe this account as personal.
+  - person: idan-gazit
+    link: acct:mastodon/idan@babka.social
+
+people: []
+
+# People left out of the knowledge base: at their request, or because a source wrongly
+# took them for someone involved. The build leaves each one out of every record, search
+# document and graph export, collection skips their accounts, and `universe-kb scrub`
+# deletes their raw data and bios. Fingerprint each full typed person ID and every
+# account/website key that identifies them. Do not repeat a request's content.
+#
+# Store only SHA-256 fingerprints of normalized person/account/website keys here.
+# Keep identifiers and request context private. Fingerprints can be dictionary-tested;
+# they are pseudonymous matching keys, not anonymization. See pipeline/README.md.
+exclude:
+  - sha256: b5409c154b3deeed8e9dde67d39b31361ed0f2dff5fd1f78997613b19342ff10
+  - sha256: 3dd056493548e96812c194e8202d1960a411ab38bc2d0609ab099dbce7e62d98
+
+# Wrong owner/link pairs, normalized as owner + NUL + link, then SHA-256.
+# Pseudonymous and dictionary-testable; no identifiers, reason or date are stored.
+rejected_links_sha256:
+  - 0e09c6dc77883a66eb6e5bd591797f93b28d20063b973a9bcee3d57eee458bd3
+  - 1ac8e7ead0bef57ff92105c3c1731722e7954a2c6aacd8ea9172538e98e93a38
+  - 232fe4762e8b1808b39e44760e93dd172d1076ed0aaedf2f3d40fb80823743ef
+  - 24f3cd9759c0116a3cdecb3144b97aece03e9a039e206b114cffc056e2094363
+  - 32ec0bd8ef98f733319cd9433643e552aabdc0b3b7cd3cf0d1f3686eb8504a52
+  - 5dd48e9318f28579da9aa791b0f0c85bad10e2ce83c96979b6aa7df39aa471ca
+  - 71858463d80b2638e60e9d9da4290cd5de4b8602e6c2260ea1b766263d46480f
+  - 7cd674a1072d864a42e6ffe9e494f80b8420805b93ec7e0561bdb97ed443ba80
+  - 834a7ce634f95312f67f50c22f93c9e44f4ad3590990872c6086e98076aa1d5c
+  - 8a2311f57bf3f567c4068f708220f4ac405440e08707b4784091e41751ba508d
+  - 8de35de1b737543a06f58ca805f4b4317681a4807c7d5456db9355460d7c3015
+  - 9eef6c5f4fd5e03e060546bba419ebc179ede75132c26b740691ada138c34734
+  - b4e56007144f9e2d2ef8bc746c26f308f8d5d5a6e7679ae1deeee907f9ec0625
+  - b94d9ba658cdf85cd19abf7783c6bf79b498aca6aa31836732d3736ae22f57bd
+  - c4cfdeb701223ea4a3e8538c51b989b9bccd425d00278f80a8770d3f6c1a8a6e
+  - d6b584839e6f28ccd6421b561285f50617600725f8158b3cdd33cf9dec6ad148
+  - de269a3aafc4e4063f5a04971edad7f8ac725cb8db6e383fc483382439a05b6d
+  - e0469d2ff8c2ba70b0cf4552cac195c79182b3d21c0727cf753d0d4eebf1ca98
+  - e42e4cf993d4528bed03f5dd1c4b2201bf3b066a844f2a055aaad3ba35dd514c
+  - e4a5cb32dee8e135956789ba5da27f1172345cec96361541764e635a1f384186
+  - f092364b54a4a4a7db8cf3bf3487f68824e96ee6253fdd48f63d997f95714a26
+  - f43af550b2c8a2b2bafa1f75e4376382e0157334c517a8108c957474390a1e49
+  - fc7f4eea3b59063b7e7ed0006cb9f1223dc9cf5eb31b09e1f24eea2d2adb4887
+
+# Source-record rejections, normalized as catalog:<snapshot without raw/> + NUL +
+# catalog userRef, then SHA-256. A rejected record stays out until curator review;
+# independent sources about the people involved remain available. These keys are
+# pseudonymous and dictionary-testable. Store no identity correction or reason here.
+rejected_sources_sha256:
+  - 6ed43ea6240497daf1c64dd762a9432c493c80cd6e6ab363cd260f463be411bb

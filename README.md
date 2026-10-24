@@ -6,10 +6,6 @@ sources and builds the files.
 It is for anyone who wants the raw data on the conference: who spoke, on what, when and
 where, and the people, organizations and open-source work around it.
 
-The pipeline and generated records are landing in separate pull requests.
-If your checkout has no `pipeline/` or `kb/`, it contains the documentation and setup
-only; the source and build sections below describe those pending layers.
-
 ## What It Contains
 
 - **Editions:** GitHub Universe 2023 through 2026.
