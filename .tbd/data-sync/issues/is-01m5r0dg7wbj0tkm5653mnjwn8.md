@@ -3,9 +3,9 @@ type: is
 id: is-01m5r0dg7wbj0tkm5653mnjwn8
 title: Address new dataset PR8/PR9 Qodo findings before publication
 kind: task
-status: in_progress
+status: closed
 priority: 1
-version: 21
+version: 22
 delegate: codex@spud10.local
 labels: []
 dependencies: []
@@ -32,6 +32,10 @@ child_order_hints:
 hold: null
 hold_until: null
 created_at: 2026-10-24T22:27:33.232Z
-updated_at: 2026-10-24T23:28:53.539Z
+updated_at: 2026-10-24T23:43:58.897Z
 started_at: 2026-10-24T22:28:25.754Z
+closed_at: 2026-10-24T23:43:58.884Z
+close_reason: PR8 and PR9 merged via native stack merge on main68c5997. All26 Qodo findings addressed25fixed1rebutted,23/23 threads resolved; source983cb392 had209tests,Ruffpass,type0; finalKB4977artifacts5407entities25313edges validated and offlinebyteidentical. Public disposition summaries issuecomment6390849929/6390856798.
+resolution: null
+duplicate_of: null
 ---
