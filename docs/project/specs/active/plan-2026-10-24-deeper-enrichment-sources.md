@@ -426,7 +426,8 @@ does not create a duplicate.
   - it merges matching rows into existing people
   - it creates the rest
   - only rows with an `attendance_source` become attendee participations
-- [ ] An `excluded` list honored across every source and output, with bio pruning
+- [ ] An `excluded` list honored across every source and output, with bio pruning, once
+  its format is settled (see Open Questions)
 - [ ] README section “Adding and removing people”, written as the four-step process and
   the removal steps above
 - [ ] Tests:
@@ -557,8 +558,10 @@ Paid runs wait for approval.
   - Is the relation list above the right one?
   - Who may add rows: any contributor through a reviewed pull request, or maintainers
     only?
-  - Should the `excluded` list store a hash of each ID or account instead, so that it
-    does not republish the names it removes?
+  - What format should the public `excluded` list use, so that it does not republish the
+    names it removes? A plain hash of each ID or account is not enough: IDs and handles
+    are predictable, so anyone can hash candidate names and match them.
+    Settle this before the list is built.
 
 ## References
 
