@@ -6,6 +6,10 @@ sources and builds the files.
 It is for anyone who wants the raw data on the conference: who spoke, on what, when and
 where, and the people, organizations and open-source work around it.
 
+The pipeline and generated records are landing in separate pull requests.
+If your checkout has no `pipeline/` or `kb/`, it contains the documentation and setup
+only; the source and build sections below describe those pending layers.
+
 ## What It Contains
 
 - **Editions:** GitHub Universe 2023 through 2026.
@@ -15,6 +19,38 @@ where, and the people, organizations and open-source work around it.
 - **Open-source work:** repositories and packages.
 
 Every record cites the sources it was built from.
+
+## Sources and Collection
+
+The dataset is built from crawled public sources and saved enrichment responses:
+
+- **Conference crawl:** `universe-kb crawl` fetches GitHub Universe’s official website
+  and RainFocus agenda portal; `crawl-editions` fetches the 2023–2025 catalogs.
+  These sources establish the program, speakers, organizations and places.
+- **Public professional sources:** `enrich`, `enrich-social` and `enrich-packages`
+  collect GitHub profiles and repositories, professional websites, public social
+  profiles and feeds, and package-registry metadata.
+- **Bright Data enrichment:** `enrich-brightdata` uses
+  [Bright Data](https://brightdata.com/)’s paid dataset API to collect public LinkedIn
+  profiles, X profiles and their owners’ posts, and LinkedIn company pages for accounts
+  already identified in the knowledge base.
+  Collection needs `BRIGHT_DATA_API_KEY`; ordinary rebuilding does not need that key or
+  a paid request.
+
+Fetches save source snapshots under `pipeline/raw/`, including `raw/brightdata/`, with
+source URLs and retrieval metadata in `raw/manifest.json`. Collection filters the
+responses according to the [data policy](docs/data-policy.md), removing contact details,
+other people’s data and scraper bookkeeping before saving.
+The build combines those saved inputs with reviewed curation and generated bios to
+produce `kb/` offline.
+A public source or Bright Data result does not establish attendance by itself: an
+attendance claim needs the person’s own public statement.
+
+The [pipeline guide](pipeline/README.md) documents collection commands, credentials,
+privacy filtering and rebuilding.
+The
+[source research](docs/project/research/research-2026-10-23-universe-knowledge-graph.md)
+explains what the sources expose and how they are connected.
 
 ## Format
 
@@ -45,8 +81,8 @@ The build regenerates `kb/` from the saved sources in `pipeline/raw/`:
 
 ```bash
 cd pipeline
-uv sync
-uv run universe-kb build
+make install
+make build
 ```
 
 [pipeline/README.md](pipeline/README.md) covers crawling, enrichment and the other
@@ -76,3 +112,7 @@ Work is tracked with [tbd](https://github.com/jlevy/tbd), and records are valida
 ## License
 
 [MIT](LICENSE)
+
+<!-- This document follows common-doc-guidelines.md.
+See github.com/jlevy/practical-prose and review guidelines before editing.
+-->
