@@ -15,7 +15,8 @@ ignore_bot_pr = false
 # Extra instructions for the Compliance agent, which checks rules on every review.
 compliance_user_guidelines = '''
 This repository is public: anything committed can be copied and indexed, and it stays in
-git history. docs/data-policy.md sets what may be committed. Flag as action required:
+git history. docs/data-policy.md governs committed files, commit messages, pull request
+text and issue text. Apply these rules to all of that content. Flag as action required:
 
 1. A pull request that adds or changes knowledge-base data (kb/), source caches
    (pipeline/raw/), curation files (pipeline/curation/), generated bios or summaries
@@ -23,7 +24,7 @@ git history. docs/data-policy.md sets what may be committed. Flag as action requ
    lacks the Review Checklist from docs/data-policy.md or any of its items. Do not take
    the checklist on trust: check every item against the diff, and flag any item the
    diff breaks, whether or not its box is ticked.
-2. Contact details in committed content: email addresses, phone numbers, or personal
+2. Contact details in any policy-covered content: email addresses, phone numbers, or personal
    postal addresses, even when the person published them. Public street addresses of
    conference venues and rooms, published as directions to the event, are allowed
    conference material. A person's home address or other precise personal location is
