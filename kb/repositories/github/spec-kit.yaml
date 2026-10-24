@@ -1,0 +1,49 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/spec-kit
+  full_name: github/spec-kit
+  url: https://github.com/github/spec-kit
+  description: 💫 Toolkit to help you get started with SDD or any other process!
+  homepage: https://github.github.com/spec-kit/
+  stars: 142707
+  forks: 12777
+  watchers: 713
+  open_issues: 110
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Python
+  topics:
+  - ai
+  - copilot
+  - development
+  - engineering
+  - prd
+  - spec
+  - spec-driven
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2025-08-21T22:54:31Z'
+  pushed_at: '2026-10-23T18:16:37Z'
+  owner_login: github
+  owner: gh:github
+  software: software:spec-kit
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/spec-kit
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/spec-kit
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

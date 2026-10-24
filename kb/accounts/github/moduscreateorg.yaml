@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:moduscreateorg
+  login: ModusCreateOrg
+  kind: organization
+  url: https://github.com/ModusCreateOrg
+  name: Modus Create
+  bio: Modus Create is a digital product engineering partner for forward-thinking businesses.
+  location: Reston, VA
+  website: https://moduscreate.com/
+  public_repositories: 127
+  created_at: '2011-08-04T13:44:52Z'
+  pinned:
+  - repo:moduscreateorg/budgeting
+  - repo:moduscreateorg/react-dynamic-route-loading-es6
+  - repo:moduscreateorg/ionic-vue
+  - repo:moduscreateorg/beep
+  - repo:moduscreateorg/gimbal
+  - repo:moduscreateorg/extjs-reactjs-examples
+  linked_accounts:
+  - acct:x/moduscreate
+  entity: org:modus-create
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ModusCreateOrg
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

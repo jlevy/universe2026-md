@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/ashtom
+  platform: x
+  handle: ashtom
+  url: https://x.com/ashtom
+  display_name: Thomas Dohmke
+  bio: I am what AI wants to be. Also building the world's next developer platform @EntireHQ. 🚀 Former
+    CEO @GitHub.
+  location: Internet
+  website: https://github.com/ashtom
+  followers: 65208
+  following: 511
+  posts_count: 4273
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1664140592690118657/oEEyMqU0_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14237533/1775979289
+  created_at: '2008-03-27T18:34:54Z'
+  owner: person:thomas-dohmke
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692113530217001az2Z
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/ashtom
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ashtom
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

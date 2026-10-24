@@ -1,0 +1,186 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ben-dang
+  person: person:ben-dang
+  brief_bio:
+    text: Ben Dang is Senior Manager of Okta Developer Foundations, building automated, self-service developer
+      tooling for thousands of Okta employees. Dang spoke at GitHub Universe 2025 about secure, seamless
+      GitHub repository access.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 991a58f1e088805d456bfa84fa514cd3e5e2eca2357d82f33144261346ae134b
+    stale: false
+  headline: Okta
+  current_roles:
+  - Okta
+  expertise:
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1479d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1479d
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1479d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1479d
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1479d
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1479d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1479d
+  technologies:
+  - label: CircleCI
+    target: software:circleci
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: CircleCI
+      ref: person:ben-dang
+  interests:
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746250466906001zr09
+      ref: session:2025/sec1479d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746250466906001zr09
+      ref: session:2025/sec1479d
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746250466906001zr09
+      ref: session:2025/sec1479d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746250466906001zr09
+      ref: session:2025/sec1479d
+  - label: GitHub Secret Protection
+    target: term:github-product-2025/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746250466906001zr09
+      ref: session:2025/sec1479d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746250466906001zr09
+      ref: session:2025/sec1479d
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746250466906001zr09
+      ref: session:2025/sec1479d
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746250466906001zr09
+      ref: session:2025/sec1479d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746250466906001zr09
+      ref: session:2025/sec1479d
+  publications:
+  - title: Habitat and Docker
+    date: January 19, 2017
+    description: A look into what it takes to productionize container workloads and how Habitat can help
+      with that journey.
+    evidence:
+      url: https://www.linkedin.com/in/bendang
+      observed_at: '2026-10-24T08:41:52Z'
+  talks:
+  - session:2025/sec1479d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694047250886001DLGe
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

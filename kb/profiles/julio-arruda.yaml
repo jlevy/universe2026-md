@@ -1,0 +1,451 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:julio-arruda
+  person: person:julio-arruda
+  brief_bio:
+    text: Julio Arruda is Chief Architect and GenAI Lead at GFT Technologies and Wynxx, the first Brazilian
+      GitHub Star and a Microsoft MVP for 10 years. Arruda speaks at GitHub Universe 2026 about shifting
+      specifications from contracts to hypotheses.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: a5bdb5b432f7637ec82f37b7d8bcafb0763ae56e2f7f659726371653f440e078
+    stale: false
+  headline: Chief Architect at GFT Technologies
+  location: São José dos Campos - SP
+  current_roles:
+  - Chief Architect at GFT Technologies
+  expertise:
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1398h
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1398h
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1398h
+  programming_languages:
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:julioarruda/events-badge-generator
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Julio is the first Brazilian GitHub Star and has been a Microsoft MVP for 10 years.
+  - label: GitHub Star
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Julio is the first Brazilian GitHub Star and has been a Microsoft MVP for 10 years.
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777570603985001lWeR
+      ref: session:bld1398h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777570603985001lWeR
+      ref: session:bld1398h
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777570603985001lWeR
+      ref: session:bld1398h
+  open_source:
+  - repository: repo:julioarruda/curso-azure-devops
+    relation: owner
+    stars: 369
+  - repository: repo:julioarruda/sample_codespaces_tablet
+    relation: owner
+    stars: 19
+  - repository: repo:julioarruda/julioarruda
+    relation: owner
+    stars: 11
+  - repository: repo:julioarruda/events-badge-generator
+    relation: owner
+    stars: 4
+    primary_language: HTML
+  - repository: repo:wynxx-gft/vulnado
+    relation: contributor
+    stars: 0
+    primary_language: Java
+  - repository: repo:wynxx-gft/postgres-spring-multitenancy
+    relation: contributor
+    stars: 0
+    primary_language: Java
+  - repository: repo:wynxx-gft/jold-ccode-reviewer
+    relation: contributor
+    stars: 0
+    primary_language: Java
+  - repository: repo:gftaimpact/demo-restaurant
+    relation: contributor
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:gftaimpact/wynxx-pipelines
+    relation: contributor
+    stars: 1
+    primary_language: Java
+  education:
+  - school: FIAP
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  credentials:
+  - kind: honor
+    title: MVP Award
+    issuer: Microsoft
+    date: '2017-04-01T00:00:00.000Z'
+    description: '5002557'
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: honor
+    title: Microsoft Technical Audience Contributor
+    issuer: Microsoft
+    date: '2015-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: The Complete Jenkins Course For Developers and DevOps
+    issuer: Udemy
+    date: Mar 2017
+    url: https://www.udemy.com/certificate/UC-AMN1RO77/
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: 'Linux I: Conhecendo e utilizando o terminal - 4 horas'
+    issuer: Alura Cursos Online
+    date: Jul 2016
+    url: http://www.alura.com.br/certificate/2f1546b8794645bd436ec5f5f4d598d4
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: 'MCPS: Microsoft Certified Professional'
+    issuer: Microsoft
+    date: Oct 2014
+    url: http://www.microsoft.com/learning/en-us/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: Microsoft Certified Product Specialist (MCPS)
+    issuer: Microsoft
+    date: Oct 2014
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: Microsoft Certified Professional (MCP)
+    issuer: Microsoft
+    date: Oct 2014
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: 'Docker: Criando containers sem dor de cabeça - 8 horas'
+    issuer: Alura Cursos Online
+    url: https://cursos.alura.com.br/user/43614/course/docker/certificate
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: 'Exam 496: Administering Visual Studio Team Foundation Server'
+    issuer: Microsoft
+    url: https://www.youracclaim.com/badges/99d5edee-8aa6-444f-85f1-b3981f16c042
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: 'Git: Controle e compartilhe seu código - 16 horas'
+    issuer: Alura Cursos Online
+    url: http://www.alura.com.br/certificate/49f8d3521d2732c62b5314e18450cfb8
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: 'Integração Contínua: Maturidade e Produtividade no Desenvolvimento de Software - 16 horas'
+    issuer: Alura Cursos Online
+    url: https://cursos.alura.com.br/user/julio-arruda/course/integracao-continua-jenkins/certificate
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: certification
+    title: 'Linux II: Programas, processos e pacotes - 8 horas'
+    issuer: Alura Cursos Online
+    url: https://cursos.alura.com.br/user/43614/course/linux-ubuntu-processos/certificate
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  publications:
+  - title: 'Release Management: Automatizando implantações no Windows e Linux'
+    venue: .Net Magazine 119 / DevMedia
+    date: January 19, 2015
+    description: Veremos nesse artigo como funciona o Release Management e como o mesmo pode ajudar a
+      na automatização de processos.
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - title: A Importância de Comentar Código Fonte
+    venue: Artigonal
+    date: February 3, 2014
+    description: Neste artigo, vou tratar um pouco sobre a importância de se documentar o Código Fonte
+      de sua aplicação, e como isso , embora demande certo tempo, pode nos ajudar no futuro.
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  spoken_languages:
+  - Inglês
+  - Espanhol
+  activities:
+  - kind: project
+    title: Visual Studio Summit 2016
+    detail: Organização do Evento Visual Studio Summit 2016, realizado no dia 11/06/2016 na Microsoft
+      Brasil, realizado pela empresa 2PC. · Jun 2016
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Implantação e Configuração do Team Foundation Server e configuração de todo o processo de build
+      e Release
+    detail: '2016'
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Treinamento - Visão Geral sobre VSTS - Universidade Feevale
+    detail: '2016'
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: 1 semana de Gestão Tecnologia e Inovação - ETEP Faculdades
+    detail: Palestra Realizada na 1 Semana de Gestão de Tecnologia e Inovação da ETEP Faculdades em SJCampos.
+      · Jun 2015
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Visual Studio Summit 2015
+    detail: Evento voltado a desenvolvedores de Software, realizado anualmente.Minha palestra foi sobre
+      entrega continua de Releases. · Jun 2015
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Global Azure BootCamp SJC
+    detail: Global Azure BootCamp, evento global da Microsoft sobre a plataforma de computação em nuvem
+      Microsoft Azure. · Apr 2015
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Configuração e Implementação do Processo de Build e Release Automatizada - Marisa
+    detail: '2015'
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: DevBrasil Open Day 2014 - São José dos Campos
+    detail: O DevBrasil Open Day São José dos Campos é um evento regional que a comunidade DevBrasil irá
+      proporcionar a estudantes, iniciantes e profissionais de todo Vale do Paraíba.Além de promover o
+      networking, o encontro irá concentrar conhecimentos de tecnologias e ferramentas de desenvolvimento
+      .NET · Oct 2014
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Palestra - Conhecendo o Team Foundation Server
+    detail: Palestra Realizada para os alunos da Faculdade Anhanguera em São José dos Campos · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Palestra na Faculdade Anhanguera SJC - Monitoramento de Banco de Dados Com NAGIOS
+    detail: Palestra para os alunos da faculdade Anhaguera de São José dos Campos sobre Monitoramento
+      de Banco de dados com a ferramenta NAGIOS. · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Global Windows Azure BootCamp 2014
+    detail: Palestrante sobre Autenticação de Usuários com Windows Azure Mobile Services · Mar 2014
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Sistema de Gestão de Senhas - Windows Phone
+    detail: Sistema útil para pessoas que desejam guardar todas as suas senhas em um único lugar e separada
+      por grupos. · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Sistema VRE - Via Rápida Empresas
+    detail: Sistema utilizado para abertura e licenciamento de empresas no Estado de São Paulo · Aug 2013
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: project
+    title: Integração Ecommerce Sonda Supermercados
+    detail: Desenvolvimento de Proceso de Integração e Gerenciamento de dados e arquivos Ecommerce x Sonda
+      e Sonda x Ecommerce · Jan 2013
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: ALM - Gestão de código fonte
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: C# (C Sharp) - ASP.NET MVC Avançado
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Construindo aplicações web com WebMatrix
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: DevOpenDay 2013 SJCampos
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Entendendo Windows Azure
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Entendendo desenvolvimento para o Windows Phone 7
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Introdução a Application Lifecycle Management(ALM)
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Introdução à Business Intelligence
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: JQuery Completo
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Microsoft Student to Business
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: The Complete Jenkins Course For Developers and DevOps - Udemy
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Treinamento de Brigada de Incêndio
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Treinamento de Liderança
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: organization
+    title: .Net Coders
+    detail: Coordenador do .Net Coders, comunidade criada por Leonardo Lourenço e filiada ao INETA.Responsável
+      pela parte de conteúdo do grupo e moderador no facebook , fórum e blog. · Jul 2013 · Jan 2015
+    evidence:
+      url: https://www.linkedin.com/in/julioarrudac
+      observed_at: '2026-10-24T08:11:39Z'
+  recent_writing:
+  - title: 'Revolução no Código: GitHub Copilot Eleva o Padrão no "Universe" da IA'
+    url: https://pt.linkedin.com/pulse/revolu%C3%A7%C3%A3o-c%C3%B3digo-github-copilot-eleva-o-padr%C3%A3o-universe-julio-arruda-6zqkf
+    published: '2023-11-10T00:00:00.000Z'
+    channel: linkedin
+    summary: A GitHub é uma empresa que atua diretamente na área de desenvolvimento de software, que nasceu
+      há anos atras com o…
+  - title: Oque é esse negócio de Cloud Computing?
+    url: https://pt.linkedin.com/pulse/oque-%C3%A9-esse-neg%C3%B3cio-de-cloud-computing-julio-arruda
+    published: '2021-03-03T00:00:00.000Z'
+    channel: linkedin
+    summary: Computação em nuvem é algo que hoje está cada vez mais sendo utilizado em nossos projetos
+      de Software. Tenho notado em…
+  - title: Empresas de Sobrinhos
+    url: https://pt.linkedin.com/pulse/empresas-de-sobrinhos-julio-cesar-bueno-de-arruda
+    published: '2016-03-21T00:00:00.000Z'
+    channel: linkedin
+    summary: No mundo de TI, é comum dizermos que sobrinhos fazem serviço ruim, gambiarra, etc. Isso já
+      se transformou em um tipo de…
+  - title: Controlando a Versão do seu banco de Dados
+    url: https://pt.linkedin.com/pulse/controlando-vers%C3%A3o-do-seu-banco-de-dados-julio-cesar-bueno-de-arruda
+    published: '2016-02-29T00:00:00.000Z'
+    channel: linkedin
+    summary: Falamos muito atualmente sobre controle de versão de nossas aplicações, automação de deploy,
+      entre outros assuntos…
+  talks:
+  - session:bld1398h
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683652303283001DEOr
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: julioarruda
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

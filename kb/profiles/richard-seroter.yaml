@@ -1,0 +1,402 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:richard-seroter
+  person: person:richard-seroter
+  brief_bio:
+    text: Richard Seroter is Senior Director and Chief Evangelist at Google Cloud, overseeing Go, Dart,
+      Flutter and Genkit along with open source, developer relations and documentation programs. Seroter
+      writes a daily reading list and speaks at GitHub Universe 2026 on AI-assisted development.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recent_writing
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: e6cf6022046d35a00abbd94e3abcd52567d16a66fa94b92b5077379b1c6da96d
+    stale: false
+  headline: Senior Director and Chief Evangelist at Google
+  location: San Diego, CA
+  current_roles:
+  - Senior Director and Chief Evangelist at Google
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  technologies:
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+    - ref: session:bld2019a
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1134m
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+    - ref: session:bld2019a
+  programming_languages:
+  - label: Java
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:rseroter/roofing-agent-app
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:rseroter/trello-release-notes-generator
+  interests:
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: Supply Chain Security
+    target: term:github-product/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  open_source:
+  - repository: repo:rseroter/roofing-agent-app
+    relation: owner
+    stars: 17
+    primary_language: Java
+  - repository: repo:rseroter/trello-release-notes-generator
+    relation: owner
+    stars: 14
+    primary_language: JavaScript
+  - repository: repo:rseroter/pluralsight-spring-cloudconfig-wa-tolls
+    relation: owner
+    stars: 12
+  - repository: repo:rseroter/anthos-seroter-config-repo-base
+    relation: owner
+    stars: 3
+  education:
+  - school: University of Colorado at Boulder
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  publications:
+  - title: Using Force.com Integration APIs to Connect Your Applications
+    venue: Pluralsight
+    date: March 9, 2016
+    description: Salesforce.com continues grow in usage, and it's more important than ever to connect
+      your applications to your cloud environment. In this course, we look at the various integration
+      APIs that Salesforce offers. We'll go deep on the SOAP API, REST API, Bulk API, Streaming API, Outbound
+      Messaging and Apex Callouts. Along the way, I'll help you decide when to use which API, and how
+      to develop solutions based on each one.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  - title: Amazon Web Services Databases in Depth
+    venue: Pluralsight
+    date: June 23, 2015
+    description: AWS developers have a lot of different databases to choose from, and this course helps
+      you learn how to use their relational database (Amazon RDS), NoSQL database (Dynamo DB), and data
+      warehouse (Amazon Redshift). For each database, we look at how to provision it, what the costs are,
+      how to scale it, how to handle failures, and how to administer it. By the end of it, you should
+      be comfortable with when to use which type of database, and how to set them up successfully.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  - title: Cloud Foundry for Developers
+    venue: Pluralsight
+    date: January 7, 2015
+    description: Building, deploying and managing modern web applications? Cloud Foundry is a leading
+      open source public/private Platform-as-a-Service (PaaS) for running container-based web apps. In
+      this course, we look at everything you need to know to be a successful Cloud Foundry user. The course
+      covers PaaS application best practices, Cloud Foundry architecture, deploying applications, scaling
+      applications, gracefully handling application failures, and much more.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  - title: 'DevOps: The Big Picture'
+    venue: Pluralsight
+    date: July 28, 2014
+    description: DevOps has the potential to completely transform how an organization delivers technology
+      services to its customers. But what does “DevOps” really mean? How can you get started on this transformation?
+      What tools and technologies can assist in the adoption of a DevOps culture? This course looks at
+      the core principles of DevOps, how to transform to a DevOps culture, and which technologies can
+      help you along the way.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  - title: Productivity Tips for the Busy Tech Professional
+    venue: Pluralsight
+    date: January 8, 2014
+    description: A course that looks at how to introduce efficiency and strategic thinking into daily
+      activities. Includes 17 tips dealing with time management, planning, building relationships, and
+      more. Each tip looks at a myth about productivity, the reality of the situation, and a series of
+      examples of the principle in action.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  - title: Optimizing and Managing Distributed Systems on AWS
+    venue: Pluralsight
+    date: August 30, 2013
+    description: A continuation of the previous course where we look at how to improve application performance
+      while focusing on maintainability. Students introduce application monitoring to the system and see
+      how to AutoScale based on performance metrics. Application deployment strategies are discussed and
+      we see how to use AWS Elastic Beanstalk to quickly deploy and update application code. Then students
+      focus on performance by introducing Content Delivery Networks (CDNs) and application cache to the
+      solution. In each module, students learn about the core AWS technologies and best practices for
+      each.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  - title: Architecting Highly Available Systems on AWS
+    venue: Pluralsight
+    date: July 31, 2013
+    description: A thorough walkthrough of how to build fault tolerance, resilient cloud systems on AWS.
+      Students construct a solution made up of redundant storage in EBS, databases with RDS and DynamoDB,
+      queues with SQS, compute with EC2, load balancing through ELB, and DNS via Route 53. Each individual
+      module focuses on best practices and deployment guidance for deploying bullet-proof, secure cloud
+      systems.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  - title: Patterns of Cloud Integration
+    venue: Pluralsight
+    date: April 9, 2013
+    description: This course looks at how to do application and data integration with cloud endpoints.
+      I cover a wide range of technologies as I investigate patterns for remote procedure calls, asynchronous
+      messaging, shared databases, and file transfers. We look at how to securely share information in
+      scenarios featuring “ground to cloud”, “cloud to cloud” and “cloud to ground.” Technologies include
+      Windows Azure, Force.com, Mulesoft Cloud Hub, Informatica Cloud, AWS, and more.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  - title: Force.com for Developers
+    venue: Pluralsight
+    date: August 24, 2012
+    description: In this course, I walk through the core capabilities of the popular platform that sits
+      beneath Salesforce.com. We see how to configure the application and then customize it. In the configuration-oriented
+      modules, I show you how to model data, build reports, apply security and invoke native SOAP/REST
+      interfaces. In the customization-oriented modules, I highlight how to build custom Visualforce UI
+      screens, write custom Apex code, and develop custom SOAP/REST services.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  - title: AWS Developer Fundamentals
+    venue: Pluralsight
+    date: February 23, 2012
+    description: In this course, I took a look at Amazon Web Services and how developers can use this
+      cloud platform for building rich applications. I covered compute services (EC2), storage services
+      (EBS, S3), database services (SimpleDB, RDS, DynamoDB), messaging services (SQS, SNS) and management
+      services (Management Console, IAM, CloudFormation, Elastic Beanstalk). A key aspect of the course
+      is that each technology is demonstrated first in the Management Console, then the native API, and
+      finally in the .NET SDK. I did this so that course viewers could see all the ways to interact with
+      each service.
+    evidence:
+      url: https://www.linkedin.com/in/seroter
+      observed_at: '2026-10-24T08:15:08Z'
+  recent_writing:
+  - title: Daily Reading List – October 23, 2026 (#895)
+    url: https://seroter.com/2026/10/23/daily-reading-list-october-23-2026-895/
+    published: '2026-10-23T23:18:44Z'
+    channel: blog
+  - title: Daily Reading List – October 22, 2026 (#894)
+    url: https://seroter.com/2026/10/22/daily-reading-list-october-22-2026-894/
+    published: '2026-10-22T23:13:38Z'
+    channel: blog
+  - title: Daily Reading List – October 21, 2026 (#893)
+    url: https://seroter.com/2026/10/21/daily-reading-list-october-21-2026-892/
+    published: '2026-10-22T00:01:49Z'
+    channel: blog
+  - title: Daily Reading List – October 20, 2026 (#892)
+    url: https://seroter.com/2026/10/20/daily-reading-list-october-20-2026-892/
+    published: '2026-10-20T23:55:53Z'
+    channel: blog
+  - title: Daily Reading List – October 19, 2026 (#891)
+    url: https://seroter.com/2026/10/19/daily-reading-list-october-19-2026-891/
+    published: '2026-10-19T23:32:18Z'
+    channel: blog
+  - title: Daily Reading List – October 16, 2026 (#890)
+    url: https://seroter.com/2026/10/16/daily-reading-list-october-16-2026-890/
+    published: '2026-10-16T23:31:36Z'
+    channel: blog
+  - title: Daily Reading List – October 15, 2026 (#889)
+    url: https://seroter.com/2026/10/15/daily-reading-list-october-15-2026-889/
+    published: '2026-10-15T23:07:19Z'
+    channel: blog
+  - title: Your agents need a platform
+    url: https://seroter.com/2026/10/15/your-agents-need-a-platform/
+    published: '2026-10-15T20:35:38Z'
+    channel: blog
+  - title: Daily Reading List – October 14, 2026 (#888)
+    url: https://seroter.com/2026/10/14/daily-reading-list-october-14-2026-888/
+    published: '2026-10-14T23:52:36Z'
+    channel: blog
+  - title: Daily Reading List – October 13, 2026 (#887)
+    url: https://seroter.com/2026/10/13/daily-reading-list-october-13-2026-887/
+    published: '2026-10-14T00:03:43Z'
+    channel: blog
+  - title: |-
+      I goofed around with the new Google ADK Visual Agent Builder over the weekend, and think it has potential.
+
+      This post goes into great depth on this web-based IDE for building agents, and how to use it.
+
+      https://t.co/Ss5fXUWChy https://t.co/awGwJS8DTx
+    url: https://twitter.com/48529642/status/1988030158280761422
+    published: '2025-11-10T23:45:00Z'
+    channel: x
+  - title: |-
+      Uh, this is amazing. The Google ADK (v1.18.0) just added a visual agent builder into the web UI!
+
+      Different agent styles, chat-based assistance, support for adding built-in or custom tools, and more. This changes my approach for building an agent today!
+      https://t.co/JC34OiR2pZ ht
+    url: https://twitter.com/48529642/status/1987282334048211219
+    published: '2025-11-08T22:13:25Z'
+    channel: x
+  - title: |-
+      About half our code at Google is AI generated at this point. Engineers review every character, and choose what to accept into our codebase.
+
+      #GeminiAtWork https://t.co/NE0NBHRgEk
+    url: https://twitter.com/48529642/status/1976334807350304920
+    published: '2025-10-09T17:11:51Z'
+    channel: x
+  - title: |-
+      Um, this is awesome.
+
+      Fire up the Gemini CLI and install the nano-banana extension. I just did. Generate or edit images, create icons, even produce technical diagrams or mockups.
+      https://t.co/dz4mj3ZX2w https://t.co/g4vZ1qJMNe
+    url: https://twitter.com/48529642/status/1973809454564134970
+    published: '2025-10-02T17:57:00Z'
+    channel: x
+  - title: "Our engineers supporting the Agent Development Kit are crushing it right now. \n\nComprehensive\
+      \ docs (https://t.co/zhuzfmjsQb), and eight excellent agent samples that show off different interaction\
+      \ types, complexity, and agent types: https://t.co/jrQGar5qtP https://t.co/UveGAfthhB"
+    url: https://twitter.com/48529642/status/1912621143103795261
+    published: '2025-04-16T21:36:29Z'
+    channel: x
+  talks:
+  - session:bld1134m
+  - session:bld2019a
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1789631318147001LxaO
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: rseroter
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

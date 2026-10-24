@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/speakeasyapi
+  platform: linkedin
+  handle: company/speakeasyapi
+  url: https://www.linkedin.com/company/speakeasyapi
+  display_name: Speakeasy
+  bio: The enterprise control plane for AI. Secure and centrally manage MCPs, Skills, and Assistants your
+    whole company can use, with fine-grained permissions, threat detection, and full observability.
+  website: https://www.speakeasy.com/
+  followers: 5526
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFjkF0-Zr7zBQ/company-logo_200_200/B4EZ_xK9E3HsAM-/0/1786457608705/speakeasyapi_logo?e=2147483647&v=beta&t=jh2BdRzJ8al5wEkfd0yLBkUlZe_f8UmpmN67CgT0XEI
+  owner: org:speakeasy
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/sagar-batchu-981b3738
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/speakeasyapi
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

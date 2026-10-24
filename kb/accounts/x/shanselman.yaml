@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/shanselman
+  platform: x
+  handle: shanselman
+  url: https://x.com/shanselman
+  display_name: Scott Hanselman 🌮
+  bio: 'VP, Member of Technical Staff @ MSFT/GitHub - Code, OSS, STEM, Beyoncé, T1D, #DevRel YouTube/TikTok
+    and listen to the @Hanselminutes tech podcast'
+  location: Portland, Oregon
+  website: https://hanselman.com/
+  followers: 335691
+  following: 9786
+  posts_count: 88727
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1854968611628367872/5YTRWqck_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/5676102/1398280381
+  created_at: '2007-05-01T05:55:26Z'
+  owner: person:scott-hanselman
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694020705651001C74o
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/shanselman
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

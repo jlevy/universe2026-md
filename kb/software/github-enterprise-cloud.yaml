@@ -1,0 +1,28 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:github-enterprise-cloud
+  name: GitHub Enterprise Cloud
+  aliases:
+  - GitHub Enterprise Cloud
+  kind: github_product
+  vendor: org:github
+  product_term: term:github-product/github-enterprise-cloud
+  mentioned_in:
+  - person:richard-bullington-mcguire
+  - person:steven-ewing
+  - person:yasuhiro-osaki
+  - session:2023/dev2540g
+  - session:2024/dev1349b
+  - session:2024/dev1443m
+  - session:2024/dev1938d
+  - session:2024/sec1758b
+  - session:2025/sec1364w
+  - session:ldr1765b
+  - session:tru1672b
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

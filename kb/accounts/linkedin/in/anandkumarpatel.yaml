@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/anandkumarpatel
+  platform: linkedin
+  handle: in/anandkumarpatel
+  url: https://www.linkedin.com/in/anandkumarpatel
+  display_name: Anand Patel
+  bio: 'Salesforce Savant; Mulesoft Mage; Runnable Royalty; Nvidia Ninja: Kubernetes Kaptain;…'
+  location: San Francisco Bay Area
+  followers: 1758
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQG-b4kzqHVv2w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517737357816?e=2147483647&v=beta&t=gcgT3GgeNtqq-WhSGsv9F2GydMB0VvO_EcDWwpJiZVc
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQEDpu7k5nYRfg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517737358636?e=2147483647&v=beta&t=D8Yuniwj1KfCL3APzrHzsN79H5-EuG0ZJXEzauIGJdQ
+  owner: person:anandkumar-patel
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721157529191001sswL
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/anandkumarpatel
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

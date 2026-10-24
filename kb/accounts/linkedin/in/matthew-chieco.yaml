@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/matthew-chieco
+  platform: linkedin
+  handle: in/matthew-chieco
+  url: https://www.linkedin.com/in/matthew-chieco
+  display_name: Matthew Chieco
+  location: Charlotte
+  followers: 445
+  connections: 444
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQHthycyuTJeOw/profile-displayphoto-shrink_200_200/B4EZU4TiBBH0AY-/0/1740406399336?e=2147483647&v=beta&t=bHCZWcpN-mFM5LLTnFQbGi-RExMpGuFxzKxTGS996zQ
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQFSuWGYeMxbtQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1534876225269?e=2147483647&v=beta&t=lb_dhQVlWcGEjZaZKB5hBxnR06ItguKp2Vkfa-70-UA
+  owner: person:matthew-chieco
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694003303957001bwOU
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/matthew-chieco
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

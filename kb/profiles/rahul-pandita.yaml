@@ -1,0 +1,304 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:rahul-pandita
+  person: person:rahul-pandita
+  brief_bio:
+    text: Rahul Pandita is affiliated with Microsoft and was a Staff Researcher at GitHub Next, leading
+      the Copilot Voice project team, and has published on inferring constraints from natural language
+      API descriptions. Pandita spoke at GitHub Universe 2023 about how AI agents will reshape developer
+      workflows.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: add491bd5afc4430c905383df9eaf86616a8a7e39bf8084b8f651005b5436a41
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2853p
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2853p
+  - label: Machine Learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2853p
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2853p
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2853p
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:rahul-pandita
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695684320529001ovVW
+      ref: session:2023/ai2853p
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695684320529001ovVW
+      ref: session:2023/ai2853p
+  - label: Machine learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695684320529001ovVW
+      ref: session:2023/ai2853p
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695684320529001ovVW
+      ref: session:2023/ai2853p
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695684320529001ovVW
+      ref: session:2023/ai2853p
+  education:
+  - school: North Carolina State University
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  publications:
+  - title: A Cross-Tool Communication Study on Program Analysis Tool Notifications
+    venue: FSE
+    date: '2016'
+    description: Program analysis tools use notifications to communicate with developers, but previous
+      research suggests that developers encounter challenges that impede this communication. This paper
+      describes a qualitative study that identifies 10 kinds of challenges that cause notifications to
+      miscommunicate with developers. Our resulting notification communication theory reveals that many
+      challenges span multiple tools and multiple levels of developer experience. Our results suggest
+      that, for example, future tools that model developer experience could improve communication and
+      help developers build more accurate mental models.
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  - title: Inferring Temporal Constraints from Natural Language API Descriptions.
+    venue: ICSME
+    date: '2016'
+    description: 'Temporal constraints of an Application Programming Interface (API) are the allowed sequences
+      of method invocations in the API governing the secure and robust operation of client software using
+      the API. These constraints are typically described informally in natural language API documents,
+      and therefore are not amenable to existing constraint-checking tools. Manually identifying and writing
+      formal temporal constraints from API documents can be prohibitively time-consuming and error-prone.
+      To address this issue, we propose ICON: an approach based on Machine Learning (ML) and Natural Language
+      Processing (NLP) for identifying and inferring formal temporal constraints. To evaluate our approach,
+      we use ICON to infer and formalize temporal constraints from the Amazon S3 REST API, the PayPal
+      Payment REST API, and the java.io package in the JDK API. Our results indicate that ICON can effectively
+      identify temporal constraint sentences (from over 4000 human annotated API sentences) with the average
+      79.0% precision and 60.0% recall. Furthermore, our evaluation demonstrates that ICON achieves an
+      accuracy of 70% in inferring 77 formal temporal constraints from these APIs'
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  - title: 'Veteran Developers’ Contributions and Motivations: An Open Source Perspective.'
+    venue: VL/HCC
+    date: '2016'
+    description: Decades of psychology and sociology research demonstrate that humans change cognitively
+      and socially as they age, so it stands to reason that software developers likewise undergo changes
+      that may affect their work. In this paper, we investigate age-related differences in software developers
+      through the lens of open source software, which is built in communities that tend not to include
+      older software developers. We report on the results of a qualitative panel discussion, then quantitatively
+      analyze such veteran developers' activities on StackOverflow, to understand why few veteran software
+      developers' participate in open source, and how their contributions to software development differ
+      from their younger peers. Our results suggest that veterans' are less motivated by social interactions
+      than their younger peers. Our results also suggest that veterans could contribute a broader knowledge
+      of software development than their younger peers, as well as knowledge of old technologies that
+      can be applied to newer technologies.
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  - title: Discovering likely mappings between APIs using text mining
+    venue: 2015 IEEE 15th International Working Conference on Source Code Analysis and Manipulation (SCAM)
+    date: Sep 2015
+    description: 'Developers often release different versions of their applications to support various
+      platform/programming-language application programming interfaces (APIs). To migrate an application
+      written using one API (source) to another API (target), a developer must know how the methods in
+      the source API map to the methods in the target API. Given a typical platform or language exposes
+      a large number of API methods, manually writing API mappings is prohibitively resource-intensive
+      and may be error prone. Recently, researchers proposed to automate the mapping process by mining
+      API mappings from existing code-bases. However, these approaches require as input a manually ported
+      (or at least functionally similar) code across source and target APIs. To address the shortcoming,
+      this paper proposes TMAP: Text Mining based approach to discover likely API mappings using the similarity
+      in the textual description of the source and target API documents. To evaluate our approach, we
+      used TMAP to discover API mappings for 15 classes across: 1) Java and C# API, and 2) Java ME and
+      Android API. We compared the discovered mappings with state-of-the-art source code analysis based
+      approaches: Rosetta and StaMiner. Our results indicate that TMAP on average found relevant mappings
+      for 57% more methods compared to previous approaches. Furthermore, our results also indicate that
+      TMAP on average found exact mappings for 6.5 more methods per class with a maximum of 21 additional
+      exact mappings for a single class as compared to previous approaches.'
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  - title: 'Bespoke Tools: Adapted to the Concepts Developers Know'
+    venue: ESEC/FSE 2015 Proceedings
+    date: '2015'
+    description: Even though di?erent developers have varying levels of expertise, the tools in one developer's
+      integrated development environment (IDE) behave the same as the tools in every other developers'
+      IDE. In this paper, we propose the idea of automatically customizing development tools by modeling
+      what a developer knows about software concepts. We then sketch three such bespoke tools and describe
+      how development data can be used to infer what a developer knows about relevant concepts. Finally,
+      we describe our ongoing efforts to make bespoke program analysis tools that customize their noti?cations
+      to the developer using them.
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  - title: Enabling Forensics by Proposing Heuristics to Identify Mandatory Log Events
+    venue: HotSoS
+    date: '2015'
+    description: Software engineers often implement logging mechanisms to debug software and diagnose
+      faults. As modern software manages increasingly sensitive data, logging mechanisms also need to
+      capture detailed traces of user activity to enable forensics and hold users accountable. Existing
+      techniques for identifying what events to log are often subjective and produce inconsistent results.
+      The objective of this study is to help software engineers strengthen forensic-ability and user accountability
+      by 1) systematically identifying mandatory log events through processing of unconstrained natural
+      language software artifacts; and 2) proposing empirically-derived heuristics to help determine whether
+      an event must be logged. We systematically extract each verb and object being acted upon from natural
+      language software artifacts for three open-source software systems. We extract 3,513 verb-object
+      pairs from 2,128 total sentences studied. Two raters classify each verb-object pair as either a
+      mandatory log event or not. Through grounded theory analysis of discussions to resolve disagreements
+      between the two raters, we develop 12 heuristics to help determine whether a verb-object pair describes
+      an action that must be logged. Our heuristics help resolve 882 (96%) of 919 disagreements between
+      the two raters. In addition, our results demonstrate that the proposed heuristics facilitate classification
+      of 3,372 (96%) of 3,513 extracted verb-object pairs as either mandatory log events or not.
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  - title: 'WHYPER: Towards Automating Risk Assessment of Mobile Applications'
+    venue: USENIX Security Symposium
+    date: Aug 2013
+    description: Application markets such as Apple’s App Store and Google’s Play Store have played an
+      important role in the popularity of smartphones and mobile devices. However, keeping malware out
+      of application markets is an ongoing challenge. While recent work has developed various techniques
+      to determine what applications do, no work has provided a technical approach to answer, what do
+      users expect? In this paper, we present the first step in addressing this challenge. Specifically,
+      we focus on permissions for a given application and examine whether the application description
+      provides any indication for why the application needs a permission. We present WHYPER, a framework
+      using Natural Language Processing (NLP) techniques to identify sentences that describe the need
+      for a given permission in an application description. WHYPER achieves an average precision of 82.8%,
+      and an average recall of 81.5% for three permissions (address book, calendar, and record audio)
+      that protect frequently used security and privacy sensitive resources. These results demonstrate
+      great promise in using NLP techniques to bridge the semantic gap between user expectations and application
+      functionality, further aiding the risk assessment of mobile applications.
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  - title: Literature Review of Testing Techniques for Medical Device Software
+    venue: Medical Cyber-Physical System (MCPS) Workshop 2013
+    date: March 7, 2013
+    description: As software-controlled medical devices evolve from monolithic devices to modular Medical
+      Cyber-Physical Systems (MCPS), the software controls become more complex. An undesirable byproduct
+      of increased complexity is added likelihood for failures in MCPS. Software testing has been used
+      as a means to ensure high-quality software, and is also applicable to the software components of
+      these MCPS. In this paper, we review existing software-testing techniquesthat expose failures in
+      software-controlled medical devices. In particular, we categorize the failures in existing software-controlled
+      medical devices. Then, we use the Systematic Literature Review(SLR) method to compare existing research
+      studies against the categorized failures. Finally, we suggest improvements that can help future
+      research studies of complex medical devices such as MCPS.
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  - title: Inferring Method Specifications from Natural Language API Descriptions
+    venue: ICSE 2012 Proceedings of the 2012 International Conference on Software Engineering
+    date: '2012'
+    description: Application Programming Interface (API) documents are a typical way of describing legal
+      usage of reusable software libraries, thus facilitating software reuse. However, even with such
+      documents, developers often overlook some documents and build software systems that are inconsistent
+      with the legal usage of those libraries. Existing software verification tools require formal specifications
+      (such as code contracts), and therefore cannot directly verify the legal usage described in natural
+      language text in API documents against code using that library. However, in practice, most libraries
+      do not come with formal specifications, thus hindering tool-based verification. To address this
+      issue, we propose a novel approach to infer formal specifications from natural language text of
+      API documents.
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  - title: Guided Test Generation for Coverage Criteria
+    venue: Proc. 26th IEEE International Conference on Software Maintenance (ICSM 2010)
+    date: Sep 2010
+    description: Test coverage criteria including boundary-value and logical coverage such as Modified
+      Condition/Decision Coverage (MC/DC) have been increasingly used in safety-critical or mission-critical
+      domains, complementing those more popularly used structural coverage criteria such as block or branch
+      coverage. However, existing automated test-generation approaches often target at block or branch
+      coverage for test generation and selection, and therefore do not support testing against boundary-value
+      coverage or logical coverage. To address this issue, we propose a general approach that uses instrumentation
+      to guide existing test-generation approaches to generate test inputs that achieve boundary-value
+      and logical coverage for the program under test. Our preliminary evaluation shows that our approach
+      effectively helps an approach based on Dynamic Symbolic Execution (DSE) to improve boundary-value
+      and logical coverage of generated test inputs.
+    evidence:
+      url: https://www.linkedin.com/in/panditarahul
+      observed_at: '2026-10-24T08:47:05Z'
+  talks:
+  - session:2023/ai2853p
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694113825555001nfyA
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

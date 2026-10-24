@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/commonwealthbank
+  platform: linkedin
+  handle: company/commonwealthbank
+  url: https://www.linkedin.com/company/commonwealthbank
+  display_name: Commonwealth Bank
+  bio: 'Australia’s leading provider of financial services including retail, premium, business and institutional
+    banking, funds management, superannuation, insurance, investment and sharebroking products and services.
+    We are a business with more than 800,000 shareholders and over 52,000 employees. We offer a full range
+    of financial services to help all Australians build and manage their finances. Connect with us, we''d
+    like to hear from you: facebook.com/commonwealthbank youtube.com/commbank youtube.com/commbankbusiness
+    instagram.com/commbank Our Community Guidelines can be found at: https://www.commbank.com.au/support/social-networks.html
+    For information on our Privacy Policy visit https://www.commbank.com.au/support/privacy'
+  website: https://www.commbank.com.au/
+  followers: 718554
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGLodxq_N-mcA/company-logo_200_200/company-logo_200_200/0/1692243810359/commonwealthbank_logo?e=2147483647&v=beta&t=1qtH7nP2vZ6JTLhh19BcbAibjteMkrdO9q59trNLi1g
+  owner: org:commonwealth-bank
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/heylau
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/commonwealthbank
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

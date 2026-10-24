@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/alexis-abril
+  platform: linkedin
+  handle: in/alexis-abril
+  url: https://www.linkedin.com/in/alexis-abril
+  display_name: Alexis Abril
+  bio: I design scalable platform architectures and help operationalize emerging technologies…
+  location: Dallas
+  followers: 1889
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHLIcMOL14B4w/profile-displayphoto-scale_200_200/B56Z_Jl8rfHUAc-/0/1785793597178?e=2147483647&v=beta&t=UJRQ5erYL0pILK2aQ_VkyKFTPtM0REBLPF8naYcF6Gs
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGhrdbQGCtwZA/profile-displaybackgroundimage-shrink_200_800/B56Z_8GzMpHUAQ-/0/1786641069113?e=2147483647&v=beta&t=RtE2Pouid3f6TYGOlpEKm-VfPeACTW46jeLwxrkqKQ0
+  owner: person:alexis-abril
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686627101592001TpEu
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alexis-abril
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

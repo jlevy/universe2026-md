@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jeffrey-opdam
+  platform: linkedin
+  handle: in/jeffrey-opdam
+  url: https://www.linkedin.com/in/jeffrey-opdam
+  display_name: Jeffrey Opdam
+  location: The Randstad
+  followers: 1204
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQFkeRs58fOmsQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517698826431?e=2147483647&v=beta&t=cfEH9uIsKp7tGUuJ_vaszC0mZL5CSnmQJ16bUk-AMJc
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:jeffrey-opdam
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1720780935919001LLRs
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeffrey-opdam
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:copilot-coding-agent
+  name: Copilot coding agent
+  aliases:
+  - Copilot coding agent
+  - GitHub Copilot coding agent
+  kind: github_product
+  vendor: org:github
+  mentioned_in:
+  - session:2025/bld1103d
+  - session:2025/bld1664d
+  - session:2025/bld1785s
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

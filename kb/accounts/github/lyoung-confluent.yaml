@@ -1,0 +1,49 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:lyoung-confluent
+  login: lyoung-confluent
+  kind: user
+  url: https://github.com/lyoung-confluent
+  name: Luke Young
+  bio: Work account for @bored-engineer
+  followers: 9
+  public_repositories: 2
+  created_at: '2021-09-27T17:12:00Z'
+  contributions_last_year:
+    total: 114
+    commits: 56
+    pull_requests: 36
+    issues: 8
+    reviews: 2
+  starred_repositories: 10
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  contributed_to:
+  - repo:osquery/osquery
+  - repo:hvac/hvac
+  - repo:hashicorp/terraform-provider-aws
+  - repo:hashicorp/terraform-provider-kubernetes
+  - repo:hashicorp/terraform-provider-vault
+  organization_logins:
+  - confluentinc
+  entity: person:luke-young
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: lyoung-confluent
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

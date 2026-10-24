@@ -1,0 +1,270 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:joe-devon
+  person: person:joe-devon
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes Joe Devon as Chair at GAAD Foundation.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: f902360cad258dc6fc14e05a87df28a6b74f1424abc822ceb232d6735dfc601a
+    stale: false
+  headline: GAAD Foundation
+  current_roles:
+  - GAAD Foundation
+  expertise:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Machine Learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  interests:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Machine learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  credentials:
+  - kind: honor
+    title: Named as member of socalTECH 50
+    issuer: SoCalTech.com
+    date: '2015-11-01T00:00:00.000Z'
+    description: '"Who are the top 50 people to watch in Southern California? The socalTECH 50 is aimed
+      at identifying and highlighting the top 50 people in the technology industry here, who are most
+      likely to create the next big thing, produce the next big exit, or influence the industry in a significant
+      way." http://www.socaltech.com/announcing_the_socaltech_______edition/s-0062891.html'
+    evidence:
+      url: https://www.linkedin.com/in/joedevon
+      observed_at: '2026-10-24T08:45:44Z'
+  - kind: certification
+    title: CSPO
+    issuer: Scrum Alliance
+    date: Jan 2019
+    url: http://bcert.me/sevscrrys
+    evidence:
+      url: https://www.linkedin.com/in/joedevon
+      observed_at: '2026-10-24T08:45:44Z'
+  publications:
+  - title: Towards a Better Semantic and Accessible Web
+    venue: PHP Architect
+    date: May 2014
+    description: May 15, 2014 is the third annual Global Accessibility Awareness Day (GAAD). The goal
+      is to help raise awareness for some of the original goals for the web that most people, devs included,
+      are unaware of and how they relate to accessibility, changing the world, and discrimination. So
+      grab a cup of coffee, sit back, and prepare for this article to take you to some fascinating places
+      you have likely never explored.
+    evidence:
+      url: https://www.linkedin.com/in/joedevon
+      observed_at: '2026-10-24T08:45:44Z'
+  spoken_languages:
+  - English
+  - French
+  - Hebrew
+  - Yiddish
+  - PHP
+  - SQL
+  - NoSQL
+  - Perl
+  - JavaScript
+  - Python
+  activities:
+  - kind: volunteering
+    title: Co-Founder
+    detail: Global Accessibility Awareness Day · Science and Technology · http://www.mysqltalk.com/gaad.html
+    evidence:
+      url: https://www.linkedin.com/in/joedevon
+      observed_at: '2026-10-24T08:45:44Z'
+  - kind: volunteering
+    title: Leadership team
+    detail: Free Lunch Friday · Science and Technology · Apr 2013 · - Nov 2013 · 8 months · Apr 2013
+    evidence:
+      url: https://www.linkedin.com/in/joedevon
+      observed_at: '2026-10-24T08:45:44Z'
+  recent_writing:
+  - title: 'JDOT #17: Anthropic Strikes Back, open source AI rocks, and my swarm writes code while I sleep.'
+    url: https://www.linkedin.com/pulse/jdot-17-anthropic-strikes-back-open-source-ai-rocks-my-joe-devon-v008c
+    published: '2026-10-05T00:00:00.000Z'
+    channel: linkedin
+    summary: Plus a new pod with Darryl Adams and a big AIMAC update The more technical parts are at the
+      end under Nerd Corner, so…
+  - title: 'JDOT #16: He Told His AI, "I Can Hear the YouTube You''re Playing"'
+    url: https://www.linkedin.com/pulse/jdot-16-he-told-his-ai-i-can-hear-youtube-youre-playing-joe-devon-irh1c
+    published: '2026-08-24T00:00:00.000Z'
+    channel: linkedin
+    summary: 'In today''s edition: PACE, our AI research paper has been accepted, Richard Branson has
+      to make his own tea, and GLM…'
+  - title: 'JDOT #15: Marie Kondo made me sleep on my couch, listen to my new song, and more AI news'
+    url: https://www.linkedin.com/pulse/jdot-15-marie-kondo-made-me-sleep-my-couch-listen-new-joe-devon-1q01c
+    published: '2026-08-10T00:00:00.000Z'
+    channel: linkedin
+    summary: The KonMari Method At work I'm very organized. I build systems.
+  - title: 'JDOT #13: New pod, Karpathy Loop, Neurobots and why you''ll regret cursing at your AI'
+    url: https://www.linkedin.com/pulse/jdot-13-new-pod-karpathy-loop-neurobots-why-youll-regret-joe-devon-hwouc
+    published: '2026-03-24T00:00:00.000Z'
+    channel: linkedin
+    summary: 'NOTE: Links to all sources are in the first comment. Welcome back to Joe Dev on Tech.'
+  - title: 'JDOT #12: AI''s Game of Thrones, New Podcast, and OpenAI takes 1st place on AIMAC'
+    url: https://www.linkedin.com/pulse/jdot-12-ais-game-thrones-new-podcast-openai-takes-1st-joe-devon-p6vgc
+    published: '2026-03-05T00:00:00.000Z'
+    channel: linkedin
+    summary: 'In today''s edition: Podcasts, Articles and AIMAC Update Open Source Projects to Watch AI''s
+      Game of Thrones Other…'
+  - title: 'JDOT #11: AI Voice or Victim, new Anthropic model & more'
+    url: https://www.linkedin.com/pulse/jdot-11-ai-voice-victim-new-anthropic-model-more-joe-devon-apvsc
+    published: '2026-02-19T00:00:00.000Z'
+    channel: linkedin
+    summary: 'NOTE: Links to all sources are in the first comment to avoid algorithmic penalty. The A.'
+  - title: 'JDOT #10: A shocking new model now tops AIMAC''s Leaderboard, and Something Big is Happening'
+    url: https://www.linkedin.com/pulse/jdot-10-shocking-new-model-now-tops-aimacs-something-big-joe-devon-iaodc
+    published: '2026-02-12T00:00:00.000Z'
+    channel: linkedin
+    summary: 'NOTE: Links to all sources are in the first comment to avoid algo penalty. Shocking new
+      AIMAC Benchmark results! Since…'
+  - title: 'JDOT #9: Human Coding is officially over, CES & AIMAC updates'
+    url: https://www.linkedin.com/pulse/jdot-9-human-coding-officially-over-ces-aimac-updates-joe-devon-dhb2c
+    published: '2026-01-20T00:00:00.000Z'
+    channel: linkedin
+    summary: 'NOTE: All links to sources are in the first comment. The Era of Human Coding is (already)
+      over I''ve been saying this…'
+  - title: 'JDOT #8: AI in 2026 will be Insane & The new results of AIMAC, our AI Benchmark'
+    url: https://www.linkedin.com/pulse/jdot-8-ai-2026-insane-new-results-aimac-our-benchmark-joe-devon-xusvc
+    published: '2026-01-05T00:00:00.000Z'
+    channel: linkedin
+    summary: 'NOTE: All links to sources are in the first comment. Accessibility and Gen.'
+  - title: |-
+      Also. Do yourself a favor, it's critical for cursor coding. Install the local history plugin (link in reply) and add .history to your .gitignore.
+
+      It saves every change to every file. Yes, it's overhead, and you may have git, but with AI coding, that's not enough. You need to be
+    url: https://twitter.com/21734113/status/1897022514783826160
+    published: '2025-03-04T20:33:07Z'
+    channel: x
+  talks:
+  - session:2023/ai2440m
+  - session:2024/dev1734p
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696274152002001L7BQ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696274152002001L7BQ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

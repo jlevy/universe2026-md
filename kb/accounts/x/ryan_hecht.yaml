@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/ryan_hecht
+  platform: x
+  handle: Ryan_Hecht
+  url: https://x.com/Ryan_Hecht
+  display_name: Ryan Hecht
+  bio: "Product @GitHub (Copilot CLI/Agentic Platforms)  \nOwner/Lead Dev @MinecraftParks \n\n|fmr @Microsoft\
+    \ @BrownUniversity\n|Views are my own"
+  location: Orlando, FL
+  website: https://ryanhecht.com/
+  followers: 1008
+  following: 200
+  posts_count: 6925
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1939365617682833408/s4qIN8N8_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/548474077/1656804569
+  created_at: '2012-04-08T14:42:33Z'
+  owner: person:ryan-hecht
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699547169825001krXG
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: RyanHecht
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/Ryan_Hecht
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

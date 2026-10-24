@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mrecachinas
+  platform: linkedin
+  handle: in/mrecachinas
+  url: https://www.linkedin.com/in/mrecachinas
+  display_name: Michael Recachinas
+  bio: Staff Engineer at GitHub. Security, developer tools, systems.
+  location: Washington DC-Baltimore Area
+  followers: 1374
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQHfhAdorWzw_w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730388558087?e=2147483647&v=beta&t=aHglinejn028s8BOCvWI5uoH1LbN-HGPoUzAOi-hBbU
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFWxdPjAwFz-Q/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1698710584148?e=2147483647&v=beta&t=fCwT8vqs9C3PCMjDvg4bx9fp8QYuj3OJx-92Utx0sR4
+  owner: person:michael-recachinas
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685637039960001YvpZ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685637039960001YvpZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mrecachinas
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

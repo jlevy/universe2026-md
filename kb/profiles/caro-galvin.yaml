@@ -1,0 +1,353 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:caro-galvin
+  person: person:caro-galvin
+  brief_bio:
+    text: Caro Galvin is a Senior Product Manager at GitHub and the lead for GitHub Code Quality. Galvin
+      spoke at GitHub Universe 2025 about code quality and speaks at GitHub Universe 2026 about making
+      code quality worth acting on.
+    cites:
+    - listed_role
+    - current_affiliations
+    - bluesky_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 79358fa699e36e90cbd3d16193deaac1e33fb8209ab2714557d54fdd6707f7e2
+    stale: false
+  headline: Senior Product Manager at GitHub
+  location: Ontario, Canada
+  current_roles:
+  - Senior Product Manager at GitHub
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1192d
+    - ref: session:2025/sec1619m
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1619m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1192d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1192d
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1551d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1551d
+  - label: Tech debt
+    target: term:topic/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1551d
+  technologies:
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1551d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/aut1192d
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1551d
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745866973633001Dx2R
+      ref: session:2025/aut1192d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756908422258001qRJf
+      ref: session:2025/sec1619m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777658642130001QLdM
+      ref: session:ldr1551d
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745866973633001Dx2R
+      ref: session:2025/aut1192d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777658642130001QLdM
+      ref: session:ldr1551d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745866973633001Dx2R
+      ref: session:2025/aut1192d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777658642130001QLdM
+      ref: session:ldr1551d
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756908422258001qRJf
+      ref: session:2025/sec1619m
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777658642130001QLdM
+      ref: session:ldr1551d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777658642130001QLdM
+      ref: session:ldr1551d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745866973633001Dx2R
+      ref: session:2025/aut1192d
+  - label: Tech debt
+    target: term:topic/tech-debt
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777658642130001QLdM
+      ref: session:ldr1551d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745866973633001Dx2R
+      ref: session:2025/aut1192d
+  - label: docs
+    basis: github_repositories
+    confidence: low
+    weight: 0.26
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/docs
+      ref: repo:github/docs
+  - label: mcp
+    basis: github_repositories
+    confidence: low
+    weight: 0.26
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/github-mcp-server
+      ref: repo:github/github-mcp-server
+  - label: mcp-server
+    basis: github_repositories
+    confidence: low
+    weight: 0.26
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/github-mcp-server
+      ref: repo:github/github-mcp-server
+  open_source:
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  - repository: repo:caro-test-org/public_test
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:github/github-mcp-server
+    relation: contributor
+    stars: 33923
+    primary_language: Go
+  - repository: repo:dependabot/proxy
+    relation: contributor
+    stars: 142
+    primary_language: Go
+  - repository: repo:kw-little-theatre/kwlt-production-automation
+    relation: contributor
+    stars: 0
+    primary_language: Python
+  education:
+  - school: University of Waterloo
+    evidence:
+      url: https://www.linkedin.com/in/cmcgalvin
+      observed_at: '2026-10-24T08:11:40Z'
+  credentials:
+  - kind: honor
+    title: Graduate with Honours
+    issuer: University of Waterloo
+    date: '2014-06-01T00:00:00.000Z'
+    description: Graduated from the University of Waterloo with Honours (overall average above 80%)
+    evidence:
+      url: https://www.linkedin.com/in/cmcgalvin
+      observed_at: '2026-10-24T08:11:40Z'
+  activities:
+  - kind: course
+    title: 'Computer Applications in Business: Databases'
+    detail: CS 338
+    evidence:
+      url: https://www.linkedin.com/in/cmcgalvin
+      observed_at: '2026-10-24T08:11:40Z'
+  - kind: course
+    title: Coursera Software Product Management Specialization
+    evidence:
+      url: https://www.linkedin.com/in/cmcgalvin
+      observed_at: '2026-10-24T08:11:40Z'
+  - kind: course
+    title: Data Types and Stuctures
+    detail: CS 234
+    evidence:
+      url: https://www.linkedin.com/in/cmcgalvin
+      observed_at: '2026-10-24T08:11:40Z'
+  - kind: course
+    title: Introduction to Computational Finance and Financial Econometrics
+    evidence:
+      url: https://www.linkedin.com/in/cmcgalvin
+      observed_at: '2026-10-24T08:11:40Z'
+  - kind: course
+    title: Introduction to Data Science
+    evidence:
+      url: https://www.linkedin.com/in/cmcgalvin
+      observed_at: '2026-10-24T08:11:40Z'
+  - kind: course
+    title: Management Information Systems
+    detail: CS 330
+    evidence:
+      url: https://www.linkedin.com/in/cmcgalvin
+      observed_at: '2026-10-24T08:11:40Z'
+  - kind: course
+    title: Object-Oriented Software Development
+    detail: CS 246
+    evidence:
+      url: https://www.linkedin.com/in/cmcgalvin
+      observed_at: '2026-10-24T08:11:40Z'
+  recent_writing:
+  - title: How I Use AI
+    url: https://carolyngalvin.com/2026/01/15/how-i-use-ai/
+    published: '2026-01-15T21:43:53Z'
+    channel: blog
+  - title: Tips for Running Hybrid Meetings
+    url: https://carolyngalvin.com/2022/03/06/tips-for-running-hybrid-meetings/
+    published: '2022-03-06T16:06:43Z'
+    channel: blog
+  - title: 3 Elements of Successful Committees
+    url: https://carolyngalvin.com/2022/02/21/3-elements-of-successful-committees/
+    published: '2022-02-21T15:09:37Z'
+    channel: blog
+  - title: Monolith to Microservices for PMs, Part 2
+    url: https://carolyngalvin.com/2022/02/13/monolith-to-microservices-for-pms-part-2/
+    published: '2022-02-13T15:35:57Z'
+    channel: blog
+  - title: Monolith to Microservices for PMs, Part 1
+    url: https://carolyngalvin.com/2022/02/07/monolith-to-microservices-for-pms-part-1/
+    published: '2022-02-07T18:58:35Z'
+    channel: blog
+  - title: Self Reflection Activities
+    url: https://carolyngalvin.com/2022/01/30/self-reflection-activities/
+    published: '2022-01-30T22:26:43Z'
+    channel: blog
+  - title: Attempting to Create Focus
+    url: https://carolyngalvin.com/2022/01/23/attempting-to-create-focus/
+    published: '2022-01-23T18:08:16Z'
+    channel: blog
+  - title: P* Management
+    url: https://carolyngalvin.com/2022/01/16/p-management/
+    published: '2022-01-16T16:23:03Z'
+    channel: blog
+  - title: Hybrid Brainstorming Facilitation Learnings
+    url: https://carolyngalvin.com/2022/01/09/hybrid-brainstorming-facilitation-learnings/
+    published: '2022-01-09T16:17:29Z'
+    channel: blog
+  - title: Finding My Fit
+    url: https://carolyngalvin.com/2020/10/25/finding-my-fit/
+    published: '2020-10-25T16:32:07Z'
+    channel: blog
+  talks:
+  - session:2025/aut1192d
+  - session:2025/sec1619m
+  - session:ldr1551d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715350935257001Lc5k
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: carogalvin
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715350935257001Lc5k
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

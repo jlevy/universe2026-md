@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:copilot-code-review
+  name: Copilot code review
+  aliases:
+  - Copilot code review
+  - GitHub Copilot code review
+  kind: github_product
+  vendor: org:github
+  mentioned_in:
+  - person:tim-rogers
+  - session:2025/bld1093d
+  - session:bld1454d
+  - session:ldr1662d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

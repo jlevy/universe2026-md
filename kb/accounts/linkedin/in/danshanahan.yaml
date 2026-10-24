@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/danshanahan
+  platform: linkedin
+  handle: in/danshanahan
+  url: https://www.linkedin.com/in/danshanahan
+  display_name: Dan Shanahan
+  location: San Diego
+  followers: 1791
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGPM0fN9bEwzw/profile-displaybackgroundimage-shrink_200_800/B56aCOiPoRJAAQ-/0/1789097737360?e=2147483647&v=beta&t=sscNQMBI1CfYYnZ_r58R8d1iydSC5jvO-PWQD4WgVz8
+  owner: person:daniel-shanahan
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686596564427001X7ZM
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/danshanahan
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/port-ocean
+  ecosystem: pypi
+  name: port-ocean
+  url: https://pypi.org/project/port-ocean/
+  description: Port Ocean is a Python framework for building integrations that ingest data into Port,
+    the platform for building your AI software factory.
+  latest_version: 0.55.5
+  license: Apache Software License
+  repository_url: https://github.com/port-labs/ocean
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: port-labs/ocean
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/nickyt.online
+  platform: bluesky
+  handle: nickyt.online
+  url: https://bsky.app/profile/nickyt.online
+  display_name: Nick Taylor
+  bio: |-
+    Dev Advocate & Software Engineer @pomerium.io
+    GitHub Star | AAIF Ambassador | Microsoft MVP | AWS Community Builder
+
+    📍 Montréal 🇨🇦
+
+    ☝️ OneTipAWeek.com
+    🎙️ youtube.com/@nickytonline
+    🌐 nickyt.online
+  followers: 10952
+  created_at: '2023-04-23T21:02:07Z'
+  owner: person:nick-taylor
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1714445176861001BD1U
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: nickytonline
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: nickyt.online
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

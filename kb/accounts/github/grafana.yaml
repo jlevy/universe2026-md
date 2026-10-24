@@ -1,0 +1,50 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:grafana
+  login: grafana
+  kind: organization
+  url: https://github.com/grafana
+  name: Grafana Labs
+  bio: Grafana Labs is behind leading open source projects Grafana and Loki, and the creator of the first
+    open & composable observability platform.
+  location: Sweden
+  website: https://grafana.com
+  public_repositories: 445
+  created_at: '2014-04-06T12:22:57Z'
+  profile_readme: |-
+    ![A wallpaper showing the logos for Loki, Grafana, Tempo, and Mimir, spelling "LGTM".](https://raw.githubusercontent.com/grafana/.github/main/LGTM_wallpaper_1920x1080.png)
+
+    At [Grafana Labs](https://grafana.com/), we believe in Open Source and Open Standards. Most of our code is open and free for you to use, and you can find it here. From homelabs to the largest organizations on Earth, everyone is using our code to democratize their metrics, logs, and traces.
+
+    ## LGTM
+
+    We have many projects, but we want to highlight a few, in a quite specific order:
+
+    * [Loki](https://github.com/grafana/loki), like Prometheus, but for logs.
+    * [Grafana](https://github.com/grafana/grafana), the open and composable observability and data visualization platform.
+    * [Tempo](https://github.com/grafana/tempo), a high volume, minimal dependency distributed tracing backend.
+    * [Mimir](https://github.com/grafana/mimir), the most scalable [Prometheus](https://prometheus.io/) backend.
+
+    ## Work with us
+
+    If you choose to contribute to any of our projects, we would love to work with you and help hone your PRs to near perfection. If you like the experience and think you might want to do this full-time, we are [always hiring](https://grafana.com/about/careers/).
+  pinned:
+  - repo:grafana/loki
+  - repo:grafana/mimir
+  - repo:grafana/tempo
+  - repo:grafana/k6
+  - repo:grafana/grafana
+  - repo:grafana/pyroscope
+  linked_accounts:
+  - acct:x/grafana
+  entity: org:grafana-labs
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

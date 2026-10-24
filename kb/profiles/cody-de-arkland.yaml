@@ -1,0 +1,176 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:cody-de-arkland
+  person: person:cody-de-arkland
+  brief_bio:
+    text: Cody De Arkland is GM of Agent Experience at Railway and previously led developer experience
+      at Sentry. De Arkland spoke at GitHub Universe 2025 about Sentry, GitHub and the Just Ship It workflow.
+    cites:
+    - x_bio
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: e39fd8ad6ec09657335ccf9f09121f97d4c3fd3feb3dc7d3e8f2745f103ce6b9
+    stale: false
+  headline: Railway
+  current_roles:
+  - Railway
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1554d
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1554d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1554d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/bld1554d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754368499465001E32s
+      ref: session:2025/bld1554d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754368499465001E32s
+      ref: session:2025/bld1554d
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754368499465001E32s
+      ref: session:2025/bld1554d
+  education:
+  - school: Western Governors University
+    evidence:
+      url: https://www.linkedin.com/in/codydearkland
+      observed_at: '2026-10-24T08:42:35Z'
+  credentials:
+  - kind: certification
+    title: VMWare Certified Professional (VCP) 5.5 - Datacenter Virtualization
+    date: Jan 2016
+    evidence:
+      url: https://www.linkedin.com/in/codydearkland
+      observed_at: '2026-10-24T08:42:35Z'
+  - kind: certification
+    title: Citrix Advanced Administration 6.5
+    date: Aug 2012
+    evidence:
+      url: https://www.linkedin.com/in/codydearkland
+      observed_at: '2026-10-24T08:42:35Z'
+  activities:
+  - kind: project
+    title: Private Cloud Implementation Project
+    detail: Implemented Private Cloud platform at Pacific Gas & Electric taking environment implementations
+      from 3+ Weeks to sub 1 hour for deployment. Worked with DellEMC (formerly EMC) to implement platform
+      leveraging the EHC (Enterprise Hybrid Cloud) model/offering. Designed solution leveraging EMC VNX,
+      with Cisco UCS platform, utilizing VMware technologies for portal functionality. Drastic operational
+      cost savings as systems have a significantly reduced amount of users "touching" the systems during
+      deployment. Multiple team handoffs reduced down to fully automated. Drastically improved security
+      footprint through automated installation/configuration of security agents and platforms - if security
+      agents don't install - server doesn't provision. Successfully deployed over 600+ systems in 4 months
+      of platform being able to be consumed. · Feb 2015
+    evidence:
+      url: https://www.linkedin.com/in/codydearkland
+      observed_at: '2026-10-24T08:42:35Z'
+  - kind: project
+    title: XenApp 6.5 Lifecycle
+    detail: Previous environment was Presentation Server 4.5Re-Designed environment from ground up. Implemented
+      Roaming Profiles, SQL Database Replication, and participated in rollout of Citrix Receiver to IOS
+      and Android devices. Implemented Citrix Published Desktop as a BYOD solution concept. · Nov 2011
+    evidence:
+      url: https://www.linkedin.com/in/codydearkland
+      observed_at: '2026-10-24T08:42:35Z'
+  recent_writing:
+  - title: '[Blog Post/New Role] - Winds of Change Blowing Into Cloud Native - https://t.co/06jYidUhdv
+      - Coming to a Cloud Native Apps Business Unit in October 2019!'
+    url: https://twitter.com/187678001/status/1169623899614531584
+    published: '2019-09-05T14:50:42Z'
+    channel: x
+  - title: '[New Blog Post!] - Lets Talk About Carrying Baggage - https://t.co/QnBf8YnD6w #careerthoughts
+      #vExpert - Another deeply personal post!'
+    url: https://twitter.com/187678001/status/1113853589900783616
+    published: '2019-04-04T17:19:24Z'
+    channel: x
+  - title: Without going into detail, today was a VERY emotionally heavy day. Everyone has them, not looking
+      for a pity party or anything like that. Just reminder that it's ok to talk about your struggles,
+      and be totally vulnerable sometimes. Find your tribe. Lean on your people.
+    url: https://twitter.com/187678001/status/1099188909790027776
+    published: '2019-02-23T06:07:12Z'
+    channel: x
+  - title: |-
+      Writing a blog post around career "thoughts" and something occurred to me -
+
+      Surround yourself with people who make your "world" bigger; not people who shrink it.
+    url: https://twitter.com/187678001/status/1089361994765950976
+    published: '2019-01-27T03:18:33Z'
+    channel: x
+  - title: It's not all IT and Cloud Management. Sometimes it's movie night with the things that really
+      matter. https://t.co/mp5sG3jKgd
+    url: https://twitter.com/187678001/status/1020494477713072128
+    published: '2018-07-21T02:23:38Z'
+    channel: x
+  - title: '[New Blog Post] I hope you''ll take the time to read the hardest blog post ive ever put together.
+      "Let''s talk about Imposter Syndrome" - https://t.co/RvGYv2bJT4'
+    url: https://twitter.com/187678001/status/1009113186010689537
+    published: '2018-06-19T16:38:26Z'
+    channel: x
+  - title: Man...@Docker on the desktop (Whether it be Mac/Windows/Linux) is incredibly useful. So many
+      helpful little "tricks" come out of it.
+    url: https://twitter.com/187678001/status/918167640023056384
+    published: '2017-10-11T17:33:18Z'
+    channel: x
+  talks:
+  - session:2025/bld1554d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1754369693807001d8ua
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,512 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:achin-gupta
+  person: person:achin-gupta
+  brief_bio:
+    text: Achin Gupta is a Staff Software Engineer at Intuit who builds distributed observability backends
+      on Kubernetes with OpenTelemetry and has written on agentic root-cause analysis over observability
+      data. Gupta speaks at GitHub Universe 2026 about AI agents for root-cause analysis.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 97e577049358ed234b34afc7726f961573a8ca8a0abc45ef94fb0f9247e60c7e
+    stale: true
+  headline: Staff Software Engineer at Intuit
+  current_roles:
+  - Staff Software Engineer at Intuit
+  expertise:
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1657h
+  - label: Grafana
+    target: software:grafana
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Grafana
+      ref: session:bld1657h
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:achin-gupta
+  - label: OpenTelemetry
+    target: software:opentelemetry
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: OpenTelemetry
+      ref: person:achin-gupta
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:guptaachin/metrics-observability-pipeline
+  - label: Smarty
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:guptaachin/hello-world-to-kubernetes
+  interests:
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777687372042001GE87
+      ref: session:bld1657h
+  - label: docker
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/guptaachin/metrics-observability-pipeline
+      ref: repo:guptaachin/metrics-observability-pipeline
+  - label: docker-compose
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/guptaachin/metrics-observability-pipeline
+      ref: repo:guptaachin/metrics-observability-pipeline
+  - label: grafana
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/guptaachin/metrics-observability-pipeline
+      ref: repo:guptaachin/metrics-observability-pipeline
+  - label: metrics
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/guptaachin/metrics-observability-pipeline
+      ref: repo:guptaachin/metrics-observability-pipeline
+  - label: monitoring
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/guptaachin/metrics-observability-pipeline
+      ref: repo:guptaachin/metrics-observability-pipeline
+  - label: prometheus
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/guptaachin/metrics-observability-pipeline
+      ref: repo:guptaachin/metrics-observability-pipeline
+  open_source:
+  - repository: repo:soul-bits/upbeat-livemusiccoach
+    relation: pinned
+    stars: 2
+    primary_language: TypeScript
+  - repository: repo:guptaachin/metrics-observability-pipeline
+    relation: owner
+    stars: 1
+    primary_language: Python
+  - repository: repo:soul-bits/tiny_legends
+    relation: pinned
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:guptaachin/hello-world-to-kubernetes
+    relation: owner
+    stars: 0
+    primary_language: Smarty
+  - repository: repo:soul-bits/leetcode-solutions
+    relation: contributor
+    stars: 0
+    primary_language: Python
+  - repository: repo:soul-bits/soulbits
+    relation: contributor
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:soul-bits/adulting
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:soul-bits/spec-driven-development-tutorial
+    relation: contributor
+    stars: 0
+  - repository: repo:soul-bits/opentelemetry-demo
+    relation: contributor
+    stars: 0
+    primary_language: TypeScript
+  education:
+  - school: University of Southern California
+    school_ref: org:university-of-southern-california
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  credentials:
+  - kind: honor
+    title: Nominated for Driving Customer Trust and Engineering Excellence awards
+    issuer: Netskope
+    date: '2024-09-01T00:00:00.000Z'
+    description: 'Technical Leadership & Innovation: Demonstrated outstanding technical expertise and
+      innovative thinking, leading the design and implementation of new deployment strategies that dramatically
+      improved workflow efficiency. Initiated and developed a novel deployment solution for monitoring
+      agents on a container orchestration platform, slashing deployment time from days to minutes. This
+      solution was integrated into the main deployment framework and is being rolled out organization-wide,
+      promising… Show more'
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Achievement Award
+    issuer: Chicmic
+    date: '2014-04-01T00:00:00.000Z'
+    description: Quoting from the certificate. "Awarded for taking the full responsibility towards the
+      work assigned and towards the growth of the company. He is one of the few whose actions are in alignment
+      with company's growth."
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Award of Appreciation
+    issuer: Panjab University
+    date: '2011-01-01T00:00:00.000Z'
+    description: Organized a successful extempore event during the annual college fest.
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Award of Merit
+    issuer: Panjab University
+    date: '2011-01-01T00:00:00.000Z'
+    description: Secured 1st position in the E-Trivia quiz competition.
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: honor
+    title: Award of Merit
+    issuer: All India Open Roller Skating Championships
+    date: '2004-01-01T00:00:00.000Z'
+    description: Won the All India Roller Hockey Championship in the sub juniors category. I was also
+      the captain of the State team.
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: 'Speaker: Observability Summit North America 2026'
+    issuer: The Linux Foundation
+    date: Jun 2026
+    url: https://www.credly.com/badges/c3b7ae7b-8bfd-40d2-bcf5-284c7598c552/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: certification
+    title: Oracle Certified Professional Java Programmer 6.0
+    issuer: Oracle
+    date: Aug 2012
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  publications:
+  - title: 'Automating Root Cause Analysis: An Agentic Framework for Evidence-Led Reasoning over Distributed
+      System Observability'
+    venue: Zenodo
+    date: May 20, 2026
+    description: A reference architecture and working implementation for autonomous root cause analysis
+      (RCA) that combines deterministic signal processing with budgeted LLM reasoning. The system ingests
+      Prometheus alerts, fetches metrics, logs, and traces in parallel, correlates signals deterministically,
+      generates ranked hypotheses via LLM, and validates them with a budgeted agent loop (max 5 iterations).
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - title: 'AADF: Agentic Application Delivery Framework — A Staged Methodology for Building Durable AI
+      Agentic Systems'
+    venue: Zenodo
+    date: March 24, 2026
+    description: 'The rapid proliferation of AI agent frameworks has created a paradox: more tools, but
+      less clarity on how to build systems that survive production. Teams routinely over-engineer toward
+      multi-agent architectures before validating simpler approaches, couple business logic tightly to
+      volatile framework dependencies, and treat evaluation as an afterthought.'
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - title: A Study of Script Language Effects In Deep Neural Network Based Scene Text Detection
+    venue: ICDAR 2019
+    date: February 3, 2020
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  spoken_languages:
+  - English
+  - Hindi
+  activities:
+  - kind: volunteering
+    title: Co-lead for Scratch programming
+    detail: Inclusive World · Education · Aug 2021 · - Apr 2022 · 9 months · Unpaid volunteer, working
+      as co-lead for Scratch programming class for specially abled kids. · Aug 2021
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Adulting · Alfred Life Assistant
+    detail: AI life concierge that reads your calendar, handles the micro-tasks behind every event, and
+      lets you ask Alfred directly to take care of anything so you can stay the superhero of your life.
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: DIY metrics observability pipeline in Docker
+    detail: 'End-to-End Metrics Observability Pipeline Developed a high-performance metrics pipeline to
+      monitor distributed services and infrastructure vitals. The project streamlines the "Three Pillars
+      of Observability" (focusing on Metrics) by integrating industry-standard open-source tools into
+      a single, deployable environment.Data Collection: Leveraged Telegraf and VMAgent to ingest Prometheus
+      and StatsD format metrics.Storage & Querying: Utilized VictoriaMetrics as a high-efficiency time-series
+      database with MetricsQL for advanced querying.Visualization & Alerting: Configured Grafana dashboards
+      for real-time monitoring and integrated Prometheus Alert Manager for proactive incident notification.Infrastructure:
+      Fully containerized using Docker, ensuring easy deployment and scalability.AI-Ready with Grafana
+      MCP: Includes native Model Context Protocol (MCP) support, serving as a perfect sandbox for those
+      exploring AI Agents. This integration allows LLMs (like Claude or Cursor) to securely query your
+      metrics and explore dashboards using natural language.'
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: DIY Metrics-Logs-Traces Stack
+    detail: A complete observability stack for learning and development using Docker Compose.
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: 'Educational content: Backtracking playlist on youtube'
+    detail: A curated project that provides in-depth, step-by-step solutions to essential recursion and
+      backtracking problems. The project focuses on breaking down problem-solving strategies, decision
+      trees, and optimization techniques, going beyond basic acceptance to emphasize clarity, correctness,
+      and interview-ready reasoning.
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Tiny Legends
+    detail: An innovative platform that transforms comic books into interactive children's stories through
+      intelligent character extraction, story generation, and visual storytelling. Built with LlamaIndex,
+      CopilotKit, and OpenAI.
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Upbeat Live Music Coach
+    detail: Real-time, AI-powered piano tutor built on Gemini offering a proactive, real-time learning
+      experience, bridging the gap between a private tutor and digital learning tools.
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Analysis of Algorithms
+    detail: CSCI 570
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Building Knowledge Graphs
+    detail: INF 558
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Data Science for Social Systems
+    detail: CSCI 599
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Data Structures
+    detail: CSE 301
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Database Systems
+    detail: CSCI 585
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Engineering Mathematics 1,2,3
+    detail: AS 101,201,301
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Foundations of Artificial Intelligence
+    detail: CSCI 561
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Machine Learning
+    detail: CSCI 567
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Object Oriented Programming
+    detail: CSE 404
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Operating System
+    detail: CSE 501
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Principle of Programming Languages
+    detail: CSE 504
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: course
+    title: Software Engineering
+    detail: CSE 502
+    evidence:
+      url: https://www.linkedin.com/in/guptaachin
+      observed_at: '2026-10-24T08:11:33Z'
+  recent_writing:
+  - title: What are Convolutions in Convolutional Neural Networks ?
+    url: https://www.linkedin.com/pulse/what-convolution-neural-networks-achin-gupta
+    published: '2018-07-01T00:00:00.000Z'
+    channel: linkedin
+    summary: In this article I will try to answer the question - Why convolutions are so important and
+      why do they actually matter ?…
+  - title: Insights on Neural Networks
+    url: https://www.linkedin.com/pulse/insights-neural-networks-achin-gupta
+    published: '2018-06-28T00:00:00.000Z'
+    channel: linkedin
+    summary: Training Neural Nets becomes more easier if you have the right insights. This is a summary
+      of a subset of insights I…
+  talks:
+  - session:bld1657h
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777686068448001FY1d
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: guptaachin
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

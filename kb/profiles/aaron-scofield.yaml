@@ -1,0 +1,107 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:aaron-scofield
+  person: person:aaron-scofield
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1744d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1744d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1744d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1744d
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715391636391001Was3
+      ref: session:2024/dev1744d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715391636391001Was3
+      ref: session:2024/dev1744d
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715391636391001Was3
+      ref: session:2024/dev1744d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715391636391001Was3
+      ref: session:2024/dev1744d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715391636391001Was3
+      ref: session:2024/dev1744d
+  spoken_languages:
+  - English
+  - Spanish
+  activities:
+  - kind: project
+    title: GitHub Profile
+    detail: My personal projects and repositories.
+    evidence:
+      url: https://www.linkedin.com/in/aaroncscofield
+      observed_at: '2026-10-24T08:42:01Z'
+  talks:
+  - session:2024/dev1744d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1722275849987001Lctl
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

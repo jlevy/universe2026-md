@@ -1,0 +1,136 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:reynald-adolphe
+  person: person:reynald-adolphe
+  brief_bio:
+    text: Reynald Adolphe was a senior cloud advocate at Microsoft, working as a developer advocate for
+      the Visual Studio Code team, when speaking at GitHub Universe 2025. Adolphe spoke about the range
+      of available MCP servers.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 1d339c10387d93c469d054471a52383f6c251c45d157adf6c84cb2dd6e838b5c
+    stale: false
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1392d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1392d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1392d
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:reynald-adolphe
+  - label: Java
+    target: software:java
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Java
+      ref: person:reynald-adolphe
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/aut1392d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Visual Studio Code
+      ref: person:reynald-adolphe
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746208725212001gDPq
+      ref: session:2025/aut1392d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746208725212001gDPq
+      ref: session:2025/aut1392d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746208725212001gDPq
+      ref: session:2025/aut1392d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746208725212001gDPq
+      ref: session:2025/aut1392d
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746208725212001gDPq
+      ref: session:2025/aut1392d
+  talks:
+  - session:2025/aut1392d
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695851279561001Evvc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

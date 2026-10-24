@@ -1,0 +1,239 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:joe-harrington
+  person: person:joe-harrington
+  brief_bio:
+    text: Joe Harrington, listed as a Senior Security Engineer, has worked in application security and
+      DevSecOps after roles as a Java developer and cloud platform engineer. Harrington spoke at GitHub
+      Universe 2024 about streamlining AppSec for a better developer experience.
+    cites:
+    - listed_role
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:34:19Z'
+    input_sha256: bfd959e2e7aac7bebbb27269ba31c89679aba65dc7f223ff2af09938786d572f
+    stale: false
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1634b
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Advanced Security
+      ref: person:joe-harrington
+  - label: Java
+    target: software:java
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Java
+      ref: person:joe-harrington
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715369358713001UJM3
+      ref: session:2024/sec1634b
+  talks:
+  - session:2024/sec1634b
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692379512615001AGHF
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

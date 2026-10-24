@@ -1,0 +1,194 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:riley-kohler
+  person: person:riley-kohler
+  brief_bio:
+    text: Riley Kohler is a software engineer at Capital One who builds tooling for open source contributions
+      and is leading an overhaul of the company's contribution process. Kohler spoke at GitHub Universe
+      2024 about Capital One's open source contribution workflows.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: dcbde22450f3cc8cd1ab3200ce0b3449019b56e8bd52418e035a45381786a4af
+    stale: false
+  headline: Capital One
+  current_roles:
+  - Capital One
+  expertise:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1826d
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1826d
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1826d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1826d
+  technologies:
+  - label: Git
+    target: software:git
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Git
+      ref: person:riley-kohler
+  - label: TypeScript
+    target: software:typescript
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: TypeScript
+      ref: person:riley-kohler
+  interests:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  education:
+  - school: The University of Alabama
+    evidence:
+      url: https://www.linkedin.com/in/rileykohler
+      observed_at: '2026-10-24T08:46:53Z'
+  credentials:
+  - kind: honor
+    title: Eagle Scout
+    issuer: Boy Scouts of America
+    date: '2014-12-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/rileykohler
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: certification
+    title: Angular 2 Essential Training
+    issuer: Lynda.com
+    date: Jul 2016
+    expires: Jul 2016
+    evidence:
+      url: https://www.linkedin.com/in/rileykohler
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: certification
+    title: Designing Websites for Performance
+    issuer: Lynda.com
+    date: Jul 2016
+    expires: Jul 2016
+    evidence:
+      url: https://www.linkedin.com/in/rileykohler
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: certification
+    title: How to Rock Social Media
+    issuer: Lynda.com
+    date: Jul 2016
+    expires: Jul 2016
+    evidence:
+      url: https://www.linkedin.com/in/rileykohler
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: certification
+    title: 'Learn Atom: The Basics'
+    issuer: Lynda.com
+    date: Jul 2016
+    expires: Jul 2016
+    evidence:
+      url: https://www.linkedin.com/in/rileykohler
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: certification
+    title: Bootstrap 3 Essential Training
+    issuer: Lynda.com
+    date: Jun 2016
+    expires: Jun 2016
+    evidence:
+      url: https://www.linkedin.com/in/rileykohler
+      observed_at: '2026-10-24T08:46:53Z'
+  spoken_languages:
+  - English
+  talks:
+  - session:2024/dev1826d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1723568668466001DHAU
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

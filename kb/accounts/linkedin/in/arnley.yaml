@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/arnley
+  platform: linkedin
+  handle: in/arnley
+  url: https://www.linkedin.com/in/arnley
+  display_name: Arnaud Leymet
+  location: Greater Paris Metropolitan Region
+  followers: 2443
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQFX0YNcg6aZMQ/profile-displayphoto-shrink_200_200/B4EZX8vxR7HgAY-/0/1743702136419?e=2147483647&v=beta&t=GR3MKrArwxNFbi9js6klKUYB4xopFpGXM_C6EhHvZOA
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQFORqI2fYru5g/profile-displaybackgroundimage-shrink_200_800/B4EZXZj_YYG0AU-/0/1743111847407?e=2147483647&v=beta&t=rDo13WAn3gt-x6oG9sn7aHwwYZTPy2du7vFigIDIH1M
+  owner: person:arnaud-leymet
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745428464928001uT9r
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/arnley
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

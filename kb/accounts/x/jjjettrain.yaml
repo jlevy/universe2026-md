@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/jjjettrain
+  platform: x
+  handle: JJjetTrain
+  url: https://x.com/JJjetTrain
+  display_name: Joshua Johanning
+  bio: GitHub | Studied Information Systems at the University of Wisconsin-Madison | https://t.co/KuErjOlkdE
+    | Opinions my own
+  location: Madison, Wisconsin
+  followers: 296
+  following: 1106
+  posts_count: 9705
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1346839182384263170/EhXGHsoc_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/396074970/1399772816
+  created_at: '2011-10-22T18:12:31Z'
+  owner: person:josh-johanning
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685652487779001iVSX
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/JJjetTrain
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

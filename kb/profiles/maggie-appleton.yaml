@@ -1,0 +1,354 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:maggie-appleton
+  person: person:maggie-appleton
+  brief_bio:
+    text: Maggie Appleton is a Staff Research Engineer at GitHub Next who builds prototypes of agentic
+      engineering tools and writes visual essays on design, programming and anthropology. Appleton speaks
+      in the Closing Keynote and two GitHub Next sessions at GitHub Universe 2026.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - bluesky_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: cb1ffe4d25abf0151a2923a6448ff1ba9085ad9b0e84d93f8e8f35e633c53e0c
+    stale: false
+  headline: Staff Research Engineer at GitHub
+  location: London
+  current_roles:
+  - Staff Research Engineer at GitHub
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1820b
+  programming_languages:
+  - label: Astro
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:maggieappleton/maggieappleton.com-v3
+    - ref: repo:maggieappleton/arbour
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:maggieappleton/digital-gardeners
+    - ref: repo:maggieappleton/maggieappleton.com
+  - label: MDX
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:maggieappleton/maggieappleton.com-v2
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:maggieappleton/lodestone
+  interests:
+  - label: digital-garden
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/MaggieAppleton/digital-gardeners
+      ref: repo:maggieappleton/digital-gardeners
+    - url: https://github.com/MaggieAppleton/maggieappleton.com-V2
+      ref: repo:maggieappleton/maggieappleton.com-v2
+    - url: https://github.com/MaggieAppleton/maggieappleton.com-V3
+      ref: repo:maggieappleton/maggieappleton.com-v3
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: high
+    weight: 0.83
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787603491482001y0IY
+      ref: session:bld1820b
+    - url: https://github.com/github/gh-aw
+      ref: repo:github/gh-aw
+  - label: GitHub Actions
+    basis: github_repositories
+    confidence: medium
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-aw
+      ref: repo:github/gh-aw
+  - label: React
+    basis: github_repositories
+    confidence: medium
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/MaggieAppleton/maggieappleton.com-V2
+      ref: repo:maggieappleton/maggieappleton.com-v2
+    - url: https://github.com/MaggieAppleton/maggieappleton.com
+      ref: repo:maggieappleton/maggieappleton.com
+  - label: astro
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/MaggieAppleton/maggieappleton.com-V3
+      ref: repo:maggieappleton/maggieappleton.com-v3
+  - label: cai
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-aw
+      ref: repo:github/gh-aw
+  - label: ci
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-aw
+      ref: repo:github/gh-aw
+  - label: claude-code
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-aw
+      ref: repo:github/gh-aw
+  - label: codex
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-aw
+      ref: repo:github/gh-aw
+  - label: digital-gardening
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/MaggieAppleton/digital-gardeners
+      ref: repo:maggieappleton/digital-gardeners
+  - label: framer-motion
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/MaggieAppleton/maggieappleton.com-V2
+      ref: repo:maggieappleton/maggieappleton.com-v2
+  - label: gh-extension
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-aw
+      ref: repo:github/gh-aw
+  open_source:
+  - repository: repo:maggieappleton/digital-gardeners
+    relation: owner
+    stars: 4835
+    primary_language: JavaScript
+  - repository: repo:maggieappleton/react-metaphors-slides
+    relation: owner
+    stars: 362
+  - repository: repo:maggieappleton/maggieappleton.com-v2
+    relation: owner
+    stars: 348
+    primary_language: MDX
+  - repository: repo:maggieappleton/maggieappleton.com-v3
+    relation: owner
+    stars: 222
+    primary_language: Astro
+  - repository: repo:maggieappleton/maggieappleton.com
+    relation: owner
+    stars: 161
+    primary_language: JavaScript
+  - repository: repo:maggieappleton/lodestone
+    relation: owner
+    stars: 102
+    primary_language: TypeScript
+  - repository: repo:maggieappleton/arbour
+    relation: owner
+    stars: 15
+    primary_language: Astro
+  - repository: repo:github/gh-aw
+    relation: contributor
+    stars: 5457
+    primary_language: Go
+  - repository: repo:githubnext/calmhn
+    relation: contributor
+    stars: 4
+    primary_language: TypeScript
+  - repository: repo:githubnext/chopin
+    relation: contributor
+    stars: 477
+    primary_language: TypeScript
+  education:
+  - school: Whitman College
+    evidence:
+      url: https://www.linkedin.com/in/maggieappleton
+      observed_at: '2026-10-24T08:15:23Z'
+  credentials:
+  - kind: honor
+    title: TEDx Speaker
+    issuer: TEDx Dien Bien Phu
+    date: '2014-06-01T00:00:00.000Z'
+    description: 'Presented at TEDx Dien Bien Phu in Saigon, Vietnam: "What ''Just Google It'' Won''t
+      Teach You: The Social Online Education You''re Missing Out On" Resources, slides & full transcript
+      available at maggieappleton.com/tedx/'
+    evidence:
+      url: https://www.linkedin.com/in/maggieappleton
+      observed_at: '2026-10-24T08:15:23Z'
+  - kind: certification
+    title: Human-Computer Interaction
+    issuer: The Interaction Design Foundation
+    date: Jul 2021
+    url: https://www.interaction-design.org/maggie-4/certificate/course/c3407b69-d1f4-42e1-8268-8186393f2650
+    evidence:
+      url: https://www.linkedin.com/in/maggieappleton
+      observed_at: '2026-10-24T08:15:23Z'
+  - kind: certification
+    title: 'Affordances: Designing Intuitive User Interfaces'
+    issuer: The Interaction Design Foundation
+    date: Jun 2021
+    url: https://www.interaction-design.org/maggie-4/certificate/course/03bbf9bb-46ee-42ed-baf2-49553b73c828
+    evidence:
+      url: https://www.linkedin.com/in/maggieappleton
+      observed_at: '2026-10-24T08:15:23Z'
+  - kind: certification
+    title: How to Create Intuitive Products by Imitating Physicality
+    issuer: The Interaction Design Foundation
+    date: Feb 2021
+    url: https://www.interaction-design.org/maggie-4/certificate/course/c5bc54ea-5211-4410-a9e3-0902000c3197?certificateType=course
+    evidence:
+      url: https://www.linkedin.com/in/maggieappleton
+      observed_at: '2026-10-24T08:15:23Z'
+  recent_writing:
+  - title: 'Planning with Agents: Divided Worlds, Boundary Objects, and Thicker Interfaces'
+    url: https://maggieappleton.com/planning-agents
+    published: '2026-09-14T00:00:00Z'
+    channel: blog
+  - title: August 2026
+    url: https://maggieappleton.com/now-2026-08
+    published: '2026-08-18T00:00:00Z'
+    channel: blog
+  - title: In Memoriam, Encountering World War I, and Thinkable Horrors
+    url: https://maggieappleton.com/in-memoriam
+    published: '2026-07-18T00:00:00Z'
+    channel: blog
+  - title: One Developer, Two Dozen Agents, Zero Alignment
+    url: https://maggieappleton.com/zero-alignment
+    published: '2026-04-13T00:00:00Z'
+    channel: blog
+  - title: Gas Town’s Agent Patterns, Design Bottlenecks, and Vibecoding at Scale
+    url: https://maggieappleton.com/gastown
+    published: '2026-01-23T00:00:00Z'
+    channel: blog
+  - title: January 2026
+    url: https://maggieappleton.com/now-2026-01
+    published: '2026-01-02T00:00:00Z'
+    channel: blog
+  - title: A Treatise on AI Chatbots Undermining the Enlightenment
+    url: https://maggieappleton.com/ai-enlightenment
+    published: '2025-08-05T00:00:00Z'
+    channel: blog
+  - title: Vibe Code is Legacy Code
+    url: https://maggieappleton.com/2025-08-vibe-legacy-code
+    published: '2025-08-02T11:31:48Z'
+    channel: blog
+  - title: May 2025
+    url: https://maggieappleton.com/now-2025-05
+    published: '2025-05-25T00:00:00Z'
+    channel: blog
+  - title: |-
+      9am me: Time to sit down and work through that 2 hour vector DB tutorial
+
+      5 mins later me: Wow my terminal just isn’t aesthetically pleasing enough for this. Must spend the next hour installing Hyper, Oh My Zsh, Spaceship, picking themes, browsing fonts, and installing plugins…
+    url: https://twitter.com/1343443016/status/1842144580524814371
+    published: '2024-10-04T10:07:48Z'
+    channel: x
+  - title: |-
+      NotebookLM's generated podcast is pretty good! But the generically American, over-scripted voices are grating to listen to. It's NPR-ish acting/phrasing is cringe.
+
+      We need snarky British mode. When we getting David Attenborough chatting to Maggie Smith as the default?
+    url: https://twitter.com/1343443016/status/1840667237474037903
+    published: '2024-09-30T08:17:22Z'
+    channel: x
+  - title: |-
+      Some bittersweet news. I've moved on from Elicit.
+
+      I still love the team and product, and hope they do fantastically.
+
+      But living a split life in between London and San Francisco wasn't working for me. Solo, remote designer is a tough job.
+
+      https://t.co/QgewGwBacl
+    url: https://twitter.com/1343443016/status/1810261084344914381
+    published: '2024-07-08T10:34:10Z'
+    channel: x
+  - title: |-
+      More nonsense from me railing against chatbots. Just another Tuesday.
+
+      Caveat: sure, we can have *some* useful, open-ended chat-ish interfaces.
+      But most complex, interesting, genuinely important human tasks do not take the shape of asking text boxes to fuzzy search the web
+    url: https://twitter.com/1343443016/status/1800618990424789037
+    published: '2024-06-11T19:59:55Z'
+    channel: x
+  - title: |-
+      To be clear, I would murder someone for everyone's open-source, non-proprietary, default web development tooling experience to feel like this.
+
+      Closed, subscription-based, WYSIWYG platforms that inevitably limit the range of what you can do are not it.
+    url: https://twitter.com/1343443016/status/1782039834078437596
+    published: '2024-04-21T13:32:59Z'
+    channel: x
+  - title: I would murder someone to have my web development experience feel like this
+    url: https://twitter.com/1343443016/status/1782021383632924906
+    published: '2024-04-21T12:19:40Z'
+    channel: x
+  talks:
+  - session:1878k
+  - session:2154b
+  - session:bld1820b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1761577835512001JaKw
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: MaggieAppleton
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

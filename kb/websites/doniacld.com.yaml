@@ -1,0 +1,25 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:doniacld.com
+  url: https://doniacld.com
+  kind: personal
+  owner: person:donia-chaiehloudj
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: error
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: doniacld
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://doniacld.com
+    record_id: https://doniacld.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

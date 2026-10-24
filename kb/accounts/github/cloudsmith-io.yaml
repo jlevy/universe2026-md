@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:cloudsmith-io
+  login: cloudsmith-io
+  kind: organization
+  url: https://github.com/cloudsmith-io
+  name: Cloudsmith
+  bio: Cloudsmith is a fully managed solution for controlling, securing, and distributing everything that
+    flows through your software supply chain.
+  location: United Kingdom
+  website: https://cloudsmith.com
+  public_repositories: 31
+  created_at: '2014-05-21T13:05:45Z'
+  pinned:
+  - repo:cloudsmith-io/cloudsmith-cli
+  - repo:cloudsmith-io/cloudsmith-api
+  - repo:cloudsmith-io/cloudsmith-examples
+  - repo:cloudsmith-io/terraform-provider-cloudsmith
+  - repo:cloudsmith-io/action
+  - repo:cloudsmith-io/orb
+  top_repositories:
+  - repo:cloudsmith-io/homebrew-cloudsmith-cli
+  linked_accounts:
+  - acct:x/cloudsmith
+  entity: org:cloudsmith
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cloudsmith-io
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

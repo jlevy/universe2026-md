@@ -1,0 +1,27 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:andela
+  login: andela
+  kind: organization
+  url: https://github.com/andela
+  name: Andela
+  bio: Extend your team with world-class developers
+  location: NYC, SF, Nairobi, Lagos and Kampala
+  website: http://andela.com
+  public_repositories: 679
+  created_at: '2013-04-09T04:52:17Z'
+  top_repositories:
+  - repo:andela/bestpractices
+  - repo:andela/code-review-guidelines
+  - repo:andela/assessment-questions
+  entity: org:andela
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: andela
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

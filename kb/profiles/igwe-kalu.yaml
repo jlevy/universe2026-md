@@ -1,0 +1,312 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:igwe-kalu
+  person: person:igwe-kalu
+  brief_bio:
+    text: Igwe Kalu is a Senior Service Delivery Engineer at GitHub who helps enterprises optimize software
+      delivery with DevSecOps. Kalu led a DevSecOps fundamentals workshop at GitHub Universe 2023 and
+      spoke at GitHub Universe 2024 about continuous deployments the GitHub way.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 49722b3f358627d51d28ec9c13833b83ea38586834c9430a5552a52826b45605
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1682s
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  - label: Discussions
+    target: term:github-product-2024/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715376755125001Vv3P
+      ref: session:2024/dev1682s
+  credentials:
+  - kind: certification
+    title: 'Exam 480: Programming in HTML5 with JavaScript and CSS3'
+    issuer: Microsoft
+    date: Jan 2015
+    url: https://www.credly.com/badges/1faf7f88-5339-4af2-8048-2888335cd961?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/igwejk
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Jul 2023
+    expires: Jul 2025
+    url: https://www.credly.com/badges/d3473a95-8d9b-4db4-b109-38c09b4c77a3/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/igwejk
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Jun 2023
+    expires: Jun 2025
+    url: https://www.credly.com/badges/4fc6879b-04ae-4221-803d-9210a45778ab/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/igwejk
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Jun 2023
+    expires: Jun 2025
+    url: https://www.credly.com/badges/211baba6-f43e-4bfe-8cfa-38f7ebc68ce4/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/igwejk
+      observed_at: '2026-10-24T08:45:06Z'
+  talks:
+  - session:2023/sec2745w
+  - session:2024/dev1682s
+  gaps:
+  - github_account
+  - website
+  - x_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686147878235001yeH8
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686147878235001yeH8
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

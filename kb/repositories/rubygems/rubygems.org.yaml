@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:rubygems/rubygems.org
+  full_name: rubygems/rubygems.org
+  url: https://github.com/rubygems/rubygems.org
+  description: The Ruby community's gem hosting service.
+  homepage: https://rubygems.org
+  stars: 2439
+  forks: 1030
+  watchers: 96
+  open_issues: 52
+  stats_observed_at: '2026-10-24T19:12:20Z'
+  primary_language: Ruby
+  topics:
+  - ruby
+  - rubygems
+  - package-manager
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2009-01-29T22:30:46Z'
+  pushed_at: '2026-10-24T09:26:29Z'
+  owner_login: rubygems
+  pinned_by:
+  - gh:arthurnn
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: arthurnn
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: rubygems/rubygems.org
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

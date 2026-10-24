@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/isumeetshetty
+  platform: linkedin
+  handle: in/isumeetshetty
+  url: https://www.linkedin.com/in/isumeetshetty
+  display_name: Sumeet Shetty
+  bio: Visionary enterprise software leader with &gt;20 years of experience in driving…
+  location: Bengaluru
+  followers: 2209
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5103AQHCQycQ4bgYTw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1528555313840?e=2147483647&v=beta&t=CkXalMHB6NcU0IwvfKHn7myq604ZoC0K4o7LRLyIreI
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGFyRZ_aEaHQg/profile-displaybackgroundimage-shrink_200_800/B56ZqQxLD0JoAU-/0/1763365401987?e=2147483647&v=beta&t=cO7kBxysrjczsn7jG8lnmJdpMUIhQpBgBZtt3GHdD2c
+  owner: person:sumeet-shetty
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695104086279001WA4Q
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/isumeetshetty
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

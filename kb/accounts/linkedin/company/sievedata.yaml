@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/sievedata
+  platform: linkedin
+  handle: company/sievedata
+  url: https://www.linkedin.com/company/sievedata
+  display_name: Sieve
+  bio: 'Sieve builds the data and environments frontier AI labs use to train the next generation of multimodal
+    systems. AI is moving beyond chatbots into video, audio, images, software, robotics, and interactive
+    worlds. The next generation of models will need to understand how the world looks, sounds, moves,
+    responds, and changes over time. Progress is bottlenecked by one thing: high-quality data. Sieve brings
+    together exabyte-scale infrastructure, novel multimodal understanding techniques, large-scale sourcing,
+    and deep research partnerships to create datasets and environments with unmatched precision, quality,
+    and speed. This has earned the trust of frontier AI labs, Fortune 100 companies, and fast-growing
+    AI startups working on generative media, robotics, computer use, world models, and agentic systems.'
+  website: https://sievedata.com/
+  followers: 4793
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGkJJGfO3yzoA/company-logo_200_200/B56ZvX_PMpIUAM-/0/1768855237674/sievedata_logo?e=2147483647&v=beta&t=Kyo78dNIBPNh4j--tikW7EcDGH-ItJA116z-1kuUJR0
+  owner: org:sieve
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/cathyteng
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/sievedata
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

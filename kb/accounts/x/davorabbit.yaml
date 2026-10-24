@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/davorabbit
+  platform: x
+  handle: davorabbit
+  url: https://x.com/davorabbit
+  display_name: Rong Lu
+  bio: 'PM at Microsoft, working on #datascience and #AI tools for #Python in #vscode and Azure. Love
+    travel, pingpong, photography, and Chinese food. ☺️'
+  followers: 1613
+  following: 155
+  posts_count: 415
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1079631799880376320/kg9G0Esw_normal.jpg
+  created_at: '2011-09-13T20:39:21Z'
+  owner: person:rong-lu
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1753303404894001CtAv
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/davorabbit
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

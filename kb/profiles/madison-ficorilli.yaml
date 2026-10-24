@@ -1,0 +1,536 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:madison-ficorilli
+  person: person:madison-ficorilli
+  brief_bio:
+    text: The GitHub Universe 2023 listing describes Madison Ficorilli as Senior Manager, Security Advisory
+      Curation at GitHub.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic source reconciliation
+    written_at: '2026-10-24T22:02:20+00:00'
+    input_sha256: 68574bdc7d27dfd05b58ec2b7b9c29d511f1911a4fd078e99d55806c2596e258
+    stale: true
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2830l
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695243562716001LOEk
+      ref: session:2023/sec2830l
+  credentials:
+  - kind: honor
+    title: 2024 CIO of the Year - Rising Star Award Winner
+    issuer: Pittsburgh Technology Council
+    date: '2024-03-01T00:00:00.000Z'
+    description: CIO of the Year is the opportunity to recognize and honor the accomplishments of Southwestern
+      PA’s most hardworking IT/technology leaders and up-and-coming stars and tech trailblazers. Each
+      year, winners are selected for individual category awards with one member of the IT community receiving
+      the overall CIO Choice Lifetime Achievement Award. All Finalists will be recognized for their innovation
+      and creativity in planning and deploying their enterprise systems, future technology goals… Show
+      more
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: honor
+    title: Sponsor Award from Security Risk Advisors
+    issuer: Security Risk Advisors at the Collegiate Penetration Testing Competition
+    date: '2017-10-01T00:00:00.000Z'
+    description: My team won a sponsor award at the Collegiate Penetration Testing Competition from Security
+      and Risk Advisors for our outstanding report, team work, and critical thinking.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: honor
+    title: Finalist - 2015 Fall mHealth Challenge
+    issuer: '-'
+    date: '2015-11-01T00:00:00.000Z'
+    description: Finalist in the mHealth Challenge during Global Entrepreneurship week at Penn State.
+      The mHealth Challenge is an engaged scholarship event where undergraduate students across 3 different
+      colleges collaborate on developing a low fidelity prototype of a mobile health application design
+      to addresses a societal health need associated with a specific targeted audience. http://mhealth.ist.psu.edu/2015-fall-challenge
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: honor
+    title: Recipient of RSA Security Scholar Scholarship
+    issuer: RSA
+    date: '2015-10-01T00:00:00.000Z'
+    description: 'After being selected by a committee, each recipient is able to attend the RSA Security
+      Conference February 29 to March 4, 2016, in San Francisco as an honorary RSA Security Scholar guest.
+      More information about the conference can be found here: https://www.rsaconference.com/'
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: honor
+    title: Recipient of Scholarship for Women Studying Cyber Security
+    issuer: Hewlett-Packard, ACSA
+    date: '2015-05-01T00:00:00.000Z'
+    description: The SWSIS program was founded in 2011 by Applied Computer Security Associates (ACSA),
+      a non-profit Maryland corporation. Their goal is to help address the shortage of professionals in
+      the information security field, and especially the shortage of women in the field, by providing
+      scholarships to women at formative stages of their careers.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: honor
+    title: 1st Place Deloitte Case Competition
+    issuer: Deloitte Consulting
+    date: '2014-04-01T00:00:00.000Z'
+    description: The Challenge is a competition in which students are given a fictitious case by high-level
+      executives from Deloitte, which provides audit, tax, consulting, enterprise risk and financial services
+      with more than 200,000 professionals in over 150 countries. http://news.psu.edu/story/311061/2014/04/08/campus-life/ist-students-gain-real-life-consulting-experience-deloitte
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: certification
+    title: Cross-Site Scripting
+    issuer: Cybrary
+    date: May 2017
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  publications:
+  - title: 'Podcast: My Story in Computing with Madison Quinn Oliver'
+    venue: Software Engineering Institute
+    date: Apr 2020
+    description: Madison Quinn Oliver, an associated vulnerability engineer in the SEI's CERT Division,
+      discusses her career journey and obstacles and mentors that she encountered along the way.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: CVE Dispute Process Improvements
+    venue: CVE Program
+    date: March 2, 2020
+    description: Presented on potential new solutions for the CVE dispute process as part of my membership
+      in the CVE Working Groups.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: '"Vulnerability Response Capability Development for PSIRT Teams" at FIRST'
+    venue: 31st Annual FIRST Conference
+    date: Jun 2019
+    description: Presenter at the 31st Annual Forum of Incident Response and Security Teams (FIRST) Conference."This
+      one-day course is designed for those responding to vulnerabilities. It will provide an overview
+      of key issues, processes, and decisions that must be made to either create or better support the
+      response efforts of a PSIRT team. Attendees will develop an action-plan for vulnerability response
+      as they work through their current processes, or during design a PSIRT capability if one does not
+      exist."
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Vulnerability Response Capability Development
+    venue: Software Engineering Institute
+    date: Mar 2019
+    description: Taught the "Vulnerability Response Capability Development" course at the CERT/CC RSA
+      Vendor Meeting during the 2019 RSA Conference. "This one-day course is designed for managers and
+      project leaders who are trying to respond to vulnerabilities reported in their products. This course
+      will provide a high-level overview of the key issues, processes, and decisions that must be made
+      to build your organization's vulnerability response capability. As part of the course, attendees
+      will develop an action plan that can be used as a starting point in planning and implementing their
+      vulnerability response capability."
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: 'ShmooCon Presentation: Embedded Device Vulnerability Analysis Case Study Using TROMMEL'
+    venue: ShmooCon
+    date: Jan 2018
+    description: Presentation of the paper "Embedded Device Vulnerability Analysis Case Study Using TROMMEL"
+      at the ShmooCon 2018 conference.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Embedded Device Vulnerability Analysis Case Study Using Trommel
+    venue: Software Engineering Institute
+    date: Dec 2017
+    description: This document provides security researchers with a repeatable methodology to produce
+      more thorough and actionable results when analyzing embedded devices for vulnerabilities.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Framework for Embedded Device Analysis
+    venue: Three Rivers Information Security Symposium
+    date: Dec 2017
+    description: Presentation of the paper "Embedded Device Vulnerability Analysis Case Study Using TROMMEL"
+      at the 2017 Three Rivers Information Security Symposium conference.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: IST students to network with top cybersecurity professionals at RSA conference
+    venue: College of Information Sciences and Technology
+    date: February 24, 2016
+    description: An article about the RSA Scholar students from the Pennsylvania State University. I was
+      interviewed for this article and did not write it.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: IST students gain real-life consulting experience in Deloitte competition
+    venue: College of Information Sciences and Technology
+    date: April 8, 2014
+    description: An article about the Deloitte Case Competition from the Pennsylvania State University
+      where I won first place.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Multiple Vulnerability Notes
+    venue: CERT Coordination Center at the Software Engineering Institute
+    description: Numerous Vulnerability Note publications as a direct result of her vulnerability coordination
+      efforts for the CERT/CC.
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  spoken_languages:
+  - English
+  - Arabic
+  activities:
+  - kind: project
+    title: Cryptography Final Paper - Diffie Hellman Groups Security
+    detail: Each student will be required to write a research paper identifying an existing cryptosystem
+      with deficiencies and proposing a replacement cryptosystem that improves cryptographic security
+      for theintended function. The target audience for this paper is the IT and security and risk departments
+      of a commercial or governmental organization. Your role is to be the security analyst attempting
+      to improve the security of the organization. Your paper will become part of an organizational review
+      to determine if operational policies and practices should be updated. Please write addressing a
+      business audience, not an academic audience. · May 2017
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: project
+    title: Glastopf Honeypot on Raspberry Pi
+    detail: The purpose of this project is to have students create their own honeypot on a Raspberry Pi
+      and then analyze the results to look for anomalies. We found a number of anomalies and malicious
+      requests. · May 2017
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: project
+    title: Rsyslog For A Centralized Logging Server
+    detail: This final project is designed to have small group teams work together to provide a demonstration
+      of cryptography as it’s employed in the workplace. The topic for the project is securing centralized
+      logging and the software reviewed is Rsyslog. · May 2017
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: project
+    title: Application Categorization
+    detail: This project required me to categorize a list of applications that were on corporate devices
+      to later create a black and white list. I review tens of thousands of application, rated their purpose
+      and potential for business use, and rated their vulnerability. I then determined whether or not
+      the application should be allowed on corporate devices and gave it a definitive score. This project
+      focused on compliance with standard business and security policies. · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Applied Threat Analysis
+    detail: 95-889
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Astronomical Universe
+    detail: ASRTO 1 and 11
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Computer and Cyber Forensics
+    detail: IST 454
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Contemporary Political Ideologies
+    detail: PL SC 7
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Critical Thinking
+    detail: PHIL 10
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Cyber Crime and War
+    detail: SRA 497B
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Decision Theory and Analysis
+    detail: SRA 231
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Digital Design & Innovation
+    detail: IST 437
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Digital Entrepreneurship
+    detail: IST 237
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Elementary Modern Standard Arabic
+    detail: ARAB 003
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Elementary Statistics
+    detail: STAT 200
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Entrepreneurial Leadership
+    detail: ENGR 310
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Ethical Penetration Testing
+    detail: 95-883
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Foreign Studies - Study Abroad in Australia and New Zealand
+    detail: RPTM 499
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: History of Punk Rock
+    detail: INART 125
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Information Security Management
+    detail: IST 456
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Information, People and Technology
+    detail: IST 110
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Intermediate Skiing
+    detail: KINES 11
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: International Relations
+    detail: PL SC 14
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Introduction to Application Development
+    detail: IST 140
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Introduction to Information Security Management
+    detail: 95-752
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Introduction to Python
+    detail: 90-812
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Introduction to Security and Risk Analysis
+    detail: SRA 111
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Introduction to Video Game Culture
+    detail: CMLIT 191
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Introductory Microeconomic Analysis and Policy
+    detail: ECON 102
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Legal and Regulatory Environment of Information Science and Technology
+    detail: IST 432
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Modern Standard Arabic
+    detail: ARAB 1 to 3
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Network Security
+    detail: IST 451
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Network Situational Awareness
+    detail: 95-855
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Network and Internet Security
+    detail: 95-758
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Networking and Telecommunications
+    detail: IST 220
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: New Venture Creation
+    detail: IST 425
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Organization of Data
+    detail: IST 210
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Overview of Information Security
+    detail: SRA 231
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Risk Management Assessment and Mitigation
+    detail: SRA 311
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Software and Security
+    detail: 95-746
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Statistics for Security and Risk Analysis
+    detail: SRA 365
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Threat of Terrorism and Crime
+    detail: SRA 211
+    evidence:
+      url: https://www.linkedin.com/in/madisonoliver24
+      observed_at: '2026-10-24T08:47:15Z'
+  recent_writing:
+  - title: Everyone's blaming AI for bad vulnerability reports. The data tells a more nuanced story.
+    url: https://www.linkedin.com/pulse/everyones-blaming-ai-bad-vulnerability-reports-data-oliver-ficorilli-kvoxc
+    published: '2026-04-03T00:00:00.000Z'
+    channel: linkedin
+    summary: At RSA last week, I had the privilege of joining a panel discussion that touched on the increasing
+      amount of…
+  talks:
+  - session:2023/sec2830l
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695046483479001f8za
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

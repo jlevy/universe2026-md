@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/uber-com
+  platform: linkedin
+  handle: company/uber-com
+  url: https://www.linkedin.com/company/uber-com
+  display_name: Uber
+  bio: We are Uber. The go-getters. The kind of people who are relentless about our mission to help people
+    go anywhere and get anything and earn their way. Movement is what we power. It’s our lifeblood. It
+    runs through our veins. It’s what gets us out of bed each morning. It pushes us to constantly reimagine
+    how we can move better. For you. For all the places you want to go. For all the things you want to
+    get. For all the ways you want to earn. Across the entire world. In real time. At the incredible speed
+    of now. The idea for Uber was born on a snowy night in Paris in 2008, and ever since then our DNA
+    of reimagination and reinvention carries on. We’ve grown into a global platform powering flexible
+    earnings and the movement of people and things in ever expanding ways. We’ve gone from connecting
+    rides on 4 wheels to 2 wheels to 18-wheel freight deliveries. From takeout meals to daily essentials
+    to prescription drugs to just about anything you need at any time and earning your way. From drivers
+    with background checks to real-time verification, safety is a top priority every single day. At Uber,
+    the pursuit of reimagination is never finished, never stops, and is always just beginning.
+  website: https://www.uber.com/
+  followers: 3658160
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D0BAQFiYnR1Mbtxdg/company-logo_200_200/company-logo_200_200/0/1630552741617/uber_com_logo?e=2147483647&v=beta&t=7dxf_cKFL245Rd3v8qQYIGneIgixqtJyHkfYx_RdyYs
+  owner: org:uber
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/matasr
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/uber-com
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

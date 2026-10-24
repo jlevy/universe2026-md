@@ -1,0 +1,91 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jon-clements
+  person: person:jon-clements
+  brief_bio:
+    text: Jon Clements is DevOps & Pipeline Product Manager at Chevron, where Clements has led the CI/CD
+      DevOps team for eight years and led the migration to GitHub. Clements speaks at GitHub Universe
+      2026 about using a migration to rethink how teams build.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 6fd344005a61db7f105a5fbfb76e29f206dba74bba7d02ab282aa67314defe2a
+    stale: false
+  headline: DevOps & Pipeline Product Manager at Chevron
+  current_roles:
+  - DevOps & Pipeline Product Manager at Chevron
+  technologies:
+  - label: Azure DevOps
+    target: software:azure-devops
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure DevOps
+      ref: person:jon-clements
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:ldr1905b
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1905b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1905b
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790126466664001Enyn
+      ref: session:ldr1905b
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790126466664001Enyn
+      ref: session:ldr1905b
+  education:
+  - school: Texas A&M University
+    evidence:
+      url: https://www.linkedin.com/in/jonathan-clements-b9441733
+      observed_at: '2026-10-24T08:11:33Z'
+  talks:
+  - session:ldr1905b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724863931261001IfNJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

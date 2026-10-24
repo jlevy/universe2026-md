@@ -1,0 +1,209 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:navinkumar-patil
+  person: person:navinkumar-patil
+  brief_bio:
+    text: Navinkumar Patil is a Staff Software Engineer at PayPal who builds AI-powered developer experiences
+      in the Merchant Group and started the PayPal VS Code extension. Patil spoke at GitHub Universe 2025
+      about migrating legacy PayPal integrations with AI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 5b47c12cb0bb16d4aa9913429a3dc87d50e35985a6b9743ef399e86493436ef7
+    stale: false
+  headline: PayPal
+  current_roles:
+  - PayPal
+  expertise:
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1723s
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1723s
+  technologies:
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: VS Code
+      ref: person:navinkumar-patil
+  interests:
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757704074858001FpvE
+      ref: session:2025/bld1723s
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757704074858001FpvE
+      ref: session:2025/bld1723s
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757704074858001FpvE
+      ref: session:2025/bld1723s
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757704074858001FpvE
+      ref: session:2025/bld1723s
+  credentials:
+  - kind: honor
+    title: FS Banking Recognitions - Karma Award
+    issuer: Accenture
+    date: '2013-06-01T00:00:00.000Z'
+    description: Awarded as a highest contributor to Barclays projects like BKEY and PingIt.
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: certification
+    title: Certified Banking Industry Generalist
+    issuer: Accenture
+    date: Apr 2013
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: certification
+    title: Microeconomics Principles
+    issuer: Coursera
+    date: Mar 2013
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: certification
+    title: 'Financial Markets: A Beginner''s Module'
+    issuer: National Stock Exchange of India Limited
+    date: Dec 2013
+    expires: Dec 2018
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  spoken_languages:
+  - English
+  - Hindi
+  - Marathi
+  - German
+  activities:
+  - kind: volunteering
+    title: Volunteer
+    detail: Accenture · Education · Sep 2013 · - Present · 13 years 2 months · • Part of Pune Blind Men's
+      Association program which was responsible for helping blind student record textbooks. • Also part
+      of Accenture’s “Skills to Succeed” program, taught preliminary English and Maths courses to children
+      in Pune. · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: project
+    title: Book my Ride
+    detail: '• Designed a 3-tier architecture application and implemented a Uber like application having
+      features like select a ride, dynamic pricing for fares, customer/drivers profile with photos and
+      graph analysis for admin.• SQL caching using Redis and Connection pooling for improving the performance.
+      • Functional and Performance testing using Jmeter, showed differences in performances. •Technologies
+      Stack: Angular.js, Node.js, Bootstrap, RabbitMQ, Express.js, MySQL, MongoDB, Redis,Socket.io,HighCharts
+      Jmeter. · Oct 2015'
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: project
+    title: Green Archer
+    detail: 'Green Archer is a game developed in GreenFoot using various design patterns like Template,
+      Observer, Singleton, Command and State.Technologies used: Java · Nov 2015'
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: project
+    title: Social Media Application
+    detail: 'Developed Facebook-like web application using REST services with below features:Users: Create
+      account, Login, Logout.Profile: Overview, Work & Education, Contact info, Friends list and Interests.News
+      Feed: Updates on friend Requests and groups joined.Group: Create, Add, Remove,Add new members,Delete
+      members.Friend Request : Add friend, Accept friend request, Decline friend request.Technologies
+      Stack: Bootstrap,Angular.js, CSS, Node.js & Express.js, MySQL.Performance Testing: JMeter · Sep
+      2015'
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: project
+    title: UML Generator
+    detail: 'Designed and implemented a UML Parser, which converts Java source code into a UML diagrams.Technologies
+      used: Java, PlantUML, Graphviz and Java Parser · Sep 2015'
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: project
+    title: MenuApp
+    detail: 'MenuApp is an interactive menu designed specifically for the restaurants. The MenuApp is
+      an Client Server android application, which replaces the paper based menu. This allows the customer
+      to view the image of the item ordered and to customize their order in a very convenient manner.Technologies
+      Stack: Android, XML, JSP, Servlet, JSON, JQuery, MySQL,Tortoise SVN for the project. · Aug 2011'
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: project
+    title: Training & Placement Services
+    detail: Completed an academic project and used the concepts of SQL for backend and Microsoft Visual
+      Basic for front end. To involve minimum paper work and help in easy retrieval of records stored
+      in database. · Sep 2010
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  - kind: project
+    title: Seismic Activity Monitor - Visual display of real-time earthquake data
+    detail: An interactive cross-browser compatible website to display real-time earthquake data with
+      a motto of prevention is better than cure. The real-time Seismic wave data is taken from USGS website
+      and stored in rethinkDB. The year wise data is displayed using high charts for better visualization
+      of changes in seismic activity. The heat map is used to display the intensity of Earthquake in every
+      place. The real-time data is displayed on maps using ArcGIS API and also on the 3D globe using WebGL
+      API.
+    evidence:
+      url: https://www.linkedin.com/in/navinpatil
+      observed_at: '2026-10-24T08:46:53Z'
+  talks:
+  - session:2025/bld1723s
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698425218991001C9Gp
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

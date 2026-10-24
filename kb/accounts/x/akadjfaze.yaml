@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/akadjfaze
+  platform: x
+  handle: akaDJFaZe
+  url: https://x.com/akaDJFaZe
+  display_name: Anandkumar Patel
+  bio: |-
+    Salesforce Savant; Mulesoft Mage; Runnable Royalty; Nvidia Ninja:
+    Kubernetes Kaptain; Docker Demagogue; Go Gerent; Node.js Necromancer; AWS Alchemist;
+  location: Atlanta, GA
+  website: http://runnable.com/
+  followers: 145
+  following: 284
+  posts_count: 324
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/608719584212819968/DOKEU1yT_normal.jpg
+  created_at: '2014-02-02T21:50:56Z'
+  owner: person:anandkumar-patel
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721157529191001sswL
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/akaDJFaZe
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

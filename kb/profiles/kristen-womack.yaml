@@ -1,0 +1,299 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kristen-womack
+  person: person:kristen-womack
+  brief_bio:
+    text: Kristen Womack was a Principal Product Manager at Microsoft building the Azure Developer CLI
+      when speaking at GitHub Universe 2024 about deploying AI apps with GitHub and Azure.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 292cd8c6ef0225cc67d3077ef0539ab85a2f803b7221c5954cb92b4f182a6f73
+    stale: false
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1897d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1897d
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1897d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1897d
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Codespaces
+      ref: session:2024/ai1897d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1897d
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:kristen-womack
+  - label: Python
+    target: software:python
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Python
+      ref: session:2024/ai1897d
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722975257185001oCrC
+      ref: session:2024/ai1897d
+  credentials:
+  - kind: honor
+    title: 2018 ALUMNAE AWARD
+    issuer: St. Catherine University
+    date: '2018-06-01T00:00:00.000Z'
+    description: Each year, St. Catherine recognizes outstanding graduates who demonstrate excellence
+      in leadership and service to others. https://www.stkate.edu/news-and-events/news/2018-alumnae-award-winners
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: honor
+    title: Most Likely to Succeed 2017 - Technology Category
+    issuer: Minnesota Business Magazine
+    date: '2017-11-01T00:00:00.000Z'
+    description: These winners and finalists represent the best of Minnesota’s flourishing startup community.
+      http://minnesotabusiness.com/most-likely-succeed-2017-0
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: honor
+    title: Twin Cities Startup Awards - 2017
+    issuer: Twin Cities Startup Week & GoKart Labs
+    date: '2017-10-01T00:00:00.000Z'
+    description: Make It Work Category - Awarded to a bootstrapping entrepreneur or organization who pushed
+      their idea without funding http://labnotes.gokartlabs.com/tc-startup-awards/
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: honor
+    title: 40 Under 40
+    issuer: Minneapolis/St. Paul Business Journal
+    date: '2016-02-01T00:00:00.000Z'
+    description: Each year, Business Journal editors sift through hundreds of nominations — more than
+      550 this year (including a few people who had multiple nominations) — and choose 40 leaders under
+      the age of 40 who have already accomplished much in their professional lives while also taking a
+      leading role in the Twin Cities community.
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: certification
+    title: Microsoft Global Hackathon 2026
+    issuer: Microsoft
+    date: Sep 2026
+    url: https://www.credly.com/org/microsoftgarage/badge/microsoft-global-hackathon-2024
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: certification
+    title: 'HOME: Ask Me Anything'
+    issuer: Microsoft
+    date: Nov 2023
+    url: https://www.credly.com/badges/478f9bee-2f25-4564-8cd5-87dc181def99/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: certification
+    title: M365 Core ON Location Inaugural Champ | 2023
+    issuer: Microsoft
+    date: Oct 2023
+    url: https://www.credly.com/badges/3c6a474a-797f-4e77-b7fe-11a9c9d8467d/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: certification
+    title: Women's Mentoring Circle Captain - Americas - 2023
+    issuer: Microsoft
+    date: Oct 2023
+    url: https://www.credly.com/badges/11625a25-32ce-4389-924d-e0b003e1ee96/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: certification
+    title: 'Introducing Semantic Kernel: Building AI-Based Apps'
+    issuer: LinkedIn
+    date: Jul 2023
+    url: https://www.linkedin.com/learning/certificates/ceb6c6be9b3333a28c5bd8b133d51a1ca5777a307bcb80ddf0377fc85d24e113
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  spoken_languages:
+  - English
+  - Sign Languages
+  activities:
+  - kind: volunteering
+    title: Co-Organizer for Twin Cities Product Tank
+    detail: Mind the Product · Education · Nov 2015 · - Dec 2016 · 1 year 2 months · Started the Minneapolis
+      St. Paul ProductTank chapter to grow connections and experience in Product Design, Product Management,
+      Business Modeling, Metrics, User Experience and more. Organized events that hosted talks from guest
+      speakers on topics around product management, networking opportunities, etc. · Nov 2015
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: volunteering
+    title: Mentor - Summer Retail Program
+    detail: Techstars · Science and Technology · May 2015 · - Sep 2016 · 1 year 5 months · https://connect.techstars.com/facestars/retail-2016-summer#mentors
+      · May 2015
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: volunteering
+    title: Trustee, Board of Trustees
+    detail: St. Catherine University · Education · Dec 2021 · - Present · 4 years 11 months · Dec 2021
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: volunteering
+    title: After school coding instructor (grade 3 to grade 8)
+    detail: Yinghua Academy · Education · Jan 2023 · - Present · 3 years 10 months · Jan 2023
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: project
+    title: Co-Founded Hack the Gap
+    detail: First all women hackathon in Minneapolis! Video recap --> https://www.youtube.com/watch?v=dIkU9PfzhAc
+      · May 2015
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: project
+    title: Best Buy Query Builder
+    detail: We built the Query Builder app to get developers up and running the Best Buy APIs within minutes.
+      This simple angular app will have you running live Best Buy queries against all of the external
+      APIs with just an API key. It even breaks down the queries into their parts so you can modify to
+      meet your needs. · Dec 2014
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: project
+    title: Best Buy Recommendations APIs
+    detail: I was responsible for the vision, strategy and execution of extending our Recommendations
+      APIs externally for developers to partner with Best Buy. http://www.programmableweb.com/news/best-buy-launches-recommendations-api/2014/08/08
+      · Aug 2014
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: project
+    title: Best Buy IFTTT Channel
+    detail: Product Management for the Best Buy channel on IFTTT using the Best Buy APIs. I led the vision
+      and strategy for this initiative. · Aug 2014
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  - kind: project
+    title: Magellan
+    detail: Build internal product catalog APIs for Best Buy dotcom. I managed the relationships, schedule,
+      budget and removed roadblocks. · May 2011
+    evidence:
+      url: https://www.linkedin.com/in/kristenwomack
+      observed_at: '2026-10-24T08:45:25Z'
+  talks:
+  - session:2024/ai1897d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725480642396001WlHp
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,276 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:connor-uhlman
+  person: person:connor-uhlman
+  brief_bio:
+    text: Connor Uhlman is a software engineer at Principal Financial Group who works on platform engineering,
+      including an internal developer portal and AI-powered agentic workflows. Uhlman spoke at GitHub
+      Universe 2025 about agentic workflows that save millions.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 61a2b5a222697f95056088c1fe8130b312600b583cd23af6a39c1db31e832e2d
+    stale: false
+  headline: Principal Financial Group
+  current_roles:
+  - Principal Financial Group
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1250d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1250d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1250d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1250d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1250d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1250d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/aut1250d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Model Context Protocol
+      ref: session:2025/aut1250d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746038625581001o9XE
+      ref: session:2025/aut1250d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746038625581001o9XE
+      ref: session:2025/aut1250d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746038625581001o9XE
+      ref: session:2025/aut1250d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746038625581001o9XE
+      ref: session:2025/aut1250d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746038625581001o9XE
+      ref: session:2025/aut1250d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746038625581001o9XE
+      ref: session:2025/aut1250d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746038625581001o9XE
+      ref: session:2025/aut1250d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746038625581001o9XE
+      ref: session:2025/aut1250d
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746038625581001o9XE
+      ref: session:2025/aut1250d
+  education:
+  - school: Simpson College
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  credentials:
+  - kind: honor
+    title: Oustanding Senior in Computer Science
+    issuer: Simpson College
+    date: '2015-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2021
+    expires: Nov 2024
+    url: https://www.credly.com/badges/de3b489b-ee4d-49f1-bc6a-f3daf1f93c37/public_url
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: course
+    title: Advanced Database Systems
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Algorithms
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Applied Statistics
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: C / C++
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Data Structures & Object-Oriented Programming
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Database Systems
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Discrete Mathematics
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Management Information Systems
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Networks
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Organization and Behavior
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Project Management
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Software Engineering
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Visual Basic
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  - kind: course
+    title: Web Development
+    evidence:
+      url: https://www.linkedin.com/in/connoruhlman
+      observed_at: '2026-10-24T08:42:07Z'
+  talks:
+  - session:2025/aut1250d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745872852543001dxmX
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,221 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:raghu-venkatesh
+  person: person:raghu-venkatesh
+  brief_bio:
+    text: Raghu Venkatesh was a senior engineering manager at Atlassian leading the ecosystem pillar of
+      Compass, its developer experience platform, when speaking at GitHub Universe 2024. Venkatesh spoke
+      about Compass as an internal developer platform.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: a07286f2daf16633345d4ab808b6ba0cd2081c8416919c3bb976871ab7a74752
+    stale: false
+  expertise:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2154d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2154d
+  - label: Data Analytics
+    target: term:topic-2024/data-analytics
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2154d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2154d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2154d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2154d
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2154d
+  interests:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: Data Analytics
+    target: term:topic-2024/data-analytics
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: Sponsors
+    target: term:github-product-2024/sponsors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728073380175001FVCk
+      ref: session:2024/dev2154d
+  credentials:
+  - kind: certification
+    title: Agentic AI Systems, Machine Learning and AI
+    issuer: Deep Atlas
+    date: May 2026
+    evidence:
+      url: https://www.linkedin.com/in/raghu-venkatesh-42775914
+      observed_at: '2026-10-24T08:47:23Z'
+  - kind: certification
+    title: I/O-efficient algorithms
+    issuer: Coursera
+    date: Dec 2021
+    evidence:
+      url: https://www.linkedin.com/in/raghu-venkatesh-42775914
+      observed_at: '2026-10-24T08:47:23Z'
+  - kind: certification
+    title: Section4 Certified Platform Strategist
+    issuer: Section4
+    date: Oct 2021
+    url: https://www.credly.com/badges/db8af482-573b-46d2-bad7-2aac0f32e2de?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/raghu-venkatesh-42775914
+      observed_at: '2026-10-24T08:47:23Z'
+  - kind: certification
+    title: CCNA
+    issuer: Cisco
+    date: Sep 2009
+    expires: Sep 2012
+    evidence:
+      url: https://www.linkedin.com/in/raghu-venkatesh-42775914
+      observed_at: '2026-10-24T08:47:23Z'
+  talks:
+  - session:2024/dev2154d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728082361917001r4Dq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

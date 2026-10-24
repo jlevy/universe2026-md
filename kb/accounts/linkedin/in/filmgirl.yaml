@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/filmgirl
+  platform: linkedin
+  handle: in/filmgirl
+  url: https://www.linkedin.com/in/filmgirl
+  display_name: Christina Warren
+  bio: I work with the Developer Relations team at GitHub, working to make it the best place for…
+  location: Seattle
+  followers: 5557
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFvacgHV494LQ/profile-displayphoto-shrink_200_200/B56ZTdVBeXHoAg-/0/1738880063701?e=2147483647&v=beta&t=ZaxsicSIxfHLeDRNK35poUJrdTXHZBlxGxwDAIh8OI4
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:christina-warren
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687877165916001nAud
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/filmgirl
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

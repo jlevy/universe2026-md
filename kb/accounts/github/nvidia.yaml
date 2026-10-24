@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:nvidia
+  login: NVIDIA
+  kind: organization
+  url: https://github.com/NVIDIA
+  name: NVIDIA Corporation
+  location: Santa Clara, CA
+  website: https://nvidia.com
+  public_repositories: 749
+  created_at: '2012-05-10T22:06:34Z'
+  pinned:
+  - repo:nvidia/cosmos
+  - repo:nvidia/nemoclaw
+  - repo:nvidia/tensorrt-llm
+  - repo:nvidia/cutlass
+  - repo:nvidia/warp
+  - repo:nvidia/open-gpu-kernel-modules
+  top_repositories:
+  - repo:nvidia/skillspector
+  - repo:nvidia/openshell
+  - repo:nvidia/megatron-lm
+  entity: org:nvidia
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: NVIDIA
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

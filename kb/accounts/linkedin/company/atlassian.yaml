@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/atlassian
+  platform: linkedin
+  handle: company/atlassian
+  url: https://www.linkedin.com/company/atlassian
+  display_name: Atlassian
+  bio: Atlassian powers the collaboration that helps teams accomplish what would otherwise be impossible
+    alone. From space missions and motor racing to bugs in code and IT requests, no task is too large
+    or too small with the right team, the right tools, and the right practices. Over 300,000 global companies
+    and 80% of the Fortune 500 rely on Atlassian’s software, like Jira, Confluence, Loom, and Trello,
+    to help their teams work better together and deliver quality results on time. With our 300,000+ customers
+    and team of 10,000+ Atlassians, we are building the next generation of team collaboration and productivity
+    software. We believe the power of teams has the potential to change the world — one that is more open,
+    authentic, and inclusive.
+  website: https://atlassian.com/
+  followers: 2711450
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQGeyLL6crkJKg/company-logo_200_200/company-logo_200_200/0/1735593604612/atlassian_logo?e=2147483647&v=beta&t=MDQ6y7lHkorfEXX4hBye7e2Xn1V3FG1tLoKieqjj-Ik
+  owner: org:atlassian
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jovanadjune
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/melissanmiller
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/atlassian
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

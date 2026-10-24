@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/dbaikrich
+  platform: linkedin
+  handle: in/dbaikrich
+  url: https://www.linkedin.com/in/dbaikrich
+  display_name: Dimitri Baikrich
+  location: North Yeoval
+  followers: 1870
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5103AQFLYj_o8u54cw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1549616356872?e=2147483647&v=beta&t=7fBvHsBNeptuw_rTj1prg58FdjqjxsV2QvitVo5hgYI
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:dimitri-baikrich
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1758007143289001p6Sm
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/dbaikrich
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

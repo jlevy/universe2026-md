@@ -1,0 +1,261 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dani-grant
+  person: person:dani-grant
+  brief_bio:
+    text: Dani Grant is the former CEO of Jam, a dev tools startup for bug reporting, and now works with
+      founders at Andreessen Horowitz after an earlier role as a product manager at Cloudflare. Grant
+      spoke at GitHub Universe 2024 about starting a company as an engineer and in an interview about
+      building Jam.
+    cites:
+    - x_bio
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: 0cf211b1950c4c58ec262f96d5735f755a6c0f1883862eec6807806ed69f19f7
+    stale: false
+  headline: Andreessen Horowitz
+  current_roles:
+  - Andreessen Horowitz
+  expertise:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1878b
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1878b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1878b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1878b
+  interests:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721425796085001ThtE
+      ref: session:2024/dev1878b
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721425796085001ThtE
+      ref: session:2024/dev1878b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721425796085001ThtE
+      ref: session:2024/dev1878b
+  - label: Pages
+    target: term:github-product-2024/pages
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721425796085001ThtE
+      ref: session:2024/dev1878b
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721425796085001ThtE
+      ref: session:2024/dev1878b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721425796085001ThtE
+      ref: session:2024/dev1878b
+  education:
+  - school: New York University
+    evidence:
+      url: https://www.linkedin.com/in/danigrant
+      observed_at: '2026-10-24T08:42:57Z'
+  recent_writing:
+  - title: |-
+      OMG!! Someone just created the 10 millionth Jam!!! 🤯
+
+      So excited. Less time fixing, more time building!!
+
+      Thanks y'all for building this with us! 🍓 https://t.co/B3rP8xgFI7
+    url: https://twitter.com/480959060/status/1945491196455109098
+    published: '2025-07-16T14:30:21Z'
+    channel: x
+  - title: |-
+      My 1st day at Cloudflare, the now CTO gave me 1 big piece of advice:
+
+      Ship small wins early. Like ASAP.
+
+      The easiest way to build trust in a new org is to ship small wins early.
+
+      Ship small and fast (otherwise you're just the new PM working on the same darn feature for 6 months).
+    url: https://twitter.com/480959060/status/1912873082198565153
+    published: '2025-04-17T14:17:36Z'
+    channel: x
+  - title: |-
+      Best hiring advice I’ve received:
+
+      Hire people who love what they do so much, they listen to podcasts about it.
+
+      Getting to build with these people will make your day. Their obsession, their love for the craft, it’s infectious and awesome 🤩
+    url: https://twitter.com/480959060/status/1884263953498529992
+    published: '2025-01-28T15:35:09Z'
+    channel: x
+  - title: |-
+      Calendly didn’t have a technical co-founder
+
+      Instead, they built the product with a dev agency
+
+      (Jam too!)
+
+      There’s no one way to build a startup
+
+      Don’t let people tell you you need a technical cofounder to start your company
+    url: https://twitter.com/480959060/status/1857083575444590953
+    published: '2024-11-14T15:30:01Z'
+    channel: x
+  - title: |-
+      PMF is a lot easier to solve if you split it into 2 steps:
+
+      Promise Market Fit: Will people buy a product with your promise?
+
+      Product Market Fit: Once they buy &amp; sign up, do they stay?
+
+      Once you have a promise people want, keep iterating until your product fulfills the promis
+    url: https://twitter.com/480959060/status/1856358797142569383
+    published: '2024-11-12T15:30:01Z'
+    channel: x
+  - title: 6 new features for even faster bug repros! ⚡️
+    url: https://www.linkedin.com/pulse/6-new-features-even-faster-bug-repros-dani-grant-oj3pe
+    published: '2024-10-30T00:00:00.000Z'
+    channel: linkedin
+    summary: We just added a ton more info to every bug report created with Jam! So, you just 1-click
+      capture a bug, and devs get…
+  - title: 'New in the Intercom app store: fix customer issues faster with automatic bug logs from support
+      chats ⚡️'
+    url: https://www.linkedin.com/pulse/new-intercom-app-store-fix-customer-issues-faster-automatic-grant-w0wce
+    published: '2024-10-30T00:00:00.000Z'
+    channel: linkedin
+    summary: Hi, I’m Dani, CEO of Jam — a startup that has helped 150,000 people fix over 4 million bugs
+      (including at companies…
+  - title: |-
+      10 yr old startup advice that hasn't aged well:
+
+      "If you're not embarrassed, you've shipped too late"
+
+      10 yrs ago, yes.
+
+      But today, people expect high quality, even from startups.
+
+      Startups do need to ship fast. But keep scope small enough to deliver a great 1st impression.
+    url: https://twitter.com/480959060/status/1850907860940853704
+    published: '2024-10-28T14:29:56Z'
+    channel: x
+  - title: |-
+      When you start a startup, so many people tell you to ship fast and ship messy.
+
+      "You’ll know you have PMF when people use your broken product."
+
+      I think this is outdated advice that doesn't work anymore in 2024.
+
+      Maybe better today would be: "ship fast, small scope, high quality"
+    url: https://twitter.com/480959060/status/1846558264521367637
+    published: '2024-10-16T14:26:12Z'
+    channel: x
+  - title: |-
+      Startup advice says: get users in asap
+
+      But pre-PMF, if users don't stay, it's hard to know why
+
+      We decided to try a new rule:
+
+      No launches until our team 100% loves using it
+
+      Building for ourselves 1st helped us find PMF
+
+      Way faster to iterate internally than wait for feedback!
+    url: https://twitter.com/480959060/status/1845834583323161027
+    published: '2024-10-14T14:30:33Z'
+    channel: x
+  - title: |-
+      And we're live!! Just launched Jam for Customer Support!
+
+      Debug customer issues in seconds.
+
+      I can't wait for you to see it. Let me show you! https://t.co/M6uQ3WvxDk
+    url: https://twitter.com/480959060/status/1843660271090577527
+    published: '2024-10-08T14:30:36Z'
+    channel: x
+  - title: |-
+      Great engineering teams do the boring things well:
+
+      - Internal docs
+      - Code organization
+      - Bugs &amp; testing
+      - Local env
+      - Deployment
+      - Team coordination
+
+      Hard to do well, but when you do, it's so much faster and more fun to build!
+    url: https://twitter.com/480959060/status/1840761024485712211
+    published: '2024-09-30T14:30:02Z'
+    channel: x
+  talks:
+  - session:2024/dev1878b
+  - session:2024/dev2236o
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686087225658001xJg1
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/m5nguyen
+  platform: linkedin
+  handle: in/m5nguyen
+  url: https://www.linkedin.com/in/m5nguyen
+  display_name: Michael Nguyen
+  location: Toronto
+  followers: 1637
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQGs4I45WaKYhA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1516314844408?e=2147483647&v=beta&t=lCEojilp56nX3IBdk_2flJ4moA32QSjktmTC-zYwwgw
+  owner: person:mike-nguyen
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696509659691001xwGT
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/m5nguyen
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

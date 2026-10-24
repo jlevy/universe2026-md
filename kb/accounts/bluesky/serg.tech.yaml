@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/serg.tech
+  platform: bluesky
+  handle: serg.tech
+  url: https://bsky.app/profile/serg.tech
+  display_name: sergiy
+  bio: |-
+    DevEx @sentry.io
+    prev @acctual, @coinbase, @shopify, @ruutly (acquired)
+  followers: 177
+  created_at: '2023-04-21T17:45:54Z'
+  owner: person:serge-dybskiy
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785876748469001ECLT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: sergical
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: serg.tech
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

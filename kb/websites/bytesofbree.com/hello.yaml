@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:bytesofbree.com/hello
+  url: http://bytesofbree.com/hello
+  kind: personal
+  title: Hello
+  description: Link hub for Bree Hall @bytesofbree
+  owner: person:bree-hall
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:x/bytesofbree
+  sources:
+  - system: brightdata
+    url: https://x.com/bytesofbree
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://www.bytesofbree.com/hello
+    record_id: http://bytesofbree.com/hello
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

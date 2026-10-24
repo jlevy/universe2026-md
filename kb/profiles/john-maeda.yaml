@@ -1,0 +1,740 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:john-maeda
+  person: person:john-maeda
+  brief_bio:
+    text: John Maeda is CVP Engineering for GitHub Design and Microsoft CoreAI Design at Microsoft and
+      the author of five books, including The Laws of Simplicity and How to Speak Machine. Maeda speaks
+      at GitHub Universe 2026 about sketching with code in the age of AI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: d5065d752aa32bc6d34a330b255db31e635948a626574a50c5380385bf0fd804
+    stale: false
+  headline: CVP Engineering, GitHub Design and Microsoft CoreAI Design at Microsoft
+  current_roles:
+  - CVP Engineering, GitHub Design and Microsoft CoreAI Design at Microsoft
+  expertise:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  - label: p5.js
+    target: software:p5js
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: p5.js
+      ref: session:bld1616m
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1616m
+  programming_languages:
+  - label: Jupyter Notebook
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:johnmaeda/sk-recipes
+    - ref: repo:johnmaeda/mr-maeda-cozy-ai-kitchen
+    - ref: repo:johnmaeda/sk-1-basics
+  interests:
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777674201455001Cr9A
+      ref: session:bld1616m
+  - label: AI
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/johnmaeda/SK-Recipes
+      ref: repo:johnmaeda/sk-recipes
+  - label: LLMs
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/johnmaeda/SK-Recipes
+      ref: repo:johnmaeda/sk-recipes
+  - label: semantic-kernel
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/johnmaeda/SK-Recipes
+      ref: repo:johnmaeda/sk-recipes
+  open_source:
+  - repository: repo:johnmaeda/sk-recipes
+    relation: owner
+    stars: 165
+    primary_language: Jupyter Notebook
+  - repository: repo:johnmaeda/mr-maeda-cozy-ai-kitchen
+    relation: owner
+    stars: 62
+    primary_language: Jupyter Notebook
+  - repository: repo:johnmaeda/sk-1-basics
+    relation: owner
+    stars: 58
+    primary_language: Jupyter Notebook
+  - repository: repo:aji-ai/js-vscode-mini-v3
+    relation: contributor
+    stars: 0
+    primary_language: HTML
+  - repository: repo:aji-ai/dit-2026
+    relation: contributor
+    stars: 25
+    primary_language: HTML
+  experience:
+  - organization: Microsoft
+    organization_ref: org:microsoft
+    title: Microsoft
+    current: true
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: MillerKnoll
+    title: Board Director / Audit Committee Member
+    start: Oct 2024
+    end: Present
+    current: true
+    description: 'CLASSICAL DESIGN: The MillerKnoll brand portfolio includes Herman Miller, Knoll, Colebrook
+      Bosson Saunders, DatesWeiser, Design Within Reach, Edelman, Geiger, HAY, Holly Hunt, Knoll Textiles,
+      Maharam, Muuto, NaughtOne, and Spinneybeck|FilzFelt. MillerKnoll is an unparalleled platform that
+      redefines modern for the 21st century by building a more sustainable, equitable and beautiful future
+      for all.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Everbridge
+    title: Chief Experience Officer / Chief Technology Officer
+    start: Oct 2020
+    end: Oct 2022
+    current: false
+    description: 'ENTERPRISE RESILIENCE + SOCIETAL RESILIENCE: Leading Everbridge’s technology and product
+      vision for enabling RESILIENCE at the company, city, and country levels. Passionate about large
+      language models (AI/ML), outcomes-driven approaches to visualization, and the Japanese craft of
+      kintsugi (金継ぎ) as applied to digital products/services.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Sonos, Inc.
+    title: Board Member / Compensation Committee Member
+    start: Mar 2012
+    end: Dec 2020
+    current: false
+    description: 'WIRELESS HI-FI DESIGN: Empowered design as a native advantage for Sonos across hardware
+      and software product lines through multiple transition points in its evolution into a public company.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Publicis Sapient
+    title: Executive Vice President, Chief Experience Officer
+    start: Aug 2019
+    end: Oct 2020
+    current: false
+    description: 'DIGITAL TRANSFORMATION: With Engineering leadership co-developed the LEAD (Light, Ethical,
+      Accessible, Dataful) system to reshape the global experience capability to be "A.I. Ready" — together
+      with an incredible leadership team at all levels.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Wieden + Kennedy
+    title: Board Member
+    start: Jun 2011
+    end: Aug 2019
+    current: false
+    description: 'PROTECTING EMOTIONAL DESIGN: Developed the founding principles of the trust designed
+      to keep Dan Wieden''s vision alive as the world’s last independent global advertising agency.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Automattic
+    title: Head of Computational Design and Inclusion
+    start: Aug 2016
+    end: Jul 2019
+    current: false
+    description: 'REMOTE WORK AT SCALE (pre-pandemic): Dug deeply and inclusively into the emerging paradigm
+      of tech companies running fully distributed. Visit http://Automattic.Design to learn more.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Netflix
+    title: Executive Producer
+    start: '2019'
+    end: '2019'
+    current: false
+    description: 'ANIMATED SHORT (via Kickstarter): Discovered the work of Frank E. Abney III and became
+      captivated by his vision to create a film about a man who struggles to regain his passion after
+      suffering a loss.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Kleiner Perkins Caufield & Byers
+    title: Design Partner
+    start: Jan 2014
+    end: Aug 2016
+    current: false
+    description: 'DE$IGN IN TECH: Brought design and venture capital closer by co-founding ProductWorks
+      with Bing Gordon, and by later launching the Design in Tech Reports.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Google
+    organization_ref: org:google
+    title: Technical Advisory Board Member
+    start: Jan 2013
+    end: Apr 2016
+    current: false
+    description: 'INNOVATION AT SCALE: Advised the Advanced Technology & Projects (ATAP) group on matters
+      across a wide variety of truly inspiring projects designed to change the world for the better.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: eBay Inc
+    title: Chair, Design Advisory Board
+    start: '2014'
+    end: '2015'
+    current: false
+    description: 'DESIGN AT SCALE: Advised CEO John Donahoe in eBay Inc''s drive to lead with design across
+      the organization. This work has become a Stanford Graduate School of Business case study thanks
+      to the work of Dane Howard with Professor Jennifer Aaker.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: PopTech
+    title: Curator
+    start: '2013'
+    end: '2015'
+    current: false
+    description: 'REBELLION: Served as the Curator of the PopTech gathering in Camden, Maine. Hosted PopTech
+      Rebellion 2014 with an incredible cast including Paola Antonelli, Regina Dugan, Anil Dash; and PopTech
+      Hybrid 2015 with speakers including Irene Au, Jessica Banks, Maira Kalman, Ed Boyden.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Rhode Island School of Design
+    title: President / Chief Executive Officer
+    start: Jun 2008
+    end: Jan 2014
+    current: false
+    description: 'STEM to STEAM: As 16th President and CEO for six years, working with my executive team
+      we raised the profile of RISD to #1 status by significantly increasing scholarship funding, broadening
+      students'' access to digital technologies and careers, bringing in a new generation of junior faculty,
+      and advancing the STEM to STEAM movement in the US Congress.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Quirky
+    title: Board Member
+    start: '2010'
+    end: '2013'
+    current: false
+    description: 'CROWDSOURCE DESIGN: Had the most amazing time watching Ben Kaufman attempt the impossible.
+      Quirky''s mission was to democratize inventors'' ability to create, ship, and distribute consumer
+      products.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: Reebok
+    title: Guest Artist
+    start: '2007'
+    end: '2009'
+    current: false
+    description: 'COMPUTATIONAL FASHION: Brought a “creative code” aesthetic to a series of shoes and
+      apparel items for Reebok by mixing handwritten computer code with Reebok classics.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - organization: MIT Media Lab
+    title: Professor of Design and Computation / Head of Research
+    start: '1996'
+    end: '2008'
+    current: false
+    description: 'WEB2 + WEB3: Achieved rank of Full Professor with tenure for work in design and computation.
+      Working with a team of researchers there, connected design and art to the software development world
+      with projects like Design By Numbers, Processing.org, and Scratch. Also led research and sponsor
+      relations at the MIT Media Laboratory as Associate Director of Research.'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  education:
+  - school: Massachusetts Institute of Technology
+    degree: SM
+    field_of_study: Electrical Engineering and Computer Science
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - school: Arizona State University
+    degree: MBA
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - school: 筑波大学 / University of Tsukuba
+    degree: PhD
+    field_of_study: Design Science
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - school: City University of Hong Kong
+    degree: Honorary PhD, Doctor of Engineering
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - school: Drexel University
+    degree: Honorary PhD
+    field_of_study: Doctor of Humane Letters
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - school: Simon Fraser University
+    degree: Honorary PhD
+    field_of_study: Doctor of Fine Arts
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - school: Maryland Institute College of Art
+    degree: Honorary PhD
+    field_of_study: Doctor of Fine Arts
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - school: Massachusetts Institute of Technology
+    degree: SB
+    field_of_study: Electrical Engineering and Computer Science
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - school: Harvard University
+    degree: Professional Education
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  credentials:
+  - kind: honor
+    title: AIGA Medal
+    issuer: American Institute of Graphic Arts
+    date: '2011-01-01T00:00:00.000Z'
+    description: '"The medal of AIGA—the most distinguished in the field—is awarded to individuals in
+      recognition of their exceptional achievements, services or other contributions to the field of design
+      and visual communication. The contribution may be in the practice of design, teaching, writing or
+      leadership of the profession."'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: honor
+    title: Hall of Fame Inductee
+    issuer: Art Director’s Club
+    date: '2009-01-01T00:00:00.000Z'
+    description: '"Recognizes and honors those innovators who have made significant contributions to art
+      direction and visual communications, and whose lifetime achievements represent the highest standards
+      of creative excellence."'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: honor
+    title: Raymond Loewy Foundation Prize
+    issuer: Raymond Loewy Foundation
+    date: '2005-01-01T00:00:00.000Z'
+    description: '"Presented to one recipient each year in recognition of either his or her lifetime achievements,
+      or career of an individual whose work in design has helped improve the social and cultural conditions
+      of everyday life."'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: honor
+    title: Mainichi Design Prize
+    issuer: Mainichi Shimbun
+    date: '2002-01-01T00:00:00.000Z'
+    description: '"Annual award given to outstanding Japanese designers. The award, founded in 1952, is
+      sponsored by Japanese newspaper Mainichi Shimbun. It is considered Japan''s most prestigious award
+      for design."'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: honor
+    title: National Design Award
+    issuer: Smithsonian Institution
+    date: '2001-01-01T00:00:00.000Z'
+    description: '"Celebrates design in various disciplines as a vital humanistic tool in shaping the
+      world, and seeks to increase national awareness of design by educating the public and promoting
+      excellence, innovation, and lasting achievement."'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: honor
+    title: DaimlerChrysler Design Prize
+    issuer: DaimlerChrysler
+    date: '1999-01-01T00:00:00.000Z'
+    description: '"Celebrating the achievements of individuals who have consistently championed seminal
+      works of architecture and design, and significantly influenced modern American culture."'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  publications:
+  - title: '» Essay: "Startups are great, but we can learn a lot from ''end-ups,'' too"'
+    venue: GigaOm
+    date: February 3, 2013
+    description: '"For many, startups embody the ideals of passion, innovation and agility that can get
+      lost in mature businesses. But John Maeda, president of RISD, says there is also plenty to admire
+      in ''end-ups.''"'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: » 2013 Posts for LinkedIn
+    venue: LinkedIn
+    date: January 1, 2013
+    description: Regular posts for LinkedIn's Influencer editorial program.
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: '» Essay: Videogames DO belong in the Museum of Modern Art'
+    venue: WIRED
+    date: December 4, 2012
+    description: '"Like well-designed cars, well-designed videogames are ways of taking your mind to different
+      places."'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: '» Essay: "Design is both the insanely radical and the passionately incremental"'
+    venue: GigaOm
+    date: October 6, 2012
+    description: '"Not all design breakthroughs need to stop the world: sometimes, thoughtful incremental
+      improvements can be just as profound."'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: '» TED Global Talk: The intersection of technology, design, and leadership'
+    venue: TED Conferences
+    date: June 25, 2012
+    description: “When people say they don’t get art, that means art is working. It’s supposed to be enigmatic.”
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: 'Book: "Redesigning Leadership"'
+    venue: MIT Press
+    date: '2011'
+    description: Thoughts on managing and leading a legendary academic institution. Available in 8 languages.
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: '» Essay: "Your Life in 2020"'
+    venue: Forbes Magazine
+    date: Apr 2010
+    description: '"Rather than be content to accept corporate anonymity, we will rediscover the value
+      of authorship. In 2020 technology will continue to enable individual makers to operate in the same
+      way that once only large corporations could do."'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: 'Book: "Laws of Simplicity"'
+    venue: MIT Press
+    date: '2006'
+    description: Ten laws and three keys for realizing simplicity in design, technology, business, and
+      life. MIT Press’ all-time bestselling book and used by Philips, Orange, and Nokia in defining their
+      simplicity strategies. Available in 14 languages.
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: 'Book: "Creative Code"'
+    venue: Thames & Hudson
+    date: '2004'
+    description: Compendium of thinking around computational aesthetics and the future of digital art/design.
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: 'Book: "MAEDA@MEDIA"'
+    venue: Thames & Hudson
+    date: '2001'
+    description: 480-page retrospective of over 100 digital media projects for Shiseido, Absolut, Sony,
+      The New York Times, and others. Available in 5 languages.
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  spoken_languages:
+  - Japanese
+  - Spanish
+  activities:
+  - kind: volunteering
+    title: Board Member
+    detail: 'Design for Good · Education · Apr 2022 · - Present · 4 years 7 months · DESIGN FOR (REALLY)
+      GOOD: A non-profit alliance of leading global organizations that will directly harness the creative
+      talent of thousands of designers to design and deliver positive impact against the United Nations’
+      Sustainable Development Goals. · Apr 2022'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: volunteering
+    title: New Models of Leadership Council / New Models of Growth Council
+    detail: 'World Economic Forum · Science and Technology · 2008 · - 2016 · 8 years · CREATIVE LEADERSHIP:
+      Served on the New Models of Leadership Council, and later on the New Growth Models Council. · 2008'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: volunteering
+    title: Braintrust Member
+    detail: 'TED Conferences · Science and Technology · 2007 · - 2014 · 7 years · IDEAS WORTH SPREADING:
+      Advised TED organization on topics for the annual conference. · 2007'
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: project
+    title: '» Exhibition: "John Maeda is the Fortune Cookie"'
+    detail: Solo exhibition in London at Riflemaker Gallery. · Nov 2010
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: project
+    title: '» Exhibition: "John Maeda: Nature + Eye''m Hungry"'
+    detail: Solo exhibition in Paris at Fondation Cartier pour l'art contemporain. · Nov 2005
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: project
+    title: '» Exhibition: "John Maeda: F00D"'
+    detail: Solo exhibition in New York at Cristinerose Gallery. · Dec 2002
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: project
+    title: '» Exhibition: "John Maeda: Post Digital"'
+    detail: Mid-career retrospective in Tokyo at the NTT InterCommunication Center. · Aug 2001
+    evidence:
+      url: https://www.linkedin.com/in/johnmaeda
+      observed_at: '2026-10-24T08:11:36Z'
+  recent_writing:
+  - title: 'Treat Yo’ Self: Gen Z’s Hidden Subsidy'
+    url: https://maeda.pm/2026/08/25/treat-yo-self-gen-zs-hidden-subsidy/
+    published: '2026-08-25T17:14:56Z'
+    channel: blog
+  - title: Abstraction Is All You Need
+    url: https://www.linkedin.com/pulse/abstraction-all-you-need-john-maeda-7o5zc
+    published: '2026-07-11T00:00:00.000Z'
+    channel: linkedin
+    summary: Back in the 80s, when “computer science” was still kind of laughed at by real scientists,
+      there was a course at MIT…
+  - title: What is AX?
+    url: https://maeda.pm/2026/06/11/what-is-ax/
+    published: '2026-06-11T05:18:17Z'
+    channel: blog
+  - title: CMF
+    url: https://maeda.pm/2026/05/03/cmf/
+    published: '2026-05-04T02:42:45Z'
+    channel: blog
+  - title: 'Design in Tech Report 2026: From UX to AX'
+    url: https://www.linkedin.com/pulse/design-tech-report-2026-from-ux-ax-john-maeda-3elrc
+    published: '2026-03-19T00:00:00.000Z'
+    channel: linkedin
+    summary: 'This year’s Design in Tech Report is about a major shift for designers. We are moving from
+      UX to AX: from user…'
+  - title: 2025 / SimonW Summary
+    url: https://maeda.pm/2026/02/15/2025-simonw-summary/
+    published: '2026-02-15T23:14:25Z'
+    channel: blog
+  - title: AI Upskilling for Product Designers
+    url: https://www.linkedin.com/pulse/ai-upskilling-product-designers-john-maeda-xmv2c
+    published: '2026-02-09T00:00:00.000Z'
+    channel: linkedin
+    summary: The E-P-I-A-S × SAE Framework I made this system after being asked for one. And I know that
+      by the time I publish it…
+  - title: Design The Machine
+    url: https://www.linkedin.com/pulse/design-machine-john-maeda-ek0gc
+    published: '2026-02-05T00:00:00.000Z'
+    channel: linkedin
+    summary: The real investment isn’t in systems that generate more output. It’s in systems that make
+      output compound.
+  - title: Get Started with Agent Skills in GitHub Copilot CLI and OpenCode CLI in 2026 on MacOS, Part
+      1 of 2
+    url: https://www.linkedin.com/pulse/get-started-agent-skills-github-copilot-cli-opencode-2026-john-maeda-ipjzc
+    published: '2026-02-01T00:00:00.000Z'
+    channel: linkedin
+    summary: By the time you read this, everything may already have changed. But I thought you might want
+      to get on the skills…
+  - title: A JTBD-First Pattern for Agentic Tool Systems
+    url: https://maeda.pm/2026/01/30/a-jtbd-first-pattern-for-agentic-tool-systems/
+    published: '2026-01-30T19:02:26Z'
+    channel: blog
+  - title: MacOS Run HF (HuggingFace) Model In Ollama, Part 1 (2025)
+    url: https://maeda.pm/2025/12/27/macos-run-hf-huggingface-model-in-ollama-part-1-2025/
+    published: '2025-12-28T03:51:42Z'
+    channel: blog
+  - title: Claude Status Line Mod
+    url: https://maeda.pm/2025/12/22/claude-status-line-mod/
+    published: '2025-12-23T03:55:51Z'
+    channel: blog
+  - title: Out Of Distribution Thinking / AI Models
+    url: https://maeda.pm/2025/12/22/out-of-distribution-thinking-ai-models/
+    published: '2025-12-23T00:50:28Z'
+    channel: blog
+  - title: Vertical AI
+    url: https://maeda.pm/2025/12/22/vertical-ai/
+    published: '2025-12-23T00:46:22Z'
+    channel: blog
+  - title: The key to life is earning the right to always be told that, “You have potential.”
+    url: https://www.linkedin.com/pulse/key-life-earning-right-always-told-you-have-potential-john-maeda-axugc
+    published: '2025-10-27T00:00:00.000Z'
+    channel: linkedin
+    summary: In my 30s, I had the good fortune to work with AARP and to have the opportunity to think
+      about life after 50 when I…
+  talks:
+  - session:bld1616m
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1781817220425001qu6F
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: johnmaeda
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

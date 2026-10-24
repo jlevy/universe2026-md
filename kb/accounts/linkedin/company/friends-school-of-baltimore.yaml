@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/friends-school-of-baltimore
+  platform: linkedin
+  handle: company/friends-school-of-baltimore
+  url: https://www.linkedin.com/company/friends-school-of-baltimore
+  display_name: Friends School of Baltimore
+  bio: Friends School of Baltimore is a coeducational, Quaker college preparatory day school serving students
+    in grades Pre-K through 12. Guided by the values of integrity, equality, simplicity, community, stewardship
+    and peaceful resolution of conflict, the School sets for its students high standards of excellence
+    within a caring and inclusive environment. Friends was founded in 1784 and is at once Baltimore’s
+    oldest and most forward-looking school. The core belief that there is “that of God” in everyone, and
+    the School’s culture of seeking truth, of engaging with people from different backgrounds, and of
+    serving others remain central to a Friends education.
+  website: https://www.friendsbalt.org/
+  followers: 2706
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D0BAQH1qmrPswLIPA/company-logo_200_200/company-logo_200_200/0/1662577243980/friends_school_of_baltimore_logo?e=2147483647&v=beta&t=Xuhha8chppT_ouIhvUmRxJC1GzL24_6FczRkPN2xxaY
+  owner: org:friends-school-of-baltimore
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/joel-hammer-5579b113a
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/friends-school-of-baltimore
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

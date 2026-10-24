@@ -1,0 +1,204 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:vincent-king
+  person: person:vincent-king
+  brief_bio:
+    text: Vincent King is a cyber security leader who was Head of DevSecOps for Cloud Transformation at
+      the Bank of England and has trained developers in secure coding. King spoke at GitHub Universe 2023
+      about accelerating innovation without compromising customer trust.
+    cites:
+    - linkedin_bio
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 35c7766342e1eb246fdb3cf7e580282f343e5eb63c542fcfc72ccc4dbde26485
+    stale: true
+  expertise:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  interests:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  education:
+  - school: University of Exeter
+    evidence:
+      url: https://www.linkedin.com/in/devsecopsvince
+      observed_at: '2026-10-24T08:43:05Z'
+  credentials:
+  - kind: certification
+    title: GIAC Clould Security and DevSecOps Automation
+    issuer: SANS Institute
+    date: Aug 2022
+    evidence:
+      url: https://www.linkedin.com/in/devsecopsvince
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: certification
+    title: Textio Inclusive Recruiting Certification
+    issuer: Textio
+    date: Feb 2022
+    url: https://verify.skilljar.com/c/vechw5o8av4d
+    evidence:
+      url: https://www.linkedin.com/in/devsecopsvince
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: certification
+    title: QUALYS CERTIFIED SPECIALIST
+    issuer: Qualys
+    date: May 2019
+    evidence:
+      url: https://www.linkedin.com/in/devsecopsvince
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: certification
+    title: (ISC)2 Security CISSP (ISC2-CISSP)
+    issuer: ISC2
+    date: Jun 2021
+    expires: Jun 2030
+    evidence:
+      url: https://www.linkedin.com/in/devsecopsvince
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: certification
+    title: Certified Information Security Manager (CISM)
+    issuer: ISACA
+    date: May 2023
+    expires: Apr 2027
+    evidence:
+      url: https://www.linkedin.com/in/devsecopsvince
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: certification
+    title: Certified Information Technology Professional (CITP)
+    issuer: BCS, The Chartered Institute for IT
+    date: Feb 2020
+    expires: Feb 2025
+    url: https://www.bcs.org/get-qualified/become-chartered/chartered-it-professional/register-of-chartered-it-professionals/
+    evidence:
+      url: https://www.linkedin.com/in/devsecopsvince
+      observed_at: '2026-10-24T08:43:05Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: volunteering
+    title: Chair of Governors and DPO
+    detail: ST Thomas Of Canterbury Primary School · Education · Mar 2016 · - Present · 10 years 8 months
+      · Mar 2016
+    evidence:
+      url: https://www.linkedin.com/in/devsecopsvince
+      observed_at: '2026-10-24T08:43:05Z'
+  - kind: organization
+    title: British Computer Society
+    detail: Jan 2015 · Present
+    evidence:
+      url: https://www.linkedin.com/in/devsecopsvince
+      observed_at: '2026-10-24T08:43:05Z'
+  recent_writing:
+  - title: Keep Your Free T-shirts, Make Mine Virtual
+    url: https://www.linkedin.com/pulse/keep-your-free-t-shirts-make-mine-virtual-king-cissp-citp-mbcs
+    published: '2022-03-15T00:00:00.000Z'
+    channel: linkedin
+    summary: It’s that time of the year again and I’ve started to receive numerous e-mails inviting me
+      to register for conferences…
+  talks:
+  - session:2023/sec2846m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684155169613001dDwc
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

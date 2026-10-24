@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/match-sorter
+  ecosystem: npm
+  name: match-sorter
+  url: https://www.npmjs.com/package/match-sorter
+  description: Simple, expected, and deterministic best-match sorting of an array in JavaScript
+  latest_version: 8.3.0
+  license: MIT
+  repository_url: git+https://github.com/kentcdodds/match-sorter.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: kentcdodds/match-sorter
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

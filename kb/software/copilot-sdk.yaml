@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:copilot-sdk
+  name: GitHub Copilot SDK
+  aliases:
+  - GitHub Copilot SDK
+  - Copilot SDK
+  kind: github_product
+  vendor: org:github
+  repositories:
+  - repo:github/copilot-sdk
+  mentioned_in:
+  - session:bld1454d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

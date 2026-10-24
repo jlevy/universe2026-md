@@ -1,0 +1,504 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sue-black
+  person: person:sue-black
+  brief_bio:
+    text: 'Sue Black is Professor of Computer Science and Technology Evangelist at Durham University,
+      known for leading the campaign to save Bletchley Park and founding BCSWomen, #techmums and TechUPWomen.
+      Black speaks at GitHub Universe 2026 on what is worth building when AI can build anything.'
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 76eefee8d34fa44c50d2cf2893d03d5a222d0810f1b94cb0aa6f2b800b28d48a
+    stale: true
+  headline: Professor of Computer Science and Technology Evangelist at Durham University
+  current_roles:
+  - Professor of Computer Science and Technology Evangelist at Durham University
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Git and code management techniques
+    target: term:topic/git-and-code-management-techniques
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: Git and code management techniques
+    target: term:topic/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  education:
+  - school: London South Bank University
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  credentials:
+  - kind: certification
+    title: Coursera Certified Admin
+    issuer: Coursera
+    date: Nov 2025
+    url: https://www.coursera.org/account/accomplishments/verify/6MZV6B9ABR2Y
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: certification
+    title: FT Non-Executive Director Programme - The Effective Non-Executive Director
+    issuer: FT Board Director Programme
+    date: Jul 2025
+    url: https://www.credly.com/badges/f3461b97-6d89-4ac3-a2c4-8ce9516cc1d1/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  publications:
+  - title: 'Twitter Acceptance: The Role of Intrinsic Motivation'
+    venue: 'Proceedings of ALPIS, Sprouts: Working Papers on Information Systems'
+    date: September 10, 2010
+    description: The aim of this study has been to investigate the process of acceptance and use of technology
+      by users, focusing on the role of intrinsic and extrinsic motivation in determining it. The key
+      role of user's motivation in determining the usage behavior has been already investigated from previous
+      research, but they have not focused on the process of microblogging acceptance. On the contrary
+      of other work tools, microblogging is an informal communication medium that allows to balance work
+      and socially life. Therefore, we believe users that use this tool, and specifically Twitter, may
+      be more intrinsically motivated than users that use other technologies. A survey methodology was
+      used to gather data, whilst Partial Least Squares technique has been used to analyze them. Findings
+      show that intrinsic and extrinsic motivation positively affect behavioral intention to Twitter use,
+      but first is more explanatory variable than second.
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - title: A Survey of Social Media Use in Global Systems Development
+    venue: Web2SE Workshop at IEEE International Conference on Software Engineering (ICSE
+    date: May 4, 2010
+    description: In this paper, we describe the preliminary results of a pilot survey conducted to collect
+      information on social media use in global software systems development. We created an on-line survey
+      for developers who are using social media to communicate at work and whose work falls within the
+      domain of software systems development, including web applications. Our results show that social
+      media can enable better communication through the software system development process. 91% of respondents
+      said that using social media has improved their working life.
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - title: Can Twitter Save Bletchley Park?
+    venue: Museums and the Web 2010
+    date: April 15, 2010
+    description: 'Bletchley Park is the historic site of secret British codebreaking activities during
+      World War II and birthplace of the modern computer. The work carried out there is said to have shortened
+      WWII by two years, saving possibly 22 million lives. The Park is now a museum, with a 26 acre site,
+      many exhibitions and working rebuilds of machines such as the Colossus, a forerunner of today''s
+      computers, invented to mechanize codebreaking. The museum is staffed by a 75% volunteer workforce
+      and is grossly underfunded compared to its historical importance.After a visit by Sue Black to Bletchley
+      Park in July 2008, a campaign was launched to save it. A letter to the UK broadsheet newspaper The
+      Times signed by 97 eminent UK computer scientists was published and highlighted in a BBC news broadcast.
+      Following traditional media coverage, a blog was established, and then social media, (particularly
+      Twitter), which have been used to great effect to raise awareness and support for the campaign.
+      Other Web 2.0 technologies, including Facebook, have also been used as part of the campaign.This
+      paper explores the effectiveness of this approach, using statistical evidence as appropriate, highlighting
+      how the use of social media has contributed greatly to campaign success. Since the Saving Bletchley
+      Park campaign started, visitor numbers have increased, along with public awareness of the contribution
+      of the site to world heritage and the history of the computer.Campaign efforts have received national
+      coverage on television, on radio, and in the press and have contributed to the Park recently receiving
+      £460K funding and a potential further £4 million funding from the UK Heritage Lottery Fund.Keywords:
+      blogging, fundraising, heritage, virtual community, United Kingdom, Web 2.0, social media, Twitter'
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - title: 'Formal vs Agile: Survival of the fittest?'
+    venue: IEEE Computer
+    date: September 1, 2009
+    description: The potential for combining agile and formal methods holds promise. Although it might
+      not always be an easy partnership, it will succeed if it can foster a fruitful interchange of expertise
+      between the two communities.
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - title: Visualizing the Underlying Trends of Component Latencies affecting Service Operation Performance
+    venue: ACTEA 2009, Advances in Computational Tools for Engineering Applications
+    date: July 15, 2009
+    description: This paper presents a technology agnostic method for extracting the underlying distinct
+      patterns of variations in the overall performance of a service operation for changes to different
+      application components supporting the service operation in a computer based service provider to
+      consumer contract. This short paper advocates that visualizing these patterns would help in early
+      projection of the operation's performance due to modification of the application components/processing
+      catering to the operation, without the need of repetitive performance and load testing of the whole
+      service. Lookup datasets against different component configurations are created to associate the
+      variability of component processing impedances to the service operation's performance and best fit
+      regression types are applied to enable trend extrapolation and interpolation.
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - title: Service Operation Impedance and its role in projecting some key features in Service Contracts
+    venue: ICWE 2009 International Conference on Web Engineering
+    date: June 29, 2009
+    description: This paper introduces the notion of implicit Operation Impedance (I)and Operation Potential
+      (V) in Service Provider-Consumer contracts. ‘I’ is theruntime composite resultant of all the activity
+      delays of the componentssupporting the Service Operation. This work establishes that ‘I’, which
+      impactsthe overall Operation Performance (P), is influenced by the underlyingapplication components’
+      activities in distinct patterns. A high-level runtimeabstract model is empirically deduced between
+      ‘I’, ‘V’ and ‘P’ by applyingestablished mathematical techniques. Model based indicative values of
+      somefeatures are computed against variability of the operation’s components.Lookup datasets against
+      different system configurations are created to associatethese computed values to the actual empirical
+      values of other features.Established mathematical techniques applied with appropriate regression
+      typesto enable trend extrapolation/interpolation. The datasets/patterns affirmedeffectiveness of
+      the ‘I’ based model as a means of decoupled, bidirectional i.e.top-down and bottom-up impact assessment
+      of modifications to the operation’sunderlying application components on ‘P’ (‘V’ constant) or ‘V’
+      (‘P’ constant)without repetitive full scale external performance/benchmark testing. This alsoenables
+      fine tuning of application components to retrofit prescribed Quality ofService (QoS). The paper
+      briefly mentions a Matrix Transpose/Inversetechnique for future assessment of multiple component
+      changes simultaneously
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - title: Deriving an approximation algorithm for automatic computation of ripple effect measures
+    venue: Journal of Information and Software Technology
+    date: June 1, 2008
+    description: The ripple effect measures impact, or how likely it is that a change to a particular
+      module may cause problems in the rest of a program. It can also be used as an indicator of the complexity
+      of a particular module or program. Central to this paper is a reformulation in terms of matrix arithmetic
+      of the original ripple effect algorithm produced by Yau and Collofello in 1978. The main aim of
+      the reformulation is to clarify the component parts of the algorithm making the calculation more
+      explicit. The reformulated algorithm has been used to implement REST (Ripple Effect and Stability
+      Tool) which produces ripple effect measures for C programs. This paper describes the reformulation
+      of Yau and Collofello's ripple effect algorithm focusing on the computation of matrix Zm which holds
+      intramodule change propagation information. The reformulation of the ripple effect algorithm is
+      validated using fifteen programs which have been grouped by type. Due to the approximation spurious
+      1s are contained within matrix Zm. It is discussed whether this has an impact on the accuracy of
+      the reformulated algorithm. The conclusion of this research is that the approximated algorithm is
+      valid and as such can replace Yau and Collofello's original algorithm.
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - title: An introduction of new UML design metrics for web applications
+    venue: International Journal of Computer and Information Science
+    date: December 1, 2007
+    description: 'Many World Wide Web applications incorporate important business assets and offer a convenient
+      way for businesses to promote their services through the Internet. Many of these web applications
+      evolved from simple HTML pages to complex applications which are difficult to maintain. In order
+      to control the maintenance of web applications quantitative metrics and models for predicting web
+      applications’ maintainability must be used. This paper introduces new design metrics for measuring
+      the maintainability of web applications from class diagrams. The metrics are based on Web Application
+      Extension (WAE) for UML and will measure the following design attributes: size, complexity, coupling
+      and reusability. The paper provides a classification of the metrics based on the measurement structure
+      proposed by Kitchenham for theoretical metrics validation. In addition to that, an exploratory experiment
+      at the university of Illinois is carried out in order to show the relationship between the metrics
+      and understandability and modifiability time'
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - title: Computing ripple effect for software maintenance
+    venue: 'Journal of Software Maintenance and Evolution: Research and Practice'
+    date: August 31, 2006
+    description: Recent software maintenance models have included impact analysis and accounting for ripple
+      effect as one of their stages. This paper describes and explains the reformulation of Yau and Collofello's
+      ripple-effect algorithm and its validity within the software-maintenance process. Completely automatic
+      computation of ripple effect has until now proved troublesome; we show how our approximation algorithm
+      helps to overcome this. Our Ripple Effect and Stability Tool (REST) which uses our approximated
+      algorithm to compute ripple effect for C programs, is described. Eleven C programs are used in an
+      initial investigation into whether our approximated algorithm can replace Yau and Collofello's original
+      algorithm for the purpose of automatic computation of ripple effect. The Pearson correlation coefficient
+      for the two versions of the algorithm across the eleven programs shows a high correlation.
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - title: Is ripple effect intuitive? A pilot study
+    venue: 'NASA: Innovations in Systems and Software Engineering'
+    date: July 1, 2006
+    description: 'The computation of ripple effect is based on the effect that a change to a single variable
+      will have on the rest of a program; it determines the scope of the change and provides a measure
+      of the program’s complexity. The original algorithm used to compute ripple effect has been reformulated
+      mainly to provide clarity in the operations involved. The reformulation involved some approximation
+      which was shown not to affect the measures produced. The reformulated, approximated algorithm has
+      been implemented as the software tool: Ripple Effect and Stability Tool (REST). This paper uses
+      a software development project as a case study to look at the relationship between the approximated
+      ripple effect and a programmer’s intuitive idea of ripple effect. Four versions of a mutation testing
+      software tool were written in C over a period of several months. After the completion of each version
+      the programmer was asked to detail his predicted/intuitive ripple effect for each module of code.
+      The predictions are compared with the approximated ripple effect measures for each module and some
+      surprising conclusions drawn.'
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: volunteering
+    title: Board Member
+    detail: '#techmums · Education · Feb 2013 · - Nov 2024 · 11 years 10 months · Various board roles,
+      strategy etc. · Feb 2013'
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: volunteering
+    title: Professional Development Board
+    detail: ACM, Association for Computing Machinery · Science and Technology · Jun 2017 · - Present ·
+      9 years 5 months · Jun 2017
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: volunteering
+    title: People and Skills Strategy Advisory Group
+    detail: The Alan Turing Institute · Science and Technology · Aug 2022 · - Nov 2024 · 2 years 4 months
+      · Aug 2022
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: volunteering
+    title: ACM-W strategic panel
+    detail: ACM · Science and Technology · Mar 2012 · - Present · 14 years 8 months · ACM-W supports,
+      celebrates, and advocates internationally for the full engagement of women in all aspects of the
+      computing field, providing a wide range of programs and services to ACM members and working in the
+      larger community to advance the contributions of technical women. · Mar 2012
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: volunteering
+    title: 'Various: Council, Central London branch, BCSWomen Founder'
+    detail: BCS · Science and Technology · Jan 1993 · - Present · 33 years 10 months · Exchanging IT expertise
+      and knowledge The Institute fosters links between experts from industry, academia and business to
+      promote new thinking, education and knowledge sharing. Supporting practitioners Through continuing
+      professional development and a series of respected IT qualifications, the Institute seeks to promote
+      professional practice tuned to the demands of business. It provides practical support and information
+      services to its members and volunteer communities… Show more Exchanging IT expertise and knowledge
+      The Institute fosters links between experts from industry, academia and business to promote new
+      thinking, education and knowledge sharing. Supporting practitioners Through continuing professional
+      development and a series of respected IT qualifications, the Institute seeks to promote professional
+      practice tuned to the demands of business. It provides practical support and information services
+      to its members and volunteer communities around the world. Setting standards and frameworks The
+      Institute collaborates with government, industry and relevant bodies to establish good working practices,
+      codes of conduct, skills frameworks and common standards. It also offers a range of consultancy
+      services to employers to help them adopt best practice. Show less · Jan 1993
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: volunteering
+    title: Supporter
+    detail: 'Bletchley Park · Science and Technology · Jul 2008 · - Jul 2011 · 3 years 1 month · I ran
+      the successful campaign to save the historic site of secret British codebreaking activities during
+      WWII and birthplace of the modern computer from 2008 - 2011. Campaign Blog: http://www.savingbletchleypark.org/
+      My bestselling book “Saving Bletchley Park” details the campaign, when funded in 2016 it was the
+      fastest crowdfunded book EVER! · Jul 2008'
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: volunteering
+    title: Founder and Chair
+    detail: The <goto> Foundation UK · Science and Technology · Nov 2011 · - Nov 2024 · 13 years 1 month
+      · Computing and technology is utterly pervasive throughout our world today, but public understanding
+      of technology remains very poor, public perception of computer science is often negative, and many
+      people struggle with or avoid technologies which have the power to help them hugely in their daily
+      lives. The <goto> Foundation aspires to rebrand computer science, raise public awareness and knowledge
+      of technology, and enable everyone to use, benefit from and enjoy the powerful… Show more Computing
+      and technology is utterly pervasive throughout our world today, but public understanding of technology
+      remains very poor, public perception of computer science is often negative, and many people struggle
+      with or avoid technologies which have the power to help them hugely in their daily lives. The <goto>
+      Foundation aspires to rebrand computer science, raise public awareness and knowledge of technology,
+      and enable everyone to use, benefit from and enjoy the powerful computing systems in our lives today.
+      The <goto> Foundation will catalyse rapid change in these areas, through direct strategic action.
+      <goto>’s aims are to excite, engage, empower and enlighten. We want to bring together existing projects,
+      people and organisations working in this field – we’re not reinventing the wheel – and <goto> will
+      connect groups with the individuals and resources they need to operate most effectively. At the
+      same time, <goto> is attempting something new and unique – to raise the profile of technology with
+      the general public through national scale campaigns and events, taking computer science outreach
+      beyond schools and making it relevant to people’s everyday lives. This isn’t about getting everyone
+      coding – it’s also about design, hardware, security, user experience and more. It’s about empowering
+      everyone to make the most of the technologies available to them; exciting and enlightening them
+      about the power of computer science and its impact on our daily lives; and engaging people with
+      computing and the issues around it. Show less · Nov 2011
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: volunteering
+    title: Judge
+    detail: Institution of Engineering and Technology (IET) · Science and Technology · Jan 2021 · - Nov
+      2024 · 3 years 11 months · I’m delighted to be an award judge for the E&T Innovation Awards 2021
+      and 2022 · Jan 2021
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: volunteering
+    title: Ambassador
+    detail: 'Global Partnership for Education · Education · Oct 2020 · - Nov 2024 · 4 years 2 months ·
+      Education transformed my life and helped me to bring my family out of poverty. I''m so delighted
+      to now be an Ambassador for the Global Partnership for Education. Looking forward to really making
+      a difference in the UK and globally #fundeducation #raiseyourhand · Oct 2020'
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  - kind: volunteering
+    title: Court Liveryman
+    detail: Worshipful Company of Information Technologists · Science and Technology · Jul 2026 · - Present
+      · 4 months · Jul 2026
+    evidence:
+      url: https://www.linkedin.com/in/sueblack
+      observed_at: '2026-10-24T08:16:46Z'
+  recent_writing:
+  - title: The AI Opportunity Gap
+    url: https://www.linkedin.com/pulse/ai-opportunity-gap-professor-sue-black-obe-lafje
+    published: '2026-03-06T00:00:00.000Z'
+    channel: linkedin
+    summary: I’ve been thinking a lot recently about the impact AI is having, and will continue to have,
+      on opportunity in society…
+  - title: FROM BLETCHLEY TO BREXIT – AN UTTER DISGRACE
+    url: https://www.linkedin.com/pulse/from-bletchley-brexit-utter-disgrace-professor-sue-black-obe
+    published: '2019-02-03T00:00:00.000Z'
+    channel: linkedin
+    summary: From 2008-2011 I ran the successful campaign to save Bletchley Park. As part of that campaign
+      I met and got to know…
+  - title: |-
+      Forbes Releases Inaugural Top Women In Tech List In Honor Of Ada Lovelace Day
+
+      What a pleasure to be on a list with so many amazing women :))
+
+      #womenintech
+
+      https://t.co/H9V8Ttobgy
+    url: https://twitter.com/6549332/status/1049428258960404480
+    published: '2018-10-08T22:36:09Z'
+    channel: x
+  - title: 'Saving Bletchley Park: "Modest, brilliant and utterly inspiring"'
+    url: https://www.linkedin.com/pulse/saving-bletchley-park-modest-brilliant-utterly-dr-sue-black-obe
+    published: '2016-12-22T00:00:00.000Z'
+    channel: linkedin
+    summary: Dear all, Looking for an inspiring Christmas gift? Or a great Christmas read for yourself?
+      How about my book Saving…
+  - title: 'The #techmums course at ACL has completely changed my life!'
+    url: https://www.linkedin.com/pulse/techmums-course-acl-has-completely-changed-my-life-dr-sue-black-obe
+    published: '2016-08-01T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Guest blog post by new #techmum Lisa I saw the #techmums course advertised on Essex County
+      Council newsletter. I was…'
+  - title: 'Saving Bletchley Park: how social media saved the home of the codebreakers'
+    url: https://www.linkedin.com/pulse/saving-bletchley-park-how-social-media-saved-home-dr-sue-black-obe
+    published: '2016-02-04T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Dear all, My book "Saving Bletchley Park: how social media saved the home of the codebreakers"
+      is now available in…'
+  - title: Your first 2 minute coding lesson in Python
+    url: https://www.linkedin.com/pulse/your-first-2-minute-coding-lesson-python-dr-sue-black
+    published: '2015-03-19T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Here’s a really easy 2 minute coding lesson, it’s what our #techmums do at the beginning
+      of their Python programming…'
+  talks:
+  - session:bld1886m
+  - session:bld2021a
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1789651997091001h2xh
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

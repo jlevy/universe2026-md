@@ -1,0 +1,467 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:burke-holland
+  person: person:burke-holland
+  brief_bio:
+    text: Burke Holland is a principal cloud advocate at Microsoft who works on VS Code, GitHub and Azure
+      with a focus on AI-powered development. Holland spoke at GitHub Universe 2024 and speaks at GitHub
+      Universe 2026, including in the opening keynote.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - github_readme
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 6e90a69c1c732b1c151428b252ec55ef97fb3d15fa8fefeb864b0911bd342163
+    stale: false
+  headline: Principal Cloud Advocate at Microsoft
+  location: Franklin, TN
+  current_roles:
+  - Principal Cloud Advocate at Microsoft
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai2024l
+    - ref: session:2024/dev2016m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai2024l
+    - ref: session:2024/dev2016m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai2024l
+    - ref: session:2024/dev2016m
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2024l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2024l
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai2024l
+  - label: JavaScript
+    target: software:javascript
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: JavaScript
+      ref: person:burke-holland
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:burke-holland
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: VS Code
+      ref: person:burke-holland
+  programming_languages:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:burkeholland/express-react-starter
+    - ref: repo:burkeholland/workshop-vs-code-can-do-that
+  - label: C#
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:burkeholland/instasharp
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:burkeholland/simple-react-snippets
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:burkeholland/anvil
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: high
+    weight: 0.89
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+    - url: https://github.com/microsoft/vscode-docs
+      ref: repo:microsoft/vscode-docs
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726265048440001o3Nk
+      ref: session:2024/ai2024l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  open_source:
+  - repository: repo:burkeholland/workshop-vs-code-can-do-that
+    relation: owner
+    stars: 245
+    primary_language: JavaScript
+  - repository: repo:burkeholland/simple-react-snippets
+    relation: owner
+    stars: 217
+    primary_language: TypeScript
+  - repository: repo:burkeholland/express-react-starter
+    relation: owner
+    stars: 205
+    primary_language: JavaScript
+  - repository: repo:burkeholland/anvil
+    relation: owner
+    stars: 153
+    primary_language: HTML
+  - repository: repo:burkeholland/instasharp
+    relation: owner
+    stars: 48
+    primary_language: C#
+  - repository: repo:microsoft/vscode-docs
+    relation: contributor
+    stars: 6675
+    primary_language: Markdown
+  - repository: repo:chanezon/chanezon.github.io
+    relation: contributor
+    stars: 0
+    primary_language: HTML
+  - repository: repo:microsoft/winget-pkgs
+    relation: contributor
+    stars: 11235
+  - repository: repo:devcontainers/devcontainers.github.io
+    relation: contributor
+    stars: 208
+    primary_language: HTML
+  - repository: repo:cassidoo/pocketcal
+    relation: contributor
+    stars: 152
+    primary_language: TypeScript
+  recent_writing:
+  - title: About That Scary AI Graphic That’s Been Going Around
+    url: https://burkeholland.github.io/posts/about-that-scary-ai-graphic/
+    published: '2026-03-06T12:18:00Z'
+    channel: blog
+  - title: We Don’t Know What’s Out There
+    url: https://burkeholland.github.io/posts/we-dont-know-whats-out-there/
+    published: '2026-03-03T19:23:00Z'
+    channel: blog
+  - title: Nothing Worth Remembering
+    url: https://burkeholland.github.io/posts/nothing-worth-remembering/
+    published: '2026-02-28T16:43:00Z'
+    channel: blog
+  - title: Opus 4.5 is going to change everything
+    url: https://burkeholland.github.io/posts/opus-4-5-change-everything/
+    published: '2026-01-05T08:40:00Z'
+    channel: blog
+  - title: |-
+      If I could offer one tip to improve your prompting abilities, it's that you read these prompt guides front to back whenever a new model drops.
+
+      You'll be astonished at how much better your experience is when you understand these model quirks.
+
+      https://t.co/KNkUZRMpMN
+    url: https://twitter.com/14679272/status/1970582700416537035
+    published: '2025-09-23T20:15:02Z'
+    channel: x
+  - title: |-
+      We've got an early preview of Beast Mode in the system prompt in VS Code Insiders.
+
+      Try it out! We'd love to hear how it works for you...
+    url: https://twitter.com/14679272/status/1955340523511681435
+    published: '2025-08-12T18:48:03Z'
+    channel: x
+  - title: You don't need to write great prompts. You just need to get the LLM  to do it for you... https://t.co/H8nuTICoKI
+    url: https://twitter.com/14679272/status/1954309752336625771
+    published: '2025-08-09T22:32:08Z'
+    channel: x
+  - title: |-
+      For those asking, you can enable to todo list in Insiders today with...
+
+      "chat.todoListTool.enabled": true
+
+      Keep in mind that this is just an experiment atm - help us see if it improves your agent experience.
+    url: https://twitter.com/14679272/status/1952800585452843080
+    published: '2025-08-05T18:35:15Z'
+    channel: x
+  - title: |-
+      4.1 vs Claude
+
+      "search for the lifx api docs official and create a markdown file that documents the api. include auth, how to call the api, as well as a markdown table of all api endpionts and their parameters. save to the docs folder." https://t.co/pBM7k2dIiF
+    url: https://twitter.com/14679272/status/1950349024198086741
+    published: '2025-07-30T00:13:37Z'
+    channel: x
+  - title: |-
+      Beast Mode 3.1 is here 🐻
+
+      Improvements...
+
+      * More agentic coaxing
+      * Memory
+      * Reduce file/folder re-reads
+      * Git from the agent
+      * Perf tweaks
+
+      Link in comments because thanks X algo 👇 https://t.co/VHkD0wKGoi
+    url: https://twitter.com/14679272/status/1948098698946265194
+    published: '2025-07-23T19:11:38Z'
+    channel: x
+  - title: Introducing Beast Mode 3.1
+    url: https://burkeholland.github.io/posts/beast-mode-3-1/
+    published: '2025-07-23T07:41:00Z'
+    channel: blog
+  - title: |-
+      "Vibe coding" is a fun way to get started. But eventually you gotta do real work.
+
+      Agent mode can do that.
+
+      Here is how I work with agent mode to build things that I actually love🧵
+    url: https://twitter.com/14679272/status/1922722926102454429
+    published: '2025-05-14T18:37:22Z'
+    channel: x
+  - title: "I'm LOVING the Prompt Boost extension. I use it constantly and I'm getting way better results.\n\
+      \nPrompt Boost increases the fidelity and detail of your prompts and structures them for better\
+      \ results from the LLM. \n\nhttps://t.co/Fo8jmCx5i3 https://t.co/pXJCmzSXp7"
+    url: https://twitter.com/14679272/status/1914353302696862054
+    published: '2025-04-21T16:19:28Z'
+    channel: x
+  - title: "Do yourself a favor and do this right now...\n\nGo to VS Code (Insiders) settings and set\
+      \ `https://t.co/i8MIYa8owj.codesearch.enabled: true`. \n\nInclude #codebase with your prompt and\
+      \ you get ...\n\n* Embeddings-based semantic search\n* Text search\n* Files and directories awareness\n\
+      * h"
+    url: https://twitter.com/14679272/status/1898819328998605210
+    published: '2025-03-09T19:33:01Z'
+    channel: x
+  - title: "I keep hearing feedback that GitHub Copilot \"doesn't have whole project awareness\". \n\n\
+      It absolutely DOES. Here's how to trigger it. https://t.co/ZVmhDWsv7D"
+    url: https://twitter.com/14679272/status/1896676347831099400
+    published: '2025-03-03T21:37:34Z'
+    channel: x
+  talks:
+  - session:1809k
+  - session:2024/ai2024l
+  - session:2024/dev2016m
+  - session:bld1978m
+  - session:bld2152a
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1790700744585001b0hx
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: burkeholland
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724797307652001EIoq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

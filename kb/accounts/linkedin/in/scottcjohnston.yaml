@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/scottcjohnston
+  platform: linkedin
+  handle: in/scottcjohnston
+  url: https://www.linkedin.com/in/scottcjohnston
+  display_name: Scott Johnston
+  location: San Francisco Bay Area
+  followers: 8586
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQEmd4aDM6ytOQ/profile-displayphoto-scale_200_200/B56Z63YPBNK4Ac-/0/1781193046088?e=2147483647&v=beta&t=PyP89fTGq-yb2qRzDQEc5twrgFeCUu3oEghrlEvCYMI
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHy6ib6N0i3tg/profile-displaybackgroundimage-shrink_200_800/B56Z.RqFo2KUAQ-/0/1784855157648?e=2147483647&v=beta&t=a90aawNeyugzt0UmpRHjznaWXAa_REJ5dJyPfUpNPqw
+  owner: person:scott-johnston
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693515002212001B8X9
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/scottcjohnston
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

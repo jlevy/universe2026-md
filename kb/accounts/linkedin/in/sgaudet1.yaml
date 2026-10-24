@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sgaudet1
+  platform: linkedin
+  handle: in/sgaudet1
+  url: https://www.linkedin.com/in/sgaudet1
+  display_name: Sam Gaudet
+  bio: Analytics Infrastructure tech lead with extensive experience creating tooling and…
+  location: Northampton
+  followers: 1784
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQGoaQp4ve0BUw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517030732899?e=2147483647&v=beta&t=2v0nhbp5zZ242B3nhJaXN4e0qQp0WzbUq9PG18Rc8Vw
+  owner: person:sam-gaudet
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726180372449001hFL5
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sgaudet1
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

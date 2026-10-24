@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:maedastudio.com
+  url: https://maedastudio.com/
+  kind: personal
+  title: 2024 - MAEDASTUDIO
+  description: 'While working in venture capital at Kleiner Perkins in Silicon Valley, I became a fan
+    of startups and launched the #DesignInTech Report to share emerging insights at the crossroads of
+    tech, design, and business. I started out as an engineer, then moved to art / design, then to scientific
+    research / leading, and then into […]'
+  owner: person:john-maeda
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://maedastudio.com/feed/
+  - https://maedastudio.com/comments/feed/
+  linked_accounts:
+  - acct:linkedin/in/johnmaeda
+  - acct:x/johnmaeda
+  sources:
+  - system: brightdata
+    url: https://x.com/johnmaeda
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://maedastudio.com/
+    record_id: https://maedastudio.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,384 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:carlin-cherry
+  person: person:carlin-cherry
+  brief_bio:
+    text: Carlin Cherry is a senior product manager at GitHub working on Dependabot and the software supply
+      chain, with a background in data science and software engineering. Cherry spoke at GitHub Universe
+      2024 and 2025 and speaks at GitHub Universe 2026 on prioritizing and resolving security alerts.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 8c66a142dd7a438ebafe04708e69b42de8dbc8cc15ad33c16c796fceab0f89d8
+    stale: false
+  headline: Senior Product Manager at GitHub
+  current_roles:
+  - Senior Product Manager at GitHub
+  expertise:
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:tru1148d
+    - ref: session:tru1179d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1968d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1968d
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1968d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1968d
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1968d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1126d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1148d
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1179d
+  - label: Tech debt
+    target: term:topic/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1179d
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Dependabot
+      ref: person:carlin-cherry
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/sec1968d
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1148d
+    - ref: session:tru1179d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/sec1126d
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1148d
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1148d
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724774677514001aZun
+      ref: session:2024/sec1968d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776715237637001kxeC
+      ref: session:tru1148d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776968699197001khqV
+      ref: session:tru1179d
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745278898018001fQYN
+      ref: session:2025/sec1126d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776715237637001kxeC
+      ref: session:tru1148d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776968699197001khqV
+      ref: session:tru1179d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724774677514001aZun
+      ref: session:2024/sec1968d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776715237637001kxeC
+      ref: session:tru1148d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776968699197001khqV
+      ref: session:tru1179d
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776715237637001kxeC
+      ref: session:tru1148d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776968699197001khqV
+      ref: session:tru1179d
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724774677514001aZun
+      ref: session:2024/sec1968d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776968699197001khqV
+      ref: session:tru1179d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724774677514001aZun
+      ref: session:2024/sec1968d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776715237637001kxeC
+      ref: session:tru1148d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724774677514001aZun
+      ref: session:2024/sec1968d
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724774677514001aZun
+      ref: session:2024/sec1968d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776715237637001kxeC
+      ref: session:tru1148d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776715237637001kxeC
+      ref: session:tru1148d
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776715237637001kxeC
+      ref: session:tru1148d
+  open_source:
+  - repository: repo:dependabot/dependabot-core
+    relation: pinned
+    stars: 5810
+    primary_language: Ruby
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  - repository: repo:carlin-dependabot-testing/forked-demo
+    relation: contributor
+    stars: 0
+    primary_language: Ruby
+  - repository: repo:carlin-dependabot-testing/aw-octo-billing
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:carlin-dependabot-testing/aw-octo-billing-single-workflow
+    relation: contributor
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:carlin-dependabot-testing/vex-auto-generator
+    relation: contributor
+    stars: 0
+  education:
+  - school: Rice University
+    evidence:
+      url: https://www.linkedin.com/in/carlincherry
+      observed_at: '2026-10-24T08:11:46Z'
+  credentials:
+  - kind: honor
+    title: Viterbi Outstanding Graduate Student Mentor
+    issuer: Viterbi School of Engineering
+    date: '2021-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/carlincherry
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: honor
+    title: People's Republic of China Language Fellowship
+    issuer: People's Republic of China
+    date: '2017-04-01T00:00:00.000Z'
+    description: Awarded competitive scholarship from the Chinese government for a year of study at Fudan
+      University.
+    evidence:
+      url: https://www.linkedin.com/in/carlincherry
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: honor
+    title: Massoud Javadi Foundation Scholarship
+    issuer: Massoud Javadi Foundation
+    date: '2017-02-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/carlincherry
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: certification
+    title: Hubber Champion
+    issuer: GitHub
+    date: Jan 2026
+    url: https://www.credly.com/badges/69da5170-08ca-42c8-9b41-4b750d515b8f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/carlincherry
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: certification
+    title: dbt Fundamentals
+    issuer: dbt Labs
+    date: Jan 2024
+    expires: Jan 2026
+    url: https://credentials.getdbt.com/127a13dd-7857-4dc5-958c-d78846baf3de
+    evidence:
+      url: https://www.linkedin.com/in/carlincherry
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: certification
+    title: HSK Chinese Level 4
+    issuer: Ministry of Education, China
+    date: Jun 2018
+    expires: Jun 2020
+    evidence:
+      url: https://www.linkedin.com/in/carlincherry
+      observed_at: '2026-10-24T08:11:46Z'
+  spoken_languages:
+  - English
+  - Chinese (Simplified)
+  activities:
+  - kind: volunteering
+    title: Graduate Student Mentor
+    detail: University of Southern California · Education · Aug 2020 · - Dec 2021 · 1 year 5 months ·
+      Aug 2020
+    evidence:
+      url: https://www.linkedin.com/in/carlincherry
+      observed_at: '2026-10-24T08:11:46Z'
+  talks:
+  - session:2024/sec1968d
+  - session:2025/sec1126d
+  - session:tru1148d
+  - session:tru1179d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1709164010992001eEdt
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: carlincherry
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1709164010992001eEdt
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1709164010992001eEdt
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

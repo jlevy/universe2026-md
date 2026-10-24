@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/tiffany-kitchen-product-manager
+  platform: linkedin
+  handle: in/tiffany-kitchen-product-manager
+  url: https://www.linkedin.com/in/tiffany-kitchen-product-manager
+  display_name: Tiffany Kitchen
+  location: Washington
+  followers: 1060
+  connections: 500
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:tiffany-kitchen
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1790351297022001fOes
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/tiffany-kitchen-product-manager
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

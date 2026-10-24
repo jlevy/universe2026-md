@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:cassidoo.co
+  url: https://cassidoo.co
+  kind: personal
+  title: Cassidy Williams
+  description: I'm Cassidy Williams, a software engineer, mom, and overall nerd in Chicago. I write about
+    tech, projects, and whatever else I'm thinking about!
+  owner: person:cassidy-williams
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://cassidoo.co/rss.xml
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cassidoo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://cassidoo.co
+    record_id: https://cassidoo.co
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

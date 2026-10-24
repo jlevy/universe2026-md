@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/netlify
+  platform: linkedin
+  handle: company/netlify
+  url: https://www.linkedin.com/company/netlify
+  display_name: Netlify
+  bio: Start, build and ship full-stack apps on the platform built for agent experience (AX). AI makes
+    it easy to generate code. The harder part comes next. Getting changes live. Keeping systems stable.
+    Understanding what broke when something doesn’t behave as expected. That challenge grows as updates
+    happen faster and more often. That’s the gap we’re closing. Netlify brings the whole development workflow
+    into one platform. Start, ship, build, run, all in the same place. Builders and agents move from idea
+    to production quickly, without losing context. We coined this agent experience (AX), a shared workflow
+    where humans and AI agents work side by side, taking responsibility for shipping quality software.
+    We bring together modern web frameworks, serverless functions, edge computing and managed Postgres
+    in one platform. Leading AI coding agents like Claude Code, Codex CLI and Gemini CLI come built in.
+    The result is an unmatched user experience for anyone who builds with AI. More than 14 million builders
+    use Netlify, from solo developers and vibe coders to Fortune 100 companies and teams at Figma, Mattel,
+    and Riot Games.
+  website: https://www.netlify.com/
+  followers: 39029
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQHXtpBjbksX_w/company-logo_200_200/company-logo_200_200/0/1678217913899/netlify_logo?e=2147483647&v=beta&t=Jl8M8Ma__-Tm4RP_8UGQzMGmN_DzFIDyCQPKecEx7F0
+  owner: org:netlify
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/mathias-biilmann-christensen-a5a3805
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/seancdavis29
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/netlify
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

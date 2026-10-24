@@ -1,0 +1,27 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:figma
+  login: figma
+  kind: organization
+  url: https://github.com/figma
+  name: Figma
+  bio: Collaborative interface design tool
+  location: San Francisco, CA
+  website: https://www.figma.com
+  public_repositories: 41
+  created_at: '2013-08-03T15:44:02Z'
+  top_repositories:
+  - repo:figma/mcp-server-guide
+  - repo:figma/plugin-samples
+  - repo:figma/code-connect
+  entity: org:figma
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: figma
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

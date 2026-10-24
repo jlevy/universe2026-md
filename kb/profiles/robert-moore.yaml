@@ -1,0 +1,127 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:robert-moore
+  person: person:robert-moore
+  brief_bio:
+    text: Robert Moore was managing director of architecture and engineering at Citi, leading the Developer
+      Services organization within the CTO, when speaking at GitHub Universe 2024. Moore spoke about the
+      AI-native developer experience.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: b35655394860b02289a088b3d840cc58dcbc2ed7a734dd26e4fd0d334fe49176
+    stale: false
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1982m
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:robert-moore
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724899629781001RO6m
+      ref: session:2024/dev1982m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724899629781001RO6m
+      ref: session:2024/dev1982m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724899629781001RO6m
+      ref: session:2024/dev1982m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724899629781001RO6m
+      ref: session:2024/dev1982m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724899629781001RO6m
+      ref: session:2024/dev1982m
+  talks:
+  - session:2024/dev1982m
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697575117535001tiEB
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

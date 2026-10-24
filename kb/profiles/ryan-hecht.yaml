@@ -1,0 +1,571 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ryan-hecht
+  person: person:ryan-hecht
+  brief_bio:
+    text: Ryan Hecht is a Product Manager at GitHub who leads the GitHub CLI team and brought GitHub Copilot
+      CLI to market. Hecht spoke at GitHub Universe 2025 about agentic workflows with Copilot CLI and
+      speaks at GitHub Universe 2026 on GitHub CLI workflows and local models.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 288d680341a12a0902f220ea2d7d9f53612dc37f1f1c977cbd7047549eaf20ff
+    stale: false
+  headline: Product Manager at GitHub
+  location: Orlando, FL / Long Island, NY
+  current_roles:
+  - Product Manager at GitHub
+  expertise:
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1491d
+    - ref: session:bld2011d
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1664d
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1664d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1664d
+  - label: Software Engineering
+    target: term:topic-2025/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1664d
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2011d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2011d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  technologies:
+  - label: Copilot coding agent
+    target: software:copilot-coding-agent
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot coding agent
+      ref: session:2025/bld1664d
+  - label: Git
+    target: software:git
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Git
+      ref: session:bld1491d
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: GitHub CLI
+    target: software:github-cli
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub CLI
+      ref: person:ryan-hecht
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld2011d
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot CLI
+      ref: person:ryan-hecht
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: Windows
+    target: software:windows
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Windows
+      ref: session:bld2011d
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757336641198001Taq1
+      ref: session:2025/bld1664d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790897637616001pqcU
+      ref: session:bld2011d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790897637616001pqcU
+      ref: session:bld2011d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757336641198001Taq1
+      ref: session:2025/bld1664d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: inputsystem
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/TheNathannator/PlasticBand-Unity
+      ref: repo:thenathannator/plasticband-unity
+    - url: https://github.com/TheNathannator/HIDrogen
+      ref: repo:thenathannator/hidrogen
+  - label: unity
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/TheNathannator/PlasticBand-Unity
+      ref: repo:thenathannator/plasticband-unity
+    - url: https://github.com/TheNathannator/HIDrogen
+      ref: repo:thenathannator/hidrogen
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757336641198001Taq1
+      ref: session:2025/bld1664d
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790897637616001pqcU
+      ref: session:bld2011d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790897637616001pqcU
+      ref: session:bld2011d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  open_source:
+  - repository: repo:github/copilot-cli
+    relation: pinned
+    stars: 11294
+    primary_language: Shell
+  - repository: repo:mcparks/showscript
+    relation: pinned
+    stars: 12
+    primary_language: Java
+  - repository: repo:mcparks/achievables
+    relation: pinned
+    stars: 3
+    primary_language: Java
+  - repository: repo:go-vikunja/vikunja
+    relation: contributor
+    stars: 5841
+    primary_language: Go
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  - repository: repo:thenathannator/plasticband-unity
+    relation: contributor
+    stars: 10
+    primary_language: C#
+  - repository: repo:thenathannator/hidrogen
+    relation: contributor
+    stars: 13
+    primary_language: C#
+  education:
+  - school: Brown University
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  publications:
+  - title: Building a more accessible GitHub CLI
+    venue: GitHub Blog
+    date: May 2, 2025
+    description: How do we translate web accessibility standards to command line applications? This is
+      GitHub CLI’s journey toward making terminal experiences for all developers.
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - title: Distributing, Collecting, and Autograding Assignments with GitHub Classroom
+    venue: 'SIGCSE 2023: Proceedings of the 54th ACM Technical Symposium on Computer Science Education'
+    date: March 6, 2023
+    description: Presented alongside faculty of Harvard's storied computer science introduction course
+      CS50, this workshop introduces participants hands-on to GitHub Classroom, a free, web-based application
+      that enables teachers to distribute, collect, and autograde programming assignments in any language.
+      GitHub Classroom effectively provides an abstraction layer atop Git and GitHub, automating tasks
+      for students and teachers that would otherwise be time-consuming and tedious via a CLI or GUI, particularly
+      for larger courses. To distribute an assignment, a teacher need only create a "repository" with
+      starter code (and optional tests) in their own "organization" on GitHub, which students can then
+      "accept," automatically creating within that same organization a copy thereof to which the student
+      has write access. To submit work, students need only upload (or push) files to the same, which automates
+      execution of any tests. Students' submissions (and the results of any such tests) are then accessible
+      via the teacher's own dashboard. GitHub Classroom does not strictly require familiarity with Git
+      of students and teachers; basic operations can be performed via GitHub's GUI. But some comfort with
+      cloning, adding, committing, and pushing files with Git itself is ideal. By workshop's end, participants
+      will be prepared to use GitHub Classroom in their own courses if they so choose. And by way of GitHub
+      Classroom can participants' students acquire all the more comfort with Git itself by courses' end.
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - title: 'Guinness World Records 2017: Blockbusters!'
+    venue: Guinness World Records
+    date: January 10, 2017
+    description: MCParks was featured in Guinness World Records for recreating the most real-world theme
+      parks in Minecraft!
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  activities:
+  - kind: project
+    title: GitHub Copilot CLI
+    detail: GitHub Copilot CLI brings AI-powered coding assistance directly to your command line, enabling
+      you to build, debug, and understand code through natural language conversations. Powered by the
+      same agentic harness as GitHub's Copilot coding agent, it provides intelligent assistance while
+      staying deeply integrated with your GitHub workflow. · Jul 2025
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: project
+    title: Achievables - Open source Java library for specifying video game achievement-like "Achievables"
+      complete with a Groovy-based programming language for defining them
+    detail: A Java library that defines "Achievables," a system that can be used to define Achievements,
+      Daily Challenges, Quests, and other things that players can "achieve" in a video game-like setting.This
+      codebase also includes an extensible Groovy-based programming language called BIGAL (BigAl's Integrated
+      Groovy Achievement Language) that allows you to define Achievables (with other metadata necessary
+      to define an Achievement) in a human-readable and version-controllable format.We use Achievables
+      on MCParks to power Daily Challenges and Achievements. · Jan 2024
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: project
+    title: ShowScript - Open source programming language to scheudule and program commands to be run at
+      specified timecodes
+    detail: 'ShowScript is a Spigot plugin that defines a programming language (v2 is backed by YAML and
+      v3 is a Groovy DSL) that allows console commands and other actions to be scheduled to run at specified
+      timecodes. A file that defines a series of timecodes and actions is called a "Show." The technicians
+      on MCParks use ShowScript to make our fireworks shows, theatre attractions, ambient effects, and
+      to schedule effects to run on our ridesFeatures include:- Turn miles of Command Blocks into just
+      one command that''s easy to share, extend, and run!- A simple YAML schema enabling beginners to
+      easily schedule any commands to run at specified times- A rich Groovy DSL that brings all the functionality
+      of the YAML schema and allows you to add programming constructs like conditionals, loops, functions,
+      etc- Add arguments to your shows to make them reusable in different situations- Seamlessly interact
+      with server constructs like Players, Entitys Locations, and more!- Set global variables and export
+      data and functions to share data between shows- Access any Java class loaded in your Classpath for
+      easily extending functionality to custom plugins- Region Shows: Have a show loop ambiently as long
+      as there are players in a WorldGuard region · Jan 2015'
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: project
+    title: 'BrYOUno: Dorm Room Personal Assistant'
+    detail: Digital voice-activated assistant powered by Python, running on a Raspberry Pi. Communicates
+      via Bluetooth to an Arduino to automate my lightswitch, and performs a variety of other tasks, such
+      as managing my Todoist tasks, playing music via Google Play Music, and more. · Sep 2016
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: project
+    title: 'Cardstone: The Shattering'
+    detail: 'Together with three other students in Brown University''s Spring 2017 Introduction to Software
+      Engineering course, created a digital card game inspired by Hearthstone and Magic: The Gathering.The
+      game''s backend is powered by a Spark/Jetty webserver, with frontend user interface being primarily
+      created with FTL, save for the game screen itself, which was loving crafted with CSS and ES6 galore
+      (check out https://pbs.twimg.com/media/C_V4HzUXsAE3RmM.jpg for a preview of the game board). The
+      frontend and backend communicate through WebSockets, powered by the API in Spark.The website has
+      features such as lobbies, spectating, interactive deck building, replays of past games, and a tutorial
+      to guide new users through the operation of the site.Design techniques were used to ensure that
+      we can easily add new cards to the library with a variety of effects that "bend" the rules of the
+      game.Source code: https://github.com/RyanHecht/cardstone · Feb 2017'
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: project
+    title: Websocket powered audio system to play music based on events on a Minecraft server
+    detail: A Minecraft server proxy runs a Websocket server, and clients connect via the MCParks website
+      in a web browser. Upon connecting, they are prompted to enter their Minecraft username. Audio is
+      sent to them based on events that occur on the Minecraft server. Authentic in-park audio loops,
+      show soundtracks, and ride effects are played in real time (and loops/shows sync with other users).
+      · May 2016
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: project
+    title: Codebase that will be used to create MMO elements in a Minecraft server
+    detail: Implementing the software engineering skills I've learned in the classroom, I've begun a multi-layered
+      codebase that will be used to create MMO elements on MCParks.The codebase is used in two pieces
+      of software--a Spigot plugin, and a BungeeCord plugin. Communication is accomplished via the Bukkit-Bungee
+      Plugin Messaging API, with a custom wrapper to abstract away low level code.Data persistence is
+      accomplished via a MySQL database, connection to which is handled by the Hikari connection pool.
+      Only the BungeeCord plugin has access to the database, so a client-server relationship is formed
+      between Spigot and BungeeCord.Using Java 8's embedded JavaScrip scripting API, I can run arbitrary
+      code on the BungeeCord plugin from Spigot at runtime.This code base has been implemented to handle
+      the server's kicks, bans, teleportation, Cast Member two-step authentication, and a basic Attraction
+      Manager. Attractions are stored in the database, and a GUI is created in the form of a MagicBand
+      to browse the information contained in the database.
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: project
+    title: Text-based Scripting of Minecraft Server Events
+    detail: Users input text in a YML file that will trigger in game events based on timecodes. An example
+      of the syntax can be found at https://gist.github.com/RyanHecht/f80acc530065a737b7ab9d4d501c5b64
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: Accelerated Introduction to Computer Science
+    detail: CSCI0190
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: Computers and Music
+    detail: MUSC0200
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: Crossing the Consumer Chasm through Engineering Design
+    detail: ENGN0120B
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: Interfaces, Information, and Automation
+    detail: ENGN1931Z
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: Introduction to Computer Systems
+    detail: CSCI0330
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: Introduction to Discrete Structures and Probability
+    detail: CSCI0220
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: Introduction to Software Engineering
+    detail: CSCI0320
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: Linear Algebra
+    detail: MATH0520
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: Managerial Decision Making
+    detail: ENGN0900
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  - kind: course
+    title: User Interfaces and User Experiences
+    detail: CSCI1300
+    evidence:
+      url: https://www.linkedin.com/in/ryanahecht
+      observed_at: '2026-10-24T08:16:34Z'
+  recent_writing:
+  - title: Everything this site can do to an article
+    url: https://ryanhecht.com/posts/article-feature-tour/
+    published: '2026-08-05T00:00:00Z'
+    channel: blog
+  - title: |-
+      🚗Attention on the Sim Track! 🚗
+
+      🚘#TestTrack is now open on MCParks 🚘
+
+      🖥️Connect at https://t.co/kPZ7wCYzah (Java Edition) to design and test your perfect car! 🖥️ https://t.co/FQKNEBfG0r
+    url: https://twitter.com/2161580641/status/1751780301963931814
+    published: '2024-01-29T01:32:25Z'
+    channel: x
+  - title: |-
+      As we prepare to launch our 10th Anniversary Celebration on MCParks this April, we're excited to share an early look at our anniversary logo!
+      📢 Join us *this* Wednesday at 9 PM EST on the MCParks Discord for our Weekly Meeting for more announcements! https://t.co/NERiQeGvQw 📢 htt
+    url: https://twitter.com/2161580641/status/1637597524109279232
+    published: '2023-03-19T23:30:49Z'
+    channel: x
+  - title: |-
+      We don't talk about Bruno no no no.
+
+      However last night, guests were able to meet Bruno, Mirabel, Luisa and Isabela Madrigal for the first time!
+
+      You can also buy their costumes at "/warp fiveanddime" at Disney California Adventure!
+
+      #encanto #DisneyEncanto https://t.co/sjqkuxTbS
+    url: https://twitter.com/2161580641/status/1483091752760262665
+    published: '2022-01-17T15:00:03Z'
+    channel: x
+  - title: talk about a glow up https://t.co/o9H6nFuz0i
+    url: https://twitter.com/2161580641/status/1453891889464287234
+    published: '2021-10-29T01:10:13Z'
+    channel: x
+  - title: "MCParks has welcomed 200,000+ guests to our 1:1 scale Minecraft recreations of #WaltDisneyWorld,\
+      \ #Disneyland, and #UniversalOrlando. Ride thrilling attractions, take in Happily Ever After, and\
+      \ explore the parks with friends! \nhttps://t.co/sXjdm2p08O\nMinecraft Java 1.12.1-1.15.2 h"
+    url: https://twitter.com/2161580641/status/1256286941340995584
+    published: '2020-05-01T18:18:42Z'
+    channel: x
+  talks:
+  - session:2025/bld1664d
+  - session:bld1491d
+  - session:bld2011d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699547169825001krXG
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: RyanHecht
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699547169825001krXG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

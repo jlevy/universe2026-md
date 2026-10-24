@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:google/go-github
+  full_name: google/go-github
+  url: https://github.com/google/go-github
+  description: Go library for accessing the GitHub v3 API
+  homepage: https://pkg.go.dev/github.com/google/go-github/v89/github
+  stars: 11326
+  forks: 2563
+  watchers: 203
+  open_issues: 25
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Go
+  topics:
+  - go
+  - github-api
+  - github
+  - golang
+  - hacktoberfest
+  license: BSD-3-Clause
+  archived: false
+  fork: false
+  created_at: '2013-05-24T16:42:58Z'
+  pushed_at: '2026-10-24T14:02:15Z'
+  owner_login: google
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tommaso-moro
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: google/go-github
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

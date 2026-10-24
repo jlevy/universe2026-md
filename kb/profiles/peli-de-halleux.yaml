@@ -1,0 +1,416 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:peli-de-halleux
+  person: person:peli-de-halleux
+  brief_bio:
+    text: Peli de Halleux is an Agentic Engineer for GitHub Next at Microsoft who created GitHub Agentic
+      Workflows, GenAIScript and Jacdac and founded Microsoft MakeCode. Peli de Halleux spoke at GitHub
+      Universe 2025 and speaks at GitHub Universe 2026 on agentic workflows at scale.
+    cites:
+    - listed_role
+    - current_affiliations
+    - github_bio
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: 865763fc0344b28f07696c324a6ddb56d7177717e6ef86729f3046031df6eb0c
+    stale: false
+  headline: Agentic Engineer, GitHub Next at Microsoft
+  location: Seattle, WA
+  current_roles:
+  - Agentic Engineer, GitHub Next at Microsoft
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:peli-de-halleux
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/bld1143m
+  - label: GitHub Agentic Workflows
+    target: software:github-agentic-workflows
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Agentic Workflows
+      ref: person:peli-de-halleux
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1786m
+    - ref: session:ldr1913a
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot CLI
+      ref: session:2025/bld1143m
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2025/bld1143m
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:microsoft/genaiscript
+    - ref: repo:pelikhan/action-continuous-translation
+    - ref: repo:pelikhan/action-genai-issue-labeller
+  - label: C#
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:pelikhan/quickgraph
+  interests:
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+    - url: https://github.com/github/gh-aw
+      ref: repo:github/gh-aw
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: high
+    weight: 0.87
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    weight: 0.54
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 0.54
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    weight: 0.54
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 0.54
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785161525956001tBix
+      ref: session:ldr1786m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790267224100001ISK1
+      ref: session:ldr1913a
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: action
+    basis: github_repositories
+    confidence: low
+    weight: 0.18
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/pelikhan/action-genai-issue-labeller
+      ref: repo:pelikhan/action-genai-issue-labeller
+  open_source:
+  - repository: repo:github/gh-aw
+    relation: pinned
+    stars: 5457
+    primary_language: Go
+  - repository: repo:microsoft/genaiscript
+    relation: pinned
+    stars: 2874
+    primary_language: TypeScript
+  - repository: repo:pelikhan/quickgraph
+    relation: owner
+    stars: 23
+    primary_language: C#
+  - repository: repo:pelikhan/action-continuous-translation
+    relation: owner
+    stars: 17
+    primary_language: TypeScript
+  - repository: repo:pelikhan/action-genai-issue-labeller
+    relation: owner
+    stars: 14
+    primary_language: TypeScript
+  - repository: repo:microsoft/uf2
+    relation: contributor
+    stars: 1040
+    primary_language: JavaScript
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  - repository: repo:microsoft/pxt-tensorflow
+    relation: contributor
+    stars: 8
+    primary_language: C++
+  - repository: repo:microsoft/msagljs
+    relation: contributor
+    stars: 175
+    primary_language: TypeScript
+  - repository: repo:microsoft/docusaurus-plugin-application-insights
+    relation: contributor
+    stars: 3
+    primary_language: TypeScript
+  education:
+  - school: Université catholique de Louvain
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  spoken_languages:
+  - French
+  - English
+  - Spanish
+  activities:
+  - kind: volunteering
+    title: Teacher
+    detail: Microsoft TEALS · Education · Sep 2011 · - Present · 15 years 2 months · We teach introduction
+      to computer science at the local high school. Our work was featured in the New York Times. http://www.nytimes.com/2012/10/01/technology/microsoft-sends-engineers-to-schools-to-encourage-the-next-generation.html
+      · Sep 2011
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: PXT
+    detail: A blocks / javascript progressive editor for the BBC micro:bit and others · Mar 2016
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: Code Hunt
+    detail: A coding game. · Mar 2012
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: BBC micro:bit
+    detail: Delivering 1M programmable microcontrollerd to all the Y7 students in the U.K. · Sep 2014
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: DeviceScript
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: GitHub Agentic Workflows
+    detail: Agent Human Process creation using GitHub Actions and Agents.
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: Jacdac
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: Pex and Moles
+    detail: Pex is an automated test generation engine for .NET. Moles is an isolation framework for .NET.
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: pex4fun
+    detail: Are you good at coding? Try solving coding duels on pex4fun.com.
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: TEALS - Education
+    detail: Teaching Web design at the local High School.
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  - kind: project
+    title: TouchDevelop
+    detail: Program your phone on your phone! TouchDevelop allows to author and run scripts on your smartphone.
+    evidence:
+      url: https://www.linkedin.com/in/pelidehalleux
+      observed_at: '2026-10-24T08:15:07Z'
+  talks:
+  - session:2025/bld1143m
+  - session:2153b
+  - session:ldr1786m
+  - session:ldr1913a
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777450204317001zcJY
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pelikhan
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692113199740001BmIl
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

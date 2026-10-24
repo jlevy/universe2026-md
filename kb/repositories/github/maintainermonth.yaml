@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/maintainermonth
+  full_name: github/maintainermonth
+  url: https://github.com/github/maintainermonth
+  description: A month for maintainers to gather & share
+  homepage: https://maintainermonth.github.com/
+  stars: 243
+  forks: 66
+  watchers: 59
+  open_issues: 1
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: JavaScript
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2021-03-30T17:16:20Z'
+  pushed_at: '2026-10-14T19:15:54Z'
+  owner_login: github
+  owner: gh:github
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cassidoo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/maintainermonth
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

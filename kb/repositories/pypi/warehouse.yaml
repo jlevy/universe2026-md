@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:pypi/warehouse
+  full_name: pypi/warehouse
+  url: https://github.com/pypi/warehouse
+  description: The Python Package Index
+  homepage: https://pypi.org
+  stars: 4174
+  forks: 1271
+  watchers: 122
+  open_issues: 454
+  stats_observed_at: '2026-10-24T19:12:17Z'
+  primary_language: Python
+  topics:
+  - package-registry
+  - package-repository
+  - pypi
+  - pypi-source
+  - python
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2013-03-30T19:03:53Z'
+  pushed_at: '2026-10-24T16:12:16Z'
+  owner_login: pypi
+  software: software:pypi
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: woodruffw
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pypi/warehouse
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pypi/warehouse
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

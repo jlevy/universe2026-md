@@ -1,0 +1,219 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:tomiwa-ibiwoye
+  person: person:tomiwa-ibiwoye
+  brief_bio:
+    text: The GitHub Universe 2025 listing describes Tomiwa Ibiwoye as Co-founder at HacktivLabs.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 5e7a5c9e1a01ea6cc23f1cc80e6ee85deefa25145bf09f7db11342d8ad9c4aab
+    stale: false
+  headline: Xi
+  current_roles:
+  - Xi
+  expertise:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1150d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1150d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1150d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1150d
+  technologies:
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Projects
+      ref: session:2025/bld1150d
+  - label: Node.js
+    target: software:nodejs
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Node.js
+      ref: person:tomiwa-ibiwoye
+  interests:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745448681751001WjI2
+      ref: session:2025/bld1150d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745448681751001WjI2
+      ref: session:2025/bld1150d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745448681751001WjI2
+      ref: session:2025/bld1150d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745448681751001WjI2
+      ref: session:2025/bld1150d
+  - label: Projects and Issues
+    target: term:github-product-2025/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745448681751001WjI2
+      ref: session:2025/bld1150d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745448681751001WjI2
+      ref: session:2025/bld1150d
+  education:
+  - school: University of Ibadan
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  credentials:
+  - kind: certification
+    title: A Design Thinking Approach to Putting the Customer First
+    issuer: LinkedIn
+    date: Oct 2021
+    url: https://www.linkedin.com/learning/certificates/c14fbd2df4221eb19f2997706597a06b126a299d10ad2bee878c3bb345aa87fd
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: certification
+    title: 'Building an Ethereum Blockchain App: 1 Introduction to Blockchain'
+    issuer: LinkedIn
+    date: Oct 2021
+    url: https://www.linkedin.com/learning/certificates/f2f3a9c0ae800c6ad5ef0e12f82e3cf0564458cf12f56c2d59c893f6f506dd62
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: certification
+    title: 'Building an Ethereum Blockchain App: 2 Introduction to Ethereum'
+    issuer: LinkedIn
+    date: Oct 2021
+    url: https://www.linkedin.com/learning/certificates/26b318e139d74867d4708a692bbab2bc13fd3119a9bd4f78d688d3b4c536ba9c
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: certification
+    title: 'Building an Ethereum Blockchain App: 3 Ethereum Development'
+    issuer: LinkedIn
+    date: Oct 2021
+    url: https://www.linkedin.com/learning/certificates/0813a040005bf8de4580ec4b5d9a211de5f4c791e265441ab6901c0f0f01d6f5
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: certification
+    title: Learning PHP
+    issuer: LinkedIn
+    date: Oct 2021
+    url: https://www.linkedin.com/learning/certificates/ac147a03a00a708e93a0fed6e0b7250f2a29a7647d7da7fd9298193f837da66d
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: certification
+    title: Learning webpack 4
+    issuer: LinkedIn
+    date: Sep 2021
+    url: https://www.linkedin.com/learning/certificates/17acb1d7baa7cedfef4b25ae045aa9844881e8ad923c7755d6ece03117a29046
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: certification
+    title: Succeeding in a New Job
+    issuer: LinkedIn
+    date: May 2021
+    url: https://www.linkedin.com/learning/certificates/cbc60ed5a8e93b18b30af123b3612e8d8e33af740ecfff514cc78001f17e8f1f
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: certification
+    title: PHP
+    issuer: TestDome
+    date: Mar 2019
+    url: https://www.testdome.com/cert/2ba9fae020c04611bddcf7ff30e47235
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: certification
+    title: PHP and SQL
+    issuer: TestDome
+    date: Mar 2019
+    url: https://www.testdome.com/cert/ab78a5b376ec4fd7bc07117c40e66ea0
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  - kind: certification
+    title: PHP, MySQL, and SQL
+    issuer: TestDome
+    date: Mar 2019
+    url: https://www.testdome.com/cert/e12257ce98d0466e845894c10d81040c
+    evidence:
+      url: https://www.linkedin.com/in/tomiwahq
+      observed_at: '2026-10-24T08:49:55Z'
+  talks:
+  - session:2025/bld1150d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745446947589001IiBA
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

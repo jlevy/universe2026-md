@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:opentelemetry
+  name: OpenTelemetry
+  aliases:
+  - OpenTelemetry
+  kind: open_source
+  homepage: https://opentelemetry.io
+  repositories:
+  - repo:open-telemetry/opentelemetry-specification
+  mentioned_in:
+  - person:achin-gupta
+  - session:tru2239b
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

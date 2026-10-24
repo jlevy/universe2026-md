@@ -1,0 +1,144 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:madelyn-tarr
+  person: person:madelyn-tarr
+  brief_bio:
+    text: Madelyn Tarr is a Senior Product Manager at Statsig + Amplitude who leads feature management,
+      including feature gates and dynamic configurations, and works on automating safe rollouts. Tarr
+      speaks at GitHub Universe 2026 about shipping fast and measuring impact in the AI era.
+    cites:
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 4cba517edfc68d200318ddd503daab283eb5bc5da4ecc943a3624a6f17efced2
+    stale: false
+  headline: Amplitude
+  current_roles:
+  - Amplitude
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: MCP
+      ref: person:madelyn-tarr
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  talks:
+  - session:bld1864d
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791556328441001Fwsh
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

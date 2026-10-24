@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/sammorrowdrums
+  platform: x
+  handle: SamMorrowDrums
+  url: https://x.com/SamMorrowDrums
+  display_name: Sam Morrow
+  bio: building agents and stuff at GitHub, aspiring mad scientist
+  website: https://www.sam-morrow.com/blog
+  followers: 330
+  following: 422
+  posts_count: 569
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2042924647860092928/6u6rHepY_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1290032876/1776027143
+  created_at: '2013-03-23T00:42:16Z'
+  owner: person:sam-morrow
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685606809874001rJOG
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685606809874001rJOG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SamMorrowDrums
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/SamMorrowDrums
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

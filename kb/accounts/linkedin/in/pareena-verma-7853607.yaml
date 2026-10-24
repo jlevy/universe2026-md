@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/pareena-verma-7853607
+  platform: linkedin
+  handle: in/pareena-verma-7853607
+  url: https://www.linkedin.com/in/pareena-verma-7853607
+  display_name: Pareena Verma
+  location: Greater Boston
+  followers: 1576
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQGSIV7sc_FqdA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575598959584?e=2147483647&v=beta&t=LLeWatfki1MoORxKAIT_8EK5x4r-WWkAmiUfaAtQ5xk
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:pareena-verma
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721639118843001a4VI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721639118843001a4VI
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/pareena-verma-7853607
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

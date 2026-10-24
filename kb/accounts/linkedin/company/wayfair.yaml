@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/wayfair
+  platform: linkedin
+  handle: company/wayfair
+  url: https://www.linkedin.com/company/wayfair
+  display_name: Wayfair
+  bio: 'Wayfair is the destination for all things home: helping everyone, anywhere create their feeling
+    of home. From expert customer service, to the development of tools that make the shopping process
+    easier, to carrying one of the widest and deepest selections of items for every space, style, and
+    budget, Wayfair gives everyone the power to create spaces that are just right for them.'
+  website: https://aboutwayfair.com/careers
+  followers: 453401
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQE5VUS4aKzIjw/company-logo_200_200/company-logo_200_200/0/1707335788746/wayfair_logo?e=2147483647&v=beta&t=c2il6-5LoiV30GqoI9ra-Z5LhxHaaKCdOu0MA6wkBDE
+  owner: org:wayfair
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/sgaudet1
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/wayfair
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

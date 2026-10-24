@@ -1,0 +1,282 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dr-holger-kasinger
+  person: person:dr-holger-kasinger
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes Dr. Holger Kasinger as Head of Digital Experience
+      Platforms at Carl Zeiss AG.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 7266f27811ce0a7c1eefbd6ea65dd643095f148059fde942978854d28baefe31
+    stale: false
+  headline: ZEISS Group
+  current_roles:
+  - ZEISS Group
+  expertise:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  technologies:
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: session:2024/dev1443m
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Server
+      ref: session:2024/dev1443m
+  interests:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  education:
+  - school: Universität Augsburg
+    evidence:
+      url: https://www.linkedin.com/in/holger-kasinger
+      observed_at: '2026-10-24T08:44:46Z'
+  credentials:
+  - kind: honor
+    title: University Award of the Friend's Association of the University of Augsburg
+    issuer: Friend's Association of the University of Augsburg
+    date: '2011-07-01T00:00:00.000Z'
+    description: Awarded for the best scientific PhD thesis in 2010
+    evidence:
+      url: https://www.linkedin.com/in/holger-kasinger
+      observed_at: '2026-10-24T08:44:46Z'
+  - kind: honor
+    title: Best Student Paper Award of the 2008 SIWN Congress
+    issuer: SIWN Congress
+    date: '2008-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/holger-kasinger
+      observed_at: '2026-10-24T08:44:46Z'
+  - kind: certification
+    title: Die 7 schlimmsten Kommunikationsfehler
+    issuer: LinkedIn
+    date: Jan 2023
+    url: https://www.linkedin.com/learning/certificates/aca750873b1868fea797ba8051860edba87f86498a8378b73df87938e58b543c
+    evidence:
+      url: https://www.linkedin.com/in/holger-kasinger
+      observed_at: '2026-10-24T08:44:46Z'
+  - kind: certification
+    title: Member of the Information Technology Committee
+    issuer: VDI Verein Deutscher Ingenieure e.V.
+    date: Feb 2020
+    evidence:
+      url: https://www.linkedin.com/in/holger-kasinger
+      observed_at: '2026-10-24T08:44:46Z'
+  - kind: certification
+    title: ISO/IEC 27001 Foundation
+    issuer: TÜV SÜD
+    date: Jul 2016
+    evidence:
+      url: https://www.linkedin.com/in/holger-kasinger
+      observed_at: '2026-10-24T08:44:46Z'
+  - kind: certification
+    title: ITIL V3 Foundation
+    issuer: TÜV SÜD
+    date: Jul 2012
+    evidence:
+      url: https://www.linkedin.com/in/holger-kasinger
+      observed_at: '2026-10-24T08:44:46Z'
+  publications:
+  - title: Design and Operation of Efficient Self-Organizing Systems
+    venue: Universität Augsburg
+    date: July 8, 2011
+    description: 'At the beginning of this 21st century, companies are faced with two key challenges with
+      regard to their IT systems: first, the increasing complexity of IT systems gives rise to escalating
+      operational expenditures for their administration and maintenance. Second, the intensifying, worldwide
+      competition in all markets requires IT systems providing more agility, flexibility, scalability,
+      robustness, and adaptivity in tackling daily businesses. Consequently, companies call for IT solutions
+      with a high degree of autonomy - in order to manage themselves - as well as a high degree of decentralization
+      - in order to provide the required, beneficial properties. Self-organizing emergent systems are
+      generally acknowledged as a potential solution able to cover both of these requirements. They consist
+      of many, simple elements (e.g. agents, servers, mobile devices, or robots), which have only partial
+      or even no global system knowledge and make their decisions solely based on locally available information.
+      The global coherent system behavior is achieved only by means of the local actions and interactions
+      between the elements, each unaware of the system''s goals. The problem-solving power of a self-organizing
+      emergent system hence mainly resides in the interactions between its elements instead of the internal
+      reasoning of individual elements. However, there exist several problems and challenges, which hinder
+      the acceptance of self-organizing emergent systems by industry. This thesis tackles two of them:
+      first, the design of efficient self-organizing emergent systems today is too complex, time-consuming,
+      and costly. Second, an acceptable efficiency of self-organizing emergent systems during the operation
+      cannot be guaranteed for all situations. This thesis presents several artifacts that on the one
+      hand simplify the design of effective as well as efficient self-organizing emergent systems and
+      on the other hand facilitate their efficient operation even in unforeseeable situations.'
+    evidence:
+      url: https://www.linkedin.com/in/holger-kasinger
+      observed_at: '2026-10-24T08:44:46Z'
+  spoken_languages:
+  - Deutsch
+  - Englisch
+  talks:
+  - session:2024/dev1443m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1722776798696001PT9W
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

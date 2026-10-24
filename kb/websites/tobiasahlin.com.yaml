@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:tobiasahlin.com
+  url: https://tobiasahlin.com/
+  kind: personal
+  title: Tobias Ahlin
+  description: SpinKit, Moving Letters, projects, and more.
+  owner: person:tobias-ahlin
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://tobiasahlin.com/feed.xml
+  linked_accounts:
+  - acct:x/tobiasahlin
+  sources:
+  - system: brightdata
+    url: https://x.com/tobiasahlin
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://tobiasahlin.com/
+    record_id: https://tobiasahlin.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

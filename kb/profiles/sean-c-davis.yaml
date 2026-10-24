@@ -1,0 +1,125 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sean-c-davis
+  person: person:sean-c-davis
+  brief_bio:
+    text: Sean C Davis is Senior Manager of Developer Education at Netlify, working on tools that help
+      developers build better websites. Davis spoke at GitHub Universe 2024 about AI and composable architecture
+      in web development.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 0e3f24a7d044ad0dccc3a132e9392e862073e4402123b429e28f69f1ebb02e5f
+    stale: false
+  headline: Netlify
+  current_roles:
+  - Netlify
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2245l
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2245l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2245l
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1729712387584001WWaX
+      ref: session:2024/ai2245l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1729712387584001WWaX
+      ref: session:2024/ai2245l
+  education:
+  - school: University of Cincinnati
+    evidence:
+      url: https://www.linkedin.com/in/seancdavis29
+      observed_at: '2026-10-24T08:46:56Z'
+  credentials:
+  - kind: honor
+    title: The 15 Coolest Things Coming to US Cities in 2017
+    issuer: Thrillist
+    date: '2016-12-01T00:00:00.000Z'
+    description: Thrillist featured an app I built on behalf of We Have Become Vikings for Cincinnati's
+      Brewing Heritage Trail. (https://goo.gl/XUn2ZS) This article was later picked up by Cincinnati Business
+      Courier. (https://goo.gl/W4UbQw)
+    evidence:
+      url: https://www.linkedin.com/in/seancdavis29
+      observed_at: '2026-10-24T08:46:56Z'
+  activities:
+  - kind: project
+    title: Sapwood
+    detail: Sapwood began as an open-source, multi-site, self-hosted content management system (CMS).That
+      project (what I now call "Sapwood Classic"), I abandoned for Sapwood 2, a complete rewrite of the
+      original Sapwood system.Sapwood 2 is more than a site-based content management system. It is a content
+      hub. It makes no assumptions about the organization of your data. And it doesn't come with all the
+      overhead of a traditional CMS.But Sapwood 2 also doesn't have a "public" side to it. Instead, the
+      data you enter is available via an API to be used however you desire. This follows the belief that
+      you should only have to write content once, and then you can repurpose it how it needs to be depending
+      on the application.Sapwood is expected to be in alpha/beta until 2017. · Oct 2014
+    evidence:
+      url: https://www.linkedin.com/in/seancdavis29
+      observed_at: '2026-10-24T08:46:56Z'
+  - kind: project
+    title: Cambium
+    detail: Cambium is a ruby gem that helps bootstrap Ruby on Rails projects by adding some custom configuration
+      and adjustments on top of a standard Rails application.However, Cambium's power is in its CMS-based
+      generators. A Rails developer can sculpt a fully-functional CMS in a matter of minutes using Cambium's
+      generators.Given my work on Sapwood recently, I'm unsure of the future of Cambium, but it has been
+      a useful resource and I would love for it to stick around. · Jul 2014
+    evidence:
+      url: https://www.linkedin.com/in/seancdavis29
+      observed_at: '2026-10-24T08:46:56Z'
+  - kind: project
+    title: Bones CSS Framework
+    detail: Bones is a lightweight and flexible framework to help you create great-looking websites right
+      out of the box.I had built Bones from the ground up to provide myself more flexibility in writing
+      custom CSS. I'm no longer actively developing Bones, and have begun exploring various CSS frameworks
+      as an alternative. · Jun 2013
+    evidence:
+      url: https://www.linkedin.com/in/seancdavis29
+      observed_at: '2026-10-24T08:46:56Z'
+  talks:
+  - session:2024/ai2245l
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728675658157001Ftyw
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

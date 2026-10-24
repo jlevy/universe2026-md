@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:kubernetes
+  name: Kubernetes
+  aliases:
+  - Kubernetes
+  - K8s
+  kind: open_source
+  homepage: https://kubernetes.io
+  repositories:
+  - repo:kubernetes/kubernetes
+  mentioned_in:
+  - person:achin-gupta
+  - person:ari-livigni
+  - person:bryant-jimin-son
+  - person:donia-chaiehloudj
+  - person:grant-griffiths
+  - person:holger-fahner
+  - person:ian-coldwater
+  - person:kat-cosgrove
+  - person:matteo-bianchi
+  - person:natali-vlatko
+  - person:noah-abrahams
+  - person:seth-mccombs
+  - session:2024/sec1871m
+  - session:2025/bld1563d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

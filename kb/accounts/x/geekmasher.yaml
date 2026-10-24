@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/geekmasher
+  platform: x
+  handle: GeekMasher
+  url: https://x.com/GeekMasher
+  display_name: Mathew Payne
+  bio: |-
+    AppSec guy by day 😎
+    Rustacean by night 🦀. Linux user
+
+    My own root shell 🐚, not my employers
+  location: Scotland, United Kingdom
+  website: https://geekmasher.dev/
+  followers: 1205
+  following: 2073
+  posts_count: 12983
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/785113271279972352/QbgnNYQE_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/175125547/1395042036
+  created_at: '2010-08-05T18:13:57Z'
+  owner: person:mathew-payne
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695049126843001TABY
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/GeekMasher
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

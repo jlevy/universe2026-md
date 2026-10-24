@@ -1,0 +1,105 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ashwin-mohan
+  person: person:ashwin-mohan
+  brief_bio:
+    text: Ashwin Mohan was a director of software engineering at GitHub, leading work to secure commits
+      from credential leaks, when speaking at GitHub Universe 2025 about building and staying secure in
+      the cloud at enterprise scale.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 09a3bdf54323c220679bcd7d2923c8da312d551273ad483313b74eee5c11883a
+    stale: false
+  expertise:
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1801b
+  - label: Threat Modeling
+    target: term:topic-2025/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1801b
+  - label: Vulnerability Detection
+    target: term:topic-2025/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1801b
+  technologies:
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Secret Protection
+      ref: session:2025/sec1801b
+  interests:
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Threat Modeling
+    target: term:topic-2025/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Vulnerability Detection
+    target: term:topic-2025/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  talks:
+  - session:2025/sec1801b
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699463642289001n9yq
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

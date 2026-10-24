@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/rongl
+  platform: linkedin
+  handle: in/rongl
+  url: https://www.linkedin.com/in/rongl
+  display_name: Rong Lu
+  location: Greater Seattle Area
+  followers: 1159
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQECkSVQtS4FMQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1552589356908?e=2147483647&v=beta&t=Xpcvy4mjDVloIvK01qTJ0nRpw58-ixl6avY-AZRCciQ
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:rong-lu
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1753303404894001CtAv
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/rongl
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

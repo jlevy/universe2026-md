@@ -1,0 +1,384 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:andre-landgraf
+  person: person:andre-landgraf
+  brief_bio:
+    text: Andre Landgraf is a staff developer advocate at Databricks, author of Full Stack Web Development
+      with Remix, and brings developers together through All Things Web events in San Francisco. Landgraf
+      speaks at GitHub Universe 2026 on making Postgres agent-ready.
+    cites:
+    - listed_role
+    - current_affiliations
+    - x_bio
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 3caf7d123bd6b34b19236551c8bffa7d3f8d42c9fdda1decde5d569ed46279b1
+    stale: false
+  headline: Staff Developer Advocate at Databricks
+  location: Mountain View, California
+  current_roles:
+  - Staff Developer Advocate at Databricks
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1638d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1638d
+  - label: Automated Infrastructure Deployment
+    target: term:topic/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1638d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1638d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1638d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:bld1638d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1638d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:bld1638d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1638d
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:packtpublishing/full-stack-web-development-with-remix
+    - ref: repo:andrelandgraf/aileen
+    - ref: repo:andrelandgraf/openimg
+    - ref: repo:allthingsweb-dev/allthingsweb
+    - ref: repo:andrelandgraf/andrelandgraf
+    - ref: repo:andrelandgraf/react-datalist-input
+    - ref: repo:andrelandgraf/contacts-app-tanstack-db-demo
+    - ref: repo:andrelandgraf/fullstackrecipes
+  interests:
+  - label: database
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/neondatabase/neonctl
+      ref: repo:neondatabase/neonctl
+    - url: https://github.com/neondatabase/examples
+      ref: repo:neondatabase/examples
+  - label: React
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/andrelandgraf/react-datalist-input
+      ref: repo:andrelandgraf/react-datalist-input
+    - url: https://github.com/neondatabase/examples
+      ref: repo:neondatabase/examples
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681788249001WQWA
+      ref: session:bld1638d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681788249001WQWA
+      ref: session:bld1638d
+  - label: Automated Infrastructure Deployment
+    target: term:topic/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681788249001WQWA
+      ref: session:bld1638d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681788249001WQWA
+      ref: session:bld1638d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681788249001WQWA
+      ref: session:bld1638d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681788249001WQWA
+      ref: session:bld1638d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681788249001WQWA
+      ref: session:bld1638d
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777681788249001WQWA
+      ref: session:bld1638d
+  - label: AI
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/neondatabase/examples
+      ref: repo:neondatabase/examples
+  - label: astro
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/neondatabase/examples
+      ref: repo:neondatabase/examples
+  open_source:
+  - repository: repo:packtpublishing/full-stack-web-development-with-remix
+    relation: pinned
+    stars: 145
+    primary_language: TypeScript
+  - repository: repo:andrelandgraf/openimg
+    relation: owner
+    stars: 90
+    primary_language: TypeScript
+  - repository: repo:andrelandgraf/aileen
+    relation: owner
+    stars: 80
+    primary_language: TypeScript
+  - repository: repo:andrelandgraf/contacts-app-tanstack-db-demo
+    relation: owner
+    stars: 67
+    primary_language: TypeScript
+  - repository: repo:andrelandgraf/react-datalist-input
+    relation: owner
+    stars: 27
+    primary_language: TypeScript
+  - repository: repo:andrelandgraf/fullstackrecipes
+    relation: owner
+    stars: 22
+    primary_language: TypeScript
+  - repository: repo:allthingsweb-dev/allthingsweb
+    relation: pinned
+    stars: 6
+    primary_language: TypeScript
+  - repository: repo:andrelandgraf/andrelandgraf
+    relation: owner
+    stars: 4
+    primary_language: TypeScript
+  - repository: repo:neondatabase/website
+    relation: contributor
+    stars: 332
+    primary_language: JavaScript
+  - repository: repo:neondatabase/neonctl
+    relation: contributor
+    stars: 116
+    primary_language: TypeScript
+  - repository: repo:neondatabase/examples
+    relation: contributor
+    stars: 81
+    primary_language: TypeScript
+  - repository: repo:neondatabase/delete-branch-action
+    relation: contributor
+    stars: 9
+  - repository: repo:neondatabase/preview-branches-with-vercel
+    relation: contributor
+    stars: 47
+    primary_language: TypeScript
+  education:
+  - school: Technische Universität München
+    evidence:
+      url: https://www.linkedin.com/in/andre-landgraf
+      observed_at: '2026-10-24T08:11:49Z'
+  credentials:
+  - kind: certification
+    title: Certificate, Frontiers of Artificial Intelligence
+    issuer: Stanford Continuing Studies
+    date: Mar 2020
+    evidence:
+      url: https://www.linkedin.com/in/andre-landgraf
+      observed_at: '2026-10-24T08:11:49Z'
+  publications:
+  - title: Full Stack Web Development with Remix
+    venue: Packt
+    date: November 10, 2023
+    description: A book about enhancing the user experience and building better React apps by using the
+      web platform with Remix.
+    evidence:
+      url: https://www.linkedin.com/in/andre-landgraf
+      observed_at: '2026-10-24T08:11:49Z'
+  - title: API Management Patterns for Public, Partner, and Group Web API Initiatives with a Focus on
+      Collaboration
+    venue: Association for Computing Machinery
+    date: January 23, 2022
+    description: Gloria Bondel’s research with findings from my master's thesis. These findings were the
+      result of a series of expert interviews, which I conducted together with Gloria. The research article
+      was published at the 26th European Conference on Pattern Languages of Programs (EuroPLoP'21).
+    evidence:
+      url: https://www.linkedin.com/in/andre-landgraf
+      observed_at: '2026-10-24T08:11:49Z'
+  spoken_languages:
+  - Deutsch
+  - Englisch
+  activities:
+  - kind: project
+    title: All Things Web
+    detail: An event and hackathon website for the Bay Area web development community built with Remix,
+      TypeScript, and Pocketbase. · Aug 2024
+    evidence:
+      url: https://www.linkedin.com/in/andre-landgraf
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: project
+    title: react-datalist-input
+    detail: Developed React combobox component with ease-of-use in mind, which receives 300+ weekly downloads
+      on npm. · Nov 2018
+    evidence:
+      url: https://www.linkedin.com/in/andre-landgraf
+      observed_at: '2026-10-24T08:11:49Z'
+  recent_writing:
+  - title: Python trains. Typescript ships. https://t.co/8zatDMcZaH
+    url: https://twitter.com/3705998175/status/1986495105688289429
+    published: '2025-11-06T18:05:15Z'
+    channel: x
+  - title: "Last year this time, I was at LinkedIn. Wild how far I got within just one year: all the way\
+      \ to the other side of Salesforce Park!! \n\nNew job, company and view but still stoked to attend\
+      \ the Syntax meetup again this year! https://t.co/QF6sx9jijV"
+    url: https://twitter.com/3705998175/status/1982951587246157951
+    published: '2025-10-27T23:24:34Z'
+    channel: x
+  - title: I’m the happiest when I code all day (on interesting things)
+    url: https://twitter.com/3705998175/status/1980520322165313865
+    published: '2025-10-21T06:23:35Z'
+    channel: x
+  - title: 'Excited to start hacking @ Agentic AI Hack Night #SFTechWeek https://t.co/f0iiatLCSD'
+    url: https://twitter.com/3705998175/status/1976807219577733361
+    published: '2025-10-11T00:29:03Z'
+    channel: x
+  - title: Join us on Oct 21 for awesome talks from Replit, Mux, Strapi, Neon, and Sentry - the day before
+      Next.js Conf! https://t.co/xgjWHHy4Qn
+    url: https://twitter.com/3705998175/status/1976406548076437920
+    published: '2025-10-09T21:56:55Z'
+    channel: x
+  - title: Learning about Replit Agent 3 and its brand-new multi-agent system. TIL Replit can now build
+      Mastra agents and is partnering with Inngest. Neon is in great company! https://t.co/ON9Nhq558n
+    url: https://twitter.com/3705998175/status/1975752237373685850
+    published: '2025-10-08T02:36:55Z'
+    channel: x
+  - title: If you're building a stack or starter kit with Neon and it's open source, then you should DM
+      me! We'd love to help maintain it. 🫡
+    url: https://twitter.com/3705998175/status/1968446568152875080
+    published: '2025-09-17T22:46:48Z'
+    channel: x
+  - title: |-
+      Hey friends, we're 𝗵𝗶𝗿𝗶𝗻𝗴 𝘁𝘄𝗼 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝗮𝗱𝘃𝗼𝗰𝗮𝘁𝗲𝘀 supporting Neon at Databricks!
+
+      We're looking for people who want to focus on education and community. You'll be working with Ryan and me as part of the Neon team. If you love Postgres, Developer
+    url: https://twitter.com/3705998175/status/1963680094800740786
+    published: '2025-09-04T19:06:32Z'
+    channel: x
+  - title: Why buy sliced watermelon when you can attend an AI meetup in SF every other night? https://t.co/1poYD6ZPU3
+    url: https://twitter.com/3705998175/status/1963404465941471351
+    published: '2025-09-04T00:51:17Z'
+    channel: x
+  - title: Will hack MCP on stage at the MCP Hackathon Launch Party in 5! https://t.co/BTdhUOSam1
+    url: https://twitter.com/3705998175/status/1955440646141137074
+    published: '2025-08-13T01:25:55Z'
+    channel: x
+  talks:
+  - session:bld1638d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777657145023001F7OK
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: andrelandgraf
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

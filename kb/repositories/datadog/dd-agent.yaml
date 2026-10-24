@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:datadog/dd-agent
+  full_name: DataDog/dd-agent
+  url: https://github.com/DataDog/dd-agent
+  description: Datadog Agent Version 5
+  homepage: https://docs.datadoghq.com/
+  stars: 1331
+  forks: 793
+  watchers: 401
+  open_issues: 145
+  stats_observed_at: '2026-10-24T19:10:00Z'
+  primary_language: Python
+  topics:
+  - datadog-agent
+  - agent
+  - python
+  - monitoring
+  - devops
+  - datadog
+  - dd
+  - agent-checks
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2010-12-31T03:02:47Z'
+  pushed_at: '2026-10-22T15:19:49Z'
+  owner_login: DataDog
+  owner: gh:datadog
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: DataDog
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: DataDog/dd-agent
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:githubnext
+  login: githubnext
+  kind: organization
+  url: https://github.com/githubnext
+  name: GitHub Next
+  bio: Exploring the future of software development
+  location: United States of America
+  website: https://githubnext.com
+  public_repositories: 81
+  created_at: '2021-08-26T23:49:35Z'
+  top_repositories:
+  - repo:githubnext/monaspace
+  - repo:githubnext/copilot-workspace-user-manual
+  - repo:githubnext/agentics
+  linked_accounts:
+  - acct:x/githubnext
+  entity: org:github-next
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: githubnext
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

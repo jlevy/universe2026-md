@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jzmusings
+  platform: linkedin
+  handle: in/jzmusings
+  url: https://www.linkedin.com/in/jzmusings
+  display_name: JZ Zhang
+  bio: Most of us were taught how to earn. Very few of us were taught how to build…
+  location: Los Angeles
+  followers: 2551
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQF_jH_02AqVgA/profile-displaybackgroundimage-shrink_200_800/B56Z6uqq9PI8AU-/0/1781046883098?e=2147483647&v=beta&t=UpqOWsVOzld3loEnUQuPDXckk3I_2avqZ0FLxwazdcE
+  owner: person:jz-zhang
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692480466006001rOIW
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jzmusings
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

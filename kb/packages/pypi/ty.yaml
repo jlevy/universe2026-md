@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/ty
+  ecosystem: pypi
+  name: ty
+  url: https://pypi.org/project/ty/
+  description: An extremely fast Python type checker, written in Rust.
+  latest_version: 0.0.91
+  license: MIT License
+  repository_url: https://github.com/astral-sh/ty
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: astral-sh/ty
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:gruponex.co
+  url: http://www.gruponex.co/
+  kind: company
+  title: Grupo Nex - Nex
+  description: Impulsamos el crecimiento y la transformacióna través de las tecnologías digitalesConoce
+    másSomos expertos en desarrollo a la medida de aplicaciones web en frontend y backendConoce másImplementamos
+    sitios webbajo los conceptos de UX, UIConoce másFormamos en 4RIEntrenamientos para la cuarta revolución
+    industrialConoce másDemocratizamos soluciones digitales tiendas virtuales, facturación, nómina y aprendizaje
+    virtualConoce másSomos expertos en Consultoría […]
+  owner: org:grupo-nex
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://gruponex.co/feed/
+  - https://gruponex.co/comments/feed/
+  sources:
+  - system: brightdata
+    url: https://x.com/javiermduranv
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://gruponex.co/
+    record_id: http://www.gruponex.co/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/javiermduran
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/grupo-nexco
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

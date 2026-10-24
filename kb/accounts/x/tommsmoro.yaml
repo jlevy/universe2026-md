@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/tommsmoro
+  platform: x
+  handle: tommsmoro
+  url: https://x.com/tommsmoro
+  display_name: Tommaso Moro
+  bio: Agents and MCP at @github
+  location: London
+  website: https://www.tmoro.xyz/
+  followers: 235
+  following: 1174
+  posts_count: 107
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1837936899924578304/EJ_rnreY_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1003240996350590976/1618588103
+  created_at: '2018-06-03T11:44:27Z'
+  owner: person:tommaso-moro
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1750710672424001iy51
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tommaso-moro
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/tommsmoro
+    record_id: sd_mvm4nigsgklpc8gkv
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

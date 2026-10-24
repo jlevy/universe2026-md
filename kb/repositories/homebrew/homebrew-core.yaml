@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:homebrew/homebrew-core
+  full_name: Homebrew/homebrew-core
+  url: https://github.com/Homebrew/homebrew-core
+  description: 🍻 Default and OSS formulae (built-from-source packages) for the package manager for everywhere
+  homepage: https://brew.sh
+  stars: 15639
+  forks: 13937
+  watchers: 300
+  open_issues: 4
+  stats_observed_at: '2026-10-24T19:10:19Z'
+  primary_language: Ruby
+  topics:
+  - homebrew
+  - formulae
+  - ruby
+  - tap
+  - core
+  license: BSD-2-Clause
+  archived: false
+  fork: false
+  created_at: '2016-03-01T06:58:36Z'
+  pushed_at: '2026-10-24T19:05:57Z'
+  owner_login: Homebrew
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: timrogers
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Homebrew/homebrew-core
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

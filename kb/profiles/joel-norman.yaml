@@ -1,0 +1,195 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:joel-norman
+  person: person:joel-norman
+  brief_bio:
+    text: Joel Norman is a Principal Solution Engineer affiliated with GitHub, previously at Microsoft,
+      whose work has centered on helping large customers adopt GitHub Copilot at scale. Norman co-founded
+      the nonprofit Canton Coders and spoke at GitHub Universe 2025 about customizing GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: 769868a541b17de9761ecd77d1d39fdc9404f4584461131ddfafd6544d754ad9
+    stale: true
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1193w
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1193w
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1193w
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:joel-norman
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745868368297001zhje
+      ref: session:2025/bld1193w
+  credentials:
+  - kind: certification
+    title: Net+ Certification
+    issuer: CompTIA
+    evidence:
+      url: https://www.linkedin.com/in/joeltnorman
+      observed_at: '2026-10-24T08:45:22Z'
+  spoken_languages:
+  - English
+  - Java
+  - C#
+  activities:
+  - kind: volunteering
+    title: Volunteer
+    detail: Canton Coders · Science and Technology · Jan 2020 · - Present · 6 years 10 months · It’s about
+      the coder, not the employer. · Jan 2020
+    evidence:
+      url: https://www.linkedin.com/in/joeltnorman
+      observed_at: '2026-10-24T08:45:22Z'
+  recent_writing:
+  - title: 'Developer Capability vs. AI Application: An Executive Briefing'
+    url: https://agentdrivendevelopment.com/developer-capability-vs-ai-application/
+    published: '2026-10-23T23:47:47Z'
+    channel: blog
+  - title: The Agents Are Fine. Your Codebase Is a Mess.
+    url: https://agentdrivendevelopment.com/the-agents-are-fine-your-codebase-is-a-mess/
+    published: '2026-10-15T16:21:00Z'
+    channel: blog
+  - title: 'Senior: What Does That Mean?'
+    url: https://agentdrivendevelopment.com/senior-what-does-that-mean/
+    published: '2026-10-10T18:23:31Z'
+    channel: blog
+  - title: Picking the Right Model Won’t Fix Your Product Roadmap
+    url: https://agentdrivendevelopment.com/picking-the-right-model-wont-fix-your-product-roadmap/
+    published: '2026-09-08T18:39:33Z'
+    channel: blog
+  - title: Picking the Right Model Won’t Fix Your Product Roadmap
+    url: https://agentdrivendevelopment.com/picking-the-right-model-wont-fix-your-product-roadmap/podcast/
+    published: '2026-09-08T18:39:33Z'
+    channel: blog
+  - title: 'The Premature Primitive Problem: More AI Agents, Same Broken Delivery'
+    url: https://agentdrivendevelopment.com/the-premature-primitive-problem/
+    published: '2026-09-07T20:33:13Z'
+    channel: blog
+  - title: Elon Musk Started Cutting Twitter Before ChatGPT. Your Company Will Take Ten Years.
+    url: https://agentdrivendevelopment.com/your-company-will-take-ten-years-to-make-the-ai-change-x-started-in-one-week/
+    published: '2026-08-08T18:00:00Z'
+    channel: blog
+  - title: You’ve All Gotten This Email
+    url: https://agentdrivendevelopment.com/youve-all-gotten-this-email/
+    published: '2026-08-08T18:00:00Z'
+    channel: blog
+  - title: We Kept Delivery Flat While Cutting Our AI Spend to Zero Using These Simple Tips
+    url: https://agentdrivendevelopment.com/we-kept-delivery-flat-while-cutting-ai-spend-to-zero-using-these-simple-tips/
+    published: '2026-08-08T18:00:00Z'
+    channel: blog
+  - title: If You Make AI Scarce, Give It All to Your Best Engineers and Learn Something
+    url: https://agentdrivendevelopment.com/giving-every-engineer-100-of-ai-inference-is-not-a-meritocracy/
+    published: '2026-08-01T18:00:00Z'
+    channel: blog
+  - title: AI Is Too Expensive for Your Software Organization. Turn It Off for 90 Days.
+    url: https://agentdrivendevelopment.com/ai-is-too-expensive-turn-it-off-for-90-days/
+    published: '2026-08-01T18:00:00Z'
+    channel: blog
+  - title: Your AI Coding Platform Is Becoming PLM. Stop Running the Decision Like Homecoming Court.
+    url: https://agentdrivendevelopment.com/your-ai-coding-platform-is-becoming-plm-stop-treating-it-like-tool-preference/podcast/
+    published: '2026-07-13T02:55:54Z'
+    channel: blog
+  - title: If you cannot afford the tokens, can you afford to build it?
+    url: https://agentdrivendevelopment.com/if-you-cannot-afford-the-tokens-can-you-afford-to-build-it/podcast/
+    published: '2026-07-12T21:40:19Z'
+    channel: blog
+  - title: 'Dear Developer: Why AI Adoption Is Slow'
+    url: https://agentdrivendevelopment.com/dear-developer-why-ai-adoption-is-slow/podcast/
+    published: '2026-06-20T14:23:10Z'
+    channel: blog
+  - title: Your AI Token Burn Is Not the Problem. The Work Is.
+    url: https://agentdrivendevelopment.com/before-you-optimize-tokens-read-this/podcast/
+    published: '2026-06-20T01:49:25Z'
+    channel: blog
+  talks:
+  - session:2025/bld1193w
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730309119188001oHcc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

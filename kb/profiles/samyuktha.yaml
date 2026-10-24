@@ -1,0 +1,294 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:samyuktha
+  person: person:samyuktha
+  brief_bio:
+    text: Samyuktha Gopalsamy is a software engineer at Meta and previously worked as a software engineer
+      at Moody's Analytics. Gopalsamy spoke at GitHub Universe 2023 about AI in education.
+    cites:
+    - current_affiliations
+    - x_bio
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 33450eaadee5232ad3be25e031398055785e9365e76a3d626b7ecb22e6433364
+    stale: false
+  headline: Meta
+  current_roles:
+  - Meta
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2728p
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2728p
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2728p
+  - label: Data Science
+    target: term:topic-2023/data-science
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2728p
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2728p
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687886777633001jLGd
+      ref: session:2023/ai2728p
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687886777633001jLGd
+      ref: session:2023/ai2728p
+  - label: Data Science
+    target: term:topic-2023/data-science
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687886777633001jLGd
+      ref: session:2023/ai2728p
+  - label: Education
+    target: term:github-product-2023/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687886777633001jLGd
+      ref: session:2023/ai2728p
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687886777633001jLGd
+      ref: session:2023/ai2728p
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687886777633001jLGd
+      ref: session:2023/ai2728p
+  education:
+  - school: Rutgers University
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  credentials:
+  - kind: honor
+    title: AWS All Builders Welcome Grant
+    issuer: Amazon Web Services re:Invent Grant
+    date: '2023-10-01T00:00:00.000Z'
+    description: 'Awarded the AWS All Builders Welcome Grant to attend the 5-day AWS re: Invent 2023 conference
+      in Las Vegas. The grant covers registration, airfare, and stay, enabling participation in five days
+      of cloud expertise and global tech networking. Highlights: reserved keynote seating, meetups, and
+      mentoring luncheon with AWS leadership.'
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: honor
+    title: MLH Top 50 Hacker of 2023
+    issuer: Major League Hacking
+    date: '2023-07-01T00:00:00.000Z'
+    description: Named as one of Major League Hacking’s (MLH) Top 50 Hackers in 2023. Out of the 150,000
+      students who participated in hackathons and community events, my story was one of 50 that was recognized
+      on this list due to my projects and impact on other students in the community. https://top.mlh.io/2023/profiles/samyuktha-gopalsamy
+      Recipient of the TechTogether Scholarship to participate in MLH Hackcon 2023, held in Copake, New
+      York.
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: honor
+    title: MPOWER Women in STEM Scholarship
+    issuer: MPOWER Financing
+    date: '2021-08-01T00:00:00.000Z'
+    description: Scholarship awarded to women who use their STEM degree to benefit society and have the
+      potential to serve as role models and advocates for women in STEM Awarded a $1,000 scholarship towards
+      tuition, fees, and expenses at Rutgers University
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    date: Jan 2024
+    url: https://www.credly.com/badges/1aef9b32-9f30-43c7-ac07-2832892d857d/public_url
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: GitHub Foundations
+    issuer: GitHub
+    date: Jan 2024
+    url: https://www.credly.com/badges/df05da17-94dd-4c23-b271-54f6c9f3148c/public_url
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: Advanced SQL – Logical Query Processing
+    issuer: LinkedIn
+    url: https://samyukthaaccess.s3.amazonaws.com/CertificateOfCompletion_Advanced+SQL++Logical+Query+Processing.pdf
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: Convolutional Neural Networks and Deep Learning Specialization
+    issuer: Coursera
+    url: https://www.coursera.org/account/accomplishments/specialization/certificate/LP8YS865RK3R
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: Flutter Development Bootcamp with Dart
+    issuer: Udemy
+    url: https://www.udemy.com/certificate/UC-FA3R3LXM/
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: Foundations of Blockchain and Ethereum
+    issuer: EMURGO India
+    url: https://samyukthaaccess.s3.amazonaws.com/BlockchainCerificateE.JPG
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: Foundations of Data, Google Data Analytics Certificate
+    issuer: Google
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: 'Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization'
+    issuer: Coursera
+    url: https://www.coursera.org/account/accomplishments/certificate/ADFDSXVMPTVU
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: Neural Networks and Deep Learning
+    issuer: Coursera
+    url: https://www.coursera.org/account/accomplishments/certificate/JGKK7F9TL39H
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: certification
+    title: Structuring Machine Learning Projects
+    issuer: Coursera
+    url: https://www.coursera.org/account/accomplishments/certificate/FR4U3PSMM9GU
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  spoken_languages:
+  - Tamil
+  - English
+  activities:
+  - kind: project
+    title: '''top'' Command Implementation in Xv6'
+    detail: ➢ Replicated the features of the Linux 'top' command in the Xv6 operating system by developing
+      a user program with system calls to provide a dynamic real-time view of the running system➢ Utilized
+      C, C++, Unix Assembly, Shell, and Makefile to successfully replicate the features of the Linux 'top'
+      command
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: project
+    title: COVID-19 HRCT Image Classifier
+    detail: ➢ Developed and trained a highly accurate Convolutional Neural Network model utilizing high-resolution
+      computed tomography lung scans to predict the probability of COVID-19 infection with an accuracy
+      of 82.11%, F1-score of 82.25%, and AUC of 0.857➢ Achieved model's high accuracy by sampling 64 image
+      slices from a total of 700+ slices per patient and applying a pre-trained 3D U-net (R-231) model
+      for lung segmentation➢ Built the model using Keras with an input tensor of 164128*128 and Binary
+      Cross-Entropy loss function to effectively avoid model overfitting
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: project
+    title: Personal Finance Management Android App
+    detail: ➢ Developed a personal finance management app in Java that enables users to efficiently track
+      expenses, set budgets, and receive timely alerts, resulting in better financial management.➢ Implemented
+      advanced features such as optical character recognition using Google Vision API to extract expenses
+      from scanned receipts and SQLite database for efficient CRUD operations.➢ Created visually appealing
+      List View and Pie Chart visualizations to display expenses by category using MP Android Chart, providing
+      users with a clear and concise overview of their spending habits.➢ Developed the ability to generate
+      an exportable list of transactions with date and time using iText pdf module, allowing for easy
+      sharing and documentation.
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: project
+    title: ZenGage - Mindful Social Media Usage Tracker
+    detail: '"ZenGage" is a Mindful Social Media Usage Tracker Prototype that focuses on promoting mindfulness
+      in social media usage through breathing exercises and other mindfulness practices.'
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  - kind: organization
+    title: Rutgers University
+    detail: ➢ Planned and executed bi-monthly socials and five programming events for 400+ Computer Science
+      and Data Science students at Rutgers University, resulting in an average attendance of 90 students
+      per event, a 4.5x increase over the previous average.➢ Established strong relationships with key
+      stakeholders, including faculty members, industry partners like Major League Hacking, to advance
+      the interests of graduate students.➢ Represented the organization as a spokesperson at conferences,
+      meetings, and other events. · Sep 2022 · May 2023
+    evidence:
+      url: https://www.linkedin.com/in/samyukthagopalsamy
+      observed_at: '2026-10-24T08:46:57Z'
+  talks:
+  - session:2023/ai2728p
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683661249144001NkYv
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

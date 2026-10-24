@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/rusi
+  platform: linkedin
+  handle: company/rusi
+  url: https://www.linkedin.com/company/rusi
+  display_name: Royal United Services Institute (RUSI)
+  bio: The Royal United Services Institute (RUSI) is a unique institution, founded in 1831 by the Duke
+    of Wellington, RUSI embodies nearly two centuries of forward thinking, free discussion, and careful
+    reflection on international affairs and defence and security matters. RUSI is a British institution
+    but operates with an international perspective. Offices in Nairobi and Brussels reinforce our global
+    reach. Over the years, we have amassed an outstanding reputation for quality and objectivity. Our
+    heritage, location at the heart of Whitehall, and extensive networks inside and outside government,
+    give RUSI a unique insight and authority.
+  website: https://rusi.org/
+  followers: 65376
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQEoICZFFlkuOg/company-logo_200_200/B4EZqQ7ZYjKgAI-/0/1763368081715?e=2147483647&v=beta&t=q78kqpLvhqncxwN0iIBJq4XXYv6k_Z_CiKAkJSb83s0
+  owner: org:royal-united-services-institute
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/daniel-cuthbert0x
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/rusi
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

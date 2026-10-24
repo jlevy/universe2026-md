@@ -1,0 +1,255 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dylan-mccarthy
+  person: person:dylan-mccarthy
+  brief_bio:
+    text: Dylan McCarthy is a principal consultant at Nexwave who works on modernization, developer experience
+      and AI-assisted software development, and is a Microsoft MVP. McCarthy speaks at GitHub Universe
+      2026 on context windows and token use.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: d0003247847900f5a2d3db15801c955e70cf2e60a136c6d4971aec8fe7872f62
+    stale: false
+  headline: Principal Consultant at Nexwave
+  location: Melbourne, Australia
+  current_roles:
+  - Principal Consultant at Nexwave
+  - Versent
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1312d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1312d
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1312d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1312d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1312d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1312d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:dylan-mccarthy
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1312d
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: He is a Microsoft MVP, an active member of the tech community, and regularly speaks about
+        platform engineering, AI tooling, and modern development patterns.
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777471453036001p3c4
+      ref: session:bld1312d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777471453036001p3c4
+      ref: session:bld1312d
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777471453036001p3c4
+      ref: session:bld1312d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777471453036001p3c4
+      ref: session:bld1312d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777471453036001p3c4
+      ref: session:bld1312d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777471453036001p3c4
+      ref: session:bld1312d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777471453036001p3c4
+      ref: session:bld1312d
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777471453036001p3c4
+      ref: session:bld1312d
+  open_source:
+  - repository: repo:eveiph/eve-iph
+    relation: contributor
+    stars: 157
+    primary_language: Visual Basic .NET
+  - repository: repo:melbourne-github-usergroup/talk-submissions
+    relation: contributor
+    stars: 4
+  education:
+  - school: Monash University
+    evidence:
+      url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+      observed_at: '2026-10-24T08:11:32Z'
+  credentials:
+  - kind: honor
+    title: Microsoft MVP - Developer Tools
+    issuer: Microsoft
+    date: '2024-08-01T00:00:00.000Z'
+    description: Awarded Microsoft MVP for Developer Tools
+    evidence:
+      url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: Craft Most Valuable Contributor
+    issuer: Versent
+    date: Jan 2026
+    url: https://www.credly.com/badges/32c12098-94eb-4b96-8f49-bb70416cfce5/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: 2025 Microsoft Most Valuable Professional (MVP)
+    issuer: Microsoft Learn Student Ambassadors
+    date: Aug 2025
+    url: https://www.credly.com/badges/51e7dfef-a2ae-4fc8-a49d-f7af4433012b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: GitOps Fundamentals (2022)
+    issuer: Codefresh
+    date: Dec 2022
+    url: https://mycourse.app/Mt5eMAbmzLPKgJmdA
+    evidence:
+      url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: Kubernetes for the Absolute Beginners - Hands-on Tutorial
+    issuer: KodeKloud
+    date: Dec 2022
+    url: https://kodekloud.com/certificate-verification/2D0409256707-2D04032EC18A-2D0402F256B9/
+    evidence:
+      url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Apr 2025
+    expires: Apr 2029
+    url: https://www.credly.com/badges/5bc49f06-8ae7-447f-8b7b-d09afeee08c0/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: GitHub Copilot
+    issuer: GitHub
+    date: Oct 2024
+    expires: Oct 2027
+    url: https://www.credly.com/badges/186313cf-5039-4bca-9b0f-f91f589859aa/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+      observed_at: '2026-10-24T08:11:32Z'
+  talks:
+  - session:bld1312d
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685316289726001Jven
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dylan-mccarthy
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

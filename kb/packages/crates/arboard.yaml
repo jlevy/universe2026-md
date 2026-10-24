@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:crates/arboard
+  ecosystem: crates
+  name: arboard
+  url: https://crates.io/crates/arboard
+  description: Image and text handling for the OS clipboard.
+  latest_version: 3.7.0
+  license: MIT OR Apache-2.0
+  repository_url: https://github.com/1Password/arboard
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: 1Password/arboard
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

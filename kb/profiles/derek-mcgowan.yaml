@@ -1,0 +1,180 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:derek-mcgowan
+  person: person:derek-mcgowan
+  brief_bio:
+    text: Derek McGowan is a software engineer on Docker's Runtime team, a maintainer of containerd and
+      a member of the OCI Technical Oversight Board. McGowan spoke at GitHub Universe 2024 about AI workflows
+      with GitHub Copilot and Docker.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 5d9085f078f050a0428077156a1adfdcfbdb4359d6c134ca86a24ab401c6e0b8
+    stale: false
+  headline: Docker
+  current_roles:
+  - Docker
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2035d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2035d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2035d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2035d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2035d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2035d
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Docker
+      ref: person:derek-mcgowan
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai2035d
+  - label: GitHub Marketplace
+    target: software:github-marketplace
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Marketplace
+      ref: session:2024/ai2035d
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726860733641001CnuU
+      ref: session:2024/ai2035d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726860733641001CnuU
+      ref: session:2024/ai2035d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726860733641001CnuU
+      ref: session:2024/ai2035d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726860733641001CnuU
+      ref: session:2024/ai2035d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726860733641001CnuU
+      ref: session:2024/ai2035d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726860733641001CnuU
+      ref: session:2024/ai2035d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726860733641001CnuU
+      ref: session:2024/ai2035d
+  patents:
+  - title: Smart Address Book
+    number: US US 8,782,149
+    date: July 15, 2014
+    evidence:
+      url: https://www.linkedin.com/in/derek-mcgowan-6a750714
+      observed_at: '2026-10-24T08:43:01Z'
+  - title: Information Association And Suggestion
+    number: US US 13/908,596
+    date: June 3, 2013
+    evidence:
+      url: https://www.linkedin.com/in/derek-mcgowan-6a750714
+      observed_at: '2026-10-24T08:43:01Z'
+  talks:
+  - session:2024/ai2035d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726677906217001nXnK
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

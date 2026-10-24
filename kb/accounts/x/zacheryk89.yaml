@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/zacheryk89
+  platform: x
+  handle: zacheryk89
+  url: https://x.com/zacheryk89
+  display_name: Zack Koppert
+  bio: Husband, Father, ❤️ Open Source, Software Engineer, and 🎸player. Mainly using Python, Javascript,
+    an golang.
+  location: Oregon, USA
+  website: https://github.com/zkoppert
+  followers: 99
+  following: 149
+  posts_count: 290
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1329227994825539586/J1SvKbeR_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/2297439698/1605747625
+  created_at: '2014-01-18T07:17:17Z'
+  owner: person:zack-koppert
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685142334520001xUYR
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/zacheryk89
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: zkoppert
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

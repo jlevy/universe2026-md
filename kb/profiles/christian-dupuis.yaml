@@ -1,0 +1,104 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:christian-dupuis
+  person: person:christian-dupuis
+  brief_bio:
+    text: Christian Dupuis was a senior principal engineer on the Docker Scout team at Docker, building
+      software supply chain security products, and has written a book on the Spring Framework. Dupuis
+      spoke at GitHub Universe 2023 about making smarter decisions early in the development lifecycle.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 4452289605f81de5f7c6623612c391e7f0929cae06e0d64724e5111cf7ebb1a8
+    stale: false
+  expertise:
+  - label: Containerized Applications
+    target: term:topic-2023/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2885d
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Docker
+      ref: person:christian-dupuis
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev2885d
+  interests:
+  - label: Containerized Applications
+    target: term:topic-2023/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698153218822001XZKe
+      ref: session:2023/dev2885d
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698153218822001XZKe
+      ref: session:2023/dev2885d
+  publications:
+  - title: Beginning Spring Framework 2
+    venue: John Wiley & Sons
+    date: December 7, 2007
+    description: Beginning Spring Framework 2 shows beginning Java developers how to build serverside
+      Java applications using the latest 2.0 release of the Spring Framework. The book does not assume
+      any previous knowledge of J2EE--in fact, the authors argue that beginners learn more quickly by
+      starting directly with Spring.The authors show readers how to build a working web application using
+      Spring with other open source tools and technologies, all of which can be freely downloaded and
+      installed via the Internet. Each chapter builds a portion of the application. All the Spring concepts
+      and construction techniques are introduced during the design and coding of this application. (With
+      minor adaptation, the resulting code can be re-used by readers in their own working applications.)
+    evidence:
+      url: https://www.linkedin.com/in/christiandupuis
+      observed_at: '2026-10-24T08:41:54Z'
+  spoken_languages:
+  - German
+  - English
+  activities:
+  - kind: organization
+    title: Eclipse Foundation
+    detail: 2013 · 2014
+    evidence:
+      url: https://www.linkedin.com/in/christiandupuis
+      observed_at: '2026-10-24T08:41:54Z'
+  talks:
+  - session:2023/dev2885d
+  gaps:
+  - github_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695661503086001or0r
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

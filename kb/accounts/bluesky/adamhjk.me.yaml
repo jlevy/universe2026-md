@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/adamhjk.me
+  platform: bluesky
+  handle: adamhjk.me
+  url: https://bsky.app/profile/adamhjk.me
+  display_name: Adam Jacob
+  bio: 'CEO of System Initiative, Co-Founder of Chef. Open source. Heavy metal and music. Comics. @adamhjk
+    on Twitter, @adamhjk@hachyderm.io on Masotodon. '
+  followers: 4815
+  created_at: '2023-04-23T03:03:59Z'
+  owner: person:adam-jacob
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777675947876001stxC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: adamhjk.me
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

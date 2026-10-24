@@ -1,0 +1,48 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:coopernederhood
+  login: CooperNederhood
+  kind: user
+  url: https://github.com/CooperNederhood
+  name: Cooper Nederhood
+  company: '@github Copilot'
+  bio: "Data science, computer vision, geospatial analytics, NLP.\r\nCollege of W&M / University of Chicago.\r\
+    \nWorks on Github Copilot."
+  location: Chicago, Illinois
+  followers: 10
+  public_repositories: 11
+  created_at: '2017-09-06T18:55:20Z'
+  contributions_last_year:
+    total: 113
+    commits: 40
+    pull_requests: 40
+    issues: 32
+    reviews: 0
+  starred_repositories: 0
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  entity: person:cooper-nederhood
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: CooperNederhood
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

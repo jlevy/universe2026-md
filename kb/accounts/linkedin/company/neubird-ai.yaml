@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/neubird-ai
+  platform: linkedin
+  handle: company/neubird-ai
+  url: https://www.linkedin.com/company/neubird-ai
+  display_name: NeuBird
+  bio: 'NeuBird is the Agentic Reliability Center: one governed platform that unifies access to your telemetry
+    and LLMs, records institutional operations memory with zero telemetry storage, and audits all agentic
+    actions in production to build resilient systems. It connects your tools in place, remembers every
+    fix, and solves incidents alongside your engineers.'
+  website: https://neubird.ai/
+  followers: 24071
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQG3laIZwLafnQ/company-logo_200_200/B56aBjDhxQHYAE-/0/1788368264480/neubird_ai_logo?e=2147483647&v=beta&t=zdLOJ7SzqCyFuXPICKmrxqXB8GekOcQFNm5zWxUrjG4
+  owner: org:neubird
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/gwgriffiths4
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/neubird-ai
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

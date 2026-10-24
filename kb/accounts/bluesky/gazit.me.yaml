@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/gazit.me
+  platform: bluesky
+  handle: gazit.me
+  url: https://bsky.app/profile/gazit.me
+  display_name: Idan Gazit
+  bio: |-
+    I lead githubnext.com 💫
+
+    I use bsky mostly for professional things. So this is my 🌶️ spicy LinkedIn. My thoughts are mine, not my employer's.
+
+    Personal/political stuff on Mastodon: https://babka.social/@idan
+  followers: 272
+  created_at: '2024-11-12T22:36:11Z'
+  owner: person:idan-gazit
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694120273763001Iy5q
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694120273763001Iy5q
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: idan
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: gazit.me
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

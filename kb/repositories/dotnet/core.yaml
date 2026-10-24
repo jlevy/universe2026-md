@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:dotnet/core
+  full_name: dotnet/core
+  url: https://github.com/dotnet/core
+  description: .NET news, announcements, release notes, and more!
+  homepage: https://dot.net
+  stars: 22051
+  forks: 4931
+  watchers: 1321
+  open_issues: 341
+  stats_observed_at: '2026-10-24T19:10:03Z'
+  primary_language: PowerShell
+  topics:
+  - dotnet
+  - dotnet-core
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2014-11-18T00:44:57Z'
+  pushed_at: '2026-10-22T20:49:26Z'
+  owner_login: dotnet
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jamesmontemagno
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dotnet/core
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

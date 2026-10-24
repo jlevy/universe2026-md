@@ -1,0 +1,252 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alex-spinelli
+  person: person:alex-spinelli
+  brief_bio:
+    text: Alex Spinelli is VP of Developer Technology at Arm, was previously VP of Product Management
+      for Machine Learning at Google, and holds patents on search results and category ranking. Spinelli
+      spoke at GitHub Universe 2024 about cloud-to-edge development with GitHub Copilot and GitHub Actions.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: ca524712488c3126b30b5c6b60fae0a872c3a9a809f483d2e91cceac3112fbe3
+    stale: false
+  headline: Arm
+  current_roles:
+  - Arm
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2024/dev1936m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/dev1936m
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Machine learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  patents:
+  - title: SELECTING SUPPLEMENTAL CONTENT FOR INCLUSION IN A SEARCH RESULTS PAGE
+    number: US 9,367,627
+    date: June 14, 2016
+    url: https://patents.google.com/patent/US9367627
+    evidence:
+      url: https://www.linkedin.com/in/aspinelli
+      observed_at: '2026-10-24T08:43:23Z'
+  - title: Systems and methods for rapid delivery of tiered metadata
+    number: US 8843522
+    date: September 23, 2014
+    url: https://patents.google.com/patent/US8843522
+    evidence:
+      url: https://www.linkedin.com/in/aspinelli
+      observed_at: '2026-10-24T08:43:23Z'
+  - title: Category Ranking using fingerprints
+    number: US 10304111B1
+    url: https://patents.google.com/patent/US10304111B1
+    evidence:
+      url: https://www.linkedin.com/in/aspinelli
+      observed_at: '2026-10-24T08:43:23Z'
+  - title: Generating category layouts based on query fingerprints
+    number: US 9,747,628
+    url: https://patents.google.com/patent/US9747628
+    evidence:
+      url: https://www.linkedin.com/in/aspinelli
+      observed_at: '2026-10-24T08:43:23Z'
+  - title: Generating item clusters based on aggregated search history data
+    number: US 9,727,906
+    url: https://patents.google.com/patent/US9727906
+    evidence:
+      url: https://www.linkedin.com/in/aspinelli
+      observed_at: '2026-10-24T08:43:23Z'
+  - title: Generating modified search results based on query fingerprints
+    number: US 9,760,930
+    url: https://patents.google.com/patent/US9760930
+    evidence:
+      url: https://www.linkedin.com/in/aspinelli
+      observed_at: '2026-10-24T08:43:23Z'
+  - title: Generation and classification of query fingerprints
+    number: US 10026107B1
+    url: https://patents.google.com/patent/US10026107B1
+    evidence:
+      url: https://www.linkedin.com/in/aspinelli
+      observed_at: '2026-10-24T08:43:23Z'
+  - title: Identifying query fingerprints
+    number: US 9,727,614
+    url: https://patents.google.com/patent/US9727614
+    evidence:
+      url: https://www.linkedin.com/in/aspinelli
+      observed_at: '2026-10-24T08:43:23Z'
+  - title: Modifying user experience using query fingerprints
+    number: US 9,720,974
+    url: https://patents.google.com/patent/US9720974
+    evidence:
+      url: https://www.linkedin.com/in/aspinelli
+      observed_at: '2026-10-24T08:43:23Z'
+  recent_writing:
+  - title: 'Coaching AI Coding Agents: A Guide for Senior Engineers'
+    url: https://www.linkedin.com/pulse/coaching-ai-coding-agents-guide-senior-engineers-alex-spinelli-ydyqc
+    published: '2025-06-02T00:00:00.000Z'
+    channel: linkedin
+    summary: This guide is structured to help technologists transition effectively from traditional coding
+      roles to becoming expert…
+  - title: 'Come help define a new category: Conversational Commerce!'
+    url: https://www.linkedin.com/pulse/come-help-define-new-category-conversational-commerce-alex-spinelli-1
+    published: '2018-05-21T00:00:00.000Z'
+    channel: linkedin
+    summary: I joined the company in March from Amazon where I led the global software platform for Alexa.
+      My goal here at…
+  talks:
+  - session:2024/dev1936m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724268834180001IsW3
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

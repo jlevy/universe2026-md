@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/sobtiankit
+  platform: x
+  handle: sobtiankit
+  url: https://x.com/sobtiankit
+  display_name: Ankit Sobti
+  bio: Co-Founder @getpostman. Neutral Milk Hotel fan. Incidental pianist.
+  location: San Francisco Bay Area
+  followers: 2943
+  following: 530
+  posts_count: 3192
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1241568828435230723/Gp8NJq2m_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/88952001/1423652254
+  created_at: '2009-11-10T15:36:13Z'
+  owner: person:ankit-sobti
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692237752108001HZ7y
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/sobtiankit
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

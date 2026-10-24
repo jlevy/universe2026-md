@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:fluentbytes.com
+  url: http://fluentbytes.com/
+  kind: personal
+  title: Fluentbytes – The only source of knowledge is experience
+  description: The only source of knowledge is experience
+  owner: person:marcel-de-vries
+  link_basis:
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://fluentbytes.com/?feed=rss2
+  - https://fluentbytes.com/?feed=comments-rss2
+  sources:
+  - system: brightdata
+    url: https://x.com/marcelv
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://fluentbytes.com/
+    record_id: http://fluentbytes.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

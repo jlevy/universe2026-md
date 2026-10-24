@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/michaelgamble
+  platform: linkedin
+  handle: in/michaelgamble
+  url: https://www.linkedin.com/in/michaelgamble
+  display_name: Michael G.
+  bio: I’m an AI builder, know a lot about 0-1 product development, and solving complex business…
+  location: United States
+  followers: 654
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFGCK-wnj670w/profile-displaybackgroundimage-shrink_200_800/B56Z36o9.bGsAQ-/0/1778026537444?e=2147483647&v=beta&t=OQ18g6aYuoxdJNfO5V9CwuxDq8KLdmiXZfyphFH-vYw
+  owner: person:michael-gamble
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728293377804001CEp2
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/michaelgamble
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,156 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:chris-alex-bauer
+  person: person:chris-alex-bauer
+  brief_bio:
+    text: Chris Alex Bauer is a software engineer at Valarian with a background in frontend web development
+      and earlier work in NGOs. Bauer spoke at GitHub Universe 2024 about building a strong connection
+      between business and product development.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 77f14f44d6d492b5ea78aef859495347d1ccf0e9ecfdeac05b3edaa02c7214dc
+    stale: false
+  headline: Valarian
+  current_roles:
+  - Valarian
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1656l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1656l
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1656l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1656l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1656l
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1656l
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372894680001PBwV
+      ref: session:2024/dev1656l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372894680001PBwV
+      ref: session:2024/dev1656l
+  - label: Discussions
+    target: term:github-product-2024/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372894680001PBwV
+      ref: session:2024/dev1656l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372894680001PBwV
+      ref: session:2024/dev1656l
+  - label: Pages
+    target: term:github-product-2024/pages
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372894680001PBwV
+      ref: session:2024/dev1656l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372894680001PBwV
+      ref: session:2024/dev1656l
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372894680001PBwV
+      ref: session:2024/dev1656l
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715372894680001PBwV
+      ref: session:2024/dev1656l
+  talks:
+  - session:2024/dev1656l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715371804978001KZ0b
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:cilium/cilium
+  full_name: cilium/cilium
+  url: https://github.com/cilium/cilium
+  description: eBPF-based Networking, Security, and Observability
+  homepage: https://cilium.io
+  stars: 25709
+  forks: 4185
+  watchers: 310
+  open_issues: 812
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  primary_language: Go
+  topics:
+  - containers
+  - bpf
+  - security
+  - kubernetes
+  - kubernetes-networking
+  - cni
+  - kernel
+  - loadbalancing
+  - monitoring
+  - troubleshooting
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2015-12-16T12:33:31Z'
+  pushed_at: '2026-10-24T00:05:02Z'
+  owner_login: cilium
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: doniacld
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cilium/cilium
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

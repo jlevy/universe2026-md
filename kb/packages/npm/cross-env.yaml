@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/cross-env
+  ecosystem: npm
+  name: cross-env
+  url: https://www.npmjs.com/package/cross-env
+  description: Run scripts that set and use environment variables across platforms
+  latest_version: 10.1.0
+  license: MIT
+  repository_url: git+https://github.com/kentcdodds/cross-env.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: kentcdodds/cross-env
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

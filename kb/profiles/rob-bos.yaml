@@ -1,0 +1,967 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:rob-bos
+  person: person:rob-bos
+  brief_bio:
+    text: Rob Bos is a DevOps consultant and GitHub trainer, a Microsoft MVP and a GitHub Star, who helps
+      teams adopt GitHub and automate delivery. Bos spoke at GitHub Universe 2023, 2024 and 2025 about
+      collaboration and DevSecOps on GitHub, scaling GitHub Copilot, and lessons from agentic AI.
+    cites:
+    - listed_role
+    - event_bio
+    - linkedin_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: f4b1ac6d20e67acb4bd154706454ceaefad42bc2bdb844be3f80348560e79a17
+    stale: false
+  headline: Linkedin Learning
+  current_roles:
+  - Linkedin Learning
+  expertise:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/dev1210g
+    - ref: session:2023/dev2854d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2023/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1210g
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Infrastructure as Code
+    target: term:topic-2023/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2854d
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1197b
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1197b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1197b
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1197b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1197b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1197b
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1629d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1629d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:rob-bos
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Advanced Security
+      ref: session:2023/dev2854d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1197b
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:rob-bos
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Rob is a Trainer (Azure + GitHub), Microsoft MVP, GitHub Star, and LinkedIn Learning Instructor.
+  - label: GitHub Star
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Rob is a Trainer (Azure + GitHub), Microsoft MVP, GitHub Star, and LinkedIn Learning Instructor.
+  interests:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1684691781498001bPSq
+      ref: session:2023/dev1210g
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714938922622001Yz2o
+      ref: session:2024/ai1197b
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1684691781498001bPSq
+      ref: session:2023/dev1210g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714938922622001Yz2o
+      ref: session:2024/ai1197b
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757100521145001P3Q6
+      ref: session:2025/bld1629d
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714938922622001Yz2o
+      ref: session:2024/ai1197b
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757100521145001P3Q6
+      ref: session:2025/bld1629d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714938922622001Yz2o
+      ref: session:2024/ai1197b
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757100521145001P3Q6
+      ref: session:2025/bld1629d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714938922622001Yz2o
+      ref: session:2024/ai1197b
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2023/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  - label: Discussions
+    target: term:github-product-2023/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1684691781498001bPSq
+      ref: session:2023/dev1210g
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695757360387001oWFO
+      ref: session:2023/dev2854d
+  education:
+  - school: Hogeschool Zuyd (Maastricht, Heerlen, Sittard)
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  credentials:
+  - kind: honor
+    title: GitHub Star
+    issuer: GitHub
+    date: '2024-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: honor
+    title: Microsoft MVP 2020 - 2025
+    issuer: Microsoft MVP Award Program
+    date: '2020-04-01T00:00:00.000Z'
+    description: I have been recognized with the Microsoft MVP Award since 2020 for my outstanding contributions
+      to the community in Developer Technologies.
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: 'GitHub Certified: GitHub Actions & Advanced Security'
+    issuer: GitHub
+    date: Apr 2022
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: Microsoft Certified Trainer 2022-2023
+    issuer: Microsoft
+    date: Mar 2022
+    url: https://www.credly.com/badges/b17d972f-cdd5-4c74-ba33-3b9c7331c92d
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: 'GitHub Accredited Trainer: Actions + Developer'
+    issuer: GitHub
+    date: Jan 2022
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: Microsoft Certified Trainer 2021-2022
+    issuer: Microsoft
+    date: May 2021
+    url: https://www.credly.com/badges/1bf9fa21-d12b-4cd4-b4df-9d0b79d5266e?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Apr 2019
+    url: https://www.youracclaim.com/badges/c5b34650-5b8b-4db6-9a39-8d2efb9f9d77/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: 'Exam 774: Perform Cloud Data Science with Azure Machine Learning'
+    issuer: Microsoft
+    date: Mar 2019
+    url: https://www.youracclaim.com/badges/1b3c5094-4f95-468c-ab33-d390942d1f20/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Developer Associate'
+    issuer: Microsoft
+    date: Dec 2020
+    expires: Dec 2025
+    url: https://www.youracclaim.com/badges/b6a994eb-5416-4cf0-8835-6fbbf2acfc98?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: 'Microsoft Certified: DevOps Engineer Expert'
+    issuer: Microsoft
+    date: May 2021
+    expires: May 2025
+    url: https://www.credly.com/badges/4212c4cf-f45d-45f0-807a-abe45a96ad9b?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Mar 2022
+    expires: Mar 2024
+    url: https://www.credly.com/badges/2adcd82d-418f-4f71-a677-bee2341303f3/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: certification
+    title: GitHub Actions Certification
+    issuer: GitHub
+    date: Sep 2021
+    expires: Sep 2023
+    url: https://www.credly.com/badges/ad25f226-fc0e-44a6-9862-f70cec8cd12f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  activities:
+  - kind: project
+    title: GitHub Enterprise Server for large multinational
+    detail: Helping the internal teams with setting up a GitHub Enterprise platform for 15k users. Includes:-
+      Enterprise management - GitHub Actions & Governance- Monitoring- Scaling private runners · Jul 2021
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: GitHub implementation at large multinational
+    detail: Helping the internal teams setting up the baselines for rolling out GitHub Enterprise Server
+      in their enterprise. Including guidelines, on boarding processes, GitHub Actions migration from
+      Jenkins, internal GitHub Actions Marketplace, security best practices for GitHub Actions, hosting
+      GitHub Actions on kubernetes. · Jul 2021
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Test automation with Selenium and Visual Studio
+    detail: Setting up a test automation framework with Selenium to aid the development team with creating
+      web based UI testing to prevent manual tests on older and non-changed code paths. Setting up a SonarQube
+      server to use for tracking unit test code coverage over time.Created example projects to regularly
+      test all used domains with the api’s from SecurityHeaders.io and SSLLabs.com. This will help checking
+      the domains on important security issues and compliance standards. · Apr 2018
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Full review of a membership/CRM product
+    detail: Full review of the main applications for a membership/CRM product. We looked at the overall
+      architecture for a ASP.NET MVC application, an WPF application and a UWP application with a WebAPI
+      webservice and a Windows Service. Additionally we looked at the development process, organization
+      and culture. With items of the review the customer could start tackling the most critical issues
+      we found to improve the product in reliability, maintainability and improve the culture internally.
+      · Mar 2018
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Automated testing and continuous deployment
+    detail: Evaluating and providing guidance around automated testing and continuous deployment improvements
+      inside the VSTS environment. · Feb 2018
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: VSTS process template update and migration
+    detail: Assisting in VSTS process template updates for 40+ projects and migrating a lot of existing
+      work items to a new level in the Portfolio Backlog hierarchy. · Feb 2018
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Synaxion KCC Monitor
+    detail: 'Ontwikkeling en beheer overgenomen van de Synaxion KCC Monitor: een applicatie voor het uitvoeren
+      en monitoren van agents in een Klant Contact Centrum. Middels deze monitor kunnen contactmomenten
+      met de klant worden geregistreerd en gevolgd. · Dec 2014'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Mailer Service
+    detail: Nieuwbouw Windows Service welke periodiek e-mails kan versturen gebaseerd op instellingen
+      uit de Synaxion software. C# / Windows Service, SMTP mail, Entity Framework, WPF tool voor het invoeren
+      van instellingen. · Aug 2014
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Inleesmodule voor Excel bestand met vaste inhoud
+    detail: 'Inleesmodule voor Excel bestanden welke zeer snel meerdere Excel bestanden met grote jaarplanningen
+      converteert naar bestanden die middels MS-SQL SSIS kunnen worden ingelezen. De inleesmodule werkt
+      met C#, Microsoft.Office.Interop.Excel, WinForms met multithreaded gebaseerde acties. Typische inleesactie:
+      8 bestanden met 15 tabbladen, 75 jaarplanningen met diverse categorieën. Conversietijd < 90 seconden
+      · Sep 2013'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Prefill PDF formulieren webservice
+    detail: Nieuwbouw voor een Webservice (WCF) welke PDF formulieren kan invullen met bekende data uit
+      de backend. Hiermee wordt de administratieve last voor de gebruiker verlicht en wordt foutieve invoer
+      voorkomen. De service produceert +/- 10.000 ingevulde formulieren op jaarbasis voor > 250 gebruikers.
+      Deze service wordt vanuit een centrale oplossing aangeroepen. · Aug 2013
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Interne NuGet Package Store
+    detail: Interne NuGet Package store opzetten waarin de interne (deel)componenten via de CI server
+      gebuild en middels NuGet packages centraal beschikbaar gesteld worden. · Jul 2013
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: TA omgeving voor buildserver opbouwen
+    detail: Interne Testomgeving die via de CI server bijgewerkt met nieuwe versies van de diverse software
+      producten, waarna deze middels WebTests (mbv Selenium WebDriver) gecontroleerd worden op correcte
+      werking (integration testing) · Jul 2013
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Nieuwe webfront-end voor BI applicatie
+    detail: Ontwikkeling aan webbased front-end voor de reeds bestaande BI applicatie middels ASP.NET
+      + MVC / Entity Framework / CSS / jQuery / Javascript. · Jun 2013
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Continuous Integration omgeving opzetten tbv ontwikkelomgevingen
+    detail: Continuous Integration omgeving opzetten middels Jenkins CI waarmee diverse applicaties /
+      onderdelen automatisch gebuild worden, incl. Unit Tests / Integration Tests en UI Tests (middels
+      Selenium WebDriver). Bij succesvolle builds worden ook diverse elementen uitgerold naar de interne
+      testomgevingen. · Mar 2013
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: GitHub Examination material creation
+    detail: Co-creating exam material for a GitHub Certification Exam for GitHub Administrators · Jul
+      2021
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Creating a new supply chain team for large multinational
+    detail: 'Starting up a new team from scratch, responsible for a new supply chain project bringing
+      large amounts of goods from supply to the next step in the chain. Keywords: .NET core, AWS, DevOps,
+      Gitlab · Oct 2020'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Creating Azure and Azure DevOps Training Curriculum for Instruqt
+    detail: Setting up the Azure DevOps and Azure Fundamentals training curriculum for Instruqt. Instruqt
+      gives the trainee a unique platform to get hands-on experience in the trained software where Instruqt
+      provides a ready to go platform (in this case both an Azure Subscription and a Azure DevOps team
+      project) so they can implement the solutions instead of only reading the documentation. This improves
+      the knowledge retention and the overall atmosphere during the training. · Jul 2020
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Customer internal learning environment for the Cloud Centre of Excellence
+    detail: Creating an internal learning environment for the Cloud Centre of Excellence (CCoE) at a large
+      multinational for 300 initial attendees. Together with a team, Rob setup all infrastructure to run
+      the 2-day training. During the training the attendees got hands-on experience in Git, Azure, Azure
+      DevOps and internal tooling. All platforms where preprovisioned so the teams got a running start
+      instead of figuring everything out themselves.Overall setup and methodology based on the Global
+      DevOps bootcamp setup and improved with lessons learned. · Apr 2020
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: DevOps transformation (large multinational)
+    detail: 'DevOps transformation including all aspects of the DevOps processes: from Development improvements
+      by modernizing the workflow (from TFVC to Git, implementing CI/CD pipelines, Code Quality improvements,
+      and modernization), to improving monitoring and observability with the ELK Stack. During this assignment,
+      Rob also trained the team remotely located in The Netherlands, Germany, and Spain to do all these
+      improvements themselves. Keywords: GitHub Enterprise, BlackDuck, SonarQube, .NET, .NET Core, Serilog,
+      Kibana, MSSQL, Bash, Azure DevOps, Git, Scrum, Azure / On-Premise, IIS, Java, Bash, Linux. · Nov
+      2019'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: DevOps transformation
+    detail: After starting with a gap analysis on the code and architecture of the core applications,
+      Rob started implementing the improvements found with the team. Moving on-premise GitLab repositories
+      to Azure Repos, setting up Azure Pipelines, Azure Artifacts and improving the way of working. While
+      improving the team also learned how to work with Azure and setup their development environments
+      in the cloud, with connectivity to on-premise. · Nov 2018
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Quality Assurance at large multinational
+    detail: 'Getting the internal QA process to the next level. In the beginning, we helped out with the
+      standard review procedure. From that, we gradually helped the team to use the Pull Request Mechanism
+      in Azure DevOps better, implemented SonarQube, Stryker Mutation testing, and defined the QA quality
+      levels and rules.Keywords: Angular, TypeScript, .NET, Jasmine, NodeJS, IIS. · Jun 2019'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Creating an Azure Monitoring solution to send data into StackState
+    detail: 'Helping the StackState Agent team with a solution to load available information from Azure
+      Subscriptions into the StackState server. End-to-end creation of a brand new solution to get topology-
+      (resources and the relations between them) and telemetry-information out of Azure and send it to
+      the StackState API. With this solution StackState is able to open up a new customer segment that
+      have deployed resources in the Microsoft Azure Cloud. Technology used: Visual Studio Code, .NET
+      Core, Azure Functions, Event Grid, Application Insights, Log Analytics, GitLab, PowerShell and more.
+      · Aug 2018'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Preparing, creating and proctoring a week long workshop for 12 attendees for a deep dive into
+      several topics
+    detail: 'Preparing, creating and proctoring a week long workshop for 12 attendees for a deep dive
+      into: Git with command line, Git with Visual Studio, Git with Azure DevOps, Pull requests, NuGet/Package
+      Management in Azure DevOps, Feature Toggles, Test automation (with Selenium), Azure DevOps Build/Release
+      pipelines, code quality with SonarQube server. · Oct 2018'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Overall Quality Assurance for several teams that developed a membership/CRM product
+    detail: Creating a roadmap to guide the teams to a new way of working, creating self-organizing teams,
+      setting up a modern development cycle within VSTS by utilizing Git repository instead of TFVC, setting
+      up Branching and Pull request policies, implementing internal NuGet feeds, using a Build and Release
+      pipeline for all code changes, bring the teams communication together in one place (Slack), setting
+      up a SonarQube server to track code coverage and issues over time.Additionally we looked at Azure
+      architecture, maintainability, monitoring and support of the application for a large installation
+      (3 million users, 500 facilities) and how to support the installation on those facilities. · Apr
+      2018
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Creating a roadmap to guide a customer to the cloud
+    detail: Creating a roadmap to guide the customer to the cloud. The customer was using IaaS from an
+      external vendor where a delivery time of two weeks was the norm. Because of this, there were only
+      a few DTAP environments and those were being reused over and over, with regular configuration mismatches.
+      The roadmap shows what steps to take to convert the used servers to the Azure platform and enable
+      the internal teams to start utilizing the power of the cloud platform.During the creation of the
+      roadmap, we also had several workshops showing the sysadmins how to use VSTS, Git repositories,
+      Pull requests, ARM templates, Build and Release pipelines and Azure Automation DSC. · Apr 2018
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: 'Studenten Informatie Systeem: Share-Point solution voor het onderwijs'
+    detail: In nauwe samenwerking met de klant een Share-Point solution ontwikkelen t.b.v. Share-Point
+      2010 / 2013 middels ASP.NET en C#. In deze oplossing worden student gegevens uit meerdere bronnen
+      op een overzichtelijke manier bij elkaar gebracht, waardoor men een totaaloverzicht krijgt van alle
+      beschikbare informatie m.b.t. een student. Hiervoor is het niet meer nodig verschillende systemen
+      te bevragen / controleren en worden er kosten bespaard op training van de medewerkers.Gebruikersgroep
+      omvat o.a. medewerkers van de onderwijsinstelling (+/- 1.800), de student zelf (+/-26.000), ouders
+      en geautoriseerde externen (bijv. stagebegeleiders). · Nov 2011
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Uitbreidingen intern CRM systeem
+    detail: Team leadDiverse uitbreidingen voor registratie als voorbereiding voor GDPR / BIG / ISO 27001Formele
+      registratie verlofregistratieASP.NET MVC, EF, Active Directory, MSSQL serverTFS Build vNextTFS Release
+      management · Jun 2017
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: 'Stagiair begeleiden: Machine Learning'
+    detail: Stagiair begeleiden bij onderzoek naar toepassingen voor Machine Learning.Afstudeeronderzoek
+      naar de integratiemogelijkheden van voorspellingen in Business Intelligence (BI). Daarbij is eerst
+      algemeen onderzoek gedaan naar voorspellingen aan de hand van Machine Learning. Vervolgens is aan
+      de hand van een concrete casus een Proof of Concept ontwikkeld in C#. · Feb 2017
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: .NET core webapplicatie
+    detail: .NET core webapplicatie, MVC, EF coreVisual Studio Team ServicesHosted in Microsoft AzureApplication
+      InsightsAzure SQL database · Feb 2017
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Uitbreidingen controles CloudControls
+    detail: Team lead & ArchitectUitbreidingen controles CloudControls:- toevoegen controle uptime webbased
+      BI systemen- controles geldigheid access policies op blob storage- SSL certificaten controles (SSL
+      Labs api)- Opstarten additionele taken (Azure RunBook en WebHooks) · Feb 2017
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: CloudControls - WebApplicatie voor monitoren verversen bronsystemen
+    detail: Team lead & AcrchitectNieuwbouw applicatie voor het monitoren van verversingen van bronsystemen
+      voor BI trajecten. Lichtgewicht client applicatie voor het doorgeven van statusberichten van ETL
+      processen. Vervolgens wordt deze informatie gebruikt om de verantwoordelijke specialisten op de
+      hoogte te houden. Dagelijkse status overzichten via mail, live dashboards, beschikbaar gesteld op
+      groot scherm. - Azure AppService- Authenticatie via Office365- Azure Sql Db- Application Insights-
+      CI/CD met TFS vNext Builds- TFS Release management met deployment slots voor releasen zonder downtime-
+      ASP.NET MVC, Entity Framework, SignalR, WebApi · Dec 2016
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Azure upgrades MijnRapportfolio
+    detail: Team LeadVerplaatsen opslag van afbeeldingen uit de Azure SQL Database naar Azure Blob Storage.Verkleinen
+      van afbeeldingen via Azure FunctionsVideo conversie naar mp4 via Azure Storage Queues en afhandeling
+      op VM. Opslag in Azure Blob Storage. · Aug 2016
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Continous Deployment Xamarin Applicatie
+    detail: Team lead bij het optuigen van continuous deployment voor een Xamarin App middels Team Foundation
+      Server.- Build Android app- Build iOS app - release naar TestFlight · Aug 2016
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Self service webapplicatie voor toevoegen nieuwe klanten
+    detail: Team lead & ArchitectNieuwbouw applicatie waarmee technisch consultants zelfstandig (gestandaardiseerde)
+      bronsystemen kunnen toevoegen, waarna de doeldatabases voorzien worden van nieuwe data. Initieel
+      voor het ontsluiten van AFAS, ParnasSys & Esis. - Azure AppService, SQL Db, KeyVault, SendGrid-
+      Authenticatie via Office365- CI/CD met TFS vNext Builds- TFS Release management- ASP.NET MVC, Entity
+      Framework · Mar 2016
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Nieuw product ontwikkeling
+    detail: 'Greenfield project voor een nieuw product van Synaxion voor gebruik in het primair onderwijs.Verantwoordelijk
+      voor productarchitectuur, ontwikkeling, ALM, sprint management, QA en het in de lucht houden van
+      de gehele OTAP straat. Ontwikkeld in nauwe samenwerking met een team bestaande uit: eindklant, design,
+      product owner, sales en marketing. Product draait volledig binnen Microsoft Azure (App-services
+      en SQL Db). Kenmerken: Multitenant, ASP.NET, MVC 5, EF 6, Azure SQL Db, incl. EF Migrations. Application
+      Insights, Azure Blob Storage, Azure Functions. Deployment zonder downtime middels Azure Deployment
+      Slots.Intern wordt TFS gebruikt voor project, build, sprint en release management. Test- en Productieomgeving
+      geheel in Microsoft Azure.Na oplevering is het product ook in DevOps stijl in productie genomen.
+      Na automatisch uitvoeren van zowel Unit- als Webtests wordt de demo-omgeving dagelijks bijgewerkt.
+      Product Owner kan met één druk op de knop releasen naar Productie, zonder downtime (deployment slots).
+      · Jan 2016'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: MijnRapportfolio - Architecture en QA
+    detail: 'MijnRapportfolio is een nieuw product van Synaxion waarin leerlingen en leerkrachten uit
+      het Primair Onderwijs bijhouden waar de leerlingen staan in hun ontwikkeling, zowel op zelfreflectie
+      als de voortgang op bijv. de gebieden taal en rekenen. Vervolgens hebben ook ouders toegang tot
+      deze gegevens over hun kind(eren).Verantwoordelijk voor productarchitectuur, ontwikkeling, ALM,
+      sprint management, QA en het in de lucht houden van de productieomgeving. Ontwikkeld in nauwe samenwerking
+      met een eindklant, design, product owner en sales & marketing. Product draait volledig binnen Microsoft
+      Azure (App-services en SQL Db). Kenmerken: Multitenant, ASP.NET, MVC 5, EF 6, Azure SQL Db, incl.
+      EF Migrations. Application Insights, Azure Blob Storage, Azure Functions. Deployment zonder downtime
+      middels Azure Deployment Slots.Intern wordt TFS gebruikt voor project, build, sprint en release
+      management. Test- en Productieomgeving geheel in Microsoft Azure.Na oplevering is het product ook
+      in DevOps stijl in productie genomen. Na automatisch uitvoeren van zowel Unit- als Webtests worden
+      de interne test en externe demo-omgeving dagelijks bijgewerkt. Product Owner kan met één druk op
+      de knop releasen naar Productie, zonder downtime (deployment slots). Dagelijkse controles op gebruik
+      en performance, errors via Azure opties. · Jul 2015'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Externe SaaS bron ontsluiten richting Azure
+    detail: 'Externe SaaS bron onsloten t.b.v. de Synaxion producten ''SchoolDashboard'' (Management Informatie
+      Primair Onderwijs) en MijnRapportfolio (Leerlingvolgsysteem met meer aandacht op reflectie).De externe
+      SaaS bron wordt ontsloten d.m.v. webservice die dagelijks voor meerdere klanten wordt uitgelezen
+      en wordt bijgewerkt op diverse Azure omgevingen:- SchoolDashboard: wordt per stichting (meerdere
+      scholen tezamen) geplaatst in een MSSQL database op een Azure VM. Vervolgens wordt een Qlikview
+      document getriggerd om zichzelf bij te werken met de beschikbare data. In productie voor meerdere
+      stichtingen.- MijnRapportfolio: de data wordt voor meerdere scholen in een Azure SQL DB geplaatst
+      zodat deze de laatste stand kan tonen aan de gebruikers. In productie voor meerdere scholen.De dagelijkse
+      taak is ook voorzien van monitoring opties en controles. Hierdoor worden de collega’s die deze informatie
+      intern afnemen op de hoogte gehouden van o.a. tijdsduur, verwerkingsfouten, etc. · Jul 2015'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Stagiair begeleiden bij opbouwen hybrid companion app voor StudentenView (voorheen SIS)
+    detail: 'Technisch begeleiden stagiair bij het opbouwen van een hybrid companion app voor StudentenView
+      (voorheen SIS). Onderzoek naar opties en opbouwen van een app voor iOS / Android / Windows Phone,
+      incl. publicaties naar de desbetreffende stores. Kenmerken:* backend: WebApi, kijkend naar diverse
+      (cloud) bronsystemen* frontend: Xamarin: hybride met als resultaat native apps* notifications via
+      Microsoft Azure Mobile ServicesStageduur: 5 maanden · Feb 2015'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Stagiairs begeleiden bij software projecten
+    detail: Begeleiden stagiars bij hun stage opdrachten:- Additionele functionaliteiten ontwikkelen op
+      ASP.NET MVC webapplicatie, TFS implementatie on-site, Continuous Integration met TFS Build services.-
+      Nieuwbouw SmartPhone applicatie (front-end) voor bestaande Studenten Informatie Systeem webapi.
+      Gebruik makend van Xamarin. Apps opgeleverd voor Windows Phone, iOS & Android. Sprint planning in
+      TFS. Verantwoordelijk voor de dagelijkse begeleiding van de stagiairs. · Jan 2015
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Stagiair technisch begeleiden bij uitbouwen nieuw CRM pakket
+    detail: 'Technisch begeleiden van stagiair bij het verder uitbouwen van een nieuw CRM pakket.Stageduur:
+      5 maanden (HBO niveau). ASP.NET / MVC / EntityFramework / TFS · Feb 2015'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Opbouw nieuw CRM pakket
+    detail: Opbouw nieuw CRM pakket middels ASP.NET / MVC / Entity Framework / Javascript · Aug 2014
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Inhouse system engineer voor alle ICT en vaste telefonie voorzieningen
+    detail: 'Verantwoordelijk voor alle ICT gerelateerde interne zaken:Servers/PC''s: installatie, beheer,
+      onderhoud (ook Hyper-V)Vaste en draadloze interne netwerkMail beheer (Exchange, Office365)Gebruikers
+      beheerBackups, Antivirus, FTP, FireWallMonitoring en storingsbeheerAanschaf nieuwe hardware · Mar
+      2007'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: WebApi voor companion app Studenten Informatie Systeem
+    detail: 'ASP.NET WebApi backend ontwikkeld voor een Angular gebaseerde SPA responsive website (Companion
+      webapp voor Share-Point Solution). C# / WebApi, Authenticatie via ADFS als STS, EntityFramework,
+      MS-SQL. Doelgroep: 26.000 studenten. · Jun 2014'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Demo Android/Windows Phone App met Cordova PhoneGap
+    detail: Demo app voor Android en Windows Phone ontwikkeld, incl. Push Notifications. Gebaseerd op
+      Cordova PhoneGap middels HTML5, CSS 3, Javascript, KnockOut.js, Azure Mobile Services (NodeJS) voor
+      het versturen van Push Notifications. Android 4.2+, Windows Phone 8.0+ · Feb 2014
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Technical lead verhuizing naar nieuwe locatie
+    detail: Technical lead verhuizing van het bedrijf naar een nieuwe locatie. Verantwoordelijk voor het
+      afbreken van alle ICT voorzieningen op de oude locatie, verhuizen ervan naar de nieuwe locatie en
+      daar weer opbouwen. Tevens contactpersoon bij aanleg van compleet nieuwe glasvezel verbinding op
+      de nieuwe locatie. Gehele proces verlopen zonder downtime voor de medewerkers. · Jun 2013
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Backlog Support aanvragen Cognos rapportages aanpakken (Gemeente 80.000 inwoners)
+    detail: Detachering op locatie om mee te helpen bij het gestructureerd aanpakken van de interne openstaande
+      supportcalls. Cognos 8.4 rapportages aanmaken i.s.m. de interne klant (o.a. teamleiders Sociale
+      Dienst, Hoofd Financiën).Opleiden applicatiebeheerder in Cognos Reporting Studio waarmee de afdeling
+      zelfstandig de rapportages kan onderhouden · Sep 2011
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Inrichten BI oplossing voor Sociale Dienst (Gemeente, 85.000 inwoners)
+    detail: 'Inrichten BI oplossing in Cognos 8.4 Metric Studio oplossing t.b.v. Sociale Dienst. Meer
+      dan 70 KPI''s met bijbehorende rapportages over een gegevens set met o.a. samenstelling cliëntenbestand,
+      aantallen en tijdigheid van werkprocessen, re-integratie trajecten, bedragen en aantallen verstrekkingen
+      en terugvorderingen. Regelingen: WWB, WIJ, Bijzondere bijstand, BBZ, IOAW, IOAZ als WMO.Cognos 8.4,
+      Metric Studio, Metric Designer, Framework Manager, Administration, Oracle, MSSQL SSIS, MSSQL BIDS
+      · Nov 2010'
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Technical lead verhuizing en samenvoegen 2 netwerken van 2 BV's
+    detail: Na overname van een andere BV zijn beide bedrijven verhuist naar een nieuwe locatie. Bij deze
+      verhuizing zijn er 20 gebruikers gemigreerd naar een nieuw opgezet domain, incl. mail accounts /
+      websites / aanschaf nieuwe hardware en begeleiden verhuizing. · Mar 2010
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Technical lead voor verhuizing bedrijf naar nieuwe locatie
+    detail: Technical lead voor verhuizing bedrijf naar nieuwe locatie, incl. vaste telefonie voorzieningen,
+      incl. contact met verhuizers voor de gehele inboedel. Opbouwen van nieuw interne netwerk, incl.
+      directe verbinding met andere BV t.b.v. samenwerking. · Mar 2008
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Uitbreiden BI oplossing voor MBO College (20.000 studenten)
+    detail: Uitbreiden van bestaande inrichting BI oplossing. Toevoegen van 30 KPI's op basis van studenten
+      registratie systeem en financiën.PeopleSoft CampusSolutionsWebSolutionsMicrosoft Dynamics · Aug
+      2007
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Inrichten BI oplossing voor MBO College (20.000 studenten)
+    detail: Inrichten van BI oplossingen voor een MBO College met 14 indicatoren gebaseerd op PeopleSoft
+      HR.Oracle overhalen naar MSSQL 2000 middels DTS. · Mar 2007
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Ontwikkelen Urenregistatie module in Synaxion software
+    detail: Urenregistratie module ontwikkelen voor de Synaxion software. Functioneel ontwerp in nauwe
+      samenwerking met de klant, geschreven uren kunnen worden gekoppeld aan gegevens uit een bronsysteem
+      (flexibel in te richten), uren kunnen gefiatteerd worden door een leidinggevende.- Delphi · Jan
+      2007
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Inrichten BI oplossing voor Sociale Dienst (Gemeente, 75.000 inwoners)
+    detail: Inrichten BI omgeving met 30+ KPI's op het gebied van de Sociale Dienst. Zowel gebaseerd op
+      GWS4All als MasterLink.Oracle & MasterLink overhalen naar MSSQL Server 2000 middels DTS · Mar 2005
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  - kind: project
+    title: Inrichten BI oplossing voor Sociale Dienst (Gemeente, 120.000 inwoners)
+    detail: Inrichten BI omgeving met 40+ KPI's op het gebied van de Sociale Dienst. Zowel gebaseerd op
+      GWS4All, CODA als FRIS (handhaving).Data uit Oracle & Visual FoxPro overhalen naar MSSQL Server
+      2000 middels DTS · Dec 2004
+    evidence:
+      url: https://www.linkedin.com/in/bosrob
+      observed_at: '2026-10-24T08:41:51Z'
+  recent_writing:
+  - title: Really keeping your GitHub Actions usage secure
+    url: https://www.linkedin.com/pulse/really-keeping-your-github-actions-usage-secure-rob-bos-oc4qe
+    published: '2025-03-16T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Last Friday what we expected happened: a much used GitHub Action got compromised, read all
+      about it here at the…'
+  talks:
+  - session:2023/dev1210g
+  - session:2023/dev2854d
+  - session:2024/ai1197b
+  - session:2025/bld1629d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684689715813001JXz7
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684689715813001JXz7
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684689715813001JXz7
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

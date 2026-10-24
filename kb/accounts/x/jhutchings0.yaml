@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/jhutchings0
+  platform: x
+  handle: jhutchings0
+  url: https://x.com/jhutchings0
+  display_name: Justin Hutchings
+  bio: Senior Director of PM @cloudflare | Formerly @github @microsoft. Mostly tech, security, Star Trek
+    🖖🏻, with a sprinkle of far left political outrage.
+  location: Issaquah, WA
+  website: https://www.jhutchings.net/
+  followers: 1865
+  following: 2147
+  posts_count: 4617
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1788105202815717376/RN4n_I9R_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/990956169006010368/1560806344
+  created_at: '2018-04-30T14:08:56Z'
+  owner: person:justin-hutchings
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694702977974001Fqz9
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/jhutchings0
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

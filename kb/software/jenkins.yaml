@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:jenkins
+  name: Jenkins
+  aliases:
+  - Jenkins
+  kind: open_source
+  homepage: https://www.jenkins.io
+  repositories:
+  - repo:jenkinsci/jenkins
+  mentioned_in:
+  - person:sumanth-mothkuri
+  - session:2023/dev2743w
+  - session:2024/dev1860d
+  - session:bld1825d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

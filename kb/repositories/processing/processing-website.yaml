@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:processing/processing-website
+  full_name: processing/processing-website
+  url: https://github.com/processing/processing-website
+  description: Source code for processing.org, the official Processing website with downloads, documentation,
+    tutorials, and learning resources.
+  homepage: https://processing.org
+  stars: 91
+  forks: 122
+  watchers: 9
+  open_issues: 113
+  stats_observed_at: '2026-10-24T19:12:17Z'
+  primary_language: MDX
+  license: GPL-2.0
+  archived: false
+  fork: false
+  created_at: '2020-08-11T08:37:52Z'
+  pushed_at: '2026-10-24T13:57:46Z'
+  owner_login: processing
+  owner: gh:processing
+  pinned_by:
+  - gh:processing
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: processing
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: processing/processing-website
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jacobnewman
+  platform: linkedin
+  handle: in/jacobnewman
+  url: https://www.linkedin.com/in/jacobnewman
+  display_name: Jacob Newman
+  bio: I'm building Wave, an agent for self-improving products. It find problems, ships fixes…
+  location: San Francisco
+  followers: 1561
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHD1M_K8UEiLA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1680471871377?e=2147483647&v=beta&t=0ruG_OWQb05y-YQzJRjc0x4VJDhnl5rIa7GUxK4xMT4
+  owner: person:jacob-newman
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1787271946274001uhDt
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jacobnewman
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

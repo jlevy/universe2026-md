@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/julioarrudac
+  platform: x
+  handle: julioarrudac
+  url: https://x.com/julioarrudac
+  display_name: Julio Arruda
+  bio: Microsoft MVP DevOps GitHub Star⭐️ Youtuber Palestrante Senior Cloud and DevOps Solutions Architect
+    na @gft_br
+  location: São José dos Campos, São Paulo
+  website: https://youtube.com/@julioarruda
+  followers: 1484
+  following: 1009
+  posts_count: 2234
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1732444380047282176/9sF8H2ED_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1555719378/1644178174
+  created_at: '2013-06-29T14:03:43Z'
+  owner: person:julio-arruda
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: julioarruda
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/julioarrudac
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

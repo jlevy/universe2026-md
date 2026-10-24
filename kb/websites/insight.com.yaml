@@ -1,0 +1,50 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:insight.com
+  url: https://www.insight.com
+  kind: company
+  owner: org:insight
+  link_basis:
+  - github_profile
+  fetch_status: error
+  http_status: 403
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dbenedic-insight
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/exhibitors
+    record_id: 1779138824372001nXkv
+    retrieved_at: '2026-10-24T06:46:26Z'
+    snapshot: raw/rainfocus/exhibitors.json
+  - system: rainfocus
+    url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791429896066001YBkw
+    record_id: 1791429896066001YBkw
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777580256403001HBaF
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746145404906001CkyS
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: website
+    url: https://www.insight.com/en_US/home.html
+    record_id: https://www.insight.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/david-benedic-bb21358b
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/gracevor.bsky.social
+  platform: bluesky
+  handle: gracevor.bsky.social
+  url: https://bsky.app/profile/gracevor.bsky.social
+  display_name: Grace Vorreuter
+  bio: Researcher at GitHub + Californian in Upstate NY. When not working, I'm handing kids snacks or
+    making a quilt or doing another craft when I should be finishing a quilt.
+  followers: 446
+  created_at: '2023-05-09T12:27:14Z'
+  owner: person:grace-vorreuter
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699463231224001B4xT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: gracevor.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

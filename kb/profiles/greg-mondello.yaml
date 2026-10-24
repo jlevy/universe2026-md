@@ -1,0 +1,105 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:greg-mondello
+  person: person:greg-mondello
+  brief_bio:
+    text: Greg Mondello, now at Docker, led billing strategy and platform modernization at GitHub, including
+      the migration of over 9 million customers to metered billing. Mondello spoke at GitHub Universe
+      2025 about controlling enterprise costs with GitHub's new billing platform.
+    cites:
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: b37f07d9a43f63f95e747247bca5499764cbaa5a002ea238e152d43519c77717
+    stale: false
+  headline: Docker
+  current_roles:
+  - Docker
+  expertise:
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1423d
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1423d
+  interests:
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746221382845001zp5q
+      ref: session:2025/aut1423d
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746221382845001zp5q
+      ref: session:2025/aut1423d
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746221382845001zp5q
+      ref: session:2025/aut1423d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746221382845001zp5q
+      ref: session:2025/aut1423d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746221382845001zp5q
+      ref: session:2025/aut1423d
+  spoken_languages:
+  - Spanish
+  - English
+  talks:
+  - session:2025/aut1423d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684253961712001YVpb
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,219 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:michael-edenzon
+  person: person:michael-edenzon
+  brief_bio:
+    text: Michael Edenzon is CEO and co-founder of Fianu and a former director of DevOps at PNC Bank who
+      has written on automated governance and risk controls for AI/ML systems. Edenzon spoke at GitHub
+      Universe 2024 about an evidence-based approach to asset inventory.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 15561c53401963bc3c10caef6eaca2e2627754ef2e25121534fa524a476c1ae8
+    stale: false
+  headline: Fianu
+  current_roles:
+  - Fianu
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1896d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1896d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1896d
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1896d
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1896d
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1896d
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1896d
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722864368864001YMhl
+      ref: session:2024/sec1896d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722864368864001YMhl
+      ref: session:2024/sec1896d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722864368864001YMhl
+      ref: session:2024/sec1896d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722864368864001YMhl
+      ref: session:2024/sec1896d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722864368864001YMhl
+      ref: session:2024/sec1896d
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722864368864001YMhl
+      ref: session:2024/sec1896d
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722864368864001YMhl
+      ref: session:2024/sec1896d
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722864368864001YMhl
+      ref: session:2024/sec1896d
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722864368864001YMhl
+      ref: session:2024/sec1896d
+  publications:
+  - title: Systemic Controls for Managing Risk in AI/ML Systems
+    venue: IT Revolution Press
+    date: August 13, 2024
+    description: This paper, published in the Fall 2024 Enterprise Technology Leadership Journal, addresses
+      the challenges of managing risks associated with artificial intelligence (AI) and machine learning
+      (ML) systems. The authors aim to educate auditors, internal risk directors, and software leaders
+      on the differences between existing risk management controls and those needed for new AI/ML systems,
+      including generative AI. The paper provides an overview of the control environment for AI/ML systems,
+      focusing on six unique assets and suggesting controls for managing associated risks throughout the
+      AI/ML development life cycle.
+    evidence:
+      url: https://www.linkedin.com/in/michaeledenzon
+      observed_at: '2026-10-24T08:47:31Z'
+  - title: Reinventing Software Asset Inventory
+    venue: IT Revolution Press
+    date: September 26, 2023
+    description: As digital systems expand in scope, mission-criticality, and reach, organizations find
+      themselves challenged to understand and account for them. The digital estate presents an information
+      management problem that has increased dramatically in scale and complexity since the early days
+      of computing. Digital systems support financial, supply chain, and even healthcare outcomes, among
+      many other uses. Understanding the resources and their configurations and interplay is essential
+      to sustaining their smooth and secure operation.Drawing from the principles of automated governance,
+      we propose a methodology and approach to maintaining software asset inventory that allows for granular
+      and reproducible metadata captured and updated in real-time throughout the software life cycle.
+    evidence:
+      url: https://www.linkedin.com/in/michaeledenzon
+      observed_at: '2026-10-24T08:47:31Z'
+  - title: Automated Governance Changed What We Believe In
+    venue: IT Revolution
+    date: October 19, 2022
+    evidence:
+      url: https://www.linkedin.com/in/michaeledenzon
+      observed_at: '2026-10-24T08:47:31Z'
+  - title: 'Investments Unlimited: A Novel About DevOps, Security, Audit Compliance, and Thriving in the
+      Digital Age'
+    venue: IT Revolution Press
+    date: September 12, 2022
+    description: In the vein of bestselling titles The Phoenix Project and The Unicorn Project, Investments
+      Unlimited helps organizations radically rethink how they handle audit compliance and security for
+      their software systems. By introducing concepts, tools, and ideas to reimagine governance, this
+      book catalyzes a more humane way to enable high-velocity software delivery that inspires trust and
+      is inherently more secure.
+    evidence:
+      url: https://www.linkedin.com/in/michaeledenzon
+      observed_at: '2026-10-24T08:47:31Z'
+  talks:
+  - session:2024/sec1896d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1722864551656001jtiV
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

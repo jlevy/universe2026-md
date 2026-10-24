@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jbaruch
+  platform: linkedin
+  handle: in/jbaruch
+  url: https://www.linkedin.com/in/jbaruch
+  display_name: 🎩 Baruch Sadogursky
+  bio: ✅ Beard ✅ Hat ✅ From zero to $6B IPO leading developer relations ✅ Java Champion…
+  location: Nashville Metropolitan Area
+  followers: 9330
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQHirvGiIHQmFg/profile-displayphoto-scale_200_200/B4EZ1gN73WJEAY-/0/1775435761217?e=2147483647&v=beta&t=lCKlqkagec9jScOmHVJET5E9HQBufV7jfE-kanpaKtw
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQH3Yvs1tOD6Tw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1591712645716?e=2147483647&v=beta&t=aaHHvDbxwidhYvZ0E7Y0xChORJm3NF34UtdV0o-1STk
+  owner: person:baruch-sadogursky
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1786298949043001shg7
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jbaruch
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

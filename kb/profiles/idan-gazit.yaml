@@ -1,0 +1,319 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:idan-gazit
+  person: person:idan-gazit
+  brief_bio:
+    text: Idan Gazit is Head of GitHub Next, which prototypes how AI can change software development,
+      and was previously a principal engineer at Heroku and a member of the Django core team. Gazit spoke
+      at GitHub Universe 2025 and speaks at GitHub Universe 2026 about tomorrow's tools for making software.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 46e8cd3e09a567ae3592a0b631742658e1f3bd4f868aefb2eb79a90fed58ba72
+    stale: false
+  headline: Head of GitHub Next at GitHub
+  location: East Bay, CA
+  current_roles:
+  - Head of GitHub Next at GitHub
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1143m
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/bld1143m
+  - label: GitHub Agentic Workflows
+    target: software:github-agentic-workflows
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Agentic Workflows
+      ref: session:2025/bld1143m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:idan-gazit
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot CLI
+      ref: session:2025/bld1143m
+  - label: Rust
+    target: software:rust
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Rust
+      ref: person:idan-gazit
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2025/bld1143m
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:django/django
+    - ref: repo:oauthlib/oauthlib
+    - ref: repo:idan/epio_skel
+    - ref: repo:idan/djoosh
+    - ref: repo:idan/python-twitter
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:idan/gistio
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787603491482001y0IY
+      ref: session:bld1820b
+  - label: python
+    basis: github_repositories
+    confidence: medium
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/django/django
+      ref: repo:django/django
+    - url: https://github.com/oauthlib/oauthlib
+      ref: repo:oauthlib/oauthlib
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745434414420001ipKz
+      ref: session:2025/bld1143m
+  - label: agentic
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/gh-aw-firewall
+      ref: repo:github/gh-aw-firewall
+  - label: apps
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/django/django
+      ref: repo:django/django
+  - label: authentication
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/oauthlib/oauthlib
+      ref: repo:oauthlib/oauthlib
+  - label: authorization
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/oauthlib/oauthlib
+      ref: repo:oauthlib/oauthlib
+  - label: django
+    basis: github_repositories
+    confidence: low
+    weight: 0.33
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/django/django
+      ref: repo:django/django
+  open_source:
+  - repository: repo:django/django
+    relation: pinned
+    stars: 91576
+    primary_language: Python
+  - repository: repo:oauthlib/oauthlib
+    relation: pinned
+    stars: 2986
+    primary_language: Python
+  - repository: repo:idan/gistio
+    relation: owner
+    stars: 489
+    primary_language: TypeScript
+  - repository: repo:idan/epio_skel
+    relation: owner
+    stars: 51
+    primary_language: Python
+  - repository: repo:idan/djoosh
+    relation: owner
+    stars: 34
+    primary_language: Python
+  - repository: repo:idan/python-twitter
+    relation: owner
+    stars: 32
+    primary_language: Python
+  - repository: repo:githubnext/monaspace
+    relation: contributor
+    stars: 19744
+    primary_language: Shell
+  - repository: repo:githubnext/calmhn
+    relation: contributor
+    stars: 4
+    primary_language: TypeScript
+  - repository: repo:github/gh-aw-firewall
+    relation: contributor
+    stars: 155
+    primary_language: TypeScript
+  - repository: repo:githubnext/lightningtimer
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:githubnext/localjev
+    relation: contributor
+    stars: 831
+    primary_language: TypeScript
+  education:
+  - school: New York University
+    evidence:
+      url: https://www.linkedin.com/in/idangazit
+      observed_at: '2026-10-24T08:11:39Z'
+  spoken_languages:
+  - French
+  - Hebrew
+  - English
+  activities:
+  - kind: course
+    title: Computer Graphics
+    evidence:
+      url: https://www.linkedin.com/in/idangazit
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Linguistics
+    evidence:
+      url: https://www.linkedin.com/in/idangazit
+      observed_at: '2026-10-24T08:11:39Z'
+  - kind: course
+    title: Robotics
+    evidence:
+      url: https://www.linkedin.com/in/idangazit
+      observed_at: '2026-10-24T08:11:39Z'
+  talks:
+  - session:2025/bld1143m
+  - session:2154b
+  - session:bld1820b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694120273763001Iy5q
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: idan
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694120273763001Iy5q
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

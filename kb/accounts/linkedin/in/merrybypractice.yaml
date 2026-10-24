@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/merrybypractice
+  platform: linkedin
+  handle: in/merrybypractice
+  url: https://www.linkedin.com/in/merrybypractice
+  display_name: Merry C.
+  bio: I am an up and coming tech professional with a strong background in customer service and…
+  location: Seattle
+  followers: 249
+  connections: 249
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQGLF7sXStkl0Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1549160335043?e=2147483647&v=beta&t=Q_FVtME5qmd_boNqFWO6yQnBu8uqV2xh9o-vDEeJ1lA
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQGcY6FAxppD9g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1549160749420?e=2147483647&v=beta&t=beNNMfS44k0UD9kBO9IcuY1m46M24js5IhzvpE-Bu9w
+  owner: person:merry-cimakasky
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724346375013001HqM1
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/merrybypractice
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

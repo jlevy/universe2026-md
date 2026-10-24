@@ -1,0 +1,91 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:teresa-tung
+  person: person:teresa-tung
+  brief_bio:
+    text: Teresa Tung is a managing director at Accenture who works on taking cloud technologies to enterprise
+      scale and holds more than 220 patents and patent applications. Tung spoke at GitHub Universe 2023
+      about increasing the value of generative AI in software engineering.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: ae21f0df38b890f14993f9316f2acca386b26f76b6dae9bc008a486e3c8c8e71
+    stale: false
+  headline: Accenture
+  current_roles:
+  - Accenture
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2896s
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2896s
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698880968222001N9kG
+      ref: session:2023/ai2896s
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698880968222001N9kG
+      ref: session:2023/ai2896s
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698880968222001N9kG
+      ref: session:2023/ai2896s
+  spoken_languages:
+  - Chinese
+  recent_writing:
+  - title: Let There be Change - What AI/ML Pivots are Needed?
+    url: https://www.linkedin.com/pulse/let-change-what-aiml-pivots-needed-teresa-tung
+    published: '2020-11-01T00:00:00.000Z'
+    channel: linkedin
+    summary: AI and machine learning models play a big role in our lives using insights drawn from past
+      data to guide decisions…
+  talks:
+  - session:2023/ai2896s
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698845025681001PCFa
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

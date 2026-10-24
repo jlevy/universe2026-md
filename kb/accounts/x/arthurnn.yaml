@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/arthurnn
+  platform: x
+  handle: arthurnn
+  url: https://x.com/arthurnn
+  display_name: Arthur Neves
+  location: Orlando, Florida
+  website: http://github.com/arthurnn
+  followers: 1492
+  following: 1067
+  posts_count: 8860
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1864769952810409984/HJKxurzP_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/213767432/1425235893
+  created_at: '2010-11-09T19:05:35Z'
+  owner: person:arthur-neves
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715200486249001DAvs
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/arthurnn
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

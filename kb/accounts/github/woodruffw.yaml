@@ -1,0 +1,91 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:woodruffw
+  login: woodruffw
+  kind: user
+  url: https://github.com/woodruffw
+  name: William Woodruff
+  company: '@astral-sh @openai'
+  bio: open source schmuck, maintainer @Homebrew, @pypa, @zizmorcore, etc
+  location: New York, NY
+  website: https://yossarian.net
+  followers: 1352
+  public_repositories: 96
+  created_at: '2012-12-17T01:59:44Z'
+  contributions_last_year:
+    total: 7725
+    commits: 1801
+    pull_requests: 1417
+    issues: 247
+    reviews: 1926
+  starred_repositories: 8
+  has_sponsors_listing: true
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 25
+  contributed_to:
+  - repo:rust-lang/rust
+  - repo:jpadilla/pyjwt
+  - repo:pypi/warehouse
+  - repo:psf/cachecontrol
+  - repo:pyca/cryptography
+  organization_logins:
+  - pypa
+  - Homebrew
+  - hexchat
+  - pypi
+  - pyca
+  - beedog
+  - kbsecret
+  - woodruffw-forks
+  - woodruffw-hackathons
+  - psf
+  - sigstore
+  - astral-sh
+  - woodruffw-experiments
+  - zizmorcore
+  - woodruffw-trough
+  pinned:
+  - repo:zizmorcore/zizmor
+  - repo:trailofbits/mishegos
+  - repo:homebrew/ruby-macho
+  - repo:c2sp/x509-limbo
+  - repo:woodruffw/steg86
+  - repo:woodruffw/pyrage
+  top_repositories:
+  - repo:woodruffw/ff2mpv
+  - repo:woodruffw/kbs2
+  - repo:woodruffw/shaq
+  linked_accounts:
+  - acct:bluesky/yossarian.net
+  - acct:mastodon/yossarian@infosec.exchange
+  websites:
+  - site:yossarian.net
+  entity: person:william-woodruff
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: woodruffw
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/shrutiv824
+  platform: x
+  handle: Shrutiv824
+  url: https://x.com/Shrutiv824
+  display_name: Shruti
+  followers: 1
+  following: 15
+  posts_count: 3
+  verified: false
+  avatar_url: https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+  created_at: '2020-11-20T01:30:32Z'
+  owner: person:shruti-corbett
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730217645138001S6WH
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/Shrutiv824
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

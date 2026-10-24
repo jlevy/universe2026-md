@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/marie-theresa-brosig
+  platform: linkedin
+  handle: in/marie-theresa-brosig
+  url: https://www.linkedin.com/in/marie-theresa-brosig
+  display_name: Marie Theresa Brosig
+  bio: Marie Theresa has spent the past decade helping developers thrive by bridging the gap…
+  location: Hamburg
+  followers: 1494
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQFOwt-0_dkNGw/profile-displaybackgroundimage-shrink_200_800/B4EaE6pIKSGwAU-/0/1791985222615?e=2147483647&v=beta&t=iPsJ07-DRXyYIfDFhrFvW_2v-tEvDXsl3XDD45Y0WEQ
+  owner: person:marie-theresa-brosig
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746191885674001F4Zv
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686070592025001CQsL
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/marie-theresa-brosig
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/@launchdarkly/mcp-server
+  ecosystem: npm
+  name: '@launchdarkly/mcp-server'
+  url: https://www.npmjs.com/package/@launchdarkly/mcp-server
+  description: The local [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server for [LaunchDarkly](https://launchdarkly.com/)
+    federal and European Union (EU) environments.
+  latest_version: 0.7.1
+  license: MIT
+  repository_url: git+https://github.com/launchdarkly/mcp-server.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: launchdarkly/mcp-server
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

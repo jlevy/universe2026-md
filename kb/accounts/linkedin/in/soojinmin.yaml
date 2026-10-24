@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/soojinmin
+  platform: linkedin
+  handle: in/soojinmin
+  url: https://www.linkedin.com/in/soojinmin
+  display_name: Soojin Min
+  location: Greater Seattle Area
+  followers: 1189
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQFibQyAzVggBQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1541739001995?e=2147483647&v=beta&t=YOyD8os1FlFRP5vUE1pOtp8qN19faropyLhX_jd-ZDg
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQH-FdyYtgzR8g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1568671894716?e=2147483647&v=beta&t=HMchINv0xuiYvFSFCPoGJM739oz4Yd69oHbDqgYZelI
+  owner: person:soojin-min-choi
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727724072477001rpKk
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/soojinmin
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

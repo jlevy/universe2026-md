@@ -1,0 +1,133 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:josh-scriven
+  person: person:josh-scriven
+  brief_bio:
+    text: Josh Scriven is Microsoft Americas Practice AI Leader at IBM, helping enterprises scale AI-assisted
+      and agent-driven development with GitHub Copilot and governance-first patterns. Scriven speaks at
+      GitHub Universe 2026 in a sponsored session about IBM Neo and verified software delivery.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: 49d36bc48f7eecd6a099fbee81ca2a771ba49e67275ec5c5fb3924bcdcc81932
+    stale: false
+  headline: Microsoft Americas Practice, AI Leader at IBM
+  current_roles:
+  - Microsoft Americas Practice, AI Leader at IBM
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2151d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2151d
+  - label: Cloud-native development
+    target: term:topic/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2151d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld2151d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:josh-scriven
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791895677566001pbO0
+      ref: session:bld2151d
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791895677566001pbO0
+      ref: session:bld2151d
+  - label: Cloud-native development
+    target: term:topic/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791895677566001pbO0
+      ref: session:bld2151d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791895677566001pbO0
+      ref: session:bld2151d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791895677566001pbO0
+      ref: session:bld2151d
+  credentials:
+  - kind: certification
+    title: Google Cloud Certified Data Engineer
+    issuer: Google
+    evidence:
+      url: https://www.linkedin.com/in/josh-scriven
+      observed_at: '2026-10-24T08:11:36Z'
+  talks:
+  - session:bld2151d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777679202201001q4zO
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: eccolab
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

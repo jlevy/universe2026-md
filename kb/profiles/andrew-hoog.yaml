@@ -1,0 +1,278 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:andrew-hoog
+  person: person:andrew-hoog
+  brief_bio:
+    text: Andrew Hoog co-founded NowSecure, wrote two books on Android and iOS forensics and holds patents
+      on app security testing, data recovery and forensic monitoring. Hoog spoke at GitHub Universe 2023
+      about GitHub Copilot and automated security.
+    cites:
+    - past_affiliations
+    - event_bio
+    - publications
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: d45af0d9345857571ed58107a6845fb40b364d7faaebc3a12add717b6c900aa0
+    stale: false
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai1845d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai1845d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai1845d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai1845d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai1845d
+  technologies:
+  - label: Android
+    target: software:android
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Android
+      ref: person:andrew-hoog
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/ai1845d
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/ai1845d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai1845d
+  - label: iOS
+    target: software:ios
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: iOS
+      ref: person:andrew-hoog
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686084290742001OyBo
+      ref: session:2023/ai1845d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686084290742001OyBo
+      ref: session:2023/ai1845d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686084290742001OyBo
+      ref: session:2023/ai1845d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686084290742001OyBo
+      ref: session:2023/ai1845d
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686084290742001OyBo
+      ref: session:2023/ai1845d
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686084290742001OyBo
+      ref: session:2023/ai1845d
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686084290742001OyBo
+      ref: session:2023/ai1845d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686084290742001OyBo
+      ref: session:2023/ai1845d
+  credentials:
+  - kind: honor
+    title: Eagle Scout
+    issuer: Boy Scouts of America
+    date: '1993-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  - kind: certification
+    title: Certified Information Systems Security Professional (CISSP)
+    issuer: (ISC)²
+    date: Jul 2017
+    url: https://my.isc2.org/s/MemberVerification
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  - kind: certification
+    title: Certified in Risk and Information Systems Control (CRISC)
+    issuer: ISACA
+    date: Aug 2011
+    url: http://www.isaca.org/Certification/CRISC-Certified-in-Risk-and-information-systems-control/Pages/default.aspx
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  - kind: certification
+    title: Certified Computer Examiner (CCE)
+    issuer: International Society of Forensic Computer Examiners (ISFCE)
+    date: Jan 2010
+    url: https://www.isfce.com/certification.htm
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  - kind: certification
+    title: GIAC Certified Forensic Analyst (GCFA)
+    issuer: GIAC Certifications
+    date: Nov 2008
+    url: https://www.giac.org/certification/certified-forensic-analyst-gcfa
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  publications:
+  - title: 'Android Forensics: Investigation, Analysis and Mobile Security for Google Android'
+    venue: Syngress
+    date: May 28, 2011
+    description: Android is now the world's most popular mobile device platform and still growing at an
+      astonishing rate. Android Forensics provides a thorough review of the Android platform, including
+      the core hardware and software components, file systems and data structures, data security considerations,
+      a detailed review of forensic acquisition techniques and strategies for the subsequent analysis
+      required. A heavy emphasis on open source tools and step-by-step examples are a primary focus on
+      this book.* Learn techniques to forensically acquire Android devices* Includes information about
+      Android applications needed for forensics investigations* Entire chapter focused on Android Device,
+      Data and App Security, which can assist not only forensic investigators but also for app developers
+      and IT security managers
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  - title: 'iPhone and iOS Forensics: Investigation, Analysis and Mobile Security for Apple iPhone, iPad
+      and iOS Devices'
+    venue: Syngress
+    date: May 28, 2011
+    description: This book takes an in-depth look at methods and processes that analyze the iPhone/iPad
+      in an official legal manner. The following topics are covered:* An overview of various Apple devices
+      and their features/functions* Review of the data and file types stored on these devices* iPhone/iPad
+      data security* Forensic imaging process (backup, logical, and physical)* Analysis of default and
+      third party applications, with a heavy emphasis on the use of open source tools
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  patents:
+  - title: Methods and apparatuses for improved app security testing
+    number: US 10474826B2
+    date: November 12, 2019
+    url: https://patents.google.com/patent/US10474826B2
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  - title: Methods, apparatuses, and computer program products for database record recovery
+    number: US US 9081838 B2
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  - title: Systems, methods, apparatuses, and computer program products for forensic monitoring
+    number: US US 9507936 B2
+    evidence:
+      url: https://www.linkedin.com/in/andrewhoog
+      observed_at: '2026-10-24T08:44:03Z'
+  recent_writing:
+  - title: 'Know Your SDKs: Protect Your Mobile Apps and Users from Hidden Risks'
+    url: https://www.linkedin.com/pulse/know-your-sdks-protect-mobile-apps-users-from-hidden-risks-hoog-j8d3c
+    published: '2025-01-22T00:00:00.000Z'
+    channel: linkedin
+    summary: The Hidden Risks in Mobile SDKs Many app developers are unaware of the potential misuse of
+      their platforms for…
+  talks:
+  - session:2023/ai1845d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686084208742001OY0L
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

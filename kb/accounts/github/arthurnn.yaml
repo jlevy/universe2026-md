@@ -1,0 +1,74 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:arthurnn
+  login: arthurnn
+  kind: user
+  url: https://github.com/arthurnn
+  name: Arthur Nogueira Neves
+  company: SpaceXAI
+  bio: ' 💻 '
+  location: Orlando, Florida
+  website: http://code.arthurnn.com
+  followers: 1800
+  public_repositories: 36
+  created_at: '2011-06-06T18:45:00Z'
+  contributions_last_year:
+    total: 2763
+    commits: 32
+    pull_requests: 0
+    issues: 2
+    reviews: 1
+  starred_repositories: 540
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  - 2011
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 146
+  organization_logins:
+  - rails
+  - rubygems
+  - ottawaruby
+  - errbit
+  - bundler
+  - codetriage
+  - 24pullrequests
+  pinned:
+  - repo:rails/rails
+  - repo:rubygems/rubygems.org
+  - repo:arthurnn/memcached
+  - repo:arthurnn/minitest-emacs
+  - repo:arthurnn/dotfiles
+  top_repositories:
+  - repo:arthurnn/apn_sender
+  - repo:arthurnn/twirp-ruby
+  - repo:arthurnn/howdoi-emacs
+  websites:
+  - site:code.arthurnn.com
+  entity: person:arthur-neves
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: arthurnn
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

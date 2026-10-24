@@ -1,0 +1,342 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:cory-hymel
+  person: person:cory-hymel
+  brief_bio:
+    text: Cory Hymel works at Andela, was VP of Research and Insights at Crowdbotics and has published
+      research comparing LLMs with human experts in requirements engineering. Hymel spoke at GitHub Universe
+      2024 about using AI for app requirements to improve development outcomes.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 48e42058987d1353cc599f52ff59f3352f9b2e34754c9aeada8df242fe978f66
+    stale: false
+  headline: Andela
+  current_roles:
+  - Andela
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1886d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1886d
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722013397104001ek7B
+      ref: session:2024/ai1886d
+  publications:
+  - title: Emergent Role Classification from Skill Mapping
+    venue: Andela
+    date: September 7, 2026
+    description: Every few years a new engineering role forms where two older ones overlap. Dev plus Sec
+      plus Ops became DevSecOps. A software engineer who picked up statistics and model training became
+      an ML Engineer. This study detects these new roles as they form by analyzing 47,101 Fortune 500
+      software job postings against a map of what each established role was historically supposed to require.
+    evidence:
+      url: https://www.linkedin.com/in/cory-hymel
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: Analysis of LLMs vs Human Experts in Requirements Engineering
+    venue: Arxiv
+    date: January 31, 2025
+    description: The majority of research around Large Language Models (LLM) application to software development
+      has been on the subject of code generation. There is little literature on LLMs' impact on requirements
+      engineering (RE), which deals with the process of developing and verifying the system requirements.
+      Within RE, there is a subdiscipline of requirements elicitation, which is the practice of discovering
+      and documenting requirements for a system from users, customers, and other stakeholders. In this
+      analysis, we compare LLM's ability to elicit requirements of a software system, as compared to that
+      of a human expert in a time-boxed and prompt-boxed study. We found LLM-generated requirements were
+      evaluated as more aligned (+1.12) than human-generated requirements with a trend of being more complete
+      (+10.2%). Conversely, we found users tended to believe that solutions they perceived as more aligned
+      had been generated by human experts. Furthermore, while LLM-generated documents scored higher and
+      performed at 720x the speed, their cost was, on average, only 0.06% that of a human expert. Overall,
+      these findings indicate that LLMs will play an increasingly important role in requirements engineering
+      by improving requirements definitions, enabling more efficient resource allocation, and reducing
+      overall project timelines.
+    evidence:
+      url: https://www.linkedin.com/in/cory-hymel
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: Improving Performance of Commercially Available AI Products in a Multi-Agent Configuration
+    venue: Arxiv
+    date: October 29, 2024
+    description: In recent years, with the rapid advancement of large language models (LLMs), multi-agent
+      systems have become increasingly more capable of practical application. At the same time, the software
+      development industry has had a number of new AI-powered tools developed that improve the software
+      development lifecycle (SDLC). Academically, much attention has been paid to the role of multi-agent
+      systems to the SDLC. And, while single-agent systems have frequently been examined in real-world
+      applications, we have seen comparatively few real-world examples of publicly available commercial
+      tools working together in a multi-agent system with measurable improvements. In this experiment
+      we test context sharing between Crowdbotics PRD AI, a tool for generating software requirements
+      using AI, and GitHub Copilot, an AI pair-programming tool. By sharing business requirements from
+      PRD AI, we improve the code suggestion capabilities of GitHub Copilot by 13.8% and developer task
+      success rate by 24.5% -- demonstrating a real-world example of commercially-available AI systems
+      working together with improved outcomes.
+    evidence:
+      url: https://www.linkedin.com/in/cory-hymel
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: 'The AI-Native Software Development Lifecycle: A Theoretical and Practical New Methodology'
+    venue: Arxiv
+    date: August 6, 2024
+    description: As AI continues to advance and impact every phase of the software development lifecycle
+      (SDLC), a need for a new way of building software will emerge. By analyzing the factors that influence
+      the current state of the SDLC and how those will change with AI we propose a new model of development.
+      This white paper proposes the emergence of a fully AI-native SDLC, where AI is integrated seamlessly
+      into every phase of development, from planning to deployment. We introduce the V-Bounce model, an
+      adaptation of the traditional V-model that incorporates AI from end to end. The V-Bounce model leverages
+      AI to dramatically reduce time spent in implementation phases, shifting emphasis towards requirements
+      gathering, architecture design, and continuous validation. This model redefines the role of humans
+      from primary implementers to primarily validators and verifiers with AI acting as an implementation
+      engine.
+    evidence:
+      url: https://www.linkedin.com/in/cory-hymel
+      observed_at: '2026-10-24T08:41:53Z'
+  spoken_languages:
+  - Objective C
+  - C
+  - C++
+  - Java
+  - Swift
+  recent_writing:
+  - title: Options Trading with GPT4o Price Predictions
+    url: https://www.linkedin.com/pulse/options-trading-gpt4o-price-predictions-cory-hymel-yycse
+    published: '2024-05-29T00:00:00.000Z'
+    channel: linkedin
+    summary: I don't advise anyone to do this. This was done as an experiment.
+  - title: The Intersection of the Future Labor Economy and AI.
+    url: https://www.linkedin.com/pulse/intersection-future-labor-economy-ai-cory-hymel
+    published: '2023-08-30T00:00:00.000Z'
+    channel: linkedin
+    summary: We typically talk about the future of work and AI as two seperate topics yet they are inevitably
+      intertwined. Here's a…
+  - title: What Will the Future of the AI and Machine Learning Industry Look Like?
+    url: https://www.linkedin.com/pulse/what-future-ai-machine-learning-industry-look-like-cory-hymel
+    published: '2023-05-31T00:00:00.000Z'
+    channel: linkedin
+    summary: AI applications catering to the mass public are moving towards larger-scale use for enterprises,
+      as big tech companies…
+  - title: Top 5 Trends to Track in the Future of Work
+    url: https://www.linkedin.com/pulse/top-5-trends-track-future-work-cory-hymel
+    published: '2023-05-30T00:00:00.000Z'
+    channel: linkedin
+    summary: In the past few years, companies and employees have completely changed the way they work.
+      It’s becoming increasingly…
+  - title: 'Blockchain HR: How Decentralization Will Affect Human Resource Structures in 2023'
+    url: https://www.linkedin.com/pulse/blockchain-hr-how-decentralization-affect-human-resource-cory-hymel
+    published: '2023-01-19T00:00:00.000Z'
+    channel: linkedin
+    summary: The unmatched pace of change in the business world has increased uncertainty, complexity,
+      and ambiguity in existing…
+  - title: The Future of Web3 in Entertainment
+    url: https://www.linkedin.com/pulse/future-web3-entertainment-cory-hymel
+    published: '2022-11-15T00:00:00.000Z'
+    channel: linkedin
+    summary: The entertainment industry is rife with headlines about vague royalty plans, treacherous
+      intermediaries, bad contracts,…
+  - title: Changing the Perception of Web3 from Investment Vehicle to Much More
+    url: https://www.linkedin.com/pulse/changing-perception-web3-from-investment-vehicle-much-cory-hymel
+    published: '2022-11-14T00:00:00.000Z'
+    channel: linkedin
+    summary: The first thing that comes to most people’s minds at the mention of Web3 is the news of Bitcoin
+      hitting record highs…
+  talks:
+  - session:2024/ai1886d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1722013737441001OlJr
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

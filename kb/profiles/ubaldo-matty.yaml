@@ -1,0 +1,270 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ubaldo-matty
+  person: person:ubaldo-matty
+  brief_bio:
+    text: Ubaldo Matty was director of Expert Services at GitHub, leading a team that helps enterprise
+      customers make full use of the platform, when speaking at GitHub Universe 2025. Matty spoke about
+      using GitHub Copilot to accelerate legacy modernization in banking.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 537ee611b1e6f1ad85022f1ea4b56da474515c97232d54464a65053fae810b97
+    stale: false
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1317b
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1317b
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1317b
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1317b
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1317b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/aut1317b
+  - label: Java
+    target: software:java
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Java
+      ref: session:2025/aut1317b
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746138010843001EmeQ
+      ref: session:2025/aut1317b
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746138010843001EmeQ
+      ref: session:2025/aut1317b
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746138010843001EmeQ
+      ref: session:2025/aut1317b
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746138010843001EmeQ
+      ref: session:2025/aut1317b
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746138010843001EmeQ
+      ref: session:2025/aut1317b
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746138010843001EmeQ
+      ref: session:2025/aut1317b
+  credentials:
+  - kind: certification
+    title: Management of Change Practitioner
+    issuer: APMG International
+    date: May 2019
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: PRINCE2® 2017 Foundation & Practitioner
+    issuer: PeopleCert
+    date: May 2019
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: PRINCE2® 2017 Project Management Certifications
+    issuer: PRINCE2 Training
+    date: May 2019
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: Professional Scrum Master I (PSMI)
+    issuer: Scrum.org
+    date: May 2019
+    url: https://www.scrum.org/certification-list
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: Scrum Master
+    issuer: The Knowledge Academy
+    date: May 2019
+    url: https://www.credential.net/mhxgz5xn
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: Certified ACCPAC Consultant
+    issuer: Accpac International
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: Microsoft Certified Database Administrator
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: Microsoft Certified System Engineer
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: Microsoft Certified Trainer
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: certification
+    title: SCO UNIX Administration
+    issuer: SCO
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  publications:
+  - title: The Agile Mindset
+    venue: Ubaldo Matty
+    date: September 10, 2018
+    description: A journey through agile using experiences from my career to demonstrate the 4 concepts
+      of agile/
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  spoken_languages:
+  - Creoles and pidgins, French-based
+  - French
+  - English
+  activities:
+  - kind: project
+    title: QatarGas LNG Maritime Shipping Software Deployment & Integration
+    detail: Delivery of an automated software solution that covers demand planning, scheduling, fleet
+      optimisation and fleet performance calculation for the delivery of Liquefied Natural Gas (LNG) to
+      one of the world's largest producers of LNG. · 2012
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: project
+    title: Commercial maritime software deployment (oil majors)
+    detail: Responsible for program managing the implementation of ERP software solution for 2 Oil Majors
+      as part of a merger. Contract awarded was USD 15 million for a period of 2 years. A pivotal contract
+      for the software company which I was part of at that time.
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: project
+    title: Commercial maritime software deployment projects
+    detail: Led delivery of ERP Software solutions to Subsea 7, CMA CGM, DOW, Bahri, Shell, Statoil, Carnival
+      Cruise lines and over 15 other maritime organisations with a combined worth of over 25 million in
+      project revenue over a 4 year period.
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: project
+    title: Defence workforce management implementation & Integration
+    detail: Led the delivery of a complex people logistic ERP software to the Royal Australian Navy and
+      Ministry of Defence which impacted more than 20 countries and more 150,000 armed forces.
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: project
+    title: Distance education software development
+    detail: Pioneered the development and roll-out of a distance education software solution for a large
+      educational institution serving 30,000 off-campus students.
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  - kind: project
+    title: NATO Workforce Management Implementation & Integration Project
+    detail: Led the Delivery of an Automated Personnel Management System (APMS) worth 10 million GBP to
+      NATO and its 26 member nations which aided in their logistical management of the NATO forces.
+    evidence:
+      url: https://www.linkedin.com/in/ubaldo-matty
+      observed_at: '2026-10-24T08:50:08Z'
+  talks:
+  - session:2025/aut1317b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699444784336001pvqO
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

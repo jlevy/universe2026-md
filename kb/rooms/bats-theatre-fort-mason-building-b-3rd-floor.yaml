@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:bats-theatre-fort-mason-building-b-3rd-floor
+  name: BATS Theatre
+  label: BATS Theatre @ Fort Mason Building B, 3rd Floor
+  venue: venue:building-b
+  location_note: 3rd Floor
+  capacity: 190
+  source_ids:
+  - 1785186576615001aBqn
+  sessions:
+  - session:bld1372b
+  - session:bld1776b
+  - session:bld1779p
+  - session:ldr1107b
+  - session:ldr1634p
+  - session:ldr1684b
+  - session:ldr1789b
+  - session:ldr1905b
+  - session:tru1100b
+  - session:tru1783b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

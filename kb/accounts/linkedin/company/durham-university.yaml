@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/durham-university
+  platform: linkedin
+  handle: company/durham-university
+  url: https://www.linkedin.com/company/durham-university
+  display_name: Durham University
+  bio: A leading UK university. We offer the inspiration, you achieve the outstanding. Across the University
+    we have a huge variety of roles and career opportunities, which together make us a large and successful
+    community, which is a key hub of activity within our region and nationally. For further information
+    on joining our thriving University please visit our website - https://www.durham.ac.uk/job-vacancies/
+  website: https://www.durham.ac.uk/
+  followers: 238486
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQETgwS-iaf06Q/company-logo_200_200/company-logo_200_200/0/1704724392953/durham_university_logo?e=2147483647&v=beta&t=hQQy4tkPaIvU49y13_dqZBcru_OdvGpEnOxuk43jccg
+  owner: org:durham-university
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/sueblack
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/durham-university
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

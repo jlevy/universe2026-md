@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/gh-stack
+  full_name: github/gh-stack
+  url: https://github.com/github/gh-stack
+  description: GitHub Stacked PRs
+  homepage: https://gh.io/stacks
+  stars: 1718
+  forks: 86
+  watchers: 5
+  open_issues: 155
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Go
+  topics:
+  - cli
+  - gh-extension
+  - github
+  - stacked-prs
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-02-06T17:49:56Z'
+  pushed_at: '2026-10-23T18:48:13Z'
+  owner_login: github
+  owner: gh:github
+  pinned_by:
+  - gh:skarim
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: skarim
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/gh-stack
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

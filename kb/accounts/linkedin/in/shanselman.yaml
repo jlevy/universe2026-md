@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/shanselman
+  platform: linkedin
+  handle: in/shanselman
+  url: https://www.linkedin.com/in/shanselman
+  display_name: Scott Hanselman
+  bio: Programmer, Teacher, Speaker, Large Systems Architect, Podcaster, Author, Specialist in…
+  location: Portland
+  followers: 146537
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHGdAvCFk3-xA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731094253710?e=2147483647&v=beta&t=d6b3JAkA5BEO_vPdI8LwX_OAiqFQCTKZa_KYXYlYeRo
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQE5OzozyMNdwQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1704232615138?e=2147483647&v=beta&t=x7_jbbJX0rTLBVO_y-R1SQ77UHBaBjWiOIf5g1obCCA
+  owner: person:scott-hanselman
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694020705651001C74o
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/shanselman
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

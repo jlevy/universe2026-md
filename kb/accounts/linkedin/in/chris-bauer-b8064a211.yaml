@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/chris-bauer-b8064a211
+  platform: linkedin
+  handle: in/chris-bauer-b8064a211
+  url: https://www.linkedin.com/in/chris-bauer-b8064a211
+  display_name: Chris Bauer
+  bio: I am a software developer with 7 years of experience. I started as a freelance fullstack…
+  location: Wrocław
+  followers: 197
+  connections: 192
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGscYNN7YDA7A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1679324482946?e=2147483647&v=beta&t=OJritmtCT7lJjF2h2OsHyXS1HUN2uh7B1Z4Sfa6YTyQ
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQFwHKzAptUs5A/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1699353013475?e=2147483647&v=beta&t=mD3H60mVKNjh09KL1oQfGnboSR4moTERrbzMHpxBR94
+  owner: person:chris-alex-bauer
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715371804978001KZ0b
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/chris-bauer-b8064a211
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/a_chocka
+  platform: x
+  handle: a_chocka
+  url: https://x.com/a_chocka
+  display_name: Annamalai Chockalingam
+  location: New York, USA
+  followers: 26
+  following: 139
+  posts_count: 1
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1530009154441584641/VSumjj7e_normal.jpg
+  created_at: '2022-05-27T01:49:10Z'
+  owner: person:annamalai-chockalingam
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1792185660142001bW4V
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/a_chocka
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/elizabeth-pemmerl-9172485
+  platform: linkedin
+  handle: in/elizabeth-pemmerl-9172485
+  url: https://www.linkedin.com/in/elizabeth-pemmerl-9172485
+  display_name: Elizabeth Pemmerl
+  location: Washington
+  followers: 6866
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQF0_vhw9rCPlw/profile-displayphoto-shrink_200_200/B4EZckKPpKHkAY-/0/1748658355947?e=2147483647&v=beta&t=PYXvVW_ZU9i9ISwydteMIGxYPCHQWradbNTyfc4W8LU
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEZMLymsZTAbg/profile-displaybackgroundimage-shrink_200_800/B4EZ3kpjlWIMAU-/0/1777657592909?e=2147483647&v=beta&t=tTpddFzCiiyqWzOAXSangmxsiAuZaGiuZpzKCCFb94U
+  owner: person:elizabeth-pemmerl
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695061532838001K0Oj
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/elizabeth-pemmerl-9172485
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

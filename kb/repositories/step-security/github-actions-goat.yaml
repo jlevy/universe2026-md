@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:step-security/github-actions-goat
+  full_name: step-security/github-actions-goat
+  url: https://github.com/step-security/github-actions-goat
+  description: 'GitHub Actions Goat: Deliberately Vulnerable GitHub Actions CI/CD Environment'
+  homepage: https://www.stepsecurity.io
+  stars: 522
+  forks: 348
+  watchers: 7
+  open_issues: 13
+  stats_observed_at: '2026-10-24T19:12:25Z'
+  primary_language: JavaScript
+  topics:
+  - security
+  - actions
+  - devsecops
+  - hacking
+  - attack-simulation
+  - attack-simulator
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2021-09-03T19:18:04Z'
+  pushed_at: '2025-06-27T08:19:17Z'
+  owner_login: step-security
+  owner: gh:step-security
+  pinned_by:
+  - gh:step-security
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: step-security
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: step-security/github-actions-goat
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

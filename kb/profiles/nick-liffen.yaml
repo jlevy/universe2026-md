@@ -1,0 +1,482 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:nick-liffen
+  person: person:nick-liffen
+  brief_bio:
+    text: Nick Liffen is a senior director in GTM strategy at GitHub who brings customer insights into
+      product development, with a focus on DevSecOps. Liffen spoke at GitHub Universe 2023, 2024 and 2025
+      and speaks at GitHub Universe 2026 about agentic engineering in the enterprise.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 4948108f9141e620cd05f3ee6314dee78ea23359c838e63b9845a02568161f20
+    stale: false
+  headline: GTM Strategy at GitHub
+  location: Reading
+  current_roles:
+  - GTM Strategy at GitHub
+  expertise:
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/sec1499g
+    - ref: session:2023/sec2827l
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec1499g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec1499g
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec1499g
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2827l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2827l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1175b
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1294b
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1294b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1294b
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1294b
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1294b
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1354b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1354b
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/sec1499g
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1354b
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/sec1175b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1354b
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1354b
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:nickliffen/ghas-enablement
+    - ref: repo:advanced-security/gssar
+    - ref: repo:nickliffen/codescanningtoslack
+    - ref: repo:nickliffen/gcsmttr
+    - ref: repo:nickliffen/ghas-licence
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:nickliffen/nickliffen-me
+  interests:
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695148885819001IFw4
+      ref: session:2023/sec2827l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.82
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746124164262001CW3S
+      ref: session:2025/aut1294b
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.82
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.7
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746124164262001CW3S
+      ref: session:2025/aut1294b
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 0.7
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695148885819001IFw4
+      ref: session:2023/sec2827l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 0.55
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1685628998532001wmxr
+      ref: session:2023/sec1499g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.55
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746124164262001CW3S
+      ref: session:2025/aut1294b
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777539050990001fp0w
+      ref: session:bld1354b
+  - label: GitHub Secret Protection
+    target: term:github-product-2025/github-secret-protection
+    basis: session_facets
+    confidence: medium
+    weight: 0.55
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746124164262001CW3S
+      ref: session:2025/aut1294b
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777539050990001fp0w
+      ref: session:bld1354b
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    weight: 0.55
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746124164262001CW3S
+      ref: session:2025/aut1294b
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777539050990001fp0w
+      ref: session:bld1354b
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: high
+    weight: 0.45
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746124164262001CW3S
+      ref: session:2025/aut1294b
+    - url: https://github.com/ScottBrenner/cfn-lint-action
+      ref: repo:scottbrenner/cfn-lint-action
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777539050990001fp0w
+      ref: session:bld1354b
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714735737637001rMmH
+      ref: session:2024/sec1175b
+  open_source:
+  - repository: repo:nickliffen/ghas-enablement
+    relation: owner
+    stars: 157
+    primary_language: TypeScript
+  - repository: repo:scottbrenner/cfn-lint-action
+    relation: pinned
+    stars: 77
+    primary_language: JavaScript
+  - repository: repo:advanced-security/gssar
+    relation: pinned
+    stars: 51
+    primary_language: TypeScript
+  - repository: repo:nickliffen/codescanningtoslack
+    relation: owner
+    stars: 18
+    primary_language: TypeScript
+  - repository: repo:nickliffen/gcsmttr
+    relation: owner
+    stars: 14
+    primary_language: TypeScript
+  - repository: repo:nickliffen/ghas-licence
+    relation: owner
+    stars: 12
+    primary_language: TypeScript
+  - repository: repo:nickliffen/nickliffen-me
+    relation: owner
+    stars: 0
+    primary_language: HTML
+  education:
+  - school: University of Oxford
+    evidence:
+      url: https://www.linkedin.com/in/nickliffen
+      observed_at: '2026-10-24T08:15:09Z'
+  credentials:
+  - kind: honor
+    title: Six Sigma Green Belt Certification
+    issuer: Six Sigma
+    date: '2018-11-01T00:00:00.000Z'
+    description: 'Certified Six Sigma Green Belt: https://www.theleansixsigmacompany.co.uk/green-belt-course/'
+    evidence:
+      url: https://www.linkedin.com/in/nickliffen
+      observed_at: '2026-10-24T08:15:09Z'
+  activities:
+  - kind: project
+    title: Lilly's InnerSourcing Journey - GitHub Universe 2018 Presentation
+    detail: Eli Lilly has been on a culture shift with the way it adopts technology and modern processes
+      and practices. Being the product owner multiple emerging technologies within Lilly (Heroku, GitHub,
+      Jenkins, etc), there was a fantastic opportunity to help embed new services/platforms across the
+      enterprise by creating an innersourcing community. I was responsible for coming up with a strategy
+      on how to start an innersourcing practice within Lilly and how to increase adoption of modern platforms
+      whilst maintaining a good level of customer experience. Please see the attached youtube link for
+      more information, where I got the fantastic opportunity to present at GitHub Universe 2018 on Lilly's
+      InnerSourcing journey. · Nov 2016
+    evidence:
+      url: https://www.linkedin.com/in/nickliffen
+      observed_at: '2026-10-24T08:15:09Z'
+  - kind: organization
+    title: Eli Lilly & Company
+    detail: Between October 2017 & 2018, I was fortunate enough to be accepted for a 12 month assignment
+      at Eli Lilly's headquarters in Indianapolis; to help drive the adoption of emerging technologies.
+      I was responsible for driving & implementing the roadmap for Heroku, GitHub, Artifactory, Contentful,
+      and towards the end of my assignment, Jenkins. During this assignment I was also responsible for
+      helping implement the InnerSourcing strategy. · Oct 2017 · Oct 2018
+    evidence:
+      url: https://www.linkedin.com/in/nickliffen
+      observed_at: '2026-10-24T08:15:09Z'
+  recent_writing:
+  - title: Nick Liffen's Blog | What am I most excited about going into 2026 when it come to AI in Software
+      Development? | Blog Post
+    url: https://nickliffen.dev/articles/what-excites-me-in-2026.html
+    published: '2026-01-09T00:00:00Z'
+    channel: blog
+  - title: 'Nick Liffen''s Blog | Leadership Principles: Guiding the Way to Success | Blog Post'
+    url: https://nickliffen.dev/articles/leadership-principles.html
+    published: '2023-07-04T00:00:00Z'
+    channel: blog
+  - title: Nick Liffen's Blog | Why Advanced Security? | Blog Post
+    url: https://nickliffen.dev/articles/why-advanced-security.html
+    published: '2022-02-06T00:00:00Z'
+    channel: blog
+  - title: Nick Liffen's Blog | The Importance of Developer Experience | Blog Post
+    url: https://nickliffen.dev/articles/developer-evolution.html
+    published: '2021-09-11T00:00:00Z'
+    channel: blog
+  - title: Nick Liffen's Blog | Coordinating a multi-lambda software product | Blog Post
+    url: https://nickliffen.dev/articles/step-functions.html
+    published: '2021-08-29T00:00:00Z'
+    channel: blog
+  - title: Nick Liffen's Blog | An InnerSourcing Approach within an Enterprise | Blog Post
+    url: https://nickliffen.dev/articles/innersourcing.html
+    published: '2021-02-14T00:00:00Z'
+    channel: blog
+  - title: Nick Liffen's Blog | Centralised vs Decentralised DevOps | Blog Post
+    url: https://nickliffen.dev/articles/centralised-vs-decentralised-devops.html
+    published: '2021-02-07T00:00:00Z'
+    channel: blog
+  - title: Nick Liffen's Blog | Review of GitHub Code Scanning | Blog Post
+    url: https://nickliffen.dev/articles/review-ghas-code-scanning-enterprise.html
+    published: '2021-01-30T00:00:00Z'
+    channel: blog
+  - title: Nick Liffen's Blog | Building a Simple Website | Blog Post
+    url: https://nickliffen.dev/articles/building-a-simple-website.html
+    published: '2021-01-21T00:00:00Z'
+    channel: blog
+  - title: '#DevOpsWorld - Eli Lilly''s Jenkins Journey'
+    url: https://www.linkedin.com/pulse/devopsworld-eli-lillys-jenkins-journey-nicholas-liffen
+    published: '2019-08-16T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Earlier this week I was lucky enough to present at #DevOpsWorld on Eli Lilly’s DevOps Journey,
+      specifically around…'
+  talks:
+  - session:2023/sec1499g
+  - session:2023/sec2827l
+  - session:2024/sec1175b
+  - session:2024/sec2234o
+  - session:2025/aut1294b
+  - session:bld1354b
+  gaps:
+  - x_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685628214607001rF1d
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: NickLiffen
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685628214607001rF1d
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685628214607001rF1d
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685628214607001rF1d
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

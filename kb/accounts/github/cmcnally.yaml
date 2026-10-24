@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:cmcnally
+  login: cmcnally
+  kind: user
+  url: https://github.com/cmcnally
+  name: Catharine McNally
+  location: Alexandria, VA
+  followers: 25
+  public_repositories: 3
+  created_at: '2012-08-03T14:10:11Z'
+  contributions_last_year:
+    total: 75
+    commits: 57
+    pull_requests: 7
+    issues: 6
+    reviews: 0
+  starred_repositories: 2
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 53
+  contributed_to:
+  - repo:github/research-panel-sweepstakes
+  - repo:github/app
+  - repo:github/replica
+  entity: person:catharine-mcnally
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cmcnally
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

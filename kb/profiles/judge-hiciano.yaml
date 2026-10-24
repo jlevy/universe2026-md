@@ -1,0 +1,99 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:judge-hiciano
+  person: person:judge-hiciano
+  brief_bio:
+    text: Judge Hiciano was a Staff Manager of Applied Science at GitHub, bringing AI into Copilot Next
+      Edit Suggestions and Copilot Code Review, when speaking at GitHub Universe 2025. Hiciano spoke there
+      about evaluating LLMs for GitHub Copilot.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 157121872fb33c60db79898b76c004071b988aefa9359667a912d2344b7c8bdf
+    stale: false
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1786b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1786b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:judge-hiciano
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758816192131001ywhz
+      ref: session:2025/bld1786b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758816192131001ywhz
+      ref: session:2025/bld1786b
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758816192131001ywhz
+      ref: session:2025/bld1786b
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758816192131001ywhz
+      ref: session:2025/bld1786b
+  talks:
+  - session:2025/bld1786b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  - linkedin_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745965234622001Hznh
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:ossf/wg-securing-software-repos
+  full_name: ossf/wg-securing-software-repos
+  url: https://github.com/ossf/wg-securing-software-repos
+  description: OpenSSF Working Group on Securing Software Repositories
+  stars: 134
+  forks: 35
+  watchers: 36
+  open_issues: 10
+  stats_observed_at: '2026-10-24T19:12:10Z'
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2022-03-30T15:21:59Z'
+  pushed_at: '2026-04-06T21:47:10Z'
+  owner_login: ossf
+  owner: gh:ossf
+  pinned_by:
+  - gh:ossf
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ossf
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ossf/wg-securing-software-repos
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

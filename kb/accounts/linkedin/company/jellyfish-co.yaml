@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/jellyfish-co
+  platform: linkedin
+  handle: company/jellyfish-co
+  url: https://www.linkedin.com/company/jellyfish-co
+  display_name: Jellyfish
+  bio: Jellyfish is the leading intelligence platform for AI-Integrated engineering, helping more than
+    1,000 companies including DraftKings, Box and Blue Yonder, leverage AI to transform how they build
+    software. By combining the industry's deepest engineering dataset with context-rich intelligence,
+    Jellyfish helps R&D organizations understand what's driving impact, adopt proven industry best practices,
+    and make smarter decisions across AI adoption, planning, delivery, and engineering performance. Learn
+    more at jellyfish.co
+  website: https://jellyfish.co/
+  followers: 23514
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQF5fzw6hTqZCg/company-logo_200_200/company-logo_200_200/0/1693487097209/jellyfish_co_logo?e=2147483647&v=beta&t=uNRPsg8747LgrZ8q20nAu7ZQlcytN50sHU9wpFWTwY0
+  owner: org:jellyfish
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/adamferrari
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/amlau
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/jellyfish-co
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

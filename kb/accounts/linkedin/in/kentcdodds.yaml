@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kentcdodds
+  platform: linkedin
+  handle: in/kentcdodds
+  url: https://www.linkedin.com/in/kentcdodds
+  display_name: Kent C. Dodds
+  bio: My mission is to make the world a better place through quality software. I do that…
+  location: American Fork
+  followers: 13926
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFCtqNanEk4RA/profile-displayphoto-scale_200_200/B56aCMiCauK0Ao-/0/1789064130376?e=2147483647&v=beta&t=kAoS4dep3Sxvb_fPZBk0J0BWqoEJUIJ7ZVAMJuirgt0
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQGgzC7kss7gvg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1516852533445?e=2147483647&v=beta&t=TMBix-QsNZc3ylVg0nMb0997D9oET82d26zBsnYol4c
+  owner: person:kent-c-dodds
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785971794624001WhyC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kentcdodds
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,70 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:adamhjk
+  login: adamhjk
+  kind: user
+  url: https://github.com/adamhjk
+  name: Adam Jacob
+  company: '@systeminit'
+  location: San Francisco, CA
+  website: http://systeminit.com
+  followers: 403
+  public_repositories: 80
+  created_at: '2008-04-02T18:54:10Z'
+  contributions_last_year:
+    total: 604
+    commits: 408
+    pull_requests: 110
+    issues: 68
+    reviews: 2
+  starred_repositories: 115
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  - 2011
+  - 2010
+  - 2009
+  - 2008
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 249
+  contributed_to:
+  - repo:systeminit/si
+  - repo:paulodetiege/foundrybwcompendium
+  - repo:omacom/omarchy
+  - repo:swamp-club/swamp
+  - repo:systeminit/embrace-ai-presentation
+  organization_logins:
+  - sfosc
+  top_repositories:
+  - repo:adamhjk/munin-graphite
+  - repo:adamhjk/chef-jenkins
+  - repo:adamhjk/adam-vim
+  linked_accounts:
+  - acct:x/adamhjk
+  entity: person:adam-jacob
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: adamhjk
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

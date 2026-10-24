@@ -1,0 +1,362 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:pareena-verma
+  person: person:pareena-verma
+  brief_bio:
+    text: Pareena Verma is Solutions Director and Distinguished Engineer at Arm, helping developers build,
+      test and run software natively on Arm from cloud to edge. Verma spoke at GitHub Universe 2024 about
+      ML deployment on Arm-based GitHub runners and at Universe 2025 about Arm's MCP Server for cloud
+      migration.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: affebc737fa33e67aa57ab878a304d8369129f3c26137d6859b4835cfaf78e4b
+    stale: false
+  headline: Arm
+  current_roles:
+  - Arm
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/dev1879s
+    - ref: session:2024/dev1936m
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/dev1879s
+    - ref: session:2024/dev1936m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1879s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1936m
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Infrastructure as code
+    target: term:topic-2025/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Kubernetes
+    target: term:topic-2025/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1877d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2024/dev1879s
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/dev1936m
+  - label: Linux
+    target: software:linux
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Linux
+      ref: session:2025/bld1877d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/bld1877d
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721639001148001Dkhy
+      ref: session:2024/dev1879s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760112502635001EbnM
+      ref: session:2025/bld1877d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721639001148001Dkhy
+      ref: session:2024/dev1879s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760112502635001EbnM
+      ref: session:2025/bld1877d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760112502635001EbnM
+      ref: session:2025/bld1877d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760112502635001EbnM
+      ref: session:2025/bld1877d
+  - label: Machine learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721639001148001Dkhy
+      ref: session:2024/dev1879s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760112502635001EbnM
+      ref: session:2025/bld1877d
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760112502635001EbnM
+      ref: session:2025/bld1877d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760112502635001EbnM
+      ref: session:2025/bld1877d
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760112502635001EbnM
+      ref: session:2025/bld1877d
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1760112502635001EbnM
+      ref: session:2025/bld1877d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724268464979001ylnM
+      ref: session:2024/dev1936m
+  education:
+  - school: University of Florida
+    evidence:
+      url: https://www.linkedin.com/in/pareena-verma-7853607
+      observed_at: '2026-10-24T08:47:08Z'
+  talks:
+  - session:2024/dev1879s
+  - session:2024/dev1936m
+  - session:2025/bld1877d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721639118843001a4VI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721639118843001a4VI
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,191 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:vanessa-minik
+  person: person:vanessa-minik
+  brief_bio:
+    text: Vanessa Minik is a Senior Service Delivery Engineer on GitHub's Expert Learning Services team,
+      focused on GitHub Copilot adoption and enablement. Minik spoke at GitHub Universe 2023 and speaks
+      at GitHub Universe 2026 on admin readiness for AI usage management.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 020a5923348576bfe4a09356a9646e24494990c7e528442e62865249deea5b80
+    stale: false
+  headline: Senior Service Delivery Engineer at GitHub
+  location: Denver, CO
+  current_roles:
+  - Senior Service Delivery Engineer at GitHub
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/ai2748w
+    - ref: session:2023/ai2852w
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:vanessa-minik
+  - label: Microsoft Azure
+    target: software:azure
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure
+      ref: session:2023/ai2748w
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490713001KjVO
+      ref: session:2023/ai2748w
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695674530480001aeS6
+      ref: session:2023/ai2852w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787682427062001faHU
+      ref: session:bld1824w
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490713001KjVO
+      ref: session:2023/ai2748w
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695674530480001aeS6
+      ref: session:2023/ai2852w
+  - label: Enterprise/Admin
+    target: term:github-product/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787682427062001faHU
+      ref: session:bld1824w
+  open_source:
+  - repository: repo:ps-copilot-sandbox/copilot-administration-security
+    relation: contributor
+    stars: 2
+  - repository: repo:ps-copilot-sandbox/copilot-intermediate-gallery-repo
+    relation: contributor
+    stars: 10
+    primary_language: TypeScript
+  - repository: repo:githubschool/copilot-non-developers-training
+    relation: contributor
+    stars: 2
+  - repository: repo:githubschool/github-copilot-201-workshop
+    relation: contributor
+    stars: 0
+    primary_language: TypeScript
+  - repository: repo:copilot-co/copilot-intermediate-gallery-repo
+    relation: contributor
+    stars: 0
+    primary_language: TypeScript
+  education:
+  - school: Indiana University Bloomington
+    evidence:
+      url: https://www.linkedin.com/in/vanessa-minik-47ab9410a
+      observed_at: '2026-10-24T08:15:14Z'
+  credentials:
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Nov 2025
+    evidence:
+      url: https://www.linkedin.com/in/vanessa-minik-47ab9410a
+      observed_at: '2026-10-24T08:15:14Z'
+  - kind: certification
+    title: GitHub Copilot
+    issuer: GitHub
+    date: Jan 2025
+    expires: Jan 2028
+    url: https://www.credly.com/badges/93e3a06a-f91c-4bea-a2da-cd79429413ae/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/vanessa-minik-47ab9410a
+      observed_at: '2026-10-24T08:15:14Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Oct 2025
+    expires: Oct 2027
+    evidence:
+      url: https://www.linkedin.com/in/vanessa-minik-47ab9410a
+      observed_at: '2026-10-24T08:15:14Z'
+  - kind: certification
+    title: GitHub Foundations
+    issuer: GitHub
+    date: Sep 2025
+    expires: Sep 2027
+    evidence:
+      url: https://www.linkedin.com/in/vanessa-minik-47ab9410a
+      observed_at: '2026-10-24T08:15:14Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Sep 2023
+    expires: Sep 2026
+    url: https://www.credly.com/badges/c7f2ae92-b2fe-4f87-b61b-8abfd1b9d594/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/vanessa-minik-47ab9410a
+      observed_at: '2026-10-24T08:15:14Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure AI Fundamentals'
+    issuer: Microsoft
+    date: Jan 2025
+    expires: Jan 2026
+    evidence:
+      url: https://www.linkedin.com/in/vanessa-minik-47ab9410a
+      observed_at: '2026-10-24T08:15:14Z'
+  publications:
+  - title: Exploring the personal and professional factors associated with student evaluations of tenure-track
+      faculty
+    date: June 3, 2020
+    evidence:
+      url: https://www.linkedin.com/in/vanessa-minik-47ab9410a
+      observed_at: '2026-10-24T08:15:14Z'
+  talks:
+  - session:2023/ai2748w
+  - session:2023/ai2852w
+  - session:bld1824w
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248357001w6XF
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: vfm2
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248357001w6XF
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

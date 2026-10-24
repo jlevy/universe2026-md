@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:chrisreddington.com
+  url: https://chrisreddington.com/
+  kind: personal
+  title: Chris Reddington
+  description: Hey! I'm Chris Reddington, a seasoned Developer Relations expert and tech enthusiast who
+    loves bringing development teams and end-users closer together. Dive into my portfolio, explore the
+    latest in cloud computing, DevOps, and software development, and get a glimpse of what I'm working
+    on. Whether you want to learn something new or collaborate on exciting projects, let's connect!
+  owner: person:chris-reddington
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://chrisreddington.com/index.xml
+  linked_accounts:
+  - acct:linkedin/in/chrisreddington
+  - acct:x/reddobowen
+  sources:
+  - system: brightdata
+    url: https://x.com/reddobowen
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://chrisreddington.com/
+    record_id: https://chrisreddington.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:cloudsmith-io/orb
+  full_name: cloudsmith-io/orb
+  url: https://github.com/cloudsmith-io/orb
+  description: A reusable orb to help integrate Cloudsmith with CircleCI
+  stars: 3
+  forks: 3
+  watchers: 18
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  primary_language: Shell
+  topics:
+  - circleci
+  - circleci-orbs
+  archived: false
+  fork: false
+  created_at: '2019-07-17T10:54:03Z'
+  pushed_at: '2026-07-30T13:42:01Z'
+  owner_login: cloudsmith-io
+  owner: gh:cloudsmith-io
+  pinned_by:
+  - gh:cloudsmith-io
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cloudsmith-io
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cloudsmith-io/orb
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

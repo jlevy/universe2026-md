@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:melbourne-github-usergroup/talk-submissions
+  full_name: Melbourne-GitHub-Usergroup/Talk-Submissions
+  url: https://github.com/Melbourne-GitHub-Usergroup/Talk-Submissions
+  description: A place to put talk submissions
+  stars: 4
+  forks: 3
+  watchers: 1
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:31Z'
+  archived: false
+  fork: false
+  created_at: '2024-05-31T07:31:06Z'
+  pushed_at: '2026-09-10T23:49:12Z'
+  owner_login: Melbourne-GitHub-Usergroup
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dylan-mccarthy
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Melbourne-GitHub-Usergroup/Talk-Submissions
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

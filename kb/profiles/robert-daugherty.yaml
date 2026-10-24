@@ -1,0 +1,158 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:robert-daugherty
+  person: person:robert-daugherty
+  brief_bio:
+    text: The GitHub Universe 2023 listing describes Robert Daugherty as Chief Security Officer at Sierra
+      Nevada Corporation (SNC).
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 214dd63277fa44a10f1a4238e85f7af34984baa72a5473c6bf3223a56eef9086
+    stale: false
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2732m
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2732m
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2732m
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2732m
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2732m
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2732m
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/sec2732m
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1689094392389001bUiL
+      ref: session:2023/sec2732m
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1689094392389001bUiL
+      ref: session:2023/sec2732m
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1689094392389001bUiL
+      ref: session:2023/sec2732m
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1689094392389001bUiL
+      ref: session:2023/sec2732m
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1689094392389001bUiL
+      ref: session:2023/sec2732m
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1689094392389001bUiL
+      ref: session:2023/sec2732m
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1689094392389001bUiL
+      ref: session:2023/sec2732m
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1689094392389001bUiL
+      ref: session:2023/sec2732m
+  talks:
+  - session:2023/sec2732m
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695657527690001K7Ur
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

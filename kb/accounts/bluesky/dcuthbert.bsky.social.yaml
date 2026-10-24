@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/dcuthbert.bsky.social
+  platform: bluesky
+  handle: dcuthbert.bsky.social
+  url: https://bsky.app/profile/dcuthbert.bsky.social
+  display_name: Daniel Cuthbert
+  bio: Ageing hacker, long time documentary photographer. Black Hat Review board. Now sitting on numerous
+    government cyber security boards so I guess that means I’ve grown up right?
+  followers: 4609
+  created_at: '2023-04-27T01:58:48Z'
+  owner: person:daniel-cuthbert
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746150262007001cJ5v
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: dcuthbert.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

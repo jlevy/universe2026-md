@@ -1,0 +1,95 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:github-actions
+  name: GitHub Actions
+  aliases:
+  - GitHub Actions
+  kind: github_product
+  vendor: org:github
+  homepage: https://github.com/features/actions
+  product_term: term:github-product/actions
+  repositories:
+  - repo:actions/runner
+  - repo:actions/toolkit
+  mentioned_in:
+  - person:ankit-kumar-honey
+  - person:bassem-dghaidi
+  - person:brian-dehamer
+  - person:dhruv-gupta
+  - person:dustin-ellis
+  - person:eric-sondhi
+  - person:erik-englund
+  - person:joe-bourne
+  - person:josh-johanning
+  - person:kaush-ganguly
+  - person:kyle-daigle
+  - person:mario-parisi
+  - person:rob-bos
+  - person:steve-glass
+  - person:suhas-jaladi
+  - person:sumanth-mothkuri
+  - person:turgay-akbas
+  - person:usha-n
+  - person:yadhav-jayaraman
+  - session:2023/ai1845d
+  - session:2023/dev1044d
+  - session:2023/dev1972g
+  - session:2023/dev2074d
+  - session:2023/dev2378l
+  - session:2023/dev2716g
+  - session:2023/dev2743w
+  - session:2023/dev2749w
+  - session:2023/dev2750w
+  - session:2023/dev2756d
+  - session:2023/dev2769m
+  - session:2023/dev2778g
+  - session:2023/dev2779d
+  - session:2023/dev2879s
+  - session:2023/dev2885d
+  - session:2023/dev2895d
+  - session:2024/dev1221d
+  - session:2024/dev1643d
+  - session:2024/dev1860d
+  - session:2024/dev1873d
+  - session:2024/dev1879s
+  - session:2024/dev1936m
+  - session:2025/1905
+  - session:2025/aut1263m
+  - session:2025/aut1376m
+  - session:2025/aut1386d
+  - session:2025/aut1512s
+  - session:2025/aut1515d
+  - session:2025/aut1537d
+  - session:2025/aut1561d
+  - session:2025/aut1622w
+  - session:2025/aut1624m
+  - session:2025/aut1737d
+  - session:2025/bld1112s
+  - session:2025/bld1143m
+  - session:2025/bld1224b
+  - session:2025/bld1237b
+  - session:2025/bld1559d
+  - session:2025/sec1073d
+  - session:bld1638d
+  - session:bld1784d
+  - session:bld1825d
+  - session:ldr1032h
+  - session:ldr1281d
+  - session:ldr1684b
+  - session:ldr1725d
+  - session:ldr1765b
+  - session:ldr1786m
+  - session:ldr1800d
+  - session:ldr1905b
+  - session:tru1173d
+  - session:tru1333b
+  - session:tru1556m
+  - session:tru1798d
+  - session:tru1914a
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

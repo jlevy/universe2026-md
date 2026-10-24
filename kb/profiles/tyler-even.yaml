@@ -1,0 +1,191 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:tyler-even
+  person: person:tyler-even
+  brief_bio:
+    text: Tyler Even is Vice President of Research and Development at Precisely, leading AI development
+      transformation and helping teams adopt agentic workflows at scale. At GitHub Universe 2026, Tyler
+      Even speaks on measuring the success of GitHub Copilot at scale.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: a183a053c9405456881d6ce9968dbef6b6720aa307c2d924b97f8059de4694e4
+    stale: false
+  headline: VP, R&D at Precisely
+  current_roles:
+  - VP, R&D at Precisely
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:ldr1863b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1863b
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: Dependabot
+    target: term:github-product/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787934201233001QMLi
+      ref: session:ldr1863b
+  talks:
+  - session:ldr1863b
+  gaps:
+  - x_account
+  - website
+  - linkedin_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1752611720320001w5TT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tycillian
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

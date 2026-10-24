@@ -1,0 +1,112 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:josh-cannon
+  person: person:josh-cannon
+  brief_bio:
+    text: Josh Cannon was a Member of Technical Staff at Anthropic, working on build engineering and developer
+      productivity, when speaking at GitHub Universe 2024 about GitHub's merge queue.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: c26d9eb3e60a40030e0166024cb264ff80e581bcc546053ea11d3e9cc1a00c85
+    stale: false
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1382d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1382d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1382d
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1382d
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715220398236001jV6C
+      ref: session:2024/dev1382d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715220398236001jV6C
+      ref: session:2024/dev1382d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715220398236001jV6C
+      ref: session:2024/dev1382d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715220398236001jV6C
+      ref: session:2024/dev1382d
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715220398236001jV6C
+      ref: session:2024/dev1382d
+  talks:
+  - session:2024/dev1382d
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715005229901001S6Ka
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

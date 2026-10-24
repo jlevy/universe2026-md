@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/ztefan
+  platform: x
+  handle: Ztefan
+  url: https://x.com/Ztefan
+  display_name: Stefan
+  bio: cyber security guy; https://t.co/rhYDadExwb pwnz0rilla; https://t.co/jaWwbC53VF co-founder; linux
+    jihadists hater;
+  website: http://www.zeroscience.mk/
+  followers: 408
+  following: 2765
+  posts_count: 891
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1359213517241466883/VOU8T6N5_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/16194136/1437570494
+  created_at: '2008-09-08T23:36:58Z'
+  owner: person:stefan-petrushevski
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248219001wEPf
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248219001wEPf
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/Ztefan
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

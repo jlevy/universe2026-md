@@ -1,0 +1,194 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:eric-hollenberry
+  person: person:eric-hollenberry
+  brief_bio:
+    text: Eric Hollenberry is a principal product manager for metrics at GitHub, responsible for AI usage
+      metrics, and has spent 10 years helping people learn Git, GitHub and Copilot. Hollenberry speaks
+      at GitHub Universe 2026 on how AMD and ING measure AI at enterprise scale.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: fe8068490a8909d08b792501ea36aff500ea9346647fabb6ecb2eecc383866df
+    stale: false
+  headline: Principal Product Manager, Metrics at GitHub
+  location: Seattle, WA
+  current_roles:
+  - Principal Product Manager, Metrics at GitHub
+  expertise:
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1145b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1145b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1145b
+  technologies:
+  - label: Git
+    target: software:git
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Git
+      ref: person:eric-hollenberry
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:eric-hollenberry
+  interests:
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: cheatsheet
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/training-kit
+      ref: repo:github/training-kit
+  - label: cheatsheets
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/training-kit
+      ref: repo:github/training-kit
+  - label: courseware
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/training-kit
+      ref: repo:github/training-kit
+  - label: fieldservices
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/training-kit
+      ref: repo:github/training-kit
+  - label: git
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/training-kit
+      ref: repo:github/training-kit
+  - label: professionalservices
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/training-kit
+      ref: repo:github/training-kit
+  - label: training
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/training-kit
+      ref: repo:github/training-kit
+  - label: training-kit
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/training-kit
+      ref: repo:github/training-kit
+  open_source:
+  - repository: repo:github/training-kit
+    relation: pinned
+    stars: 5122
+    primary_language: HTML
+  talks:
+  - session:ldr1145b
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699462765566001lKc9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: hollenberry
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

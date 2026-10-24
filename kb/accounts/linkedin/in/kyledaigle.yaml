@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kyledaigle
+  platform: linkedin
+  handle: in/kyledaigle
+  url: https://www.linkedin.com/in/kyledaigle
+  display_name: Kyle Daigle
+  bio: I operate at the intersection of developer experience, platform strategy, and…
+  location: Greater Hartford
+  followers: 14226
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGfzfU5AwC_aA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1712319381689?e=2147483647&v=beta&t=h7pxtKFnoaPXIC9eX617p3vLLUM29xA4Duk-x6_27G4
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQFEDI8iJeJrPQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1691590778597?e=2147483647&v=beta&t=747sYK5GUZ88fvLeS6fn4RLhAnV_6viGmlArY_E23Lg
+  owner: person:kyle-daigle
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686223662274001trIu
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686223662274001trIu
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kyledaigle
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kdaigle
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

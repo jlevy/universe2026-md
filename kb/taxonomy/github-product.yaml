@@ -1,0 +1,73 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: github-product
+  event: event:github-universe-2026
+  label: GitHub product
+  multi_valued: true
+  terms:
+  - id: term:github-product/supply-chain-security
+    label: Supply Chain Security
+    source_id: 1681323318975004ze6Z
+    session_count: 21
+  - id: term:github-product/actions
+    label: Actions
+    source_id: 1681323318975002z5gZ
+    session_count: 40
+  - id: term:github-product/codespaces
+    label: Codespaces
+    source_id: 1681323318975005zXHm
+    session_count: 9
+  - id: term:github-product/dependabot
+    label: Dependabot
+    source_id: 1741125798290001czVO
+    session_count: 11
+  - id: term:github-product/discussions
+    label: Discussions
+    source_id: 1681323318975007zNtf
+    session_count: 4
+  - id: term:github-product/github-code-security
+    label: GitHub Code Security
+    source_id: 1741125798290003cK3c
+    session_count: 25
+  - id: term:github-product/github-copilot
+    label: GitHub Copilot
+    source_id: 1681323318975006zEYH
+    session_count: 99
+  - id: term:github-product/github-enterprise-cloud
+    label: GitHub Enterprise Cloud
+    source_id: 1741125798290005cagp
+    session_count: 27
+  - id: term:github-product/github-enterprise-server
+    label: GitHub Enterprise Server
+    source_id: 1741125798290006c1I6
+    session_count: 8
+  - id: term:github-product/github-secret-protection
+    label: GitHub Secret Protection
+    source_id: 1741125798290002cI8G
+    session_count: 11
+  - id: term:github-product/marketplace
+    label: Marketplace
+    source_id: 1741125798290007cHJ6
+    session_count: 1
+  - id: term:github-product/projects-and-issues
+    label: Projects and Issues
+    source_id: option_1709310317052
+    session_count: 15
+  - id: term:github-product/vs-code
+    label: VS Code
+    source_id: 1741256139794001fpLT
+    session_count: 28
+  - id: term:github-product/enterprise-admin
+    label: Enterprise/Admin
+    source_id: 1681323318975009z429
+    session_count: 1
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681323318992001zJbt
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/attributes.json

@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/angiejones.tech
+  platform: bluesky
+  handle: angiejones.tech
+  url: https://bsky.app/profile/angiejones.tech
+  display_name: Angie Jones
+  bio: |-
+    Tech's Favorite Auntie
+    VP Eng, AI Tools & Enablement @ Block
+    #techgirl1908
+  followers: 66700
+  created_at: '2023-04-21T04:39:14Z'
+  owner: person:angie-jones
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: angiejones
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: angiejones.tech
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:projectbluefin/finpilot
+  full_name: projectbluefin/finpilot
+  url: https://github.com/projectbluefin/finpilot
+  description: Build your own custom Bluefin
+  stars: 129
+  forks: 26
+  watchers: 1
+  open_issues: 4
+  stats_observed_at: '2026-10-24T19:12:17Z'
+  primary_language: Shell
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2025-01-02T14:08:27Z'
+  pushed_at: '2026-10-24T09:14:21Z'
+  owner_login: projectbluefin
+  pinned_by:
+  - gh:castrojo
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: castrojo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: projectbluefin/finpilot
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

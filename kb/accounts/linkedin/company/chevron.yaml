@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/chevron
+  platform: linkedin
+  handle: company/chevron
+  url: https://www.linkedin.com/company/chevron
+  display_name: Chevron
+  bio: 'Our greatest resource is our people. Their ingenuity, creativity and collaboration have met the
+    complex challenges of energy’s past. Together, we’ll take on the future. We support the LinkedIn Terms
+    of Use (User Agreement), and we expect visitors to our page to do the same. We encourage open, lively
+    conversation with a few simple rules: --We reserve the right to correct factual errors. --We will
+    reply to comments when appropriate. --If we disagree with other opinions, we will do so respectfully.
+    --You may not post anything that is spam or that is abusive, profane, or defamatory toward a person,
+    entity, belief, or symbol. --We will delete any posts that contain personal information such as email
+    addresses, phone numbers and physical addresses, and other third party intellectual property material,
+    when that information does not belong to the author of the post. --You may not post job listings for
+    non-Chevron positions. --While we support lively, open discussion, we reserve the right to delete
+    comments.'
+  website: https://www.chevron.com/
+  followers: 5418795
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQFIzPIYfEdWdw/company-logo_200_200/company-logo_200_200/0/1630597725146/chevron_logo?e=2147483647&v=beta&t=vGrex5btdgvrkVlQ0gZH7gqOyUqFvY2EW5Ws4FsEN2U
+  owner: org:chevron
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jonathan-clements-b9441733
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/chevron
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

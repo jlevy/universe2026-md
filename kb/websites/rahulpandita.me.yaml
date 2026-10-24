@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:rahulpandita.me
+  url: https://rahulpandita.me/
+  kind: personal
+  title: Rahul Pandita - Staff Researcher at GitHub
+  description: Hi, I'm Rahul Pandita, a Staff Researcher at GitHub Next working on AI-assisted software
+    development. Previously at Phase Change Software and NCSU. PhD in Computer Science specializing in
+    automated software engineering and developer productivity.
+  owner: person:rahul-pandita
+  link_basis:
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/panditarahul
+  - acct:x/pandita_rahul
+  sources:
+  - system: brightdata
+    url: https://x.com/pandita_rahul
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://rahulpandita.me/
+    record_id: https://rahulpandita.me/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

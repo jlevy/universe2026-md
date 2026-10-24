@@ -1,0 +1,213 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mitch-naylor
+  person: person:mitch-naylor
+  headline: Cohere
+  current_roles:
+  - Cohere
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1332p
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1332p
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:mitch-naylor
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715178970303001Gg0A
+      ref: session:2024/ai1332p
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715178970303001Gg0A
+      ref: session:2024/ai1332p
+  - label: Machine learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715178970303001Gg0A
+      ref: session:2024/ai1332p
+  education:
+  - school: Georgia Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  credentials:
+  - kind: certification
+    title: Developing Data Products
+    issuer: Coursera
+    date: Apr 2017
+    url: https://www.coursera.org/account/accomplishments/verify/KMYQ3GPBLHNP
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: Practical Machine Learning
+    issuer: Coursera
+    date: Apr 2017
+    url: https://www.coursera.org/account/accomplishments/verify/M6V4BNWHZB42
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: Regression Models
+    issuer: Coursera
+    date: Mar 2017
+    url: https://www.coursera.org/account/accomplishments/verify/B7G7RZVDMXN2
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: Reproducible Research
+    issuer: Coursera
+    date: Mar 2017
+    url: https://www.coursera.org/account/accomplishments/verify/Z8XLLWKLUNYD
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: Statistical Inference
+    issuer: Coursera
+    date: Feb 2017
+    url: https://www.coursera.org/account/accomplishments/certificate/ESAAE3L8QATD
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: Exploratory Data Analysis
+    issuer: Coursera
+    date: Jan 2017
+    url: https://www.coursera.org/account/accomplishments/certificate/7USCV4YZ4HTD
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: Getting and Cleaning Data
+    issuer: Coursera
+    date: Jan 2017
+    url: https://www.coursera.org/account/accomplishments/certificate/MUF94J9H978J
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: R Programming
+    issuer: Coursera
+    date: Dec 2016
+    url: https://www.coursera.org/account/accomplishments/verify/KJGXENRX3383
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: The Data Scientist’s Toolbox
+    issuer: Coursera
+    date: Dec 2016
+    url: https://www.coursera.org/account/accomplishments/verify/JPEVG748UUZD
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - kind: certification
+    title: Google AdWords
+    issuer: Google
+    date: May 2016
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  publications:
+  - title: Using Machine Learning to Accelerate Identification of Pancreatic Incidentalomas
+    venue: Journal of Oncology Navigation and Survivorship
+    date: October 2, 2023
+    description: Pancreatic cancer is among the deadliest forms of cancer, with a 5-year relative survival
+      rate of 12.5%. Pancreatic cancer presents symptoms later than many other cancer types, leading to
+      delayed identification and poorer outcomes. Additionally, certain pancreatic lesions, such as intraductal
+      papillary mucinous neoplasms (IPMNs), carry a malignancy risk of up to 73%. Since pancreatic cancer
+      is difficult to diagnose early, prompt diagnosis and workup of premalignant conditions leads to
+      better patient outcomes. Furthermore, incidentally identified disease may fall through the cracks,
+      leaving the patient to self-manage their diagnosis and treatment. We used cutting-edge techniques
+      in natural language processing to identify occurrences of suspicious pancreatic findings in radiology
+      reports. Our fine-tuned language model produced an F1 score of 87.1% in a heavily imbalanced task
+      (0.4% positivity). We prioritized higher recall (90.1%) over precision (83.9%) due to the efficacy
+      of early detection and intervention.
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - title: Applied Causal Inference
+    date: August 25, 2023
+    description: Recent advancements in causal inference have made it possible to gain profound insight
+      about our world and the complex systems which operate in it. While industry professionals and academics
+      in every domain ask questions of their data, traditional statistical methods often fall short of
+      providing conclusive answers. This is where causality can help.
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - title: 'PsychBERT: A Mental Health Language Model for Social Media Mental Health Behavioral Analysis'
+    venue: IEEE BIBM
+    date: December 9, 2021
+    description: Domain-adapative pretraining of BERT on a combination of formal and informal language
+      focused on mental and behavioral health
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  - title: Quantifying Explainability in NLP and Analyzing Algorithms for Performance-Explainability Tradeoff
+    venue: International Conference on Machine Learning (ICML)
+    description: The healthcare domain is one of the most exciting application areas for machine learning,
+      but a lack of model transparency contributes to a lag in adoption within the industry. In this work,
+      we explore the current art of explainability and interpretability within a case study in clinical
+      text classification, using a task of mortality prediction within MIMIC-III clinical notes. We demonstrate
+      various visualization techniques for fully interpretable methods as well as model-agnostic post
+      hoc attributions, and we provide a generalized method for evaluating the quality of explanations
+      using infidelity and local Lipschitz across model types from logistic regression to BERT variants.
+      With these metrics, we introduce a framework through which practitioners and researchers can assess
+      the frontier between a model's predictive performance and the quality of its available explanations.
+      We make our code available to encourage continued refinement of these methods.
+    evidence:
+      url: https://www.linkedin.com/in/mitchnaylor
+      observed_at: '2026-10-24T08:47:12Z'
+  spoken_languages:
+  - English
+  - Italian
+  talks:
+  - session:2024/ai1332p
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715186103498001jRre
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

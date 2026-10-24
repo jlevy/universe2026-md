@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:xebia/demo-timer
+  full_name: xebia/demo-timer
+  url: https://github.com/xebia/demo-timer
+  description: Simple app to run a Xebia branded timer during Innovation Day demos
+  stars: 2
+  forks: 2
+  watchers: 5
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:12:32Z'
+  primary_language: Vue
+  archived: false
+  fork: false
+  created_at: '2021-04-24T07:56:13Z'
+  pushed_at: '2024-03-20T10:13:36Z'
+  owner_login: xebia
+  owner: gh:xebia
+  pinned_by:
+  - gh:xebia
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: xebia
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: xebia/demo-timer
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

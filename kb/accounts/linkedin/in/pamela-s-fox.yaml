@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/pamela-s-fox
+  platform: linkedin
+  handle: in/pamela-s-fox
+  url: https://www.linkedin.com/in/pamela-s-fox
+  display_name: Pamela Fox
+  bio: I’m a Principal Cloud Advocate at Microsoft focused on Python and AI, where I help…
+  location: San Francisco Bay Area
+  followers: 16703
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHmmpL6-qK7LA/profile-displayphoto-scale_200_200/B56Zxt60UbKsAY-/0/1771370664180?e=2147483647&v=beta&t=uLCA4H3uyE07W-i3rJtdn6Li7rRsD2f_6pO4y80UCRU
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEwOvWzzPwr-Q/profile-displaybackgroundimage-shrink_200_800/B56Zxt7jnnIQAU-/0/1771370856012?e=2147483647&v=beta&t=_oNzF4QV2MnRSq5CUsnAOHb6HeYBuh6vG7duU3FwUPE
+  owner: person:pamela-fox
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683842376812001m7gi
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pamelafox
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/pamela-s-fox
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

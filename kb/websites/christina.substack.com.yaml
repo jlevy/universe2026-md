@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:christina.substack.com
+  url: http://christina.substack.com/
+  kind: blog
+  title: Christina’s Newsletter | Substack
+  description: Click to read Christina’s Newsletter, a Substack publication with hundreds of subscribers.
+  owner: person:christina-warren
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://christina.substack.com/feed
+  sources:
+  - system: brightdata
+    url: https://x.com/film_girl
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://christina.substack.com/
+    record_id: http://christina.substack.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

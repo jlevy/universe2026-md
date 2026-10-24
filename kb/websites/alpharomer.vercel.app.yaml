@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:alpharomer.vercel.app
+  url: https://alpharomer.vercel.app
+  kind: personal
+  title: Alpha Romer Coma | Machine Learning Engineer
+  description: Machine learning engineer focused on multimodality and accelerated computing. PyTorch Conference
+    Europe 2026 speaker, backed by a $376K Google Cloud compute grant.
+  owner: person:alpha-romer-coma
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/alpharomercoma
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: fit-alpha-coma
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://alpharomer.com/
+    record_id: https://alpharomer.vercel.app
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

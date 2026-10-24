@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jeff-an
+  platform: linkedin
+  handle: in/jeff-an
+  url: https://www.linkedin.com/in/jeff-an
+  display_name: Jeff An
+  bio: I'm the co-founder and CTO of Momentic, a startup backed by YCombinator, AI Grant…
+  location: San Francisco
+  followers: 8196
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQESX4ErzKRB9w/profile-displaybackgroundimage-shrink_200_800/B56Z8WAnzGKgAQ-/0/1782780690103?e=2147483647&v=beta&t=OyS9L-G9gRArrNdgJldu9mj4yp7oUl9F85kr-U8hWn8
+  owner: person:jeff-an
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1787616064220001mxn7
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeff-an
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

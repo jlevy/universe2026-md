@@ -1,0 +1,347 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:chris-reddington
+  person: person:chris-reddington
+  brief_bio:
+    text: Chris Reddington works at ServiceNow and writes about topics including multi-agent patterns
+      in VS Code and AI code review. Reddington spoke at GitHub Universe 2024, as a senior product manager
+      of DevRel strategy at GitHub, about Copilot Workspace and Claude 3.5 Sonnet in GitHub Copilot.
+    cites:
+    - current_affiliations
+    - recent_writing
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: d15f30e356122748fce814f80625313904ce84a6f4f80fa15456706dc7727b65
+    stale: false
+  headline: ServiceNow
+  current_roles:
+  - ServiceNow
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai1164b
+    - ref: session:2024/ai2388b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2388b
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1164b
+  technologies:
+  - label: Claude
+    target: software:claude
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Claude
+      ref: session:2024/ai2388b
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/ai1164b
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1730214801257001kFwK
+      ref: session:2024/ai2388b
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1730214801257001kFwK
+      ref: session:2024/ai2388b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: Machine learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1730214801257001kFwK
+      ref: session:2024/ai2388b
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1714631103506001Ax5h
+      ref: session:2024/ai1164b
+  credentials:
+  - kind: certification
+    title: Event Speaker Gold
+    issuer: Microsoft
+    date: Mar 2018
+    url: https://www.youracclaim.com/badges/6384d6fd-ba6a-488e-a2c4-283fe2766e50/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: certification
+    title: Reproducible Research
+    issuer: Coursera Course Certificates
+    date: May 2016
+    url: https://www.coursera.org/account/accomplishments/verify/M85DNGJPT7PY
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: certification
+    title: Statistical Inference
+    issuer: Coursera Course Certificates
+    date: May 2016
+    url: https://www.coursera.org/account/accomplishments/verify/K8MSWNWZFHF6
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: certification
+    title: Exploratory Data Analysis
+    issuer: Coursera Verified Certificates
+    date: Jun 2015
+    url: https://www.coursera.org/account/accomplishments/verify/WB94FRVZ24
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: certification
+    title: Getting and Cleaning Data
+    issuer: Coursera Verified Certificates
+    date: Jun 2015
+    url: https://www.coursera.org/account/accomplishments/verify/E3E7RX4HWX
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: certification
+    title: R Programming
+    issuer: Coursera Verified Certificates
+    date: May 2015
+    url: https://www.coursera.org/account/accomplishments/verify/Q8S9WUD4PB
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: certification
+    title: The Data Scientist’s Toolbox
+    issuer: Coursera Verified Certificates
+    date: May 2015
+    url: https://www.coursera.org/account/accomplishments/verify/T4XMDVLHL7
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: certification
+    title: ITIL v3 Foundation Certificate in IT Service Management
+    issuer: EXIN
+    date: Sep 2012
+    url: https://www.coursera.org/account/accomplishments/certificate/T4XMDVLHL7
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Administrator Associate'
+    issuer: Microsoft
+    date: Oct 2018
+    expires: Feb 2023
+    url: https://www.youracclaim.com/badges/490b9f04-ddd2-4bca-9281-02f25e9ae166
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure DevOps Engineer Expert'
+    issuer: Microsoft
+    date: Feb 2019
+    expires: Aug 2021
+    url: https://www.youracclaim.com/badges/fba4b0a0-08e3-46a3-b60e-f0e70ef16da7/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/chrisreddington
+      observed_at: '2026-10-24T08:42:31Z'
+  recent_writing:
+  - title: What is EmployeeWorks? | Build EmployeeWorks plugins with ToolSmith (Part 1)
+    url: https://chrisreddington.com/video/what-is-employeeworks/
+    published: '2026-10-23T00:00:00Z'
+    channel: blog
+  - title: Haus Carpentry & Construction
+    url: https://chrisreddington.com/project/haus/
+    published: '2026-07-31T00:00:00Z'
+    channel: blog
+  - title: Multi-agent patterns in VS Code you won't learn from docs
+    url: https://chrisreddington.com/talk/2026-06-03-vscode-live-build/
+    published: '2026-06-03T00:00:00Z'
+    channel: blog
+  - title: 'The Jury Pattern: a mixture of critics for AI code review'
+    url: https://chrisreddington.com/blog/mixture-of-critics/
+    published: '2026-06-03T00:00:00Z'
+    channel: blog
+  - title: An interactive agentic AI mental model
+    url: https://chrisreddington.com/project/agentic-ai/
+    published: '2026-04-16T00:00:00Z'
+    channel: blog
+  - title: 'Agentic memory: what agents should and shouldn''t remember'
+    url: https://chrisreddington.com/blog/agentic-memory-what-agents-should-remember/
+    published: '2026-04-10T00:00:00Z'
+    channel: blog
+  - title: 'AGENTS.md and SKILL.md examples: build a reusable agent toolbox'
+    url: https://chrisreddington.com/blog/building-your-agent-toolbox/
+    published: '2026-04-08T00:00:00Z'
+    channel: blog
+  - title: 'Context engineering: more context isn''t better context'
+    url: https://chrisreddington.com/blog/context-engineering-more-isnt-better/
+    published: '2026-04-05T00:00:00Z'
+    channel: blog
+  - title: The DevRel randomisation trap (and how to stop it)
+    url: https://chrisreddington.com/blog/devrel-randomisation-trap/
+    published: '2026-03-31T00:00:00Z'
+    channel: blog
+  - title: 'From tactics to strategy: the DevRel measurement gap'
+    url: https://chrisreddington.com/blog/devrel-tactics-to-strategy/
+    published: '2026-03-22T00:00:00Z'
+    channel: blog
+  - title: 'Mastering the Art of Writing Effective Product Feedback: A Guide'
+    url: https://www.linkedin.com/pulse/mastering-art-writing-effective-product-feedback-guide-reddington
+    published: '2023-08-16T00:00:00.000Z'
+    channel: linkedin
+    summary: Welcome to the third and final instalment of my Product Feedback series of posts. In case
+      you missed the others, this…
+  - title: 'Mastering the Art of Product Feedback: From Identification to Action'
+    url: https://www.linkedin.com/pulse/mastering-art-product-feedback-from-identification-reddington
+    published: '2023-08-03T00:00:00.000Z'
+    channel: linkedin
+    summary: 'This post is the second in a series of three posts on product feedback: The Power of Product
+      Feedback: Why it Matters…'
+  - title: 'The Power of Product Feedback: Why it Matters to Everyone'
+    url: https://www.linkedin.com/pulse/power-product-feedback-why-matters-everyone-chris-reddington
+    published: '2023-07-24T00:00:00.000Z'
+    channel: linkedin
+    summary: “Focus on how the end-user customers perceive the impact of your innovation – rather than
+      on how you, the innovators…
+  - title: 'Crossposting Content: A New Project'
+    url: https://www.linkedin.com/pulse/crossposting-content-new-project-chris-reddington
+    published: '2021-05-06T00:00:00.000Z'
+    channel: linkedin
+    summary: Following on from my recent post where I discussed using schema.org for Search Engine Optimisation
+      (SEO), I wanted to…
+  - title: Using schema.org for SEO optimisation
+    url: https://www.linkedin.com/pulse/using-schemaorg-seo-optimisation-chris-reddington
+    published: '2021-05-06T00:00:00.000Z'
+    channel: linkedin
+    summary: One of my recent tasks for Cloud with Chris was to investigate some additional areas for
+      SEO improvements. If you’re…
+  talks:
+  - session:2024/ai1164b
+  - session:2024/ai2388b
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685110566611001zo2c
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

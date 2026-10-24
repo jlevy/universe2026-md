@@ -1,0 +1,534 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:michael-recachinas
+  person: person:michael-recachinas
+  brief_bio:
+    text: Michael Recachinas is a Staff Engineer in product security at GitHub, where Recachinas leads
+      work on static analysis tools and vulnerability management. Recachinas spoke at GitHub Universe
+      2023 and 2024 about how GitHub securely builds and uses GitHub.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: c925d7f2a6d9864adc5748d6e1287bac36281c630e41e16cb90294096cba4079
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2860g
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2860g
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2860g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2860g
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2860g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2860g
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1939m
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/sec2860g
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/sec1939m
+  interests:
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696252864458001i7JK
+      ref: session:2023/sec2860g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696252864458001i7JK
+      ref: session:2023/sec2860g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696252864458001i7JK
+      ref: session:2023/sec2860g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696252864458001i7JK
+      ref: session:2023/sec2860g
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696252864458001i7JK
+      ref: session:2023/sec2860g
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696252864458001i7JK
+      ref: session:2023/sec2860g
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724273611167001umRj
+      ref: session:2024/sec1939m
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1696252864458001i7JK
+      ref: session:2023/sec2860g
+  education:
+  - school: University of Virginia
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  credentials:
+  - kind: certification
+    title: Certified Sherry Wine Specialist
+    issuer: Wine Scholar Guild
+    date: Mar 2023
+    url: https://certificates.winescholarguild.com/0d139897-0cfd-4e60-8e52-642cb027fdd1#acc.p7G4AgZn
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  spoken_languages:
+  - Greek
+  - French
+  - English
+  activities:
+  - kind: project
+    title: Elastic Datashader
+    detail: Datashader enabled TMS server with ElasticSearch backend. · Mar 2020
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: project
+    title: SigPlot Data Service
+    detail: Thinning and Tiling Service for SigPlot applications. · Mar 2020
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: project
+    title: hexhamming
+    detail: Blazing fast SIMD-accelerated Hamming distance library for hexadecimal strings. · Feb 2019
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: project
+    title: Jupyter-SigPlot
+    detail: Jupyter Notebook support for the SigPlot.js plotting library. · Aug 2016
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: project
+    title: React-SigPlot
+    detail: React wrapper around the SigPlot.js plotting library. · Aug 2016
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: project
+    title: SigPlot
+    detail: SigPlot provides fast interactive web-plotting for software defined radio. · Aug 2014
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Computational Neuroscience
+    detail: Online U of Wash. Class
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Computational Physics
+    detail: PHYS 5630
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Computer Graphics
+    detail: CS 4810
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Cryptography I
+    detail: Online Stanford Class
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Defense Against the Dark Arts
+    detail: CS 4630
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Differential Equations in Action
+    detail: Udacity
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Digital Integrated Circuits
+    detail: ECE 3663
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Discrete Optimization
+    detail: Online U of Melbourne
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Electromagnetic Fields
+    detail: ECE 3209
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Electronics II
+    detail: ECE 3660
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Foundations of Computer Graphics
+    detail: BerkeleyX
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Functional Hardware Verification
+    detail: Udacity
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Graduate Statistics
+    detail: APMA 6430
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: High Performance Scientific Computing
+    detail: Online U of Wash. Class
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Human Computer Interaction
+    detail: CS 3205
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Independent Research - Perturbation Theory
+    detail: APMA 4993
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Interactive 3D Graphics
+    detail: Udacity
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Intro to Parallel Programming
+    detail: Udacity
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Introduction to Data Science
+    detail: Online U of Wash. Class
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Linear Automatic Control Systems
+    detail: ECE 6851
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Machine Learning
+    detail: Online Stanford Class
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Microelectromechanical systems
+    detail: ECE 6883
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Microwave Engineering I
+    detail: ECE 5260
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Microwave Engineering II
+    detail: ECE 6261
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Operating Systems
+    detail: CS 4414
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Optical Communication Devices
+    detail: ECE 6501
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Optics & Lasers
+    detail: ECE 5241
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Optoelectronic Devices
+    detail: ECE 6642
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Partial Differential Equations
+    detail: APMA 3140
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Program and Data Representation
+    detail: CS 2150
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Programming Languages
+    detail: CS 4610
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Programming Languages (Building a Web Browser)
+    detail: Udacity
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: RF Circuit Design & Wireless Systems
+    detail: ECE 4209
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Signals & Systems
+    detail: ECE 3750
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Software Testing
+    detail: Udacity
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Software as a Service
+    detail: BerkeleyX
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: Startup Engineering
+    detail: Online Stanford Class
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  - kind: course
+    title: VLSI Design
+    detail: ECE 4332
+    evidence:
+      url: https://www.linkedin.com/in/mrecachinas
+      observed_at: '2026-10-24T08:47:22Z'
+  talks:
+  - session:2023/sec2860g
+  - session:2024/sec1939m
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685637039960001YvpZ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685637039960001YvpZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

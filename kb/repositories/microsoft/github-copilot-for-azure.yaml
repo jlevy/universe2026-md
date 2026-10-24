@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:microsoft/github-copilot-for-azure
+  full_name: microsoft/GitHub-Copilot-for-Azure
+  url: https://github.com/microsoft/GitHub-Copilot-for-Azure
+  description: GitHub Copilot for Azure
+  stars: 259
+  forks: 215
+  watchers: 12
+  open_issues: 235
+  stats_observed_at: '2026-10-24T19:10:31Z'
+  primary_language: TypeScript
+  topics:
+  - agent-skills
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2024-10-28T13:46:49Z'
+  pushed_at: '2026-10-23T23:42:20Z'
+  owner_login: microsoft
+  owner: gh:microsoft
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jayparikh
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: microsoft/GitHub-Copilot-for-Azure
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

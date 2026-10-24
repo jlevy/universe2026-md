@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/nhudo
+  platform: linkedin
+  handle: in/nhudo
+  url: https://www.linkedin.com/in/nhudo
+  display_name: Nhu D.
+  location: New York
+  followers: 1828
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQF3U3jaDADJLQ/profile-displayphoto-scale_200_200/B4EaFldd3iJgAg-/0/1792703589297?e=2147483647&v=beta&t=a1tMH4tL3rTWKVI6_nGaEV25_MJoVuk6ux5LgBVKLCA
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHMT9UrrgT91w/profile-displaybackgroundimage-shrink_200_800/B56ZsAbxo3MIAU-/0/1765238841284?e=2147483647&v=beta&t=A8ulYslpBgKRb7ftdAh9xt5Dh5juaDwfa5fot7AdAQo
+  owner: person:nhu-do
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730217260193001ONtz
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/nhudo
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,232 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:eric-bouguen
+  person: person:eric-bouguen
+  brief_bio:
+    text: Eric Bouguen was a managing director leading applications and infrastructure for Europe at Accenture
+      and Avanade, using Microsoft Azure, GitHub and generative AI to modernize software delivery. Bouguen
+      spoke at GitHub Universe 2025 about frontline lessons in enterprise development.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: c9a203ecd07234fb1ec1923cd39777f27ce5fe25bb6a5d4234420f4b1321aec4
+    stale: false
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1566m
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Microsoft Azure
+      ref: person:eric-bouguen
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756184222593001fNZ9
+      ref: session:2025/bld1566m
+  credentials:
+  - kind: certification
+    title: Instrument Rating
+    issuer: Direction Generale de l'Aviation Civile
+    date: Nov 2024
+    evidence:
+      url: https://www.linkedin.com/in/ericbouguen
+      observed_at: '2026-10-24T08:46:20Z'
+  - kind: certification
+    title: Private Aircraft Pilot
+    issuer: Direction Generale de l'Aviation Civile
+    date: Jul 2021
+    evidence:
+      url: https://www.linkedin.com/in/ericbouguen
+      observed_at: '2026-10-24T08:46:20Z'
+  - kind: certification
+    title: ITIL® (2011) Foundation
+    issuer: APMG International
+    date: Mar 2016
+    evidence:
+      url: https://www.linkedin.com/in/ericbouguen
+      observed_at: '2026-10-24T08:46:20Z'
+  - kind: certification
+    title: COBIT® (2012-Found) Foundation
+    issuer: COBIT 5 FOUNDATION, IMPLEMENTATION and ASSESSMENTS
+    date: Jun 2014
+    evidence:
+      url: https://www.linkedin.com/in/ericbouguen
+      observed_at: '2026-10-24T08:46:20Z'
+  - kind: certification
+    title: TOGAF 9
+    issuer: The Open Group
+    date: Mar 2014
+    url: http://www.opengroup.org/
+    evidence:
+      url: https://www.linkedin.com/in/ericbouguen
+      observed_at: '2026-10-24T08:46:20Z'
+  spoken_languages:
+  - English
+  - German
+  recent_writing:
+  - title: 'Navigating the Shift: Rapid Migration to Microsoft’s Azure VMware Solution (AVS)'
+    url: https://www.linkedin.com/pulse/navigating-shift-rapid-migration-microsofts-azure-vmware-eric-bouguen-vmbde
+    published: '2024-07-03T00:00:00.000Z'
+    channel: linkedin
+    summary: Is your organization equipped for the ever-evolving landscape of cloud computing? Due to
+      recent market shifts…
+  - title: 'Understanding VMware''s New Subscription Model: What It Means for Your Business'
+    url: https://www.linkedin.com/pulse/understanding-vmwares-new-subscription-model-what-means-eric-bouguen-n406e
+    published: '2024-06-20T00:00:00.000Z'
+    channel: linkedin
+    summary: The landscape of cloud computing is ever-evolving, and with the recent acquisition of VMware
+      by Broadcom, a significant…
+  - title: La migration dans le Cloud Une nécessité plus qu’une opportunité
+    url: https://fr.linkedin.com/pulse/la-migration-dans-le-cloud-une-n%C3%A9cessit%C3%A9-plus-quune-eric-bouguen
+    published: '2020-09-02T00:00:00.000Z'
+    channel: linkedin
+    summary: L'accélération de l’usage du Cloud pour l’exécution de systèmes critiques est plus importante
+      que jamais. Selon…
+  - title: Quels sont les secrets d’un déploiement RPA à l’échelle ?
+    url: https://fr.linkedin.com/pulse/quels-sont-les-secrets-dun-d%C3%A9ploiement-rpa-%C3%A0-l%C3%A9chelle-eric-bouguen
+    published: '2019-04-10T00:00:00.000Z'
+    channel: linkedin
+    summary: Il y a près de deux ans, j'ai écrit un article sur le blog d'Avanade Insights dans lequel
+      j'affirmais que la Robotic…
+  - title: 'Automation is not limited to Business: How about Automation for IT?'
+    url: https://www.linkedin.com/pulse/automation-limited-business-how-eric-bouguen
+    published: '2018-12-12T00:00:00.000Z'
+    channel: linkedin
+    summary: In a recent study(*) Gartner predicts, by 2021, a reduction of help desk calls by 45%, improved
+      IT spares inventory…
+  - title: Quand l’automatisation virtuelle devient réalité
+    url: https://fr.linkedin.com/pulse/quand-lautomatisation-virtuelle-devient-r%C3%A9alit%C3%A9-eric-bouguen
+    published: '2018-01-24T00:00:00.000Z'
+    channel: linkedin
+    summary: Plus de neuf cadres décisionnaires IT sur dix (92 %) pensent que l’automatisation est une
+      technologie clé qui permettra…
+  - title: 'Intelligent Automation: Doter un robot RPA de neurones (OCR, Bots, Natural Language Processing,
+      Machine Learning,...)'
+    url: https://fr.linkedin.com/pulse/intelligence-artificielle-et-automatisation-eric-bouguen
+    published: '2017-07-03T00:00:00.000Z'
+    channel: linkedin
+    summary: 86 % des cadres dirigeants et IT pensent que l’automatisation intelligente est incontournable
+      pour rester à la tête de…
+  - title: Avez-vous nommé votre Chief Robotic Officer ?
+    url: https://fr.linkedin.com/pulse/avez-vous-nomm%C3%A9-votre-chief-robotic-officer-eric-bouguen
+    published: '2016-11-07T00:00:00.000Z'
+    channel: linkedin
+    summary: L’expérience montre que quelques semaines seulement suffisent à automatiser un processus…
+      …et les résultats sont vite…
+  - title: 'Robotic Process Automation : Libérés, Délivrés, nous ne saisirons plus jamais.'
+    url: https://fr.linkedin.com/pulse/robotic-process-automation-lib%C3%A9r%C3%A9s-d%C3%A9livr%C3%A9s-nous-ne-plus-eric-bouguen
+    published: '2016-08-23T00:00:00.000Z'
+    channel: linkedin
+    summary: Dès 2018, 20% du contenu métier sera produit par des machines (src Gartner). Mr Ford & Mr
+      Taylor en ont probablement…
+  talks:
+  - session:2025/bld1566m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1759939241948001vhQm
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,153 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jemiah-sius
+  person: person:jemiah-sius
+  brief_bio:
+    text: Jemiah Sius was Vice President of Market Strategy and Developer Relations at New Relic, focused
+      on developer enablement and reliable software systems. Sius spoke at GitHub Universe 2025 about
+      AI tools that work together.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 269cf7ae0cedc51e45a05bab327d6c8ef13155ce78995cc8651a35e1dbf6bb9d
+    stale: false
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1549d
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1549d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1549d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1549d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1549d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1549d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/aut1549d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903502008001QuPH
+      ref: session:2025/aut1549d
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903502008001QuPH
+      ref: session:2025/aut1549d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903502008001QuPH
+      ref: session:2025/aut1549d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903502008001QuPH
+      ref: session:2025/aut1549d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903502008001QuPH
+      ref: session:2025/aut1549d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903502008001QuPH
+      ref: session:2025/aut1549d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903502008001QuPH
+      ref: session:2025/aut1549d
+  talks:
+  - session:2025/aut1549d
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685503641908001YQEo
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

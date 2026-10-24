@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/tobias-ahlin-4977b212
+  platform: linkedin
+  handle: in/tobias-ahlin-4977b212
+  url: https://www.linkedin.com/in/tobias-ahlin-4977b212
+  display_name: Tobias Ahlin
+  location: Stockholm
+  followers: 4714
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGQoUt4kcjYmw/profile-displayphoto-scale_200_200/B4DZvg6zszHEAY-/0/1769005072377?e=2147483647&v=beta&t=G3wXc70MKgSB5cx3ASjP1qxFQ040J4EOnQcdrW9l7zA
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQG920wrgPJW0A/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1725366641466?e=2147483647&v=beta&t=ZnrincZUo2YoEAktFhNHETgyGpuqVMIYLrI5yKWtK2U
+  owner: person:tobias-ahlin
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694527346481001TuQg
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/tobias-ahlin-4977b212
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

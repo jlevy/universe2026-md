@@ -1,0 +1,331 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:eric-sorenson
+  person: person:eric-sorenson
+  brief_bio:
+    text: Eric Sorenson is a senior product manager at GitHub focused on supply chain security, after
+      about two decades working on open source at scale, earlier as an SRE. Sorenson spoke at GitHub Universe
+      2024 and 2025 and speaks at GitHub Universe 2026 on GitHub Package Firewall.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 4de05c2aae02606e81376ddfceb234a61bdb02e351b462fd4901d8dda903188b
+    stale: false
+  headline: Senior Product Manager at GitHub
+  location: PDX
+  current_roles:
+  - Senior Product Manager at GitHub
+  expertise:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1826d
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1826d
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1826d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1826d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1385b
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1385b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1385b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1385b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1488d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1488d
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1488d
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1488d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1488d
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1488d
+  interests:
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205961922001py19
+      ref: session:2025/sec1385b
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612973921001XWna
+      ref: session:tru1488d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    weight: 0.46
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205961922001py19
+      ref: session:2025/sec1385b
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612973921001XWna
+      ref: session:tru1488d
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 0.46
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205961922001py19
+      ref: session:2025/sec1385b
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612973921001XWna
+      ref: session:tru1488d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612973921001XWna
+      ref: session:tru1488d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205961922001py19
+      ref: session:2025/sec1385b
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612973921001XWna
+      ref: session:tru1488d
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746205961922001py19
+      ref: session:2025/sec1385b
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612973921001XWna
+      ref: session:tru1488d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.23
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715458536520001tfIR
+      ref: session:2024/dev1826d
+  open_source:
+  - repository: repo:github/opensource.guide
+    relation: pinned
+    stars: 15752
+    primary_language: HTML
+  - repository: repo:github/explore
+    relation: pinned
+    stars: 4925
+    primary_language: Ruby
+  - repository: repo:ahpook/github-ospo
+    relation: owner
+    stars: 4
+  - repository: repo:github/opensourcefriday
+    relation: contributor
+    stars: 1234
+    primary_language: HTML
+  - repository: repo:h4llow3en/mac-notification-sys
+    relation: contributor
+    stars: 134
+    primary_language: Rust
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  education:
+  - school: University of Southern California
+    school_ref: org:university-of-southern-california
+    evidence:
+      url: https://www.linkedin.com/in/ericsorenson
+      observed_at: '2026-10-24T08:11:36Z'
+  credentials:
+  - kind: certification
+    title: 'Speaker: Open Source Summit North America 2023'
+    issuer: The Linux Foundation
+    date: May 2023
+    url: https://www.credly.com/badges/a40f8bc2-940a-49ee-b4b2-a259ed563cf7/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/ericsorenson
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: Cultivating Cultural Competence and Inclusion
+    issuer: LinkedIn
+    date: Jul 2019
+    url: https://www.linkedin.com/learning/certificates/7264b7c95306e361f925b33e4b8899d4d848dc85919a76cb51173bf11398f6de
+    evidence:
+      url: https://www.linkedin.com/in/ericsorenson
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: Puppet Professional 2014 Certification
+    issuer: Puppet Labs, Inc.
+    date: Aug 2014
+    evidence:
+      url: https://www.linkedin.com/in/ericsorenson
+      observed_at: '2026-10-24T08:11:36Z'
+  activities:
+  - kind: project
+    title: Puppet
+    detail: Open Source IT Automation Software · Jun 2012
+    evidence:
+      url: https://www.linkedin.com/in/ericsorenson
+      observed_at: '2026-10-24T08:11:36Z'
+  talks:
+  - session:2024/dev1826d
+  - session:2025/sec1385b
+  - session:tru1488d
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694567634692001MFJO
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ahpook
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694567634692001MFJO
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694567634692001MFJO
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

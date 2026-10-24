@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/digitarald
+  platform: linkedin
+  handle: in/digitarald
+  url: https://www.linkedin.com/in/digitarald
+  display_name: Harald Kirschner
+  bio: Experienced leader in technical product management and strategy. 20 year track record in…
+  location: Mountain View
+  followers: 5342
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQE3DM00DHlpVA/profile-displaybackgroundimage-shrink_200_800/B56Z7iqjTUIMAQ-/0/1781919266471?e=2147483647&v=beta&t=f9GqONCmNFWZCkV1IoArKQd83ZfNBSGvvnmXv5KRWps
+  owner: person:harald-kirschner
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695923237846001JX5P
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695844522437001uAd8
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/digitarald
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

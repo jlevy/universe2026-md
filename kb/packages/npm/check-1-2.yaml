@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/check-1-2
+  ecosystem: npm
+  name: check-1-2
+  url: https://www.npmjs.com/package/check-1-2
+  description: Run your validation scripts in parallel
+  latest_version: 0.0.8
+  license: MIT
+  repository_url: git+https://github.com/agorischek/check-1-2.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: agorischek/check-1-2
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kt-savage
+  platform: linkedin
+  handle: in/kt-savage
+  url: https://www.linkedin.com/in/kt-savage
+  display_name: Katie Savage
+  location: Los Angeles
+  followers: 1827
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFUKqsBmhsDqA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1698425115099?e=2147483647&v=beta&t=T5VDObOattK_ddgPnFgLOjvOAnjVt5EQTZtho5uhNYA
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:katie-savage
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730132720921001ElMl
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kt-savage
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

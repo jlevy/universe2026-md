@@ -1,0 +1,458 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:david-a-wheeler
+  person: person:david-a-wheeler
+  brief_bio:
+    text: David A. Wheeler, Director of Open Source Supply Chain Security at the OpenSSF of The Linux
+      Foundation and an adjunct professor at George Mason University, works on open source software and
+      supply chain security and speaks at GitHub Universe 2026 on how AI reshaped open source.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: a07b9aa3907ca6dc1f77524d83f1148221756ac4ba196bcb1c72b4ebcd47f9ec
+    stale: false
+  headline: Fellow/Director of Open Source Supply Chain Security, OpenSSF at The Linux Foundation
+  location: US East Coast
+  current_roles:
+  - Fellow/Director of Open Source Supply Chain Security, OpenSSF at The Linux Foundation
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1779p
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:david-a-wheeler/flawfinder
+  - label: Ruby
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:david-a-wheeler/railroader
+  interests:
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+    - url: https://github.com/ossf/best-practices-badge
+      ref: repo:ossf/best-practices-badge
+  - label: Security
+    basis: github_repositories
+    confidence: medium
+    weight: 0.8
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ossf/best-practices-badge
+      ref: repo:ossf/best-practices-badge
+    - url: https://github.com/google/oss-fuzz
+      ref: repo:google/oss-fuzz
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782252285787001MWBm
+      ref: session:bld1779p
+  - label: badge
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ossf/best-practices-badge
+      ref: repo:ossf/best-practices-badge
+  - label: best-practices
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ossf/best-practices-badge
+      ref: repo:ossf/best-practices-badge
+  - label: floss
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ossf/best-practices-badge
+      ref: repo:ossf/best-practices-badge
+  - label: foss
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ossf/best-practices-badge
+      ref: repo:ossf/best-practices-badge
+  open_source:
+  - repository: repo:david-a-wheeler/flawfinder
+    relation: owner
+    stars: 589
+    primary_language: Python
+  - repository: repo:david-a-wheeler/spdx-tutorial
+    relation: owner
+    stars: 147
+  - repository: repo:david-a-wheeler/railroader
+    relation: owner
+    stars: 48
+    primary_language: Ruby
+  - repository: repo:vmg/redcarpet
+    relation: contributor
+    stars: 5077
+    primary_language: C
+  - repository: repo:metamath/set.mm
+    relation: contributor
+    stars: 337
+    primary_language: HTML
+  - repository: repo:ossf/best-practices-badge
+    relation: contributor
+    stars: 1371
+    primary_language: Ruby
+  - repository: repo:google/oss-fuzz
+    relation: contributor
+    stars: 12791
+    primary_language: Shell
+  - repository: repo:metamath/metamath-exe
+    relation: contributor
+    stars: 110
+    primary_language: C
+  education:
+  - school: George Mason University
+    evidence:
+      url: https://www.linkedin.com/in/david-a-wheeler-27798688
+      observed_at: '2026-10-24T08:11:34Z'
+  - school: George Mason University
+    evidence:
+      url: https://www.linkedin.com/in/dr-david-a-wheeler
+      observed_at: '2026-10-24T08:11:35Z'
+  credentials:
+  - kind: honor
+    title: IEEE Senior Member
+    issuer: Institute of Electrical and Electronic Engineers (IEEE)
+    date: '2019-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/david-a-wheeler-27798688
+      observed_at: '2026-10-24T08:11:34Z'
+  - kind: honor
+    title: Certified Information Systems Security Professional (CISSP)
+    issuer: ISC2
+    date: '2016-11-01T00:00:00.000Z'
+    description: https://www.youracclaim.com/badges/f9f22dca-e4d2-4eba-88a3-b609d11fdcde
+    evidence:
+      url: https://www.linkedin.com/in/david-a-wheeler-27798688
+      observed_at: '2026-10-24T08:11:34Z'
+  - kind: honor
+    title: Outstanding Adjunct Faculty Award (GMU CS Department)
+    issuer: George Mason University Department of Computer Science
+    date: '2012-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/david-a-wheeler-27798688
+      observed_at: '2026-10-24T08:11:34Z'
+  - kind: honor
+    title: IDA Task Leader Course
+    issuer: Institute for Defense Analyses
+    date: '2012-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/david-a-wheeler-27798688
+      observed_at: '2026-10-24T08:11:34Z'
+  - kind: honor
+    title: Open Source Award - Individual Award (Open Source for America)
+    issuer: Open Source for America
+    date: '2011-11-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/david-a-wheeler-27798688
+      observed_at: '2026-10-24T08:11:34Z'
+  - kind: honor
+    title: Designing a Protection Profile (NIAP)
+    issuer: National Information Assurance Program (NIAP)
+    date: '1998-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/david-a-wheeler-27798688
+      observed_at: '2026-10-24T08:11:34Z'
+  - kind: honor
+    title: Software Capability Evaluation
+    issuer: Software Engineering Institute (SEI)
+    date: '1993-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/david-a-wheeler-27798688
+      observed_at: '2026-10-24T08:11:34Z'
+  - kind: honor
+    title: Eagle Scout
+    issuer: Boy Scouts of America
+    date: '1983-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/david-a-wheeler-27798688
+      observed_at: '2026-10-24T08:11:34Z'
+  - kind: honor
+    title: IEEE Senior Member
+    issuer: Institute of Electrical and Electronic Engineers (IEEE)
+    date: '2019-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dr-david-a-wheeler
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Certified Information Systems Security Professional (CISSP)
+    issuer: ISC2
+    date: '2016-11-01T00:00:00.000Z'
+    description: https://www.youracclaim.com/badges/f9f22dca-e4d2-4eba-88a3-b609d11fdcde
+    evidence:
+      url: https://www.linkedin.com/in/dr-david-a-wheeler
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Outstanding Adjunct Faculty Award (GMU CS Department)
+    issuer: George Mason University Department of Computer Science
+    date: '2012-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dr-david-a-wheeler
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: IDA Task Leader Course
+    issuer: Institute for Defense Analyses
+    date: '2012-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dr-david-a-wheeler
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Open Source Award - Individual Award (Open Source for America)
+    issuer: Open Source for America
+    date: '2011-11-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dr-david-a-wheeler
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Designing a Protection Profile (NIAP)
+    issuer: National Information Assurance Program (NIAP)
+    date: '1998-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dr-david-a-wheeler
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Software Capability Evaluation
+    issuer: Software Engineering Institute (SEI)
+    date: '1993-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dr-david-a-wheeler
+      observed_at: '2026-10-24T08:11:35Z'
+  - kind: honor
+    title: Eagle Scout
+    issuer: Boy Scouts of America
+    date: '1983-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dr-david-a-wheeler
+      observed_at: '2026-10-24T08:11:35Z'
+  recent_writing:
+  - title: Harden your software
+    url: https://www.linkedin.com/pulse/harden-your-software-david-a-wheeler-3w4le
+    published: '2026-09-17T00:00:00.000Z'
+    channel: linkedin
+    summary: AI is good at finding software vulnerabilities. Attackers are already using AI to find and
+      exploit software.
+  - title: Harden your software
+    url: https://www.linkedin.com/pulse/harden-your-software-david-a-wheeler-3w4le
+    published: '2026-09-17T00:00:00.000Z'
+    channel: linkedin
+    summary: AI is good at finding software vulnerabilities. Attackers are already using AI to find and
+      exploit software.
+  - title: Accelerate Deployment for the Vulnerability Tsunami
+    url: https://www.linkedin.com/pulse/accelerate-deployment-vulnerability-tsunami-david-a-wheeler-eapge
+    published: '2026-08-26T00:00:00.000Z'
+    channel: linkedin
+    summary: Software vulnerability discoveries and fixes will surge in the coming years. Fixes are great,
+      but an undeployed fix…
+  - title: Accelerate Deployment for the Vulnerability Tsunami
+    url: https://www.linkedin.com/pulse/accelerate-deployment-vulnerability-tsunami-david-a-wheeler-eapge
+    published: '2026-08-26T00:00:00.000Z'
+    channel: linkedin
+    summary: Software vulnerability discoveries and fixes will surge in the coming years. Fixes are great,
+      but an undeployed fix…
+  - title: Develop Software? Welcome the Bots
+    url: https://www.linkedin.com/pulse/develop-software-welcome-bots-david-a-wheeler-vfqae
+    published: '2026-08-13T00:00:00.000Z'
+    channel: linkedin
+    summary: The widely-used GNOME family of projects scarily announced in July 2026 that “if a [GNOME]
+      project prohibits issue…
+  - title: Develop Software? Welcome the Bots
+    url: https://www.linkedin.com/pulse/develop-software-welcome-bots-david-a-wheeler-vfqae
+    published: '2026-08-13T00:00:00.000Z'
+    channel: linkedin
+    summary: The widely-used GNOME family of projects scarily announced in July 2026 that “if a [GNOME]
+      project prohibits issue…
+  - title: Why I say sorry, please, and thanks to AI
+    url: https://www.linkedin.com/pulse/why-i-say-sorry-please-thanks-ai-david-a-wheeler-yfzce
+    published: '2026-07-07T00:00:00.000Z'
+    channel: linkedin
+    summary: I say sorry, please, and thanks to AI. I encourage others to do the same.
+  - title: Why I say sorry, please, and thanks to AI
+    url: https://www.linkedin.com/pulse/why-i-say-sorry-please-thanks-ai-david-a-wheeler-yfzce
+    published: '2026-07-07T00:00:00.000Z'
+    channel: linkedin
+    summary: I say sorry, please, and thanks to AI. I encourage others to do the same.
+  - title: ​​The Unprepared Will Soon Crash into the EU Cyber Resilience Act (CRA)
+    url: https://www.linkedin.com/pulse/unprepared-soon-crash-eu-cyber-resilience-act-cra-david-a-wheeler-5uike
+    published: '2026-06-30T00:00:00.000Z'
+    channel: linkedin
+    summary: The EU’s Cyber Resilience Act (CRA) imposes security requirements on most commercial software,
+      hardware, and systems…
+  - title: ​​The Unprepared Will Soon Crash into the EU Cyber Resilience Act (CRA)
+    url: https://www.linkedin.com/pulse/unprepared-soon-crash-eu-cyber-resilience-act-cra-david-a-wheeler-5uike
+    published: '2026-06-30T00:00:00.000Z'
+    channel: linkedin
+    summary: The EU’s Cyber Resilience Act (CRA) imposes security requirements on most commercial software,
+      hardware, and systems…
+  - title: Why AI Makes Education More Critical for Secure Software Development
+    url: https://www.linkedin.com/pulse/why-ai-makes-education-more-critical-secure-software-david-a-wheeler-jlmde
+    published: '2026-06-23T00:00:00.000Z'
+    channel: linkedin
+    summary: I sometimes hear the bizarre claim that because AI can write software and find vulnerabilities,
+      we don’t need to…
+  - title: Why AI Makes Education More Critical for Secure Software Development
+    url: https://www.linkedin.com/pulse/why-ai-makes-education-more-critical-secure-software-david-a-wheeler-jlmde
+    published: '2026-06-23T00:00:00.000Z'
+    channel: linkedin
+    summary: I sometimes hear the bizarre claim that because AI can write software and find vulnerabilities,
+      we don’t need to…
+  - title: AI Will Not Kill Open Source Software
+    url: https://www.linkedin.com/pulse/ai-kill-open-source-software-david-a-wheeler-0rote
+    published: '2026-05-12T00:00:00.000Z'
+    channel: linkedin
+    summary: Will Artificial Intelligence (AI) eliminate Open Source Software (OSS)? No, AI will not kill
+      OSS. That’s because OSS…
+  - title: AI Will Not Kill Open Source Software
+    url: https://www.linkedin.com/pulse/ai-kill-open-source-software-david-a-wheeler-0rote
+    published: '2026-05-12T00:00:00.000Z'
+    channel: linkedin
+    summary: Will Artificial Intelligence (AI) eliminate Open Source Software (OSS)? No, AI will not kill
+      OSS. That’s because OSS…
+  - title: 'FLOSS Weekly #609!'
+    url: https://www.dwheeler.com/blog/2020/12/13#floss-weekly-609
+    published: '2020-12-13T15:04:00Z'
+    channel: blog
+  talks:
+  - session:bld1779p
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1759517237363001lQdR
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: david-a-wheeler
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

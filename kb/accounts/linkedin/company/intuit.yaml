@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/intuit
+  platform: linkedin
+  handle: company/intuit
+  url: https://www.linkedin.com/company/intuit
+  display_name: Intuit
+  bio: 'Intuit is a global technology platform that helps our customers and communities overcome their
+    most important financial challenges. Serving millions of customers worldwide with TurboTax, QuickBooks,
+    Credit Karma and Mailchimp, we believe that everyone should have the opportunity to prosper and we
+    work tirelessly to find new, innovative ways to deliver on this belief. We encourage conversations
+    on this page and will not delete comments that follow our terms of use. In order to keep this a safe
+    community, the below posts may be removed: Repeated posts of the same content, spam or posts from
+    fake accounts or profiles, offensive language or material, threats to others in the community, posts
+    deliberately aimed to have a negative effect on the community or conversations.'
+  website: https://www.intuit.com/
+  followers: 1055746
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFhO7AJbDCP8w/company-logo_200_200/B4EaCG6NZ_JQAE-/0/1788969801592/intuit_logo?e=2147483647&v=beta&t=Iyz2nxaQSoXgTVSNRDDFUSzTqZCWfUgqv9KA_zfYMec
+  owner: org:intuit
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/guptaachin
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/intuit
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

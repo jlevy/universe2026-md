@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/levi-strauss---co
+  platform: linkedin
+  handle: company/levi-strauss-&-co-
+  url: https://www.linkedin.com/company/levi-strauss-&-co-
+  owner: org:levi-strauss-co
+  link_basis:
+  - linkedin_profile
+  details_fetched: false
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jennypatchen
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

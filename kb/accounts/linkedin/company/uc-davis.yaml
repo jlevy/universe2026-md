@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/uc-davis
+  platform: linkedin
+  handle: company/uc-davis
+  url: https://www.linkedin.com/company/uc-davis
+  display_name: University of California, Davis
+  bio: UC Davis was founded in 1908 to serve the state of California. We do and we always will. Today,
+    that seed planted years ago has grown into one of the world’s top universities. UC Davis has a community
+    of faculty and staff who are leading the way in teaching, research, public service and patient care.
+    As the second-largest employer in the region, our Davis and Sacramento campuses host more than 24,000
+    employees and more than 40,000 students — including undergraduates, graduate students, professional
+    students, interns and residents. Our talented students are more likely to collaborate than compete,
+    and our employees make creative connections from the obvious to the outlandish. This friendly approach
+    has built a rich campus community that turns big ideas into real solutions. We’re ranked among the
+    top 20 public universities in the nation with $1 billion in research funding. We’re harnessing our
+    power to find innovative solutions to the world’s most daunting challenges — and preparing the next
+    generation of leaders while we’re at it. The university offers more than 100 majors in four colleges
+    — Agricultural and Environmental Sciences, Biological Sciences, Engineering, and Letters and Science.
+    Graduate students can pursue interdisciplinary studies, with advanced degrees available from six world-class
+    professional schools — School of Education, School of Law, Graduate School of Management, School of
+    Medicine, School of Veterinary Medicine and the Betty Irene Moore School of Nursing.
+  website: https://ucdavis.edu/
+  followers: 433619
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEoGOIHB7x65w/company-logo_200_200/B56ZnoqcQMKMAQ-/0/1760545064338/uc_davis_logo?e=2147483647&v=beta&t=4r3K9Tk36QVa7ZEp3bJSfMfl6lP_hbG7bynOx4-QJXs
+  owner: org:university-of-california-davis
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jocelynvelarde
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/uc-davis
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

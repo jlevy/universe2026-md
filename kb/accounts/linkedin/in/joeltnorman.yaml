@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/joeltnorman
+  platform: linkedin
+  handle: in/joeltnorman
+  url: https://www.linkedin.com/in/joeltnorman
+  display_name: Joel Norman
+  bio: As a Developer Advocate at Microsoft, I help our customers learn from our experiences in…
+  location: Greater Indianapolis
+  followers: 4311
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQEyy4z2PNACnQ/profile-displayphoto-scale_200_200/B56Z_SwFfEKIAc-/0/1785947250147?e=2147483647&v=beta&t=fYZIdqzdigUwRNT_2TOwltEMUazmC-JgoHFlwtiFICw
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQGyn8DUYyRc7A/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517029322361?e=2147483647&v=beta&t=VeUyMgXl1u0KazJ_wQGgRhBb5iq8Fui3JCN3NgZJ2lM
+  owner: person:joel-norman
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730309119188001oHcc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/joeltnorman
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

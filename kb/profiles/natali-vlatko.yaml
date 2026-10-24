@@ -1,0 +1,337 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:natali-vlatko
+  person: person:natali-vlatko
+  brief_bio:
+    text: Natali Vlatko is Director of Open Source Software Engineering at Cisco, focused on open software
+      policy and governance, and a Kubernetes SIG Docs co-chair. Vlatko spoke at GitHub Universe 2024
+      in a session titled 'Dungeons and deployments' and at GitHub Universe 2025 about an AI-powered OSPO
+      toolkit.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: 97078c1c19fa9c908f4b67c1c168688955f1d23e6d0674b5cb1bf32b9c444286
+    stale: false
+  headline: Cisco
+  current_roles:
+  - Cisco
+  expertise:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1871m
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1390p
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1390p
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1390p
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Docker
+      ref: session:2024/sec1871m
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:natali-vlatko
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746207754694001bfHl
+      ref: session:2025/aut1390p
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746207754694001bfHl
+      ref: session:2025/aut1390p
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Education
+    target: term:github-product-2024/education
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746207754694001bfHl
+      ref: session:2025/aut1390p
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746207754694001bfHl
+      ref: session:2025/aut1390p
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719502411183001LHQC
+      ref: session:2024/sec1871m
+  education:
+  - school: Macquarie University
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  credentials:
+  - kind: certification
+    title: 'Program Committee Member: KubeCon + CloudNativeCon Europe 2024'
+    issuer: The Linux Foundation
+    date: Feb 2024
+    url: https://www.credly.com/badges/8d87a9ad-3ec2-4e8c-a39c-29f9c8b3bf34/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon North America 2023'
+    issuer: The Linux Foundation
+    date: Nov 2023
+    url: https://www.credly.com/badges/3ca4a429-7c15-4acb-8d4a-d3272d7417e4/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  - kind: certification
+    title: 'Program Committee Member: KubeCon + CloudNativeCon North America 2023'
+    issuer: The Linux Foundation
+    date: Sep 2023
+    url: https://www.credly.com/badges/7145df11-7556-47e7-b616-a49dd5b5e593/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  - kind: certification
+    title: 'Program Committee Member: Open Source Summit Europe 2023'
+    issuer: The Linux Foundation
+    date: Jun 2023
+    url: https://www.credly.com/badges/9ed63675-0945-4f1b-aeeb-9defd1b455cb/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon Europe 2023'
+    issuer: The Linux Foundation
+    date: May 2023
+    url: https://www.credly.com/badges/062271f0-aa2f-466e-bee9-df690494e3b7/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  - kind: certification
+    title: 'Program Committee Member: Open Source Summit North America 2023'
+    issuer: The Linux Foundation
+    date: Mar 2023
+    url: https://www.credly.com/badges/b358ee3f-5269-4008-9fb4-f0856d5b7d89/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  - kind: certification
+    title: 'Program Committee Member: KubeCon + CloudNativeCon Europe 2023'
+    issuer: The Linux Foundation
+    date: Feb 2023
+    url: https://www.credly.com/badges/b2f3c5a6-4216-4027-a296-2e8cf172e268/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  - kind: certification
+    title: 'Speaker: Open Source Summit Europe 2023'
+    issuer: The Linux Foundation
+    date: Feb 2023
+    url: https://www.credly.com/badges/692a58e6-d53e-4f7d-8338-4405709ffb51/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon North America 2022'
+    issuer: The Linux Foundation
+    date: Nov 2022
+    url: https://www.credly.com/badges/332fbf41-3f26-4699-a2c3-55ead2711198/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  - kind: certification
+    title: 'Program Committee Member: KubeCon + CloudNativeCon North America 2022'
+    issuer: The Linux Foundation
+    date: Aug 2022
+    url: https://www.credly.com/badges/9da5f090-464c-44a6-9331-67aa67951d8c/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/natalivlatko
+      observed_at: '2026-10-24T08:49:32Z'
+  spoken_languages:
+  - English
+  - Croatian
+  - German
+  talks:
+  - session:2024/sec1871m
+  - session:2025/aut1390p
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719502929301001jPgI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719502929301001jPgI
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

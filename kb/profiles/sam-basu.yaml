@@ -1,0 +1,257 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sam-basu
+  person: person:sam-basu
+  brief_bio:
+    text: Sam Basu is Lead Developer Advocate at Uno Platform and a Microsoft MVP who focuses on development
+      platforms and AI tools for cross-platform applications. Basu speaks at GitHub Universe 2026 about
+      choosing between MCP, skills and custom agents.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: a74fd5ebf85af44a9d9e8057510e68a081c9be0cb6ca39a5b102df14ccd00d53
+    stale: false
+  headline: Lead Developer Advocate at Uno Platform
+  location: Fairview PA
+  current_roles:
+  - Lead Developer Advocate at Uno Platform
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1236s
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1236s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1236s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1236s
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:bld1236s
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1236s
+  programming_languages:
+  - label: Assembly
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:samidip/blazoreverywhere
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Sam Basu is a technologist, author, speaker, Microsoft MVP, and Lead Developer Advocate at
+        Uno Platform.
+  interests:
+  - label: android
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/unoplatform/uno
+      ref: repo:unoplatform/uno
+    - url: https://github.com/unoplatform/Uno.Samples
+      ref: repo:unoplatform/uno.samples
+  - label: uno-platform
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/unoplatform/uno
+      ref: repo:unoplatform/uno
+    - url: https://github.com/unoplatform/Uno.Samples
+      ref: repo:unoplatform/uno.samples
+  - label: uwp
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/unoplatform/uno
+      ref: repo:unoplatform/uno
+    - url: https://github.com/unoplatform/Uno.Samples
+      ref: repo:unoplatform/uno.samples
+  - label: wasm
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/unoplatform/uno
+      ref: repo:unoplatform/uno
+    - url: https://github.com/unoplatform/Uno.Samples
+      ref: repo:unoplatform/uno.samples
+  - label: webassembly
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/unoplatform/uno
+      ref: repo:unoplatform/uno
+    - url: https://github.com/unoplatform/Uno.Samples
+      ref: repo:unoplatform/uno.samples
+  - label: xamarin
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/unoplatform/uno
+      ref: repo:unoplatform/uno
+    - url: https://github.com/unoplatform/Uno.Samples
+      ref: repo:unoplatform/uno.samples
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777174786685001jUqr
+      ref: session:bld1236s
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777174786685001jUqr
+      ref: session:bld1236s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777174786685001jUqr
+      ref: session:bld1236s
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777174786685001jUqr
+      ref: session:bld1236s
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777174786685001jUqr
+      ref: session:bld1236s
+  - label: csharp
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/unoplatform/Uno.Samples
+      ref: repo:unoplatform/uno.samples
+  open_source:
+  - repository: repo:samidip/blazoreverywhere
+    relation: owner
+    stars: 35
+    primary_language: Assembly
+  - repository: repo:skimedic/cincydeliverpresentations
+    relation: contributor
+    stars: 10
+    primary_language: Python
+  - repository: repo:unoplatform/uno
+    relation: contributor
+    stars: 10084
+    primary_language: C#
+  - repository: repo:unoplatform/uno.samples
+    relation: contributor
+    stars: 262
+    primary_language: C#
+  - repository: repo:jetbrains/kotlin-multiplatform-dev-docs
+    relation: contributor
+    stars: 192
+    primary_language: Swift
+  - repository: repo:codemash-conference/session-slides
+    relation: contributor
+    stars: 43
+  recent_writing:
+  - title: React UI for Native Apps
+    url: https://samidipbasu.com/2025/08/24/react-ui-for-native-apps/
+    published: '2025-08-25T03:22:14Z'
+    channel: blog
+  - title: Announcing Telerik & Kendo UI AI Coding Assistants 🚀
+    url: https://samidipbasu.com/2025/08/24/announcing-telerik-kendo-ui-ai-coding-assistants-%f0%9f%9a%80/
+    published: '2025-08-25T03:19:28Z'
+    channel: blog
+  - title: The Promise of Model Context Protocol
+    url: https://samidipbasu.com/2025/08/24/the-promise-of-model-context-protocol/
+    published: '2025-08-25T03:17:51Z'
+    channel: blog
+  talks:
+  - session:bld1236s
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1776137309458001vjsc
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: samidip
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

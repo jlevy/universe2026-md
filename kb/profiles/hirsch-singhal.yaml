@@ -1,0 +1,156 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:hirsch-singhal
+  person: person:hirsch-singhal
+  brief_bio:
+    text: Hirsch Singhal is a Staff Product Manager at GitHub for apps, authentication, authorization
+      and tokens, worked on passkeys and 2FA for all, and holds a patent on identity-based certificate
+      authority architecture. Singhal spoke at GitHub Universe 2023 about how GitHub enforced 2FA for
+      millions of users.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: c8b063be94007cc2085ffa7e6825ad5c7c55a632fca99e672bccb49258c73c6b
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2111p
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2111p
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2111p
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2111p
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:hirsch-singhal
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686355161283001ut59
+      ref: session:2023/sec2111p
+  education:
+  - school: Case Western Reserve University
+    evidence:
+      url: https://www.linkedin.com/in/hirsch-singhal-63891240
+      observed_at: '2026-10-24T08:45:21Z'
+  publications:
+  - title: Using Device Portal to view debug logs for UWP
+    venue: Building Apps for Windows Blog
+    date: June 10, 2016
+    description: A look at how to use Device Portal and the LoggingChannel API to create and view realtime
+      logs for an app.
+    evidence:
+      url: https://www.linkedin.com/in/hirsch-singhal-63891240
+      observed_at: '2026-10-24T08:45:21Z'
+  - title: Using the App File Explorer to see your app data
+    venue: Building Apps for Windows Blog
+    date: June 8, 2016
+    description: A short post showing how to access the App File Explorer, an Isolated Storage Explorer
+      replacement built for all Windows devices.
+    evidence:
+      url: https://www.linkedin.com/in/hirsch-singhal-63891240
+      observed_at: '2026-10-24T08:45:21Z'
+  patents:
+  - title: Identity-based certificate authority system architecture
+    number: US 10819526
+    date: October 27, 2020
+    description: Decentralized Identity before I joined Identity and realized we had an Identity team
+      working on similar ideas already. This is the turning point that led me from OS-side developer tooling
+      into the Identity space.
+    url: https://patents.google.com/patent/US10819526
+    evidence:
+      url: https://www.linkedin.com/in/hirsch-singhal-63891240
+      observed_at: '2026-10-24T08:45:21Z'
+  talks:
+  - session:2023/sec2111p
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686354425378001szvx
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

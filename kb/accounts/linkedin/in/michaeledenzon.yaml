@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/michaeledenzon
+  platform: linkedin
+  handle: in/michaeledenzon
+  url: https://www.linkedin.com/in/michaeledenzon
+  display_name: Michael Edenzon
+  location: Washington
+  followers: 2294
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQF4riYmYoDCaQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1673282296323?e=2147483647&v=beta&t=qxM0hJ6n0ggGNGwSws5fO9B7Q0smjmU-YNh1CTXWuVA
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQFAxlLZRgTlaQ/profile-displaybackgroundimage-shrink_200_800/B4EZViN5UtHgAU-/0/1741109565186?e=2147483647&v=beta&t=qLXz44OhUoulcoTMnzmQcN2sqKymOIRZpZrcHwbDb5o
+  owner: person:michael-edenzon
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1722864551656001jtiV
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/michaeledenzon
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

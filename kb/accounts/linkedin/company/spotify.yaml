@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/spotify
+  platform: linkedin
+  handle: company/spotify
+  url: https://www.linkedin.com/company/spotify
+  display_name: Spotify
+  bio: Deliver creativity to the world -- one note, one voice, one idea at a time. At Spotify, we focus
+    relentlessly on building the best and most valuable experience available anywhere, enhancing every
+    moment by connecting the world to the art and the creatives who shape it. Spotify transformed music
+    listening forever when it launched in Sweden in 2008. Discover, manage and share over 70m tracks for
+    free, or upgrade to Spotify Premium to access exclusive features including offline mode, improved
+    sound quality, and an ad-free music listening experience. Today, Spotify is the most popular global
+    audio streaming service with 365m users, including 165m subscribers across 178 markets. We are the
+    largest driver of revenue to the music business today.
+  website: https://www.lifeatspotify.com/
+  followers: 4792653
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQFkDzx_7dqq3A/company-logo_200_200/company-logo_200_200/0/1631377935713?e=2147483647&v=beta&t=F2oExYXvoMqjY_Pvb2HorsLEcxzlWFZric4JNr0LBRQ
+  owner: org:spotify
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/drubin87
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kelseyconophy
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sanjana-seetharam-17753225
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/spotify
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

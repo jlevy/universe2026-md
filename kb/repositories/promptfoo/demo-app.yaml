@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:promptfoo/demo-app
+  full_name: promptfoo/demo-app
+  url: https://github.com/promptfoo/demo-app
+  description: Basic ChatGPT wrapper start example
+  stars: 2
+  forks: 4
+  watchers: 0
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:12:17Z'
+  primary_language: JavaScript
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2025-11-12T18:57:05Z'
+  pushed_at: '2026-10-22T15:18:02Z'
+  owner_login: promptfoo
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: aggchinny
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: promptfoo/demo-app
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

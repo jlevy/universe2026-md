@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/elder-swamp-club
+  platform: linkedin
+  handle: company/elder-swamp-club
+  url: https://www.linkedin.com/company/elder-swamp-club
+  display_name: Swamp Club
+  bio: Swamp is Deterministic automation for AI agents. You've asked your Agent to orchestrate a complex
+    operation — and it does it right, most of the time. Swamp teaches your Agent to build and execute
+    repeatable workflows, makes all the data they produce searchable, and enables your team to collaborate
+    in a predictable way.
+  website: https://swamp-club.com/
+  followers: 2206
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGcop-6-MmgHg/company-logo_200_200/B56Z3jsU7EGUAI-/0/1777641541633/system_initiative_logo?e=2147483647&v=beta&t=J7hae6oS81GY3gZDg4dyl3UNyE515ad7rihfSX5WjwA
+  owner: org:swamp-club
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/adamjacob
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/elder-swamp-club
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

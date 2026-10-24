@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:entireio/scoop-bucket
+  full_name: entireio/scoop-bucket
+  url: https://github.com/entireio/scoop-bucket
+  description: Scoop bucket for entire-cli binary.
+  stars: 2
+  forks: 1
+  watchers: 0
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:06Z'
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-03-27T11:09:01Z'
+  pushed_at: '2026-10-21T16:54:56Z'
+  owner_login: entireio
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ashtom
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: entireio/scoop-bucket
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

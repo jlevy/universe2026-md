@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/sonicdmg
+  platform: x
+  handle: SonicDMG
+  url: https://x.com/SonicDMG
+  display_name: David Jones-Gilardi @wx.data IBM
+  bio: A Gen-AI/ Agentic nerd with decades of coding experience who loves learning and helping others
+    do the same!
+  location: Orlando, FL
+  website: https://www.linkedin.com/in/david-gilardi
+  followers: 1181
+  following: 841
+  posts_count: 2141
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1935982238199373824/bAqUivBi_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14521140/1682087579
+  created_at: '2008-04-25T02:11:05Z'
+  owner: person:david-jones-gilardi
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719707352218001Vt6F
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/SonicDMG
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

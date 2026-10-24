@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/briannahall0
+  platform: linkedin
+  handle: in/briannahall0
+  url: https://www.linkedin.com/in/briannahall0
+  display_name: Bree H.
+  bio: Hey, I'm Bree! I'm a software engineer turned Developer Advocate who loves all things…
+  location: Atlanta Metropolitan Area
+  followers: 5340
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQG_ThhSH_6cIg/profile-displaybackgroundimage-shrink_200_800/B4EZbHNX_xHcAY-/0/1747098894668?e=2147483647&v=beta&t=ZFo5WdUOoy7ym73Y3ebnzCmGkYVcv3lDfKMJOKFFA6o
+  owner: person:bree-hall
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744253167255001tmvm
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/briannahall0
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

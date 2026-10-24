@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/bhanuprakash0024
+  platform: linkedin
+  handle: in/bhanuprakash0024
+  url: https://www.linkedin.com/in/bhanuprakash0024
+  display_name: Bhanu Prakash Vandana
+  bio: Senior Member of Technichal Staff at VMware
+  location: Palo Alto
+  followers: 3347
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFeDkvVp7BgwA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699588272726?e=2147483647&v=beta&t=D4or8WvxmcfZ9RZ7d0P3qA4ByneDzi6A5npNXvcPGjg
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:bhanu-prakash-vandana
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721249726977001PXaO
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/bhanuprakash0024
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

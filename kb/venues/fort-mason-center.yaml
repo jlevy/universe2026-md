@@ -1,0 +1,13 @@
+softschema:
+  contract: paraverse.conference:Venue/v1
+  schema: ../_schemas/venue.schema.yaml
+  envelope: venue
+  status: permissive
+venue:
+  id: venue:fort-mason-center
+  name: Fort Mason Center for Arts & Culture
+  kind: campus
+  address: 2 Marina Blvd, San Francisco, CA 94123
+  sources:
+  - system: curation
+    snapshot: curation/venues.yaml

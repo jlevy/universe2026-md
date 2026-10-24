@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/arthurnn
+  platform: linkedin
+  handle: in/arthurnn
+  url: https://www.linkedin.com/in/arthurnn
+  display_name: Arthur Neves
+  bio: I’m a Staff+ engineer focused on AI platforms and agentic developer…
+  location: Winter Garden
+  followers: 1313
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQFMmlnPptElnA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1725577946614?e=2147483647&v=beta&t=j9Daykb6wdOKHK9SGCyi12baShh6c87rMb6KeTkTWeM
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:arthur-neves
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715200486249001DAvs
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/arthurnn
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,157 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:steven-karis
+  person: person:steven-karis
+  brief_bio:
+    text: Steven Karis is Chief Architect and a founding engineer at Resolve AI, building the agentic
+      AI systems behind its Production Engineer. Karis speaks at GitHub Universe 2026 in a sponsored session
+      on evaluating and improving an on-call agent's autonomy.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:34:19Z'
+    input_sha256: 1d8fdf10ce248c13115b95260cc80dff8d28e736cc367b9f21fee14ca37a701d
+    stale: false
+  headline: Chief Architect at Resolve AI
+  current_roles:
+  - Chief Architect at Resolve AI
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1801d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1801d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1801d
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1801d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1801d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1801d
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1801d
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785969390274001jXD8
+      ref: session:ldr1801d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785969390274001jXD8
+      ref: session:ldr1801d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785969390274001jXD8
+      ref: session:ldr1801d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785969390274001jXD8
+      ref: session:ldr1801d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785969390274001jXD8
+      ref: session:ldr1801d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785969390274001jXD8
+      ref: session:ldr1801d
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785969390274001jXD8
+      ref: session:ldr1801d
+  talks:
+  - session:ldr1801d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785986741141001w6Pw
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: sjkaris
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

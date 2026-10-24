@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:zeroscience.mk
+  url: http://www.zeroscience.mk/
+  kind: personal
+  title: Zero Science Lab - Information Security Research & Development Laboratory
+  description: Zero Science Lab (ZSL) is an independent information security research and development
+    laboratory based in Kumanovo, Macedonia. Specializing in vulnerability research, penetration testing,
+    ICS/SCADA security, exploit development, and responsible disclosure.
+  owner: person:stefan-petrushevski
+  link_basis:
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: brightdata
+    url: https://x.com/Ztefan
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://www.zeroscience.mk/
+    record_id: http://www.zeroscience.mk/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

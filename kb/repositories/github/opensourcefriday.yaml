@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/opensourcefriday
+  full_name: github/opensourcefriday
+  url: https://github.com/github/opensourcefriday
+  description: 🚲 Contribute to the open source community every Friday
+  homepage: https://opensourcefriday.com
+  stars: 1234
+  forks: 175
+  watchers: 50
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: HTML
+  topics:
+  - open-source
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2016-12-30T18:01:08Z'
+  pushed_at: '2026-10-13T08:14:11Z'
+  owner_login: github
+  owner: gh:github
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ahpook
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/opensourcefriday
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/erinmikail
+  platform: linkedin
+  handle: in/erinmikail
+  url: https://www.linkedin.com/in/erinmikail
+  display_name: Erin Mikail 🏄🏼‍♀️ Staples
+  bio: Howdy, I’m Erin 👋🏻! I’m a (very online) developer who’s passionate about…
+  location: Brooklyn
+  followers: 5533
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQEupy_dtgZ4DA/profile-displayphoto-scale_200_200/B4EZhTIBpUHEAY-/0/1753741270599?e=2147483647&v=beta&t=SZj-Bvkr9_rw6Z_M4wCTXI_WZ47jLdWJItGqq29fp0g
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEXJR9cIQ-jAg/profile-displaybackgroundimage-shrink_200_800/B4EZiZrDdvHoAU-/0/1754924857997?e=2147483647&v=beta&t=Ed4PvWrBX-gxrU0anyEAP5xxorcsKESWSEM5Pl8BG0U
+  owner: person:erin-mikail-staples
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686678866005001uQkv
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: erinmikailstaples
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/erinmikail
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

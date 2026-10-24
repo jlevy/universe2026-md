@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:jeff-an.com
+  url: http://jeff-an.com/
+  kind: personal
+  title: Jeff An
+  description: Optimizing software engineering one prompt at a time
+  owner: person:jeff-an
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/jeff-an
+  sources:
+  - system: brightdata
+    url: https://x.com/itsjeffan
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://www.jeff-an.com/
+    record_id: http://jeff-an.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,184 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:colin-dembovsky
+  person: person:colin-dembovsky
+  brief_bio:
+    text: Colin Dembovsky is a Principal Solution Engineer at GitHub who works on DevOps and was an ALM
+      MVP from 2011 to 2022. Dembovsky spoke at GitHub Universe 2024 about DevOps and security working
+      together.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: e2313af7e5cce4d4e462e2077f01c2e867115fe36a92479902ef6500ae98059a
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1385f
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1385f
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1385f
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1385f
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1385f
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1385f
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1385f
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/sec1385f
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715237041370001gFdV
+      ref: session:2024/sec1385f
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715237041370001gFdV
+      ref: session:2024/sec1385f
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715237041370001gFdV
+      ref: session:2024/sec1385f
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715237041370001gFdV
+      ref: session:2024/sec1385f
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715237041370001gFdV
+      ref: session:2024/sec1385f
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715237041370001gFdV
+      ref: session:2024/sec1385f
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715237041370001gFdV
+      ref: session:2024/sec1385f
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715237041370001gFdV
+      ref: session:2024/sec1385f
+  education:
+  - school: Rhodes University
+    evidence:
+      url: https://www.linkedin.com/in/colindembovsky
+      observed_at: '2026-10-24T08:42:30Z'
+  credentials:
+  - kind: certification
+    title: Connectd Board Advisory
+    issuer: Connectd
+    date: Feb 2026
+    url: https://verify.trueoriginal.com/2960884E-6CAC-FDC5-CA33-B18F4C369FDF/?ref=linkedin-profile
+    evidence:
+      url: https://www.linkedin.com/in/colindembovsky
+      observed_at: '2026-10-24T08:42:30Z'
+  talks:
+  - session:2024/sec1385f
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685544375884001YlwX
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

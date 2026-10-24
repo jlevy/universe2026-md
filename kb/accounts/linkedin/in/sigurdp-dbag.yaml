@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sigurdp-dbag
+  platform: linkedin
+  handle: in/sigurdp-DBAG
+  url: https://www.linkedin.com/in/sigurdp-DBAG
+  display_name: Sigurd Pollmann
+  location: Frankfurt Rhine-Main Metropolitan Area
+  followers: 864
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQGugHHrdCvEGA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516876625187?e=2147483647&v=beta&t=jb2DQpBv2HP_ULiu7baZ6H6DrkKurOCo7GghaKYDIgk
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:sigurd-pollmann
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685988972343001AdVZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sigurdp-DBAG
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

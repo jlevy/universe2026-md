@@ -1,0 +1,345 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jeff-an
+  person: person:jeff-an
+  brief_bio:
+    text: Jeff An is co-founder and CTO of Momentic, a San Francisco startup that automates software testing
+      with AI, and previously led the developer experience team at Robinhood. Jeff An speaks at GitHub
+      Universe 2026 in a sponsored session about how agents verify AI-generated code.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 1b674acb60ee5b50c79d5979d39e5a0ab026a607f990ea20cb4eae2d387777f4
+    stale: false
+  headline: CTO & Co-founder at Momentic
+  location: San Francisco
+  current_roles:
+  - CTO & Co-founder at Momentic
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1821b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1821b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1821b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1821b
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1821b
+  programming_languages:
+  - label: Shell
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jeff-an/docker-os161
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jeff-an/ideamap
+  - label: Swift
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jeff-an/seefoodar
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787615869752001IyaJ
+      ref: session:tru1821b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787615869752001IyaJ
+      ref: session:tru1821b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787615869752001IyaJ
+      ref: session:tru1821b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787615869752001IyaJ
+      ref: session:tru1821b
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787615869752001IyaJ
+      ref: session:tru1821b
+  - label: agent
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/momentic-ai/examples
+      ref: repo:momentic-ai/examples
+  - label: AI
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/momentic-ai/examples
+      ref: repo:momentic-ai/examples
+  - label: automation
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/momentic-ai/examples
+      ref: repo:momentic-ai/examples
+  - label: ci
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/momentic-ai/examples
+      ref: repo:momentic-ai/examples
+  - label: GitHub Actions
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/momentic-ai/examples
+      ref: repo:momentic-ai/examples
+  - label: qa
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/momentic-ai/examples
+      ref: repo:momentic-ai/examples
+  - label: testing
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/momentic-ai/examples
+      ref: repo:momentic-ai/examples
+  open_source:
+  - repository: repo:splunk/docker-splunk
+    relation: pinned
+    stars: 554
+    primary_language: Python
+  - repository: repo:splunk/splunk-ansible
+    relation: pinned
+    stars: 405
+    primary_language: Python
+  - repository: repo:jeff-an/docker-os161
+    relation: owner
+    stars: 15
+    primary_language: Shell
+  - repository: repo:jeff-an/seefoodar
+    relation: owner
+    stars: 12
+    primary_language: Swift
+  - repository: repo:jeff-an/ideamap
+    relation: owner
+    stars: 5
+    primary_language: JavaScript
+  - repository: repo:archiverjs/node-compress-commons
+    relation: contributor
+    stars: 17
+    primary_language: JavaScript
+  - repository: repo:momentic-ai/examples
+    relation: contributor
+    stars: 7
+    primary_language: Shell
+  credentials:
+  - kind: honor
+    title: National Biology Scholar
+    issuer: University of Toronto
+    date: '2016-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  - kind: honor
+    title: International Chemistry Olympiad Bronze Medalist
+    issuer: '-'
+    date: '2015-06-01T00:00:00.000Z'
+    description: •Awarded at the 47th International Chemistry Olympiad, competing against 300 of the best
+      high school chemists from 79 countries •Tackled third/fourth-year undergraduate problems in organic
+      chemistry, inorganic chemistry, analytical chemistry, and biological chemistry •Conducted labs usually
+      carried out by professional chemists such as organic syntheses, spectophotometric titrations, and
+      percent purity analyses
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  - kind: honor
+    title: 3rd Place in Business Administration Case Studies
+    issuer: DECA Inc.
+    date: '2013-04-01T00:00:00.000Z'
+    description: "\x95Awarded in Anaheim at the International Career Development Conference (ICDC), which\
+      \ was attended by over 19, 000 students from around the world \x95Analyzed and presented business\
+      \ cases relating to marketing, human resources management, finance, and hospitality \x95Judged by\
+      \ CEOs, VPs, and other senior employees from several major US companies"
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  - kind: honor
+    title: 2nd Place Team - Lauren Bialystok Debate Tournament
+    issuer: UTS Speech and Debate Society
+    date: '2012-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  - kind: honor
+    title: National AP Scholar (Canada)
+    issuer: Collegeboard
+    description: Achieved a score of 5 in AP Psychology, Music, Chemistry, Physics 1, Biology, Physics
+      2, and Calculus
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  publications:
+  - title: 'Bridging a divide: architecture for a joint hospital-primary care data warehouse.'
+    venue: Studies in Health Technology and Informatics
+    date: '2015'
+    description: Predicting who is likely to require healthcare in the near future could help reduce costs
+      by pre-empting use of expensive resources such as emergency departments. We describe the design
+      of an architecture for a data warehouse that can monitor the effectiveness of in-hospital interventions
+      and predict which patients are most likely to be admitted to hospital in the near future.
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  activities:
+  - kind: volunteering
+    title: Director and Program Coordinator
+    detail: Western University · Education · Jun 2016 · - Aug 2016 · 3 months · • Planned and organized
+      the Canadian Chemistry Olympiad National Camp for high-achieving chemistry students in collaboration
+      with Western University professors and graduate students • Worked with other previous Olympiad medalists
+      to devise a comprehensive curriculum for attending students • Personally taught students 2nd/3rd
+      year undergraduate organic chemistry and professional laboratory techniques • Endorsed and supported
+      by the Chemical Institute of Canada · Jun 2016
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  - kind: project
+    title: Open Mind - Yale Hacks Top 8 Overall Hacks & Fake News Challenge Winner
+    detail: • Created a chrome extension to analyze the political bias of news articles using NLP sentiment
+      analysis • Accepted into the CITY accelerator at the Yale Tsai Center for Innovative Thinking• Featured
+      on national news and scheduled to present findings to US Congress · Dec 2017
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  - kind: organization
+    title: Chemical Institute of Canada
+    detail: Membership awarded for achieving a bronze medal at the International Chemistry Olympiad ·
+      Oct 2015 · Present
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  - kind: organization
+    title: Chemistry Review
+    detail: '•Started an organization with the purpose of simplifying and enhancing chemistry education
+      for high school students•Created a website (URL: utschemistry.com) onto which student contributors
+      posted articles about fascinating chemistry concepts, latest news, etc.•Mentored and trained student
+      contributors to write engaging and scientifically accurate material along with a chemistry teacher
+      at the University of Toronto Schools•Created custom CSS code; website recently reached over 250,
+      000 views worldwide · Oct 2014 · Jun 2016'
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  - kind: organization
+    title: InfoClin Canada
+    detail: '&#149;Co-authored a paper with InfoClin researchers describing a computer science-based solution
+      to data fragmentation in the Ontario healthcare system&#149;Conducted a literature review, met with
+      infrastructure design specialists, and reviewed interviews with senior healthcare officials · Jun
+      2014 · Jul 2015'
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  - kind: organization
+    title: UTS Enterprises
+    detail: '•Started an organization with the purpose of simplifying and enhancing chemistry education
+      for high school students•Created a website (URL: utschemistry.com) onto which student contributors
+      posted articles about fascinating chemistry concepts, latest news, etc.•Mentored and trained student
+      contributors to write engaging and scientifically accurate material along with a chemistry teacher
+      at the University of Toronto Schools•Created custom CSS code; website recently reached over 250,
+      000 views worldwide · Nov 2012 · Jun 2013'
+    evidence:
+      url: https://www.linkedin.com/in/jeff-an
+      observed_at: '2026-10-24T08:11:50Z'
+  talks:
+  - session:tru1821b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1787616064220001mxn7
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jeff-an
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,55 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/pamelafox
+  platform: x
+  handle: pamelafox
+  url: https://x.com/pamelafox
+  display_name: Pamela Fox
+  bio: |-
+    (she/her) Currently a Principal Cloud Advocate in Python at Microsoft.
+    Happy Pride! 🏳️‍🌈 🏳️‍🌈 👩🏽‍❤️‍💋‍👩🏼 👨🏼‍❤️‍👨🏿
+  location: El Cerrito, CA
+  website: https://www.pamelafox.org/
+  followers: 26041
+  following: 383
+  posts_count: 31429
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2104723252866379776/q7_P3qxo_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/10483202/1714618857
+  created_at: '2007-11-23T04:18:09Z'
+  owner: person:pamela-fox
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683842376812001m7gi
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683842376812001m7gi
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683842376812001m7gi
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pamelafox
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/pamelafox
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

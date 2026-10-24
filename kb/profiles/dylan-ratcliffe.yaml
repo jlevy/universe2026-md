@@ -1,0 +1,364 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dylan-ratcliffe
+  person: person:dylan-ratcliffe
+  brief_bio:
+    text: Dylan Ratcliffe is Founder and CEO of Overmind, which shows engineers the blast radius of infrastructure
+      changes before they merge, and spent seven years at Puppet leading professional services teams across
+      EMEA. Ratcliffe speaks at GitHub Universe 2026 about peer review when agents write the diffs.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: 2a839a4e601ac5e6f6dc3b6e80440a51bbfb41185d643409b55bf1790ee84640
+    stale: false
+  headline: Founder & CEO at Overmind
+  location: London, UK
+  current_roles:
+  - Founder & CEO at Overmind
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  programming_languages:
+  - label: Ruby
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:voxpupuli/onceover
+    - ref: repo:dylanratcliffe/sumologic
+    - ref: repo:dylanratcliffe/bolt_vagrant
+    - ref: repo:dylanratcliffe/puppet-facter_cache
+    - ref: repo:dylanratcliffe/windows_disk_facts
+  - label: Puppet
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:dylanratcliffe/puppet_controlrepo
+  interests:
+  - label: terraform
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/overmindtech/cli
+      ref: repo:overmindtech/cli
+    - url: https://github.com/overmindtech/terraform-example
+      ref: repo:overmindtech/terraform-example
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: GitHub Enterprise Server
+    target: term:github-product/github-enterprise-server
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: aws
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/overmindtech/cli
+      ref: repo:overmindtech/cli
+  open_source:
+  - repository: repo:voxpupuli/onceover
+    relation: pinned
+    stars: 152
+    primary_language: Ruby
+  - repository: repo:dylanratcliffe/bolt_vagrant
+    relation: owner
+    stars: 6
+    primary_language: Ruby
+  - repository: repo:dylanratcliffe/puppet-facter_cache
+    relation: owner
+    stars: 5
+    primary_language: Ruby
+  - repository: repo:dylanratcliffe/windows_disk_facts
+    relation: owner
+    stars: 4
+    primary_language: Ruby
+  - repository: repo:dylanratcliffe/puppet_controlrepo
+    relation: owner
+    stars: 3
+    primary_language: Puppet
+  - repository: repo:dylanratcliffe/sumologic
+    relation: owner
+    stars: 2
+    primary_language: Ruby
+  - repository: repo:microsoft/winget-pkgs
+    relation: contributor
+    stars: 11235
+  - repository: repo:overmindtech/cli
+    relation: contributor
+    stars: 184
+    primary_language: Go
+  - repository: repo:overmindtech/actions
+    relation: contributor
+    stars: 0
+    primary_language: HCL
+  - repository: repo:overmindtech/terraform-example
+    relation: contributor
+    stars: 3
+    primary_language: HCL
+  - repository: repo:overmindtech/homebrew-overmind
+    relation: contributor
+    stars: 0
+    primary_language: Ruby
+  education:
+  - school: Swinburne University of Technology
+    evidence:
+      url: https://www.linkedin.com/in/dylanratcliffe
+      observed_at: '2026-10-24T08:11:38Z'
+  credentials:
+  - kind: honor
+    title: Global Professional Services Engineer of the Year
+    issuer: Puppet
+    date: '2019-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dylanratcliffe
+      observed_at: '2026-10-24T08:11:38Z'
+  - kind: honor
+    title: Most Valuable Puppeteer - EMEA Q1
+    issuer: Puppet
+    date: '2019-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dylanratcliffe
+      observed_at: '2026-10-24T08:11:38Z'
+  - kind: honor
+    title: Professional Services Delivery Person of the Year - APJ
+    issuer: Pupet
+    date: '2017-02-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dylanratcliffe
+      observed_at: '2026-10-24T08:11:38Z'
+  - kind: honor
+    title: Global Rookie of the Year
+    issuer: Puppet
+    date: '2016-02-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dylanratcliffe
+      observed_at: '2026-10-24T08:11:38Z'
+  - kind: certification
+    title: Puppet Enterprise Professional 2019 Certification
+    issuer: Puppet
+    date: Dec 2020
+    url: https://www.youracclaim.com/badges/ee804e02-6c81-4c20-a5f4-d3370da2f07c?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dylanratcliffe
+      observed_at: '2026-10-24T08:11:38Z'
+  recent_writing:
+  - title: No questions before the first demo
+    url: https://www.linkedin.com/pulse/questions-before-first-demo-dylan-ratcliffe-frksc
+    published: '2026-10-21T00:00:00.000Z'
+    channel: linkedin
+    summary: In February, our team was in an awkward spot. Our head of product and I had moved from London
+      to the US, which put…
+  - title: AI-written code costs 2.1× more to review than to generate
+    url: https://www.linkedin.com/pulse/ai-written-code-costs-21-more-review-than-generate-dylan-ratcliffe-mfqxc
+    published: '2026-08-29T00:00:00.000Z'
+    channel: linkedin
+    summary: I hate reviewing code written by agents. Nobody wrote it, nobody cares about it, and when
+      I leave feedback the author…
+  - title: The State of Terraform (mini) Report
+    url: https://www.linkedin.com/pulse/state-terraform-mini-report-dylan-ratcliffe-we9ke
+    published: '2024-07-01T00:00:00.000Z'
+    channel: linkedin
+    summary: Hey everyone, as part of building Overmind we've been doing a lot of research around how
+      people use Terraform. We don't…
+  - title: 'Solving Meta''s top 4 outage causes: 1/4 Unexpected Dependencies'
+    url: https://www.linkedin.com/pulse/solving-metas-top-4-outage-causes-14-unexpected-dylan-ratcliffe
+    published: '2023-08-04T00:00:00.000Z'
+    channel: linkedin
+    summary: In 2022 I watched Francois Richard deliver an excellent talk at SRECon EMEA about how Meta
+      drained every backbone…
+  - title: 'Datadog Outage: Multi cloud != reliability'
+    url: https://www.linkedin.com/pulse/datadog-outage-multi-cloud-reliability-dylan-ratcliffe
+    published: '2023-03-09T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Context: I''m a Datadog customer and fan of their work, and while they were down I figured
+      I''d put Overmind to work…'
+  - title: The Overmind Story
+    url: https://www.linkedin.com/pulse/overmind-story-dylan-ratcliffe
+    published: '2022-02-24T00:00:00.000Z'
+    channel: linkedin
+    summary: A few years ago when I was consulting in London, we’d just finished implementing some automation
+      and were planning to…
+  talks:
+  - session:bld1776b
+  gaps:
+  - website
+  - x_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755624535596001ehoJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dylanratcliffe
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

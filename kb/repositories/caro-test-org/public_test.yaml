@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:caro-test-org/public_test
+  full_name: caro-test-org/public_test
+  url: https://github.com/caro-test-org/public_test
+  stars: 0
+  forks: 0
+  watchers: 0
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:09:54Z'
+  primary_language: JavaScript
+  archived: false
+  fork: false
+  created_at: '2024-02-16T20:52:37Z'
+  pushed_at: '2026-06-16T13:58:07Z'
+  owner_login: caro-test-org
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: carogalvin
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: caro-test-org/public_test
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,318 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sai-gunaranjan
+  person: person:sai-gunaranjan
+  brief_bio:
+    text: Sai Gunaranjan Andhra is a cloud architect at Veradigm, responsible for the security and availability
+      of its cloud platform, and spoke at GitHub Universe 2023 in a discussion about migrating 1,500 repositories
+      to GitHub.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 578e8a7a83d8460a88e30cabea2311316eb8963b931b45e60d278e53db169edd
+    stale: false
+  headline: Veradigm
+  current_roles:
+  - Veradigm
+  expertise:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2023/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2378l
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev2378l
+  interests:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686621002871001r66j
+      ref: session:2023/dev2378l
+  education:
+  - school: UC Berkeley School of Information
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  credentials:
+  - kind: certification
+    title: 'MCSA: Cloud Platform'
+    issuer: Microsoft
+    date: Sep 2016
+    url: https://www.youracclaim.com/badges/3da0fb2c-4b77-4b42-a55b-bf7fcf99adf2/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  - kind: certification
+    title: 'Exam 534: Architecting Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: Jun 2016
+    url: https://www.youracclaim.com/badges/09ccc0a0-25c9-472c-aa30-55f67e3765a3/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  - kind: certification
+    title: 'Exam 533: Implementing Microsoft Azure Infrastructure Solutions'
+    issuer: Microsoft
+    date: Jan 2015
+    url: https://www.youracclaim.com/badges/3e0584be-c53a-4cc8-a2f2-a191d9eb3b3c/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  - kind: certification
+    title: 'MCPS: Microsoft Certified Professional 70-332'
+    issuer: Microsoft
+    date: Sep 2013
+    url: http://www.microsoft.com/learning/en-us/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  - kind: certification
+    title: ITIL V3
+    issuer: exin
+    date: Aug 2011
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Solutions Architect Expert'
+    issuer: Microsoft
+    date: Jan 2019
+    expires: Jan 2021
+    url: https://www.youracclaim.com/badges/843dad78-018a-4267-a8ad-2d83511e95c5/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  - kind: certification
+    title: 'Exam 535: Architecting Microsoft Azure Solutions'
+    issuer: Microsoft
+    url: https://www.youracclaim.com/badges/ba242ff2-ae0e-46d7-b97b-82421add40ed/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  - kind: certification
+    title: TOGAF
+    issuer: The Open Group
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  activities:
+  - kind: course
+    title: Azure Cloud Architect Boot Camp At Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/saigunaranjan
+      observed_at: '2026-10-24T08:46:56Z'
+  talks:
+  - session:2023/dev2378l
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686621488281001TSpY
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

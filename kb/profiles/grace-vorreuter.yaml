@@ -1,0 +1,163 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:grace-vorreuter
+  person: person:grace-vorreuter
+  brief_bio:
+    text: Grace Vorreuter is a principal user researcher at GitHub with more than 15 years across enterprise
+      platforms, marketplaces, developer tools and AI-powered workflows, previously at Airbnb and Uber.
+      Vorreuter speaks at GitHub Universe 2026 on non-code Copilot workflows.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 2b1607d5195d7fd3a9fe0053450150c19f89fc0a9a4f2f2a9f5228018ff04de0
+    stale: false
+  headline: Principal User Researcher at GitHub
+  location: Upstate NY
+  current_roles:
+  - Principal User Researcher at GitHub
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1781s
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1781s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1781s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:ldr1781s
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782496350477001BM6H
+      ref: session:ldr1781s
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782496350477001BM6H
+      ref: session:ldr1781s
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782496350477001BM6H
+      ref: session:ldr1781s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1782496350477001BM6H
+      ref: session:ldr1781s
+  open_source:
+  - repository: repo:github/research-panel-sweepstakes
+    relation: contributor
+    stars: 26
+    primary_language: Python
+  publications:
+  - title: Looking for related discussions on GitHub Discussions
+    date: June 23, 2022
+    description: I was cited as a co-author in a paper where Márcia Sampaio Lima investigated the prevalence
+      of related discussions within GitHub's Discussions feature.
+    evidence:
+      url: https://www.linkedin.com/in/gracevorreuter
+      observed_at: '2026-10-24T08:11:34Z'
+  - title: Getting Started in User Experience and Design Research
+    venue: Medium
+    date: December 10, 2018
+    description: Laith Ulaby and I wrote a series of articles to help folks get started in UX Research
+    evidence:
+      url: https://www.linkedin.com/in/gracevorreuter
+      observed_at: '2026-10-24T08:11:34Z'
+  - title: Field Research at Uber
+    venue: Medium
+    date: September 23, 2015
+    description: I co-wrote an article describing the importance of field research, including specific
+      case studies at Uber.
+    evidence:
+      url: https://www.linkedin.com/in/gracevorreuter
+      observed_at: '2026-10-24T08:11:34Z'
+  - title: Interviewing for User Research Positions
+    venue: Medium
+    date: March 23, 2015
+    description: My advice/experience interviewing for user research jobs.
+    evidence:
+      url: https://www.linkedin.com/in/gracevorreuter
+      observed_at: '2026-10-24T08:11:34Z'
+  - title: A Few Tips for Your Coffee Shop User Research
+    venue: Medium
+    date: November 13, 2014
+    description: An article I wrote with a few helpful tips to make coffee shop guerilla user research
+      run smoothly.
+    evidence:
+      url: https://www.linkedin.com/in/gracevorreuter
+      observed_at: '2026-10-24T08:11:34Z'
+  - title: Don’t Listen to the HiPPO
+    date: March 19, 2014
+    evidence:
+      url: https://www.linkedin.com/in/gracevorreuter
+      observed_at: '2026-10-24T08:11:34Z'
+  - title: 'To Cheese or Not to Cheese: Using Inhibiting & Promoting Pressures to Design Features'
+    date: March 10, 2014
+    evidence:
+      url: https://www.linkedin.com/in/gracevorreuter
+      observed_at: '2026-10-24T08:11:34Z'
+  talks:
+  - session:ldr1781s
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699463231224001B4xT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: gracevor
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

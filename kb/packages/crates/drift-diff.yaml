@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:crates/drift-diff
+  ecosystem: crates
+  name: drift-diff
+  url: https://crates.io/crates/drift-diff
+  description: A standalone git diff pager for the terminal, built on uncurses.
+  latest_version: 0.0.13
+  license: MIT
+  repository_url: https://github.com/aymanbagabas/drift
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: aymanbagabas/drift
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

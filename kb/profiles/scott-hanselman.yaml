@@ -1,0 +1,252 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:scott-hanselman
+  person: person:scott-hanselman
+  brief_bio:
+    text: Scott Hanselman is a VP and Member of Technical Staff at Microsoft and GitHub and hosts the
+      Hanselminutes tech podcast. Hanselman spoke at GitHub Universe 2023 about whether AI is a superhero
+      or a super villain.
+    cites:
+    - current_affiliations
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 16bdda48d97a774f352dfcde340f01f523c1b98885907d6673fb25536033c1ef
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2768m
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2768m
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2768m
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2768m
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2768m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2768m
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2768m
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694041946837001jmbs
+      ref: session:2023/ai2768m
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694041946837001jmbs
+      ref: session:2023/ai2768m
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694041946837001jmbs
+      ref: session:2023/ai2768m
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694041946837001jmbs
+      ref: session:2023/ai2768m
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694041946837001jmbs
+      ref: session:2023/ai2768m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694041946837001jmbs
+      ref: session:2023/ai2768m
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694041946837001jmbs
+      ref: session:2023/ai2768m
+  credentials:
+  - kind: honor
+    title: Professional Achievement Award
+    issuer: OIT
+    date: '2004-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/shanselman
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: honor
+    title: Microsoft Compass Award
+    issuer: Microsoft
+    description: Award for outstanding individual achievement in the Developer Division.
+    evidence:
+      url: https://www.linkedin.com/in/shanselman
+      observed_at: '2026-10-24T08:47:08Z'
+  activities:
+  - kind: volunteering
+    title: Advisory Board Member
+    detail: Prairie View A&M University · Education · Mar 2025 · - Present · 1 year 8 months · I'm happy
+      to share that I’ve joined the Dean’s Advisory Board of the Prairie View A&M University College of
+      Business! PVAMU is the largest HBCU in the state of Texas and the third largest HBCU in the United
+      States! · Mar 2025
+    evidence:
+      url: https://www.linkedin.com/in/shanselman
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: volunteering
+    title: Computer Science Advisory Board
+    detail: Virginia Commonwealth University · Science and Technology · Jan 2026 · - Present · 10 months
+      · Computer Science Advisory Board at Virginia Commonwealth University · Jan 2026
+    evidence:
+      url: https://www.linkedin.com/in/shanselman
+      observed_at: '2026-10-24T08:47:08Z'
+  recent_writing:
+  - title: Debugging my new network, when 10 Gigabit Ethernet Runs at 300 Megabits
+    url: http://feeds.hanselman.com/~/968351264/0/scotthanselman~Debugging-my-new-network-when-Gigabit-Ethernet-Runs-at-Megabits
+    published: '2026-08-27T15:25:48Z'
+    channel: blog
+  - title: Migrating a Synology NAS to a UniFi UNAS Pro 8 with Robocopy, SMB Multichannel, and Surprising
+      Performance Traps
+    url: http://feeds.hanselman.com/~/968151545/0/scotthanselman~Migrating-a-Synology-NAS-to-a-UniFi-UNAS-Pro-with-Robocopy-SMB-Multichannel-and-Surprising-Performance-Traps
+    published: '2026-08-23T19:23:42Z'
+    channel: blog
+  - title: Is the craft dead?
+    url: http://feeds.hanselman.com/~/945480746/0/scotthanselman~Is-the-craft-dead
+    published: '2026-02-09T05:50:59Z'
+    channel: blog
+  - title: The danger of glamourizing one shots
+    url: http://feeds.hanselman.com/~/945480803/0/scotthanselman~The-danger-of-glamourizing-one-shots
+    published: '2026-02-04T05:53:00Z'
+    channel: blog
+  - title: Automatically Signing a Windows EXE with Azure Trusted Signing, dotnet sign, and GitHub Actions
+    url: http://feeds.hanselman.com/~/930373259/0/scotthanselman~Automatically-Signing-a-Windows-EXE-with-Azure-Trusted-Signing-dotnet-sign-and-GitHub-Actions
+    published: '2025-11-28T19:31:25Z'
+    channel: blog
+  - title: Webcam randomly pausing in OBS, Discord, and websites - LSVCam and TikTok Studio
+    url: http://feeds.hanselman.com/~/905963465/0/scotthanselman~Webcam-randomly-pausing-in-OBS-Discord-and-websites-LSVCam-and-TikTok-Studio
+    published: '2024-10-09T19:32:28Z'
+    channel: blog
+  - title: 'What’s the easiest way to make a chatbot that I can feed 50 to 60 gigs of PDFs into and then
+      have a grounded conversation about roughly 6000 medical papers? Where is the relatively inexpensive
+      “throw gigs into a folder and get RAG” solution? #AI'
+    url: https://twitter.com/5676102/status/1842667956100296722
+    published: '2024-10-05T20:47:30Z'
+    channel: x
+  - title: Here’s the thing folks. I’ve been coding 32 years. When something like this happens it’s an
+      organizational failure. Yes, some human wrote a bad line. Someone can “git blame” and point to a
+      human and it’s awful. But it’s the testing, the Cl/CD, the A/B testing, the metered
+    url: https://twitter.com/5676102/status/1814458774704607572
+    published: '2024-07-20T00:34:17Z'
+    channel: x
+  - title: WTF? You couldn’t just analyze the code could ya
+    url: https://twitter.com/5676102/status/1814456396341227529
+    published: '2024-07-20T00:24:50Z'
+    channel: x
+  - title: Open Sourcing DOS 4
+    url: http://feeds.hanselman.com/~/882544025/0/scotthanselman~Open-Sourcing-DOS
+    published: '2024-04-25T16:46:13Z'
+    channel: blog
+  - title: Updating to .NET 8, updating to IHostBuilder, and running Playwright Tests within NUnit headless
+      or headed on any OS
+    url: http://feeds.hanselman.com/~/873234002/0/scotthanselman~Updating-to-NET-updating-to-IHostBuilder-and-running-Playwright-Tests-within-NUnit-headless-or-headed-on-any-OS
+    published: '2024-03-07T01:12:13Z'
+    channel: blog
+  - title: As a Vice President at Microsoft I always ask interviewees if they have a strong opinion about
+      folks who ask them if they care about coding fonts. Then I have those folks stop interviewing my
+      candidates.
+    url: https://twitter.com/5676102/status/1723526890894528680
+    published: '2023-11-12T02:23:27Z'
+    channel: x
+  - title: This is a weird feeling as I’ve dedicated my career to sharing others’ achievements but I’m
+      gonna to take a moment to celebrate myself. I’ve been promoted to Vice President of Developer Community
+      at Microsoft!
+    url: https://twitter.com/5676102/status/1696342973510783028
+    published: '2023-08-29T02:04:16Z'
+    channel: x
+  - title: it's totally Ok to code just for the money.
+    url: https://twitter.com/5676102/status/1691194635887218688
+    published: '2023-08-14T21:06:36Z'
+    channel: x
+  - title: Using WSL and Let's Encrypt to create Azure App Service SSL Wildcard Certificates
+    url: http://feeds.hanselman.com/~/749206136/0/scotthanselman~Using-WSL-and-Lets-Encrypt-to-create-Azure-App-Service-SSL-Wildcard-Certificates
+    published: '2023-06-27T17:17:25Z'
+    channel: blog
+  talks:
+  - session:2023/ai2768m
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694020705651001C74o
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

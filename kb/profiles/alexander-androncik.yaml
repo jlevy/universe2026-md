@@ -1,0 +1,263 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alexander-androncik
+  person: person:alexander-androncik
+  brief_bio:
+    text: Alexander Androncik is corporate vice president of applied AI at AMD and holds patents on distributed
+      operating system image deployment and on flagging AI-generated code. Androncik spoke at GitHub Universe
+      2023 and 2024 and speaks at GitHub Universe 2026 on how AMD and ING measure AI at enterprise scale.
+    cites:
+    - listed_role
+    - current_affiliations
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 690d9d317e9580cde2f519fab4f8ec8de289169d66a8cbe43f8301283df2631e
+    stale: false
+  headline: Corp. VP, Applied AI at AMD
+  current_roles:
+  - Corp. VP, Applied AI at AMD
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1418b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1418b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1418b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1418b
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1864
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1864
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1145b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1145b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1145b
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2025/1864
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai2713m
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687186963790001NaGZ
+      ref: session:2023/ai2713m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715273956244001E7G7
+      ref: session:2024/ai1418b
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759974575637001gk5K
+      ref: session:2025/1864
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715273956244001E7G7
+      ref: session:2024/ai1418b
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759974575637001gk5K
+      ref: session:2025/1864
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715273956244001E7G7
+      ref: session:2024/ai1418b
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759974575637001gk5K
+      ref: session:2025/1864
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715273956244001E7G7
+      ref: session:2024/ai1418b
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715273956244001E7G7
+      ref: session:2024/ai1418b
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759974575637001gk5K
+      ref: session:2025/1864
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715273956244001E7G7
+      ref: session:2024/ai1418b
+  education:
+  - school: University of Toronto
+    evidence:
+      url: https://www.linkedin.com/in/alexander-androncik-4bab33349
+      observed_at: '2026-10-24T08:11:27Z'
+  credentials:
+  - kind: certification
+    title: CTO Forum Enterprise AI Leadership Series 2026
+    issuer: CTO Forum
+    date: Oct 2026
+    url: https://credsverse.com/credentials/94ab444d-7264-462d-80a1-96111d326e97?preview=1
+    evidence:
+      url: https://www.linkedin.com/in/alexander-androncik-4bab33349
+      observed_at: '2026-10-24T08:11:27Z'
+  - kind: certification
+    title: Advanced Certified Scrum Product Owner (ACSPO)
+    issuer: Scrum Alliance
+    date: Mar 2021
+    evidence:
+      url: https://www.linkedin.com/in/alexander-androncik-4bab33349
+      observed_at: '2026-10-24T08:11:27Z'
+  - kind: certification
+    title: Certified Scrum Product Owner (CSPO)
+    issuer: Scrum Alliance
+    date: Jul 2015
+    evidence:
+      url: https://www.linkedin.com/in/alexander-androncik-4bab33349
+      observed_at: '2026-10-24T08:11:27Z'
+  patents:
+  - title: Method and apparatus for distributed operating system image deployment
+    number: US 9286046
+    url: https://patents.google.com/patent/US9286046
+    evidence:
+      url: https://www.linkedin.com/in/alexander-androncik-4bab33349
+      observed_at: '2026-10-24T08:11:27Z'
+  - title: System and method for tracking, screening and flagging of AI generated code
+    number: US 18930687
+    evidence:
+      url: https://www.linkedin.com/in/alexander-androncik-4bab33349
+      observed_at: '2026-10-24T08:11:27Z'
+  talks:
+  - session:2023/ai2713m
+  - session:2024/ai1418b
+  - session:2025/1864
+  - session:ldr1145b
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698155176352001xFka
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: xalexandera
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698155176352001xFka
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698155176352001xFka
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698155176352001xFka
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

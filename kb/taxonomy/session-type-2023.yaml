@@ -1,0 +1,53 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: session-type-2023
+  event: event:github-universe-2023
+  label: Session type
+  multi_valued: false
+  terms:
+  - id: term:session-type-2023/general-session
+    label: General Session
+    source_id: sessionType_generalSession
+    session_count: 17
+  - id: term:session-type-2023/keynote
+    label: Keynote
+    source_id: sessionType_keynote
+    session_count: 2
+  - id: term:session-type-2023/fireside-chat
+    label: Fireside Chat
+    source_id: 1681826483038001zW75
+    session_count: 1
+  - id: term:session-type-2023/product-demo
+    label: Product Demo
+    source_id: 1681826483038002ztLL
+    session_count: 23
+  - id: term:session-type-2023/workshop
+    label: Workshop
+    source_id: 1681826483038003zyr1
+    session_count: 10
+  - id: term:session-type-2023/panel-discussion
+    label: Panel Discussion
+    source_id: 1682954346052001b9gI
+    session_count: 4
+  - id: term:session-type-2023/discussion-lounge
+    label: Discussion Lounge
+    source_id: 1688731625258001P82F
+    session_count: 12
+  - id: term:session-type-2023/studio-session
+    label: Studio Session
+    source_id: 1690854153563001JVFR
+    session_count: 6
+  - id: term:session-type-2023/main-stage
+    label: Main Stage
+    source_id: 1692213261893001eWkK
+    session_count: 12
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681230546I4bcbaab8f
+    retrieved_at: '2026-10-24T08:03:33Z'
+    snapshot: raw/editions/universe23/attributes.json

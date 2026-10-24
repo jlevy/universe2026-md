@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:ypsidanger.com
+  url: https://ypsidanger.com
+  kind: personal
+  title: Jorge Castro
+  description: Stuff about open source, beagles, and probably other less interesting things.
+  owner: person:jorge-o-castro
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://www.ypsidanger.com/rss/
+  linked_accounts:
+  - acct:mastodon/jorge@hachyderm.io
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: castrojo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://www.ypsidanger.com/
+    record_id: https://ypsidanger.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

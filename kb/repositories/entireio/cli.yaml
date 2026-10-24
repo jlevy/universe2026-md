@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:entireio/cli
+  full_name: entireio/cli
+  url: https://github.com/entireio/cli
+  description: 📜 Entire CLI hooks into your Git workflow to capture AI agent sessions as you work. Sessions
+    are indexed alongside commits, creating a searchable record of how code was written in your repo.
+  homepage: https://entire.io
+  stars: 5214
+  forks: 487
+  watchers: 11
+  open_issues: 111
+  stats_observed_at: '2026-10-24T19:10:06Z'
+  primary_language: Go
+  topics:
+  - agents
+  - ai
+  - claude
+  - developer
+  - developer-platform
+  - gemini
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-01-02T17:13:58Z'
+  pushed_at: '2026-10-24T11:18:11Z'
+  owner_login: entireio
+  pinned_by:
+  - gh:ashtom
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: toby
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: entireio/cli
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

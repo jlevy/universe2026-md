@@ -1,0 +1,101 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: industry-2023
+  event: event:github-universe-2023
+  label: Industry
+  multi_valued: true
+  terms:
+  - id: term:industry-2023/agriculture-mining
+    label: Agriculture & Mining
+    source_id: 1597340064552001lBV4
+    session_count: 5
+  - id: term:industry-2023/business-services
+    label: Business Services
+    source_id: 1683556056754001fFuk
+    session_count: 6
+  - id: term:industry-2023/computers-electronics
+    label: Computers & Electronics
+    source_id: 1683556056754002fYm0
+    session_count: 11
+  - id: term:industry-2023/consumer-services
+    label: Consumer Services
+    source_id: 1683556056754003fpjc
+    session_count: 5
+  - id: term:industry-2023/education
+    label: Education
+    source_id: 1683556056754004fQ2J
+    session_count: 6
+  - id: term:industry-2023/energy-utilities
+    label: Energy & Utilities
+    source_id: 1683556056754005fs11
+    session_count: 5
+  - id: term:industry-2023/financial-services
+    label: Financial Services
+    source_id: 1683556056754006fquY
+    session_count: 9
+  - id: term:industry-2023/food-beverage
+    label: Food & Beverage
+    source_id: 1683556056754007fjKx
+    session_count: 5
+  - id: term:industry-2023/government
+    label: Government
+    source_id: 1683556056754008fEss
+    session_count: 5
+  - id: term:industry-2023/healthcare
+    label: Healthcare
+    source_id: 1683556056754009fg9H
+    session_count: 5
+  - id: term:industry-2023/manufacturing
+    label: Manufacturing
+    source_id: 1683556056754010fXgc
+    session_count: 5
+  - id: term:industry-2023/media-entertainment
+    label: Media & Entertainment
+    source_id: 1683556056754011fRfO
+    session_count: 5
+  - id: term:industry-2023/not-for-profit
+    label: Not for Profit
+    source_id: 1683556056754012fwKe
+    session_count: 6
+  - id: term:industry-2023/real-estate-construction
+    label: Real Estate & Construction
+    source_id: 1683556056754013f30n
+    session_count: 5
+  - id: term:industry-2023/retail
+    label: Retail
+    source_id: 1683556056754014fA8K
+    session_count: 5
+  - id: term:industry-2023/software-internet
+    label: Software & Internet
+    source_id: 1683556056754015fesT
+    session_count: 16
+  - id: term:industry-2023/telecommunications
+    label: Telecommunications
+    source_id: 1683556056754016fJ5P
+    session_count: 5
+  - id: term:industry-2023/transportation-storage
+    label: Transportation & Storage
+    source_id: 1683556056754017fkXL
+    session_count: 6
+  - id: term:industry-2023/travel-recreation-and-leisure
+    label: Travel, Recreation, and Leisure
+    source_id: 1683556056754018f7fe
+    session_count: 5
+  - id: term:industry-2023/wholesale-distribution
+    label: Wholesale & Distribution
+    source_id: 1683556056754019fY5S
+    session_count: 5
+  - id: term:industry-2023/applicable-to-all
+    label: Applicable to All
+    source_id: 1683556056754020fEXj
+    session_count: 75
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681231920169010WFZg
+    retrieved_at: '2026-10-24T08:03:33Z'
+    snapshot: raw/editions/universe23/attributes.json

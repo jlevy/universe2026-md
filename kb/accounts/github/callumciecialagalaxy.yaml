@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:callumciecialagalaxy
+  login: CallumCiecialaGalaxy
+  kind: user
+  url: https://github.com/CallumCiecialaGalaxy
+  followers: 2
+  public_repositories: 0
+  created_at: '2024-12-02T13:18:15Z'
+  contributions_last_year:
+    total: 10
+    commits: 2
+    pull_requests: 1
+    issues: 0
+    reviews: 7
+  starred_repositories: 0
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  contributed_to:
+  - repo:galaxydigitalpublic/aave-v3-core-emode-leverage-report
+  entity: person:callum-cieciala
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: CallumCiecialaGalaxy
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

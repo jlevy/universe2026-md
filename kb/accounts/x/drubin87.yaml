@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/drubin87
+  platform: x
+  handle: drubin87
+  url: https://x.com/drubin87
+  display_name: David Rubin
+  bio: Loves solving hard problems. Tweets about constraint theory/security/DevOps/k8s/build systems SRE
+    @unumotors prev. @OLX @FireID @SnapscanApp He/him
+  location: Berlin, Germany
+  followers: 293
+  following: 675
+  posts_count: 785
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/560072015457964032/6uEz8Vvq_normal.jpeg
+  created_at: '2009-10-12T21:59:07Z'
+  owner: person:david-rubin
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692173463012001Z8YV
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/drubin87
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:pomerium/documentation
+  full_name: pomerium/documentation
+  url: https://github.com/pomerium/documentation
+  description: Documentation for Pomerium
+  homepage: https://www.pomerium.com/docs
+  stars: 13
+  forks: 24
+  watchers: 3
+  open_issues: 36
+  stats_observed_at: '2026-10-24T19:12:13Z'
+  primary_language: MDX
+  topics:
+  - pomerium
+  - documentation
+  - proxy-server
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2022-06-02T21:17:45Z'
+  pushed_at: '2026-10-22T19:15:23Z'
+  owner_login: pomerium
+  owner: gh:pomerium
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: nickytonline
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pomerium/documentation
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

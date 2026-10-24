@@ -1,0 +1,27 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:azure-devops
+  name: Azure DevOps
+  aliases:
+  - Azure DevOps
+  kind: commercial
+  vendor: org:microsoft
+  mentioned_in:
+  - person:ambily-kavumkal-kamalasanan
+  - person:anirudh-dubey
+  - person:daniel-redman
+  - person:dave-burnison
+  - person:grzegorz-bak
+  - person:joe-bourne
+  - person:jon-clements
+  - person:ryan-j-salva
+  - person:usha-n
+  - session:2023/dev2743w
+  - session:tru1815d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

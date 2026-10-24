@@ -1,0 +1,80 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:dynatrace
+  login: Dynatrace
+  kind: organization
+  url: https://github.com/Dynatrace
+  name: Dynatrace
+  bio: Dynatrace
+  location: Waltham, Boston
+  website: http://www.dynatrace.com
+  public_repositories: 140
+  created_at: '2014-01-15T18:16:30Z'
+  profile_readme: "# Dynatrace\n\nThis organization is part of the Dynatrace Open Source Initiative.\n\
+    Projects are maintained by Dynatrace but if not stated differently are not officially supported.\n\
+    \nFor more information about Dynatrace please visit [dynatrace.com](https://www.dynatrace.com/).\n\
+    \n## Contact\n\nIf you do have questions regarding any project within this organization, please open\
+    \ a GitHub issue for said project.\n\nIf you do have general questions about open-source at Dynatrace,\
+    \ feel free to contact us at <[email removed]>.\n\n## Default License\n\nWe are using `Apache License\
+    \ 2.0` as our default License, see <https://www.apache.org/licenses/LICENSE-2.0>.\n\n> The Apache\
+    \ License 2.0 makes sure that the user does not have to worry about infringing any patents by using\
+    \ the software. The user is granted a license to any patent that covers the software. Through an in\
+    \ terrorem clause, this license is terminated if the user sues anyone over patent infringement related\
+    \ to this software. This condition is added in order to prevent patent litigations. - <https://en.wikipedia.org/wiki/Apache_License#Apache_License_2.0>\n\
+    \n## ObsLab\n\n**ObsLab** is a collection of hands-on observability labs designed to help\ndevelopers\
+    \ and practitioners learn by doing.\n\nThe labs cover topics across Dynatrace and the broader observability\
+    \ ecosystem,\nincluding OpenTelemetry, log ingestion, release validation, performance\ntesting, AI\
+    \ observability, Kubernetes, and application security.\n\n### OpenTelemetry and data ingestion\n\n\
+    - [`obslab-otel-collector-data-ingest`](https://github.com/Dynatrace/obslab-otel-collector-data-ingest)\
+    \  \n  Ingest logs, metrics, and traces using the Dynatrace OpenTelemetry Collector.\n\n- [`obslab-syslog`](https://github.com/Dynatrace/obslab-syslog)\
+    \  \n  Ingest syslog data into Dynatrace using the OpenTelemetry Collector.\n\n- [`obslab-live-debugger-otel`](https://github.com/Dynatrace/obslab-live-debugger-otel)\
+    \  \n  Explore live debugging and OpenTelemetry instrumentation.\n\n### Reliability and performance\n\
+    \n- [`obslab-release-validation`](https://github.com/Dynatrace/obslab-release-validation)  \n  Use\
+    \ Grafana k6, Dynatrace business events, workflows, and Site Reliability\n  Guardian to validate releases.\n\
+    \n- [`obslab-jmeter`](https://github.com/Dynatrace/obslab-jmeter)  \n  Explore integration between\
+    \ Apache JMeter and Dynatrace.\n\n- [`obslab-k6`](https://github.com/Dynatrace/obslab-k6)  \n  Stream\
+    \ Grafana k6 metrics into Dynatrace in a hands-on exercise.\n\n### Troubleshooting\n\n- [`obslab-log-problem-detection`](https://github.com/Dynatrace/obslab-log-problem-detection)\
+    \  \n  Detect problems in logs with Dynatrace.\n\n### AI observability\n\n- [`obslab-llm-observability`](https://github.com/Dynatrace/obslab-llm-observability)\
+    \  \n  Build an LLM-powered application and explore its observability with Dynatrace.\n\n### Kubernetes\n\
+    \n- [`obslab-predictive-kubernetes-scaling`](https://github.com/Dynatrace/obslab-predictive-kubernetes-scaling)\
+    \  \n  Explore predictive auto-scaling for Kubernetes workloads.\n\n### Application security\n\n-\
+    \ [`obslab-unguard`](https://github.com/Dynatrace/obslab-unguard)  \n  Detect and block security vulnerabilities\
+    \ with Dynatrace.\n\n### More hands-on demos\n\nIn addition to the ObsLab exercises above, the `Dynatrace`\
+    \ organization contains several demonstration applications for different observability scenarios.\n\
+    \nUse the table below to choose the demo environment that best fits your needs.\n\n| Repository |\
+    \ Purpose | Best for | When to use |\n| --- | --- | --- | --- |\n| [`easytrade`](https://github.com/Dynatrace/easytrade)\
+    \ | Modern microservices-based demo application for showcasing Dynatrace capabilities | Product demonstrations,\
+    \ workshops, enablement, and end-to-end observability scenarios | Start here for a general-purpose\
+    \ Dynatrace demo environment |\n| [`easyTravel-Docker`](https://github.com/Dynatrace/easyTravel-Docker)\
+    \ | Dockerized version of the established easyTravel sample application | Existing easyTravel scenarios,\
+    \ legacy workshop material, and compatibility demonstrations | Use when existing content or integrations\
+    \ specifically depend on easyTravel |\n| [`opentelemetry-demo`](https://github.com/Dynatrace/opentelemetry-demo)\
+    \ | OpenTelemetry-based demo environment | OpenTelemetry education, instrumentation, interoperability,\
+    \ and standards-based observability scenarios | Use when OpenTelemetry is the primary focus of the\
+    \ demonstration |\n| [`obslab-llm-observability`](https://github.com/Dynatrace/obslab-llm-observability)\
+    \ | Hands-on application for exploring LLM observability | Generative AI, LLM observability, workshops,\
+    \ and experimentation | Use when the scenario specifically focuses on LLM or generative AI observability\
+    \ |\n\nThese demo environments are complementary rather than interchangeable. When creating a new\
+    \ demo scenario, extend an existing environment where practical rather than creating another standalone\
+    \ demo application.\n\n[Explore all Dynatrace repositories](https://github.com/orgs/Dynatrace/repositories)\n\
+    \n## Important links\n\n> **Note**\n> The following links represent our GitHub Organization defaults,\
+    \ it might be that certain projects do have their own versions of those files.\n\n- [Code of Conduct](https://github.com/Dynatrace/.github/blob/main/CODE_OF_CONDUCT.md)\n\
+    - [Security Policy](https://github.com/Dynatrace/.github/blob/main/SECURITY.md)"
+  pinned:
+  - repo:dynatrace/bosh-oneagent-release
+  - repo:dynatrace/dynatrace-operator
+  top_repositories:
+  - repo:dynatrace/superdump
+  - repo:dynatrace/dtctl
+  - repo:dynatrace/dynatrace-configuration-as-code
+  entity: org:dynatrace
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Dynatrace
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

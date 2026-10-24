@@ -1,0 +1,467 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:baruch-sadogursky
+  person: person:baruch-sadogursky
+  brief_bio:
+    text: The GitHub Universe 2026 listing describes Baruch Sadogursky as Head of Developer Relations
+      at Port.io.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic source reconciliation
+    written_at: '2026-10-24T22:02:20+00:00'
+    input_sha256: 708e18690df83801bec18d8327c29543147a090e55dd0254f5fabd74ad388e37
+    stale: false
+  headline: Head of Developer Relations at Port
+  current_roles:
+  - Head of Developer Relations at Port
+  expertise:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: Automated Infrastructure Deployment
+    target: term:topic/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Docker
+      ref: person:baruch-sadogursky
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1810d
+  - label: Java
+    target: software:java
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Java
+      ref: person:baruch-sadogursky
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Baruch co-authored "Liquid Software" and "DevOps Tools for Java Developers" and is a Java
+        Champion, Microsoft MVP, and CNCF Ambassador alum.
+  - label: Java Champion
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Baruch co-authored "Liquid Software" and "DevOps Tools for Java Developers" and is a Java
+        Champion, Microsoft MVP, and CNCF Ambassador alum.
+  interests:
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: Automated Infrastructure Deployment
+    target: term:topic/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1786375713754001DtuA
+      ref: session:bld1810d
+  education:
+  - school: Polytechnic University
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  credentials:
+  - kind: honor
+    title: Cloud Native Ambassador
+    issuer: CNCF [Cloud Native Computing Foundation]
+    date: '2018-04-01T00:00:00.000Z'
+    description: 'Cloud Native Ambassadors (CNAs) are individuals who are passionate about Cloud Native
+      Computing Foundation technology and projects, recognized for their expertise, and willing to help
+      others learn about the framework and community. The Cloud Native Ambassador program exists to empower
+      community members with the tools and resources needed to: - Promote cloud-native projects and technology
+      - Educate a local community on the CNCF mission - Contribute to CNCF… Show more'
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: honor
+    title: Oracle Groundbreaker Ambassador
+    issuer: Oracle
+    date: '2017-10-01T00:00:00.000Z'
+    description: Oracle Groundbreaker Ambassador have expertise in modern development such as Cloud, microservices,
+      containers, DevOps, continuous delivery, open source technologies, and SQL/NoSQL databases. These
+      professionals are contributors to open source projects, authors on contemporary development approaches,
+      and speakers at prominent Oracle (Oracle Code, JavaOne) and top industry conferences such as Devoxx,
+      Developer Week, Velocity, and QCon.
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: honor
+    title: JavaOne Rock Star
+    issuer: Oracle
+    date: '2015-02-01T00:00:00.000Z'
+    description: The Rock Star Program recognizes JavaOne speakers for their outstanding session content
+      and speaking ability.
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: 'Program Committee Member: KubeCon + CloudNativeCon North America 2020'
+    issuer: The Linux Foundation
+    date: Nov 2020
+    url: https://www.youracclaim.com/badges/1c594eb4-3414-404c-81c8-050a3d64a6e6?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: 'Speaker: KubeCon + CloudNativeCon North America 2020'
+    issuer: The Linux Foundation
+    date: Nov 2020
+    url: https://www.youracclaim.com/badges/34007043-7fc4-4516-b58e-f33908117185?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: 'Track Chair: KubeCon + CloudNativeCon North America 2020'
+    issuer: The Linux Foundation
+    date: Nov 2020
+    url: https://www.youracclaim.com/badges/0a7f3fec-5057-4611-8164-22bb3d7d72d6?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: cdCon 2020 Speaker
+    issuer: The Linux Foundation
+    date: Oct 2020
+    url: https://www.youracclaim.com/badges/562d5a6c-895c-4f05-8031-b973a84aa098?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: Core Spring Developer
+    issuer: SpringSource
+    date: Mar 2008
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: Sun Certified Java Programmer
+    issuer: Sun Microsystems
+    date: Jul 2004
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: Sun Certified Mobile Application Developer
+    issuer: Sun Microsystems
+    date: Feb 2004
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: Sun Certified Business Component Developer
+    issuer: Sun Microsystems
+    date: Jan 2004
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: EJB Developer
+    issuer: IBM
+    date: Dec 2003
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: certification
+    title: Sun Certified Web Component Developer
+    issuer: Sun Microsystems
+    date: Jun 2002
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  publications:
+  - title: 'DevOps Tools for Java Developers: Best Practices from Source Code to Production Containers'
+    venue: O'Reilly
+    date: May 1, 2021
+    description: With the rise of DevOps, low-cost cloud computing, and container technologies, the way
+      Java developers approach development today has changed dramatically. This practical guide helps
+      you take advantage of microservices, serverless, and cloud-native technologies using the latest
+      DevOps techniques to simplify your build process and create hyperproductive teams.Stephen Chin,
+      Baruch Sadogursky, Ixchel Ruiz, and Melissa McKay help you evaluate an array of options. The list
+      includes source control with Git, build declaration with Maven and Gradle, CI/CD with CircleCI,
+      package management with Artifactory, containerization with Docker and Kubernetes, and much more.
+      Whether you're building applications with Jakarta EE, Spring Boot, Dropwizard, MicroProfile, Micronaut,
+      or Quarkus, this comprehensive guide has you covered.
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: 'Liquid Software: How to Achieve Trusted Continuous Updates in the DevOps World'
+    date: May 1, 2018
+    description: Software affects everything in our lives.Imagine that software could be constantly updated
+      without our involvement! No need to figure out hardware specifications. Nothing to interrupt our
+      digital activities. No waiting for lengthy downloads and reboots. What if it all just happened in
+      the background, and we could simply enjoy the benefits?Liquid Software explores a future in which
+      developers code high-quality applications that securely flow to end-users with zero downtime. The
+      authors bring insights from their more than 50 years of collective experience in building software
+      in modern development environments. They explain that what sounds like Software Utopia is possible
+      and practical!We’re at the dawn of the next great leap forward in computing – the achievement of
+      continuous software updates. The Liquid Software revolution has begun!
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: Spring in a Nutshell
+    venue: O'Reilly Media
+    description: The most complete reference available for the Spring 3.x framework, Spring in a Nutshell
+      provides all of the details you need to configure and build lightweight enterprise applications
+      on the Java platform -- ideal whether you're new to Spring or familiar with previous versions of
+      this popular open source framework.
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  spoken_languages:
+  - English
+  - Russian
+  - Hebrew
+  activities:
+  - kind: project
+    title: Maven 2 Gradle converter
+    detail: This tool obtains the effective pom of the current project, reads its dependencies and generates
+      build.gradle scripts. · Jan 2010
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: organization
+    title: Java.IL
+    detail: Dec 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: organization
+    title: ISRGUG - Groovy & Grails Israel User Group
+    detail: Jan 2013 · Present
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: organization
+    title: IL JUG
+    detail: Jan 2014 · Dec 2014
+    evidence:
+      url: https://www.linkedin.com/in/jbaruch
+      observed_at: '2026-10-24T08:11:36Z'
+  recent_writing:
+  - title: I Told a Room Full of Developers to Never Trust a Monkey. Then I Had to Actually Build the
+      Thing.
+    url: https://www.linkedin.com/pulse/i-told-room-full-developers-never-trust-monkey-had-baruch-sadogursky-riule
+    published: '2026-03-09T00:00:00.000Z'
+    channel: linkedin
+    summary: 'TLDR: Most of what people call "prompt-to-code" is actually prompt-to-spec. The spec-to-code
+      gap is where your agent…'
+  - title: The Unpleasant Surprises of OSS License Changes (and How to Avoid Them)
+    url: https://www.linkedin.com/pulse/unpleasant-surprises-oss-license-changes-how-avoid-them-sadogursky
+    published: '2018-09-17T00:00:00.000Z'
+    channel: linkedin
+    summary: Two weeks ago a popular JavaScript tool Lerna underwent dramatic turmoil. One of the original
+      founders and maintainers…
+  - title: Unleash the DevOps!
+    url: https://www.linkedin.com/pulse/unleash-devops-baruch-sadogursky
+    published: '2017-03-14T00:00:00.000Z'
+    channel: linkedin
+    summary: DevOps tools have come a long way. From virtual machines in dev and QA environments to those
+      in production, and now…
+  - title: 'AQL: a comprehensive query language for your repositories'
+    url: https://www.linkedin.com/pulse/aql-comprehensive-query-language-your-repositories-baruch-sadogursky
+    published: '2015-05-26T00:00:00.000Z'
+    channel: linkedin
+    summary: One of our mantras here at JFrog is that we’re community driven. At each roadmap meeting
+      we discuss features arising…
+  talks:
+  - session:bld1810d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1786298949043001shg7
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jbaruch-port
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

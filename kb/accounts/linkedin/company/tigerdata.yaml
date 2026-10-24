@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/tigerdata
+  platform: linkedin
+  handle: company/tigerdata
+  url: https://www.linkedin.com/company/tigerdata
+  display_name: Tiger Data (creators of TimescaleDB)
+  bio: 'Tiger Data is addressing one of the largest challenges (and opportunities) in databases for years
+    to come: helping developers, businesses, and society make sense of the data that humans and their
+    machines are generating in copious amounts. Tiger Data is the fastest PostgreSQL cloud platform that
+    natively supports full-SQL, combining the power, reliability, and ease-of-use of a relational database
+    with the scalability typically seen in NoSQL systems. It is built on PostgreSQL and optimized for
+    fast ingest and complex queries. Tiger Data is deployed for powering mission-critical applications,
+    including industrial data analysis, complex monitoring systems, operational data warehousing, financial
+    risk management, and geospatial asset tracking across industries as varied as manufacturing, space,
+    utilities, oil & gas, logistics, mining, ad tech, finance, telecom, and more. Tiger Data is backed
+    by NEA, Benchmark, Icon Ventures, Redpoint Ventures, Two Sigma Ventures, and Tiger Global. Documentation:
+    https://docs.tigerdata.com/ GitHub: https://github.com/timescale/timescaledb Twitter: https://x.com/TimescaleDB'
+  website: https://www.tigerdata.com/
+  followers: 25098
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQEosnOv4vUk7w/company-logo_200_200/B4EZ3aqH0VJMAI-/0/1777489968705/tigerdata_logo?e=2147483647&v=beta&t=iuyfhq0vVVZW1FkcliCQHmLvjfTS6AC4PSkkcwmejKQ
+  owner: org:tiger-data
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/erinmikail
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/tigerdata
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

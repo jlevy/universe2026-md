@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/nixos-foundation
+  platform: linkedin
+  handle: company/nixos-foundation
+  url: https://www.linkedin.com/company/nixos-foundation
+  display_name: NixOS Foundation
+  bio: 'The mission of the foundation is to support the Nix ecosystem''s infrastructure, and projects
+    implementing the purely functional deployment model. In particular, the foundation supports Nix, Nixpkgs,
+    NixOS, and operates: cache.nixos.org - the NixOS binary cache, containing over 120TB of prebuilt Nix
+    packages. hydra.nixos.org - a Nix build farm, consisting of hundreds of macOS, x86-64 (Linux) and
+    aarch64 (Linux) build cores. Hydra executes over 350,000 builds each week. The NixOS Foundation is
+    a registered non-profit organisation at the Chamber of commerce (Kamer van Koophandel) in Utrecht,
+    The Netherlands. The KvK number is 63520583. You can contact the foundation by writing an email to
+    [email removed].'
+  website: https://nixos.org/
+  followers: 4399
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQEtP185dtGnZg/company-logo_200_200/B4DZc27eGAHAAI-/0/1748973249768/nixos_foundation_logo?e=2147483647&v=beta&t=c0zBEr747OID5rFWkqyydlFsHXQLnYD0Ti8bIDa-alo
+  owner: org:nixos-foundation
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/ronefroni
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/nixos-foundation
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:pomerium/cli
+  full_name: pomerium/cli
+  url: https://github.com/pomerium/cli
+  description: Pomerium CLI
+  stars: 13
+  forks: 9
+  watchers: 4
+  open_issues: 3
+  stats_observed_at: '2026-10-24T19:12:13Z'
+  primary_language: Go
+  topics:
+  - pomerium
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2021-11-11T21:02:10Z'
+  pushed_at: '2026-10-24T01:54:11Z'
+  owner_login: pomerium
+  owner: gh:pomerium
+  pinned_by:
+  - gh:pomerium
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pomerium
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pomerium/cli
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

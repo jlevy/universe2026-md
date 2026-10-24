@@ -1,0 +1,61 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:lpcox
+  login: lpcox
+  kind: user
+  url: https://github.com/lpcox
+  name: Landon Cox
+  company: Microsoft
+  bio: Microsoft Research, working on GitHub Agentic Workflows
+  location: Seattle, WA
+  followers: 30
+  public_repositories: 3
+  created_at: '2015-11-16T20:29:40Z'
+  contributions_last_year:
+    total: 9498
+    commits: 6604
+    pull_requests: 1326
+    issues: 934
+    reviews: 47
+  starred_repositories: 1
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:microsoft/litebox
+  - repo:github/gh-aw
+  - repo:github/gh-aw-firewall
+  - repo:github/gh-aw-mcpg
+  - repo:github/gh-aw-actions
+  pinned:
+  - repo:github/gh-aw
+  - repo:github/gh-aw-mcpg
+  - repo:github/gh-aw-firewall
+  - repo:githubnext/gh-cao
+  entity: person:landon-cox
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: lpcox
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

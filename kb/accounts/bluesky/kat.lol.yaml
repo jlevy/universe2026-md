@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/kat.lol
+  platform: bluesky
+  handle: kat.lol
+  url: https://bsky.app/profile/kat.lol
+  owner: person:kat-cosgrove
+  link_basis:
+  - x_profile
+  details_fetched: false
+  sources:
+  - system: brightdata
+    url: https://x.com/dixie3flatline
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,283 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:david-grizzanti
+  person: person:david-grizzanti
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes David Grizzanti as Principal Engineer at The New
+      York Times.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 74efb67f7c89645793b8d231542b39c950ba62438b7cbd0ce541103a22f2dd0a
+    stale: false
+  headline: Google
+  current_roles:
+  - Google
+  expertise:
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1230b
+  interests:
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: Discussions
+    target: term:github-product-2024/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715026629476001a2V5
+      ref: session:2024/dev1230b
+  education:
+  - school: University of Scranton
+    evidence:
+      url: https://www.linkedin.com/in/davidgrizzanti
+      observed_at: '2026-10-24T08:42:56Z'
+  credentials:
+  - kind: certification
+    title: Platform Engineering Day 2025 Program Committee Member Badge
+    issuer: The Linux Foundation
+    date: Aug 2025
+    url: https://www.credly.com/badges/735f50db-5e9d-4bd5-87b5-f4cf56be7b94/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/davidgrizzanti
+      observed_at: '2026-10-24T08:42:56Z'
+  - kind: certification
+    title: PlatformCon 2024 Speaker
+    issuer: Platform Engineering
+    date: Jul 2024
+    url: https://www.virtualbadge.io/certificate-validator?credential=aeb3e492-afb9-49ff-af83-183d2fe2edc5
+    evidence:
+      url: https://www.linkedin.com/in/davidgrizzanti
+      observed_at: '2026-10-24T08:42:56Z'
+  - kind: certification
+    title: ArgoCon Europe 2024 Program Committee Member Badge
+    issuer: The Linux Foundation
+    date: Jan 2024
+    url: https://www.credly.com/badges/636e39c3-1e7e-4e26-947d-77645eebaa01/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/davidgrizzanti
+      observed_at: '2026-10-24T08:42:56Z'
+  publications:
+  - title: 'Write More, Talk Less: Building Organizational Resilience through Documentation and InnerSource'
+    venue: InfoQ
+    date: December 20, 2023
+    evidence:
+      url: https://www.linkedin.com/in/davidgrizzanti
+      observed_at: '2026-10-24T08:42:56Z'
+  - title: 'Engineering as Art: Embracing Creativity beyond Science'
+    venue: InfoQ
+    date: August 4, 2023
+    evidence:
+      url: https://www.linkedin.com/in/davidgrizzanti
+      observed_at: '2026-10-24T08:42:56Z'
+  - title: Here’s how Out in Tech’s new Philadelphia chapter is connecting LGBTQ+ technologists
+    venue: Technical.ly
+    date: March 10, 2021
+    description: The local group's David Grizzanti shares the global nonprofit's goals and its programs
+      harnessing tech for social good.
+    evidence:
+      url: https://www.linkedin.com/in/davidgrizzanti
+      observed_at: '2026-10-24T08:42:56Z'
+  activities:
+  - kind: volunteering
+    title: Computer Science Department Advisory Board Member
+    detail: University of Scranton · Education · May 2023 · - Present · 3 years 6 months · As an alumni
+      member of the Computer Science Department Advisory Board, I provide industry insight and feedback
+      to help the department continue meeting the academic and career needs of current and future students.
+      · May 2023
+    evidence:
+      url: https://www.linkedin.com/in/davidgrizzanti
+      observed_at: '2026-10-24T08:42:56Z'
+  - kind: volunteering
+    title: Organizer
+    detail: DevOpsDays Philadelphia · Science and Technology · Jun 2023 · - Present · 3 years 5 months
+      · Jun 2023
+    evidence:
+      url: https://www.linkedin.com/in/davidgrizzanti
+      observed_at: '2026-10-24T08:42:56Z'
+  talks:
+  - session:2024/dev1230b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715180961267001gXL3
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

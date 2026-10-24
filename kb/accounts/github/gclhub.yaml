@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:gclhub
+  login: gclhub
+  kind: user
+  url: https://github.com/gclhub
+  name: Greg Larkin
+  company: GitHub
+  location: Northern California
+  followers: 21
+  public_repositories: 22
+  created_at: '2022-10-17T21:24:15Z'
+  contributions_last_year:
+    total: 193
+    commits: 145
+    pull_requests: 9
+    issues: 14
+    reviews: 17
+  starred_repositories: 4
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:gclhub-actions-demo/github-actions-demo
+  - repo:gclhub-actions-demo/.github
+  - repo:gclhub-actions-demo/python-app
+  - repo:gclhub-actions-demo/java-app-demo
+  - repo:github-samples/gitfolio
+  entity: person:greg-larkin
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: gclhub
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

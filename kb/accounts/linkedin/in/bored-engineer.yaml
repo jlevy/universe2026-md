@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/bored-engineer
+  platform: linkedin
+  handle: in/bored-engineer
+  url: https://www.linkedin.com/in/bored-engineer
+  display_name: Luke Young
+  bio: I find bugs and exploit them. Sometimes for money, mainly for T-Shirts.
+  location: San Francisco Bay Area
+  followers: 1882
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQH5wP5_ifdzHw/profile-displayphoto-scale_200_200/B56Z_79sFjGcAc-/0/1786638683032?e=2147483647&v=beta&t=jo_7JUZrOSn3cuSZsirIWVj5qMII4H8OYt592dh8634
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFNonS-ty53mA/profile-displaybackgroundimage-shrink_200_800/B56ZX5Ws7vGcAU-/0/1743645248277?e=2147483647&v=beta&t=mtm4P705-G1xHD6TvYaq5rFfw_Q5z3-8M2QRA241wa0
+  owner: person:luke-young
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777655944022001vjDf
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/bored-engineer
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,438 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:matthew-casperson
+  person: person:matthew-casperson
+  brief_bio:
+    text: Matthew Casperson is a Principal Solutions Engineer at Octopus Deploy who integrates enterprise
+      platforms with Octopus and writes books on developer experience and platform engineering. Casperson
+      spoke at GitHub Universe 2024 about simplifying continuous delivery with Octopus and GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 6bea36bc653cd541501f889c8d48b5564ccb06604771b8c857ba432c5634f4e2
+    stale: false
+  headline: Octopus Deploy
+  current_roles:
+  - Octopus Deploy
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2001d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2001d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2001d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2001d
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2001d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2001d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2001d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/dev2001d
+  - label: Linux
+    target: software:linux
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Linux
+      ref: person:matthew-casperson
+  - label: Terraform
+    target: software:terraform
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Terraform
+      ref: person:matthew-casperson
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725666297335001xmze
+      ref: session:2024/dev2001d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725666297335001xmze
+      ref: session:2024/dev2001d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725666297335001xmze
+      ref: session:2024/dev2001d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725666297335001xmze
+      ref: session:2024/dev2001d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725666297335001xmze
+      ref: session:2024/dev2001d
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725666297335001xmze
+      ref: session:2024/dev2001d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725666297335001xmze
+      ref: session:2024/dev2001d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725666297335001xmze
+      ref: session:2024/dev2001d
+  - label: Sponsors
+    target: term:github-product-2024/sponsors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725666297335001xmze
+      ref: session:2024/dev2001d
+  credentials:
+  - kind: honor
+    title: Best Application of Generative AI in a DevOps Tool/Platform
+    issuer: Devops Dozen
+    date: '2026-01-01T00:00:00.000Z'
+    description: Generative AI is transforming DevOps by automating tasks, improving code quality, and
+      enhancing efficiency. It leverages AI models to generate code, automate deployments, and streamline
+      workflows, ultimately leading to faster development cycles and more robust software. This award
+      honors the best use of Generative AI in a DevOps Tool or Platform.
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: honor
+    title: Payara Hackathon – Generative AI on Jakarta EE
+    issuer: Payara
+    date: '2024-12-01T00:00:00.000Z'
+    description: Awarded second place for the SecondBrain project - https://github.com/mcasperson/SecondBrain/
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: honor
+    title: Red Hat Chairman's Award 2014
+    issuer: Red Hat
+    date: '2014-01-01T00:00:00.000Z'
+    description: This company-wide peer recognition award program acknowledges the exceptional work of
+      individuals who live the Red Hat values, create a positive customer experience, are leaders, promote
+      collaboration, and demonstrate expertise in their fields.
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: AWS Certified SysOps Administrator - Associate
+    issuer: Amazon Web Services
+    date: Jan 2016
+    url: http://aws.amazon.com/certification/
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Oracle Certified Expert, Java EE 6 Enterprise JavaBeans Developer
+    issuer: Oracle
+    date: Mar 2015
+    url: https://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=654&get_params=p_id:159
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Oracle Certified Master, Java EE 6 Enterprise Architect
+    issuer: Oracle
+    date: Mar 2015
+    url: https://www.youracclaim.com/badges/31d996f0-8578-4a1b-9716-611e3be44942/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Oracle Certified Expert, Java Platform, EE 6 Web Component Developer
+    issuer: Oracle
+    date: Jan 2015
+    url: http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=5001&get_params=p_exam_id:1Z0-899
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Oracle Certified Expert, Java Persistence API Developer
+    issuer: Oracle
+    date: May 2014
+    url: https://www.youracclaim.com/badges/31d996f0-8578-4a1b-9716-611e3be44942/public_url
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Red Hat Certified JBoss Developer
+    issuer: Red Hat
+    date: Mar 2014
+    url: https://www.redhat.com/wapps/training/certification/verify.html?certNumber=111-072-237
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Red Hat Certified JBoss Administration
+    issuer: Red Hat
+    date: Aug 2013
+    url: https://www.redhat.com/wapps/training/certification/verify.html?certNumber=111-072-237
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Oracle Certified Professional, MySQL 5 Database Administrator
+    issuer: Oracle
+    date: Feb 2013
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Oracle Certified Professional, Java SE 5/SE 6
+    issuer: Oracle
+    date: Jan 2013
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: RHCE Red Hat Enterprise Linux 6
+    issuer: Red Hat
+    date: Jan 2012
+    url: https://www.redhat.com/wapps/training/certification/verify.html?certNumber=111-072-237
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  publications:
+  - title: DevEx as a Service
+    venue: Amazon
+    date: February 4, 2024
+    description: DevOps teams are innovation engines. Maintaining the passion and productivity of DevOps
+      teams at scale requires attention to their lived experience and removing points of friction. Or,
+      more simply, by focusing on the developer experience (DevEx). Implementing the practice of platform
+      engineering with the explicit goal of improving DevEx is the foundation of DevEx as a Service (DEaaS).This
+      book provides practical guidance for teams looking to implement a platform engineering team including:*
+      The requirements of Internal Developer Platforms (IDPs)* Insights into the constraints platform
+      teams must accommodate* Activities required to support a DEaaS implementation* Non-functional requirements
+      a DEaaS implementation can improve to support DevOps teams* Metrics to help platform teams measure
+      their impact* Examples of how platform engineering has helped existing DevOps teams
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - title: The ten pillars of pragmatic Kubernetes deployments with Octopus Deploy
+    venue: Amazon
+    date: April 29, 2021
+    description: As you might imagine, at Octopus, we spend a great deal of time thinking about deployments.
+      Octopus was born to manage real world deployment processes and continues to be shaped through conversations
+      with customers, support requests, our own internal deployment requirements, and many other discussions
+      about what we think good deployments look like.This knowledge has been distilled into the 10 pillars
+      of pragmatic deployments.
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - title: Away3D 3.6 Essentials
+    venue: Packt
+    date: January 1, 2011
+    description: '* Create stunning 3D environments with highly detailed textures* Animate and transform
+      all types of 3D objects, including 3D Text* Eliminate the need for expensive hardware with proven
+      Away3D optimization techniques, without compromising on visual appeal* Written in a practical and
+      illustrative style, which will appeal to Away3D beginners and Flash developers alike'
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  patents:
+  - title: Reuse Of Documentation Components When Migrating Into A Content Management System
+    number: US 20160098399
+    date: April 7, 2016
+    description: Describes a method for identifying, importing and reusing common, duplicated content.
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  activities:
+  - kind: project
+    title: Octopus Extension for GitHub Copilot
+    detail: The Octopus extension makes it easier for customers to harness the power of Octopus without
+      needing to be an expert. This means that anyone can get answers to deployment-related questions
+      quickly and easily. The chat-based agent gives people the ability to simply extract information
+      from Octopus about deployments, such as:* Summaries of the state of deployments* Access to reporting
+      in logs and security vulnerabilities* Reporting and statistics around deployments* Step-by-step
+      instructions straight from Octopus documentationThe Octopus extension also provides a more seamless
+      experience for teams using the GitHub UI exclusively. DevOps teams can get the relevant information
+      they need for deployments without context switching from GitHub, saving time for developers. It
+      makes it easier to streamline workflows and understand the state of deployments using simple text-based
+      queries. · Dec 2023
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: project
+    title: Platform Engineering - The Azure DevOps Podcast
+    detail: This is a deep dive into platform engineering for DevOps teams hosted by The Azure DevOps
+      Podcast. · Nov 2023
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: project
+    title: Continuous Delivery with Kubernetes and Octopus Deploy
+    detail: Learn how to automate your Kubernetes deployments with this practical training series on integrating
+      k8s with Octopus.
+    evidence:
+      url: https://www.linkedin.com/in/mattcasperson
+      observed_at: '2026-10-24T08:47:09Z'
+  recent_writing:
+  - title: When should you consider Agentic AI?
+    url: https://www.linkedin.com/pulse/when-should-you-consider-agentic-ai-matthew-casperson-tccgc
+    published: '2025-11-30T00:00:00.000Z'
+    channel: linkedin
+    summary: Agentic AI is enjoying an incredible amount of interest from enterprises. This interest is
+      not quite manifesting as…
+  - title: What is the point of platform engineering?
+    url: https://www.linkedin.com/pulse/what-point-platform-engineering-matthew-casperson-0bjhc
+    published: '2025-11-27T00:00:00.000Z'
+    channel: linkedin
+    summary: I was presenting on the topic of platform engineering at a large financial institution recently,
+      with a focus on the…
+  - title: Extraordinary responsibilities demand extraordinary support
+    url: https://www.linkedin.com/pulse/extraordinary-responsibilities-demand-support-matthew-casperson-alxzc
+    published: '2025-04-12T00:00:00.000Z'
+    channel: linkedin
+    summary: “You build it, you run it” is a phrase from Werner Vogels, Amazon’s CTO, from 2006. It describes
+      a radical mentality…
+  - title: Vibe-coding was never about you
+    url: https://www.linkedin.com/pulse/vibe-coding-never-you-matthew-casperson-6yu3c
+    published: '2025-04-05T00:00:00.000Z'
+    channel: linkedin
+    summary: There is nothing quite like programming. It is basically magic – you type a magic spell into
+      a computer and it does…
+  - title: Reducing the "Time to Understand Customer" with AI
+    url: https://www.linkedin.com/pulse/reducing-time-understand-customer-ai-matthew-casperson-3u1bc
+    published: '2025-02-15T00:00:00.000Z'
+    channel: linkedin
+    summary: DevOps teams have long embraced the value of consistent metrics to measure their performance,
+      with the DORA metrics…
+  - title: Boiling the DevOps frog
+    url: https://www.linkedin.com/pulse/boiling-devops-frog-matthew-casperson-38vxc
+    published: '2025-01-12T00:00:00.000Z'
+    channel: linkedin
+    summary: These are the requirements for a random “junior full-stack developer” role I found advertised
+      this morning. These…
+  - title: Process > LLMs
+    url: https://www.linkedin.com/pulse/process-llms-matthew-casperson-mu5bc
+    published: '2025-01-05T00:00:00.000Z'
+    channel: linkedin
+    summary: What makes a generalist? It is easy to think of generalists as jack of all trades and masters
+      of none. Generalists are…
+  - title: Leetcode is awful
+    url: https://www.linkedin.com/pulse/leetcode-awful-matthew-casperson-n3onc
+    published: '2024-12-31T00:00:00.000Z'
+    channel: linkedin
+    summary: We all know the familiar sitcom grocery store trope involving a pyramid of cans stacked in
+      the middle of an aisle…
+  - title: Replacing jobs with GenAI is the worst of DevOps all over again
+    url: https://www.linkedin.com/pulse/replacing-jobs-genai-worst-devops-all-over-again-matthew-casperson-nbxtc
+    published: '2024-11-20T00:00:00.000Z'
+    channel: linkedin
+    summary: There is no doubt that DevOps called out some of the worst practices in IT departments. The
+      inefficiencies of…
+  - title: DevOps is a flat circle
+    url: https://www.linkedin.com/pulse/devops-flat-circle-matthew-casperson-zyd5c
+    published: '2024-11-16T00:00:00.000Z'
+    channel: linkedin
+    summary: Moving from an engineering role into a highly technical sales role provides an amazing vantage
+      point from which to…
+  talks:
+  - session:2024/dev2001d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725666570632001Nhtz
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

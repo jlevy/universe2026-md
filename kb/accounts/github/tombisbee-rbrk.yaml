@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:tombisbee-rbrk
+  login: tombisbee-rbrk
+  kind: user
+  url: https://github.com/tombisbee-rbrk
+  followers: 2
+  public_repositories: 0
+  created_at: '2026-03-13T16:00:02Z'
+  contributions_last_year:
+    total: 1
+    commits: 0
+    pull_requests: 0
+    issues: 0
+    reviews: 0
+  starred_repositories: 0
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  entity: person:tom-bisbee
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tombisbee-rbrk
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

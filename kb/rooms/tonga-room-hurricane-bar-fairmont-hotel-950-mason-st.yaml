@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:tonga-room-hurricane-bar-fairmont-hotel-950-mason-st
+  name: Tonga Room & Hurricane Bar
+  label: Tonga Room & Hurricane Bar @ Fairmont Hotel, 950 Mason St
+  venue: venue:tonga-room-hurricane-bar
+  source_ids:
+  - 1791440158023001GiNl
+  sessions:
+  - session:2064
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

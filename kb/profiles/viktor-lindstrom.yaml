@@ -1,0 +1,258 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:viktor-lindstrom
+  person: person:viktor-lindstrom
+  brief_bio:
+    text: Viktor Lindström is a security architect at WirelessCar who designs and communicates security
+      frameworks to keep solutions robust and compliant. Lindström spoke at GitHub Universe 2025 in a
+      choose-your-own-adventure session on security with CodeQL.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 3a4e3e2512385a4dde4a9590e1a1fe84d139c2008e19374a9d915dbd0eb8c31c
+    stale: false
+  headline: WirelessCar
+  current_roles:
+  - WirelessCar
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1349b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1349b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1349b
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CodeQL
+      ref: session:2025/sec1349b
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746187746440001WGML
+      ref: session:2025/sec1349b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746187746440001WGML
+      ref: session:2025/sec1349b
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746187746440001WGML
+      ref: session:2025/sec1349b
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746187746440001WGML
+      ref: session:2025/sec1349b
+  education:
+  - school: Chalmers tekniska högskola
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  credentials:
+  - kind: honor
+    title: Årets klippa
+    issuer: Skara Sommarland Nöjes AB
+    date: '2011-08-01T00:00:00.000Z'
+    description: En medarbetare med enorm kompetens. Den är medarbetaren inger trygghet vart denne än
+      befinner sig. Smittsamt rolig mot både gäster & medarbetare. Förtroendeingivande till tusen. Kort
+      & gott, en riktig klippa.
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  spoken_languages:
+  - Engelska
+  - Svenska
+  activities:
+  - kind: course
+    title: Algorithms
+    detail: TIN092
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Bärkraftig resursanvändning
+    detail: FFR101
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Cryptography
+    detail: TDA351
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Datakommunikation
+    detail: EDA343
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Datastrukturer
+    detail: DAT036
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Datorsystemteknik
+    detail: EDA331
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Digital- och datorteknik
+    detail: EDA451
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Digitalteknik-syntes
+    detail: EDA321
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Elektriska kretsar och fält
+    detail: EEM076
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Fysik för ingenjörer
+    detail: TIF086
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Inledande diskret matematik
+    detail: TMV210
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Introduktion till funktionell programmering
+    detail: TDA555
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Introduktion till matematik
+    detail: TMA220
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Introduktion till programmering
+    detail: TDA605
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Linjär algebra
+    detail: TMV215
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Maskinorienterad programmering
+    detail: EDA480
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Matematisk analys
+    detail: TMV170
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Matematisk statistik och diskret matematik
+    detail: MVE055
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Objektorienterad programmering
+    detail: DAT042
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Programming paradigms
+    detail: DAT121
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Reglerteknik
+    detail: ERE102
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  - kind: course
+    title: Transformer, signaler och system
+    detail: SSY080
+    evidence:
+      url: https://www.linkedin.com/in/viktor-lindström-a9310a5a
+      observed_at: '2026-10-24T08:51:23Z'
+  talks:
+  - session:2025/sec1349b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686044720642001beCc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

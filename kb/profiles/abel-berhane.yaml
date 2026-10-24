@@ -1,0 +1,157 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:abel-berhane
+  person: person:abel-berhane
+  brief_bio:
+    text: Abel Berhane is a senior service delivery engineer at GitHub who helps enterprise teams adopt
+      GitHub Copilot and agentic software development. Berhane speaks at GitHub Universe 2026 on admin
+      readiness for AI usage management.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: ac1d98fedd4eb695aff13ebcd867aef84545a2e54e9b30d3cae3b91fb3d47937
+    stale: false
+  headline: Sr Service Delivery Engineer at GitHub
+  location: Orlando, FL
+  current_roles:
+  - Sr Service Delivery Engineer at GitHub
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:abel-berhane
+  programming_languages:
+  - label: C#
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:abelberhane/samuelljacksonsoundboard
+    - ref: repo:abelberhane/flappybird
+    - ref: repo:abelberhane/zombieshooter
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:abelberhane/thedangerroom
+    - ref: repo:abelberhane/prompt-engineering
+  interests:
+  - label: Enterprise/Admin
+    target: term:github-product/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787682427062001faHU
+      ref: session:bld1824w
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787682427062001faHU
+      ref: session:bld1824w
+  - label: AI
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/abelberhane/Prompt-Engineering
+      ref: repo:abelberhane/prompt-engineering
+  - label: chatgpt
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/abelberhane/Prompt-Engineering
+      ref: repo:abelberhane/prompt-engineering
+  - label: gh-extension
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/mona-actions/gh-repo-stats
+      ref: repo:mona-actions/gh-repo-stats
+  open_source:
+  - repository: repo:mona-actions/gh-repo-stats
+    relation: pinned
+    stars: 450
+    primary_language: Shell
+  - repository: repo:abelberhane/prompt-engineering
+    relation: owner
+    stars: 3
+    primary_language: Python
+  - repository: repo:abelberhane/samuelljacksonsoundboard
+    relation: owner
+    stars: 2
+    primary_language: C#
+  - repository: repo:abelberhane/flappybird
+    relation: owner
+    stars: 2
+    primary_language: C#
+  - repository: repo:abelberhane/thedangerroom
+    relation: owner
+    stars: 1
+    primary_language: Python
+  - repository: repo:abelberhane/zombieshooter
+    relation: owner
+    stars: 1
+    primary_language: C#
+  - repository: repo:ps-copilot-sandbox/copilot-custom-workshop-django-react-web
+    relation: contributor
+    stars: 6
+  - repository: repo:ps-copilot-sandbox/copilot-operations-demo
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:ps-copilot-sandbox/copilot-administration-security
+    relation: contributor
+    stars: 2
+  - repository: repo:ps-copilot-sandbox/copilot-fundamentals-training
+    relation: contributor
+    stars: 10
+    primary_language: JavaScript
+  - repository: repo:ps-copilot-sandbox/copilot-java-spring-boot
+    relation: contributor
+    stars: 0
+    primary_language: Java
+  talks:
+  - session:bld1824w
+  gaps:
+  - linkedin_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1774907852299001CTAy
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: abelberhane
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

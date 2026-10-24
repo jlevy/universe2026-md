@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/shirhatti
+  platform: linkedin
+  handle: in/shirhatti
+  url: https://www.linkedin.com/in/shirhatti
+  display_name: Sourabh Shirhatti
+  location: Seattle
+  followers: 940
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHLp8K38mtHFw/profile-displayphoto-shrink_200_200/B56Za_9gjAHUAY-/0/1746977295138?e=2147483647&v=beta&t=B6EDGc9y4EwARQo4YiY36Yrh7FlqPVIRbMpVSB-_Zt4
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:sourabh-shirhatti
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715386742141001HuD3
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/shirhatti
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

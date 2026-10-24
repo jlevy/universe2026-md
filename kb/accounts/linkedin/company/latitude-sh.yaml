@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/latitude-sh
+  platform: linkedin
+  handle: company/latitude-sh
+  url: https://www.linkedin.com/company/latitude-sh
+  display_name: Latitude.sh
+  bio: A Megaport company, Latitude.sh gives developers the platform to deploy and manage global infrastructure
+    in seconds via an easy-to-use API and dashboard. From CPU servers and NVMe-backed storage to NVIDIA-powered
+    GPU clusters and private cloud interconnection, AI-native companies get everything they need to build,
+    train, and scale, all without the complexity or cost of the public cloud. Learn more at www.latitude.sh
+  website: https://www.latitude.sh/
+  followers: 10708
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQG3JIifOuxu0Q/company-logo_200_200/company-logo_200_200/0/1699979267090/latitude_sh_logo?e=2147483647&v=beta&t=JnogBp7Q2Clu3yatpj35QEWx0OCUwCu2-I9P4xseXVk
+  owner: org:latitude-sh
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/cmaiacd
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/latitude-sh
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

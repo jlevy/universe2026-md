@@ -1,0 +1,399 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:franck-nijhof
+  person: person:franck-nijhof
+  brief_bio:
+    text: The GitHub Universe 2026 listing describes Franck Nijhof as Lead of Home Assistant at Open Home
+      Foundation.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 77d82199034be8522a233649c7fa7cc77665910c1a47e5a3962d65df79605df2
+    stale: false
+  headline: Lead of Home Assistant at Open Home Foundation
+  location: Enschede, The Netherlands
+  current_roles:
+  - Lead of Home Assistant at Open Home Foundation
+  expertise:
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1596h
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1596h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1596h
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1596h
+  technologies:
+  - label: GitHub Discussions
+    target: software:github-discussions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1596h
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1596h
+  - label: Home Assistant
+    target: software:home-assistant
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Home Assistant
+      ref: person:franck-nijhof
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:home-assistant/core
+    - ref: repo:frenck/spook
+    - ref: repo:frenck/probatio
+    - ref: repo:frenck/awesome-home-assistant
+    - ref: repo:frenck/python-wled
+    - ref: repo:frenck/python-adguardhome
+  - label: Rust
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:frenck/yamlrocks
+  recognitions:
+  - label: GitHub Star
+    basis: github_profile
+    confidence: high
+    evidence:
+    - url: https://github.com/frenck
+      quote: GitHub Star 🌟 @home-assistant.
+  interests:
+  - label: home-assistant
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/frenck/awesome-home-assistant
+      ref: repo:frenck/awesome-home-assistant
+    - url: https://github.com/frenck/home-assistant-config
+      ref: repo:frenck/home-assistant-config
+    - url: https://github.com/frenck/spook
+      ref: repo:frenck/spook
+  - label: python
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/home-assistant/core
+      ref: repo:home-assistant/core
+    - url: https://github.com/frenck/YAMLRocks
+      ref: repo:frenck/yamlrocks
+    - url: https://github.com/frenck/probatio
+      ref: repo:frenck/probatio
+  - label: homeassistant
+    basis: github_repositories
+    confidence: medium
+    weight: 0.9
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/frenck/awesome-home-assistant
+      ref: repo:frenck/awesome-home-assistant
+    - url: https://github.com/frenck/home-assistant-config
+      ref: repo:frenck/home-assistant-config
+    - url: https://github.com/frenck/spook
+      ref: repo:frenck/spook
+  - label: internet-of-things
+    basis: github_repositories
+    confidence: medium
+    weight: 0.9
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/home-assistant/core
+      ref: repo:home-assistant/core
+    - url: https://github.com/frenck/awesome-home-assistant
+      ref: repo:frenck/awesome-home-assistant
+    - url: https://github.com/frenck/home-assistant-config
+      ref: repo:frenck/home-assistant-config
+  - label: python3
+    basis: github_repositories
+    confidence: medium
+    weight: 0.78
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/frenck/python-wled
+      ref: repo:frenck/python-wled
+    - url: https://github.com/frenck/python-adguardhome
+      ref: repo:frenck/python-adguardhome
+    - url: https://github.com/frenck/YAMLRocks
+      ref: repo:frenck/yamlrocks
+  - label: api-client
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/frenck/python-wled
+      ref: repo:frenck/python-wled
+    - url: https://github.com/frenck/python-adguardhome
+      ref: repo:frenck/python-adguardhome
+  - label: asynchronous
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/frenck/python-wled
+      ref: repo:frenck/python-wled
+    - url: https://github.com/frenck/python-adguardhome
+      ref: repo:frenck/python-adguardhome
+  - label: hass
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/frenck/home-assistant-config
+      ref: repo:frenck/home-assistant-config
+    - url: https://github.com/home-assistant/home-assistant.io
+      ref: repo:home-assistant/home-assistant.io
+  - label: hassio
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/frenck/home-assistant-config
+      ref: repo:frenck/home-assistant-config
+    - url: https://github.com/home-assistant/home-assistant.io
+      ref: repo:home-assistant/home-assistant.io
+  - label: home-assistant-config
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/frenck/home-assistant-config
+      ref: repo:frenck/home-assistant-config
+    - url: https://github.com/frenck/spook
+      ref: repo:frenck/spook
+  - label: home-automation
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/home-assistant/core
+      ref: repo:home-assistant/core
+    - url: https://github.com/frenck/awesome-home-assistant
+      ref: repo:frenck/awesome-home-assistant
+  - label: homeassistant-config
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/frenck/awesome-home-assistant
+      ref: repo:frenck/awesome-home-assistant
+    - url: https://github.com/frenck/home-assistant-config
+      ref: repo:frenck/home-assistant-config
+  open_source:
+  - repository: repo:home-assistant/core
+    relation: pinned
+    stars: 91702
+    primary_language: Python
+  - repository: repo:frenck/awesome-home-assistant
+    relation: owner
+    stars: 8589
+    primary_language: Python
+  - repository: repo:frenck/home-assistant-config
+    relation: owner
+    stars: 2038
+  - repository: repo:frenck/spook
+    relation: owner
+    stars: 1737
+    primary_language: Python
+  - repository: repo:hassio-addons/repository
+    relation: pinned
+    stars: 1685
+    primary_language: Jinja
+  - repository: repo:frenck/python-wled
+    relation: owner
+    stars: 158
+    primary_language: Python
+  - repository: repo:frenck/python-adguardhome
+    relation: owner
+    stars: 117
+    primary_language: Python
+  - repository: repo:frenck/yamlrocks
+    relation: owner
+    stars: 102
+    primary_language: Rust
+  - repository: repo:frenck/probatio
+    relation: owner
+    stars: 21
+    primary_language: Python
+  - repository: repo:pallets/jinja
+    relation: contributor
+    stars: 11806
+    primary_language: Python
+  - repository: repo:tryghost/ghost
+    relation: contributor
+    stars: 55599
+    primary_language: TypeScript
+  - repository: repo:home-assistant-libs/pychromecast
+    relation: contributor
+    stars: 2706
+    primary_language: Python
+  - repository: repo:home-assistant/home-assistant.io
+    relation: contributor
+    stars: 10004
+    primary_language: HTML
+  credentials:
+  - kind: certification
+    title: Zend Certified Engineer (PHP5)
+    issuer: Zend Technologies Ltd
+    date: Sep 2008
+    url: http://www.zend.com/en/yellow-pages/ZEND008785
+    evidence:
+      url: https://www.linkedin.com/in/frenck
+      observed_at: '2026-10-24T08:13:26Z'
+  spoken_languages:
+  - Dutch
+  - English
+  - German
+  recent_writing:
+  - title: More power, less complexity
+    url: https://frenck.dev/more-power-less-complexity/
+    published: '2026-06-23T19:05:05Z'
+    channel: blog
+  - title: Open source won. That is why LGTM stopped being enough
+    url: https://frenck.dev/open-source-won-lgtm-stopped-being-enough/
+    published: '2026-06-18T15:41:49Z'
+    channel: blog
+  - title: 'Automation modes in Home Assistant: Why the default isn''t your friend'
+    url: https://frenck.dev/automation-modes-in-home-assistant-why-the-default-isnt-your-friend/
+    published: '2026-06-14T15:45:44Z'
+    channel: blog
+  - title: A smart home will not save the planet
+    url: https://frenck.dev/a-smart-home-will-not-save-the-planet/
+    published: '2026-06-05T20:42:17Z'
+    channel: blog
+  - title: Open source was not ready for AI-speed contributions
+    url: https://frenck.dev/open-source-was-not-ready-for-ai-speed-contributions/
+    published: '2026-05-31T07:30:24Z'
+    channel: blog
+  - title: Your editor is a supply chain security risk now
+    url: https://frenck.dev/your-editor-is-part-of-your-supply-chain-now/
+    published: '2026-05-26T17:57:24Z'
+    channel: blog
+  - title: So... can Home Assistant run DOOM?
+    url: https://frenck.dev/home-assistant-can-run-doom/
+    published: '2026-03-01T19:12:54Z'
+    channel: blog
+  - title: 'The chaos begins: Building my Home Assistant smart home from scratch'
+    url: https://frenck.dev/the-chaos-begins-building-my-home-assistant-smart-home-from-scratch/
+    published: '2025-12-18T17:35:13Z'
+    channel: blog
+  - title: 'Moving to a new smart home: The exciting agony of not having the keys yet'
+    url: https://frenck.dev/moving-to-a-new-smart-home-the-exciting-agony-of-not-having-the-keys-yet/
+    published: '2025-11-04T19:19:44Z'
+    channel: blog
+  - title: Renaming Home Assistant add-ons to apps
+    url: https://frenck.dev/renaming-home-assistant-add-ons-to-apps/
+    published: '2025-11-01T17:01:12Z'
+    channel: blog
+  - title: |-
+      I'm incredibly honored, proud, happy, and super thankful to share that I'm now a GitHub Star! 🌟
+
+      A sincere thank you to anyone involved in the nomination and selection process! ❤️
+
+      Blog: https://t.co/TaEgmFDLl4
+
+      #GitHub #OpenSource #HomeAssistant
+      https://t.co/TaEgmFDLl4
+    url: https://twitter.com/14261082/status/1879941750719992208
+    published: '2025-01-16T17:20:15Z'
+    channel: x
+  - title: |-
+      Today, at GitHub Universe, we had our little Home Assistant booth in the open source section and it was busy! A massive thank you to every one of you who hopped by to say hi! 👋 That was amazing! 🥰
+
+      #GitHubUniverse #HomeAssistant #ShareTheLove https://t.co/YVVXlehJLF
+    url: https://twitter.com/14261082/status/1851486512363225575
+    published: '2024-10-30T04:49:18Z'
+    channel: x
+  - title: "I have been using and testing this with the prototype of our voice satellite hardware. It\
+      \ is so magical! \n\nJust being able to say: “It smells a bit in here”, for it to respond with “I’ve\
+      \ turned on the living room diffuser, hopefully is gets better fast!” \U0001F633\U0001F602"
+    url: https://twitter.com/14261082/status/1844271885070307697
+    published: '2024-10-10T07:00:56Z'
+    channel: x
+  - title: |-
+      Nabu Casa &amp; Home Assistant related trip today… of course: by train! 😃
+
+      Choo choo homies! 🚂
+
+      #ChooChoo https://t.co/j5oZTQhkPK
+    url: https://twitter.com/14261082/status/1783758776908054706
+    published: '2024-04-26T07:23:27Z'
+    channel: x
+  - title: |-
+      Exciting day today!  🤗
+
+      Remember how the last Home Assistant release was jam-packed? Turns out... the last release was just mediocre compared to what is coming today 😅 https://t.co/XA8O9ZUPh6
+    url: https://twitter.com/14261082/status/1676503824310099969
+    published: '2023-07-05T08:10:34Z'
+    channel: x
+  talks:
+  - session:2024/1951k
+  - session:bld1596h
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1756254549349001qUf1
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: frenck
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725987390432001nzNm
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

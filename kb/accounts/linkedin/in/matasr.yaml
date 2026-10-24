@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/matasr
+  platform: linkedin
+  handle: in/matasr
+  url: https://www.linkedin.com/in/matasr
+  display_name: Matas Rastenis
+  bio: I’m a software engineer at Uber, focused on shipping AI that holds up in production. I’m…
+  location: Seattle
+  followers: 2503
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHDxH0lZ4m0ew/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1675639304143?e=2147483647&v=beta&t=jt5K-e8dO4MvbeFNGlk0h1Ys2emzDzKuo0LJpz3S5kM
+  owner: person:matas-rastenis
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696615812281001xGay
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/matasr
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

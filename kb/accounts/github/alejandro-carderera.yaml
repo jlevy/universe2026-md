@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:alejandro-carderera
+  login: alejandro-carderera
+  kind: user
+  url: https://github.com/alejandro-carderera
+  name: Alejandro Carderera
+  bio: Staff Applied Researcher at GitHub Copilot
+  website: https://alejandro-carderera.github.io/
+  followers: 4
+  public_repositories: 3
+  created_at: '2019-10-11T12:37:55Z'
+  contributions_last_year:
+    total: 1213
+    commits: 36
+    pull_requests: 1
+    issues: 0
+    reviews: 1
+  starred_repositories: 0
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:review-bench/reviewbench
+  pinned:
+  - repo:alejandro-carderera/socgs
+  - repo:pokutta/lacg
+  - repo:zib-iol/frankwolfe.jl
+  - repo:ericlincc/parameter-free-lacg
+  - repo:zib-iol/cindy
+  websites:
+  - site:alejandro-carderera.github.io
+  entity: person:alejandro-carderera
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: alejandro-carderera
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

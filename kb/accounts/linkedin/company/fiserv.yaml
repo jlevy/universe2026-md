@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/fiserv
+  platform: linkedin
+  handle: company/fiserv
+  url: https://www.linkedin.com/company/fiserv
+  display_name: Fiserv
+  bio: 'Fiserv, Inc. (NASDAQ: FISV) is a global technology leader committed to delivering innovative and
+    transformative financial services experiences for clients in more than 100 countries.'
+  website: https://www.fiserv.com/
+  followers: 946909
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFY7GLD59Mrkg/company-logo_200_200/company-logo_200_200/0/1727453796678/fiserv_logo?e=2147483647&v=beta&t=lJwKlfLSau8tEZTJGUSeRQVRmaJJjW3-TOiLjee6OWk
+  owner: org:fiserv
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/fiserv
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

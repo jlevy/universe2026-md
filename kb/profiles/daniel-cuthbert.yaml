@@ -1,0 +1,317 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:daniel-cuthbert
+  person: person:daniel-cuthbert
+  brief_bio:
+    text: Daniel Cuthbert, affiliated with the Royal United Services Institute, was global head of cybersecurity
+      research at Banco Santander and co-authored the OWASP Application Security Verification Standard.
+      Cuthbert spoke at GitHub Universe 2025 about securing cryptography at scale with CodeQL and GitHub
+      Copilot.
+    cites:
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:39:52Z'
+    input_sha256: f0e65cb55aed7a5c20c8266b2cdcec348f14d20b2d842bd696388d6fcc454417
+    stale: false
+  headline: Royal United Services Institute
+  current_roles:
+  - Royal United Services Institute
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1325s
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1325s
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1325s
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1325s
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CodeQL
+      ref: session:2025/sec1325s
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/sec1325s
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: GitHub Enterprise Server
+    target: term:github-product-2025/github-enterprise-server
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746149146640001G1bM
+      ref: session:2025/sec1325s
+  credentials:
+  - kind: certification
+    title: Advanced Red Teaming against MLSecOps and AI-as-a-Service Platforms
+    issuer: Black Hat
+    date: Aug 2025
+    url: https://certificates.blackhat.com/d233bd85-b3a9-4340-896b-4ffddd2099f3
+    evidence:
+      url: https://www.linkedin.com/in/daniel-cuthbert0x
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: certification
+    title: Ethics of AI
+    issuer: The London School of Economics and Political Science (LSE)
+    date: Mar 2023
+    url: https://lse.credential.getsmarter.com/5cc87513-6731-4a07-9f3f-1e7320e53ef7
+    evidence:
+      url: https://www.linkedin.com/in/daniel-cuthbert0x
+      observed_at: '2026-10-24T08:42:20Z'
+  activities:
+  - kind: project
+    title: OWASP Application Security Verification Standard (ASVS)
+    detail: The OWASP Application Security Verification Standard (ASVS) Project provides a basis for testing
+      web application technical security controls and also provides developers with a list of requirements
+      for secure development.The primary aim of the OWASP Application Security Verification Standard (ASVS)
+      Project is to normalize the range in the coverage and level of rigor available in the market when
+      it comes to performing Web application security verification using a commercially-workable open
+      standard · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/daniel-cuthbert0x
+      observed_at: '2026-10-24T08:42:20Z'
+  - kind: project
+    title: OWASP Testing Guide
+    detail: The OWASP Testing Guide includes a "best practice" penetration testing framework which users
+      can implement in their own organizations and a "low level" penetration testing guide that describes
+      techniques for testing most common web application and web service security issues. · Aug 2002
+    evidence:
+      url: https://www.linkedin.com/in/daniel-cuthbert0x
+      observed_at: '2026-10-24T08:42:20Z'
+  recent_writing:
+  - title: The Black Book, the Black Hats, and the Family Business
+    url: https://www.linkedin.com/pulse/black-book-hats-family-business-daniel-cuthbert-dpmre
+    published: '2026-07-09T00:00:00.000Z'
+    channel: linkedin
+    summary: 'A quirky Vegas security fact (you know I love these random facts): before cyber had blocklists,
+      Vegas had the Black…'
+  - title: The Rise of Machines - Blackhat Asia 2026
+    url: https://www.linkedin.com/pulse/rise-machines-blackhat-asia-2026-daniel-cuthbert-o4lde
+    published: '2026-04-15T00:00:00.000Z'
+    channel: linkedin
+    summary: The Singapore government built a two-storey underground fuel complex beneath Marsiling in
+      the 1970s, large enough to…
+  - title: Gangs and the Wapping Watch Houses
+    url: https://www.linkedin.com/pulse/cherry-tree-gang-wapping-watch-houses-daniel-cuthbert-xcoke
+    published: '2025-11-28T00:00:00.000Z'
+    channel: linkedin
+    summary: East London’s waterfront has always been shaped by the tension between commerce and those
+      seeking to exploit it. In the…
+  - title: AI ALL TEH TINGS
+    url: https://www.linkedin.com/pulse/ai-all-teh-tings-daniel-cuthbert-vm5je
+    published: '2025-07-09T00:00:00.000Z'
+    channel: linkedin
+    summary: Psst, yeah you, i know you are excited about Hacker Summer Camp© It's only 23 days, 23 hours
+      and 59 minutes (well as I…
+  - title: Hacker Summer Camp 2024
+    url: https://www.linkedin.com/pulse/hacker-summer-camp-2024-daniel-cuthbert-3dg1e
+    published: '2024-07-25T00:00:00.000Z'
+    channel: linkedin
+    summary: In the sweltering heat of a 2024 Las Vegas summer, a place where the neon lights burn brighter
+      than the desert sun, I…
+  - title: "I'm going on a web app security rant, so bear with me. \n\n23 years ago OWASP was formed and\
+      \ it tried to help the web application space and those building apps to do so in a secure way. Session\
+      \ management was one of them. \n\nIf you had a token, in a header/cookie, make it secure"
+    url: https://twitter.com/14461330/status/1804068522735104019
+    published: '2024-06-21T08:27:08Z'
+    channel: x
+  - title: Memory is a beautiful thing...
+    url: https://www.linkedin.com/pulse/memory-beautiful-thing-daniel-cuthbert-fvnpe
+    published: '2024-04-23T00:00:00.000Z'
+    channel: linkedin
+    summary: Memory management has been a fundamental component of computing since the early days of programmable
+      machines. The…
+  - title: Comparison and Evaluation on Static Application Security Testing (SAST) Tools for Java
+    url: https://www.linkedin.com/pulse/comparison-evaluation-static-application-security-testing-cuthbert-44jte
+    published: '2024-04-11T00:00:00.000Z'
+    channel: linkedin
+    summary: Gather round all, let's tear apart SAST tooling and the claims all vendors make about this
+      space. This piece is based…
+  - title: In 1999, a chap called Chris Sawyer wrote a wild game using nothing but Assembly language.
+      The game, Rollercoaster Tycoon was super addictive, but 99% of the code in assembly? That’s pretty
+      hardcore right? https://t.co/zPTWUvgRX2
+    url: https://twitter.com/14461330/status/1731291893906952571
+    published: '2023-12-03T12:38:48Z'
+    channel: x
+  - title: |-
+      Well take Ghidra, Obsidian and a few other tools and watch as Nathan talks you through how you’d go about RE’ing this classic 90’s game
+
+      https://t.co/gu8Yp1Ljdy
+    url: https://twitter.com/14461330/status/1731291896788509114
+    published: '2023-12-03T12:38:48Z'
+    channel: x
+  - title: I too am over the "dont use public wifi" brigade. Often the advice is from tests done over
+      a decade so, so it's good to see someone actually testing what modern devices behave like when interception
+      is happening.
+    url: https://twitter.com/14461330/status/1727275238168072395
+    published: '2023-11-22T10:38:02Z'
+    channel: x
+  - title: |-
+      My concerns right now around the security industry is that we are seemingly seeing more layoffs, less investment into security teams and yet breaches going harder than ever before.
+
+      it's a worrying trend, NGL
+    url: https://twitter.com/14461330/status/1716714767132323979
+    published: '2023-10-24T07:14:30Z'
+    channel: x
+  - title: Taming the Machine
+    url: https://www.linkedin.com/pulse/taming-machine-daniel-cuthbert
+    published: '2023-10-06T00:00:00.000Z'
+    channel: linkedin
+    summary: In November 2022, OpenAI introduced ChatGPT to the world and since then, the hype and excitement
+      about this reached new…
+  - title: After spending 8 hours reverse engineering Javascript, I've come to the conclusion that it
+      is indeed the work of the devil and those who use it and enjoy it are somewhat special and disturbed
+    url: https://twitter.com/14461330/status/1693529462237974684
+    published: '2023-08-21T07:44:22Z'
+    channel: x
+  - title: "Worst statement ever \n\n“To date, we’ve seen no evidence that this vulnerability has been\
+      \ exploited”\n\nStop using it. It means nothing. There is no all-seeing eye that could possibly\
+      \ give you such insights."
+    url: https://twitter.com/14461330/status/1691766063866741117
+    published: '2023-08-16T10:57:15Z'
+    channel: x
+  talks:
+  - session:2025/sec1325s
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746150262007001cJ5v
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

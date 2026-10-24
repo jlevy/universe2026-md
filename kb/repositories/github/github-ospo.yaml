@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/github-ospo
+  full_name: github/github-ospo
+  url: https://github.com/github/github-ospo
+  description: Helping open source program offices get started
+  homepage: https://github.blog/2023-03-13-an-open-source-project-to-empower-ospos-everywhere/
+  stars: 756
+  forks: 75
+  watchers: 155
+  open_issues: 11
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  topics:
+  - open-source
+  - open-source-program-office
+  - ospo
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2023-03-01T00:20:42Z'
+  pushed_at: '2026-10-23T18:49:08Z'
+  owner_login: github
+  owner: gh:github
+  pinned_by:
+  - gh:zkoppert
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: zkoppert
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/github-ospo
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

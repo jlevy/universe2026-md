@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sammorrow
+  platform: linkedin
+  handle: in/sammorrow
+  url: https://www.linkedin.com/in/sammorrow
+  display_name: Sam Morrow
+  bio: Building AI developer tools. I maintain GitHub’s official MCP server and contribute to…
+  location: Amsterdam
+  followers: 2624
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGgMWth0OAIxg/profile-displayphoto-scale_200_200/B4EZrWLQPnKoAY-/0/1764529866691?e=2147483647&v=beta&t=SX_ypP9xwxe6yKei570x1Y517r_17I1bc_GDw_dmD84
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQE-sqWtKzq9Vw/profile-displaybackgroundimage-shrink_200_800/B4EZrWMB5bHgAY-/0/1764530070201?e=2147483647&v=beta&t=r8GZl8761IjqvOT9eJ_l8l2aijFZcioILsRFogJqsR8
+  owner: person:sam-morrow
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685606809874001rJOG
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685606809874001rJOG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SamMorrowDrums
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sammorrow
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

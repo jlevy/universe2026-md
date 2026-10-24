@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:advanced-security/gssar
+  full_name: advanced-security/GSSAR
+  url: https://github.com/advanced-security/GSSAR
+  description: GitHub Secret Scanning Auto Remediator  (GSSAR)
+  stars: 51
+  forks: 11
+  watchers: 3
+  open_issues: 3
+  stats_observed_at: '2026-10-24T19:09:45Z'
+  primary_language: TypeScript
+  topics:
+  - github
+  - secret-scanning
+  - remediation
+  - javascript
+  - typescript
+  - aws
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2021-08-26T13:56:11Z'
+  pushed_at: '2026-09-03T13:45:32Z'
+  owner_login: advanced-security
+  pinned_by:
+  - gh:nickliffen
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: NickLiffen
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: advanced-security/GSSAR
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

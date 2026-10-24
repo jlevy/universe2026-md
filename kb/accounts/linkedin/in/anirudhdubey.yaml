@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/anirudhdubey
+  platform: linkedin
+  handle: in/anirudhdubey
+  url: https://www.linkedin.com/in/anirudhdubey
+  display_name: Anirudh Dubey
+  bio: Experienced professional with 10+ years in tech and consulting, driving product…
+  location: San Francisco Bay Area
+  followers: 1913
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHy1H8bL4AG7A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1705652652189?e=2147483647&v=beta&t=OFSQy6VwqeM3OlmHCFW4uefdtyf14r-t1bLY17ztBpw
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGORXoRGobdFQ/profile-displaybackgroundimage-shrink_200_800/B56aBdgYZiKAAQ-/0/1788275165026?e=2147483647&v=beta&t=wqH2tbFnsZNOYJyhjlWtpSs0_eJbbr-TEGOs2ai-Ve0
+  owner: person:anirudh-dubey
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777621697296001zCYn
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/anirudhdubey
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

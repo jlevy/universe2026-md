@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/broadcom
+  platform: linkedin
+  handle: company/broadcom
+  url: https://www.linkedin.com/company/broadcom
+  display_name: Broadcom
+  bio: Broadcom provides semiconductors and infrastructure software for global organizations’ complex,
+    mission-critical needs. We combine long-term R&D investment with superb execution to deliver the best
+    technology, at scale. Through focus and expertise, Broadcom sets the standard in industries where
+    technology breakthroughs shape markets. Our semiconductor and semiconductor-based solutions serve
+    markets across networking connectivity, wireless device connectivity, servers and storage systems,
+    broadband, and industrial. Broadcom’s infrastructure software solutions serve markets including private
+    cloud, mainframe software, cybersecurity, enterprise software, and Fibre Channel storage area network
+    management. With these core technologies, we help customers accelerate their innovation.
+  website: https://www.broadcom.com/
+  followers: 692721
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E0BAQGDwy-AGAu-Hg/company-logo_200_200/company-logo_200_200/0/1631307574919?e=2147483647&v=beta&t=t6ILtIr0_kgfMqhVF8HC-V-4fq9CwLAaI2Dmqxou-Jg
+  owner: org:broadcom
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/nicolefagen
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/broadcom
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

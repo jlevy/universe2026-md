@@ -1,0 +1,261 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mayank-bhola
+  person: person:mayank-bhola
+  brief_bio:
+    text: Mayank Bhola is Co-Founder and Head of Products at TestMu AI and earlier served as lead architect
+      and vice president of engineering at LambdaTest. Bhola spoke at GitHub Universe 2025 about scaling
+      AI-driven test automation with KaneAI and HyperExecute.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 690791bb7e8559778cf872571433cd4150e47d9427adc3eca7cf17f53a414184
+    stale: false
+  headline: TestMu AI
+  current_roles:
+  - TestMu AI
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1537d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1537d
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1537d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1537d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753031631433001LAo6
+      ref: session:2025/aut1537d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753031631433001LAo6
+      ref: session:2025/aut1537d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753031631433001LAo6
+      ref: session:2025/aut1537d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753031631433001LAo6
+      ref: session:2025/aut1537d
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753031631433001LAo6
+      ref: session:2025/aut1537d
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753031631433001LAo6
+      ref: session:2025/aut1537d
+  education:
+  - school: JIIT Noida
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  spoken_languages:
+  - English
+  - Hindi
+  - Punjabi
+  activities:
+  - kind: volunteering
+    title: Core member
+    detail: OSDC ,JIIT Noida · Science and Technology · Jul 2011 · - Present · 15 years 4 months · Host
+      hacker meets , hackathons , talks · Jul 2011
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: 'Resumizr : Web based resume suite augmented with social media'
+    detail: Resumizr is a smart resume management tool, which harnesses the power of social data to make
+      crisp resumes. It allows users to maintain several versions resumes and edit them on the fly. Smart
+      validation gives intuitive error validation on each field and is updated in real time with key-ups.
+      Resumizr provides seamless integration with multiple social websites and a rich data set is maintained
+      for each user, which is easily accessible using RESTFul API. This rich dataset can be used to generate
+      a lot of meaningful information about the user’s working habits , skills and similar users using
+      artificial intelligence . The application provides various ways of signing in and associates different
+      social accounts into one main account. · Feb 2014
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: textprocess
+    detail: Textprocess is a python module for text preprocessing used in various data mining and AI algorithms.
+      It currently preprocesses only English text but can be easily extended for other languages also.
+      Textprocess provides 5 stage text pre-processing and filtering namely tokenization , normalization
+      , lemmatization , stemming and stop word removal · Oct 2013
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: mayankbhola.in
+    detail: This website, mayankbhola.in is my web programming project built on open source technologies.
+      I have tried to build it as more of a portfolio website where I can display my projects and write
+      about myself. Here, like always I have given major attention to look and feel for a great experience.
+      This website is built over Django for server-side support and uses bootstrap along with jquery for
+      a frontend. Further pygments and markdown modules for python are used for content editing such as
+      blog posts etc. It uses scrollorama , greensock , jquery knob for home page UI and disqus powered
+      comments for a blog post. Further, it uses require.js for lazy loading of website resources. · Sep
+      2013
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: nodeChat
+    detail: nodeChat is a multi-user, realtime chat application developed in node.js. nodeChat uses various
+      node plugins for supporting different features and mongoDB for persistent storage.nodeChat uses
+      socket.io for harnessing the power of HTML 5 web sockets to provide real-time updates. nodeChat
+      intelligently uses database and sockets to give the best performance. · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: Brain wave authentication and gaming
+    detail: Brainwave authentication and gaming uses Epoc emotive brainwave headset. This project basically
+      deals with EEG signals captured from scalp which gives insight to cognitive activities inside brain
+      and signals whenever any emotive or affective activity is carried out. This project uses these signals
+      to carry out authentication based on unique brainwave fingerprint · May 2013
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: dbaseView
+    detail: dBaseView is a PHP based CRUD(Create, Read, Update, Delete) application , for basic contact
+      management purposes. Designed with companies’ requirement in mind. It provides record (contact)
+      management for client and companies And stores various fields like PAN, DIN (relevant for tax purposes).
+      It also provides basic search functionality for client and Company record based on few key values
+      such as first name, last name, PAN number and DIN number. It is a lightweight alternative for basic
+      contact management that can be run on local PHP server such as XAMPP Project repo contains config
+      file that needs to be edited before use. Project readme provides relevant details. · Jun 2013
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: PHP mysqli adapter
+    detail: PHP mysqli adapter is an abstraction of basic database functions such as select, insert, update
+      and delete, into easy to use and flexible classes. It provides a hassle-free interface for database
+      interaction with the flexible argument list. In addition, it wraps the result of select queries
+      in arrays with column name as indexes for easy access information and includes Sufficient error
+      handling and support for pagination using SQL limit functionality. Project repo has nice Readme
+      file depicting usage examples. · Jun 2013
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: PyShare
+    detail: Pyshare is a local network based file sharing suite, built over the twisted library for asynchronous
+      communication. It is multiuser server-client based application, which runs over TCP/IP and provides
+      file sharing functionalities. It includes support for assigning nicknames to peer systems in a local
+      network and accessing those hosts using that nickname. Pyshare features folder sync functionality
+      which can determine which file to update at the run time. The best part of Pyshare is that clients
+      don’t need to be manually configured to connected to the server. This process is automated with
+      local network discovery tools like ping and handles the connection between client and server. Project
+      readme further describes the functionality of the project. · Feb 2013
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: Design-Room
+    detail: Design room is an open source web page designer tool , built on HTML5, CSS3, and JavaScript
+      and uses PHP for authentication and file download purposes. It allows a user to design and tweak
+      every possible CSS property to change look and feel of the element. This is beta version and supports
+      <p>,<aside>,<img>,<div> tags. A user can insert text and images and apply various styling options.
+      The canvas provides drag and drop capabilities and dynamic repositioning of elements. Elements can
+      be resized dynamically using size extenders, appended at the bottom right of the elements. Elements
+      can also be removed from canvas by dragging them to the trashcan. Ajax image uploader provided with
+      Design room is also 'drag and drop' based. Just drop the images you want to upload and they will
+      be on canvas in no time. Design room generates the code at the backend for the design you created.
+      Any time user can view the source code by clicking in the status bar at the top. The code will be
+      formatted and syntax highlighted (using jquery libraries). Also, the code can be downloaded at any
+      time. · Aug 2012
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  - kind: project
+    title: tecneed.com
+    detail: Tecneed is PHP based forum for a wide variety of discussions. It allows active user participation
+      and allows a user to create different topics and comment on them. Notification emails are automatically
+      sent to users if someone replied to their post for the first time along with post link. Tecneed
+      has custom admin dashboard that manages user access roles and post and comments. Admin can change
+      the rank of users , deauthorize them , authorize them using admin panel. Tecneed is built on PHP,
+      JS, HTML5,CSS3. A user can share posts and create polls.It was my first experimental project(currently
+      offline). · Feb 2012
+    evidence:
+      url: https://www.linkedin.com/in/mayankbhola
+      observed_at: '2026-10-24T08:47:13Z'
+  talks:
+  - session:2025/aut1537d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1757348415664001TMrC
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

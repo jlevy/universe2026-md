@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/tiny-spec-inc
+  platform: linkedin
+  handle: company/tiny-spec-inc
+  url: https://www.linkedin.com/company/tiny-spec-inc
+  display_name: Slack
+  bio: Slack is on a mission to make people's working lives simpler, more pleasant and more productive.
+    It is the productivity platform for customer companies that improves performance by empowering everyone
+    with no-code automation, making search and knowledge sharing seamless, and keeping teams connected
+    and engaged as they move work forward together. As part of Salesforce, Slack is deeply integrated
+    into the Salesforce Customer 360, supercharging productivity across sales, service and marketing teams.
+    To learn more and get started with Slack for free, visit slack.com or connect with us @SlackHQ. Ensuring
+    a diverse and inclusive workplace where we learn from each other is core to Slack’s values. We welcome
+    people of different backgrounds, experiences, abilities and perspectives. We are an equal opportunity
+    employer and a pleasant and supportive place to work. Come do the best work of your life here at Slack.
+  website: https://slack.com/
+  followers: 1825012
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEAL5hognrKuA/company-logo_200_200/B56ZvdYni2HcAM-/0/1768945777147/tiny_spec_inc_logo?e=2147483647&v=beta&t=zr5YzAtIT8AUTFcFS4ziQtMwI6bYzE9kjHj-BYMEp74
+  owner: org:slack
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/francescoronel
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/tiny-spec-inc
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

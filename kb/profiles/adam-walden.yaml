@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:adam-walden
+  person: person:adam-walden
+  brief_bio:
+    text: Adam Walden was VP of Brand and Corporate Marketing at GitHub when interviewed at GitHub Universe
+      2024 in a studio session about the making of GitHub Universe.
+    cites:
+    - listed_role
+    - past_affiliations
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 07220b8853d1ba59add8be749c5bf7dcd187ed212465556183b8c8dd126ef1a9
+    stale: false
+  talks:
+  - session:2024/dev2238o
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  - bio
+  - photo
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692218007777001INP1
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,230 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alfredo-deza
+  person: person:alfredo-deza
+  brief_bio:
+    text: Alfredo Deza works at Pragmatic AI Labs and has written books on MLOps, machine learning on
+      Azure and Jenkins. Deza spoke at GitHub Universe 2024, while in developer relations at Microsoft,
+      about pairing data with GitHub Copilot for data solutions.
+    cites:
+    - current_affiliations
+    - publications
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: e8e4b32c5218dc4bceea62200fab2eb08300a9d8d5bb7c36018745d7c93d8950
+    stale: false
+  headline: Pragmatic AI Labs
+  current_roles:
+  - Pragmatic AI Labs
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1959w
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1959w
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1959w
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1959w
+  - label: Python
+    target: software:python
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Python
+      ref: session:2024/ai1959w
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724373235467001rrTd
+      ref: session:2024/ai1959w
+  publications:
+  - title: Practical MLOps
+    venue: O'Reilly
+    date: February 1, 2021
+    description: Getting your models into production is the fundamental challenge of machine learning.
+      MLOps offers a set of proven principles aimed at solving this problem in a reliable and automated
+      way. This insightful guide takes you through what MLOps is (and how it differs from DevOps) and
+      shows you how to put it into practice to operationalize your machine learning models.Current and
+      aspiring machine learning engineers--or anyone familiar with data science and Python--will build
+      a foundation in MLOps tools and methods (along with AutoML and monitoring and logging), then learn
+      how to implement them in AWS, Microsoft Azure, and Google Cloud. The faster you deliver a machine
+      learning system that works, the faster you can focus on the business problems you're trying to crack.
+      This book gives you a head start.
+    evidence:
+      url: https://www.linkedin.com/in/alfredodeza
+      observed_at: '2026-10-24T08:42:58Z'
+  - title: Operationalizing Machine Learning with Azure
+    venue: Udacity
+    date: October 1, 2020
+    description: In this program, students will enhance their skills by building and deploying sophisticated
+      machine learning solutions using popular open source tools and frameworks, and gain practical experience
+      running complex machine learning tasks using the built-in Azure labs accessible inside the Udacity
+      classroom.
+    evidence:
+      url: https://www.linkedin.com/in/alfredodeza
+      observed_at: '2026-10-24T08:42:58Z'
+  - title: Jenkins For DevOps
+    venue: Pearson
+    date: December 15, 2019
+    description: Cloud technology advancement has changed the face of the tech world, with more emphasis
+      on continuous integration and delivery. Learn how to deploy, configure, and take advantage of Jenkins
+      for Continuous Integration and Continuous Delivery (CI/CD) and pipeline-like workflows.This LiveLesson
+      walks you through the industry standard best practices of deploying Jenkins in a continuous testing
+      environment. Learn to create fully functional Jenkins servers based on Infrastructure as Code (IaC)
+      as well as deploy Jenkins in both AWS and Google Cloud. Learn the advanced features of Jenkins,
+      including the Jenkins Job Builder. Finally, learn several real-world Jenkins deployment case studies.
+    evidence:
+      url: https://www.linkedin.com/in/alfredodeza
+      observed_at: '2026-10-24T08:42:58Z'
+  - title: Python For DevOps
+    venue: O'Reilly
+    date: December 1, 2019
+    description: Much has changed in technology over the past decade. Data is hot, the cloud is ubiquitous,
+      and many organizations need some form of automation. Throughout these transformations, Python has
+      become one of the most popular languages in the world. This practical resource shows you how to
+      use Python for everyday Linux systems administration tasks with today’s most useful DevOps tools,
+      including Docker, Kubernetes, and Terraform.Learning how to interact and automate with Linux is
+      essential for millions of professionals. Python makes it much easier. With this book, you’ll learn
+      how to develop software and solve problems using containers, as well as how to monitor, instrument,
+      load-test, and operationalize your software. Looking for effective ways to "get stuff done" in Python?
+      This is your guide.
+    evidence:
+      url: https://www.linkedin.com/in/alfredodeza
+      observed_at: '2026-10-24T08:42:58Z'
+  - title: Big, fast, and stable storage on a budget
+    venue: IBM DeveloperWorks
+    date: December 13, 2011
+    description: Unfortunately, this article is no longer available. It went over the specifics to creating
+      a large storage server using ZFS
+    evidence:
+      url: https://www.linkedin.com/in/alfredodeza
+      observed_at: '2026-10-24T08:42:58Z'
+  - title: Firewall uptime and security with iptables
+    venue: IBM DeveloperWorks
+    date: December 13, 2011
+    description: Set up and maintain a Linux firewall with this effective application
+    evidence:
+      url: https://www.linkedin.com/in/alfredodeza
+      observed_at: '2026-10-24T08:42:58Z'
+  - title: Easy and beautiful documentation with Sphinx
+    venue: IBM DeveloperWorks
+    date: November 29, 2011
+    evidence:
+      url: https://www.linkedin.com/in/alfredodeza
+      observed_at: '2026-10-24T08:42:58Z'
+  spoken_languages:
+  - English
+  - Spanish
+  - Portuguese
+  - French
+  - Italian
+  - Galician
+  activities:
+  - kind: volunteering
+    title: High Jump Coach
+    detail: Alan C. Pope High School · Education · Oct 2015 · - May 2017 · 1 year 8 months · Oct 2015
+    evidence:
+      url: https://www.linkedin.com/in/alfredodeza
+      observed_at: '2026-10-24T08:42:58Z'
+  recent_writing:
+  - title: Metrics to achieve success
+    url: https://www.linkedin.com/pulse/metrics-achieve-success-alfredo-deza
+    published: '2019-11-27T00:00:00.000Z'
+    channel: linkedin
+    summary: One of the things I had to do when I was a professional athlete was to keep a detailed journal
+      of my daily workouts. I…
+  talks:
+  - session:2024/ai1959w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724374520364001O30F
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

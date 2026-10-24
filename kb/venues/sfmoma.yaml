@@ -1,0 +1,13 @@
+softschema:
+  contract: paraverse.conference:Venue/v1
+  schema: ../_schemas/venue.schema.yaml
+  envelope: venue
+  status: permissive
+venue:
+  id: venue:sfmoma
+  name: San Francisco Museum of Modern Art
+  kind: building
+  address: 151 3rd St, San Francisco, CA 94103
+  sources:
+  - system: curation
+    snapshot: curation/venues.yaml

@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/@port-labs/port-skills
+  ecosystem: npm
+  name: '@port-labs/port-skills'
+  url: https://www.npmjs.com/package/@port-labs/port-skills
+  description: Port's public Agent Skills, installable as an npm package or as a Claude Code / Cursor
+    plugin.
+  latest_version: 1.0.8
+  license: MIT
+  repository_url: git+https://github.com/port-labs/port-skills.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: port-labs/port-skills
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

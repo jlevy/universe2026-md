@@ -1,0 +1,292 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:suhas-jaladi
+  person: person:suhas-jaladi
+  brief_bio:
+    text: Suhas Jaladi is a software engineer at Coursera working on CI/CD tools, including migrating
+      workflows to GitHub Actions. Jaladi spoke at GitHub Universe 2023 about maximizing developer productivity
+      and cost savings with GitHub Actions.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 6a596566366b6e9b328b1a436450e60774643e34e35430f4d1491dbfbc4618da
+    stale: false
+  headline: Coursera
+  current_roles:
+  - Coursera
+  expertise:
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1044d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1044d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1044d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:suhas-jaladi
+  interests:
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1683656912570001bo3Q
+      ref: session:2023/dev1044d
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1683656912570001bo3Q
+      ref: session:2023/dev1044d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1683656912570001bo3Q
+      ref: session:2023/dev1044d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1683656912570001bo3Q
+      ref: session:2023/dev1044d
+  education:
+  - school: University of California, Davis
+    school_ref: org:university-of-california-davis
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  credentials:
+  - kind: certification
+    title: Functional Programming Principles in Scala
+    issuer: Coursera
+    date: Mar 2022
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: certification
+    title: Apache Spark for Java Developers
+    issuer: Udemy
+    date: Jan 2021
+    url: https://www.udemy.com/certificate/UC-93a7a94a-ab25-4cac-b400-6ac9b679a714/
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  spoken_languages:
+  - Telugu
+  - English
+  activities:
+  - kind: project
+    title: Hand Written Number Detection
+    detail: In this project, I identified the handwritten digit by analysing the pixels. Initially, I
+      trained my code with 1 GigaByte of Data and make sure that producing result with 96+% accuracy then
+      loaded tested data to find out the digits. · Dec 2017
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: project
+    title: Parallel programming
+    detail: Programs using Mpi and p_threads libraries for huge variation in time Complexity. · Nov 2017
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: project
+    title: E language Compiler
+    detail: Parsing the E Language and to generate the equivalent C Code by checking it Syntax and Semantic
+      errors and Scopes. · Oct 2017
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: project
+    title: Abstract Implementation
+    detail: Just by using Int and Char I implemented operations like Mappings Functionality and Nested
+      Sequences.
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Algorithm Design and Analysis
+    detail: ECS 122B
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Advanced Statistics Course
+    detail: STA 141C
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Big Data Analytics
+    detail: CSE459
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Calculus, Matrix Algebra and Oridinary Differential Equations
+    detail: MAT111
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Computer Organisation and Architechture
+    detail: CSE210
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Computer Programming
+    detail: CSE100
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Computer Vision
+    detail: ECS 174
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Comuter Networks
+    detail: CSE310
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Data Structures
+    detail: ECS60
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Database Management System
+    detail: CSE340
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Design and Analysis of Algorithms Introduction
+    detail: CSE330
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Discrete Mathematics
+    detail: MAT220
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Embedded Systems
+    detail: CSE212
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Fundamentals of Statistical Data Science
+    detail: STA 141A
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Integral Transforms and Complex Analysis
+    detail: MAT211
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Java Programming
+    detail: CSE 390
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Object oriented Programming
+    detail: CSE220
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Operating Systems
+    detail: CSE 300
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Parallel Architechtures
+    detail: ECS 158
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Programming Languages
+    detail: ECS 140A
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Software Engineering
+    detail: CSE320
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  - kind: course
+    title: Structure and Interpretation of Computer Programs
+    detail: CSE221
+    evidence:
+      url: https://www.linkedin.com/in/krishnasuhas
+      observed_at: '2026-10-24T08:44:51Z'
+  talks:
+  - session:2023/dev1044d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683655502508001sHLP
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

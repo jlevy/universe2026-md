@@ -1,0 +1,135 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:joe-bourne
+  person: person:joe-bourne
+  brief_bio:
+    text: Joe Bourne is a product leader at CINC Systems who previously spent five years at GitHub working
+      on GitHub Copilot and native CI/CD in GitHub Actions. Bourne spoke at GitHub Universe 2024 about
+      how GitHub uses LLMs, fine-tuning and prompt engineering in GitHub Copilot.
+    cites:
+    - current_affiliations
+    - linkedin_bio
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 1a56dd97360f9042668bbe605938999b50c80d3b05e567f0b74c53ce0c744020
+    stale: false
+  headline: CINC Systems
+  current_roles:
+  - CINC Systems
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1332p
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1332p
+  technologies:
+  - label: Azure DevOps
+    target: software:azure-devops
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure DevOps
+      ref: person:joe-bourne
+  - label: Git
+    target: software:git
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Git
+      ref: person:joe-bourne
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:joe-bourne
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:joe-bourne
+  - label: Windows
+    target: software:windows
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Windows
+      ref: person:joe-bourne
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715178970303001Gg0A
+      ref: session:2024/ai1332p
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715178970303001Gg0A
+      ref: session:2024/ai1332p
+  - label: Machine learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715178970303001Gg0A
+      ref: session:2024/ai1332p
+  education:
+  - school: Virginia Tech
+    evidence:
+      url: https://www.linkedin.com/in/joe-bourne
+      observed_at: '2026-10-24T08:44:21Z'
+  credentials:
+  - kind: honor
+    title: 'GM Award: Personal Excellence'
+    issuer: Microsoft
+    date: '2012-03-01T00:00:00.000Z'
+    description: An award for demonstrating personal excellence in interacting with my peers in the organization
+    evidence:
+      url: https://www.linkedin.com/in/joe-bourne
+      observed_at: '2026-10-24T08:44:21Z'
+  spoken_languages:
+  - English
+  talks:
+  - session:2024/ai1332p
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1722969669268001PWrR
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

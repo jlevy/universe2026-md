@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:akuity
+  login: akuity
+  kind: organization
+  url: https://github.com/akuity
+  name: Akuity
+  bio: Deploy with Argo CD, promote seamlessly with Kargo, get advanced visibility with AI dashboards,
+    and use AI agents for safe remediation.
+  website: https://akuity.io/
+  public_repositories: 61
+  created_at: '2021-05-19T05:27:51Z'
+  pinned:
+  - repo:akuity/kargo
+  - repo:akuity/awesome-argo
+  - repo:akuity/grpc-gateway-client
+  - repo:akuity/akuity-intelligence-examples
+  top_repositories:
+  - repo:akuity/kargo-render
+  - repo:akuity/mta
+  linked_accounts:
+  - acct:x/akuityio
+  entity: org:akuity
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: akuity
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

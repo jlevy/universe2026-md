@@ -1,0 +1,67 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:anticomputer
+  login: anticomputer
+  kind: user
+  url: https://github.com/anticomputer
+  name: Bas
+  bio: Mostly just Emacs things.
+  website: https://anti.computer
+  followers: 142
+  public_repositories: 25
+  created_at: '2015-08-06T23:56:20Z'
+  contributions_last_year:
+    total: 337
+    commits: 237
+    pull_requests: 29
+    issues: 11
+    reviews: 47
+  starred_repositories: 26
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 2
+  contributed_to:
+  - repo:githubsecuritylab/seclab-taskflow-agent
+  - repo:github/gh-aw-firewall
+  - repo:githubsecuritylab/seclab-taskflows
+  pinned:
+  - repo:anticomputer/gh-notify
+  - repo:anticomputer/emacs-codeql
+  - repo:anticomputer/age.el
+  - repo:anticomputer/passage.el
+  - repo:anticomputer/with-wireguard.el
+  - repo:anticomputer/chrome.el
+  top_repositories:
+  - repo:anticomputer/ovpn-mode
+  - repo:anticomputer/emacs-capstone
+  linked_accounts:
+  - acct:bluesky/anti.computer
+  - acct:mastodon/anticomputer@infosec.exchange
+  websites:
+  - site:anti.computer
+  entity: person:bas-alberts
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: anticomputer
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

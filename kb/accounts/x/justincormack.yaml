@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/justincormack
+  platform: x
+  handle: justincormack
+  url: https://x.com/justincormack
+  display_name: Justin Cormack
+  bio: Doing new things. Now over at bsky not here
+  location: Suffolk, UK
+  website: https://ignorepreviousdirections.com/
+  followers: 12261
+  following: 4959
+  posts_count: 40668
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1003388174503170048/gX41RPcq_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/64172365/1527965344
+  created_at: '2009-08-09T13:24:29Z'
+  owner: person:justin-cormack
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715395148686001JeCd
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/justincormack
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

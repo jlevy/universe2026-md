@@ -1,0 +1,118 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kartik-gupta
+  person: person:kartik-gupta
+  brief_bio:
+    text: Kartik Gupta is a Senior Solutions Engineer at GitHub who works with enterprises on developer
+      productivity and helps organize CampJS. Gupta spoke at GitHub Universe 2025 about leading with GitHub
+      Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (main session)
+    written_at: '2026-10-24T09:21:06Z'
+    input_sha256: 30d2c3481b4b43a9cfdba930e811f7d77076475a50bde1e3736521dc2ff14548
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1079l
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1079l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1079l
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/aut1079l
+  interests:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744351055061001zHmG
+      ref: session:2025/aut1079l
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744351055061001zHmG
+      ref: session:2025/aut1079l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744351055061001zHmG
+      ref: session:2025/aut1079l
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744351055061001zHmG
+      ref: session:2025/aut1079l
+  spoken_languages:
+  - English
+  activities:
+  - kind: project
+    title: inGear
+    detail: '- Co-founded pseudo-startup for Telstra’s M2M University Challenge, helping learner drivers
+      log hours automatically.- Design & develop web app, which takes data collected from a Raspberry
+      Pi and displays it with a map showing the trip route.- Achieved equal 1st place, winning a $10,000
+      prize. · Jun 2013'
+    evidence:
+      url: https://www.linkedin.com/in/kartikgupta01
+      observed_at: '2026-10-24T08:44:58Z'
+  talks:
+  - session:2025/aut1079l
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715371061720001Mj39
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

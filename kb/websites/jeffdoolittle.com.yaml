@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:jeffdoolittle.com
+  url: https://jeffdoolittle.com
+  kind: personal
+  title: Jeff Doolittle
+  description: Distinguished Engineer, Principal Architect, and experienced technology executive focused
+    on AI-native systems, enterprise architecture, and business impact.
+  owner: person:jeff-doolittle
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://jeffdoolittle.com/feed.xml
+  linked_accounts:
+  - acct:linkedin/in/jeffdoolittle
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jeff-at-trimble
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://jeffdoolittle.com
+    record_id: https://jeffdoolittle.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

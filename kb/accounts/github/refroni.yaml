@@ -1,0 +1,48 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:refroni
+  login: refroni
+  kind: user
+  url: https://github.com/refroni
+  name: Ron Efroni
+  company: flox
+  location: San Francisco
+  website: floxdev.com
+  followers: 31
+  public_repositories: 0
+  created_at: '2018-10-14T20:15:47Z'
+  contributions_last_year:
+    total: 0
+    commits: 0
+    pull_requests: 0
+    issues: 0
+    reviews: 0
+  starred_repositories: 5
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  linked_accounts:
+  - acct:x/ronefroni
+  entity: person:ron-efroni
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: refroni
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

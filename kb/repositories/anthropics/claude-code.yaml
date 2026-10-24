@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:anthropics/claude-code
+  full_name: anthropics/claude-code
+  url: https://github.com/anthropics/claude-code
+  description: Claude Code is an agentic coding tool that lives in your terminal, understands your codebase,
+    and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows
+    - all through natural language commands.
+  homepage: https://code.claude.com/docs/en/overview
+  stars: 153271
+  forks: 26587
+  watchers: 909
+  open_issues: 14936
+  stats_observed_at: '2026-10-24T19:09:48Z'
+  primary_language: TypeScript
+  archived: false
+  fork: false
+  created_at: '2025-02-22T17:41:21Z'
+  pushed_at: '2026-10-24T02:18:59Z'
+  owner_login: anthropics
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: FrancesCoronel
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: anthropics/claude-code
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

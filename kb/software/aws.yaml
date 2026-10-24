@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:aws
+  name: Amazon Web Services
+  aliases:
+  - AWS
+  - Amazon Web Services
+  kind: platform
+  vendor: org:amazon
+  mentioned_in:
+  - person:ali-condah
+  - person:alpha-romer-coma
+  - person:ankit-kumar-honey
+  - person:asha-chakrabarty
+  - person:autumn-nash
+  - person:christian-oestreich
+  - person:inbal-shani
+  - person:james-chatmas
+  - person:jason-andrews
+  - person:jessica-deen
+  - person:mark-quigley
+  - person:naveen-jaisankar
+  - person:nick-taylor
+  - person:priya-pahwa
+  - person:shubha
+  - person:zeba-khan
+  - session:2023/dev2074d
+  - session:2024/ai1347l
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

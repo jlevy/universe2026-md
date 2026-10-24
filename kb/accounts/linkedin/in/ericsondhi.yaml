@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ericsondhi
+  platform: linkedin
+  handle: in/ericsondhi
+  url: https://www.linkedin.com/in/ericsondhi
+  display_name: Eric Sondhi
+  location: Tyngsboro
+  followers: 2234
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQFjlXFYtiR-AQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1598628517729?e=2147483647&v=beta&t=JzRo4souQB17s6dOD5yOlC-yMWhjH7LAIQsE5SYbK6I
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGeJoQmqR17gg/profile-displaybackgroundimage-shrink_200_800/B56ZlVkDijH8AU-/0/1758077139780?e=2147483647&v=beta&t=UhC4lrCPhiOA-Xj32YEfjScEfdOQDUIBHO7FYX_Ii_8
+  owner: person:eric-sondhi
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686237571235001EbBo
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ericsondhi
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/mcp-contextforge-gateway
+  ecosystem: pypi
+  name: mcp-contextforge-gateway
+  url: https://pypi.org/project/mcp-contextforge-gateway/
+  description: ContextForge AI Gateway — an AI gateway, registry, and proxy for MCP, A2A, and REST/gRPC
+    APIs. Exposes a unified control plane with centralized governance, discovery, and observability. Optimizes
+    agent and tool calling, and supports plugins.
+  latest_version: 1.1.0
+  license: Apache-2.0
+  repository_url: https://github.com/IBM/mcp-context-forge
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: IBM/mcp-context-forge
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

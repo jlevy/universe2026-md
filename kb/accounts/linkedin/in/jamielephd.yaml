@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jamielephd
+  platform: linkedin
+  handle: in/jamielephd
+  url: https://www.linkedin.com/in/jamielephd
+  display_name: Joshua Miele
+  location: San Francisco
+  followers: 2018
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQGzO7HlRA_51g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1738205089974?e=2147483647&v=beta&t=va-8VeKETpQlL2Oc33Q1C6LTkSmNZR3PB0eRlRvyDlI
+  owner: person:josh-miele
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715388338633001DMPx
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jamielephd
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

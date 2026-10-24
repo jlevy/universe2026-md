@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/yonatan-arbel
+  platform: linkedin
+  handle: in/yonatan-arbel
+  url: https://www.linkedin.com/in/yonatan-arbel
+  display_name: Yonatan Arbel
+  bio: In a world overflowing with DevOps buzzwords and endless tooling, my mission is clear:…
+  location: Tel Aviv District
+  followers: 10307
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGz3FeHDn4K1g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1716123307223?e=2147483647&v=beta&t=FSvLm3v50WolUp5VCjVCc_o9Dtl3E3sqvcE5izBTX8E
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQHKyGj3dhbzzg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1716123531780?e=2147483647&v=beta&t=Va3Sris5d4wK5do_hmg6AE2thX5iO2o31wVh4k2hcsQ
+  owner: person:yonatan-arbel
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727817648078001Lzh0
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727817648078001Lzh0
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/yonatan-arbel
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

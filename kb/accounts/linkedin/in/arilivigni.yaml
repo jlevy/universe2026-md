@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/arilivigni
+  platform: linkedin
+  handle: in/arilivigni
+  url: https://www.linkedin.com/in/arilivigni
+  display_name: Ari LiVigni
+  location: Worcester
+  followers: 1614
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQFPKJaJyucSOw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1694538103152?e=2147483647&v=beta&t=1rXnfQ24WripFlB_NfyeW82u21WKrbW6Gpc65HytdK4
+  owner: person:ari-livigni
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685558340405001wrtO
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685558340405001wrtO
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/arilivigni
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

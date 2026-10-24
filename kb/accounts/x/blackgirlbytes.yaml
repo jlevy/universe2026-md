@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/blackgirlbytes
+  platform: x
+  handle: blackgirlbytes
+  url: https://x.com/blackgirlbytes
+  display_name: Rizèl Scarlett 🇦🇬🇬🇾
+  bio: "Head of DevRel @EntireHQ \n\nRedefining the SDLC for humans and agents.\n\nAgents, open source,\
+    \ and motherhood.\n\nPast: @goose_oss, @Blocks, @GitHub"
+  location: In JavaScript Callback Hell
+  website: https://blackgirlbytes.github.io/portfolio/
+  followers: 14165
+  following: 2457
+  posts_count: 41408
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1612362419703058435/cuw_DFvR_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/779043676228059136/1742154914
+  created_at: '2016-09-22T19:44:21Z'
+  owner: person:rizel-scarlett
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746242817811001G0Rf
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694192487472001BR32
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/blackgirlbytes
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

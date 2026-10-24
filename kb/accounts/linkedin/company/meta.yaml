@@ -1,0 +1,57 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/meta
+  platform: linkedin
+  handle: company/meta
+  url: https://www.linkedin.com/company/meta
+  display_name: Meta
+  bio: 'Meta''s mission is to build the future of human connection and the technology that makes it possible.
+    Our technologies help people connect, find communities, and grow businesses. When Facebook launched
+    in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered
+    billions around the world. Now, Meta is moving beyond 2D screens toward immersive and intelligent
+    experiences like virtual reality, wearables and AI to help build the next evolution in social technology.
+    To help create a safe and respectful online space, we encourage constructive conversations on this
+    page. Please note the following: • Start with an open mind. Whether you agree or disagree, engage
+    with empathy. • Comments violating our Community Standards will be removed or hidden. Please treat
+    everybody with respect. • Keep it constructive. Use your interactions here to learn about and grow
+    your understanding of others. • Our moderators are here to uphold these guidelines for the benefit
+    of everyone, every day. • If you are seeking support for issues related to your Facebook account,
+    please reference our Help Center (https://www.facebook.com/help) or Help Community (https://www.facebook.com/help/community).
+    For a full listing of our jobs, visit https://www.metacareers.com'
+  website: https://www.metacareers.com/
+  followers: 12378403
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQHpGLIanfsREg/company-logo_200_200/B56aDarbc1IwAI-/0/1790375213168/meta_logo?e=2147483647&v=beta&t=KjcBhI-y4HnYFwfwTOhcDaJDAZ9vOGFqTP903x9mp7M
+  owner: org:meta
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/drguthals
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/elias-uriegas
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jessedugas
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/samyukthagopalsamy
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/meta
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

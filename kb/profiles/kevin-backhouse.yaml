@@ -1,0 +1,342 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kevin-backhouse
+  person: person:kevin-backhouse
+  brief_bio:
+    text: Kevin Backhouse is Staff Manager of Security Research at GitHub, leading the GitHub Security
+      Lab team that finds and helps fix vulnerabilities in open source software. Backhouse spoke at GitHub
+      Universe 2024 and speaks at GitHub Universe 2026 about AI-generated vulnerability reports.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: ce91700e94ab71bf500bafaa642b5821cd7aa70cb2dab6e0a612103dc75ac03e
+    stale: false
+  headline: Staff Manager, Security Research at GitHub
+  location: UK
+  current_roles:
+  - Staff Manager, Security Research at GitHub
+  expertise:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1880l
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1880l
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1880l
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1880l
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1880l
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  technologies:
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1623s
+  programming_languages:
+  - label: C++
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:kevinbackhouse/dbusparse
+    - ref: repo:kevinbackhouse/dbusparsedemo
+    - ref: repo:kevinbackhouse/exiv2
+  - label: C
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:kevinbackhouse/securitylab
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:kevinbackhouse/spelling_practice_with_python
+  - label: CodeQL
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:kevinbackhouse/codeql
+  interests:
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721918551018001XJib
+      ref: session:2024/sec1880l
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+    - url: https://github.com/google/oss-fuzz
+      ref: repo:google/oss-fuzz
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721918551018001XJib
+      ref: session:2024/sec1880l
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721918551018001XJib
+      ref: session:2024/sec1880l
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721918551018001XJib
+      ref: session:2024/sec1880l
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721918551018001XJib
+      ref: session:2024/sec1880l
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.38
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777676724049001KXIg
+      ref: session:tru1623s
+  - label: bioinformatics
+    basis: github_repositories
+    confidence: low
+    weight: 0.25
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nf-core/tools
+      ref: repo:nf-core/tools
+  - label: cli
+    basis: github_repositories
+    confidence: low
+    weight: 0.25
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/Exiv2/exiv2
+      ref: repo:exiv2/exiv2
+  - label: exif
+    basis: github_repositories
+    confidence: low
+    weight: 0.25
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/Exiv2/exiv2
+      ref: repo:exiv2/exiv2
+  - label: exif-interface
+    basis: github_repositories
+    confidence: low
+    weight: 0.25
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/Exiv2/exiv2
+      ref: repo:exiv2/exiv2
+  open_source:
+  - repository: repo:kevinbackhouse/securitylab
+    relation: owner
+    stars: 10
+    primary_language: C
+  - repository: repo:kevinbackhouse/dbusparse
+    relation: owner
+    stars: 4
+    primary_language: C++
+  - repository: repo:kevinbackhouse/dbusparsedemo
+    relation: owner
+    stars: 3
+    primary_language: C++
+  - repository: repo:kevinbackhouse/spelling_practice_with_python
+    relation: owner
+    stars: 2
+    primary_language: Python
+  - repository: repo:kevinbackhouse/codeql
+    relation: owner
+    stars: 2
+    primary_language: CodeQL
+  - repository: repo:kevinbackhouse/exiv2
+    relation: owner
+    stars: 2
+    primary_language: C++
+  - repository: repo:hashicorp/vault
+    relation: contributor
+    stars: 36423
+    primary_language: Go
+  - repository: repo:google/oss-fuzz
+    relation: contributor
+    stars: 12791
+    primary_language: Shell
+  - repository: repo:github/cmark-gfm
+    relation: contributor
+    stars: 1140
+    primary_language: C
+  - repository: repo:exiv2/exiv2
+    relation: contributor
+    stars: 1168
+    primary_language: C++
+  - repository: repo:nf-core/tools
+    relation: contributor
+    stars: 327
+    primary_language: Python
+  education:
+  - school: University of Oxford
+    evidence:
+      url: https://www.linkedin.com/in/kevinbackhouse
+      observed_at: '2026-10-24T08:15:47Z'
+  spoken_languages:
+  - Dutch
+  recent_writing:
+  - title: Finding a 16-year-old bug isn't as surprising as you think it is
+    url: https://www.linkedin.com/pulse/finding-16-year-old-bug-isnt-surprising-you-think-kevin-backhouse-5ov1e
+    published: '2026-04-10T00:00:00.000Z'
+    channel: linkedin
+    summary: Anthropic's recent blog post about Project Glasswing has understandably been getting a lot
+      of attention. AI tools are…
+  - title: Finding and fixing a stack buffer overflow in librelp (CVE-2018-1000140) - a collaboration
+      between Adiscon and Semmle
+    url: https://www.linkedin.com/pulse/finding-fixing-stack-buffer-overflow-librelp-semmle-kevin-backhouse
+    published: '2018-06-19T00:00:00.000Z'
+    channel: linkedin
+    summary: Blog post about CVE-2018-1000140, an RCE in librelp (rsyslog), by Kevin Backhouse, Rainer
+      Gerhards, and Bas van Schaik.…
+  - title: Remote code execution in Apple's packet-mangler (CVE-2017-13904, CVE-2018-4249)
+    url: https://www.linkedin.com/pulse/remote-code-execution-apples-packet-mangler-kevin-backhouse
+    published: '2018-06-04T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Blog post about an RCE #vulnerability that I found in #macOS last summer (CVE-2017-13904,
+      CVE-2018-4249). It''s just…'
+  - title: Negative integer overflows in Apple's NFS Diskless Boot (CVE-2018-4136, CVE-2018-4160)
+    url: https://www.linkedin.com/pulse/negative-integer-overflows-apples-nfs-diskless-boot-kevin-backhouse
+    published: '2018-05-01T00:00:00.000Z'
+    channel: linkedin
+    summary: New blog post about how my colleague Jonas Jensen found two vulnerabilities in Apple's macOS
+      kernel. https://lgtm.
+  - title: Using QL to find kernel stack buffer overflows in Qualcomm MSM-4.4
+    url: https://www.linkedin.com/pulse/using-ql-find-kernel-stack-buffer-overflows-qualcomm-msm-44-kevin
+    published: '2018-01-24T00:00:00.000Z'
+    channel: linkedin
+    summary: New blog post about how you can use QL to find stack buffer overflows. My query found a vulnerability
+      in Qualcomm's…
+  talks:
+  - session:2024/sec1880l
+  - session:tru1623s
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685735841165001lbOJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kevinbackhouse
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685735841165001lbOJ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

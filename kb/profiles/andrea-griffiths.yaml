@@ -1,0 +1,437 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:andrea-griffiths
+  person: person:andrea-griffiths
+  brief_bio:
+    text: Andrea Griffiths is a senior developer advocate at GitHub who builds tools for AI agents and
+      developer workflows and writes Main Branch, a weekly newsletter on GitHub features and fundamentals.
+      Griffiths speaks at GitHub Universe 2026 on agent skills.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: a656e56de2bb3e3aa0fa4c819b7343f99569e10949b88841a0123b7d7310470a
+    stale: false
+  headline: Senior Developer Advocate at GitHub
+  location: The Internet
+  current_roles:
+  - Senior Developer Advocate at GitHub
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:andreagriffiths11/teamxray
+    - ref: repo:andreagriffiths11/git-history-cleaner
+    - ref: repo:andreagriffiths11/issuecrush
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:andreagriffiths11/annotation-overlay
+  - label: Shell
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:andreagriffiths11/agent-context-system
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+    - url: https://github.com/AndreaGriffiths11/agent-context-system
+      ref: repo:andreagriffiths11/agent-context-system
+    - url: https://github.com/AndreaGriffiths11/open-source-best-practices
+      ref: repo:andreagriffiths11/open-source-best-practices
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+    - url: https://github.com/AndreaGriffiths11/agent-context-system
+      ref: repo:andreagriffiths11/agent-context-system
+    - url: https://github.com/AndreaGriffiths11/IssueCrush
+      ref: repo:andreagriffiths11/issuecrush
+  - label: Open source
+    basis: github_repositories
+    confidence: medium
+    weight: 0.74
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/AndreaGriffiths11/open-source-best-practices
+      ref: repo:andreagriffiths11/open-source-best-practices
+    - url: https://github.com/github/opensourcefriday
+      ref: repo:github/opensourcefriday
+    - url: https://github.com/githubevents/open-source-friday
+      ref: repo:githubevents/open-source-friday
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    weight: 0.71
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+    - url: https://github.com/AndreaGriffiths11/agent-context-system
+      ref: repo:andreagriffiths11/agent-context-system
+  - label: developer-tools
+    basis: github_repositories
+    confidence: medium
+    weight: 0.57
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/AndreaGriffiths11/agent-context-system
+      ref: repo:andreagriffiths11/agent-context-system
+    - url: https://github.com/AndreaGriffiths11/IssueCrush
+      ref: repo:andreagriffiths11/issuecrush
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+  - label: agent
+    basis: github_repositories
+    confidence: low
+    weight: 0.29
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/AndreaGriffiths11/open-source-best-practices
+      ref: repo:andreagriffiths11/open-source-best-practices
+  - label: agent-skill-repository
+    basis: github_repositories
+    confidence: low
+    weight: 0.29
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/AndreaGriffiths11/open-source-best-practices
+      ref: repo:andreagriffiths11/open-source-best-practices
+  - label: agentic-coding
+    basis: github_repositories
+    confidence: low
+    weight: 0.29
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/AndreaGriffiths11/agent-context-system
+      ref: repo:andreagriffiths11/agent-context-system
+  - label: ai-skill
+    basis: github_repositories
+    confidence: low
+    weight: 0.29
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/AndreaGriffiths11/open-source-best-practices
+      ref: repo:andreagriffiths11/open-source-best-practices
+  - label: ai-skills
+    basis: github_repositories
+    confidence: low
+    weight: 0.29
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/AndreaGriffiths11/open-source-best-practices
+      ref: repo:andreagriffiths11/open-source-best-practices
+  open_source:
+  - repository: repo:andreagriffiths11/annotation-overlay
+    relation: owner
+    stars: 26
+    primary_language: HTML
+  - repository: repo:andreagriffiths11/agent-context-system
+    relation: owner
+    stars: 26
+    primary_language: Shell
+  - repository: repo:andreagriffiths11/git-history-cleaner
+    relation: owner
+    stars: 21
+    primary_language: TypeScript
+  - repository: repo:andreagriffiths11/teamxray
+    relation: owner
+    stars: 18
+    primary_language: TypeScript
+  - repository: repo:andreagriffiths11/issuecrush
+    relation: owner
+    stars: 17
+    primary_language: TypeScript
+  - repository: repo:andreagriffiths11/open-source-best-practices
+    relation: owner
+    stars: 12
+  - repository: repo:getsentry/sentry-docs
+    relation: contributor
+    stars: 448
+    primary_language: MDX
+  - repository: repo:zudochkin/awesome-newsletters
+    relation: contributor
+    stars: 4506
+  - repository: repo:github/opensourcefriday
+    relation: contributor
+    stars: 1234
+    primary_language: HTML
+  - repository: repo:githubevents/open-source-friday
+    relation: contributor
+    stars: 42
+    primary_language: TypeScript
+  - repository: repo:github/maintainermonth
+    relation: contributor
+    stars: 243
+    primary_language: JavaScript
+  education:
+  - school: Upper Iowa University
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  credentials:
+  - kind: certification
+    title: Agentic AI Foundation Ambassador 2026
+    issuer: The Linux Foundation
+    date: Jun 2026
+    url: https://www.credly.com/badges/8a5f8f35-059c-4ad7-8624-fb3d9f7ca089/public_url
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: certification
+    title: CCOSS 2022
+    issuer: Software Guru
+    date: Nov 2022
+    url: https://constancias.sg.com.mx/ccoss/participantegeneral/AndreaGriffiths.pdf
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: certification
+    title: Certificate of Cloud Security Knowledge Foundation Training
+    issuer: Cloud Security Alliance
+    date: Jul 2022
+    url: https://verify.skilljar.com/c/artw5u4oi356
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: certification
+    title: edX Verified Certificate for Basic Network and Database Security
+    issuer: edX
+    date: Jan 2022
+    url: https://courses.edx.org/certificates/0cdf85658e1c457b94072e9623ae6a4b
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: certification
+    title: Data Science Executive
+    issuer: Correlation One
+    date: Nov 2021
+    url: https://www.credential.net/75b86c77-8d2a-4ee7-9c7a-cb55e163636e
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: certification
+    title: Project Management 360 PMP
+    issuer: Cornell University
+    date: Oct 2021
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: certification
+    title: Project Leadership
+    issuer: Cornell University
+    date: Jun 2021
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: certification
+    title: Moderation Certification
+    issuer: Lithium Technologies
+    date: Sep 2018
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: certification
+    title: Notary Public
+    issuer: State of Florida
+    date: Jan 2016
+    expires: Jan 2022
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  spoken_languages:
+  - English
+  - Spanish
+  activities:
+  - kind: volunteering
+    title: Advisory Board Member
+    detail: Laboratoria · Science and Technology · Mar 2021 · - Jul 2023 · 2 years 5 months · Mar 2021
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: volunteering
+    title: Volunteer
+    detail: Operation Code · Science and Technology · Jan 2017 · - Present · 9 years 10 months · Veteran-founded
+      and led, Operation Code is a 501(c)(3) non-profit whose mission is to aid military, vets and their
+      families learn coding and web technologies. · Jan 2017
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  - kind: volunteering
+    title: Volunteer
+    detail: Orlando Lady Devs · Science and Technology · Jan 2017 · - Jan 2018 · 1 year 1 month · The
+      Orlando Lady Developers Group (LadyDevs) is committed to changing the way technology changes the
+      world by increasing the influence that women have in building technologies that shape our culture.
+      · Jan 2017
+    evidence:
+      url: https://www.linkedin.com/in/acolombiadev
+      observed_at: '2026-10-24T08:11:49Z'
+  recent_writing:
+  - title: '🐛 Main Branch: El de la primera hipótesis equivocada del agente - Issue #45'
+    url: https://mainbranch.dev/newsletter/es/issue-45/
+    published: '2026-10-19T00:00:00Z'
+    channel: blog
+  - title: '🐛 Main Branch：这次，智能体的第一个猜测错了 - Issue #45'
+    url: https://mainbranch.dev/newsletter/zh/issue-45/
+    published: '2026-10-19T00:00:00Z'
+    channel: blog
+  - title: '🐛 Main Branch: The One Where the Agent''s First Guess Was Wrong - Issue #45'
+    url: https://mainbranch.dev/newsletter/issue-45/
+    published: '2026-10-19T00:00:00Z'
+    channel: blog
+  - title: '🐛 Main Branch: The One Where the Agent''s First Guess Was Wrong - Issue #45'
+    url: https://www.linkedin.com/pulse/main-branch-one-where-agents-first-guess-wrong-issue-griffiths-ainle
+    published: '2026-10-19T00:00:00.000Z'
+    channel: linkedin
+    summary: GitHub Actions workflow lockfiles in public preview, new GitHub App permissions like repository_creation:write,
+      and a…
+  - title: '🫣 Main Branch: El de la regex que tenía una sola tarea'
+    url: https://mainbranch.dev/newsletter/es/issue-44/
+    published: '2026-10-12T00:00:00Z'
+    channel: blog
+  - title: 🫣 Main Branch：正则表达式，你就这一个任务
+    url: https://mainbranch.dev/newsletter/zh/issue-44/
+    published: '2026-10-12T00:00:00Z'
+    channel: blog
+  - title: '🫣 Main Branch: The One Where Your Regex Had One Job'
+    url: https://mainbranch.dev/newsletter/issue-44/
+    published: '2026-10-12T00:00:00Z'
+    channel: blog
+  - title: '🫣 Main Branch: The One Where Your Regex Had One Job'
+    url: https://www.linkedin.com/pulse/main-branch-one-where-your-regex-had-job-andrea-griffiths-gmtfe
+    published: '2026-10-12T00:00:00.000Z'
+    channel: linkedin
+    summary: Leer en Español • 阅读中文版 Hiya friends, As you're reading this, I'm on a plane to Seattle for
+      an exciting recording…
+  - title: '💥 Main Branch: The One Where Your Coverage Check Was Lying'
+    url: https://www.linkedin.com/pulse/main-branch-one-where-your-coverage-check-lying-andrea-griffiths-awase
+    published: '2026-10-05T00:00:00.000Z'
+    channel: linkedin
+    summary: By Andrea Griffiths • Leer en Español • 阅读中文版 Hiya friends, We are now in October. I spent
+      the weekend putting up my…
+  - title: '💥 Main Branch: El de cuando tu chequeo de cobertura te estaba mintiendo'
+    url: https://mainbranch.dev/newsletter/es/issue-43/
+    published: '2026-10-04T00:00:00Z'
+    channel: blog
+  - title: 💥 Main Branch 技术周刊：这次你的覆盖率检查一直在骗你
+    url: https://mainbranch.dev/newsletter/zh/issue-43/
+    published: '2026-10-04T00:00:00Z'
+    channel: blog
+  - title: '💥 Main Branch: The One Where Your Coverage Check Was Lying'
+    url: https://mainbranch.dev/newsletter/issue-43/
+    published: '2026-10-04T00:00:00Z'
+    channel: blog
+  - title: '🔐 Main Branch: The One Where Your Git Push Might Break'
+    url: https://www.linkedin.com/pulse/main-branch-one-where-your-git-push-might-break-andrea-griffiths-wob1e
+    published: '2026-09-28T00:00:00.000Z'
+    channel: linkedin
+    summary: By Andrea Griffiths • Leer en Español • 阅读中文版 Hiya friends, GitHub is raising the floor on
+      SSH auth. If your remotes…
+  - title: '🔐 Main Branch: El de cuando tu git push podría fallar'
+    url: https://mainbranch.dev/newsletter/es/issue-42/
+    published: '2026-09-27T00:00:00Z'
+    channel: blog
+  - title: 🔐 Main Branch 技术周刊：这次你的 git push 可能会失败
+    url: https://mainbranch.dev/newsletter/zh/issue-42/
+    published: '2026-09-27T00:00:00Z'
+    channel: blog
+  talks:
+  - session:bld1787b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685584659600001bgLK
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: AndreaGriffiths11
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

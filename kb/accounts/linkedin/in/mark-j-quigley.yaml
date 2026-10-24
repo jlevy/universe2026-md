@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mark-j-quigley
+  platform: linkedin
+  handle: in/mark-j-quigley
+  url: https://www.linkedin.com/in/mark-j-quigley
+  display_name: Mark Quigley
+  bio: '"If you can fill the unforgiving minute With sixty seconds’ worth of distance…'
+  location: Natick
+  followers: 3285
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQE6R7cSa2qAQA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1693426551883?e=2147483647&v=beta&t=wMHyP7Gq5u3IldLw1TY5zEOYBVqR74NitMfUN3rg-9c
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEZfi4YQkBkWQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1693427086784?e=2147483647&v=beta&t=KOMI_V9sONDaqGT7sgix0xV3sY3j_KZy8cpZj3k91qY
+  owner: person:mark-quigley
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692112946634001frOX
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mark-j-quigley
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/ttaylorr_b
+  platform: x
+  handle: ttaylorr_b
+  url: https://x.com/ttaylorr_b
+  display_name: Taylor Blau
+  bio: SCM @OpenAI
+  location: Milwaukee, WI
+  website: https://ttaylorr.com/
+  followers: 3847
+  following: 210
+  posts_count: 5373
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1574571941524021249/l7zG48t4_normal.jpg
+  created_at: '2010-02-20T17:30:24Z'
+  owner: person:taylor-blau
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699461247423001yFR1
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/ttaylorr_b
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

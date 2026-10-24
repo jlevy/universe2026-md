@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/mercadolibre
+  platform: linkedin
+  handle: company/mercadolibre
+  url: https://www.linkedin.com/company/mercadolibre
+  display_name: Mercado Libre
+  bio: At Mercado Libre, we are transforming the way people buy, sell, advertise, pay, finance, and ship
+    across Latin America. We are the leading e-commerce and fintech company in the region, with a presence
+    in 18 countries and a team of more than 130,000 people. We are one of the best places to work in Latin
+    America. Being part of MELI means working with intensity and excellence because we are passionate
+    about what we do and we believe in the value of meritocracy. We overcome our own limits and learn
+    by tackling big challenges. We have an entrepreneurial mindset, we take risks, we reinvent ourselves,
+    and we innovate. We compete as a team to win in a flexible and fun work environment. And so, every
+    day, we create sustainable results that transform the lives of millions of people. We look for people
+    who are passionate about big challenges, who are willing to step out of their comfort zone, give their
+    maximum effort, and take risks as entrepreneurs. Join the team that makes the purpose of democratizing
+    commerce and financial services a reality, transforming the lives of millions across Latin America.
+    Be part of the MELI experience!
+  website: https://careers-meli.mercadolibre.com/
+  followers: 3592327
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQGBWvG8qkeDWA/company-logo_200_200/B4DZUUsRzCGcAM-/0/1739808906936/mercadolibre_logo?e=2147483647&v=beta&t=iqKOlLNCSvTDlrF6uBp8Qryu4an94kTchsqYANNAN3s
+  owner: org:mercado-libre
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/erik-arcos-b6a0a717
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/mercadolibre
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,51 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/octopus-deploy
+  platform: linkedin
+  handle: company/octopus-deploy
+  url: https://www.linkedin.com/company/octopus-deploy
+  display_name: Octopus Deploy
+  bio: Octopus Deploy sets the standard for Continuous Delivery (CD), empowering software teams to deliver
+    value in an agile way. Globally, more than 4,000 organizations rely on our Continuous Delivery, GitOps,
+    and release orchestration solutions to deliver swift value to their customers. At Octopus, we create
+    happy deployments, and by extension, happy software teams. Founded in 2012, our vision is for all
+    software teams to look forward to deployment time; to be excited about seeing their changes deployed
+    and used by their customers. We want them to deploy more and more frequently, and to feel 100% confident
+    it will just work. Octopus efficiently orchestrates software delivery across multi-cloud, Kubernetes,
+    data centers, and hybrid environments, whether containerized modern apps or heritage applications.
+    With governance, risk, and compliance (GRC) at its core, Octopus supports Platform Engineering teams
+    in their mission to provide a superior developer experience (DevEx). Octopus also actively contributes
+    to the developer community with open-source projects. Handle complex software delivery at any scale
+    with Octopus Deploy.
+  website: https://octopus.com/
+  followers: 34613
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGf6qqJ57v6zw/company-logo_200_200/company-logo_200_200/0/1709614261877/octopus_deploy_logo?e=2147483647&v=beta&t=y4GbtQv38i6JDBiKjg1UuyTpke1-A96uhFXf8qe4gyA
+  owner: org:octopus-deploy
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jchatmas
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/bobjwalker
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mattcasperson
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/octopus-deploy
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

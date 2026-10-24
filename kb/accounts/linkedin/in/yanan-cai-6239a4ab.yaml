@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/yanan-cai-6239a4ab
+  platform: linkedin
+  handle: in/yanan-cai-6239a4ab
+  url: https://www.linkedin.com/in/yanan-cai-6239a4ab
+  display_name: Yanan Cai
+  location: Greater Seattle Area
+  followers: 452
+  connections: 435
+  avatar_url: https://media.licdn.com/dms/image/v2/C5103AQFcx1ILTRTs4A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1532951472640?e=2147483647&v=beta&t=Lp_SLdOvAcp0423RjpyMnUUCrIXz_xn5Q5KEiaO71Mw
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:yanan-cai
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791561115557001TFez
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/yanan-cai-6239a4ab
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

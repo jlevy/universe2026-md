@@ -1,0 +1,14 @@
+softschema:
+  contract: paraverse.conference:Venue/v1
+  schema: ../_schemas/venue.schema.yaml
+  envelope: venue
+  status: permissive
+venue:
+  id: venue:hyatt-gallery-ballroom-ii
+  name: Hyatt - Gallery Ballroom II
+  kind: external
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

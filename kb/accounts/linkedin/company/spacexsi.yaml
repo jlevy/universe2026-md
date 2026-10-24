@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/spacexsi
+  platform: linkedin
+  handle: company/spacexsi
+  url: https://www.linkedin.com/company/spacexsi
+  display_name: SpaceX Super Intelligence
+  bio: Understand the Universe. We are a team of AI technologists and business leaders on a mission to
+    build AI systems that can help humanity understand the world better. https://x.ai/careers
+  website: https://x.ai/
+  followers: 346690
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQHHr1Wy2NrvWw/company-logo_200_200/B56aEoDuEJKYAE-/0/1791673426771/spacexai_logo?e=2147483647&v=beta&t=-NQeAAlKe02IKQuDlptZN9F1FbybduNWKSStFvQh2FI
+  owner: org:spacexai
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/arthurnn
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/christopherleon
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/colin-harrington-mueller
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/spacexsi
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

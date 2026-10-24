@@ -1,0 +1,26 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:wattenberger.com
+  url: https://wattenberger.com/
+  kind: personal
+  title: Amelia Wattenberger
+  owner: person:amelia-wattenberger
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: brightdata
+    url: https://x.com/wattenberger
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://wattenberger.com/
+    record_id: https://wattenberger.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

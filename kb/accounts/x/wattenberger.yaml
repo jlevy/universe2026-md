@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/wattenberger
+  platform: x
+  handle: wattenberger
+  url: https://x.com/wattenberger
+  display_name: Amelia Wattenberger 🪷
+  bio: |-
+    design, AI, web dev, data viz, tools for thought
+
+    ✨ @shv, previously R&D @GitHubNext, design @AdeptAILabs
+  location: 🍃 Oakland
+  website: https://wattenberger.com/
+  followers: 36247
+  following: 5083
+  posts_count: 6594
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1484537078687875072/SESFNpAA_normal.png
+  banner_url: https://pbs.twimg.com/profile_banners/1098849494/1557678931
+  created_at: '2013-01-17T17:52:24Z'
+  owner: person:amelia-wattenberger
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727444458905001Ujdj
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/wattenberger
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

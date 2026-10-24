@@ -1,0 +1,269 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kal-schumacher
+  person: person:kal-schumacher
+  brief_bio:
+    text: The GitHub Universe 2025 listing describes Kal Schumacher as Senior Cloud Engineer at Duke Energy
+      Corp..
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 45793fad52584d2b6199d9d1704b004cd7a79727c5f06c2ccf9afed75e539c19
+    stale: false
+  expertise:
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  - label: Social impact
+    target: term:topic-2025/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1299b
+  interests:
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746130182247001EN9p
+      ref: session:2025/aut1299b
+  talks:
+  - session:2025/1975
+  - session:2025/aut1299b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  - linkedin_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746129696857001Exqv
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

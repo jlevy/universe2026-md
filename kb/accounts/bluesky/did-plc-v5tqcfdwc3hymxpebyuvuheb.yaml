@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/did-plc-v5tqcfdwc3hymxpebyuvuheb
+  platform: bluesky
+  handle: did:plc:v5tqcfdwc3hymxpebyuvuheb
+  url: https://bsky.app/profile/did:plc:v5tqcfdwc3hymxpebyuvuheb
+  display_name: April Yoho
+  bio: 'Senior Developer Advocate @Github. Hashicorp Ambassador. Ironman. Scuba Diver. Skier. '
+  followers: 2221
+  created_at: '2023-04-27T20:11:58Z'
+  owner: person:april-yoho
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685619186942001eQLJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: did:plc:v5tqcfdwc3hymxpebyuvuheb
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

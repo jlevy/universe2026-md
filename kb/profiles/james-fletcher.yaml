@@ -1,0 +1,162 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:james-fletcher
+  person: person:james-fletcher
+  brief_bio:
+    text: James Fletcher is a Senior Product Manager at GitHub who works on GitHub Advanced Security and
+      is product manager for CodeQL and code scanning. Fletcher spoke at GitHub Universe 2024 and speaks
+      at GitHub Universe 2026 about keeping vulnerabilities out of a codebase.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - github_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 5c7417873a29a13eb19c3d93a1310b9f738e983d638a2efe593f12f53c189d2f
+    stale: false
+  headline: Senior Product Manager at GitHub
+  location: Oxfordshire, UK
+  current_roles:
+  - Senior Product Manager at GitHub
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1511d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1511d
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:james-fletcher
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/sec1511d
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715337432495001xTGa
+      ref: session:2024/sec1511d
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715337432495001xTGa
+      ref: session:2024/sec1511d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715337432495001xTGa
+      ref: session:2024/sec1511d
+  - label: docs
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/docs
+      ref: repo:github/docs
+  - label: works-with-codespaces
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/docs
+      ref: repo:github/docs
+  open_source:
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  - repository: repo:dsp-testing/robertbrignull-test
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  - repository: repo:dsp-testing/a2z-f15
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  education:
+  - school: UCL
+    evidence:
+      url: https://www.linkedin.com/in/james-fletcher-1853a4159
+      observed_at: '2026-10-24T08:11:46Z'
+  credentials:
+  - kind: certification
+    title: Transitioning to Product Management
+    issuer: LinkedIn
+    date: Jan 2021
+    url: https://www.linkedin.com/learning/certificates/c1357da05a8257de693f4baaf431763feab3c01f849a71ffedad3e8056d431c8
+    evidence:
+      url: https://www.linkedin.com/in/james-fletcher-1853a4159
+      observed_at: '2026-10-24T08:11:46Z'
+  - kind: certification
+    title: HTML, CSS, and Javascript for Web Developers
+    issuer: Coursera
+    date: Dec 2019
+    url: https://www.coursera.org/account/accomplishments/verify/N9V8M4LD5J9D
+    evidence:
+      url: https://www.linkedin.com/in/james-fletcher-1853a4159
+      observed_at: '2026-10-24T08:11:46Z'
+  talks:
+  - session:2024/sec1511d
+  - session:tru2230d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715337711236001Gykn
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jf205
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715337711236001Gykn
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

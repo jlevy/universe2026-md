@@ -1,0 +1,62 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ryan-j-salva
+  person: person:ryan-j-salva
+  brief_bio:
+    text: Ryan J. Salva was VP of Product at GitHub, overseeing the company's AI strategy including GitHub
+      Copilot, when speaking at GitHub Universe 2023. Salva spoke about GitHub Copilot as an AI pair programmer.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 5910c3aaef94e7bbf47f8a1fe546dee32c0d89c8c00d3cd4c0603982df27da86
+    stale: false
+  technologies:
+  - label: Azure DevOps
+    target: software:azure-devops
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure DevOps
+      ref: person:ryan-j-salva
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:ryan-j-salva
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1687186963790001NaGZ
+      ref: session:2023/ai2713m
+  talks:
+  - session:2023/ai2713m
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1688335503683001G9I1
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,640 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:lesley-cordero
+  person: person:lesley-cordero
+  brief_bio:
+    text: Lesley Cordero is a Staff Software Engineer and Tech Lead at The New York Times, focused on
+      observability and shared platforms. Cordero spoke at GitHub Universe 2023 about driving organizational
+      sustainability with platform engineering.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 48b41a5ad614e0a4dcff53fc3de43142d154914eb51574e1bf111da9c8a7c27a
+    stale: false
+  headline: The New York Times
+  current_roles:
+  - The New York Times
+  expertise:
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2173g
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2173g
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2173g
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2173g
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2173g
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2173g
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686444082467001GFo7
+      ref: session:2023/dev2173g
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686444082467001GFo7
+      ref: session:2023/dev2173g
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686444082467001GFo7
+      ref: session:2023/dev2173g
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686444082467001GFo7
+      ref: session:2023/dev2173g
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686444082467001GFo7
+      ref: session:2023/dev2173g
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686444082467001GFo7
+      ref: session:2023/dev2173g
+  credentials:
+  - kind: honor
+    title: Discover DDD Denver 2024 Speaker
+    issuer: Discovery DDD
+    date: '2024-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: NDC London 2024 Speaker
+    issuer: NDC London
+    date: '2024-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: YOW! 2023 Speaker
+    issuer: GOTO Conferences
+    date: '2023-12-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: Codemotion 2024 Speaker
+    issuer: Codemotion
+    date: '2023-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays Eindhoven 2023 Speaker
+    issuer: DevOpsDays Eindhoven
+    date: '2023-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: Stretch 2023 Speaker
+    issuer: Compass Tech Summit
+    date: '2023-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOps Con Speaker
+    issuer: DevOpsDays NYC
+    date: '2023-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOps World Panelist
+    issuer: Women In DevOps
+    date: '2023-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays London Speaker
+    issuer: DevOpsDays London
+    date: '2023-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: NDC Copenhagen Speaker
+    issuer: NDC Copenhagen
+    date: '2023-08-01T00:00:00.000Z'
+    description: Driving Organizational Sustainability with Platform Engineering
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: REFACTOR DX Speaker
+    issuer: REFACTOR DX
+    date: '2023-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays Amsterdam Speaker
+    issuer: DevOpsDays Amsterdam
+    date: '2023-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: GothamGo 2023 Speaker
+    issuer: GothamGo
+    date: '2023-06-01T00:00:00.000Z'
+    description: Using Go for Platform Engineering
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: QCon 2023 Speaker
+    issuer: QCon Conference
+    date: '2023-06-01T00:00:00.000Z'
+    description: Scaling Organizations with Platform Engineering https://qconnewyork.com/presentation/jun2023/scaling-organizations-platform-engineering
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOps Enterprise Summit Amsterdam Speaker
+    issuer: DevOps Enterprise Summit Amsterdam
+    date: '2023-05-01T00:00:00.000Z'
+    description: Driving Sustainability with Platform Engineering
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays Denmark 2023 Speaker
+    issuer: DevOpsDays Zurich
+    date: '2023-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays Denmark Speaker
+    issuer: '-'
+    date: '2023-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays Zurich 2023 Speaker
+    issuer: DevOpsDays Zurich
+    date: '2023-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: The DEVOPS Conference Speaker
+    issuer: Efficode
+    date: '2023-03-01T00:00:00.000Z'
+    description: Building a Psychologically Safe Culture for Reliable Service Management
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DeveloperWeek 2023 Speaker
+    issuer: DeveloperWeek
+    date: '2023-02-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: NDC 2023 Speaker
+    issuer: NDC
+    date: '2023-01-01T00:00:00.000Z'
+    description: Psychologically Safe Reliability Management - extended version.
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: All Day DevOps 2022 Speaker
+    issuer: All Day DevOps
+    date: '2022-11-01T00:00:00.000Z'
+    description: 'Title: Psychologically Safe Reliability Management'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DataDog DASH Panelist
+    issuer: DataDog
+    date: '2022-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays Chicago Speaker
+    issuer: DevOpsDays Chicago
+    date: '2022-09-01T00:00:00.000Z'
+    description: Effective Observability in Microservice Architecture
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays DC
+    issuer: DevOpsDays DC
+    date: '2022-09-01T00:00:00.000Z'
+    description: Effective Observability in Microservice Architectures
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: Out in Engineering Panelist
+    issuer: Turing
+    date: '2022-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOps Days Atlanta Speaker
+    issuer: DevOpsDays Atlanta
+    date: '2022-04-01T00:00:00.000Z'
+    description: 'Title: Psychological Safety for SRE teams Website: https://devopsdays.org/events/2022-atlanta/program/lesley-cordero'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOps Summit 2022 Speaker
+    issuer: DevOps Summit 2022
+    date: '2022-04-01T00:00:00.000Z'
+    description: 'Title: Trauma Informed Site Reliability Engineering'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays Birmingham Speaker
+    issuer: DevOpsDays Birmingham
+    date: '2022-04-01T00:00:00.000Z'
+    description: 'Title: Effective Observability in Microservices Website: https://devopsdays.org/events/2022-birmingham-al/program
+      https://devopsdays.org/events/2022-birmingham-al/program/lesley-cordero'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays Raleigh Speaker
+    issuer: DevOpsDays Raleigh
+    date: '2022-04-01T00:00:00.000Z'
+    description: 'Title: Effective Observability in Microservices Website: https://devopsdays.org/events/2022-raleigh/program/lesley-cordero'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: LeadDev Speaker
+    issuer: LeadDev
+    date: '2022-04-01T00:00:00.000Z'
+    description: 'Title: Effective Observability in Microservice Architectures Main Website: https://leaddev.com/leaddev-new-york/agenda'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: The DEVOPS Conference Speaker
+    issuer: The DEVOPS Conference
+    date: '2022-03-01T00:00:00.000Z'
+    description: 'Title: Running GameDays at Different Scales Website: https://www.thedevopsconference.com/speakers'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: All Day DevOps Speaker
+    issuer: All Day DevOps
+    date: '2021-10-01T00:00:00.000Z'
+    description: 'Title: Fitting Site Reliability & Developer Experience Into Your Team Priorities'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DeveloperWeek 2021 Speaker
+    issuer: Emamo
+    date: '2021-05-01T00:00:00.000Z'
+    description: 'Title: Embedding SRE Into Your Product Engineering Teams'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: DevOpsDays Austin Speaker
+    issuer: DevOpsDays Austin
+    date: '2021-03-01T00:00:00.000Z'
+    description: 'Title: Fitting Site Reliability & Developer Experience into Your Team’s Priorities Website:
+      https://devopsdays.org/events/2021-texas/program Talk: https://youtu.be/AvuWHRPqcCA?t=4675'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: EDUCAUSE Workshop Presenter
+    issuer: EDUCAUSE
+    date: '2019-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: ISTE Workshop Presenter
+    issuer: International Society for Technology in Education (ISTE)
+    date: '2019-06-01T00:00:00.000Z'
+    description: 'Workshop: Building EdTech Integrations with G Suite for Education'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: Building with G Suite Speaker
+    issuer: NYC Open Data
+    date: '2019-03-01T00:00:00.000Z'
+    description: https://gdg.community.dev/events/details/google-google-developer-group-gdg-nyc-presents-entrepreneurship-with-seamlessdocs-ceo-building-with-gsuite-nyc-open-data/
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: Panelist
+    issuer: IBM Watson
+    date: '2017-08-01T00:00:00.000Z'
+    description: 'Artificial Intelligence in Healthcare: Ethics & Law With Watson Health & HealthTech
+      Women'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: HackNY Speaker
+    issuer: HackNY
+    date: '2017-03-01T00:00:00.000Z'
+    description: 'Title: Intro to GeoSpatial Analysis workshop https://hackny-s2017.devpost.com/'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: Multicultural Leadership Award
+    issuer: Office of Multicultural Affairs
+    date: '2016-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: LIME Connect Finalist
+    issuer: LIME Connect
+    date: '2015-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: Quest Scholar
+    issuer: QuestBridge/Columbia University
+    date: '2013-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: honor
+    title: QuestBridge National College Match Finalist
+    issuer: QuestBridge
+    date: '2012-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  spoken_languages:
+  - English
+  - Spanish
+  activities:
+  - kind: project
+    title: O'Reilly Contributor
+    detail: May 2022
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: project
+    title: LeadDev Contributor
+    detail: Dec 2021
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: project
+    title: Twilio Contributor
+    detail: Aug 2017
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Advanced Software Engineering I &II
+    detail: COMS6XXX
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Analysis of Algorithms I
+    detail: CSOR4231
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Artificial Intelligence
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Calculus I-III
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Computer Science Theory
+    detail: COMS3261
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Contemporary Civilizations I & II
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Discrete Mathematics
+    detail: COMS3203
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Fundamentals of Computer Systems
+    detail: COMS3827
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: General Chemistry I
+    detail: CHEM1403
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Honors Data Structures
+    detail: COMS3137
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Intensive Chemistry Lab
+    detail: CHEM2507
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Intro to Computational Learning Theory
+    detail: COMS4252
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Intro to Computer Science in Java Programming
+    detail: COMS1004
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Intro to Databases
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Linear Algebra
+    detail: MATH2010
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Natural Language Processing
+    detail: COMS 4705
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Physics I & II
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Principals of Economics
+    detail: ECON1105
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Probability & Statistics
+    detail: SIEO4150
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: 'Python: Intro to Computer Science for Engineers and Applied Scientists'
+    detail: COMS1006
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: 'Senior Thesis: Implications of Technology in Education'
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: University Writing
+    detail: ENGL1010
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: course
+    title: Web Development I & II
+    detail: COMS 3101
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: organization
+    title: Devopsdays NYC
+    detail: Jan 2023 · Present
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: organization
+    title: ADI
+    detail: Sep 2015 · May 2016
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  - kind: organization
+    title: Roosevelt Institute
+    detail: Published Computer Science Education Policy Proposal · Sep 2013 · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/lesleycordero
+      observed_at: '2026-10-24T08:45:07Z'
+  talks:
+  - session:2023/dev2173g
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686442392128001XNUM
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,25 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:jira
+  name: Jira
+  aliases:
+  - Jira
+  kind: commercial
+  vendor: org:atlassian
+  mentioned_in:
+  - person:callum-cieciala
+  - person:grzegorz-bak
+  - person:jovana-dunisijevic
+  - session:2024/ai1405d
+  - session:2025/aut1564d
+  - session:2025/aut1763d
+  - session:ldr1387h
+  - session:ldr1516m
+  - session:tru1815d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

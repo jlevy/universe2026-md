@@ -1,0 +1,144 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jennifer-mankoff
+  person: person:jennifer-mankoff
+  brief_bio:
+    text: Jennifer Mankoff is the Richard E. Ladner Professor in the University of Washington's Paul G.
+      Allen School, researching accessibility and directing the CREATE center for accessible technology.
+      Mankoff spoke at GitHub Universe 2023 about AI for accessibility.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - linkedin_bio
+    - participation
+    - sessions
+    - past_affiliations
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 86605158b1f9d313076fb9ae9e9ebe7c99dd4f719e12964a32e8b4d6ab1f3417
+    stale: false
+  headline: University of Washington
+  current_roles:
+  - University of Washington
+  expertise:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Machine Learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  interests:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Machine learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  education:
+  - school: Georgia Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/jennifer-mankoff-aa9587226
+      observed_at: '2026-10-24T08:45:37Z'
+  spoken_languages:
+  - English
+  - German
+  - Sign Languages
+  activities:
+  - kind: course
+    title: Accessibility
+    detail: CSE 443
+    evidence:
+      url: https://www.linkedin.com/in/jennifer-mankoff-aa9587226
+      observed_at: '2026-10-24T08:45:37Z'
+  - kind: course
+    title: Accessibility (grad quals)
+    detail: '513'
+    evidence:
+      url: https://www.linkedin.com/in/jennifer-mankoff-aa9587226
+      observed_at: '2026-10-24T08:45:37Z'
+  talks:
+  - session:2023/ai2440m
+  gaps:
+  - github_account
+  - website
+  - x_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696310819090001xh6i
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,166 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:damian-brady
+  person: person:damian-brady
+  brief_bio:
+    text: Damian Brady is a Staff Developer Advocate at GitHub specializing in DevOps and MLOps, formerly
+      a Cloud Advocate at Microsoft, and an author of a book on Team Foundation Server 2013. Brady speaks
+      at GitHub Universe 2026 in the opening keynote.
+    cites:
+    - listed_role
+    - current_affiliations
+    - github_readme
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 35094898385db0321e68b39b9b8871b2008f1f5f5cd2a0918355d0022a82fd25
+    stale: true
+  headline: Staff Developer Advocate at GitHub
+  location: Brisbane, Australia
+  current_roles:
+  - Staff Developer Advocate at GitHub
+  interests:
+  - label: contribution-graph
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/octocanvas
+      ref: repo:github/octocanvas
+  - label: GitHub Copilot
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/octocanvas
+      ref: repo:github/octocanvas
+  - label: wallpaper
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/octocanvas
+      ref: repo:github/octocanvas
+  open_source:
+  - repository: repo:damovisainc/billion-dollar-startup
+    relation: contributor
+    stars: 0
+    primary_language: C#
+  - repository: repo:github/octocanvas
+    relation: contributor
+    stars: 56
+    primary_language: TypeScript
+  - repository: repo:octocademy/tailspin-transport-aitour26
+    relation: contributor
+    stars: 1
+    primary_language: TypeScript
+  education:
+  - school: The University of Queensland
+    evidence:
+      url: https://www.linkedin.com/in/damianbrady
+      observed_at: '2026-10-24T08:11:41Z'
+  credentials:
+  - kind: honor
+    title: MVP - Visual Studio ALM
+    issuer: Microsoft
+    date: '2014-01-01T00:00:00.000Z'
+    description: The Most Valuable Professional (MVP) award is given to exceptional technical community
+      leaders who actively share their high quality, real world expertise with others. Each year, around
+      4,000 recipients are honored worldwide. They represent more than 90 countries, speak over 40 languages,
+      answer more than 10 million questions a year, and are awarded in almost 90 Microsoft technologies.
+      http://mvp.microsoft.com
+    evidence:
+      url: https://www.linkedin.com/in/damianbrady
+      observed_at: '2026-10-24T08:11:41Z'
+  publications:
+  - title: Professional Team Foundation Server 2013
+    venue: Wiley
+    evidence:
+      url: https://www.linkedin.com/in/damianbrady
+      observed_at: '2026-10-24T08:11:41Z'
+  activities:
+  - kind: project
+    title: National Equipment Database
+    detail: Running a database design and build to provide a centralised space for maintainined records
+      of all mobile equipment across Toll Express in conjuction with SSW Pty. Ltd to provide streamlined
+      and quicker information. The space will also provide information suitable for assessment on fleet
+      replacement. Core functionality around reporting includes:* assigning a number of operational attributes
+      to each equipment for reporting on commonality or by-exception; * providing instant reporting on
+      equipment holding by-Branch;* generating an audit log on editable data; and* assigning causal expenses
+      to each equipment to understand the true running cost by-equipment or equipment type. · Jul 2013
+    evidence:
+      url: https://www.linkedin.com/in/damianbrady
+      observed_at: '2026-10-24T08:11:41Z'
+  - kind: course
+    title: Premiere Pro Essentials
+    evidence:
+      url: https://www.linkedin.com/in/damianbrady
+      observed_at: '2026-10-24T08:11:41Z'
+  recent_writing:
+  - title: MLOps [12] - What is Azure Machine Learning?
+    url: https://damianbrady.com.au/2020/12/01/what-is-aml/
+    published: '2020-12-01T16:15:00Z'
+    channel: blog
+  - title: MLOps [11] - How can MLOps improve my predictive models?
+    url: https://damianbrady.com.au/2020/11/19/how-can-mlops-improve-my-models/
+    published: '2020-11-19T16:15:00Z'
+    channel: blog
+  - title: MLOps [10] - When should I think about MLOps?
+    url: https://damianbrady.com.au/2020/11/17/when-should-i-think-about-mlops/
+    published: '2020-11-17T16:15:00Z'
+    channel: blog
+  - title: MLOps [9] Why should I care about MLOps?
+    url: https://damianbrady.com.au/2020/11/12/why-care-about-mlops/
+    published: '2020-11-12T16:15:00Z'
+    channel: blog
+  - title: MLOps [8] Can I use DevOps tooling for Machine Learning projects?
+    url: https://damianbrady.com.au/2020/11/10/mlops-8-can-i-use-devops-tooling-for-machine-learning-projects/
+    published: '2020-11-10T16:15:00Z'
+    channel: blog
+  - title: MLOps [7] - What parts of an ML project should be in source control?
+    url: https://damianbrady.com.au/2020/11/02/parts-of-an-ml-project-in-source-control/
+    published: '2020-11-02T16:15:00Z'
+    channel: blog
+  - title: MLOps [6] - How does MLOps differ from DevOps?
+    url: https://damianbrady.com.au/2020/10/29/how-does-mlops-differ-from-devops/
+    published: '2020-10-29T15:15:00Z'
+    channel: blog
+  - title: MLOps [5] - What DevOps practices can be applied to Machine Learning projects?
+    url: https://damianbrady.com.au/2020/10/27/devops-practices-applied-to-ml-projects/
+    published: '2020-10-27T15:15:00Z'
+    channel: blog
+  - title: MLOps [4] - What is AIOps and how does it differ from MLOps?
+    url: https://damianbrady.com.au/2020/10/22/what-is-aiops/
+    published: '2020-10-22T15:15:00Z'
+    channel: blog
+  - title: MLOps [3] - What is MLOps?
+    url: https://damianbrady.com.au/2020/10/20/what-is-mlops/
+    published: '2020-10-20T15:15:00Z'
+    channel: blog
+  talks:
+  - session:1809k
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696543287344001dF9K
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Damovisa
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

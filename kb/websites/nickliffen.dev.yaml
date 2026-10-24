@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:nickliffen.dev
+  url: https://nickliffen.dev
+  kind: personal
+  title: Nick Liffen's Blog | Technology, DevOps and Developer Blog
+  description: Nick Liffen's Blog | Focusing on DevOps, Developer Experience and all aspects of Technology
+  owner: person:nick-liffen
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://nickliffen.dev/rss.xml
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: NickLiffen
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://nickliffen.dev
+    record_id: https://nickliffen.dev
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

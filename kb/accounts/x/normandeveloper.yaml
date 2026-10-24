@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/normandeveloper
+  platform: x
+  handle: normandeveloper
+  url: https://x.com/normandeveloper
+  display_name: norman
+  bio: i like code. my coworkers are famous in AI, I just make memes and commits.  my opinions are my
+    own. ex-CircuitCity. 👷
+  location: Indiana, USA
+  website: http://agentdrivendevelopment.com/
+  followers: 72
+  following: 174
+  posts_count: 1075
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/2093044912199491584/kxF3wZSO_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1734613581587795968/1789075781
+  created_at: '2023-12-12T16:38:19Z'
+  owner: person:joel-norman
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730309119188001oHcc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/normandeveloper
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

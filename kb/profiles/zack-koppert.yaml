@@ -1,0 +1,408 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:zack-koppert
+  person: person:zack-koppert
+  brief_bio:
+    text: Zack Koppert is a Senior Software Engineering Manager at GitHub who writes about InnerSource,
+      open source and developer tooling, and is active in the InnerSource Commons community. Koppert spoke
+      at GitHub Universe 2023 about moving from innersource to open source with OSPOs.
+    cites:
+    - current_affiliations
+    - linkedin_bio
+    - websites
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: c377d0dd5f8c63586fdb2f28075538fd3a832bb5cd72e3a581e7817c923294e0
+    stale: false
+  headline: GitHub
+  location: Portland, OR
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:github-community-projects/issue-metrics
+    - ref: repo:zkoppert/innersource-crawler
+    - ref: repo:github-community-projects/evergreen
+    - ref: repo:github-community-projects/stale-repos
+    - ref: repo:zkoppert/advanced-security-enforcer
+  interests:
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+    - url: https://github.com/super-linter/super-linter
+      ref: repo:super-linter/super-linter
+    - url: https://github.com/github-community-projects/issue-metrics
+      ref: repo:github-community-projects/issue-metrics
+  - label: ospo
+    basis: github_repositories
+    confidence: medium
+    weight: 0.55
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/github-ospo
+      ref: repo:github/github-ospo
+    - url: https://github.com/github-community-projects/issue-metrics
+      ref: repo:github-community-projects/issue-metrics
+    - url: https://github.com/github-community-projects/evergreen
+      ref: repo:github-community-projects/evergreen
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.55
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: python
+    basis: github_repositories
+    confidence: medium
+    weight: 0.47
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github-community-projects/issue-metrics
+      ref: repo:github-community-projects/issue-metrics
+    - url: https://github.com/github-community-projects/stale-repos
+      ref: repo:github-community-projects/stale-repos
+    - url: https://github.com/zkoppert/innersource-crawler
+      ref: repo:zkoppert/innersource-crawler
+  - label: Issues
+    target: term:github-product-2023/issues
+    basis: session_facets
+    confidence: high
+    weight: 0.45
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+    - url: https://github.com/github-community-projects/issue-metrics
+      ref: repo:github-community-projects/issue-metrics
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: high
+    weight: 0.45
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+    - url: https://github.com/github/github-ospo
+      ref: repo:github/github-ospo
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Discussions
+    target: term:github-product-2023/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Education
+    target: term:github-product-2023/education
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2023/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.27
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  open_source:
+  - repository: repo:super-linter/super-linter
+    relation: pinned
+    stars: 10637
+    primary_language: Shell
+  - repository: repo:github/github-ospo
+    relation: pinned
+    stars: 756
+  - repository: repo:github-community-projects/issue-metrics
+    relation: pinned
+    stars: 540
+    primary_language: Python
+  - repository: repo:github-community-projects/evergreen
+    relation: pinned
+    stars: 226
+    primary_language: Python
+  - repository: repo:github-community-projects/stale-repos
+    relation: pinned
+    stars: 205
+    primary_language: Python
+  - repository: repo:zkoppert/advanced-security-enforcer
+    relation: owner
+    stars: 41
+    primary_language: Python
+  - repository: repo:zkoppert/innersource-crawler
+    relation: owner
+    stars: 35
+    primary_language: Python
+  - repository: repo:github/markup
+    relation: contributor
+    stars: 6050
+    primary_language: Ruby
+  - repository: repo:ss3sim/ss3sim
+    relation: contributor
+    stars: 42
+    primary_language: R
+  - repository: repo:toshimaru/railstwitterclone
+    relation: contributor
+    stars: 118
+    primary_language: Ruby
+  - repository: repo:highfivery/zero-spam-for-wordpress
+    relation: contributor
+    stars: 2
+    primary_language: PHP
+  - repository: repo:azure/azure-powershell
+    relation: contributor
+    stars: 4809
+    primary_language: C#
+  education:
+  - school: George Fox University
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  credentials:
+  - kind: honor
+    title: Emerging Leaders Cohort
+    issuer: Fortive
+    date: '2019-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Leading Edge Innovation
+    issuer: Mark Petersen
+    date: '2016-07-01T00:00:00.000Z'
+    description: Rewarded for taking a leadership role in planning the Annual Engineering Symposium.
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Recognizing Excellence
+    issuer: Chris Witt
+    date: '2016-04-01T00:00:00.000Z'
+    description: Rewarded for work that contributed to pulling the product launch ahead by 3 months.
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Recognizing Excellence
+    issuer: Melissa Morrison
+    date: '2016-02-01T00:00:00.000Z'
+    description: Rewarded for involvement in the Tektronix STEM Explorer Program
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Most Innovative Idea Award
+    issuer: Tektronix Engineering Symposium
+    date: '2015-03-01T00:00:00.000Z'
+    description: Booth Display at the Engineering Symposium on Innovation was voted as the Most Innovative
+      Idea for 2015.
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Recognizing Excellence
+    issuer: Ancil Tucker
+    date: '2015-01-01T00:00:00.000Z'
+    description: Rewarded for outstanding service to a customer resolution.
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Recognizing Exellence
+    issuer: Ancil Tucker
+    date: '2014-02-01T00:00:00.000Z'
+    description: Rewarded for contributions to the MDO3000 Oscilloscope.
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Recognizing Excellence
+    issuer: Ancil Tucker
+    date: '2013-12-01T00:00:00.000Z'
+    description: For being an integral part of bringing a new networking feature to the MDO4000B.
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Dean's List
+    issuer: George Fox University
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Employee of the Month
+    issuer: '-'
+    description: 8 times over 5 years
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: honor
+    title: Film Student of the Year
+    issuer: Arts and Communications Magnet Academy
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  activities:
+  - kind: volunteering
+    title: InnerSource Commons Foundation Member
+    detail: InnerSource Commons Foundation · Science and Technology · Jan 2021 · - Present · 5 years 10
+      months · I've given conference talks, been elected as a foundation member, and contribute to the
+      InnerSource patterns book. · Jan 2021
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: volunteering
+    title: Open Source Maintainer
+    detail: 'Open Source · Science and Technology · Jun 2020 · - Present · 6 years 5 months · Serving
+      as a project maintainer on several projects: - www.github.com/github/github-ospo - www.github.com/super-linter/super-linter
+      - www.github.com/github/issue-metrics - www.github.com/github/stale-repos - www.github.com/github/evergreen
+      - www.github.com/github/cleanowners - www.github.com/github/contributors · Jun 2020'
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: volunteering
+    title: Mentor
+    detail: Coding Coach · Science and Technology · Jul 2019 · - Present · 7 years 4 months · Mentoring
+      people around the world on Software Engineering including technical and career skills. · Jul 2019
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: volunteering
+    title: Programming Class Instructor
+    detail: Tektronix · Science and Technology · Dec 2014 · - Jun 2019 · 4 years 7 months · Ran a class
+      that taught the basics of programming to elementary school students. · Dec 2014
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  - kind: volunteering
+    title: Guest Speaker and Instructor
+    detail: Greenway Elementary · Education · Sep 2013 · - Jun 2016 · 2 years 10 months · Various science
+      instruction related volunteering roles in Elementary Classroom. · Sep 2013
+    evidence:
+      url: https://www.linkedin.com/in/zack-koppert
+      observed_at: '2026-10-24T08:49:54Z'
+  talks:
+  - session:2023/dev1705p
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685142334520001xUYR
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: zkoppert
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

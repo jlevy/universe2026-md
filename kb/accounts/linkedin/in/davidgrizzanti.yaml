@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/davidgrizzanti
+  platform: linkedin
+  handle: in/davidgrizzanti
+  url: https://www.linkedin.com/in/davidgrizzanti
+  display_name: David Grizzanti
+  bio: David Grizzanti is a Principal Engineer at Google. His current focus is on Platform…
+  location: Philadelphia
+  followers: 1680
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQHw1IKF7yo3cQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1660055331276?e=2147483647&v=beta&t=oEjr81WQght0e3fcsiqlYeFF_4nf6a6vCuV_jCJw_HA
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQFgLUW6EpANPQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1636204832898?e=2147483647&v=beta&t=DYa4hfXS9NptufF-npF-8gjxjQinBrcEv5xnav7cqcE
+  owner: person:david-grizzanti
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715180961267001gXL3
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/davidgrizzanti
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

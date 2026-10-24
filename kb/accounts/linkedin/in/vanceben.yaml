@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/vanceben
+  platform: linkedin
+  handle: in/vanceben
+  url: https://www.linkedin.com/in/vanceben
+  display_name: Ben Vance
+  bio: With over 10 years of experience in the field, including the last 8 as a support engineer…
+  location: Murfreesboro
+  followers: 460
+  connections: 447
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQHXAcySstrfGw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517628618140?e=2147483647&v=beta&t=G2zcuMn5jRyON9bgKnyJExczOBZu1V_QWHRpeh8_rhY
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:ben-vance
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695654923733001CBCn
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/vanceben
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sumanth-mothkuri
+  platform: linkedin
+  handle: in/sumanth-mothkuri
+  url: https://www.linkedin.com/in/sumanth-mothkuri
+  display_name: Sumanth Mothkuri
+  bio: I build systems that don’t just stay online—they evolve. With over 4 years of…
+  location: Ballwin
+  followers: 820
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHpr_LzfoLz5w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718167882228?e=2147483647&v=beta&t=-nLAFNDvrPKAmA7MxNShNneKr1yN1ls5WKyktlCDXWY
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQHcoM0rwJdbuA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1605064018092?e=2147483647&v=beta&t=6RSblka1XpqmgI7rgDriPBv-W6EbHaOgjycADCo0PEA
+  owner: person:sumanth-mothkuri
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777520824902001cJ4W
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sumanth-mothkuri
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

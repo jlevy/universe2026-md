@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/savannahostrowski
+  platform: linkedin
+  handle: in/savannahostrowski
+  url: https://www.linkedin.com/in/savannahostrowski
+  display_name: Savannah Ostrowski
+  bio: I’m the Release Manager for Python 3.16 & 3.17, Python Steering Council member, and a…
+  location: Seattle
+  followers: 8040
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQGjGrJfV4oTvA/profile-displaybackgroundimage-shrink_200_800/B4EZkWacDlIwAc-/0/1757017654856?e=2147483647&v=beta&t=XGdAE8Q0_Reg_AX04fryHDoEi_lEhKTfBvLS-uJ9xXI
+  owner: person:savannah-ostrowski
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695299651880001vVTt
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/savannahostrowski
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

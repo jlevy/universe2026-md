@@ -1,0 +1,328 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:micaela-eller
+  person: person:micaela-eller
+  brief_bio:
+    text: The GitHub Universe 2023 listing describes Micaela Eller as Global Program Ops Engineer at IBM.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: b77cbd7395cc4985aad6f7aa8f225c60380b2ec765f214dd2057e6b9548a8ab0
+    stale: false
+  headline: InnerSource Commons Foundation
+  current_roles:
+  - InnerSource Commons Foundation
+  expertise:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Discussions
+    target: term:github-product-2023/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Education
+    target: term:github-product-2023/education
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2023/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Issues
+    target: term:github-product-2023/issues
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Pages
+    target: term:github-product-2023/pages
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Projects
+    target: term:github-product-2023/projects
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  education:
+  - school: Boston University
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  credentials:
+  - kind: honor
+    title: Eminence and Excellence Award
+    issuer: IBM
+    date: '2016-10-01T00:00:00.000Z'
+    description: 'Eminence and Excellence Award program for demonstrating the Practice: Unite to Get it
+      Done Now "Thank you for outstanding project leadership, enabling agile transformation, and demonstrating
+      IBM values. Your dedication, passion, and determination helped to transform our organization and
+      deliver a cohesive experience across multiple squads."'
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: Enterprise Design Thinking Co-Creator
+    issuer: IBM
+    date: Sep 2024
+    url: https://www.credly.com/badges/113226c1-b026-4257-bf92-5dfc4ce5ebe9/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: Enterprise Design Thinking - Team Essentials for AI
+    issuer: IBM
+    date: Aug 2019
+    url: https://www.youracclaim.com/badges/38d5bae6-f91e-4216-8449-c6c8e32cbc25/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: Enterprise Design Thinking Practitioner
+    issuer: IBM
+    date: Aug 2019
+    url: https://www.youracclaim.com/badges/0fe0267b-07e6-40d9-b85a-3b3a4dc3caba/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: ICAgile Certified Professional - Agile Coaching (ICP-ACC)
+    issuer: ICAgile
+    date: Aug 2019
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: ICAgile Certified Professional-Agile Team Facilitation (ICP-ATF)
+    issuer: ICAgile
+    date: Aug 2019
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: Blue Core Coach
+    issuer: IBM
+    date: Oct 2017
+    url: https://www.youracclaim.com/badges/8cbf08d8-d1eb-428d-9682-5c7eb88af7ba/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: Certified Scrum Professional - Product Owner
+    issuer: Scrum Alliance
+    date: Apr 2017
+    expires: Apr 2028
+    url: https://www.scrumalliance.org/community/profile/meller3
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: Certified Scrum Professional - Scrum Master
+    issuer: Scrum Alliance
+    date: Apr 2017
+    expires: Apr 2028
+    url: https://www.scrumalliance.org/community/profile/meller3
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: Scrum Master Certified (SMC)
+    issuer: Scrum Alliance
+    date: Jan 2015
+    expires: Apr 2028
+    url: https://www.scrumalliance.org/community/profile/meller3
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: certification
+    title: Certified Scrum Product Owner
+    issuer: Scrum Alliance
+    date: Oct 2014
+    expires: Apr 2028
+    url: https://www.scrumalliance.org/community/profile/meller3
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  spoken_languages:
+  - Spanish
+  activities:
+  - kind: project
+    title: Amgen
+    detail: An American multinational biopharmaceutical company and world's largest independent biotechnology
+      firm. I was participating in the Quickstrike project to develop iPad application for international
+      executive management.I was responsible for modeling data and building star schema (including logical
+      views), designing the mobile app and adapting widgets to provide desired functionality (including
+      Timeline and Map widgets). In later time I have also moved the mobile app to be available in Web.
+      · Jul 2013
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: organization
+    title: InnerSource Commons Foundation
+    detail: Jun 2026 · Present
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  - kind: organization
+    title: Scrum Alliance
+    detail: Oct 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/micaela-eller
+      observed_at: '2026-10-24T08:49:22Z'
+  recent_writing:
+  - title: 'The Future Is Forked: InnerSource as the Hidden Catalyst for Innovation'
+    url: https://www.linkedin.com/pulse/future-forked-innersource-hidden-catalyst-innovation-micaela-eller-fujke
+    published: '2025-10-28T00:00:00.000Z'
+    channel: linkedin
+    summary: What if the future of work wasn’t about creating new AI agents or building better workflows?
+      What if the future was…
+  talks:
+  - session:2023/dev1705p
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686611943510001nXm6
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

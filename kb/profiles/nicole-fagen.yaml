@@ -1,0 +1,387 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:nicole-fagen
+  person: person:nicole-fagen
+  brief_bio:
+    text: The GitHub Universe 2025 listing describes Nicole Fagen as Director at Broadcom Inc..
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 0b6122e69b1eb184c1f1475a1bf4bbcd396a3b89e34746d5237cd942d4901f6d
+    stale: false
+  headline: Broadcom
+  current_roles:
+  - Broadcom
+  expertise:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Infrastructure as code
+    target: term:topic-2025/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1728l
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Codespaces
+      ref: session:2025/bld1728l
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1728l
+  interests:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  - label: GitHub Codespaces
+    target: term:github-product-2025/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757952280786001ZFMf
+      ref: session:2025/bld1728l
+  education:
+  - school: Clarkson University
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  publications:
+  - title: Implementing and Managing InfiniBand Coupling Links on System z
+    venue: IBM Redbook
+    date: Mar 2012
+    description: Contributed to IBM Redbook on Infiniband Coupling Facility
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  - title: SYNCHDEST and Synchronous WTOR Processing
+    venue: IBM WSC Flash
+    date: Sep 2011
+    description: WSC Flash explaining the importance of being able to properly identify and handle synchronous
+      WTORs.
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  - title: 'Best Practices: Upgrading a Coupling Facility'
+    venue: IBM White Paper
+    date: Aug 2011
+    description: White paper detailing coupling facility best practices for upgrades.
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  - title: 'Mission: Available'
+    venue: IBM White Paper
+    date: Aug 2011
+    description: The paper clearly identifies sysplex high availability best practices. Implementation
+      of the best practices will minimize the impact of problems encountered.
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  - title: Mirror, mirror on the wall, should couple datasets be mirrored at all?
+    venue: IBM Hot Topics
+    date: Feb 2011
+    description: As of z/OS 1.12 BCP and GDPS are in sync, CDSs can be mirrored. However, there are some
+      major pitfalls. The article was written to declare the pitfalls and what to do to resolve a pitfall.
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  - title: System z Parallel Sysplex Best Practices
+    venue: IBM White Paper
+    date: Jan 2011
+    description: Contributor to IBM Redbook, Parallel Sysplex Red Book
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  - title: Configuring z/OS to Ensure Successful DASD Swap Using the CRITICALPAGING Function
+    venue: IBM WSC Flash & White Paper
+    date: Dec 2010
+    description: WSC Flash written to notify all DASD swap (IBM hyperswap, GDPS customers and EMC customers)
+      to enable CRITICALPAGING to avoid outages during DASD swap. The paper successfully ended a long
+      wave of outages by notifying customers to enable the feature.
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  - title: 'Global Resource Serialization Services: Performance Considerations'
+    venue: IBM White Paper
+    date: Aug 2010
+    description: White paper written to help customers resolve their own GRS performance issues without
+      requiring a call to the IBM support center. The volume of GRS performance calls decreased after
+      the paper was released.
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  - title: IBM Makes House Calls with Assist On Site
+    venue: Hot Topics
+    date: Feb 2009
+    description: AOS – instructions for customers to enable IBM support to log on to their systems to
+      review documentation.
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  - title: Working with Vendors to Win
+    venue: Hot Topics
+    date: Feb 2008
+    description: Hot Topics Article on ways to work with vendors. There are numerous ways IBM partners
+      closely with vendors. This article identified the major avenues.
+    evidence:
+      url: https://www.linkedin.com/in/nicolefagen
+      observed_at: '2026-10-24T08:47:27Z'
+  recent_writing:
+  - title: Gaining Traction with AIOps
+    url: https://www.linkedin.com/pulse/gaining-traction-aiops-nicole-fagen
+    published: '2020-04-15T00:00:00.000Z'
+    channel: linkedin
+    summary: Your customers are demanding more and better digital experiences, which translates into a
+      constantly-growing volume of…
+  - title: Broadcom Mainframe Technical Exchanges
+    url: https://www.linkedin.com/pulse/broadcom-mainframe-technical-exchanges-nicole-fagen
+    published: '2019-11-18T00:00:00.000Z'
+    channel: linkedin
+    summary: Broadcom is vested is in our customers’ success. At every turn we are available to help our
+      customers implement and…
+  - title: 'Partnering with Customers: Eliminating the Barriers Between Ideas and Outcomes'
+    url: https://www.linkedin.com/pulse/partnering-customers-eliminating-barriers-between-ideas-nicole-fagen
+    published: '2017-01-04T00:00:00.000Z'
+    channel: linkedin
+    summary: Did you know there’s an entire CA team whose top priority is engaging and enabling CA Workload
+      Automation users? Learn…
+  talks:
+  - session:2025/bld1728l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1729196422700001bde3
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

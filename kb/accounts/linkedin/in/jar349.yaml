@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jar349
+  platform: linkedin
+  handle: in/jar349
+  url: https://www.linkedin.com/in/jar349
+  display_name: John Ruiz
+  bio: From the start of my career in the leadership development program at Lockheed Martin to…
+  location: State College-DuBois Area
+  followers: 607
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGcvEO7pYh_YQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1689108916696?e=2147483647&v=beta&t=TnZyfpDJKHeClFi3qoGPsxGUgowkKenBYHYurWcmJQE
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:john-ruiz
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698261533408001CN5j
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jar349
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

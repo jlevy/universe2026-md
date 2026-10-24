@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/equifax
+  platform: linkedin
+  handle: company/equifax
+  url: https://www.linkedin.com/company/equifax
+  display_name: Equifax
+  bio: 'At Equifax (NYSE: EFX), we believe knowledge drives progress. As a global data, analytics, and
+    technology company, we play an essential role in the global economy by helping financial institutions,
+    companies, employers, and government agencies make critical decisions with greater confidence. Our
+    unique blend of differentiated data, analytics, and cloud technology drives insights to power decisions
+    to move people forward. Headquartered in Atlanta and supported by nearly 15,000 employees worldwide,
+    Equifax operates or has investments in 24 countries in North America, Central and South America, Europe,
+    and the Asia Pacific region. For more information, visit Equifax.com.'
+  website: https://www.equifax.com/
+  followers: 323540
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQEnTJSK5x_v8Q/company-logo_200_200/company-logo_200_200/0/1719837460563/equifax_logo?e=2147483647&v=beta&t=F_mhrXsMmSYFb1015Jxuq7vrgCX589LjYTJvPoVR_bU
+  owner: org:equifax
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/hrushiph
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sumanth-mothkuri
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/equifax
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

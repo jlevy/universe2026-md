@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:openai
+  login: openai
+  kind: organization
+  url: https://github.com/openai
+  name: OpenAI
+  website: https://openai.com/
+  public_repositories: 244
+  created_at: '2015-10-03T19:34:05Z'
+  pinned:
+  - repo:openai/openai-cookbook
+  - repo:openai/whisper
+  - repo:openai/evals
+  - repo:openai/openai-python
+  - repo:openai/tiktoken
+  - repo:openai/openai-node
+  top_repositories:
+  - repo:openai/codex
+  - repo:openai/gym
+  - repo:openai/codex-plugin-cc
+  entity: org:openai
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: openai
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

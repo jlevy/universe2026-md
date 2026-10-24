@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/harnessinc
+  platform: linkedin
+  handle: company/harnessinc
+  url: https://www.linkedin.com/company/harnessinc
+  display_name: Harness
+  bio: 'Harness is a rapidly growing startup that is disrupting the software delivery market. The Harness
+    Software Delivery Platform includes product modules for every aspect of software delivery, including:
+    Continuous Integration, Continuous Delivery, Feature Flags, Cloud Cost Management, Service Reliability
+    Management, Security Testing Orchestration, Chaos Engineering, Software Engineering Insights, Continuous
+    Error Tracking, Code Repository, Internal Developer Portal, Software Supply Chain Assurance, Infrastructure
+    as Code Management and AI/ML infused throughout with AI Development Assistant (AIDA). The platform
+    is designed to help companies accelerate their cloud initiatives as well as their adoption of containers
+    and orchestration tools like Kubernetes and Amazon ECS and make software delivery easier, giving devs
+    their nights and weekends back.'
+  website: https://www.harness.io/
+  followers: 151166
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQHOMMezCXy4Sw/company-logo_200_200/B4EaEdWpoZK4AE-/0/1791493839663/harnessinc_logo?e=2147483647&v=beta&t=2y1nUFvM9RBCrb0JmePfOLbOXncqLeOljVCd-zk04tc
+  owner: org:harness
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/abhishek-dutta07
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/harnessinc
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,357 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kate-catlin
+  person: person:kate-catlin
+  brief_bio:
+    text: Kate Catlin is a Senior Product Manager for GitHub Copilot at GitHub, leading the model release
+      lifecycle for Copilot. Catlin spoke at GitHub Universe 2025 about secure CI/CD with GitHub Actions,
+      scaling innovation with AI, and multi-agent workflows.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: e86c71fc7c54d27683922168c289296fad3aafebc967ebc805304b3f28c4da28
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1622w
+    - ref: session:2025/bld1551b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2025/aut1622w
+    - ref: session:2025/bld1551b
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1622w
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1622w
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1622w
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1551b
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1622w
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:kate-catlin
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/bld1551b
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753979299598001wbZM
+      ref: session:2025/bld1551b
+  - label: GitHub Secret Protection
+    target: term:github-product-2025/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756938604274001SlVC
+      ref: session:2025/aut1622w
+  education:
+  - school: Quantic School of Business and Technology
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  credentials:
+  - kind: honor
+    title: 1st Place Hackathon Winner
+    issuer: Go Code Colorado - Denver Regional Competition
+    date: '2015-05-01T00:00:00.000Z'
+    description: Co-built the Android app for a Denver Go Code Colorado Hackathon Challenge. We built
+      a conversational chatbot for native Android + iOS mobile apps to drive diversity in hiring. The
+      data aspect of the project involved tying together multiple datasets from the Colorado Information
+      Marketplace and Glassdoor API using PostgresSQL and Python.
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  - kind: honor
+    title: 1st Place Inland Northwest Business Plan Competition, 2013
+    issuer: Inland Northwest Business Plan Competition
+    date: '2013-04-01T00:00:00.000Z'
+    description: Business plan to locally produce low-cost hydration backpacks for a sugar cane farming
+      community in Nicaragua. Won first place in the Social Enterprise Category.
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  - kind: honor
+    title: Rhodes Scholarship Finalist
+    issuer: The Rhodes Trust
+    date: '2013-01-01T00:00:00.000Z'
+    description: Didn't win though :)
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  - kind: honor
+    title: 1st Place Inland Northwest Business Plan Competition, 2011
+    issuer: Inland Northwest Business Plan Competition
+    date: '2011-04-01T00:00:00.000Z'
+    description: Business plan to increase sanitation and women’s rights in Indonesia through a series
+      of composting latrines. Won first place in the Social Enterprise category.
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  - kind: honor
+    title: Gonzaga University Student of the Year
+    issuer: National Residence Hall Honorary
+    date: '2010-01-01T00:00:00.000Z'
+    description: NRHH works through hundreds of campuses to recognize student residence hall leaders.
+      Title received as a freshmen for work in waste reduction and composting promotion.
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  - kind: certification
+    title: Certified ScrumMaster
+    issuer: Scrum Alliance
+    date: Nov 2016
+    expires: Nov 2018
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  publications:
+  - title: Android JSON Calls with Puppets
+    venue: Women Techmakers by GDG Boulder
+    date: March 11, 2017
+    description: Presentation with at Women Techmakers by GDG Boulder. Complementary Github code at https://github.com/KateCatlin/JSONForDummies
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  - title: 'Episode 90: Self.Conference, Career Transitions, Women in Technology and a Whole Lot of Whacky
+      Mayhem'
+    venue: IT in the D
+    date: May 4, 2015
+    description: With all of the chaos and excitement going on with our new studio, this one took a little
+      bit to get out. Our apologies about that, but episode 90 marks a major milestone for us, and so
+      we hope you enjoy it. Self.Conference, women in technology, making a career change into I.T. …all
+      that and more.Episode 90 was a major milestone because it’s the last time we’re broadcasting from
+      the Raw Radio X studio…starting this coming Monday night (May 11), we’ll be broadcasting out of
+      our own studio, and so how you listen live to us is changing. It was an epic episode because we
+      were joined by a whole bunch of awesome people who helped us wrap up our time at RRX properly, and
+      covered some awesome topics along the way…http://www.itinthed.com/17123/episode-90-self-conference-career-transitions-women-in-technology-and-a-whole-lot-of-whacky-mayhem/
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  activities:
+  - kind: project
+    title: <div>ersity
+    detail: Team <div>ersity won the Denver Go Code Colorado Hackathon Challenge.We built a conversational
+      chatbot for native Android + iOS mobile apps to drive diversity in hiring. The data aspect of the
+      project involved tying together multiple datasets from the Colorado Information Marketplace and
+      Glassdoor API using PostgresSQL and Python. Project repository not yet publicly available. · Mar
+      2017
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  - kind: organization
+    title: Venture for America
+    detail: VFA is a nonprofit program that places America's best and brightest at startups in emerging
+      cities, helping build businesses, create jobs, and make an impact. This Fellowship both brought
+      me to Detroit and facilitated my deep dive into the world of startups and entrepreneurship. · Jun
+      2013 · Jun 2015
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  - kind: organization
+    title: Gonzaga Hogan Entrepreneurial Leadership Program
+    detail: The mission of this program is to create the leaders the world needs most - individuals who
+      seek out opportunities to create change by combining their passions and the power of entrepreneurship.
+      This three-year, cross-curricular, honors-model approach identifies students who have a passion
+      for exploring new ideas and provides them with the perspective to see the world in a new way. ·
+      Sep 2009 · May 2013
+    evidence:
+      url: https://www.linkedin.com/in/kcatlin
+      observed_at: '2026-10-24T08:44:34Z'
+  talks:
+  - session:2025/aut1622w
+  - session:2025/aut1850m
+  - session:2025/bld1551b
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699458820981001klSw
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

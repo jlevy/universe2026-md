@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kaitlinvignali
+  platform: linkedin
+  handle: in/kaitlinvignali
+  url: https://www.linkedin.com/in/kaitlinvignali
+  display_name: Kaitlin Vignali
+  location: New York
+  followers: 798
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHGbWmJ1SKmhA/profile-displayphoto-scale_200_200/B56aBJdH5fJsAc-/0/1787938769137?e=2147483647&v=beta&t=1H4KRM8xpRrHDFZPuM2PUDNfbNOovMbXjWtq7VijLKA
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:kaitlin-vignali
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696511764341001HFQh
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kaitlinvignali
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

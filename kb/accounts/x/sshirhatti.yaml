@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/sshirhatti
+  platform: x
+  handle: sshirhatti
+  url: https://x.com/sshirhatti
+  display_name: Sourabh Shirhatti
+  bio: |-
+    Product @Uber, Developer Platform
+
+    Ex-@Microsoft | @UTAustin Alumnus | Bengaluru native 🇮🇳
+  location: Seattle, WA
+  followers: 1296
+  following: 351
+  posts_count: 455
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1638773428089155585/tHFbR7cp_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/224316077/1476427953
+  created_at: '2010-12-08T17:56:51Z'
+  owner: person:sourabh-shirhatti
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715386742141001HuD3
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/sshirhatti
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

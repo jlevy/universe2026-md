@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/sanity-io
+  platform: linkedin
+  handle: company/sanity-io
+  url: https://www.linkedin.com/company/sanity-io
+  display_name: Sanity
+  bio: Sanity is the intelligent content backend for companies building AI content operations at scale.
+    Structured content that feeds models, powers agents, and runs workflows, not just websites. Used by
+    Puma, Figma, Braze, Anthropic, and thousands of teams shipping content at scale. All-code Studio.
+    Free to start.
+  website: https://www.sanity.io/
+  followers: 32168
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQHf0M7Gr1e26w/company-logo_200_200/B4EZawbA5ZGQAQ-/0/1746716594395/sanity_io_logo?e=2147483647&v=beta&t=xF_9hQXn0aJ2O0BJHt0hKSwKL_tdUVROVq2ouJpbYwk
+  owner: org:sanity
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/briannahall0
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/sanity-io
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

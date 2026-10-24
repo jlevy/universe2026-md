@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/camrhamilton
+  platform: x
+  handle: camrhamilton
+  url: https://x.com/camrhamilton
+  display_name: Cameron Hamilton
+  bio: Yes, I'm still a scientist.
+  website: https://fitpilot.io/
+  followers: 46036
+  following: 68
+  posts_count: 531
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1231349908952756226/ehdPAaZU_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1226943244447178752/1591821301
+  created_at: '2020-02-10T18:57:33Z'
+  owner: person:cameron-hamilton
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1790175710875001qLXM
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/camrhamilton
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

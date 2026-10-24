@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mmeisser
+  platform: linkedin
+  handle: in/mmeisser
+  url: https://www.linkedin.com/in/mmeisser
+  display_name: Mathieu Meisser
+  bio: '- The goal: make things work ! - The love: being a key contributor and architect to…'
+  location: Lausanne
+  followers: 1409
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D03AQEmktiRgY25DA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516246000706?e=2147483647&v=beta&t=2q1rVEagf-8v6uO_-2Fz5YtRFnFLhn0B5NPGZ0iTjiE
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:mathieu-meisser
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728059056701001y1qR
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mmeisser
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

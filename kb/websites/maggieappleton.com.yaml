@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:maggieappleton.com
+  url: https://maggieappleton.com/
+  kind: personal
+  title: Maggie Appleton
+  description: Maggie Appleton's digital garden of visual essays, notes, and patterns about programming,
+    design, anthropology, and software.
+  owner: person:maggie-appleton
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  identity_links:
+  - https://bsky.app/profile/maggieappleton.com
+  - https://github.com/MaggieAppleton
+  - https://uk.linkedin.com/in/maggieappleton
+  - https://dribbble.com/mappleton
+  - https://x.com/Mappletons
+  - https://indieweb.social/@maggie
+  feeds:
+  - https://maggieappleton.com/rss.xml
+  linked_accounts:
+  - acct:bluesky/maggieappleton.com
+  - acct:linkedin/in/maggieappleton
+  - acct:x/mappletons
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: MaggieAppleton
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://maggieappleton.com/
+    record_id: https://maggieappleton.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

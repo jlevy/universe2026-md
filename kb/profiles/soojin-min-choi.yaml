@@ -1,0 +1,174 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:soojin-min-choi
+  person: person:soojin-min-choi
+  brief_bio:
+    text: Soojin (Min) Choi is a senior product manager at Microsoft working on GitHub Copilot models,
+      after leading data science and AI experiences in Visual Studio Code. Choi spoke at GitHub Universe
+      2024 about building intelligent apps with Visual Studio Code, GitHub and Azure.
+    cites:
+    - listed_role
+    - current_affiliations
+    - x_bio
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 03c8834d889e5999e87d4a6f32b31a4785168fda1ed0eb1909d8346253fa1328
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2016m
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure
+      ref: session:2024/dev2016m
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Visual Studio Code
+      ref: person:soojin-min-choi
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726152457231001LrEd
+      ref: session:2024/dev2016m
+  education:
+  - school: University of Washington Information School
+    evidence:
+      url: https://www.linkedin.com/in/soojinmin
+      observed_at: '2026-10-24T08:46:52Z'
+  credentials:
+  - kind: honor
+    title: Science Scholar
+    issuer: American Association of University Women Scholar
+    date: '2009-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/soojinmin
+      observed_at: '2026-10-24T08:46:52Z'
+  - kind: honor
+    title: Dean's List
+    issuer: University of Washington
+    evidence:
+      url: https://www.linkedin.com/in/soojinmin
+      observed_at: '2026-10-24T08:46:52Z'
+  spoken_languages:
+  - English
+  - Korean
+  activities:
+  - kind: volunteering
+    title: Teacher
+    detail: St. Paul Korean School · Education · Sep 2005 · - Jun 2010 · 4 years 10 months · Sep 2005
+    evidence:
+      url: https://www.linkedin.com/in/soojinmin
+      observed_at: '2026-10-24T08:46:52Z'
+  talks:
+  - session:2024/dev2016m
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727724072477001rpKk
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

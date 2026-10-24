@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/scientist
+  full_name: github/scientist
+  url: https://github.com/github/scientist
+  description: ':microscope: A Ruby library for carefully refactoring critical paths.'
+  stars: 7775
+  forks: 509
+  watchers: 434
+  open_issues: 9
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Ruby
+  topics:
+  - refactoring
+  - ruby
+  - scientist
+  - rubygem
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2014-02-05T15:58:43Z'
+  pushed_at: '2026-10-23T02:22:39Z'
+  owner_login: github
+  owner: gh:github
+  pinned_by:
+  - gh:github
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/scientist
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/manchicken
+  platform: linkedin
+  handle: in/manchicken
+  url: https://www.linkedin.com/in/manchicken
+  owner: person:mike-stemle
+  link_basis:
+  - event_listing
+  details_fetched: false
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685583878262001vn0X
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

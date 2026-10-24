@@ -1,0 +1,352 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:james-chatmas
+  person: person:james-chatmas
+  brief_bio:
+    text: James Chatmas is a Principal Solutions Engineer at Octopus Deploy who helps enterprises design
+      and improve complex software delivery workflows. Chatmas spoke at GitHub Universe 2023 and 2024
+      and speaks at GitHub Universe 2026 about AI agents across the full delivery lifecycle.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: a1f547ce30755c0921e18636503b6da0d1267da54b81901def49e600895672ec
+    stale: false
+  headline: Principal Solutions Engineer at Octopus Deploy
+  current_roles:
+  - Principal Solutions Engineer at Octopus Deploy
+  expertise:
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2023/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2891d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2891d
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2891d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2891d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2891d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2891d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1996s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1996s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1996s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1996s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1996s
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1795d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1795d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1795d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1795d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1795d
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1795d
+  technologies:
+  - label: Amazon Web Services
+    target: software:aws
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: AWS
+      ref: person:james-chatmas
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1795d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/dev1996s
+  programming_languages:
+  - label: C#
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:jchatmasoctopus/octofx
+    - ref: repo:jchatmasoctopus/octopetshop
+  interests:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698305589636001ialV
+      ref: session:2023/dev2891d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725401242456001qc9H
+      ref: session:2024/dev1996s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725401242456001qc9H
+      ref: session:2024/dev1996s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785456048148001CDKm
+      ref: session:bld1795d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698305589636001ialV
+      ref: session:2023/dev2891d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725401242456001qc9H
+      ref: session:2024/dev1996s
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725401242456001qc9H
+      ref: session:2024/dev1996s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785456048148001CDKm
+      ref: session:bld1795d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698305589636001ialV
+      ref: session:2023/dev2891d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725401242456001qc9H
+      ref: session:2024/dev1996s
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698305589636001ialV
+      ref: session:2023/dev2891d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725401242456001qc9H
+      ref: session:2024/dev1996s
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785456048148001CDKm
+      ref: session:bld1795d
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785456048148001CDKm
+      ref: session:bld1795d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2023/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698305589636001ialV
+      ref: session:2023/dev2891d
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698305589636001ialV
+      ref: session:2023/dev2891d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785456048148001CDKm
+      ref: session:bld1795d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785456048148001CDKm
+      ref: session:bld1795d
+  open_source:
+  - repository: repo:jchatmasoctopus/octofx
+    relation: owner
+    stars: 0
+    primary_language: C#
+  - repository: repo:jchatmasoctopus/octopetshop
+    relation: owner
+    stars: 0
+    primary_language: C#
+  - repository: repo:octopussamples/octopetshop-enterprise
+    relation: contributor
+    stars: 0
+    primary_language: C#
+  - repository: repo:octopussolutionsengineering/ghu-swift-bridge
+    relation: contributor
+    stars: 0
+    primary_language: C#
+  - repository: repo:octopussolutionsengineering/ghu-ach-router
+    relation: contributor
+    stars: 0
+    primary_language: C#
+  - repository: repo:octopussolutionsengineering/ghu-account-registry
+    relation: contributor
+    stars: 0
+    primary_language: C#
+  - repository: repo:octopussolutionsengineering/ghu-customer-identity-hub
+    relation: contributor
+    stars: 0
+    primary_language: C#
+  education:
+  - school: Saint Anselm College
+    evidence:
+      url: https://www.linkedin.com/in/jchatmas
+      observed_at: '2026-10-24T08:11:35Z'
+  talks:
+  - session:2023/dev2891d
+  - session:2024/dev1996s
+  - session:bld1795d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696509573849001itAh
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: JChatmasOctopus
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696509573849001itAh
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696509573849001itAh
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

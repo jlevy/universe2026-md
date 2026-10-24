@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kkennedyusu
+  platform: linkedin
+  handle: in/kkennedyusu
+  url: https://www.linkedin.com/in/kkennedyusu
+  display_name: Kevin Kennedy
+  bio: I am a Software Engineer with a love for software architecture, developing…
+  location: Boise
+  followers: 116
+  connections: 112
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHC_lwT_PWdIQ/profile-displayphoto-scale_200_200/B56Zj309YaIAAY-/0/1756504514028?e=2147483647&v=beta&t=7YGd6NsSeag322Foe5Y5ziY8oo1lsWn0a4wHdTOIM_4
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:kevin-kennedy
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755807083980001uGqs
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kkennedyusu
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

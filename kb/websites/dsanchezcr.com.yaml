@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:dsanchezcr.com
+  url: https://dsanchezcr.com/
+  kind: personal
+  title: Home | David Sanchez
+  description: David Sanchez personal website
+  owner: person:david-sanchez
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://dsanchezcr.com/blog/rss.xml
+  - https://dsanchezcr.com/blog/atom.xml
+  linked_accounts:
+  - acct:linkedin/in/dsanchezcr
+  - acct:x/dsanchezcr
+  sources:
+  - system: brightdata
+    url: https://x.com/dsanchezcr
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://dsanchezcr.com/
+    record_id: https://dsanchezcr.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

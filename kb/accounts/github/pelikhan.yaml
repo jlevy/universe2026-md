@@ -1,0 +1,70 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:pelikhan
+  login: pelikhan
+  kind: user
+  url: https://github.com/pelikhan
+  name: Peli de Halleux
+  company: Microsoft
+  bio: Creator of GitHub Agentic Workflows, GenAIScript, microcode, Jacdac, Founder of Microsoft MakeCode
+    (micro:bit, Arcade, Minecraft)
+  location: Seattle, WA
+  followers: 606
+  public_repositories: 85
+  created_at: '2013-04-16T23:36:56Z'
+  contributions_last_year:
+    total: 13073
+    commits: 5687
+    pull_requests: 955
+    issues: 517
+    reviews: 5423
+  starred_repositories: 864
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 15
+  contributed_to:
+  - repo:microsoft/uf2
+  - repo:github/docs
+  - repo:microsoft/pxt-tensorflow
+  - repo:microsoft/msagljs
+  - repo:microsoft/docusaurus-plugin-application-insights
+  organization_logins:
+  - microsoft
+  - lego-marshmallows
+  pinned:
+  - repo:github/gh-aw
+  - repo:microsoft/genaiscript
+  top_repositories:
+  - repo:pelikhan/quickgraph
+  - repo:pelikhan/action-continuous-translation
+  - repo:pelikhan/action-genai-issue-labeller
+  linked_accounts:
+  - acct:linkedin/in/pelidehalleux
+  entity: person:peli-de-halleux
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pelikhan
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

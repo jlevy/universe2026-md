@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ushanarayanabhatta
+  platform: linkedin
+  handle: in/ushanarayanabhatta
+  url: https://www.linkedin.com/in/ushanarayanabhatta
+  display_name: Usha N
+  bio: Staff Product manager with the Identity team @ GitHub, enabling secure authentication for…
+  location: Aurora
+  followers: 643
+  connections: 500
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:usha-n
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693437118038001OUeH
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ushanarayanabhatta
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

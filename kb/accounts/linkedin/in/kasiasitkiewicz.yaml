@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kasiasitkiewicz
+  platform: linkedin
+  handle: in/kasiasitkiewicz
+  url: https://www.linkedin.com/in/kasiasitkiewicz
+  display_name: Kasia Sitkiewicz
+  bio: Building the best autonomous offensive application security product experience.
+  location: San Francisco
+  followers: 4601
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHq0UXLoxYG2Q/profile-displaybackgroundimage-shrink_200_800/B56Zv6vhfKKwAU-/0/1769438321034?e=2147483647&v=beta&t=iTT13t8uCdavMly31SZRYSh-3Kh1xqarU76YaG9IPTE
+  owner: person:kasia-sitkiewicz
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686353828301001oieK
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kasiasitkiewicz
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

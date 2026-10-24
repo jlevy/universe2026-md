@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/steffenbjerkenas
+  platform: linkedin
+  handle: in/steffenbjerkenas
+  url: https://www.linkedin.com/in/steffenbjerkenas
+  display_name: Steffen Bjerkenås
+  bio: I enjoy solving ( --big | --small | --complex | --trivial | --ai | --no-ai | --random…
+  location: Vienna
+  followers: 934
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQG3rtlmjMyIWw/profile-displayphoto-scale_200_200/B4EaBjIiUZHoAg-/0/1788369578176?e=2147483647&v=beta&t=0pBkYbnIrJ9SA5rAkIg7FiTqMJvYSlTdzCQEuaUsNe8
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQHMifmhnVZghA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1562488161790?e=2147483647&v=beta&t=TPRv3yDI2FadAax4qRfqkaKIDr4d_jjVHAjikuRC5io
+  owner: person:steffen-bjerkenas
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687529828950001duLN
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/steffenbjerkenas
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

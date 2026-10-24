@@ -1,0 +1,310 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:pillippa-perez-pons
+  person: person:pillippa-perez-pons
+  brief_bio:
+    text: Pillippa Pérez Pons is a software engineer and community builder who is a director at Niñas
+      Pro and an organizer of JSConf Chile. Pérez Pons spoke at GitHub Universe 2025 about using lesser-known
+      Git features to tame frontend complexity.
+    cites:
+    - listed_role
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:39:52Z'
+    input_sha256: 1fdf950cd9be6875b64aa76af2426a43e78a1f287c5b30641741487ee862d412
+    stale: false
+  headline: Code && Cats.
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1124b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1124b
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1124b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1124b
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1124b
+  technologies:
+  - label: Git
+    target: software:git
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Git
+      ref: person:pillippa-perez-pons
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745259166432001oV3m
+      ref: session:2025/bld1124b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745259166432001oV3m
+      ref: session:2025/bld1124b
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745259166432001oV3m
+      ref: session:2025/bld1124b
+  - label: GitHub Codespaces
+    target: term:github-product-2025/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745259166432001oV3m
+      ref: session:2025/bld1124b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745259166432001oV3m
+      ref: session:2025/bld1124b
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745259166432001oV3m
+      ref: session:2025/bld1124b
+  - label: Projects and Issues
+    target: term:github-product-2025/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745259166432001oV3m
+      ref: session:2025/bld1124b
+  education:
+  - school: Universidad de Chile
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  credentials:
+  - kind: certification
+    title: Triplebyte Certified
+    issuer: Triplebyte
+    date: Nov 2021
+    url: https://triplebyte.com/tb/pillippa-perez-qfktfh1/certificate
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: certification
+    title: JavaScript (Intermediate)
+    issuer: HackerRank
+    date: Aug 2021
+    url: https://www.hackerrank.com/certificates/e143ac656155
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: certification
+    title: Problem Solving (Basic)
+    issuer: HackerRank
+    date: Sep 2020
+    url: https://www.hackerrank.com/certificates/87c61c3ca3a8
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: certification
+    title: Javascript (Basic)
+    issuer: HackerRank
+    date: Jul 2020
+    url: https://www.hackerrank.com/certificates/fcb0ca1ca7b1
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: certification
+    title: React (Basic)
+    issuer: HackerRank
+    date: May 2020
+    url: https://www.hackerrank.com/certificates/23c0c1699517
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: certification
+    title: Learn React Course
+    issuer: Codecademy
+    date: Sep 2019
+    url: https://www.codecademy.com/profiles/pillin/certificates/af00e5032d0a68cc84879983f5d8333b
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: certification
+    title: 'Node: De cero a experto'
+    issuer: Udemy
+    date: Sep 2019
+    url: https://www.udemy.com/certificate/UC-E6OYGIK1/
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: certification
+    title: JavaScript Algorithms and Data Structures
+    issuer: freeCodeCamp
+    date: Jul 2019
+    url: https://www.freecodecamp.org/certification/pillin/javascript-algorithms-and-data-structures
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: certification
+    title: Responsive Web Design
+    issuer: freeCodeCamp
+    date: Jun 2019
+    url: https://www.freecodecamp.org/certification/pillin/responsive-web-design
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: certification
+    title: Learn Git Course
+    issuer: Codecademy
+    date: May 2018
+    url: https://www.codecademy.com/profiles/pillin/certificates/a8ab218d5950c29861635cc0bf12fd13
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  spoken_languages:
+  - Español
+  - Inglés
+  activities:
+  - kind: volunteering
+    title: Vice President Board of Directors
+    detail: Niñas Pro · Education · Jan 2025 · - Present · 1 year 10 months · Nonprofit focused on increasing
+      girls’ participation in technology across Chile. * Provided strategic leadership in education initiatives
+      around web development, programming, and digital skills. * Collaborated on the design and implementation
+      of internal tools for volunteer management and data tracking. * Helped drive key partnerships with
+      the tech ecosystem to support events, mentorships, and training programs. * Supported governance
+      and contributed to the organization’s digital… Show more Nonprofit focused on increasing girls’
+      participation in technology across Chile. * Provided strategic leadership in education initiatives
+      around web development, programming, and digital skills. * Collaborated on the design and implementation
+      of internal tools for volunteer management and data tracking. * Helped drive key partnerships with
+      the tech ecosystem to support events, mentorships, and training programs. * Supported governance
+      and contributed to the organization’s digital strategy and infrastructure planning. Show less ·
+      Jan 2025
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: volunteering
+    title: Event Organizer
+    detail: CommunityOS · Education · Apr 2025 · - Present · 1 year 7 months · Apr 2025
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: volunteering
+    title: Event Organizer
+    detail: JSConf Chile · Education · Feb 2025 · - Present · 1 year 9 months · Feb 2025
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: volunteering
+    title: Event Organizer
+    detail: JSConf Chile · Education · Feb 2022 · - May 2024 · 2 years 4 months · Communication and coordination
+      with speakers, volunteers. Schedule Planning · Feb 2022
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: volunteering
+    title: Event Organizer
+    detail: Javascript Chile · Education · Mar 2023 · - May 2024 · 1 year 3 months · As an event organizer
+      for JavaScript Chile, I work alongside a team to coordinate the planning and execution of events
+      that promote learning and professional growth within the programming community in Chile. I provide
+      online support on event day and participate in meetings to plan and coordinate activities. Through
+      my commitment and passion for technology and programming, as well as my ability to work in a team
+      and adapt to changing situations, I contribute to creating a safe, inclusive and… Show more As an
+      event organizer for JavaScript Chile, I work alongside a team to coordinate the planning and execution
+      of events that promote learning and professional growth within the programming community in Chile.
+      I provide online support on event day and participate in meetings to plan and coordinate activities.
+      Through my commitment and passion for technology and programming, as well as my ability to work
+      in a team and adapt to changing situations, I contribute to creating a safe, inclusive and welcoming
+      space for members to connect, collaborate and learn together at JavaScript Chile events. Show less
+      · Mar 2023
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: volunteering
+    title: Volunteer
+    detail: Corporación Niñas Pro · Science and Technology · Apr 2019 · - Oct 2020 · 1 year 7 months ·
+      Support the students in the understanding of the exercises and doubts. · Apr 2019
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: volunteering
+    title: Call and Follow-up Coordinator
+    detail: Corporación Niñas Pro · Education · Mar 2020 · - Oct 2020 · 8 months · Communicate the days
+      and hours class and follow the girl’s assistance in the course. · Mar 2020
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  - kind: organization
+    title: JSConf Chile
+    detail: Feb 2022 · Present
+    evidence:
+      url: https://www.linkedin.com/in/ignaciapons
+      observed_at: '2026-10-24T08:44:24Z'
+  talks:
+  - session:2025/bld1124b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692808110574001B3pK
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

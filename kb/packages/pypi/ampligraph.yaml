@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/ampligraph
+  ecosystem: pypi
+  name: ampligraph
+  url: https://pypi.org/project/ampligraph/
+  description: A Python library for relational learning on knowledge graphs.
+  latest_version: 2.2.0
+  license: Apache 2.0
+  repository_url: https://github.com/Accenture/AmpliGraph/
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: Accenture/AmpliGraph
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

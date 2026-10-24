@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/alexbarnett
+  platform: x
+  handle: alexbarnett
+  url: https://x.com/alexbarnett
+  display_name: Alex Barnett
+  bio: 'VP, Developer Ecosystem & DevX @vonagedev @vonage ...Dad, Geek, cocktail maker. ex @getpostman
+    @Intuit @microsoft + @RMS @GoSiteInc #API #ecosystem #platform'
+  location: A Brit in Menlo Park, CA
+  website: http://developer.vonage.com/
+  followers: 2159
+  following: 2265
+  posts_count: 6955
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1604348871890456583/2PYaqUmd_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/16239939/1444860636
+  created_at: '2008-09-11T13:28:39Z'
+  owner: person:alex-barnett
+  link_basis:
+  - event_listing
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721258503028001C5xs
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/alexbarnett
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alexbarnett
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

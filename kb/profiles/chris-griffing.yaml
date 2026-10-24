@@ -1,0 +1,214 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:chris-griffing
+  person: person:chris-griffing
+  brief_bio:
+    text: Chris Griffing is a developer advocate who has worked at GitKraken and creates technical content
+      on Twitch and YouTube. Griffing spoke at GitHub Universe 2024 about releasing faster with GitHub
+      Actions and GitHub Copilot.
+    cites:
+    - listed_role
+    - past_affiliations
+    - x_bio
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: dfb0db119f9b6436bf70149124f42ff4d9b03d4cbacf81fb7b9c36968958728b
+    stale: false
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1860d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1860d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1860d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2024/dev1860d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/dev1860d
+  - label: Jenkins
+    target: software:jenkins
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Jenkins
+      ref: session:2024/dev1860d
+  - label: Rust
+    target: software:rust
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Rust
+      ref: person:chris-griffing
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715985496481001ObEN
+      ref: session:2024/dev1860d
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715985496481001ObEN
+      ref: session:2024/dev1860d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715985496481001ObEN
+      ref: session:2024/dev1860d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715985496481001ObEN
+      ref: session:2024/dev1860d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715985496481001ObEN
+      ref: session:2024/dev1860d
+  recent_writing:
+  - title: OpenAI is getting too realistic. The comments are just as bad as the average dev's. https://t.co/Uy21HAOGDQ
+    url: https://twitter.com/3274745054/status/1834337937581801900
+    published: '2024-09-12T21:06:59Z'
+    channel: x
+  - title: This might ruffle some feathers. Buuut... if you are using Next.js in SSR mode for a documentation
+      site, you are probably making a mistake. https://t.co/nvCk8g1oGk
+    url: https://twitter.com/3274745054/status/1770457517203881998
+    published: '2024-03-20T14:29:00Z'
+    channel: x
+  - title: |-
+      This is simply a post about how you can't predict the JIT compiler.
+
+      Caveats:
+      - The code needs to run often enough to be JIT'd. A React render block is a great example.
+
+      - Depending on the use case the readability of using Array.from might still be preferred.
+    url: https://twitter.com/3274745054/status/1753556668439535818
+    published: '2024-02-02T23:11:03Z'
+    channel: x
+  - title: |-
+      On stream we started looking at Mac mini upgrades. Mine is a 2015.
+      A Mac Studio with 192GB of RAM is tempting.
+
+      Just imagine... with all that RAM, I would be able to run TWO next.js dev servers AT THE SAME TIME!
+    url: https://twitter.com/3274745054/status/1747429778297348129
+    published: '2024-01-17T01:24:59Z'
+    channel: x
+  - title: |-
+      Many people are reading the DHH article about TypeScript and taking an all or nothing stance about it.
+
+      Hint: Some of the libraries we tout as "type-safe" mainly focus on external type-safety. They ALL use "any" internally when the type system gets in their way.
+
+      tRPC? Zod? Yup.
+    url: https://twitter.com/3274745054/status/1699522878730010714
+    published: '2023-09-06T20:40:04Z'
+    channel: x
+  - title: |-
+      I think the debate around "passion" in programming is so contentious because passion is seen as a very strong emotion.
+
+      If we reframed it as "curious", I doubt as many people would push back.
+
+      The best devs we all know are probably the most curious.
+    url: https://twitter.com/3274745054/status/1691562288371888201
+    published: '2023-08-15T21:27:31Z'
+    channel: x
+  - title: |-
+      We think we have problems with return type conversations.
+
+      Rust developers argue about the fundamentals.
+
+      78 comments. 39 upvotes. Is this getting ratioed on reddit? https://t.co/BB1cpp0EyV
+    url: https://twitter.com/3274745054/status/1621984582013968385
+    published: '2023-02-04T21:30:34Z'
+    channel: x
+  - title: |-
+      I finally made my first proper video for YouTube. (not just an intro "hello world")
+
+      In the video, I discuss how to find and come up with color palettes for web sites and apps.
+
+      Let me know if you have any feedback.
+
+      https://t.co/3QGHq1X2hu
+    url: https://twitter.com/3274745054/status/1590083926282100736
+    published: '2022-11-08T20:48:45Z'
+    channel: x
+  - title: "Twitchcon is started now. Time for too many instances of people telling me I am shorter than\
+      \ they expected. \n\nLuckily I also get to tell them they are taller than I expected.\n\nBalance\
+      \ in the universe is maintained."
+    url: https://twitter.com/3274745054/status/1578234716641034241
+    published: '2022-10-07T04:04:13Z'
+    channel: x
+  - title: |-
+      4 YEARS on Twitch as a programming streamer. I had thought it was the 6th but I checked Twitch's stats and June 3rd is the official date.
+
+      Thanks everyone for making it something I love doing every day! https://t.co/1SxS3t15lG
+    url: https://twitter.com/3274745054/status/1532794359267045376
+    published: '2022-06-03T18:40:27Z'
+    channel: x
+  talks:
+  - session:2024/dev1860d
+  gaps:
+  - github_account
+  - linkedin_account
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715979046709001mvv9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/mayashavin
+  platform: x
+  handle: MayaShavin
+  url: https://x.com/MayaShavin
+  display_name: Maya Shavin
+  bio: Lead SWE @Salesforce | Ex @Microsoft | Author | Founder @VueJSIsrael | Speaker | GDE | Web
+  location: Israel
+  website: http://mayashavin.com/
+  followers: 5225
+  following: 648
+  posts_count: 9852
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1180146252371111936/pwOaWc29_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/50981316/1652354818
+  created_at: '2009-06-26T08:45:09Z'
+  owner: person:maya-shavin
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686645252066001oKBi
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mayashavin
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/MayaShavin
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

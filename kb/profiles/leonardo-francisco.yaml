@@ -1,0 +1,236 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:leonardo-francisco
+  person: person:leonardo-francisco
+  brief_bio:
+    text: Leonardo Francisco is Head of Technology and Pre-Sales at Invillia, working with strategic accounts
+      and partners on digital transformation. Francisco spoke at GitHub Universe 2024 about next-generation
+      development with AI Cockpit.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 437a79b3ccf30c7839e0884a6f80d9146f60793f0b91b8ff9f5044be32499fc2
+    stale: false
+  headline: Invillia
+  current_roles:
+  - Invillia
+  expertise:
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2000d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2000d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2000d
+  - label: Data Analytics
+    target: term:topic-2024/data-analytics
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2000d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2000d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2000d
+  interests:
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725650699775001ig4j
+      ref: session:2024/ai2000d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725650699775001ig4j
+      ref: session:2024/ai2000d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725650699775001ig4j
+      ref: session:2024/ai2000d
+  - label: Data Analytics
+    target: term:topic-2024/data-analytics
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725650699775001ig4j
+      ref: session:2024/ai2000d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725650699775001ig4j
+      ref: session:2024/ai2000d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725650699775001ig4j
+      ref: session:2024/ai2000d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1725650699775001ig4j
+      ref: session:2024/ai2000d
+  education:
+  - school: Universidade Santa Cecília
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  credentials:
+  - kind: certification
+    title: PSK I
+    issuer: Scrum.org
+    date: Jun 2020
+    url: https://www.scrum.org/user/181458
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: Certified Management 3.0 Foundation Workshop Attendee
+    issuer: Management 3.0
+    date: Jan 2020
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: PSPO I
+    issuer: Scrum.org
+    date: Jan 2019
+    url: https://www.scrum.org/user/181458
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: KMP-I
+    issuer: Lean Kanban Inc.
+    date: Mar 2018
+    url: https://edu.leankanban.com/users/leonardo-francisco
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: PSM-I
+    issuer: Scrum.org
+    date: Jul 2016
+    url: https://www.scrum.org/user/181458
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: Oracle Certified Professional, Java EE 5 Web Component Developer
+    issuer: Oracle
+    date: Dec 2013
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: Oracle Certified Professional, Java SE 6 Programmer
+    issuer: Oracle
+    date: Jan 2013
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  - kind: certification
+    title: EXIN Kanban
+    issuer: EXIN
+    date: Jun 2022
+    expires: Jul 2027
+    url: https://app.exeed.pro/badge/115383
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: volunteering
+    title: Volunteer specialist
+    detail: Rede · Education · Dec 2014 · - Present · 11 years 11 months · The Empreender Voluntariado
+      program, maintained by Instituto Rede, is developed in partnership with ARTEMISIA, a social impact
+      business accelerator, and brings together employees willing to apply their knowledge and contribute
+      to social impact business entrepreneurs in improving their management. These businesses, in turn,
+      innovate products and services to address social issues for the low-income population, generating
+      financial and social gains. In the program, I worked as a volunteer… Show more The Empreender Voluntariado
+      program, maintained by Instituto Rede, is developed in partnership with ARTEMISIA, a social impact
+      business accelerator, and brings together employees willing to apply their knowledge and contribute
+      to social impact business entrepreneurs in improving their management. These businesses, in turn,
+      innovate products and services to address social issues for the low-income population, generating
+      financial and social gains. In the program, I worked as a volunteer specialist, responsible for
+      assisting the company Coruja Educação in the functional and technical specification of its software,
+      used to evaluate the potential and areas for improvement in school-age children. Show less · Dec
+      2014
+    evidence:
+      url: https://www.linkedin.com/in/leonardo-francisco
+      observed_at: '2026-10-24T08:45:06Z'
+  talks:
+  - session:2024/ai2000d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725651590397001z6MP
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

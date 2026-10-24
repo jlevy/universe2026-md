@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:github-issues-projects
+  name: GitHub Issues and Projects
+  aliases:
+  - GitHub Issues
+  - GitHub Projects
+  kind: github_product
+  vendor: org:github
+  product_term: term:github-product/projects-and-issues
+  mentioned_in:
+  - person:evi-liu
+  - session:2024/dev1857d
+  - session:2025/bld1150d
+  - session:2025/bld1558s
+  - session:2025/bld1862d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

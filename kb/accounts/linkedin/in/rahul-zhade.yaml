@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/rahul-zhade
+  platform: linkedin
+  handle: in/rahul-zhade
+  url: https://www.linkedin.com/in/rahul-zhade
+  display_name: Rahul Zhade
+  bio: I’m an application security engineer at GitHub! My skills include application development…
+  location: United States
+  followers: 1239
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQE6Yf8PrhhRZg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1722710488516?e=2147483647&v=beta&t=GmdUBgn5ebEtOnooVE3HnfYGkmO1wZ-9OLMrIw9x_rM
+  owner: person:rahul-zhade
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685569081902001tQ1v
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/rahul-zhade
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

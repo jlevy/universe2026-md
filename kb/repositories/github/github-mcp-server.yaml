@@ -1,0 +1,49 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/github-mcp-server
+  full_name: github/github-mcp-server
+  url: https://github.com/github/github-mcp-server
+  description: GitHub's official MCP Server
+  stars: 33923
+  forks: 5226
+  watchers: 410
+  open_issues: 205
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: Go
+  topics:
+  - github
+  - mcp
+  - mcp-server
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2025-03-04T16:42:04Z'
+  pushed_at: '2026-10-23T21:21:33Z'
+  owner_login: github
+  owner: gh:github
+  pinned_by:
+  - gh:sammorrowdrums
+  - gh:tommaso-moro
+  - gh:toby
+  - gh:github
+  software: software:github-mcp-server
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SamMorrowDrums
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/github-mcp-server
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/github-mcp-server
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

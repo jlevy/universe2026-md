@@ -1,0 +1,109 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: industry
+  event: event:github-universe-2026
+  label: Industry
+  multi_valued: true
+  terms:
+  - id: term:industry/agriculture-mining
+    label: Agriculture & Mining
+    source_id: 1741126391292001ncK3
+    session_count: 4
+  - id: term:industry/all-cross-industry
+    label: All / Cross-Industry
+    source_id: 1597340064552001lBV4
+    session_count: 1
+  - id: term:industry/applicable-to-all
+    label: Applicable to All
+    source_id: 1683556056754020fEXj
+    session_count: 99
+  - id: term:industry/business-services
+    label: Business Services
+    source_id: 1683556056754001fFuk
+    session_count: 8
+  - id: term:industry/computers-electronics
+    label: Computers & Electronics
+    source_id: 1683556056754002fYm0
+    session_count: 12
+  - id: term:industry/consumer-services
+    label: Consumer Services
+    source_id: 1683556056754003fpjc
+    session_count: 7
+  - id: term:industry/education
+    label: Education
+    source_id: 1683556056754004fQ2J
+    session_count: 9
+  - id: term:industry/energy-utilities
+    label: Energy & Utilities
+    source_id: 1683556056754005fs11
+    session_count: 5
+  - id: term:industry/financial-services
+    label: Financial Services
+    source_id: 1683556056754006fquY
+    session_count: 9
+  - id: term:industry/food-beverage-manufacturing
+    label: Food & Beverage Manufacturing
+    source_id: 1707912063438001sHW3
+    session_count: 4
+  - id: term:industry/food-beverage-services
+    label: Food & Beverage Services
+    source_id: 1683556056754007fjKx
+    session_count: 5
+  - id: term:industry/government
+    label: Government
+    source_id: 1683556056754008fEss
+    session_count: 5
+  - id: term:industry/healthcare-pharmaceuticals-biotech
+    label: Healthcare, Pharmaceuticals & Biotech
+    source_id: 1683556056754009fg9H
+    session_count: 8
+  - id: term:industry/manufacturing
+    label: Manufacturing
+    source_id: 1683556056754010fXgc
+    session_count: 8
+  - id: term:industry/media-entertainment
+    label: Media & Entertainment
+    source_id: 1683556056754011fRfO
+    session_count: 6
+  - id: term:industry/non-profit
+    label: Non-Profit
+    source_id: 1683556056754012fwKe
+    session_count: 6
+  - id: term:industry/real-estate-construction
+    label: Real Estate & Construction
+    source_id: 1683556056754013f30n
+    session_count: 5
+  - id: term:industry/retail
+    label: Retail
+    source_id: 1683556056754014fA8K
+    session_count: 9
+  - id: term:industry/software-internet
+    label: Software & Internet
+    source_id: 1683556056754015fesT
+    session_count: 25
+  - id: term:industry/telecommunications
+    label: Telecommunications
+    source_id: 1683556056754016fJ5P
+    session_count: 2
+  - id: term:industry/transportation-storage
+    label: Transportation & Storage
+    source_id: 1683556056754017fkXL
+    session_count: 5
+  - id: term:industry/travel-recreation-and-leisure
+    label: Travel, Recreation, and Leisure
+    source_id: 1683556056754018f7fe
+    session_count: 5
+  - id: term:industry/wholesale-distribution
+    label: Wholesale & Distribution
+    source_id: 1683556056754019fY5S
+    session_count: 5
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681231920169010WFZg
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/attributes.json

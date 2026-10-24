@@ -1,0 +1,146 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:shishir-tewari
+  person: person:shishir-tewari
+  brief_bio:
+    text: Shishir Tewari is Senior Manager of Data Engineering at Procore Technologies and previously
+      held engineering leadership roles at Google and Amazon. Tewari speaks at GitHub Universe 2026 on
+      building agent skills that run on any agent.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: f1653c851fb472141857b1adab7eca881d912ef40bbd8d9ed9d423b287476cc2
+    stale: false
+  headline: Senior Manager, Data Engineering at Procore Technologies
+  current_roles:
+  - Senior Manager, Data Engineering at Procore Technologies
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1787b
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1785179690271001xi4A
+      ref: session:bld1787b
+  credentials:
+  - kind: certification
+    title: Introduction to Big Data Analytics
+    issuer: Coursera Course Certificates
+    date: Dec 2015
+    url: https://www.coursera.org/account/accomplishments/verify/726TLH87LFWX
+    evidence:
+      url: https://www.linkedin.com/in/shishir-tewari-36113514
+      observed_at: '2026-10-24T08:15:18Z'
+  - kind: certification
+    title: Hadoop Platform and Application Framework
+    issuer: University of California, San Diego
+    evidence:
+      url: https://www.linkedin.com/in/shishir-tewari-36113514
+      observed_at: '2026-10-24T08:15:18Z'
+  - kind: certification
+    title: Introduction to Big Data
+    issuer: University of California, San Diego
+    evidence:
+      url: https://www.linkedin.com/in/shishir-tewari-36113514
+      observed_at: '2026-10-24T08:15:18Z'
+  talks:
+  - session:bld1787b
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1775668620305001pEsT
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: shishirprocore
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

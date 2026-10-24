@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:github-enterprise-server
+  name: GitHub Enterprise Server
+  aliases:
+  - GitHub Enterprise Server
+  kind: github_product
+  vendor: org:github
+  product_term: term:github-product/github-enterprise-server
+  mentioned_in:
+  - person:gabriel-marangoni-moita
+  - session:2024/dev1443m
+  - session:2025/sec1555d
+  - session:tru1775d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

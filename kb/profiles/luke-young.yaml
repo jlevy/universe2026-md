@@ -1,0 +1,235 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:luke-young
+  person: person:luke-young
+  brief_bio:
+    text: Luke Young is a Principal Security Engineer at Confluent focused on GitHub, CI/CD and cloud
+      security, whose research has led to more than 50 CVE assignments. Young speaks at GitHub Universe
+      2026 about how Confluent secured GitHub Enterprise Cloud with PATs, rulesets and IP allowlists.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 8e2f2e8ed0a313a15090eea725a7f3d488ab53866fe2940497ed7192325a74fd
+    stale: false
+  headline: Principal Security Engineer at Confluent
+  current_roles:
+  - Principal Security Engineer at Confluent
+  expertise:
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1672b
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1672b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1672b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1672b
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: CodeQL
+      ref: person:luke-young
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: session:tru1672b
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1672b
+  interests:
+  - label: terraform
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/hashicorp/terraform-provider-aws
+      ref: repo:hashicorp/terraform-provider-aws
+    - url: https://github.com/hashicorp/terraform-provider-kubernetes
+      ref: repo:hashicorp/terraform-provider-kubernetes
+    - url: https://github.com/hashicorp/terraform-provider-vault
+      ref: repo:hashicorp/terraform-provider-vault
+  - label: terraform-provider
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/hashicorp/terraform-provider-aws
+      ref: repo:hashicorp/terraform-provider-aws
+    - url: https://github.com/hashicorp/terraform-provider-kubernetes
+      ref: repo:hashicorp/terraform-provider-kubernetes
+    - url: https://github.com/hashicorp/terraform-provider-vault
+      ref: repo:hashicorp/terraform-provider-vault
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: high
+    weight: 0.97
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777692373101001qvdo
+      ref: session:tru1672b
+    - url: https://github.com/osquery/osquery
+      ref: repo:osquery/osquery
+  - label: vault
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/hvac/hvac
+      ref: repo:hvac/hvac
+    - url: https://github.com/hashicorp/terraform-provider-vault
+      ref: repo:hashicorp/terraform-provider-vault
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777692373101001qvdo
+      ref: session:tru1672b
+  - label: GitHub Enterprise Server
+    target: term:github-product/github-enterprise-server
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777692373101001qvdo
+      ref: session:tru1672b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777692373101001qvdo
+      ref: session:tru1672b
+  - label: Infrastructure as code
+    target: term:topic/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777692373101001qvdo
+      ref: session:tru1672b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777692373101001qvdo
+      ref: session:tru1672b
+  - label: Supply Chain Security
+    target: term:github-product/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777692373101001qvdo
+      ref: session:tru1672b
+  - label: api
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/hvac/hvac
+      ref: repo:hvac/hvac
+  - label: aws
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/hashicorp/terraform-provider-aws
+      ref: repo:hashicorp/terraform-provider-aws
+  open_source:
+  - repository: repo:osquery/osquery
+    relation: contributor
+    stars: 23670
+    primary_language: C++
+  - repository: repo:hvac/hvac
+    relation: contributor
+    stars: 1322
+    primary_language: Python
+  - repository: repo:hashicorp/terraform-provider-aws
+    relation: contributor
+    stars: 11124
+    primary_language: Go
+  - repository: repo:hashicorp/terraform-provider-kubernetes
+    relation: contributor
+    stars: 1723
+    primary_language: Go
+  - repository: repo:hashicorp/terraform-provider-vault
+    relation: contributor
+    stars: 512
+    primary_language: Go
+  talks:
+  - session:tru1672b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777655944022001vjDf
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: lyoung-confluent
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

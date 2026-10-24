@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:onetipaweek.com
+  url: https://OneTipAWeek.com
+  kind: personal
+  title: Home | One Tip a Week
+  description: One developer tip a week. Short & valuable. That's it!
+  owner: person:nick-taylor
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/nickytonline
+  - acct:x/nickytonline
+  - acct:youtube/@nickytonline
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: nickytonline
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://one-tip-a-week.beehiiv.com/
+    record_id: https://OneTipAWeek.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

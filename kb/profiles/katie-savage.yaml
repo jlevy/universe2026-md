@@ -1,0 +1,238 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:katie-savage
+  person: person:katie-savage
+  brief_bio:
+    text: Katie Savage is a Technical Program Manager for Developer Community at Microsoft and GitHub,
+      leading initiatives in technical education, skills development, community engagement and global
+      events. Savage speaks at GitHub Universe 2026 about GitHub Copilot and Work IQ.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 8119b94159da2b9af10fb885d77dadd89ff461a9f4c71d52c3665ceaa99021b9
+    stale: false
+  headline: Technical Program Manager at Microsoft
+  current_roles:
+  - Technical Program Manager at Microsoft
+  expertise:
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2010d
+    - ref: session:bld2152a
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1978m
+    - ref: session:bld2152a
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1978m
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:bld1978m
+  interests:
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+    - url: https://github.com/microsoft/vscode-docs
+      ref: repo:microsoft/vscode-docs
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: high
+    weight: 0.98
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790896065470001Pf2f
+      ref: session:bld2010d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: high
+    weight: 0.8
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+    - url: https://github.com/github/GitHub-Copilot-Dev-Days
+      ref: repo:github/github-copilot-dev-days
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    weight: 0.78
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790896065470001Pf2f
+      ref: session:bld2010d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790696144574001cNvK
+      ref: session:bld1978m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791897225330001x7Id
+      ref: session:bld2152a
+  - label: agentic-ai-development
+    basis: github_repositories
+    confidence: low
+    weight: 0.2
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/GitHub-Copilot-Dev-Days
+      ref: repo:github/github-copilot-dev-days
+  - label: vscode-extension
+    basis: github_repositories
+    confidence: low
+    weight: 0.2
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/GitHub-Copilot-Dev-Days
+      ref: repo:github/github-copilot-dev-days
+  - label: workshop
+    basis: github_repositories
+    confidence: low
+    weight: 0.2
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/GitHub-Copilot-Dev-Days
+      ref: repo:github/github-copilot-dev-days
+  open_source:
+  - repository: repo:microsoft/vscode-docs
+    relation: contributor
+    stars: 6675
+    primary_language: Markdown
+  - repository: repo:github-samples/copilot-workshops
+    relation: contributor
+    stars: 74
+    primary_language: JavaScript
+  - repository: repo:github/github-copilot-dev-days
+    relation: contributor
+    stars: 350
+  - repository: repo:github/dev-days
+    relation: contributor
+    stars: 138
+    primary_language: HTML
+  - repository: repo:github/copilot-sdk-workshop
+    relation: contributor
+    stars: 6
+    primary_language: Python
+  talks:
+  - session:bld1978m
+  - session:bld2010d
+  - session:bld2152a
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730132720921001ElMl
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: katiesavage
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

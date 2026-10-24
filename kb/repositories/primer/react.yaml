@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:primer/react
+  full_name: primer/react
+  url: https://github.com/primer/react
+  description: An implementation of GitHub's Primer Design System using React
+  homepage: https://primer.style/product/getting-started/react/
+  stars: 3923
+  forks: 708
+  watchers: 29
+  open_issues: 25
+  stats_observed_at: '2026-10-24T19:12:13Z'
+  primary_language: TypeScript
+  topics:
+  - primer
+  - react
+  - component-library
+  - design-system
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2018-02-17T00:09:05Z'
+  pushed_at: '2026-10-23T21:10:45Z'
+  owner_login: primer
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: timrogers
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: primer/react
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

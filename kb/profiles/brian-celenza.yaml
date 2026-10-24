@@ -1,0 +1,248 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:brian-celenza
+  person: person:brian-celenza
+  brief_bio:
+    text: Brian Celenza is a principal software engineer at GitHub working on the storage and services
+      behind git push and git clone, and is helping rebuild GitHub's Git infrastructure for agent-scale
+      workloads. Celenza speaks at GitHub Universe 2026 on scaling GitHub's infrastructure.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: a90a54ab1d4c8927c8dba6db2d0c421bfc088f07d39cdbcf6445f82d590f97c7
+    stale: false
+  headline: Principal Software Engineer at GitHub
+  location: Seattle, WA
+  current_roles:
+  - Principal Software Engineer at GitHub
+  technologies:
+  - label: Git
+    target: software:git
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Git
+      ref: person:brian-celenza
+  programming_languages:
+  - label: Rust
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:bcelenza/vesper
+    - ref: repo:bcelenza/hivemind
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:bcelenza/aws-cwq
+  interests:
+  - label: aws
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/aws-cwq
+      ref: repo:bcelenza/aws-cwq
+  - label: aws-cloudwatch
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/aws-cwq
+      ref: repo:bcelenza/aws-cwq
+  - label: aws-cloudwatch-logs
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/aws-cwq
+      ref: repo:bcelenza/aws-cwq
+  - label: cli
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/aws-cwq
+      ref: repo:bcelenza/aws-cwq
+  - label: cloudwatch
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/aws-cwq
+      ref: repo:bcelenza/aws-cwq
+  - label: cloudwatch-insights
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/aws-cwq
+      ref: repo:bcelenza/aws-cwq
+  - label: cloudwatch-logs
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/aws-cwq
+      ref: repo:bcelenza/aws-cwq
+  - label: ebpf
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/vesper
+      ref: repo:bcelenza/vesper
+  - label: insights
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/aws-cwq
+      ref: repo:bcelenza/aws-cwq
+  - label: rust
+    basis: github_repositories
+    confidence: low
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/bcelenza/vesper
+      ref: repo:bcelenza/vesper
+  open_source:
+  - repository: repo:bcelenza/aws-cwq
+    relation: owner
+    stars: 6
+    primary_language: TypeScript
+  - repository: repo:bcelenza/vesper
+    relation: owner
+    stars: 3
+    primary_language: Rust
+  - repository: repo:bcelenza/hivemind
+    relation: owner
+    stars: 0
+    primary_language: Rust
+  education:
+  - school: University of Cincinnati
+    evidence:
+      url: https://www.linkedin.com/in/bcelenza
+      observed_at: '2026-10-24T08:11:51Z'
+  patents:
+  - title: Electronic motor controller system and method
+    number: US 10505472
+    date: December 10, 2019
+    description: A method for dynamically identifying and controlling an electronic motor which provides
+      more control authority, better energy efficiency, and nearly silent operation of the motor.
+    url: https://patents.google.com/patent/US10505472
+    evidence:
+      url: https://www.linkedin.com/in/bcelenza
+      observed_at: '2026-10-24T08:11:51Z'
+  - title: PCI DSS Compliant Proxy Service
+    number: US 8886937
+    date: November 11, 2014
+    description: The innovation includes systems and methods of facilitating electronic commerce (e-commerce)
+      via a proxy service. Such a method can include the acts of receiving a hypertext transfer protocol
+      with secure socket layer (HTTPS) request from a client application and translating the HTTPS request
+      to a format appropriate for an e-commerce web application. Additionally, such a method can include
+      the steps of sending the translated request to the e-commerce web application via HTTPS and receiving
+      a response based at least in part on the translated HTTPS request. The method can also include the
+      acts of translating the HTTPS response to a format appropriate for the client application and sending
+      the translated response to the client application via HTTPS. Secure information can be encrypted
+      and stored at the client application separately from the encryption key, which can be stored by
+      the proxy service.
+    url: https://patents.google.com/patent/US8886937
+    evidence:
+      url: https://www.linkedin.com/in/bcelenza
+      observed_at: '2026-10-24T08:11:51Z'
+  activities:
+  - kind: project
+    title: BOLT - Rapid Development Framework for Oracle Commerce
+    detail: The first ever fully realized rapid deployment platform for Oracle Commerce, BOLT proved its
+      value by dramatically reducing initial implementation and on-going development time, saving time
+      and money while giving organizations access to the best in breed, highly scalable global Oracle
+      Commerce platform.The BOLT Rapid Development Framework for Oracle Commerce provided tools and processes
+      which simplified day-to-day tasks and eliminated numerous friction points in the development process.
+      These gains led to significant upfront and ongoing cost and time savings. Customers gained full
+      visibility into project status with real-time updates and enjoyed lightning fast access with push
+      button deployments to all environments—all with a platform truly optimized for SEO and digital performance
+      marketing from the outset. · May 2015
+    evidence:
+      url: https://www.linkedin.com/in/bcelenza
+      observed_at: '2026-10-24T08:11:51Z'
+  - kind: project
+    title: AWS App Mesh
+    detail: AWS App Mesh is a service mesh that provides application-level networking to make it easy
+      for your services to communicate with each other across multiple types of compute infrastructure.
+      App Mesh standardizes how your services communicate, giving you end-to-end visibility and ensuring
+      high-availability for your applications. · Oct 2018
+    evidence:
+      url: https://www.linkedin.com/in/bcelenza
+      observed_at: '2026-10-24T08:11:51Z'
+  - kind: project
+    title: AWS CodeBuild
+    detail: AWS CodeBuild is a fully managed build service that compiles source code, runs tests, and
+      produces software packages that are ready to deploy. · May 2016
+    evidence:
+      url: https://www.linkedin.com/in/bcelenza
+      observed_at: '2026-10-24T08:11:51Z'
+  - kind: project
+    title: The Distributed Commerce Platform
+    detail: '"The first end-to-end ecommerce experience for brands and their fans on Facebook." Principal
+      architect of software and systems. PHP/Zend, Flash (AS3, AS2), JavaScript, jQuery, XHTML, XML, JSON,
+      phpunit, Apache, mod_php, MySQL, CentOS. · Oct 2009'
+    evidence:
+      url: https://www.linkedin.com/in/bcelenza
+      observed_at: '2026-10-24T08:11:51Z'
+  - kind: organization
+    title: FIRST Robotics
+    detail: FIRST's mission is to inspire young people to be science and technology leaders, by engaging
+      them in exciting mentor-based programs that build science, engineering and technology skills, that
+      inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication,
+      and leadership.I helped our local team by programming controllers for a competitive robot. Our team
+      placed third (out of 642 teams) in the 2002 national competition. · Dec 2002 · Dec 2003
+    evidence:
+      url: https://www.linkedin.com/in/bcelenza
+      observed_at: '2026-10-24T08:11:51Z'
+  talks:
+  - session:bld2049b
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730217678268001g2iV
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: bcelenza
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,18 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:go/go.k6.io/k6/v2
+  ecosystem: go
+  name: go.k6.io/k6/v2
+  url: https://pkg.go.dev/go.k6.io/k6/v2
+  latest_version: v2.3.0
+  repository_url: https://github.com/grafana/k6
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: grafana/k6
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

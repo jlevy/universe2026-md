@@ -1,0 +1,49 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/mickey_gousset
+  platform: x
+  handle: mickey_gousset
+  url: https://x.com/mickey_gousset
+  display_name: Mickey Gousset
+  bio: 'Staff DevOps Architect with GitHub FastTrack team | ex. Microsoft | Youtube: https://t.co/ewUZJsnlSI
+    | https://t.co/twCBwHt0nP'
+  location: Tupelo, MS
+  website: http://www.mickeygousset.com/
+  followers: 1510
+  following: 74
+  posts_count: 10392
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1567290604706480136/Sq77sdS4_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14987316/1662506174
+  created_at: '2008-06-03T00:52:34Z'
+  owner: person:mickey-gousset
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715290358277001IuU9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715290358277001IuU9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mickeygousset
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/mickey_gousset
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/thealexlichter.com
+  platform: bluesky
+  handle: thealexlichter.com
+  url: https://bsky.app/profile/thealexlichter.com
+  display_name: Alexander Lichter
+  bio: |-
+    🧡 Engineer @cloudflare.social
+    🎬 Video Content https://lichter.link/yt
+    💚 @nuxt.com team
+    🕰️ prev. DevRel @voidzero.dev
+  followers: 6468
+  created_at: '2023-10-02T09:47:57Z'
+  owner: person:alexander-lichter
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745004107585001M3SH
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: TheAlexLichter
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: thealexlichter.com
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

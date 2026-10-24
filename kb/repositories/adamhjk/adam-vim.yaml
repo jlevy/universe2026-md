@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:adamhjk/adam-vim
+  full_name: adamhjk/adam-vim
+  url: https://github.com/adamhjk/adam-vim
+  description: My vim directory
+  stars: 52
+  forks: 32
+  watchers: 4
+  open_issues: 2
+  stats_observed_at: '2026-10-24T19:09:45Z'
+  primary_language: Vim Script
+  archived: false
+  fork: false
+  created_at: '2009-04-22T21:27:07Z'
+  pushed_at: '2017-05-30T17:55:07Z'
+  owner_login: adamhjk
+  owner: gh:adamhjk
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: adamhjk
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: adamhjk/adam-vim
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

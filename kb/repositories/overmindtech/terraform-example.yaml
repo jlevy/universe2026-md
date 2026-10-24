@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:overmindtech/terraform-example
+  full_name: overmindtech/terraform-example
+  url: https://github.com/overmindtech/terraform-example
+  description: This is a working example of how to use GitHub Actions to run terraform with overmind impact
+    analysis
+  homepage: https://overmind.tech/
+  stars: 3
+  forks: 1
+  watchers: 0
+  open_issues: 1
+  stats_observed_at: '2026-10-24T19:12:10Z'
+  primary_language: HCL
+  topics:
+  - overmind
+  - terraform
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2023-08-18T09:02:02Z'
+  pushed_at: '2026-10-23T21:08:08Z'
+  owner_login: overmindtech
+  owner: gh:overmindtech
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dylanratcliffe
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: overmindtech/terraform-example
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

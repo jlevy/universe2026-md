@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:ggriffiths.github.io
+  url: https://ggriffiths.github.io/
+  kind: personal
+  title: Grant Griffiths
+  owner: person:grant-griffiths
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/gwgriffiths4
+  - acct:x/griffithsgrant
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ggriffiths
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://ggriffiths.github.io/
+    record_id: https://ggriffiths.github.io/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

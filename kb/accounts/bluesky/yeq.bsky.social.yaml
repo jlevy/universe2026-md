@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/yeq.bsky.social
+  platform: bluesky
+  handle: yeq.bsky.social
+  url: https://bsky.app/profile/yeq.bsky.social
+  display_name: Qianqian Ye
+  bio: https://qianqian-ye.com/
+  followers: 16
+  created_at: '2025-06-04T18:09:55Z'
+  owner: person:qianqian-ye
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1775673106371001R3KP
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: yeq.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

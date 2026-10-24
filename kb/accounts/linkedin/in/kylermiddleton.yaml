@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kylermiddleton
+  platform: linkedin
+  handle: in/kylermiddleton
+  url: https://www.linkedin.com/in/kylermiddleton
+  display_name: 🏳️‍🌈🏳️‍🌈 Kyler Middleton
+  bio: Kyler grew up in rural Western Nebraska, fixing neighboring farmers’ computers in…
+  location: United States
+  followers: 4881
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQFE8-Jn7otRkQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1664306402882?e=2147483647&v=beta&t=HywFrm1sWAUuVSA5gD_FXiYeAIkzuDvAqvmkWJxgXnA
+  owner: person:kyler-middleton
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686620736978001uqjJ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kylermiddleton
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

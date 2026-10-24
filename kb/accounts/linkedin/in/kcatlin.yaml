@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kcatlin
+  platform: linkedin
+  handle: in/kcatlin
+  url: https://www.linkedin.com/in/kcatlin
+  display_name: Kate Catlin
+  bio: 'As a team member, I: - am driven by curiosity. My favorite questions start with, “How…'
+  location: Seattle
+  followers: 5282
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQEv_dkFqynfoA/profile-displayphoto-shrink_200_200/B56ZS4bgkgGUAg-/0/1738261008696?e=2147483647&v=beta&t=F-x_i0VdyhoSAKGw2aYb6--pDySEoyYLHhhWW8FFVx0
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:kate-catlin
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699458820981001klSw
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kcatlin
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

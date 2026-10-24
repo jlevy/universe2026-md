@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/palo-it
+  platform: linkedin
+  handle: company/palo-it
+  url: https://www.linkedin.com/company/palo-it
+  display_name: PALO IT
+  bio: We are a global, AI-first technology consultancy, with a trademarked engineering approach for accelerating
+    the delivery of digital products, and revolutionizing platform modernization. We do the right thing,
+    and we do it right. We're proud to be a World Economic Forum New Champion, and a B Corp-certified
+    company.
+  website: https://palo-it.com/
+  followers: 80537
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEQmh19O9qjDg/company-logo_200_200/company-logo_200_200/0/1710732032132/palo_it_logo?e=2147483647&v=beta&t=tXt7dDXncmc-OgJ8ClIiVE8Ds0S4RjFFGqVb5RnRqDI
+  owner: org:palo-it
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/dbaikrich
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/palo-it
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

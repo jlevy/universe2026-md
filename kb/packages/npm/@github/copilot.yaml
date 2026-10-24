@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/@github/copilot
+  ecosystem: npm
+  name: '@github/copilot'
+  url: https://www.npmjs.com/package/@github/copilot
+  description: GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal.
+  latest_version: 1.0.103
+  license: SEE LICENSE IN LICENSE.md
+  repository_url: git+https://github.com/github/copilot-cli.git
+  software: software:copilot-cli
+  sources:
+  - system: npm
+    url: https://registry.npmjs.org/
+    record_id: '@github/copilot'
+    retrieved_at: '2026-10-24T19:17:41Z'
+    snapshot: raw/registries/npm.json

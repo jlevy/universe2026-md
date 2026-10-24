@@ -1,0 +1,18 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:go/github.com/pomerium/ingress-controller
+  ecosystem: go
+  name: github.com/pomerium/ingress-controller
+  url: https://pkg.go.dev/github.com/pomerium/ingress-controller
+  latest_version: v0.33.4
+  repository_url: https://github.com/pomerium/ingress-controller
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: pomerium/ingress-controller
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

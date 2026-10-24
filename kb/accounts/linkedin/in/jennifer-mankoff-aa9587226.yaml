@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jennifer-mankoff-aa9587226
+  platform: linkedin
+  handle: in/jennifer-mankoff-aa9587226
+  url: https://www.linkedin.com/in/jennifer-mankoff-aa9587226
+  display_name: Jennifer Mankoff
+  bio: Jennifer Mankoff directs the Center for Research and Education on Accessible Technology…
+  location: Seattle
+  followers: 1233
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGM5DekFrw9CQ/profile-displayphoto-scale_200_200/B4EZjC.VZfHoAg-/0/1755617778011?e=2147483647&v=beta&t=yBwJ64O4EaHADGz6dZ2S0CFCrPtS3StlETtIHIK26Oc
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQG6q2KK7l2ZUw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1666712674194?e=2147483647&v=beta&t=ua9iehPIZklvAWWjSTp50VyTtyis4mdvDJW9IgVCv_k
+  owner: person:jennifer-mankoff
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696310819090001xh6i
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jennifer-mankoff-aa9587226
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

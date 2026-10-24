@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:python
+  name: Python
+  aliases:
+  - Python
+  kind: language
+  homepage: https://www.python.org
+  repositories:
+  - repo:python/cpython
+  mentioned_in:
+  - person:adam-gross
+  - person:alex-oladele
+  - person:april-gittens
+  - person:autumn-nash
+  - person:camila-maia
+  - person:colin-mueller
+  - person:david-jones-gilardi
+  - person:jeremiah-isaacson
+  - person:kim-adeline-miguel
+  - person:pamela-fox
+  - person:priya-pahwa
+  - person:savannah-ostrowski
+  - person:thomas-bissell
+  - person:william-woodruff
+  - session:2024/ai1212s
+  - session:2024/ai1897d
+  - session:2024/ai1959w
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

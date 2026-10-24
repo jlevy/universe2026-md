@@ -1,0 +1,151 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:nhu-do
+  person: person:nhu-do
+  brief_bio:
+    text: Nhu Do is a Senior Product Manager on the GitHub Copilot platform team, working on how Copilot
+      uses AI models, after building content safety systems and evaluation frameworks for generative AI
+      at Microsoft. Nhu Do speaks at GitHub Universe 2026 about Copilot's model router.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: d7e9194da9fa15c50e4da054f6d64d312f2dc413630cd3086ca8a9a101fe579d
+    stale: false
+  headline: Senior Product Manager at GitHub
+  location: New York
+  current_roles:
+  - Senior Product Manager at GitHub
+  expertise:
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1553d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:nhu-do
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777658767198001Xsp1
+      ref: session:bld1553d
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777658767198001Xsp1
+      ref: session:bld1553d
+  - label: docs
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/docs
+      ref: repo:github/docs
+  - label: editor
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/microsoft/vscode
+      ref: repo:microsoft/vscode
+  - label: electron
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/microsoft/vscode
+      ref: repo:microsoft/vscode
+  - label: TypeScript
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/microsoft/vscode
+      ref: repo:microsoft/vscode
+  - label: VS Code
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/microsoft/vscode
+      ref: repo:microsoft/vscode
+  - label: works-with-codespaces
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/docs
+      ref: repo:github/docs
+  open_source:
+  - repository: repo:microsoft/vscode
+    relation: contributor
+    stars: 194244
+    primary_language: TypeScript
+  - repository: repo:github/docs
+    relation: contributor
+    stars: 21095
+    primary_language: TypeScript
+  education:
+  - school: Duke University
+    evidence:
+      url: https://www.linkedin.com/in/nhudo
+      observed_at: '2026-10-24T08:15:26Z'
+  spoken_languages:
+  - English
+  - Vietnamese
+  - Spanish
+  talks:
+  - session:bld1553d
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730217260193001ONtz
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: nhu-do
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

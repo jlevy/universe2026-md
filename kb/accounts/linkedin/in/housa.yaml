@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/housa
+  platform: linkedin
+  handle: in/housa
+  url: https://www.linkedin.com/in/housa
+  display_name: Alexandra Hou Aldershaab
+  bio: I’m a passionate, skilled and well-rounded profile. I'm not afraid to learn and solve the…
+  location: Bryrup
+  followers: 726
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQELSQMpOKYeaA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1691873987166?e=2147483647&v=beta&t=J0-_LhGa9OiWY9jfPFg1HWtAjBYEaTQNzVlkH9LGo2E
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQG1zMBkr3q8JQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1652033016810?e=2147483647&v=beta&t=Y4f12vm09VLlBjLYPYAu2tKTQScWmxie4SSGEnjwtxg
+  owner: person:alexandra-aldershaab
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746002491836001NCxx
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/housa
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

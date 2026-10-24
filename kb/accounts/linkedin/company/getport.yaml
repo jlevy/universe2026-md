@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/getport
+  platform: linkedin
+  handle: company/getport
+  url: https://www.linkedin.com/company/getport
+  display_name: Port.io
+  bio: 'Port gives you the Context Lake, Workflow Orchestration, Agent Management, and Governance to build
+    your AI-SDLC without losing control. Join our Community on Slack to discuss AI in the SDLC with your
+    peers and influence our roadmap: https://www.port.io/community'
+  website: https://port.io/
+  followers: 31836
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQGIM449q7pR2g/company-logo_200_200/B4DZ_0sVtdIAAE-/0/1786516692010/getport_logo?e=2147483647&v=beta&t=YsrAR6-ppWDUh9Hg-fu1J6Yi3o5_BEIlYLszjbmCWYQ
+  owner: org:port
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jbaruch
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/getport
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

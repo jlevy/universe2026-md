@@ -1,0 +1,181 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:gabriele-mattutzu
+  person: person:gabriele-mattutzu
+  brief_bio:
+    text: Gabriele Mattutzu is a Senior Staff Engineer at Pure Storage who previously worked on large-scale
+      systems at Amazon and on observability at Accolade. Mattutzu spoke at GitHub Universe 2025 about
+      replacing static credentials with ephemeral SSH certificates.
+    cites:
+    - listed_role
+    - linkedin_headline
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 8a54d42e19d2dfb72e9d9112a1cdee4f86896356a8f68d1ec5e4622bc8e2e25b
+    stale: false
+  headline: Senior Staff Engineer @ Pure Storage at Pure Storage
+  current_roles:
+  - Senior Staff Engineer @ Pure Storage at Pure Storage
+  expertise:
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1379d
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1379d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1379d
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1379d
+  interests:
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746204226622001aTDJ
+      ref: session:2025/sec1379d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746204226622001aTDJ
+      ref: session:2025/sec1379d
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746204226622001aTDJ
+      ref: session:2025/sec1379d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746204226622001aTDJ
+      ref: session:2025/sec1379d
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746204226622001aTDJ
+      ref: session:2025/sec1379d
+  experience:
+  - organization: Pure Storage
+    organization_ref: org:pure-storage
+    title: Pure Storage
+    current: true
+    evidence:
+      url: https://www.linkedin.com/in/gabriele-mattutzu
+      observed_at: '2026-10-24T08:46:35Z'
+  - organization: Accolade, Inc.
+    title: Software Engineer
+    start: Sep 2021
+    end: Nov 2022
+    current: false
+    evidence:
+      url: https://www.linkedin.com/in/gabriele-mattutzu
+      observed_at: '2026-10-24T08:46:35Z'
+  - organization: Amazon
+    organization_ref: org:amazon
+    title: Amazon
+    current: true
+    evidence:
+      url: https://www.linkedin.com/in/gabriele-mattutzu
+      observed_at: '2026-10-24T08:46:35Z'
+  education:
+  - school: University of London
+    degree: Bachelor of Science - BS
+    field_of_study: Machine Learning and Artificial Intelligence
+    evidence:
+      url: https://www.linkedin.com/in/gabriele-mattutzu
+      observed_at: '2026-10-24T08:46:35Z'
+  credentials:
+  - kind: certification
+    title: Elasticsearch Essential Training
+    issuer: LinkedIn
+    date: Sep 2021
+    url: https://www.linkedin.com/learning/certificates/aeeee9259c198f0c25003b3d21ce5577c566ee49883d39d29f7e77a8c6e81a66
+    evidence:
+      url: https://www.linkedin.com/in/gabriele-mattutzu
+      observed_at: '2026-10-24T08:46:35Z'
+  - kind: certification
+    title: Google IT Support Certificate
+    issuer: Coursera
+    date: Apr 2021
+    url: https://www.credly.com/badges/ab23b582-343d-4464-a5b1-d662e5ff31da?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gabriele-mattutzu
+      observed_at: '2026-10-24T08:46:35Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect – Associate
+    issuer: Amazon Web Services (AWS)
+    date: Jul 2021
+    expires: Jul 2024
+    url: https://www.credly.com/badges/2e92caec-af08-41d5-bac4-887a96252d23?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gabriele-mattutzu
+      observed_at: '2026-10-24T08:46:35Z'
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    date: Apr 2021
+    expires: Jul 2024
+    url: https://www.credly.com/badges/eeaf3119-b06f-4250-89bf-4532cc5e5f6f?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/gabriele-mattutzu
+      observed_at: '2026-10-24T08:46:35Z'
+  spoken_languages:
+  - English
+  talks:
+  - session:2025/sec1379d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745412591674001YjK5
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

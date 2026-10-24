@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:repotocloud.com
+  url: http://repotocloud.com/
+  kind: personal
+  title: Esteban Garcia – Repo To Cloud (and AI things) – Deploy early and often
+  owner: person:esteban-garcia
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://repotocloud.com/feed/
+  - https://repotocloud.com/comments/feed/
+  sources:
+  - system: brightdata
+    url: https://x.com/estebanfgarcia
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://repotocloud.com/
+    record_id: http://repotocloud.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

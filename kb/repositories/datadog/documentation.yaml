@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:datadog/documentation
+  full_name: DataDog/documentation
+  url: https://github.com/DataDog/documentation
+  description: The source for Datadog's documentation site.
+  homepage: http://docs.datadoghq.com
+  stars: 622
+  forks: 1332
+  watchers: 630
+  open_issues: 32
+  stats_observed_at: '2026-10-24T19:10:00Z'
+  primary_language: JavaScript
+  topics:
+  - datadog
+  - documentation
+  - hugo
+  - wiki
+  - hacktoberfest
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2011-12-12T20:32:29Z'
+  pushed_at: '2026-10-24T05:09:45Z'
+  owner_login: DataDog
+  owner: gh:datadog
+  pinned_by:
+  - gh:datadog
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: DataDog
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: DataDog/documentation
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

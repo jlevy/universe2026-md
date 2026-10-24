@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/dylanratcliffe.bsky.social
+  platform: bluesky
+  handle: dylanratcliffe.bsky.social
+  url: https://bsky.app/profile/dylanratcliffe.bsky.social
+  display_name: Dylan Ratcliffe
+  bio: Founder & CEO @ Overmind
+  followers: 3
+  created_at: '2023-06-08T15:37:08Z'
+  owner: person:dylan-ratcliffe
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1755624535596001ehoJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: dylanratcliffe.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

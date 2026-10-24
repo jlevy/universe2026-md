@@ -1,0 +1,256 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:matthew-chieco
+  person: person:matthew-chieco
+  brief_bio:
+    text: Matthew Chieco is a Principal Software Engineer at Liberty Mutual Insurance who architected
+      the tool that migrated all of its source code to GitHub Enterprise Cloud. Chieco spoke at GitHub
+      Universe 2023 about Liberty Mutual's move to GitHub Enterprise Cloud.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:16:00Z'
+    input_sha256: 2e6dc88eac44215d7ac73b0798e6d08ff92d5e355f753d42ff5ea590625cdf2a
+    stale: false
+  headline: Liberty Mutual Insurance
+  current_roles:
+  - Liberty Mutual Insurance
+  expertise:
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2540g
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2540g
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2540g
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2540g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2540g
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2540g
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2540g
+  technologies:
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: session:2023/dev2540g
+  interests:
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686682451835001nvZi
+      ref: session:2023/dev2540g
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686682451835001nvZi
+      ref: session:2023/dev2540g
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686682451835001nvZi
+      ref: session:2023/dev2540g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686682451835001nvZi
+      ref: session:2023/dev2540g
+  - label: Education
+    target: term:github-product-2023/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686682451835001nvZi
+      ref: session:2023/dev2540g
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686682451835001nvZi
+      ref: session:2023/dev2540g
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2023/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686682451835001nvZi
+      ref: session:2023/dev2540g
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686682451835001nvZi
+      ref: session:2023/dev2540g
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686682451835001nvZi
+      ref: session:2023/dev2540g
+  education:
+  - school: Quinnipiac University
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  credentials:
+  - kind: honor
+    title: Deans List
+    issuer: Quinnipiac University
+    date: '2016-12-01T00:00:00.000Z'
+    description: Deans List every semester fall 2016 - Present
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Nov 2023
+    expires: Nov 2026
+    url: https://www.credly.com/badges/85d7dfb5-88f2-4925-814c-9b8c409340fa/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  activities:
+  - kind: volunteering
+    title: Admitted Students Day and Open Houses
+    detail: Quinnipiac University · Education · Mar 2017 · - Mar 2020 · 3 years 1 month · Facilitate questions
+      incoming or prospective students have about the engineering school to explain and provide the expectations
+      and structure of the various programs · Mar 2017
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  - kind: project
+    title: Android Weather App
+    detail: •Developed a weather app using Java and XML in Android Studio, which allowed for users to
+      see the weather at their current location, any location using a zip code or name of a city, or using
+      the pinning ability to see the weather at any location pinned on a map · Feb 2018
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  - kind: project
+    title: Game Overhaul Project
+    detail: •Improved upon an existing single player animated game, using Java, with a team of 5 members,
+      across the entirety of a semester, to meet all the customer requirements•Organized and directed
+      all the actions of the team by taking the leadership role for the project, to stay on track, write
+      and hand in reports, and present the current progress of the project on time•Mediated and moderated
+      all conflicts between team members in order to maintain a positive working environment and work
+      out all personal issues and disagreements · Aug 2017
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  - kind: course
+    title: Algorithm Design and Analysis
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  - kind: course
+    title: Android App Development
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  - kind: course
+    title: Data Structures and Abstraction
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  - kind: course
+    title: Introduction to Software Development (Team Based Scrum)
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  - kind: course
+    title: Object Oriented Design
+    evidence:
+      url: https://www.linkedin.com/in/matthew-chieco
+      observed_at: '2026-10-24T08:47:41Z'
+  talks:
+  - session:2023/dev2540g
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694003303957001bwOU
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

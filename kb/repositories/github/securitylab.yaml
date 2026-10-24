@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/securitylab
+  full_name: github/securitylab
+  url: https://github.com/github/securitylab
+  description: Resources related to GitHub Security Lab
+  homepage: https://securitylab.github.com
+  stars: 1634
+  forks: 303
+  watchers: 87
+  open_issues: 2
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: C
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2019-11-12T01:14:24Z'
+  pushed_at: '2026-06-08T08:08:15Z'
+  owner_login: github
+  owner: gh:github
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: xcorail
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/securitylab
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

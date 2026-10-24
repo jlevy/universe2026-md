@@ -1,0 +1,263 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mark-peterson
+  person: person:mark-peterson
+  brief_bio:
+    text: Mark Peterson is VP of Engineering at Docusign, where Peterson co-invented 1FE, a front-end
+      system meant to make good code easy to ship, and holds patents on phased deployment of micro-frontend
+      applications. Peterson spoke at GitHub Universe 2025 about a distributed micro frontend model.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 51b0e71b9c712cb863a6d45531a3cbed09bf88eabdae044c7ee66e2b27c797fe
+    stale: false
+  headline: Docusign
+  current_roles:
+  - Docusign
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1627d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1627d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1627d
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1627d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1627d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1627d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1627d
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1627d
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757094012553001gz2z
+      ref: session:2025/bld1627d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757094012553001gz2z
+      ref: session:2025/bld1627d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757094012553001gz2z
+      ref: session:2025/bld1627d
+  - label: Education
+    target: term:topic-2025/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757094012553001gz2z
+      ref: session:2025/bld1627d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757094012553001gz2z
+      ref: session:2025/bld1627d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757094012553001gz2z
+      ref: session:2025/bld1627d
+  - label: Projects and Issues
+    target: term:github-product-2025/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757094012553001gz2z
+      ref: session:2025/bld1627d
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757094012553001gz2z
+      ref: session:2025/bld1627d
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757094012553001gz2z
+      ref: session:2025/bld1627d
+  education:
+  - school: University of Washington
+    school_ref: org:university-of-washington
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  credentials:
+  - kind: certification
+    title: Application Security and Secure Coding Training course in Node.JS
+    issuer: Codebashing
+    date: May 2017
+    expires: Nov 2017
+    url: https://seattle.codebashing.com/users/course_certificate/5
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  patents:
+  - title: Version management and releases of a software application
+    number: US-12619427
+    date: May 5, 2026
+    url: https://patents.google.com/patent/US12619427
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  - title: Software application execution using contextual information
+    number: US 12566604
+    date: March 3, 2026
+    description: Techniques are described for deploying software applications associated with document
+      management. The techniques may include receiving a request, by a computing system and from a client
+      device, to execute a software application for managing an electronic document, wherein the software
+      application is configured to execute using at least a first widget and a second widget. The techniques
+      may further include generating, based on the first widget comprising instructions to initiate an
+      execution of the second widget, instructions for executing the software application at the client
+      device, wherein the instructions are configured to cause the client device to generate contextual
+      information for the first widget and wherein the second widget causes the client device to load
+      the contextual information when executing the second widget. The techniques may further include
+      outputting, by the computing system and to the client device, the instructions to execute the software
+      application for managing the electronic document.
+    url: https://patents.google.com/patent/US12566604
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  - title: Phased Deployment for Modern Micro-Frontend Web Applications
+    number: US 12405785
+    date: September 2, 2025
+    url: https://patents.google.com/patent/US12405785
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  - title: Providing Data Presentation Functionality Associated With Collaboration Database
+    number: 'US Patent # 10366114'
+    date: July 30, 2019
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  - title: Collaboration Database Service In Conjunction With Productivity Applications
+    number: US 20170140047
+    date: June 30, 2016
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  - title: Optimizing Content For Consistent Presentation Through Collaboration Database
+    number: US 20170139958
+    date: June 29, 2016
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  - title: Single Or Multi-Choice Data Presentation Through Collaboration Database Service
+    number: US 10628468
+    date: June 6, 2016
+    url: https://patents.google.com/patent/US10628468
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  activities:
+  - kind: project
+    title: '1FE: Microfrontends for the Enterprise'
+    detail: 1FE is a new development ecosystem for large scale development teams that want agility and
+      velocity but also want cohesiveness in the presentation of their site to customers. It also provides
+      a whole ecosystem of tooling to support front-end engineering to help enable UX best practices by
+      default.
+    evidence:
+      url: https://www.linkedin.com/in/markpete
+      observed_at: '2026-10-24T08:47:11Z'
+  talks:
+  - session:2025/bld1627d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1758053400353001G9Qo
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

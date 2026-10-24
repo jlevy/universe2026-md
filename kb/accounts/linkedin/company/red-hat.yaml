@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/red-hat
+  platform: linkedin
+  handle: company/red-hat
+  url: https://www.linkedin.com/company/red-hat
+  display_name: Red Hat
+  bio: Red Hat is the world’s leading provider of enterprise open source solutions, using a community-powered
+    approach to deliver high-performing Linux, hybrid cloud, edge, and Kubernetes technologies. We hire
+    creative, passionate people who are ready to contribute their ideas, help solve complex problems,
+    and make an impact. Opportunities are open. Join us.
+  website: https://www.redhat.com/
+  followers: 1591706
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E0BAQEto-TydTTIfQ/company-logo_200_200/company-logo_200_200/0/1630583759577/red_hat_logo?e=2147483647&v=beta&t=UiE19GvTWiKrY85Q_L9b3LavSOUUqbJ1xt_6XzB7LJ0
+  owner: org:red-hat
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/alexoladele
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/red-hat
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

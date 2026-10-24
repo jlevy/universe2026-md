@@ -1,0 +1,445 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:karan-m-v
+  person: person:karan-m-v
+  brief_bio:
+    text: Karan M V works in developer experience at OpenAI and was previously International Developer
+      Relations Director at GitHub, focused on India. Karan M V spoke in the GitHub Universe 2024 opening
+      keynote and at GitHub Universe 2025 about Cathay's move to integrated AI and DevSecOps.
+    cites:
+    - current_affiliations
+    - x_bio
+    - past_affiliations
+    - listed_role
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 77b18a3f5896cb5308f79da4e51f953586ed33b449d6e33427a7f067737709d7
+    stale: false
+  headline: OpenAI
+  current_roles:
+  - OpenAI
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1263m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1263m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1263m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1263m
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1263m
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1263m
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1263m
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1263m
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Code Security
+      ref: session:2025/aut1263m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/aut1263m
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: GitHub Secret Protection
+    target: term:github-product-2025/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746068879225001Jws1
+      ref: session:2025/aut1263m
+  credentials:
+  - kind: certification
+    title: Product Management (Online Executive Certificate Programme)
+    issuer: Indian School of Business
+    date: Apr 2022
+    url: https://www.credential.net/daae862b-d756-43c9-99a0-9a81ecf9f0a2#gs.vyq2sv
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  publications:
+  - title: Talk on "Building strategy around Developer communities"
+    venue: Hackference India 2018
+    date: Dec 2018
+    description: Delivered a session on how to build a developer community, what strategy to adopt, and
+      also shared a process map of how a community building process works.
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Talk on 'Making a compelling pitch for your hackathon'
+    venue: HackTalks by Venturesity/Skillenza
+    date: Jun 2017
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Talk on 'Powering your business ideas in the Cloud'​
+    venue: Indian Institute of Technology (IIT) - Madras
+    date: Jan 2017
+    description: Addressed students on how they can leverage the power of the Cloud to bring their business
+      ideas to life and what are the features and factors of the Cloud that matter to a business.
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Talk on 'Python in the Cloud'​
+    venue: Pycon India 2016, New Delhi
+    date: Sep 2016
+    description: Talk on how Python applications can be easily built, deployed and powered on the cloud,
+      along with some examples on DigitalOcean
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Talk on Entrepreneurship & GDG
+    venue: Jawaharlal Nehru National College of Engineering, Shivamogga
+    date: Apr 2015
+    description: Inaugurated a workshop and delivered a talk about the GDG initiative and entrepreneurship
+      skills to a student audience of ~150
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Talk on Event Management
+    venue: GDG Shivamogga & Jawaharlal Nehru National College of Engineering, Shivamogga
+    date: Apr 2015
+    description: Delivered a talk on aspects of event management and event planning to the team of GDG
+      Shivamogga.
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Chief Guest, B.Pitch (Business Plan Competition)
+    venue: Srinivas Institute of Management Studies, Mangalore
+    date: Mar 2015
+    description: Inaugurated the event and delivered a talk on start-ups and entrepreneurship.
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Talk on Entrepreneurship & Start-Ups
+    venue: PES Institute of Technology & Management, Shivamogga / GDG Shivamogga Sub-Chapter
+    date: Feb 2015
+    description: Inaugurated the GDG Shivamogga Sub-Chapter of GDG Mangalore and delivered a talk on entrepreneurial
+      mindset and being a part of the emerging start-up culture among students.
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Workshop on Android App Development
+    venue: PES Institute of Technology & Management, Shivamogga / GDG Mangalore
+    date: Mar 2014
+    description: Co-delivered a 2-day workshop on Android App Development. Taught about topics on development
+      in Java, on ADT, and general design guidelines.
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - title: Workshop on Android App Development
+    venue: Mangalore Institute of Technology & Engineering, Moodabidri, Mangalore
+    date: Nov 2013
+    description: Co-delivered a 2-day workshop on Android App Development. Taught about topics on development
+      in Java, on ADT, and general design guidelines.
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  spoken_languages:
+  - English
+  - Kannada
+  - Hindi
+  - Telugu
+  - Sanskrit
+  activities:
+  - kind: volunteering
+    title: Founder & Organizer - Mangalore
+    detail: 'Google Developers Group · Science and Technology · Dec 2013 · - Jun 2016 · 2 years 7 months
+      · Despite having a considerable number of developers in and around, Mangalore lacked a developer
+      community. Along with the support of local influencers, I started a chapter of GDG in Mangalore.
+      The objective of this was to ignite the local developer ecosystem to foster sharing, learning and
+      networking. A few key things I worked on are: - Understanding the needs of the community - Designing,
+      organizing & implementing various developer events - Identifying & onboarding team… Show more Despite
+      having a considerable number of developers in and around, Mangalore lacked a developer community.
+      Along with the support of local influencers, I started a chapter of GDG in Mangalore. The objective
+      of this was to ignite the local developer ecosystem to foster sharing, learning and networking.
+      A few key things I worked on are: - Understanding the needs of the community - Designing, organizing
+      & implementing various developer events - Identifying & onboarding team members for community initiatives
+      - Liasoning with Google & the local community to provide the necessary support Show less · Dec 2013'
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: volunteering
+    title: Member, India Working Group - IEEE P1451.99 standard
+    detail: IEEE · Science and Technology · Jul 2020 · - Present · 6 years 4 months · The IEEE P1451.99
+      is a Standard for Harmonization of Internet of Things (IoT) Devices and Systems, being developed
+      under the IEEE Standards Association. A sub-working-group of this standard is the India Working
+      Group (IWG) of which I am currently a member contributing to certain technical & engineering aspects
+      of the Standard's development process. · Jul 2020
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: project
+    title: Institute of Electrical & Electronics Engineers (IEEE)
+    detail: Development of museum exhibit for school students based on concepts of physics & electronics,
+      for IEEE Exhibits @ BM Birla Science CenterKey responsibilities included:- Preparing circuit diagrams
+      & BOM for the project- Simulating & verifying the working of the project- Preparing A/V demos &
+      explainer videos- Co-implementing and overseeing fabrication · Jan 2011
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Open Source Management and Strategy
+    detail: Linux Foundation
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Product Marketing Bootcamp
+    detail: https://pmmbootcamp.com
+    evidence:
+      url: https://www.linkedin.com/in/mvkaran
+      observed_at: '2026-10-24T08:47:15Z'
+  recent_writing:
+  - title: The possibilities with GitHub Copilot Workspace are incredible! Here’s a quick demo I presented
+      during Satya’s keynote at the Microsoft AI Tour 👇
+    url: https://twitter.com/128298338/status/1878664765394075802
+    published: '2025-01-13T04:45:58Z'
+    channel: x
+  - title: More than 17M developers and counting—India 🇮🇳 is the world's fastest-growing developer ecosystem.
+      With Copilot Free, every developer now has access to AI-powered coding — unlocking innovation, empowering
+      ideas, and building technology for billions. 🚀
+    url: https://twitter.com/128298338/status/1869630078319284541
+    published: '2024-12-19T06:25:21Z'
+    channel: x
+  - title: |-
+      🚀 Delhi NCR Developers, we're coming your way!
+
+      Join me and the incredible GitHub team as we bring the best of GitHub Universe straight to you.
+
+      Plus, the venue is one of the most stunning spots in Delhi NCR! 😍
+
+      https://t.co/QUENAqfN1H
+    url: https://twitter.com/128298338/status/1859620455067557922
+    published: '2024-11-21T15:30:41Z'
+    channel: x
+  - title: |-
+      Excited to announce the GitHub Secure Open Source Fund, aimed at improving security and sustainability of open source projects, with a $1.25 million+ fund backed by partners, dedicated training and more!
+
+      Applications for maintainers are open until Jan 7.
+
+      https://t.co/3zYSxNTXIk
+    url: https://twitter.com/128298338/status/1859106402981257535
+    published: '2024-11-20T05:28:01Z'
+    channel: x
+  - title: It was great sharing the stage with Satya and demo GitHub Copilot Workspace live in front of
+      a large audience, all in natural language!
+    url: https://twitter.com/128298338/status/1787783563376759041
+    published: '2024-05-07T09:56:31Z'
+    channel: x
+  - title: |-
+      Excited to share an insight into the paved-path for building services at GitHub, using #Kubernetes as our base layer.
+
+      Read my blog post to know more about the paved-path and how we deploy — from PR merge to rollout.
+      https://t.co/5eFCDWVZsV
+    url: https://twitter.com/128298338/status/1686758674167922688
+    published: '2023-08-02T15:19:41Z'
+    channel: x
+  - title: |-
+      It was awesome speaking at GitHub Galaxy in BLR, where I demo'ed GitHub Actions to our enterprise customers.
+
+      In &lt; 20mins, we went from an idea that starts in Issue, coded it in Codespaces &amp; run a CI/CD pipeline with Actions that deploys to 3 K8s clusters running in 3 clou
+    url: https://twitter.com/128298338/status/1666794405892849664
+    published: '2023-06-08T13:08:48Z'
+    channel: x
+  - title: |-
+      Had an insightful and productive meetup last week with some of the #OpenSource maintainers in India.
+
+      Was great to hear experiences from folks on how they were able to grow their OSS community, and ideas on how we can grow the open source culture in India. https://t.co/luIRWbs8GA
+    url: https://twitter.com/128298338/status/1666404311629459456
+    published: '2023-06-07T11:18:42Z'
+    channel: x
+  - title: In 3 days, attended 3 conferences, delivered 1 session and organized 1 meetup! https://t.co/JVzPW51H19
+    url: https://twitter.com/128298338/status/1664911670194339845
+    published: '2023-06-03T08:27:29Z'
+    channel: x
+  - title: |-
+      Want to do a paid engineering internship with me at GitHub? 😉
+
+      You can build for amazing external initiatives and internal microservices with a huge impact!
+
+      Share your GitHub profile as a reply 👇
+    url: https://twitter.com/128298338/status/1596113702931296256
+    published: '2022-11-25T12:08:55Z'
+    channel: x
+  talks:
+  - session:2024/1975k
+  - session:2025/aut1263m
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465756226001tyRt
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465756226001tyRt
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

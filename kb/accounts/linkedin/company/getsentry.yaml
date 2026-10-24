@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/getsentry
+  platform: linkedin
+  handle: company/getsentry
+  url: https://www.linkedin.com/company/getsentry
+  display_name: Sentry
+  bio: Application monitoring software considered "not bad" by millions of developers. Looking for support?
+    ➡️ http://sentry.io/support. Check out our merch store @ https://sentry.shop
+  website: https://sentry.io/
+  followers: 35693
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQH72E3aFmsBsg/company-logo_200_200/B4EZqDPKNMIQAI-/0/1763138397864/getsentry_logo?e=2147483647&v=beta&t=SpoB_b2S7pXsW_LZyfh95Tbdw0gj7W666y8wm1iDBS0
+  owner: org:sentry
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/sergical
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/getsentry
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

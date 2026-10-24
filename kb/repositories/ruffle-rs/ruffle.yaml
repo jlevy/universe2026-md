@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:ruffle-rs/ruffle
+  full_name: ruffle-rs/ruffle
+  url: https://github.com/ruffle-rs/ruffle
+  description: A Flash Player emulator written in Rust
+  homepage: https://ruffle.rs
+  stars: 18742
+  forks: 1152
+  watchers: 164
+  open_issues: 5466
+  stats_observed_at: '2026-10-24T19:12:20Z'
+  primary_language: Rust
+  topics:
+  - swf
+  - flash
+  - rust
+  - emulator
+  - reimplementation
+  - hacktoberfest
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2019-04-25T17:53:32Z'
+  pushed_at: '2026-10-24T00:12:13Z'
+  owner_login: ruffle-rs
+  pinned_by:
+  - gh:sammorrowdrums
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SamMorrowDrums
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ruffle-rs/ruffle
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

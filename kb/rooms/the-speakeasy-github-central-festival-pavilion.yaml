@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:the-speakeasy-github-central-festival-pavilion
+  name: The Speakeasy
+  label: The Speakeasy @ GitHub Central, Festival Pavilion
+  venue: venue:festival-pavilion
+  location_note: GitHub Central
+  capacity: 50
+  source_ids:
+  - 1785186839421001ahgK
+  sessions:
+  - session:2153b
+  - session:2154b
+  - session:bld2019a
+  - session:bld2020a
+  - session:bld2021a
+  - session:bld2046a
+  - session:bld2152a
+  - session:ldr1913a
+  - session:ldr2023a
+  - session:tru1914a
+  - session:tru2022a
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

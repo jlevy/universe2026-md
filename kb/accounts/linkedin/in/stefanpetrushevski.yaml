@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/stefanpetrushevski
+  platform: linkedin
+  handle: in/stefanpetrushevski
+  url: https://www.linkedin.com/in/stefanpetrushevski
+  display_name: Stefan Petrushevski
+  bio: • A cyber security professional with 10+ years of experience in the field • Strong…
+  location: The Randstad
+  followers: 2850
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGu9laDPDfLxw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730590577028?e=2147483647&v=beta&t=fLxBdv3dKxJiC_xn36ki6T9m8QmkrJxTxwJN6X_30aA
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:stefan-petrushevski
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248219001wEPf
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248219001wEPf
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/stefanpetrushevski
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

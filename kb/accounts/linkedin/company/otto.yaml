@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/otto
+  platform: linkedin
+  handle: company/otto
+  url: https://www.linkedin.com/company/otto
+  display_name: OTTO
+  bio: 'OTTO is the largest german online shop and one of the largest employers in Hamburg. For over 75
+    years, we have been constantly evolving to offer our customers the best shopping experience possible.
+    Our channel is all about jobs, career tips, and insights into our working world. We also keep you
+    up to date on topics that matter to us—such as tech, diversity, and sustainability. What makes OTTO
+    special? With over 18 million items from more than 34,000 brands, over 12.2 million customers, and
+    over 6,200 partners, OTTO is the largest german online shop. With courage, passion, and openness to
+    change, we invest in new technologies. Always at the center: our customers and the positive shopping
+    experience in the app and on otto.de. How do we work at OTTO? With around 6,000 employees, we are
+    one of Hamburg''s largest employers. New Work is part of our work culture. We work hybrid, i.e., both
+    on our campus in Bramfeld and remotely from home or another mobile location, depending on the job
+    and task. Work-life balance is important to us at OTTO. To this end, we offer various benefits such
+    as flexitime, workation, sabbaticals, and part-time work – even in all management positions. You can
+    find all this here on LinkedIn or on Instagram https://www.instagram.com/otto_inside/ You can find
+    more information about tech on our tech blog: https://otto.de/techblog If you have any questions about
+    our job postings or your application, please contact the relevant person in OTTO''s recruitment department.
+    You can contact them directly here: otto.me/2nfQU8d Legal notice: https://www.otto.de/unternehmen/de/impressum/'
+  website: https://www.otto.de/jobs/de/
+  followers: 83415
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D0BAQF18VMXfpiWVQ/company-logo_200_200/company-logo_200_200/0/1641288360316/otto_logo?e=2147483647&v=beta&t=w2h5C0XgU0L9rghg-0H50CodB2CHmhANW5G7BeZ4gV8
+  owner: org:otto
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/mario-landgraf-984404a5
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/otto
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

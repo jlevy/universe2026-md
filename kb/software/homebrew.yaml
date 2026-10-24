@@ -1,0 +1,19 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:homebrew
+  name: Homebrew
+  aliases:
+  - Homebrew
+  kind: open_source
+  homepage: https://brew.sh
+  repositories:
+  - repo:homebrew/brew
+  mentioned_in:
+  - person:william-woodruff
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

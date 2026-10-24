@@ -1,0 +1,87 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kassen-qian
+  person: person:kassen-qian
+  brief_bio:
+    text: Kassen Qian is affiliated with Defakto Security and was previously a Product Manager for CI
+      Visibility at Datadog, bringing observability practices into pre-production workflows. Qian spoke
+      at GitHub Universe 2023 about pipeline observability.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: df20e86741bb96bb8621dbe3a34f0dc4e92c0e65aa08ad00d101b730891b2a84
+    stale: false
+  headline: Defakto Security
+  current_roles:
+  - Defakto Security
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2893d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2893d
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698686599011001Zbqh
+      ref: session:2023/dev2893d
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1698686599011001Zbqh
+      ref: session:2023/dev2893d
+  credentials:
+  - kind: honor
+    title: Duke Technology Scholar
+    issuer: '-'
+    date: '2019-03-01T00:00:00.000Z'
+    description: https://medium.com/duketech/meet-the-dtech-scholar-class-of-2019-5ab87ea64b99?source=friends_link&sk=07e939ac8cdac3127c38eb6384c4fe15
+    evidence:
+      url: https://www.linkedin.com/in/kassenqian
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: honor
+    title: Dottie Lamm Leadership Award
+    issuer: The Women's Foundation of Colorado
+    date: '2016-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/kassenqian
+      observed_at: '2026-10-24T08:44:48Z'
+  talks:
+  - session:2023/dev2893d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697575203227001EdFI
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,218 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:lelia-bray-musso
+  person: person:lelia-bray-musso
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes Lelia Bray-Musso as Open Source Architect at Independent.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 392c6cc1646e189f2683c36a3e904ed02b5156822bd5eaf72c22f98699afd412
+    stale: true
+  headline: Socket
+  current_roles:
+  - Socket
+  expertise:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1758b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1758b
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1758b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1758b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1758b
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1758b
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1758b
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/sec1758b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: session:2024/sec1758b
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715395244655001aXU2
+      ref: session:2024/sec1758b
+  education:
+  - school: Boston University
+    evidence:
+      url: https://www.linkedin.com/in/le1ia
+      observed_at: '2026-10-24T08:45:17Z'
+  credentials:
+  - kind: certification
+    title: 'Speaker: SOSS Community Day North America 2024'
+    issuer: The Linux Foundation
+    date: May 2024
+    url: https://www.credly.com/badges/5b194dc9-9806-4629-a0b9-b36c8dd39414/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/le1ia
+      observed_at: '2026-10-24T08:45:17Z'
+  - kind: certification
+    title: 'Speaker: Open Source Summit 2021'
+    issuer: The Linux Foundation
+    date: Sep 2021
+    url: https://www.credly.com/badges/ef534c50-6688-412d-be57-ffcc8eb1f248?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/le1ia
+      observed_at: '2026-10-24T08:45:17Z'
+  spoken_languages:
+  - English
+  - French
+  - Italian
+  - Spanish
+  talks:
+  - session:2024/sec1758b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715397777683001cANH
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jak-e
+  platform: linkedin
+  handle: in/jak-e
+  url: https://www.linkedin.com/in/jak-e
+  display_name: Jake A.
+  location: Chicago
+  followers: 10016
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHCKfqSFOeFoA/profile-displaybackgroundimage-shrink_200_800/B56Z8VmsZ7HIAQ-/0/1782773893175?e=2147483647&v=beta&t=WkDueZ4XNuY-mYMpUvSDCe9Mu_rIJbZ6j22JicE5r7c
+  owner: person:jake-albaugh
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721921357878001AGv8
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721921357878001AGv8
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721921357878001AGv8
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jak-e
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

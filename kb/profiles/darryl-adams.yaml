@@ -1,0 +1,305 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:darryl-adams
+  person: person:darryl-adams
+  brief_bio:
+    text: Darryl Adams works on AI and accessibility at Access Insights and was previously Director of
+      Accessibility at Intel, exploring new ways for people with disabilities to work with technology.
+      Adams spoke at GitHub Universe 2023 about AI for accessibility and the Open Source Accessibility
+      Playbook.
+    cites:
+    - listed_role
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - linkedin_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: cb2ad9808a4ad215dfbbd2c40bbc11466a9f66583e543a3450bc1e5cceb65dde
+    stale: false
+  headline: Access Insights
+  current_roles:
+  - Access Insights
+  expertise:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/ai2440m
+    - ref: session:2023/dev2762l
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Machine Learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Scrum
+    target: term:topic-2023/scrum
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Social Impact
+    target: term:topic-2023/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  interests:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2023/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Issues
+    target: term:github-product-2023/issues
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Machine learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Pages
+    target: term:github-product-2023/pages
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  credentials:
+  - kind: certification
+    title: Business Relationship Management Professional (BRMP®)
+    issuer: APMG International
+    date: Dec 2020
+    url: https://www.youracclaim.com/badges/9051c2c9-6635-4982-9c84-e006f50791b6?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dadamspdx
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: Stanford Certified Project Manager
+    issuer: Stanford Center for Professional Development
+    date: Apr 2016
+    evidence:
+      url: https://www.linkedin.com/in/dadamspdx
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: Project Management Professional (PMP)
+    issuer: Project Management Institute
+    date: Jan 2004
+    expires: Jan 2023
+    evidence:
+      url: https://www.linkedin.com/in/dadamspdx
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: certification
+    title: RCR Basic
+    issuer: CITI Program, A Division of BRANY
+    date: Nov 2020
+    expires: Nov 2021
+    url: https://www.citiprogram.org/verify/?wd288a3ec-97ba-4dc7-b621-1b7978c4f84c-39457662
+    evidence:
+      url: https://www.linkedin.com/in/dadamspdx
+      observed_at: '2026-10-24T08:41:57Z'
+  activities:
+  - kind: volunteering
+    title: Foundation Board of Trustees
+    detail: Consumer Technology Association · Science and Technology · Dec 2021 · - Present · 4 years
+      11 months · Dec 2021
+    evidence:
+      url: https://www.linkedin.com/in/dadamspdx
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: volunteering
+    title: Assistive Technology Innovation Chair
+    detail: Intel Disability and Accessibility Network - Board of Directors · Science and Technology ·
+      Mar 2019 · - Mar 2023 · 4 years 1 month · Mar 2019
+    evidence:
+      url: https://www.linkedin.com/in/dadamspdx
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: volunteering
+    title: Industry Mentor
+    detail: 'Project: POEM · Science and Technology · Mar 2019 · - 2021 · 2 years · Mar 2019'
+    evidence:
+      url: https://www.linkedin.com/in/dadamspdx
+      observed_at: '2026-10-24T08:41:57Z'
+  recent_writing:
+  - title: 'Project Unison: Rethinking Human-AI Interaction with Multimodal Intelligence'
+    url: https://www.linkedin.com/pulse/project-unison-rethinking-human-ai-interaction-multimodal-adams-pgixc
+    published: '2025-05-27T00:00:00.000Z'
+    channel: linkedin
+    summary: A vision for adaptive, inclusive, and context-aware computing that redefines our relationship
+      with technology. We are…
+  talks:
+  - session:2023/ai2440m
+  - session:2023/dev2762l
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693970359114001mQq7
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:atlassian
+  login: atlassian
+  kind: organization
+  url: https://github.com/atlassian
+  name: Atlassian
+  location: Australia
+  website: https://atlassian.com/
+  public_repositories: 114
+  created_at: '2009-12-16T00:16:42Z'
+  pinned:
+  - repo:atlassian/pragmatic-drag-and-drop
+  - repo:atlassian/react-beautiful-dnd
+  - repo:atlassian/jest-in-case
+  - repo:atlassian/atlassian-mcp-server
+  - repo:atlassian/escalator
+  - repo:atlassian/gostatsd
+  top_repositories:
+  - repo:atlassian/react-sweet-state
+  entity: org:atlassian
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: atlassian
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

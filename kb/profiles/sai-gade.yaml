@@ -1,0 +1,225 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sai-gade
+  person: person:sai-gade
+  brief_bio:
+    text: Sai Gade is Global Head of AIDLC, Platform Engineering and SRE at UST, focused on AI agents,
+      CI/CD, governance and migration strategies. Gade speaks at GitHub Universe 2026 in a sponsored session
+      on modernizing CI/CD with agents, GitHub Actions and human oversight.
+    cites:
+    - listed_role
+    - current_affiliations
+    - expertise
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: d206f133edb4aa9c740d6c1c62e1516346b549a5f2c580cb838a43733144de43
+    stale: false
+  headline: Global Head - AIDLC, Platform Engineering & SRE at UST
+  current_roles:
+  - Global Head - AIDLC, Platform Engineering & SRE at UST
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1825d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1825d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1825d
+  - label: Migration strategies
+    target: term:topic/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1825d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:bld1825d
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1825d
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1825d
+  - label: Jenkins
+    target: software:jenkins
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Jenkins
+      ref: session:bld1825d
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787775125592001iWK7
+      ref: session:bld1825d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787775125592001iWK7
+      ref: session:bld1825d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787775125592001iWK7
+      ref: session:bld1825d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787775125592001iWK7
+      ref: session:bld1825d
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787775125592001iWK7
+      ref: session:bld1825d
+  - label: Migration strategies
+    target: term:topic/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787775125592001iWK7
+      ref: session:bld1825d
+  - label: Projects and Issues
+    target: term:github-product/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787775125592001iWK7
+      ref: session:bld1825d
+  credentials:
+  - kind: certification
+    title: Advanced Product Management
+    issuer: Stanford Online
+    date: Feb 2026
+    url: https://digitalcredential.stanford.edu/check/D09644DE59C316A4ED1E1AA4EF07B21B4E75B6FA95B0FA3003E230AE675098FES1FoV3J5OFZ0TFlDaVF1MHZDbHBqNTVhYWduUjVEYnRGYm52UlVkK2hGQ2dkeTkw
+    evidence:
+      url: https://www.linkedin.com/in/sai-gade-5a562330
+      observed_at: '2026-10-24T08:15:23Z'
+  - kind: certification
+    title: Leading Product Organizations and Beyond
+    issuer: Stanford Online
+    date: Feb 2026
+    url: https://digitalcredential.stanford.edu/check/1E415370DB1D812C8F72D72DFF14FE1278575BF1DF74481A3B539523A4406B5CWnNpanBFUWVUVEFxY29CK2szRGhZOVd4dThscGNFc1M3U1gzQysvbm5MVVk3cHBM
+    evidence:
+      url: https://www.linkedin.com/in/sai-gade-5a562330
+      observed_at: '2026-10-24T08:15:23Z'
+  - kind: certification
+    title: Getting Buy-In for Your Ideas
+    issuer: Stanford Online
+    date: Oct 2025
+    url: https://digitalcredential.stanford.edu/check/E54D8353B60AD325F63A29A99803C37BDFD239DEB770CBEA96B222F39895F567YWJMbjgxSGJFLzhHRXZrbW5rMXlQd3dQK0t6cWpRMFltdDV5Nko0OVQ4S2dOR2Fv
+    evidence:
+      url: https://www.linkedin.com/in/sai-gade-5a562330
+      observed_at: '2026-10-24T08:15:23Z'
+  - kind: certification
+    title: Mastering Generative AI for Product Innovation
+    issuer: Stanford Online
+    date: Oct 2025
+    url: https://digitalcredential.stanford.edu/check/4FACD55A739387E76761A37ED9CB220F1B52EBCB71AA43CBD8ADC0B212C7788BM3Blc1crSEVYbFdPczl6a2xYelFwWlNpZkttZXR2THhQdU56TjUvdHlwRURvbGt0
+    evidence:
+      url: https://www.linkedin.com/in/sai-gade-5a562330
+      observed_at: '2026-10-24T08:15:23Z'
+  - kind: certification
+    title: Artificial Intelligence for Business
+    issuer: Wharton Online
+    date: Jan 2025
+    url: https://achievements.wharton.upenn.edu/7c3354f1-d36f-4aa6-a5c4-596d97cf74ff
+    evidence:
+      url: https://www.linkedin.com/in/sai-gade-5a562330
+      observed_at: '2026-10-24T08:15:23Z'
+  - kind: certification
+    title: Driving Product Strategy through Growth and Change
+    issuer: Stanford Online
+    date: Jan 2025
+    url: https://digitalcredential.stanford.edu/check/8157A98436E6F55C9C1889ACCA4223833F9188C315D07D822CFDFB901D51E67EaHJiWlVBQWVKT0dyR1BOcEZXekx3QWxJbER3dStjTyt1T1hjT0tzZ2d6V3VXc1ln
+    evidence:
+      url: https://www.linkedin.com/in/sai-gade-5a562330
+      observed_at: '2026-10-24T08:15:23Z'
+  - kind: certification
+    title: Digital Transformation and Strategic Decision Making
+    issuer: Indian Institute of Management Ahmedabad
+    date: Feb 2022
+    evidence:
+      url: https://www.linkedin.com/in/sai-gade-5a562330
+      observed_at: '2026-10-24T08:15:23Z'
+  recent_writing:
+  - title: 'The New Engineering Ethos: Context is the Product'
+    url: https://www.linkedin.com/pulse/new-engineering-ethos-context-product-sai-gade-weylc
+    published: '2026-06-09T00:00:00.000Z'
+    channel: linkedin
+    summary: Seventy years ago, two researchers at the Tavistock Institute in London — Eric Trist and
+      Ken Bamforth — observed…
+  talks:
+  - session:bld1825d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1759331348226001HlF4
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

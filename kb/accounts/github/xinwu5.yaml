@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:xinwu5
+  login: xinwu5
+  kind: user
+  url: https://github.com/xinwu5
+  name: Xin Wu
+  company: GitHub
+  location: Hawaii
+  followers: 13
+  public_repositories: 2
+  created_at: '2018-07-06T18:38:13Z'
+  contributions_last_year:
+    total: 2419
+    commits: 16
+    pull_requests: 0
+    issues: 0
+    reviews: 0
+  starred_repositories: 2
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  entity: person:xin-wu
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: xinwu5
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

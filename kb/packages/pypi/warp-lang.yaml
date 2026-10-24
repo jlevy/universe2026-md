@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/warp-lang
+  ecosystem: pypi
+  name: warp-lang
+  url: https://pypi.org/project/warp-lang/
+  description: A Python framework for high-performance simulation and graphics programming
+  latest_version: 1.18.0
+  license: Apache-2.0
+  repository_url: https://github.com/NVIDIA/warp
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: NVIDIA/warp
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

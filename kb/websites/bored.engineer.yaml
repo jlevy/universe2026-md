@@ -1,0 +1,26 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:bored.engineer
+  url: https://bored.engineer/
+  kind: personal
+  owner: person:luke-young
+  link_basis:
+  - x_profile
+  - linkedin_profile
+  fetch_status: error
+  http_status: 403
+  sources:
+  - system: brightdata
+    url: https://x.com/TheBoredEng
+    record_id: sd_mvm4nigsgklpc8gkv
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://medium.com/@bored.engineer
+    record_id: https://bored.engineer/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

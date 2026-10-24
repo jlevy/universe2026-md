@@ -1,0 +1,249 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sagar-batchu
+  person: person:sagar-batchu
+  brief_bio:
+    text: Sagar Batchu is CEO and co-founder of Speakeasy, which is building an AI control plane for governing
+      agent actions, according to an X profile. Batchu spoke at GitHub Universe 2024 about creating type-safe
+      SDKs for REST APIs.
+    cites:
+    - listed_role
+    - current_affiliations
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: 909fb8d51ae577f3d05841b76fdbe70b21d3c85b6e0f5872618e3669633014fb
+    stale: false
+  headline: Speakeasy
+  current_roles:
+  - Speakeasy
+  expertise:
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2027d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2027d
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2027d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2027d
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726488658141001pJAv
+      ref: session:2024/dev2027d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726488658141001pJAv
+      ref: session:2024/dev2027d
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726488658141001pJAv
+      ref: session:2024/dev2027d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1726488658141001pJAv
+      ref: session:2024/dev2027d
+  education:
+  - school: Harvey Mudd College
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  credentials:
+  - kind: honor
+    title: Company Technology MVP Q3 2016 - Enlighted Inc.
+    issuer: Enlighted Inc.
+    date: '2016-07-01T00:00:00.000Z'
+    description: Internal Award given for breakthrough contribution to technology and progress of company
+      of goals. Award given for successful testing and deployment and demo of prototype indoor location
+      system at customer site. Rapidly developed and demoed POC (Data Application running inside Enterprise
+      Data Platform). Accelerated translation of POC into MVP for 1.0 release.
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: Secure and Private AI
+    issuer: Udacity
+    date: May 2021
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: Section 4 Brand Strategy Course
+    issuer: Section4
+    date: Oct 2020
+    url: https://www.youracclaim.com/badges/28011fac-4be4-45ab-854a-7d153b372d02?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization'
+    issuer: Coursera
+    date: Nov 2017
+    url: https://www.coursera.org/account/accomplishments/verify/FA8ZLY9UFE2J
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: Neural Networks and Deep Learning
+    issuer: Coursera
+    date: Oct 2017
+    url: https://www.coursera.org/account/accomplishments/verify/BZ5FLV3M2V4Q
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: DataStax Apache Cassandra™ Professional Certification
+    issuer: DataStax
+    date: Sep 2016
+    url: https://academy.datastax.com/certifications/cassandra-professional
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  spoken_languages:
+  - English
+  - Kannada
+  - Hindi
+  - Spanish
+  activities:
+  - kind: course
+    title: Autonomous Vehicles
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Computational Methods in Physics
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Data Structures and Program Development
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Digital Electronics
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Fourier Series and Boundary Value Problems
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Large Software Development
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Material Science of Energy Conservation and Storage
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Optics Laboratory
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Quantum Mechanics
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Scientific Computing
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Statistical Mechanics
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: System Signals and Processing
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: course
+    title: Theoretical Mechanics
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: organization
+    title: Full Circle Organic Farms - Sunnyvale
+    detail: Jan 2017 · May 2017
+    evidence:
+      url: https://www.linkedin.com/in/sagar-batchu-981b3738
+      observed_at: '2026-10-24T08:47:10Z'
+  recent_writing:
+  - title: Our take on Postman's API Report 2022
+    url: https://www.linkedin.com/pulse/our-take-postmans-api-report-2022-sagar-batchu
+    published: '2022-06-30T00:00:00.000Z'
+    channel: linkedin
+    summary: At Speakeasy we are building the dev-first API platform for every company. We want to enable
+      every developer to ship…
+  - title: The Rise of Developer Infrastructure
+    url: https://www.linkedin.com/pulse/rise-developer-infrastructure-sagar-batchu
+    published: '2022-05-18T00:00:00.000Z'
+    channel: linkedin
+    summary: My name is Sagar Batchu CEO & co-founder of Speakeasy, a VC-backed dev infra startup. We’re
+      on a mission of…
+  talks:
+  - session:2024/dev2027d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726488847030001vmAq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

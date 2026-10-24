@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:pier-43-1-2-fisherman-s-wharf
+  name: Pier 43 1/2
+  label: Pier 43 1/2 @ Fisherman's Wharf
+  venue: venue:pier-43-1-2
+  source_ids:
+  - 1791440555446001Ri1v
+  sessions:
+  - session:2074
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/ambily8
+  platform: x
+  handle: Ambily8
+  url: https://x.com/Ambily8
+  display_name: Ambily K K
+  bio: Tech Expert
+  location: Kerala, India
+  followers: 59
+  following: 6
+  posts_count: 480
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1866351232245489665/YMWrxQPO_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/44885821/1733807978
+  created_at: '2009-06-05T12:59:25Z'
+  owner: person:ambily-kavumkal-kamalasanan
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685684024317001nH5O
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/Ambily8
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

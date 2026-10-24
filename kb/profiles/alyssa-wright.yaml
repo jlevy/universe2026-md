@@ -1,0 +1,116 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alyssa-wright
+  person: person:alyssa-wright
+  brief_bio:
+    text: Alyssa Wright co-leads the Open Source Program Office at Bloomberg, in the Office of the CTO,
+      guiding the firm's open source strategy and engagement. Wright spoke at GitHub Universe 2025 about
+      prompts, patterns and tools for an AI-powered OSPO toolkit.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 7aca5d9ccf85fe765db4d7542c944a12be7e43bd9ade223f693cc505c9dcbe82
+    stale: false
+  headline: Bloomberg LP
+  current_roles:
+  - Bloomberg LP
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1390p
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1390p
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1390p
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746207754694001bfHl
+      ref: session:2025/aut1390p
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746207754694001bfHl
+      ref: session:2025/aut1390p
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746207754694001bfHl
+      ref: session:2025/aut1390p
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746207754694001bfHl
+      ref: session:2025/aut1390p
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746207754694001bfHl
+      ref: session:2025/aut1390p
+  activities:
+  - kind: volunteering
+    title: Board Member
+    detail: Open Source Collective · Science and Technology · May 2021 · - Present · 5 years 6 months
+      · May 2021
+    evidence:
+      url: https://www.linkedin.com/in/alyssapwright
+      observed_at: '2026-10-24T08:42:24Z'
+  talks:
+  - session:2025/aut1390p
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1757530337120001gEaA
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

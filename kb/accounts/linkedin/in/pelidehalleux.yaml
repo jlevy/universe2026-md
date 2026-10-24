@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/pelidehalleux
+  platform: linkedin
+  handle: in/pelidehalleux
+  url: https://www.linkedin.com/in/pelidehalleux
+  display_name: Jonathan "Peli" de Halleux
+  bio: Founder of GitHub Agentic Workflows, Microsoft MakeCode (micro:bit, Minecraft, Circuit…
+  location: Seattle
+  followers: 2218
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEcHZ1OqsURjA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1665786865590?e=2147483647&v=beta&t=tZWxIMHU9bgTkSE7An1ShcNHkHGrxbCjGogjdIAoYXg
+  owner: person:peli-de-halleux
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777450204317001zcJY
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pelikhan
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/pelidehalleux
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

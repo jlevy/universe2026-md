@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/td
+  platform: linkedin
+  handle: company/td
+  url: https://www.linkedin.com/company/td
+  display_name: TD
+  bio: The Toronto-Dominion Bank & its subsidiaries are collectively known as TD Bank Group (TD). TD is
+    the sixth largest bank in North America by assets & serves approx. 28 million customers in a number
+    of locations in key financial centres around the globe. With over 95,000 employees, TD ranks among
+    the world's leading online financial firms, with more than 17 million active online and mobile customers.
+    Delivering legendary customer experiences is who we are & is part of our goal to be the Better Bank.
+    Visit our Careers page to learn more about TD & why TD is a great place to work.
+  website: https://careers.td.com/
+  followers: 1062332
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQFN5zWvmGOc8Q/company-logo_200_200/B56ZxOB0zcJsAI-/0/1770835628486/td_logo?e=2147483647&v=beta&t=EWG349BiCRpxEqE-21NAOf62myhqbn73usXF09gHHOM
+  owner: org:td
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jim-richer-089422b
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/td
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

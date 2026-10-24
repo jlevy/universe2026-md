@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/guptaachin
+  platform: linkedin
+  handle: in/guptaachin
+  url: https://www.linkedin.com/in/guptaachin
+  display_name: Achin Gupta
+  bio: Hands-on engineer with 9+ years of experience in Kubernetes, observability, backend, and…
+  location: San Francisco Bay Area
+  followers: 2082
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQHF9N-XrHFRgg/profile-displayphoto-scale_200_200/B4DZ0sWTHLIEAY-/0/1774565540219?e=2147483647&v=beta&t=9sx6rw3zqqhDG-74XnVAGUXIdKtNjgRo_i4wrm0kVOs
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEOX2VS8qqMJg/profile-displaybackgroundimage-shrink_200_800/B56Z5q20mQKMAQ-/0/1779909217778?e=2147483647&v=beta&t=vq3OKBi6NoGyNzFZTEhds-4-SrYiuLRTOBzT2hUeNYs
+  owner: person:achin-gupta
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777686068448001FY1d
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/guptaachin
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

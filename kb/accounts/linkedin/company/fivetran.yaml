@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/fivetran
+  platform: linkedin
+  handle: company/fivetran
+  url: https://www.linkedin.com/company/fivetran
+  display_name: Fivetran
+  bio: Fivetran, the global leader in data movement, helps customers use their data to power everything
+    from AI applications and ML models, to predictive analytics and operational workloads. The Fivetran
+    platform reliably and securely centralizes data from hundreds of SaaS applications and databases into
+    any cloud destination – whether deployed on-premises, in the cloud or in a hybrid environment. Thousands
+    of global brands, including Autodesk, Condé Nast, JetBlue and Morgan Stanley, trust Fivetran to move
+    their most valuable data assets to fuel analytics, drive operational efficiencies and power innovation.
+  website: https://5tran.co/3lbOdzE
+  followers: 160721
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQG1AQxEZbI6ng/company-logo_200_200/company-logo_200_200/0/1711745976624/fivetran_logo?e=2147483647&v=beta&t=2GESyIPgZ5_D4O3VTMo_iJ3cULxLofnwy4rREXOAQoM
+  owner: org:fivetran
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/dimitriosphilliou
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/fivetran
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

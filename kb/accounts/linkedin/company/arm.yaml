@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/arm
+  platform: linkedin
+  handle: company/arm
+  url: https://www.linkedin.com/company/arm
+  display_name: Arm
+  bio: Arm’s foundational technology is defining the future of computing. A future built by the greatest
+    technology ecosystem in the world. A future built on Arm. Arm is everywhere technology matters. Technology
+    matters everywhere. Together, we’ll power every technology revolution moving forward, including cloud
+    computing, automotive and autonomous systems, IoT, the metaverse, and beyond. Changing the world.
+    Again. On Arm.
+  website: https://www.arm.com/
+  followers: 754744
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQEeZEj_YnYWeg/company-logo_200_200/B4EZXss3rjGgAM-/0/1743432940736/arm_logo?e=2147483647&v=beta&t=tJxbwDpk33gGVJgPLS1eQ-JEYdTRhCLYJ6O_jrnC6ek
+  owner: org:arm
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/michaelgamble
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/aspinelli
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ericsondhi
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jason-andrews-7b05a8
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/pareena-verma-7853607
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/arm
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

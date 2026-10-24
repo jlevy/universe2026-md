@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/derekmcgowan
+  platform: x
+  handle: derekmcgowan
+  url: https://x.com/derekmcgowan
+  display_name: Derek McGowan
+  bio: '@containerd maintainer, @docker, and father'
+  location: El Dorado Hills, CA
+  followers: 367
+  following: 106
+  posts_count: 259
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/911362023933452288/a3H9y6LG_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/17715861/1545969503
+  created_at: '2008-11-28T18:47:28Z'
+  owner: person:derek-mcgowan
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726677906217001nXnK
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/derekmcgowan
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

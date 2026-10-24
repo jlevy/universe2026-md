@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:codemash-conference/session-slides
+  full_name: codemash-conference/session-slides
+  url: https://github.com/codemash-conference/session-slides
+  stars: 43
+  forks: 70
+  watchers: 4
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  archived: false
+  fork: false
+  created_at: '2024-02-03T23:03:19Z'
+  pushed_at: '2026-02-08T15:26:49Z'
+  owner_login: codemash-conference
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: samidip
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: codemash-conference/session-slides
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

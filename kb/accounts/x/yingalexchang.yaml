@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/yingalexchang
+  platform: x
+  handle: yingalexchang
+  url: https://x.com/yingalexchang
+  display_name: Ying Chang
+  bio: AI@microsoft. previously zhenfund venture, investment banking, writer for Columbia Spectator, Woolf
+    reader.
+  location: San Francisco, CA
+  followers: 119
+  following: 626
+  posts_count: 28
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1882662408562561024/TyrMb7g-_normal.jpg
+  created_at: '2012-09-09T18:49:34Z'
+  owner: person:ying-chang
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791994844565001HQP8
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/yingalexchang
+    record_id: sd_mvm4nigsgklpc8gkv
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

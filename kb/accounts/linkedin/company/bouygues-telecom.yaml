@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/bouygues-telecom
+  platform: linkedin
+  handle: company/bouygues-telecom
+  url: https://www.linkedin.com/company/bouygues-telecom
+  display_name: Bouygues Telecom
+  bio: '🤝Ce qui fait notre singularité ? Chez Bouygues Telecom, nous croyons que les relations humaines
+    sont un besoin vital. La qualité de nos relations avec notre famille, nos amis, ceux qui nous entourent
+    est déterminante pour notre bien-être, notre santé et même notre espérance de vie. Ce sont ces relations
+    qui nous épanouissent, nous font aller de l’avant et nous permettent de vivre plus heureux, plus longtemps.
+    C’est pourquoi depuis notre création en 1996, les équipes Bouygues Telecom mettent toute leur énergie
+    pour que la technologie soit avant tout au service de vos relations. Nous souhaitons agir pour faire
+    grandir les relations humaines. En permettant à tous sans exception de garder le contact avec ses
+    proches et la société. En devenant une source d’inspiration qui donne à chacun l’envie d’enrichir
+    et d’améliorer la qualité de ses relations. Nos 10 500 collaborateurs relèvent tous ensemble au quotidien
+    ce même défi : être engagés pour un numérique qui nous réunit. 💼 Nos métiers ? Quelles que soient
+    vos aspirations il y aura forcément un métier pour vous chez Bouygues Telecom ! Plus de 150 métiers
+    interagissent tous les jours : Télécom / Réseau, IT, Big Data, Innovation, Marketing, Commerce, Finance,
+    Achats, Juridique… Nous avons besoin de tous les talents pour accomplir notre mission; car c’est cette
+    richesse de profils et de compétences qui fait la qualité de nos services et contribue à la satisfaction
+    de nos clients. 👉Alors si... Vous avez envie de mettre votre talent au service du développement numérique
+    pour tous et de faire grandir les relations humaines : vous frappez à la bonne porte. Vous rêvez d’une
+    entreprise qui donne le meilleur d’elle-même pour que vous puissiez donner le meilleur à votre tour
+    : alors bienvenue ! #OnEstFaitPourEtreEnsemble'
+  website: https://www.corporate.bouyguestelecom.fr/travailler-ensemble/
+  followers: 185961
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E0BAQHkwXQh88jQwA/company-logo_200_200/company-logo_200_200/0/1630627794927/bouygues_telecom_logo?e=2147483647&v=beta&t=g9j9OdsGdOWWJN1i5STi9wAzEvAkZR-bT3dq8YFqkFE
+  owner: org:bouygues-telecom
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/arnley
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/bouygues-telecom
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/dustinellis
+  platform: linkedin
+  handle: in/dustinellis
+  url: https://www.linkedin.com/in/dustinellis
+  display_name: Dustin Ellis
+  location: Tyler-Jacksonville Area
+  followers: 558
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQEifhTq_HDZww/profile-displayphoto-scale_200_200/B4EZ_8Bm7VKsAc-/0/1786639710294?e=2147483647&v=beta&t=yOdCmqghoBFIlg59tdynjiuAUN640dz6HgmVjVaxJLw
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:dustin-ellis
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1758824983578001DM9J
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/dustinellis
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

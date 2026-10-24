@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/processing-foundation
+  platform: linkedin
+  handle: company/processing-foundation
+  url: https://www.linkedin.com/company/processing-foundation
+  display_name: Processing Foundation
+  bio: Processing Foundation offers open-source software and programs that make creative coding accessible
+    to people of all backgrounds.
+  website: https://processingfoundation.org/
+  followers: 3104
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQFAUJ0Z_VtF_w/company-logo_200_200/B56aFf1Sd9JEAI-/0/1792609167430/processing_foundation_logo?e=2147483647&v=beta&t=XyC0AErrHpap8SIWW8dNuOlATuQG8v3NTOYLKpNMEVg
+  owner: org:processing-foundation
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/qianqianye
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/processing-foundation
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

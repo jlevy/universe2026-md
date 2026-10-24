@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:youtube/@techgirl1908
+  platform: youtube
+  handle: '@techgirl1908'
+  url: https://www.youtube.com/@techgirl1908
+  owner: person:angie-jones
+  link_basis:
+  - github_profile
+  - website_link
+  details_fetched: false
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: angiejones
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

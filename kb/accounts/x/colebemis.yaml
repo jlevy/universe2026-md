@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/colebemis
+  platform: x
+  handle: colebemis
+  url: https://x.com/colebemis
+  display_name: Cole Bemis
+  bio: Head of Sidebar Design @NotionHQ. Previously @GitHubNext. Creator of https://t.co/uuE5gts5MF. Working
+    on @lumen_notes
+  location: SF
+  website: http://colebemis.com/
+  followers: 8741
+  following: 983
+  posts_count: 3866
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1950087739187351552/9aa-zJbF_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/185964385/1755842393
+  created_at: '2010-09-02T07:35:56Z'
+  owner: person:cole-bemis
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694550295745001MxAR
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/colebemis
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

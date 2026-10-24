@@ -1,0 +1,59 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:vs-code
+  name: Visual Studio Code
+  aliases:
+  - VS Code
+  - Visual Studio Code
+  - VSCode
+  kind: open_source
+  vendor: org:microsoft
+  product_term: term:github-product/vs-code
+  repositories:
+  - repo:microsoft/vscode
+  mentioned_in:
+  - person:amanda-silver
+  - person:april-gittens
+  - person:burke-holland
+  - person:harald-kirschner
+  - person:janani-chandiran
+  - person:julia-kasper
+  - person:kim-adeline-miguel
+  - person:mandy-whaley
+  - person:matas-rastenis
+  - person:navinkumar-patil
+  - person:pierce-boggan
+  - person:reynald-adolphe
+  - person:rong-lu
+  - person:savannah-ostrowski
+  - person:soojin-min-choi
+  - session:2023/dev1711l
+  - session:2023/dev2701d
+  - session:2023/dev2769m
+  - session:2024/ai1405d
+  - session:2024/ai1719b
+  - session:2024/ai1970d
+  - session:2024/ai2024l
+  - session:2024/dev1873d
+  - session:2024/dev2016m
+  - session:2025/aut1392d
+  - session:2025/aut1757d
+  - session:2025/bld1143m
+  - session:2025/bld1168d
+  - session:2025/bld1539d
+  - session:2025/bld1542s
+  - session:2025/bld1543d
+  - session:2025/bld1722d
+  - session:2025/bld1810m
+  - session:2025/bld1848d
+  - session:bld1640w
+  - session:bld1978m
+  - session:bld2008d
+  - session:tru1798d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

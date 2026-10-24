@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/gmohler
+  platform: linkedin
+  handle: in/gmohler
+  url: https://www.linkedin.com/in/gmohler
+  display_name: Greg Mohler
+  bio: Passionate about the intersection of software engineering & security, and minimizing the…
+  location: Greater Philadelphia
+  followers: 1434
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQGbIbY3mrn3xQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730473522568?e=2147483647&v=beta&t=GVE_mg7Zqj4nLPFOtXvafjvYFDVVSqS6DMUSpixXzXs
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEznkfOGyarLg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1682524849237?e=2147483647&v=beta&t=LAyKO1MehgZbkkGNMZNP-lTFur0Fugpi_u9ybXyk-UI
+  owner: person:greg-mohler
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248038001wqXZ
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248038001wqXZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/gmohler
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

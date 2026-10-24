@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/developer-experience
+  platform: linkedin
+  handle: company/developer-experience
+  url: https://www.linkedin.com/company/developer-experience
+  display_name: DX
+  bio: DX is an engineering intelligence platform designed by leading researchers. We give engineering
+    leaders and platform teams the data they need to lead with confidence and drive higher impact per
+    developer. We serve hundreds of the world’s most iconic companies including Dropbox, Amplitude, P&G,
+    and Pfizer.
+  website: https://getdx.com/
+  followers: 31360
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEFTkOwVfIECw/company-logo_200_200/company-logo_200_200/0/1683840698096/developer_experience_logo?e=2147483647&v=beta&t=_3mlgRzt_buxWOiZ3mCEqB3xFXqujZoMdx8xa6WS6Go
+  owner: org:dx
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/eirini-kalliamvakou-1016865
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/developer-experience
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

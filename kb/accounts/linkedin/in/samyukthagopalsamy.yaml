@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/samyukthagopalsamy
+  platform: linkedin
+  handle: in/samyukthagopalsamy
+  url: https://www.linkedin.com/in/samyukthagopalsamy
+  display_name: Samyuktha G.
+  bio: I’m a software and production engineer with experience at Meta, Moody’s, and Mozilla…
+  location: New York City Metropolitan Area
+  followers: 2866
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHECDwaH5YRPg/profile-displaybackgroundimage-shrink_200_800/B4EZ3.KKFTJ4AQ-/0/1778085569116?e=2147483647&v=beta&t=gLZMLqNaLLAS41gw4VV-f7jZn-Hv4ahn_oexxo0vjSk
+  owner: person:samyuktha
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683661249144001NkYv
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/samyukthagopalsamy
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/matasrastenis
+  platform: x
+  handle: matasrastenis
+  url: https://x.com/matasrastenis
+  display_name: Matas Rastenis
+  bio: Senior Software Engineer at Uber丨CSE Graduate at TU Delft | Vue/TS/C# | Powered by tea 🍵 and cats
+    😍
+  location: Delft, Netherlands
+  website: https://github.com/Scharkee/
+  followers: 1111
+  following: 2021
+  posts_count: 72
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1634822880835043330/_PuQp6dI_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1153732432358707201/1598949908
+  created_at: '2019-07-23T18:23:41Z'
+  owner: person:matas-rastenis
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696615812281001xGay
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/matasrastenis
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

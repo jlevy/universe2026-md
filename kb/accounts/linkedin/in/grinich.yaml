@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/grinich
+  platform: linkedin
+  handle: in/grinich
+  url: https://www.linkedin.com/in/grinich
+  display_name: Michael Grinich
+  bio: Make your app Enterprise Ready.
+  location: San Francisco
+  followers: 15236
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQFNHZKEBtVAcg/profile-displayphoto-scale_200_200/B4EZnrZVE.KwAc-/0/1760590911015?e=2147483647&v=beta&t=3CqD4XoTpwILbl16f7lxdiF9_nen4DpxbYR1wTh1wSg
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFCBfkeQMqS-g/profile-displaybackgroundimage-shrink_200_800/B56Z0mJzqcJMAY-/0/1774461603060?e=2147483647&v=beta&t=PFASvZHgaj2FyXSWiSpVlIbxvAU0q4aWz5_hsxosGO4
+  owner: person:michael-grinich
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1759265517921001S428
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grinich
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/grinich
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

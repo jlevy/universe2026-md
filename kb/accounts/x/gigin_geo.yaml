@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/gigin_geo
+  platform: x
+  handle: gigin_geo
+  url: https://x.com/gigin_geo
+  display_name: Gigin George
+  bio: |-
+    Love scalable systems.
+
+    Experimenting with ReasonML, React and Django.
+  location: India
+  website: https://gigin.dev/
+  followers: 48
+  following: 114
+  posts_count: 147
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1026133719017447424/uiHE4EcO_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/4758871009/1572926714
+  created_at: '2016-01-14T16:15:38Z'
+  owner: person:gigin-chandy-george
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1757431389861001k7c4
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/gigin_geo
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

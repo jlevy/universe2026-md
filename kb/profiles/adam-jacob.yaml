@@ -1,0 +1,277 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:adam-jacob
+  person: person:adam-jacob
+  brief_bio:
+    text: Adam Jacob is CEO and Co-Founder of Swamp Club, which brings deterministic automation to AI
+      agents, and co-founded Chef, where Jacob spent a decade as CTO. Jacob speaks at GitHub Universe
+      2026 about peer review when agents write the diffs.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: ad58d6436759c3e68fd6d01ea64c86caf7df4e2e65c6856fde1f34246b261e2f
+    stale: true
+  headline: CEO and Co-Founder at Swamp Club
+  location: San Francisco, CA
+  current_roles:
+  - CEO and Co-Founder at Swamp Club
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1776b
+  programming_languages:
+  - label: Ruby
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:adamhjk/munin-graphite
+    - ref: repo:adamhjk/chef-jenkins
+  - label: Vim Script
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:adamhjk/adam-vim
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: GitHub Enterprise Server
+    target: term:github-product/github-enterprise-server
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1781738213966001Cmya
+      ref: session:bld1776b
+  open_source:
+  - repository: repo:adamhjk/munin-graphite
+    relation: owner
+    stars: 65
+    primary_language: Ruby
+  - repository: repo:adamhjk/chef-jenkins
+    relation: owner
+    stars: 56
+    primary_language: Ruby
+  - repository: repo:adamhjk/adam-vim
+    relation: owner
+    stars: 52
+    primary_language: Vim Script
+  - repository: repo:systeminit/si
+    relation: contributor
+    stars: 1802
+    primary_language: Rust
+  - repository: repo:paulodetiege/foundrybwcompendium
+    relation: contributor
+    stars: 12
+  - repository: repo:omacom/omarchy
+    relation: contributor
+    stars: 45617
+    primary_language: Shell
+  - repository: repo:swamp-club/swamp
+    relation: contributor
+    stars: 673
+    primary_language: TypeScript
+  - repository: repo:systeminit/embrace-ai-presentation
+    relation: contributor
+    stars: 1
+    primary_language: JavaScript
+  recent_writing:
+  - title: I predict Ghostty will be the most popular terminal in 90 days from launch.
+    url: https://twitter.com/13682312/status/1857161656171954546
+    published: '2024-11-14T20:40:17Z'
+    channel: x
+  - title: Open Source, Trademarks, and wpdrama
+    url: https://www.linkedin.com/pulse/open-source-trademarks-wpdrama-adam-jacob-ikvgc
+    published: '2024-10-09T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Lets talk about #wpdrama. Open source and business friends know I’m a strong believer that
+      trademarks are the most…'
+  - title: System Initiative is the future of DevOps Automation. It's ready to replace Infrastructure
+      as Code today. https://t.co/ZYPDSVNZpk - sign up at https://t.co/kmHqYAb1Ft!
+    url: https://twitter.com/13682312/status/1838962270082355641
+    published: '2024-09-25T15:22:26Z'
+    channel: x
+  - title: 'Just want to put in your ear that according to the latest DORA report, only 18% of respondents
+      can do what Flickr was doing in 2009: deploy 10 times a day. I know we''ll quibble on it being a
+      good metric. But we''ve been steadily moving the goal posts backwards from the jump.'
+    url: https://twitter.com/13682312/status/1829176960263594161
+    published: '2024-08-29T15:19:06Z'
+    channel: x
+  - title: Okay, lets talk nerdy. One of most fundamental underpinnings of the way we think about doing
+      infrastructure automation is the idea that it's best done in a declarative way. Having a declaration
+      of intent, followed by an idempotent, convergent control loop.
+    url: https://twitter.com/13682312/status/1821577436523618742
+    published: '2024-08-08T16:01:18Z'
+    channel: x
+  talks:
+  - session:bld1776b
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777675947876001stxC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: adamhjk
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,16 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:markdown
+  name: Markdown
+  aliases:
+  - Markdown
+  kind: language
+  mentioned_in:
+  - session:ldr1341h
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

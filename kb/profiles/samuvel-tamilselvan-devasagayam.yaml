@@ -1,0 +1,271 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:samuvel-tamilselvan-devasagayam
+  person: person:samuvel-tamilselvan-devasagayam
+  brief_bio:
+    text: Samuvel Tamilselvan Devasagayam is a Principal Platform Architect at Fiserv who designs and
+      governs large Azure environments for regulated workloads, and speaks at GitHub Universe 2026 on
+      what broke and what worked when shipping governance.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: cffe4e24aefd484329c5e3754fb06d636fb751858c93fd04aadce648c3e5738a
+    stale: false
+  headline: Principal Platform Architect at Fiserv
+  current_roles:
+  - Principal Platform Architect at Fiserv
+  expertise:
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1161h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1161h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1161h
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1161h
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1161h
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:samuvel-tamilselvan-devasagayam
+  interests:
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776817679197001EEsd
+      ref: session:ldr1161h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776817679197001EEsd
+      ref: session:ldr1161h
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776817679197001EEsd
+      ref: session:ldr1161h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776817679197001EEsd
+      ref: session:ldr1161h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776817679197001EEsd
+      ref: session:ldr1161h
+  education:
+  - school: Loyola College
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  credentials:
+  - kind: honor
+    title: Outstanding performer award (Level 4)
+    issuer: Fiserv
+    date: '2023-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: honor
+    title: Outstanding Performer
+    issuer: Fiserv
+    date: '2021-12-01T00:00:00.000Z'
+    description: For the outstanding performance done in FDIS Application
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: honor
+    title: Outstanding Performer
+    issuer: Flex
+    date: '2019-07-01T00:00:00.000Z'
+    description: For the outstanding performance done in the project "Application Security Manger"
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: honor
+    title: Outstanding student (Gold medalist)
+    issuer: Loyola college
+    date: '2015-02-01T00:00:00.000Z'
+    description: Gold medalist in studies
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: honor
+    title: Outstanding student (Gold medalist)
+    issuer: Sacred heart college, Tirupattur
+    date: '2012-03-01T00:00:00.000Z'
+    description: Gold Medalist
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: Openshift Basics
+    issuer: Udemy
+    date: Mar 2022
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: Crash Course on Python - By Google
+    issuer: Coursera
+    date: May 2020
+    url: https://www.coursera.org/account/accomplishments/records/FFS35APASAZ9
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: Version control with Git - By Atlassian
+    issuer: Coursera
+    date: May 2020
+    url: https://www.coursera.org/account/accomplishments/records/WVLGNN5S9Z95
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: Linux Foundation Certified System Administrator (LFCS)
+    issuer: The Linux Foundation
+    date: Dec 2024
+    expires: Dec 2026
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: Certified Kubernetes Application Developer
+    issuer: The Linux Foundation
+    date: Mar 2022
+    expires: Mar 2025
+    url: https://www.credly.com/earner/earned/badge/6148d3e3-3ffa-4036-9d1a-f2650a8925b6
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: 'CKA: Certified Kubernetes Administrator'
+    issuer: The Linux Foundation
+    date: Feb 2022
+    expires: Feb 2025
+    url: https://www.credly.com/badges/2e0c297f-18e0-4d82-85c0-93ae5e3f2ead?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: HashiCorp Certified Terraform Associate
+    issuer: HashiCorp
+    date: Feb 2023
+    expires: Jan 2025
+    url: https://www.credly.com/earner/earned/badge/d5a6f7c8-f38e-4e69-a814-53509860239e
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  - kind: certification
+    title: 'CKS: Certified Kubernetes Security Specialist'
+    issuer: The Linux Foundation
+    date: Oct 2022
+    expires: Oct 2024
+    url: https://www.credly.com/badges/c58d801f-d5f8-43c1-83bd-47c50e591128/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/samuvel-tamilselvan-devasagayam-06631553
+      observed_at: '2026-10-24T08:15:35Z'
+  spoken_languages:
+  - English
+  - Tamil
+  - Kannada
+  - Telugu
+  - Malayalam
+  recent_writing:
+  - title: How and When to Ignore lifecycle changes in Terraform
+    url: https://www.linkedin.com/pulse/how-when-ignore-lifecycle-changes-terraform-devasagayam
+    published: '2023-02-15T00:00:00.000Z'
+    channel: linkedin
+    summary: In Terraform, "ignore changes" is a feature that allows you to specify which attributes of
+      a resource should be ignored…
+  - title: Harden Kubernetes cluster with pod and container security contexts
+    url: https://www.linkedin.com/pulse/harden-kubernetes-cluster-pod-container-security-devasagayam
+    published: '2023-02-14T00:00:00.000Z'
+    channel: linkedin
+    summary: In Kubernetes, security context is a feature that allows you to set security-related configurations
+      for a Pod or…
+  - title: Ingress in Kubernetes
+    url: https://www.linkedin.com/pulse/ingress-kubernete-samuvel-tamilselvan-devasagayam
+    published: '2023-02-14T00:00:00.000Z'
+    channel: linkedin
+    summary: In Kubernetes, an Ingress is a resource that allows external access to services in a Kubernetes
+      cluster. It provides a…
+  - title: Kubernetes Architecture
+    url: https://www.linkedin.com/pulse/kubernetes-architecture-samuvel-tamilselvan-devasagayam
+    published: '2023-02-14T00:00:00.000Z'
+    channel: linkedin
+    summary: Kubernetes is made up of several key components that work together to manage containerized
+      applications. These…
+  talks:
+  - session:ldr1161h
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1776814346994001nVJG
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json

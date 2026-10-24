@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:ibm/fp-go
+  full_name: IBM/fp-go
+  url: https://github.com/IBM/fp-go
+  description: Functional programming library for Go 1.24+, inspired by fp-ts. Uses generic type aliases
+    for a clean, composable API. Provides Option, Either, Result, IO, IOResult, Reader, and ReaderIOResult
+    monads, plus optics (Lens, Prism, Traversal) for immutable data manipulation. Supports Functor, Applicative,
+    and Monad abstractions with do-notation-style
+  homepage: https://github.com/IBM/fp-go/tree/main/v2
+  stars: 2033
+  forks: 87
+  watchers: 17
+  open_issues: 2
+  stats_observed_at: '2026-10-24T19:10:19Z'
+  primary_language: Go
+  topics:
+  - functional-programming
+  - go
+  - golang
+  - library
+  - monad
+  - utility
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2023-07-05T14:18:19Z'
+  pushed_at: '2026-10-24T17:54:44Z'
+  owner_login: IBM
+  owner: gh:ibm
+  pinned_by:
+  - gh:ibm
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: IBM
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: IBM/fp-go
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

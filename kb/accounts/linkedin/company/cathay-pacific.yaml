@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/cathay-pacific
+  platform: linkedin
+  handle: company/cathay-pacific
+  url: https://www.linkedin.com/company/cathay-pacific
+  display_name: Cathay Pacific
+  bio: Welcome to the official Cathay Pacific LinkedIn page. We have over 100 destinations in our global
+    network, but want to do more than just move you from A to B. We want to take you further in your journey,
+    and ultimately, to move beyond. And we’re here to do what we can to help you discover what’s next.
+    For flight and related enquiries, please contact us via WhatsApp ([phone removed]. For other feedback
+    or a formal response, please fill out the form at https://bit.ly/4wtdffe.
+  website: https://www.cathaypacific.com/
+  followers: 590177
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQFoq45GY1Zb8g/company-logo_200_200/B56ZuRsn1wJIAI-/0/1767675954422/cathay_pacific_logo?e=2147483647&v=beta&t=whoiDW1qZyAUI5PrclP-NsprXVMvEdMFHmwxu_EJCkE
+  owner: org:cathay-pacific
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/naveen-jaisankar-5991ba155
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/rajeevk2
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/cathay-pacific
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

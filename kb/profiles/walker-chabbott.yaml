@@ -1,0 +1,292 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:walker-chabbott
+  person: person:walker-chabbott
+  brief_bio:
+    text: Walker Chabbott is a Product Manager III at GitHub working on the model lifecycle with partners
+      such as OpenAI, Anthropic and Google to bring frontier models to GitHub. Chabbott spoke at GitHub
+      Universe 2023 and speaks at GitHub Universe 2026 on evals.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T08:59:37Z'
+    input_sha256: 643bed00b362b34cc8bcc43c3313657b233f2b0a057d2f6a11d49a340f4d4095
+    stale: false
+  headline: Product Manager III at GitHub
+  current_roles:
+  - Product Manager III at GitHub
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/sec2753d
+    - ref: session:2023/sec2757d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/sec2753d
+    - ref: session:2023/sec2757d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/sec2753d
+    - ref: session:2023/sec2757d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1132s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1132s
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1132s
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CodeQL
+      ref: session:2023/sec2757d
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2023/sec2753d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1132s
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693506948216001NVpG
+      ref: session:2023/sec2757d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693506948216001NVpG
+      ref: session:2023/sec2757d
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693506948216001NVpG
+      ref: session:2023/sec2757d
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776460904386001a8nL
+      ref: session:bld1132s
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693506948216001NVpG
+      ref: session:2023/sec2757d
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776460904386001a8nL
+      ref: session:bld1132s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776460904386001a8nL
+      ref: session:bld1132s
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776460904386001a8nL
+      ref: session:bld1132s
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+  credentials:
+  - kind: honor
+    title: Regional President of the Year
+    issuer: North East Association of College and University Residence Halls
+    date: '2016-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/wchabbott
+      observed_at: '2026-10-24T08:15:20Z'
+  - kind: honor
+    title: Presidential Service Award
+    issuer: '-'
+    date: '2015-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/wchabbott
+      observed_at: '2026-10-24T08:15:20Z'
+  - kind: certification
+    title: Product Management Methodologies (Online)
+    issuer: Columbia Business School
+    date: Apr 2024
+    url: https://certificates.emeritus.org/a7c5ae55-2337-4413-96b4-019cc181710c
+    evidence:
+      url: https://www.linkedin.com/in/wchabbott
+      observed_at: '2026-10-24T08:15:20Z'
+  activities:
+  - kind: organization
+    title: Inter-Residence Hall Council
+    detail: '- Student Representative for the 11,000 students living in NYU residence halls on the University
+      Committee for Student Life- Managed $250,000 annual budget, and oversaw nine executive board members,
+      eighty general assembly members and five committees- Work with corporate sponsors to acquire over
+      $10,000 worth of merchandise and services for school-wide events - Organized 8 large-scale events
+      ranging from 500 - 3,000 attendees · May 2015 · Jun 2017'
+    evidence:
+      url: https://www.linkedin.com/in/wchabbott
+      observed_at: '2026-10-24T08:15:20Z'
+  - kind: organization
+    title: Strive For College
+    detail: '- Strive for College is a non-profit organization that pairs college students, who act as
+      college counselors, with low income students - Responsible for recruiting, organizing events, and
+      overseeing info sessions for current and future mentors · May 2014 · May 2017'
+    evidence:
+      url: https://www.linkedin.com/in/wchabbott
+      observed_at: '2026-10-24T08:15:20Z'
+  - kind: organization
+    title: Student Activities Board
+    detail: '- One of ten chosen student leaders whose job is to oversee the 350 plus clubs at NYU- Responsible
+      for disseminating emails, memos, club constitutions, and communicating all changes in NYU policy
+      to active clubs · Sep 2014 · May 2015'
+    evidence:
+      url: https://www.linkedin.com/in/wchabbott
+      observed_at: '2026-10-24T08:15:20Z'
+  - kind: organization
+    title: Inter-Residence Hall Council
+    detail: '- Student elected liaison between 11,000 residents and the NYU administration - Examines
+      all NYU residential polices and procedures to make sure that all student needs are being met · May
+      2014 · May 2015'
+    evidence:
+      url: https://www.linkedin.com/in/wchabbott
+      observed_at: '2026-10-24T08:15:20Z'
+  talks:
+  - session:2023/sec2753d
+  - session:2023/sec2757d
+  - session:bld1132s
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047642558001tX7W
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: wchabbott
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047642558001tX7W
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

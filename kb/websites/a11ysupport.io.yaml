@@ -1,0 +1,26 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:a11ysupport.io
+  url: https://a11ysupport.io
+  kind: personal
+  title: Accessibility Support
+  owner: person:michael-fairchild
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mfairchild365
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://a11ysupport.io
+    record_id: https://a11ysupport.io
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

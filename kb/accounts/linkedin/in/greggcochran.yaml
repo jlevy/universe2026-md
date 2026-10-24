@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/greggcochran
+  platform: linkedin
+  handle: in/greggcochran
+  url: https://www.linkedin.com/in/greggcochran
+  display_name: Gregg Cochran
+  location: Portland
+  followers: 4140
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFjXoW5QJmP-Q/profile-displayphoto-scale_200_200/B56ZwAoUq9HAAc-/0/1769537096782?e=2147483647&v=beta&t=FFwXGFf-QnZOtOIKGrjau2L-ihDcFU7ltlje3miS3S8
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGt2-YYHk-bqA/profile-displaybackgroundimage-shrink_200_800/B56ZUnhGqCGUAY-/0/1740124744633?e=2147483647&v=beta&t=9jMy4CUgyiolOtAjhwMgOh7H2KzZkBdFPV9k32JMidw
+  owner: person:gregg-cochran
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724851742880001nFr3
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/greggcochran
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:turbo/kpti-poc-collection
+  full_name: turbo/KPTI-PoC-Collection
+  url: https://github.com/turbo/KPTI-PoC-Collection
+  description: Meltdown/Spectre PoC src collection.
+  stars: 505
+  forks: 168
+  watchers: 36
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:12:29Z'
+  primary_language: C++
+  archived: false
+  fork: false
+  created_at: '2018-01-03T23:52:37Z'
+  pushed_at: '2018-01-04T00:19:09Z'
+  owner_login: turbo
+  owner: gh:turbo
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: turbo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: turbo/KPTI-PoC-Collection
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

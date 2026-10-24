@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/joedevon
+  platform: linkedin
+  handle: in/joedevon
+  url: https://www.linkedin.com/in/joedevon
+  display_name: Joe Devon
+  bio: Founder, A11y Audits Co-Founder & Chair, Global Accessibility Awareness Day (GAAD)…
+  location: Henderson
+  followers: 13363
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQG1PcQ_As9wiA/profile-displayphoto-scale_200_200/B56aFL7u1EIsAc-/0/1792275313957?e=2147483647&v=beta&t=u2T80p5syJGy4EhjnHtuaixw4ez1o3qh-o2WXe3JVLc
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEwVILVu5EafA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1727937395182?e=2147483647&v=beta&t=fNcKy3vF4wHSaYjZfiO7b9RUUV3jAQu4nS8Gr4OfBb0
+  owner: person:joe-devon
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696274152002001L7BQ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696274152002001L7BQ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/joedevon
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

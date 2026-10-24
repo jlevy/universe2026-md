@@ -1,0 +1,362 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jason-cook
+  person: person:jason-cook
+  brief_bio:
+    text: Jason Cook is a Global Black Belt in Software Solution Engineering at Microsoft, working on
+      cloud and AI platforms with a focus on developer productivity. Cook spoke at GitHub Universe 2025
+      about agentic DevOps from concepts to capabilities.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: e3a3917f9dc01e6f2336c1a58c4ed9f78e46d0c24a1f35aa3760050d08eb50aa
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  interests:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Discussions
+    target: term:github-product-2025/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  education:
+  - school: Microsoft
+    school_ref: org:microsoft
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  credentials:
+  - kind: certification
+    title: Event Speaker Silver
+    issuer: Microsoft
+    date: Feb 2021
+    url: https://www.youracclaim.com/badges/696c2b04-8760-44b6-8649-8532a372ca22?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: certification
+    title: Migrating Microsoft Workloads to Azure Coach
+    issuer: Microsoft OpenHack
+    date: Feb 2021
+    url: https://www.youracclaim.com/badges/263fb2e7-7e07-4287-9e18-a3badd2c0c80?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: certification
+    title: Mentor Silver
+    issuer: Microsoft
+    date: Jan 2021
+    url: https://www.youracclaim.com/badges/f4163624-084d-4356-9c48-71ddccadb33b?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: certification
+    title: 'OpenHack: App Modernization with NoSQL Coach'
+    issuer: Microsoft OpenHack
+    date: Oct 2020
+    url: https://www.youracclaim.com/badges/01942437-7493-4f7d-947b-0cef9efd271a?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: certification
+    title: 'OpenHack: Serverless Coach'
+    issuer: Microsoft OpenHack
+    date: Sep 2020
+    url: https://www.youracclaim.com/badges/ad06f68c-583a-40a0-b3cf-813daab657d6?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: certification
+    title: 'OpenHack: Serverless'
+    issuer: Microsoft OpenHack
+    date: Jun 2020
+    url: https://www.youracclaim.com/badges/b78a1a94-bd0b-4b25-b89a-f62fbd2345f1/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Administrator Associate (AZ-104)'
+    issuer: Microsoft
+    date: Jul 2020
+    expires: Jul 2023
+    url: https://www.youracclaim.com/badges/1f8704a0-77d3-466d-bfd0-dff4c4651cea/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: certification
+    title: AWS Certified Developer - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Jun 2019
+    expires: Jun 2022
+    url: http://aws.amazon.com/verification
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: certification
+    title: Oracle Cloud Infrastructure 2019 Architect Associate
+    issuer: Oracle
+    date: Dec 2019
+    expires: Dec 2021
+    url: https://www.youracclaim.com/badges/92f7f36b-bcd9-479b-8497-065e5dfe43c4/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect - Associate
+    issuer: Amazon Web Services
+    date: Nov 2018
+    expires: Nov 2020
+    url: http://aws.amazon.com/verification
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  activities:
+  - kind: volunteering
+    title: Technology & Data Privacy Advisory Committee
+    detail: Jeffco Public Schools - Colorado · Education · Jun 2023 · - Jun 2026 · 3 years 1 month · Advise
+      Colorado's Jefferson County Board of Education on technical strategy, systems, data privacy and
+      governance in support of technical innovation and education. · Jun 2023
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  - kind: volunteering
+    title: Mentor and Technical/Behavioral Interview Prep
+    detail: CodePath · Education · Jan 2022 · - Present · 4 years 10 months · Jan 2022
+    evidence:
+      url: https://www.linkedin.com/in/jason-cook-4486b61
+      observed_at: '2026-10-24T08:44:48Z'
+  talks:
+  - session:2025/aut1544l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1753304271871001iNmv
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

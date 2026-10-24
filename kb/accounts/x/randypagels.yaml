@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/randypagels
+  platform: x
+  handle: randypagels
+  url: https://x.com/randypagels
+  display_name: Randy Pagels
+  bio: As a DevOps Architect at Xpirit, I lead customers in designing and delivering solutions that adhere
+    to industry standards and DevOps best practices.
+  location: Detroit, MI
+  followers: 197
+  following: 166
+  posts_count: 146
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/457518618658340866/aGPNFsRG_normal.png
+  created_at: '2008-11-08T02:04:30Z'
+  owner: person:randy-pagels
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727166101759001QHvG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/randypagels
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

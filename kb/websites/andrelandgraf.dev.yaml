@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:andrelandgraf.dev
+  url: https://andrelandgraf.dev/
+  kind: personal
+  title: Homepage | Andre Landgraf
+  description: Hey there, this is my personal website and blog. I use this site to try out new things,
+    share my knowledge, and document my journey. I hope you find something useful here!
+  owner: person:andre-landgraf
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: andrelandgraf
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://andrelandgraf.dev/
+    record_id: https://andrelandgraf.dev/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

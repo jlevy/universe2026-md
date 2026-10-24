@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/zeba-khan-2a73472b
+  platform: linkedin
+  handle: in/zeba-khan-2a73472b
+  url: https://www.linkedin.com/in/zeba-khan-2a73472b
+  display_name: Zeba Khan
+  bio: A senior technology leader with 19+ years in tech and 8 years of strategic and technical…
+  location: Woodridge
+  followers: 2138
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFFnOXKX7HqdQ/profile-displayphoto-shrink_200_200/B56ZUGdD2cHsAc-/0/1739570037011?e=2147483647&v=beta&t=o9FvA-lRtXDaTxhdj3qDFEbxTnnT5B_xnE6t63dsNXs
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGcviNkhl2PUQ/profile-displaybackgroundimage-shrink_200_800/B56Z2XDje2KEAU-/0/1776355792860?e=2147483647&v=beta&t=RY43rs0pJuZp_ODn-2uwJPSvB4prDV4_NyPP_0sC_4Q
+  owner: person:zeba-khan
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715373240621001IAws
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/zeba-khan-2a73472b
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/docker
+  platform: linkedin
+  handle: company/docker
+  url: https://www.linkedin.com/company/docker
+  display_name: Docker, Inc
+  bio: Docker changed how the world ships software and is now defining how AI applications are built,
+    run, and governed. Trusted by more than 20 million developers, Docker helps development teams and
+    enterprises simplify the complexity of AI-native development with integrated tooling, built-in governance,
+    and security at every stage.
+  website: https://www.docker.com/
+  followers: 843056
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEbB4zEuUiVew/company-logo_200_200/B56aDRNVbhG0AI-/0/1790216329138/docker_logo?e=2147483647&v=beta&t=pJR4wE_mrhhwQFXWp8FHDuv4yFkjLVbiaUQHl3cwhH0
+  owner: org:docker
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/derek-mcgowan-6a750714
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/gregmondello
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/williammanning
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/docker
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

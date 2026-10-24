@@ -1,0 +1,17 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:csharp
+  name: C#
+  aliases:
+  - C#
+  kind: language
+  vendor: org:microsoft
+  mentioned_in:
+  - person:james-montemagno
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

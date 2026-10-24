@@ -1,0 +1,205 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:randy-pagels
+  person: person:randy-pagels
+  brief_bio:
+    text: The GitHub Universe 2025 listing describes Randy Pagels as Principal Trainer at Xebia USA.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: c606917b01b12d05e687101408728ead837f6b0dcd34872165bd2f2b2752f06e
+    stale: false
+  headline: Xebia
+  current_roles:
+  - Xebia
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1629d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1629d
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Advanced Security
+      ref: person:randy-pagels
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:randy-pagels
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:randy-pagels
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: As Principal Trainer at Xebia USA and a Microsoft MVP in Developer Tools, Randy focuses on
+        expanding GitHub and AI training offerings
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757100521145001P3Q6
+      ref: session:2025/bld1629d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757100521145001P3Q6
+      ref: session:2025/bld1629d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1757100521145001P3Q6
+      ref: session:2025/bld1629d
+  credentials:
+  - kind: certification
+    title: 'Azure for Developers: API Management'
+    issuer: LinkedIn
+    date: Aug 2021
+    url: https://www.linkedin.com/learning/certificates/6e6bd90b7d82ec9e8d63c38e9eb754f7bef2102ed6d567844bc3cf0dc7306e13
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  - kind: certification
+    title: Docker for .NET Developers with Visual Studio
+    issuer: LinkedIn
+    date: Mar 2021
+    url: https://www.linkedin.com/learning/certificates/9d6d3ab9555c0e5b43d153761a4f8480069d15781f107f37a0c6f78de3d9908c
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  - kind: certification
+    title: 'OpenHack: Serverless Coach'
+    issuer: Microsoft OpenHack
+    date: Mar 2021
+    url: https://www.youracclaim.com/badges/44ed68de-e78c-4238-8535-e2f5c4ab1c9b?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  - kind: certification
+    title: Microsoft Sales Challenger Trained
+    issuer: Microsoft
+    date: Jun 2020
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  - kind: certification
+    title: Microsoft Certified Trainer 2019-2020
+    issuer: Microsoft
+    date: Oct 2019
+    url: https://www.youracclaim.com/badges/f85f5c29-5dc9-47c9-8b44-73a5e0217e79/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  - kind: certification
+    title: 'Exam 532: Developing Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: Apr 2015
+    url: https://www.youracclaim.com/badges/d5d7b689-419f-4790-bda5-9c47a9173e28/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  - kind: certification
+    title: Microsoft Certified Trainer 2021-2022
+    issuer: Microsoft
+    date: Aug 2021
+    expires: Oct 2022
+    url: https://www.credly.com/badges/691959c7-a779-4b46-b4e9-3a2b958f4055?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Developer Associate'
+    issuer: Microsoft
+    date: Apr 2019
+    expires: Apr 2021
+    url: https://www.youracclaim.com/badges/ca412d53-f19f-4e40-ae98-efa86539f473/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure DevOps Engineer Expert'
+    issuer: Microsoft
+    url: https://www.youracclaim.com/badges/ca31c5a8-7b6e-4780-8fa5-007c72c98735/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    url: https://www.youracclaim.com/badges/1cceef12-6f1c-418e-a430-31d8326a7c90/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  publications:
+  - title: The GitHub Copilot Handbook
+    venue: PackT
+    date: November 1, 2025
+    description: A practical guide to transforming the software development life cycle with GitHub Copilot
+    evidence:
+      url: https://www.linkedin.com/in/randy-pagels
+      observed_at: '2026-10-24T08:47:11Z'
+  recent_writing:
+  - title: From Prompts to Productivity with GitHub Copilot
+    url: https://www.linkedin.com/pulse/from-prompts-productivity-github-copilot-randy-pagels-kutpc
+    published: '2026-04-06T00:00:00.000Z'
+    channel: linkedin
+    summary: Introduction For many developers, the first experience with AI in the editor feels helpful,
+      but limited. You ask a…
+  - title: End-to-End Agentic Development with GitHub Copilot
+    url: https://www.linkedin.com/pulse/end-to-end-agentic-development-github-copilot-randy-pagels-ee9ge
+    published: '2025-12-02T00:00:00.000Z'
+    channel: linkedin
+    summary: Why Development Workflows Need to Change Software development has always been a balance of
+      creativity and control…
+  talks:
+  - session:2025/bld1629d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727166101759001QHvG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

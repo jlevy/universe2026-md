@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/damovisa
+  platform: x
+  handle: damovisa
+  url: https://x.com/damovisa
+  display_name: Damian Brady 🥑 🏠
+  bio: Dev Advocate 🥑 at @github. DevOps and MLOps. Ex. @Microsoft. {He/Him} Also https://t.co/TNxjaMXCtr
+    and https://t.co/cIrlJFrzqV
+  location: Brisbane, Queensland
+  website: https://damovisa.me/
+  followers: 8388
+  following: 1170
+  posts_count: 34500
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/982382127089041408/dPUE3zMX_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/28514279/1668475350
+  created_at: '2009-04-03T05:59:25Z'
+  owner: person:damian-brady
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Damovisa
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/damovisa
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

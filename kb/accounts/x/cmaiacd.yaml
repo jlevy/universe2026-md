@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/cmaiacd
+  platform: x
+  handle: cmaiacd
+  url: https://x.com/cmaiacd
+  display_name: Camila Maia
+  bio: 'Software developer. Escritora de código-fonte e lead da minha própria vida. @BeijaSapaPod. @ScanAPI_.
+    Ela/she. #opensource #python #queer #PcD 🌈'
+  location: '@cmaiacd@mastodon.social'
+  website: https://camilamaia.com/
+  followers: 2138
+  following: 780
+  posts_count: 2389
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1143149013795004416/hvI4v-Nw_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/888403115292143617/1503415135
+  created_at: '2017-07-21T14:19:43Z'
+  owner: person:camila-maia
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686647544975001PtM2
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: camilamaia
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/cmaiacd
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

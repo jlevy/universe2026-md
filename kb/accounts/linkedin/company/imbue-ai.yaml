@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/imbue-ai
+  platform: linkedin
+  handle: company/imbue-ai
+  url: https://www.linkedin.com/company/imbue-ai
+  display_name: Imbue
+  bio: Imbue develops tools that help people think, create, and build. We believe technology should be
+    loyal to the user and aligned with human goals. We share many of our tools openly because we believe
+    progress in AI should be collaborative and developer-driven.
+  website: https://imbue.com/
+  followers: 10840
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQFwIdAWaJLXMQ/company-logo_200_200/B56Z4jXFBnGoAI-/0/1778709713197/imbue_ai_logo?e=2147483647&v=beta&t=GIkCXdKfiUAZL-5nC4DOfkavbWx_z2wuH-X23FcbWLM
+  owner: org:imbue
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/linguistics
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/imbue-ai
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

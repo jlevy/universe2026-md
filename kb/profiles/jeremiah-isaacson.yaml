@@ -1,0 +1,473 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jeremiah-isaacson
+  person: person:jeremiah-isaacson
+  brief_bio:
+    text: Jeremiah Isaacson is CTO of Nuevo Foundation, a nonprofit that teaches students to code through
+      free, open source workshops, and trains teams on extending GitHub Copilot CLI. Isaacson speaks at
+      GitHub Universe 2026 about turning repeated team workflows into Copilot CLI skills.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: e09253da91b3bf0bac403c53741336e080e517af584e8d15aea0b2b2c2e7a2d5
+    stale: false
+  headline: CTO at Nuevo Foundation
+  location: Earth
+  current_roles:
+  - CTO at Nuevo Foundation
+  expertise:
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1487s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1487s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1487s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1487s
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot CLI
+      ref: person:jeremiah-isaacson
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:jeremiah-isaacson
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1487s
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:nuevofoundation/nuevofoundation-web
+    - ref: repo:jeremiahjordanisaacson/copilot-sdk-supercharged
+  interests:
+  - label: beginner
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/NuevoFoundation/workshops
+      ref: repo:nuevofoundation/workshops
+    - url: https://github.com/firstcontributions/first-contributions
+      ref: repo:firstcontributions/first-contributions
+  - label: Custom integrations and APIs
+    target: term:topic/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777612491280001XfuR
+      ref: session:bld1487s
+  - label: beginner-friendly
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/firstcontributions/first-contributions
+      ref: repo:firstcontributions/first-contributions
+  - label: beginners-lab
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/NuevoFoundation/workshops
+      ref: repo:nuevofoundation/workshops
+  - label: contribute
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/firstcontributions/first-contributions
+      ref: repo:firstcontributions/first-contributions
+  - label: contribution
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/firstcontributions/first-contributions
+      ref: repo:firstcontributions/first-contributions
+  - label: contributions-welcome
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/firstcontributions/first-contributions
+      ref: repo:firstcontributions/first-contributions
+  - label: good-first-contribution
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/firstcontributions/first-contributions
+      ref: repo:firstcontributions/first-contributions
+  open_source:
+  - repository: repo:nuevofoundation/workshops
+    relation: pinned
+    stars: 28
+    primary_language: JavaScript
+  - repository: repo:nuevofoundation/nuevofoundation-web
+    relation: pinned
+    stars: 13
+    primary_language: TypeScript
+  - repository: repo:jeremiahjordanisaacson/copilot-sdk-supercharged
+    relation: owner
+    stars: 8
+    primary_language: TypeScript
+  - repository: repo:frigginglorious/frigginglorious.github.io
+    relation: contributor
+    stars: 1
+    primary_language: JavaScript
+  - repository: repo:frigginglorious/dicestorm
+    relation: contributor
+    stars: 0
+    primary_language: Cap'n Proto
+  - repository: repo:frigginglorious/chrak
+    relation: contributor
+    stars: 0
+    primary_language: PHP
+  - repository: repo:frigginglorious/summer-of-ruby-class
+    relation: contributor
+    stars: 0
+    primary_language: Ruby
+  - repository: repo:firstcontributions/first-contributions
+    relation: contributor
+    stars: 56508
+  education:
+  - school: University of Arizona
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  credentials:
+  - kind: honor
+    title: Dynamics Domain Individual Peak Award Q3
+    issuer: Microsoft
+    date: '2016-04-01T00:00:00.000Z'
+    description: The One Services Awards are designed to acknowledge individuals and teams who exemplify
+      Microsoft's cultural attributes of learning, innovation, and risk taking. These are people who make
+      extraordinary contributions to the Services business, translating our Services goals into real world
+      successes.
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: Dynamics Domain Team Peak Award – AFLAC Q3
+    issuer: Microsoft
+    date: '2016-04-01T00:00:00.000Z'
+    description: The One Services Awards are designed to acknowledge individuals and teams who exemplify
+      Microsoft's cultural attributes of learning, innovation, and risk taking. These are people who make
+      extraordinary contributions to the Services business, translating our Services goals into real world
+      successes.
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: Impact All-Star Award Winner Q3
+    issuer: Microsoft
+    date: '2015-04-01T00:00:00.000Z'
+    description: The Impact All-Stars Award recognizes individuals who have had a strong impact on their
+      team, the business, or a customer. This individual has helped drive impact-oriented collaboration
+      and teamwork to achieve greater business results and contribute to the success of others.
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: Golden Key International Honour Society
+    issuer: Golden Key International Honour Society
+    date: '2014-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: Circle of Excellence
+    issuer: Microsoft
+    date: '2013-07-01T00:00:00.000Z'
+    description: FY13 Top Subsidiary - Big Developed United States
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: First Place Microsoft's National BAOC Contest
+    issuer: Microsoft
+    date: '2012-12-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: First Place CEO Idea Challenge Competition
+    issuer: Eau Claire Economic Development Center
+    date: '2011-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: Faculty/Student Research Grant Recipient
+    issuer: University of Wisconsin - Eau Claire
+    date: '2011-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: Technical Assistance Grant
+    issuer: Eau Claire Economic Development Center
+    date: '2011-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: Third Place Prize in Target Corporation Fresh Ideas Case Study Competition
+    issuer: Target Corporation
+    date: '2011-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: First Place Prize in Target Corporation Video Game Reinvention Case Study Competition
+    issuer: Target Corporation
+    date: '2010-12-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: Atlantis Global IT Project Management Grant Recipient
+    issuer: U.S. Department of Education
+    date: '2010-05-01T00:00:00.000Z'
+    description: The program supports projects that develop organizational frameworks for transatlantic
+      student mobility, including work placements and internships that will provide adequate language
+      preparation and full academic credit. Also supported are innovative curricula; teaching materials,
+      methods, and modules; research internships; and teaching assignments.
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: College of Business, Information Systems Laptop Computer Fund Recipient
+    issuer: University of Wisconsin - Eau Claire
+    date: '2009-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: honor
+    title: Featured Student Article in Spectator News, “Programming to the top”
+    issuer: The Spectator
+    date: '2009-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: 'MCSA: Cloud Platform'
+    issuer: Microsoft
+    date: Sep 2016
+    url: https://www.microsoft.com/en-us/learning/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: 'MS: Microsoft Dynamics CRM Application'
+    issuer: Microsoft
+    date: Jan 2016
+    url: https://www.microsoft.com/en-us/learning/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: Microsoft-INSEAD Online Business Strategy and Financial Acumen
+    issuer: INSEAD Executive Education
+    date: Oct 2015
+    url: https://www.youracclaim.com/badges/b5fc5e3e-ecf5-4014-97b2-7a84db6238bc/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: 'MS: Architecting Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: Jun 2015
+    url: https://www.microsoft.com/en-us/learning/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: 'MCPS: Microsoft Certified Professional'
+    issuer: Microsoft
+    date: Jan 2015
+    url: https://www.microsoft.com/en-us/learning/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: 'MS: Implementing Microsoft Azure Infrastructure Solutions'
+    issuer: Microsoft
+    date: Jan 2015
+    url: https://www.microsoft.com/en-us/learning/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: 'MS: Microsoft Dynamics CRM 2013 Deployment'
+    issuer: Microsoft
+    date: Jan 2015
+    url: https://www.microsoft.com/en-us/learning/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: Risk Analyst, Entry Level, CNSS No. 4016
+    issuer: COMMITTEE ON NATIONAL SECURITY SYSTEMS
+    date: Jul 2014
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: 'MCTS: Microsoft Dynamics CRM 2011 Applications'
+    issuer: Microsoft
+    date: May 2013
+    url: https://www.microsoft.com/en-us/learning/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: certification
+    title: 'MCTS: Microsoft Dynamics CRM 2011 Installation and Deployment'
+    issuer: Microsoft
+    date: Mar 2013
+    url: https://www.microsoft.com/en-us/learning/certification-overview.aspx
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  activities:
+  - kind: project
+    title: Aflac
+    detail: Jan 2014
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: project
+    title: Bill & Melinda Gates Foundation
+    detail: Dec 2013
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: project
+    title: Ford Motor Company
+    detail: Jun 2013
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: project
+    title: Internal Microsoft Projects
+    detail: May 2013
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  - kind: project
+    title: U.S. Department of Veterans Affairs
+    detail: May 2014
+    evidence:
+      url: https://www.linkedin.com/in/jeremiahjordanisaacson
+      observed_at: '2026-10-24T08:12:35Z'
+  talks:
+  - session:bld1487s
+  gaps:
+  - x_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697650998115001DwEv
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jeremiahjordanisaacson
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

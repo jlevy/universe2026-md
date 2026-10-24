@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/modus-create
+  platform: linkedin
+  handle: company/modus-create
+  url: https://www.linkedin.com/company/modus-create
+  display_name: Modus Create
+  bio: Modus Create is a digital product engineering partner for forward-thinking businesses. Our global
+    teams work side-by-side with clients to design, build, and scale custom solutions that achieve real
+    results and lasting change. As an AWS Advanced Consulting Partner, Atlassian Platinum Solution Partner,
+    and Official GitHub Partner, we help organizations address their toughest technology challenges, from
+    kickoff to handoff.
+  website: https://www.moduscreate.com/
+  followers: 19049
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQHz7k3xiXwNIw/company-logo_200_200/B4EZpbRhK0HgAI-/0/1762467910618/modus_create_logo?e=2147483647&v=beta&t=VbmfIS9stkyJuXkj_g_hs4tA1OQ2SXorepc4j8_dCCc
+  owner: org:modus-create
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/richardbullingtonmcguire
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sean-p-clayton
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/modus-create
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

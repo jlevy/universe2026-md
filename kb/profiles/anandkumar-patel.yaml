@@ -1,0 +1,331 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:anandkumar-patel
+  person: person:anandkumar-patel
+  brief_bio:
+    text: Anandkumar Patel is a Partnership Engineer at ReadMe who has written about Docker, Docker Swarm
+      and Kubernetes. Patel spoke at GitHub Universe 2024 about helping API developers with a custom GitHub
+      Copilot Extension.
+    cites:
+    - listed_role
+    - current_affiliations
+    - recent_writing
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 0374c5ec5f333f960228f22c7b3df3120b66ac5839e0df8488e3aa504561c5cc
+    stale: false
+  headline: ReadMe
+  current_roles:
+  - ReadMe
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1876d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1876d
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1876d
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1876d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1876d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1876d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1876d
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721157403738001axTj
+      ref: session:2024/ai1876d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721157403738001axTj
+      ref: session:2024/ai1876d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721157403738001axTj
+      ref: session:2024/ai1876d
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721157403738001axTj
+      ref: session:2024/ai1876d
+  - label: Machine learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721157403738001axTj
+      ref: session:2024/ai1876d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721157403738001axTj
+      ref: session:2024/ai1876d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721157403738001axTj
+      ref: session:2024/ai1876d
+  - label: Sponsors
+    target: term:github-product-2024/sponsors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721157403738001axTj
+      ref: session:2024/ai1876d
+  education:
+  - school: Georgia Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  credentials:
+  - kind: honor
+    title: Culture Builder
+    issuer: Mulesoft
+    date: '2018-02-01T00:00:00.000Z'
+    description: Embodied Muleyness, with an exceptional combination of teamwork, Do what it takes, X
+      factor and radical candor.
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  patents:
+  - title: Automatic communications graphing for a source application
+    number: US US9342273B1
+    date: May 5, 2015
+    description: A communications mapping system is provided. The communications mapping system includes
+      at least one processor and a memory. The at least one processor configured to receive a source application,
+      the source application including a first sub-application and a second sub-application. The processor
+      is also configured to identify a dependency relationship between the first sub-application and the
+      second sub-application based at least in part on an inspection of the first sub-application. The
+      processor is further configured to generate the relational communications graph including the first
+      sub-application, the second sub-application, and the dependency relationship and provide the relational
+      communications graph for use in executing the source application in an execution environment.
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: project
+    title: 1KB Direct-Mapped Blocking Instruction Cache
+    detail: ● Created Blocking I-Cache using Verilog structural model● Implemented a 4-entry fully associative
+      victim VIVT cache● Designed the Victim cache with a pseudo LRU algorithm replacement policy
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: 32bit non-pipelined Processer
+    detail: ● Created 32 bit processor using Cadence tools and CMOS logic● Designed from transistor level
+      layout to gate level circuits● Utilized Cadence software environment and the Virtuoso layout editor
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: 3D landscape Printer on Ebox-4300
+    detail: ● Created 8 by 8 scalar 3d landscape printer running Windows CE OS● Utilized servos and rods
+      to create landscape from an image file
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: 5 Stage Pipelined Processor
+    detail: ● Modified a non-pipelined processor to 5 state pipelined● Implemented methods to solve for
+      hazards● Gained understanding of hardware dependencies and hazards
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: Analog Vocoder
+    detail: ● Designed and created an analog Vocoder using analog hardware chips.● Soldered all components
+      by hand onto a protoboard● Tested and troubleshooted using oscilloscopes and function generators
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: Branch Prediction Simulator
+    detail: ● Utilized Sim-outorder to program and test different branch prediction methods● Tested Two-bit
+      counter, Gshare, Hybrid, Perceptron, and Perfect methods● Determined which method to use given various
+      constraints.
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: Embedded Mandelbrot Fractal Generator
+    detail: ● Designed system that calculates and draws the Mandelbrot fractal● Utilized Altera Quartus
+      II to write to the FPGA
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: Fault Tolerant Clos Network Simulator
+    detail: ● Created a fault tolerant clos network simulator● Devised failure detection methods and rerouting
+      protocols● Measured packet loss, throughput, and latency
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: MOESI Invalidation-Based Coherence Protocol Simulator
+    detail: ● Developed a 4-way shared-memory multiprocessor MOESI simulator● Gained understanding of
+      memory coherence protocols and snoop logic
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: Nintendo Gameboy Advance Game Programing
+    detail: ● Developed programs to run on Nintendo Gameboy Advance hardware● Optimized code in order
+      to run on limited hardware
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: Simplescalor Instruction Level Parallelism and Scheduling
+    detail: ● Modified simple scalar tool to model dynamic scheduling algorithms● Calculated IPC with
+      and w/o register renaming and control dependencies● Proved register renaming and removal of control
+      dependencies increases ILP
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: Tomasulo Algorithm Simulator
+    detail: ● Implemented Tomasulo Algorithm in Verilog behavioral model● Compared Tomasulo algorithm
+      with scoreboard algorithm.
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  - kind: project
+    title: Voice Controlled Media Center for Hospitals
+    detail: ● Created a voice controlled hospital entertainment system running● Selected hardware and
+      developed software to suit hospitals needs● Exploited Windows 7 native speech recognition API
+    evidence:
+      url: https://www.linkedin.com/in/anandkumarpatel
+      observed_at: '2026-10-24T08:42:03Z'
+  recent_writing:
+  - title: 'Introducing Kontainer: The Easy Way to Switch to Kubernetes'
+    url: https://www.linkedin.com/pulse/introducing-kontainer-easy-way-switch-kubernetes-anand-patel
+    published: '2017-05-24T00:00:00.000Z'
+    channel: linkedin
+    summary: Why Kubernetes Unless you’ve been hiding in a container for the past few months, you’ve probably
+      heard of Kubernetes…
+  - title: Distributing Docker Cache across Hosts
+    url: https://www.linkedin.com/pulse/distributing-docker-cache-across-hosts-anand-patel
+    published: '2017-05-17T00:00:00.000Z'
+    channel: linkedin
+    summary: Building and compiling code can take a huge hit on our time and resources. If you have dockerized
+      your application, you…
+  - title: Cost-efficient container scheduling with Docker Swarm
+    url: https://www.linkedin.com/pulse/cost-efficient-container-scheduling-docker-swarm-anand-patel
+    published: '2017-04-28T00:00:00.000Z'
+    channel: linkedin
+    summary: We run hundreds of thousands of containers across hundreds of servers a day. One of the biggest
+      challenges we face is…
+  - title: Why is Docker Swarm Consuming All Available RAM?
+    url: https://www.linkedin.com/pulse/why-docker-swarm-consuming-all-available-ram-anand-patel
+    published: '2017-03-16T00:00:00.000Z'
+    channel: linkedin
+    summary: A few weeks ago we were alerted that Docker Swarm was using over 8GB of RAM. Our investigation
+      led us to discover an…
+  - title: Event-driven Microservices Using RabbitMQ
+    url: https://www.linkedin.com/pulse/event-driven-microservices-using-rabbitmq-anand-patel
+    published: '2017-03-02T00:00:00.000Z'
+    channel: linkedin
+    summary: Using the right patterns to communicate between microservices can help scale your application
+      and solve most…
+  - title: How We Saved 98% on Infrastructure Monitoring Costs
+    url: https://www.linkedin.com/pulse/how-we-saved-98-infrastructure-monitoring-costs-anand-patel
+    published: '2017-02-15T00:00:00.000Z'
+    channel: linkedin
+    summary: It’s important that we provide users with the best experience. Part of that means that our
+      service is available through…
+  - title: Building Docker Compose Support on an event driven stack
+    url: https://www.linkedin.com/pulse/building-docker-compose-support-event-driven-stack-anand-patel
+    published: '2017-01-19T00:00:00.000Z'
+    channel: linkedin
+    summary: In my previous post, I went over how our event-driven architecture allows us to rapidly ship
+      new features. This post…
+  talks:
+  - session:2024/ai1876d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721157529191001sswL
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

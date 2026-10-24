@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/trimble
+  platform: linkedin
+  handle: company/trimble
+  url: https://www.linkedin.com/company/trimble
+  display_name: Trimble Inc.
+  bio: 'Trimble is a global technology company that connects the physical and digital worlds, transforming
+    the ways work gets done. With relentless innovation in precise positioning, modeling and data analytics,
+    Trimble enables essential industries including construction, geospatial and transportation. Whether
+    it''s helping customers build and maintain infrastructure, design and construct buildings, optimize
+    global supply chains or map the world, Trimble is at the forefront, driving productivity and progress.
+    For more information about Trimble (Nasdaq: TRMB), visit: www.trimble.com.'
+  website: https://www.trimble.com/
+  followers: 375849
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQHM4R2dJDTWcQ/company-logo_200_200/B56Zat13QIHUAI-/0/1746673300891/trimble_logo?e=2147483647&v=beta&t=wsLQD2wh2rjpZqBOPyiULhIR8SOWfPDSrX0WBpLFCYM
+  owner: org:trimble
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeffdoolittle
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/trimble
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

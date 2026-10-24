@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:cassidoo/fancygist
+  full_name: cassidoo/fancygist
+  url: https://github.com/cassidoo/fancygist
+  description: Clean Markdown GitHub Gists
+  homepage: https://fancygist.com/
+  stars: 107
+  forks: 10
+  watchers: 1
+  open_issues: 7
+  stats_observed_at: '2026-10-24T19:09:54Z'
+  primary_language: TypeScript
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-02-09T23:15:33Z'
+  pushed_at: '2026-06-01T06:10:55Z'
+  owner_login: cassidoo
+  owner: gh:cassidoo
+  pinned_by:
+  - gh:cassidoo
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cassidoo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cassidoo/fancygist
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

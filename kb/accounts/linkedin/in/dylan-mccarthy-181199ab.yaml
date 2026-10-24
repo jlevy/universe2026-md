@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/dylan-mccarthy-181199ab
+  platform: linkedin
+  handle: in/dylan-mccarthy-181199ab
+  url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+  display_name: Dylan McCarthy
+  bio: Hi I'm Dylan, I am a Principal Solution Consultant at Versent working in the…
+  location: Melbourne
+  followers: 2036
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D03AQFa8kLorW09Pg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1614069860372?e=2147483647&v=beta&t=g0q9S6zqJ-soMjSCg-Ou-4SNruier4hpVsMSg6EZp_M
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:dylan-mccarthy
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685316289726001Jven
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/dylan-mccarthy-181199ab
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

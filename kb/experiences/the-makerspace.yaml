@@ -1,0 +1,22 @@
+softschema:
+  contract: paraverse.conference:Experience/v1
+  schema: ../_schemas/experience.schema.yaml
+  envelope: experience
+  status: permissive
+experience:
+  id: experience:the-makerspace
+  name: The makerspace
+  description: Get those creative juices flowing as you build fun projects that you can take home as a
+    reminder of your time at Universe (and maybe even display your masterpiece in the background of video
+    calls!)
+  category: experiment
+  schedule: Oct 28 8am–5pm; Oct 29 8:30am–5pm
+  location: Gateway Pavilion
+  venue: venue:gateway-pavilion
+  action: Add to agenda
+  image_url: https://static.rainfocus.com/github/universe26/static/staticfile/staticfile/Session_Image_themakerspace_1782427081280001EXBH.png
+  sources:
+  - system: rainfocus
+    url: https://reg.githubuniverse.com/flow/loadPage?pageUri=explore
+    retrieved_at: '2026-10-24T06:46:13Z'
+    snapshot: raw/rainfocus/pages/explore.json

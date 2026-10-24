@@ -1,0 +1,215 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:helen-hou-sandi
+  person: person:helen-hou-sandi
+  brief_bio:
+    text: Helen Hou-Sandi is a Staff Software Engineering Manager for Accessibility at GitHub and one
+      of the lead developers of the WordPress open source project. Hou-Sandi spoke at GitHub Universe
+      2025 about collapsing the distance from idea to impact.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - linkedin_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: aad854dfcfb8f08f9853fb190003db881e69aa067f439f53c0a819e3e9d348e1
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Community
+    target: term:topic-2025/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Social impact
+    target: term:topic-2025/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Software Engineering
+    target: term:topic-2025/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  interests:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Discussions
+    target: term:github-product-2025/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Education
+    target: term:github-product-2025/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Enterprise/Admin
+    target: term:github-product-2025/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2025/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Codespaces
+    target: term:github-product-2025/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  education:
+  - school: Eastman School of Music
+    evidence:
+      url: https://www.linkedin.com/in/helenhousandi
+      observed_at: '2026-10-24T08:46:07Z'
+  activities:
+  - kind: project
+    title: WordPress
+    detail: Jun 2011
+    evidence:
+      url: https://www.linkedin.com/in/helenhousandi
+      observed_at: '2026-10-24T08:46:07Z'
+  talks:
+  - session:2025/1616k
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686680018345001jTjq
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,246 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alex-oladele
+  person: person:alex-oladele
+  brief_bio:
+    text: Alex Oladele is a Senior Software Engineer at Red Hat who works on the Ansible Automation Platform
+      Hub. Oladele spoke at GitHub Universe 2025 about practicing compassion rather than criticism in
+      code reviews.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - linkedin_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 5bdd939132975b0cddcf89a23b21f039fdff4f8f8ff75cd072578d3e0d4a7c2e
+    stale: false
+  headline: Red Hat
+  current_roles:
+  - Red Hat
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1064l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1064l
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1064l
+  technologies:
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:alex-oladele
+  interests:
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744249597105001fIE6
+      ref: session:2025/bld1064l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744249597105001fIE6
+      ref: session:2025/bld1064l
+  - label: Discussions
+    target: term:github-product-2025/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744249597105001fIE6
+      ref: session:2025/bld1064l
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744249597105001fIE6
+      ref: session:2025/bld1064l
+  - label: Projects and Issues
+    target: term:github-product-2025/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744249597105001fIE6
+      ref: session:2025/bld1064l
+  education:
+  - school: Miami University
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  credentials:
+  - kind: honor
+    title: President's Distinguished Service Award
+    issuer: Miami University
+    date: '2019-04-01T00:00:00.000Z'
+    description: The President's Distinguished Service Award is presented to a select group of students,
+      whose service through campus life, community service, intellectual and cultural leadership, or as
+      a university employee, demonstrates the spirit of being a citizen leader of uncommon quality.
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: honor
+    title: Challenge Coin
+    issuer: Dr. Rob WIlliams
+    date: '2016-08-01T00:00:00.000Z'
+    description: A coin to show the perseverance of those who stayed with Discovery Lab Global for the
+      full 10 weeks
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: certification
+    title: Deploying Microservices with Kubernetes
+    issuer: Coursera
+    date: Oct 2019
+    url: https://www.youracclaim.com/badges/3d8f56d7-6b96-4b2f-8711-60a0e6330299/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: certification
+    title: Developing and Deploying Microservices with Microclimate
+    issuer: Coursera
+    date: Oct 2019
+    url: https://www.youracclaim.com/badges/968d9039-c78c-4ee1-a2a3-1233367d759a/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: certification
+    title: 'IBM Cloud Private: Deploying Microservices with Kubernetes'
+    issuer: Coursera
+    date: Oct 2019
+    url: https://www.youracclaim.com/badges/3e61a22a-686b-4ffc-8da3-e2033871d028/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: certification
+    title: IBM Microservices Specialization
+    issuer: Coursera
+    date: Oct 2019
+    url: https://www.coursera.org/account/accomplishments/specialization/QXKMYXUXGAW7
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: certification
+    title: Enterprise Design Thinking Practitioner
+    issuer: IBM
+    date: Sep 2019
+    url: https://www.youracclaim.com/badges/f92865f9-1f7d-4574-950e-efb81fdb7402/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: certification
+    title: Developer Profession - Level 2 Experienced
+    issuer: IBM
+    date: Mar 2023
+    expires: Mar 2028
+    url: https://www.credly.com/badges/0051541b-1ed1-43f5-b850-ca1b7a63ec52/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: certification
+    title: 201 CPQ Product Certification Level 1
+    issuer: Apttus
+    date: Jun 2018
+    expires: Jun 2019
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: certification
+    title: Microservices Fundamentals
+    issuer: Coursera
+    url: https://www.youracclaim.com/badges/1a81edda-51ce-4c76-bbaa-551ed79c5ed7/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  publications:
+  - title: 'Code Reviews: Compassion vs Criticism'
+    venue: AfroTech Conference 2024
+    date: February 15, 2025
+    description: In software development, code reviews are supposed to be a safe space for learning and
+      collaboration amongst the team (especially those in their early career). Why, then, is the process
+      so fraught with fear and anxiety nowadays? In this talk, I will provide helpful strategies that
+      teams can implement to reduce the stress felt during code reviews and refocus it into the collaborative,
+      nurturing space that it was intended to be.
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - title: Python + Discord = Great Bots!
+    venue: PyOhio 2024
+    date: July 28, 2024
+    description: Okay you already enjoy using python, and you already enjoy using Discord, but what if
+      you combined both!In this talk we will explore how to build a discord bot using the Pycord library.
+      We’ll build a dice rolling bot that utilizes Discord’s native slash commands. At the end of this
+      talk you’ll have learned the different ways to invoke discord bot actions, the different lifecycle
+      events each bot goes through, structuring the code for maintainability, and how to build for widespread
+      adoption.
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  spoken_languages:
+  - English
+  activities:
+  - kind: volunteering
+    title: Member
+    detail: Kode2Learn · Education · Oct 2015 · - May 2019 · 3 years 8 months · Worked to educate children
+      on the basics of Programming, and well as thinking in a logical manner · Oct 2015
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  - kind: volunteering
+    title: Mentor
+    detail: MentorUp · Science and Technology · Oct 2020 · - Oct 2021 · 1 year 1 month · Oct 2020
+    evidence:
+      url: https://www.linkedin.com/in/alexoladele
+      observed_at: '2026-10-24T08:42:38Z'
+  talks:
+  - session:2025/bld1064l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744237982084001jrqi
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:512-2nd-st-san-francisco-ca-94107
+  name: 512 2nd St, San Francisco, CA 94107
+  label: 512 2nd St, San Francisco, CA 94107
+  venue: venue:512-2nd-st-san-francisco-ca-94107
+  source_ids:
+  - 1729639511103001DTue
+  sessions:
+  - session:2024/ai2242e
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

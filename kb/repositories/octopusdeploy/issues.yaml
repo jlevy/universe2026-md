@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:octopusdeploy/issues
+  full_name: OctopusDeploy/Issues
+  url: https://github.com/OctopusDeploy/Issues
+  description: '| Public |  Bug reports and known issues for Octopus Deploy and all related tools'
+  homepage: https://octopus.com
+  stars: 166
+  forks: 20
+  watchers: 61
+  open_issues: 995
+  stats_observed_at: '2026-10-24T19:12:08Z'
+  topics:
+  - non-production
+  - public
+  archived: false
+  fork: false
+  created_at: '2013-10-24T11:18:12Z'
+  pushed_at: '2026-07-30T01:54:45Z'
+  owner_login: OctopusDeploy
+  owner: gh:octopusdeploy
+  pinned_by:
+  - gh:octopusdeploy
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: OctopusDeploy
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: OctopusDeploy/Issues
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/nordstrom
+  platform: linkedin
+  handle: company/nordstrom
+  url: https://www.linkedin.com/company/nordstrom
+  display_name: Nordstrom
+  bio: At Nordstrom, we empower our employees to set their sights high and blaze their own trails. This
+    is a place where your success and growth are truly a result of your own efforts and achievements.
+    Our teams are made up of motivated people who work hard to become leaders within the company, at all
+    levels of the organization. These well-traveled paths show how hard work, loyalty, a competitive spirit
+    and your unwavering commitment to the customer can take you and your career to new places. In addition
+    to being a great place to have a career, we’re also committed to respecting the environment and supporting
+    our communities. To learn more, check out NordstromCares.com. Interested in joining the Nordstrom
+    team? See some of our current opportunities under our Careers tab or visit careers.nordstrom.com to
+    apply today.
+  website: https://www.nordstrom.com/
+  followers: 641862
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGFmI0mWPUJdw/company-logo_200_200/company-logo_200_200/0/1666026884352/nordstrom_logo?e=2147483647&v=beta&t=qunqF-rqvoaT-ZXFfMU7zN4CfnEkxaD2DZshXd9iC_U
+  owner: org:nordstrom
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/anabelle-watt
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/nordstrom
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,98 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kelsey-conophy
+  person: person:kelsey-conophy
+  brief_bio:
+    text: Kelsey Conophy works at Spotify building AI products, previously led emerging AI products at
+      GitHub, and holds a patent on search reports built with search engine APIs, large language models
+      and web crawlers. Conophy spoke at GitHub Universe 2025 about GitHub Spark.
+    cites:
+    - current_affiliations
+    - linkedin_bio
+    - past_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 809bb09b7064a71e7e037a108007444275ec0a0093109831aa9ecd2c07780e79
+    stale: false
+  headline: Spotify
+  current_roles:
+  - Spotify
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1146d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745437233673001nGTL
+      ref: session:2025/bld1146d
+  - label: GitHub Spark
+    target: term:github-product-2025/github-spark
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745437233673001nGTL
+      ref: session:2025/bld1146d
+  credentials:
+  - kind: certification
+    title: Programming with Python
+    issuer: Emeritus
+    date: Apr 2024
+    url: https://certificates.emeritus.org/1ea495a8-605d-475f-be1b-2ead3fe5d8ea
+    evidence:
+      url: https://www.linkedin.com/in/kelseyconophy
+      observed_at: '2026-10-24T08:44:45Z'
+  - kind: certification
+    title: Applied Data Science
+    issuer: Columbia Engineering
+    date: Aug 2019
+    url: https://certificates.emeritus.org/5dxb7f3a
+    evidence:
+      url: https://www.linkedin.com/in/kelseyconophy
+      observed_at: '2026-10-24T08:44:45Z'
+  patents:
+  - title: Enhanced search report based on leveraging search engine APIs, large language models, and web
+      crawlers
+    number: US20250200123A1 IPR-2412870US
+    date: December 15, 2023
+    description: Systems and methods that generate an enhanced search report, which provides a significant
+      improvement over conventional searches are provided. The systems and methods leverage a combination
+      of keyword-based searches using search engine APIs to return URLs that are hit by the searches,
+      large language models to generate additional keywords based on contextual information, and web crawlers
+      to search the returned URLs with the additional keywords. The enhanced search report is not confined
+      to the conventional keyword-URL match, but instead provides a sophisticated capture and compilation
+      of additional useful information.
+    evidence:
+      url: https://www.linkedin.com/in/kelseyconophy
+      observed_at: '2026-10-24T08:44:45Z'
+  talks:
+  - session:2025/bld1146d
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726700779965001SJZI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:mintlify
+  login: mintlify
+  kind: organization
+  url: https://github.com/mintlify
+  name: Mintlify
+  bio: The intelligent knowledge platform
+  location: United States of America
+  website: https://mintlify.com
+  public_repositories: 35
+  created_at: '2021-10-22T20:18:54Z'
+  pinned:
+  - repo:mintlify/starter
+  - repo:mintlify/docs
+  top_repositories:
+  - repo:mintlify/writer
+  - repo:mintlify/mdx
+  - repo:mintlify/components
+  linked_accounts:
+  - acct:x/mintlify
+  entity: org:mintlify
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mintlify
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

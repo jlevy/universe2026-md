@@ -1,0 +1,141 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jen-agarwal
+  person: person:jen-agarwal
+  brief_bio:
+    text: Jen Agarwal, now at Sprout Social, is a product leader building AI-native products and teams
+      and was a product manager at GitHub working on GitHub Copilot. Agarwal spoke at GitHub Universe
+      2023 about responsibility in AI tool development and at GitHub Universe 2024 about JetBrains IDE
+      capabilities.
+    cites:
+    - current_affiliations
+    - linkedin_bio
+    - past_affiliations
+    - event_bio
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:39:52Z'
+    input_sha256: 50db0ced851e352c4336850d629b89b6d1ce1535d36549308c1bb694d8e8ddd1
+    stale: false
+  headline: Sprout Social
+  current_roles:
+  - Sprout Social
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2840g
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1892s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai2840g
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695327350382001P9ou
+      ref: session:2023/ai2840g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722363450111001O5Dk
+      ref: session:2024/ai1892s
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695327350382001P9ou
+      ref: session:2023/ai2840g
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722363450111001O5Dk
+      ref: session:2024/ai1892s
+  credentials:
+  - kind: certification
+    title: LOMA 280
+    issuer: LIFE OFFICE MANAGEMENT ASSOCIATION
+    evidence:
+      url: https://www.linkedin.com/in/honeyjainagarwal
+      observed_at: '2026-10-24T08:45:26Z'
+  activities:
+  - kind: volunteering
+    title: Marketing
+    detail: Vibha · Education · Dec 2014 · - Present · 11 years 11 months · Dec 2014
+    evidence:
+      url: https://www.linkedin.com/in/honeyjainagarwal
+      observed_at: '2026-10-24T08:45:26Z'
+  - kind: course
+    title: Inroduction to Statistics @ UC Berkeley Extension (scored Grade A)
+    evidence:
+      url: https://www.linkedin.com/in/honeyjainagarwal
+      observed_at: '2026-10-24T08:45:26Z'
+  recent_writing:
+  - title: Present and Future of Internet of Things (IoT)
+    url: http://jainagarwal.blogspot.com/2015/11/present-and-future-of-internet-of.html
+    published: '2015-11-28T00:32:00Z'
+    channel: blog
+  - title: Present and Future of Internet of Things (IoT)
+    url: http://jainagarwal.blogspot.com/2015/11/present-and-future-of-internet-of.html
+    published: '2015-11-28T00:32:00Z'
+    channel: blog
+  - title: Present and Future of Internet of Things (IoT)
+    url: https://www.linkedin.com/pulse/present-future-internet-things-iot-honey-jain-agarwal
+    published: '2015-11-28T00:00:00.000Z'
+    channel: linkedin
+    summary: This morning I got up by the gentle sensation on my wrist from the Fitbit Charge HR activity
+      band. I set up the alarm…
+  - title: The Next Big Thing - Wearables!
+    url: http://jainagarwal.blogspot.com/2014/11/the-next-big-thing-wearables.html
+    published: '2014-11-25T02:31:00Z'
+    channel: blog
+  - title: The Next Big Thing - Wearables!
+    url: http://jainagarwal.blogspot.com/2014/11/the-next-big-thing-wearables.html
+    published: '2014-11-25T02:31:00Z'
+    channel: blog
+  - title: Why Amazon is investing in India?
+    url: http://jainagarwal.blogspot.com/2014/10/why-amazon-is-investing-in-india.html
+    published: '2014-10-03T16:25:00Z'
+    channel: blog
+  - title: Why Amazon is investing in India?
+    url: http://jainagarwal.blogspot.com/2014/10/why-amazon-is-investing-in-india.html
+    published: '2014-10-03T16:25:00Z'
+    channel: blog
+  talks:
+  - session:2023/ai2840g
+  - session:2024/ai1892s
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694602323572001GD94
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694602323572001GD94
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

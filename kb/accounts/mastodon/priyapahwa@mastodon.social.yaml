@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:mastodon/priyapahwa@mastodon.social
+  platform: mastodon
+  handle: priyapahwa@mastodon.social
+  url: https://mastodon.social/@priyapahwa
+  display_name: Priya
+  bio: Software Engineer | She/Her
+  followers: 91
+  following: 40
+  posts_count: 95
+  avatar_url: https://files.mastodon.social/accounts/avatars/112/168/614/017/616/910/original/02f18690f79d01e3.png
+  created_at: '2024-03-27T00:00:00Z'
+  owner: person:priya-pahwa
+  link_basis:
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: priyapahwa
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: mastodon
+    url: https://mastodon.social/@priyapahwa
+    record_id: priyapahwa@mastodon.social
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json

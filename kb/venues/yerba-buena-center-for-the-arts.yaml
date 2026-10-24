@@ -1,0 +1,13 @@
+softschema:
+  contract: paraverse.conference:Venue/v1
+  schema: ../_schemas/venue.schema.yaml
+  envelope: venue
+  status: permissive
+venue:
+  id: venue:yerba-buena-center-for-the-arts
+  name: Yerba Buena Center for the Arts
+  kind: campus
+  address: 701 Mission St, San Francisco, CA 94103
+  sources:
+  - system: curation
+    snapshot: curation/venues.yaml

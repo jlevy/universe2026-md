@@ -1,0 +1,341 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jay-miller
+  person: person:jay-miller
+  brief_bio:
+    text: Jay Miller is a developer advocate affiliated with Aiven, lists founding Conduit, a show on
+      Relay, and was previously a Cloud Advocate for Python at Microsoft. Miller spoke at GitHub Universe
+      2023 about GitHub productivity in VS Code for rapid context-switchers.
+    cites:
+    - linkedin_bio
+    - current_affiliations
+    - x_bio
+    - websites
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: 4d29626f435aa43bb4bdd0e0dfe9fb16e8ef95699710f46f213e421f830f61fb
+    stale: false
+  headline: Aiven
+  current_roles:
+  - Aiven
+  expertise:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1711l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1711l
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1711l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1711l
+  - label: Infrastructure as Code
+    target: term:topic-2023/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1711l
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1711l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1711l
+  technologies:
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2023/dev1711l
+  interests:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: GitHub Codespaces
+    target: term:github-product-2023/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: Infrastructure as Code
+    target: term:topic-2023/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: Issues
+    target: term:github-product-2023/issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686008600991001sWyY
+      ref: session:2023/dev1711l
+  education:
+  - school: Marine Corps Communications Training Center
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  activities:
+  - kind: course
+    title: CCNA Module 1
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: CCNA Module 2
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: CCNA Module 3
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: CCNA Module 4
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: CompTIA A+ Course
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: CompTIA Security+ Certification Course
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: Microsoft Exchange 2003
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: Microsoft Server 2003
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: Tactical Equipment and Networking Course
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: VSAT Data Network Course
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: VSAT Radio Frequency Course
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: course
+    title: VmWare Virtualization Course
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: organization
+    title: United States PostgreSQL Association (PgUS)
+    detail: Nov 2024 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: organization
+    title: Black Python Devs
+    detail: May 2023 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: organization
+    title: Django Software Foundation
+    detail: Nov 2022 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: organization
+    title: Python Software Foundation
+    detail: 2021 · Present
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: organization
+    title: Operation Code
+    detail: Jun 2016 · 2020
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  - kind: organization
+    title: CodeNewbie
+    detail: Oct 2016 · 2018
+    evidence:
+      url: https://www.linkedin.com/in/kjaymiller
+      observed_at: '2026-10-24T08:45:24Z'
+  recent_writing:
+  - title: 'Connected 625: Swipegate'
+    url: http://relay.fm/connected/625
+    published: '2026-10-23T20:01:00Z'
+    channel: blog
+  - title: 'Reconcilable Differences 298: My Geographical Tongue'
+    url: http://relay.fm/rd/298
+    published: '2026-10-22T23:32:00Z'
+    channel: blog
+  - title: 'Roboism 82: Don’t Get in the Ball Pit'
+    url: http://relay.fm/roboism/82
+    published: '2026-10-22T23:15:00Z'
+    channel: blog
+  - title: 'Material 590: Foldable-Curious'
+    url: http://relay.fm/material/590
+    published: '2026-10-22T20:11:00Z'
+    channel: blog
+  - title: 'Under the Radar 332: Relaunching Developing Perspective'
+    url: http://relay.fm/radar/332
+    published: '2026-10-22T13:25:00Z'
+    channel: blog
+  - title: 'Cortex 184: Writing the Newsletter Tech Executives Read, with Ben Thompson'
+    url: http://relay.fm/cortex/184
+    published: '2026-10-21T16:51:00Z'
+    channel: blog
+  - title: 'Clockwise 679: Emotional Support Tabs'
+    url: http://relay.fm/clockwise/679
+    published: '2026-10-21T16:49:00Z'
+    channel: blog
+  - title: 'The Pen Addict 739: Accidental Stationery'
+    url: http://relay.fm/penaddict/739
+    published: '2026-10-21T16:16:00Z'
+    channel: blog
+  - title: 'Intentional AI 11: AI Task Management'
+    url: http://relay.fm/intentional/11
+    published: '2026-10-21T16:00:00Z'
+    channel: blog
+  talks:
+  - session:2023/dev1711l
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686006375805001XAc0
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

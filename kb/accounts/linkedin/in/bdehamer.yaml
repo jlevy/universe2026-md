@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/bdehamer
+  platform: linkedin
+  handle: in/bdehamer
+  url: https://www.linkedin.com/in/bdehamer
+  display_name: Brian DeHamer
+  location: San Diego
+  followers: 333
+  connections: 315
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQGtwWdqiRkf5Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517661106977?e=2147483647&v=beta&t=jtaXecHL6VwEEjOxOv9rRVHsnzY3um0baGR4QsPkMOo
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:brian-dehamer
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686593528195001MBdN
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/bdehamer
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

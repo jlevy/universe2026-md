@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:flores-san-francisco-2030-union-st
+  name: Flores San Francisco
+  label: Flores San Francisco @ 2030 Union St
+  venue: venue:flores-san-francisco
+  source_ids:
+  - 1791440205816001oWWh
+  - 1760997237411001T2MW
+  sessions:
+  - session:2025/1938
+  - session:2065
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

@@ -1,0 +1,107 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:usha-n
+  person: person:usha-n
+  brief_bio:
+    text: Usha N is a Staff Product Manager at GitHub working on secure authentication with the Identity
+      team, and previously shipped GitHub Actions deployment features such as OpenID Connect support.
+      Usha N spoke at GitHub Universe 2023 about continuous delivery fundamentals with GitHub Actions.
+    cites:
+    - listed_role
+    - current_affiliations
+    - linkedin_bio
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 9bee97911cc079bf7652d128c896d3d91f6133d8103861556c27644ec7f6d2d0
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2756d
+  technologies:
+  - label: Azure DevOps
+    target: software:azure-devops
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure DevOps
+      ref: person:usha-n
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:usha-n
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693432223190001T9fV
+      ref: session:2023/dev2756d
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693432223190001T9fV
+      ref: session:2023/dev2756d
+  education:
+  - school: S.P. Jain Institute of Management & Research
+    evidence:
+      url: https://www.linkedin.com/in/ushanarayanabhatta
+      observed_at: '2026-10-24T08:49:50Z'
+  publications:
+  - title: Deploy to Azure using GitHub Actions from your favorite tools
+    venue: Azure Blog
+    date: May 27, 2020
+    evidence:
+      url: https://www.linkedin.com/in/ushanarayanabhatta
+      observed_at: '2026-10-24T08:49:50Z'
+  - title: GitHub Actions for Azure is now generally available
+    venue: Azure Blog
+    date: November 13, 2019
+    evidence:
+      url: https://www.linkedin.com/in/ushanarayanabhatta
+      observed_at: '2026-10-24T08:49:50Z'
+  - title: Presented @ Microsoft TechReady - Seattle
+    venue: Presented to worldwide Microsoft Employees about the latest enhancements done to Azure DevOps
+      - Pipelines
+    date: February 5, 2017
+    evidence:
+      url: https://www.linkedin.com/in/ushanarayanabhatta
+      observed_at: '2026-10-24T08:49:50Z'
+  talks:
+  - session:2023/dev2756d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693437118038001OUeH
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

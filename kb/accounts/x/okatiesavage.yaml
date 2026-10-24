@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/okatiesavage
+  platform: x
+  handle: okatiesavage
+  url: https://x.com/okatiesavage
+  display_name: Katie Savage
+  followers: 300
+  following: 105
+  posts_count: 82
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1561885062651453440/4GqQVD-T_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/990813110196879360/1661217403
+  created_at: '2018-04-30T04:40:28Z'
+  owner: person:katie-savage
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730132720921001ElMl
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/okatiesavage
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

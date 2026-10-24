@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/adamferrari
+  platform: linkedin
+  handle: in/adamferrari
+  url: https://www.linkedin.com/in/adamferrari
+  display_name: Adam Ferrari
+  bio: I’m a lifelong software engineer turned technology leader. I love working with great…
+  location: Greater Boston
+  followers: 2530
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQFVG54uTTv4eg/profile-displayphoto-scale_200_200/B4EZ5v_wTtH8Ac-/0/1779995445309?e=2147483647&v=beta&t=qjwJcB1HD2fAbpVkA-AIYNVhbinsQOIkc8E_Srq944M
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEfwHr0NeRZ7A/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1731103250300?e=2147483647&v=beta&t=MtAUQORQbmP00cmRFCXNfqvslE5GpMMRsQygCa8EbCE
+  owner: person:adam-ferrari
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785529803526001UEKt
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/adamferrari
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:te-yasuhiroosaki
+  login: TE-YasuhiroOsaki
+  kind: user
+  url: https://github.com/TE-YasuhiroOsaki
+  name: Yasuhiro Osaki
+  followers: 4
+  public_repositories: 0
+  created_at: '2015-08-18T00:34:16Z'
+  contributions_last_year:
+    total: 3172
+    commits: 0
+    pull_requests: 0
+    issues: 0
+    reviews: 0
+  starred_repositories: 3
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  entity: person:yasuhiro-osaki
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: TE-YasuhiroOsaki
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/sammorrowdrums.bsky.social
+  platform: bluesky
+  handle: sammorrowdrums.bsky.social
+  url: https://bsky.app/profile/sammorrowdrums.bsky.social
+  display_name: Sam Morrow
+  bio: Software engineer at GitHub and pro drummer in a past life.
+  followers: 7
+  created_at: '2023-09-21T06:18:06Z'
+  owner: person:sam-morrow
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685606809874001rJOG
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685606809874001rJOG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: sammorrowdrums.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

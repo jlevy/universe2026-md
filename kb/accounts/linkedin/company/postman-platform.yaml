@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/postman-platform
+  platform: linkedin
+  handle: company/postman-platform
+  url: https://www.linkedin.com/company/postman-platform
+  display_name: Postman
+  bio: 'Postman is the world’s leading API platform. Postman''s features simplify each step of building
+    an API and streamline collaboration to help create better APIs—faster. More than 40 million developers
+    and 500,000 organizations across the globe use Postman today. Our customers are doing more and more
+    astounding things with the Postman product every day, and as a result, we are growing rapidly. Check
+    out our open positions if you’d like to learn more: https://www.postman.com/careers/'
+  website: https://www.postman.com/
+  followers: 576903
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQFf8sH83foEVg/company-logo_200_200/company-logo_200_200/0/1654794308958/postman_platform_logo?e=2147483647&v=beta&t=a5LsRCE_TyPzRMSE1RpVH8Mo3C3G7_DqW5Q1ZAt3ADo
+  owner: org:postman
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/ankit-sobti
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/pmmistry
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/talianassi
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/postman-platform
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

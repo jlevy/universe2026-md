@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:bitrise-io
+  login: bitrise-io
+  kind: organization
+  url: https://github.com/bitrise-io
+  name: Bitrise
+  bio: Continuous Integration and Continuous Delivery for mobile apps
+  location: Hungary
+  website: https://bitrise.io
+  public_repositories: 362
+  created_at: '2014-04-04T19:19:57Z'
+  pinned:
+  - repo:bitrise-io/bitrise
+  - repo:bitrise-io/bitrise.io
+  - repo:bitrise-io/bitrise-steplib
+  - repo:bitrise-io/build.issues
+  - repo:bitrise-io/bitrise-blog
+  top_repositories:
+  - repo:bitrise-io/android
+  - repo:bitrise-io/codesigndoc
+  - repo:bitrise-io/envman
+  entity: org:bitrise
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: bitrise-io
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

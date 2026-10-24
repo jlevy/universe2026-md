@@ -1,0 +1,27 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:jfrog
+  login: jfrog
+  kind: organization
+  url: https://github.com/jfrog
+  name: JFrog Ltd.
+  bio: Universal Software Supply Chain Platform for DevOps, Security, and MLOps
+  location: Israel
+  website: https://jfrog.com
+  public_repositories: 244
+  created_at: '2010-11-28T11:23:10Z'
+  top_repositories:
+  - repo:jfrog/project-examples
+  - repo:jfrog/jfrog-cli
+  - repo:jfrog/boost
+  entity: org:jfrog
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jfrog
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

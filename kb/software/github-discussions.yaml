@@ -1,0 +1,16 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:github-discussions
+  name: GitHub Discussions
+  aliases:
+  - GitHub Discussions
+  kind: github_product
+  vendor: org:github
+  product_term: term:github-product/discussions
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

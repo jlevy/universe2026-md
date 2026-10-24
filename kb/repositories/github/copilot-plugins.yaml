@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:github/copilot-plugins
+  full_name: github/copilot-plugins
+  url: https://github.com/github/copilot-plugins
+  description: The official GitHub Copilot plugins collection — MCP servers, skills, hooks, and other
+    extensibility tools for GitHub Copilot.
+  stars: 376
+  forks: 151
+  watchers: 14
+  open_issues: 9
+  stats_observed_at: '2026-10-24T19:10:13Z'
+  primary_language: PowerShell
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-01-21T19:25:42Z'
+  pushed_at: '2026-10-14T00:18:58Z'
+  owner_login: github
+  owner: gh:github
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ashleywolf
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: github/copilot-plugins
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

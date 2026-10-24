@@ -1,0 +1,361 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:bodhish-thomas
+  person: person:bodhish-thomas
+  brief_bio:
+    text: Bodhish Thomas is a full-stack developer in education and healthcare who works at the Open Healthcare
+      Network Foundation and received GitHub's OSS Grant in India. Thomas spoke at GitHub Universe 2025
+      in a session on collapsing the distance from idea to impact.
+    cites:
+    - event_bio
+    - current_affiliations
+    - linkedin_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: 938ce59428822f04c8218ce66f7540c764cbde79c70a31ab2c098eab17323635
+    stale: false
+  headline: Open Healthcare Network Foundation
+  current_roles:
+  - Open Healthcare Network Foundation
+  expertise:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Community
+    target: term:topic-2025/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Social impact
+    target: term:topic-2025/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  - label: Software Engineering
+    target: term:topic-2025/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/1616k
+  interests:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Discussions
+    target: term:github-product-2025/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Education
+    target: term:github-product-2025/education
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Enterprise/Admin
+    target: term:github-product-2025/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2025/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  - label: GitHub Codespaces
+    target: term:github-product-2025/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756853879506001I60w
+      ref: session:2025/1616k
+  education:
+  - school: T John Institute Of Technology
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  credentials:
+  - kind: honor
+    title: GitHub Grants for Open Source
+    issuer: Github
+    date: '2021-09-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: honor
+    title: Emerging Intellect of the Year Award by Epiphania - 2019
+    issuer: Epiphania - 2019
+    date: '2019-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: honor
+    title: Winner in Debugging
+    issuer: Avishkar 2016
+    date: '2016-10-01T00:00:00.000Z'
+    description: 2nd Place in Debugging Competition, Tech Fest Avishkar 2016
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: honor
+    title: Certificate of Honour
+    issuer: IIT Delhi
+    date: '2016-02-01T00:00:00.000Z'
+    description: Certificate Of Honour for Participating in the final rounds of RoboTryst-2015-16, IIT
+      Delhi
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: honor
+    title: Finalist PowerPoint Presentation
+    issuer: KERALA STATE CBSE KALOTSAV
+    date: '2011-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: honor
+    title: Chief Jury
+    issuer: Kerala Kids TV awards
+    date: '2010-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  spoken_languages:
+  - English
+  - Malayalam
+  - Hindi
+  - Tamil
+  - Kannada
+  activities:
+  - kind: project
+    title: knowledgebase.tech
+    detail: Modern no-code, open-source knowledge base builder · Nov 2021
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: mytemplate.xyz
+    detail: MyTemplate.xyz | No-Code Developer Website BuilderA No-Code developer website builder side
+      project created with ReScript.Open Source. No Sign-up. No Ads. No data collected · Jan 2021
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: Care
+    detail: A PMS created for real-time reporting and monitoring of health care infrastructure in a state.
+      It manages patient, facility, capacity, testing, and inventory data. · Mar 2020
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: Telemed
+    detail: A Ruby on Rails web app created to manage calls, patients, prescriptions, and reminders for
+      telemedicine. · Apr 2020
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: Awareness
+    detail: A multi-language serverless quiz app created with reason react. · Mar 2020
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: StopFaking
+    detail: A bot built on the Facebook messenger platform that can help you identify fake news shared
+      by others on Facebook · Dec 2018
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: Afterflood
+    detail: A verified crowd sourced data hub for information regarding all the Do's and don'ts, waste
+      management, personal hygiene and every other aspect which needs to be kept in mind while moving
+      back home after the flood · Aug 2018
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: OCCULT
+    detail: Augmented Reality Treasure Hunt based on famous locations in Bangalore. SAAS solution for
+      event organizers to host tech-based treasure hunt. · Nov 2017
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: Ayushma
+    detail: '''AYUSHMA'' your one-touch Healthcare assistant is a digital platform that links the patients,
+      doctors, hospitals, and insurance companies in a single go. · Mar 2017'
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: Cortex
+    detail: First ever dual character controlled single player infinite runner game. Integrated with multi
+      level gamification which could help the player to be ambidextrous · Dec 2016
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: The Stylist
+    detail: A stylist booking platform developed for salons and freelancing stylist to manage appointments
+      online built in 2016 · Aug 2016
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: Director of the Documentary
+    detail: '2015'
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: project
+    title: Editor, Documentary
+    detail: '2014'
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  - kind: organization
+    title: Afterflood
+    detail: A verified crowd sourced data hub for information regarding all the Do's and don'ts, waste
+      management, personal hygiene and every other aspect which needs to be kept in mind while moving
+      back home after the flood · Aug 2018 · Present
+    evidence:
+      url: https://www.linkedin.com/in/bodhish
+      observed_at: '2026-10-24T08:42:22Z'
+  recent_writing:
+  - title: Four Transformative Years at Open Healthcare Network
+    url: https://www.linkedin.com/pulse/four-transformative-years-open-healthcare-network-bodhish-thomas-gdwzc
+    published: '2024-03-09T00:00:00.000Z'
+    channel: linkedin
+    summary: As we commemorate the four-year journey of the Open Healthcare Network, we are filled with
+      a sense of awe and pride…
+  talks:
+  - session:2025/1616k
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692117640798001a8nk
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

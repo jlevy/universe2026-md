@@ -1,0 +1,403 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ed-summers
+  person: person:ed-summers
+  brief_bio:
+    text: Ed Summers is Head of Accessibility at GitHub and has written about data visualizations that
+      support tactile and auditory interaction. Summers spoke at GitHub Universe 2023, 2024 and 2025 and
+      speaks at GitHub Universe 2026 about accelerating accessibility with AI and automation.
+    cites:
+    - listed_role
+    - current_affiliations
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 449c1514feb735c21020c653e5f787ddad973f07850397d6edd46ad2af186dd8
+    stale: false
+  headline: Head of Accessibility at GitHub
+  current_roles:
+  - Head of Accessibility at GitHub
+  expertise:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/ai2440m
+    - ref: session:2023/dev2762l
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Machine Learning
+    target: term:topic-2023/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2440m
+  - label: Pair Programming
+    target: term:topic-2023/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Scrum
+    target: term:topic-2023/scrum
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Social Impact
+    target: term:topic-2023/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2762l
+  - label: Accessibility
+    target: term:topic-2024/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1734p
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1359d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1359d
+  - label: Social impact
+    target: term:topic-2025/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1359d
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1359d
+  - label: Accessibility
+    target: term:topic/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1634p
+  interests:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    weight: 0.78
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746196135093001RgYn
+      ref: session:2025/bld1359d
+  - label: Social Impact
+    target: term:topic-2023/social-impact
+    basis: session_facets
+    confidence: medium
+    weight: 0.78
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715387609641001xaRK
+      ref: session:2024/dev1734p
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746196135093001RgYn
+      ref: session:2025/bld1359d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746196135093001RgYn
+      ref: session:2025/bld1359d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746196135093001RgYn
+      ref: session:2025/bld1359d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777680901629001pB3n
+      ref: session:ldr1634p
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2023/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  - label: Human Factors
+    target: term:topic-2023/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686658273564001qfuz
+      ref: session:2023/ai2440m
+  - label: Issues
+    target: term:github-product-2023/issues
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693971687297001Vth0
+      ref: session:2023/dev2762l
+  credentials:
+  - kind: honor
+    title: Hands On! Award
+    issuer: National Braille Press
+    date: '2014-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/edsummersnc
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: honor
+    title: SAS CEO Award of Excellence
+    issuer: SAS
+    date: '2014-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/edsummersnc
+      observed_at: '2026-10-24T08:11:36Z'
+  - kind: honor
+    title: New Visions Award
+    issuer: Triangle Radio Reading Service
+    date: '2013-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/edsummersnc
+      observed_at: '2026-10-24T08:11:36Z'
+  publications:
+  - title: 'Reach for the Stars: Touch, Look, Listen, Learn'
+    venue: SAS Press
+    date: July 20, 2014
+    evidence:
+      url: https://www.linkedin.com/in/edsummersnc
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: Go Mobile with the ODS EPUB Destination
+    venue: SAS
+    date: March 1, 2013
+    evidence:
+      url: https://www.linkedin.com/in/edsummersnc
+      observed_at: '2026-10-24T08:11:36Z'
+  - title: Using SAS/GRAPH to Create Visualizations That Also Support Tactile and Auditory Interaction
+    venue: SAS
+    date: March 1, 2012
+    evidence:
+      url: https://www.linkedin.com/in/edsummersnc
+      observed_at: '2026-10-24T08:11:36Z'
+  recent_writing:
+  - title: What does the largest one-day drop in market value sound like?
+    url: https://www.linkedin.com/pulse/what-does-largest-one-day-drop-market-value-sound-like-ed-summers
+    published: '2018-08-02T00:00:00.000Z'
+    channel: linkedin
+    summary: I can’t see charts and graphs because I’m blind. So, I explore them with my ears.
+  - title: How we created a culture of accessibility at SAS
+    url: https://www.linkedin.com/pulse/how-we-created-culture-accessibility-sas-ed-summers
+    published: '2018-07-26T00:00:00.000Z'
+    channel: linkedin
+    summary: AccessWorld Magazine is like Consumer Reports for people with visual impairments or blindness.
+      The July 2018 back to…
+  talks:
+  - session:2023/ai2440m
+  - session:2023/dev2762l
+  - session:2024/dev1734p
+  - session:2025/bld1359d
+  - session:ldr1634p
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686657637413001PuMJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: edsummersnc
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686657637413001PuMJ
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686657637413001PuMJ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686657637413001PuMJ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

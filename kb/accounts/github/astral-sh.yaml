@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:astral-sh
+  login: astral-sh
+  kind: organization
+  url: https://github.com/astral-sh
+  name: Astral
+  bio: High-performance developer tools for the Python ecosystem, from @OpenAI.
+  location: United States of America
+  website: https://astral.sh
+  public_repositories: 70
+  created_at: '2022-10-17T02:12:50Z'
+  top_repositories:
+  - repo:astral-sh/uv
+  - repo:astral-sh/ruff
+  - repo:astral-sh/ty
+  linked_accounts:
+  - acct:x/astral_sh
+  entity: org:astral
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: astral-sh
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

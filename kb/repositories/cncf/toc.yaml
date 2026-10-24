@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:cncf/toc
+  full_name: cncf/toc
+  url: https://github.com/cncf/toc
+  description: ⚖️ The CNCF Technical Oversight Committee (TOC) is the technical governing body of the
+    CNCF Foundation.
+  homepage: https://cncf.io
+  stars: 1884
+  forks: 732
+  watchers: 216
+  open_issues: 118
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  primary_language: HTML
+  topics:
+  - cloud
+  - cloudnative
+  - cncf
+  archived: false
+  fork: false
+  created_at: '2015-12-07T19:29:57Z'
+  pushed_at: '2026-10-23T15:21:59Z'
+  owner_login: cncf
+  owner: gh:cncf
+  pinned_by:
+  - gh:cncf
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: castrojo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cncf/toc
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

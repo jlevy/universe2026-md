@@ -1,0 +1,137 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:greg-padak
+  person: person:greg-padak
+  brief_bio:
+    text: Greg Padak is Director of Product, Enterprise at GitHub, having joined as a solutions engineer
+      after early work on device drivers, virtualization and open source build systems. Padak spoke at
+      GitHub Universe 2025 about managing multiple organizations.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 29d7628802016b916e9c33f4448c9619c6b41d3dd81de2dfcb98e7b585682f8d
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1406b
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1406b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1406b
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1406b
+  interests:
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746214134069001ZH6a
+      ref: session:2025/aut1406b
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746214134069001ZH6a
+      ref: session:2025/aut1406b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746214134069001ZH6a
+      ref: session:2025/aut1406b
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746214134069001ZH6a
+      ref: session:2025/aut1406b
+  - label: GitHub Enterprise Server
+    target: term:github-product-2025/github-enterprise-server
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746214134069001ZH6a
+      ref: session:2025/aut1406b
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746214134069001ZH6a
+      ref: session:2025/aut1406b
+  education:
+  - school: Georgia Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/gpadak
+      observed_at: '2026-10-24T08:44:27Z'
+  publications:
+  - title: Nutanix Case Study at InComm
+    venue: Nutanix.com
+    description: How we partnered with Nutanix to revolutionize our development organization's ability
+      to accelerate their SDLC.
+    evidence:
+      url: https://www.linkedin.com/in/gpadak
+      observed_at: '2026-10-24T08:44:27Z'
+  talks:
+  - session:2025/aut1406b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697581259979001dVHc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

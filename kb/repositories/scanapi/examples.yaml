@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:scanapi/examples
+  full_name: scanapi/examples
+  url: https://github.com/scanapi/examples
+  description: ScanAPI examples
+  stars: 29
+  forks: 5
+  watchers: 14
+  open_issues: 5
+  stats_observed_at: '2026-10-24T19:12:20Z'
+  primary_language: HTML
+  topics:
+  - examples
+  - scanapi
+  - cumbucadev
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2020-05-24T11:18:10Z'
+  pushed_at: '2026-05-18T21:44:40Z'
+  owner_login: scanapi
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: camilamaia
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: scanapi/examples
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

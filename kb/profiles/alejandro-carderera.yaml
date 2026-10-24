@@ -1,0 +1,255 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alejandro-carderera
+  person: person:alejandro-carderera
+  brief_bio:
+    text: Alejandro Carderera is a staff applied researcher at GitHub working on Copilot, helping AI agents
+      review code and learn from past sessions, and holds a doctorate in machine learning from Georgia
+      Tech. Carderera speaks at GitHub Universe 2026 on Copilot memory.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - websites
+    - education
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 356dab07ff9a53615bbf11339ab3ff2f9a3fa833e010e3bd71c374fd329ead45
+    stale: false
+  headline: Staff Applied Researcher at GitHub
+  current_roles:
+  - Staff Applied Researcher at GitHub
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1372b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1372b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:alejandro-carderera
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:alejandro-carderera/socgs
+    - ref: repo:pokutta/lacg
+    - ref: repo:ericlincc/parameter-free-lacg
+    - ref: repo:zib-iol/cindy
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777557576923001fNOZ
+      ref: session:bld1372b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777557576923001fNOZ
+      ref: session:bld1372b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777557576923001fNOZ
+      ref: session:bld1372b
+  - label: AI
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/review-bench/ReviewBench
+      ref: repo:review-bench/reviewbench
+  - label: ai-code-review
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/review-bench/ReviewBench
+      ref: repo:review-bench/reviewbench
+  - label: benchmark
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/review-bench/ReviewBench
+      ref: repo:review-bench/reviewbench
+  - label: code-review
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/review-bench/ReviewBench
+      ref: repo:review-bench/reviewbench
+  - label: conditional-gradients
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ZIB-IOL/FrankWolfe.jl
+      ref: repo:zib-iol/frankwolfe.jl
+  - label: first-order-methods
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ZIB-IOL/FrankWolfe.jl
+      ref: repo:zib-iol/frankwolfe.jl
+  - label: frank-wolfe
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ZIB-IOL/FrankWolfe.jl
+      ref: repo:zib-iol/frankwolfe.jl
+  - label: julia
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ZIB-IOL/FrankWolfe.jl
+      ref: repo:zib-iol/frankwolfe.jl
+  - label: optimization
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ZIB-IOL/FrankWolfe.jl
+      ref: repo:zib-iol/frankwolfe.jl
+  open_source:
+  - repository: repo:zib-iol/frankwolfe.jl
+    relation: pinned
+    stars: 117
+    primary_language: Julia
+  - repository: repo:zib-iol/cindy
+    relation: pinned
+    stars: 9
+    primary_language: Python
+  - repository: repo:alejandro-carderera/socgs
+    relation: owner
+    stars: 0
+    primary_language: Python
+  - repository: repo:pokutta/lacg
+    relation: pinned
+    stars: 0
+    primary_language: Python
+  - repository: repo:ericlincc/parameter-free-lacg
+    relation: pinned
+    stars: 0
+    primary_language: Python
+  - repository: repo:review-bench/reviewbench
+    relation: contributor
+    stars: 73
+    primary_language: TypeScript
+  education:
+  - school: Georgia Institute of Technology
+    evidence:
+      url: https://www.linkedin.com/in/alejandrocarderera
+      observed_at: '2026-10-24T08:11:32Z'
+  credentials:
+  - kind: honor
+    title: Henry S. Sack Memorial Award
+    issuer: School of Applied and Engineering Physics at Cornell
+    date: '2016-06-01T00:00:00.000Z'
+    description: Awarded by the AEP School for the best academic performance during the 2 year Master
+      of Science program.
+    evidence:
+      url: https://www.linkedin.com/in/alejandrocarderera
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: honor
+    title: Collaborative Research Scholarship.
+    issuer: Ministerio de Educación, Cultura y Deporte
+    date: '2013-09-01T00:00:00.000Z'
+    description: Awarded in order to develop a research project under the Fluid Mechanics unit in the
+      department of Energy Engineering and Fluid Mechanics department of the Universidad Politécnica de
+      Madrid (UPM). The project studied the application of the Finite Element Method to Convection-Diffusion
+      problems with anisotropic adaptative meshes containing mobile frontiers.
+    evidence:
+      url: https://www.linkedin.com/in/alejandrocarderera
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: honor
+    title: Excelence Scholarship.
+    issuer: Community of Madrid.
+    date: '2010-09-01T00:00:00.000Z'
+    description: Granted due to academic performance during the last two years of High School, at the
+      institution Santa María del Pilar.
+    evidence:
+      url: https://www.linkedin.com/in/alejandrocarderera
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: certification
+    title: Generative AI with Large Language Models
+    issuer: DeepLearning.AI
+    date: Jun 2024
+    url: https://coursera.org/verify/LTE935U2U6GW
+    evidence:
+      url: https://www.linkedin.com/in/alejandrocarderera
+      observed_at: '2026-10-24T08:11:32Z'
+  spoken_languages:
+  - English
+  - French
+  - Spanish
+  talks:
+  - session:bld1372b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730130715640001vsRb
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: alejandro-carderera
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

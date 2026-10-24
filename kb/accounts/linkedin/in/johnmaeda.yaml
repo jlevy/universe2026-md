@@ -1,0 +1,56 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/johnmaeda
+  platform: linkedin
+  handle: in/johnmaeda
+  url: https://www.linkedin.com/in/johnmaeda
+  display_name: John Maeda
+  headline: AI @ GITHUB × MSFT / Laws of Simplicity + How To Speak Machine / LinkedIn Top US Influencer
+  bio: '&gt; People who can focus, get things done. People who can prioritize, get the right things done.
+    (2015) American technologist and product experience leader. Currently CVP Eng, GitHub Design and Microsoft
+    CoreAI Design; member Board of Directors MillerKnoll $MLKN. Author of five books including a gentle
+    intro to AI/ML "How To Speak Machine (Penguin / MIT Press)" and the "Laws of Simplicity (MIT Press)."
+    Represented in the permanent collections of the Museum of Modern Art, NYC and the Cartier Foundation,
+    Paris. First recipient of White House’s National Design Award for algorithmically-generated visualizations
+    informed by data. &gt; “Maeda is to design what Warren Buffett is to finance.” —Wired Magazine Formerly
+    chief experience / technology officer of Everbridge, Sonos board of directors, Wieden+Kennedy board
+    of directors, Kleiner Perkins design partner, MIT Media Lab data visualization lead, Automattic head
+    of design + inclusion, Publicis Sapient chief experience officer, and 16th president/ceo of Rhode
+    Island School of Design (RISD). Earned MS, MBA, PhD and awarded four honorary doctorates across fine
+    arts, liberal arts, and engineering. Early-stage investor in Canva, Walker &amp; Co, Typeform, Negative,
+    Superheroic, Tatcha, Flexport, Crave, Superpedestrian, Ipsy, Nylas, littleBits, Radical Candor, Voxel8
+    to advance greater startup diversity.Solo art exhibitions held in Tokyo (John Maeda: POST-DIGITAL),
+    Paris (John Maeda: NATURE), London (John Maeda: MYSPACE). Design credits include computational calendars
+    in Java for Shiseido, lighting and furniture for Sawaya y Moroni, footwear and streetwear line for
+    Reebok. Writings, interviews, or talks include WSJ, NYT, TED, BBC, WEF, COP, CNN, The Economist, Forbes,
+    USA Today, Fortune, Fast Company, Esquire. Honors include Esquire 75 Most Influential of the 21st
+    Century, Tribeca Film Festival Disruptor Award for launching the STEM to STEAM movement in the US,
+    White House National Design Award, Fast Company Masters of Innovation, Blouin Foundation Creative
+    Leadership Prize, AIGA Medal, TIME Best Twitter 140, Art Director''s Club Hall of Fame Inductee, The
+    Fortune Social Register, Raymond Loewy Foundation Prize, Alliance Graphique Internationale Member,
+    and LinkedIn Top 10 US Influencer.'
+  location: Redmond
+  followers: 472279
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQGfQRPxo8VLIw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1694989489092?e=2147483647&v=beta&t=Ts-HwdchgsJKtnlIewFyrpgxjQqze563u48_qMPDsDw
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQGeI9Dd7RCplg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1655231254516?e=2147483647&v=beta&t=HN4WXo3ebhpcemOelRKO9GA1C7u5uqV5dupkj4h0uww
+  owner: person:john-maeda
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1781817220425001qu6F
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/johnmaeda
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

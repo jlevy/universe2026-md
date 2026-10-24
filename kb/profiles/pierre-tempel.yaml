@@ -1,0 +1,476 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:pierre-tempel
+  person: person:pierre-tempel
+  brief_bio:
+    text: Pierre Tempel is Director of Product Management at GitHub, responsible for the detection and
+      AI-powered remediation engines behind GitHub Advanced Security, Copilot Code Review and Copilot
+      Autofix. Tempel spoke at GitHub Universe 2023 through 2025 and speaks at GitHub Universe 2026 about
+      agentic security.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 510c9561e40b6b89ffdef583623571cfcc426f7259c0a29fbb8876b74763585c
+    stale: false
+  headline: Director, Product Management at GitHub
+  location: Berlin, Germany
+  current_roles:
+  - Director, Product Management at GitHub
+  expertise:
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/sec1367s
+    - ref: session:2024/sec1972d
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2753d
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1367s
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1972d
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1397b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1397b
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1397b
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1397b
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CodeQL
+      ref: session:2025/sec1741m
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:pierre-tempel
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Code Security
+      ref: session:2025/sec1741m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:pierre-tempel
+  programming_languages:
+  - label: Nim
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:turbo/signals.nim
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:turbo/js
+  - label: C
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:turbo/libdjwaveform
+  - label: PLpgSQL
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:turbo/pg-shortkey
+  - label: C++
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:turbo/kpti-poc-collection
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715199684928001mQKz
+      ref: session:2024/sec1367s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724850006966001X7lz
+      ref: session:2024/sec1972d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715199684928001mQKz
+      ref: session:2024/sec1367s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724850006966001X7lz
+      ref: session:2024/sec1972d
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.9
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715199684928001mQKz
+      ref: session:2024/sec1367s
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724850006966001X7lz
+      ref: session:2024/sec1972d
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.78
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715199684928001mQKz
+      ref: session:2024/sec1367s
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777570438940001jRHI
+      ref: session:tru1397b
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777570438940001jRHI
+      ref: session:tru1397b
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777570438940001jRHI
+      ref: session:tru1397b
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1692906208509001tqhC
+      ref: session:2023/sec2753d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724850006966001X7lz
+      ref: session:2024/sec1972d
+  - label: web-security
+    basis: github_repositories
+    confidence: medium
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/turbo/openftp4
+      ref: repo:turbo/openftp4
+    - url: https://github.com/turbo/c4
+      ref: repo:turbo/c4
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777570438940001jRHI
+      ref: session:tru1397b
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777570438940001jRHI
+      ref: session:tru1397b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.3
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  open_source:
+  - repository: repo:turbo/js
+    relation: owner
+    stars: 2655
+    primary_language: JavaScript
+  - repository: repo:turbo/openftp4
+    relation: owner
+    stars: 653
+  - repository: repo:turbo/kpti-poc-collection
+    relation: owner
+    stars: 505
+    primary_language: C++
+  - repository: repo:turbo/pg-shortkey
+    relation: owner
+    stars: 488
+    primary_language: PLpgSQL
+  - repository: repo:turbo/c4
+    relation: owner
+    stars: 150
+  - repository: repo:turbo/libdjwaveform
+    relation: owner
+    stars: 12
+    primary_language: C
+  - repository: repo:turbo/signals.nim
+    relation: owner
+    stars: 4
+    primary_language: Nim
+  education:
+  - school: Landesschule Pforta
+    evidence:
+      url: https://www.linkedin.com/in/pierre-tempel
+      observed_at: '2026-10-24T08:15:29Z'
+  credentials:
+  - kind: certification
+    title: Scalability & System Design for Developers
+    issuer: Educative, Inc.
+    date: Apr 2021
+    url: https://www.educative.io/verify-certificate/765GMginnZgvqomlgI2zvVjBOxKXF3
+    evidence:
+      url: https://www.linkedin.com/in/pierre-tempel
+      observed_at: '2026-10-24T08:15:29Z'
+  - kind: certification
+    title: Lean Product Management
+    issuer: Educative, Inc.
+    date: Mar 2021
+    url: https://www.educative.io/verify-certificate/DR5gxyCDgEkE9LZ01sBoOyKAw2NmFG
+    evidence:
+      url: https://www.linkedin.com/in/pierre-tempel
+      observed_at: '2026-10-24T08:15:29Z'
+  spoken_languages:
+  - Deutsch
+  - Englisch
+  recent_writing:
+  - title: Creating Alpine.js Components in Nim
+    url: https://summarity.com/nim-alpine
+    published: '2023-12-27T00:00:00Z'
+    channel: blog
+  - title: 'Never Down: Implementing Auto Fallback in Caddy'
+    url: https://summarity.com/caddy-fallback
+    published: '2023-12-26T00:00:00Z'
+    channel: blog
+  - title: GitHub code scanning autofix demo
+    url: https://summarity.com/autofix-demo
+    published: '2023-11-30T00:00:00Z'
+    channel: blog
+  - title: Building a Hybrid/AI Search Engine for Non-fiction Content
+    url: https://summarity.com/findsight-talk
+    published: '2023-04-18T00:00:00Z'
+    channel: blog
+  - title: 'Introducing: Findsight'
+    url: https://summarity.com/findsight
+    published: '2023-04-05T00:00:00Z'
+    channel: blog
+  - title: SQLite-only Rate Limiting
+    url: https://summarity.com/sqlite-rate-limit
+    published: '2023-04-02T00:00:00Z'
+    channel: blog
+  - title: You're using the wrong Apple (Silicon) Cores
+    url: https://summarity.com/apple-silicon-perf
+    published: '2023-03-12T00:00:00Z'
+    channel: blog
+  - title: Hypothetical Embeddings Explained
+    url: https://summarity.com/hyde
+    published: '2023-03-11T00:00:00Z'
+    channel: blog
+  - title: Nim 2.0 on Apple Silicon
+    url: https://summarity.com/nim-2-m1
+    published: '2023-01-15T00:00:00Z'
+    channel: blog
+  - title: Baking Vertex Animations into Alembic Files
+    url: https://summarity.com/bake-mesh-sequence-alembic
+    published: '2022-12-31T00:00:00Z'
+    channel: blog
+  talks:
+  - session:2023/sec2753d
+  - session:2024/sec1367s
+  - session:2024/sec1972d
+  - session:2025/sec1741m
+  - session:tru1397b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047674656001ZiRw
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: turbo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047674656001ZiRw
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047674656001ZiRw
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047674656001ZiRw
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

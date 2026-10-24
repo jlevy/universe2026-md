@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:edsummersnc
+  login: edsummersnc
+  kind: user
+  url: https://github.com/edsummersnc
+  name: Ed Summers
+  company: GitHub
+  bio: Head of Accessibility at GitHub - Empowering people with disabilities to innovate and collaborate
+  followers: 47
+  public_repositories: 0
+  created_at: '2022-06-26T19:30:24Z'
+  contributions_last_year:
+    total: 2
+    commits: 0
+    pull_requests: 0
+    issues: 0
+    reviews: 2
+  starred_repositories: 2
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  entity: person:ed-summers
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: edsummersnc
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

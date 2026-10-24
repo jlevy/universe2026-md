@@ -1,0 +1,220 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jelena-laketic
+  person: person:jelena-laketic
+  brief_bio:
+    text: Jelena Laketić, now at EPAM Systems, was the first Distinguished Engineer at Thomson Reuters
+      and created its Distinguished Engineer program. Laketić spoke at GitHub Universe 2024 about Thomson
+      Reuters' journey with GitHub Copilot from assessment to adoption.
+    cites:
+    - listed_role
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: b25c1f2a53f00d60a7957fe760a31d8f7a1f9d42a1cf1c83aa46c9389023f907
+    stale: false
+  headline: EPAM Systems
+  current_roles:
+  - EPAM Systems
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1469b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1469b
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1469b
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1469b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1469b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1469b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1469b
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715295536563001XNBb
+      ref: session:2024/ai1469b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715295536563001XNBb
+      ref: session:2024/ai1469b
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715295536563001XNBb
+      ref: session:2024/ai1469b
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715295536563001XNBb
+      ref: session:2024/ai1469b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715295536563001XNBb
+      ref: session:2024/ai1469b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715295536563001XNBb
+      ref: session:2024/ai1469b
+  education:
+  - school: Faculty of Technical Sciences, University of Novi Sad
+    evidence:
+      url: https://www.linkedin.com/in/jelenalaketic
+      observed_at: '2026-10-24T08:44:45Z'
+  credentials:
+  - kind: certification
+    title: Women on Boards
+    issuer: IMD
+    date: Sep 2025
+    evidence:
+      url: https://www.linkedin.com/in/jelenalaketic
+      observed_at: '2026-10-24T08:44:45Z'
+  - kind: certification
+    title: ISPMA Certified Software Product Manager
+    issuer: ISPMA
+    date: Sep 2019
+    evidence:
+      url: https://www.linkedin.com/in/jelenalaketic
+      observed_at: '2026-10-24T08:44:45Z'
+  - kind: certification
+    title: Ascent, Key Talent & Leadership Program
+    issuer: UBS
+    date: Jan 2016
+    evidence:
+      url: https://www.linkedin.com/in/jelenalaketic
+      observed_at: '2026-10-24T08:44:45Z'
+  - kind: certification
+    title: Goethe-Zertifikat C1
+    issuer: Goethe-Institut e.V.
+    date: Sep 2005
+    evidence:
+      url: https://www.linkedin.com/in/jelenalaketic
+      observed_at: '2026-10-24T08:44:45Z'
+  spoken_languages:
+  - English
+  - German - C1
+  - Serbian
+  activities:
+  - kind: volunteering
+    title: President and Board Member
+    detail: 'Verein CoderDojo Zug · Science and Technology · Oct 2022 · - Sep 2024 · 2 years · Association
+      (in German: Verein) CoderDojo Zug was a non-profit organisation (founded in 2016); run by volunteers,
+      with the main objective of providing young people tools and guidelines they need to learn how to
+      code. The association was a spin-off of CoderDojo, the global movement of free, volunteer-led, community-based
+      programming clubs for young people. Anyone aged seven to seventeen can join CoderDojo sessions to
+      learn to code, build a website, create an app or a game, and explore… Show more Association (in
+      German: Verein) CoderDojo Zug was a non-profit organisation (founded in 2016); run by volunteers,
+      with the main objective of providing young people tools and guidelines they need to learn how to
+      code. The association was a spin-off of CoderDojo, the global movement of free, volunteer-led, community-based
+      programming clubs for young people. Anyone aged seven to seventeen can join CoderDojo sessions to
+      learn to code, build a website, create an app or a game, and explore technology in an informal,
+      creative, and social environment. Verein CoderDojo Zug organized a few CoderDojos annually, advertising
+      them through their website: https://swisscoderdojo.org/. The organisation was closed in September
+      2024. Show less · Oct 2022'
+    evidence:
+      url: https://www.linkedin.com/in/jelenalaketic
+      observed_at: '2026-10-24T08:44:45Z'
+  - kind: organization
+    title: Board Owl
+    detail: Board Owl revolutionizes board recruitment by providing a digital matching platform that connects
+      organizations with top-tier talent quickly and seamlessly. · Jan 2023 · Present
+    evidence:
+      url: https://www.linkedin.com/in/jelenalaketic
+      observed_at: '2026-10-24T08:44:45Z'
+  - kind: organization
+    title: Mensa International
+    detail: Mensa is the world’s largest, oldest, and most famous high-IQ society – a thriving global
+      community of around 150,000 highly intelligent people. In order to join Mensa, you have to take
+      a Mensa-approved intelligence test that has been properly administered and supervised. And on that
+      test, you need to attain a score that places you within the upper 2% of the general population.
+      There are active Mensa organizations on every continent except Antarctica. · Aug 1999 · Present
+    evidence:
+      url: https://www.linkedin.com/in/jelenalaketic
+      observed_at: '2026-10-24T08:44:45Z'
+  talks:
+  - session:2024/ai1469b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715295951362001hnxv
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

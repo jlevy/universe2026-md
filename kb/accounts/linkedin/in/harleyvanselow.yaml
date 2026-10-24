@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/harleyvanselow
+  platform: linkedin
+  handle: in/harleyvanselow
+  url: https://www.linkedin.com/in/harleyvanselow
+  display_name: Harley Vanselow
+  bio: I'm a computer engineer working as a software developer on Okta's Engineering Sevices team
+  location: New York
+  followers: 175
+  connections: 167
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQEd89U3pZu8Vw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1550709960002?e=2147483647&v=beta&t=C3Qd4fRwLk0VVVw2VRAkcIYv5MZbtU6TNo2zhuNHO1M
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:harley-vanselow
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1756303340664001Wyoc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/harleyvanselow
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

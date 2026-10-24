@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/provation-medical
+  platform: linkedin
+  handle: company/provation-medical
+  url: https://www.linkedin.com/company/provation-medical
+  display_name: Provation
+  bio: Provation is revolutionizing the way clinicians and care teams around the world work together to
+    deliver quality healthcare for all. From pre-procedure patient intake to post-procedure follow-up,
+    and everything in between, Provation’s data-driven solutions are proven to improve clinical workflows,
+    staff satisfaction, and the patient experience. As the leading provider of integrated procedure documentation
+    and workflow automation solutions, Provation is trusted globally in more than 5,000 hospitals, ambulatory
+    surgery centers (ASCs), anesthesia groups, and medical offices, including nearly all of the Best Hospitals
+    in the United States. In 2021, Provation was acquired by Fortive Corporation, a Fortune 1000 company
+    that builds essential technology and accelerates transformation in high-impact fields like workplace
+    safety, engineering, and healthcare. For information on career opportunities, please visit https://careers.fortive.com/provation/
+  website: https://www.provationmedical.com/
+  followers: 9992
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQHaNasjn2ClZw/company-logo_200_200/company-logo_200_200/0/1656692083753/provation_medical_logo?e=2147483647&v=beta&t=fZiCXwRBQilGnOUaoBjdwZOXf98fQfSQ3c4QijBXnYU
+  owner: org:provation
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/paulsnider
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/provation-medical
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

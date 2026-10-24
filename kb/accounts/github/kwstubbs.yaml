@@ -1,0 +1,55 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:kwstubbs
+  login: Kwstubbs
+  kind: user
+  url: https://github.com/Kwstubbs
+  name: Kevin Stubbings
+  location: badbeef
+  followers: 44
+  public_repositories: 10
+  created_at: '2015-03-10T02:55:57Z'
+  contributions_last_year:
+    total: 375
+    commits: 34
+    pull_requests: 12
+    issues: 5
+    reviews: 13
+  starred_repositories: 13
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:radareorg/radare2
+  - repo:imagemagick/imagemagick
+  - repo:net-snmp/net-snmp
+  - repo:github/codeql
+  - repo:uptrain-ai/uptrain
+  organization_logins:
+  - 708innovations
+  entity: person:kevin-stubbings
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Kwstubbs
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

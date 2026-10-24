@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:grafana/tempo
+  full_name: grafana/tempo
+  url: https://github.com/grafana/tempo
+  description: Grafana Tempo is a high volume, minimal dependency distributed tracing backend.
+  homepage: https://grafana.com/oss/tempo/
+  stars: 5544
+  forks: 776
+  watchers: 172
+  open_issues: 74
+  stats_observed_at: '2026-10-24T19:10:19Z'
+  primary_language: Go
+  topics:
+  - distributed-tracing
+  - grafana
+  - tempo
+  - traces
+  license: AGPL-3.0
+  archived: false
+  fork: false
+  created_at: '2020-01-24T18:05:02Z'
+  pushed_at: '2026-10-24T17:13:56Z'
+  owner_login: grafana
+  owner: gh:grafana
+  pinned_by:
+  - gh:grafana
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grafana/tempo
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

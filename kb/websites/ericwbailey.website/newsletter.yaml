@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:ericwbailey.website/newsletter
+  url: https://ericwbailey.website/newsletter
+  kind: personal
+  title: SC 2.4.4 • Buttondown
+  description: A linkdump of things I find while being extremely online.Shared every Wednesday.
+  owner: person:eric-bailey
+  link_basis:
+  - mastodon_verified
+  fetch_status: ok
+  http_status: 200
+  identity_links:
+  - https://bsky.app/profile/ericwbailey.website
+  - https://social.ericwbailey.website/@eric
+  - https://ericwbailey.website/
+  feeds:
+  - https://buttondown.com/ericwbailey/rss
+  linked_accounts:
+  - acct:bluesky/ericwbailey.website
+  - acct:mastodon/eric@social.ericwbailey.website
+  sources:
+  - system: mastodon
+    url: https://social.ericwbailey.website/@eric
+    record_id: eric@social.ericwbailey.website
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json
+  - system: website
+    url: https://buttondown.com/ericwbailey
+    record_id: https://ericwbailey.website/newsletter
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/lessleydennington
+  platform: linkedin
+  handle: in/lessleydennington
+  url: https://www.linkedin.com/in/lessleydennington
+  display_name: Lessley Dennington
+  location: Denver
+  followers: 1080
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFv-K-sEEDU5Q/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1721401815078?e=2147483647&v=beta&t=SIDKHwocLvygFOzub_3Mrd2G5Ep_ctEdQXlE8BRFnSc
+  owner: person:lessley-dennington
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726852869047001M5Qu
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/lessleydennington
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

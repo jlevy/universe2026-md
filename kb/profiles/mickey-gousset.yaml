@@ -1,0 +1,403 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mickey-gousset
+  person: person:mickey-gousset
+  brief_bio:
+    text: Mickey Gousset is a Staff DevOps Architect on GitHub's FDE team, formerly at Microsoft, who
+      blogs about DevOps, GitHub and AI and has written on application lifecycle management. Gousset spoke
+      at GitHub Universe 2024 and speaks at GitHub Universe 2026 about configuring GitHub Copilot to own
+      the work.
+    cites:
+    - listed_role
+    - current_affiliations
+    - github_bio
+    - x_bio
+    - websites
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 2cad030a738bd72671e37cfa2264e170f7e1b1abb98f77224461150902ff248b
+    stale: false
+  headline: Staff DevOps Architect | ODST | FDE at GitHub
+  location: Tupelo, MS
+  current_roles:
+  - Staff DevOps Architect | ODST | FDE at GitHub
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai1458d
+    - ref: session:2024/sec1953w
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai1458d
+    - ref: session:2024/sec1953w
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai1458d
+    - ref: session:2024/sec1953w
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai1458d
+    - ref: session:2024/sec1953w
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1072s
+    - ref: session:bld1640w
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1458d
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1953w
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1072s
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1072s
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1072s
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Dependabot
+      ref: session:2024/sec1953w
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1072s
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: session:2024/sec1953w
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Codespaces
+      ref: session:2024/sec1953w
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1458d
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1640w
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1072s
+  - label: TypeScript
+    target: software:typescript
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: TypeScript
+      ref: session:bld1072s
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:bld1640w
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715290132344001eMsA
+      ref: session:2024/ai1458d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715290132344001eMsA
+      ref: session:2024/ai1458d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715290132344001eMsA
+      ref: session:2024/ai1458d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715290132344001eMsA
+      ref: session:2024/ai1458d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777682063458001zHx2
+      ref: session:bld1640w
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715290132344001eMsA
+      ref: session:2024/ai1458d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715290132344001eMsA
+      ref: session:2024/ai1458d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777682063458001zHx2
+      ref: session:bld1640w
+  - label: Agile practices
+    target: term:topic/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775863398105001Nya7
+      ref: session:bld1072s
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724364987554001OSVg
+      ref: session:2024/sec1953w
+  open_source:
+  - repository: repo:mickeygousset/mickeygousset
+    relation: owner
+    stars: 11
+  - repository: repo:joshjohanning/github-misc-scripts
+    relation: contributor
+    stars: 238
+    primary_language: Shell
+  - repository: repo:devopselvis/my-github-actions-presentation
+    relation: contributor
+    stars: 41
+    primary_language: Shell
+  - repository: repo:devopselvis/copilot-autofix-1
+    relation: contributor
+    stars: 0
+    primary_language: Python
+  - repository: repo:devopselvis/rulesets-demo
+    relation: contributor
+    stars: 0
+  - repository: repo:devopselvis/ruleset-demo-app1
+    relation: contributor
+    stars: 0
+  credentials:
+  - kind: certification
+    title: Daniel Pink on Motivation
+    issuer: LinkedIn
+    date: Jan 2022
+    url: https://www.linkedin.com/learning/certificates/4dd848610f46c346725cddf444bec2f6feccc2f28dabca6dfc686caaebb3342c
+    evidence:
+      url: https://www.linkedin.com/in/mickeygousset
+      observed_at: '2026-10-24T08:15:51Z'
+  - kind: certification
+    title: 'Git: Branches, Merges, and Remotes'
+    issuer: LinkedIn
+    date: Oct 2019
+    url: https://www.linkedin.com/learning/certificates/7ee9df3e227d63401babdb7a224d272561c78a991fe8d8091bf988790a4d973c
+    evidence:
+      url: https://www.linkedin.com/in/mickeygousset
+      observed_at: '2026-10-24T08:15:51Z'
+  publications:
+  - title: Professional Application Lifecycle Management with Visual Studio 2013
+    venue: Wiley
+    date: April 7, 2013
+    description: Ramp up your software development with this comprehensive resource Microsoft′s Application
+      Lifecycle Management (ALM) makes software development easier and now features support for iOS, MacOS,
+      Android, and Java development. If you are an application developer, some of the important factors
+      you undoubtedly consider in selecting development frameworks and tools include agility, seamless
+      collaboration capabilities, flexibility, and ease of use.
+    evidence:
+      url: https://www.linkedin.com/in/mickeygousset
+      observed_at: '2026-10-24T08:15:51Z'
+  talks:
+  - session:2024/ai1458d
+  - session:2024/sec1953w
+  - session:bld1072s
+  - session:bld1640w
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715290358277001IuU9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: mickeygousset
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715290358277001IuU9
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

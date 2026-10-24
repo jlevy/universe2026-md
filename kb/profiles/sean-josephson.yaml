@@ -1,0 +1,266 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sean-josephson
+  person: person:sean-josephson
+  brief_bio:
+    text: Sean Josephson works at Juniper Square and was previously Senior Manager of Security Operations
+      at VMware. Josephson spoke at GitHub Universe 2023 about VMware's approach to source code security
+      with GitHub.
+    cites:
+    - current_affiliations
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 7af0f797f896a7165753c4430a904b0deee787579704c14c0ecc3c201d70a78b
+    stale: false
+  headline: Juniper Square
+  current_roles:
+  - Juniper Square
+  expertise:
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2711g
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2711g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2711g
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2711g
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2711g
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2711g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2711g
+  interests:
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  - label: Discussions
+    target: term:github-product-2023/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  - label: Open source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686945398642001P70k
+      ref: session:2023/sec2711g
+  credentials:
+  - kind: certification
+    title: AWS Certified Solutions Architect - Professional
+    issuer: Amazon Web Services
+    date: Jul 2014
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: AWS Certified SysOps Administrator - Associate
+    issuer: Amazon Web Services
+    date: Jun 2014
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Microsoft MCSD
+    issuer: Kaplan
+    date: Sep 2013
+    url: http://www.microsoft.com/learning/en-us/mcsd-certification.aspx
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Cisco CCNA
+    issuer: Pearson VUE
+    date: Aug 2013
+    expires: Aug 2016
+    url: http://www.cisco.com/web/learning/certifications/associate/ccna/index.html
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: (ISC)² CCFP
+    issuer: Pearson VUE
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: First Aid
+    issuer: American Red Cross
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: 'GPEN: GIAC Penetration Tester'
+    issuer: Pearson VUE
+    url: http://www.giac.org/certification/penetration-tester-gpen
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: 'Microsoft MCITP: Enterprise Administrator'
+    issuer: Prometric
+    url: http://www.microsoft.com/learning/en-us/mcitp-certification.aspx
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: Microsoft MCSE
+    issuer: Prometric
+    url: http://www.microsoft.com/learning/en-us/mcse-certification.aspx
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  - kind: certification
+    title: vCP510
+    issuer: Pearson VUE
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  publications:
+  - title: 'Safeguarding software integrity: VMware''s approach to source code security with GitHub'
+    venue: GitHub
+    date: November 9, 2023
+    description: VMware has a very large software footprint, and currently, all its open source projects
+      are hosted on GitHub. GitHub and its services allow VMware's engineering staff to be proactive with
+      code security and secret management—two areas, if mishandled, can significantly impact customers
+      and revenue. In this session, we will be taking a deep dive into source code security and how VMware
+      protects its customers and IP with GitHub SaaS.
+    evidence:
+      url: https://www.linkedin.com/in/seanj
+      observed_at: '2026-10-24T08:47:09Z'
+  talks:
+  - session:2023/sec2711g
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686679003722001xuxm
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

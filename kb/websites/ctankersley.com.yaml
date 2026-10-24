@@ -1,0 +1,24 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:ctankersley.com
+  url: http://ctankersley.com/
+  kind: personal
+  owner: person:chris-tankersley
+  link_basis:
+  - x_profile
+  fetch_status: error
+  sources:
+  - system: brightdata
+    url: https://x.com/dragonmantank
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: http://ctankersley.com/
+    record_id: http://ctankersley.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

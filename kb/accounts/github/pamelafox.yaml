@@ -1,0 +1,197 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:pamelafox
+  login: pamelafox
+  kind: user
+  url: https://github.com/pamelafox
+  name: Pamela Fox
+  company: '@microsoft '
+  bio: Cloud Advocate in Python @ Microsoft
+  location: California
+  website: https://www.pamelafox.org
+  followers: 4067
+  public_repositories: 168
+  created_at: '2010-06-05T00:29:54Z'
+  profile_readme: "I'm Pamela Fox, a Cloud Advocate in Python at Microsoft. \U0001F40D ☁️ \n\n**Jump to:**\
+    \ [Talks](#upcoming-talks) | [Skills](#agent-skills) | [Azure](#azure-related-samples) | [MCP](#mcp-related-samples)\
+    \ | [Agents](#personal-agentic-helpers) | [Templates](#python-templates-with-devcontainers) | [Education](#educational-tools-build-with-pyodide-in-browser-python)\
+    \ | [Frontend](#frontend-packages)\n\n## Upcoming talks\n\n| Event | Location | Date |\n|---|---|---|\n\
+    | [Python + AI Weekly Office Hours](https://aka.ms/pythonai/oh/links) | Online (Foundry Discord) |\
+    \ Weekly, Tuesdays @ 11 AM PT |\n| [AGNTCon+MCPCon](https://events.linuxfoundation.org/agntcon-mcpcon-north-america/program/schedule/)\
+    \ | San Jose | October 22-23 |\n| [GitHub Universe](https://githubuniverse.com/) | San Francisco |\
+    \ October 28-29 |\n| [Microsoft Ignite](https://ignite.microsoft.com/en-US/sessions?wt.mc_ID=msignite26_ciarmar_corp_np_eml_email_Email_AllSessionCat_0427&search=pamela&sortBy=relevance)\
+    \ | San Francisco | November 17-20 |\n| [PyLadies Con](https://2026.conference.pyladies.com/) | Online\
+    \ | Dec 5-7 | \n| [AI Tour](https://aitour.microsoft.com/flow/microsoft/seattle27/citylanding/page/cityhome)\
+    \ | Seattle | Dec 9 |\n\n## Agent skills\n\nSee [agentskills.io](https://agentskills.io/) if you're\
+    \ new to skills.\n\n| Skill | Dependencies |\n| --- | --- |\n| [recap-my-week](https://github.com/pamelafox/recap-my-week)\
+    \ | GitHub MCP, X MCP, workIQ MCP |\n| [comedy-roast-skill](https://github.com/pamelafox/comedy-roast-skill)\
+    \ | GitHub MCP, X MCP, workIQ MCP |\n| [presentation-skills](https://github.com/pamelafox/presentation-skills)\
+    \ | yt-dlbp, ffmpeg, etc. |\n| [review-pr-comments](https://github.com/pamelafox/review-pr-comments)\
+    \ | GitHub API/MCP/gh |\n\n## Azure-related samples\n\n| Tables        | Python libraries | Azure\
+    \ services  | [AZD?](https://learn.microsoft.com/azure/developer/azure-developer-cli/overview) | AI?\
+    \ |\n| ------------- |:-------------| :-----| :- | :- |\n| [iqdeepdive](https://github.com/microsoft/iqdeepdive)\
+    \ | agent-framework | Foundry IQ, Work IQ, Fabric IQ | ✅ | ✅\n| [python-stack-foundry-models](https://github.com/pamelafox/python-stack-foundry-models)\
+    \ | agent-framework,pydantic-ai,langchain | Foundry Models (Claude/OpenAI) | ✅ | ✅  \n| [model-swap-workshop](https://github.com/pamelafox/model-swap-workshop)\
+    \ | openai | Foundry Models | - | ✅  \n| [foundry-hosted-agentframework-demos](https://github.com/Azure-Samples/foundry-hosted-agentframework-demos)\
+    \ | agent-framework | Foundry Agents | ✅ | ✅  \n| [foundry-hosted-langchain-demos](https://github.com/Azure-Samples/foundry-hosted-langchain-demos)\
+    \ | langchain | Foundry Agents | ✅ | ✅  \n| [python-agentframework-demos](https://github.com/Azure-Samples/python-agentframework-demos/)\
+    \ | agent-framework | Azure OpenAI | ✅ | ✅ \n| [python-foundryagent-demos](https://github.com/pamelafox/python-foundryagent-demos/)\
+    \ | azure-ai-projects | Foundry Agents, AI Search | ✅ | ✅ \n| [issue-triager-agent](https://github.com/pamelafox/issue-triager-agent)\
+    \ | Langgraph | OpenAI | ✅ | ✅ \n| [postgresql-extension-playground](https://github.com/Azure-Samples/postgresql-extension-playground)\
+    \ | None | PostgreSQL Flexible Server | ✅ | ✅ \n| [secure-ai-app-build-demo](https://github.com/microsoft/Build25-BRK234)\
+    \ | OpenAI | Azure OpenAI, Container Apps, Front Door, VNet | ✅ | ✅ \n| [python-ai-agent-frameworks-demos](https://github.com/Azure-Samples/python-ai-agent-frameworks-demos/)\
+    \ | Many! | Azure AI | ✅ | ✅ \n| [nim-on-azure-serverless-gpus-demos](https://github.com/Azure-Samples/nim-on-azure-serverless-gpus-demos)\
+    \ | Many! | Azure Container Apps Serverless GPUs | - | ✅ \n| [deepseek-python](https://github.com/Azure-Samples/deepseek-python)\
+    \ | Azure AI, Quart | Container Apps, Azure AI | ✅ | ✅ \n| [rag-postgres-openai-python](https://github.com/Azure-Samples/rag-postgres-openai-python/)\
+    \ | OpenAI, FastAPI, pgvector | Container Apps, Azure OpenAI, PostgreSQL Flexible Server | ✅ | ✅ \n\
+    | [azure-search-openai-demo](https://github.com/Azure-Samples/azure-search-openai-demo) | OpenAI,\
+    \ Quart | App Service, Azure AI Search | ✅ | ✅ \n| [aisearch-openai-rag-audio](https://github.com/Azure-Samples/aisearch-openai-rag-audio)\
+    \ | Azure Search SDK | Azure AI Search, Azure OpenAI, Container Apps | ✅ | ✅ \n| [image-search-aisearch](https://github.com/Azure-Samples/image-search-aisearch)\
+    \ | Azure Search SDK | Azure AI Search, Azure AI Vision, Container Apps | ✅ | ✅ \n| [openai-chat-vision-quickstart](https://github.com/Azure-Samples/openai-chat-vision-quickstart)\
+    \ | OpenAI, Quart | Azure OpenAI, Container Apps, Container Registry | ✅ | ✅ \n| [openai-chat-app-quickstart](https://github.com/Azure-Samples/openai-chat-app-quickstart)\
+    \ | OpenAI, Quart | Azure OpenAI, Container Apps, Container Registry | ✅ | ✅ \n| [openai-chat-app-entra-auth-local](https://github.com/Azure-Samples/openai-chat-app-entra-auth-local)\
+    \ | OpenAI, Quart, Quart-Session, MSAL | Azure OpenAI, Microsoft Entra, Azure Cache for Redis, Container\
+    \ Apps | ✅ | ✅ \n| [openai-chat-app-entra-auth-builtin](https://github.com/Azure-Samples/openai-chat-app-entra-auth-builtin)\
+    \ | OpenAI, Quart | Azure OpenAI, Microsoft Entra, Container Apps | ✅ | ✅ \n| [containerapps-builtinauth-bicep](https://github.com/Azure-Samples/containerapps-builtinauth-bicep)\
+    \ | Flask | Container Apps, Microsoft Entra | ✅ | -\n| [appservice-builtinauth-bicep](https://github.com/Azure-Samples/appservice-builtinauth-bicep)\
+    \ | Flask | App Service, Microsoft Entra | ✅ | -\n| [azure-openai-entity-extraction](https://github.com/Azure-Samples/azure-openai-entity-extraction)\
+    \ | OpenAI, BeautifulSoup, PyMuPDF | Azure OpenAI |  ✅ | ✅ \n| [openai-chat-backend-fastapi](https://github.com/Azure-Samples/openai-chat-backend-fastapi)\
+    \ | OpenAI, FastAPI | Container Apps, Container Registry | ✅ | ✅ \n| [python-openai-demos](https://github.com/Azure-Samples/python-openai-demos)\
+    \ | OpenAI | Azure OpenAI | - | ✅ \n| [vector-embeddings-demos](https://github.com/Azure-Samples/vector-embeddings-demos)\
+    \ | OpenAI, hnswlib | Azure OpenAI | ✅ | ✅ \n| [ai-quality-safety-demos](https://github.com/Azure-Samples/ai-quality-safety-demos)\
+    \ | OpenAI, Azure AI Evaluations | Azure OpenAI, Azure AI Project | ✅ | ✅ \n| [azure-openai-keyless](https://github.com/Azure-Samples/azure-openai-keyless)\
+    \ | OpenAI | Azure OpenAI | ✅ | ✅ \n| [azure-postgres-pgvector-python](https://github.com/Azure-Samples/azure-postgres-pgvector-python)\
+    \ | pgvector | PostgreSQL Flexible Server | ✅ | -\n| [rag-with-azure-ai-search-notebooks](https://github.com/Azure-Samples/rag-with-azure-ai-search-notebooks)\
+    \ | openai | Azure AI Search | - | - |\n| [flask-charts-api-container-app](https://github.com/pamelafox/flask-charts-api-container-app)\
+    \ | Flask, APIFlask, gunicorn | Container Apps,  Container Registry, CDN  | ✅ | - | \n| [flask-gallery-container-app](https://github.com/pamelafox/flask-gallery-container-app)\
+    \ | Flask, gunicorn | Container Apps,  Container Registry, CDN  | ✅ | -\n| [flask-surveys-container-app](https://github.com/pamelafox/flask-surveys-container-app)\
+    \ | Flask, gunicorn, SQLAlchemy, psycopg2  | Container Apps, Container Registry, PostGres Flexible\
+    \ Server, Key Vault | ✅ | -\n| [simple-flask-api-container](https://github.com/pamelafox/simple-flask-api-container)\
+    \ | Flask | Container Apps, Container Registry | ✅ | -\n| [simple-flask-server-container](https://github.com/pamelafox/simple-flask-server-container)\
+    \ | Flask | Container Apps, Container Registry | ✅ | -\n| [staticmaps-function](https://github.com/pamelafox/staticmaps-function)\
+    \ | FastAPI, py-staticmaps, OpenTelemetry | Functions, CDN  | ✅ | -\n| [simple-fastapi-container](https://github.com/pamelafox/simple-fastapi-container)\
+    \ | FastAPI | Container Apps |  ✅ | -\n| [fastapi-azure-function-apim](https://github.com/pamelafox/fastapi-azure-function-apim)\
+    \ | FastAPI | Functions, API Managament | ✅ | -\n| [fastapi-on-azure-functions](https://github.com/pamelafox/fastapi-on-azure-functions)\
+    \ | FastAPI | Functions | ✅ | -\n| [regression-model-azure-demo](https://github.com/pamelafox/regression-model-azure-demo)\
+    \     | FastAPI, scikit-learn | Functions | ✅ | -\n| [msdocs-django-postgresql-sample-app-azd](https://github.com/pamelafox/msdocs-django-postgresql-sample-app-azd)\
+    \     | Django, psycopg2, whitenoise     | App Service, PostGres Flexible Server, Virtual Network,\
+    \ Key Vault | ✅ | -\n| [msdocs-flask-postgresql-sample-app-azd](https://github.com/pamelafox/msdocs-flask-postgresql-sample-app-azd)\
+    \     | Flask, psycopg2, SQLAlchemy,Alembic     |  App Service, PostGres Flexible Server, Virtual\
+    \ Network, Key Vault | ✅ | -\n| [django-quiz-app](https://github.com/pamelafox/django-quiz-app) |\
+    \ Django, psycopg2, whitenoise | App Service, PostGres Flexible Server, Key Vault | ✅ | -\n| [flask-db-quiz-example](https://github.com/pamelafox/flask-db-quiz-example)\
+    \ | Flask, SQLAlchemy, psycopg2      | App Service, PostGres Flexible Server | ✅ | -\n| [simple-flask-server-appservice](https://github.com/Azure-Samples/simple-flask-server-appservice)\
+    \ | Flask | App Service | ✅ | -\n| [simple-flask-api-azure-function](https://github.com/pamelafox/simple-flask-api-azure-function)\
+    \ | Flask | Functions | ✅ | -\n| [babybuddy-azure](https://github.com/pamelafox/babybuddy-azure) |\
+    \ Django, psycopg2 | Container Applications, PostGres Flexible Server | ✅ | -\n| [translation-telephone](https://github.com/pamelafox/translation-telephone)\
+    \ | Flask, SQLAlchemy, psycopg2 | Bicep, App Service,  Cognitive Services (Translator), Key Vault\
+    \ | ✅ | -\n| [pamelafox-site](https://github.com/pamelafox/pamelafox-site) | Flask, FrozenFlask |\
+    \ Static Web Apps | ✅ | -\n\n## MCP related samples\n\n* [github-copilot-mcp-skills-workshop](https://github.com/pamelafox/github-copilot-mcp-skills-workshop):\
+    \ 2 hour workshop connecting GitHub Copilot to MCP and skills\n* [pycon2026-mcp-tutorial](https://github.com/pamelafox/pycon2026-mcp-tutorial):\
+    \ A tutorial for connecting agents to MCP servers, then building a FastMCP server with tools, elicitations,\
+    \ apps, and KeyCloak auth.\n* [mcp-for-postgres-db-demo](https://github.com/pamelafox/mcp-for-postgres-db-demo/):\
+    \ FastMCP servers to query a PostgreSQL database, showing different approaches to protecting the database.\n\
+    * [python-mcp-demos](https://github.com/Azure-Samples/python-mcp-demos): FastMCP with stdio/HTTP transports,\
+    \ agent integration, and deployment to Azure Container Apps\n* [py-ai-mcp-tool-schemas](https://github.com/pamelafox/py-ai-mcp-tool-schemas):\
+    \ FastMCP tool schemas: Evaluations of different schemas for different agents (PydanticAI, Copilot\
+    \ SDK)\n* [azure-cosmosdb-identity-aware-mcp-server](https://github.com/pamelafox/azure-cosmosdb-identity-aware-mcp-server):\
+    \ FastMCP server with Entra ID for user login and Cosmos DB for user data storage\n* [mcp-sdk-functions-hosting-python](https://github.com/Azure-Samples/mcp-sdk-functions-hosting-python):\
+    \ FastMCP server that can be deployed to Azure Functions+APIM\n* [github-copilot-mcp-tutorial](https://github.com/pamelafox/github-copilot-mcp-tutorial):\
+    \ 2 hour MCP tutorial focusing on GitHub Copilot\n\n\n## Personal agentic helpers\n\n* [pydanticai-playwright-agent](https://github.com/pamelafox/pydanticai-playwright-agent):\
+    \ A generic PydanticAI+Playwright agent to QA websites, but can be extended for any scenario\n* [personal-linkedin-agent](https://github.com/pamelafox/personal-linkedin-agent):\
+    \ An agent to manage my LinkedIn account, using PydanticAI and Playwright\n* [github-repo-maintainer-agent](https://github.com/pamelafox/github-repo-maintainer-agent):\
+    \ An agent for managing updates to my GitHub repos\n* [office-hours-writeups](https://github.com/pamelafox/office-hours-writeups):\
+    \ Tools to turn office hours recordings into writeups\n* [presentation-writeups](https://github.com/pamelafox/presentation-writeups):\
+    \ Tools to turn presentations into writeups\n\n## Python templates with devcontainers\n\nThese are\
+    \ designed for easy use with the VS Code Dev Containers extension or GitHub Codespaces:\n\n* [python-project-template](https://github.com/pamelafox/python-project-template):\
+    \ Support for black, isort, ruff, pre-commit, pytest, and Github actions\n* [ollama-python-playground](https://github.com/pamelafox/ollama-python-playground):\
+    \ Support for Ollama and Python OpenAI SDK for running SLMs\n* [sqlalchemy-sqlite-playground](https://github.com/pamelafox/sqlalchemy-sqlite-playground):\
+    \ Dev Container with SQLAlchemy package, SQLTools extension\n* [postgresql-playground](https://github.com/pamelafox/postgresql-playground):\
+    \ Similar to the SQLite playground, but includes local PostgreSQL setup in Dev Container\n* [pgvector-playground](https://github.com/pamelafox/pgvector-playground):\
+    \ Dev Container with PostgreSQL, pgvector extension, and multiple pgvector Python examples\n* [python-3.10-playground](https://github.com/pamelafox/python-3.10-playground):\
+    \ A simple 3.10 Dev Container\n* [python-3.11-playground](https://github.com/pamelafox/python-3.11-playground):\
+    \ Ditto, for 3.11\n* [python-3.12-playground](https://github.com/pamelafox/python-3.12-playground):\
+    \ Ditto, for 3.12\n* [python-3.13-playground](https://github.com/pamelafox/python-3.13-playground):\
+    \ Ditto, for 3.13\n\n## Educational tools build with [Pyodide (in-browser Python)](https://pyodide.org/):\n\
+    \n* [python-code-element](https://github.com/pamelafox/python-code-element): A custom HTML element\
+    \ for editing Python code, used throughout [proficientpython.com](https://proficientpython.com/).\n\
+    * [faded-parsons-static](https://github.com/pamelafox/faded-parsons-static): Drag-and-drop style programming\
+    \ problems.\n* [recursive-visualizations](https://github.com/pamelafox/recursive-visualizations):\
+    \ Visualize recursive Python function call graphs using Graphviz.\n* [dis-this](https://github.com/pamelafox/dis-this):\
+    \ Disassemble Python code in the browser.\n\n## Frontend packages\n\n* [lscache](https://github.com/pamelafox/lscache):\
+    \ A library for localStorage with a memcache-inspired API.\n* [ndjson-readablestream](https://github.com/pamelafox/ndjson-readablestream):\
+    \ A small JS package for reading a ReadableStream of NDJSON.\n* [font-previewer-extension](https://github.com/pamelafox/font-previewer-extension):\
+    \ A Chrome extension to preview Google fonts.\n* [chrome-cards](https://github.com/pamelafox/chrome-cards):\
+    \ A series of Chrome extensions with flash cards, based on the Leitner system.\n* [parallel-demo](https://github.com/pamelafox/parallel-demo):\
+    \ A demonstration of parallel programming in the browser using web workers.\n\n\U0001F3F3️‍\U0001F308\
+    \ Happy Pride! \U0001F3F3️‍\U0001F308 May everyone love freely. \U0001F469\U0001F3FD‍❤️‍\U0001F48B\
+    ‍\U0001F469\U0001F3FC \U0001F468\U0001F3FC‍❤️‍\U0001F468\U0001F3FF \U0001F469\U0001F3FB‍❤️‍\U0001F468\
+    \U0001F3FC"
+  contributions_last_year:
+    total: 2452
+    commits: 1547
+    pull_requests: 299
+    issues: 198
+    reviews: 138
+  starred_repositories: 71
+  has_sponsors_listing: true
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  - 2012
+  - 2011
+  - 2010
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 249
+  contributed_to:
+  - repo:pallets/click
+  - repo:amyjko/informatics-teaching-guide
+  - repo:microsoftdocs/azure-dev-docs
+  - repo:manekinekko/awesome-devcontainers
+  - repo:azure/awesome-azd
+  organization_logins:
+  - girldevelopit
+  - microsoft
+  - Azure
+  pinned:
+  - repo:pamelafox/python-project-template
+  - repo:pamelafox/recursive-visualizations
+  - repo:pamelafox/faded-parsons-static
+  - repo:pamelafox/translation-telephone
+  - repo:pamelafox/lscache
+  - repo:pamelafox/font-previewer-extension
+  top_repositories:
+  - repo:pamelafox/python-openai-demos
+  - repo:pamelafox/awesome-copilot-instructions
+  - repo:pamelafox/presentation-skills
+  linked_accounts:
+  - acct:bluesky/pamelafox.bsky.social
+  - acct:linkedin/in/pamela-s-fox
+  - acct:mastodon/pamelafox@fosstodon.org
+  - acct:x/pamelafox
+  websites:
+  - site:pamelafox.org
+  entity: person:pamela-fox
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: pamelafox
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,328 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ari-livigni
+  person: person:ari-livigni
+  brief_bio:
+    text: Ari LiVigni is a Senior Cloud Solutions Architect on GitHub's Expert Services team, working
+      with public sector customers on DevSecOps. LiVigni led a GitHub Universe 2023 workshop on migrating
+      CI/CD pipelines to GitHub Actions and spoke in 2024 about building an app with GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 4b6876c3ec856480212d9a8a4fad13054ddedde68b13d3e4307aa5ce53f7db2f
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2743w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2743w
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1374s
+  technologies:
+  - label: Azure DevOps
+    target: software:azure-devops
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure DevOps
+      ref: session:2023/dev2743w
+  - label: CircleCI
+    target: software:circleci
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CircleCI
+      ref: session:2023/dev2743w
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev2743w
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1374s
+  - label: GitLab
+    target: software:gitlab
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitLab
+      ref: session:2023/dev2743w
+  - label: Jenkins
+    target: software:jenkins
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Jenkins
+      ref: session:2023/dev2743w
+  - label: Kubernetes
+    target: software:kubernetes
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Kubernetes
+      ref: person:ari-livigni
+  interests:
+  - label: GitHub Codespaces
+    target: term:github-product-2023/codespaces
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490322001KnPe
+      ref: session:2023/dev2743w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490322001KnPe
+      ref: session:2023/dev2743w
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490322001KnPe
+      ref: session:2023/dev2743w
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490322001KnPe
+      ref: session:2023/dev2743w
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715206042531001U3sI
+      ref: session:2024/ai1374s
+  education:
+  - school: Clark University
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  credentials:
+  - kind: certification
+    title: Effective ChatGPT Prompts
+    issuer: O'Reilly
+    date: Sep 2024
+    url: https://www.credly.com/badges/cc69a083-53fd-4184-9abc-c807536fcdde/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  - kind: certification
+    title: Well-Architected Proficient
+    issuer: Amazon Web Services (AWS)
+    date: Jan 2022
+    url: https://www.credly.com/badges/006d3b55-f398-46a1-ab84-693e44fb1746?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  - kind: certification
+    title: Well-Architected Proficient
+    issuer: Amazon Web Services (AWS)
+    date: Jan 2022
+    url: https://www.credly.com/badges/006d3b55-f398-46a1-ab84-693e44fb1746?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  - kind: certification
+    title: Well-Architected Proficient
+    issuer: Amazon Web Services (AWS)
+    date: Jan 2022
+    url: https://www.credly.com/badges/006d3b55-f398-46a1-ab84-693e44fb1746?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  - kind: certification
+    title: RHCA
+    issuer: Red Hat
+    date: Nov 2016
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  - kind: certification
+    title: Jenkins Engineer
+    issuer: Jenkins project
+    date: Mar 2016
+    url: https://certificates.cloudbees.com/10155113
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Sep 2023
+    expires: Sep 2026
+    url: https://www.credly.com/badges/5ccd87fe-b505-4e69-8a94-9a1609257a64/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  - kind: certification
+    title: AWS Certified Developer – Associate
+    issuer: Amazon Web Services (AWS)
+    date: Aug 2022
+    expires: Aug 2025
+    url: https://www.credly.com/badges/cd6266d6-0704-4456-bee0-0763f60fa38c/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect – Associate
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2021
+    expires: Nov 2024
+    url: https://www.credly.com/badges/da867fa0-0a38-4a27-b589-1e8044c40787?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  - kind: certification
+    title: Ansible Automation Engineer
+    issuer: Red Hat
+    evidence:
+      url: https://www.linkedin.com/in/arilivigni
+      observed_at: '2026-10-24T08:42:49Z'
+  spoken_languages:
+  - Python
+  talks:
+  - session:2023/dev2743w
+  - session:2024/ai1374s
+  gaps:
+  - github_account
+  - website
+  - x_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685558340405001wrtO
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685558340405001wrtO
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

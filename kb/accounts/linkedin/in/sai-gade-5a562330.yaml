@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sai-gade-5a562330
+  platform: linkedin
+  handle: in/sai-gade-5a562330
+  url: https://www.linkedin.com/in/sai-gade-5a562330
+  display_name: Sai Gade
+  location: Atlanta Metropolitan Area
+  followers: 1965
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHVyjYHE4e9hA/profile-displaybackgroundimage-shrink_200_800/B4EaDi0ioRIsAQ-/0/1790511819578?e=2147483647&v=beta&t=31Ggq8HwwL2qtrj7kyTRFFVuYtmS4Ic4F7L4xyaPwLo
+  owner: person:sai-gade
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1759331348226001HlF4
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sai-gade-5a562330
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

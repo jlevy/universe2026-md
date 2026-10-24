@@ -1,0 +1,127 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jeffrey-opdam
+  person: person:jeffrey-opdam
+  brief_bio:
+    text: Jeffrey Opdam is an enterprise architect at ING who rolled out its enterprise CI/CD platform,
+      drove GitHub Copilot to 9,000 engineers and now leads its migration to GitHub repositories. Opdam
+      speaks at GitHub Universe 2026 about how AMD and ING measure AI at enterprise scale.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 7191ec259dfcf6f9308129bc8f9e7a8a6f272339e9af655f716636a78fc51c93
+    stale: false
+  headline: Architect at ING
+  current_roles:
+  - Architect at ING
+  expertise:
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1145b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1145b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1145b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:jeffrey-opdam
+  interests:
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776695285557001LaZG
+      ref: session:ldr1145b
+  education:
+  - school: Universiteit Leiden / Leiden University
+    evidence:
+      url: https://www.linkedin.com/in/jeffrey-opdam
+      observed_at: '2026-10-24T08:11:29Z'
+  spoken_languages:
+  - Dutch
+  - English
+  activities:
+  - kind: project
+    title: Expereo
+    detail: 'The application that I have worked on (both maintenance an new development) is web based
+      intranet system that enables Expereo to maximize their customer services and conduct more profitable
+      business. The application is built on top of ASP.NET MVC framework, but also utilizes SQL Server,
+      NHibernate, Spring.NET and Rhino Mock (for unit testing). It is separated in 6 modules: Sales, Provisioning,
+      Portfolio, Finance, Support and Customer Portal.Technologies used: C# 3.5, ASP.NET MVC 1.0, WCF,
+      LINQ, Entity Framework. · Jun 2011'
+    evidence:
+      url: https://www.linkedin.com/in/jeffrey-opdam
+      observed_at: '2026-10-24T08:11:29Z'
+  talks:
+  - session:ldr1145b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1720780935919001LLRs
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jopdam-ING
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

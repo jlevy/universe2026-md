@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/steiza
+  platform: linkedin
+  handle: in/steiza
+  url: https://www.linkedin.com/in/steiza
+  display_name: Zach Steindler
+  bio: Zach is a technical leader who specializes in software supply chain security, especially…
+  location: Ann Arbor
+  followers: 1382
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFWOoJdT6Yoxw/profile-displaybackgroundimage-shrink_200_800/B56Zci1jL1GoAU-/0/1748636153180?e=2147483647&v=beta&t=4f8vefcFOrds7kdaevZPlil38NLWA3y0pbojncLZYvc
+  owner: person:zach-steindler
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698956387483001A8Kv
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698956387483001A8Kv
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: steiza
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/steiza
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

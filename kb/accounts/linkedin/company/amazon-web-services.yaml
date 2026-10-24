@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/amazon-web-services
+  platform: linkedin
+  handle: company/amazon-web-services
+  url: https://www.linkedin.com/company/amazon-web-services
+  display_name: Amazon Web Services (AWS)
+  bio: Launched in 2006, Amazon Web Services (AWS) began exposing key infrastructure services to businesses
+    in the form of web services -- now widely known as cloud computing. The ultimate benefit of cloud
+    computing, and AWS, is the ability to leverage a new business model and turn capital infrastructure
+    expenses into variable costs. Businesses no longer need to plan and procure servers and other IT resources
+    weeks or months in advance. Using AWS, businesses can take advantage of Amazon's expertise and economies
+    of scale to access resources when their business needs them, delivering results faster and at a lower
+    cost. Today, Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform
+    in the cloud that powers hundreds of thousands of businesses in 190 countries around the world. With
+    data center locations in the U.S., Europe, Singapore, and Japan, customers across all industries are
+    taking advantage of our low cost, elastic, open and flexible, secure platform.
+  website: https://aws.amazon.com/
+  followers: 11195990
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFqdm1TZ-RZKQ/company-logo_200_200/B4EZgOay6gHEAQ-/0/1752588562343/amazon_web_services_logo?e=2147483647&v=beta&t=L_95VfIB_frYmSkKvsaR1DqzM2bgMlEc0qz1InUwNZQ
+  owner: org:amazon-web-services
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/stormy
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/amazon-web-services
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,252 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dave-burnison
+  person: person:dave-burnison
+  brief_bio:
+    text: Dave Burnison is a Senior DevOps Advocate at GitHub who works with customers on DevOps and application
+      modernization with GitHub and Azure DevOps. Burnison spoke at GitHub Universe 2024 about using GitHub
+      Copilot beyond the IDE.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 24f853c5075df40b24cdf47ceb54d778d3e1b42eeb3e14ddb0258b0c0b2e7dd4
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  technologies:
+  - label: Azure DevOps
+    target: software:azure-devops
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure DevOps
+      ref: person:dave-burnison
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1899s
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  education:
+  - school: Central College
+    evidence:
+      url: https://www.linkedin.com/in/daveburnison
+      observed_at: '2026-10-24T08:42:09Z'
+  credentials:
+  - kind: certification
+    title: FY26 Experience Center EC - One One Microsoft Award Winner
+    issuer: Microsoft
+    date: May 2026
+    url: https://www.credly.com/badges/5d8e823f-22a1-424a-a1a1-a9f14ba17cc8/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/daveburnison
+      observed_at: '2026-10-24T08:42:09Z'
+  - kind: certification
+    title: Executive Briefing Speaker Champion Award
+    issuer: GitHub
+    date: Jul 2025
+    url: https://www.credly.com/badges/26a0da30-8b67-4115-84e2-62adf72ac849/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/daveburnison
+      observed_at: '2026-10-24T08:42:09Z'
+  - kind: certification
+    title: Microsoft Redmond EBC Performance Excellence Award
+    issuer: Microsoft
+    date: Jul 2024
+    url: https://www.credly.com/badges/7a5b1361-8f26-41d5-8b76-15189717d7bc/public_url
+    evidence:
+      url: https://www.linkedin.com/in/daveburnison
+      observed_at: '2026-10-24T08:42:09Z'
+  - kind: certification
+    title: Microsoft Redmond EBC Distinguished Speaker Award Winner
+    issuer: Microsoft
+    date: Jul 2022
+    url: https://www.credly.com/badges/4b33b5be-f559-4b92-8650-fe525621be84/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/daveburnison
+      observed_at: '2026-10-24T08:42:09Z'
+  - kind: certification
+    title: MCSD Application Lifecycle Management
+    issuer: Microsoft
+    date: Apr 2014
+    url: https://www.microsoft.com/learning/en-us/mcsd-application-lifecycle-management.aspx
+    evidence:
+      url: https://www.linkedin.com/in/daveburnison
+      observed_at: '2026-10-24T08:42:09Z'
+  activities:
+  - kind: organization
+    title: Chicago Visual Stutio ALM User Group
+    detail: http://chicagoalmug.orgThe Chicago Visual Studio ALM User Group is a collection of people
+      who are passionate about Application Lifecycle Management, (ALM) and Microsoft's related tooling.
+      This user group is meant for you if you're looking to learn and share your experiences with ALM
+      and Microsoft's related tooling. · Feb 2013 · Present
+    evidence:
+      url: https://www.linkedin.com/in/daveburnison
+      observed_at: '2026-10-24T08:42:09Z'
+  talks:
+  - session:2024/ai1899s
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686018511816001za3o
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

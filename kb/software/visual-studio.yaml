@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:visual-studio
+  name: Visual Studio
+  aliases:
+  - Visual Studio
+  kind: commercial
+  vendor: org:microsoft
+  mentioned_in:
+  - person:allison-weins
+  - person:amanda-silver
+  - person:mandy-whaley
+  - person:rong-lu
+  - person:savannah-ostrowski
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

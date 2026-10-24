@@ -1,0 +1,302 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:bob-walker
+  person: person:bob-walker
+  brief_bio:
+    text: Bob Walker is Field CTO at Octopus Deploy, whose work has moved from automating database deployments
+      to building CI/CD pipelines, and has written about deployment and rollback strategies. Walker spoke
+      at GitHub Universe 2025 about CI/CD pipelines with GitHub, Octopus and AI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 98fd2a914eef85ef8cd78f6229283701fe1e4ab5fb3cb10d9c04974b742044ce
+    stale: false
+  headline: Octopus Deploy
+  current_roles:
+  - Octopus Deploy
+  expertise:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1752d
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1752d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1752d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1752d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1752d
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1752d
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:bob-walker
+  interests:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758308470211001VzCr
+      ref: session:2025/sec1752d
+  education:
+  - school: Utah State University
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  credentials:
+  - kind: certification
+    title: Certificate of Completion
+    issuer: Codefresh
+    date: Sep 2024
+    url: https://mycourse.app/eeSqLyJuNJok3Ry57
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  - kind: certification
+    title: PlatformCon 2024 Speaker
+    issuer: Platform Engineering
+    date: Jun 2024
+    url: https://www.virtualbadge.io/certificate-validator?credential=e8d19e4a-a205-4157-a6c3-b8909bb0036f
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  publications:
+  - title: Supply Chain Security with GitHub Actions and Octopus Deploy
+    venue: Octopus Deploy Blog
+    date: August 12, 2025
+    description: In May 2021, in response to a series of high-profile cyber attacks, President Biden issued
+      Executive Order 14028 to improve the nation’s cybersecurity. A big reason for this was the SolarWinds
+      supply chain attack in which Russian state-sponsored hackers compromised the Orion software platform.
+      Since 2021, we’ve seen a lot of new functionality to enable supply chain security. In this blog
+      post, I will walk you through improving your supply chain security by leveraging GitHub, GitHub
+      Actions, and Octopus Deploy. The solutions use new functionality added to both platforms since 2021,
+      pre-existing functionality, and common-sense configurations for SLSA, SBOMs, Attestations, RBAC,
+      and more.
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: Achieving Continuous Delivery with TPF
+    venue: Octopus Deploy
+    date: August 1, 2025
+    description: 'When production deployments are inconsistent and error-prone, many companies believe
+      the best solution is to reduce production deployment frequency. They move to monthly or quarterly
+      releases. Ironically, doing so increases risk.The first step to solving this problem is making production
+      deployments consistent, predictable, and reliable. When automating deployments, we propose changing
+      how you introduce work into the deployment pipeline. That''s where TPF comes in.- T: Trunk-based
+      development for making small incremental changes instead of long-lived feature branches.- P: Progressive
+      rollouts for frequent zero-downtime deployments of small incremental changes.- F: Feature toggles
+      to support multiple work streams and to get fast feedback in production to ensure the feature meets
+      the user''s needs.'
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: Modern Deployment and Rollback Strategies
+    venue: Octopus Deploy
+    date: May 1, 2024
+    description: This white paper contains a hierarchy of considerations you can use to select an appropriate
+      deployment strategy.You'll learn:- How to select an appropriate strategy for deployments and rollbacks-
+      The architectural and technical practices to succeed with your chosen strategy- The trade-offs that
+      come with different approaches
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: A leader’s guide to Kubernetes CD at scale
+    venue: Octopus Deploy
+    date: March 10, 2024
+    description: Kubernetes provides many benefits, but it’s not a magic wand offering a one-size-fits-all
+      solution. Executives in charge of engineering or operations at medium and large enterprises will
+      encounter challenges as they migrate to Kubernetes. This includes technical hurdles and unexpected
+      business challenges, like adapting or updating your DevOps practices. It takes a nuanced approach
+      to address the obstacles that will come your way.A leader’s guide to Kubernetes CD at scale will
+      help you understand:How to align Kubernetes adoption with business goals- The business and technical
+      challenges you’ll typically face with Kubernetes- Problems at scale, like YAML sprawl and DIY shadow
+      CD glue- Strategies to avoid common pitfalls
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: Best practice for self-hosted Octopus Deploy high availability and disaster recovery
+    venue: Octopus Deploy
+    date: February 1, 2024
+    description: For customers who self-host Octopus Deploy, we provide high availability (HA). This gives
+      you horizontal scalability and increased reliability. Combined with a disaster recovery (DR) plan
+      and managed services with cloud providers, you can create an instance that survives almost any outage
+      scenario.This white paper provides a recommended HA/DR configuration for customers who self-host
+      Octopus Deploy in public cloud providers. We based this recommendation on:Our experience hosting
+      1800+ customer instances in Octopus Cloud over 5 years with a 99.99% public SLO where at least 95%
+      of our customers meet that SLO.Using features in cloud providers based on other customers' configurations.
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: How Redgate helped define a truly automated database deployment process
+    venue: Redgate Blob
+    date: April 13, 2017
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: Introducing DevOps
+    venue: Simple Talk
+    date: January 11, 2017
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  - title: Versioning an existing database using SQL Source Control
+    venue: Redgate Blob
+    date: September 26, 2016
+    evidence:
+      url: https://www.linkedin.com/in/bobjwalker
+      observed_at: '2026-10-24T08:41:53Z'
+  talks:
+  - session:2025/sec1752d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1714776563614001IhtK
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

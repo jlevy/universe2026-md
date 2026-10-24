@@ -1,0 +1,47 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/mikerecachinas
+  platform: x
+  handle: mikerecachinas
+  url: https://x.com/mikerecachinas
+  display_name: Michael Recachinas
+  bio: |-
+    Husband to @vcx3
+    Dad and Dog-Dad
+    Staff Engineer @GitHubSecurity
+    Opinions are my own
+    (he/him)
+  location: Washington, DC
+  website: https://mike.recachinas.dev/
+  followers: 111
+  following: 471
+  posts_count: 54
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1851861059403157504/rKhDGgXf_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1489051497220521986/1698710528
+  created_at: '2022-02-03T01:42:04Z'
+  owner: person:michael-recachinas
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685637039960001YvpZ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685637039960001YvpZ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/mikerecachinas
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

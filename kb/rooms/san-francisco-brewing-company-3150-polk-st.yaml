@@ -1,0 +1,24 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:san-francisco-brewing-company-3150-polk-st
+  name: San Francisco Brewing Company
+  label: San Francisco Brewing Company @ 3150 Polk St
+  venue: venue:san-francisco-brewing-company
+  source_ids:
+  - 1756241079561001W5LE
+  sessions:
+  - session:2025/1567
+  - session:2025/1961
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

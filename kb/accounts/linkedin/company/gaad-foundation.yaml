@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/gaad-foundation
+  platform: linkedin
+  handle: company/gaad-foundation
+  url: https://www.linkedin.com/company/gaad-foundation
+  display_name: GAAD (Global Accessibility Awareness Day) Foundation
+  bio: The GAAD Foundation is a nonprofit organization whose mission is to disrupt the culture of technology
+    and digital product development to include accessibility as a core requirement.
+  website: https://gaad.foundation/
+  followers: 8423
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQGKBvCGd6tAGQ/company-logo_200_200/company-logo_200_200/0/1678750539626/gaad_foundation_logo?e=2147483647&v=beta&t=v58Id3Na5hZkawlRhgwiooYdkZbzF6gTpYHWlPCN164
+  owner: org:gaad-foundation
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/joedevon
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/gaad-foundation
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

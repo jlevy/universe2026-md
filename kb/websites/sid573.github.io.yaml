@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:sid573.github.io
+  url: https://sid573.github.io/
+  kind: personal
+  title: Siddhant Sinha
+  description: Homepage of Siddhant Sinha
+  owner: person:siddhant-sinha
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/sid573
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: sid573
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://sid573.github.io/
+    record_id: https://sid573.github.io/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

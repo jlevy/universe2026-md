@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:nullmethod.com
+  url: https://www.nullmethod.com
+  kind: personal
+  title: nullmethod · Greg Ose
+  owner: person:greg-ose
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://www.nullmethod.com/atom.xml
+  linked_accounts:
+  - acct:x/gose1
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: gregose
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://www.nullmethod.com
+    record_id: https://www.nullmethod.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/anandpkulkarni
+  platform: linkedin
+  handle: in/anandpkulkarni
+  url: https://www.linkedin.com/in/anandpkulkarni
+  display_name: Anand Kulkarni
+  bio: Anand is CEO and founder of CoreStory, the world’s leading AI modernization and…
+  location: San Francisco Bay Area
+  followers: 4185
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHdbBppbOPPHQ/profile-displaybackgroundimage-shrink_200_800/B56ZnzeMGxJkAc-/0/1760726401846?e=2147483647&v=beta&t=2DZdvtgyqmxwhbw2ArVVQroJ2fp86blAT2pHayO4U5s
+  owner: person:anand-kulkarni
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1758151401549001kjMw
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/anandpkulkarni
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

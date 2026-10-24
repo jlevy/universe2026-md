@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/sam_yuk_tha
+  platform: x
+  handle: sam_yuk_tha
+  url: https://x.com/sam_yuk_tha
+  display_name: Samyuktha Gopalsamy
+  bio: CS @RutgersU • Software @Meta, @MoodysAnalytics • Internships @Meta, @Firefox, @MLHacks • MLH Top
+    50
+  location: New York, NY
+  followers: 72
+  following: 99
+  posts_count: 50
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1672270525396033540/xR4t_nKf_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1114428611228880896/1628523710
+  created_at: '2019-04-06T07:24:20Z'
+  owner: person:samyuktha
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683661249144001NkYv
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/sam_yuk_tha
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

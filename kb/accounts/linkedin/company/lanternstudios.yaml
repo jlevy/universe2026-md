@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/lanternstudios
+  platform: linkedin
+  handle: company/lanternstudios
+  url: https://www.linkedin.com/company/lanternstudios
+  display_name: Lantern
+  bio: In the digital economy, success belongs to those who can harness the power of AI to drive innovation,
+    efficiency, and growth. Lantern is here to guide you through this transformative journey to digital
+    leadership. As a premier IT professional services firm, we specialize in helping organizations envision,
+    implement, and run Microsoft technologies to achieve AI excellence.
+  website: https://lanternstudios.com/
+  followers: 8312
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQEtA_uVBEhjiQ/company-logo_200_200/company-logo_200_200/0/1695137210229/lanternstudios_logo?e=2147483647&v=beta&t=1JPHO_-EUZz7CRJJjbN_UAiB5cn0mwi_8gVH_PcqFhE
+  owner: org:lantern
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/estebangarcia
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/lanternstudios
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

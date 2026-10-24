@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:acon-lin
+  person: person:acon-lin
+  brief_bio:
+    text: Acon Lin was affiliated with Hack Club and spoke at GitHub Universe 2024 in the session Building
+      1 billion developers.
+    cites:
+    - past_affiliations
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: f1578f5d93a1069629cd4d052ffe73b841307ea54eb6c93c0c64c90a51159831
+    stale: false
+  talks:
+  - session:2024/1951k
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1729020423735001tksu
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

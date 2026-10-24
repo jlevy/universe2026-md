@@ -1,0 +1,282 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jeffrey-berthiaume
+  person: person:jeffrey-berthiaume
+  brief_bio:
+    text: Jeffrey Berthiaume is a Senior Innovator at Southwest Airlines and an iOS AR developer and information
+      architect. Berthiaume spoke at GitHub Universe 2024 about embracing open source within the enterprise.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: be9d1e913a41904969b7a1752ec1827298058a830a96c778fd5cb39d11daeb1f
+    stale: false
+  headline: Southwest Airlines
+  current_roles:
+  - Southwest Airlines
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1460b
+  technologies:
+  - label: iOS
+    target: software:ios
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: iOS
+      ref: person:jeffrey-berthiaume
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  - label: Social Impact
+    target: term:topic-2024/social-impact
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715291173501001uR0K
+      ref: session:2024/dev1460b
+  education:
+  - school: The University of Texas at Austin
+    evidence:
+      url: https://www.linkedin.com/in/jeffreality
+      observed_at: '2026-10-24T08:45:04Z'
+  patents:
+  - title: SYSTEM AND METHOD FOR DYNAMICALLY RECEIVING MORTGAGE INFORMATION VIA TEXT MESSAGING
+    number: US 15/690,942
+    date: February 28, 2019
+    description: A system and method for obtaining mortgage information via text messaging are provided.
+      The method includes scanning, via a camera of a mobile terminal, an image of a multi-dimensional
+      barcode corresponding to a target real estate property, and extracting a Short Message Service (SMS)
+      Uniform Resource Locator (URL), via a processor of the mobile terminal, from the multi-dimensional
+      barcode. The method further includes generating and transmitting, via a cellular network, a text
+      message to a phone number indicated in the SMS URL. The web server loads a custom code for property
+      information of the target real estate property based on the transmission by the mobile terminal.
+      The webserver transmitting, via a data network, a first inquiry based on the custom code. The mobile
+      terminal transmits a response, and the web server transmits estimated mortgage payment information
+      based on the transmitted response.
+    evidence:
+      url: https://www.linkedin.com/in/jeffreality
+      observed_at: '2026-10-24T08:45:04Z'
+  - title: Dynamic content delivery based on metadata-seeking behavior
+    number: US 14/513,717
+    date: October 14, 2014
+    description: A media processing system provides services for metadata-seeking behavior. The system
+      includes a memory that stores executable instructions and a processor that executes the executable
+      instructions. The system also includes a receiver that receives, based on a person initiating capture
+      of source input in seeking metadata for an object associated with the source input, source input
+      from a requesting device used by the person to initiate the capture of the source input in the metadata-seeking
+      behavior. Ultimately, content is dynamically identified for presentation to the person.
+    evidence:
+      url: https://www.linkedin.com/in/jeffreality
+      observed_at: '2026-10-24T08:45:04Z'
+  - title: Coded visual information system
+    number: US 9008432
+    date: December 10, 2010
+    description: Information is arranged within a predetermined shape. The predetermined shape is captured
+      in an image taken by a tangible image-capturing element of a device which captures images at the
+      direction of a user. The device includes a tangible processor that analyzes the image captured by
+      the image-capturing element to determine whether a predetermined shape is present in the image.
+      The tangible processor determines an alignment of the predetermined shape when the predetermined
+      shape is present in the image, and reads data within the predetermined shape in accordance with
+      the determined alignment. The device automatically forwards a request for content over a communications
+      network in accordance with the data read within the predetermined shape. The device receives the
+      content over the network and displays the content.
+    url: https://patents.google.com/patent/US9008432
+    evidence:
+      url: https://www.linkedin.com/in/jeffreality
+      observed_at: '2026-10-24T08:45:04Z'
+  talks:
+  - session:2024/dev1460b
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715283630697001gt6x
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

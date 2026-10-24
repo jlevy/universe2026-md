@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jchatmas
+  platform: linkedin
+  handle: in/jchatmas
+  url: https://www.linkedin.com/in/jchatmas
+  display_name: James Chatmas
+  bio: Experienced professional with 15+ years in the industry. I currently work to help…
+  location: Portland
+  followers: 773
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQEI0cvpI8AbIA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1554069256255?e=2147483647&v=beta&t=WRi1fs78v1jaVpf0mshnpqeOeCo4AA8AyCLHuAnIZgw
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQGiI57HWseT8g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1663207516880?e=2147483647&v=beta&t=--kkL1Uhb-yaRFq_m5EP1qd2Ku7iIt2Tu6KMLcSghyA
+  owner: person:james-chatmas
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696509573849001itAh
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696509573849001itAh
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696509573849001itAh
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jchatmas
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

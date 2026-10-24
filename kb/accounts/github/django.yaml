@@ -1,0 +1,46 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:django
+  login: django
+  kind: organization
+  url: https://github.com/django
+  name: Django
+  location: Internet
+  website: https://www.djangoproject.com/
+  public_repositories: 29
+  created_at: '2008-10-06T19:43:18Z'
+  profile_readme: "# Django\n\n> The web framework for perfectionists with deadlines. \n\nLet's go! Here\
+    \ are some useful links to get you started: \n\n* [The Django project home page][homepage]. \n* The\
+    \ awesome [docs for the current version][docs]. \n* [The Forum in case you need some help][forum]\n\
+    * And since you're on GitHub, [the contributing guide][contributing], for getting involved. \n\nDive\
+    \ into the repos below. Welcome! ⛵️\n\n\n## Code of Conduct \n\nAll Django projects are governed by\
+    \ the [Django Code of Conduct][CoC]. Please review that and keep it in mind in all interactions.\n\
+    \n## DEI Project Badge\n\n<img src=\"../assets/CHAOSS-DEI-Bronze-Badge.svg\" width=\"200\" alt=\"\
+    CHAOSS DEI bronze badge\">\n\nDjango has been awarded the [CHAOSS DEI Bronze badge](https://badging.chaoss.community/project-badging/dei-badge).\n\
+    This represents our commitment to centering diversity, equity, and inclusion in our community, as\
+    \ found in our [DEI.md][DEI] file.\n\nNote that at the time of writing, CHAOSS DEI Project Badging\
+    \ currently offers one badge level: Bronze.\n\n[homepage]: https://www.djangoproject.com \n[docs]:\
+    \ https://docs.djangoproject.com/en/stable/\n[forum]: https://forum.djangoproject.com\n[contributing]:\
+    \ https://docs.djangoproject.com/en/3.2/internals/contributing/\n[CoC]: https://www.djangoproject.com/conduct/\n\
+    [DEI]: ../DEI.md"
+  pinned:
+  - repo:django/django
+  - repo:django/djangoproject.com
+  - repo:django/channels
+  - repo:django/deps
+  - repo:django/dsf-working-groups
+  - repo:django/new-features
+  top_repositories:
+  - repo:django/daphne
+  - repo:django/asgiref
+  entity: org:django-software-foundation
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: django
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

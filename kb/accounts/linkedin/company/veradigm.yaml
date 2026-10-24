@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/veradigm
+  platform: linkedin
+  handle: company/veradigm
+  url: https://www.linkedin.com/company/veradigm
+  display_name: Veradigm®
+  bio: Veradigm is an integrated data systems and services company that combines data-driven clinical
+    insights with actionable tools to help healthcare stakeholders improve the quality, efficiency, and
+    value of healthcare delivery—these stakeholders include biopharma, health plans, healthcare providers,
+    network partners, and most importantly, the patients they serve. We build solutions that are designed
+    to help healthcare stakeholders to improve patient lives through data driven insights. We are dedicated
+    to simplifying the complicated healthcare system with next-generation technology and solutions, transforming
+    healthcare from the point-of-patient care to everyday life. As a result, Veradigm attracts leaders
+    in healthcare, technology, and innovation, seeking to work with us to deliver insights and solutions
+    to the benefit the healthcare ecosystem with the objective being to improve healthcare quality while
+    lowering the cost of healthcare. Veradigm is an organization comprised of passionate and energetic
+    people whose everyday focus is on helping all healthcare stakeholders drive the best care possible
+    for healthier communities. We believe diversity is the foundation of innovation, and we are dedicated
+    to fostering an inclusive environment that supports the talents of all people.
+  website: https://www.veradigm.com/
+  followers: 184157
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEWVyw-sP00mA/company-logo_200_200/company-logo_200_200/0/1693413360236/veradigm_logo?e=2147483647&v=beta&t=4aOLnNfzbN19E4UkML4RqjSM7Zw-QgGYIEvYgMNvi9M
+  owner: org:veradigm
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/saigunaranjan
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/veradigm
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

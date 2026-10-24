@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/intel-corporation
+  platform: linkedin
+  handle: company/intel-corporation
+  url: https://www.linkedin.com/company/intel-corporation
+  display_name: Intel
+  bio: 'Our mission is to shape the future of technology to help create a better future for the entire
+    world, that’s the power of Intel Inside. With more ingenuity and creativity inside, our work is at
+    the heart of countless innovations. From major breakthroughs to things that make everyday life better—
+    they’re all powered by Intel technology. With a career at Intel, you can help make the future more
+    wonderful for everyone. • Need help or have a support question? Visit Intel Support: http://ms.spr.ly/6054tmaop
+    .'
+  website: https://www.intel.com/
+  followers: 4403355
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQGpvWtEtj9oTQ/company-logo_200_200/company-logo_200_200/0/1630663244735/intel_corporation_logo?e=2147483647&v=beta&t=PDltuAtHvDb9w7sJ2U1HyJMoQ0t9gAJhGXwaCmpCpDw
+  owner: org:intel
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/fstorr
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/intel-corporation
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

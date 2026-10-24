@@ -1,0 +1,314 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:caleb-queern
+  person: person:caleb-queern
+  brief_bio:
+    text: Caleb Queern is a Managing Director in KPMG's cyber practice who advises leadership on reducing
+      risk and co-authored Investments Unlimited. Queern spoke at GitHub Universe 2023 about standardizing
+      delivery and automating governance.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: ef21d997dfdd845a56bb3aba6fab5e77378f600581b8fafdbd4735aaf4406916
+    stale: false
+  headline: KPMG US
+  current_roles:
+  - KPMG US
+  expertise:
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Monitoring and Observability
+    target: term:topic-2023/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2760g
+  interests:
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Monitoring and Observability
+    target: term:topic-2023/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Supply Chain Security
+    target: term:github-product-2023/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Testing and related practices
+    target: term:topic-2023/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693602623686001IyCX
+      ref: session:2023/dev2760g
+  education:
+  - school: San Diego State University-California State University
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  credentials:
+  - kind: certification
+    title: Azure DevOps Assessment (18473)
+    issuer: Microsoft
+    date: Aug 2019
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - kind: certification
+    title: CISSP
+    issuer: (ISC)²
+    date: Mar 2011
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - kind: certification
+    title: Amazon Web Services Security Specialty
+    issuer: Amazon Web Services (AWS)
+    date: Dec 2019
+    expires: Dec 2022
+    url: http://aws.amazon.com/verification
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - kind: certification
+    title: GMON Continuous Monitoring Certification
+    issuer: GIAC Certifications
+    date: Mar 2017
+    expires: Mar 2021
+    url: https://www.giac.org/certified-professional/caleb-queern/133828
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - kind: certification
+    title: Certificate of Cloud Security Knowledge (CCSK)
+    issuer: Cloud Security Alliance
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - kind: certification
+    title: Certified Information Privacy Technologist
+    issuer: IAPP - International Association of Privacy Professionals
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - kind: certification
+    title: CISM
+    issuer: ISACA
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - kind: certification
+    title: GWAPT Web Application Penetration Tester
+    issuer: GIAC
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - kind: certification
+    title: GWEB Certified Web Application Defender
+    issuer: GIAC
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - kind: certification
+    title: ITIL Foundations
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  publications:
+  - title: The Web Almanac
+    venue: HTTP Archive
+    date: November 15, 2024
+    description: The Web Almanac is a comprehensive report on the state of the web, backed by real data
+      and trusted web experts. The 2024 edition is comprised of 19 chapters spanning aspects of page content,
+      user experience, publishing, and distribution.I served as 2024 Web Almanac General Co-Chair alongside
+      Nurullah Demir and 90 others who contributed far more than I.
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - title: 'Investments Unlimited: A Novel About DevOps, Security, Audit Compliance, and Thriving in the
+      Digital Age'
+    venue: IT Revolution
+    date: September 13, 2022
+    description: In the vein of the bestselling The Phoenix Project and The Unicorn Project, Investments
+      Unlimited radically rethinks how organizations can handle the audit, compliance, and security of
+      their software systems—even in highly regulated industries. By introducing concepts, tools, and
+      ideas to reimagine governance, Investments Unlimited catalyzes a more humane way to enable high-velocity
+      software delivery that is inherently more secure.
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - title: Decisional Capacity for Informed Consent in Schizophrenia Research
+    venue: Arch Gen Psychiatry
+    date: '2000'
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  - title: 'Repeatable Battery for the Assessment of Neuropsychological Status as a Screening Test in
+      Schizophrenia, I: Sensitivity, Reliability, and Validity'
+    venue: Am J Psychiatry
+    date: '1999'
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  spoken_languages:
+  - English
+  - Spanish
+  - Basque
+  - Portuguese
+  activities:
+  - kind: volunteering
+    title: Conference Coordinator
+    detail: OWASP Foundation · Education · Sep 2014 · - Jan 2017 · 2 years 5 months · Shared leadership
+      role in organizing OWASP's AppSec California. · Sep 2014
+    evidence:
+      url: https://www.linkedin.com/in/cqueern
+      observed_at: '2026-10-24T08:42:12Z'
+  talks:
+  - session:2023/dev2760g
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686163701652001i7Pv
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

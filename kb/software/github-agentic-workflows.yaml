@@ -1,0 +1,26 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:github-agentic-workflows
+  name: GitHub Agentic Workflows
+  aliases:
+  - GitHub Agentic Workflows
+  - Agentic Workflows
+  - gh-aw
+  kind: github_product
+  vendor: org:github
+  repositories:
+  - repo:github/gh-aw
+  mentioned_in:
+  - person:landon-cox
+  - person:peli-de-halleux
+  - session:2025/bld1143m
+  - session:2153b
+  - session:bld1799d
+  - session:ldr1786m
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

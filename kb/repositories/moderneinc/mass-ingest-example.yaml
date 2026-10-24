@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:moderneinc/mass-ingest-example
+  full_name: moderneinc/mass-ingest-example
+  url: https://github.com/moderneinc/mass-ingest-example
+  description: Example docker files and other collateral for bootstrapping mass-ingest of LSTs for use
+    with Moderne
+  stars: 1
+  forks: 4
+  watchers: 5
+  open_issues: 1
+  stats_observed_at: '2026-10-24T19:10:34Z'
+  primary_language: Dockerfile
+  archived: false
+  fork: false
+  created_at: '2024-02-22T03:45:35Z'
+  pushed_at: '2026-10-21T15:28:49Z'
+  owner_login: moderneinc
+  owner: gh:moderneinc
+  pinned_by:
+  - gh:moderneinc
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: moderneinc
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: moderneinc/mass-ingest-example
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

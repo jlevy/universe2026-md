@@ -1,0 +1,18 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:go/github.com/pomerium/pomerium
+  ecosystem: go
+  name: github.com/pomerium/pomerium
+  url: https://pkg.go.dev/github.com/pomerium/pomerium
+  latest_version: v0.33.4
+  repository_url: https://github.com/pomerium/pomerium
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: pomerium/pomerium
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

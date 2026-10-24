@@ -1,0 +1,73 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:turbo
+  login: turbo
+  kind: user
+  url: https://github.com/turbo
+  name: Pierre
+  company: '@GitHub'
+  bio: Director, Product Management at @GitHub
+  location: Berlin, Germany
+  website: https://summarity.com
+  followers: 440
+  public_repositories: 46
+  created_at: '2014-06-30T07:05:19Z'
+  profile_readme: |-
+    ### Hi there :coffee:
+
+    Find my dev projects at **[Code Through Coffee (code.tc)](https://code.tc/blog/)**
+  contributions_last_year:
+    total: 1882
+    commits: 9
+    pull_requests: 0
+    issues: 5
+    reviews: 0
+  starred_repositories: 583
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 117
+  organization_logins:
+  - github
+  - alwsl
+  - docs
+  - codeql
+  pinned:
+  - repo:turbo/signals.nim
+  - repo:turbo/js
+  - repo:turbo/libdjwaveform
+  - repo:turbo/pg-shortkey
+  - repo:turbo/openftp4
+  - repo:turbo/c4
+  top_repositories:
+  - repo:turbo/kpti-poc-collection
+  linked_accounts:
+  - acct:x/summarity
+  websites:
+  - site:summarity.com
+  entity: person:pierre-tempel
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: turbo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

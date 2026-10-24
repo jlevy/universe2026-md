@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:timrogers/gh-migrate-project
+  full_name: timrogers/gh-migrate-project
+  url: https://github.com/timrogers/gh-migrate-project
+  description: A GitHub CLI extension for migrating GitHub Projects between GitHub accounts and products
+  stars: 78
+  forks: 16
+  watchers: 2
+  open_issues: 4
+  stats_observed_at: '2026-10-24T19:12:29Z'
+  primary_language: TypeScript
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2023-08-05T18:03:24Z'
+  pushed_at: '2026-07-14T11:42:40Z'
+  owner_login: timrogers
+  owner: gh:timrogers
+  pinned_by:
+  - gh:timrogers
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: timrogers
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: timrogers/gh-migrate-project
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

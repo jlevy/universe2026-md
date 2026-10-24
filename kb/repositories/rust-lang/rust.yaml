@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:rust-lang/rust
+  full_name: rust-lang/rust
+  url: https://github.com/rust-lang/rust
+  description: Empowering everyone to build reliable and efficient software.
+  homepage: https://www.rust-lang.org
+  stars: 120740
+  forks: 18539
+  watchers: 1551
+  open_issues: 11205
+  stats_observed_at: '2026-10-24T19:12:20Z'
+  primary_language: Rust
+  topics:
+  - rust
+  - compiler
+  - language
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2010-06-16T20:39:03Z'
+  pushed_at: '2026-10-24T17:00:34Z'
+  owner_login: rust-lang
+  software: software:rust
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: woodruffw
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: rust-lang/rust
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: rust-lang/rust
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

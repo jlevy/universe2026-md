@@ -1,0 +1,162 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kim-adeline-miguel
+  person: person:kim-adeline-miguel
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes Kim-Adeline Miguel as Senior Software Engineer at
+      GitHub.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 417b2b6f3107b920615e41760e9712133f11c4e947d0e1a11f7748f2b55b0b5d
+    stale: false
+  headline: Mistral
+  current_roles:
+  - Mistral
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1282d
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1282d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1282d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:kim-adeline-miguel
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:kim-adeline-miguel
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: VS Code
+      ref: person:kim-adeline-miguel
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715116138291001yobP
+      ref: session:2024/ai1282d
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715116138291001yobP
+      ref: session:2024/ai1282d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715116138291001yobP
+      ref: session:2024/ai1282d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715116138291001yobP
+      ref: session:2024/ai1282d
+  education:
+  - school: Université de Technologie de Compiègne
+    evidence:
+      url: https://www.linkedin.com/in/kimadelinemiguel
+      observed_at: '2026-10-24T08:45:21Z'
+  credentials:
+  - kind: honor
+    title: Winning team of Startup Weekend Aalborg 2013
+    issuer: '-'
+    date: '2013-11-01T00:00:00.000Z'
+    description: 'Won the 2013 edition of Startup Weekend Aalborg by presenting SaveWatch, a watch designed
+      for elderly healthcare and well-being by combining it with an emergency call function that will
+      alert relatives. Presentation video made during the startup weekend: http://vimeo.com/78724771'
+    evidence:
+      url: https://www.linkedin.com/in/kimadelinemiguel
+      observed_at: '2026-10-24T08:45:21Z'
+  spoken_languages:
+  - English
+  - French
+  - Danish
+  activities:
+  - kind: project
+    title: Facial Expression Recognition Using Local Binary Patterns and Support Vector Machines
+    detail: 'Aalborg University - Department of Electronic SystemsVGIS9 semester projectTheme : Interactive
+      SystemsThe aim of this project is to perform real-time facial expression recognition (which can
+      roughly be translated into "emotions").We use Local Binary Patterns for feature extraction, and
+      classification will be performed using Support Vector Machines.We use a Kinect as video input and
+      several third-party libraries and frameworks (ex.: OpenCV, libsvm) in our project. · Sep 2012'
+    evidence:
+      url: https://www.linkedin.com/in/kimadelinemiguel
+      observed_at: '2026-10-24T08:45:21Z'
+  - kind: project
+    title: Dance and Paint
+    detail: 'A virtual reality project where a user wears several sensors while dancing, his or her movements
+      generating different kinds of painting patterns depending on the environment.Keywords: Virtools,
+      user experience, HIP3E platform, body sensors · Feb 2012'
+    evidence:
+      url: https://www.linkedin.com/in/kimadelinemiguel
+      observed_at: '2026-10-24T08:45:21Z'
+  - kind: project
+    title: 'Ecosystem Simulation: Wolves and Hares'
+    detail: 'Simulation of an ecosystem composed of wolves and hares in Java using MASON library (http://cs.gmu.edu/~eclab/projects/mason/)
+      for the Multi-Agent Systems course: - Birth- Reproduction- Death- Management of natural resources
+      (grass) for hares- Specification of simulation parameters through a GUI · Feb 2012'
+    evidence:
+      url: https://www.linkedin.com/in/kimadelinemiguel
+      observed_at: '2026-10-24T08:45:21Z'
+  talks:
+  - session:2024/ai1282d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699461987068001n1BX
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

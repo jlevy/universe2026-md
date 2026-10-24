@@ -1,0 +1,28 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/janiceilene.bsky.social
+  platform: bluesky
+  handle: janiceilene.bsky.social
+  url: https://bsky.app/profile/janiceilene.bsky.social
+  display_name: Janice
+  followers: 14
+  created_at: '2023-09-08T08:11:53Z'
+  owner: person:janice
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699392208201001T40f
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: janiceilene.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:django/new-features
+  full_name: django/new-features
+  url: https://github.com/django/new-features
+  description: New feature proposals for Django and third-party ecosystem
+  stars: 193
+  forks: 7
+  watchers: 27
+  open_issues: 167
+  stats_observed_at: '2026-10-24T19:10:03Z'
+  archived: false
+  fork: false
+  created_at: '2025-04-23T14:29:57Z'
+  pushed_at: '2026-09-04T13:23:23Z'
+  owner_login: django
+  owner: gh:django
+  pinned_by:
+  - gh:django
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: django
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: django/new-features
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

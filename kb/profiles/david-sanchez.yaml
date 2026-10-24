@@ -1,0 +1,740 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:david-sanchez
+  person: person:david-sanchez
+  brief_bio:
+    text: David Sanchez is Director of Go-To-Market for the Azure developer audience at Microsoft, according
+      to an X profile, and creates content about open source, cloud and web development. Sanchez spoke
+      at GitHub Universe 2024 about pairing GitHub and Azure and at GitHub Universe 2025 about agentic
+      DevOps.
+    cites:
+    - x_bio
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: 34d554e8665a17ee94c14fb14a301c6b097ea841887a3ad84f07bf9997b453fe
+    stale: false
+  headline: Microsoft
+  current_roles:
+  - Microsoft
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Data Analytics
+    target: term:topic-2024/data-analytics
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Data Management
+    target: term:topic-2024/data-management
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Scrum
+    target: term:topic-2024/scrum
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2024/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure
+      ref: session:2024/dev1570l
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Discussions
+    target: term:github-product-2024/discussions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  credentials:
+  - kind: honor
+    title: Microsoft Most Valuable Professional
+    issuer: Microsoft
+    date: '2023-07-01T00:00:00.000Z'
+    description: Developer Technologies (DevOps)
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: honor
+    title: ALM & DevOps Ranger
+    issuer: Microsoft
+    date: '2017-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: honor
+    title: Microsoft Most Valuale Professional Reconnect
+    issuer: Microsoft
+    date: '2017-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: honor
+    title: Microsoft Most Valuable Professional
+    issuer: Microsoft
+    date: '2015-07-01T00:00:00.000Z'
+    description: Office365
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: honor
+    title: Microsoft Most Valuable Professional
+    issuer: Microsoft
+    date: '2014-07-01T00:00:00.000Z'
+    description: SharePoint Server
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: honor
+    title: Microsoft Most Valuable Professional
+    issuer: Microsoft
+    date: '2013-07-01T00:00:00.000Z'
+    description: SharePoint Server
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure AI Fundamentals'
+    issuer: Microsoft
+    date: Apr 2022
+    url: https://www.credly.com/badges/4c6c6ba9-634e-4f9c-b937-80dd94977b21?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: 'Product Marketing Certified: Core'
+    issuer: Product Marketing Alliance
+    date: Jan 2021
+    url: https://www.linkedin.com/posts/dsanchezcr_product-marketing-certified-activity-6752707306171056128-npNR/
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: 'Microsoft Certified: Power Platform Fundamentals'
+    issuer: Microsoft
+    date: Jun 2020
+    url: https://www.credly.com/badges/fab15f83-4245-491f-8cfc-66daa36e3701
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: Accessibility in Action
+    issuer: Microsoft
+    date: Mar 2020
+    url: https://www.credly.com/badges/4f5a8efa-b420-45eb-9755-d5e7ade23f14
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Jul 2019
+    url: https://www.credly.com/badges/35d15788-3241-47e4-a283-75a9813dd5ba
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: Dale Carnegie Course Skills for Success
+    issuer: Dale Carnegie Training
+    date: Apr 2019
+    url: https://raw.githubusercontent.com/dsanchezcr/website/main/static/img/DaleCarnegie.jpg
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Developer Associate'
+    issuer: Microsoft
+    date: Mar 2019
+    expires: Sep 2023
+    url: https://www.credly.com/badges/70be542c-9e56-4c21-8418-bfaddd371d8f
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure DevOps Engineer Expert'
+    issuer: Microsoft
+    date: Mar 2019
+    expires: Sep 2023
+    url: https://www.credly.com/badges/9e6040db-be9f-430b-bb52-d3fc9a0739f9
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: Microsoft Certified Trainer 2013-2023
+    issuer: Microsoft
+    date: Mar 2019
+    expires: Mar 2023
+    url: https://www.credly.com/badges/eb3578c0-492b-4ab3-a4db-88db17db60b7
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: certification
+    title: OKR Certified Professional (OKRCP)
+    issuer: CertiProf
+    date: Aug 2020
+    expires: Jul 2022
+    url: https://www.credly.com/earner/earned/badge/e568c941-9bc0-4608-ba58-c2f4df3bfbfa
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  spoken_languages:
+  - Español
+  - English
+  - Portuguese
+  activities:
+  - kind: volunteering
+    title: Mentor Volunteer
+    detail: MicroMentor · Science and Technology · Oct 2018 · - Sep 2022 · 4 years · I am a mentor in
+      MicroMentor the online platform that helps mentors and mentees create matches to develop a meaningful
+      online mentoring relationship. · Oct 2018
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: volunteering
+    title: Trainer Kodu Video Game Design for kids
+    detail: FundaVida · Education · Sep 2012 · - Nov 2014 · 2 years 3 months · I teached kids the basics
+      of programming using www.kodugamelab.com · Sep 2012
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: project
+    title: Issue Importer Action (GitHub Action)
+    detail: Imports issues from CSV or JSON files into your repository. Perfect for migrating issues from
+      other systems, bulk creating issues from spreadsheets, or automating issue creation from structured
+      data. · May 2025
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: project
+    title: GitHub Copilot License Assignment
+    detail: This repository is a template to enable a self-service solution to automate the process of
+      assigning GitHub Copilot licenses in your GitHub organization. · Apr 2024
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: project
+    title: Colones Exchange Rate
+    detail: This repository contains a NuGet & npm package to provide currency conversion from Colones
+      (Costa Rica - CRC ₡) to Dollars (United States - USD $) and Euros (European Union - EUR €). It consumes
+      the API from Ministerio de Hacienda de Costa Rica (The API is in Spanish). · Nov 2023
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: project
+    title: David's Personal Website
+    detail: Built with Docusaurus running on Azure Static Web Sites. · Sep 2022
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: project
+    title: Rock, Paper, Scissors, Lizard, Spock - Sample Application
+    detail: Sample Application used in the General Session of Microsoft Ignite 2019 · Sep 2019
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: project
+    title: Tailwind Traders - Sample Application
+    detail: Sample Application used in Microsoft Ignite 2018 · Apr 2018
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  - kind: project
+    title: SmartHotel360 - Sample Application
+    detail: Sample Application used in the Microsoft Build 2018 · Jan 2018
+    evidence:
+      url: https://www.linkedin.com/in/dsanchezcr
+      observed_at: '2026-10-24T08:42:46Z'
+  recent_writing:
+  - title: 'Beyond Code: Domain Expertise and Real Impact in the AI Era'
+    url: https://dsanchezcr.com/blog/value-beyond-code-ai-era
+    published: '2026-10-19T03:00:00Z'
+    channel: blog
+  - title: 'Beyond Code: Domain Expertise and Real Impact in the AI Era'
+    url: https://dsanchezcr.com/blog/value-beyond-code-ai-era
+    published: '2026-10-19T03:00:00Z'
+    channel: blog
+  - title: 'Own the Verification: A New Execution Mindset for the Agentic Era'
+    url: https://dsanchezcr.com/blog/own-the-verification-agentic-era
+    published: '2026-10-18T10:00:00Z'
+    channel: blog
+  - title: 'Own the Verification: A New Execution Mindset for the Agentic Era'
+    url: https://dsanchezcr.com/blog/own-the-verification-agentic-era
+    published: '2026-10-18T10:00:00Z'
+    channel: blog
+  - title: 'A Small Message, A Meaningful Moment: Building a Ronald McDonald House eCard'
+    url: https://dsanchezcr.com/blog/words-of-encouragement-ecard
+    published: '2026-10-17T10:00:00Z'
+    channel: blog
+  - title: 'A Small Message, A Meaningful Moment: Building a Ronald McDonald House eCard'
+    url: https://dsanchezcr.com/blog/words-of-encouragement-ecard
+    published: '2026-10-17T10:00:00Z'
+    channel: blog
+  - title: 'Golden Paths for Agents: Why Platform Engineering is the Missing Layer'
+    url: https://dsanchezcr.com/blog/golden-paths-for-agents-platform-engineering
+    published: '2026-08-31T10:00:00Z'
+    channel: blog
+  - title: 'Golden Paths for Agents: Why Platform Engineering is the Missing Layer'
+    url: https://dsanchezcr.com/blog/golden-paths-for-agents-platform-engineering
+    published: '2026-08-31T10:00:00Z'
+    channel: blog
+  - title: 'Agentic DevOps Meets Accessibility: Inclusive Delivery with AI & Agents (Microsoft Reactor
+      Webinar)'
+    url: https://dsanchezcr.com/blog/agentic-devops-accessibility-webinar
+    published: '2026-07-17T10:00:00Z'
+    channel: blog
+  - title: 'Agentic DevOps Meets Accessibility: Inclusive Delivery with AI & Agents (Microsoft Reactor
+      Webinar)'
+    url: https://dsanchezcr.com/blog/agentic-devops-accessibility-webinar
+    published: '2026-07-17T10:00:00Z'
+    channel: blog
+  - title: 'Learning Differently: How Teaching and Learning Must Evolve in the AI and Agentic Era'
+    url: https://dsanchezcr.com/blog/learning-differently-ai-agentic-era
+    published: '2026-07-02T10:00:00Z'
+    channel: blog
+  - title: 'Learning Differently: How Teaching and Learning Must Evolve in the AI and Agentic Era'
+    url: https://dsanchezcr.com/blog/learning-differently-ai-agentic-era
+    published: '2026-07-02T10:00:00Z'
+    channel: blog
+  - title: 'Before You Prompt: The Fundamentals Every Beginner Needs in the AI Era'
+    url: https://dsanchezcr.com/blog/fundamentals-before-ai
+    published: '2026-07-01T10:00:00Z'
+    channel: blog
+  - title: 'Before You Prompt: The Fundamentals Every Beginner Needs in the AI Era'
+    url: https://dsanchezcr.com/blog/fundamentals-before-ai
+    published: '2026-07-01T10:00:00Z'
+    channel: blog
+  - title: 'Token Debt: Why FinOps for Agentic AI Is an Engineering Problem, Not a Model Choice'
+    url: https://dsanchezcr.com/blog/token-debt-finops-agentic-engineering
+    published: '2026-06-30T10:00:00Z'
+    channel: blog
+  talks:
+  - session:2024/dev1570l
+  - session:2025/aut1544l
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715355236901001QH4v
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715355236901001QH4v
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

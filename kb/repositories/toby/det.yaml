@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:toby/det
+  full_name: toby/det
+  url: https://github.com/toby/det
+  description: P2P search and discovery on the BitTorrent network
+  stars: 24
+  forks: 0
+  watchers: 0
+  open_issues: 2
+  stats_observed_at: '2026-10-24T19:12:29Z'
+  primary_language: Go
+  topics:
+  - bittorrent
+  - magnet-link
+  - magnet
+  - bittorrent-client
+  - dht
+  - bittorrent-dht
+  - trending-torrents
+  - torrent-database
+  - bittorrent-network
+  - p2p
+  archived: false
+  fork: false
+  created_at: '2019-01-07T19:13:08Z'
+  pushed_at: '2019-09-02T21:31:40Z'
+  owner_login: toby
+  owner: gh:toby
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: toby
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: toby/det
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

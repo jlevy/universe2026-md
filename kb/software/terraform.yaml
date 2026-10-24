@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:terraform
+  name: Terraform
+  aliases:
+  - Terraform
+  kind: open_source
+  homepage: https://www.terraform.io
+  repositories:
+  - repo:hashicorp/terraform
+  mentioned_in:
+  - person:jean-francois-gueyffier
+  - person:matthew-casperson
+  - person:sumanth-mothkuri
+  - session:2023/dev2716g
+  - session:ldr1358d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

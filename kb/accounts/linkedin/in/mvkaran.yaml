@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mvkaran
+  platform: linkedin
+  handle: in/mvkaran
+  url: https://www.linkedin.com/in/mvkaran
+  display_name: Karan M V
+  bio: 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝗥𝗲𝗹𝗮𝘁𝗶𝗼𝗻𝘀 𝗟𝗲𝗮𝗱𝗲𝗿 | 𝗔𝗜, 𝗢𝗽𝗲𝗻 𝗦𝗼𝘂𝗿𝗰𝗲 &amp;…
+  location: Greater Bengaluru Area
+  followers: 15940
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHzwVIsrp9Tdw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713252806107?e=2147483647&v=beta&t=vxkSU1DREFV2LbGcuNWDv8-GB2PmUKEaDgovgMm5oWA
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQFjXksceJUQnw/profile-displaybackgroundimage-shrink_200_800/B4DaApvQ6tI4AQ-/0/1787406651364?e=2147483647&v=beta&t=2VFOY9bnAnOQOlOtCZAWJFS8msj3TPCoCv11UuDdkJY
+  owner: person:karan-m-v
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465756226001tyRt
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mvkaran
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

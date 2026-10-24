@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/erik-englund-8298949b
+  platform: linkedin
+  handle: in/erik-englund-8298949b
+  url: https://www.linkedin.com/in/erik-englund-8298949b
+  display_name: Erik Englund
+  bio: Hands-on platform architect and systems engineer with nearly two decades of experience…
+  location: Greater Minneapolis-St. Paul Area
+  followers: 299
+  connections: 281
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQF12qoSvfS1LA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1714446338145?e=2147483647&v=beta&t=VsOhMKd_drfPFAi6cGcVeOcZzVh9uK9WkGIQwNFdkII
+  owner: person:erik-englund
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726006760251001y0Vd
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/erik-englund-8298949b
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/momentic-ai
+  platform: linkedin
+  handle: company/momentic-ai
+  url: https://www.linkedin.com/company/momentic-ai
+  display_name: Momentic
+  bio: Momentic makes Mo, the AI QA engineer. Point Mo at your app with a goal and a swarm of agents bug-bashes
+    it the way your team would, then reports every bug with repro steps, logs, and a video replay. Notion,
+    Whatnot, Retool, Webflow, Framer, and 1,600+ teams use Momentic. Teams also use Momentic to write
+    end-to-end tests in plain English, run them in CI, and let agents triage and maintain the suite across
+    web and mobile. https://momentic.ai
+  website: https://momentic.ai/
+  followers: 7319
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQF8dYTQ_xR2xQ/company-logo_200_200/B56Z7yU18LGQAE-/0/1782182010834/momentic_ai_logo?e=2147483647&v=beta&t=y9ESO7xqAIVmRrlM3k-1HisT9YzFX6qKdQP2_pFb-3I
+  owner: org:momentic
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeff-an
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/momentic-ai
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

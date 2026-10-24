@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/asgiref
+  ecosystem: pypi
+  name: asgiref
+  url: https://pypi.org/project/asgiref/
+  description: ASGI specs, helper code, and adapters
+  latest_version: 3.13.0
+  license: BSD-3-Clause
+  repository_url: https://github.com/django/asgiref/
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: django/asgiref
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

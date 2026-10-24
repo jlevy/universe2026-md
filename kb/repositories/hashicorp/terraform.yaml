@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:hashicorp/terraform
+  full_name: hashicorp/terraform
+  url: https://github.com/hashicorp/terraform
+  description: Terraform enables you to safely and predictably create, change, and improve infrastructure.
+    It is a source-available tool that codifies APIs into declarative configuration files that can be
+    shared amongst team members, treated as code, edited, reviewed, and versioned.
+  homepage: http://developer.hashicorp.com/terraform
+  stars: 50101
+  forks: 10599
+  watchers: 1156
+  open_issues: 1768
+  stats_observed_at: '2026-10-24T19:10:19Z'
+  primary_language: Go
+  topics:
+  - graph
+  - infrastructure-as-code
+  - terraform
+  - cloud
+  - cloud-management
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2014-03-13T22:25:48Z'
+  pushed_at: '2026-10-23T19:53:01Z'
+  owner_login: hashicorp
+  software: software:terraform
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: hashicorp/terraform
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: hashicorp/terraform
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

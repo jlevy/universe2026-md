@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/ing
+  platform: linkedin
+  handle: company/ing
+  url: https://www.linkedin.com/company/ing
+  display_name: ING
+  bio: ING is a pioneer in digital banking and on the forefront as one of the most innovative banks in
+    the world. As ING, we have a clear purpose that represents our conviction of people’s potential. We
+    don’t judge, coach, or tell people how to live their lives. However big or small, modest or grand,
+    we empower people and businesses to realise their vision for a better future. We made the promise
+    to make banking frictionless, removing barriers to progress, and make people confident in their financial
+    decisions. As a global bank we have a huge opportunity – and responsibility – to make an impact for
+    the better. We can play a role by financing change, sharing knowledge, and innovating. Being sustainable
+    is in all the choices we make—as a lender, as a partner and through the services we offer our customers
+  website: https://www.ing.com/
+  followers: 652788
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFDBnLKB4S6bg/company-logo_200_200/B4EZ9BtOWTJUAE-/0/1783513802382/ing_logo?e=2147483647&v=beta&t=t95-BioYFP-NN84yQq7UTpiBoJI-sem6riL0kbnSCt0
+  owner: org:ing
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeffrey-opdam
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/ing
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

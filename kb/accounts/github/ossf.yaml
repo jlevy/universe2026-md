@@ -1,0 +1,63 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:ossf
+  login: ossf
+  kind: organization
+  url: https://github.com/ossf
+  name: Open Source Security Foundation (OpenSSF)
+  bio: OpenSSF is a community of software developers and security engineers who are working together to
+    secure open source software for the greater public good.
+  location: San Francisco, CA
+  website: https://openssf.org
+  public_repositories: 84
+  created_at: '2020-07-01T18:13:42Z'
+  profile_readme: "<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://github.com/ossf/artwork/raw/main/openssf/horizontal/white/openssf-horizontal-white.png\"\
+    >\n  <source media=\"(prefers-color-scheme: light)\" srcset=\"https://github.com/ossf/artwork/raw/main/openssf/horizontal/color/openssf-horizontal-color.png\"\
+    >\n  <img alt=\"OpenSSF Logo\" src=\"https://github.com/ossf/artwork/raw/main/openssf/horizontal/color/openssf-horizontal-color.png\"\
+    >\n</picture>\n\n[OpenSSF](https://openssf.org/) is committed to working both upstream and with existing\
+    \ communities to advance open source security for all.\n\nWe foster collaboration, establish best\
+    \ practices, and develop innovative solutions to secure the development, maintenance, and consumption\
+    \ of open source software. OpenSSF is part of the nonprofit [Linux Foundation](https://linuxfoundation.org/).\
+    \ \n\n- Visit our Projects page (https://openssf.org/projects/)\n\n## Working Groups:\n- [AI/ML Security](https://github.com/ossf/ai-ml-security)\
+    \ - explore the security risks associated with AI and ML and their impact on open source\n- [Belonging,\
+    \ Empowerment, Allyship, & Representation](https://github.com/ossf/wg-bear) - foster a more diverse\
+    \ and inclusive cybersecurity workforce\n- [Best Practices for Open Source Developers](https://github.com/ossf/wg-best-practices-os-developers)\
+    \ — provide awareness, education, and guidance about security best practices\n- [Global Cyber Policy](https://github.com/ossf/wg-globalcyberpolicy)\
+    \ - collaborate on cybersecurity-related legislation, frameworks, and standards\n- [Securing Critical\
+    \ Projects](https://github.com/ossf/wg-securing-critical-projects) — identify and help secure critical\
+    \ open source projects\n- [Securing Software Repositories](https://github.com/ossf/wg-securing-software-repos)\
+    \ — strengthen the security posture of software repositories\n- [Security Tooling](https://github.com/ossf/wg-security-tooling)\
+    \ — identify and provide state of the art, globally accessible security tools\n- [Supply Chain Integrity](https://github.com/ossf/wg-supply-chain-integrity)\
+    \ — ensure the provenance of open source code\n- [Vulnerability Disclosures](https://github.com/ossf/wg-vulnerability-disclosures)\
+    \ — enable efficient vulnerability reporting and remediation\n\nFor any questions, concerns, reports,\
+    \ etc., please email [email removed].\n\n## Get Involved\n\n- Join the [OpenSSF Slack](http://slack.openssf.org/)\n\
+    - Subscribe to the [OpenSSF monthly newsletter] (https://openssf.org/sign-up/)\n- Join one of the\
+    \ [OpenSSF Mailing Lists](https://lists.openssf.org/g/main/subgroups)\n- Attend Working Group, Special\
+    \ Interest Group (SIG), and Project meetings, which can be found on our [Community Calendar](https://calendar.google.com/calendar?cid=czYzdm9lZmhwNWk5cGZsdGI1cTY3bmdwZXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)\n\
+    - For more ways to participate, visit our [Get Involved page](https://openssf.org/getinvolved/)\n\n\
+    ## Membership\n\nWe encourage all individual contributors to work with their employers to become members.\
+    \ We aim to grow an active, healthy community of contributors, reviewers, and code owners. \nLearn\
+    \ more about the requirements and responsibilities of membership in our [Membership page](https://openssf.org/join/)\
+    \ or see [current members](https://landscape.openssf.org/)."
+  pinned:
+  - repo:ossf/wg-best-practices-os-developers
+  - repo:ossf/ai-ml-security
+  - repo:ossf/wg-securing-critical-projects
+  - repo:ossf/wg-securing-software-repos
+  - repo:ossf/tac
+  - repo:ossf/foundation
+  top_repositories:
+  - repo:ossf/scorecard
+  - repo:ossf/cve-bin-tool
+  - repo:ossf/criticality_score
+  entity: org:openssf
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: ossf
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:francescoronel.com
+  url: https://francescoronel.com
+  kind: personal
+  title: Frances Coronel
+  description: Frances Coronel is a Senior Software Engineer on Slack's Agentic SDLC team. She writes
+    and speaks about how companies adopt agentic AI across the whole software lifecycle, for engineers
+    and everyone else.
+  owner: person:frances-coronel
+  link_basis:
+  - github_profile
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  identity_links:
+  - https://github.com/FrancesCoronel
+  - https://bsky.app/profile/francescoronel.bsky.social
+  linked_accounts:
+  - acct:bluesky/francescoronel.bsky.social
+  - acct:linkedin/in/francescoronel
+  - acct:youtube/c/francesvcoronel
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: FrancesCoronel
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://francescoronel.com
+    record_id: https://francescoronel.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

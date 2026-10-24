@@ -1,0 +1,257 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kedasha-kerr
+  person: person:kedasha-kerr
+  brief_bio:
+    text: Kedasha Kerr is a Developer Advocate who has worked at GitHub sharing software development lessons
+      with the developer community. Kerr spoke at GitHub Universe 2023 about GitHub Copilot in the CLI
+      and in the opening keynote, and at GitHub Universe 2024 about GitHub Copilot.
+    cites:
+    - listed_role
+    - past_affiliations
+    - x_bio
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: ffd782dbcd2c9d8592a0ef74c31f961f039212c9aa407ddd4ccd77ae476777af
+    stale: false
+  expertise:
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2023/ai2755d
+    - ref: session:2023/ai2849k
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:2024/ai1607d
+    - ref: session:2024/ai1973o
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2755d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2755d
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2023/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2755d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2755d
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1973o
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1973o
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai2755d
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693062402592001Sduu
+      ref: session:2023/ai2755d
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695657268465001jL1D
+      ref: session:2023/ai2849k
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715363833334001QmzL
+      ref: session:2024/ai1607d
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.86
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693062402592001Sduu
+      ref: session:2023/ai2755d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715363833334001QmzL
+      ref: session:2024/ai1607d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724852147157001ilyG
+      ref: session:2024/ai1973o
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 0.67
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693062402592001Sduu
+      ref: session:2023/ai2755d
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724852147157001ilyG
+      ref: session:2024/ai1973o
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693062402592001Sduu
+      ref: session:2023/ai2755d
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724852147157001ilyG
+      ref: session:2024/ai1973o
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2023/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693062402592001Sduu
+      ref: session:2023/ai2755d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.33
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1693062402592001Sduu
+      ref: session:2023/ai2755d
+  recent_writing:
+  - title: "The willingness to mentor is, in my opinion, a sign of growth and maturity as an engineer.\
+      \ \n\nThe ability to communicate what you know to another, so they can also know, is how our industry\
+      \ stays alive. \n\nJr engineers are important. We were all but an inexperienced Junior Eng."
+    url: https://twitter.com/1041858512681349120/status/1834209515065000055
+    published: '2024-09-12T12:36:41Z'
+    channel: x
+  - title: |-
+      2 years ago, on this date, I joined GitHub's devrel team. 💕
+
+      It's been the best, most rewarding experience ever. I'm so grateful I get to work with an amazing team and learn soooOooo much all the time. 🚀
+
+      It's been a fantastic 2 years, and I can't wait for many more years 💃🏽
+    url: https://twitter.com/1041858512681349120/status/1806788018646196435
+    published: '2024-06-28T20:33:26Z'
+    channel: x
+  - title: |-
+      SUPER EXCITED to be heading to RenderATL next week to chat about AI things and meet and mingle with you all! 💃🕺🩰👯
+
+      My goal is to empower you to understand and effectively use LLMs in your dev projects. 🤖✨ https://t.co/hn7nLdbrjh
+    url: https://twitter.com/1041858512681349120/status/1797716546405699938
+    published: '2024-06-03T19:46:39Z'
+    channel: x
+  - title: |-
+      Ya'll!! My new series launched! ❤️
+
+      Welcome to GitHub for Beginners ✨️💃🏽
+
+      The first video is now live.🚀 This was created with absolute beginners in mind. Share with your friends who's new to git and GitHub! ✨️
+      https://t.co/rdg5Z1Cfqe
+    url: https://twitter.com/1041858512681349120/status/1795234211747516625
+    published: '2024-05-27T23:22:44Z'
+    channel: x
+  - title: |-
+      I think I'm addicted to live coding at conferences. 😅
+
+      I LOVE when I get an unexpected error and I have to debug it LIVE and then we figure it out TOGETHER. 😬
+
+      Folks get so invested into the outcome and learn so much more. ✨
+    url: https://twitter.com/1041858512681349120/status/1791833332839248068
+    published: '2024-05-18T14:08:51Z'
+    channel: x
+  - title: |-
+      I just met a professor from Howard University who knew nothing about GitHub.😯 He teaches Python and I showed him a quick lil demo of GitHub and it blew his mind 😂💃🏽
+
+      Can't wait to hook him up with all the GitHub Education things! ✨️ #PyCon
+    url: https://twitter.com/1041858512681349120/status/1791455797118927312
+    published: '2024-05-17T13:08:40Z'
+    channel: x
+  - title: "I'm here at #PyCon \U0001F40D Come to the Microsoft booth #301 at 2:45pm today to watch me\
+      \ build an ml model with GitHub Copilot  in Jupyter Notebooks✨️ \n\nWe also have GitHub stickers!\
+      \ \U0001F483\U0001F3FD\U0001F40D https://t.co/nwlmebw2jY"
+    url: https://twitter.com/1041858512681349120/status/1791442922560266682
+    published: '2024-05-17T12:17:30Z'
+    channel: x
+  - title: who has an open source project they want to show off on GitHub's Open Source Friday livestream?
+      👀
+    url: https://twitter.com/1041858512681349120/status/1783600119956353405
+    published: '2024-04-25T20:53:00Z'
+    channel: x
+  - title: |-
+      I DID IT! 🥹
+      I successfully completed my Certificate on Applied Machine Learning and AI 💃🏼
+
+      Twas a long 4 months but we did it!✨ https://t.co/1kp3TImIdg
+    url: https://twitter.com/1041858512681349120/status/1782982598651769316
+    published: '2024-04-24T03:59:12Z'
+    channel: x
+  - title: |-
+      Guess who's speaking at RenderATL this year?! 🥹
+      SUPER excited to give this technical talk!💃🏽 https://t.co/xUoCp4Tru9
+    url: https://twitter.com/1041858512681349120/status/1766141696151015565
+    published: '2024-03-08T16:39:28Z'
+    channel: x
+  talks:
+  - session:2023/ai2755d
+  - session:2023/ai2849k
+  - session:2024/ai1607d
+  - session:2024/ai1973o
+  gaps:
+  - github_account
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1688147446205001EjCq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1688147446205001EjCq
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

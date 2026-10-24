@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/@octopusdeploy/mcp-server
+  ecosystem: npm
+  name: '@octopusdeploy/mcp-server'
+  url: https://www.npmjs.com/package/@octopusdeploy/mcp-server
+  description: The Octopus MCP Server provides your AI assistant with powerful tools that allow it to
+    inspect, query, and diagnose problems within your Octopus instance.
+  latest_version: 2.3.2
+  license: Apache-2.0
+  repository_url: git+https://github.com/OctopusDeploy/mcp-server.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: OctopusDeploy/mcp-server
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

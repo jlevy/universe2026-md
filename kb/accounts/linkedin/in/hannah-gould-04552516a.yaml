@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/hannah-gould-04552516a
+  platform: linkedin
+  handle: in/hannah-gould-04552516a
+  url: https://www.linkedin.com/in/hannah-gould-04552516a
+  display_name: Hannah Gould
+  location: Greater Seattle Area
+  followers: 261
+  connections: 248
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQHuBANCcKsrPQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1697672717106?e=2147483647&v=beta&t=o3Oori5t6iBUOzJkUlwEaNgoE83GEFzc6QXKDHb7y4o
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQH5qow-2VDWuA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1697672779709?e=2147483647&v=beta&t=WO9DzKwXzg4mM55AT2jBzvoPubbLiKQc7OfeLdIJhVo
+  owner: person:hannah-gould
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696015904992001iNjM
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/hannah-gould-04552516a
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

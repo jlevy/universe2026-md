@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/devsecopsvince
+  platform: linkedin
+  handle: in/devsecopsvince
+  url: https://www.linkedin.com/in/devsecopsvince
+  display_name: Vincent K.
+  bio: Senior cyber security leader with 20+ years of experience delivering large‑scale secure…
+  location: Little Hadham
+  followers: 2308
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D03AQEL3p8zCRBNeA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1611570066311?e=2147483647&v=beta&t=Dy9HoJ4FytPOZCl0cx1uS8nberdQleZTUTK1HS53PZg
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQHBBnMvbdoPjw/profile-displaybackgroundimage-shrink_200_800/B4DZ5uJiAvJ4AQ-/0/1779964453171?e=2147483647&v=beta&t=zDyI3fh2sznur-oZ62F4hKML8qDlowdcaDsBHTQ01VI
+  owner: person:vincent-king
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684155169613001dDwc
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/devsecopsvince
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

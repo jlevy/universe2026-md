@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/onepoint
+  platform: linkedin
+  handle: company/onepoint
+  url: https://www.linkedin.com/company/onepoint
+  display_name: Onepoint
+  bio: Depuis 25 ans, Onepoint accompagne les grandes transformations des entreprises et des acteurs publics.
+    Groupe international de conseil et de tech, présent dans 19 villes partout dans le monde, il réunit
+    un collectif 4 500 talents et réalise un chiffre d’affaires annuel de plus de 500 millions d’euros.
+  website: https://www.groupeonepoint.com/
+  followers: 143080
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQGvpe_509Zo-w/company-logo_200_200/company-logo_200_200/0/1665673493364/onepoint_logo?e=2147483647&v=beta&t=2IzICG66zTjPXU7tr-OJXwOofkj01NmchL2WYVd8VDw
+  owner: org:onepoint
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/romain-le-disez-870968137
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/onepoint
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

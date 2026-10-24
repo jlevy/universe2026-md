@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/bloomberg
+  platform: linkedin
+  handle: company/bloomberg
+  url: https://www.linkedin.com/company/bloomberg
+  display_name: Bloomberg
+  bio: Bloomberg is a global leader in business and financial information, delivering trusted data, news,
+    and insights that bring transparency and efficiency, and fairness to markets. We help connect influential
+    communities across the global financial ecosystem via reliable technology solutions that enable our
+    customers to make more informed decisions and foster better collaboration. We challenge the status
+    quo through constant innovation. We collaborate broadly because we know that other perspectives matter.
+    We put our customers first, as a guiding beacon. And we believe doing the right thing – by our people,
+    our clients, and our communities – is the best thing for our business.
+  website: https://bloomberg.com/company
+  followers: 2270770
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D0BAQF0uyE7RGKDGg/company-logo_200_200/company-logo_200_200/0/1631374698859/bloomberg_lp_logo?e=2147483647&v=beta&t=ipW1SRAbTeiNWVqL-aAMhkQMFbqhcGWnrd-dEySOpiM
+  owner: org:bloomberg-lp
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/alyssapwright
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/bloomberg
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

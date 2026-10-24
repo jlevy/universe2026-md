@@ -1,0 +1,228 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:stefan-petrushevski
+  person: person:stefan-petrushevski
+  brief_bio:
+    text: Stefan Petrushevski is a Senior Security Solution Architect at GitHub who works on security
+      evaluation and research. Petrushevski spoke at GitHub Universe 2023 about turning security advisories
+      into CodeQL queries and at GitHub Universe 2025 about a risk-based rollout of GitHub Advanced Security.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 688be140702306ca199105cc90db04ca21bfa373ddb8132f08453791f43d62c7
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2747w
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1364w
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1364w
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1364w
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1364w
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: CodeQL
+      ref: session:2023/sec2747w
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:stefan-petrushevski
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: session:2025/sec1364w
+  interests:
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490641001Ka3D
+      ref: session:2023/sec2747w
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490641001Ka3D
+      ref: session:2023/sec2747w
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: GitHub Secret Protection
+    target: term:github-product-2025/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746198913662001PH56
+      ref: session:2025/sec1364w
+  education:
+  - school: Univerzitet 'Sv. Kiril i Metódij' vo Skopje
+    evidence:
+      url: https://www.linkedin.com/in/stefanpetrushevski
+      observed_at: '2026-10-24T08:47:15Z'
+  credentials:
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Jan 2023
+    expires: Jan 2025
+    url: https://www.credly.com/badges/1a943f59-df15-4ddc-852c-4c9ee9c3ea60/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/stefanpetrushevski
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: certification
+    title: GIAC Exploit Researcher and Advanced Penetration Tester (GXPN)
+    issuer: Global Information Assurance Certification (GIAC)
+    url: https://www.youracclaim.com/badges/87048faa-fbed-4343-8d25-fd5c08440dcc/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/stefanpetrushevski
+      observed_at: '2026-10-24T08:47:15Z'
+  spoken_languages:
+  - English
+  - Serbian
+  - Croatian
+  - Dutch
+  activities:
+  - kind: course
+    title: 'Configuring BIG-IP ASM: Application Security Manager'
+    evidence:
+      url: https://www.linkedin.com/in/stefanpetrushevski
+      observed_at: '2026-10-24T08:47:15Z'
+  - kind: course
+    title: Container security, Serverless and Orchestration
+    evidence:
+      url: https://www.linkedin.com/in/stefanpetrushevski
+      observed_at: '2026-10-24T08:47:15Z'
+  talks:
+  - session:2023/sec2747w
+  - session:2025/sec1364w
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248219001wEPf
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248219001wEPf
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

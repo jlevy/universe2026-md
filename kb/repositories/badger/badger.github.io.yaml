@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:badger/badger.github.io
+  full_name: badger/badger.github.io
+  url: https://github.com/badger/badger.github.io
+  description: A collection of all the hacks you can experiment with your Badger badge
+  stars: 12
+  forks: 27
+  watchers: 2
+  open_issues: 3
+  stats_observed_at: '2026-10-24T19:09:54Z'
+  primary_language: Python
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2025-09-23T11:42:46Z'
+  pushed_at: '2026-10-24T17:38:19Z'
+  owner_login: badger
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: martinwoodward
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: badger/badger.github.io
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

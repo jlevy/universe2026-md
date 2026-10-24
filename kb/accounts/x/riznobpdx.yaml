@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/riznobpdx
+  platform: x
+  handle: riznobpdx
+  url: https://x.com/riznobpdx
+  display_name: Rob Anderson
+  bio: Senior DevOps Engineer, Husband, Dad, Cyclist, Hiker, Camper.
+  location: Beaverton, OR
+  followers: 90
+  following: 103
+  posts_count: 196
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1787498875978420224/e-axA1sN_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/23566174/1379710691
+  created_at: '2009-03-10T06:55:58Z'
+  owner: person:robert-anderson
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248458001wYUM
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/riznobpdx
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:mastodon/cmaiacd@mastodon.social
+  platform: mastodon
+  handle: cmaiacd@mastodon.social
+  url: https://mastodon.social/@cmaiacd
+  display_name: Camila Maia
+  bio: Software developer. Escritora de código-fonte e lead da minha própria vida. [#opensource](https://mastodon.social/tags/opensource)
+    [#python](https://mastodon.social/tags/python) [#queer](https://mastodon.social/tags/queer) [#PcD](https://mastodon.social/tags/PcD)
+    🌈
+  followers: 69
+  following: 77
+  posts_count: 1
+  avatar_url: https://files.mastodon.social/accounts/avatars/001/123/940/original/e1f9854ab71e5437.jpg
+  created_at: '2020-02-22T00:00:00Z'
+  owner: person:camila-maia
+  link_basis:
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: camilamaia
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: mastodon
+    url: https://mastodon.social/@cmaiacd
+    record_id: cmaiacd@mastodon.social
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json

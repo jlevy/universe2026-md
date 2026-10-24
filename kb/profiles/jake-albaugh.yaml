@@ -1,0 +1,363 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jake-albaugh
+  person: person:jake-albaugh
+  brief_bio:
+    text: Jake Albaugh is a Developer Advocate at Figma who spent 12 years as a software engineer bridging
+      design and development, including as an early hire at CodePen. Albaugh spoke at GitHub Universe
+      2024 and 2025 and speaks at GitHub Universe 2026 about previewing what an agent will build.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 8a57a7b4082fd8a9c847073d1dc5894ce81350c0f77442cb93662a94ac17d539
+    stale: false
+  headline: Developer Advocate at Figma
+  location: Chicago, USA
+  current_roles:
+  - Developer Advocate at Figma
+  expertise:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1881d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1881d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1881d
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1540d
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1540d
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1540d
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1540d
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1540d
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1463b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1463b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/bld1540d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/bld1540d
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1463b
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:figma/sds
+    - ref: repo:figma/code-snippet-editor-plugin
+    - ref: repo:figma/plugin-samples
+    - ref: repo:jake-figma/component-inspector
+    - ref: repo:jake-figma/code-connect-demo
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jake-figma/variables-import-export
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:jake-figma/figma-plugin-css-color-mix
+  interests:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721920936580001YQTG
+      ref: session:2024/dev1881d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753283921659001tJja
+      ref: session:2025/bld1540d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777591820072001GDDH
+      ref: session:bld1463b
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721920936580001YQTG
+      ref: session:2024/dev1881d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753283921659001tJja
+      ref: session:2025/bld1540d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777591820072001GDDH
+      ref: session:bld1463b
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753283921659001tJja
+      ref: session:2025/bld1540d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777591820072001GDDH
+      ref: session:bld1463b
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: medium
+    weight: 0.77
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753283921659001tJja
+      ref: session:2025/bld1540d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777591820072001GDDH
+      ref: session:bld1463b
+  - label: figma-plugin
+    basis: github_repositories
+    confidence: medium
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/figma/plugin-samples
+      ref: repo:figma/plugin-samples
+    - url: https://github.com/figma/code-snippet-editor-plugin
+      ref: repo:figma/code-snippet-editor-plugin
+    - url: https://github.com/jake-figma/component-inspector
+      ref: repo:jake-figma/component-inspector
+  - label: figma
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/figma/plugin-samples
+      ref: repo:figma/plugin-samples
+    - url: https://github.com/figma/code-snippet-editor-plugin
+      ref: repo:figma/code-snippet-editor-plugin
+  - label: Accessibility
+    target: term:topic-2025/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753283921659001tJja
+      ref: session:2025/bld1540d
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753283921659001tJja
+      ref: session:2025/bld1540d
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753283921659001tJja
+      ref: session:2025/bld1540d
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721920936580001YQTG
+      ref: session:2024/dev1881d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721920936580001YQTG
+      ref: session:2024/dev1881d
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1721920936580001YQTG
+      ref: session:2024/dev1881d
+  open_source:
+  - repository: repo:figma/plugin-samples
+    relation: pinned
+    stars: 1861
+    primary_language: TypeScript
+  - repository: repo:figma/sds
+    relation: pinned
+    stars: 866
+    primary_language: TypeScript
+  - repository: repo:figma/code-snippet-editor-plugin
+    relation: pinned
+    stars: 172
+    primary_language: TypeScript
+  - repository: repo:jake-figma/component-inspector
+    relation: owner
+    stars: 110
+    primary_language: TypeScript
+  - repository: repo:jake-figma/variables-import-export
+    relation: owner
+    stars: 31
+    primary_language: JavaScript
+  - repository: repo:jake-figma/figma-plugin-css-color-mix
+    relation: owner
+    stars: 15
+    primary_language: HTML
+  - repository: repo:jake-figma/code-connect-demo
+    relation: owner
+    stars: 14
+    primary_language: TypeScript
+  - repository: repo:figma/mcp-server-guide
+    relation: contributor
+    stars: 2107
+    primary_language: Python
+  credentials:
+  - kind: honor
+    title: Culture Carrier
+    issuer: Figma
+    date: '2024-01-01T00:00:00.000Z'
+    description: '"Culture Carrier" marketing team award for excellence in cross functional collaboration
+      and teamwork.'
+    evidence:
+      url: https://www.linkedin.com/in/jak-e
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: honor
+    title: NGIMA
+    issuer: Figma
+    date: '2023-01-01T00:00:00.000Z'
+    description: '"Nothing Great Is Made Alone" marketing award co-recipient for collaboration on 2022
+      Figma persona quiz campaign.'
+    evidence:
+      url: https://www.linkedin.com/in/jak-e
+      observed_at: '2026-10-24T08:11:32Z'
+  activities:
+  - kind: project
+    title: another machine
+    detail: pursuing inventive and alternative uses of web technology. · Jan 2024
+    evidence:
+      url: https://www.linkedin.com/in/jak-e
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: project
+    title: jake.fun
+    detail: Personal Website · Feb 2020
+    evidence:
+      url: https://www.linkedin.com/in/jak-e
+      observed_at: '2026-10-24T08:11:32Z'
+  - kind: project
+    title: CodePen Profile
+    detail: Over a decade of various front end code demos and experiments. Where I developed my love for
+      front end web and the community around it. · Feb 2014
+    evidence:
+      url: https://www.linkedin.com/in/jak-e
+      observed_at: '2026-10-24T08:11:32Z'
+  talks:
+  - session:2024/dev1881d
+  - session:2025/bld1540d
+  - session:bld1463b
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721921357878001AGv8
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jake-figma
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721921357878001AGv8
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1721921357878001AGv8
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

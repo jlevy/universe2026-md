@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sanjeevnmurthy
+  platform: linkedin
+  handle: in/sanjeevnmurthy
+  url: https://www.linkedin.com/in/sanjeevnmurthy
+  display_name: Sanjeev Murthy
+  bio: I am a Security Ninja with 16 years of experience in solving complex cyber security…
+  location: San Jose
+  followers: 1811
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQE0-8VDst--Rw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517572378897?e=2147483647&v=beta&t=NLNbhOPOWM1tu2AzBmCfyMyzoJI_3pTtP5nGZV-Nlgw
+  owner: person:sanjeev-murthy
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727450452964001QGx9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sanjeevnmurthy
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

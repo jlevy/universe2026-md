@@ -1,0 +1,169 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:alzahrra-almajid
+  person: person:alzahrra-almajid
+  brief_bio:
+    text: Alzahrra Almajid is a software developer on the Passenger Services Systems team at United Airlines
+      who helped customize GitHub Copilot for safety-critical workflows. Almajid spoke at GitHub Universe
+      2025 about customizing Copilot to build trust in enterprise systems.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 5ec7e65746174db15549d2e4a462a57f80770058da9c753b5b7bb7aea52bdaea
+    stale: false
+  headline: United Airlines
+  current_roles:
+  - United Airlines
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1401b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1401b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1401b
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1401b
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1401b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:alzahrra-almajid
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746210570127001K7HI
+      ref: session:2025/bld1401b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746210570127001K7HI
+      ref: session:2025/bld1401b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746210570127001K7HI
+      ref: session:2025/bld1401b
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746210570127001K7HI
+      ref: session:2025/bld1401b
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746210570127001K7HI
+      ref: session:2025/bld1401b
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746210570127001K7HI
+      ref: session:2025/bld1401b
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746210570127001K7HI
+      ref: session:2025/bld1401b
+  education:
+  - school: Loyola University Chicago
+    evidence:
+      url: https://www.linkedin.com/in/alzahrra-almajid
+      observed_at: '2026-10-24T08:41:55Z'
+  credentials:
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Oct 2020
+    url: https://www.youracclaim.com/badges/d7987cbb-4121-4ce7-871a-e2190fa6d31d/public_url
+    evidence:
+      url: https://www.linkedin.com/in/alzahrra-almajid
+      observed_at: '2026-10-24T08:41:55Z'
+  - kind: certification
+    title: Apple Certified Portable Technician (ACPT)
+    issuer: Apple
+    date: Oct 2019
+    evidence:
+      url: https://www.linkedin.com/in/alzahrra-almajid
+      observed_at: '2026-10-24T08:41:55Z'
+  talks:
+  - session:2025/bld1401b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746206369670001q9iy
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

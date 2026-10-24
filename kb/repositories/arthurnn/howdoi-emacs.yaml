@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:arthurnn/howdoi-emacs
+  full_name: arthurnn/howdoi-emacs
+  url: https://github.com/arthurnn/howdoi-emacs
+  description: Search code from StackOverflow and paste it in emacs.
+  stars: 59
+  forks: 7
+  watchers: 2
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:09:51Z'
+  primary_language: Emacs Lisp
+  archived: false
+  fork: false
+  created_at: '2013-12-25T21:13:45Z'
+  pushed_at: '2014-07-21T15:54:27Z'
+  owner_login: arthurnn
+  owner: gh:arthurnn
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: arthurnn
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: arthurnn/howdoi-emacs
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

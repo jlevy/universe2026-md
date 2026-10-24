@@ -1,0 +1,317 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sergio-sisternes
+  person: person:sergio-sisternes
+  brief_bio:
+    text: Sergio Sisternes is Head of App Solutions and Innovation at EPAM Systems and previously led
+      cloud native solutions and cloud engineering at NTT DATA UK&I. Sisternes spoke at GitHub Universe
+      2024 about combining AI, NTT DATA InnerSource and GitHub for innovation and collaboration.
+    cites:
+    - listed_role
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 1510b80999d01448c2856294b771d42c6a16219f8ff54bace0ef83dd2d715447
+    stale: false
+  headline: EPAM Systems
+  current_roles:
+  - EPAM Systems
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1574d
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:sergio-sisternes
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715355300964001dY3B
+      ref: session:2024/ai1574d
+  education:
+  - school: Universitat Oberta de Catalunya
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  credentials:
+  - kind: certification
+    title: Google Developer Day 2025 Speak - Bletchley
+    issuer: Google
+    date: Nov 2025
+    url: https://developers.google.com/profile/badges/events/community/devfest/2025/speaker
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: GitHub Tech Sales Professional
+    issuer: GitHub
+    date: Aug 2025
+    url: https://www.credly.com/badges/ceb2e027-a953-460e-be2f-7c4ad1a33543/public_url
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: Global AI Bootcamp 2025 - United Kingdom - London - Speaker
+    issuer: Global AI Community
+    date: Mar 2025
+    url: https://globalai.community/badges/df7d7cc6-e49b-4a75-8ff2-7cf9f7f04c65/
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure AI Fundamentals'
+    issuer: Microsoft
+    date: Jan 2025
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: GitHub Copilot
+    issuer: GitHub
+    date: Nov 2024
+    expires: Nov 2027
+    url: https://www.credly.com/badges/06a3370a-af3f-4efc-ac32-78166333deb1/public_url
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Nov 2023
+    expires: Nov 2026
+    url: https://www.credly.com/badges/a6e6a329-5f89-4ee4-91a4-abc50c74abc6/public_url
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Solutions Architect Expert'
+    issuer: Microsoft
+    date: Jul 2020
+    expires: Jul 2026
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure AI Engineer Associate'
+    issuer: Microsoft
+    date: Mar 2025
+    expires: Mar 2026
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: 'MCSD: App Builder'
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: Programa Multicompañía de Desarrollo de Talento
+    issuer: Fundación Transforma España
+    url: https://ftransformaespana.es/milo-portfolio/programa-multicompania-de-desarrollo-de-talento/
+    evidence:
+      url: https://www.linkedin.com/in/sesispla
+      observed_at: '2026-10-24T08:47:10Z'
+  spoken_languages:
+  - Valencià
+  - Español
+  - English
+  talks:
+  - session:2024/ai1574d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696454896480001qd9V
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

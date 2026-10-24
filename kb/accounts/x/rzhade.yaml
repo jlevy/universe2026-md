@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/rzhade
+  platform: x
+  handle: rzhade
+  url: https://x.com/rzhade
+  display_name: Rahul Zhade
+  bio: d/acc
+  location: Joe’s house
+  website: http://zhade.dev/
+  followers: 64
+  following: 70
+  posts_count: 59
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1299953961370230785/LJx_ivnw_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/861773539552055296/1565947924
+  created_at: '2017-05-09T02:43:17Z'
+  owner: person:rahul-zhade
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685569081902001tQ1v
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://x.com/rzhade
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

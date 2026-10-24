@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/kassenqian
+  platform: linkedin
+  handle: in/kassenqian
+  url: https://www.linkedin.com/in/kassenqian
+  display_name: Kassen Qian
+  location: New York
+  followers: 2719
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQF6VRJte58j-g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1550543044362?e=2147483647&v=beta&t=JqF-FM8fG2M_JKkNam7hw372K__vZa4e9xflP7-WAn0
+  owner: person:kassen-qian
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697575203227001EdFI
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/kassenqian
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

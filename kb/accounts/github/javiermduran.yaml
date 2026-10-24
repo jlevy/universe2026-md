@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:javiermduran
+  login: javiermduran
+  kind: user
+  url: https://github.com/javiermduran
+  followers: 2
+  public_repositories: 0
+  created_at: '2017-06-06T23:38:01Z'
+  contributions_last_year:
+    total: 0
+    commits: 0
+    pull_requests: 0
+    issues: 0
+    reviews: 0
+  starred_repositories: 0
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 0
+  entity: person:javier-duran
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: javiermduran
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

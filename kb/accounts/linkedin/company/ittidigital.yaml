@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/ittidigital
+  platform: linkedin
+  handle: company/ittidigital
+  url: https://www.linkedin.com/company/ittidigital
+  display_name: itti
+  bio: ¡De Paraguay al mundo! En itti nos enfocamos en desarrollar soluciones tecnológicas que puedan
+    abordar las necesidades específicas de cada empresa, mejorando la experiencia de nuestros clientes
+    y acercándolos cada vez más a un futuro innovador. Aliados con partners internacionales de primer
+    nivel, como Ricoh y NCR, ofrecemos soluciones integrales para entidades financieras reguladas por
+    el Banco Central del Paraguay (BCP), así como para empresas y negocios financieros. Así también, hemos
+    ampliado nuestros productos y servicios para abarcar diversas áreas e industrias. Para completar nuestros
+    desafíos, contamos con un equipo de colaboradores expertos en desarrollo, implementación y soporte
+    de todas nuestras soluciones, asegurando el éxito de cada uno de los proyectos y garantizando un servicio
+    de excelencia. Reconocida como uno de los mejores lugares para trabajar en Paraguay según el Ranking
+    Great Place to Work, itti se destaca por su equipo multidisciplinario y su cultura de innovación.
+    Creemos firmemente que la tecnología es para todos y todas. Por ello, promovemos la democratización
+    de la tecnología y nos esforzamos por crear ecosistemas y productos que impulsen la innovación y den
+    lugar a nuevos modelos de negocio creados por y para todas las personas. Con una fuerte conciencia
+    ecológica, itti practica la sostenibilidad mediante la economía circular y la reducción de la huella
+    de carbono, alineándose con el Pacto Global de la ONU para asegurar un impacto positivo en la comunidad
+    y el medio ambiente. Descubrí más sobre cómo itti puede transformar tu negocio.
+  website: https://www.itti.digital/
+  followers: 53651
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D0BAQE3exwQLUCQAw/company-logo_200_200/B4DZraEAjlIkAI-/0/1764595075949/ittidigital_logo?e=2147483647&v=beta&t=W9_WoO1E-kuuFDPWdimVBldcRma7-4LVCdBU5exZK9w
+  owner: org:itti
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/leonardovillarodriguez-productmanagement
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/ittidigital
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

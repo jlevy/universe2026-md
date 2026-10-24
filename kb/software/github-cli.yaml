@@ -1,0 +1,21 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:github-cli
+  name: GitHub CLI
+  aliases:
+  - GitHub CLI
+  kind: github_product
+  vendor: org:github
+  repositories:
+  - repo:cli/cli
+  mentioned_in:
+  - person:ryan-hecht
+  - session:bld1485d
+  - session:bld1491d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

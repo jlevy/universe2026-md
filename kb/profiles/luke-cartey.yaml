@@ -1,0 +1,191 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:luke-cartey
+  person: person:luke-cartey
+  brief_bio:
+    text: Luke Cartey is affiliated with XBOW and was a director at GitHub responsible for security services
+      including GitHub Advanced Security and CodeQL, and holds a patent on hierarchical dependency analysis
+      of source code. Cartey spoke at GitHub Universe 2023 and 2024 about CodeQL.
+    cites:
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: f4521e726a9a37a3f7f74a0c4800a32eba04636a4763e2cb4d40886ec0a5a421
+    stale: false
+  headline: XBOW
+  current_roles:
+  - XBOW
+  expertise:
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2747w
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1709s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1709s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1709s
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1709s
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1709s
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: CodeQL
+      ref: person:luke-cartey
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:luke-cartey
+  interests:
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490641001Ka3D
+      ref: session:2023/sec2747w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715382400303001xdIm
+      ref: session:2024/sec1709s
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490641001Ka3D
+      ref: session:2023/sec2747w
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715382400303001xdIm
+      ref: session:2024/sec1709s
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715382400303001xdIm
+      ref: session:2024/sec1709s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715382400303001xdIm
+      ref: session:2024/sec1709s
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715382400303001xdIm
+      ref: session:2024/sec1709s
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715382400303001xdIm
+      ref: session:2024/sec1709s
+  education:
+  - school: University of Oxford
+    evidence:
+      url: https://www.linkedin.com/in/lukecartey
+      observed_at: '2026-10-24T08:47:26Z'
+  publications:
+  - title: Synthesising graphics card programs from DSLs
+    venue: PLDI'12, Proceedings of the 33rd ACM SIGPLAN conference on Programming Language Design and
+      Implementation
+    description: We developed a DSL for describing recursions in bioinformatics, from which we automatically
+      synthesise an efficient graphics card implementation.
+    evidence:
+      url: https://www.linkedin.com/in/lukecartey
+      observed_at: '2026-10-24T08:47:26Z'
+  patents:
+  - title: Hierarchical dependency analysis of source code
+    number: US US9658839B2
+    date: May 23, 2017
+    evidence:
+      url: https://www.linkedin.com/in/lukecartey
+      observed_at: '2026-10-24T08:47:26Z'
+  - title: Gesture recognition from co-ordinate data
+    number: US US 2009/0262986 A1
+    date: April 22, 2008
+    description: A simple system for gesture recognition from a stream of co-ordinate data representing
+      the locations of faces and hands. Identifies gestures by computing the similarity to a pre-determined
+      library of gestures.
+    evidence:
+      url: https://www.linkedin.com/in/lukecartey
+      observed_at: '2026-10-24T08:47:26Z'
+  talks:
+  - session:2023/sec2747w
+  - session:2024/sec1709s
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248307001w5Ow
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1691184248307001w5Ow
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

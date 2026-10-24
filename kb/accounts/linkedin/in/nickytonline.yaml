@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/nickytonline
+  platform: linkedin
+  handle: in/nickytonline
+  url: https://www.linkedin.com/in/nickytonline
+  display_name: Nick Taylor
+  bio: I'm a software engineer and Developer Advocate working across Zero Trust, AI agents…
+  location: Montreal
+  followers: 3727
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGIL460QIUl2Q/profile-displayphoto-scale_200_200/B4EZjQRCmXGcAY-/0/1755840785243?e=2147483647&v=beta&t=X3UNE4pG_NLGjOIE3wfJ82P_gJVgPfNgT8tS7-yHMGc
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQGbzAEg7IEkeA/profile-displaybackgroundimage-shrink_200_800/B4DZ8WesifJsAQ-/0/1782788573610?e=2147483647&v=beta&t=2sAE9Qw8X5LlNRX1GoLmxbYAvhQ_h5eZwHZ_hPVcY8c
+  owner: person:nick-taylor
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1714445176861001BD1U
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: nickytonline
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/nickytonline
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

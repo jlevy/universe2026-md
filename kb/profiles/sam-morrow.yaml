@@ -1,0 +1,360 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sam-morrow
+  person: person:sam-morrow
+  brief_bio:
+    text: Sam Morrow is a Staff Software Engineer at GitHub who maintains the official GitHub MCP Server
+      and contributes to the Model Context Protocol specification. Morrow spoke at GitHub Universe 2025
+      and speaks at GitHub Universe 2026 on connecting Copilot and securing MCP.
+    cites:
+    - listed_role
+    - current_affiliations
+    - github_readme
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 320e85890dec0758ca3869954f78708b163d837366e49286c0175e6d00433403
+    stale: false
+  headline: Staff Software Engineer at GitHub
+  location: Amsterdam, Netherlands
+  current_roles:
+  - Staff Software Engineer at GitHub
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1168d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1168d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1168d
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1338w
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1338w
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1338w
+  technologies:
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1338w
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/bld1168d
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot CLI
+      ref: session:bld2008d
+  - label: GitHub MCP Server
+    target: software:github-mcp-server
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub MCP server
+      ref: person:sam-morrow
+  - label: Microsoft Azure
+    target: software:azure
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Azure
+      ref: session:bld2008d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: MCP
+      ref: person:sam-morrow
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: VS Code
+      ref: session:2025/bld1168d
+  programming_languages:
+  - label: Python
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:django/django
+    - ref: repo:sammorrowdrums/mcp-python-starter
+    - ref: repo:sammorrowdrums/remarkable-mcp
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745619400904001YKhB
+      ref: session:2025/bld1168d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1790875955550001cVXm
+      ref: session:bld2008d
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777512208544001YnaL
+      ref: session:tru1338w
+  - label: golang
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cli/cli
+      ref: repo:cli/cli
+    - url: https://github.com/migueleliasweb/go-github-mock
+      ref: repo:migueleliasweb/go-github-mock
+  - label: mcp
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/github/github-mcp-server
+      ref: repo:github/github-mcp-server
+    - url: https://github.com/modelcontextprotocol/modelcontextprotocol
+      ref: repo:modelcontextprotocol/modelcontextprotocol
+  - label: python
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/django/django
+      ref: repo:django/django
+    - url: https://github.com/encode/httpx
+      ref: repo:encode/httpx
+  - label: remarkable-tablet
+    basis: github_repositories
+    confidence: medium
+    weight: 0.52
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/SamMorrowDrums/remarkable-mcp
+      ref: repo:sammorrowdrums/remarkable-mcp
+    - url: https://github.com/reHackable/awesome-reMarkable
+      ref: repo:rehackable/awesome-remarkable
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745619400904001YKhB
+      ref: session:2025/bld1168d
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777512208544001YnaL
+      ref: session:tru1338w
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777512208544001YnaL
+      ref: session:tru1338w
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777512208544001YnaL
+      ref: session:tru1338w
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745619400904001YKhB
+      ref: session:2025/bld1168d
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745619400904001YKhB
+      ref: session:2025/bld1168d
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.39
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777512208544001YnaL
+      ref: session:tru1338w
+  open_source:
+  - repository: repo:django/django
+    relation: pinned
+    stars: 91576
+    primary_language: Python
+  - repository: repo:github/github-mcp-server
+    relation: pinned
+    stars: 33923
+    primary_language: Go
+  - repository: repo:ruffle-rs/ruffle
+    relation: pinned
+    stars: 18742
+    primary_language: Rust
+  - repository: repo:modelcontextprotocol/modelcontextprotocol
+    relation: pinned
+    stars: 9524
+    primary_language: TypeScript
+  - repository: repo:sammorrowdrums/remarkable-mcp
+    relation: owner
+    stars: 252
+    primary_language: Python
+  - repository: repo:sammorrowdrums/mcp-python-starter
+    relation: owner
+    stars: 20
+    primary_language: Python
+  - repository: repo:rehackable/awesome-remarkable
+    relation: contributor
+    stars: 7780
+  - repository: repo:encode/httpx
+    relation: contributor
+    stars: 15737
+    primary_language: Python
+  - repository: repo:cli/cli
+    relation: contributor
+    stars: 46729
+    primary_language: Go
+  - repository: repo:migueleliasweb/go-github-mock
+    relation: contributor
+    stars: 140
+    primary_language: Go
+  education:
+  - school: Leeds College of Music
+    evidence:
+      url: https://www.linkedin.com/in/sammorrow
+      observed_at: '2026-10-24T08:15:32Z'
+  spoken_languages:
+  - English
+  - Dutch
+  recent_writing:
+  - title: Code Mode
+    url: https://sam-morrow.com/blog/progressive-discovery-in-mcp-part-4
+    published: '2026-06-03T00:00:00Z'
+    channel: blog
+  - title: The Nuclear Football
+    url: https://sam-morrow.com/blog/progressive-discovery-in-mcp-part-3
+    published: '2026-05-27T00:00:00Z'
+    channel: blog
+  - title: 'The Skill Dealer: Skills over MCP'
+    url: https://sam-morrow.com/blog/progressive-discovery-in-mcp-part-2
+    published: '2026-05-20T00:00:00Z'
+    channel: blog
+  - title: remarkable-mcp Update
+    url: https://sam-morrow.com/blog/remarkable-mcp-update
+    published: '2026-05-18T00:00:00Z'
+    channel: blog
+  - title: MCP Doesn't Have a Context Problem
+    url: https://sam-morrow.com/blog/progressive-discovery-in-mcp-part-1
+    published: '2026-05-13T00:00:00Z'
+    channel: blog
+  - title: Why Diffing Your MCP Server Matters
+    url: https://sam-morrow.com/blog/why-diffing-your-mcp-server-matters
+    published: '2026-03-19T00:00:00Z'
+    channel: blog
+  - title: 'GitHub Universe: MCP Server Demo'
+    url: https://sam-morrow.com/blog/github-universe-mcp-server-demo
+    published: '2025-12-02T00:00:00Z'
+    channel: blog
+  - title: Building an MCP Server for reMarkable
+    url: https://sam-morrow.com/blog/building-an-mcp-server-for-remarkable
+    published: '2025-11-28T00:00:00Z'
+    channel: blog
+  - title: 'LastMile AI Silsila Sessions: MCP at Hyperscale'
+    url: https://sam-morrow.com/blog/lastmile-ai-silsila-sessions-mcp-at-scale
+    published: '2025-11-24T00:00:00Z'
+    channel: blog
+  - title: The Context - Special Episode ft. GitHub & Microsoft
+    url: https://sam-morrow.com/blog/the-context-special-episode-ft-github-microsoft
+    published: '2025-06-21T00:00:00Z'
+    channel: blog
+  talks:
+  - session:2025/bld1168d
+  - session:bld2008d
+  - session:tru1338w
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685606809874001rJOG
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: SamMorrowDrums
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685606809874001rJOG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

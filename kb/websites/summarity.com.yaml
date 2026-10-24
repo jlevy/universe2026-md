@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:summarity.com
+  url: https://summarity.com
+  kind: personal
+  title: Summarity
+  description: Tech, thoughts, tinkering.
+  owner: person:pierre-tempel
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://summarity.com/feed.xml
+  linked_accounts:
+  - acct:linkedin/in/pierre-tempel
+  - acct:x/summarity
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: turbo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://summarity.com
+    record_id: https://summarity.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

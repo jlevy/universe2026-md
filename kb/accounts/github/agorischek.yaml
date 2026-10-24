@@ -1,0 +1,68 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:agorischek
+  login: agorischek
+  kind: user
+  url: https://github.com/agorischek
+  name: Alex Gorischek
+  company: Microsoft
+  location: Seattle, WA
+  website: https://www.alexgorischek.com
+  followers: 12
+  public_repositories: 27
+  created_at: '2014-01-01T00:08:29Z'
+  contributions_last_year:
+    total: 12194
+    commits: 883
+    pull_requests: 643
+    issues: 2
+    reviews: 13
+  starred_repositories: 109
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  - 2016
+  - 2015
+  - 2014
+  - 2013
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 1
+  contributed_to:
+  - repo:microsoft/winget-pkgs
+  - repo:dollarlint/dollarlint
+  - repo:dollarlint/homebrew-tap
+  - repo:quitepicky/considered
+  - repo:quitepicky/site
+  organization_logins:
+  - louk-lang
+  pinned:
+  - repo:agorischek/verify-repo
+  - repo:agorischek/e-n-v
+  - repo:agorischek/check-1-2
+  - repo:agorischek/badge-roll
+  - repo:agorischek/semantic-expect
+  - repo:agorischek/fill-in-the-blank
+  websites:
+  - site:alexgorischek.com
+  entity: person:alex-gorischek
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: agorischek
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

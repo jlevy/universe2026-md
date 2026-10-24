@@ -1,0 +1,616 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:kent-c-dodds
+  person: person:kent-c-dodds
+  brief_bio:
+    text: Kent C. Dodds is a web development educator, product engineer at kody.codes, Microsoft MVP and
+      GitHub Star who created EpicWeb.dev, EpicReact.dev and TestingJavaScript.com and speaks at GitHub
+      Universe 2026 about what is worth building when AI can build anything.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 58b930afdbb7d79330f9f0d4718c34a912625f9b98fb66a6a9861dca4a3c53b2
+    stale: true
+  headline: Product Engineer at kody.codes
+  location: Salt Lake City, Utah, USA
+  current_roles:
+  - Product Engineer at kody.codes
+  - Kent C. Dodds Tech
+  expertise:
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Git and code management techniques
+    target: term:topic/git-and-code-management-techniques
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: high
+    evidence:
+    - ref: session:bld1886m
+    - ref: session:bld2021a
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:kody-hq/kody
+    - ref: repo:kentcdodds/kentcdodds.com
+    - ref: repo:kentcdodds/kody-video
+    - ref: repo:epicweb-dev/epicshop
+    - ref: repo:kentcdodds/mediarss
+    - ref: repo:kentcdodds/cross-env
+    - ref: repo:kentcdodds/match-sorter
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:testing-library/react-testing-library
+    - ref: repo:kentcdodds/bookshelf
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: He's a Microsoft MVP, GitHub Star, instructor on egghead.
+  - label: GitHub Star
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: He's a Microsoft MVP, GitHub Star, instructor on egghead.
+  interests:
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+    - url: https://github.com/kentcdodds/kentcdodds.com
+      ref: repo:kentcdodds/kentcdodds.com
+  - label: React
+    basis: github_repositories
+    confidence: medium
+    weight: 0.83
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/testing-library/react-testing-library
+      ref: repo:testing-library/react-testing-library
+    - url: https://github.com/kentcdodds/bookshelf
+      ref: repo:kentcdodds/bookshelf
+    - url: https://github.com/kentcdodds/kentcdodds.com
+      ref: repo:kentcdodds/kentcdodds.com
+  - label: Code quality, review, and completion
+    target: term:topic/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: Git and code management techniques
+    target: term:topic/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1789650872339001QXAF
+      ref: session:bld1886m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791126652057001FXKu
+      ref: session:bld2021a
+  - label: testing
+    basis: github_repositories
+    confidence: medium
+    weight: 0.75
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/testing-library/react-testing-library
+      ref: repo:testing-library/react-testing-library
+    - url: https://github.com/testing-library/cypress-testing-library
+      ref: repo:testing-library/cypress-testing-library
+    - url: https://github.com/testing-library/jest-dom
+      ref: repo:testing-library/jest-dom
+  - label: epicreact-dev
+    basis: github_repositories
+    confidence: medium
+    weight: 0.65
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/kentcdodds/bookshelf
+      ref: repo:kentcdodds/bookshelf
+    - url: https://github.com/epicweb-dev/advanced-react-patterns
+      ref: repo:epicweb-dev/advanced-react-patterns
+    - url: https://github.com/epicweb-dev/react-hooks
+      ref: repo:epicweb-dev/react-hooks
+  - label: JavaScript
+    basis: github_repositories
+    confidence: medium
+    weight: 0.65
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/testing-library/react-testing-library
+      ref: repo:testing-library/react-testing-library
+    - url: https://github.com/testing-library/jest-dom
+      ref: repo:testing-library/jest-dom
+    - url: https://github.com/testing-library/user-event
+      ref: repo:testing-library/user-event
+  - label: kcd-edu
+    basis: github_repositories
+    confidence: medium
+    weight: 0.65
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/kentcdodds/bookshelf
+      ref: repo:kentcdodds/bookshelf
+    - url: https://github.com/epicweb-dev/advanced-react-patterns
+      ref: repo:epicweb-dev/advanced-react-patterns
+    - url: https://github.com/epicweb-dev/react-hooks
+      ref: repo:epicweb-dev/react-hooks
+  - label: dom
+    basis: github_repositories
+    confidence: medium
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/testing-library/jest-dom
+      ref: repo:testing-library/jest-dom
+    - url: https://github.com/testing-library/user-event
+      ref: repo:testing-library/user-event
+  open_source:
+  - repository: repo:testing-library/react-testing-library
+    relation: pinned
+    stars: 19673
+    primary_language: JavaScript
+  - repository: repo:kentcdodds/cross-env
+    relation: owner
+    stars: 6520
+    primary_language: TypeScript
+  - repository: repo:kentcdodds/match-sorter
+    relation: owner
+    stars: 4116
+    primary_language: TypeScript
+  - repository: repo:kentcdodds/bookshelf
+    relation: owner
+    stars: 2685
+    primary_language: JavaScript
+  - repository: repo:kentcdodds/kentcdodds.com
+    relation: owner
+    stars: 2501
+    primary_language: TypeScript
+  - repository: repo:kody-hq/kody
+    relation: pinned
+    stars: 851
+    primary_language: TypeScript
+  - repository: repo:epicweb-dev/epicshop
+    relation: pinned
+    stars: 247
+    primary_language: TypeScript
+  - repository: repo:kentcdodds/mediarss
+    relation: owner
+    stars: 45
+    primary_language: TypeScript
+  - repository: repo:kentcdodds/kody-video
+    relation: owner
+    stars: 31
+    primary_language: TypeScript
+  - repository: repo:testing-library/cypress-testing-library
+    relation: contributor
+    stars: 1822
+    primary_language: JavaScript
+  - repository: repo:testing-library/jest-dom
+    relation: contributor
+    stars: 4603
+    primary_language: JavaScript
+  - repository: repo:testing-library/user-event
+    relation: contributor
+    stars: 2335
+    primary_language: TypeScript
+  - repository: repo:epicweb-dev/advanced-react-patterns
+    relation: contributor
+    stars: 3518
+    primary_language: TypeScript
+  - repository: repo:epicweb-dev/react-hooks
+    relation: contributor
+    stars: 2815
+    primary_language: TypeScript
+  education:
+  - school: Brigham Young University
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  credentials:
+  - kind: honor
+    title: BYU Academic Scholarship
+    issuer: Brigham Young University
+    date: '2012-08-01T00:00:00.000Z'
+    description: Awarded scholarship for excellent academic performance.
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: 2nd Place, Information Systems Integrated Exercise 1 (INTEX 1)
+    issuer: Information Systems Department, BYU
+    date: '2011-12-01T00:00:00.000Z'
+    description: 'As a group of four, we were given a week to respond to a fabricated request for proposal.
+      We designed the system and implementation. I personally wrote a functioning demo of the actual system
+      which is how our presentation stood out from the 20 other teams. See Prezi presentation here: http://prezi.com/xxtdjbydkzmu/silver-linings-sleek/'
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Eagle Scout
+    issuer: Boy Scouts of America
+    date: '2002-11-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: '🚀 ⚛ EpicReact: React Fundamentals'
+    issuer: Kent C. Dodds Tech LLC
+    date: Sep 2020
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Microsoft Most Valuable Professional (MVP)
+    issuer: Microsoft
+    date: Feb 2025
+    expires: Feb 2026
+    url: https://mvp.microsoft.com/en-US/mvp/profile/1a09186c-7139-4131-9522-f1b0fe94318f
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  spoken_languages:
+  - English
+  - American Sign Language
+  activities:
+  - kind: project
+    title: Spend My Cents
+    detail: SpendMyCents.com is a reverse product search engine. Specifically, it allows a user to query
+      Amazon's product listings based on price. While most use cases are purely entertainment driven,
+      there are instances where this could prove to be a useful service. Mack and I created it for our
+      Web Development Final project (on which we received full points for). Technologies employed:- NodeJS
+      (including the ExpressJS and PassportJS libraries)- MongoDB- Jade (template language for HTML)-
+      CSS3, HTML, JavaScript (including UnderscoreJS and jQuery)- REST · May 2013
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: GitHub
+    detail: I have far too many projects to input into LinkedIn (or keep updated for that matter). Just
+      go check out my GitHub where I host most of my projects :)
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: KCD Angular Module
+    detail: Angular things that I made and think are useful enough to give to the world.
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Business Finance
+    detail: BUS M 520
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Business Processes & Controls
+    detail: I SYS 414
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Communication in Organizational Settings
+    detail: M COM 320
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Computer Presentation Skills
+    detail: I SYS 101
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Computer Systems
+    detail: EC En 124
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Data Communication
+    detail: I SYS 404
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Database Systems
+    detail: I SYS 402
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Econ Principles & Problems
+    detail: ECON 110
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Enterprise Application Development
+    detail: I SYS 413
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Enterprise Infrastructure
+    detail: I SYS 531
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Information Systems Security
+    detail: I SYS 560
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Intro to Computer Programming
+    detail: CS 142
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Intro to Management Information Systems
+    detail: I SYS 201
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Leading Change in Tech Environment
+    detail: I SYS 551
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Moral Leadership in Technology
+    detail: ENG T 231
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Organizational Behavior
+    detail: BUS M 540
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Principles of Accounting
+    detail: ACC 200
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Principles of Accounting 2
+    detail: ACC 310
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Principles of Business Programming
+    detail: I SYS 403
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Principles of Statistics
+    detail: STAT 121
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Special Topics in Electrical & Computer Engineering
+    detail: EC EN 493R
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Spreadsheet Skills
+    detail: I SYS 100
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: System Design & Implementation
+    detail: I SYS 411
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Systems Analysis
+    detail: I SYS 401
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: TC39
+    detail: I'm the official representative for PayPal on the technical committee responsible for the
+      JavaScript language specification (TC39). · Nov 2016 · Jan 2019
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: Association for Information Systems
+    detail: Dec 2011 · Apr 2014
+    evidence:
+      url: https://www.linkedin.com/in/kentcdodds
+      observed_at: '2026-10-24T08:11:43Z'
+  recent_writing:
+  - title: What if instead of fighting with Oracle over the JavaScript trademark, we just all stop calling
+      it JavaScript and just call it TypeScript instead?
+    url: https://twitter.com/389681470/status/1933690536105554385
+    published: '2025-06-14T00:58:44Z'
+    channel: x
+  - title: Is it just me or is it kinda funny that OpenAI bought Windsurf for $3B and then Microsoft just
+      open source Copilot 🤭
+    url: https://twitter.com/389681470/status/1924540290183966815
+    published: '2025-05-19T18:58:56Z'
+    channel: x
+  - title: TypeScript is not making your life terrible. It's just showing you how terrible your life already
+      is.
+    url: https://twitter.com/389681470/status/1763606063394496633
+    published: '2024-03-01T16:43:46Z'
+    channel: x
+  - title: I feel bad about this, but then I remember that when there's a bug, product always goes to
+      frontend devs first even if it's a backend issue.
+    url: https://twitter.com/389681470/status/1763034384511513079
+    published: '2024-02-29T02:52:07Z'
+    channel: x
+  - title: I'm very seriously considering putting together a free tutorial series on how I use AI assistants
+      productively as a web developer.
+    url: https://twitter.com/389681470/status/1748430413675262189
+    published: '2024-01-19T19:41:09Z'
+    channel: x
+  - title: |-
+      I get asked about this a lot (especially since the launch of Epic Web), so I've written it down.
+
+      Here's why I won't use Next.js:
+
+      https://t.co/crVN7hOszL
+    url: https://twitter.com/389681470/status/1717274167123526055
+    published: '2023-10-25T20:17:21Z'
+    channel: x
+  - title: |-
+      Using this feature has made a huge improvement to my ChatGPT experience. The answers it gives are so much more useful. Great feature add!
+
+      Here are my custom instructions in case it helps/inspires you:
+
+      My name is Kent C. Dodds. I live in Utah, USA. I'm an experienced Web https:/
+    url: https://twitter.com/389681470/status/1702771901175836700
+    published: '2023-09-15T19:50:31Z'
+    channel: x
+  - title: Most web apps should not use an auth service.
+    url: https://twitter.com/389681470/status/1685388914234974208
+    published: '2023-07-29T20:36:44Z'
+    channel: x
+  - title: Your app's biggest performance problems are probably backend, not frontend related.
+    url: https://twitter.com/389681470/status/1674994384369258496
+    published: '2023-07-01T04:12:35Z'
+    channel: x
+  - title: "I unironically deployed an inline event handler in HTML in a production app.\n\nI used it\
+      \ to avoid an unnecessary blur.\n\nSo you still get the nice blur loading experience when the image\
+      \ isn't downloaded yet, but if it's already in your browser cache, you don't get a flash of blur! "
+    url: https://twitter.com/389681470/status/1630362305409216512
+    published: '2023-02-28T00:20:38Z'
+    channel: x
+  talks:
+  - session:bld1886m
+  - session:bld2021a
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785971794624001WhyC
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: kentcdodds
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

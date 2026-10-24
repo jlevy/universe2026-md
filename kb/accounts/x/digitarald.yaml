@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/digitarald
+  platform: x
+  handle: digitarald
+  url: https://x.com/digitarald
+  display_name: Harald Kirschner
+  bio: 👨‍🎨 Crafting AI/DevX | 🛠 PM on VS @Code | Views are my own, obvs
+  location: Global Citizen in California
+  website: http://digitarald.de/
+  followers: 4087
+  following: 1032
+  posts_count: 4625
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/2069480068678897664/nBEp9suI_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14524462/1782237472
+  created_at: '2008-04-25T09:20:39Z'
+  owner: person:harald-kirschner
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724797144865001YqBD
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695844522437001uAd8
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/digitarald
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

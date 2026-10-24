@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/davidbenedic
+  platform: x
+  handle: davidbenedic
+  url: https://x.com/davidbenedic
+  display_name: David Benedic
+  bio: Cloud Tinkerer, Musician, Chef, Listener, Dad.
+  location: Columbus, OH
+  website: https://twitter.com/davidbenedic
+  followers: 77
+  following: 466
+  posts_count: 187
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/704393227508555776/HlplnrI4_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/14061946/1436899152
+  created_at: '2008-02-29T21:04:55Z'
+  owner: person:dave-benedic
+  link_basis:
+  - event_listing
+  - x_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777580256403001HBaF
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/davidbenedic
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

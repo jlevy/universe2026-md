@@ -1,0 +1,343 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ambily-kavumkal-kamalasanan
+  person: person:ambily-kavumkal-kamalasanan
+  brief_bio:
+    text: Ambily Kavumkal Kamalasanan is a Strategic Solutions Engineer at GitHub who works on bringing
+      AI into software engineering workflows across DevOps and cloud platforms. Kamalasanan spoke at GitHub
+      Universe 2025 about AI-powered GitHub Actions workflows.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 4a5c79c6b8273509115a039a975dc23d06a213b87336b92a4fa446aebd356cfe
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1512s
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1512s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1512s
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1512s
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1512s
+  technologies:
+  - label: Azure DevOps
+    target: software:azure-devops
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure DevOps
+      ref: person:ambily-kavumkal-kamalasanan
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1512s
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:ambily-kavumkal-kamalasanan
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1751896239500001tVFa
+      ref: session:2025/aut1512s
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1751896239500001tVFa
+      ref: session:2025/aut1512s
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1751896239500001tVFa
+      ref: session:2025/aut1512s
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1751896239500001tVFa
+      ref: session:2025/aut1512s
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1751896239500001tVFa
+      ref: session:2025/aut1512s
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1751896239500001tVFa
+      ref: session:2025/aut1512s
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1751896239500001tVFa
+      ref: session:2025/aut1512s
+  education:
+  - school: INSEAD
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  credentials:
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Sep 2024
+    url: https://docs.microsoft.com/en-us/learn/paths/automate-workflow-github-actions/
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - kind: certification
+    title: What Is Generative AI?
+    issuer: LinkedIn
+    date: Jul 2023
+    url: https://www.linkedin.com/learning/certificates/c110eb1ca1b00390655bf1313640173d80582a1bfb6875f36716857cce836b24
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - kind: certification
+    title: GitHub Administration
+    issuer: GitHub
+    date: Jun 2022
+    url: https://docs.microsoft.com/en-us/users/githubtraining/collections/mom7u1gzjdxw03
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - kind: certification
+    title: GitHub Advanced Security
+    issuer: GitHub
+    date: Apr 2022
+    url: https://docs.microsoft.com/en-us/users/githubtraining/collections/rqymc6yw8q5rey
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - kind: certification
+    title: AZ-303 Microsoft Azure Architect Technologies
+    issuer: Microsoft
+    date: Dec 2021
+    url: https://www.credly.com/badges/29575fa9-c9f9-4ddb-b3fc-26d763c1fba6?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - kind: certification
+    title: AZ-304 Microsoft Azure Architect Design
+    issuer: Microsoft
+    date: Dec 2021
+    url: https://www.credly.com/badges/7d8a5f7e-b044-4b8d-bd69-29e393e643cb?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - kind: certification
+    title: AZ-400 Microsoft Azure DevOps Solutions
+    issuer: Microsoft
+    date: Mar 2020
+    url: https://www.youracclaim.com/badges/dc633403-1e9d-48a1-a319-85c070bac6fa/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - kind: certification
+    title: AZ-301 Microsoft Azure Architect Design
+    issuer: Microsoft
+    date: Sep 2019
+    url: https://www.youracclaim.com/badges/e8244ac3-d22f-4966-9aaa-5556d4f8ed0b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - kind: certification
+    title: 'Exam 534: Architecting Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: Jun 2016
+    url: https://www.youracclaim.com/badges/4f3b45e0-eca7-4f61-ba60-8fd2ccc6c3eb/linked_i
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Solutions Architect Expert'
+    issuer: Microsoft
+    date: Dec 2021
+    expires: Dec 2022
+    url: https://www.credly.com/badges/a8f98555-c45d-4da8-b639-89922a100e31?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  publications:
+  - title: Articles in CodeProject
+    venue: Codeproject
+    description: Articles in codeprojecthttps://www.codeproject.com/Articles/ambilykk#Article
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - title: Articles in Simple Talk
+    venue: Simple Talk
+    description: All my articles published in Simple Talk.1. Uploading Files to Azure Data Lake Using
+      a .NET App2. The Exploratory Testing Chrome Plugin3. Customizing Team Foundation Server 20134. Different
+      Approaches of Entity Framework5. Windows Store App Contracts
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - title: DevPost Hackathons
+    description: List of Hackathons participated and achievements
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - title: GitHub Contributions
+    description: Open Source Contributions and Public code repos
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  - title: My Books in different platforms
+    venue: Amazon, Leanpub, Apress
+    description: Amazonhttps://www.amazon.com/Ambily-K-K/e/B00U66HCAOLeanpubhttps://leanpub.com/u/ambilykkApresshttps://www.apress.com/gp/book/9781484264119
+    evidence:
+      url: https://www.linkedin.com/in/ambilykk
+      observed_at: '2026-10-24T08:42:19Z'
+  spoken_languages:
+  - English
+  - Malayalam
+  recent_writing:
+  - title: TechRill Monthly — October 2026
+    url: https://www.linkedin.com/pulse/techrill-monthly-october-2026-ambily-kk-evzpc
+    published: '2026-10-05T00:00:00.000Z'
+    channel: linkedin
+    summary: Practical AI, GitHub, DevOps & Developer Tool discoveries Welcome to the first edition of
+      TechRill Monthly! Every…
+  - title: Why GitHub Actions?
+    url: https://www.linkedin.com/pulse/why-github-actions-ambily-kk
+    published: '2023-03-02T00:00:00.000Z'
+    channel: linkedin
+    summary: GitHub Actions, the extensible scalable automation framework from GitHub, have many differences
+      compared to the other…
+  - title: 'GitHub: Actions OpenID Connect (OIDC)'
+    url: https://www.linkedin.com/pulse/github-actions-openid-connect-oidc-ambily-kk
+    published: '2022-11-11T00:00:00.000Z'
+    channel: linkedin
+    summary: OpenID Connect enable the actions or workflows to get short lived tokens from cloud providers.
+      This eliminate the need…
+  - title: 'GitHub Administration: Notify Security setting changes'
+    url: https://www.linkedin.com/pulse/github-administration-notify-security-setting-changes-ambily-kk
+    published: '2022-10-28T00:00:00.000Z'
+    channel: linkedin
+    summary: GitHub enables the Shift Left Security paradigm using GitHub Advanced Security (GHAS) features.
+      Main features of GHAS…
+  - title: 'Azure: Resource Analysis'
+    url: https://www.linkedin.com/pulse/azure-resource-analysis-ambily-kk
+    published: '2022-10-14T00:00:00.000Z'
+    channel: linkedin
+    summary: Recently, one of my friend asked about the Azure resource visualization and management. As
+      an Azure Administrator, he…
+  - title: 'GitHub: Automation'
+    url: https://www.linkedin.com/pulse/github-automation-ambily-kk
+    published: '2022-09-13T00:00:00.000Z'
+    channel: linkedin
+    summary: Many organizations use the terms DevOps and Automation interchangeably. DevOps can be defined
+      as a combination of…
+  - title: 'GitHub: Project Management'
+    url: https://www.linkedin.com/pulse/github-project-management-ambily-kk
+    published: '2022-08-29T00:00:00.000Z'
+    channel: linkedin
+    summary: GitHub is one of the main DevSecOps platform with lot of developer friendly features. GitHub
+      was used for a long time…
+  - title: GitHub GraphQL
+    url: https://www.linkedin.com/pulse/github-graphql-ambily-kk
+    published: '2022-06-08T00:00:00.000Z'
+    channel: linkedin
+    summary: GraphQL is an open-source data query language for APIs. GraphQL is one of the widely adopted
+      query language by modern…
+  - title: 'GitHub: Deployment Management'
+    url: https://www.linkedin.com/pulse/github-deployment-management-ambily-kk
+    published: '2022-05-26T00:00:00.000Z'
+    channel: linkedin
+    summary: GitHub is one of the leading DevOps platforms to orchestrate end-to-end DevOps implementation.
+      GitHub's actions and…
+  - title: 'GitHub Custom actions: Reusable modules'
+    url: https://www.linkedin.com/pulse/github-custom-actions-reusable-modules-ambily-kk
+    published: '2022-05-20T00:00:00.000Z'
+    channel: linkedin
+    summary: GitHub actions are playing a major role in DevOps adoption across many organizations. GitHub
+      provides set of actions to…
+  talks:
+  - session:2025/aut1512s
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685684024317001nH5O
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

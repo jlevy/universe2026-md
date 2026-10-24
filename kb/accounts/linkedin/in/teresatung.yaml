@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/teresatung
+  platform: linkedin
+  handle: in/teresatung
+  url: https://www.linkedin.com/in/teresatung
+  display_name: Teresa Tung
+  bio: Global lead of Data Capability developing vision, assets, and talent. Most prolific…
+  location: San Francisco Bay Area
+  followers: 12773
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQESm7Bh0Db9PQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1642106882708?e=2147483647&v=beta&t=fYFHxj4degkFzEkTVaeJyKZZH8OKtjOMAPRTo3w2OkI
+  banner_url: https://media.licdn.com/dms/image/v2/C4D16AQHnLzBBsf-8GA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1610682515506?e=2147483647&v=beta&t=l9GVoSzwC1ZkJY5hCrRK5LyK3SglnBxSHv-c7YqGbnA
+  owner: person:teresa-tung
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1698845025681001PCFa
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/teresatung
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

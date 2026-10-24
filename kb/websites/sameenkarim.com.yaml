@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:sameenkarim.com
+  url: https://sameenkarim.com
+  kind: personal
+  title: Sameen Karim - Entrepreneur, Product Leader, Software Engineer, Startup Investor
+  description: I’m Sameen, a technologist and entrepreneur based in New York City. I most recently was
+    the Head of Product at Rockerbox. Before that, I was the co-founder and CEO of Eventable.
+  owner: person:sameen-karim
+  link_basis:
+  - github_profile
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://www.sameenkarim.com/feed.xml
+  linked_accounts:
+  - acct:linkedin/in/sameenkarim
+  - acct:x/sameenkarim
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: skarim
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://www.sameenkarim.com/
+    record_id: https://sameenkarim.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

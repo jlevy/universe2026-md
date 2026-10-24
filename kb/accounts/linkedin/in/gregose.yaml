@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/gregose
+  platform: linkedin
+  handle: in/gregose
+  url: https://www.linkedin.com/in/gregose
+  display_name: Gregory Ose
+  location: Greater Chicago Area
+  followers: 959
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFYVoLu6IjRCw/profile-displaybackgroundimage-shrink_200_800/B56Z.pWYKIIMAQ-/0/1785252643753?e=2147483647&v=beta&t=5vlyqaA62WIxTZqi3R-Tn10CLWspBRHMA90WR0uHOlI
+  owner: person:greg-ose
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695149064229001EKN1
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695149064229001EKN1
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/gregose
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

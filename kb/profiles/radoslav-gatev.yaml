@@ -1,0 +1,334 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:radoslav-gatev
+  person: person:radoslav-gatev
+  brief_bio:
+    text: Radoslav Gatev is founder and principal cloud solution architect at Verityware, designing applications
+      on Microsoft Azure, and is a Microsoft MVP for Azure and author of Introducing Dapr. Gatev spoke
+      at GitHub Universe 2023 about passwordless deployments to the cloud with GitHub Actions.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - recognitions
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 5950bdbf12eaf732a78da4d6b4ef50b30c06ea9613f87ae283435acae5a5f761
+    stale: false
+  headline: Verityware
+  current_roles:
+  - Verityware
+  expertise:
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1972g
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1972g
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1972g
+  - label: Infrastructure as Code
+    target: term:topic-2023/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1972g
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1972g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1972g
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2023/dev1972g
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Microsoft Azure
+      ref: person:radoslav-gatev
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Radoslav is a Microsoft Most Valuable Professional (MVP) for Microsoft Azure, recognized
+        for his ongoing contributions to the community.
+  interests:
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686175518474001ZnjI
+      ref: session:2023/dev1972g
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686175518474001ZnjI
+      ref: session:2023/dev1972g
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686175518474001ZnjI
+      ref: session:2023/dev1972g
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686175518474001ZnjI
+      ref: session:2023/dev1972g
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686175518474001ZnjI
+      ref: session:2023/dev1972g
+  - label: Infrastructure as Code
+    target: term:topic-2023/infrastructure-as-code
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686175518474001ZnjI
+      ref: session:2023/dev1972g
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686175518474001ZnjI
+      ref: session:2023/dev1972g
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686175518474001ZnjI
+      ref: session:2023/dev1972g
+  education:
+  - school: Sofia University St. Kliment Ohridski
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  credentials:
+  - kind: honor
+    title: Microsoft Azure Most Valuable Professional (MVP) 2018-2025
+    issuer: Microsoft
+    date: '2018-10-01T00:00:00.000Z'
+    description: Awarded Microsoft Azure MVP for 7 years in a row. Microsoft Most Valuable Professionals,
+      or MVPs, are technology experts who passionately share their knowledge with the community. They
+      are always on the "bleeding edge" and have an unstoppable urge to get their hands on new, exciting
+      technologies. They have a very deep knowledge of Microsoft products and services, while also being
+      able to bring together diverse platforms, products, and solutions, to solve real-world problems.
+      MVPs make up… Show more
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'MCSD: App Builder 2017'
+    issuer: Microsoft
+    date: Jan 2017
+    url: https://1drv.ms/b/s!ArAN9zSPbM8wlA5TrK-RKDT0In1c
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'Microsoft Certified Solutions Expert: Cloud Platform and Infrastructure 2017'
+    issuer: Microsoft
+    date: Jan 2017
+    url: https://1drv.ms/b/s!ArAN9zSPbM8wlA3GzRcFBoJj1HCD
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'Microsoft Specialist: Architecting Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: Jan 2017
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'MCSA, Charter Member: Cloud Platform'
+    issuer: Microsoft
+    date: Sep 2016
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'MCSA, Charter Member: Web Applications'
+    issuer: Microsoft
+    date: Sep 2016
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'MCSD, Charter member: App Builder 2016'
+    issuer: Microsoft
+    date: Sep 2016
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'Microsoft Specialist: Implementing Microsoft Azure Infrastructure Solutions'
+    issuer: Microsoft
+    date: May 2016
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'Microsoft Specialist: Developing Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: Mar 2016
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: Certified Kendo UI Developer
+    issuer: Telerik
+    date: Jan 2016
+    url: https://1drv.ms/b/s!ArAN9zSPbM8wlBNXNO2UN1bKX8XE
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: certification
+    title: 'MCSD: Azure Solutions Architect'
+    issuer: Microsoft
+    date: Jan 2017
+    expires: Jan 2019
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  spoken_languages:
+  - Bulgarian
+  - English
+  activities:
+  - kind: volunteering
+    title: Advisor at Azure User Research Panel & Cloud Platform Advisors Group
+    detail: Microsoft · Science and Technology · Feb 2017 · - Dec 2018 · 1 year 11 months · Provided feedback
+      for Microsoft Azure services to help Microsoft in shaping the future. This commitment continued
+      as being an MVP later on. · Feb 2017
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  - kind: volunteering
+    title: Board Member
+    detail: Association Bulgarian Software Community · Science and Technology · Jun 2016 · - Aug 2021
+      · 5 years 3 months · Helped with the organization of several of the biggest technical conferences
+      in Bulgaria such as Azure Bootcamp, js.talks(), IoT Summit Bulgaria, SQL Saturday Sofia, and Power
+      Platform Bootcamp that gathered thousands of people every year. Took part in marketing, sponsorship,
+      speaker selection, and onsite support activities. · Jun 2016
+    evidence:
+      url: https://www.linkedin.com/in/radoslavgatev
+      observed_at: '2026-10-24T08:47:08Z'
+  recent_writing:
+  - title: 'Ghost on Azure App Service: No Longer Maintained'
+    url: https://www.gatevnotes.com/ghost-on-azure-app-service-sunsets/
+    published: '2026-03-02T16:25:25Z'
+    channel: blog
+  - title: 'Tips & Tricks for Azure Repos: Configure Git Credential Manager for Entra ID Auth'
+    url: https://www.gatevnotes.com/tips-and-tricks-azure-repos-configure-git-credential-manager-entra-id-auth/
+    published: '2025-12-28T18:02:55Z'
+    channel: blog
+  - title: One scheduled Power Automate flow, many dynamically configurable recurrences
+    url: https://www.gatevnotes.com/one-scheduled-power-automate-flow-many-dynamically-configurable-recurrences/
+    published: '2025-03-31T14:13:00Z'
+    channel: blog
+  - title: A deep-dive into User Delegation Shared Access Signature (SAS) for Azure Storage
+    url: https://www.gatevnotes.com/a-deep-dive-into-user-delegation-shared-access-signature/
+    published: '2025-03-25T06:00:00Z'
+    channel: blog
+  - title: On keeping up with Microsoft technology
+    url: https://www.gatevnotes.com/on-keeping-up-with-microsoft-technology/
+    published: '2025-03-18T20:00:10Z'
+    channel: blog
+  - title: Delegate access to Azure Storage using Shared Access Signature (SAS)
+    url: https://www.gatevnotes.com/delegate-access-to-azure-storage-using-shared-access-signatures-sas/
+    published: '2025-02-01T20:55:16Z'
+    channel: blog
+  - title: Key Takeaways from Microsoft Ignite 2024
+    url: https://www.gatevnotes.com/key-highlights-from-microsoft-ignite-2024/
+    published: '2024-11-23T13:43:48Z'
+    channel: blog
+  - title: How to uncover the names and parameters of blades in Azure Portal
+    url: https://www.gatevnotes.com/uncovering-blade-names-and-parameters-azure-portal/
+    published: '2024-03-31T12:18:44Z'
+    channel: blog
+  - title: How to use Azure Portal blades in the Template Specs UI
+    url: https://www.gatevnotes.com/using-blades-from-the-azure-portal-for-ui-of-template-specs/
+    published: '2024-03-20T07:18:01Z'
+    channel: blog
+  - title: Lively Azure Dashboards with Azure Resource Graph
+    url: https://www.gatevnotes.com/live-azure-dashboards-with-resource-graph/
+    published: '2023-03-25T17:59:52Z'
+    channel: blog
+  talks:
+  - session:2023/dev1972g
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686173434442001JcH9
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

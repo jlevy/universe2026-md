@@ -1,0 +1,157 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:grzegorz-bak
+  person: person:grzegorz-bak
+  brief_bio:
+    text: The GitHub Universe 2025 listing describes Greg Bak as Head of Product Enablement at GitProtect.io.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 190e7831c02e0f640622faf68cbf9fe8c6df5cb4c89b5a81aafe21fb9f081c44
+    stale: false
+  expertise:
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1555d
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1555d
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1555d
+  technologies:
+  - label: Azure DevOps
+    target: software:azure-devops
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure DevOps
+      ref: person:grzegorz-bak
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Server
+      ref: session:2025/sec1555d
+  - label: GitLab
+    target: software:gitlab
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitLab
+      ref: person:grzegorz-bak
+  - label: Jira
+    target: software:jira
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Jira
+      ref: person:grzegorz-bak
+  interests:
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754665498024001DBYT
+      ref: session:2025/sec1555d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754665498024001DBYT
+      ref: session:2025/sec1555d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754665498024001DBYT
+      ref: session:2025/sec1555d
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754665498024001DBYT
+      ref: session:2025/sec1555d
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754665498024001DBYT
+      ref: session:2025/sec1555d
+  - label: Projects and Issues
+    target: term:github-product-2025/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754665498024001DBYT
+      ref: session:2025/sec1555d
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1754665498024001DBYT
+      ref: session:2025/sec1555d
+  education:
+  - school: West Pomeranian University of Technology in Szczecin
+    evidence:
+      url: https://www.linkedin.com/in/grzegorz-bak
+      observed_at: '2026-10-24T08:45:09Z'
+  spoken_languages:
+  - polski
+  - angielski
+  talks:
+  - session:2025/sec1555d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745934547604001nj2y
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

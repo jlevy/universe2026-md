@@ -1,0 +1,503 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:cassidy-williams
+  person: person:cassidy-williams
+  brief_bio:
+    text: Cassidy Williams is Senior Director of Developer Advocacy at GitHub, helping developers build
+      with open source and modern developer tools, and has written a weekly tech newsletter since 2017.
+      Williams spoke in the GitHub Universe 2024 opening keynote and speaks in the 2026 opening keynote.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: e85c8b9089d8a6051109aa848d6f46385e2632827cc6a94c9b7fe50da24aa7e2
+    stale: false
+  headline: Sr. Director, Developer Advocacy at GitHub
+  location: Chicago, IL
+  current_roles:
+  - Sr. Director, Developer Advocacy at GitHub
+  programming_languages:
+  - label: JavaScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:cassidoo/todometer
+    - ref: repo:cassidoo/talks
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:cassidoo/pocketcal
+    - ref: repo:cassidoo/fancygist
+  - label: Astro
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:cassidoo/blahg
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:cassidoo/html-css-tutorial
+  interests:
+  - label: calendar
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cassidoo/pocketcal
+      ref: repo:cassidoo/pocketcal
+    - url: https://github.com/dayflow-js/calendar
+      ref: repo:dayflow-js/calendar
+  - label: android
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ente/ente
+      ref: repo:ente/ente
+  - label: angular-calendar
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/dayflow-js/calendar
+      ref: repo:dayflow-js/calendar
+  - label: astro
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cassidoo/blahg
+      ref: repo:cassidoo/blahg
+  - label: baduk
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/online-go/online-go.com
+      ref: repo:online-go/online-go.com
+  - label: blog
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cassidoo/blahg
+      ref: repo:cassidoo/blahg
+  - label: cold-calls
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cassidoo/getting-a-gig
+      ref: repo:cassidoo/getting-a-gig
+  - label: college
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cassidoo/getting-a-gig
+      ref: repo:cassidoo/getting-a-gig
+  - label: e2ee
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ente/ente
+      ref: repo:ente/ente
+  - label: electron
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/cassidoo/todometer
+      ref: repo:cassidoo/todometer
+  - label: encryption
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ente/ente
+      ref: repo:ente/ente
+  - label: end-to-end-encryption
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/ente/ente
+      ref: repo:ente/ente
+  open_source:
+  - repository: repo:cassidoo/getting-a-gig
+    relation: owner
+    stars: 7896
+  - repository: repo:cassidoo/todometer
+    relation: owner
+    stars: 2135
+    primary_language: JavaScript
+  - repository: repo:cassidoo/html-css-tutorial
+    relation: owner
+    stars: 971
+    primary_language: HTML
+  - repository: repo:cassidoo/scrapers
+    relation: owner
+    stars: 733
+  - repository: repo:cassidoo/talks
+    relation: owner
+    stars: 710
+    primary_language: JavaScript
+  - repository: repo:cassidoo/blahg
+    relation: owner
+    stars: 622
+    primary_language: Astro
+  - repository: repo:cassidoo/pocketcal
+    relation: owner
+    stars: 152
+    primary_language: TypeScript
+  - repository: repo:cassidoo/fancygist
+    relation: owner
+    stars: 107
+    primary_language: TypeScript
+  - repository: repo:online-go/online-go.com
+    relation: contributor
+    stars: 1574
+    primary_language: TypeScript
+  - repository: repo:github/maintainermonth
+    relation: contributor
+    stars: 243
+    primary_language: JavaScript
+  - repository: repo:ente/ente
+    relation: contributor
+    stars: 29568
+    primary_language: Dart
+  - repository: repo:dayflow-js/calendar
+    relation: contributor
+    stars: 815
+    primary_language: TypeScript
+  - repository: repo:hnpwd/hnpwd
+    relation: contributor
+    stars: 93
+    primary_language: Common Lisp
+  education:
+  - school: Iowa State University
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  credentials:
+  - kind: honor
+    title: Most Outstanding Student
+    issuer: College of Liberal Arts & Sciences Multicultural Liaison Officer
+    date: '2013-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: honor
+    title: Cardinal Key
+    issuer: Iowa State University
+    date: '2012-01-01T00:00:00.000Z'
+    description: 'Iowa State University''s premier honorary since 1926 recognizing outstanding leadership,
+      service, scholarship, and character of its students, faculty, and staff. Cardinal Key Members are
+      selected by their proficiency in the following areas: * Leadership activities while at Iowa State
+      University * Service contributions to the community and to Iowa State University * Scholarship achievements
+      such as academic honor societies and academic scholarships * Character'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: honor
+    title: George Washington Carver Scholar
+    issuer: Iowa State University
+    date: '2010-01-01T00:00:00.000Z'
+    description: Scholarships are awarded to incoming freshmen directly out of high school as part of
+      the George Washington Carver (GWC) Scholarship program. To be considered, students must rank in
+      the upper 25 percent of their high school class or have a 3.50 grade point average AND present a
+      minimum ACT composite score of 24 or minimum SAT score of 1100 (Critical Reading plus Math).
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: honor
+    title: National Center for Women and Information Technology (NCWIT) - Illinois Affiliate Award for
+      Aspirations in Computing
+    issuer: National Center for Women and Information Technology
+    date: '2010-01-01T00:00:00.000Z'
+    description: The NCWIT Award for Aspirations in Computing honors young women at the high-school level
+      for their computing-related achievements and interests. The Award generates support and visibility
+      for women's participation in communities nationwide.
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  spoken_languages:
+  - Spanish
+  - English
+  activities:
+  - kind: course
+    title: Advanced Programming Tools
+    detail: '430'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Algorithms
+    detail: '311'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Computer Architecture
+    detail: '321'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Digital Logic
+    detail: '281'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Discrete Computational Structures
+    detail: '330'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Intro to Database Management
+    detail: '363'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Operating Systems
+    detail: '352'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Philosophy of Technology
+    detail: '343'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Programming Languages
+    detail: '342'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Project Management
+    detail: '309'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Software Testing
+    detail: '417'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: Theory of Computing
+    detail: '331'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: course
+    title: User Interfaces
+    detail: '319'
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Association for Computing Machinery
+    detail: Oct 2011 · Present
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: National Center for Women & Information Technology
+    detail: Jan 2010 · Present
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Cardinal Key
+    detail: Highest honorary society at Iowa State University. · Apr 2012 · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Coffee, Tea, & English
+    detail: Organization for international students to practice their English through conversations with
+      native English speakers. · Oct 2011 · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Iowa State University Liberal Arts & Sciences Ambassadors
+    detail: Students to represent the College of Liberal Arts & Sciences at Iowa State University through
+      campus events, volunteering, and creating media. · Jan 2011 · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Digital Women
+    detail: Organization for promotion, recruitment, and retention of women in computer science, computer
+      engineering, software engineering, and electrical engineering. · Sep 2010 · May 2014
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Murals & Paintings Society
+    detail: Promoting art and painting murals across Iowa State University's campus. · Mar 2013 · Dec
+      2013
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: University Honors Program
+    detail: Honors program at Iowa State University. · Sep 2010 · Dec 2013
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Game Development Club
+    detail: An organization dedicated to teaching its members how to program, write for, compose music
+      for, and design full-fledged video games. · Aug 2012 · May 2013
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Information Assurance Student Group
+    detail: A club that teaches its members about the ins and outs of information assurance and computer
+      security, with annual Cyber Defense Competitions. · Sep 2010 · May 2013
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Spanish Club
+    detail: Club for Spanish and Latin American culture and the study and promotion of the Spanish language.
+      · Sep 2010 · May 2013
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  - kind: organization
+    title: Microsoft Intern Ambassador Program
+    detail: Promote computer science and other computer-related fields on campus with Microsoft sponsorship.
+      Includes mentoring freshmen, planning events, and helping others with their resumes and interviews.
+      · Jul 2012 · Nov 2012
+    evidence:
+      url: https://www.linkedin.com/in/cassidoo
+      observed_at: '2026-10-24T08:11:57Z'
+  recent_writing:
+  - title: 🏘️ "Keep good company, read good books, love good things." - Louisa May Alcott
+    url: https://cassidoo.co/newsletter/2026-10-18/
+    published: '2026-10-19T07:05:18Z'
+    channel: blog
+  - title: Building a static newsletter archive
+    url: https://cassidoo.co/post/static-newsletter-archive/
+    published: '2026-10-15T00:00:00Z'
+    channel: blog
+  - title: 🌛 "There was no choice but to be pioneers; no time to be beginners." - Margaret Hamilton
+    url: https://cassidoo.co/newsletter/2026-10-11/
+    published: '2026-10-12T04:33:25Z'
+    channel: blog
+  - title: 🎤 "To be different is great. You don't want to be the same." - Kristen Johnston
+    url: https://cassidoo.co/newsletter/2026-10-04/
+    published: '2026-10-05T03:44:52Z'
+    channel: blog
+  - title: Accessibility and the new model of the internet
+    url: https://cassidoo.co/post/accessibility-and-the-internet/
+    published: '2026-10-01T19:41:49Z'
+    channel: blog
+  - title: 🎹 "To take a fine idea and make something great of it... that is what real art is!" - Antonín
+      Dvořák
+    url: https://cassidoo.co/newsletter/2026-09-27/
+    published: '2026-09-28T06:05:53Z'
+    channel: blog
+  - title: 🧑‍🎨 "Always make room for the unexpected in yourself." - Steve Martin
+    url: https://cassidoo.co/newsletter/2026-09-20/
+    published: '2026-09-21T06:31:05Z'
+    channel: blog
+  - title: The absolute best AI tools to use in September 2026
+    url: https://cassidoo.co/post/best-ai-tools-sept-2026/
+    published: '2026-09-17T22:55:14Z'
+    channel: blog
+  - title: 🤪 "There's power in looking silly and not caring that you do." - Amy Poehler
+    url: https://cassidoo.co/newsletter/2026-09-13/
+    published: '2026-09-14T05:24:24Z'
+    channel: blog
+  - title: 🛣️ "Habit is persistence in practice." - Octavia Butler
+    url: https://cassidoo.co/newsletter/2026-09-06/
+    published: '2026-09-07T04:25:52Z'
+    channel: blog
+  - title: 💐 "If you see someone without a smile today, give 'em yours." - Dolly Parton
+    url: https://cassidoo.co/newsletter/2026-08-30/
+    published: '2026-08-31T05:01:34Z'
+    channel: blog
+  - title: 🪁 "The worst enemy to creativity is self-doubt." - Sylvia Plath
+    url: https://cassidoo.co/newsletter/2026-08-23/
+    published: '2026-08-24T07:19:34Z'
+    channel: blog
+  - title: RenderATL 2026 recap
+    url: https://cassidoo.co/post/renderatl-2026/
+    published: '2026-08-23T00:00:00Z'
+    channel: blog
+  - title: 👛 "The most certain sign of wisdom is cheerfulness." - Michel de Montaigne
+    url: https://cassidoo.co/newsletter/2026-08-16/
+    published: '2026-08-17T04:41:37Z'
+    channel: blog
+  - title: Customizing my Xteink firmware and wallpaper
+    url: https://cassidoo.co/post/xteink-customization/
+    published: '2026-07-06T00:00:00Z'
+    channel: blog
+  talks:
+  - session:1809k
+  - session:2024/1975k
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725036381202001ffsN
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cassidoo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725036381202001ffsN
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

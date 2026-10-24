@@ -1,0 +1,877 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:todd-manion
+  person: person:todd-manion
+  brief_bio:
+    text: Todd Manion was VP of Product Management at GitHub after leading product initiatives at Microsoft
+      for Windows, Azure and Xbox, and holds patents on application instant replay and distributed routing
+      tables. Manion spoke at GitHub Universe 2024 and 2025 about GitHub Enterprise and scaling innovation
+      with AI.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 09dfcc2afc89c5097d77acf12b1913306052adbae57f26a23cf8c39a9eef63ce
+    stale: false
+  expertise:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1443m
+  technologies:
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: session:2024/dev1443m
+  - label: GitHub Enterprise Server
+    target: software:github-enterprise-server
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Enterprise Server
+      ref: session:2024/dev1443m
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:todd-manion
+  - label: Windows
+    target: software:windows
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Windows
+      ref: person:todd-manion
+  interests:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715285402079001hkKL
+      ref: session:2024/dev1443m
+  patents:
+  - title: Computing Application Instant Replay
+    number: US 9,498,717
+    date: November 22, 2016
+    description: Various embodiments relating to providing video game instant replays are disclosed. In
+      one embodiment, a currently playing video game is overseen by a platform-level instant replay companion
+      that executes separately from any of a plurality of different video games. A most recently played
+      portion of rendered gameplay from the currently playing video game is automatically and continuously
+      recorded with the platform-level instant replay companion. A recorded gameplay segment from the
+      most recently played portion of rendered gameplay is displayed with the platform-level instant replay
+      companion.
+    url: https://patents.google.com/patent/US9498717
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: DISTRIBUTED ROUTING TABLE ARCHITECTURE AND DESIGN
+    number: US 9,270,585
+    date: February 23, 2016
+    description: A Distributed Routing Table (DRT) mesh can comprise two or more nodes, each of which
+      maintains its own routing table that represents some or all of the overall routing knowledge of
+      the DRT mesh. Each node can be comprised of modular components that can perform various defined
+      functions such that the features and abilities of the node can be customized by an application based
+      on which modular components are instantiated. A routing table management module can maintain individual
+      routing tables at each node, and can ensure that only entries that are close to the node, in a network
+      topology sense, are maintained in the routing table. In addition, a security module can verify received
+      messages based on an agreed-upon root certificate.
+    url: https://patents.google.com/patent/US9270585
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: LOCATING AND ORIENTING DEVICE IN SPACE
+    number: US 9,144,744
+    date: September 29, 2015
+    description: Example apparatus and methods concern an improved immersive experience for a video gamer
+      that is provided by controlling a game based on the three dimensional location and orientation of
+      a control and display device held by or otherwise associated with the gamer. The location is determined
+      from data comprising a three dimensional position and an orientation of a portion of a player in
+      a three dimensional space associated with a computerized game. The facing and rotation of the device
+      is determined as a function of both the location of the device and the orientation of the device.
+      The orientation may be determined by data from motion sensors in or on the device. Example apparatus
+      and methods control the computerized game based, at least in part, on the position of the device,
+      the facing of the device, and the rotation of the device.
+    url: https://patents.google.com/patent/US9144744
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: ROAMING APPLICATION SETTINGS ACROSS MULTIPLE COMPUTING DEVICES
+    number: US 9,077,733
+    date: July 7, 2015
+    description: Application settings are roamed across multiple computing devices. Provider modules on
+      the computing devices are run to retrieve application settings to be roamed and to roam those application
+      settings across the multiple computing devices. Application setting changes initiated on a particular
+      computing device are added to a history of application setting changes on the particular computing
+      device, and also added to synchronization communication module for communication to one or more
+      additional computing devices of the multiple computing devices. Application setting changes initiated
+      by one of the one or more additional computing devices are received by the particular computing
+      device and added to a history of application setting changes on the particular computing device,
+      and are also incorporated into the application settings on the particular computing device.
+    url: https://patents.google.com/patent/US9077733
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Peer-To-Peer Identity Management Interfaces and Methods
+    number: US 9,021,106
+    date: April 28, 2015
+    description: Peer-to-peer (P2P) application programming interfaces (APIs) that allow an application
+      to create, import, export, manage, enumerate, and delete P2P identities are presented. Further,
+      the management of group identity information is provided. APIs abstract away from low level credential
+      and cryptographic functions required to create and manage P2P identities. This management includes
+      retrieval and setting of a friendly name, generation of a cryptographic public/private key pair,
+      retrieval of security information in the form of an XML fragment, and creation of a new name based
+      on an existing identity.
+    url: https://patents.google.com/patent/US9021106
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: DISTRIBUTED ROUTING TABLE INTERFACE
+    number: US 8,977,686
+    date: March 10, 2015
+    description: Application programming interface (API) for starting and accessing distributed routing
+      table (DRT) functionality. The API facilitates bootstrapping into the DRT by one or more devices
+      of a group of devices (a mesh) seeking to collaborate over a serverless connection, establishing
+      a node of the DRT, where each node is an instance of an application that is participating in the
+      mesh, and node participation by allowing the application to search for keys published by other nodes
+      in the mesh, or by becoming part of the mesh by publishing a key. The API facilitates optimization
+      of the routing table for quickly finding a root of a specific key in the mesh by finding the key
+      directly in a cache or by asking a root node of the key that is in the local routing table that
+      is closest numerically to the key being searched.
+    url: https://patents.google.com/patent/US8977686
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: REMOTE DEVICE COMMUNICATION PLATFORM USER INTERFACE
+    number: US 8,898,321
+    date: November 25, 2014
+    description: Enabling a user interface (UI) for management of a host device from a client device.
+      A connection is established between the host device and the client device via a web portal. The
+      host device and the client device are without a host management software installed thereon. A content
+      window is displayed on the client device in response to the established connection with the host
+      device. A client status display area is displayed on the client device indicating at least a connection
+      status with the host device. A corresponding host status display area is displayed on the host device
+      indicating a connection status with the client device. The displayed client status display area
+      specifically identifies the client device and defines client parameters for receiving messages during
+      management of the host device. The displayed host status display area specifically identifies the
+      host device and defines host parameters for receiving messages during interaction with the client
+      device.
+    url: https://patents.google.com/patent/US8898321
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: GROUPING PERSONAL ACCOUNTS TO TAILOR A WEB SERVICE
+    number: US 8,839,390
+    date: September 16, 2014
+    description: Grouping personal accounts to tailor a web service may be accomplished by grouping information
+      from two or more personal accounts. In some embodiment's, a personal account may include a set of
+      persons. By grouping personal accounts, a service provider may tailor a web service to multiple
+      people based on information about those people.
+    url: https://patents.google.com/patent/US8839390
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: REMOTE DEVICE COMMUNICATION PLATFORM
+    number: US 8,789,151
+    date: July 26, 2014
+    description: Managing via a web portal a remote device from a source device connected to a communication
+      network. A device ID is assigned to the remote device, and a remote management software for remote
+      management of the remote device is not installed on the source device or the remote device. Based
+      on the assigned device ID, a connection is established with the remote device via the communication
+      network. A first instruction is received from a user for authenticating access to the web portal.
+      The user is authenticated in response to the received first instruction. An online status is established
+      for the authenticated user. A second instruction is received from the authenticated user requesting
+      access to the remote device. The device ID of the remote device is validated. The validated device
+      ID is associated with the authenticated user. A connection is established between the remote device
+      and the web portal.
+    url: https://patents.google.com/patent/US8789151
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: REMOTE DESKTOP ACCESS
+    number: US 8,776,188
+    date: July 8, 2014
+    description: A method of accessing a first computing device from a second computing device using a
+      remote desktop service is disclosed. The first and second device register are authenticated and
+      registered with a remote access gateway. In some embodiment's, the remote access gateway stores
+      a copy of the first computer and changes made to the copy are synchronized with the actual first
+      computer when it access the remote access gateway. A virtual operating system experience on the
+      second computer is virtually the same as the real operating system experience on the first computer.
+    url: https://patents.google.com/patent/US8776188
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Distributed Malicious Software Protection in File Sharing Environments
+    number: US 8,756,683
+    date: June 17, 2014
+    description: Automatic file replication and scanning for malware in a sharing environment is based
+      on detection of file system changes. Only one client of the multi-client environment needs to include
+      malware protection software for all clients to benefit. A file replication service for each client
+      monitors a shared directory, and synchronizes files across clients at the file system driver level.
+      When a new file appears in the shared directory of a client system, through this driver, the new
+      file automatically gets replicated. A malware protection component operates by monitoring the directory
+      for new or modified files. File replication causes automatic malware scanning on the client that
+      has protection. When the file has been cleaned and re-written to the directory, the replication
+      service senses that the file has changed and replicates the cleaned file to the other clients. Thus,
+      the replication behavior produces a multiparty file scanning and cleansing protection scheme.
+    url: https://patents.google.com/patent/US8756683
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: PEER-TO-PEER IDENTITY MANAGEMENT INTERFACES AND METHODS
+    number: US 8,756,327
+    date: June 17, 2014
+    description: Peer-to-peer (P2P) application programming interfaces (APIs) that allow an application
+      to create, import, export, manage, enumerate, and delete P2P identities are presented. Further,
+      the management of group identity information is provided. APIs abstract away from low level credential
+      and cryptographic functions required to create and manage P2P identities. This management includes
+      retrieval and setting of a friendly name, generation of a cryptographic public/private key pair,
+      retrieval of security information in the form of an XML fragment, and creation of a new name based
+      on an existing identity.
+    url: https://patents.google.com/patent/US8756327
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Method for Efficient Content Distribution Using a Peer-to-Peer Networking Infrastructure
+    number: US 8,688,803
+    date: April 1, 2014
+    description: Disclosed is a method for efficiently distributing content by leveraging the use of a
+      peer-to-peer network infrastructure. In a network of peers, a handful peers can receive content
+      from centralized servers. These peers can then flood this content out to more clients who in turn
+      can send the content along to others. Ultimately, a request for content can be fulfilled by locating
+      the closest peer and obtaining the content from that peer. In one embodiment the method can be used
+      to distribute content by creating content distribution groups of one or more client computing devices
+      and redirecting requests for content from the server to the content distribution group. A further
+      contemplated embodiment efficiently streams time sensitive data through the use of a spanning tree
+      architecture of peer-to-peer clients. In yet another embodiment the present invention provides for
+      more efficient use of bandwidth for shared residential broadband connections.
+    url: https://patents.google.com/patent/US8688803
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: ROAMING APPLICATION SETTINGS ACROSS MULTIPLE COMPUTING DEVICES
+    number: US 8,606,889
+    date: December 10, 2013
+    description: Application settings are roamed across multiple computing devices. Provider modules on
+      the computing devices are run to retrieve application settings to be roamed and to roam those application
+      settings across the multiple computing devices. Application setting changes initiated on a particular
+      computing device are added to a history of application setting changes on the particular computing
+      device, and also added to synchronization communication module for communication to one or more
+      additional computing devices of the multiple computing devices. Application setting changes initiated
+      by one of the one or more additional computing devices are received by the particular computing
+      device and added to a history of application setting changes on the particular computing device,
+      and are also incorporated into the application settings on the particular computing device.
+    url: https://patents.google.com/patent/US8606889
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Private Virtual LAN Spanning a Public Network for Connection of Arbitrary Hosts
+    number: US 8,489,701
+    date: July 16, 2013
+    description: Architecture for exposing a virtual private network of peer devices into the public domain
+      via an overlay network. Computing devices, peripheral devices, as well as mobile devices can be
+      physically distributed, but appear to belong to the same virtual private (or home) network, and
+      be accessible from anywhere. Benefits include access to user media/documents from anywhere, searching
+      of all connected devices from one location, multicast and broadcast connectivity, management of
+      the private network and the associated policies, and device discovery on the private network from
+      across public networks. P2P networks and ad-hoc networks can be exposed as a virtual interface,
+      as well as the utilization of client operating systems to create the virtual network, grouping,
+      graphing, the integration with relay services and other NAT/firewall traversal schemes, and the
+      creation of a P2P overlay manager on a physical NIC (network interface card) address rather than
+      a virtual address.
+    url: https://patents.google.com/patent/US8489701
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Transparent Access Mechanism for Local and Remote Data
+    number: US 8,386,424
+    date: February 26, 2013
+    description: A unified data access mechanism can provide transparent access to data that is either
+      stored locally or remotely. Application programs can direct data requests and data modifications
+      to this singular component without foreknowledge of where the data is stored. The unified data access
+      mechanism can work in concert with a synchronization mechanism that can maintain data synchronization
+      between local data and remote data. Requested or modified data can be identified as stored locally
+      or remotely based on the namespace of the data. If the data is stored remotely, the user credentials
+      associated with the user's process space within which the application program is executing can be
+      utilized to identify, and then provide, relevant authentication information to the remote data store,
+      should it be required.
+    url: https://patents.google.com/patent/US8386424
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: One to Many Data Projection System and Method
+    number: US 8,260,857
+    date: September 4, 2012
+    description: The system and method of information or presentation projection allows a user to present
+      information to single or multiple screens without need of additional cables. Universal Plug and
+      Play (UPnP) is used to advertise, find, and control the display devices. A reverse Terminal Service
+      (TS) session is used to connect the display to the user's machine. Attendance at and receipt of
+      the presentation is addressed from both a presenter side and from an attendee side through a subscription
+      model. This subscription model is facilitated and security of the presentation is addressed through
+      the use meeting invitations. These invitations are generated by the presenter, and may be requested
+      by the attendees.
+    url: https://patents.google.com/patent/US8260857
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Peer Name Resolution Protocol Simple application Program Interface
+    number: US 8,255,546
+    date: August 28, 2012
+    description: An application program interface (API) for sending and receiving endpoint registration
+      data and peer-to-peer network cloud data has a registration call for adding endpoint data to a peer-to-peer
+      network. The API may receive explicit data regarding address information or may be instructed to
+      select and maintain suitable address information as the topology of the peer-to-peer network changes.
+      Blocking and non-blocking calls are exposed for retrieving information peer-to-peer network endpoint
+      data.
+    url: https://patents.google.com/patent/US8255546
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Integrated Network and Application Session Establishment
+    number: US 8,244,808
+    date: August 14, 2012
+    description: A session manager recognizes the creation of a new collaboration session and creates
+      a new network connection to host the collaboration session using information about the new collaboration
+      session. More specifically, an identifier for the new host network connection is based on the name
+      given to the collaboration session. In this way, other computing devices can discover existing collaboration
+      sessions by scanning the identifiers of existing network connections without actually having to
+      connect to the available networks first.
+    url: https://patents.google.com/patent/US8244808
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Distributed Routing Table Interface
+    number: US 8,161,095
+    date: April 17, 2012
+    description: Application programming interface (API) for starting and accessing distributed routing
+      table (DRT) functionality. The API facilitates bootstrapping into the DRT by one or more devices
+      of a group of devices (a mesh) seeking to collaborate over a serverless connection, establishing
+      a node of the DRT, where each node is an instance of an application that is participating in the
+      mesh, and node participation by allowing the application to search for keys published by other nodes
+      in the mesh, or by becoming part of the mesh by publishing a key. The API facilitates optimization
+      of the routing table for quickly finding a root of a specific key in the mesh by finding the key
+      directly in a cache or by asking a root node of the key that is in the local routing table that
+      is closest numerically to the key being searched.
+    url: https://patents.google.com/patent/US8161095
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Methodology and System For File Replication Based On a Peer group
+    number: US 8,108,548
+    date: January 31, 2012
+    description: The claimed invention adapts an existing operating system native replication service
+      component to interface with a general application running on a peer-to-peer network. The claimed
+      invention provides the general application with replication services without the need for coding
+      this functionality from scratch. The claimed invention also adapts the replication service functionality
+      to create a topology of connections based on information received from a peer-to-peer network component,
+      thereby making the replication service function more efficiently with a peer-to-peer network.
+    url: https://patents.google.com/patent/US8108548
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Application Programming Interface for Inviting Participants in a Serverless Peer to Peer Network
+    number: US 8,036,140
+    date: October 11, 2011
+    description: Methods and computer readable mediums are described that facilitate inviting user entities
+      on a network. The method may include initiating a first application for sending an invitation by
+      a first user entity on a first endpoint, selecting a second user entity to receive the invitation,
+      and selecting an activity. The method may also include sending from the first endpoint to the second
+      user entity the invitation to participate in the activity if the first endpoint determines the activity
+      is supported by a computing application on the first endpoint.
+    url: https://patents.google.com/patent/US8036140
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Communicating Between an Application Process and A Server Process to Manage Peer-To-Peer Identities
+    number: US 8,010,681
+    date: August 30, 2011
+    description: Peer-to-peer (P2P) application programming interfaces (APIs) that allow an application
+      to create, import, export, manage, enumerate, and delete P2P identities are presented. Further,
+      the management of group identity information is provided. APIs abstract away from low level credential
+      and cryptographic functions required to create and manage P2P identities. This management includes
+      retrieval and setting of a friendly name, generation of a cryptographic public/private key pair,
+      retrieval of security information in the form of an XML fragment, and creation of a new name based
+      on an existing identity. Since the P2P environment also allows for the existence of multiple separate
+      groups of peers within the P2P cloud, a preferred embodiment of the present invention also allows
+      for the enumeration of all groups associated with a given identity, for each identity existing for
+      the user.
+    url: https://patents.google.com/patent/US8010681
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Security Modes For a Routing Table Distributed Across Multiple Mesh Nodes
+    number: US 7,987,290
+    date: July 26, 2011
+    description: A mesh is joined by a node, wherein the mesh includes a Distributed Routing Table (DRT)
+      for determining addresses of nodes in the mesh. A DRT message is processed in accordance with a
+      security mode of the DRT.
+    url: https://patents.google.com/patent/US7987290
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Password-Authenticated Groups
+    number: US 7,958,368
+    date: June 7, 2011
+    description: A system, apparatus, method, and computer-readable medium are provided for authorizing
+      a computing node to participate in a group of computing nodes utilizing a shared group password.
+      According to one method described herein, an invitation to join a group is transmitted to a tentative
+      group member node. The invitation is used to establish a connection with a group member node of
+      the group. The tentative group member node generates a hash of a group password and transmits the
+      hash to the group member node. When the group member node receives the hash, the group member node
+      compares the received value to a previously stored hash of the group password. If the previously
+      stored value is identical to the value received from the tentative group member node, then the tentative
+      group member node is authorized as a new member of the group. Otherwise the tentative group member
+      node is not permitted to become a member of the group.
+    url: https://patents.google.com/patent/US7958368
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Peer-to-Peer Identity Management Managed Interfaces and Methods
+    number: US 7,949,996
+    date: May 24, 2011
+    description: A set of managed application programming interfaces (APIs) are presented to allow management
+      of a user's name and identity within a peer to peer networking environment. These managed APIs enable
+      a user to successfully create and manage their peer names and identities within this environment.
+      The creation of peer names for the purpose of resolving to a third party is also provided through
+      the managed APIs of the invention. Importing and exporting of peer identities is also provided,
+      as is the ability to delete a peer identity.
+    url: https://patents.google.com/patent/US7949996
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Distributed Routing Table Architecture and Design
+    number: US 7,895,345
+    date: February 22, 2011
+    description: A Distributed Routing Table (DRT) mesh can comprise two or more nodes, each of which
+      maintains its own routing table that represents some or all of the overall routing knowledge of
+      the DRT mesh. Each node can be comprised of modular components that can perform various defined
+      functions such that the features and abilities of the node can be customized by an application based
+      on which modular components are instantiated. A routing table management module can maintain individual
+      routing tables at each node, and can ensure that only entries that are close to the node, in a network
+      topology sense, are maintained in the routing table. In addition, a security module can verify received
+      messages based on an agreed-upon root certificate.
+    url: https://patents.google.com/patent/US7895345
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Collaborative Invitation System and Method
+    number: US 7,752,253
+    date: July 6, 2010
+    description: A set of collaborative contacts may be selected with an invitation user interface. An
+      invitation to participate in a collaborative activity may be sent to the selected contacts from
+      the invitation user interface or from a collaborative application. The invitation may be received
+      by a collaborative services platform. A user of the collaborative services platform may be presented
+      with the invitation along with an ability to choose one of accept, decline and ignore in response
+      to the invitation. The user may choose to accept, decline or explicitly ignore the invitation, and
+      a response may be sent to the sender of the invitation indicating the user's choice. An application
+      programming interface for a collaborative invitation service of the collaborative services platform
+      may include an invitation element, a send invitation element, a respond to invitation element and
+      a cancel invitation element. The cancel invitation element may be used to cancel issued invitations.
+    url: https://patents.google.com/patent/US7752253
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Self-Evolving Distributed System Performance Using a System Health Index
+    number: US 7,698,239
+    date: April 13, 2010
+    description: In a distributed computing system, an artificial intelligence system may be employed
+      to configure the network variables. A metric describing the overall system performance may be derived
+      during network operation or simulation and compared to an ideal metric describing the same distributed
+      system performance. The difference between the derived metric and the ideal metric may then be used
+      with an artificial intelligence system to modify the network variables to evolve the system toward
+      the ideal performance standard.
+    url: https://patents.google.com/patent/US7698239
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Meeting Structures and Global Unique Identifiers
+    number: US 7,660,852
+    date: February 9, 2010
+    description: A series of unique records may be published to establish and maintain ad hoc or online
+      meetings on a peer-to-peer network. The published records include a creator record, a presentation
+      record, a file sharing record, a friendly name record, and invitation status record, a capabilities
+      record, and a presence record. Each of the published records has a global unique identifier (GUID)
+      a uniquely and universally identifies each of the record types.
+    url: https://patents.google.com/patent/US7660852
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Meetings Near Me
+    number: US 7,660,851
+    date: February 9, 2010
+    description: A method for creating, discovering, and joining meetings over a peer-to-peer network
+      involves creation of a graph of meetings on a local subnet. When a meeting is created a meeting
+      record is added to the graph where it may be discovered by other potential meeting attendees. A
+      user may select from a list of meetings displayed in a meeting management window and send requested
+      showing the selected meaning. Credentials, such as a password, may be supplied with the request.
+      When the request is validated, information is sent to the requester for use in joining the meeting.
+      When an ad hoc wireless session is used to hold a meeting the discovery process may further include
+      analyzing data traffic to determine which wireless sessions are meetings.
+    url: https://patents.google.com/patent/US7660851
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Collaboration Spaces
+    number: US 7,620,902
+    date: November 17, 2009
+    description: A computer implemented method and system enable users to create a social network providing
+      access to other users. By providing access to such networks via a visual presentation, the system
+      renders content available for access by other network members. Access is sometimes provided through
+      propagation of metadata or other uniquely identifying indicia associated with the social network
+      to all or at least certain other network members.
+    url: https://patents.google.com/patent/US7620902
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: System and Method for Collaboration with Serverless Presence
+    number: US 7,617,281
+    date: November 10, 2009
+    description: Collaboration between collaborative endpoints may be facilitated by a serverless publication
+      service of a collaborative services platform. The serverless publication service may be configured
+      to accept communicative connections from the collaborative endpoints. Users of the collaborative
+      services platform may publish their associated collaborative presences with the serverless publication
+      service. For example, the collaborative presence of a user may include information with respect
+      to valid collaborative endpoints for the user and collaborative capabilities at those endpoints.
+      Subscriptions to published collaborative presences may be placed through the serverless publication
+      service. A collaborative presence subscribe message may specify a subscription to a collaborative
+      presence of a user. Upon receipt of a presence subscribe message, if there is no subscription policy
+      with respect to the sender, the recipient may be queried for a subscription policy with respect
+      to the sender. The subscription may be accepted in accordance with the subscription policy.
+    url: https://patents.google.com/patent/US7617281
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Unified Concept of Presence
+    number: US 7,614,060
+    date: November 3, 2009
+    description: A method and system may provide a unified concept of presence across all connected hosts
+      by providing a common point of access for all presence-related data on the system. The application
+      abstraction layer may provide a common interface for all presence-enabled applications to access
+      and publish information related to locally or remotely-executing presence applications. The application
+      abstraction layer may push presence data to the presence-enabled applications, or each application
+      may access the layer to gain presence data related to other applications. Also, the application
+      abstraction layer may store all presence data locally or remotely.
+    url: https://patents.google.com/patent/US7614060
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Peer-to-Peer Identity Management Interfaces and Methods
+    number: US 7,613,812
+    date: November 3, 2009
+    description: Peer-to-peer (P2P) application programming interfaces (APIs) that allow an application
+      to create, import, export, manage, enumerate, and delete P2P identities are presented. Further,
+      the management of group identity information is provided. APIs abstract away from low level credential
+      and cryptographic functions required to create and manage P2P identities. This management includes
+      retrieval and setting of a friendly name, generation of a cryptographic public/private key pair,
+      retrieval of security information in the form of an XML fragment, and creation of a new name based
+      on an existing identity. Since the P2P environment also allows for the existence of multiple separate
+      groups of peers within the P2P cloud, a preferred embodiment of the present invention also allows
+      for the enumeration of all groups associated with a given identity, for each identity existing for
+      the user.
+    url: https://patents.google.com/patent/US7613812
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: DNS Compatible PNRP Peer Name Encoding
+    number: US 7,603,482
+    date: October 13, 2009
+    description: A method of converting a peer name to a PNRP DNS is disclosed. The method may take a
+      peer name and encode it into a common DNS name. The method may also take a PNRP DNS name and convert
+      it to a peer name.
+    url: https://patents.google.com/patent/US7603482
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Peer-to-Peer Grouping Interfaces and Methods
+    number: US 7,596,625
+    date: September 29, 2009
+    description: Application programming interfaces and methods that provide group management in a peer-to-peer
+      (P2P) network are provided. More specifically, new and improved P2P application programming interfaces
+      (APIs) and methods for the creation and access of groups, the retrieval of member and group information,
+      the addition, modification, deletion and management of records (data), the importation and exportation
+      of group data, the direct communication between members, the addition of a security provider to
+      a group, the setting and retrieval of presence information, the registering for event notifications,
+      and other utility and support functions are presented. Each of these interfaces utilize various
+      parameters that are passed in from an application program that uses these interfaces to manage and
+      utilize groups. The interfaces return a value that indicates the success or failure of the function.
+      For failures, the interfaces provide an indication as to the problem resulting in the failure.
+    url: https://patents.google.com/patent/US7596625
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Managed Peer Name Resolution Protocol (PNRP) Interfaces for Peer to Peer Networking
+    number: US 7,496,648
+    date: February 24, 2009
+    description: 'The managed system and methods of the present invention are segmented into 3 main areas:
+      Clouds, Registrations, and Resolvers. The cloud object provides information about the clouds that
+      are available. If a could is available, the Registration object can be used to register endpoints
+      with the P2P name resolution protocol. Finally, if an application developer wishes to resolve a
+      peer name to an IP address, they simply use the resolver object. The clouds may be monitored for
+      state changes in one embodiment of the present invention through a CloudWatcher object.'
+    url: https://patents.google.com/patent/US7496648
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: APIS to Build Peer to Peer Messaging Applications
+    number: US 7,493,413
+    date: February 17, 2009
+    description: The claimed method and system is an API set to support a multicast programming model
+      for implementation on top of a service oriented framework, specifically a service oriented messaging
+      system.
+    url: https://patents.google.com/patent/US7493413
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Real-Time Collaboration and Communication in a Peer-to-Peer Networking Infrastructure
+    number: US 7,454,465
+    date: November 18, 2008
+    description: Methods that enable real-time communication and collaboration in a peer-to-peer (P2P)
+      network are provided. More specifically, methods for the creation and access of an underlying graph
+      and/or group structure to pass collaboration/real-time communication data and other functions such
+      as the retrieval of node/member and graph/group information, the addition, modification, deletion
+      and management of records (data), the direct communication between graph/group nodes/members, the
+      registering for event notifications, and other functions are used to pass real-time communication/collaboration
+      data between nodes in a graph or members of a group.
+    url: https://patents.google.com/patent/US7454465
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Peer-to-Peer Networking Framework Application Programming Interfaces
+    number: US 7,437,440
+    date: October 14, 2008
+    description: A managed class peer networking framework and associated object-oriented application
+      programming interfaces are presented. An application uses the framework API to communicate with
+      the various peer networking subsystem interfaces. These subsystems utilize lower level Win32 interfaces
+      and services to provide access to the group database, security, and data transfer to other machines.
+      Managed classes are provided for the peer name, identity, cloud, invitation, group, policy, data
+      store, peer and record collections, peer, and record classes. Peer name resolution objects and record
+      search objects are also provided. The peer networking framework of the present invention is particularly
+      applicable to Microsoft's .NET Framework.
+    url: https://patents.google.com/patent/US7437440
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Peer-to Peer Graphing Interfaces and Methods
+    number: US 7,430,747
+    date: September 30, 2008
+    description: Application programming interfaces and methods that provide graph management in a peer-to-peer
+      (P2P) network are provided. More specifically, new and improved P2P application programming interfaces
+      (APIs) and methods for the creation and access of graphs, the retrieval of node and graph information,
+      the addition, modification, deletion and management of records (data), the importation and exportation
+      of graph data, the direct communication between graph nodes, the addition of a security provider
+      to a graph, the setting and retrieval of presence information, the registering for event notifications,
+      and other utility and support functions are presented. Each of these interfaces utilize various
+      parameters that are passed in from an application program that uses these interfaces to manage and
+      utilize graphs. The interfaces return a value that indicates the success or failure of the function.
+      For failures, the interfaces provide an indication as to the problem resulting in the failure.
+    url: https://patents.google.com/patent/US7430747
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Peer-to-Peer Authentication and Authorization
+    number: US 7,350,074
+    date: March 25, 2008
+    description: An authentication mechanism uses a trusted people store that can be populated on an individual
+      basis by users of computing devices, and can comprise certificates of entities that the user wishes
+      to allow to act as certification authorities. Consequently, peer-to-peer connections can be made
+      even if neither device presents a certificate or certificate chain signed by a third-party certificate
+      authority, so long as each device present a certificate or certificate chain signed by a device
+      present in the trusted people store. Once authenticated, a remote user can access trusted resources
+      on a host device by having local processes mimic the user and create an appropriate token by changing
+      the user's password or password type to a hash of the user's certificate and then logging the user
+      on. The token can be referenced in a standard manner to determine whether the remote user is authorized
+      to access the trusted resource.
+    url: https://patents.google.com/patent/US7350074
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  - title: Peer-to-Peer Record Structure and Query Language for Searching and Discovery Thereof
+    number: US 7,139,760
+    date: November 21, 2006
+    description: A simple record query language (SRQL) is a generic record meta-data query solution that
+      can natively describe the information contained in a record and search each against it to find records
+      whose meta-data matches a particular set of criteria. SRQL includes both a record data structure
+      that includes searchable SRQL attributes that describe the record, and queries that are able to
+      search the attributes. The attributes are an XML node that exists in the record header itself. There
+      are two types of queries, to wit local to find records in the local data store, and distributed
+      to find records that may be stored in a neighbor's data store. As such, SRQL finds particular applicability
+      to peer-to-peer networks.
+    url: https://patents.google.com/patent/US7139760
+    evidence:
+      url: https://www.linkedin.com/in/toddrmanion
+      observed_at: '2026-10-24T08:50:01Z'
+  talks:
+  - session:2024/dev1443m
+  - session:2025/aut1850m
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715285811860001AjEU
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715285811860001AjEU
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

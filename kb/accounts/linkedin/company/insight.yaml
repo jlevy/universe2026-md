@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/insight
+  platform: linkedin
+  handle: company/insight
+  url: https://www.linkedin.com/company/insight
+  display_name: Insight
+  bio: Insight Enterprises, Inc. is a Fortune 500 solutions integrator helping organizations accelerate
+    their digital journey to modernize their business and maximize the value of technology. Insight’s
+    technical expertise spans cloud and edge-based transformation solutions, with global scale and optimization
+    built on 33+ years of deep partnerships with the world’s leading and emerging technology providers.
+  website: https://www.insight.com/en_US/home.html
+  followers: 487671
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQFZIChJQBx5Xg/company-logo_200_200/company-logo_200_200/0/1656694857348/insight_logo?e=2147483647&v=beta&t=oCKayix-HQuLjCsruEek9p9-nHvVDDrqnvankOOzlL8
+  owner: org:insight
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/david-benedic-bb21358b
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/insight
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

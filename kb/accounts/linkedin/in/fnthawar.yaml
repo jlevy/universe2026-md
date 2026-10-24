@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/fnthawar
+  platform: linkedin
+  handle: in/fnthawar
+  url: https://www.linkedin.com/in/fnthawar
+  display_name: Farhan Thawar
+  bio: 'Also an active angel investor: COMPLETED: * Autonomic — Acquired * Bento…'
+  location: Toronto
+  followers: 31468
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQFeCLNlVy85Ag/profile-displayphoto-scale_200_200/B4EZqDA_rkKYAY-/0/1763134668466?e=2147483647&v=beta&t=EKvPjYSx2mnvqTzXNbVEd5wSrpiEb7xcjK85I2TfE4M
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQFutPnH0bIqMw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1643048137812?e=2147483647&v=beta&t=YSN2O2cbGBHS4kSlJyNl3CkUyNL4qVh0-u7tIRqYgJE
+  owner: person:farhan-thawar
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695228836236001cSkd
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/fnthawar
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

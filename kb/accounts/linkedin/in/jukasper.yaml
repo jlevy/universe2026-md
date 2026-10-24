@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jukasper
+  platform: linkedin
+  handle: in/jukasper
+  url: https://www.linkedin.com/in/jukasper
+  display_name: Julia Kasper
+  bio: I’m a Product Manager working on Visual Studio Code and GitHub Copilot, focused on…
+  location: Seattle
+  followers: 9538
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5103AQFZzB1A8jACGA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1561120896358?e=2147483647&v=beta&t=OVB8pWL8wCubLTX2oouft-BXsFDbNWZWyCi879LZD80
+  banner_url: https://media.licdn.com/dms/image/v2/C5116AQEx7tcpoRRD0w/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1561119985805?e=2147483647&v=beta&t=0ppKODJnkFEAf8nyrtEybJKLMYKh5PRlzZy1cWxK48E
+  owner: person:julia-kasper
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1761601511739001H64z
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jukasper
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

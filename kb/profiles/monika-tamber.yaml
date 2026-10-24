@@ -1,0 +1,362 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:monika-tamber
+  person: person:monika-tamber
+  brief_bio:
+    text: Monika Tamber is AVP of Application Security & Operational Governance at Manulife, leading a
+      global team that secures more than 800 applications. Tamber speaks at GitHub Universe 2026 about
+      eliminating 90% of enterprise AppSec risk with people, process and GitHub.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: da07715c0542adc51c2aba02f53f210884134401ee8d170828a78f7c6cb500b7
+    stale: false
+  headline: AVP, Application Security & Operational Governance at Manulife
+  current_roles:
+  - AVP, Application Security & Operational Governance at Manulife
+  - Manulife Investment Management
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1405h
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777576880526001AwEa
+      ref: session:tru1405h
+  education:
+  - school: Schulich ExecEd
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  credentials:
+  - kind: honor
+    title: Schulich Diversity and Equity Alumni Award
+    issuer: SCHULICH SCHOOL OF ENGINEERING
+    date: '2021-09-01T00:00:00.000Z'
+    description: -Exceptional contributions to promoting and advancing diversity and equity in the engineering
+      profession and the community -Contributions related to diversity and equity advancement in the Schulich
+      School of Engineering -Accomplishments serve as an example to the engineering community -Serve as
+      an inspiration to engineering and the Schulich School of Engineering community
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: honor
+    title: Canada's Top 20 Women in Cyber Security
+    issuer: IT World Canada
+    date: '2021-07-01T00:00:00.000Z'
+    description: -Selected as Canada’s 20 Top Women in Cybersecurity by an independent panel of judges
+      from a nomination pool of 170 nominees across Canada -Awarded to women who have advanced the cybersecurity
+      industry and are helping shape the path for future generations. -IT World Canada highlighted women
+      who are doing incredible things and inspiring the next generation of cybersecurity practitioners,
+      innovators, and leaders
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: honor
+    title: Quarterly Spotlight Award
+    issuer: BMO
+    date: '2020-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: honor
+    title: City of Calgary Scholarship
+    issuer: City of Calgary
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: honor
+    title: Dean's Scholarship
+    issuer: University of Calgary
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: honor
+    title: Top Academic Award
+    issuer: University of Calgary
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: Masters Certificate in Risk Management and Business Performance Leadership
+    issuer: Schulich ExecEd
+    date: Apr 2023
+    url: https://www.credly.com/badges/fc34cf9a-859c-4e7a-b024-1f5d01a6744a/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: Enterprise Risk Implementation
+    issuer: Schulich School of Business - York University
+    date: Feb 2023
+    url: https://www.credly.com/badges/38993950-f628-47b4-9da6-e3da249b643b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: Enterprise Risk Management Framework
+    issuer: Schulich School of Business - York University
+    date: Oct 2022
+    url: https://www.credly.com/badges/63218ee3-70cb-4ac4-b6eb-f7993152ef06/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: Secret Security Clearance Level II
+    issuer: Government of Canada
+    date: Mar 2022
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: ISO 27001:2013 Lead Auditor
+    issuer: BSI
+    date: Aug 2021
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: CCSP
+    issuer: (ISC)²
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: Certified Information Security Manager (CISM)
+    issuer: ISACA
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: CISSP
+    issuer: (ISC)²
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: ISO 27001 Lead Implementer - Information Security Certification
+    issuer: BSI
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: certification
+    title: Professional Engineer (P.Eng.)
+    issuer: Professional Engineers Ontario
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  activities:
+  - kind: volunteering
+    title: Mentor
+    detail: WISE Planet at UCalgary · Science and Technology · Apr 2022 · - Present · 4 years 7 months
+      · WISE Planet strives to create a diverse, inclusive, equitable and just society by training women
+      and other underrepresented groups in STEM. · Apr 2022
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: volunteering
+    title: Industry Expert
+    detail: Fintech Cadence · Science and Technology · Aug 2021 · - Present · 5 years 3 months · Aug 2021
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: volunteering
+    title: Board Member - Communications Head
+    detail: Rogers Women's Network · Science and Technology · Jul 2015 · - Sep 2018 · 3 years 3 months
+      · Rogers Women’s Network (RWN) is a diversity group that empowers Rogers Employees, especially women,
+      to harness their unique strengths, develop a brand and achieve success in the workplace. The RWN
+      board consists of volunteers from different parts of the organization that help facilitate leadership
+      workshops, mentoring circles, networking events that help foster inclusion and diversity in the
+      workplace. · Jul 2015
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  - kind: volunteering
+    title: Teacher
+    detail: JA Central Ontario · Education · Apr 2019 · - Apr 2019 · 1 month · Economics for Success instructor
+      - educating grade 7/8 students on the importance of budgeting for post secondary, building a brand,
+      interview skills and careers in STEM · Apr 2019
+    evidence:
+      url: https://www.linkedin.com/in/monika-tamber-p-eng-cissp-ccsp-cism-22a59b4
+      observed_at: '2026-10-24T08:15:24Z'
+  talks:
+  - session:tru1405h
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1758038851788001VsZZ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: monikatamber
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

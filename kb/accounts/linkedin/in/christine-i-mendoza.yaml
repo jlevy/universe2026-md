@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/christine-i-mendoza
+  platform: linkedin
+  handle: in/christine-i-mendoza
+  url: https://www.linkedin.com/in/christine-i-mendoza
+  display_name: Christine Mendoza
+  bio: 'My experience in 9 words: Bridging the gaps between tech, accessibility, transportation…'
+  location: United States
+  followers: 950
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQE6AtdGrpXEQw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1681018968232?e=2147483647&v=beta&t=Y16fwPHiO0tD_ocLGvuoBb4Rf8qbvAUW_AMI31Il90o
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQGRSEi7owqYew/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1610151324533?e=2147483647&v=beta&t=adbomBwaKp245bb9rsAE1YiIG4WThhXAZGXgiFRAklQ
+  owner: person:christine-mendoza
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1724769288226001ShPT
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/christine-i-mendoza
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

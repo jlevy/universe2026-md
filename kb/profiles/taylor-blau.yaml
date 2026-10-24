@@ -1,0 +1,129 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:taylor-blau
+  person: person:taylor-blau
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes Taylor Blau as Staff Software Engineer at GitHub.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 89ba03d0a4f01b19921b6d68b168170ccd7d42d7e921eeb6f3f9b7bd98335974
+    stale: false
+  headline: OpenAI
+  current_roles:
+  - OpenAI
+  expertise:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1945w
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1945w
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1945w
+  technologies:
+  - label: Git
+    target: software:git
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Git
+      ref: person:taylor-blau
+  interests:
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724335769517001VMle
+      ref: session:2024/dev1945w
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724335769517001VMle
+      ref: session:2024/dev1945w
+  recent_writing:
+  - title: |-
+      Earlier this week, I had a chance to sit down with Linus Torvalds to celebrate the 20th anniversary of the Git project.
+
+      Check out our conversation on the past, present, and future of version control here:
+    url: https://twitter.com/115978530/status/1910064403921150213
+    published: '2025-04-09T20:16:55Z'
+    channel: x
+  - title: 8 years at GitHub today! https://t.co/BYHG13KVMo
+    url: https://twitter.com/115978530/status/1791089430117150780
+    published: '2024-05-16T12:52:51Z'
+    channel: x
+  - title: Number of unused parameters in git.git over time. A major effort from Jeff King to drop this
+      number to near-zero! https://t.co/yzZ1RymMQq
+    url: https://twitter.com/115978530/status/1746378919454945575
+    published: '2024-01-14T03:49:15Z'
+    channel: x
+  - title: Lots of exciting stuff in this release, including support for multiple cruft packs via `--max-cruft-size`.
+      Check it out!
+    url: https://twitter.com/115978530/status/1726730896235954382
+    published: '2023-11-20T22:35:01Z'
+    channel: x
+  - title: |-
+      I'm excited for folks to try out some of the new features that I've helped work on, like the boundary-based bitmap traversal and improved packed-refs enumeration.
+
+      Check out some behind-the-scenes for the animations in the highlights post here: https://t.co/fhjXwF96ez.
+    url: https://twitter.com/115978530/status/1693711037638332555
+    published: '2023-08-21T19:45:53Z'
+    channel: x
+  - title: I'm very excited about this release, which brings some of the work I did to scale GitHub's
+      maintenance to all Git users, by default.
+    url: https://twitter.com/115978530/status/1664312121516081164
+    published: '2023-06-01T16:45:05Z'
+    channel: x
+  - title: 7 years at GitHub today!
+    url: https://twitter.com/115978530/status/1658103283985051653
+    published: '2023-05-15T13:33:23Z'
+    channel: x
+  - title: 'My Git Merge talk, "Git at GitHub Scale" is available on my website: https://t.co/1y9E03Exmd'
+    url: https://twitter.com/115978530/status/1570527966563799040
+    published: '2022-09-15T21:40:20Z'
+    channel: x
+  - title: Git Merge is a great conference, and I'm extremely excited about the lineup of speakers we
+      have this year. Come check it out in Chicago, IL, this September 14-15! Tickets at https://t.co/drdhFYr1Da.
+    url: https://twitter.com/115978530/status/1561475413805010944
+    published: '2022-08-21T22:08:44Z'
+    channel: x
+  - title: First day as a staff software engineer!
+    url: https://twitter.com/115978530/status/1498759974507491331
+    published: '2022-03-01T20:39:58Z'
+    channel: x
+  talks:
+  - session:2024/dev1945w
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699461247423001yFR1
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,297 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:richard-bullington-mcguire
+  person: person:richard-bullington-mcguire
+  brief_bio:
+    text: Richard Bullington-McGuire is a Distinguished Engineer at Modus Create who worked with Wayfair
+      to move more than 15,000 repositories to GitHub Enterprise Cloud. Bullington-McGuire spoke at GitHub
+      Universe 2024 about complex migrations and failing forward past resistance to change.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 5cbeeb929dcfe9534ab80620aca2c0463a5b27bcdb8d13a1860cc7715ea1907c
+    stale: false
+  headline: Modus Create
+  current_roles:
+  - Modus Create
+  expertise:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2024/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1349b
+  technologies:
+  - label: Docker
+    target: software:docker
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Docker
+      ref: person:richard-bullington-mcguire
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Enterprise Cloud
+      ref: person:richard-bullington-mcguire
+  interests:
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Enterprise/Admin
+    target: term:github-product-2024/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2024/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715190440825001r1em
+      ref: session:2024/dev1349b
+  education:
+  - school: George Mason University
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  credentials:
+  - kind: certification
+    title: AWS Black Belt Pilot - App Modernization
+    issuer: AWS Strategic Partner Programs
+    date: Jul 2023
+    expires: Jul 2024
+    url: https://www.credly.com/badges/106e0d1c-3b03-4835-b434-c89e31c0e043/public_url
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2019
+    expires: Nov 2022
+    url: https://www.youracclaim.com/badges/da462365-b88b-43f9-9c41-c33a0c80c0cf/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: AWS Certified DevOps Engineer - Professional
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2019
+    expires: Nov 2022
+    url: https://www.youracclaim.com/badges/6600f2f0-37a4-4976-97ad-25b5dfdb86a4/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2019
+    expires: Nov 2022
+    url: https://www.youracclaim.com/badges/d49a3cda-a2ad-452a-97d4-a26858c7af91/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: AWS Certified Solutions Architect - Professional
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2019
+    expires: Nov 2022
+    url: https://www.youracclaim.com/badges/328b834c-874f-4871-9245-f6c6d0ca3334/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: AWS Certified SysOps Administrator - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Nov 2019
+    expires: Nov 2022
+    url: https://www.youracclaim.com/badges/a0d3d4dd-7992-42a5-9e98-0a814c1ae4d6/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  - kind: certification
+    title: AWS Certified Developer - Associate
+    issuer: Amazon Web Services (AWS)
+    date: Dec 2019
+    expires: Dec 2021
+    url: https://www.youracclaim.com/badges/226c4856-3a7c-4d5b-9625-5ebf138c72d0/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  publications:
+  - title: Docker for Developers
+    venue: Packt Publishing
+    date: September 1, 2020
+    description: Docker is the de facto standard for containerizing apps, and with an increasing number
+      of software projects migrating to containers, it is crucial for engineers and DevOps teams to understand
+      how to build, deploy, and secure Docker environments effectively. Docker for Developers will help
+      you understand Docker containers from scratch while taking you through best practices and showing
+      you how to address security concerns.Starting with an introduction to Docker, you’ll learn how to
+      use containers and VirtualBox for development. You’ll explore how containers work and develop projects
+      within them after you’ve explored different ways to deploy and run containers. The book will also
+      show you how to use Docker containers in production in both single-host set-ups and in clusters
+      and deploy them using Jenkins, Kubernetes, and Spinnaker. As you advance, you’ll get to grips with
+      monitoring, securing, and scaling Docker using tools such as Prometheus and Grafana. Later, you’ll
+      be able to deploy Docker containers to a variety of environments, including the cloud-native Amazon
+      Elastic Kubernetes Service (Amazon EKS), before finally delving into Docker security concepts and
+      best practices.By the end of the Docker book, you’ll be able to not only work in a container-driven
+      environment confidently but also use Docker for both new and existing projects.
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  - title: Real World SELinux
+    venue: Linux Journal
+    date: Jul 2007
+    description: This case study of an intrusion attempt shows how SELinux can stop intruders from escalating
+      the privileges they already have. The article explains the tools and methods used for investigating
+      the intrusion attempt, along with the forensic information gathered.
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  - title: Recovery of RAID and LVM2 Volumes
+    venue: Linux Journal
+    date: Jun 2006
+    description: This case study of recovering LVM volumes stored within Linux software RAID volumes was
+      the cover story in the print issue of Linux journal.
+    evidence:
+      url: https://www.linkedin.com/in/richardbullingtonmcguire
+      observed_at: '2026-10-24T08:47:10Z'
+  spoken_languages:
+  - English
+  - Latin
+  talks:
+  - session:2024/dev1349b
+  gaps:
+  - github_account
+  - website
+  - x_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715190992939001nzUj
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

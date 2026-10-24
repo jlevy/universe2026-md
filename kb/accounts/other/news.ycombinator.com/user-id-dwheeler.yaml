@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:other/news.ycombinator.com/user-id-dwheeler
+  platform: other
+  handle: news.ycombinator.com/user?id=dwheeler
+  url: https://news.ycombinator.com/user?id=dwheeler
+  owner: person:david-a-wheeler
+  link_basis:
+  - github_profile
+  details_fetched: false
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: david-a-wheeler
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

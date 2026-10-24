@@ -1,0 +1,186 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:helen-lau
+  person: person:helen-lau
+  brief_bio:
+    text: Helen Lau is General Manager of the Engineering Platform at the Commonwealth Bank of Australia,
+      leading engineering initiatives for thousands of developers. Lau spoke at GitHub Universe 2023 about
+      innovation without compromising customer trust and at GitHub Universe 2025 about secure cloud at
+      enterprise scale.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: 19616e7a0fc8143ec635df39bd6bd2d24400c0516b4b9a7c677ada8d4b1fd126
+    stale: false
+  headline: Commonwealth Bank
+  current_roles:
+  - Commonwealth Bank
+  expertise:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2846m
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1801b
+  - label: Threat Modeling
+    target: term:topic-2025/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1801b
+  - label: Vulnerability Detection
+    target: term:topic-2025/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1801b
+  technologies:
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Secret Protection
+      ref: session:2025/sec1801b
+  interests:
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1759150344212001smkx
+      ref: session:2025/sec1801b
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695649905052001cUrF
+      ref: session:2023/sec2846m
+  education:
+  - school: University of Technology, Sydney
+    evidence:
+      url: https://www.linkedin.com/in/heylau
+      observed_at: '2026-10-24T08:44:35Z'
+  credentials:
+  - kind: certification
+    title: CEW Leaders Program
+    issuer: Chief Executive Women
+    date: Nov 2022
+    url: https://www.credential.net/50442ca3-5f35-4a4a-8462-258dbb8ee549
+    evidence:
+      url: https://www.linkedin.com/in/heylau
+      observed_at: '2026-10-24T08:44:35Z'
+  talks:
+  - session:2023/sec2846m
+  - session:2025/1896
+  - session:2025/sec1801b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693545892913001uyHu
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693545892913001uyHu
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

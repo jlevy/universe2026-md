@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:speakeasy.com
+  url: https://www.speakeasy.com/
+  kind: company
+  title: Govern and secure enterprise AI — Speakeasy
+  description: The AI control plane for discovering, securing, and governing AI agents, MCP servers, and
+    AI applications across your enterprise.
+  owner: org:speakeasy
+  link_basis:
+  - x_profile
+  - linkedin_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: brightdata
+    url: https://x.com/sagar_batchu
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://www.speakeasy.com/
+    record_id: https://www.speakeasy.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1726488847030001vmAq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sagar-batchu-981b3738
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/speakeasyapi
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

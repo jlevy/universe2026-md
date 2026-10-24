@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/darryl_adams
+  platform: x
+  handle: darryl_adams
+  url: https://x.com/darryl_adams
+  display_name: Darryl Adams
+  bio: 'Accessible Technology Innovator - Disability Inclusion - Legally blind...but only half deaf :-)  CTA
+    Foundation Board  #RP #a11y'
+  location: Portland, Oregon
+  website: https://www.linkedin.com/in/dadamspdx/
+  followers: 702
+  following: 705
+  posts_count: 1434
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1131399537065467904/EWvcD2R7_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/22952739/1728324445
+  created_at: '2009-03-05T18:06:41Z'
+  owner: person:darryl-adams
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693970359114001mQq7
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/darryl_adams
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

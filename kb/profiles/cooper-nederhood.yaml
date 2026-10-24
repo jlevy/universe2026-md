@@ -1,0 +1,154 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:cooper-nederhood
+  person: person:cooper-nederhood
+  brief_bio:
+    text: Cooper Nederhood is a senior applied researcher at GitHub who has built custom Copilot models
+      for enterprise customers and improved code completion quality through fine-tuning and prompt engineering.
+      Nederhood spoke at GitHub Universe 2024 and speaks at GitHub Universe 2026 on Copilot memory.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 0d824f1b08be58612656c1fc1b7a59bf21387960e67f1b9269d4738623e3a08b
+    stale: false
+  headline: Senior Applied Researcher at GitHub
+  location: Chicago, Illinois
+  current_roles:
+  - Senior Applied Researcher at GitHub
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1332p
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1332p
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1372b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1372b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:cooper-nederhood
+  interests:
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715178970303001Gg0A
+      ref: session:2024/ai1332p
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777557576923001fNOZ
+      ref: session:bld1372b
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715178970303001Gg0A
+      ref: session:2024/ai1332p
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777557576923001fNOZ
+      ref: session:bld1372b
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777557576923001fNOZ
+      ref: session:bld1372b
+  - label: Machine learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715178970303001Gg0A
+      ref: session:2024/ai1332p
+  education:
+  - school: University of Chicago
+    evidence:
+      url: https://www.linkedin.com/in/cooper-nederhood-b2a70072
+      observed_at: '2026-10-24T08:11:43Z'
+  publications:
+  - title: Harnessing the Conditioning Sensorium for Improved Image Translation
+    venue: International Conference on Computer Vision (ICCV)
+    date: October 1, 2021
+    evidence:
+      url: https://www.linkedin.com/in/cooper-nederhood-b2a70072
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: Worldwide Detection of Informal Settlements via Topological Analysis of Crowdsourced Digital
+      Maps
+    venue: International Journal of Geo-Information
+    date: November 1, 2020
+    evidence:
+      url: https://www.linkedin.com/in/cooper-nederhood-b2a70072
+      observed_at: '2026-10-24T08:11:43Z'
+  talks:
+  - session:2024/ai1332p
+  - session:bld1372b
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699462878211001nWCv
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: CooperNederhood
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699462878211001nWCv
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

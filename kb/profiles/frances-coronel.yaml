@@ -1,0 +1,978 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:frances-coronel
+  person: person:frances-coronel
+  brief_bio:
+    text: Frances Coronel is a senior software engineer at Slack who built the company's internal AI tool
+      catalog, adoption metrics dashboard and enablement program. Coronel speaks at GitHub Universe 2026
+      on how a shared AI config became Slack's internal tool platform.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 36d0f6cc29896309c2a0301373c5cdd34e596b088d79b6463714cc5203fc073d
+    stale: false
+  headline: Senior Software Engineer at Slack
+  location: San Francisco Bay Area, CA
+  current_roles:
+  - Senior Software Engineer at Slack
+  expertise:
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1460h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1460h
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1460h
+  technologies:
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1460h
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:bld1460h
+  programming_languages:
+  - label: MDX
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:francescoronel/francescoronel.com
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:francescoronel/apprenticeships
+    - ref: repo:latina-dev/latina-dev
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:francescoronel/diversify-me
+  - label: HTML
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:francescoronel/nyt-comm
+  interests:
+  - label: career
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/FrancesCoronel/hire-me
+      ref: repo:francescoronel/hire-me
+    - url: https://github.com/FrancesCoronel/apprenticeships
+      ref: repo:francescoronel/apprenticeships
+  - label: Open source
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/FrancesCoronel/hire-me
+      ref: repo:francescoronel/hire-me
+    - url: https://github.com/FrancesCoronel/apprenticeships
+      ref: repo:francescoronel/apprenticeships
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777591557223001Xzhv
+      ref: session:bld1460h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777591557223001Xzhv
+      ref: session:bld1460h
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777591557223001Xzhv
+      ref: session:bld1460h
+  - label: Projects and Issues
+    target: term:github-product/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 0.75
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777591557223001Xzhv
+      ref: session:bld1460h
+  - label: apprenticeship
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/FrancesCoronel/apprenticeships
+      ref: repo:francescoronel/apprenticeships
+  - label: bootcamp
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/FrancesCoronel/apprenticeships
+      ref: repo:francescoronel/apprenticeships
+  - label: cornell-tech
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/FrancesCoronel/nyt-comm
+      ref: repo:francescoronel/nyt-comm
+  - label: cover-letter
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/FrancesCoronel/cover-letter-templates
+      ref: repo:francescoronel/cover-letter-templates
+  - label: cover-letter-templates
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/FrancesCoronel/cover-letter-templates
+      ref: repo:francescoronel/cover-letter-templates
+  - label: diversity
+    basis: github_repositories
+    confidence: low
+    weight: 0.5
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/FrancesCoronel/diversify-me
+      ref: repo:francescoronel/diversify-me
+  open_source:
+  - repository: repo:francescoronel/hire-me
+    relation: owner
+    stars: 309
+  - repository: repo:francescoronel/apprenticeships
+    relation: owner
+    stars: 284
+    primary_language: TypeScript
+  - repository: repo:francescoronel/diversify-me
+    relation: owner
+    stars: 248
+    primary_language: Python
+  - repository: repo:francescoronel/nyt-comm
+    relation: owner
+    stars: 125
+    primary_language: HTML
+  - repository: repo:francescoronel/cover-letter-templates
+    relation: owner
+    stars: 29
+  - repository: repo:latina-dev/latina-dev
+    relation: pinned
+    stars: 20
+    primary_language: TypeScript
+  - repository: repo:francescoronel/francescoronel.com
+    relation: owner
+    stars: 1
+    primary_language: MDX
+  - repository: repo:anthropics/claude-code
+    relation: contributor
+    stars: 153271
+    primary_language: TypeScript
+  education:
+  - school: Cornell Tech
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  credentials:
+  - kind: honor
+    title: The Aspen Institute — Ricardo Salinas Scholar
+    issuer: The Aspen Institute
+    date: '2021-08-01T00:00:00.000Z'
+    description: Awarded the Ricardo Salinas scholarship to attend the Aspen Executive Seminar on Leadership,
+      Values, and the Good Society (September 2021).
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: “The Future Looks Like You” Mentorship Cohort Awardee
+    issuer: Canvas
+    date: '2021-07-01T00:00:00.000Z'
+    description: Canvas has assembled an all-star panel of industry influencers, recruiters, and career
+      gurus to lead our first “The Future Looks Like You” Mentorship Cohort. For our inaugural cohort,
+      we’ll select 21 ambitious professionals to be personally mentored by our all star panel of influencers,
+      career coaches, and leaders. Best part? It's completely free.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: 'The Buildies: Connector Award'
+    issuer: Commsor
+    date: '2021-01-01T00:00:00.000Z'
+    description: Celebrating the community builders that bring people together.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Sentry Open Source Grant
+    issuer: Sentry.io
+    date: '2019-03-01T00:00:00.000Z'
+    description: The Sentry Open Source Grant offers $10K of funding to an individual dedicated to working
+      on an open source project for three months. I was selected to work on the open source member portal
+      for Techqueria.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Women Impact Tech SF
+    issuer: Andiamo
+    date: '2019-01-01T00:00:00.000Z'
+    description: Invite-only event uniting 500 elite female engineers in Silicon Valley with cutting-edge
+      tech companies
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Diversity Scholarship Recipient - JSConf Hawaiʻi 2019
+    issuer: JSConf
+    date: '2018-08-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Diversity Scholarship Recipient - TSConf 2018
+    issuer: SitePen
+    date: '2018-02-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Grow with Google Udacity Scholarship - Intermediate Mobile Web Specialist Track
+    issuer: Google
+    date: '2018-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Third Place - Alexa Hackathon
+    issuer: Amazon + Accenture
+    date: '2017-07-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Grant Recipient - Strange Loop
+    issuer: Project Alloy
+    date: '2017-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Best Device Privacy Hack - Kent Hack Enough
+    issuer: Kent State University
+    date: '2016-10-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: James H. and Marilyn H. Simons Graduate Fellowship
+    issuer: Cornell University
+    date: '2016-08-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Scholarship Recipient - ACM Richard Tapia Celebration of Diversity in Computing 2016
+    issuer: Tapia Conference
+    date: '2016-08-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Diversity Scholarship Recipient - npmCamp
+    issuer: npm
+    date: '2016-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Valedictorian - Computer Science Department
+    issuer: Hampton University
+    date: '2016-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: STEM Bridge Scholarship Recipient
+    issuer: Virginia Space Grant Consortium
+    date: '2016-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Best Use of Dropbox API, Best Social Impact Prize - TreeHacks
+    issuer: Stanford University
+    date: '2016-02-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Diversity Scholarship Recipient - Fluent Conf 2016
+    issuer: O'Reilly
+    date: '2016-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Diversity Scholarship Recipient - React.js Conf 2016
+    issuer: Facebook
+    date: '2015-12-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Scholarship Recipient - ACM Richard Tapia Celebration of Diversity in Computing 2015
+    issuer: Google
+    date: '2015-08-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Brooklyn Cupcake Winner - 10,000 Small Businesses Student Challenge
+    issuer: Goldman Sachs
+    date: '2015-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Innovation Honor Award - Maury High School
+    issuer: The American High School Innovation Foundation
+    date: '2013-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: honor
+    title: Third Place - Grade 11 - Book Review Contest
+    issuer: Friends of the Norfolk Public Library
+    date: '2012-05-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Notion Essentials Badge
+    issuer: Notion
+    date: Jul 2022
+    url: https://www.credly.com/badges/c3750c0f-8b0c-4813-b9db-324ffae97a57?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Aspen Executive Seminar on Leadership, Values, and the Good Society
+    issuer: The Aspen Institute
+    date: Sep 2021
+    url: https://www.aspeninstitute.org/news/press-release/aspen-institute-latinos-and-society-ailas-program-announces-summer-cohort-of-ricardo-salinas-scholars/
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Nonprofit Brand, Fundraising and Leadership Bootcamp
+    issuer: Raise for Good
+    date: Apr 2021
+    url: https://www.bloomberg.com/press-releases/2021-02-11/social-entrepreneurs-leading-growth-stage-nonprofits-turn-to-raise-for-good-s-brand-fundraising-and-leadership-bootcamp
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Nonprofit Leadership Certificate Boot Camp
+    issuer: CEN - Center for Excellence in Nonprofits
+    date: Nov 2020
+    url: https://francescoronel.com/2020/11/05/leadership-boot-camp-from-cen/
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Job Search and Interview Skills Bootcamp
+    issuer: WorkWell
+    date: Oct 2019
+    url: https://www.weworkwell.io/
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Women in Leadership
+    issuer: Coro Northern California
+    date: Nov 2018
+    url: https://coronorcal.org/program/women-in-leadership/
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Software Product Management (SPM®) Certificate
+    issuer: Product School
+    date: Dec 2016
+    url: https://certificate.productschool.com/10489340
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Design 101
+    issuer: Designlab
+    date: Aug 2015
+    url: https://francescoronel.com/2015/10/21/designlab-2/
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Summer of Code
+    issuer: Fullstack Academy
+    date: Aug 2015
+    url: https://francescoronel.com/2015/08/26/fullstack-academy-3/
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: certification
+    title: Wildlife and Wildlands Science and Management
+    issuer: The School for Field Studies
+    date: Aug 2012
+    url: https://francescoronel.com/2012/08/14/school-for-field-studies-wildlife-research-techniques-tanzania/
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  publications:
+  - title: Techqueria builds social capital for Latinx in Tech with Asana
+    venue: Asana Case Studies
+    date: July 20, 2021
+    description: '- Hosted 66% more events in 2020 by using event templates and managing workloads.- Increased
+      fundraising by over 280% by tracking grant applications with Asana.- Streamline partnership management
+      by inviting partners and sponsors to collaborate and communicate directly in Asana.- Prevent burnout
+      by tracking individuals’ workloads and capacity.'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: SoloLearn Announces Partnership with Nonprofit Techqueria to Bridge Skills Gaps and Promote
+      Latinx Careers in Tech
+    venue: Cision PR Newswire
+    date: October 22, 2020
+    description: SoloLearn, the leading e-platform for coding education, is proud to announce a year-long
+      partnership with Techqueria, a 501(c)(3) nonprofit dedicated to empowering Latinx professionals
+      with the resources and support they need to become leaders in the tech industry. This Community
+      Partnership signals SoloLearn's commitment to providing resources, support and up-skilling within
+      the Techqueria community to encourage education for greater diversity in the tech industry in which
+      the Latinx community only represents 6.8% of workers according to a Brookings Institute study.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: The Unsuspecting Beauty & Complexity of Web Forms
+    venue: Slack Engineering Blog
+    date: September 15, 2020
+    description: Together, we’ll explore the must-add features Slack uses to build web forms that generate
+      leads for successful deals and reflect on the impact they’ve had.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: Moving Diversity Beyond a Hashtag
+    venue: San Francisco Business Times
+    date: July 5, 2020
+    description: Despite efforts, tech firms' numbers show that they still fall far short. But there are
+      people making change happen in Bay Area business in ways that others can follow.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: 'Reinventing tech''s pipeline: Inside the effort to boost black and Latinx talent'
+    venue: Protocol
+    date: June 8, 2020
+    description: A new generation of tech workers forges a path forward as companies grapple with pressure
+      to ensure their products and hiring practices don't undercut diversity.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: Diversifying the Tech Workforce
+    venue: Yes! Magazine
+    date: May 9, 2020
+    description: The tech field is one of the largest sources of wealth generation in the United States—and
+      is 68% White and 65% male. Not only can diversifying the field address wealth gaps, but inclusive
+      tech companies can reduce the likelihood of technology harming underrepresented groups. Here are
+      three organizations that are supporting underrepresented communities in tech.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: Help These Latinx Organizations Support Undocumented Families During COVID-19
+    venue: BeLatina
+    date: April 14, 2020
+    description: Helping undocmented people is always important; however, during the COVID-19 pandemic
+      it’s even more pressing an issue than ever. Governments around the world have asked everyone that
+      has the ability to stay home to do so in an effort to slow the spread of the deadly virus. This
+      ask, in itself, is for the privileged that either have the ability to work from home or have enough
+      savings to shelter in place without pay for as long as deemed necessary. While some undocumented
+      people have this privilege, many others do not.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: Scaling Techqueria with Sentry's Open Source Grant
+    venue: Sentry Blog
+    date: October 3, 2019
+    description: In March, we awarded Sentry’s Open Source Grant to Latinx non-profit Techqueria. Here’s
+      a look at their progress, six months later.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: Frances Coronel on Being a Latina in Tech
+    venue: The Mujerista
+    date: November 8, 2018
+    description: It is National STEM/STEAM Day 2018—a national holiday meant to encourage kids and individuals
+      of all ages to think about the world of Science, Technology, Engineering, Art and Math (STEAM).
+      And given that employment growth in STEM occupations outpaces others, having grown 79% since 1990,
+      many are validated in feeling as though getting an early interest in these fields is key to a better
+      future.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - title: Frances Coronel, Software Engineer at Slack - POCIT. Telling the stories and thoughts of people
+      of color in tech.
+    venue: 'POCIT: People of Color In Tech'
+    date: September 11, 2018
+    description: POCIT. Telling the stories and thoughts of people of color in tech.
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  spoken_languages:
+  - English
+  - Spanish
+  activities:
+  - kind: volunteering
+    title: Gold Sponsor
+    detail: Unicode Consortium · Science and Technology · Feb 2023 · - Feb 2023 · 1 month · Adopted the
+      👩🏽‍💻 (woman technologist who looks like me) emoji as a Gold Sponsor. Each adoption helps Unicode's
+      goal to support the world's languages. · Feb 2023
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Technology Director
+    detail: Techqueria · Science and Technology · May 2021 · - May 2022 · 1 year 1 month · Techqueria's
+      Technology Director oversees website development, manages the software and platforms the org uses
+      internally and spearhead new technologies in order for Techqueria to continue operating as a productive
+      and lean nonprofit team. ∙ Lead development and maintenance of website ∙ Administrate and audit
+      all technology platforms ∙ Establish tooling onboarding procedures and standards ∙ Manage Slack
+      community workflows, invitations and technical requests ∙ Manage inbound… Show more Techqueria's
+      Technology Director oversees website development, manages the software and platforms the org uses
+      internally and spearhead new technologies in order for Techqueria to continue operating as a productive
+      and lean nonprofit team. ∙ Lead development and maintenance of website ∙ Administrate and audit
+      all technology platforms ∙ Establish tooling onboarding procedures and standards ∙ Manage Slack
+      community workflows, invitations and technical requests ∙ Manage inbound emails and triage accordingly
+      ∙ Evaluate new ways Techqueria can harness platforms to advance mission ∙ Optimize costs of any
+      digital subscriptions for return on investment ∙ Oversee a team of volunteer software engineers
+      that help with responsibilities Key Projects ∙ New Job Board (May 2021) ∙ New Events Platform (November
+      2021) Show less · May 2021
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Bay Area Leadership Council Member
+    detail: 'Code Nation · Education · May 2020 · - May 2021 · 1 year 1 month · Code Nation is a 501c3
+      nonprofit that equips students in under-resourced high schools with the skills, experiences, and
+      connections that together create access to careers in tech. As a member of Code Nation''s Bay Area
+      Leadership Council, I help Code Nation achieve their mission by providing the Bay Area Managing
+      Director, Shantina Jackson, with regionally focused strategic advice, connections, and resources.
+      As a member, my responsibilities include: ∙ Taking a public stand… Show more Code Nation is a 501c3
+      nonprofit that equips students in under-resourced high schools with the skills, experiences, and
+      connections that together create access to careers in tech. As a member of Code Nation''s Bay Area
+      Leadership Council, I help Code Nation achieve their mission by providing the Bay Area Managing
+      Director, Shantina Jackson, with regionally focused strategic advice, connections, and resources.
+      As a member, my responsibilities include: ∙ Taking a public stand in support of educational opportunity
+      & the inclusive growth of the Bay Area’s tech sector ∙ Helping Code Nation navigate the local coding/computer
+      science landscape and establishing deep partnerships among Bay Area school leaders ∙ Fostering a
+      community of Bay Area companies who actively support Code Nation''s work with their tech talent
+      and resources ∙ Growing Code Nation''s philanthropic base of support by making a personally meaningful
+      donation every year and introducing Code Nation to others who can give ∙ Providing strategic advice
+      and guidance to the Bay Area Managing Director As part of the Industry Inclusion Committee, I specifically
+      help more with volunteer recruitment, company recruitment and alumni support. Show less · May 2020'
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Executive Director Of Technology
+    detail: Techqueria · Science and Technology · Jul 2019 · - Dec 2019 · 6 months · As the executive
+      director of technology for Techqueria, I spearhead new technologies in order to become a more productive
+      and lean nonprofit team, oversee open source efforts, manage software & platforms we use, allocate
+      budget for technical resources and ultimately make executive decisions to ensure that the technologies
+      we use to meet our short and long-term needs. · Jul 2019
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Open Source Lead
+    detail: Techqueria · Science and Technology · Apr 2018 · - Jul 2019 · 1 year 4 months · Joined Techqueria's
+      Slack community on August 29th, 2017. Secured a $10K Open Source Grant in Spring 2018 from Sentry
+      in order to create a member portal and further enrich the experience for the Techqueria community.
+      Completely revamped the website and online identity for Techqueria, leading to unprecedented growth
+      in the number of leads for sponsors and potential members. · Apr 2018
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Codeland Program Reviewer
+    detail: CodeNewbie · Science and Technology · Mar 2019 · - Apr 2019 · 2 months · Selected by Saron
+      Yitbarek to help review over 30+ CFPs for CodeNewbie's flagship conference called Codeland. · Mar
+      2019
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Student Mentor
+    detail: The Last Mile · Education · Aug 2018 · - Aug 2018 · 1 month · The Last Mile is the first program
+      in the US to provide in-prison software engineering training. The goal is to prepare students for
+      employment as front-end developers and web designers post-release. · Aug 2018
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Guest Speaker
+    detail: SMASH · Education · Jul 2018 · - Jul 2018 · 1 month · SMASH Academy is a free of cost, STEM-intensive
+      college preparatory program for underrepresented high school students of color that is run in partnership
+      with several universities, including UC Berkeley, UCLA, UC Davis, and Stanford University. · Jul
+      2018
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Techical Mentor
+    detail: Out of Office Hours · Education · Feb 2018 · - May 2018 · 4 months · Out of Office Hours aims
+      to create a dialog between newcomers and people working in the tech industry. · Feb 2018
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Volunteer Model
+    detail: TechHire Oakland · Education · Apr 2018 · - Apr 2018 · 1 month · TechHire Oakland guides underrepresented
+      East Bay residents of color to rewarding careers in tech. · Apr 2018
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Web Development Instructor
+    detail: CodeNow · Education · Apr 2017 · - Apr 2017 · 1 month · CodeNow is a nonprofit focused on
+      teaching under-represented youth to code that provides free, out-of-school training hosted at local
+      tech companies. · Apr 2017
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Mentor, Speaker
+    detail: Code.org · Education · Dec 2016 · - Dec 2016 · 1 month · Code.org is a non-profit organization
+      and eponymous website led by Hadi Partovi that aims to encourage people, particularly school students
+      in the United States, to learn computer science. · Dec 2016
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: WiTNY Mentor
+    detail: Cornell Tech · Education · Nov 2016 · - Nov 2016 · 1 month · The mission of the Women in Technology
+      and Entrepreneurship in New York (WiTNY) initiative is to facilitate, encourage and enable a significant
+      increase in the participation of women in both higher education and entrepreneurship in fields related
+      to technology in the New York market. · Nov 2016
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: volunteering
+    title: Mentor, Speaker
+    detail: Code.org · Education · Dec 2015 · - Dec 2015 · 1 month · Code.org is a non-profit organization
+      and eponymous website led by Hadi Partovi that aims to encourage people, particularly school students
+      in the United States, to learn computer science. · Dec 2015
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: Apprenticeships.me
+    detail: Apprenticeships.me is a directory of apprenticeships in the tech industry. Now you can find
+      a new career by learning from the industry itself. · May 2019
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: Slack.com Contact Sales Form
+    detail: Lead developer and maintainer for the Contact Sales form, which is one of the most significant
+      drivers of lead generation on Slack.com. · Dec 2018
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: Salesforce Day 1 Web Campaign
+    detail: Customer Acquisition launched a number of different web updates for Day One of the Salesforce
+      acquisition of Slack. The goal of this web campaign is to inform prospects and users about the benefits
+      of Slack and Salesforce. We used Houston to roll out all changes across our website all at once
+      to coincide with a tight roll out schedule! ✨ 🚀The primary net new asset is a brand new landing
+      page showcasing the best of both worlds, along with minor changes to the About page, Homepage, Sales
+      Solutions page, Contact Sales form, and many legal pages to coincide with us going from "Slack Technologies,
+      Inc." to "Slack Technologies, LLC, a Salesforce company".The Activation team also updated the Get
+      Started page for users coming from Salesforce's overview of Slack page. The Purchase Experience
+      team made billing changes to update the legal language as well. · Jun 2021
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: Mora | Startup Studio
+    detail: In Startup Studio at Cornell Tech, all students practice the actions of entrepreneurship,
+      product design, management, prototyping and more by developing a new startup from the ground up.
+      · Jan 2017
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: Q&A | The New York Times
+    detail: Every fall, leading startups, companies, and organizations in NYC pose business challenges
+      to Cornell Tech. In Product Studio, teams develop and present new products, services, and strategies
+      that respond to those challenges. · Aug 2016
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: Jake the Dog Key Hand
+    detail: Kent Hack Enough brings hackers from all over the nation together to learn something new,
+      party hard, and create something awesome. · Oct 2016
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: 'MEGGS | #DesignHackathon 2016'
+    detail: The My Social Canvas DesignHackathon brings together students who are pursuing degrees in
+      fashion, graphic design, technology, and business in an effort to increase awareness, participation,
+      and funding for girls in STEM programs across the country. · Oct 2016
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: project
+    title: Ammalia | TreeHacks 2016
+    detail: TreeHacks is Stanford University's official national hackathon. In 2016, they brought in over
+      670 hackers with a 50/50 gender ratio, the first major student-run hackathon to be able to do so.
+      · Feb 2016
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Conversations in the Studio
+    detail: CS 5091
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Design Thinking
+    detail: NBAY 5180
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: HCI & Design
+    detail: CS 5682
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Leadership in Studio
+    detail: NBAY 6700
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Physical Computing
+    detail: CS 5422
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Product Studio
+    detail: CS 5999
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Security & Privacy in the Wild
+    detail: CS 5435
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Startup Ideas
+    detail: CS 5092
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Startup Systems Design & Engineering
+    detail: CS 5356
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: course
+    title: Women Leading in Tech
+    detail: NBAY 6130
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: SF Engineering Leadership Council (ELC)
+    detail: Selected participant in a highly curated, year-long peer learning group for engineering leadersMonthly
+      90-minute sessions with 5–6 EMs & technical leads across comparable company sizes and growth stagesFocused
+      on real leadership challenges including scaling teams, navigating growth, role transitions, and
+      decision-making under ambiguityStructured peer coaching model emphasizing confidentiality, outside
+      perspective, and actionable next steps · Apr 2025 · Present
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: On Deck
+    detail: On Deck is where top talent comes to accelerate their ideas and careers, surrounded by a world-class
+      community.On Deck Engineering Founding Fellow (No Cost) - Cohort 1 - July 2022On Deck First 50 Fellow
+      - Cohort 5 - February 2022 · Dec 2021 · Aug 2022
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: Google Women Techmakers
+    detail: Women Techmakers is Google's global program and brand for women in technology. · Jul 2017
+      · Sep 2020
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: Women Who Code
+    detail: Women Who Code is a global non-profit organization dedicated to inspiring women to excel in
+      technology careers. · Jul 2015 · Sep 2020
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: Coro Northern California
+    detail: Coro’s Women in Leadership program supports the leadership development of women across the
+      Bay Area, establishes a pipeline for professional advancement, and creates a cross-sector network
+      of women who support each other’s career growth. · Sep 2018 · Nov 2018
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: Norfolk.js
+    detail: Norfolk.js is a JavaScript development user group in Norfolk, VA. · Dec 2014 · May 2016
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: Association for Computing Machinery (ACM)
+    detail: The Association for Computing Machinery (ACM) is the world's largest scientific and educational
+      computing society. · Oct 2014 · Feb 2016
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: Association for the Advancement of Artificial Intelligence (AAAI)
+    detail: The Association for the Advancement of Artificial Intelligence is an international, nonprofit,
+      scientific society devoted to promoting research in, and responsible use of, artificial intelligence.
+      · Dec 2013 · Nov 2015
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: STARS Computing Corps
+    detail: STARS Computing Corps is a community of practice for student-led regional engagement as a
+      means to broaden participation in computing. · Jan 2014 · May 2015
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: Operation Smile Club at Maury High School
+    detail: Operation Smile is an international medical nonprofit that provides free, safe surgery to
+      individuals born with cleft lip and cleft palate around the world. · Oct 2009 · Aug 2013
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  - kind: organization
+    title: Model United Nations
+    detail: Model United Nations is an educational simulation and/or academic activity in which students
+      can learn about diplomacy, international relations, and the United Nations. · Sep 2009 · Jun 2013
+    evidence:
+      url: https://www.linkedin.com/in/francescoronel
+      observed_at: '2026-10-24T08:11:43Z'
+  recent_writing:
+  - title: I think I’m becoming a “cracked” engineer ⚡
+    url: https://www.linkedin.com/pulse/i-think-im-becoming-cracked-engineer-frances-coronel-b7ale
+    published: '2026-02-14T00:00:00.000Z'
+    channel: linkedin
+    summary: This past week, I haven’t been able to stay away from my computer. Not because I had to.
+  - title: Recruiting Strategies for Hiring Diverse Engineers at Early-Stage Startups
+    url: https://www.linkedin.com/pulse/recruiting-strategies-hiring-diverse-engineers-startups-coronel
+    published: '2021-12-28T00:00:00.000Z'
+    channel: linkedin
+    summary: I've heard the horror story time and time again..
+  - title: Before you hit send...
+    url: https://www.linkedin.com/pulse/before-you-hit-send-frances-coronel
+    published: '2020-06-13T00:00:00.000Z'
+    channel: linkedin
+    summary: Many people on LinkedIn incorrectly assume I'm a random kind stranger that will give them
+      career advice, resume…
+  - title: What influenced and inspired you to learn how to code?
+    url: https://www.linkedin.com/pulse/what-influenced-inspired-you-learn-how-code-frances-coronel
+    published: '2015-12-08T00:00:00.000Z'
+    channel: linkedin
+    summary: When I was in elementary school, my goal was to become a vet. I was 10, I had just gotten
+      my first dog, Nefer, and I…
+  talks:
+  - session:bld1460h
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1718209686405001HTMY
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: FrancesCoronel
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

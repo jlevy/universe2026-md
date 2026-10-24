@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:review-bench/reviewbench
+  full_name: review-bench/ReviewBench
+  url: https://github.com/review-bench/ReviewBench
+  description: ReviewBench is an open, reproducible benchmark for evaluating AI code review systems on
+    real-world pull requests.
+  homepage: https://review-bench.ai
+  stars: 73
+  forks: 12
+  watchers: 1
+  open_issues: 4
+  stats_observed_at: '2026-10-24T19:12:17Z'
+  primary_language: TypeScript
+  topics:
+  - ai
+  - benchmark
+  - ai-code-review
+  - code-review
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-09-04T18:27:23Z'
+  pushed_at: '2026-10-24T03:37:14Z'
+  owner_login: review-bench
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: alejandro-carderera
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: review-bench/ReviewBench
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

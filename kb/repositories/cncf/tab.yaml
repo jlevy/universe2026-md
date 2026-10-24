@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:cncf/tab
+  full_name: cncf/tab
+  url: https://github.com/cncf/tab
+  description: 🔚👩🏾‍💻👨🏽‍💻👩🏼‍💻CNCF End User Community
+  homepage: https://www.cncf.io/enduser/
+  stars: 105
+  forks: 15
+  watchers: 33
+  open_issues: 41
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  primary_language: Go
+  topics:
+  - cncf
+  - cloudnative
+  - enduser
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2019-01-14T18:39:37Z'
+  pushed_at: '2026-10-19T14:18:15Z'
+  owner_login: cncf
+  owner: gh:cncf
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: castrojo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cncf/tab
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

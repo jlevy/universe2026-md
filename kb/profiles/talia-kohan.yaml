@@ -1,0 +1,285 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:talia-kohan
+  person: person:talia-kohan
+  brief_bio:
+    text: Talia Kohan is a Staff Developer Advocate at Postman who helps developers build, test and scale
+      APIs and AI-powered applications. Kohan spoke at GitHub Universe 2025 about AI-powered API development
+      from design to deployment.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: cb69b394ec0b4332305d85d2a6c10ec67e0f74084c20e82e485645ae67288225
+    stale: false
+  headline: Postman
+  current_roles:
+  - Postman
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1559d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/bld1559d
+  - label: GitHub MCP Server
+    target: software:github-mcp-server
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub MCP Server
+      ref: session:2025/bld1559d
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1755016753385001tzJR
+      ref: session:2025/bld1559d
+  education:
+  - school: University of California, San Diego
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  credentials:
+  - kind: certification
+    title: 'Microsoft Certified: Azure AI Fundamentals'
+    issuer: Microsoft
+    date: Jan 2021
+    url: https://www.youracclaim.com/badges/9e30a32f-510b-42e8-b30d-06cf6fdc7789?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: certification
+    title: 'Microsoft Certified: Azure Fundamentals'
+    issuer: Microsoft
+    date: Jan 2021
+    url: https://www.youracclaim.com/badges/2ad7194d-c1bb-4f46-a6b0-ec40fa001a27?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: certification
+    title: 'Microsoft Certified: Power Platform Fundamentals'
+    issuer: Microsoft
+    date: Jan 2021
+    url: https://www.youracclaim.com/badges/21ccc2b4-e044-4143-8a50-213485ed0b10?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: certification
+    title: 'HashiCorp Certified: Terraform Associate (003)'
+    issuer: HashiCorp
+    date: Mar 2024
+    expires: Mar 2026
+    url: https://www.credly.com/badges/9e1af650-f01e-479e-b7da-abd4bf52a9c3/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: certification
+    title: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services (AWS)
+    date: Dec 2020
+    expires: Dec 2023
+    url: https://www.youracclaim.com/badges/a3470cf6-b87d-4525-a0d6-40017b05dea3?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: certification
+    title: Certified Agile Tester
+    issuer: ISTQB - International Software Testing Qualifications Board
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: certification
+    title: Certified Mobile Tester
+    issuer: ISTQB - International Software Testing Qualifications Board
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: certification
+    title: Certified Software Tester
+    issuer: ISTQB - International Software Testing Qualifications Board
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  spoken_languages:
+  - Farsi
+  - Spanish
+  - English
+  - Hebrew
+  activities:
+  - kind: project
+    title: Duet
+    detail: Duet is an app that allows people to find concerts and events and gives them the option to
+      invite friends. This project is still in its early stages - check back in for the final product
+      in a few weeks! · Sep 2015
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: project
+    title: Library Walk Redesign
+    detail: In this group project, my teammates and I redesigned Library Walk at UCSD. Using design principles,
+      we utilized affinity diagrams, interview transcriptions, and created several models before we made
+      our final prototype. · Mar 2015
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: project
+    title: Nove
+    detail: This is an app we created to help potential home owners find the perfect house based on income,
+      location, number of children, and schools in the area. · Mar 2015
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: project
+    title: Github Assignments
+    detail: Here you can see my Github repository.
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Cognitive Design Studio
+    detail: COGS 102C
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Cognitive Ethnography
+    detail: COGS 102B
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Cognitive Neuroscience
+    detail: COGS 107C
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Discrete Mathematics
+    detail: CSE 20
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: 'Drugs: Brain, Mind, and Culture'
+    detail: COGS 174
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Human Computer Interaction Programming Studio
+    detail: COGS 121
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Introduction to Information Technology
+    detail: CSE 3
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Java Programming
+    detail: CSE 8A/8B
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Linear Algebra
+    detail: MATH 20F
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Mathematics for Algorithms and Systems
+    detail: CSE 21
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Mirror Neuron System
+    detail: COGS 171
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Multivariable Calculus
+    detail: MATH 20C
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Neuroanatomy and Physiology
+    detail: COGS 107A
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Sensation and Perception
+    detail: COGS 101A
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: course
+    title: Systems Neuroscience
+    detail: COGS 107B
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: organization
+    title: Cognitive Science Student Association
+    detail: The Cognitive Science Student Association was established to build and maintain a community
+      of students with interest in the multidisciplinary aspects of Cognitive Science. As a member, I
+      attend meetings, lectures, and various events held by the organization to better my understanding
+      of Cognitive Science. · Oct 2014 · Present
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: organization
+    title: Alpha Epsilon Phi
+    detail: ●Brainstormed ideas of events and activities to recruit new members to the organization●Increased
+      understanding of multi-cultural perspective of sorority members · Oct 2013 · Present
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  - kind: organization
+    title: UCSD Chamber Orchestra
+    detail: ●Perform quarterly concerts in the music hall that demonstrate understanding of music · Sep
+      2013 · Present
+    evidence:
+      url: https://www.linkedin.com/in/talianassi
+      observed_at: '2026-10-24T08:50:00Z'
+  talks:
+  - session:2025/bld1559d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1756314238689001TkSI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

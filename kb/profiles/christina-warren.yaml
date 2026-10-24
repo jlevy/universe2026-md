@@ -1,0 +1,259 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:christina-warren
+  person: person:christina-warren
+  brief_bio:
+    text: Christina Warren is a Senior Developer Advocate at GitHub working with tools such as GitHub
+      Copilot, and was previously a developer advocate at Microsoft focused on Linux and open source communities.
+      Warren spoke at GitHub Universe 2024 about using GitHub Copilot beyond the IDE.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 641843e5ae4f8311753c1be9b0fb0abeb775148222935e57793426af172998af
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1899s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:christina-warren
+  - label: Linux
+    target: software:linux
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Linux
+      ref: person:christina-warren
+  interests:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1723144353129001tNUA
+      ref: session:2024/ai1899s
+  publications:
+  - title: The iPhone 6s Review
+    venue: Mashable
+    date: Sep 2015
+    evidence:
+      url: https://www.linkedin.com/in/filmgirl
+      observed_at: '2026-10-24T08:44:24Z'
+  recent_writing:
+  - title: The billionth repository was just created on GitHub and it is perfect in every way! https://t.co/zZr4FLzhmo
+    url: https://twitter.com/9866582/status/1932911576274907440
+    published: '2025-06-11T21:23:26Z'
+    channel: x
+  - title: $100/month for API access is a joke. I’ll never pay that for personal projects. You know who
+      will pay? Scammers. With stolen credit cards and IDs.
+    url: https://twitter.com/9866582/status/1621332028665856000
+    published: '2023-02-03T02:17:33Z'
+    channel: x
+  - title: Netflix was the first company to popularize this practice and it sounds great on paper, but
+      it’s a scam. Use your time, no matter how you have it.
+    url: https://twitter.com/9866582/status/1613257642084032513
+    published: '2023-01-11T19:32:49Z'
+    channel: x
+  - title: I am no longer at GitHub Universe. Thanks Elon.
+    url: https://twitter.com/9866582/status/1602399298662313984
+    published: '2022-12-12T20:25:38Z'
+    channel: x
+  - title: Labor attorneys please explain to me how Elon could do mass layoffs before vesting dates without
+      filing WARN notices with the feds or the state? I’ve checked the data and there is nothing filed
+      in California, New York or Washington states and the law is pretty clear on this.
+    url: https://twitter.com/9866582/status/1586523759111901185
+    published: '2022-10-30T01:01:55Z'
+    channel: x
+  - title: Bro, no one canceled you. People rightfully dragged you for making a shameless ploy to profit
+      off of someone else's design, but no one canceled you. Apple removed your $30 app from the App Store
+      b/c you're a parasitic POS but no one canceled you. https://t.co/IE4T3KLlCX
+    url: https://twitter.com/9866582/status/1481695467717099520
+    published: '2022-01-13T18:31:42Z'
+    channel: x
+  - title: If the inevitable Docker Desktop OSS implementation isn’t called Free Willy, everyone should
+      he ashamed of themselves.
+    url: https://twitter.com/9866582/status/1432818722578763778
+    published: '2021-08-31T21:32:58Z'
+    channel: x
+  - title: With all the Basecamp discourse we haven’t even been able to talk about the actual like legitimately
+      bad, like actually fraudulent and predatory company, Lambda School and its collapse.
+    url: https://twitter.com/9866582/status/1388297636134879232
+    published: '2021-05-01T01:02:04Z'
+    channel: x
+  - title: We praise Taylor Swift a lot but I truly want to reflect on how good of an album Fearless was
+      and is. And she released it age 18, full of songs she wrote from 16-18. Certainly other young women
+      made equally good albums (Alanis, Fiona, Lauryn), but still! This album fucks.
+    url: https://twitter.com/9866582/status/1380382958448570372
+    published: '2021-04-09T04:51:58Z'
+    channel: x
+  - title: A brief thread on Jovan Hutton Pulitzer, the crazy con man who is now claiming to have hacked
+      into the Georgia voting machines in Fulton County. 90s kids and tech aficionados might remember
+      Jovan as the inventor of the CueCat, the dumbest gadget of all time.
+    url: https://twitter.com/9866582/status/1344595698172366848
+    published: '2020-12-31T10:46:10Z'
+    channel: x
+  - title: Coming soon
+    url: https://christina.substack.com/p/coming-soon
+    published: '2018-08-23T17:00:09Z'
+    channel: blog
+  talks:
+  - session:2024/ai1899s
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687877165916001nAud
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:githubnext/gh-cao
+  full_name: githubnext/gh-cao
+  url: https://github.com/githubnext/gh-cao
+  description: GitHub Central Agentic Ops
+  homepage: https://gh.io/cao
+  stars: 8
+  forks: 5
+  watchers: 0
+  open_issues: 216
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  primary_language: JavaScript
+  topics:
+  - agentic-factory
+  - agentic-workflows
+  - github-actions
+  - github-agentic-workflows
+  - cao
+  - central-agentic-ops
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2026-07-16T15:38:40Z'
+  pushed_at: '2026-10-24T18:42:20Z'
+  owner_login: githubnext
+  owner: gh:githubnext
+  pinned_by:
+  - gh:lpcox
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: lpcox
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: githubnext/gh-cao
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

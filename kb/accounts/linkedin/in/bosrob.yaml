@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/bosrob
+  platform: linkedin
+  handle: in/bosrob
+  url: https://www.linkedin.com/in/bosrob
+  display_name: 👾 Rob Bos
+  bio: I’m Rob Bos, Consultant and Trainer at Xebia. I help engineering teams adopt GitHub and…
+  location: Eindhoven
+  followers: 7320
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQGNXx1lKCCJ_g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1684698120756?e=2147483647&v=beta&t=RYkoLf9cIwEtsYJSPh1SCPcXrgNTAjYElgKjeP5CbUg
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQEd9L0MzkD22Q/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1668200636947?e=2147483647&v=beta&t=9Vl2QaZJ8XIBzeemnMouYuMc5GYuH0HYCO_FBrzISuc
+  owner: person:rob-bos
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684689715813001JXz7
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684689715813001JXz7
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684689715813001JXz7
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/bosrob
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

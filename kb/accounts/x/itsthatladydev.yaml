@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/itsthatladydev
+  platform: x
+  handle: itsthatladydev
+  url: https://x.com/itsthatladydev
+  display_name: Kedasha ✨
+  bio: 'Jamaican girly doing tech tings 🇯🇲🌈💍 Developer Advocate @github + Content Creator 🎥 Free Tech
+    Guide for new Devs: https://t.co/1Ad2g52jzd…'
+  location: Chicago
+  website: https://itsthatlady.dev/mylinks/
+  followers: 5628
+  following: 988
+  posts_count: 8768
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1723395840482349056/Qa8YWilL_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1041858512681349120/1704292603
+  created_at: '2018-09-18T01:16:41Z'
+  owner: person:kedasha-kerr
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1688147446205001EjCq
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1688147446205001EjCq
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/itsthatladydev
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,366 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:bas-van-schaik
+  person: person:bas-van-schaik
+  brief_bio:
+    text: Bas van Schaik works at 1Password and was a senior director of product at GitHub working on
+      application security, CodeQL and Copilot Autofix, and holds patents on weighting static analysis
+      alerts. Van Schaik spoke at GitHub Universe 2025 about GitHub Code Security at enterprise scale.
+    cites:
+    - current_affiliations
+    - past_affiliations
+    - listed_role
+    - event_bio
+    - patents
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 10c9ca7b507a807bb8632c266f46f57084d42c229da5a00b273419b81d431544
+    stale: false
+  headline: 1Password
+  current_roles:
+  - 1Password
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1741m
+  technologies:
+  - label: CodeQL
+    target: software:codeql
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: CodeQL
+      ref: person:bas-van-schaik
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:bas-van-schaik
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Code Security
+      ref: session:2025/sec1741m
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Copilot
+      ref: person:bas-van-schaik
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: Dependabot
+    target: term:github-product-2025/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: Discussions
+    target: term:github-product-2025/discussions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: GitHub Advanced Security
+    target: term:github-product-2025/github-advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: GitHub Code Security
+    target: term:github-product-2025/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: GitHub Secret Protection
+    target: term:github-product-2025/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: GitHub Spark
+    target: term:github-product-2025/github-spark
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1758133014148001fiCB
+      ref: session:2025/sec1741m
+  education:
+  - school: University of Oxford
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  publications:
+  - title: 'ENFrame: A Framework for Processing Probabilistic Data'
+    venue: ACM Transactions on Database Systems
+    date: April 1, 2016
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: A Paleolatitude Calculator for Paleoclimate Studies
+    venue: PLoS ONE
+    date: June 10, 2015
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: A memory efficient reachability data structure through bit vector compression
+    venue: SIGMOD Conference 2011
+    date: June 12, 2011
+    description: When answering many reachability queries on a large graph, the principal challenge is
+      to represent the transitive closure of the graph compactly, while still allowing fast membership
+      tests on that transitive closure. Recent attempts to address this problem are complex data structures
+      and algorithms such as Path-Tree and 3-HOP. We propose a simple alternative based on a novel form
+      of bit-vector compression. Our starting point is the observation that when computing the transitive
+      closure, reachable vertices tend to cluster together. We adapt the well-known scheme of word-aligned
+      hybrid compression (WAH) to work more efficiently by introducing word partitions. We prove that
+      the resulting scheme leads to a more compact data structure than its closest competitor, namely
+      interval lists. In extensive and detailed experiments, this is confirmed in practice. We also demonstrate
+      that the new technique can handle much larger graphs than alternative algorithms.
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  patents:
+  - title: Weighting static analysis alerts
+    number: US11449335B2
+    date: September 20, 2022
+    url: https://patents.google.com/patent/US11449335B2
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Determining similarity groupings for software development projects
+    number: US20190205128A1
+    date: August 24, 2021
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Determining provenance of files in source code projects
+    number: US10929125B2
+    date: February 23, 2021
+    url: https://patents.google.com/patent/US10929125B2
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Classifying system-generated code
+    number: US20190205122A1
+    date: October 20, 2020
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Visualizations of software project and contributor activity
+    number: US10810009B2
+    date: October 20, 2020
+    url: https://patents.google.com/patent/US10810009B2
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Comparing software projects having been analyzed using different criteria
+    number: US 10,346,294
+    date: July 9, 2019
+    url: https://patents.google.com/patent/US10346294
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Function execution prioritization
+    number: EU 3249538
+    date: December 12, 2018
+    url: https://patents.google.com/patent/EU3249538
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Function execution prioritization
+    number: US 9,569,341
+    date: September 5, 2017
+    url: https://patents.google.com/patent/US9569341
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Contextual developer ranking
+    number: US 9,645,817
+    date: May 9, 2017
+    url: https://patents.google.com/patent/US9645817
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Computing rework churn for contributions to a code base
+    number: US 9,639,352
+    date: May 2, 2017
+    url: https://patents.google.com/patent/US9639352
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - title: Suggesting candidate removable software dependencies
+    number: US 9,411,706
+    date: August 9, 2016
+    url: https://patents.google.com/patent/US9411706
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  spoken_languages:
+  - Dutch
+  - English
+  activities:
+  - kind: volunteering
+    title: Chairman of the Board of Directors
+    detail: Nederlandse Wereldwijde Studenten (NWS) · Education · Jan 2015 · - Dec 2016 · 2 years · Jan
+      2015
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  - kind: volunteering
+    title: Chairman of the Executive Board
+    detail: Nederlandse Wereldwijde Studenten (NWS) · Education · Jul 2011 · - Aug 2012 · 1 year 2 months
+      · Jul 2011
+    evidence:
+      url: https://www.linkedin.com/in/basvanschaik
+      observed_at: '2026-10-24T08:42:00Z'
+  talks:
+  - session:2025/sec1741m
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725034277113001K3SG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

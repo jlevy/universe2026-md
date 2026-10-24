@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/deutscheboersegroup
+  platform: linkedin
+  handle: company/deutscheboersegroup
+  url: https://www.linkedin.com/company/deutscheboersegroup
+  display_name: Deutsche Börse Group
+  bio: 'As one of the world’s leading exchange organisations, Deutsche Börse Group provides investors,
+    financial institutions and companies access to global capital markets. Our business covers the entire
+    financial market transaction process chain, ranging from securities and derivatives trading, clearing,
+    settlement and custody, to market data and the development and operation of electronic trading systems.
+    As a technology company, we develop state-of-the-art IT solutions and offer IT systems all over the
+    world. Our reliable systems and our integrity as a neutral market infrastructure provider form the
+    basis of our business philosophy. We operate to the most exacting standards to create products and
+    services which meet the needs of international financial markets. As a listed company we work to create
+    value for our customers and our shareholders. Privacy notice: https://deutsche-boerse.com/social-media-privacy
+    Imprint: https://deutsche-boerse.com/imprint'
+  website: https://www.deutsche-boerse.com/
+  followers: 177328
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D0BAQGyTLr4K-2jKw/company-logo_200_200/company-logo_200_200/0/1631351134984?e=2147483647&v=beta&t=TSvAC_zseNHRDyxJECrHq966hqBI1YOmsiYFgcozHAM
+  owner: org:deutsche-borse
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/sigurdp-DBAG
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/deutscheboersegroup
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

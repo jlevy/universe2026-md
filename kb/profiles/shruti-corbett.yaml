@@ -1,0 +1,214 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:shruti-corbett
+  person: person:shruti-corbett
+  brief_bio:
+    text: Shruti Corbett was a senior director of software engineering at GitHub, leading large-scale
+      software development and customer solutions, when speaking at GitHub Universe 2025. Corbett spoke
+      about turning GitHub Copilot data into business value.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: c9f4ec54fa2eaa88f6947492430bd6d945f8c5814e56605133e8e4997bd36020
+    stale: false
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1596m
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1596m
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1596m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1596m
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/aut1596m
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756331012818001gGvm
+      ref: session:2025/aut1596m
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756331012818001gGvm
+      ref: session:2025/aut1596m
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756331012818001gGvm
+      ref: session:2025/aut1596m
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756331012818001gGvm
+      ref: session:2025/aut1596m
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1756331012818001gGvm
+      ref: session:2025/aut1596m
+  credentials:
+  - kind: honor
+    title: Top 20 RTP Manager
+    issuer: IBM
+    date: '2011-05-01T00:00:00.000Z'
+    description: Awarded one of the top 20 managers in Research Triangle Park for outstanding people management
+      skills while managing/delivering projects.
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  - kind: honor
+    title: Golden Circle Award
+    issuer: IBM
+    date: '2010-09-01T00:00:00.000Z'
+    description: Awarded best of IBM in 2010 for accomplishments as delivery project executive on internal
+      Siebel implementation within IBM
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  - kind: certification
+    title: IBM Executive Project Manager
+    issuer: IBM
+    date: Nov 2016
+    url: https://www.youracclaim.com/badges/1daacdeb-f5e5-4fed-aaee-43dc1ffbaa77/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  - kind: certification
+    title: Project Management Professional (PMP)
+    issuer: Project Management Institute
+    date: Jan 2004
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  activities:
+  - kind: volunteering
+    title: Volunteer
+    detail: IBM · Science and Technology · 2004 · - Present · 22 years · Ongoing volunteering at various
+      events hosted by IBM to increase overall awareness of both girls and children in technology. Have
+      helped at various Lego Robotics events as well as girl scouts, NC Museum of Science, etc. · 2004
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  - kind: volunteering
+    title: Coach
+    detail: Odyssey of the Mind · Education · 2015 · - Present · 11 years · Lead a team of elementary
+      and middle school children to compete in an international math and science problem-solving contest.
+      The coach directs the children’s creativity and innovative ideas to brainstorm, hypothesize, and
+      succeed in a variety of events. This year’s events capture elements of physics, storytelling, racing,
+      wood carving, culinary, and stage performance abilities. · 2015
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  - kind: project
+    title: Partner Offer Package Acceleration
+    detail: Challenged to rapidly create offer package for VMware to co-develop simpler virtual desktop
+      management product. Organized blueprint with Sales, Offering Management, Delivery, and Support teams
+      working collaboratively to reduce timeline from nine months to only eight weeks, enabling company
+      to begin selling the offer to clients ahead of schedule. Product generated $250K in recurring revenue
+      in two fiscal quarters ($5M annually), vastly outpacing projected $100K revenue plan. · Sep 2017
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  - kind: project
+    title: Multi-Team Effort to Boost Efficiency of Watson App
+    detail: 'Watson-based app struggled to handle traffic compared to client’s legacy application, and
+      end-user response times suffered. Launched three major work streams: Infrastructure team implemented
+      updates to hardware, VIOS, and DB2 database; application team optimized code to enhance logging
+      and transaction tracing abilities and minimize query generation; operations team simultaneously
+      tested and analyzed changes in load environment. Within four weeks, Watson’s overall response time
+      decreased by 65% and outperformed legacy application. Suite of improvements was then expanded company-wide.
+      · Mar 2017'
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  - kind: project
+    title: Systems to Expedite Issue Resolution Workflow
+    detail: Team lacked proactive workflow to monitor issues and alert support engineers, relying on slower
+      client feedback to begin response. Introduced Grafana dashboard utilizing Zabbix backend to visually
+      observe system health and automatic Pager Duty program to notify on-call resource. To further improve
+      efficiency, tasked team to create playbooks of recurring ticket scenarios for wiki platform. Instead
+      of consulting a product expert, solutions were searchable and immediately available, conserving
+      more than four hours per support engineer. Issue resolution times decreased dramatically and led
+      to higher client satisfaction. · Mar 2017
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  - kind: organization
+    title: Women in Technology Institute
+    detail: Women in Technology (WIT) has the sole aim of advancing women in technology -- from the classroom
+      to the boardroom. WIT meets its vision through a variety of leadership development, technology education,
+      networking and mentoring opportunities for women at all levels of their careers. · 2009 · Present
+    evidence:
+      url: https://www.linkedin.com/in/shruti-corbett
+      observed_at: '2026-10-24T08:47:26Z'
+  talks:
+  - session:2025/aut1596m
+  gaps:
+  - github_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1730217645138001S6WH
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

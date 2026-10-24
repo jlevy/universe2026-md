@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/david-a-wheeler-27798688
+  platform: linkedin
+  handle: in/david-a-wheeler-27798688
+  url: https://www.linkedin.com/in/david-a-wheeler-27798688
+  display_name: David A. Wheeler
+  bio: Experienced problem-solving practitioner and researcher in developing secure software and…
+  location: Burke
+  followers: 1426
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQEbeTFWIZqUww/profile-displayphoto-scale_200_200/B4EZ7cV31VIcAg-/0/1781813184689?e=2147483647&v=beta&t=ykCi6sDnQjMP3-57g8HAi2pJmelv9kfTbe1p4NnY8OY
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQG-8kO_ciXOEQ/profile-displaybackgroundimage-shrink_200_800/B4EZ7xIT82JIAQ-/0/1782161948722?e=2147483647&v=beta&t=8baRJF6fCkgRrvW_tWT1Q2kbSfCq_8SRVb4IsDzfmMM
+  owner: person:david-a-wheeler
+  link_basis:
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: david-a-wheeler
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/david-a-wheeler-27798688
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

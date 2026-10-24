@@ -1,0 +1,299 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:vicky-israni
+  person: person:vicky-israni
+  brief_bio:
+    text: Vicky Israni is a Senior Solutions Engineer at GitHub with a background in backend and low-latency
+      development who helps companies with DevSecOps challenges. Israni spoke at GitHub Universe 2025
+      and speaks at GitHub Universe 2026 on cutting token costs.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: f457f560d182e3a0aa65b663cdef172c24282820c402bb92e2c237217eff7d6a
+    stale: false
+  headline: Senior Solutions Engineer at GitHub
+  current_roles:
+  - Senior Solutions Engineer at GitHub
+  expertise:
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1079l
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1079l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1079l
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1384s
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1384s
+  - label: Collaboration
+    target: term:topic/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1384s
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1384s
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1384s
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1384s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2025/aut1079l
+  - label: GitHub Enterprise Cloud
+    target: software:github-enterprise-cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1384s
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1384s
+  interests:
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744351055061001zHmG
+      ref: session:2025/aut1079l
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564453594001wl51
+      ref: session:ldr1384s
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744351055061001zHmG
+      ref: session:2025/aut1079l
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564453594001wl51
+      ref: session:ldr1384s
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744351055061001zHmG
+      ref: session:2025/aut1079l
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1744351055061001zHmG
+      ref: session:2025/aut1079l
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564453594001wl51
+      ref: session:ldr1384s
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564453594001wl51
+      ref: session:ldr1384s
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564453594001wl51
+      ref: session:ldr1384s
+  - label: GitHub Enterprise Cloud
+    target: term:github-product/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564453594001wl51
+      ref: session:ldr1384s
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564453594001wl51
+      ref: session:ldr1384s
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564453594001wl51
+      ref: session:ldr1384s
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777564453594001wl51
+      ref: session:ldr1384s
+  open_source:
+  - repository: repo:visrani-sandbox-org/ghas-java-demo
+    relation: contributor
+    stars: 0
+    primary_language: Java
+  - repository: repo:customer-workshops/copilot-workshop-lt-team
+    relation: contributor
+    stars: 0
+    primary_language: HTML
+  - repository: repo:agentic-gh-connect-day/agentic-workflows-workshop
+    relation: contributor
+    stars: 0
+    primary_language: Python
+  - repository: repo:visrani-sandbox-org/user-level-budgets
+    relation: contributor
+    stars: 0
+  - repository: repo:visrani-sandbox-org/tech-after-dark-bangkok
+    relation: contributor
+    stars: 0
+    primary_language: JavaScript
+  education:
+  - school: Dr. D.Y Patil College of Engineering, Akurdi, Pune
+    evidence:
+      url: https://www.linkedin.com/in/vicky-israni
+      observed_at: '2026-10-24T08:15:10Z'
+  credentials:
+  - kind: certification
+    title: AWS Certified Solutions Architect – Associate
+    issuer: Amazon Web Services (AWS)
+    date: Dec 2020
+    expires: Dec 2023
+    url: https://www.youracclaim.com/badges/1c65efda-3e8b-4778-a588-8a255aeae9f9?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/vicky-israni
+      observed_at: '2026-10-24T08:15:10Z'
+  - kind: certification
+    title: Certified SAFe® 5 Scrum Master
+    issuer: Scaled Agile, Inc.
+    date: May 2021
+    expires: May 2022
+    url: https://www.credly.com/badges/4874e23d-0597-4202-b709-4c0c27f29daa?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/vicky-israni
+      observed_at: '2026-10-24T08:15:10Z'
+  - kind: certification
+    title: Diploma in Information Technology
+    evidence:
+      url: https://www.linkedin.com/in/vicky-israni
+      observed_at: '2026-10-24T08:15:10Z'
+  publications:
+  - title: Content writing for websites
+    venue: PlacesOnline.com
+    description: Perform research on topics requested by product ownerInterpret the information and put
+      it in simple readable termsPerform copyscape checks and quality checks
+    evidence:
+      url: https://www.linkedin.com/in/vicky-israni
+      observed_at: '2026-10-24T08:15:10Z'
+  spoken_languages:
+  - Hindi
+  - Marathi
+  - Sindhi
+  talks:
+  - session:2025/aut1079l
+  - session:ldr1384s
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744351551269001je0O
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: visrani
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744351551269001je0O
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

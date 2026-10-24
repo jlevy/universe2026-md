@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/martinharrysson
+  platform: linkedin
+  handle: in/martinharrysson
+  url: https://www.linkedin.com/in/martinharrysson
+  display_name: Martin Harrysson
+  location: San Francisco Bay Area
+  followers: 6605
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGAGlF0RwN7ww/profile-displaybackgroundimage-shrink_200_800/B56ZiGI8lPHkAY-/0/1754597149894?e=2147483647&v=beta&t=Amr9tQvzDMkcV_GOkbdbJn0SAsLgvPvhb_KwIq15Ee8
+  owner: person:martin-harrysson
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725699077159001YeYm
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/martinharrysson
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

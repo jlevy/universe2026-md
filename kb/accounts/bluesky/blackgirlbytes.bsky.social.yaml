@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/blackgirlbytes.bsky.social
+  platform: bluesky
+  handle: blackgirlbytes.bsky.social
+  url: https://bsky.app/profile/blackgirlbytes.bsky.social
+  display_name: Rizel Scarlett 🇦🇬🇬🇾
+  bio: "Tech Lead, Open Source Developer Relations @opensource.block.xyz‬\n\nPrev:Dev advocate at GitHub.\
+    \ Graduated from Resilient Coders. \n\nIn my free time, I like to annoy my husband and binge watch\
+    \ reality tv shows. \n\nI'm a new mom.\n\n#BlackSky"
+  followers: 9690
+  created_at: '2023-04-21T14:41:15Z'
+  owner: person:rizel-scarlett
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746242817811001G0Rf
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: blackgirlbytes.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

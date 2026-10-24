@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/techgirl1908
+  platform: x
+  handle: techgirl1908
+  url: https://x.com/techgirl1908
+  display_name: Angie Jones
+  bio: VP, Agentic AI Foundation. Helping developers build with agents. I ❤️ open source
+  location: New Orleans, LA
+  website: https://angiejones.tech/
+  followers: 115007
+  following: 739
+  posts_count: 83568
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/2087719482244345856/iFn10O4a_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/2932738834/1786586087
+  created_at: '2014-12-19T22:13:09Z'
+  owner: person:angie-jones
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692917321245001vYxt
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: angiejones
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/techgirl1908
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

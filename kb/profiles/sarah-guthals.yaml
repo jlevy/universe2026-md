@@ -1,0 +1,499 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:sarah-guthals
+  person: person:sarah-guthals
+  brief_bio:
+    text: Sarah Guthals works at Meta on a cross-functional agentic solutions team, previously led developer
+      relations at Sentry, and has published research on computing education. Guthals spoke at GitHub
+      Universe 2024 about tracing and debugging issues quickly.
+    cites:
+    - current_affiliations
+    - linkedin_bio
+    - past_affiliations
+    - event_bio
+    - publications
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: 32af0515d97d994fa0264f76029eba846af4e30f9a300e13ffef4cde4cd5d5ad
+    stale: false
+  headline: Meta
+  current_roles:
+  - Meta
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1869d
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1869d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1869d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1869d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/dev1869d
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719256171543001hV68
+      ref: session:2024/dev1869d
+  education:
+  - school: University of California, San Diego
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  credentials:
+  - kind: honor
+    title: UCSD's 40 Under 40
+    issuer: University of California, San Diego
+    date: '2018-03-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: 'Forbe''s 2016 30 Under 30: Science'
+    issuer: Forbe's
+    date: '2016-01-01T00:00:00.000Z'
+    description: In January 2016 I was selected as one of Forbe's 30 Under 30 in the Science category.
+      http://www.forbes.com/30-under-30-2016/science/
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: NSF I-Corps Fellow
+    issuer: National Science Foundation
+    date: '2013-10-01T00:00:00.000Z'
+    description: The overall goal of this project was to improve instruction and interest in computer
+      science education in American K-12 schools using a game-based approach that began as a research
+      project at UCSD. CodeSpells began as a simple game developed by two individuals on the project,
+      Stephen R Foster and Sarah (Esper) Guthals under the guidance of Dr. William G. Griswold. Stephen
+      and Sarah then founded a company, ThoughtSTEM, with a third co-founder, Lindsey Handley. The focus
+      of ThoughtSTEM was to… Show more
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: MyStartupXX Fellow
+    issuer: Rady School of Management at UCSD
+    date: '2013-06-01T00:00:00.000Z'
+    description: Awarded $3,000 pitching the idea of taking CodeSpells beyond the research project it
+      was at UCSD into a product that could be used in schools around the US.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: Outstanding Graduate Student Leader Award
+    issuer: UCSE Graduate Student Association
+    date: '2013-05-01T00:00:00.000Z'
+    description: The Graduate Student Association (GSA) at UCSD gives out awards each year to exceptional
+      individuals who has helped to strengthen our graduate and professional student community and improve
+      the quality of the graduate and professional student experience.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: 'GE Global Research: Technology and Innovation Days'
+    issuer: GE Global Research
+    date: '2012-09-01T00:00:00.000Z'
+    description: Nominated by the Director for Corporate Affiliates Program at UCSD (Anne O'Donnell) to
+      attend the Technology and Innovation Days at GE Global Research. This enabled me to attend this
+      event in Niskayuna, NY where I was one of 20 students to be able to tour the research labs and meet
+      the top researchers at GE Global Research in Human Computer Interaction related fields.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: AWIS Scholarship
+    issuer: AWIS San Diego
+    date: '2011-04-01T00:00:00.000Z'
+    description: Awarded for my efforts to improve the undergraduate CS Department at UCSD in tutoring
+      and curriculum, as well as my pursuance of a Masters Degree. This award also enabled me to attend
+      the AWIS San Diego Conference.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: Google Anita Borg Scholar
+    issuer: Google
+    date: '2011-04-01T00:00:00.000Z'
+    description: Awarded for my efforts to continue as a PhD student researching Computer Science Education
+      to better the curriculum for introductory courses taught at the high school and college level.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: National Science Foundation Fellowship - NSF Fellow
+    issuer: National Science Foundation
+    date: '2011-04-01T00:00:00.000Z'
+    description: Awarded while pursuing my Masters degree to pursue a PhD in Computer Science focusing
+      on CS Education and Human Computer interaction. Was awarded three years of funding for the PhD program
+      at UCSD.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: Googley Award
+    issuer: Google
+    date: '2010-10-01T00:00:00.000Z'
+    description: Awarded for my effort to increase the number of volunteer tutors in the UCSD CSE department,
+      as well as my dedication to improving the curriculum for our undergraduate students.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: Gordon Engineering Leadership Award - Gordon Fellow
+    issuer: Gordon Engineering Leadership Center
+    date: '2009-10-01T00:00:00.000Z'
+    description: Awarded for my effort to improve the undergraduate curriculum in computer science at
+      UCSD starting with our introductory courses for first-year majors.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: honor
+    title: Yahoo! "!" Excellence Award
+    issuer: Yahoo!
+    date: '2009-10-01T00:00:00.000Z'
+    description: Awarded for my dedication to the UCSD CSE Tutor program and my efforts to help increase
+      the number of students in our department.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  publications:
+  - title: Modding Minecraft For Kids For Dummies
+    venue: Wiley
+    date: Jul 2015
+    description: Join more than 100 million players in the online world of MinecraftAre you a Minecraft
+      fanatic looking to mod your games? Hours of fun await! Minecraft Modding For Kids For Dummies teaches
+      you how to mod in easy-to-do parts. Offering loads of helpful explanations and cool projects along
+      the way, this friendly guide will have you advancing levels, keeping score, respawning players,
+      building portals, creating an archery range—and much more—faster than you can say redstone!There's
+      no denying that modding is cool. After all, it allows you to alter your Minecraft gaming world to
+      constantly keep things new and fun. While it isn't incredibly difficult to learn to mod, it does
+      take some practice. Luckily, Minecraft Modding For Kids For Dummies is here to help you build basic
+      coding skills to make modding your games as easy as 1-2-3!The book is in full color and lies flat
+      so you can look while you playIncludes a free trial of the LearnToMod software to use alongside
+      the bookFeatures larger print to make the text feel less dauntingOffers next steps you can take
+      if you want to learn even more about modding and codingIf you're one of the millions of kids who
+      play Minecraft every day, this hands-on guide gets you up and running fast with modding your favorite
+      game!
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Children's perceptions of what counts as a programming language
+    venue: CCSC-SW
+    date: Apr 2014
+    description: An educational programming language may be more accessible, less frustrating, and more
+      rewarding for young students. However, if a student thinks that the educational language does not
+      constitute actual computer programming, it is hard to build interest in the subject and confidence
+      in their programming skills. We conducted a study in a summer enrichment program for academically
+      high-achieving students entering the sixth grade. Students were interviewed about their perception
+      of various computer programming environments and our analysis of their reasoning helps us to better
+      understand students' tacit assumptions about computer programming. Half of the students were selected
+      to complete a worksheet showing the connections between the programming language Scratch, Java,
+      C++, and Python. Using linear regression we found that there were no statistically significant differences
+      between students who did and did not complete this worksheet in terms of confidence and perception.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: Student Experience in a Student-Centered Peer Instruction Classroom
+    venue: ICER
+    date: Aug 2013
+    description: Although studies have shown Peer Instruction (PI) in computing courses to be beneficial
+      for learning and retention, study of the student experience has been limited to attitudinal survey
+      results. This study provides a preliminary evaluation of student experiences in a PI course -- specifically
+      asking them to reflect on their role as a student in a PI lecture compared to a standard university
+      lecture. Student responses to this question are first analyzed using Chi's Interactive-Constructive-Active-Passive
+      framework which categorizes student activities by their value in a constructivist learning framework.
+      This analysis finds that the majority of students reported activity in a PI lecture as "interactive"
+      in contrast with "active" (e.g. taking notes) in a standard lecture. Additionally, a grounded theory
+      open-coding analysis provides an initial examination of student perceptions of the PI lecture experience.
+      Although students positively value learning-related aspects (feedback and increased understanding)
+      a surprising breadth of value was noted around issues of affect and increased sense of community.
+      In particular, these experiences invite discussion about PI and issues of STEM retention in post-secondary
+      education.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: 'CodeSpells: Embodying the Metaphor of Wizardry through Programming'
+    venue: ITiCSE
+    date: Jul 2013
+    description: 'This paper addresses how CodeSpells uses the metaphor of wizardry, along with an embodied
+      API to engage students in learning to program in Java. Giving novice programmers a concrete representation
+      of code has been encouraged and shown to help students understand the concepts with more ease. There
+      have been many attempts to improve the novice learning experience by providing: a visual programming
+      language, a hardware component or an application that is more approachable. The benefit of this
+      research is that students are better able to understand how abstract code effects the environment.
+      We build on this work through CodeSpells by immersing novices in the abstraction of code through
+      embodiment to allow them to understand complex and abstract programming problems as if they were
+      being affected by what they wrote. In this paper we present a new approach to novice programming
+      environments, one that embodies the user and encourages a quick grasp of introductoryconcepts followed
+      by a deep understanding through exploration.'
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: On the Nature of Fires and How to Spark Them When You’re Not There
+    venue: SIGCSE
+    date: March 6, 2013
+    description: Traditionally, computer science education research contributes new tools, techniques,
+      and theories to improve institutionalized learning spaces – e.g. classrooms. However, we take the
+      position that the study and improvement of computer science learning spaces outside the classroom
+      are just as important.We take a step toward illuminating the critical qualities of non-institutional
+      computer science learning spaces by engaging in a grounded-theoretical examination of first-hand
+      accounts of non-institutional learning. To further study the topic, we attempted to recreate (in
+      the lab) a learning environment with many qualities that characterize non-institutional learning.
+      To make this possible, we employed a modified version of CodeSpells – a video game designed to teach
+      Java programming in a way that engenders the sense of sustained, playful, creative exploration driven
+      entirely by the learner. This study introduced 40 girls, ages 10 to 12, to programming for the first
+      time. We use the results of both studies to develop a theoretical framework which we use to examine
+      existing tools such as Scratch, Alice, and educational games in a new light.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: 'A Post-Broccoli Paradigm: Educational Games with Diverse, Sustainable Ecosystems'
+    venue: CHI
+    date: '2013'
+    description: We investigate the unique educational benefits of 1-on-1 competitive games, arguing that
+      such games can be just as easy to design as single-player educational games, while yielding a more
+      diverse and sustainable learning experience. We present a study of chess and StarCraft II in order
+      to inform the design of similar educational games and their communities. We discuss a competitive
+      game we designed to teach Java programming. We evaluate the game by discussing its user study. Our
+      main contributions are 1) an argument that the use of 1-on-1 competition can solve two existing
+      problems inherent to single-player games, 2) an analysis of the features that make competitive games
+      effective learning environments, and 3) an early but encouraging description of the emergent learning
+      environment one can expect from designing an educational game with these features.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: 'Exploratory Homeworks: An Active Learning Tool for Textbook Reading'
+    venue: ICER 2012
+    date: Sep 2012
+    description: Constructivist learning theory suggests that learners must construct their own understandings,
+      rather than have understanding passively dumped into their brains. These findings support the US
+      National Research Council’s recommendations for the adoption of active learning pedagogies in the
+      classroom. However, the “classroom lecture” is only one of the resources students commonly have
+      for learning in higher education. In this paper, we present exploratory homeworks -- a tool to support
+      active learning for teaching programming languages. By leveraging the opportunity for the student
+      to interact with the computer/compiler, we seek to provide a model for students of how to explore
+      and understand programming language constructs and concepts. We report on the use of 15 exploratory
+      homework assignments used in a CS0 course with 440 students in Winter 2011. We provide a model and
+      advice for others wishing to develop exploratory homeworks for their programming courses and present
+      quantitative and qualitative evidence regarding students’ positive valuation of the homeworks.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: 'The Abstraction Transition Taxonomy: Developing Desired Learning Outcomes through the Lens
+      of Situated Cognition'
+    venue: ICER 2012
+    date: Sep 2012
+    description: 'We report on a post-hoc analysis of introductory programming lecture materials. The
+      purpose of this analysis is to identify what knowledge and skills we are asking students to acquire,
+      as situated in the activity, tools, and culture of what programmers do and how they think. The specific
+      materials analyzed are the 133 Peer Instruction questions used in lecture to support cognitive apprenticeship
+      – honoring the situated nature of knowledge. We propose an Abstraction Transition Taxonomy for classifying
+      the kinds of knowing and practices we engage students in as we seek to apprentice them into the
+      programming world. We find students are asked to answer questions expressed using three levels of
+      abstraction: English, CS Speak, and Code. Moreover, many questions involve asking students to transition
+      between levels of abstraction within the context of a computational problem. Finally, by applying
+      our taxonomy in classifying a range of introductory programming exams, we find that summative assessments
+      (including our own) tend to emphasize a small range of the skills fostered in students during the
+      formative/apprenticeship phase.'
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: 'Computing as the 4th "R": ageneral education approach to computing education'
+    venue: ICER 2011
+    date: '2011'
+    description: Computing and computation are increasingly pervading our lives, careers, and societies
+      –a change driving interest in computing education at the secondary level. But what should define
+      a “general education” computing course at this level? That is, what would you want every person
+      to know, assuming they never take another computing course? We identify possible outcomes for such
+      a course through the experience of designing and implementing a general education university course
+      utilizing bestpractice pedagogies. Though we nominally taught programming, the design of the course
+      led students to report gaining core, transferable skills and the confidence to employ them in their
+      future. We discuss how various aspects of the course likely contributed to these gains. Finally,
+      we encourage the community to embrace the challenge of teaching general education computing in contrast
+      to and in conjunction with existing curricula designed primarily to interest students in the field.
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - title: 'Experience Report: an AP CS Principles AP Requirement'
+    venue: Technical Report - UCSD
+    date: '2011'
+    description: "We report on the development and deployment of a pilot of the new Advanced Placement\
+      \ CS Principles course in the United States. The course is designed to introduce core computational\
+      \ concepts and instill computational thinking practices. We report on an initial offering with 571\
+      \ university students, mostly non-CS majors taking the course as a general education requirement.\
+      \ We discuss the instructional design supporting the course, describe how the various components\
+      \ were implemented, and review student work and valuation of the course. Though the course appears\
+      \ to â€œteach programmingâ€\x9D in Alice, students reported gaining significant analysis and communication\
+      \ skills they could use in their daily life. We reflect on how instructional design decisions are\
+      \ likely to have supported this experience and consider the implications for other K-12 computing/IT\
+      \ education efforts as well as for regular CS1 courses."
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  spoken_languages:
+  - English
+  - Spanish
+  activities:
+  - kind: project
+    title: LearnToMod For Educators Coursera Course
+    detail: I developed and launched ThoughtSTEM's first online Teacher Professional Development course
+      through Coursera. I now lead the team maintaining the course and creating and adding additional
+      content to keep the community engaged. We currently have over 1,200 educators participating. Throughout
+      this course I will work on teaching teachers, with no prior coding experience, how to use LearnToMod
+      in the classroom to teach their students coding through Minecraft! · Jan 2015
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: project
+    title: LearnTeachMake Arduino Teacher Professional Development Course
+    detail: I led a team of 5 to develop a 10-week online course for community college professors interested
+      in teaching Arduino to their students. The professors have a range of experience with software and
+      hardware, and our goal is to ensure that they are prepared to not only engage their students, but
+      create on their own as well! · Jan 2015
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: project
+    title: LearnToMod
+    detail: LearnToMod is a software that allows students to easily mod Minecraft by writing mods in Blockly
+      or Javascript code in their browser. The software comes with lessons, video tutorials, and badges
+      for students to unlock! Students can also take an online course for college prep credit through
+      UC San Diego. LearnToMod is a fun way for students to learn coding by manipulating the immersive
+      world of Minecraft. · Jun 2014
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: project
+    title: CodeSpells
+    detail: CodeSpells is a 3D immersive video game designed to teach Java programming to students of
+      all ages (recommended 8 or above). In this game, the learner is a wizard and code is represented
+      as spells. Your task, as the wizard, is to read, cast, modify, and create spells to effect the world
+      and earn badges through quests and challenges!We ran a KickStarter to further develop this game
+      with leading video game developers, check out more information at CodeSpells.org. · Sep 2011
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: project
+    title: Modding Minecraft (Book)
+    detail: In addition to the Minecraft Modding For Kids book, I made significant edits to the original
+      book to create one that is targeted to younger students. This book was published by Wiley and is
+      available in print or e-book formats. · Jul 2015
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: project
+    title: Minecraft Modding Udemy Course
+    detail: In collaboration with Wiley Publishing, I built a section of a Udemy course to teach kids
+      to Mod Minecraft using the LearnToMod software and Minecraft Simulator.The course is now live and
+      you can participate with the link above! · Mar 2015
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  - kind: project
+    title: Modding Minecraft For Kids For Dummies (Book)
+    detail: I wrote a For Kids For Dummies book to teach kids how to Mod Minecraft and make Minigames
+      that they can play with their friends!The book is available in print and e-reader on Amazon!This
+      book was published through Wiley publishing. A French version is also available. · Jan 2015
+    evidence:
+      url: https://www.linkedin.com/in/drguthals
+      observed_at: '2026-10-24T08:42:21Z'
+  recent_writing:
+  - title: UC Grad Slam
+    url: https://www.linkedin.com/pulse/uc-grad-slam-sarah-guthals-phd
+    published: '2016-04-22T00:00:00.000Z'
+    channel: linkedin
+    summary: Today I was honored to be a panelist at the Workforce for the Future Event which hosted the
+      UC Grad Slam competition!…
+  - title: Book Signing and LearnToMod Demo!
+    url: https://www.linkedin.com/pulse/book-signing-learntomod-demo-sarah-guthals-phd
+    published: '2015-08-13T00:00:00.000Z'
+    channel: linkedin
+    summary: Today I will be signing copies of the Modding Minecraft For Kids For Dummies book at the
+      UCSD Bookstore at 2pm! I will…
+  talks:
+  - session:2024/dev1869d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715373487695001lVRu
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

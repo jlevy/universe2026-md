@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:workos
+  login: workos
+  kind: organization
+  url: https://github.com/workos
+  name: WorkOS
+  bio: Your app, Enterprise Ready.
+  location: United States of America
+  website: https://workos.com
+  public_repositories: 120
+  created_at: '2019-02-14T15:54:36Z'
+  pinned:
+  - repo:workos/go-example-applications
+  - repo:workos/node-example-applications
+  - repo:workos/php-example-applications
+  - repo:workos/python-django-example-applications
+  - repo:workos/python-flask-example-applications
+  - repo:workos/ruby-example-applications
+  top_repositories:
+  - repo:workos/authkit
+  - repo:workos/awesome-developer-experience
+  - repo:workos/auth.md
+  linked_accounts:
+  - acct:x/workos
+  entity: org:workos
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: workos
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

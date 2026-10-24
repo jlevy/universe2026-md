@@ -1,0 +1,409 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:ayman-bagabas
+  person: person:ayman-bagabas
+  brief_bio:
+    text: Ayman Bagabas is a senior software engineer on the GitHub Copilot CLI team and previously led
+      the open source Bubble Tea framework at Charmbracelet. Bagabas speaks at GitHub Universe 2026 on
+      practical workflows with GitHub CLI.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 5f14055bf616daade5403346ab275f8e11c6c459b362b9a5cba319e7b4e05e94
+    stale: false
+  headline: Senior Software Engineer at GitHub
+  location: Brooklyn, NY
+  current_roles:
+  - Senior Software Engineer at GitHub
+  expertise:
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  technologies:
+  - label: Git
+    target: software:git
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Git
+      ref: session:bld1491d
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: GitHub CLI
+    target: software:github-cli
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub CLI
+      ref: session:bld1491d
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: GitHub Copilot CLI
+    target: software:copilot-cli
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot CLI
+      ref: person:ayman-bagabas
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1491d
+  - label: Linux
+    target: software:linux
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Linux
+      ref: person:ayman-bagabas
+  programming_languages:
+  - label: Go
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:aymanbagabas/go-udiff
+    - ref: repo:aymanbagabas/shcopy
+    - ref: repo:aymanbagabas/go-pty
+  - label: Rust
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:aymanbagabas/uncurses
+    - ref: repo:aymanbagabas/drift
+  - label: Lua
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:aymanbagabas/dotfiles
+  - label: C
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:aymanbagabas/huawei-wmi
+  interests:
+  - label: go
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/aymanbagabas/go-udiff
+      ref: repo:aymanbagabas/go-udiff
+    - url: https://github.com/aymanbagabas/go-pty
+      ref: repo:aymanbagabas/go-pty
+    - url: https://github.com/git-lfs/git-lfs
+      ref: repo:git-lfs/git-lfs
+  - label: golang
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/aymanbagabas/go-udiff
+      ref: repo:aymanbagabas/go-udiff
+    - url: https://github.com/aymanbagabas/go-pty
+      ref: repo:aymanbagabas/go-pty
+  - label: ssh
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/aymanbagabas/shcopy
+      ref: repo:aymanbagabas/shcopy
+    - url: https://github.com/aymanbagabas/go-pty
+      ref: repo:aymanbagabas/go-pty
+  - label: terminal
+    basis: github_repositories
+    confidence: medium
+    weight: 0.77
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/aymanbagabas/shcopy
+      ref: repo:aymanbagabas/shcopy
+    - url: https://github.com/aymanbagabas/go-pty
+      ref: repo:aymanbagabas/go-pty
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: GitHub Codespaces
+    target: term:github-product/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  - label: Projects and Issues
+    target: term:github-product/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777617737140001PusN
+      ref: session:bld1491d
+  open_source:
+  - repository: repo:aymanbagabas/huawei-wmi
+    relation: owner
+    stars: 287
+    primary_language: C
+  - repository: repo:aymanbagabas/go-udiff
+    relation: owner
+    stars: 235
+    primary_language: Go
+  - repository: repo:aymanbagabas/drift
+    relation: owner
+    stars: 143
+    primary_language: Rust
+  - repository: repo:aymanbagabas/shcopy
+    relation: owner
+    stars: 89
+    primary_language: Go
+  - repository: repo:aymanbagabas/go-pty
+    relation: owner
+    stars: 88
+    primary_language: Go
+  - repository: repo:aymanbagabas/uncurses
+    relation: owner
+    stars: 40
+    primary_language: Rust
+  - repository: repo:aymanbagabas/dotfiles
+    relation: owner
+    stars: 23
+    primary_language: Lua
+  - repository: repo:gnachman/iterm2
+    relation: contributor
+    stars: 18214
+    primary_language: Swift
+  - repository: repo:exg/rxvt-unicode
+    relation: contributor
+    stars: 270
+    primary_language: C
+  - repository: repo:jetbrains/jediterm
+    relation: contributor
+    stars: 866
+    primary_language: Java
+  - repository: repo:git-lfs/git-lfs
+    relation: contributor
+    stars: 14558
+    primary_language: Go
+  - repository: repo:prometheus/snmp_exporter
+    relation: contributor
+    stars: 2190
+    primary_language: Go
+  publications:
+  - title: A Methodological Framework for Validating ZKP Authentication Process
+    venue: IEEE HONET 2020
+    date: December 14, 2020
+    description: The Internet of Things (IoT) is completely transforming the way network-connected devices
+      are made. Manufacturers and intelligent transportation systems are using thousands of IoT devices
+      and machine-to-machine communication to drive industrial automation. Existing access control schemes
+      for IoT authentication fail to support user anonymity. They rely on the surrendering of the device/user
+      authentication parameters to the trusted server, which hence can be utilized by the IoT infrastructure
+      to track users' behavioral patterns. Furthermore, existing access control mechanisms lack the support
+      of run-time integrity assessment capabilities that are used to verify the authenticity of an authentication
+      process during execution. This paper presents a parametrized crypto-based privacy-preserving authentication
+      protocol that support anonymity, it is based on Zero Knowledge Proof (ZKP). Without the loss of
+      anonymity, a methodological framework for bootstrapping a parametrized authentication process's
+      integrity is introduced herein. We show that run-time integrity assessment of an authentication
+      process running on an IoT device can be achieved through the utilization of the IoT device's physical
+      characteristics, specifically energy consumption and computation time. Behavioral patterns based
+      on the device's power/energy consumption for the ZKP-based protocol were captured and recorded during
+      this effort. In addition, fine-grained behavioral patterns that capture the authentication protocol's
+      processing time were collected and analyzed. To validate the proposed scheme, it was fully implemented
+      and deployed on an IoT testbed. We have tested the performance of the proposed scheme in terms of
+      power consumption and computation time.
+    evidence:
+      url: https://www.linkedin.com/in/aymanbagabas
+      observed_at: '2026-10-24T08:11:38Z'
+  - title: Configurable Anonymous Authentication Schemes For The Internet of Things (IoT)
+    venue: 2019 IEEE International Conference on RFID (RFID)
+    date: February 4, 2019
+    description: The Internet of Things (IoT) has revolutionized the way of how pervasive computing devices
+      communicate and disseminate information over the global network. A plethora of user data is collected
+      and logged daily into cloud-based servers. Such data can be analyzed by the IoT infrastructure to
+      capture users' behaviors (e.g. users' location, tagging of smart home occupancy). This brings a
+      new set of security challenges, specifically user anonymity. Existing access control and authentication
+      technologies failed to support user anonymity. They relied on the surrendering of the device/user
+      authentication parameters to the trusted server, which hence could be utilized by the IoT infrastructure
+      to track users' behavioral patterns. This paper, presents two novel configurable privacy-preserving
+      authentication schemes. User anonymity capabilities were incorporated into our proposed authentication
+      schemes through the implementation of two crypto-based approaches (i) Zero Knowledge Proof (ZKP)
+      and (ii) Verifiable Common Secret Encoding (VCSE). We consider a user-oriented approach when determining
+      user anonymity. The proposed authentication schemes are dynamically capable of supporting various
+      levels of user privacy based on the user preferences. To validate the two schemes, they were fully
+      implemented and deployed on an IoT testbed. We have tested the performance of each proposed schemes
+      in terms of power consumption and computation time. Based on our performance evaluation results,
+      the proposed ZKP-based approach provides better performance compared to the VCSE-based approach.
+    evidence:
+      url: https://www.linkedin.com/in/aymanbagabas
+      observed_at: '2026-10-24T08:11:38Z'
+  spoken_languages:
+  - Arabic
+  - English
+  recent_writing:
+  - title: A Brief History of Terminal Emulators
+    url: https://aymanbagabas.com/posts/a-brief-history-of-terminal-emulators/
+    published: '2025-03-11T00:00:00Z'
+    channel: blog
+  - title: Self-hosted Soft Serve
+    url: https://aymanbagabas.com/posts/self-hosted-soft-serve/
+    published: '2023-04-28T00:00:00Z'
+    channel: blog
+  - title: Simple Vim Session Management
+    url: https://aymanbagabas.com/posts/simple-vim-session-management/
+    published: '2023-04-13T00:00:00Z'
+    channel: blog
+  - title: Blue Mountain
+    url: https://aymanbagabas.com/posts/blue-mountain/
+    published: '2022-06-02T16:11:13Z'
+    channel: blog
+  - title: Import Notion Pages to Jekyll
+    url: https://aymanbagabas.com/posts/import-notion-pages-to-jekyll/
+    published: '2022-03-29T00:00:00Z'
+    channel: blog
+  - title: Nyan Cat Over SSH
+    url: https://aymanbagabas.com/posts/nyan-cat-over-ssh/
+    published: '2022-03-25T00:00:00Z'
+    channel: blog
+  - title: Walk by the pond
+    url: https://aymanbagabas.com/posts/walk-by-the-pond/
+    published: '2022-03-10T13:45:30Z'
+    channel: blog
+  - title: Run native C/C++ code in the browser using Emscripten
+    url: https://aymanbagabas.com/posts/run-native-c-c-code-in-the-browser-using-emscripten/
+    published: '2020-11-18T00:00:00Z'
+    channel: blog
+  - title: Dynamic DNS using DDclient
+    url: https://aymanbagabas.com/posts/dynamic-dns-using-ddclient/
+    published: '2019-02-16T00:00:00Z'
+    channel: blog
+  - title: Writing a Chip-8 emulator
+    url: https://aymanbagabas.com/posts/chip-8-emulator/
+    published: '2018-09-17T00:00:00Z'
+    channel: blog
+  talks:
+  - session:bld1491d
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1786655592532001E5CV
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: aymanbagabas
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

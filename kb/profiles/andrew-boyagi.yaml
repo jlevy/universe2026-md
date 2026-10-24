@@ -1,0 +1,248 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:andrew-boyagi
+  person: person:andrew-boyagi
+  brief_bio:
+    text: Andrew Boyagi is Customer CTO at Atlassian and previously led the company's DevOps Evangelism
+      team. Boyagi spoke at GitHub Universe 2024 about taking developer experience from 0 to 1 with Atlassian
+      engineering leaders.
+    cites:
+    - linkedin_headline
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: dc5425d0dd71f57981ec44569406ba67fa686d4abda8dc77bb51db3e04e60374
+    stale: false
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2153l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2153l
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2153l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2153l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2153l
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2153l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2153l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev2153l
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  - label: Sponsors
+    target: term:github-product-2024/sponsors
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1728072767316001yLBS
+      ref: session:2024/dev2153l
+  education:
+  - school: Southern Cross University
+    degree: Master of Business Administration - MBA
+    field_of_study: Business Administration and Management, General
+    evidence:
+      url: https://www.linkedin.com/in/andrewboyagi
+      observed_at: '2026-10-24T08:43:04Z'
+  activities:
+  - kind: volunteering
+    title: Mentor
+    detail: Southern Cross University · Science and Technology · Feb 2022 · - Present · 4 years 9 months
+      · Feb 2022
+    evidence:
+      url: https://www.linkedin.com/in/andrewboyagi
+      observed_at: '2026-10-24T08:43:04Z'
+  recent_writing:
+  - title: Translating AI investment into enterprise performance
+    url: https://www.linkedin.com/pulse/translating-ai-investment-enterprise-performance-andrew-boyagi-cqjxe
+    published: '2026-05-18T00:00:00.000Z'
+    channel: linkedin
+    summary: To drive ROI, enterprises must align AI with a four-part framework of purpose, workflow,
+      knowledge and intelligence to…
+  - title: Developer experience is a blueprint for enterprise productivity
+    url: https://www.linkedin.com/pulse/developer-experience-blueprint-enterprise-andrew-boyagi-6u59c
+    published: '2026-03-11T00:00:00.000Z'
+    channel: linkedin
+    summary: Leaders are heavily investing in helping their teams become more productive. Yet very few
+      can explain what’s actually…
+  - title: How I Successfully Ran a Meetingless Project
+    url: https://www.linkedin.com/pulse/i-ran-successful-meetingless-project-you-can-too-andrew-boyagi-hbkwe
+    published: '2025-02-25T00:00:00.000Z'
+    channel: linkedin
+    summary: I had a big project and a big problem. I needed to work with 20 people across three countries
+      and four time zones to…
+  - title: Why developer experience is more important than productivity
+    url: https://www.linkedin.com/pulse/why-developer-experience-more-important-than-andrew-boyagi-bljse
+    published: '2024-02-22T00:00:00.000Z'
+    channel: linkedin
+    summary: This article was originally featured in TechCrunch on January 29, 2024, and republished on
+      Work Life on February 6…
+  - title: 'Negative velocity: how to lift the complexity limit'
+    url: https://www.linkedin.com/pulse/negative-velocity-how-lift-complexity-limit-andrew-boyagi
+    published: '2023-05-17T00:00:00.000Z'
+    channel: linkedin
+    summary: Signs your software team is navigating too much organizational complexity, and how to improve
+      One of the most common…
+  - title: How to tame software sprawl
+    url: https://www.linkedin.com/pulse/how-tame-software-sprawl-andrew-boyagi
+    published: '2023-05-10T00:00:00.000Z'
+    channel: linkedin
+    summary: Three signs you have software sprawl and what you can do about it Countless companies worldwide
+      now embrace a…
+  talks:
+  - session:2024/dev2153l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727892456628001LzUV
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

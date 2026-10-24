@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/sap
+  platform: linkedin
+  handle: company/sap
+  url: https://www.linkedin.com/company/sap
+  display_name: SAP
+  bio: 'SAP is a global leader in enterprise applications and business AI. We help organizations run mission-critical
+    operations across finance, procurement, supply chain, human resources, and customer experience, moving
+    from systems that record work to systems that can help execute it. Our goal is to be the #1 Business
+    AI company, powering the Autonomous Enterprise. The Autonomous Enterprise brings together enterprise
+    applications, trusted business data, and AI assistants and agents that can reason, recommend, and
+    act within business processes with governance, accuracy, and compliance built in. • Joule serves as
+    the engagement layer across SAP systems and beyond, connecting data, workflows, and agents. • SAP
+    Autonomous Suite brings Joule Work, AI agents and assistants, data, and applications together to execute
+    end-to-end business processes across finance, supply chain management, spend management, human capital
+    management, and customer experience. • SAP Business AI Platform brings together AI, data, process
+    context, and governance, so organizations can build, integrate, scale, and run AI. • SAP also offers
+    25+ Industry AI editions embedded in sector-specific processes and compliance requirements across
+    pharma, automotive, consumer goods, energy, and more. • RISE with SAP and SAP GROW help organizations
+    move to the cloud and benefit from AI at their own pace. Our partners amplify SAP’s value through
+    solution innovation, deep product expertise, world-class services, and more. We’re committed to meaningful,
+    respectful conversations. To maintain a positive environment, we moderate comments that target individuals,
+    contain discriminatory, harassing, or threatening content, share personal information without consent,
+    or promote misinformation, spam, or third-party links. We support open dialogue and constructive feedback
+    but may remove content that violates these guidelines without notice. For moderation questions, DM
+    us or contact [email removed].'
+  website: https://www.sap.com/
+  followers: 5204115
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGmwwo0aq4jVA/company-logo_200_200/company-logo_200_200/0/1723034255614/sap_logo?e=2147483647&v=beta&t=O0Kz4zhqBRfE8eRBSeST25yMKpY3zGlQc5VCVwO3wlg
+  owner: org:sap
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/gabriel-marangoni-moita
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/tobiashildenbrand
+    record_id: sd_mvm5r5dx1e0m25slzm
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/sap
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

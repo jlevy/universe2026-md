@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/renaissance-learning
+  platform: linkedin
+  handle: company/renaissance-learning
+  url: https://www.linkedin.com/company/renaissance-learning
+  display_name: Renaissance Learning
+  bio: As a global leader in assessment, reading, and math solutions for pre-K–12 schools and districts,
+    Renaissance is committed to providing educators with insights and resources to accelerate growth and
+    help all students build a strong foundation for success. Renaissance solutions are used in over one-third
+    of US schools and in more than 100 countries worldwide. The Renaissance portfolio includes Star Assessments,
+    for reliable, accurate insights into K–12 student learning; myIGDIs, for accurate assessment of early
+    learning; myON, to increase students’ access to high-quality reading materials; Accelerated Reader,
+    to support independent reading practice; Freckle, for teacher-led differentiated instruction; and
+    Schoolzilla, to give educators actionable insights into trends in student attendance and achievement.
+    Why join the Renaissance team? We're award-winning! From employer of choice certifications to EdTech
+    awards, Renaissance continues to be praised for our inclusive company culture & top-notch product
+    offerings. In 2024, Renaissance earned a consecutive Great Place to Work® certification and was named
+    to Fast Company's list of 100 Best Workplaces for Innovators! In 2023, we were also recognized as
+    a Best Workplace for Women by Fortune magazine. Join our award-winning team today and help accelerate
+    learning for all.
+  website: https://www.renaissance.com/
+  followers: 188028
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQESRT8ZzE2ZlQ/company-logo_200_200/company-logo_200_200/0/1681307208369?e=2147483647&v=beta&t=6uhx3SFc8dqEoQetz9WFmhgIB_0fZSe8B2g0TWoTmV0
+  owner: org:renaissance-learning
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/michael-fairchild-15381928
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/renaissance-learning
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

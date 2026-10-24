@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/dm-divyamahajan
+  platform: linkedin
+  handle: in/dm-divyamahajan
+  url: https://www.linkedin.com/in/dm-divyamahajan
+  display_name: Divya Mahajan
+  bio: As a Software Development Engineer at Amazon, 𝗜 𝗯𝘂𝗶𝗹𝗱…
+  location: San Francisco Bay Area
+  followers: 3611
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHg4I3FtsJ_AA/profile-displayphoto-scale_200_200/B56Z0mHDzmHkAY-/0/1774460879044?e=2147483647&v=beta&t=v--uhYmWNh64ldIN3E0NA6_80kp63q4k5-I9eF93964
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQFYwjVXm4gLSQ/profile-displaybackgroundimage-shrink_200_800/B56aFJ8qU4JcAQ-/0/1792242001518?e=2147483647&v=beta&t=z8nVlZjCEwoWnlq7da7Z-tk_V4FPrS2RpG2-Neh4vmk
+  owner: person:divya-mahajan
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777674945059001EoUx
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: dm-divyamahajan
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/dm-divyamahajan
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

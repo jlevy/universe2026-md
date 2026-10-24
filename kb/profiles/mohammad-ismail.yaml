@@ -1,0 +1,234 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:mohammad-ismail
+  person: person:mohammad-ismail
+  headline: Apple
+  current_roles:
+  - Apple
+  expertise:
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2745w
+  interests:
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1691521490493001Kk5Q
+      ref: session:2023/sec2745w
+  education:
+  - school: Mansoura University
+    evidence:
+      url: https://www.linkedin.com/in/mouismail
+      observed_at: '2026-10-24T08:46:50Z'
+  credentials:
+  - kind: honor
+    title: GitHub Universe 2023, Speaker
+    issuer: GitHub
+    date: '2023-11-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/mouismail
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: honor
+    title: SAP Catalyst
+    issuer: SAP
+    date: '2021-01-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/mouismail
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: GitHub Universe 2023 Speaker
+    issuer: GitHub
+    date: Nov 2023
+    evidence:
+      url: https://www.linkedin.com/in/mouismail
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: DevOps Global Summit 22
+    issuer: Geekle.us
+    date: Oct 2022
+    url: https://certificate.givemycertificate.com/c/74390918-5d2f-4c0c-bfe7-1a8fd14ba7f2
+    evidence:
+      url: https://www.linkedin.com/in/mouismail
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: GitHub Copilot
+    issuer: GitHub
+    date: Oct 2024
+    expires: Oct 2027
+    url: https://www.credly.com/badges/db677fcf-b41e-4995-a696-a18b96ce99ac/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mouismail
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: Academy Accreditation - Platform Administrator
+    issuer: Databricks
+    date: Nov 2025
+    expires: Nov 2026
+    url: https://credentials.databricks.com/4d4c471c-32df-4d82-b888-fef01e49816b
+    evidence:
+      url: https://www.linkedin.com/in/mouismail
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: GitHub Foundations
+    issuer: GitHub
+    date: Nov 2023
+    expires: Nov 2026
+    url: https://www.credly.com/badges/3d691057-effe-4d85-a6d4-c3e46a0216f2/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mouismail
+      observed_at: '2026-10-24T08:46:50Z'
+  - kind: certification
+    title: GitHub Actions
+    issuer: GitHub
+    date: Aug 2023
+    expires: Aug 2026
+    url: https://www.credly.com/badges/bd48abe9-8509-43d5-b70c-775abe4a3d1f/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/mouismail
+      observed_at: '2026-10-24T08:46:50Z'
+  spoken_languages:
+  - English
+  - Arabic
+  - German
+  recent_writing:
+  - title: 'Introducing Nous: Why AI Agents Need Their Own Kubernetes'
+    url: https://www.linkedin.com/pulse/introducing-nous-why-ai-agents-need-own-kubernetes-mohammad-ismail-4jlke
+    published: '2026-02-02T00:00:00.000Z'
+    channel: linkedin
+    summary: 'The infrastructure patterns that tamed containerised workloads are now colliding with a
+      far stranger beast: autonomous…'
+  talks:
+  - session:2023/sec2745w
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686147451547001fVqY
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

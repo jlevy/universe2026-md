@@ -1,0 +1,360 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:michael-grinich
+  person: person:michael-grinich
+  brief_bio:
+    text: Michael Grinich is founder and CEO of WorkOS, a developer platform for enterprise features such
+      as SSO, SCIM and audit logs, and previously co-founded Nylas. Grinich spoke at GitHub Universe 2025
+      about enterprise-ready MCP servers and speaks at GitHub Universe 2026 about auth for agents.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: 4cd4e64f6e7c4327df9aa0fb44c04c761b8d34bc82880b9d1cf7e7499607f69d
+    stale: false
+  headline: CEO at WorkOS
+  location: San Francisco
+  current_roles:
+  - CEO at WorkOS
+  expertise:
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1550d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/sec1550d
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1785d
+  technologies:
+  - label: Cursor
+    target: software:cursor
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Cursor
+      ref: person:michael-grinich
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2025/sec1550d
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:2025/sec1550d
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:grinich/inflow
+    - ref: repo:grinich/worktv
+    - ref: repo:grinich/xchat
+  - label: Swift
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:grinich/yap
+    - ref: repo:grinich/replay
+  - label: Objective-C
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:grinich/rainbar
+  - label: Python
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:grinich/mdmvendorsign
+  interests:
+  - label: AI
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903718124001uR62
+      ref: session:2025/sec1550d
+    - url: https://github.com/nicobailon/pi-mcp-adapter
+      ref: repo:nicobailon/pi-mcp-adapter
+  - label: macos
+    basis: github_repositories
+    confidence: medium
+    weight: 0.8
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/grinich/replay
+      ref: repo:grinich/replay
+    - url: https://github.com/grinich/yap
+      ref: repo:grinich/yap
+  - label: swiftui
+    basis: github_repositories
+    confidence: medium
+    weight: 0.8
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/grinich/replay
+      ref: repo:grinich/replay
+    - url: https://github.com/grinich/yap
+      ref: repo:grinich/yap
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1784736653607001jayY
+      ref: session:ldr1785d
+  - label: GitHub Copilot
+    target: term:github-product-2025/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903718124001uR62
+      ref: session:2025/sec1550d
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903718124001uR62
+      ref: session:2025/sec1550d
+  - label: VS Code
+    target: term:github-product-2025/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.6
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753903718124001uR62
+      ref: session:2025/sec1550d
+  - label: changesets
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nicknisi/pi-extensions
+      ref: repo:nicknisi/pi-extensions
+  - label: claude
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nicobailon/pi-mcp-adapter
+      ref: repo:nicobailon/pi-mcp-adapter
+  - label: coding-agent
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nicobailon/pi-mcp-adapter
+      ref: repo:nicobailon/pi-mcp-adapter
+  - label: extension
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nicobailon/pi-mcp-adapter
+      ref: repo:nicobailon/pi-mcp-adapter
+  - label: LLMs
+    basis: github_repositories
+    confidence: low
+    weight: 0.4
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nicobailon/pi-mcp-adapter
+      ref: repo:nicobailon/pi-mcp-adapter
+  open_source:
+  - repository: repo:grinich/mdmvendorsign
+    relation: owner
+    stars: 160
+    primary_language: Python
+  - repository: repo:grinich/inflow
+    relation: owner
+    stars: 82
+    primary_language: TypeScript
+  - repository: repo:grinich/replay
+    relation: owner
+    stars: 66
+    primary_language: Swift
+  - repository: repo:grinich/pastrytweets
+    relation: owner
+    stars: 10
+  - repository: repo:grinich/yap
+    relation: owner
+    stars: 9
+    primary_language: Swift
+  - repository: repo:grinich/rainbar
+    relation: owner
+    stars: 9
+    primary_language: Objective-C
+  - repository: repo:grinich/worktv
+    relation: owner
+    stars: 4
+    primary_language: TypeScript
+  - repository: repo:grinich/xchat
+    relation: owner
+    stars: 4
+    primary_language: TypeScript
+  - repository: repo:workos/mcp.shop
+    relation: contributor
+    stars: 106
+    primary_language: TypeScript
+  - repository: repo:nicobailon/pi-mcp-adapter
+    relation: contributor
+    stars: 1614
+    primary_language: TypeScript
+  - repository: repo:nicknisi/pi-extensions
+    relation: contributor
+    stars: 47
+    primary_language: TypeScript
+  recent_writing:
+  - title: |-
+      feels like the era of hype is over.
+
+      signups, views, free users, github stars..  all meaningless vanity metrics
+
+      what matters now is revenue, margin, retention, and the sound of cash hitting your bank account
+
+      the tide is changing. and we're about to see who’s been swimming naked
+    url: https://twitter.com/16602665/status/1987197567592276316
+    published: '2025-11-08T16:36:35Z'
+    channel: x
+  - title: "WorkOS: The Enterprise Stack for the AI Era\n\nAI companies are just B2B SaaS with a new engine.\
+      \ They monetize like SaaS, sell like SaaS, and scale into the enterprise like SaaS. The difference\
+      \ is velocity. \n\nThese new products grow so fast that the old playbook of “PLG for years, "
+    url: https://twitter.com/16602665/status/1982877806095958234
+    published: '2025-10-27T18:31:23Z'
+    channel: x
+  - title: |-
+      the longer I spend building startups and studying companies, the more I believe 2 things:
+
+      1) true product-market fit is special and surprisingly rare
+
+      2) big outcomes require huge markets
+
+      #1 is discussed a lot. You hear people talk about pre/post-PMF and so on
+
+      But few people
+    url: https://twitter.com/16602665/status/1955353503087595696
+    published: '2025-08-12T19:39:38Z'
+    channel: x
+  - title: "Here's their full announcement. \n\nIt's described for \"security\" but is clearly about creating\
+      \ vendor lock-in and preventing anyone else from building on their platform.\n\nScummy behavior.\n\
+      \nhttps://t.co/dlNIEp1ZBj"
+    url: https://twitter.com/16602665/status/1946391054212845631
+    published: '2025-07-19T02:06:04Z'
+    channel: x
+  - title: |-
+      with rare exceptions (dropbox) spending engineering to move off cloud just says to me they don’t know how to invest to drive growth
+
+      or maybe worse, they don’t care about growth (rip)
+
+      either way this is not advice that ambitious companies should pay attention too
+
+      it’s easy to
+    url: https://twitter.com/16602665/status/1920636781739061367
+    published: '2025-05-09T00:27:47Z'
+    channel: x
+  - title: |-
+      many startups in the last few years have launched as "open source" but then quietly drop this to commercialize. posthog, graphite, redis, mongodb. i wouldn't be surprised if clickhouse, supabase, etc do the same.
+
+      it's a bummer that open source increasingly feels more like a
+    url: https://twitter.com/16602665/status/1920196919361745106
+    published: '2025-05-07T19:19:55Z'
+    channel: x
+  - title: |-
+      I'm increasingly convinced that hiring great talent is the #1 output required for great managers and leaders.
+
+      It takes a rare combination of many diverse skills: social networking, relationship building, vision selling, project pitching, etc. It is HARD and there is no shortcut.
+    url: https://twitter.com/16602665/status/1909748812199108932
+    published: '2025-04-08T23:22:52Z'
+    channel: x
+  - title: |-
+      WorkOS launched 5 years ago today 🥳🍰
+
+      From a tweet to powering OpenAI, Perplexity, Vercel, Plaid, Cursor, and hundreds more.
+
+      Immensely grateful to our team, customers, and investors for this opportunity. Can't wait for the next 5 years! 🚀 https://t.co/TQdRX0l3le
+    url: https://twitter.com/16602665/status/1901653255584989428
+    published: '2025-03-17T15:14:01Z'
+    channel: x
+  - title: WorkOS now serves over 1b API requests every month 🤯
+    url: https://twitter.com/16602665/status/1892319789424456009
+    published: '2025-02-19T21:06:10Z'
+    channel: x
+  - title: |-
+      We are thrilled that Cursor chose WorkOS to power their enterprise features 🚀
+
+      Incredible team and product!
+    url: https://twitter.com/16602665/status/1880029425045241948
+    published: '2025-01-16T23:08:38Z'
+    channel: x
+  talks:
+  - session:2025/sec1550d
+  - session:ldr1785d
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1759265517921001S428
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: grinich
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1759265517921001S428
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

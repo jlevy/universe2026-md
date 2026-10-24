@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/villagesql
+  platform: linkedin
+  handle: company/villagesql
+  url: https://www.linkedin.com/company/villagesql
+  display_name: VillageSQL
+  bio: A drop-in replacement for MySQL with extensions for the agentic AI era. VillageSQL values the 30+
+    years of community around MySQL. We want to empower it to drive innovation for all MySQL users by
+    offering a path for permissionless innovation. VillageSQL introduces a robust extension framework
+    that includes custom data types, custom functions, and custom indexes (coming soon). We believe this
+    extension framework will accelerate innovation in MySQL and allow developers building AI, agentic,
+    and enterprise workloads to choose MySQL without waiting for a central entity to build and release
+    new features and functionality.
+  website: https://villagesql.com/
+  followers: 842
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEwxggOupyjIw/company-logo_200_200/B56ZwsGxm5KcAI-/0/1770266499997/villagesql_logo?e=2147483647&v=beta&t=fL5JJBFW1OgbD6FBht9JnhBeqbhtoCRP4kRgkK0icms
+  owner: org:villagesql
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/katcosgrove
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/villagesql
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

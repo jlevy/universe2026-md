@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/andrewnorris
+  platform: x
+  handle: andrewnorris
+  url: https://x.com/andrewnorris
+  display_name: Andrew Norris
+  bio: Product @Dynatrace, Co-Founder of @DevCycleHQ - Building the most advanced feature flagging platform,
+    integrated with Dynatrace best-in-class observability
+  location: Toronto, Ontario
+  website: http://devcycle.com/
+  followers: 576
+  following: 1127
+  posts_count: 2656
+  verified: true
+  avatar_url: https://pbs.twimg.com/profile_images/1631706436391534635/mwykLPUi_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/716483/1768704076
+  created_at: '2007-01-27T22:42:39Z'
+  owner: person:andrew-norris
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1791921239556001f2QR
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/andrewnorris
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

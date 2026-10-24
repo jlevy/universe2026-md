@@ -1,0 +1,163 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jacob-depriest
+  person: person:jacob-depriest
+  brief_bio:
+    text: Jacob DePriest is CISO and CIO at 1Password and was previously VP and Deputy Chief Security
+      Officer at GitHub. DePriest spoke at GitHub Universe 2023 about how to deploy and manage an application
+      security program effectively.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - x_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 5fed86a8cc0df3f036d8e418257c9a5e84db48c820c7381d514a16fefb50e27d
+    stale: false
+  expertise:
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2827l
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2827l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/sec2827l
+  interests:
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695148885819001IFw4
+      ref: session:2023/sec2827l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695148885819001IFw4
+      ref: session:2023/sec2827l
+  - label: Threat Modeling
+    target: term:topic-2023/threat-modeling
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695148885819001IFw4
+      ref: session:2023/sec2827l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695148885819001IFw4
+      ref: session:2023/sec2827l
+  publications:
+  - title: '''Levelling up cybersecurity is a team effort,'' says Jacob DePriest of GitHub'
+    venue: Computing.co.uk
+    date: May 9, 2024
+    description: But security starts with developers, and AI isn’t going to replace them
+    evidence:
+      url: https://www.linkedin.com/in/jacobdepriest
+      observed_at: '2026-10-24T08:45:04Z'
+  - title: AI, the Software Supply Chain, and Other (Not So) Puzzling Pieces
+    venue: RSA Conference 2024
+    date: May 6, 2024
+    description: As attacks against the software supply chain become more advanced, we must evolve along
+      with them. With the addition of artificial intelligence integrations into the developer toolkit,
+      the old view of supply chain security as just one tool or standard will no longer suffice. This
+      session will examine how AI, with other methods and systems, is magnifying our ability to secure
+      the supply chain.
+    evidence:
+      url: https://www.linkedin.com/in/jacobdepriest
+      observed_at: '2026-10-24T08:45:04Z'
+  - title: 'GitHub Deputy CSO: AI Steps Up Security Game in Software Development'
+    venue: Infosecurity Magazine
+    date: March 13, 2024
+    description: “Open source is the backbone to everything we do, and what most companies do"
+    evidence:
+      url: https://www.linkedin.com/in/jacobdepriest
+      observed_at: '2026-10-24T08:45:04Z'
+  - title: How GitHub uses GitHub to secure GitHub
+    venue: GitHub Universe 2022
+    date: November 9, 2022
+    description: One of the best parts about working at GitHub is using GitHub to build GitHub—and not
+      only for software development. GitHub is central to how the GitHub Security team drives and delivers
+      secure operations, infrastructure, and products. In this session, Greg Ose will walk through how
+      GitHub uses the platform to enable security workflows that bring the expertise and processes GitHub
+      needs to manage security risk where GitHub engineers and partners are across the business work.
+    evidence:
+      url: https://www.linkedin.com/in/jacobdepriest
+      observed_at: '2026-10-24T08:45:04Z'
+  - title: Open Source, DevOps, and Telework at NSA
+    venue: All Things Open Conference, 2020
+    date: October 19, 2020
+    description: The National Security Agency (NSA) is a highly technical agency employing a large number
+      of software developers, engineers, and mathematicians. We have a rich history of contributing back
+      to the open source software (OSS) community through projects like SELinux, NiFI, and Ghidra. Our
+      journey to enable our developers to contribute to and release OSS is closely tied with how we support
+      our developers as a whole and more recently how we can enable them to work from home. If you’re
+      curious how NSA handles releasing OSS, what it takes to support a large technical workforce dealing
+      with sensitive information, or how an intelligence agency thinks about telework, then this talk
+      is for you!
+    evidence:
+      url: https://www.linkedin.com/in/jacobdepriest
+      observed_at: '2026-10-24T08:45:04Z'
+  - title: 'What we code in the shadows: Open source within the NSA and the federal government'
+    venue: O'Reilly OSCON 2018
+    date: July 18, 2018
+    description: The National Security Agency (NSA) uses a lot of open source software and has made successful
+      contributions to projects like SELinux, REDHAWK, and NiFi. However, it’s traditionally been a challenge
+      for developers to navigate the processes, policy, and mechanics of contributing back to the community.
+      While NSA developers can’t always talk about how they use the software, there is a growing belief
+      that they can build more of it in the open.Jacob DePriest explains how a group of open source evangelists
+      are trying to strengthen the open source software ecosystem at the NSA and make it a normal part
+      of developers’ jobs. Along the way, Jacob explores some of the key challenges of shifting a large
+      organization in the open source space, including cultural resistance, bureaucratic momentum, and
+      communication, as well as some that are specific to government intelligence agencies, such as limited
+      copyright protection, security sensitivity for public communication, and prepublication review.
+    evidence:
+      url: https://www.linkedin.com/in/jacobdepriest
+      observed_at: '2026-10-24T08:45:04Z'
+  talks:
+  - session:2023/sec2827l
+  gaps:
+  - github_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465755691001tSTi
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

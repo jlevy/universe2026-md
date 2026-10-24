@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mitchnaylor
+  platform: linkedin
+  handle: in/mitchnaylor
+  url: https://www.linkedin.com/in/mitchnaylor
+  display_name: Mitch Naylor
+  bio: Mitch Naylor is a machine learning and AI scientist with extensive experience in natural…
+  location: Chattanooga
+  followers: 1207
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQFPi4BTuZaPcg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731036125709?e=2147483647&v=beta&t=sTvxVVoljsXZZNrtIR59ZWd10X2up0Oq5XISADF_dHc
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQE4lD6tbK1qEQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1711720787985?e=2147483647&v=beta&t=pPWnLBFZ0UwXMz2d9ioVQgv6WHGWl0e4BKK6GfgW25A
+  owner: person:mitch-naylor
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715186103498001jRre
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mitchnaylor
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

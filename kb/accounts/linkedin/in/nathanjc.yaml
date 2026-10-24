@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/nathanjc
+  platform: linkedin
+  handle: in/nathanjc
+  url: https://www.linkedin.com/in/nathanjc
+  display_name: Dr. Nathan Chandler
+  bio: A continually recognised top quadrant performer who has led through major transformations…
+  location: Sydney
+  followers: 1561
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQE1RDA3VL3SQQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1683520785339?e=2147483647&v=beta&t=qzX6UPGucOC9FZUGoBJyuDa9HWstnQMCnsA2_m3BXJU
+  owner: person:nathan-chandler
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1746095453892001yuOw
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/nathanjc
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

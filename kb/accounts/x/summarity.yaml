@@ -1,0 +1,53 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/summarity
+  platform: x
+  handle: summarity
+  url: https://x.com/summarity
+  display_name: Pierre
+  bio: Product at @github. Speaker, hacker, open-source dev (https://t.co/1QTXaGLOjO). Opinions are mine.
+    Reach me at [email removed]
+  location: Deutschland
+  followers: 546
+  following: 48
+  posts_count: 73
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1353455572612489219/xsQptBt9_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/334229743/1611676712
+  created_at: '2011-07-12T19:34:07Z'
+  owner: person:pierre-tempel
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047674656001ZiRw
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047674656001ZiRw
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1695047674656001ZiRw
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: turbo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/summarity
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

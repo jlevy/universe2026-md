@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/tommaso-moro
+  platform: linkedin
+  handle: in/tommaso-moro
+  url: https://www.linkedin.com/in/tommaso-moro
+  display_name: Tommaso Moro
+  location: London Area
+  followers: 1348
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQEituSwKmUs6Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718257076623?e=2147483647&v=beta&t=CXlTXb73GhcfigoDGVaeGpMm6kWJ1XKwOflGClJCX04
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEd1y5p_YbfvA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1719349124055?e=2147483647&v=beta&t=wVPVfvhrew6oNV6nV9e1E0IBpAsyzGY08jUBn7upVw8
+  owner: person:tommaso-moro
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1750710672424001iy51
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/tommaso-moro
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

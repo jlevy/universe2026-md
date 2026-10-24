@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/ankit-kumar-honey
+  platform: linkedin
+  handle: in/ankit-kumar-honey
+  url: https://www.linkedin.com/in/ankit-kumar-honey
+  display_name: Ankit Kumar Honey
+  bio: As a Senior Engineering Manager at GitHub, with over one year in the role and more than…
+  location: Lake Stevens
+  followers: 1630
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQEx_kN9CtaweA/profile-displayphoto-scale_200_200/B56Z.AofJ7G8Ag-/0/1784569526625?e=2147483647&v=beta&t=dxMZG1B6XV2l6VEXxS9kX9ztt5_ZwVibFV5V4CKaZDk
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQGf-GDJM48NtQ/profile-displaybackgroundimage-shrink_200_800/B56Z1PfBoIJYAU-/0/1775155026907?e=2147483647&v=beta&t=Rha_ly43Cw6NOfColp_270R3t7vcemVQHV1mVXRV_7E
+  owner: person:ankit-kumar-honey
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699461601870001DY6x
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: honeyankit
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/ankit-kumar-honey
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

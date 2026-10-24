@@ -1,0 +1,13 @@
+softschema:
+  contract: paraverse.conference:Venue/v1
+  schema: ../_schemas/venue.schema.yaml
+  envelope: venue
+  status: permissive
+venue:
+  id: venue:firehouse
+  name: Firehouse
+  kind: building
+  parent: venue:fort-mason-center
+  sources:
+  - system: curation
+    snapshot: curation/venues.yaml

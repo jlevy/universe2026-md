@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:sanjeevane
+  login: sanjeevane
+  kind: user
+  url: https://github.com/sanjeevane
+  name: Sanjeev Murthy
+  followers: 4
+  public_repositories: 4
+  created_at: '2017-05-03T19:02:38Z'
+  contributions_last_year:
+    total: 8
+    commits: 3
+    pull_requests: 1
+    issues: 0
+    reviews: 0
+  starred_repositories: 21
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  - 2023
+  - 2022
+  - 2021
+  - 2020
+  - 2019
+  - 2018
+  - 2017
+  github_star: false
+  campus_expert: false
+  github_employee: false
+  gists: 1
+  entity: person:sanjeev-murthy
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: sanjeevane
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

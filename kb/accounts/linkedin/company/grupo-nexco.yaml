@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/grupo-nexco
+  platform: linkedin
+  handle: company/grupo-nexco
+  url: https://www.linkedin.com/company/grupo-nexco
+  display_name: Grupo Nex
+  bio: Somos un equipo de emprendedores atrevidos que suma capacidades para el desarrollo de negocios,
+    software y experiencia de usuario bajo modelos de alianzas a riesgo donde la innovación es la premisa.
+    Creemos en la democratización de la tecnología como una herramienta apalancadora de transformación
+    para los negocios. Nuestro equipo planea, estructura y desarrolla oportunidades de negocio con una
+    visión de digitalización para encontrar los escenarios de crecimiento exponencial.
+  website: https://gruponex.co/
+  followers: 722
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E0BAQHzHjPRXcwp4Q/company-logo_200_200/company-logo_200_200/0/1635284202280?e=2147483647&v=beta&t=AEzB7qsKBdTwnimKpLGvwtsVj9ONXvG-eWDG9YHlyJc
+  owner: org:grupo-nex
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/javiermduran
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/grupo-nexco
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

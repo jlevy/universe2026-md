@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:crates/steg86
+  ecosystem: crates
+  name: steg86
+  url: https://crates.io/crates/steg86
+  description: A tool for hiding messages in x86(_64) binaries
+  latest_version: 0.2.1
+  license: non-standard
+  repository_url: https://github.com/woodruffw/steg86
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: woodruffw/steg86
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

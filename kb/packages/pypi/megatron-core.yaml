@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:pypi/megatron-core
+  ecosystem: pypi
+  name: megatron-core
+  url: https://pypi.org/project/megatron-core/
+  description: Megatron Core - a library for efficient and scalable training of transformer based models
+  latest_version: 0.19.2
+  license: Apache 2.0
+  repository_url: https://github.com/NVIDIA/Megatron-LM
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: NVIDIA/Megatron-LM
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

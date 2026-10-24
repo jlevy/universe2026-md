@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/brittany-istenes-91b902152
+  platform: linkedin
+  handle: in/brittany-istenes-91b902152
+  url: https://www.linkedin.com/in/brittany-istenes-91b902152
+  display_name: Brittany Istenes
+  bio: Dynamic technology leader with 15+ years of experience driving innovation, compliance…
+  location: Lakewood
+  followers: 1639
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHM8SQ7fhC9GQ/profile-displayphoto-scale_200_200/B56Z_suPkJGsAc-/0/1786382976083?e=2147483647&v=beta&t=hmuZAcUajXRj9qp-MPqVZMwIc5OEcY8e8N3Nl7dMCGo
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQEI1KH849kt2Q/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1690314140559?e=2147483647&v=beta&t=RUwOD22jt-hxXuHTsQHE7gujhf31VqUBq9cRDyrvED8
+  owner: person:brittany-istenes
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685978733762001LxQA
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: BrittanyIstenes
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/brittany-istenes-91b902152
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

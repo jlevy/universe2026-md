@@ -1,0 +1,447 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:bassem-dghaidi
+  person: person:bassem-dghaidi
+  brief_bio:
+    text: Bassem Dghaidi is a Senior Software Engineer at GitHub focused on building the next generation
+      of GitHub Actions. Dghaidi spoke at GitHub Universe 2023 about pull requests with GitHub Copilot
+      and at GitHub Universe 2025 about how GitHub engineers use Copilot to ship features.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: 1423dcf68bcc6b62146374298e9b1178a60999dbcc780401309577d05b563c48
+    stale: false
+  headline: Senior Software Engineer at GitHub
+  current_roles:
+  - Senior Software Engineer at GitHub
+  expertise:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: AI (Agentic AI, Generative AI, Fine-tuned modeling, Models)
+    target: term:topic-2025/ai-agentic-ai-generative-ai-fine-tuned-modeling-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  - label: Testing and related practices
+    target: term:topic-2025/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/bld1224b
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:bassem-dghaidi
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2023/ai2856d
+  interests:
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  - label: Git and code management techniques
+    target: term:topic-2025/git-and-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  - label: IDE Integration
+    target: term:topic-2025/ide-integration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  - label: Pair programming
+    target: term:topic-2025/pair-programming
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745955579054001q1vr
+      ref: session:2025/bld1224b
+  experience:
+  - organization: GitHub
+    organization_ref: org:github
+    title: GitHub
+    current: true
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  - organization: Mobiquity Inc - Europe
+    title: Senior Solution Architect
+    start: Jan 2019
+    end: Apr 2020
+    current: false
+    description: |-
+      + Managed a team of software engineers and led the design and successful implementation of an integration layer instrumental for the fastest launch of a branchless digital bank in the gulf (12 months from inception to production) – ilabank.com
+
+
+      + Contributed to the design and implementation of a microservices architecture capable of handling the rapid growth in our customer’s user base and make the development / release cycles more regular and frequent
+
+
+      + Designed a serverless orchestration layer used to manage the customers’ on-boarding and eKYC processes
+
+
+      + Defined and helped enforce design, documentation and coding standards across Mobiquity and our clients’ organizations
+
+
+      + Led the successful integration with a number of business critical systems (CRM, core banking system, cards management system, compliance and screening systems, to name a few)
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  - organization: SE Factory
+    title: Technical Director
+    start: Feb 2016
+    end: Dec 2018
+    current: false
+    description: |-
+      SE Factory is an intensive full-stack software engineering bootcamp aimed at bridging the gap between the Lebanese market demand for top talent and the supply of unskilled software developers. SE Factory achieved 91% employment success rate over 7 cohorts, was featured in Forbes, received numerous grants and recognized by the British Ambassador as one of the leading new social enterprises in the country.
+
+
+      + Designed, implemented and taught the flagship Full Stack Web Development curriculum (lectures, assignments and projects development) with the focus on modern software development standards and methodologies as well as the standardisation of the curriculum development process
+
+
+      + Developed the instructor and student recruitment process including the screening procedures, qualification tests, soft and technical skill quantification framework, the backbone of our selection process
+
+
+      + Built the student progress quantification and tracking framework as well as the design of the demo-day structure
+
+
+      + Contributed to the direction and vision of SE Factory and the development of its revenue models
+
+
+      + Led the outreach and business development with local and regional companies interested in hiring from our pool and consulted on the fulfilment of their recruitment needs
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  - organization: 3M+1
+    title: Senior System Engineer
+    start: Aug 2013
+    end: Feb 2016
+    current: false
+    description: |-
+      3M+1 is a tech services & product development firm, specializing in complex, mission-critical ‘system of systems’ environments. 3M+1 managed to undertake multiple greenfield and brownfield projects in Saudi Arabia, Lebanon, Turkey and USA.
+
+
+      + Architected an Advance Traffic Management System (ATMS) model for one of the world’s most complex surface and tunnel metropolitan transportation operations in the USA
+
+
+      + Led the implementation of the Terminal Operating System (TOS), the Reefer Asset Management System (RAMS), the Terminal Automation Package (AP), Oracle E-Business Suite (EBS), Time Attendance & Access Control System (ACS) as well as the integration efforts with 3rd party systems/entities: Port Community System (PCS), and Shipping Lines, end to end, as well as contributing to the design and build of a 3-tier on premise datacenter, at King Abdullah Port (KAP) located in the King Abdullah Economic City (KAEC)
+
+
+      + Contributed to the design & architecture of the Terminal Integrated Middleware and Analytics (TIMA) platform; 3M+1’s flagship product, providing terminal operators with cross-system, cross-terminal, and cross-time data analytics visibility and real-time operational KPIs through a SaaS, multi-tenant application offering
+
+
+      + Contributed to the design of statistical reports providing real-time critical business insight to stakeholders, assisting them in the identification of bottlenecks, the reduction of unnecessary dwell times and operational inefficiencies
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  - organization: Cleartag
+    title: Cleartag
+    current: true
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  - organization: Center for Civic Engagement and Community Service - AUB
+    title: Web Developer – I.T Consultant
+    start: Feb 2009
+    end: Feb 2010
+    current: false
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  education:
+  - school: American University of Beirut
+    degree: BSc
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  credentials:
+  - kind: certification
+    title: Machine Learning
+    issuer: Coursera
+    date: Oct 2017
+    url: https://www.coursera.org/account/accomplishments/verify/XX8PSKD4Q6CR
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  spoken_languages:
+  - English
+  - French
+  - Arabic
+  activities:
+  - kind: organization
+    title: SE Factory
+    detail: Volunteering experience, network and technical advice to support SE Factory’s mission and
+      contribute to the program’s growth · Feb 2021 · Present
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: organization
+    title: MENA Devs
+    detail: MENA Devs ( http://menadevs.com ) was first launched in January, 2015 with the purpose of
+      connecting Software Developers, Designers and Computer Enthusiasts in the MENA region. What started
+      as a Slack group has evolved to become a vibrant community of 250+ members engaging in daily discussions
+      in software, and web development, tools of the trade, work methodologies and workflows, and technical
+      management styles (to name a few of the popular topics). · Jan 2016 · Present
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  - kind: organization
+    title: LambaLabs Beirut Hackerspace
+    detail: Contributed to the establishment of Beirut’s first hackerspace striving towards the implementation
+      of an organizational structure leading to a more efficient management of projects and the effective
+      fulfillment of our mission statement. As a board member I’ve contributed to the development of a
+      sustainable business model that guarantees the continuous operation of LLBH in addition to creating
+      multiple organized and autonomous working groups fulfilling multiple objectives. · Sep 2012 · Sep
+      2013
+    evidence:
+      url: https://www.linkedin.com/in/bassemdghaidy
+      observed_at: '2026-10-24T08:41:57Z'
+  recent_writing:
+  - title: A simple guide to understanding the Model Context Protocol
+    url: https://www.linkedin.com/pulse/simple-guide-understanding-model-context-protocol-bassem-dghaidi-mleue
+    published: '2025-04-14T00:00:00.000Z'
+    channel: linkedin
+    summary: The Model Context Protocol (MCP) enables seamless communication between AI applications (clients)
+      and external data…
+  - title: 'Rethinking Technical Meetings: Beyond Slide Decks'
+    url: https://www.linkedin.com/pulse/rethinking-technical-meetings-beyond-slide-decks-bassem-dghaidi-1qwye
+    published: '2024-03-08T00:00:00.000Z'
+    channel: linkedin
+    summary: Technical meetings that are driven by slide decks are bound to be complete disasters, and
+      the reasons for that are…
+  - title: I spent 300$ on my first NFT and I regret it
+    url: https://www.linkedin.com/pulse/i-spent-300-my-first-nft-regret-bassem-dghaidi
+    published: '2022-01-03T00:00:00.000Z'
+    channel: linkedin
+    summary: Let's talk about NFTs 😀 I’m not new to the whole cryptocurrencies / blockchain space. In
+      fact, I bought and sold…
+  talks:
+  - session:2023/ai2856d
+  - session:2025/bld1224b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686145348146001C58P
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686145348146001C58P
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:zackkoppert.com
+  url: https://www.zackkoppert.com
+  kind: personal
+  title: Zack Koppert
+  description: Personal blog of Zack Koppert - Senior Software Engineering Manager at GitHub’s Open Source
+    Programs Office. Writing about InnerSource, open source, DevOps, and developer tooling.
+  owner: person:zack-koppert
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/zack-koppert
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: zkoppert
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://zackkoppert.com/
+    record_id: https://www.zackkoppert.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

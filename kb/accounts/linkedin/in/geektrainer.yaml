@@ -1,0 +1,54 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/geektrainer
+  platform: linkedin
+  handle: in/geektrainer
+  url: https://www.linkedin.com/in/geektrainer
+  display_name: Christopher Harrison
+  bio: I'm a developer with a web and data focus. Longtime trainer with a passion for learning…
+  location: Seattle
+  followers: 1557
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C5603AQFbCjEuDIsCyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1578910233318?e=2147483647&v=beta&t=Zu8u4XsPqzgOb2tgOrHTWihGDU5HngQ4o5_Q7kRC92A
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:christopher-harrison
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684527155555001kvYJ
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: GeekTrainer
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/geektrainer
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

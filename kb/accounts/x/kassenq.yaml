@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/kassenq
+  platform: x
+  handle: kassenq
+  url: https://x.com/kassenq
+  display_name: Kassen Qian
+  bio: 🌱🧚🏼 CO native
+  location: 📍NYC // Boulder
+  website: http://kassenq.com/
+  followers: 1248
+  following: 1196
+  posts_count: 1126
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1447546582019289089/6FTxfXBw_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1149018375646875648/1633696727
+  created_at: '2019-07-10T18:11:43Z'
+  owner: person:kassen-qian
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1697575203227001EdFI
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/kassenq
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

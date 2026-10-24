@@ -1,0 +1,100 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:karen-li
+  person: person:karen-li
+  brief_bio:
+    text: Karen Li is a software engineer on GitHub's npm team who came to engineering from teaching and
+      brings that mindset to explaining complex systems. Karen Li speaks at GitHub Universe 2026 about
+      what happens behind the scenes when you run npm install.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: 4a8b18078da33bd5b8383305cca8e3dbac9760af5358f174c372ef523409f677
+    stale: false
+  headline: Software Engineer III at GitHub
+  location: USA
+  current_roles:
+  - Software Engineer III at GitHub
+  expertise:
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1476b
+  technologies:
+  - label: npm
+    target: software:npm-registry
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: npm
+      ref: person:karen-li
+  interests:
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777602763278001LSdB
+      ref: session:tru1476b
+  - label: Supply Chain Security
+    target: term:github-product/supply-chain-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777602763278001LSdB
+      ref: session:tru1476b
+  - label: npm-cli
+    basis: github_repositories
+    confidence: low
+    weight: 0.67
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/npm/documentation
+      ref: repo:npm/documentation
+  open_source:
+  - repository: repo:karenjli/karenjli
+    relation: owner
+    stars: 2
+  - repository: repo:npm/documentation
+    relation: contributor
+    stars: 723
+    primary_language: MDX
+  - repository: repo:npm/api-documentation
+    relation: contributor
+    stars: 4
+    primary_language: Handlebars
+  talks:
+  - session:tru1476b
+  gaps:
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699295376402001GKxx
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: karenjli
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

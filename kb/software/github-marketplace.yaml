@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:github-marketplace
+  name: GitHub Marketplace
+  aliases:
+  - GitHub Marketplace
+  kind: github_product
+  vendor: org:github
+  product_term: term:github-product/marketplace
+  mentioned_in:
+  - person:dimitrios-philliou
+  - session:2024/ai1944w
+  - session:2024/ai2035d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/njennyhwang
+  platform: linkedin
+  handle: in/njennyhwang
+  url: https://www.linkedin.com/in/njennyhwang
+  display_name: N. Jenny Hwang
+  bio: I’m a Design researcher, strategist, and foresight practitioner looking to foster…
+  location: San Francisco
+  followers: 1824
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQHQqEhq6D75CA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731092071882?e=2147483647&v=beta&t=LgPKS9c1R0Ao4PTpD-zmZzSJ6nIjsD2z4P4IpKlAxvQ
+  banner_url: https://static.licdn.com/aero-v1/sc/h/5q92mjc5c51bjlwaj3rs9aa82
+  owner: person:jenny-hwang
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715363935252001iNZi
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715363935252001iNZi
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/njennyhwang
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

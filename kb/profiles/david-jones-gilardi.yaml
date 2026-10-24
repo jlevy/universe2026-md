@@ -1,0 +1,164 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:david-jones-gilardi
+  person: person:david-jones-gilardi
+  brief_bio:
+    text: The GitHub Universe 2024 listing describes David Jones-Gilardi as Developer Relations Engineer
+      at DataStax.
+    cites:
+    - listed_role
+    basis: llm_synthesis
+    written_by: paraverse deterministic listing-role correction
+    written_at: '2026-10-24T21:45:25+00:00'
+    input_sha256: 7b8debf59b7fb5789f45280ad0e6d9c49d0fc2ab228025e2e851d27ab840ad32
+    stale: false
+  headline: IBM
+  current_roles:
+  - IBM
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1872d
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1872d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1872d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1872d
+  technologies:
+  - label: GitHub Codespaces
+    target: software:codespaces
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Codespaces
+      ref: session:2024/ai1872d
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1872d
+  - label: JavaScript
+    target: software:javascript
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: JavaScript
+      ref: person:david-jones-gilardi
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:david-jones-gilardi
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719866918620001Jgw7
+      ref: session:2024/ai1872d
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719866918620001Jgw7
+      ref: session:2024/ai1872d
+  - label: Open source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719866918620001Jgw7
+      ref: session:2024/ai1872d
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719866918620001Jgw7
+      ref: session:2024/ai1872d
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1719866918620001Jgw7
+      ref: session:2024/ai1872d
+  credentials:
+  - kind: certification
+    title: Apache Cassandra 3 Developer Associate Certification
+    issuer: DataStax
+    date: Dec 2020
+    url: https://certification.mettl.com/datastax/applicant/verify-certification
+    evidence:
+      url: https://www.linkedin.com/in/david-gilardi
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: certification
+    title: Create a Language Understanding solution with Azure Cognitive Services
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/david-gilardi
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: certification
+    title: Oracle 8 DBA
+    issuer: Oracle
+    evidence:
+      url: https://www.linkedin.com/in/david-gilardi
+      observed_at: '2026-10-24T08:42:02Z'
+  - kind: certification
+    title: Process and Translate Speech with Azure Cognitive Speech Services
+    issuer: Microsoft
+    evidence:
+      url: https://www.linkedin.com/in/david-gilardi
+      observed_at: '2026-10-24T08:42:02Z'
+  talks:
+  - session:2024/ai1872d
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719707352218001Vt6F
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

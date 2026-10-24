@@ -1,0 +1,155 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:christian-oestreich
+  person: person:christian-oestreich
+  brief_bio:
+    text: Christian Oestreich was VP of Platform Engineering at WEX, with experience leading CI/CD, infrastructure
+      as code and cloud-native platform transformations, when speaking at GitHub Universe 2025 about migrating
+      a large enterprise to Enterprise Managed Users.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 9e037651539b9d9c7c9a4d1580513792cd57b5042bceed7c5935bd25984b31d5
+    stale: false
+  expertise:
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1213b
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1213b
+  technologies:
+  - label: Amazon Web Services
+    target: software:aws
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: AWS
+      ref: person:christian-oestreich
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:christian-oestreich
+  interests:
+  - label: GitHub Enterprise Cloud
+    target: term:github-product-2025/github-enterprise-cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745934308437001w4qk
+      ref: session:2025/aut1213b
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745934308437001w4qk
+      ref: session:2025/aut1213b
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1745934308437001w4qk
+      ref: session:2025/aut1213b
+  education:
+  - school: MIT Professional Education
+    evidence:
+      url: https://www.linkedin.com/in/christianoestreich
+      observed_at: '2026-10-24T08:42:30Z'
+  credentials:
+  - kind: certification
+    title: Applied Generative AI for Digital Transformation
+    issuer: MIT Professional Education
+    date: Dec 2025
+    url: https://www.credential.net/f65f462c-1bd5-4457-9209-a8cb8b226c8f
+    evidence:
+      url: https://www.linkedin.com/in/christianoestreich
+      observed_at: '2026-10-24T08:42:30Z'
+  - kind: certification
+    title: 'Machine Learning: From Data to Decisions'
+    issuer: MIT Professional Education
+    date: Sep 2025
+    url: https://www.credential.net/6b551b04-3116-45a7-bb0b-790bfe0ef976
+    evidence:
+      url: https://www.linkedin.com/in/christianoestreich
+      observed_at: '2026-10-24T08:42:30Z'
+  - kind: certification
+    title: 'Management of Technology: Strategy & Portfolio Analysis'
+    issuer: MIT Professional Education
+    date: Aug 2025
+    url: https://www.credential.net/cb0318e4-45a5-43a6-babd-ecf645754a4f
+    evidence:
+      url: https://www.linkedin.com/in/christianoestreich
+      observed_at: '2026-10-24T08:42:30Z'
+  - kind: certification
+    title: 'Management of Technology: Roadmapping & Development'
+    issuer: MIT Professional Education
+    date: May 2025
+    url: https://www.credential.net/8d9a6eb0-6423-4f17-b6b1-28e3661f829b
+    evidence:
+      url: https://www.linkedin.com/in/christianoestreich
+      observed_at: '2026-10-24T08:42:30Z'
+  - kind: certification
+    title: Leadership & Innovation
+    issuer: MIT Professional Education
+    date: Mar 2025
+    url: https://www.credential.net/cdaa1037-0397-495e-86ac-a75e21e2333f
+    evidence:
+      url: https://www.linkedin.com/in/christianoestreich
+      observed_at: '2026-10-24T08:42:30Z'
+  activities:
+  - kind: project
+    title: Micronaut
+    detail: I have been actively contributing to the core project since it was open sourced in 2018. ·
+      May 2018
+    evidence:
+      url: https://www.linkedin.com/in/christianoestreich
+      observed_at: '2026-10-24T08:42:30Z'
+  - kind: project
+    title: Grails
+    detail: Contribute to core along with authoring several plugins for the ecosystem · Apr 2013
+    evidence:
+      url: https://www.linkedin.com/in/christianoestreich
+      observed_at: '2026-10-24T08:42:30Z'
+  talks:
+  - session:2025/aut1213b
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1725999459888001PA44
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

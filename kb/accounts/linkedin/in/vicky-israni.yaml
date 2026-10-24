@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/vicky-israni
+  platform: linkedin
+  handle: in/vicky-israni
+  url: https://www.linkedin.com/in/vicky-israni
+  display_name: Vicky Israni
+  bio: I help organizations reimagine how they build and secure software. At GitHub, I work with…
+  location: Pune District
+  followers: 2475
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQGQqfksExKzMw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1705385521875?e=2147483647&v=beta&t=-LCh9yXecWvNXHomX1KyBhve5apQaLXeckyqZ380t4I
+  owner: person:vicky-israni
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744351551269001je0O
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1744351551269001je0O
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/vicky-israni
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

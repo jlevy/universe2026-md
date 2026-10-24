@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:beagandica.com
+  url: https://www.beagandica.com
+  kind: personal
+  title: Bea Mendez Gandica | Product leader, founder & speaker
+  description: Bea Mendez Gandica, Senior Program Manager at Microsoft and founder of Nuevo Foundation.
+    Building cloud platforms and open learning resources that widen access.
+  owner: person:bea-mendez-gandica
+  link_basis:
+  - github_profile
+  fetch_status: ok
+  http_status: 200
+  linked_accounts:
+  - acct:linkedin/in/beagandica
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: beagandica
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: https://beagandica.com/
+    record_id: https://www.beagandica.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

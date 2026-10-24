@@ -1,0 +1,396 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:rohan-varma
+  person: person:rohan-varma
+  brief_bio:
+    text: Rohan Varma is Product Lead, Enterprise Agents at OpenAI and works on Codex, after earlier roles
+      at Cursor and Palantir. Varma speaks at GitHub Universe 2026 in a session on what's next for AI-assisted
+      development as seen from the AI labs.
+    cites:
+    - listed_role
+    - current_affiliations
+    - x_bio
+    - past_affiliations
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:24:53Z'
+    input_sha256: d661e8fc80000d0efc45c744f4cd0b7e4cc05b7deb63b36ea2cb52a28a3b1f0f
+    stale: false
+  headline: Product Lead, Enterprise Agents at OpenAI
+  location: Washington D.C.
+  current_roles:
+  - Product Lead, Enterprise Agents at OpenAI
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+  technologies:
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+    - ref: session:bld2019a
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:bld1134m
+  - label: GitHub Secret Protection
+    target: software:github-secret-protection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1134m
+    - ref: session:bld2019a
+  interests:
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: GitHub Secret Protection
+    target: term:github-product/github-secret-protection
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: Supply Chain Security
+    target: term:github-product/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1791124397678001jrYp
+      ref: session:bld2019a
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  - label: 'AI: Models'
+    target: term:topic/ai-models
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776470103196001fJPe
+      ref: session:bld1134m
+  credentials:
+  - kind: honor
+    title: Policy Debate - 5th Place in the Nation
+    issuer: National Forensics League
+    date: '2013-06-01T00:00:00.000Z'
+    description: Was placed 5th place in the nation out of thousands of teams from around the nation.
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: honor
+    title: Presidents Volunteer Service Award
+    issuer: President Barrack Obama
+    date: '2013-05-01T00:00:00.000Z'
+    description: Completed over 100 hours of volunteer work over the course of a calender year.
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: honor
+    title: Policy Debate - 2nd Place in California State Championships
+    issuer: National Forensics League
+    date: '2013-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: honor
+    title: Policy Debate - Qualified to Tournament of Champions
+    issuer: '-'
+    date: '2013-04-01T00:00:00.000Z'
+    description: Was one of the top 76 teams in the nation to qualify to this prestigious tournaments.
+      One of the my proudest accomplishments as a policy debater in high school.
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: honor
+    title: Policy Debate - 2nd Place in California State Championships
+    issuer: National Forensics League
+    date: '2012-04-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  publications:
+  - title: The Bogart Effect
+    venue: The Oxford Journal
+    date: August 15, 2012
+    description: A paper focusing on the way that humans recognize the direction that other people are
+      gazing in. My main contribution to the paper was designing and running and experiment that was run
+      over several subjects to determine the main factor that the body used to determine gaze direction.
+      My experiment determined that the contrast between the iris and the schlera was the main determinant
+      that humans use to determine gaze direction.
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  activities:
+  - kind: volunteering
+    title: Volunteer Teacher
+    detail: TEALSK12 · Education · Jun 2017 · - May 2018 · 1 year · Jun 2017
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: Impact CMU
+    detail: ImpactCMU is an end of the semester showcase of social good projects that students are working
+      on, either through student organizations or independently. This event is the first of its kind and
+      will not only showcase all the good happening on campus, but inspire other students to realize that
+      they too can have an impact through the skills they learn at CMU. It is a celebration of Carnegie
+      Mellon students' ability to change the local, national, and international community. · Jan 2016
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: IXEDU
+    detail: IXEDU is a web application that aims to increase collaboration between universities with regards
+      to their Title IX Sexual Assault and Relationship Violence policies and procedures.The tool allows
+      universities to enter their procedures and statistics as well as search other school's policies
+      so that they can learn from it. Students can now also easily access information on their school
+      and other schools instead of having to read through long PDFs.We are currently rolling out to the
+      Pittsburgh high education network of universities and are aiming to partner with Google and the
+      Its On Us campaign to scale nationally. · Jan 2016
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: Dige Eluter
+    detail: '- working with Professor Jon Minden to help improve software for controlling a gel analyzer.-
+      writing c++ code to communicate between a 1995 Windows XP computer and an arduino- modifying original
+      software written 12 years ago- teaching researchers in the lab how about object-oriented concepts
+      as well as C concepts in order for them to be able to modify code-base without me · Feb 2015'
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: Sleeply
+    detail: '- built for CMU''s Tartan Hacks- Django web app- Integrates sleep data from Jawbone Up as
+      well as calendar data from Google Calendar to help users find best times to catch up on sleep and
+      take naps- built a slick UI for a calendar from scratch with pure CSS- machine learning algorithms
+      (k-means clustering) for analyzing user data to find best "deep-sleep" times for planning naps ·
+      Feb 2015'
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: Databaseology
+    detail: '- building a django application for 15-415 Database Applications. It is a wikipedia for database
+      that the students will populate with data · Jan 2015'
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: Question Answering System
+    detail: '- for Natural Language Processing class- working with 4 other CMU students to build a question
+      answering system that utilized natural language processing algorithms- takes in a wikipedia article
+      and returns questions about factoids in the article. It also can answer questions asked about facts
+      in the article- Built in python · Jan 2015'
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: ClipMine Chrome Extension
+    detail: Created a production quality chrome extension. Its purpose is to link users to the clipmine
+      player so that they can watch any youtube video on the web-page they are at in the clipmine interface.
+      It uses web scraping to notify a user when they are on a page with a youtube video and then provides
+      them an interface to open it on clipmine. · Jul 2014
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: Kritikal Stats
+    detail: 'Worked with two other engineers, leading the development of a robust, cross-platform Django
+      web application. Learned a lot about building a user-facing website from scratch and all of the
+      infrastructure associated with it. Developed using the following technologies: Django, Apache servers,
+      AWS EC2, REST API. Currently have had 2000+ sessions and over 300 unique users. · Jul 2014'
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: HACK112
+    detail: Organized and executed a full-fledged hackathon for 15-112 CMU students. Over 150 students
+      participated with 30+ mentor TAs. We had 30 project teams present at the end with projects ranging
+      from Kinect projects to websites. · Jan 2016
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  - kind: project
+    title: Python - Online Multi-player Asteroids Game
+    detail: '- Designed and programmed an online multiplayer version of the popular computer game, Asteroids-
+      Coded in Python using a client-server model.- Selected as top 24 project in class of 300+ · Sep
+      2013'
+    evidence:
+      url: https://www.linkedin.com/in/rohannvarma
+      observed_at: '2026-10-24T08:15:30Z'
+  recent_writing:
+  - title: "During an enterprise demo today, Composer built the scaffolding for an e-commerce app in 5\
+      \ seconds.\n\nThe entire auditorium couldn’t help but start laughing. \n\nSpeed + frontier intelligence\
+      \ makes composer a daily driver for many users who try it."
+    url: https://twitter.com/24655040/status/1988854744022966747
+    published: '2025-11-13T06:21:36Z'
+    channel: x
+  - title: |-
+      Distribution &gt; Product for commodities (AI notetakers).
+
+      AI coding is far from commoditized - tons of room for continually increasing the ceiling on value. That’s probably why startups have been able to breakthrough past incumbents in coding.
+    url: https://twitter.com/24655040/status/1988489319968063904
+    published: '2025-11-12T06:09:32Z'
+    channel: x
+  - title: |-
+      Cursor now supports GitLab!
+
+      You can start using Bugbot, our AI code-review agent, by visiting the dashboard and installing our GitLab app.
+
+      Let us know what you think! https://t.co/9RVF8IxULl
+    url: https://twitter.com/24655040/status/1986516013501001823
+    published: '2025-11-06T19:28:19Z'
+    channel: x
+  - title: "Cursor 2.0 is a step in this direction. Try it out and let us know what you think! \n\nWe\
+      \ have a ways to go before this future version of engineering is realized, but we’re in the right\
+      \ track. \n\nJoin our team or use our products if you want to help get there!"
+    url: https://twitter.com/24655040/status/1986091024280961042
+    published: '2025-11-05T15:19:34Z'
+    channel: x
+  - title: "Sept 2025: Switching back and forth between your browser and IDE, copying logs, describing\
+      \ bugs, testing functionality \n\nOct 2025:"
+    url: https://twitter.com/24655040/status/1985765520730439746
+    published: '2025-11-04T17:46:08Z'
+    channel: x
+  - title: Sometimes there is no way to debug besides launching 8 debugging coding agents in parallel
+      worktrees in Cursor
+    url: https://twitter.com/24655040/status/1985633253790028122
+    published: '2025-11-04T09:00:33Z'
+    channel: x
+  - title: |-
+      Building software with Cursor 2.0 feels like a fundamentally different job than with any tool before it.
+
+      Let us know what you think!
+    url: https://twitter.com/24655040/status/1983569632327012661
+    published: '2025-10-29T16:20:27Z'
+    channel: x
+  - title: |-
+      86% of developers at a decacorn AI startup preferred Bugbot, testing against 6 other review tools.
+
+      More coming soon on the Bugbot front from Cursor 👀
+    url: https://twitter.com/24655040/status/1981491515915719052
+    published: '2025-10-23T22:42:46Z'
+    channel: x
+  - title: Fun to see OpenAI building Cursor for internet browsing. Their Cmd-K feature is even called
+      Cursor 😬
+    url: https://twitter.com/24655040/status/1980693612947271897
+    published: '2025-10-21T17:52:11Z'
+    channel: x
+  - title: |-
+      We recently release AI agents for making coffee. Dogfood them today at Cafe Cursor in NYC.
+
+      Come meet our team at Lost Draft - we'd love to hear what you're building! https://t.co/osi2eDaDuB
+    url: https://twitter.com/24655040/status/1980668946694172913
+    published: '2025-10-21T16:14:10Z'
+    channel: x
+  talks:
+  - session:bld1134m
+  - session:bld2019a
+  gaps:
+  - website
+  - bio
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1785277817841001XlN9
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: rnvarma
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

@@ -1,0 +1,431 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jeff-doolittle
+  person: person:jeff-doolittle
+  brief_bio:
+    text: Jeff Doolittle is a Distinguished Engineer and Principal Architect at Trimble who works on AI-native
+      workflows and developer experience. Doolittle speaks at GitHub Universe 2026 about using GitHub
+      Copilot to clear governance backlogs without writing code.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T19:25:11Z'
+    input_sha256: 9be1d22474a0c559efa221bca88d908ca702c818c7c1ca50e699f3f7a2f5d283
+    stale: false
+  headline: Distinguished Engineer, Principal Architect at Trimble
+  location: Portland, OR
+  current_roles:
+  - Distinguished Engineer, Principal Architect at Trimble
+  expertise:
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  - label: Tech debt
+    target: term:topic/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  technologies:
+  - label: Dependabot
+    target: software:dependabot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:ldr1032h
+  - label: GitHub Code Security
+    target: software:github-code-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:jeff-doolittle
+  - label: GitHub Discussions
+    target: software:github-discussions
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  - label: GitHub Issues and Projects
+    target: software:github-issues-projects
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1032h
+  interests:
+  - label: Open source
+    target: term:topic/open-source
+    basis: session_facets
+    confidence: high
+    weight: 1.0
+    sources:
+    - session_facets
+    - github_repositories
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+    - url: https://github.com/trimble-oss/contribute
+      ref: repo:trimble-oss/contribute
+  - label: Dependabot
+    target: term:github-product/dependabot
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: Discussions
+    target: term:github-product/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: GitHub Actions
+    target: term:github-product/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: GitHub Code Security
+    target: term:github-product/github-code-security
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: Platform engineering
+    target: term:topic/platform-engineering
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: Projects and Issues
+    target: term:github-product/projects-and-issues
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  - label: Tech debt
+    target: term:topic/tech-debt
+    basis: session_facets
+    confidence: low
+    weight: 0.43
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1775672458091001NJ7h
+      ref: session:ldr1032h
+  open_source:
+  - repository: repo:cysharp/magiconion
+    relation: contributor
+    stars: 4456
+    primary_language: C#
+  - repository: repo:trimble-oss/contribute
+    relation: contributor
+    stars: 12
+    primary_language: HTML
+  - repository: repo:trimble-oss/devguide
+    relation: contributor
+    stars: 11
+    primary_language: HTML
+  - repository: repo:trimble-oss/.github
+    relation: contributor
+    stars: 0
+  - repository: repo:trimble-oss/dba-dash
+    relation: contributor
+    stars: 433
+    primary_language: C#
+  education:
+  - school: Bethel University
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  credentials:
+  - kind: honor
+    title: Received Summa Cum Laude honors for my Master of Arts in Transformational Leadership
+    issuer: Bethel University
+    date: '2010-06-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  publications:
+  - title: REST Wrecks Microservices! PADNUG Presentation
+    venue: PADNUG (Portland Area Dot Net User Group)
+    date: May 5, 2020
+    description: Avoid the Pit of Despair and find out how you can avoid wrecking your systems!
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  - title: Don't Disrupt Agile. Drop it!
+    venue: Cutter Business Technology Journal
+    date: April 29, 2020
+    description: 'Jeff Doolittle helps us to set out on our own path to disruption. He suggests the most
+      drastically disruptive action: don’t do Agile. At the very least, don’t do Agile the way too many
+      others are doing Agile. Doolittle invokes the same line of thinking that started our thought experiment
+      to begin with — what has Agile become? Has it grown in unintended ways? Have we lost what it is
+      supposed to be? What else is there if not Agile? Should we completely abandon Agile? Wouldn’t that
+      be disruptive!'
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  spoken_languages:
+  - English
+  - Spanish
+  activities:
+  - kind: project
+    title: AI-Native Product Delivery Lifecycle
+    detail: Helped lead the design of an AI-native software delivery model that allows autonomous agents
+      to participate across the product development lifecycle without bypassing engineering controls.
+      Built around dependency-aware work decomposition, orchestration workflows, architecture-first implementation
+      constraints, multi-perspective AI critique, acceptance-criteria traceability, and test-backed quality
+      gates, the model increases throughput and safe parallelism while preserving human review, architectural
+      coherence, and delivery quality. The result is a scalable operating approach for helping teams adopt
+      AI effectively, move faster, and maintain high standards at enterprise scale. · Jul 2025
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Architecture Clinics
+    detail: I regularly lead five-day architecture clinics designed to strengthen architectural judgment,
+      design quality, and peer review capability across engineering teams. Combined instruction, collaborative
+      system design, critique, and review practices to help participants move beyond ad hoc solutioning
+      into more rigorous systems thinking. The clinic accelerated learning, created shared design language,
+      and gave teams practical architecture skills that typically take years to develop through experience
+      alone. Achieved significant process acceleration through the use of AI tools and workflows to augment
+      the system design process. · Mar 2025
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: OSS Compliance at Trimble
+    detail: I oversee open source compliance for most of my company's open source offerings. This is a
+      laborious task. To greatly simplify the process, I led the design and implementation of an AI-assisted
+      open and inner source compliance initiative that transformed repository governance from a manual
+      bottleneck into a scalable, self-service operating model. Built a weekly audit and remediation workflow
+      that combined policy automation, reversible enforcement, and AI-guided maintainer support to improve
+      compliance across a large engineering footprint. Within the first four days, compliant repositories
+      increased ten-fold, and all public repositories were made fully compliant in less than three weeks.
+      Lapses result in automatic notification and the ability for maintainers to kick off an agentic workflow
+      to remediate any violations. The effort demonstrated how experienced architectural judgment plus
+      AI can act as a force multiplier for enterprise governance. · Nov 2019
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: AI Workflow Proving Ground
+    detail: Built a production-grade AI workflow proving ground to evaluate emerging multi-model patterns
+      before they became customer-facing risks. Designed a pipeline that turns public research, PDFs,
+      and web sources into finished multi-speaker podcast episodes using human-in-the-loop approvals,
+      transcript validation, fact-checking, audio verification, observability, and cost controls. The
+      result was a living reference architecture for AI workflows that helped teams learn latency, quality,
+      orchestration, and operational discipline in a controlled environment without risking customer outages
+      on production systems. · Apr 2026
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: 360 Construction Site Capture
+    detail: Provided architectural leadership and direct mentorship for a 360 site capture initiative
+      that needed to move from vision to market-deliverable system. Focused on training and advising the
+      lead architect in systems thinking, design review rigor, and the practical discipline required to
+      translate a complex concept into reusable building blocks and viable product capabilities. The effort
+      resulted in both a shipped system and stronger internal architecture leadership capacity. This product
+      greatly enhances the go-to-market offering for my companies portfolio of construction project management
+      capabilities. · Jan 2025
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Contributor to NancyFX Open Source Web Framework
+    detail: Mar 2014
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: project
+    title: Contributor to JasperFx/Marten PostgreSQL Document DB and Event Store for .NET
+    detail: The Marten library provides .NET developers with the ability to use the proven PostgreSQL
+      database engine and its fantastic JSON support as a fully fledged document database. The Marten
+      team believes that a document database has far reaching benefits for developer productivity over
+      relational databases with or without an ORM tool.Marten also provides .NET developers with an ACID-compliant
+      event store with user-defined projections against event streams. · Nov 2015
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  - kind: organization
+    title: IEEE Computer Society
+    detail: 'Host bio: https://www.se-radio.net/team/jeff-doolittle/ · Aug 2019 · Present'
+    evidence:
+      url: https://www.linkedin.com/in/jeffdoolittle
+      observed_at: '2026-10-24T08:11:33Z'
+  recent_writing:
+  - title: Adapting Constraints Without Losing Coherence
+    url: https://jeffdoolittle.com/2026/07/17/adapting-constraints-without-losing-coherence/
+    published: '2026-07-17T13:00:00Z'
+    channel: blog
+  - title: Constraints on Teams and Decision-Making
+    url: https://jeffdoolittle.com/2026/06/03/constraints-on-teams-and-decision-making/
+    published: '2026-06-03T13:00:00Z'
+    channel: blog
+  - title: Constraints as Interfaces
+    url: https://jeffdoolittle.com/2026/05/27/constraints-as-interfaces/
+    published: '2026-05-27T13:00:00Z'
+    channel: blog
+  - title: A Taxonomy of Constraints
+    url: https://jeffdoolittle.com/2026/05/20/a-taxonomy-of-constraints/
+    published: '2026-05-20T15:00:00Z'
+    channel: blog
+  - title: What Makes a Constraint Good?
+    url: https://jeffdoolittle.com/2026/05/12/what-makes-a-constraint-good/
+    published: '2026-05-12T15:00:00Z'
+    channel: blog
+  - title: Leadership, Influence, and AI on The Persuasion Lab
+    url: https://jeffdoolittle.com/2026/05/07/leadership-influence-and-ai-on-the-persuasion-lab/
+    published: '2026-05-07T15:00:00Z'
+    channel: blog
+  - title: Less Managing, More Leading with Motivational Interviewing
+    url: https://jeffdoolittle.com/2026/05/01/less-managing-more-leading-with-motivational-interviewing/
+    published: '2026-05-01T15:00:00Z'
+    channel: blog
+  - title: Techlandia Podcast Appearance
+    url: https://jeffdoolittle.com/2026/04/23/techlandia-podcast-appearance/
+    published: '2026-04-23T21:16:45Z'
+    channel: blog
+  - title: 'The Architect and the AI: Migrating from Jekyll to Astro with GitHub Copilot'
+    url: https://jeffdoolittle.com/2026/04/09/jekyll-to-astro-with-github-copilot/
+    published: '2026-04-09T00:00:00Z'
+    channel: blog
+  - title: 'From Dormant to Redesigned: Two Hours with GitHub Copilot'
+    url: https://jeffdoolittle.com/2026/04/07/redesigning-with-github-copilot/
+    published: '2026-04-07T00:00:00Z'
+    channel: blog
+  talks:
+  - session:ldr1032h
+  gaps:
+  - x_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1761664371450001vb2S
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jeff-at-trimble
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

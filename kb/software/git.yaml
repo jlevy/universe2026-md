@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:git
+  name: Git
+  aliases:
+  - Git
+  kind: open_source
+  homepage: https://git-scm.com
+  repositories:
+  - repo:git/git
+  mentioned_in:
+  - person:brian-celenza
+  - person:eric-hollenberry
+  - person:joe-bourne
+  - person:pillippa-perez-pons
+  - person:riley-kohler
+  - person:taylor-blau
+  - person:whitney-imura
+  - session:2023/dev2866d
+  - session:2025/bld1124b
+  - session:bld1491d
+  - session:bld2049b
+  - session:tru1452d
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

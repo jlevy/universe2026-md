@@ -1,0 +1,51 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:home-assistant/core
+  full_name: home-assistant/core
+  url: https://github.com/home-assistant/core
+  description: ':house_with_garden: Open source home automation that puts local control and privacy first.'
+  homepage: https://www.home-assistant.io
+  stars: 91702
+  forks: 38968
+  watchers: 1366
+  open_issues: 2438
+  stats_observed_at: '2026-10-24T19:10:19Z'
+  primary_language: Python
+  topics:
+  - python
+  - home-automation
+  - iot
+  - internet-of-things
+  - mqtt
+  - raspberry-pi
+  - asyncio
+  - hacktoberfest
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2013-09-17T07:29:48Z'
+  pushed_at: '2026-10-24T19:03:24Z'
+  owner_login: home-assistant
+  pinned_by:
+  - gh:frenck
+  software: software:home-assistant
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: frenck
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: home-assistant/core
+    retrieved_at: '2026-10-24T19:17:26Z'
+    snapshot: raw/github/repos.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: home-assistant/core
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

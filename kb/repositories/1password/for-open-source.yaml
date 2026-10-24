@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:1password/for-open-source
+  full_name: 1Password/for-open-source
+  url: https://github.com/1Password/for-open-source
+  description: Get a 1Password team account for free to support your open source initiatives!
+  stars: 1989
+  forks: 833
+  watchers: 39
+  open_issues: 24
+  stats_observed_at: '2026-10-24T19:09:45Z'
+  primary_language: Go
+  archived: false
+  fork: false
+  created_at: '2018-04-11T19:28:31Z'
+  pushed_at: '2026-10-21T08:24:41Z'
+  owner_login: 1Password
+  owner: gh:1password
+  pinned_by:
+  - gh:1password
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: 1Password
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: 1Password/for-open-source
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

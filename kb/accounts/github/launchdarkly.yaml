@@ -1,0 +1,53 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:launchdarkly
+  login: launchdarkly
+  kind: organization
+  url: https://github.com/launchdarkly
+  name: LaunchDarkly
+  bio: Fast and reliable feature management for the modern enterprise
+  location: Oakland, CA
+  website: https://launchdarkly.com
+  public_repositories: 223
+  created_at: '2014-07-01T17:29:29Z'
+  profile_readme: |-
+    ## What is LaunchDarkly?
+
+    LaunchDarkly serves a suite of tools that help you ship your code safer, faster, and more effectively with whatever language and frameworks you use today.
+
+    ## How can LaunchDarkly help you?
+
+    - _Feature flags_ let you reduce the risk of releasing new features by rolling them out progressively across subsets of your users over time.
+    - _Guarded releases_ monitor the performance of flag releases and configure LaunchDarkly to take action on the results.
+    - _AI Configs_ help you customize, test, and roll out new large language models (LLMs) within your generative AI applications.
+    - _Experimentation_ lets you validate the impact of features you roll out to your app or infrastructure. You can measure things like page views, clicks, load time, infrastructure costs, and more.
+
+    ## Explore LaunchDarkly:
+
+    - [Sign up for a free developer account](https://app.launchdarkly.com/signup)
+    - [Read our documentation](https://launchdarkly.com/docs)
+    - [Join our Discord community](https://discord.com/invite/launchdarklycommunity)
+  pinned:
+  - repo:launchdarkly/observability-sdk
+  - repo:launchdarkly/ldcli
+  - repo:launchdarkly/mcp-server
+  - repo:launchdarkly/python-server-sdk-ai
+  - repo:launchdarkly/terraform-provider-launchdarkly
+  - repo:launchdarkly/openfeature-node-server
+  top_repositories:
+  - repo:launchdarkly/swift-eventsource
+  - repo:launchdarkly/featureflags
+  - repo:launchdarkly/okhttp-eventsource
+  linked_accounts:
+  - acct:x/launchdarkly
+  entity: org:launchdarkly
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: launchdarkly
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

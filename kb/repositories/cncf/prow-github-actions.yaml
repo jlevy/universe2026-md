@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:cncf/prow-github-actions
+  full_name: cncf/prow-github-actions
+  url: https://github.com/cncf/prow-github-actions
+  description: Slash commands, jobs, and chat-ops for Github actions inspired by Kubernetes Prow ⚓️
+  stars: 132
+  forks: 24
+  watchers: 1
+  open_issues: 7
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  primary_language: TypeScript
+  topics:
+  - prow
+  - chat-ops
+  - github-actions
+  license: MIT
+  archived: false
+  fork: false
+  created_at: '2020-04-11T20:58:55Z'
+  pushed_at: '2026-10-24T16:33:03Z'
+  owner_login: cncf
+  owner: gh:cncf
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: castrojo
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cncf/prow-github-actions
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

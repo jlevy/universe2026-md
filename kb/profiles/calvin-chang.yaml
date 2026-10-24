@@ -1,0 +1,266 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:calvin-chang
+  person: person:calvin-chang
+  brief_bio:
+    text: Calvin Chang is a Senior Product Marketing Manager at GitHub focused on AI strategy and GitHub
+      Copilot. Chang spoke at GitHub Universe 2023 about hassle-free pull requests with GitHub Copilot.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: 33b386649937e8bb000233a5afa8326f0578c0e0be2f12e1db35a67477e93a13
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/ai2856d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:calvin-chang
+  interests:
+  - label: Accessibility
+    target: term:topic-2023/accessibility
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1695906676336001qpcT
+      ref: session:2023/ai2856d
+  education:
+  - school: UC Berkeley
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  spoken_languages:
+  - Chinese (Mandarin)
+  - Spanish
+  activities:
+  - kind: course
+    title: Business Ethics
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: course
+    title: Competitive Strategy
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: course
+    title: Econometric Analysis
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: course
+    title: Finance
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: course
+    title: Industrial Organization and Public Policy
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: course
+    title: International Trade
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: course
+    title: Programming with R
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: course
+    title: Social Psychology
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: course
+    title: Society and Technology
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: organization
+    title: Toast of Berkeley, Toastmasters International
+    detail: Aug 2010 · May 2011
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  - kind: organization
+    title: Berkeley Investment Group (formerly California Investment Association)
+    detail: Aug 2007 · May 2010
+    evidence:
+      url: https://www.linkedin.com/in/calchang
+      observed_at: '2026-10-24T08:42:05Z'
+  recent_writing:
+  - title: Why finding product GTINs is quite the bugger
+    url: https://www.linkedin.com/pulse/why-finding-product-gtins-quite-bugger-calvin-chang
+    published: '2016-04-12T00:00:00.000Z'
+    channel: linkedin
+    summary: For you e-commerce and Google Product Listing Ads folks out there, this one is for you. Google's
+      change to requiring…
+  - title: Your Discount Pricing Strategy may be Flawed
+    url: https://www.linkedin.com/pulse/your-discount-pricing-strategy-may-flawed-calvin-chang
+    published: '2016-03-22T00:00:00.000Z'
+    channel: linkedin
+    summary: Navigating the chaos of discounting in a world of bogus list prices Recently, a couple of
+      articles cropped up about the…
+  - title: Site indexing, turbocharged
+    url: https://www.linkedin.com/pulse/site-indexing-turbocharged-calvin-chang
+    published: '2016-02-25T00:00:00.000Z'
+    channel: linkedin
+    summary: As of writing, our product database covers nearly 100 million unique products and over 10
+      billion product offers…
+  - title: 'How to build a successful e-commerce site: Super Bowl 50 edition'
+    url: https://www.linkedin.com/pulse/how-build-successful-e-commerce-site-super-bowl-50-edition-chang
+    published: '2016-02-04T00:00:00.000Z'
+    channel: linkedin
+    summary: The 4 features you need to touchdown on profits Super Bowl season is now in full force. So
+      is e-commerce.
+  - title: No, your brick-and-mortar sales don’t have to suck
+    url: https://www.linkedin.com/pulse/your-brick-and-mortar-sales-dont-have-suck-calvin-chang
+    published: '2016-01-27T00:00:00.000Z'
+    channel: linkedin
+    summary: Retail is in a tough spot right now. The largest ever round of layoffs are happening because
+      retailers didn’t get what…
+  talks:
+  - session:2023/ai2856d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1684167539132001wxYR
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

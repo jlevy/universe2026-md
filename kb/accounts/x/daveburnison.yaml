@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/daveburnison
+  platform: x
+  handle: DaveBurnison
+  url: https://x.com/DaveBurnison
+  display_name: Dave Burnison
+  bio: |-
+    Sr. Program Manager - GitHub
+    I engage with customers to help them accelerate innovation and increase developer velocity using GitHub and Azure DevOps.
+  location: Redmond, WA
+  website: https://www.linkedin.com/in/daveburnison/
+  followers: 97
+  following: 53
+  posts_count: 318
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1007401283836305409/qpEMXwYx_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/1007397529351147520/1529018243
+  created_at: '2018-06-14T23:01:02Z'
+  owner: person:dave-burnison
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686018511816001za3o
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/DaveBurnison
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

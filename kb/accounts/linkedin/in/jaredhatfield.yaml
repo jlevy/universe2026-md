@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jaredhatfield
+  platform: linkedin
+  handle: in/jaredhatfield
+  url: https://www.linkedin.com/in/jaredhatfield
+  display_name: Jared Hatfield
+  bio: Principal Application Architect at UPS.
+  location: Louisville
+  followers: 267
+  connections: 238
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQG0Yq10qsOf3g/profile-displayphoto-scale_200_200/B56Z_ZgTvhH4Ac-/0/1786060556898?e=2147483647&v=beta&t=hL2eVG1PToHo5GAeknIRbq6FSArnz8t2EmboEQF5ESI
+  banner_url: https://media.licdn.com/dms/image/v2/C4E16AQH-Cy5daJB_VA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1660783382270?e=2147483647&v=beta&t=Bt35nuw0TT1ynHJRLzGNw4ONDWRgt8Rarw22eqVdcKc
+  owner: person:jared-hatfield
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1777390555511001JrY5
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jaredhatfield
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

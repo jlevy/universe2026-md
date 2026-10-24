@@ -1,0 +1,419 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:brittany-istenes
+  person: person:brittany-istenes
+  brief_bio:
+    text: Brittany Istenes, an OSS strategist and community architect at Forge Orbital, has led OSS advisory
+      councils and InnerSource initiatives and shares that work in financial services. Istenes spoke at
+      GitHub Universe 2023 and speaks at GitHub Universe 2026 on community-driven Copilot adoption.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:01:30Z'
+    input_sha256: 19cbad1ea654dea15213839ec87bc9fc77a9b4f574a7282d8f968eefefdcff5d
+    stale: false
+  headline: Forge Orbital
+  location: Lakewood, OH
+  current_roles:
+  - Forge Orbital
+  expertise:
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Open Source
+    target: term:topic-2023/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev1705p
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1107b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1107b
+  - label: Education
+    target: term:topic/education
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1107b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1107b
+  - label: Productivity
+    target: term:topic/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1107b
+  - label: Testing and related practices
+    target: term:topic/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1107b
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:ldr1107b
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:ldr1107b
+  interests:
+  - label: Education
+    target: term:github-product-2023/education
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776181763137001TBjr
+      ref: session:ldr1107b
+  - label: Supply Chain Security
+    target: term:topic-2023/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Community and social impact
+    target: term:topic/community-and-social-impact
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776181763137001TBjr
+      ref: session:ldr1107b
+  - label: Developer experience (DX)
+    target: term:topic/developer-experience-dx
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776181763137001TBjr
+      ref: session:ldr1107b
+  - label: Discussions
+    target: term:github-product-2023/discussions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2023/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: Git and related code management techniques
+    target: term:topic-2023/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1686003617586001r1wE
+      ref: session:2023/dev1705p
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776181763137001TBjr
+      ref: session:ldr1107b
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.5
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1776181763137001TBjr
+      ref: session:ldr1107b
+  education:
+  - school: Temple University
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - school: Temple University
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  credentials:
+  - kind: certification
+    title: FINOS Ambassador
+    issuer: The Linux Foundation
+    date: Oct 2025
+    url: https://www.credly.com/badges/ac59b2a7-8aab-4902-93e6-62f6dbb5d626/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - kind: certification
+    title: 'Linux Foundation Research: 2025 Research Contributor'
+    issuer: The Linux Foundation
+    date: Oct 2025
+    url: https://www.credly.com/badges/8490ca95-264c-45cd-9d13-fd030fae5dfe/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - kind: certification
+    title: 'Linux Foundation Research: 2025 Research Contributor'
+    issuer: The Linux Foundation
+    date: Oct 2025
+    url: https://www.credly.com/badges/8490ca95-264c-45cd-9d13-fd030fae5dfe/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - kind: certification
+    title: 'Speaker: Open Source Summit North America 2025'
+    issuer: The Linux Foundation
+    date: Jul 2025
+    url: https://www.credly.com/badges/ffe2e4e3-a69d-4a39-a4c9-f4e737051552/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - kind: certification
+    title: 'Exam Contributor: Certified Open Source Developer for Enterprise'
+    issuer: The Linux Foundation
+    date: Apr 2025
+    url: https://www.credly.com/badges/b5a9e5cd-02cc-4267-a4f5-d4d4c791a97b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - kind: certification
+    title: Course Developer
+    issuer: The Linux Foundation
+    date: Nov 2023
+    url: https://www.credly.com/badges/f4aceafa-b79c-4ccf-8049-2066b01e733b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - kind: certification
+    title: 'Speaker: Open Source in Finance Forum NYC 2023'
+    issuer: The Linux Foundation
+    date: Nov 2023
+    url: https://www.credly.com/badges/c1c28417-7b2a-4a31-8943-3ab63f3a1223/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - kind: certification
+    title: 'Speaker: The Linux Foundation Member Summit 2023'
+    issuer: The Linux Foundation
+    date: Nov 2023
+    url: https://www.credly.com/badges/56f0d16d-6a80-4eec-a3e0-0e2486c199c3/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - kind: certification
+    title: 'Program Committee Member: Open Source Summit North America 2023'
+    issuer: The Linux Foundation
+    date: Mar 2023
+    url: https://www.credly.com/badges/0c8682fd-44cd-4243-a6f1-f5a5b07e4f80/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes-91b902152
+      observed_at: '2026-10-24T08:11:58Z'
+  - kind: certification
+    title: FINOS Ambassador
+    issuer: The Linux Foundation
+    date: Oct 2025
+    url: https://www.credly.com/badges/ac59b2a7-8aab-4902-93e6-62f6dbb5d626/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  - kind: certification
+    title: 'Linux Foundation Research: 2025 Research Contributor'
+    issuer: The Linux Foundation
+    date: Oct 2025
+    url: https://www.credly.com/badges/8490ca95-264c-45cd-9d13-fd030fae5dfe/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  - kind: certification
+    title: 'Linux Foundation Research: 2025 Research Contributor'
+    issuer: The Linux Foundation
+    date: Oct 2025
+    url: https://www.credly.com/badges/8490ca95-264c-45cd-9d13-fd030fae5dfe/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  - kind: certification
+    title: 'Speaker: Open Source Summit North America 2025'
+    issuer: The Linux Foundation
+    date: Jul 2025
+    url: https://www.credly.com/badges/ffe2e4e3-a69d-4a39-a4c9-f4e737051552/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  - kind: certification
+    title: 'Exam Contributor: Certified Open Source Developer for Enterprise'
+    issuer: The Linux Foundation
+    date: Apr 2025
+    url: https://www.credly.com/badges/b5a9e5cd-02cc-4267-a4f5-d4d4c791a97b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  - kind: certification
+    title: Course Developer
+    issuer: The Linux Foundation
+    date: Nov 2023
+    url: https://www.credly.com/badges/f4aceafa-b79c-4ccf-8049-2066b01e733b/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  - kind: certification
+    title: 'Speaker: Open Source in Finance Forum NYC 2023'
+    issuer: The Linux Foundation
+    date: Nov 2023
+    url: https://www.credly.com/badges/c1c28417-7b2a-4a31-8943-3ab63f3a1223/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  - kind: certification
+    title: 'Speaker: The Linux Foundation Member Summit 2023'
+    issuer: The Linux Foundation
+    date: Nov 2023
+    url: https://www.credly.com/badges/56f0d16d-6a80-4eec-a3e0-0e2486c199c3/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  - kind: certification
+    title: 'Program Committee Member: Open Source Summit North America 2023'
+    issuer: The Linux Foundation
+    date: Mar 2023
+    url: https://www.credly.com/badges/0c8682fd-44cd-4243-a6f1-f5a5b07e4f80/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/brittany-istenes
+      observed_at: '2026-10-24T08:14:48Z'
+  talks:
+  - session:2023/dev1705p
+  - session:ldr1107b
+  gaps:
+  - website
+  - x_details
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685978733762001LxQA
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: BrittanyIstenes
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685978733762001LxQA
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

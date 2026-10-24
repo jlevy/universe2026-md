@@ -1,0 +1,30 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/nicolefagen
+  platform: linkedin
+  handle: in/nicolefagen
+  url: https://www.linkedin.com/in/nicolefagen
+  display_name: Nicole Fagen
+  location: Plano
+  followers: 6953
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQH1GjuHi4G8SQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1667156902096?e=2147483647&v=beta&t=1m4QCYu5ayvoi6U_o-SOH7_qxKHOmLmbUreYOUMNshU
+  owner: person:nicole-fagen
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1729196422700001bde3
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/nicolefagen
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

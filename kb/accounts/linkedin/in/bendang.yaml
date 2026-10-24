@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/bendang
+  platform: linkedin
+  handle: in/bendang
+  url: https://www.linkedin.com/in/bendang
+  display_name: Ben D.
+  bio: Platform engineering leader turned AI-first builder — 20+ years shipping developer…
+  location: San Francisco Bay Area
+  followers: 1238
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFBj10Q0vRUEw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1706283472915?e=2147483647&v=beta&t=cmHd7gDqixGTEoXgNGi12DAWGzVeNPok7G-E6fNgYog
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEg9N0VALIRxQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1719349047832?e=2147483647&v=beta&t=kyPEW2URzzP_9ZiF7AJHdzNWX0X9_vHS6pKB-j1TQJU
+  owner: person:ben-dang
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1694047250886001DLGe
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/bendang
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

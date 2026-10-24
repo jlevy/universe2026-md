@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:tc39/test262
+  full_name: tc39/test262
+  url: https://github.com/tc39/test262
+  description: Official ECMAScript Conformance Test Suite
+  stars: 2834
+  forks: 568
+  watchers: 108
+  open_issues: 215
+  stats_observed_at: '2026-10-24T19:12:25Z'
+  primary_language: JavaScript
+  topics:
+  - tc39
+  - js
+  - tests
+  - javascript
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2014-01-22T18:20:05Z'
+  pushed_at: '2026-10-19T04:59:05Z'
+  owner_login: tc39
+  pinned_by:
+  - gh:leobalter
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: leobalter
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: tc39/test262
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

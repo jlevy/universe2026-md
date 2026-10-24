@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/standardagents
+  platform: linkedin
+  handle: company/standardagents
+  url: https://www.linkedin.com/company/standardagents
+  display_name: Standard Agents
+  bio: 'Domain-specific agents running on your infrastructure. Professional tooling for the agentic era.
+    AgentBuilder is developer tooling for building domain-specific AI agents (DSAs). It provides multi-provider
+    model orchestration (seamlessly hand off between OpenAI, Anthropic, Google, and other providers within
+    a single thread), persistent memory (resume threads with users, preserve state between sessions),
+    full introspection (see every tool call, provider request, and cost), and code-first TypeScript configuration.
+    Agents are built to the Standard Agent Specification and are portable and composable. AgentBuilder
+    is NOT a no-code platform — it''s professional infrastructure that equips engineers to build production-grade
+    enterprise agents. Documentation: https://docs.standardagentbuilder.com Product: https://standardagentbuilder.com
+    Standard Agent Specification: [coming soon]'
+  website: https://standardagentbuilder.com/
+  followers: 120
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFhsa0bLstLmw/company-logo_200_200/B4EZtxL4gCGkAI-/0/1767130499335?e=2147483647&v=beta&t=lUZIWcG7jdjcNaS3SIJWfRDNoUeNyMkhH1Gb5sleY6w
+  owner: org:standard-agents
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jpschroeder
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/standardagents
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

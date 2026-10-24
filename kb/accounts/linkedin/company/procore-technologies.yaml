@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/procore-technologies
+  platform: linkedin
+  handle: company/procore-technologies
+  url: https://www.linkedin.com/company/procore-technologies
+  display_name: Procore Technologies
+  bio: 'Procore Technologies, Inc. (NYSE: PCOR) is a leading technology partner for every stage of construction.
+    With more than two decades of experience, over three million projects in 150+ countries have run on
+    Procore’s purpose-built, unified platform. From project planning to completion, Procore’s innovative
+    technology delivers AI & data-driven insights to help teams drive efficiency and mitigate risks. By
+    harnessing the power of technology and deep industry expertise, Procore is committed to shaping a
+    better future for construction professionals, projects, and communities. Whether it’s a small-scale
+    build or a large-scale infrastructure portfolio, Procore connects every stakeholder through seamless
+    communication and collaboration, delivering the solutions and insights needed to overcome challenges
+    and achieve success throughout the construction lifecycle.'
+  website: https://www.procore.com/
+  followers: 387961
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGniocgaFzu6g/company-logo_200_200/company-logo_200_200/0/1737481196088/procore_technologies_logo?e=2147483647&v=beta&t=SXKHOvxA2oJ4NjEH6KGIw2S4Xq0WHQfPqnjHzUzbKMI
+  owner: org:procore-technologies
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/shishir-tewari-36113514
+    record_id: sd_mvm4ih2s1a5o48n7e
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/procore-technologies
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

@@ -1,0 +1,541 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:suzanne-daniels
+  person: person:suzanne-daniels
+  brief_bio:
+    text: Suzanne Daniels was Chief Developer Advisor at Microsoft, helping organizations in EMEA improve
+      developer productivity with Azure, AI and GitHub. Daniels spoke at GitHub Universe 2024 about pairing
+      GitHub and Azure, and at Universe 2025 about agentic DevOps.
+    cites:
+    - listed_role
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: 20d775553edd44005b20e98603a506f70daa7710abc2f1ac27731a72c3018afb
+    stale: false
+  expertise:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Cloud
+    target: term:topic-2024/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Containerized Applications
+    target: term:topic-2024/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Data Analytics
+    target: term:topic-2024/data-analytics
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Data Management
+    target: term:topic-2024/data-management
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: DevSecOps
+    target: term:topic-2024/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Git and related code management techniques
+    target: term:topic-2024/git-and-related-code-management-techniques
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Human Factors
+    target: term:topic-2024/human-factors
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Infrastructure as Code
+    target: term:topic-2024/infrastructure-as-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Kubernetes
+    target: term:topic-2024/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Machine Learning
+    target: term:topic-2024/machine-learning
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Open Source
+    target: term:topic-2024/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Pair Programming
+    target: term:topic-2024/pair-programming
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Scrum
+    target: term:topic-2024/scrum
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Shell Programming (Bash, PowerShell, etc.)
+    target: term:topic-2024/shell-programming-bash-powershell-etc
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Supply Chain Security
+    target: term:topic-2024/supply-chain-security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Tech Debt
+    target: term:topic-2024/tech-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Testing and related practices
+    target: term:topic-2024/testing-and-related-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Threat Modeling
+    target: term:topic-2024/threat-modeling
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Vulnerability Detection
+    target: term:topic-2024/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/dev1570l
+  - label: Agile practices
+    target: term:topic-2025/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2025/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Cloud-native development
+    target: term:topic-2025/cloud-native-development
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Code quality, review, and completion
+    target: term:topic-2025/code-quality-review-and-completion
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Collaboration
+    target: term:topic-2025/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Custom integrations and APIs
+    target: term:topic-2025/custom-integrations-and-apis
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Data (analytics, management, privacy)
+    target: term:topic-2025/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Governance and compliance
+    target: term:topic-2025/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Migration strategies
+    target: term:topic-2025/migration-strategies
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Monitoring and observability
+    target: term:topic-2025/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Platform engineering
+    target: term:topic-2025/platform-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Productivity
+    target: term:topic-2025/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  - label: Tech debt and security debt
+    target: term:topic-2025/tech-debt-and-security-debt
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1544l
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:suzanne-daniels
+  interests:
+  - label: Agile practices
+    target: term:topic-2024/agile-practices
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Automated Infrastructure Deployment
+    target: term:topic-2024/automated-infrastructure-deployment
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Collaboration
+    target: term:topic-2024/collaboration
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2024/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Discussions
+    target: term:github-product-2024/discussions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: GitHub Actions
+    target: term:github-product-2024/actions
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: GitHub Codespaces
+    target: term:github-product-2024/codespaces
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Monitoring and Observability
+    target: term:topic-2024/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Productivity
+    target: term:topic-2024/productivity
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  - label: Projects and Issues
+    target: term:github-product-2024/projects-and-issues
+    basis: session_facets
+    confidence: medium
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715354989964001kqMX
+      ref: session:2024/dev1570l
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1753304151137001GMT7
+      ref: session:2025/aut1544l
+  activities:
+  - kind: project
+    title: Ghost Decisions - How to lead when AI moves faster than you
+    detail: 'Fourteen changes deployed overnight. Twelve from AI agents. All approved — by the structure,
+      not by a person. The fix was correct. The process was followed.And at the morning sync, nobody could
+      say who owned the decision.This is the Agentile condition. Most organisations are already in it.
+      The question is no longer whether to adopt AI agents. The question is who governs what they do —
+      and what happens when the answer is “nobody, specifically.”ISEE is the four-layer operating model
+      that resolves it. Humans own the slow layers — strategic intent, codified structure. Machines run
+      the fast ones — continuous execution, real-time evidence. A spine translates between them: human
+      judgement rendered once, enforced thousands of times per day.Ghost Decisions addresses the questions
+      that arise when AI becomes an integral part of your organisation.'
+    evidence:
+      url: https://www.linkedin.com/in/suzannedaniels
+      observed_at: '2026-10-24T08:47:12Z'
+  recent_writing:
+  - title: 'Engineering Beyond Agile: Speed With a Spine'
+    url: https://www.linkedin.com/pulse/engineering-beyond-agile-speed-spine-suzanne-daniels-bplre
+    published: '2026-04-22T00:00:00.000Z'
+    channel: linkedin
+    summary: The operating model for everything this series has been pointing at It’s been seven articles.
+      Seven things that start…
+  - title: 'Engineering Beyond Agile: Human Judgment in a System That Never Slows Down'
+    url: https://www.linkedin.com/pulse/engineering-beyond-agile-human-judgment-system-never-slows-daniels-hhh4e
+    published: '2026-03-24T00:00:00.000Z'
+    channel: linkedin
+    summary: The System That Decides While You Sleep Code is merged and deployed by agents in the middle
+      of the night. Decisions…
+  - title: 'Engineering Beyond Agile: The Platform Becomes the Adult in the Room'
+    url: https://www.linkedin.com/pulse/engineering-beyond-agile-platform-becomes-adult-room-suzanne-daniels-t0vme
+    published: '2026-03-10T00:00:00.000Z'
+    channel: linkedin
+    summary: How the Agentile organisation impacts Platform Engineering As many of you know Platform Engineering
+      has always been…
+  - title: 'Engineering Beyond Agile: Codifying Trade‑offs'
+    url: https://www.linkedin.com/pulse/engineering-beyond-agile-codifying-tradeoffs-suzanne-daniels-tt9de
+    published: '2026-03-04T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Security, Cost, and Capacity in Agentile Teams Imagine: It is late. The design already feels
+      “done.'
+  - title: 'Engineering Beyond Agile: When teams become cells'
+    url: https://www.linkedin.com/pulse/engineering-beyond-agile-when-teams-become-cells-suzanne-daniels-le6ye
+    published: '2026-02-25T00:00:00.000Z'
+    channel: linkedin
+    summary: How Context Replaces Coordination Until recently, I explained most of this with diagrams.
+      AI‑native SDLC.
+  - title: 'Engineering Beyond Agile: When Decisions Move Upstream'
+    url: https://www.linkedin.com/pulse/engineering-beyond-agile-when-decisions-move-upstream-suzanne-daniels-0sffe
+    published: '2026-02-17T00:00:00.000Z'
+    channel: linkedin
+    summary: Decisions, unlike code, are social. They carry intent, trade‑offs, and power.
+  - title: 'Engineering Beyond Agile: Do we still need a PM in the Agentile Team?'
+    url: https://www.linkedin.com/pulse/engineering-beyond-agile-do-we-still-need-pm-agentile-suzanne-daniels-lq71e
+    published: '2026-02-09T00:00:00.000Z'
+    channel: linkedin
+    summary: When we talk about AI Assisted Software Development or Agentile teams, we often start with
+      engineering. With how code…
+  - title: 'Engineering Beyond Agile: AI and the Rise of Agentile teams'
+    url: https://www.linkedin.com/pulse/engineering-beyond-agile-ai-rise-agentile-teams-suzanne-daniels-zhofe
+    published: '2026-01-16T00:00:00.000Z'
+    channel: linkedin
+    summary: If you’re leading or building in tech, this is the moment to rethink everything you know
+      about engineering…
+  talks:
+  - session:2024/dev1570l
+  - session:2025/aut1544l
+  gaps:
+  - github_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715355439553001XF2A
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715355439553001XF2A
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

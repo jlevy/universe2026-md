@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/wexinc
+  platform: linkedin
+  handle: company/wexinc
+  url: https://www.linkedin.com/company/wexinc
+  display_name: WEX
+  bio: 'WEX (NYSE: WEX) is the global commerce platform that simplifies the business of running a business.
+    WEX has created a powerful ecosystem that offers seamlessly embedded, personalized solutions for its
+    customers around the world. Through its rich data and specialized expertise in simplifying benefits,
+    reimagining mobility and paying and getting paid, WEX aims to make it easy for companies to overcome
+    complexity and reach their full potential. For more information, please visit www.wexinc.com.'
+  website: https://www.wexinc.com/
+  followers: 136859
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQEqDSQp6mtoSw/company-logo_200_200/B56Zx8YMCPJUAM-/0/1771613242228/wexinc_logo?e=2147483647&v=beta&t=g0dqTRVAuaHiU7hRSxHAVecQeGoI60eyNNfJlJfv4zY
+  owner: org:wex
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/erik-englund-8298949b
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/josephdaneweeks
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/wexinc
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

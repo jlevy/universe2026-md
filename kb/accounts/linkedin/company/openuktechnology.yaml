@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/openuktechnology
+  platform: linkedin
+  handle: company/openuktechnology
+  url: https://www.linkedin.com/company/openuktechnology
+  display_name: OpenUK
+  bio: 'UK business organisation for the leadership of Open source: software, hardware, data, ai and standards
+    Purpose: UK leadership and global collaboration in open technology Sign up to our newsletter https://openuk.us4.list-manage.com/subscribe?u=9d6308e45152bb731122903de&id=34b8a50cce
+    https://hachyderm.io/@openuk'
+  website: https://openuk.uk/
+  followers: 9200
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQGLqx-RywKvqA/company-logo_200_200/B4EZxHiWxxH8AI-/0/1770726715014/openuktechnology_logo?e=2147483647&v=beta&t=crg4roJhEZqn9MdECDIIlDEDLl4KiNGyMICVCE91X5k
+  owner: org:openuk
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/justincormack
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/openuktechnology
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

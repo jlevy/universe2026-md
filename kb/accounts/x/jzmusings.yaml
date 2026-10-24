@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/jzmusings
+  platform: x
+  handle: jzmusings
+  url: https://x.com/jzmusings
+  display_name: JZ
+  bio: Serial entrepreneur, former VC. Now building.. 🤫
+  website: https://jzmusings.com/
+  followers: 1442
+  following: 311
+  posts_count: 686
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1591893311442153472/xYpQ5C0q_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/978291813244178444/1704399165
+  created_at: '2018-03-26T15:25:18Z'
+  owner: person:jz-zhang
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692480466006001rOIW
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://x.com/jzmusings
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

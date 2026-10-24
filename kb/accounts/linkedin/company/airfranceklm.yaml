@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/airfranceklm
+  platform: linkedin
+  handle: company/airfranceklm
+  url: https://www.linkedin.com/company/airfranceklm
+  display_name: Air France-KLM
+  bio: The leading group in terms of intercontinental traffic on departure from Europe, Air France-KLM
+    is a major global air transport player. Its main businesses are passenger transportation, cargo transportation
+    and aeronautical maintenance.
+  website: https://www.airfranceklm.com/en
+  followers: 129526
+  avatar_url: https://media.licdn.com/dms/image/v2/C560BAQHHr2Fvtdnn0w/company-logo_200_200/company-logo_200_200/0/1630668956603/air_france__klm_logo?e=2147483647&v=beta&t=EfjWJIKFr3zg2Eg1SATAUV4s6f_P1ZMwqoeHalIouS8
+  owner: org:air-france-klm
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/jedjebari
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/airfranceklm
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

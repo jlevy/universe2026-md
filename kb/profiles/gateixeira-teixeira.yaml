@@ -1,0 +1,111 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:gateixeira-teixeira
+  person: person:gateixeira-teixeira
+  brief_bio:
+    text: Guilherme Teixeira is a software engineer who worked at GitHub helping enterprise clients with
+      custom tooling, developer training and development workflows. Teixeira spoke at GitHub Universe
+      2024 about building and publishing custom GitHub Copilot extensions.
+    cites:
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:34:19Z'
+    input_sha256: 3f47006cfb608e205528ae6a8b6d70502eb4d44c84455c20437e28173d6569e3
+    stale: false
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1944w
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1944w
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1944w
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Copilot
+      ref: session:2024/ai1944w
+  - label: GitHub Marketplace
+    target: software:github-marketplace
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Marketplace
+      ref: session:2024/ai1944w
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724330769147001SjbR
+      ref: session:2024/ai1944w
+  - label: Data Science
+    target: term:topic-2024/data-science
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724330769147001SjbR
+      ref: session:2024/ai1944w
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724330769147001SjbR
+      ref: session:2024/ai1944w
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1724330769147001SjbR
+      ref: session:2024/ai1944w
+  talks:
+  - session:2024/ai1944w
+  gaps:
+  - github_account
+  - linkedin_account
+  - x_account
+  - website
+  - current_affiliation
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699008007501001OzbO
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

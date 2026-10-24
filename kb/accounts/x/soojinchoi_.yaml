@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/soojinchoi_
+  platform: x
+  handle: soojinchoi_
+  url: https://x.com/soojinchoi_
+  display_name: Soojin Choi
+  bio: Product @Microsoft for GitHub Copilot Models | Tea. Beer. Food. Travel. | Opinions are my own |
+    she/her
+  followers: 250
+  following: 478
+  posts_count: 30
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1357952562377334786/zHtci8bj_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/915052036042891264/1633730555
+  created_at: '2017-10-03T03:13:01Z'
+  owner: person:soojin-min-choi
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727724072477001rpKk
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/soojinchoi_
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

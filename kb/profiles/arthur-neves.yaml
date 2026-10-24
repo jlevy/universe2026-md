@@ -1,0 +1,265 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:arthur-neves
+  person: person:arthur-neves
+  brief_bio:
+    text: Arthur Neves works at SpaceXAI as a Staff+ engineer focused on AI platforms, after nearly a
+      decade at GitHub that included leading engineering for code scanning autofix. Neves spoke at GitHub
+      Universe 2024 about Copilot Autofix and secure coding practices.
+    cites:
+    - current_affiliations
+    - linkedin_bio
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: c003801d5048b1fd7cc1aa527e23c5ff519dde55efc5e36f4754c2199da0af46
+    stale: false
+  headline: SpaceXAI
+  location: Orlando, Florida
+  current_roles:
+  - SpaceXAI
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1367s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/sec1367s
+  technologies:
+  - label: GitHub Advanced Security
+    target: software:github-advanced-security
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Advanced Security
+      ref: person:arthur-neves
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:2024/sec1367s
+  programming_languages:
+  - label: Ruby
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:rails/rails
+    - ref: repo:rubygems/rubygems.org
+    - ref: repo:arthurnn/memcached
+    - ref: repo:arthurnn/apn_sender
+    - ref: repo:arthurnn/twirp-ruby
+  - label: Emacs Lisp
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:arthurnn/minitest-emacs
+    - ref: repo:arthurnn/howdoi-emacs
+  - label: Shell
+    basis: github_repositories
+    confidence: medium
+    evidence:
+    - ref: repo:arthurnn/dotfiles
+  interests:
+  - label: ruby
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/rails/rails
+      ref: repo:rails/rails
+    - url: https://github.com/rubygems/rubygems.org
+      ref: repo:rubygems/rubygems.org
+    - url: https://github.com/arthurnn/memcached
+      ref: repo:arthurnn/memcached
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715199684928001mQKz
+      ref: session:2024/sec1367s
+  - label: GitHub Advanced Security
+    target: term:github-product-2024/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715199684928001mQKz
+      ref: session:2024/sec1367s
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715199684928001mQKz
+      ref: session:2024/sec1367s
+  - label: Security
+    target: term:topic-2024/security
+    basis: session_facets
+    confidence: low
+    weight: 0.58
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1715199684928001mQKz
+      ref: session:2024/sec1367s
+  - label: activejob
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/rails/rails
+      ref: repo:rails/rails
+  - label: activerecord
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/rails/rails
+      ref: repo:rails/rails
+  - label: framework
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/rails/rails
+      ref: repo:rails/rails
+  - label: html
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/rails/rails
+      ref: repo:rails/rails
+  - label: memcached
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/arthurnn/memcached
+      ref: repo:arthurnn/memcached
+  - label: mvc
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/rails/rails
+      ref: repo:rails/rails
+  - label: package-manager
+    basis: github_repositories
+    confidence: low
+    weight: 0.39
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/rubygems/rubygems.org
+      ref: repo:rubygems/rubygems.org
+  open_source:
+  - repository: repo:rails/rails
+    relation: pinned
+    stars: 58851
+    primary_language: Ruby
+  - repository: repo:rubygems/rubygems.org
+    relation: pinned
+    stars: 2439
+    primary_language: Ruby
+  - repository: repo:arthurnn/memcached
+    relation: owner
+    stars: 437
+    primary_language: Ruby
+  - repository: repo:arthurnn/apn_sender
+    relation: owner
+    stars: 374
+    primary_language: Ruby
+  - repository: repo:arthurnn/twirp-ruby
+    relation: owner
+    stars: 163
+    primary_language: Ruby
+  - repository: repo:arthurnn/howdoi-emacs
+    relation: owner
+    stars: 59
+    primary_language: Emacs Lisp
+  - repository: repo:arthurnn/minitest-emacs
+    relation: owner
+    stars: 52
+    primary_language: Emacs Lisp
+  - repository: repo:arthurnn/dotfiles
+    relation: owner
+    stars: 10
+    primary_language: Shell
+  education:
+  - school: Faculdade de Engenharia Industrial
+    evidence:
+      url: https://www.linkedin.com/in/arthurnn
+      observed_at: '2026-10-24T08:43:04Z'
+  credentials:
+  - kind: certification
+    title: Sun Certified Web Component Developer (SCWCD)
+    issuer: Sun/Oracle
+    date: Sep 2008
+    evidence:
+      url: https://www.linkedin.com/in/arthurnn
+      observed_at: '2026-10-24T08:43:04Z'
+  - kind: certification
+    title: Sun Certified Java Programmer (SCJP)
+    issuer: Sun/Oracle
+    date: Jun 2007
+    evidence:
+      url: https://www.linkedin.com/in/arthurnn
+      observed_at: '2026-10-24T08:43:04Z'
+  spoken_languages:
+  - Portuguese
+  - English
+  - Spanish
+  - French
+  talks:
+  - session:2024/sec1367s
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1715200486249001DAvs
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: arthurnn
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

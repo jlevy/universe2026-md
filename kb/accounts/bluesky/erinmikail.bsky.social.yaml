@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/erinmikail.bsky.social
+  platform: bluesky
+  handle: erinmikail.bsky.social
+  url: https://bsky.app/profile/erinmikail.bsky.social
+  display_name: Erin Mikail Staples is screaming into the void
+  bio: "perpetual student, constantly curious ✨\ndevex by day, comedian by night \n\ncurrently geeking\
+    \ out on dev experience, open source, ML, + data  \n\n\U0001F578️ https://erinmikailstaples.com"
+  followers: 1809
+  created_at: '2023-04-24T22:14:46Z'
+  owner: person:erin-mikail-staples
+  link_basis:
+  - event_listing
+  - github_profile
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686678866005001uQkv
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: erinmikailstaples
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: erinmikail.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

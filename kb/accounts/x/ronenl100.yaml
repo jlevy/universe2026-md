@@ -1,0 +1,36 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/ronenl100
+  platform: x
+  handle: Ronenl100
+  url: https://x.com/Ronenl100
+  display_name: Ronen Lewit
+  bio: Thinker, father, innovator, technologist, software all around player, cloud, devops and all that
+    bla bla bla
+  location: Sunnyvale, California, US
+  followers: 115
+  following: 172
+  posts_count: 153
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1182344036717191168/ueK8cS_H_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/215394435/1570727760
+  created_at: '2010-11-13T20:30:15Z'
+  owner: person:ronen-lewit
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1729704712665001qg5w
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://x.com/Ronenl100
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/logitech
+  platform: linkedin
+  handle: company/logitech
+  url: https://www.linkedin.com/company/logitech
+  display_name: Logitech
+  bio: 'At Logitech, our purpose is to extend human potential in work and play. We do this by designing
+    software-enabled hardware solutions that drive superior performance when gaming and superior productivity
+    while at work, all with maximum comfort, speed and accuracy. We enable creativity when pursuing passions
+    and connectivity so everyone is seen, heard and can contribute in their own unique way. As a Swiss
+    company focused on innovation and quality, our products are the point of connection between people
+    and the digital world. We harness the transformative power of design to drive innovation and progress
+    throughout our portfolio in order to deliver truly unique and meaningful experiences. With products
+    available in nearly every country and more than 3.5 million items shipped each week, Logitech is dedicated
+    to driving outcomes that are better for people and planet, reducing our environmental impact by leading
+    the industry in designing for sustainability. Join the LogiTeam: https://jobs.jobvite.com/logitech/'
+  website: https://www.logitech.com/
+  followers: 388215
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQGZy4MFSpNapg/company-logo_200_200/company-logo_200_200/0/1727322903222/logitech_logo?e=2147483647&v=beta&t=5DlveVoYRI-UjK5H1bH1pMPy5mnaOKw6suHns8lInXk
+  owner: org:logitech
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/mmeisser
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/logitech
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

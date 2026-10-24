@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/joshua-johanning
+  platform: linkedin
+  handle: in/joshua-johanning
+  url: https://www.linkedin.com/in/joshua-johanning
+  display_name: Joshua Johanning
+  bio: DevOps as a passion, with an emphasis on GitHub, Azure Devops, and the Azure cloud…
+  location: Madison
+  followers: 1117
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQE9iIyOeAZ9mg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1558061045415?e=2147483647&v=beta&t=eKAV-g-UAGHTAWV6i-FjtxveOpBqrsA9kAuOuW6vIkM
+  banner_url: https://media.licdn.com/dms/image/v2/C5616AQEIo0wcNbhf4w/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517354363853?e=2147483647&v=beta&t=lykFyTpz48Eb4pkQH2i5aT8zOZ9pr8j0GPjxOqFQG0U
+  owner: person:josh-johanning
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1685652487779001iVSX
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/joshua-johanning
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

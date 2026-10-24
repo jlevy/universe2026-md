@@ -1,0 +1,113 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:matt-biilmann
+  person: person:matt-biilmann
+  brief_bio:
+    text: Matt Biilmann is CEO and co-founder of Netlify, founded in 2014, and is known for coining the
+      term "Jamstack." Biilmann spoke at GitHub Universe 2024 about AI and composable architecture in
+      web development.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:12:14Z'
+    input_sha256: 04fac31caf7af869d3656bef83a574ff7d2275ff2990ba07d736e8826f68df13
+    stale: true
+  headline: Netlify
+  current_roles:
+  - Netlify
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2245l
+  - label: Community
+    target: term:topic-2024/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2245l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai2245l
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1729712387584001WWaX
+      ref: session:2024/ai2245l
+  - label: DevOps
+    target: term:topic-2024/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1729712387584001WWaX
+      ref: session:2024/ai2245l
+  education:
+  - school: Københavns Universitet
+    evidence:
+      url: https://www.linkedin.com/in/mathias-biilmann-christensen-a5a3805
+      observed_at: '2026-10-24T08:46:49Z'
+  spoken_languages:
+  - English
+  - Danish
+  - Spanish
+  - German
+  activities:
+  - kind: project
+    title: EventSource HQ
+    detail: EventSource HQ makes sending events from your app to your users' browsers as easy as it gets.EventSource
+      HQ is based on my open-source project "EventSource Broker" - an implementation of the HTML5 "Server
+      Sent Events" API in Haskell. · Sep 2011
+    evidence:
+      url: https://www.linkedin.com/in/mathias-biilmann-christensen-a5a3805
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: project
+    title: Webpop
+    detail: Cloud based CMS platform for front-end developers and web designers.Built with Ruby on Rails,
+      JRuby, Haskell and lots of javascript.99.9+ uptime since the earliest days of beta, while doing
+      daily deploys. Built in server-side javascript extension engine. Innovative declarative template
+      engine. All infrastructure automated with chef and running on top of Rackspace's Cloud. · Jan 2010
+    evidence:
+      url: https://www.linkedin.com/in/mathias-biilmann-christensen-a5a3805
+      observed_at: '2026-10-24T08:46:49Z'
+  - kind: project
+    title: domestika.org
+    detail: Domestika.org is the largest Spanish speaking design community. I mainly did systems administration,
+      configuration management, load testing, database profiling, helped with performance optimizations,
+      ongoing maintenance, minor feature additions and bug-fixes. · Jan 2009
+    evidence:
+      url: https://www.linkedin.com/in/mathias-biilmann-christensen-a5a3805
+      observed_at: '2026-10-24T08:46:49Z'
+  talks:
+  - session:2024/ai2245l
+  gaps:
+  - github_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728675809463001IJ8N
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

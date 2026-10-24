@@ -1,0 +1,41 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:cncf/foundation
+  full_name: cncf/foundation
+  url: https://github.com/cncf/foundation
+  description: ☁️♮🏛 This repo contains several documents related to the operation of the CNCF. File non-technical
+    issues related to CNCF here.
+  homepage: https://cncf.io
+  stars: 696
+  forks: 872
+  watchers: 51
+  open_issues: 48
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  primary_language: Rich Text Format
+  topics:
+  - cncf
+  - governance
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2016-08-17T14:42:05Z'
+  pushed_at: '2026-10-24T06:02:45Z'
+  owner_login: cncf
+  owner: gh:cncf
+  pinned_by:
+  - gh:cncf
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cncf
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cncf/foundation
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

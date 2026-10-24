@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sesispla
+  platform: linkedin
+  handle: in/sesispla
+  url: https://www.linkedin.com/in/sesispla
+  display_name: Sergio S.
+  bio: As EPAM Microsoft Business Group Technology Director for Cloud, AI &amp; GitHub…
+  location: London
+  followers: 3077
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQGDbfiCFmuLYQ/profile-displayphoto-shrink_200_200/B4DZUETE12GkAg-/0/1739533864845?e=2147483647&v=beta&t=Wp1gSFzcTIxsXpNjU3IMo1SIUkSplSyYgOJ6HEEybQg
+  banner_url: https://media.licdn.com/dms/image/v2/D4D16AQFs1tvynoolug/profile-displaybackgroundimage-shrink_200_800/B4DZYlERIjGkAU-/0/1744378598582?e=2147483647&v=beta&t=3XmM3EjRFmKCBsVM5ccQBdb5_Fa2hLzAEjN9lbWiiGQ
+  owner: person:sergio-sisternes
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1696454896480001qd9V
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sesispla
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

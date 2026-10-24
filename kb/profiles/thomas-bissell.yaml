@@ -1,0 +1,177 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:thomas-bissell
+  person: person:thomas-bissell
+  brief_bio:
+    text: Thomas Bissell is a senior associate in digital manufacturing solution engineering at Pfizer,
+      working as a DevOps engineer on data integration projects for manufacturing operations. Bissell
+      spoke at GitHub Universe 2025 about scalable GitHub Actions workflows with dynamic matrices.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:27Z'
+    input_sha256: d66ff477702676eb69f0bab4ac078c209ea08fd5547e0ed9c3096d23069b2dbf
+    stale: false
+  headline: Pfizer
+  current_roles:
+  - Pfizer
+  expertise:
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1386d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1386d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1386d
+  - label: Kubernetes
+    target: term:topic-2025/kubernetes
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1386d
+  technologies:
+  - label: .NET
+    target: software:dotnet
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: .NET
+      ref: person:thomas-bissell
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: GitHub Actions
+      ref: session:2025/aut1386d
+  - label: Java
+    target: software:java
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Java
+      ref: person:thomas-bissell
+  - label: Python
+    target: software:python
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Python
+      ref: person:thomas-bissell
+  interests:
+  - label: Containerized applications
+    target: term:topic-2025/containerized-applications
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746206067101001pTmo
+      ref: session:2025/aut1386d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic-2025/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746206067101001pTmo
+      ref: session:2025/aut1386d
+  - label: DevOps and DevSecOps
+    target: term:topic-2025/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746206067101001pTmo
+      ref: session:2025/aut1386d
+  - label: GitHub Actions
+    target: term:github-product-2025/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746206067101001pTmo
+      ref: session:2025/aut1386d
+  - label: GitHub Secret Protection
+    target: term:github-product-2025/github-secret-protection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746206067101001pTmo
+      ref: session:2025/aut1386d
+  - label: Kubernetes
+    target: term:topic-2025/kubernetes
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746206067101001pTmo
+      ref: session:2025/aut1386d
+  credentials:
+  - kind: honor
+    title: Eagle Scout
+    issuer: Boy Scouts of America
+    date: '2012-11-01T00:00:00.000Z'
+    evidence:
+      url: https://www.linkedin.com/in/thomas-bissell-10b51b15a
+      observed_at: '2026-10-24T08:49:51Z'
+  - kind: certification
+    title: Building PI System Assets and Analytics with AF - USA
+    issuer: OSIsoft, LLC.
+    date: Mar 2022
+    url: https://verify.skilljar.com/c/zhifx9uq73em
+    evidence:
+      url: https://www.linkedin.com/in/thomas-bissell-10b51b15a
+      observed_at: '2026-10-24T08:49:51Z'
+  - kind: certification
+    title: PI System Administration - USA
+    issuer: OSIsoft, LLC.
+    date: Mar 2022
+    url: https://verify.skilljar.com/c/8yp39r7y3w6i
+    evidence:
+      url: https://www.linkedin.com/in/thomas-bissell-10b51b15a
+      observed_at: '2026-10-24T08:49:51Z'
+  talks:
+  - session:2025/aut1386d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699369015430001wX3X
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

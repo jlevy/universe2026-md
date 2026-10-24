@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:mastodon/jamesmontemagno@mastodon.social
+  platform: mastodon
+  handle: jamesmontemagno@mastodon.social
+  url: https://mastodon.social/@jamesmontemagno
+  display_name: James Montemagno
+  bio: Let's pre-party tonight
+  followers: 1785
+  following: 13
+  posts_count: 396
+  avatar_url: https://files.mastodon.social/accounts/avatars/109/334/562/389/227/944/original/0a316994187d1b90.jpg
+  created_at: '2022-11-13T00:00:00Z'
+  owner: person:james-montemagno
+  link_basis:
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: jamesmontemagno
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: mastodon
+    url: https://mastodon.social/@jamesmontemagno
+    record_id: jamesmontemagno@mastodon.social
+    retrieved_at: '2026-10-24T10:31:44Z'
+    snapshot: raw/mastodon/profiles.json

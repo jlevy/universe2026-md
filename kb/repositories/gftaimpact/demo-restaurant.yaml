@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:gftaimpact/demo-restaurant
+  full_name: gftaimpact/demo-restaurant
+  url: https://github.com/gftaimpact/demo-restaurant
+  stars: 1
+  forks: 0
+  watchers: 0
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:10:13Z'
+  primary_language: JavaScript
+  archived: false
+  fork: false
+  created_at: '2026-06-08T23:25:51Z'
+  pushed_at: '2026-06-10T18:50:40Z'
+  owner_login: gftaimpact
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: julioarruda
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: gftaimpact/demo-restaurant
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

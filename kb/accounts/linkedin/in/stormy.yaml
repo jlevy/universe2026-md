@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/stormy
+  platform: linkedin
+  handle: in/stormy
+  url: https://www.linkedin.com/in/stormy
+  display_name: Stormy Peters
+  bio: Watch my speaker demo video (https://stormyscorner.com/speaking/video) to see how I help…
+  location: Greater Fort Collins Area
+  followers: 3668
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4D03AQFBGvoV_E876g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516273449455?e=2147483647&v=beta&t=niBq2AjMJ2gTaZpgdH1id_MGxk_HfgmbfCIlRRQXtsU
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHAYqxOzQDhtQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1720477551591?e=2147483647&v=beta&t=-o8z32TDVQafzEdvujK32eBaOv91kLKFmyh_D-4SrJ8
+  owner: person:stormy-peters
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1687465757703001tz6K
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/stormy
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

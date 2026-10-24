@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/sean-p-clayton
+  platform: linkedin
+  handle: in/sean-p-clayton
+  url: https://www.linkedin.com/in/sean-p-clayton
+  display_name: Sean Clayton
+  bio: I’m a cybersecurity leader specializing in cloud security, DevSecOps transformation, and…
+  location: Greater Hartford
+  followers: 674
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/C4E03AQFkcx31r55dBA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1522095455767?e=2147483647&v=beta&t=VbdlRhU4zyWcIZlaSJR4AhoAVgUhFmXJcNRT5qtyZBg
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHKxjTiwT4qxA/profile-displaybackgroundimage-shrink_200_800/B4EZqh1xiJKoAU-/0/1763651820983?e=2147483647&v=beta&t=6kWmSmkplJYgQdT9Yq15C_sbl2061hHqFur8zQxjLSI
+  owner: person:sean-clayton
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745607555078001ydvC
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/sean-p-clayton
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

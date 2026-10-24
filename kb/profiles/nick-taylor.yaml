@@ -1,0 +1,419 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:nick-taylor
+  person: person:nick-taylor
+  brief_bio:
+    text: Nick Taylor is a Developer Advocate and Software Engineer at Pomerium working on Zero Trust
+      security and MCP, and a Microsoft MVP and GitHub Star. Taylor speaks at GitHub Universe 2026 about
+      fine-grained authorization for hosted MCP servers.
+    cites:
+    - listed_role
+    - current_affiliations
+    - github_readme
+    - recognitions
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:03:50Z'
+    input_sha256: 6e9a2f0d0ed53e645853276c352ec40890d83ef849049c99ef17e04d50ce214d
+    stale: true
+  headline: Developer Advocate/Software Engineer at Pomerium
+  location: Montreal, Canada
+  current_roles:
+  - Developer Advocate/Software Engineer at Pomerium
+  expertise:
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1322h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1322h
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1322h
+  technologies:
+  - label: Amazon Web Services
+    target: software:aws
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: AWS
+      ref: person:nick-taylor
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: Copilot
+      ref: session:tru1322h
+  - label: Model Context Protocol
+    target: software:model-context-protocol
+    basis: session_text
+    confidence: medium
+    evidence:
+    - quote: MCP
+      ref: session:tru1322h
+  - label: Visual Studio Code
+    target: software:vs-code
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:tru1322h
+  programming_languages:
+  - label: TypeScript
+    basis: github_repositories
+    confidence: high
+    evidence:
+    - ref: repo:nickytonline/mcp-typescript-template
+    - ref: repo:pomerium/mcp-app-typescript-template
+    - ref: repo:nickytonline/beads-mcp
+    - ref: repo:nickytonline/marp-kit
+    - ref: repo:openclaw/openclaw
+    - ref: repo:nickytonline/dev-to-mcp
+    - ref: repo:nickytonline/web3-starter
+    - ref: repo:nickytonline/ts-preact-starter
+  recognitions:
+  - label: Microsoft MVP
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Nick is a Microsoft MVP, GitHub Star, AAIF Ambassador, AWS Community Builder, and Developer
+        Advocate at Pomerium.
+  - label: GitHub Star
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Nick is a Microsoft MVP, GitHub Star, AAIF Ambassador, AWS Community Builder, and Developer
+        Advocate at Pomerium.
+  interests:
+  - label: pomerium
+    basis: github_repositories
+    confidence: medium
+    weight: 1.0
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/pomerium/mcp-app-typescript-template
+      ref: repo:pomerium/mcp-app-typescript-template
+    - url: https://github.com/pomerium/pomerium
+      ref: repo:pomerium/pomerium
+    - url: https://github.com/pomerium/desktop-client
+      ref: repo:pomerium/desktop-client
+  - label: mcp
+    basis: github_repositories
+    confidence: medium
+    weight: 0.78
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nickytonline/dev-to-mcp
+      ref: repo:nickytonline/dev-to-mcp
+    - url: https://github.com/pomerium/mcp-app-typescript-template
+      ref: repo:pomerium/mcp-app-typescript-template
+    - url: https://github.com/nickytonline/beads-mcp
+      ref: repo:nickytonline/beads-mcp
+  - label: TypeScript
+    basis: github_repositories
+    confidence: medium
+    weight: 0.78
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nickytonline/web3-starter
+      ref: repo:nickytonline/web3-starter
+    - url: https://github.com/nickytonline/ts-preact-starter
+      ref: repo:nickytonline/ts-preact-starter
+    - url: https://github.com/nickytonline/dev-to-mcp
+      ref: repo:nickytonline/dev-to-mcp
+  - label: identity-aware-proxy
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/pomerium/mcp-app-typescript-template
+      ref: repo:pomerium/mcp-app-typescript-template
+    - url: https://github.com/pomerium/pomerium
+      ref: repo:pomerium/pomerium
+  - label: mcp-server
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nickytonline/dev-to-mcp
+      ref: repo:nickytonline/dev-to-mcp
+    - url: https://github.com/nickytonline/beads-mcp
+      ref: repo:nickytonline/beads-mcp
+  - label: React
+    basis: github_repositories
+    confidence: medium
+    weight: 0.6
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/nickytonline/web3-starter
+      ref: repo:nickytonline/web3-starter
+    - url: https://github.com/pomerium/mcp-app-typescript-template
+      ref: repo:pomerium/mcp-app-typescript-template
+  - label: 'AI: MCP and other integrations'
+    target: term:topic/ai-mcp-and-other-integrations
+    basis: session_facets
+    confidence: low
+    weight: 0.45
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489102123001ThSM
+      ref: session:tru1322h
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 0.45
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489102123001ThSM
+      ref: session:tru1322h
+  - label: Governance and compliance
+    target: term:topic/governance-and-compliance
+    basis: session_facets
+    confidence: low
+    weight: 0.45
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489102123001ThSM
+      ref: session:tru1322h
+  - label: Security
+    target: term:topic/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 0.45
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489102123001ThSM
+      ref: session:tru1322h
+  - label: VS Code
+    target: term:github-product/vs-code
+    basis: session_facets
+    confidence: low
+    weight: 0.45
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1777489102123001ThSM
+      ref: session:tru1322h
+  - label: AI
+    basis: github_repositories
+    confidence: low
+    weight: 0.3
+    sources:
+    - github_repositories
+    evidence:
+    - url: https://github.com/openclaw/openclaw
+      ref: repo:openclaw/openclaw
+  open_source:
+  - repository: repo:openclaw/openclaw
+    relation: pinned
+    stars: 392947
+    primary_language: TypeScript
+  - repository: repo:nickytonline/web3-starter
+    relation: owner
+    stars: 70
+    primary_language: TypeScript
+  - repository: repo:nickytonline/mcp-typescript-template
+    relation: owner
+    stars: 59
+    primary_language: TypeScript
+  - repository: repo:nickytonline/alfred-workflows
+    relation: owner
+    stars: 54
+  - repository: repo:nickytonline/ts-preact-starter
+    relation: owner
+    stars: 49
+    primary_language: TypeScript
+  - repository: repo:nickytonline/dev-to-mcp
+    relation: owner
+    stars: 46
+    primary_language: TypeScript
+  - repository: repo:pomerium/mcp-app-typescript-template
+    relation: pinned
+    stars: 21
+    primary_language: TypeScript
+  - repository: repo:nickytonline/beads-mcp
+    relation: owner
+    stars: 3
+    primary_language: TypeScript
+  - repository: repo:nickytonline/marp-kit
+    relation: owner
+    stars: 2
+    primary_language: TypeScript
+  - repository: repo:pomerium/pomerium
+    relation: contributor
+    stars: 5064
+    primary_language: Go
+  - repository: repo:pomerium/desktop-client
+    relation: contributor
+    stars: 22
+    primary_language: TypeScript
+  - repository: repo:pomerium/ingress-controller
+    relation: contributor
+    stars: 37
+    primary_language: Go
+  - repository: repo:lynnandtonic/oss-valentines
+    relation: contributor
+    stars: 33
+    primary_language: JavaScript
+  - repository: repo:pomerium/documentation
+    relation: contributor
+    stars: 13
+    primary_language: MDX
+  credentials:
+  - kind: honor
+    title: AWS Community Builder
+    issuer: '-'
+    date: '2026-03-01T00:00:00.000Z'
+    description: Selected as an AWS Community Builder in the AI Engineering category, recognizing active
+      contributions to the developer community.
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: honor
+    title: Microsoft MVP
+    issuer: Microsoft
+    date: '2025-08-01T00:00:00.000Z'
+    description: Microsoft Most Valuable Professional (MVP) recognized for outstanding contributions to
+      the developer community for Web Development.
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: honor
+    title: GitHub Star
+    issuer: GitHub
+    date: '2025-05-01T00:00:00.000Z'
+    description: Recognized as a GitHub Star for contributions to the developer and open source community.
+      I share knowledge through talks, livestreams, and content, and collaborate with GitHub and fellow
+      Stars to help grow and support the global dev community. Always happy to advocate for open source
+      and empower other developers.
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: certification
+    title: RSAC 365
+    issuer: Goldcast Inc
+    date: Nov 2025
+    url: https://credsverse.com/credentials/b9953503-38a9-4885-9075-0921709e2087
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: certification
+    title: 'Speaker: JS Nation 2025'
+    issuer: GitNation Foundation
+    date: Jun 2025
+    url: https://gitnation.com/person/nick_taylor/certificates/31096
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: certification
+    title: 'Speaker: Node Congress 2023'
+    issuer: GitNation
+    date: May 2024
+    url: https://portal.gitnation.org/person/nick_taylor/certificates/15010
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: certification
+    title: 'Speaker: Global Summit for Node.js 24'
+    issuer: Geekle.us
+    date: Jan 2024
+    url: https://certificate.givemycertificate.com/c/82225679-2f3d-4b65-b4b1-0e8a4d4f160a
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: certification
+    title: 'Speaker: AI Coding Summit 2025'
+    issuer: GitNation Foundation
+    url: https://gitnation.com/person/nick_taylor/certificates/31524
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  activities:
+  - kind: volunteering
+    title: Mentor
+    detail: Let's Get Technical Community · Science and Technology · May 2025 · - Present · 1 year 6 months
+      · Mentor people new to the tech industry through a real world project. · May 2025
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: volunteering
+    title: Ambassador
+    detail: Cloudinary · Science and Technology · Jun 2024 · - Present · 2 years 5 months · Recognized
+      by Cloudinary for community contributions around media and developer tooling; actively engages in
+      content creation and community initiatives. · Jun 2024
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  - kind: volunteering
+    title: Volunteer
+    detail: Virtual Coffee · Education · Nov 2020 · - Present · 6 years · Room Leader, Notetaker, Virtual
+      Coffee (VC) Advisor, VC Host, Mentor, and I also give talks from time to time. · Nov 2020
+    evidence:
+      url: https://www.linkedin.com/in/nickytonline
+      observed_at: '2026-10-24T08:15:42Z'
+  recent_writing:
+  - title: 'Full house! Thanks to everyone that came to my talk! #ATOAI https://t.co/7sbuTVftSQ'
+    url: https://twitter.com/425485945/status/1902037491021992319
+    published: '2025-03-18T16:40:50Z'
+    channel: x
+  - title: 'One my talks was accepted for Commit Your Code 2025! See you there peeps! #CommitYourCode
+      https://t.co/CNrW8OnQsH'
+    url: https://twitter.com/425485945/status/1867243091171876991
+    published: '2024-12-12T16:20:19Z'
+    channel: x
+  - title: 'Hanging with my awesome support group for my talk today. #compose24 https://t.co/UX09rHNtqR'
+    url: https://twitter.com/425485945/status/1841944532147175757
+    published: '2024-10-03T20:52:52Z'
+    channel: x
+  - title: |-
+      When you get your first PR merged on a new project.
+
+      https://t.co/8kPlsMOFpX
+    url: https://twitter.com/425485945/status/1707008739084268025
+    published: '2023-09-27T12:26:12Z'
+    channel: x
+  - title: git rebase -i
+    url: https://twitter.com/425485945/status/1493415727868620800
+    published: '2022-02-15T02:43:50Z'
+    channel: x
+  talks:
+  - session:tru1322h
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1714445176861001BD1U
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: nickytonline
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

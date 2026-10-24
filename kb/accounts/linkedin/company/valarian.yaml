@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/valarian
+  platform: linkedin
+  handle: company/valarian
+  url: https://www.linkedin.com/company/valarian
+  display_name: Valarian
+  bio: Valarian builds infrastructure for organisations operating in high-trust, high-stakes environments.
+    Our core product, ACRA, is a secure, compartmentalised backbone designed to run and protect mission-critical
+    applications — now proven at the edge in portable GPU clusters as well as in the cloud and on-premise.
+    We developed ACRA when existing infrastructure failed to meet real-world risk — where segmentation
+    breaks down, audit trails disappear, and lateral movement cannot be contained. Valarian is a UK-founded
+    and UK-led company, and backed by leading defence and national security investors. We are a homegrown
+    team with backgrounds across defence, secure communications, high-assurance systems, and enterprise
+    software — engineers and operators who have worked in environments where a lost signal or a missed
+    audit can carry real consequences. We design like users because we’ve been them.
+  website: https://valarian.com/
+  followers: 10880
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQG6mRg92ZEhyQ/company-logo_200_200/B56Z9byeM.HIAI-/0/1783951385690/valarian_logo?e=2147483647&v=beta&t=TVdNvDoioyvcqFhH10Z2eVhrCnoi2HvRUPAOQJVPVys
+  owner: org:valarian
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/chris-bauer-b8064a211
+    record_id: sd_mvm5gx7621vq8dte6x
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/valarian
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

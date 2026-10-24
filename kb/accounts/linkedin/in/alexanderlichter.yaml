@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/alexanderlichter
+  platform: linkedin
+  handle: in/alexanderlichter
+  url: https://www.linkedin.com/in/alexanderlichter
+  display_name: Alexander Lichter
+  location: Amsterdam
+  followers: 3087
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E03AQEaPwOAyq_sVg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1695559920984?e=2147483647&v=beta&t=2y3qbJCp9Q22K9Uwrmqa7Su9ZhZf3e3A68IhfJODEHY
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQHQzhxLVnfCYg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1695902857641?e=2147483647&v=beta&t=8drQYPYDWidIP7yWwwLGhqQfZxeHyAlYXqADCIzq0Zs
+  owner: person:alexander-lichter
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1745004107585001M3SH
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/alexanderlichter
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

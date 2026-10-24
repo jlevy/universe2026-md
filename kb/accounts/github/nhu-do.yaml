@@ -1,0 +1,43 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:nhu-do
+  login: nhu-do
+  kind: user
+  url: https://github.com/nhu-do
+  name: Nhu Do
+  company: GitHub
+  bio: 'Product @ Github '
+  location: New York
+  followers: 44
+  public_repositories: 0
+  created_at: '2024-08-25T23:54:55Z'
+  contributions_last_year:
+    total: 791
+    commits: 33
+    pull_requests: 0
+    issues: 7
+    reviews: 2
+  starred_repositories: 1
+  has_sponsors_listing: false
+  contribution_years:
+  - 2026
+  - 2025
+  - 2024
+  github_star: false
+  campus_expert: false
+  github_employee: true
+  gists: 0
+  contributed_to:
+  - repo:microsoft/vscode
+  - repo:github/docs
+  entity: person:nhu-do
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: nhu-do
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

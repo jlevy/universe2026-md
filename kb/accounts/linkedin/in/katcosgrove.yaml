@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/katcosgrove
+  platform: linkedin
+  handle: in/katcosgrove
+  url: https://www.linkedin.com/in/katcosgrove
+  display_name: Kat Cosgrove
+  bio: Kat is an open source advocate focused on the growth and nurturing of open source through…
+  location: Colorado Springs
+  followers: 4570
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQGRa53LvOFXWg/profile-displayphoto-scale_200_200/B56Z9IF.gUJoAc-/0/1783620956803?e=2147483647&v=beta&t=hqvsktLrU9dsNc_hTf0L8r8Y0uTDTvSmVDV-DJbjaXI
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQHTMFpwb2wBKA/profile-displaybackgroundimage-shrink_200_800/B56Z6YzrNgKYAQ-/0/1780680143953?e=2147483647&v=beta&t=stZeSQkIpJ4Kixs542HdmZqUfJCnEy1hjZUoMw2r4xg
+  owner: person:kat-cosgrove
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1718838662057001nwYW
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/katcosgrove
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

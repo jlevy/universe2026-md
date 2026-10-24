@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/mathias-biilmann-christensen-a5a3805
+  platform: linkedin
+  handle: in/mathias-biilmann-christensen-a5a3805
+  url: https://www.linkedin.com/in/mathias-biilmann-christensen-a5a3805
+  display_name: Mathias Biilmann Christensen
+  bio: Mathias (Matt) Biilmann is CEO of Netlify, a company he co-founded in 2014 and today is…
+  location: San Francisco
+  followers: 7915
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQGTeiAJ2ZSdlg/profile-displayphoto-scale_200_200/B56Z4t0xMSK0Ac-/0/1778885270152?e=2147483647&v=beta&t=C_2KPOm6RH9x_aWoDVEJ0aiCANeZtVABnXs-nzJ0zZY
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQEzZFTgawHhBw/profile-displaybackgroundimage-shrink_200_800/B4EZ8.VZubKQAQ-/0/1783457227452?e=2147483647&v=beta&t=tbg6swihOarzTrpHOigKu6H4tI3ghnbMLZLLAPr3mFE
+  owner: person:matt-biilmann
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1728675809463001IJ8N
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/mathias-biilmann-christensen-a5a3805
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

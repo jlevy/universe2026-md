@@ -1,0 +1,38 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:step-security
+  login: step-security
+  kind: organization
+  url: https://github.com/step-security
+  name: StepSecurity
+  bio: 'Secure your GitHub Actions with StepSecurity: Your Trusted CI/CD Security Partner'
+  location: United States of America
+  website: https://www.stepsecurity.io
+  public_repositories: 645
+  created_at: '2021-08-10T04:28:22Z'
+  profile_readme: |-
+    <p align="left">
+      <img src="step-security-logo.png" alt="Step Security Logo" width="340">
+    </p>
+
+    ## Close the CI/CD Security Gap
+  pinned:
+  - repo:step-security/harden-runner
+  - repo:step-security/dev-machine-guard
+  - repo:step-security/secure-repo
+  - repo:step-security/github-actions-goat
+  top_repositories:
+  - repo:step-security/wait-for-secrets
+  linked_accounts:
+  - acct:x/step_security
+  entity: org:stepsecurity
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: step-security
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

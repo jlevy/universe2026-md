@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:probot/probot
+  full_name: probot/probot
+  url: https://github.com/probot/probot
+  description: 🤖 A framework for building GitHub Apps to automate and improve your workflow
+  homepage: https://probot.github.io
+  stars: 9627
+  forks: 1047
+  watchers: 120
+  open_issues: 40
+  stats_observed_at: '2026-10-24T19:12:13Z'
+  primary_language: TypeScript
+  topics:
+  - probot
+  - github-apps
+  license: ISC
+  archived: false
+  fork: false
+  created_at: '2016-09-16T20:56:13Z'
+  pushed_at: '2026-10-23T09:40:13Z'
+  owner_login: probot
+  pinned_by:
+  - gh:jasonetco
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: JasonEtco
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: probot/probot
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

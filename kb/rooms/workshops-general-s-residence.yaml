@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:Room/v1
+  schema: ../_schemas/room.schema.yaml
+  envelope: room
+  status: permissive
+room:
+  id: room:workshops-general-s-residence
+  name: Workshops
+  label: Workshops @ General's Residence
+  venue: venue:generals-residence
+  capacity: 68
+  source_ids:
+  - 1724078254477001v9kW
+  sessions:
+  - session:2024/ai1944w
+  - session:2024/ai1959w
+  - session:2024/dev1945w
+  - session:2024/sec1895w
+  - session:2024/sec1953w
+  - session:2024/sec1955w
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/rooms
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/rooms.json

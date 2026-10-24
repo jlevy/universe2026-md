@@ -1,0 +1,32 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/krishnasuhas
+  platform: linkedin
+  handle: in/krishnasuhas
+  url: https://www.linkedin.com/in/krishnasuhas
+  display_name: Suhas J.
+  bio: As a Senior Software Engineer at Coursera since June 2022, I contribute to the…
+  location: Greater Seattle Area
+  followers: 1481
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQFbLWTseEJXQA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709415351018?e=2147483647&v=beta&t=Y84b9LwY_txtSltCA2n5ZlC1PKj1YISjPGrM66MX_-4
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQEpkrZPq__NyA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1719170695356?e=2147483647&v=beta&t=sYcM8C5_yIUBSMwGL0jFXO2DHCznbHQK0wm3qpPP12o
+  owner: person:suhas-jaladi
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683655502508001sHLP
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/krishnasuhas
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

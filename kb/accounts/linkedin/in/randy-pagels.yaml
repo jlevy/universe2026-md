@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/randy-pagels
+  platform: linkedin
+  handle: in/randy-pagels
+  url: https://www.linkedin.com/in/randy-pagels
+  display_name: Randy Pagels
+  bio: As a Principal Trainer at Xebia USA and a Microsoft MVP in Developer Tools and DevOps, I…
+  location: Detroit Metropolitan Area
+  followers: 2187
+  connections: 500
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQERmozfCsS59w/profile-displaybackgroundimage-shrink_200_800/B4EZhHSUJSGcAU-/0/1753542641940?e=2147483647&v=beta&t=WUmuVngi1P6Z-1wNVTlVOc0Jr-wx5Sl0LQPo_q1qY0g
+  owner: person:randy-pagels
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1727166101759001QHvG
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/randy-pagels
+    record_id: sd_mvm5nacx2e53fjpnuw
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

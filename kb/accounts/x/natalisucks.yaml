@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/natalisucks
+  platform: x
+  handle: natalisucks
+  url: https://x.com/natalisucks
+  display_name: natali
+  bio: 'i''m so low maintenance that I''m barely breathing (SIG Docs Co-chair @kubernetesio, @todogroup
+    Steering Committee) / bsky: https://t.co/uhKC6WCpkd'
+  location: BERLIN, DE
+  website: http://opensource.cisco.com/
+  followers: 630
+  following: 400
+  posts_count: 4231
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/554690319057301504/e-XamoVL_normal.jpeg
+  banner_url: https://pbs.twimg.com/profile_banners/285017328/1555351309
+  created_at: '2011-04-20T11:33:48Z'
+  owner: person:natali-vlatko
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719502929301001jPgI
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1719502929301001jPgI
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: brightdata
+    url: https://x.com/natalisucks
+    record_id: sd_mvm5txbv2p41ax7h6w
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

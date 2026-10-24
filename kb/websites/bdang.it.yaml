@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:bdang.it
+  url: https://bdang.it/
+  kind: personal
+  title: 'Ben Dang - automating #allthethings'
+  description: I love to make your team productive at high velocity.  Ask me how you can get started on
+    day 1!
+  owner: person:ben-dang
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  identity_links:
+  - https://www.linkedin.com/in/bendang
+  - https://github.com/bdangit
+  - https://medium.com/@bdangit
+  linked_accounts:
+  - acct:linkedin/in/bendang
+  sources:
+  - system: brightdata
+    url: https://x.com/bdangit
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://bdang.it/
+    record_id: https://bdang.it/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

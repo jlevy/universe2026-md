@@ -1,0 +1,40 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:osquery/osquery
+  full_name: osquery/osquery
+  url: https://github.com/osquery/osquery
+  description: SQL powered operating system instrumentation, monitoring, and analytics.
+  homepage: https://osquery.io
+  stars: 23670
+  forks: 2628
+  watchers: 658
+  open_issues: 503
+  stats_observed_at: '2026-10-24T19:12:10Z'
+  primary_language: C++
+  topics:
+  - security
+  - monitoring
+  - intrusion-detection
+  - sql
+  - hacktoberfest
+  license: NOASSERTION
+  archived: false
+  fork: false
+  created_at: '2014-07-29T20:27:33Z'
+  pushed_at: '2026-10-23T04:31:54Z'
+  owner_login: osquery
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: lyoung-confluent
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: osquery/osquery
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

@@ -1,0 +1,90 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: session-type
+  event: event:github-universe-2026
+  label: Session type
+  multi_valued: false
+  terms:
+  - id: term:session-type/breakout-session
+    label: Breakout Session
+    description: A focused presentation from one or two speakers sharing expertise, insights, and practical
+      takeaways. Q&A and brief audience interaction are encouraged.
+    duration_minutes: 40
+    source_id: sessionType_breakoutSession
+    session_count: 29
+  - id: term:session-type/keynote
+    label: Keynote
+    source_id: sessionType_keynote
+    session_count: 2
+  - id: term:session-type/main-stage
+    label: Main Stage
+    description: The highest-production stage at Universe. Main stage sessions feature industry leaders,
+      GitHub customers doing cutting-edge work, and big ideas shaping the future of software development.
+      These are the sessions that set the tone for the event.
+    source_id: 1692213261893001eWkK
+    session_count: 11
+  - id: term:session-type/panel-discussion
+    label: Panel Discussion
+    description: A moderated conversation with a diverse group of experts on timely topics shaping the
+      industry. Panels should surface a range of perspectives, challenge conventional thinking, and spark
+      new ideas. Expect significant time for Q&A and audience engagement.
+    duration_minutes: 40
+    source_id: 1682954346052001b9gI
+    session_count: 2
+  - id: term:session-type/product-demo
+    label: Product Demo
+    description: A focused look at tips, tricks, and best practices for getting more out of a specific
+      product.
+    duration_minutes: 15
+    source_id: 1681826483038002ztLL
+    session_count: 47
+  - id: term:session-type/sandbox-session
+    label: Sandbox Session
+    description: An interactive session that blends demo and workshop. Facilitators walk through how they
+      solved a real challenge, then attendees work through a similar exercise on provided lab machines.
+      Due to the interactive nature and popularity of this format, signups are limited to one sandbox
+      session per person.
+    duration_minutes: 45
+    source_id: option_1709309491135
+    session_count: 10
+  - id: term:session-type/session-after-party
+    label: Session After Party
+    description: Informal Q&A with main stage speakers, held in GitHub Central shortly after their session
+      ends. A chance to go deeper, ask the questions you didn't get to, and connect directly with the
+      people on stage.
+    source_id: 1785188627646001ENi1
+    session_count: 9
+  - id: term:session-type/ship-tell
+    label: Ship & Tell
+    description: Built something worth sharing? Ship & Tell is a short, builder-to-builder format for
+      developers who want to show what they made, why it matters, and what they learned along the way.
+    duration_minutes: 15
+    source_id: 1759933281450001LV4v
+    session_count: 19
+  - id: term:session-type/social
+    label: Social
+    source_id: 1756132180706001Tze0
+    session_count: 19
+  - id: term:session-type/special-event
+    label: Special Event
+    source_id: 1694026751006001bFon
+    session_count: 3
+  - id: term:session-type/workshop
+    label: Workshop
+    description: 'An immersive, interactive session focused entirely on practical learning. Facilitators
+      guide attendees through targeted exercises step by step — no demo portion, just depth. Participants
+      leave with skills they can put to work immediately. Note: workshops require an additional fee of
+      $99, which you can add to your registration in the Attendee Portal.'
+    duration_minutes: 90
+    source_id: 1681826483038003zyr1
+    session_count: 5
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681230546I4bcbaab8f
+    retrieved_at: '2026-10-24T06:46:17Z'
+    snapshot: raw/rainfocus/attributes.json

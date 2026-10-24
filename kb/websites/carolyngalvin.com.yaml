@@ -1,0 +1,34 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:carolyngalvin.com
+  url: http://carolyngalvin.com
+  kind: personal
+  title: Carolyn Galvin - Occasional Thoughts of a PM
+  description: Occasional Thoughts of a PM
+  owner: person:caro-galvin
+  link_basis:
+  - github_profile
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  feeds:
+  - https://carolyngalvin.com/feed/
+  - https://carolyngalvin.com/comments/feed/
+  linked_accounts:
+  - acct:linkedin/in/cmcgalvin
+  - acct:x/cmcgalvin
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: carogalvin
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: website
+    url: http://carolyngalvin.com
+    record_id: http://carolyngalvin.com
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

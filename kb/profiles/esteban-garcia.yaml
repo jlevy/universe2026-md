@@ -1,0 +1,392 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:esteban-garcia
+  person: person:esteban-garcia
+  brief_bio:
+    text: Esteban Garcia works at Lantern and is a Microsoft Regional Director and DevOps MVP with more
+      than 20 years of building enterprise software, focused on Azure and DevOps practices. Garcia spoke
+      at GitHub Universe 2023, as CEO (US) of Xpirit, about building an organization's engineering culture.
+    cites:
+    - current_affiliations
+    - recognitions
+    - event_bio
+    - listed_role
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T10:05:59Z'
+    input_sha256: b7e0764d09e1b57f2267497dc69fd856a8fe96c9e4e26ce979ecba101e0564fb
+    stale: false
+  headline: Lantern
+  current_roles:
+  - Lantern
+  expertise:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Artificial Intelligence (AI)
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Community
+    target: term:topic-2023/community
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Productivity
+    target: term:topic-2023/productivity
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Security
+    target: term:topic-2023/security
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Software Engineering
+    target: term:topic-2023/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  - label: Vulnerability Detection
+    target: term:topic-2023/vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2023/dev2771l
+  technologies:
+  - label: Microsoft Azure
+    target: software:azure
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: Azure
+      ref: person:esteban-garcia
+  recognitions:
+  - label: Microsoft Regional Director
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: enterprise software and has a deep passion for DevOps and Azure. As a Microsoft Regional
+        Director, DevOps MVP, and Pluralsight author, he helps teams realize their potential by
+  interests:
+  - label: Agile practices
+    target: term:topic-2023/agile-practices
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: AI
+    target: term:topic-2023/artificial-intelligence-ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: Cloud
+    target: term:topic-2023/cloud
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: Collaboration
+    target: term:topic-2023/collaboration
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: DevOps
+    target: term:topic-2023/devops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: DevSecOps
+    target: term:topic-2023/devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: Enterprise/Admin
+    target: term:github-product-2023/enterprise-admin
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: GitHub Actions
+    target: term:github-product-2023/actions
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: GitHub Advanced Security
+    target: term:github-product-2023/advanced-security
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: GitHub Codespaces
+    target: term:github-product-2023/codespaces
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: GitHub Copilot
+    target: term:github-product-2023/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  - label: Issues
+    target: term:github-product-2023/issues
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe23/attendee-portal/page/sessioncatalog/session/1694530838827001rXh1
+      ref: session:2023/dev2771l
+  education:
+  - school: University of Central Florida
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  credentials:
+  - kind: honor
+    title: Microsoft Regional Director
+    issuer: Microsoft
+    date: '2018-04-01T00:00:00.000Z'
+    description: The Microsoft Regional Director (RD) program is an elite group of technology thought-leaders
+      recognized by Microsoft for their leadership, community reach and well-rounded business acumen.
+      The RD program at Microsoft includes individuals who are recognized experts in their field, who
+      keep up with emerging technologies and are able to communicate the value of those technologies to
+      others in the industry in an effective manner. The Regional Director Program provides Microsoft
+      leaders with the… Show more
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  - kind: honor
+    title: Microsoft MVP - Developer Productivity
+    issuer: Microsoft
+    date: '2012-07-01T00:00:00.000Z'
+    description: Microsoft MVPs represent a highly select group of experts. MVPs share a deep commitment
+      to community and a willingness to help others. They represent the diversity of today’s technical
+      communities. MVPs are present in over 90 countries, spanning more than 30 languages, and over 90
+      Microsoft technologies. MVPs share a passion for technology, a willingness to help others, and a
+      commitment to community. These are the qualities that make MVPs exceptional community leaders.
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  - kind: certification
+    title: 2023 Microsoft Most Valuable Professional (MVP)
+    issuer: Microsoft
+    date: Jul 2023
+    url: https://www.credly.com/badges/f91f1c0d-fba0-477c-8c5e-e6f08b393634/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  - kind: certification
+    title: Microsoft Global Hackathon 2021
+    issuer: Microsoft
+    date: Oct 2021
+    url: https://www.credly.com/badges/08d5b79f-c942-4749-b0b9-15d1e6fb2943?source=linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  - kind: certification
+    title: 'Exam 532: Developing Microsoft Azure Solutions'
+    issuer: Microsoft
+    date: Jan 2017
+    url: https://www.youracclaim.com/badges/f2e1e5b4-fe2c-4839-aef3-e699778985b5/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  - kind: certification
+    title: GitHub Foundations
+    issuer: GitHub
+    date: Nov 2024
+    expires: Nov 2027
+    url: https://www.credly.com/badges/c5635170-8915-4435-b8a1-aceb63025818/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  - kind: certification
+    title: GitHub Copilot
+    issuer: Microsoft
+    date: Sep 2025
+    expires: Sep 2027
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  - kind: certification
+    title: 2025 Microsoft Most Valuable Professional (MVP)
+    issuer: Microsoft Most Valuable Professional
+    date: Jul 2025
+    expires: Jun 2026
+    url: https://www.credly.com/badges/d9965168-84cc-4bb6-b5ec-4fe71ed7052e/linked_in_profile
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  spoken_languages:
+  - English
+  - Spanish
+  activities:
+  - kind: volunteering
+    title: Dean's Advisory Board Member
+    detail: UCF College of Engineering & Computer Science · Science and Technology · Jun 2022 · - Present
+      · 4 years 5 months · Jun 2022
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  - kind: volunteering
+    title: UCF Foundation Committee Member
+    detail: University of Central Florida · Education · Aug 2024 · - Present · 2 years 3 months · Aug
+      2024
+    evidence:
+      url: https://www.linkedin.com/in/estebangarcia
+      observed_at: '2026-10-24T08:44:49Z'
+  recent_writing:
+  - title: Returning to Orlando Code Camp
+    url: https://repotocloud.com/returning-to-orlando-code-camp/
+    published: '2026-04-12T15:58:07Z'
+    channel: blog
+  - title: Measuring Developer Productivity Without Making Developers Hate You
+    url: https://repotocloud.com/measuring-developer-productivity-without-making-developers-hate-you/
+    published: '2026-03-12T14:03:00Z'
+    channel: blog
+  - title: The human side of Agentic Software development
+    url: https://repotocloud.com/the-human-side-of-agentic-software-development/
+    published: '2026-03-02T11:59:00Z'
+    channel: blog
+  - title: 'GitHub: The Central Hub for Modern Software Development'
+    url: https://repotocloud.com/github-the-central-hub-for-modern-software-development/
+    published: '2026-02-02T11:25:00Z'
+    channel: blog
+  - title: 'Going Beyond CI/CD: Agentic DevOps with GitHub Copilot'
+    url: https://repotocloud.com/going-beyond-cicd-agentic-devops-with-github-copilot/
+    published: '2025-12-19T20:14:02Z'
+    channel: blog
+  - title: The Future is Agentic – But the Platform Still Matters
+    url: https://repotocloud.com/the-future-is-agentic-but-the-platform-still-matters/
+    published: '2025-12-12T22:42:00Z'
+    channel: blog
+  - title: 'Take Action: Go Fast with GitHub at Live360 Orlando'
+    url: https://repotocloud.com/take-action-go-fast-with-github-at-live360-orlando/
+    published: '2025-11-25T17:33:00Z'
+    channel: blog
+  - title: What I learned teaching GitHub Copilot to early-career consultants
+    url: https://repotocloud.com/what-i-learned-teaching-github-copilot-to-early-career-consultants/
+    published: '2025-11-15T17:22:00Z'
+    channel: blog
+  - title: Copilot adoption at scale – mistakes that some enterprises make
+    url: https://repotocloud.com/copilot-adoption-at-scale-mistakes-that-some-enterprises-make/
+    published: '2025-11-15T08:35:00Z'
+    channel: blog
+  - title: 'GitHub Actions + Azure: The fastest path from Repo to Cloud'
+    url: https://repotocloud.com/github-actions-azure-the-fastest-path-from-repo-to-cloud/
+    published: '2025-08-02T16:44:00Z'
+    channel: blog
+  - title: The Road to DevOps
+    url: https://www.linkedin.com/pulse/road-devops-esteban-garcia
+    published: '2016-10-28T00:00:00.000Z'
+    channel: linkedin
+    summary: In the last few of years, the term DevOps has taken on different meanings, depending on the
+      context or the people that…
+  - title: Move Beyond Fear
+    url: https://www.linkedin.com/pulse/move-beyond-fear-esteban-garcia
+    published: '2014-12-30T00:00:00.000Z'
+    channel: linkedin
+    summary: As the year winds down, you are probably looking back at your accomplishments in 2014 and
+      thinking about your plans for…
+  talks:
+  - session:2023/dev2771l
+  gaps:
+  - github_account
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1693254795218001VLYf
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json

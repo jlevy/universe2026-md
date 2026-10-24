@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/cincsystems
+  platform: linkedin
+  handle: company/cincsystems
+  url: https://www.linkedin.com/company/cincsystems
+  display_name: CINC Systems
+  bio: 'CINC is one platform for the full work of community association management. Management companies
+    use CINC to run the business and the work across management, accounting, operations, communications
+    and community administration. Boards and residents engage through branded experiences delivered by
+    CINC Connect. Cephai is the AI engine inside CINC, powering intelligence across the platform. What
+    makes CINC different is Community Intelligence℠: the advantage created when trusted community information
+    and actions work together across CINC. Rather than treating every request, conversation, payment or
+    decision as an isolated task, CINC brings relevant community context into the work, helps move the
+    next step forward, and keep people in control. For management company leaders, that means greater
+    capacity and a stronger operating model. For community association managers and finance teams, less
+    repetitive work and more room for judgment. For boards, greater visibility and confidence. For residents,
+    an easier way to get answers, participate and take care of everyday community needs. Because modern
+    community management does not need more disconnected tools. It needs more technology that makes the
+    entire operation work better together. Less tedious. More meaningful.'
+  website: https://www.cincsystems.com/
+  followers: 8575
+  avatar_url: https://media.licdn.com/dms/image/v2/D4E0BAQFECmp24dLUcA/company-logo_200_200/B4EaFqGyeBGwAI-/0/1792781527135/cincsystems_logo?e=2147483647&v=beta&t=ZIh0Osle55UTE8fBC6CuP8jkYmK6XlM4mlFdIYsEw64
+  owner: org:cinc-systems
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/joe-bourne
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/cincsystems
+    record_id: sd_mvm5ufs8b8gbbf0y2
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

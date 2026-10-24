@@ -1,0 +1,29 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:bluesky/pilliin.bsky.social
+  platform: bluesky
+  handle: pilliin.bsky.social
+  url: https://bsky.app/profile/pilliin.bsky.social
+  display_name: Pilly
+  bio: "Code && Cats.\n\nI am Pilly, Chilean Coder Girl\n\nWTM Ambassador "
+  followers: 75
+  created_at: '2024-11-04T00:18:18Z'
+  owner: person:pillippa-perez-pons
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1692808110574001B3pK
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: bluesky
+    url: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfiles
+    record_id: pilliin.bsky.social
+    retrieved_at: '2026-10-24T10:31:03Z'
+    snapshot: raw/bluesky/profiles.json

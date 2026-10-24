@@ -1,0 +1,35 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:slackhq
+  login: slackhq
+  kind: organization
+  url: https://github.com/slackhq
+  name: Slack
+  bio: On a mission to make your working life simpler, more pleasant and more productive.
+  location: San Francisco & Vancouver
+  website: https://slack.com/
+  public_repositories: 52
+  created_at: '2014-03-10T19:23:15Z'
+  pinned:
+  - repo:slackhq/nebula
+  - repo:slackhq/panmodal
+  - repo:slackhq/circuit
+  - repo:slackhq/vscode-hack
+  - repo:slackhq/gosdl
+  - repo:slackhq/hack-sql-fake
+  top_repositories:
+  - repo:slackhq/slacktextviewcontroller
+  - repo:slackhq/go-audit
+  linked_accounts:
+  - acct:x/slackeng
+  entity: org:slack
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: slackhq
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

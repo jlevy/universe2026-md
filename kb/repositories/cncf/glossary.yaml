@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:cncf/glossary
+  full_name: cncf/glossary
+  url: https://github.com/cncf/glossary
+  description: The CNCF Cloud Native Glossary Project aims to define cloud native concepts in clear and
+    simple language, making them accessible to anyone —  whether they have a technical background or not
+    (https://glossary.cncf.io).
+  homepage: https://glossary.cncf.io/
+  stars: 725
+  forks: 599
+  watchers: 30
+  open_issues: 153
+  stats_observed_at: '2026-10-24T19:09:57Z'
+  primary_language: Go Template
+  topics:
+  - cncf
+  - cloud-native
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2021-01-15T16:50:39Z'
+  pushed_at: '2026-10-19T23:28:27Z'
+  owner_login: cncf
+  owner: gh:cncf
+  pinned_by:
+  - gh:cncf
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cncf
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: cncf/glossary
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

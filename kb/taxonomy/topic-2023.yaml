@@ -1,0 +1,141 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: topic-2023
+  event: event:github-universe-2023
+  label: Topic
+  multi_valued: true
+  terms:
+  - id: term:topic-2023/accessibility
+    label: Accessibility
+    source_id: 1681323600229002s1be
+    session_count: 8
+  - id: term:topic-2023/agile-practices
+    label: Agile practices
+    source_id: 1681323600229003sU8s
+    session_count: 8
+  - id: term:topic-2023/artificial-intelligence-ai
+    label: Artificial Intelligence (AI)
+    source_id: 1681323600229004sefV
+    session_count: 38
+  - id: term:topic-2023/automated-infrastructure-deployment
+    label: Automated Infrastructure Deployment
+    source_id: 1681323600229005sZjO
+    session_count: 6
+  - id: term:topic-2023/cloud
+    label: Cloud
+    source_id: 1681323600229006sjHK
+    session_count: 14
+  - id: term:topic-2023/collaboration
+    label: Collaboration
+    source_id: 1683210494021001ei0y
+    session_count: 30
+  - id: term:topic-2023/community
+    label: Community
+    source_id: 1683210494021002e3lu
+    session_count: 17
+  - id: term:topic-2023/containerized-applications
+    label: Containerized Applications
+    source_id: 1681323600229008s8A8
+    session_count: 3
+  - id: term:topic-2023/continuous-integration-continuous-deployment-ci-cd
+    label: Continuous Integration + Continuous Deployment (CI/CD)
+    source_id: 1681323600229007syow
+    session_count: 28
+  - id: term:topic-2023/data-analytics
+    label: Data Analytics
+    source_id: 1681323600229009si7A
+    session_count: 2
+  - id: term:topic-2023/data-management
+    label: Data Management
+    source_id: 1681323600229010smOE
+    session_count: 2
+  - id: term:topic-2023/data-science
+    label: Data Science
+    source_id: 1681323600229011saGL
+    session_count: 1
+  - id: term:topic-2023/devops
+    label: DevOps
+    source_id: 1681323600229012sHno
+    session_count: 27
+  - id: term:topic-2023/devsecops
+    label: DevSecOps
+    source_id: 1681323600229013szV5
+    session_count: 22
+  - id: term:topic-2023/git-and-related-code-management-techniques
+    label: Git and related code management techniques
+    source_id: 1681323600229014saln
+    session_count: 12
+  - id: term:topic-2023/human-factors
+    label: Human Factors
+    source_id: 1681323600229015sKSL
+    session_count: 13
+  - id: term:topic-2023/infrastructure-as-code
+    label: Infrastructure as Code
+    source_id: 1681323600229017sVgz
+    session_count: 4
+  - id: term:topic-2023/machine-learning
+    label: Machine Learning
+    source_id: 1681323600229018s1zF
+    session_count: 4
+  - id: term:topic-2023/monitoring-and-observability
+    label: Monitoring and Observability
+    source_id: 1681323600229019sUxg
+    session_count: 3
+  - id: term:topic-2023/open-source
+    label: Open Source
+    source_id: 1681323600229020sb9v
+    session_count: 21
+  - id: term:topic-2023/pair-programming
+    label: Pair Programming
+    source_id: 1681323600229021sv67
+    session_count: 7
+  - id: term:topic-2023/productivity
+    label: Productivity
+    source_id: 1683210494021003ekVI
+    session_count: 41
+  - id: term:topic-2023/scrum
+    label: Scrum
+    source_id: 1681323600229023swEg
+    session_count: 2
+  - id: term:topic-2023/security
+    label: Security
+    source_id: 1681323600229024sxUO
+    session_count: 32
+  - id: term:topic-2023/shell-programming-bash-powershell-etc
+    label: Shell Programming (Bash, PowerShell, etc.)
+    source_id: 1681323600229025s6VM
+    session_count: 4
+  - id: term:topic-2023/social-impact
+    label: Social Impact
+    source_id: 1681323600229027s1NF
+    session_count: 3
+  - id: term:topic-2023/software-engineering
+    label: Software Engineering
+    source_id: 1681323600229028syp9
+    session_count: 28
+  - id: term:topic-2023/supply-chain-security
+    label: Supply Chain Security
+    source_id: 1681323600229026sFMG
+    session_count: 17
+  - id: term:topic-2023/testing-and-related-practices
+    label: Testing and related practices
+    source_id: 1681323600229029saQm
+    session_count: 9
+  - id: term:topic-2023/threat-modeling
+    label: Threat Modeling
+    source_id: 1681323600229030sPc4
+    session_count: 9
+  - id: term:topic-2023/vulnerability-detection
+    label: Vulnerability Detection
+    source_id: 1681323600229031sXFJ
+    session_count: 20
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681323600255001sIqt
+    retrieved_at: '2026-10-24T08:03:33Z'
+    snapshot: raw/editions/universe23/attributes.json

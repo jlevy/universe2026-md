@@ -1,0 +1,158 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:brian-dehamer
+  person: person:brian-dehamer
+  brief_bio:
+    text: Brian DeHamer is a Staff Software Engineer at GitHub who works on software supply chain security
+      and helped bring provenance attestations to npm and GitHub Actions artifacts. DeHamer spoke at GitHub
+      Universe 2025 about immutable releases.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:40Z'
+    input_sha256: ca82c4f88dc9721be690900c3efcece5ef42f772d2f65ae2c954b89da9973298
+    stale: false
+  headline: GitHub
+  current_roles:
+  - GitHub
+  expertise:
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1451d
+  - label: Security (RASP, supply chain, threat modeling, vulnerability detection)
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2025/aut1451d
+  technologies:
+  - label: GitHub Actions
+    target: software:github-actions
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Actions
+      ref: person:brian-dehamer
+  - label: npm
+    target: software:npm-registry
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: npm
+      ref: person:brian-dehamer
+  interests:
+  - label: Open source
+    target: term:topic-2025/open-source
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746238472345001zMNN
+      ref: session:2025/aut1451d
+  - label: Security
+    target: term:topic-2025/security-rasp-supply-chain-threat-modeling-vulnerability-detection
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe25/attendee-portal/page/sessioncatalog/session/1746238472345001zMNN
+      ref: session:2025/aut1451d
+  education:
+  - school: California Polytechnic State University-San Luis Obispo
+    evidence:
+      url: https://www.linkedin.com/in/bdehamer
+      observed_at: '2026-10-24T08:43:01Z'
+  activities:
+  - kind: volunteering
+    title: Education Volunteer
+    detail: Microsoft TEALS Program · Education · Jun 2024 · - May 2025 · 1 year · Assisted in teaching
+      AP Computer Science courses to students at Lynwood High School. · Jun 2024
+    evidence:
+      url: https://www.linkedin.com/in/bdehamer
+      observed_at: '2026-10-24T08:43:01Z'
+  - kind: project
+    title: Watchtower
+    detail: Watchtower is an application that will monitor your running Docker containers and watch for
+      changes to the images that those containers were originally started from. If watchtower detects
+      that an image has changed, it will automatically restart the container using the new image.With
+      watchtower you can update the running version of your containerized app simply by pushing a new
+      image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully
+      shut down your existing container and restart it with the same options that were used when it was
+      deployed initially. · Aug 2015
+    evidence:
+      url: https://www.linkedin.com/in/bdehamer
+      observed_at: '2026-10-24T08:43:01Z'
+  - kind: project
+    title: Zodiac
+    detail: A lightweight tool, built on top of Docker Compose, for easy deployment and rollback of dockerized
+      applications. · Jul 2015
+    evidence:
+      url: https://www.linkedin.com/in/bdehamer
+      observed_at: '2026-10-24T08:43:01Z'
+  - kind: project
+    title: ImageLayers
+    detail: Image Layers provides a browser-based visualization of Docker images and their constituent
+      layers. This visualization gives insight into the composition of a Docker image and any commonalities
+      between related images. · May 2015
+    evidence:
+      url: https://www.linkedin.com/in/bdehamer
+      observed_at: '2026-10-24T08:43:01Z'
+  - kind: project
+    title: Dray
+    detail: An engine for managing the execution of container-based workflows. Dray allows you to define
+      a serial workflow, or job, as a list of Docker containers with each container encapsulating a step
+      in the workflow. Dray will ensure that each step of the workflow (each container) is started in
+      the correct order and handles the work of marshaling data between the different steps. · Feb 2015
+    evidence:
+      url: https://www.linkedin.com/in/bdehamer
+      observed_at: '2026-10-24T08:43:01Z'
+  - kind: project
+    title: golang-builder
+    detail: Containerized build environment for compiling/testing an Golang applications and packaging
+      them in light-weight Docker containers. · Feb 2015
+    evidence:
+      url: https://www.linkedin.com/in/bdehamer
+      observed_at: '2026-10-24T08:43:01Z'
+  - kind: project
+    title: Panamax
+    detail: Panamax is an application for configuring and running multi-container Docker applications.
+      Panamax provides a friendly interface for users of Docker, Fleet & CoreOS. With Panamax, you can
+      easily create, share and deploy any containerized app no matter how complex it might be. · Aug 2014
+    evidence:
+      url: https://www.linkedin.com/in/bdehamer
+      observed_at: '2026-10-24T08:43:01Z'
+  - kind: project
+    title: HP Cloud - Openstack Horizon
+    detail: Worked on the group's Openstack Horizon project. Helped to bring that from an internal project
+      to now be the public face and UI for hpcloud's user experience. · Oct 2013
+    evidence:
+      url: https://www.linkedin.com/in/bdehamer
+      observed_at: '2026-10-24T08:43:01Z'
+  talks:
+  - session:2025/aut1451d
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1686593528195001MBdN
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json

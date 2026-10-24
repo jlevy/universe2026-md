@@ -1,0 +1,20 @@
+softschema:
+  contract: paraverse.conference:Package/v1
+  schema: ../../_schemas/package.schema.yaml
+  envelope: package
+  status: permissive
+package:
+  id: pkg:npm/actions-toolkit
+  ecosystem: npm
+  name: actions-toolkit
+  url: https://www.npmjs.com/package/actions-toolkit
+  description: A toolkit for building GitHub Actions in Node.js
+  latest_version: 6.0.1
+  license: MIT
+  repository_url: git+https://github.com/JasonEtco/actions-toolkit.git
+  sources:
+  - system: github
+    url: https://raw.githubusercontent.com/
+    record_id: JasonEtco/actions-toolkit
+    retrieved_at: '2026-10-24T10:35:28Z'
+    snapshot: raw/packages/repo-packages.json

@@ -1,0 +1,37 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:port-labs/port-agent
+  full_name: port-labs/port-agent
+  url: https://github.com/port-labs/port-agent
+  description: Run workflow actions and respond to engineering events without exposing your internal services
+    to the public internet.
+  stars: 15
+  forks: 6
+  watchers: 4
+  open_issues: 0
+  stats_observed_at: '2026-10-24T19:12:13Z'
+  primary_language: Python
+  license: Apache-2.0
+  archived: false
+  fork: false
+  created_at: '2022-11-08T13:22:53Z'
+  pushed_at: '2026-10-21T07:05:09Z'
+  owner_login: port-labs
+  owner: gh:port-labs
+  pinned_by:
+  - gh:port-labs
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: port-labs
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: port-labs/port-agent
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

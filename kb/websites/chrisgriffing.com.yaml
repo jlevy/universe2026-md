@@ -1,0 +1,28 @@
+softschema:
+  contract: paraverse.conference:Website/v1
+  schema: ../_schemas/website.schema.yaml
+  envelope: website
+  status: permissive
+website:
+  id: site:chrisgriffing.com
+  url: https://chrisgriffing.com/
+  kind: personal
+  title: Home | Chris Griffing
+  description: I like to make things and every once in a while I remember to blog about it. The topics
+    a varied but often useful. Hopefully, you find something you are interested in.
+  owner: person:chris-griffing
+  link_basis:
+  - x_profile
+  fetch_status: ok
+  http_status: 200
+  sources:
+  - system: brightdata
+    url: https://x.com/cmgriffing
+    record_id: sd_mvm5tfaq10hpf126ke
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json
+  - system: website
+    url: https://chrisgriffing.com/
+    record_id: https://chrisgriffing.com/
+    retrieved_at: '2026-10-24T10:31:00Z'
+    snapshot: raw/websites/homepages.json

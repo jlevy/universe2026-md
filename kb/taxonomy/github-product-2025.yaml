@@ -1,0 +1,113 @@
+softschema:
+  contract: paraverse.conference:Facet/v1
+  schema: ../_schemas/facet.schema.yaml
+  envelope: facet
+  status: permissive
+facet:
+  id: github-product-2025
+  event: event:github-universe-2025
+  label: GitHub product
+  multi_valued: true
+  terms:
+  - id: term:github-product-2025/actions
+    label: Actions
+    source_id: 1681323318975002z5gZ
+    session_count: 37
+  - id: term:github-product-2025/codespaces
+    label: Codespaces
+    source_id: 1681323318975005zXHm
+    session_count: 10
+  - id: term:github-product-2025/dependabot
+    label: Dependabot
+    source_id: 1741125798290001czVO
+    session_count: 15
+  - id: term:github-product-2025/discussions
+    label: Discussions
+    source_id: 1681323318975007zNtf
+    session_count: 6
+  - id: term:github-product-2025/github-advanced-security
+    label: GitHub Advanced Security
+    source_id: 1681323318975003zyEm
+    session_count: 25
+  - id: term:github-product-2025/github-code-security
+    label: GitHub Code Security
+    source_id: 1741125798290003cK3c
+    session_count: 17
+  - id: term:github-product-2025/github-copilot
+    label: GitHub Copilot
+    source_id: 1681323318975006zEYH
+    session_count: 73
+  - id: term:github-product-2025/github-copilot-workspace
+    label: GitHub Copilot Workspace
+    source_id: 1741125798290004cIPj
+    session_count: 5
+  - id: term:github-product-2025/github-enterprise-cloud
+    label: GitHub Enterprise Cloud
+    source_id: 1741125798290005cagp
+    session_count: 21
+  - id: term:github-product-2025/github-enterprise-server
+    label: GitHub Enterprise Server
+    source_id: 1741125798290006c1I6
+    session_count: 7
+  - id: term:github-product-2025/github-secret-protection
+    label: GitHub Secret Protection
+    source_id: 1741125798290002cI8G
+    session_count: 13
+  - id: term:github-product-2025/github-spark
+    label: GitHub Spark
+    source_id: 1741878707144001O22S
+    session_count: 7
+  - id: term:github-product-2025/marketplace
+    label: Marketplace
+    source_id: 1741125798290007cHJ6
+    session_count: 5
+  - id: term:github-product-2025/projects-and-issues
+    label: Projects and Issues
+    source_id: option_1709310317052
+    session_count: 17
+  - id: term:github-product-2025/vs-code
+    label: VS Code
+    source_id: 1741256139794001fpLT
+    session_count: 35
+  - id: term:github-product-2025/education
+    label: Education
+    source_id: 1681323318975008zgZI
+    session_count: 2
+  - id: term:github-product-2025/enterprise-admin
+    label: Enterprise/Admin
+    source_id: 1681323318975009z429
+    session_count: 3
+  - id: term:github-product-2025/extensibility-ecosystem
+    label: Extensibility/Ecosystem
+    source_id: 1681323318975010zJOY
+    session_count: 2
+  - id: term:github-product-2025/issues
+    label: Issues
+    source_id: 1681323318975012z3BT
+    session_count: 5
+  - id: term:github-product-2025/pages
+    label: Pages
+    source_id: 1681323318975013zanr
+    session_count: 2
+  - id: term:github-product-2025/projects
+    label: Projects
+    source_id: 1681323318975011zDxI
+    session_count: 4
+  - id: term:github-product-2025/readme-project
+    label: ReadME Project
+    source_id: 1681323318975015zPv3
+    session_count: 2
+  - id: term:github-product-2025/sponsors
+    label: Sponsors
+    source_id: 1681323318975014z09v
+    session_count: 2
+  - id: term:github-product-2025/supply-chain-security
+    label: Supply Chain Security
+    source_id: 1681323318975004ze6Z
+    session_count: 2
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/attributes
+    record_id: 1681323318992001zJbt
+    retrieved_at: '2026-10-24T08:03:18Z'
+    snapshot: raw/editions/universe25/attributes.json

@@ -1,0 +1,44 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:x/4444ian
+  platform: x
+  handle: 4444ian
+  url: https://x.com/4444ian
+  display_name: Qianqian Ye | Q
+  bio: 千千 | Artist  | Director of Creative Technology @processingorg | Prev @p5xjs Lead | Adjunct Professor
+    @USC MediaArts  | @annenberglab Senior Civic Media Fellow
+  location: Wenzhou - Los Angeles
+  website: http://qianqian-ye.com/
+  followers: 2154
+  following: 506
+  posts_count: 311
+  verified: false
+  avatar_url: https://pbs.twimg.com/profile_images/1402687549357707267/PP_FBpRL_normal.jpg
+  banner_url: https://pbs.twimg.com/profile_banners/758198328/1623390444
+  created_at: '2012-08-15T00:38:36Z'
+  owner: person:qianqian-ye
+  link_basis:
+  - event_listing
+  - github_profile
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1775673106371001R3KP
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: Qianqianye
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: brightdata
+    url: https://x.com/4444ian
+    record_id: sd_mvm4mjttonenborr6
+    retrieved_at: '2026-10-24T08:52:15Z'
+    snapshot: raw/brightdata/x_profiles.json

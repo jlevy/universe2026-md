@@ -1,0 +1,42 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jkcso
+  platform: linkedin
+  handle: in/jkcso
+  url: https://www.linkedin.com/in/jkcso
+  display_name: Joseph Katsioloudes
+  bio: I make AI simple — with software, content, and talks that reach millions worldwide. I…
+  location: London
+  followers: 9069
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D4D03AQG-xiuPYYtE7Q/profile-displayphoto-scale_200_200/B4DZr1qp.HHsAY-/0/1765058194136?e=2147483647&v=beta&t=thhxkyXcoVeya72kolzr9Jq83f8pvwTLFoR2_Bvij9E
+  banner_url: https://media.licdn.com/dms/image/v2/D4E16AQGjumf6rf9Abw/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1696977107661?e=2147483647&v=beta&t=punpnZNc32ZwA2dCaHKfWDiYoUmwW2g4YVwss9Jgm2g
+  owner: person:joseph-katsioloudes
+  link_basis:
+  - event_listing
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683668770658001JeDc
+    retrieved_at: '2026-10-24T08:03:23Z'
+    snapshot: raw/editions/universe25/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683668770658001JeDc
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1683668770658001JeDc
+    retrieved_at: '2026-10-24T08:03:37Z'
+    snapshot: raw/editions/universe23/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jkcso
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

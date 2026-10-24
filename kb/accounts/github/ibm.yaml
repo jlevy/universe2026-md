@@ -1,0 +1,45 @@
+softschema:
+  contract: paraverse.conference:GitHubAccount/v1
+  schema: ../../_schemas/github-account.schema.yaml
+  envelope: github_account
+  status: permissive
+github_account:
+  id: gh:ibm
+  login: IBM
+  kind: organization
+  url: https://github.com/IBM
+  name: International Business Machines
+  bio: Open Source @ IBM
+  location: United States of America
+  website: https://www.ibm.com/opensource/
+  public_repositories: 3916
+  created_at: '2012-02-21T22:13:01Z'
+  profile_readme: "# Hello, World! :wave:\n\nWelcome to IBM's organization on GitHub where we love all\
+    \ things open source.\n\n* :books: 25+ years in open source. [Read our story](https://www.ibm.com/opensource/story/)\n\
+    * :computer: 7,500+ IBMers active in open source. [How we do open source](https://www.ibm.com/opensource/enterprise/)\n\
+    * :office: 20,000 commits per month. [Where we invest](https://www.ibm.com/opensource/community-involvement/)\n\
+    * :octocat: +3,900 GitHub repositories. Search below!\n* \U0001F441️ \U0001F41D Ⓜ️: Learn about our\
+    \ approach to [Open Technology](https://developer.ibm.com/articles/cl-open-architecture-update/)\n\
+    \n## IBM Public Repository Disclosure \nAll content in these repositories including code has been\
+    \ provided by IBM under the associated open source software license and IBM is under no obligation\
+    \ to provide enhancements, updates, or support. IBM developers produced this code as an open source\
+    \ project (not as an IBM product), and IBM makes no assertions as to the level of quality nor security,\
+    \ and will not be maintaining this code going forward."
+  pinned:
+  - repo:ibm/plex
+  - repo:ibm/sarama
+  - repo:ibm/mcp-context-forge
+  - repo:ibm/fp-go
+  - repo:ibm/mcp-cli
+  - repo:ibm/assetopsbench
+  top_repositories:
+  - repo:ibm/css-gridish
+  linked_accounts:
+  - acct:x/ibmdeveloper
+  entity: org:ibm
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: IBM
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json

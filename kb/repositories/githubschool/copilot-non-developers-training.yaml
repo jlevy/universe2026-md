@@ -1,0 +1,31 @@
+softschema:
+  contract: paraverse.conference:Repository/v1
+  schema: ../../_schemas/repository.schema.yaml
+  envelope: repository
+  status: permissive
+repository:
+  id: repo:githubschool/copilot-non-developers-training
+  full_name: githubschool/copilot-non-developers-training
+  url: https://github.com/githubschool/copilot-non-developers-training
+  description: This is a training for learning GitHub Copilot for non developers
+  stars: 2
+  forks: 0
+  watchers: 0
+  open_issues: 3
+  stats_observed_at: '2026-10-24T19:10:16Z'
+  archived: false
+  fork: false
+  created_at: '2026-01-21T13:08:47Z'
+  pushed_at: '2026-02-03T15:46:34Z'
+  owner_login: githubschool
+  sources:
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: vfm2
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: githubschool/copilot-non-developers-training
+    retrieved_at: '2026-10-24T19:18:25Z'
+    snapshot: raw/github/repo-stats.json

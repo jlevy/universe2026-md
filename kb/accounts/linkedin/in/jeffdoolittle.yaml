@@ -1,0 +1,33 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/in/jeffdoolittle
+  platform: linkedin
+  handle: in/jeffdoolittle
+  url: https://www.linkedin.com/in/jeffdoolittle
+  display_name: Jeff Doolittle
+  bio: Distinguished Engineer and Principal Architect at Trimble with CTO experience across…
+  location: Portland
+  followers: 3424
+  connections: 500
+  avatar_url: https://media.licdn.com/dms/image/v2/D5603AQER6J-Bdd4VVw/profile-displayphoto-scale_200_200/B56ZpWjpB2KAAY-/0/1762388775415?e=2147483647&v=beta&t=Vc7N1cbyfeDIoOAMMj5pSF3qw8yn4jKKbwmZBFfkNHw
+  banner_url: https://media.licdn.com/dms/image/v2/D5616AQET0SN2257uoQ/profile-displaybackgroundimage-shrink_200_800/B56Zqk3fyZH8AU-/0/1763702604320?e=2147483647&v=beta&t=DfEAfxJOrdPDO534UaxQd9mNKDjUKbjvFEDOsPBBFuo
+  owner: person:jeff-doolittle
+  link_basis:
+  - event_listing
+  - website_link
+  details_fetched: true
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1761664371450001vb2S
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: brightdata
+    url: https://www.linkedin.com/in/jeffdoolittle
+    record_id: sd_mvm4dq2oc7qugqgby
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json

@@ -1,0 +1,23 @@
+softschema:
+  contract: paraverse.conference:Software/v1
+  schema: ../_schemas/software.schema.yaml
+  envelope: software
+  status: permissive
+software:
+  id: software:p5js
+  name: p5.js
+  aliases:
+  - p5.js
+  kind: open_source
+  vendor: org:processing-foundation
+  homepage: https://p5js.org
+  repositories:
+  - repo:processing/p5.js
+  packages:
+  - pkg:npm/p5
+  mentioned_in:
+  - person:qianqian-ye
+  - session:bld1616m
+  sources:
+  - system: curation
+    snapshot: curation/software.yaml

@@ -1,0 +1,122 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:dimitrios-philliou
+  person: person:dimitrios-philliou
+  brief_bio:
+    text: Dimitrios Philliou, now at Fivetran, was a product manager at GitHub working on GitHub Copilot
+      Extensions and the GitHub Marketplace. Philliou spoke at GitHub Universe 2024 about building a GitHub
+      Copilot Extension.
+    cites:
+    - listed_role
+    - current_affiliations
+    - past_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (opus-high subagent)
+    written_at: '2026-10-24T09:14:24Z'
+    input_sha256: db66bb64741f1ee7e1e173c436cb38796eca592d8de8ed1b668277615efe6cb1
+    stale: false
+  headline: Fivetran
+  current_roles:
+  - Fivetran
+  expertise:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1894s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:2024/ai1894s
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Copilot
+      ref: person:dimitrios-philliou
+  - label: GitHub Marketplace
+    target: software:github-marketplace
+    basis: bio
+    confidence: high
+    evidence:
+    - quote: GitHub Marketplace
+      ref: person:dimitrios-philliou
+  interests:
+  - label: AI
+    target: term:topic-2024/ai
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722542471073001sb4S
+      ref: session:2024/ai1894s
+  - label: Extensibility/Ecosystem
+    target: term:github-product-2024/extensibility-ecosystem
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722542471073001sb4S
+      ref: session:2024/ai1894s
+  - label: GitHub Copilot
+    target: term:github-product-2024/copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722542471073001sb4S
+      ref: session:2024/ai1894s
+  - label: Software Engineering
+    target: term:topic-2024/software-engineering
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe24/attendee-portal/page/sessioncatalog/session/1722542471073001sb4S
+      ref: session:2024/ai1894s
+  education:
+  - school: Reforge
+    evidence:
+      url: https://www.linkedin.com/in/dimitriosphilliou
+      observed_at: '2026-10-24T08:41:57Z'
+  credentials:
+  - kind: certification
+    title: Product Manager Certificate
+    issuer: Product School
+    date: May 2022
+    url: https://certificate.productschool.com/588eb0a3-9964-488c-9f15-22f3142254b9
+    evidence:
+      url: https://www.linkedin.com/in/dimitriosphilliou
+      observed_at: '2026-10-24T08:41:57Z'
+  talks:
+  - session:2024/ai1894s
+  gaps:
+  - github_account
+  - x_account
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1699375651845001ggIX
+    retrieved_at: '2026-10-24T08:03:31Z'
+    snapshot: raw/editions/universe24/sessions.json

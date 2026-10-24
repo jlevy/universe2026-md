@@ -1,0 +1,39 @@
+softschema:
+  contract: paraverse.conference:SocialAccount/v1
+  schema: ../../../_schemas/social-account.schema.yaml
+  envelope: social_account
+  status: permissive
+social_account:
+  id: acct:linkedin/company/purestorage
+  platform: linkedin
+  handle: company/purestorage
+  url: https://www.linkedin.com/company/purestorage
+  display_name: Pure Storage
+  bio: 'Pure Storage (NYSE: PSTG) uncomplicates data storage, forever. Pure delivers a cloud experience
+    that empowers every organization to get the most from their data while reducing the complexity and
+    expense of managing the infrastructure behind it. Pure’s commitment to providing true storage as-a-service
+    gives customers the agility to meet changing data needs at speed and scale, whether they are deploying
+    traditional workloads, modern applications, containers, or more. Pure believes it can make a significant
+    impact in reducing data center emissions worldwide through its environmental sustainability efforts,
+    including designing products and solutions that enable customers to reduce their carbon and energy
+    footprint. And with a certified customer satisfaction score in the top one percent of B2B companies,
+    Pure''s ever-expanding list of customers are among the happiest in the world. For more information,
+    visit www.purestorage.com.'
+  website: https://www.purestorage.com/
+  followers: 547023
+  avatar_url: https://media.licdn.com/dms/image/v2/D560BAQHY8dBMsvlbUw/company-logo_200_200/B56ZyKlQsMGoAI-/0/1771851549770/purestorage_logo?e=2147483647&v=beta&t=x4xD7LdefB8eArn5-VkGeTVSbMmdWmeGQTRXxkyyE0Y
+  owner: org:pure-storage
+  link_basis:
+  - linkedin_profile
+  details_fetched: true
+  sources:
+  - system: brightdata
+    url: https://www.linkedin.com/in/gabriele-mattutzu
+    record_id: sd_mvm5k44b11nkuuxlmu
+    retrieved_at: '2026-10-24T08:51:28Z'
+    snapshot: raw/brightdata/linkedin_profiles.json
+  - system: brightdata
+    url: https://www.linkedin.com/company/purestorage
+    record_id: sd_mvm5xmem1d1puu9zcg
+    retrieved_at: '2026-10-24T08:56:11Z'
+    snapshot: raw/brightdata/linkedin_companies.json

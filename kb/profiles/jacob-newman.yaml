@@ -1,0 +1,169 @@
+softschema:
+  contract: paraverse.conference:Profile/v1
+  schema: ../_schemas/profile.schema.yaml
+  envelope: profile
+  status: permissive
+profile:
+  id: profile:jacob-newman
+  person: person:jacob-newman
+  brief_bio:
+    text: Jacob Newman is a Principal Product Manager at Amplitude who leads Wave, an AI product that
+      reads usage signals, decides what to build next and hands the work to a coding agent. Newman speaks
+      at GitHub Universe 2026 about shipping fast and measuring impact in the AI era.
+    cites:
+    - listed_role
+    - current_affiliations
+    - event_bio
+    - participation
+    - sessions
+    basis: llm_synthesis
+    written_by: claude-opus-5-5 (tbd-moderate subagent)
+    written_at: '2026-10-24T09:00:32Z'
+    input_sha256: c4b077fa76ae904988bf9bca71225e6f837e33b99f09b2ab1caf6a45a437c526
+    stale: false
+  headline: Principal Product Manager at Amplitude
+  location: United States
+  current_roles:
+  - Principal Product Manager at Amplitude
+  expertise:
+  - label: 'AI: Agents'
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  technologies:
+  - label: GitHub Copilot
+    target: software:github-copilot
+    basis: session_facets
+    confidence: medium
+    evidence:
+    - ref: session:bld1864d
+  interests:
+  - label: AI agents
+    target: term:topic/ai-agents
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: Continuous Integration + Continuous Deployment (CI/CD)
+    target: term:topic/continuous-integration-continuous-deployment-ci-cd
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: Data (analytics, management, privacy)
+    target: term:topic/data-analytics-management-privacy
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: DevOps and DevSecOps
+    target: term:topic/devops-and-devsecops
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: GitHub Copilot
+    target: term:github-product/github-copilot
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  - label: Monitoring and observability
+    target: term:topic/monitoring-and-observability
+    basis: session_facets
+    confidence: low
+    weight: 1.0
+    sources:
+    - session_facets
+    evidence:
+    - url: https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog/session/1787952548655001hohJ
+      ref: session:bld1864d
+  open_source:
+  - repository: repo:amplitude/builder-skills
+    relation: contributor
+    stars: 161
+  - repository: repo:amplitude/kiro-power
+    relation: contributor
+    stars: 1
+  education:
+  - school: Cornell University
+    evidence:
+      url: https://www.linkedin.com/in/jacobnewman
+      observed_at: '2026-10-24T08:12:03Z'
+  spoken_languages:
+  - English
+  - Spanish
+  recent_writing:
+  - title: In Defense of AI Writing Slop
+    url: https://www.linkedin.com/pulse/defense-ai-writing-slop-jacob-newman-uczwc
+    published: '2026-08-22T00:00:00.000Z'
+    channel: linkedin
+    summary: Last week, Varun Anand shared Clay's new AI Writing Policy, and it clearly hit a nerve (9,000+
+      reactions and counting).…
+  - title: Open-weight models aren't just about cost
+    url: https://www.linkedin.com/pulse/open-weight-models-arent-just-cost-jacob-newman-gkdnc
+    published: '2026-08-15T00:00:00.000Z'
+    channel: linkedin
+    summary: 'Unpopular truth: your customers don''t care how much your agent costs to run. The real downside
+      of a successful…'
+  talks:
+  - session:bld1864d
+  gaps:
+  - website
+  sources:
+  - system: rainfocus
+    url: https://events.githubuniverse.com/api/sessions
+    record_id: 1787271946274001uhDt
+    retrieved_at: '2026-10-24T06:46:25Z'
+    snapshot: raw/rainfocus/sessions.json
+  - system: github
+    url: https://api.github.com/graphql
+    record_id: JacobGit
+    retrieved_at: '2026-10-24T19:17:20Z'
+    snapshot: raw/github/owners.json
