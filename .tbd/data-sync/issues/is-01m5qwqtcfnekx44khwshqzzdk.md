@@ -5,21 +5,21 @@ title: Finalize KB privacy exclusion and offline rebuild evidence
 kind: bug
 status: in_progress
 priority: 1
-version: 3
+version: 4
 delegate: codex@spud10.local
 labels: []
 dependencies: []
 hold: null
 hold_until: null
 created_at: 2026-10-24T21:23:17.006Z
-updated_at: 2026-10-24T22:24:22.248Z
+updated_at: 2026-10-24T22:41:15.855Z
 started_at: 2026-10-24T21:23:34.364Z
 ---
 
 ## Notes
 
-Implementation verified and published in pipeline PR https://github.com/jlevy/universe2026-md/pull/8 (b529b99c12eca75090c5173bf799e2eba36c40df), with rebuilt data PR https://github.com/jlevy/universe2026-md/pull/9 (c6b4faa9a6df7e176bd265f3c3f706d31ec3c3ef), formal stack 11 rooted on main. Original and intermediate imports are absent from published ancestry.
+New Qodo findings supersede the earlier clean-data claim for b529b99/c6b4faa. Source-only patch 2da81ce974f418686ac8306f840686663d780c34 addresses pipeline review findings 1, 2, 5, 8 and 13, and data findings 2 and 4. Seven scoped regression cases failed on old code; 34 now pass. The corpus test is intentionally deselected until coordinated raw backfill. Ruff is clean and BasedPyright reports 0 errors.
 
-Exact published pipeline tree: 145 tests passed in 68.88 seconds; Ruff clean; BasedPyright 0 errors. Two offline rebuilds are byte-identical; 5,092/5,092 artifacts valid; 5,522 nodes and 25,544 edges; 577 stored and attached valid, current bios; 23 persistent rejected owner/account pairs. Contact and excluded-identity scans return zero findings; raw policy reapplication changes zero files. Regressions prove rejection persists after raw pruning, the same account remains available to a correct owner, failed publication restores the previous KB without overwriting a concurrent complete tree, and enrich-packages preserves declaration provenance.
+Expanded scanning detects 58 raw matches; curation, synthesis, tests and source each have zero. The patch enforces explicit typed-reference exemptions, contact validation for bios, malformed-entry/bundle rejections, professional README filtering, raw HTML sanitation and process-locked snapshot/manifest publication. Both Fetcher paths use the separately supplied network boundary.
 
-The committed review addendum reconciles all 50 historical findings: 17 fixed and 33 Medium/Low follow-ups with individual open beads. Awaiting final review and merge; implementation beads remain open until the owning layer lands. Aggregate audit and disposition evidence is retained privately outside disposable scratch. Public entries and reports contain no removal identity, reason or date.
+Coordinator owns raw/synthesis cleanup, complete integration tests, offline rebuilds and fresh sanitized import reconstruction. The old b529b99/c6b4faa ancestry must also be absent from final publication. Do not publish the private patch branch or treat earlier review evidence as a current merge claim. Awaiting final review/merge; bead remains in progress.
