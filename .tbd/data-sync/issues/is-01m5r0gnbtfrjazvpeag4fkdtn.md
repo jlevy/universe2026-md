@@ -3,9 +3,9 @@ type: is
 id: is-01m5r0gnbtfrjazvpeag4fkdtn
 title: "PR8 #4: block private destinations and unsafe redirects (discussion_r4368746710)"
 kind: bug
-status: in_progress
+status: closed
 priority: 1
-version: 3
+version: 4
 delegate: codex@spud10.local
 labels: []
 dependencies: []
@@ -13,8 +13,12 @@ parent_id: is-01m5r0dg7wbj0tkm5653mnjwn8
 hold: null
 hold_until: null
 created_at: 2026-10-24T22:29:16.793Z
-updated_at: 2026-10-24T22:36:15.808Z
+updated_at: 2026-10-24T23:01:00.828Z
 started_at: 2026-10-24T22:29:27.734Z
+closed_at: 2026-10-24T23:01:00.827Z
+close_reason: Both actual Snapshot.fetch/request now use public DNS-pinned transport and per-redirect validation; unsafe request destination raises FetchError without retries. Focused36 regressions and full190 source tests pass; Ruff/types clean in8ec8747.
+resolution: null
+duplicate_of: null
 ---
 High SSRF finding https://github.com/jlevy/universe2026-md/pull/8#discussion_r4368746710. enrich.py:500 gathers arbitrary profile websites; snapshot.py Fetcher follows automatic redirects. Validate public HTTP(S) destinations and every DNS answer, pin connections to validated IPs, and validate every redirect while preserving public APIs.
 
