@@ -1,0 +1,65 @@
+---
+type: is
+id: is-01m5qxfr4vqrasqe241q6mwftf
+title: Reconcile the historical KB data-quality review before data publication
+kind: task
+status: open
+priority: 1
+version: 51
+labels: []
+dependencies: []
+child_order_hints:
+  - is-01m5qxhs7ey0wahb7w99s2msmf
+  - is-01m5qxhsgv7veemwamvtgm1fap
+  - is-01m5qxhsse90bfa8n2dfy00r08
+  - is-01m5qxht1zd12dg45e6sqcmy27
+  - is-01m5qxhtb8twpjbatmdd1mg3p8
+  - is-01m5qxhtmrqxttdpjpyrdntw0n
+  - is-01m5qxhtxbn047g86y9taf2mdm
+  - is-01m5qxhv5xkjz0xcn2rrk48pnj
+  - is-01m5qxhvk5pj32xwdnwy3h0hww
+  - is-01m5qxhvxp98bdda8xd0va2392
+  - is-01m5qxhw65v0f9cxfttzn627a1
+  - is-01m5qxhweqwqg9pwega5z616pc
+  - is-01m5qxhwq76rc1bexexa3wh068
+  - is-01m5qxhwzz4x8z5nt9vj3dwzqf
+  - is-01m5qxhx8harg589naz1y2sprw
+  - is-01m5qxhxh98r1qc7wnv0ef0wbr
+  - is-01m5qxhxt55542fhzaq64pga1j
+  - is-01m5qxhy2wtnd6w2wtn1snmyn1
+  - is-01m5qxhybeh0n58pyrn1tzngm9
+  - is-01m5qxhykyt7f1454drgwr9hpw
+  - is-01m5qxhywn97wpgsvgggvr3mxh
+  - is-01m5qxhz59zhqjza47zzkgshzm
+  - is-01m5qxhzdhxap9p6g6p8x7686j
+  - is-01m5qxhzp2823bhttq9he098cj
+  - is-01m5qxhzz2yyz9f5ceb7j2pwfz
+  - is-01m5qxj080v2xabttyc7m65vqk
+  - is-01m5qxj0hg0ka9m8czq4qfswzc
+  - is-01m5qxj22ja4zhye0mwbybwfez
+  - is-01m5qxj2bhvgchxfmys690jwqk
+  - is-01m5qxj2mvsystv1fjch4rgfj9
+  - is-01m5qxj2ymge1x4b952p3ppp5w
+  - is-01m5qxj37m46ft3y4nsv6vdwdb
+  - is-01m5qxj3gprsjbhrws9e1cph38
+  - is-01m5qxj3szxbjrkvktrsqpn5sk
+  - is-01m5qxj431er2q1e3wr5r77w8y
+  - is-01m5qxj4brs7sw4pmxtdv1t6xg
+  - is-01m5qxj4ms84kx837ayswgfs14
+  - is-01m5qxj4xmws7qaa6v5ygb67gy
+  - is-01m5qxj56e8qdy4vj9avak23mz
+  - is-01m5qxj5fasz977dkhnbcjrh8d
+  - is-01m5qxj5rj15jxxtf9whpnbspn
+  - is-01m5qxj61fxbmsg7nzvrsdq405
+  - is-01m5qxj6a4kga0g7hh9fdmxg3s
+  - is-01m5qxj6kcdrqskv2h2ytw80ct
+  - is-01m5qxj6wrkdzet4dp51km7ctr
+  - is-01m5qxj75w33d7fmcfjwcy7qw2
+  - is-01m5qxj7en2ve5xr3kq2n5g6ed
+  - is-01m5qxj7qhq43b6eqjc4wczmqj
+  - is-01m5qxj80dtepc74n2s1kv4k1f
+  - is-01m5qxj88xm1vddjbwzcyzhnpp
+created_at: 2026-10-24T21:36:21.135Z
+updated_at: 2026-10-24T21:37:43.196Z
+---
+Audit all 50 findings in docs/project/research/review-2026-10-24-universe-kb-data-quality.md against the sanitized pipeline and offline rebuilt data. Fix confirmed Blocker and High findings before data publication; retain evidence and explicit dispositions for every review ID. Do not repeat third-party identity or removal context in public tracking.
