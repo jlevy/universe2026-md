@@ -31,8 +31,7 @@ professional audience and would expect to see connected to a conference:
 - **Public profiles on GitHub, LinkedIn and X:** the person’s own public profile
   information, such as name, handle, headline or bio, city-level location, current and
   past roles, education, links, and public counts, along with their own public posts
-  about their work.
-  These profiles are central to the knowledge base.
+  about their work. These profiles are central to the knowledge base.
   The same applies to other accounts a person uses for their work, such as Bluesky,
   Mastodon and YouTube.
 - **Professional work people published themselves:** public repositories, packages they
@@ -46,9 +45,12 @@ professional audience and would expect to see connected to a conference:
 
 ## What Must Not Be Included
 
-- **Contact details:** email addresses, phone numbers and postal addresses, even when
-  the person published them.
+- **Contact details:** email addresses, phone numbers and personal postal addresses,
+  even when the person published them.
   The build redacts them from free text, and a test fails if any remain.
+  Public street addresses of conference venues and rooms, published as directions to the
+  event, are allowed as conference material.
+  This does not allow a person’s home address or other precise personal location.
 - **Non-public sources:** anything behind a login, paywall or other access control, and
   anything obtained by working around one.
 - **Other people’s data inside a profile:** scraped profile payloads often carry data
@@ -61,8 +63,8 @@ professional audience and would expect to see connected to a conference:
   The knowledge base never adds, derives or infers them: not in a structured field, tag,
   interest, label, selected post, evidence string or generated text.
   The one exception is text people wrote about themselves and published in a public
-  source, such as an official speaker bio, a profile bio or a profile README.
-  Keep that text verbatim, as they wrote it, including any pronouns they list.
+  source, such as an official speaker bio, a profile bio or a profile README. Keep that
+  text verbatim, as they wrote it, including any pronouns they list.
 - **Unstated attendance:** do not list someone as attending unless they said so
   publicly. A like, a follow or another person’s post is not enough.
 - **Personal accounts:** accounts and pages unrelated to a person’s professional work.
@@ -110,3 +112,7 @@ checklist in its description, and the reviewer checks each item:
 - [ ] Generated text cites its sources and stays professional.
 - [ ] No credentials, local paths or machine details appear.
 - [ ] Test fixtures and doc examples follow the same rules.
+
+<!-- This document follows common-doc-guidelines.md.
+See github.com/jlevy/practical-prose and review guidelines before editing.
+-->
