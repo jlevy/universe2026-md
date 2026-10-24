@@ -66,7 +66,9 @@ Two research docs written for this plan hold the details:
   - private channels
   - anything a person has not published
 - **Sources whose terms forbid this use.** The survey’s do-not-use list covers them.
-- **Sensitive inferences**, which no source may be used to infer or store:
+- **Added sensitive attributes**, which the kb never adds, derives or infers from any
+  source; only text a person wrote about themselves and published, kept verbatim, may
+  state one:
   - job seeking
   - health, religion, politics, sexuality
   - immigration or travel status, personal safety
