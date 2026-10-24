@@ -284,6 +284,9 @@ The kb stores raw snapshots in Git, and some terms do not allow that:
 These sources keep raw responses in a Git-ignored cache.
 The kb stores only what the build derives: metadata, topics and short cited summaries.
 Verbatim transcripts stay out of Git unless the transcript decision says otherwise.
+A rebuild from a fresh clone cannot re-derive those fields without the cache, while the
+architecture doc requires the KB to rebuild offline from committed inputs; how the build
+reconciles the two is open (Open Questions).
 
 ## Implementation Plan
 
@@ -310,7 +313,7 @@ Verbatim transcripts stay out of Git unless the transcript decision says otherwi
 ### Phase 2: Free Public Sources
 
 - [ ] Session recordings: YouTube Data API playlist metadata into `Session.recording`
-  (needs a Google API key)
+  (needs a Google API key and the offline-rebuild decision in Open Questions)
 - [ ] Editions 2015–2022 from the Wayback CDX API, as `Event`, session and person
   artifacts with participations
 - [ ] Speaking history, every link through the linking rule:
@@ -411,6 +414,13 @@ Paid runs wait for approval.
 
 - **YouTube API key:** a Google Cloud project with the YouTube Data API enabled is
   needed for Phase 2’s recordings.
+
+- **Time-limited sources and the offline rebuild:** YouTube API data must be refreshed
+  or deleted within 30 days, but `Session.recording` would come from it and the KB must
+  rebuild from committed inputs.
+  The survey’s options: refresh those fields on every build, or keep only video URLs
+  that GitHub also publishes elsewhere.
+  Phase 2’s recordings wait on this decision.
 
 - **Avatars:** the consent decisions in the avatar brief come before any feature that
   uses the richer profiles.
