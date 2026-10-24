@@ -59,6 +59,8 @@ A person links to their developed profile, accounts, organizations, and sessions
 typed IDs; graph nodes map those IDs to paths.
 Read a record’s `sources` and claim `evidence` before answering, and cite its public
 source URL alongside the dataset revision when available.
+If a profile’s `brief_bio.stale` is true, recheck each bio claim against the current
+cited evidence before using it.
 
 Distinguish the 2026 program from past editions.
 Preserve each participation’s event, role and confirmation status; a historical speaking
