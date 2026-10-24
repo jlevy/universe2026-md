@@ -7,9 +7,8 @@ records, graph and search exports.
 Copy the complete skill directory when sharing it; its download script is part of the
 bundle.
 
-The expected GitHub Pages manifest is
-`https://jlevy.github.io/universe2026-md/dataset.json`. Deployment is pending until that
-endpoint is confirmed live.
+The GitHub Pages manifest is
+[`dataset.json`](https://jlevy.github.io/universe2026-md/dataset.json).
 The downloader needs Python 3.11 or later, uses only the standard library, and requires
 no GitHub login or repository clone.
 

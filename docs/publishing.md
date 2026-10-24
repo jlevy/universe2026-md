@@ -1,7 +1,7 @@
 # Publish the Dataset on GitHub Pages
 
-The intended public site is `https://jlevy.github.io/universe2026-md/`. Treat it as
-pending until a successful Pages deployment and a live manifest have been verified.
+The public site is [GitHub Universe 2026](https://jlevy.github.io/universe2026-md/).
+After each deployment, verify the live manifest and archive as described below.
 See [data access](data-access.md) for the complete skill and download procedure.
 
 ## Build and Deployment Boundary

@@ -19,8 +19,8 @@ Every record cites the sources it was built from.
 
 ## Dataset Summary
 
-The checked-in snapshot covers **four editions (2023–2026)** with **5,414 graph
-entities**, **25,327 relationships** and **4,984 validated Markdown/YAML artifacts**. Of
+The checked-in snapshot covers **four editions (2023–2026)** with **5,407 graph
+entities**, **25,313 relationships** and **4,977 validated Markdown/YAML artifacts**. Of
 the 520 sessions, 156 are in the Universe 2026 program and 364 are from earlier
 editions.
 
@@ -43,7 +43,7 @@ editions.
 | Software | 61 |
 | Taxonomy terms | 418 |
 | Venues | 58 |
-| Websites | 158 |
+| Websites | 151 |
 
 The dataset also contains **14 FAQ entries** and a **1,899-item media index**. Days and
 taxonomy terms are graph nodes within event and facet records; FAQ entries and media
@@ -61,8 +61,9 @@ No GitHub account, repository clone or paid collection request is needed to cons
 published package.
 
 The [access guide](docs/data-access.md) describes the package and revision pins.
-The [publication guide](docs/publishing.md) describes the static GitHub Pages
-deployment; the public endpoint is pending until deployment is verified.
+The [static site](https://jlevy.github.io/universe2026-md/) provides browsable files and
+complete download archives.
+The [publication guide](docs/publishing.md) describes deployment and verification.
 
 ## Sources and Collection
 

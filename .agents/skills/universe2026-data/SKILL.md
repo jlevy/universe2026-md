@@ -14,10 +14,9 @@ package from the public GitHub Pages dataset manifest.
 Python 3.11 or later and its standard library are enough; no account, repository clone,
 package install, or GitHub token is needed.
 
-The expected manifest URL is `https://jlevy.github.io/universe2026-md/dataset.json`.
-Deployment is pending until the maintainer confirms that this endpoint is live.
-If it is unavailable, report the fetch failure; accept a user-supplied public manifest
-URL or use a local repository’s `kb/`.
+The manifest URL is `https://jlevy.github.io/universe2026-md/dataset.json`. If it is
+unavailable, report the fetch failure; accept a user-supplied public manifest URL or use
+a local repository’s `kb/`.
 
 ## Download a Local Copy
 
