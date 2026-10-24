@@ -3,17 +3,17 @@ type: is
 id: is-01m5qvmwkj4v95wt1vhb5br6gx
 title: "PR #3 Qodo 2 (https://github.com/jlevy/universe2026-md/pull/3#discussion_r4368484028): README and policy describe kb/ and pipeline/ that are absent at this layer"
 kind: bug
-status: in_progress
+status: open
 priority: 2
-version: 5
-delegate: dataset-readiness
+version: 6
+delegate: null
 labels: []
 dependencies: []
 parent_id: is-01m5qvmk0g58be4sb3y4mgvnq0
 hold: null
 hold_until: null
 created_at: 2026-10-24T21:04:12.400Z
-updated_at: 2026-10-24T22:07:00.378Z
+updated_at: 2026-10-24T22:07:22.880Z
 started_at: 2026-10-24T21:04:45.976Z
 closed_at: null
 close_reason: null
@@ -24,4 +24,4 @@ Severity: High (Action required). PR jlevy/universe2026-md#3, review https://git
 
 ## Notes
 
-Reopened: Deferred pending the separately reviewed sanitized pipeline and generated KB imports. The documentation stack may land first by coordinator direction; the earlier conditional rebuttal did not establish that pipeline/ or kb/ exists at this head.
+Disposition: deferred. The README rebuild and removal commands require the pending sanitized pipeline and built-KB imports. Those paths do not exist at documentation head 4dabee999bd2a52b4b19c374e843dd6b0470c44d. Verify reviewed safe imports have landed on main, then run an offline build and validation before closing. The earlier conditional rebuttal is superseded.
