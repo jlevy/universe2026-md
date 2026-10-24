@@ -46,20 +46,28 @@ Recorded 2026-10-24.
 <!-- END TBD POLICY GRANTS -->
 <!-- END TBD INTEGRATION -->
 
-## Build & Test
+## Data Policy
 
-_Add your build and test commands here_
+This repository is public, and anything committed stays in its history.
+Before you commit data, a test fixture or an example in a doc, check it against
+[docs/data-policy.md](docs/data-policy.md).
+Include that document’s review checklist in the description of any pull request that
+adds or changes data.
+If you are unsure whether the person concerned would be comfortable seeing something
+published here, leave it out and ask.
 
-```bash
-# Example:
-# npm install
-# npm test
-```
+## Repository Layout
 
-## Architecture Overview
+Keep the top level small: `README.md`, `AGENTS.md`, `LICENSE`, `docs/`, `kb/` and
+`pipeline/`.
 
-_Add a brief overview of your project architecture_
-
-## Conventions & Patterns
-
-_Add your project-specific conventions here_
+- `kb/` is the built knowledge base.
+  The build writes it, so never edit it by hand: change the pipeline code or its
+  curation files in `pipeline/curation/`, then rebuild.
+- `pipeline/` is a self-contained uv project, `universe-kb`, holding the crawl,
+  enrichment and build code.
+  Its packaging (`pyproject.toml`, `uv.lock`, `uv.toml`, `Makefile`) lives in
+  `pipeline/`, never at the repository root.
+  Run its commands from inside `pipeline/`.
+- `docs/` holds the data policy, and research, architecture docs and plans under
+  `docs/project/`.
