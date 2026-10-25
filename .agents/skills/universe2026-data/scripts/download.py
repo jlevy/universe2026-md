@@ -102,7 +102,8 @@ def download_dataset(manifest_url: str, destination: Path, *, revision: str | No
     if sha256 is not None and not re.fullmatch(r"[0-9a-f]{64}", sha256):
         raise ValueError("sha256 must be a lowercase SHA-256 digest")
     destination = destination.absolute()
-    if destination.is_symlink() or (destination.exists() and (
+    empty_destination = destination.exists()
+    if destination.is_symlink() or (empty_destination and (
             not destination.is_dir() or any(destination.iterdir()))):
         raise ValueError("Destination must be a new or empty directory; choose a separate revision")
     base_url = urljoin(manifest_url, "./")
@@ -110,7 +111,7 @@ def download_dataset(manifest_url: str, destination: Path, *, revision: str | No
     selected_url = (urljoin(base_url, f"releases/{revision}/dataset.json")
                     if revision else manifest_url)
     with _open_https(selected_url) as response:
-        _https(response.geturl())
+        final_manifest_url = _https(response.geturl())
         content = response.read(MAX_MANIFEST_BYTES + 1)
     if len(content) > MAX_MANIFEST_BYTES:
         raise ValueError("Dataset manifest exceeds the size limit")
@@ -122,6 +123,10 @@ def download_dataset(manifest_url: str, destination: Path, *, revision: str | No
             or not re.fullmatch(r"[0-9a-f]{40}", actual_revision)
             or (revision is not None and actual_revision != revision)):
         raise ValueError("Dataset revision does not match the requested commit")
+    # Release manifests keep root-relative paths even after changing deployment hosts.
+    release_suffix = f"/releases/{actual_revision}/dataset.json"
+    base_url = urljoin(final_manifest_url, "../../" if urlparse(
+        final_manifest_url).path.endswith(release_suffix) else "./")
     totals = manifest.get("totals")
     if (not isinstance(totals, dict) or type(totals.get("files")) is not int
             or not 0 < totals["files"] < MAX_MEMBERS):
@@ -158,6 +163,9 @@ def download_dataset(manifest_url: str, destination: Path, *, revision: str | No
         if extract_archive(archive_path, staged) != totals["files"]:
             raise ValueError("Extracted file count does not match the dataset manifest")
         (staged / "dataset.json").write_bytes(content)
+        if empty_destination:
+            # Windows cannot replace a directory; rmdir refuses any newly added content.
+            destination.rmdir()
         staged.rename(destination)
     return {"revision": actual_revision, "sha256": digest, "totals": totals}
 
