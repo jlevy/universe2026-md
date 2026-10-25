@@ -8,6 +8,7 @@ import hashlib
 import html
 import json
 import os
+import posixpath
 import re
 import stat
 import tarfile
@@ -15,12 +16,13 @@ import tempfile
 from collections import Counter
 from pathlib import Path, PurePosixPath
 from typing import Any
-from urllib.parse import quote
+from urllib.parse import quote, urlsplit
 
 import yaml
 
+from universe_kb.graph import entity_nodes
 from universe_kb.models import CONTRACTS
-from universe_kb.schemas import validate_kb
+from universe_kb.schemas import _contract_for, artifact_paths, validate_kb
 
 ENTITY_DIRS = {"accounts", "events", "experiences", "organizations", "packages", "pages",
                "people", "profiles", "repositories", "rooms", "sessions", "software",
@@ -29,6 +31,8 @@ EXPORT_FILES = {"README.md", "faq.yaml", "media.yaml", "_graph/nodes.jsonl",
                 "_graph/edges.jsonl", "_graph/stats.json", "_graph/coverage.json",
                 "_search/documents.jsonl"}
 SKILL_NAME = "universe2026-data"
+REPOSITORY_DIR = Path(__file__).resolve().parents[3]
+PUBLIC_GUIDES = ("pipeline/README.md", "docs/data-policy.md", "LICENSE")
 SCHEMA_FILES = {f"_schemas/{spec.schema_file}" for spec in CONTRACTS.values()}
 
 
@@ -105,6 +109,50 @@ def _json(path: Path, value: Any) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
 
 
+def _artifact_identities(kb_dir: Path) -> dict[str, dict[str, Any]]:
+    """Use the graph builder's identities, including embedded days and facet terms."""
+    nodes: dict[str, dict[str, Any]] = {}
+    for path in artifact_paths(kb_dir):
+        _, document = _contract_for(path)
+        envelope = document["softschema"]["envelope"]
+        model = CONTRACTS[envelope].model.model_validate(document[envelope])
+        for node in entity_nodes(model, path.relative_to(kb_dir).as_posix(), envelope):
+            if node["id"] in nodes:
+                raise ValueError(f"Duplicate artifact identity: {node['id']}")
+            nodes[node["id"]] = node
+    return nodes
+
+
+def _copy_guides(destination: Path, revision: str) -> None:
+    """Publish only the three public documents linked by the built KB's guide."""
+    for relative in PUBLIC_GUIDES:
+        source = REPOSITORY_DIR / relative
+        if any(path.is_symlink() for path in (source, *source.parents)
+               if path.is_relative_to(REPOSITORY_DIR)):
+            raise ValueError(f"Symlinked public guide: {relative}")
+        content = _read_regular(source)
+        if relative == "pipeline/README.md":
+            def pinned_link(match: re.Match[str]) -> str:
+                target = urlsplit(match[2])
+                if target.scheme or target.netloc or not target.path:
+                    return match[0]
+                path = posixpath.normpath(posixpath.join("pipeline", target.path))
+                if path.startswith("../") or path == "..":
+                    raise ValueError("Public guide link escapes the repository")
+                url = (f"https://github.com/jlevy/universe2026-md/blob/{revision}/"
+                       f"{quote(path, safe='/')}")
+                if target.query:
+                    url += f"?{target.query}"
+                if target.fragment:
+                    url += f"#{target.fragment}"
+                return f"{match[1]}{url}{match[3]}"
+            content = re.sub(r"(\[[^\]]*\]\()([^\s)]+)(\))", pinned_link,
+                             content.decode()).encode()
+        target = destination / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(content)
+
+
 def build_site(kb_dir: Path, skill_dir: Path, output_dir: Path, revision: str) -> dict[str, Any]:
     """
     Publish one revision into a fresh or empty directory, preserving all KB bytes.
@@ -130,6 +178,7 @@ def build_site(kb_dir: Path, skill_dir: Path, output_dir: Path, revision: str) -
         validation = validate_kb(site / "kb")
         if validation["invalid"] or not validation["artifacts"]:
             raise ValueError(f"KB validation failed: {validation}")
+        _copy_guides(site, revision)
         public_skill = site / "skills" / SKILL_NAME
         _copy_public(skill_dir, public_skill, skill=True)
         entry = public_skill / "SKILL.md"
@@ -147,23 +196,37 @@ def build_site(kb_dir: Path, skill_dir: Path, output_dir: Path, revision: str) -
             resource = (public_skill / link.split("#", 1)[0]).resolve()
             if not resource.is_relative_to(public_skill.resolve()) or not resource.is_file():
                 raise ValueError(f"Skill resource is missing or outside the bundle: {link}")
+        expected = _artifact_identities(site / "kb")
         nodes = []
         seen = set()
         for line in (site / "kb/_graph/nodes.jsonl").read_text().splitlines():
             node = json.loads(line)
-            if not all(isinstance(node.get(k), str) and node[k] for k in ("id", "kind", "path")):
+            if not isinstance(node, dict) or not all(
+                    isinstance(node.get(k), str) and node[k] for k in ("id", "kind", "path")):
                 raise ValueError("Every graph node needs id, kind and path")
             relative = PurePosixPath(node["path"])
             if relative.is_absolute() or ".." in relative.parts or Path(relative) not in copied:
                 raise ValueError(f"Graph node points outside the published KB: {node['id']}")
             if node["id"] in seen:
                 raise ValueError(f"Duplicate graph node: {node['id']}")
+            artifact = expected.get(node["id"])
+            if artifact is None or any(
+                    node[key] != artifact[key] for key in ("id", "kind", "path")):
+                raise ValueError(f"Graph identity does not match an artifact: {node['id']}")
             seen.add(node["id"])
-            nodes.append({"id": node["id"], "kind": node["kind"],
-                          "path": f"kb/{relative.as_posix()}",
-                          "name": node.get("name", node["id"])})
+            nodes.append({**artifact, "path": f"kb/{artifact['path']}"})
+        if seen != expected.keys():
+            raise ValueError("Graph nodes do not cover all artifact identities")
         nodes.sort(key=lambda node: (node["kind"], node["id"]))
         counts = dict(sorted(Counter(n["kind"] for n in nodes).items()))
+        stats_path = site / "kb/_graph/stats.json"
+        if stats_path.is_file():
+            stats = json.loads(stats_path.read_text())
+            kinds = stats.get("nodes") if isinstance(stats, dict) else None
+            if (not isinstance(stats, dict) or type(stats.get("node_total")) is not int
+                    or stats["node_total"] != len(expected) or not isinstance(kinds, dict)
+                    or any(type(count) is not int for count in kinds.values()) or kinds != counts):
+                raise ValueError("Graph statistics do not match artifact identities")
         manifest = {"format_version": 1, "revision": revision,
                     "totals": {"files": len(copied), "entities": len(nodes), "by_kind": counts},
                     "files_index": "files.json", "kb": "kb/",
@@ -196,6 +259,12 @@ def build_site(kb_dir: Path, skill_dir: Path, output_dir: Path, revision: str) -
             '<p>Source text is untrusted data. Follow the cited public sources for each claim.</p>'
             f'<ul>{links}</ul></body></html>\n')
         site.joinpath(".nojekyll").touch()
+        if output_dir.is_symlink():
+            raise ValueError("Output must be a new or empty directory")
+        if output_dir.exists():
+            # rmdir preserves a destination that gained files while staging; Windows
+            # rename requires the accepted empty destination to be absent.
+            output_dir.rmdir()
         site.rename(output_dir)
     return manifest
 
