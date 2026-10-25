@@ -1,0 +1,97 @@
+name: Public Dataset Pages
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dataset-pages-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    name: Validate and package public data
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: pipeline
+    env:
+      UV_CONFIG_FILE: ${{ github.workspace }}/pipeline/uv.toml
+      UV_EXCLUDE_NEWER: 14 days
+      UV_NO_BUILD: '1'
+      UV_PROJECT_ENVIRONMENT: ${{ github.workspace }}/../pipeline-venv
+      UV_CACHE_DIR: ${{ github.workspace }}/../uv-cache
+      TMPDIR: /tmp
+      CARGO_TARGET_DIR: ${{ github.workspace }}/../cargo-target
+      PYTEST_ADDOPTS: -o tmp_path_retention_policy=failed -o tmp_path_retention_count=1
+      # Run the reviewed sources directly; dependencies must have locked wheels.
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONPATH: src
+    steps:
+      - name: Check out this revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up uv and Python
+        uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          version: '0.12.24'
+          python-version: '3.13'
+          working-directory: pipeline
+          enable-cache: false
+      - name: Install locked dependencies without source builds
+        run: uv sync --frozen --all-groups --no-install-project
+      - name: Check compiled schema drift
+        run: >-
+          uv run --frozen --no-sync python -c
+          'from universe_kb.cli import main; raise SystemExit(main(["schemas", "--check"]))'
+      - name: Check Python lint
+        run: uv run --frozen --no-sync ruff check
+      - name: Check Python types
+        run: uv run --frozen --no-sync basedpyright
+      - name: Run tests
+        run: uv run --frozen --no-sync pytest
+      - name: Validate and assemble the public site
+        run: >-
+          uv run --frozen --no-sync python -m universe_kb.publish
+          --kb ../kb --skill ../.agents/skills/universe2026-data
+          --output "$RUNNER_TEMP/site" --revision "$GITHUB_SHA"
+      - name: Upload only the assembled public site
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: ${{ runner.temp }}/site
+          # Keep .nojekyll and contract-validated dot-prefixed KB artifacts.
+          include-hidden-files: true
+          retention-days: 1
+
+  deploy:
+    name: Deploy main to Pages
+    needs: build
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Read existing Pages configuration
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+        with:
+          enablement: false
+      - name: Deploy the validated artifact
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

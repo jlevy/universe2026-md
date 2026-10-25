@@ -2,6 +2,13 @@
 
 This file provides instructions and context for AI coding agents working on this project.
 
+## Use the Published Dataset
+
+For questions about conference records or downloading the complete KB, use the
+[Universe 2026 data skill](.agents/skills/universe2026-data/SKILL.md).
+It covers local records, the static package, source citations and edition-specific
+claims. Follow the pipeline guide for collecting or rebuilding data.
+
 ## Qodo Code Review
 
 Qodo reviews the pull requests in this repository, and `.pr_agent.toml` holds its

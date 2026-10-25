@@ -1,7 +1,8 @@
-# GitHub Universe Dataset
+# GitHub Universe 2026 Dataset
 
-This repository holds the public record of GitHub Universe, GitHub’s developer
-conference, as plain Markdown and YAML files, along with the code that crawls the
+This repository holds the public record of GitHub Universe 2026, GitHub’s developer
+conference, with earlier editions from 2023–2025 for context.
+The data is stored as plain Markdown and YAML files alongside the code that crawls the
 sources and builds the files.
 It is for anyone who wants the raw data on the conference: who spoke, on what, when and
 where, and the people, organizations and open-source work around it.
@@ -15,6 +16,54 @@ where, and the people, organizations and open-source work around it.
 - **Open-source work:** repositories and packages.
 
 Every record cites the sources it was built from.
+
+## Dataset Summary
+
+The checked-in snapshot covers **four editions (2023–2026)** with **5,407 graph
+entities**, **25,313 relationships** and **4,977 validated Markdown/YAML artifacts**. Of
+the 520 sessions, 156 are in the Universe 2026 program and 364 are from earlier
+editions.
+
+| Entity type | Count |
+| --- | ---: |
+| Days | 14 |
+| Event editions | 4 |
+| Experiences | 11 |
+| Taxonomy facets | 34 |
+| GitHub accounts | 237 |
+| Organizations | 310 |
+| Packages | 134 |
+| Conference pages | 9 |
+| People | 577 |
+| Professional profiles | 577 |
+| Repositories | 1,155 |
+| Rooms | 85 |
+| Sessions | 520 |
+| Social accounts | 1,052 |
+| Software | 61 |
+| Taxonomy terms | 418 |
+| Venues | 58 |
+| Websites | 151 |
+
+The dataset also contains **14 FAQ entries** and a **1,899-item media index**. Days and
+taxonomy terms are graph nodes within event and facet records; FAQ entries and media
+items are grouped in their own collection artifacts.
+Counts describe this repository snapshot, not verified attendance or live account
+totals. See [graph statistics](kb/_graph/stats.json) for the generated counts.
+
+## Agent Access and Downloads
+
+The [Universe 2026 data skill](.agents/skills/universe2026-data/SKILL.md) downloads the
+complete published knowledge base as one checksum-verified archive and explains how to
+query records, relationships and search files locally.
+Copy the complete skill directory, including its bundled download script.
+No GitHub account, repository clone or paid collection request is needed to consume a
+published package.
+
+The [access guide](docs/data-access.md) describes the package and revision pins.
+The [static site](https://jlevy.github.io/universe2026-md/) provides browsable files and
+complete download archives.
+The [publication guide](docs/publishing.md) describes deployment and verification.
 
 ## Sources and Collection
 
