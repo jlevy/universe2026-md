@@ -3,9 +3,9 @@ type: is
 id: is-01m5r2a0mb09ypy7knzwyr96yy
 title: Allow contract-validated dot-prefixed public artifact filenames
 kind: bug
-status: in_progress
+status: closed
 priority: 1
-version: 3
+version: 4
 delegate: codex@spud10.local
 labels: []
 dependencies: []
@@ -13,8 +13,12 @@ parent_id: is-01m5r0s3ra9dqavam413mc7cxv
 hold: null
 hold_until: null
 created_at: 2026-10-24T23:00:36.106Z
-updated_at: 2026-10-24T23:04:52.352Z
+updated_at: 2026-10-25T00:43:10.737Z
 started_at: 2026-10-24T23:01:07.074Z
+closed_at: 2026-10-25T00:43:10.737Z
+close_reason: Merged PR13 at maina82367923bee34147da575dbd0cef17b5bc285a8, exactreviewedtree7612ccc. Final CI40147259367 passed243tests plus schema/Ruff/types and realpublicpackage5001files5407entities; KBarchiveSHAd0db0d23a6246330ba1c69291b46e8089b879be3f1058050a78f081c6da2fc1a matches fullbyte-roundtrip. Independent senior5640795770/security5640796730/correctness5640798282 clear. All5Qodo findings fixed, original-ID dispositions issuecomment6391532058,5/5threadsresolved andfreshsweepclear.
+resolution: null
+duplicate_of: null
 ---
 Full-KB Pages assembly rejects legitimate repositories/entirehq/.github.yaml because of the generic hidden-path guard. Permit regular artifact filenames under existing entity directories only when validated by the existing contract, retaining rejection of hidden directories, credentials, symlinks and unknown paths. Add regression and verify exact full-KB byte preservation.
 
