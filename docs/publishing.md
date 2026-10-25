@@ -6,10 +6,11 @@ See [data access](data-access.md) for the complete skill and download procedure.
 
 ## Build and Deployment Boundary
 
-The [Pages workflow](../.github/workflows/pages.yml) checks Python lint, types and
-tests, then validates and packages the committed public knowledge base and complete
-agent skill. It uses the frozen pipeline lockfile and wheel dependencies; it runs no
-crawls, paid APIs or data collection commands.
+The [Pages workflow](../.github/workflows/pages.yml) checks compiled schema drift,
+Python lint, types and tests, then validates and packages the committed public knowledge
+base and complete agent skill.
+It uses the frozen pipeline lockfile and wheel dependencies; it runs no crawls, paid
+APIs or data collection commands.
 
 Pull requests run this build with repository read permission and upload the assembled
 site as a workflow artifact.
@@ -22,10 +23,10 @@ It executes no repository code.
 
 The uploaded directory contains only the publisher’s output: validated `kb/` files, the
 complete public skill under `skills/universe2026-data/`, manifests, archives and static
-navigation.
-Repository files, raw snapshots, curation, credentials and caches are outside
-that directory. The publisher rejects unexpected inputs and symlinks before making the
-package visible.
+navigation, plus the public pipeline guide, data policy and license linked from the KB
+guide. Other repository files, raw snapshots, curation, credentials and caches are
+outside that directory.
+The publisher rejects unexpected inputs and symlinks before making the package visible.
 
 ## Enable Pages
 

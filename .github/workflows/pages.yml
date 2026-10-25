@@ -47,6 +47,10 @@ jobs:
           enable-cache: false
       - name: Install locked dependencies without source builds
         run: uv sync --frozen --all-groups --no-install-project
+      - name: Check compiled schema drift
+        run: >-
+          uv run --frozen --no-sync python -c
+          'from universe_kb.cli import main; raise SystemExit(main(["schemas", "--check"]))'
       - name: Check Python lint
         run: uv run --frozen --no-sync ruff check
       - name: Check Python types

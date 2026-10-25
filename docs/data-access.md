@@ -26,6 +26,11 @@ navigation and these machine-readable files:
 | `releases/REVISION/dataset.json` | That revision’s manifest, with paths still relative to the site root |
 | `.nojekyll` | Preserve underscore-prefixed schema and export directories on Pages |
 
+The static site also serves the public pipeline guide, data policy and license at the
+paths linked from `kb/README.md`. The pipeline guide links to the revision’s source
+files on GitHub. The KB archive contains the `kb/` tree; use the public site for these
+supporting repository documents.
+
 Archive contents and metadata are deterministic for identical inputs.
 Never reuse a revision for changed data.
 The builder creates one revision per output directory; preserving earlier release
